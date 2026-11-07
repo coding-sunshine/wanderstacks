@@ -194,6 +194,20 @@ Source: `reports/WorldLibs realistic dynamic worlds.md`.
 - Stamps are cosmetic, kept in `localStorage` under `wl.stamps`. No streaks, no leaderboards, no network calls.
 - With reduced motion turned on, reveals cross-fade instead of animating.
 
+## Motion and look
+
+- Mood: a reading room by lamplight, in paper, ink, oak and gilt. Text uses one serif face under the SIL Open Font License (EB Garamond unless the design pass picks another), self-hosted as a Latin subset with `font-display: swap`.
+- Motion feels physical and slow. The camera eases, pages turn, dust drifts in the light. No bounce or spring easing in the UI.
+- Phase A moments:
+  - The poster cross-fades into the live globe once the lazy chunk loads.
+  - The fly-to a library (see Globe).
+  - Room entry: a View Transition, then exposure rises from dark to the lamp-lit bake.
+  - Dust in the window light: one `Points` layer of 2,000 particles at most. It is dropped when the resolution governor lowers the pixel ratio.
+- Later: a scroll chapter per library (founded, burned, rebuilt) with GSAP ScrollTrigger. GSAP is free to use but not open source, so it comes from npm and is never vendored.
+- Use CSS transitions, the Web Animations API and View Transitions first. Native scroll only: no smooth-scroll library such as Lenis, because it fights the page turn.
+- Reduced motion: when `prefers-reduced-motion: reduce` is set, every camera move, page turn and reveal becomes a cross-fade of 200 ms or less, and dust and cloud drift stop.
+- Paid template packs such as Figma for Motion are reference only. Their licences bar redistributing components, so none of their files, code or prompts go into this MIT repo.
+
 ## Performance
 
 - First paint: a pre-rendered globe poster under 60 KB with `fetchpriority="high"`. It is the LCP element; canvas does not count for LCP.

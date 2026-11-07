@@ -90,6 +90,12 @@
    "check": "bunx playwright test e2e/a11y.spec.ts"
   },
   {
+   "id": "reduced-motion",
+   "what": "With reduced motion set, the globe fly-in, room entry and Byrne reveal cross-fade in 200 ms or less; dust and cloud drift stop; no smooth-scroll library loads",
+   "status": "failing",
+   "check": "bunx playwright test e2e/reduced-motion.spec.ts"
+  },
+  {
    "id": "globe-budget",
    "what": "Globe assets 4 MB or less; poster frame under 60 KB paints first",
    "status": "failing",
