@@ -1,0 +1,51 @@
+.rd {
+  position: fixed; inset: 0; z-index: 20;
+  display: flex; flex-direction: column;
+  background: radial-gradient(120% 90% at 50% 20%, #2a1d10 0%, var(--night) 70%);
+  overflow: hidden;
+}
+.rd-top, .rd-bottom {
+  display: flex; align-items: center; gap: 0.6rem;
+  padding: 0.5rem 0.75rem; flex: none;
+}
+.rd-top { padding-top: 3.1rem; } /* #app is a stacking context under the global .bar */
+.rd-top h1 {
+  flex: 1; min-width: 0; margin: 0; font-size: 1rem; font-weight: 400; font-style: italic;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center; color: var(--gilt);
+}
+.rd button {
+  background: transparent; border: 1px solid var(--oak-light); color: var(--paper);
+  padding: 0.3rem 0.8rem; border-radius: 3px; cursor: pointer; min-height: 2.25rem;
+}
+.rd button:hover:not(:disabled) { border-color: var(--gilt); color: var(--lamp); }
+.rd button:disabled { opacity: 0.4; cursor: default; }
+.rd-stage {
+  flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center;
+  touch-action: pan-y; user-select: none;
+}
+.rd-book { position: relative; box-shadow: 0 12px 40px rgb(0 0 0 / 0.6); }
+.rd-msg { color: var(--paper-dim); font-style: italic; }
+.rd-bottom { justify-content: space-between; }
+.rd-status { color: var(--paper-dim); font-size: 0.9rem; }
+.rd-licence {
+  margin: 0; padding: 0 0.75rem 0.6rem; flex: none; text-align: center;
+  font-size: 0.8rem; line-height: 1.3; color: var(--paper-dim);
+}
+
+.rd-page {
+  overflow: hidden; background: var(--paper); color: var(--ink);
+  padding: 22px 24px 40px; font: 17px/1.45 var(--serif); text-align: justify; hyphens: auto;
+}
+.rd-page h2 { margin: 0 0 0.9em; font-size: 1.25em; font-weight: 400; text-align: center; letter-spacing: 0.03em; }
+.rd-page h4 { margin: 0.8em 0 0.4em; font-size: 1em; font-style: italic; font-weight: 400; }
+.rd-page p { margin: 0; text-indent: 1.2em; }
+.rd-page h2 + p, .rd-page h4 + p, .rd-page p.c { text-indent: 0; }
+.rd-page p.q { margin-left: 1.2em; font-size: 0.95em; }
+.rd-page .rd-num { position: absolute; bottom: 14px; left: 0; right: 0; text-align: center; color: #7a6540; font-size: 0.8rem; }
+.rd-plain > .rd-page { position: absolute; inset: 0; }
+.rd-measure { position: absolute; left: -99999px; top: 0; visibility: hidden; }
+.rd-measure .rd-page { position: relative; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rd * { transition: none !important; }
+}
