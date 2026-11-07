@@ -1,0 +1,26 @@
+.scan { max-width: 80rem; }
+.scan-spread { display: flex; justify-content: center; gap: 4px; min-height: 40vh; }
+.scan-leaf {
+  flex: 0 1 50%; min-width: 0; padding: 0; border: 0; background: none; cursor: zoom-in; line-height: 0;
+}
+.scan-spread img {
+  width: 100%; height: auto; background: var(--oak); animation: scan-fade 150ms linear;
+}
+@keyframes scan-fade { from { opacity: 0; } }
+.scan-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: center; margin: 1rem 0; }
+.scan-bar button, .scan-close {
+  min-width: 2.75rem; min-height: 2.75rem; border: 1px solid var(--oak-light); border-radius: 4px;
+  background: var(--oak); cursor: pointer;
+}
+.scan-bar button:disabled { opacity: 0.4; cursor: default; }
+.scan-count { flex: 1 1 12rem; text-align: center; overflow-wrap: anywhere; }
+.scan-credit { font-size: 0.9rem; color: var(--paper-dim); text-align: center; overflow-wrap: anywhere; }
+.scan-error { text-align: center; color: var(--lamp); }
+
+.scan-zoom { width: 100vw; max-width: 100vw; height: 100vh; max-height: 100vh; margin: 0; padding: 0; border: 0; background: var(--night); color: var(--paper); }
+.scan-zoom::backdrop { background: var(--night); }
+.scan-close { position: fixed; top: 0.5rem; right: 0.5rem; z-index: 1; }
+.scan-pan { width: 100%; height: 100%; overflow: auto; }
+.scan-stage { position: relative; }
+.scan-stage img { position: absolute; display: block; background: var(--oak); }
+@media (max-width: 699px) { .scan-leaf { flex-basis: 100%; } }
