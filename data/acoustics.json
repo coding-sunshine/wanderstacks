@@ -1,0 +1,12 @@
+{ "materials": {
+  "wood": { "alpha": 0.1, "src": "https://calculla.com/sound_absorption_coefficients" },
+  "books": { "alpha": 0.2, "src": "https://gearspace.com/board/bass-traps-acoustic-panels-foam-etc/194697-absorption-diffusion-bookshelves.html" },
+  "plaster": { "alpha": 0.02, "src": "https://calculla.com/sound_absorption_coefficients" },
+  "painted-plaster": { "alpha": 0.02, "src": "https://calculla.com/sound_absorption_coefficients" },
+  "stone": { "alpha": 0.03, "src": "https://pyroomacoustics.readthedocs.io/en/stable/pyroomacoustics.materials.database.html" },
+  "marble": { "alpha": 0.01, "src": "https://calculla.com/sound_absorption_coefficients" },
+  "glass": { "alpha": 0.03, "src": "https://calculla.com/sound_absorption_coefficients" },
+  "floor-timber": { "alpha": 0.07, "src": "https://calculla.com/sound_absorption_coefficients" },
+  "floor-stone": { "alpha": 0.01, "src": "https://calculla.com/sound_absorption_coefficients" },
+  "open": { "alpha": 1, "src": "https://buildingacoustics.blogspot.com/2012/12/sound-absorption-coefficients-for.html" }
+} }
