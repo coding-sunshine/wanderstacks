@@ -9,6 +9,7 @@ export interface Pin {
   lon: number
   from: number
   to: number
+  href: string | null
 }
 
 interface LibRow {
@@ -20,6 +21,7 @@ interface LibRow {
   lat: number
   lon: number
   lost?: number | boolean
+  href?: string | null
 }
 
 // ponytail: `lost: true` means destroyed with no date in libs.json; ghosted after AD 400 until a sourced year exists.
@@ -33,6 +35,7 @@ export function toPin(l: LibRow): Pin {
     years: l.yl,
     lat: (l.lat * Math.PI) / 180,
     lon: (l.lon * Math.PI) / 180,
+    href: l.href ?? null,
     from: l.y,
     to: typeof l.lost === 'number' ? l.lost : l.lost ? UNDATED_END : Infinity,
   }

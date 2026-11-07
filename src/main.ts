@@ -9,6 +9,10 @@ const routes: Route[] = [
   [/^\/room\/(?<lib>[\w-]+)$/, () => import('./room')],
   [/^\/read\/(?<book>[\w-]+)$/, () => import('./reader')],
   [/^\/byrne$/, () => import('./byrne')],
+  [/^\/ledger\/(?<lib>[\w-]+)$/, () => import('./ledger')],
+  [/^\/stgall$/, () => import('./stgall')],
+  [/^\/darwin$/, () => import('./darwin')],
+  [/^\/scan\/(?<book>[\w-]+)$/, () => import('./scan')],
 ]
 
 const app = document.getElementById('app')!

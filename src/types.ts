@@ -24,7 +24,35 @@ export interface Hall {
   wood: Param<string>
   floor: Param<string>
   light: Param<string>
+  domeHeight?: Param<number>
 }
+
+export interface Rotunda {
+  span: Param<number>
+  domeHeight: Param<number>
+  crownHeight: Param<number>
+  sides: Param<number>
+  alcoveDepth: Param<number>
+  alcoveWidth: Param<number>
+  piers: Param<number>
+  plinthHeight: Param<number>
+  galleryHeight: Param<number>
+  shelfUnit: Param<{ width: number; shelves: number }>
+  materials: Param<string>
+}
+
+export interface Site {
+  length: Param<number>
+  depth: Param<number>
+  height: Param<number>
+  nicheHeight: Param<number>
+  nicheWidth: Param<number>
+  niches: Param<number>
+  storeys: Param<number>
+  roof: Param<string>
+}
+
+export type KitId = 'hall' | 'rotunda' | 'site'
 
 export function basisLabel(p: Param<unknown>): string | null {
   switch (p.basis) {
@@ -62,17 +90,27 @@ export interface Credit {
   url: string
 }
 
-export interface Library {
+export interface TourStop {
+  fact: number
+  at: [number, number, number]
+  look: [number, number, number]
+}
+
+interface LibraryBase {
   id: string
   wd: string
   name: string
   place: string
   years: string
   facts: Fact[]
-  hall: Hall
   shelves: Shelf[]
   credits: Credit[]
+  reconstruction?: boolean
+  tour?: { stops: TourStop[] }
 }
+
+export type Library = LibraryBase &
+  ({ kit: 'hall'; hall: Hall } | { kit: 'rotunda'; hall: Rotunda } | { kit: 'site'; hall: Site })
 
 export interface BookMeta {
   id: string

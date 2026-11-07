@@ -1,4 +1,5 @@
 import { basisLabel, type Library, type Param } from '../types'
+import type { KitModule } from './kit'
 
 const ISSUES = 'https://github.com/coding-sunshine/worldlibs/issues/new'
 
@@ -23,14 +24,6 @@ const host = (u: string) => new URL(u).hostname.replace(/^www\./, '')
 const FIELD: Record<string, string> = { dims: 'Size', status_note: 'Now', remains_today: 'Remains today', recon: 'Reconstruction' }
 const label = (field: string) => FIELD[field] ?? field.replace(/_/g, ' ')
 
-const PARAMS: [keyof Library['hall'], string, string][] = [
-  ['length', 'Length', ' m'], ['width', 'Width', ' m'], ['height', 'Height', ' m'],
-  ['vault', 'Vault', ''], ['storeys', 'Storeys', ''], ['baysPerSide', 'Bays per side', ''],
-  ['alcoveDepth', 'Alcove depth', ' m'], ['galleryHeight', 'Gallery height', ' m'], ['domes', 'Domes', ''],
-  ['windows', 'Windows', ''], ['shelfUnit', 'Shelf unit', ''], ['wood', 'Wood', ''],
-  ['floor', 'Floor', ''], ['light', 'Light', ''],
-]
-
 function show(v: unknown, unit: string) {
   if (v && typeof v === 'object') {
     const u = v as { width: number; shelves: number }
@@ -39,7 +32,13 @@ function show(v: unknown, unit: string) {
   return `${v}${unit}`
 }
 
-export function buildPanel(lib: Library) {
+export function addParamRow(panel: HTMLElement, key: string, name: string, value: string, basis: string) {
+  const dd = el('dd', { 'data-param': key }, value, ' ', el('span', { class: 'basis' }, basis))
+  panel.querySelector('.room-hall')!.append(el('dt', {}, name), dd)
+  return dd
+}
+
+export function buildPanel(lib: Library, params: KitModule['params']) {
   const section = (title: string, ...kids: Node[]) => el('section', {}, el('h2', {}, title), ...kids)
 
   const facts = el('ul', { class: 'room-facts' })
@@ -49,8 +48,9 @@ export function buildPanel(lib: Library) {
   }
 
   const hall = el('dl', { class: 'room-hall' })
-  for (const [key, name, unit] of PARAMS) {
-    const p = lib.hall[key] as Param<unknown>
+  for (const [key, name, unit] of params) {
+    const p = (lib.hall as unknown as Record<string, Param<unknown> | undefined>)[key]
+    if (!p) continue
     const label = basisLabel(p)
     const dd = el('dd', { 'data-param': key }, show(p.v, unit))
     if (label) dd.append(' ', el('span', { class: 'basis' }, label))

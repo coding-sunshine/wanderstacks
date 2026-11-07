@@ -1,4 +1,5 @@
 {
+  "kit": "hall",
   "shelfClusters": ["texts-trinity"],
   "hall": {
     "length": { "v": 63.7, "basis": "measured", "src": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php" },

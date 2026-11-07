@@ -9,7 +9,6 @@ import './globe.css'
 const FOV = 30
 const MORPH_MS = 1100
 const FLIGHT_MS = 2800
-const ROOM_PIN = 'longroom'
 const tex = ['day', 'night', 'mask', 'relief', 'clouds'] as const
 
 const el = <K extends keyof HTMLElementTagNameMap>(tag: K, cls: string, text?: string) => {
@@ -66,7 +65,7 @@ export const mount: Mount = (app, params) => {
   let lastTouch = 0
   let down = false
   let hovering = false
-  let flight: { t: number; from: Vector3; to: Vector3; d0: number; d1: number } | null = null
+  let flight: { t: number; from: Vector3; to: Vector3; d0: number; d1: number; href: string } | null = null
   let renderer: WebGLRenderer | undefined
   let firstFrame = false
   const cleanups: (() => void)[] = []
@@ -101,14 +100,17 @@ export const mount: Mount = (app, params) => {
 
   function enter(id: string) {
     select(id)
-    if (id !== ROOM_PIN || flight) return
-    fetch('/lib/longroom.json').catch(() => {})
-    if (reducedMotion() || morph() > 0.5) {
-      fade(root, 0).then(() => !disposed && go('/room/longroom'))
+    const p = pins.find((q) => q.pin.id === id)!.pin
+    if (!p.href || flight) return
+    const href = p.href
+    const room = href.startsWith('/room/')
+    if (room) fetch(`/lib/${id}.json`).catch(() => {})
+    if (!room || reducedMotion() || morph() > 0.5) {
+      fade(root, 0).then(() => !disposed && go(href))
       return
     }
-    const p = pins.find((q) => q.pin.id === id)!.pin
     flight = {
+      href,
       t: 0,
       from: spherePoint(lon, lat),
       to: spherePoint(p.lon, p.lat),
@@ -199,9 +201,10 @@ export const mount: Mount = (app, params) => {
       lon = Math.atan2(c.x, c.z)
       lat = Math.asin(c.y)
       if (flight.t >= 1) {
+        const { href } = flight
         flight = null
         render(now)
-        go('/room/longroom')
+        go(href)
         return
       }
       moving = true
