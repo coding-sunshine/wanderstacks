@@ -9,19 +9,18 @@ const params: KitModule['params'] = [
   ['span', 'Span', ' m'], ['domeHeight', 'Dome height', ' m'], ['crownHeight', 'Crown height', ' m'], ['sides', 'Sides', ''],
   ['alcoveDepth', 'Alcove depth', ' m'], ['alcoveWidth', 'Alcove width', ' m'], ['piers', 'Piers', ''],
   ['plinthHeight', 'Plinth height', ' m'], ['galleryHeight', 'Gallery height', ' m'], ['shelfUnit', 'Shelf unit', ''],
-  ['materials', 'Materials', ''],
+  ['materials', 'Materials', ''], ['drumHeight', 'Drum height', ' m'], ['pierWidth', 'Pier width', ' m'], ['lanternRadius', 'Lantern radius', ' m'],
+  ['corniceHeight', 'Cornice height', ' m'], ['corniceDepth', 'Cornice depth', ' m'],
 ]
 
 interface Dims {
   span: number; domeHeight: number; crownHeight: number; sides: number; alcoveDepth: number; alcoveWidth: number
   piers: number; plinthHeight: number; galleryHeight: number; shelfUnit: { width: number; shelves: number }
+  drumHeight: number; pierWidth: number; lanternRadius: number; corniceHeight: number; corniceDepth: number
 }
 
 // Window sizes (w, h) for the glowing quads: drum, lantern, alcove tympanum.
 const WIN = { drum: [3.6, 4.2], lantern: [1.8, 4.8], alcove: [4.4, 2.6] } as const
-const PIER = 2.2
-const DRUM = 6.3
-const LANTERN_TOP = 3.4
 
 function marble() {
   const c = document.createElement('canvas')
@@ -46,6 +45,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   const step = (2 * Math.PI) / N, half = Math.PI / N
   const R = h.span / 2, D = h.alcoveDepth, W = h.alcoveWidth, Ri = R - D
   const P = h.plinthHeight, G = h.galleryHeight
+  const DRUM = h.drumHeight, PIER = h.pierWidth, LANTERN_TOP = h.lanternRadius
   const S = G + 1.9 // a second shelf tier sits above the gallery walk
   const Yd = P + DRUM
   const Rc = Ri / Math.cos(half) // corner radius of the inner octagon
@@ -94,13 +94,13 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
     put('galleryHeight', new THREE.BoxGeometry(W, 0.25, D), a, 0, G, zc)
     put('galleryHeight', new THREE.BoxGeometry(W, 1, 0.15), a, 0, G + 0.625, Ri + 0.1)
     put('sides', new THREE.ShapeGeometry(arch, 12), a, 0, 0, Ri)
-    put('sides', new THREE.PlaneGeometry(flat, DRUM), a, 0, P + DRUM / 2, Ri)
-    put('plinthHeight', new THREE.BoxGeometry(flat + 0.5, 0.7, 0.5), a, 0, P, Ri - 0.15)
+    put('drumHeight', new THREE.PlaneGeometry(flat, DRUM), a, 0, P + DRUM / 2, Ri)
+    put('corniceHeight', new THREE.BoxGeometry(flat + h.corniceDepth, h.corniceHeight, h.corniceDepth), a, 0, P, Ri - 0.15)
 
     const f = half + k * step
-    put('piers', new THREE.BoxGeometry(PIER, P, PIER), f, 0, P / 2, rp)
-    put('piers', new THREE.BoxGeometry(PIER + 0.5, 0.6, PIER + 0.5), f, 0, P - 0.3, rp)
-    put('piers', new THREE.BoxGeometry(PIER + 0.4, 0.5, PIER + 0.4), f, 0, 0.25, rp)
+    put('pierWidth', new THREE.BoxGeometry(PIER, P, PIER), f, 0, P / 2, rp)
+    put('pierWidth', new THREE.BoxGeometry(PIER + 0.5, 0.6, PIER + 0.5), f, 0, P - 0.3, rp)
+    put('pierWidth', new THREE.BoxGeometry(PIER + 0.4, 0.5, PIER + 0.4), f, 0, 0.25, rp)
   }
   put('span', new THREE.CircleGeometry(Rc, N).rotateX(-Math.PI / 2), half, 0, 0, 0, 0, [Rc / 2, Rc / 2])
 
@@ -110,12 +110,12 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   })
   put('domeHeight', new THREE.LatheGeometry(domeProfile, N), half, 0, 0, 0, 0, [1, 5])
   const capBase = h.crownHeight - capH
-  put('crownHeight', new THREE.CylinderGeometry(LANTERN_TOP, LANTERN_TOP, capBase - h.domeHeight, N, 1, true), half, 0, (capBase + h.domeHeight) / 2, 0)
+  put('lanternRadius', new THREE.CylinderGeometry(LANTERN_TOP, LANTERN_TOP, capBase - h.domeHeight, N, 1, true), half, 0, (capBase + h.domeHeight) / 2, 0)
   const capProfile = Array.from({ length: 5 }, (_, i) => {
     const t = (i / 4) * (Math.PI / 2)
     return new THREE.Vector2(Math.max(0.01, LANTERN_TOP * Math.cos(t)), capBase + capH * Math.sin(t))
   })
-  put('crownHeight', new THREE.LatheGeometry(capProfile, N), half, 0, 0, 0)
+  put('lanternRadius', new THREE.LatheGeometry(capProfile, N), half, 0, 0, 0)
 
   const vault = own(vaultTexture(1))
   const spine = own(spineTexture([1, 1]))
@@ -127,10 +127,11 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
     alcoveWidth: mat({ map: vault }),
     galleryHeight: mat({ map: own(woodTexture()) }),
     sides: mat({ color: 0xcdbb98 }),
-    piers: mat({ color: 0x9a5642 }),
-    plinthHeight: mat({ color: 0xd8c9a8 }),
+    pierWidth: mat({ color: 0x9a5642 }),
+    corniceHeight: mat({ color: 0xd8c9a8 }),
     domeHeight: mat({ map: vault, flatShading: true }),
-    crownHeight: mat({ color: 0xd9c9a0, flatShading: true }),
+    lanternRadius: mat({ color: 0xd9c9a0, flatShading: true }),
+    drumHeight: mat({ color: 0xcdbb98 }),
   }
   for (const [key, list] of buckets) {
     const mesh = new THREE.Mesh(own(mergeGeometries(list)!), mats[key])

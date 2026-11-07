@@ -8,8 +8,8 @@ export function attach(api: RoomApi): () => void {
   const { volume, surfaces } = api.acoustics
   const absorption = surfaces.reduce((sum, s) => {
     const m = alphas[s.material]
-    if (!m) console.warn(`No absorption coefficient for ${s.material}`)
-    return sum + (m?.alpha ?? 0) * s.area
+    if (!m) throw new Error(`No absorption coefficient for ${s.material}`)
+    return sum + m.alpha * s.area
   }, 0)
   if (!(volume > 0 && absorption > 0)) return () => {}
 
@@ -28,7 +28,6 @@ export function attach(api: RoomApi): () => void {
 
   // One context for the visit: Off suspends it, so a second On reuses the same convolver.
   let ctx: AudioContext | null = null
-  let ping = 0
 
   // Noise whose amplitude falls 60 dB over rt60 seconds, so the tail matches the Sabine figure.
   const impulse = (c: AudioContext) => {
@@ -49,32 +48,39 @@ export function attach(api: RoomApi): () => void {
     const out = c.createGain()
     out.gain.value = 0.25
     conv.connect(out).connect(c.destination)
-    // A soft tone struck now and then; the room's tail is what the visitor hears.
-    const strike = () => {
-      const o = c.createOscillator()
-      const g = c.createGain()
-      const t = c.currentTime
-      o.frequency.value = [220, 261.63, 329.63, 392][Math.floor(Math.random() * 4)]
-      g.gain.setValueAtTime(0.0001, t)
-      g.gain.exponentialRampToValueAtTime(0.2, t + 0.02)
-      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.5)
-      o.connect(g).connect(conv)
-      o.start(t)
-      o.stop(t + 0.6)
+    // Looping room tone: two seconds of seeded noise, low-passed, fed to the convolver.
+    const n = 2 * c.sampleRate
+    const tone = c.createBuffer(1, n, c.sampleRate)
+    const d = tone.getChannelData(0)
+    let seed = hash(`${api.lib.id}-tone`)
+    for (let i = 0; i < n; i++) d[i] = ((seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0) / 4294967296) * 2 - 1
+    const lp = c.createBiquadFilter()
+    lp.type = 'lowpass'
+    lp.frequency.value = 500
+    const g = c.createGain()
+    g.gain.value = 0.08
+    lp.connect(g).connect(conv)
+    return () => {
+      const src = c.createBufferSource()
+      src.buffer = tone
+      src.loop = true
+      src.connect(lp)
+      src.start()
+      return src
     }
-    return strike
   }
 
-  let strike = () => {}
+  let play!: () => AudioBufferSourceNode
+  let src: AudioBufferSourceNode | null = null
   const start = () => {
-    if (!ctx) strike = build((ctx = new AudioContext()))
+    if (!ctx) play = build((ctx = new AudioContext()))
     ctx.resume().catch(() => {})
-    strike()
-    ping = window.setInterval(strike, 4000)
+    src = play()
   }
 
   const stop = () => {
-    clearInterval(ping)
+    src?.stop()
+    src = null
     ctx?.suspend().catch(() => {})
   }
 
