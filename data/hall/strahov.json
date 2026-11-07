@@ -1,0 +1,24 @@
+{
+  "kit": "hall",
+  "shelfClusters": ["central-europe-1"],
+  "hall": {
+    "length": { "v": 32, "basis": "measured", "src": "https://www.strahovskyklaster.cz/en/architecture/library-halls" },
+    "width": { "v": 10, "basis": "measured", "src": "https://www.strahovskyklaster.cz/en/architecture/library-halls" },
+    "height": { "v": 14, "basis": "measured", "src": "https://www.strahovskyklaster.cz/architektura/knihovni-saly" },
+    "vault": { "v": "barrel", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_3.jpg" },
+    "storeys": { "v": 2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_1.jpg" },
+    "baysPerSide": { "v": 16, "basis": "invented", "src": "no source yet; bay count is design fill, 2 m per bay" },
+    "alcoveDepth": { "v": 1.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_1.jpg" },
+    "galleryHeight": { "v": 5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_1.jpg" },
+    "domes": { "v": 0, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_3.jpg" },
+    "windows": { "v": 14, "basis": "invented", "src": "no source yet; window count is design fill" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 10 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_1.jpg" },
+    "wood": { "v": "dark walnut-toned timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_1.jpg" },
+    "floor": { "v": "timber boards", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_1.jpg" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_3.jpg" }
+  },
+  "credits": [
+    { "file": "Philosophical Hall (Strahov Monastery) 1.jpg", "author": "Bjørn Erik Pedersen", "licence": "CC BY 3.0", "url": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_1.jpg" },
+    { "file": "Philosophical Hall (Strahov Monastery) 3.jpg", "author": "Bjørn Erik Pedersen", "licence": "CC BY 3.0", "url": "https://commons.wikimedia.org/wiki/File:Philosophical_Hall_(Strahov_Monastery)_3.jpg" }
+  ]
+}

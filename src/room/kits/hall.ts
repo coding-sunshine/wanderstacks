@@ -5,6 +5,21 @@ import type { BayMsg, Flat, Request } from '../worker'
 
 const EYE = 1.65
 
+function chequer(repeat: [number, number]) {
+  const c = document.createElement('canvas')
+  c.width = c.height = 64
+  const g = c.getContext('2d')!
+  for (let i = 0; i < 4; i++) {
+    g.fillStyle = (i + (i >> 1)) % 2 ? '#8c4f3c' : '#e3d9c8'
+    g.fillRect((i % 2) * 32, (i >> 1) * 32, 32, 32)
+  }
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
+  t.wrapS = t.wrapT = THREE.RepeatWrapping
+  t.repeat.set(...repeat)
+  return t
+}
+
 const params: KitModule['params'] = [
   ['length', 'Length', ' m'], ['width', 'Width', ' m'], ['height', 'Height', ' m'], ['domeHeight', 'Dome height', ' m'],
   ['vault', 'Vault', ''], ['storeys', 'Storeys', ''], ['baysPerSide', 'Bays per side', ''],
@@ -14,12 +29,13 @@ const params: KitModule['params'] = [
 ]
 
 function build({ lib, scene, own, dirty }: KitCtx): Built {
-  const h = Object.fromEntries(Object.entries(lib.hall).map(([k, p]) => [k, p.v])) as unknown as Flat & { windows: number; floor: string }
+  const h = Object.fromEntries(Object.entries(lib.hall).map(([k, p]) => [k, p.v])) as unknown as Flat & { windows: number; floor: string; domes?: number; domeHeight?: number }
   const { length: L, width: W, height: H, baysPerSide: N } = h
   const bayLen = L / N
   const springing = h.storeys * h.galleryHeight
   const aisle = W - 2 * h.alcoveDepth
   const rise = H - springing
+  const stone = /stone|marble|flag/.test(h.floor)
 
   const core = new THREE.Group()
   scene.add(core)
@@ -35,7 +51,10 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
 
   const wood = own(woodTexture())
   const wallMat = mat({ map: own(spineTexture([L / 3, springing / 2.6])) })
-  plane('floor', W, L, mat({ map: own(floorTexture([W, L])), color: 0x9a8a7a }), 0, 0, 0, 0, -Math.PI / 2)
+  const floorMat = stone
+    ? mat({ map: own(chequer([W / 1.6, L / 1.6])) })
+    : mat({ map: own(floorTexture([W, L])), color: 0x9a8a7a })
+  plane('floor', W, L, floorMat, 0, 0, 0, 0, -Math.PI / 2)
   plane('shelfUnit', L, springing, wallMat, -W / 2, springing / 2, 0, Math.PI / 2)
   plane('shelfUnit', L, springing, wallMat, W / 2, springing / 2, 0, -Math.PI / 2)
   const impostor = new THREE.TextureLoader().load(`/rooms/${lib.id}/impostor.svg`, dirty)
@@ -44,13 +63,54 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   plane('length', W, H, new THREE.MeshBasicMaterial({ map: impostor, fog: true }), 0, H / 2, -L / 2, 0)
   plane('length', W, H, mat({ color: 0x2b1a0d }), 0, H / 2, L / 2, Math.PI)
 
-  const vaultGeo = own(new THREE.CylinderGeometry(1, 1, L, 40, 1, true, Math.PI / 2, Math.PI))
-  vaultGeo.rotateX(Math.PI / 2)
-  const vault = new THREE.Mesh(vaultGeo, mat({ map: own(vaultTexture(N)), side: THREE.BackSide }))
-  vault.scale.set(W / 2, rise, 1)
-  vault.position.y = springing
-  core.add(vault)
-  parts.vault = [vault]
+  if ((h.domes ?? 0) > 0 && h.domeHeight) {
+    // Domed hall: the roof is one height field per span, the barrel crown raised to a dome inside each dome's plan ellipse.
+    const roof = mat({ map: own(vaultTexture(N)), side: THREE.DoubleSide })
+    const crown = (x: number) => springing + rise * Math.sqrt(Math.max(0, 1 - ((2 * x) / W) ** 2))
+    const central = h.domes! % 2
+    const sides = Math.floor(h.domes! / 2)
+    const rc = W / 2
+    const rs = sides ? (L / 2 - central * rc) / (2 * sides) : 0
+    const minor = H + (h.domeHeight - H) / 2
+    const domes: { z: number; r: number; peak: number }[] = []
+    if (central) domes.push({ z: 0, r: rc, peak: h.domeHeight })
+    for (let k = 0; k < sides; k++) {
+      const z = central * rc + (k + 0.5) * 2 * rs
+      domes.push({ z, r: rs, peak: minor }, { z: -z, r: rs, peak: minor })
+    }
+    domes.sort((a, b) => a.z - b.z)
+    const spans: [number, number, (typeof domes)[number] | null][] = []
+    let at = -L / 2
+    for (const d of domes) {
+      if (d.z - d.r > at + 1e-6) spans.push([at, d.z - d.r, null])
+      spans.push([d.z - d.r, d.z + d.r, d])
+      at = d.z + d.r
+    }
+    if (at < L / 2 - 1e-6) spans.push([at, L / 2, null])
+    for (const [z0, z1, d] of spans) {
+      const g = own(new THREE.PlaneGeometry(W, z1 - z0, 24, 2 * Math.ceil(z1 - z0)))
+      const pos = g.attributes.position, uv = g.attributes.uv
+      for (let i = 0; i < pos.count; i++) {
+        const x = pos.getX(i), z = (z0 + z1) / 2 + pos.getY(i)
+        const r2 = d ? 1 - ((2 * x) / W) ** 2 - ((z - d.z) / d.r) ** 2 : 0
+        const y = d ? Math.max(crown(x), springing + (d.peak - springing) * Math.sqrt(Math.max(0, r2))) : crown(x)
+        pos.setXYZ(i, x, y, z)
+        uv.setXY(i, x / W + 0.5, (z + L / 2) / L)
+      }
+      g.computeVertexNormals()
+      const m = new THREE.Mesh(g, roof)
+      core.add(m)
+      ;(parts[!d ? 'vault' : d.z === 0 ? 'domeHeight' : 'domes'] ??= []).push(m)
+    }
+  } else {
+    const vaultGeo = own(new THREE.CylinderGeometry(1, 1, L, 40, 1, true, Math.PI / 2, Math.PI))
+    vaultGeo.rotateX(Math.PI / 2)
+    const vault = new THREE.Mesh(vaultGeo, mat({ map: own(vaultTexture(N)), side: THREE.BackSide }))
+    vault.scale.set(W / 2, rise, 1)
+    vault.position.y = springing
+    core.add(vault)
+    parts.vault = [vault]
+  }
 
   scene.add(new THREE.HemisphereLight(0xffe2b0, 0x2a1a0d, 1.0))
   const sun = new THREE.DirectionalLight(0xffe7b8, 0.7)
@@ -115,7 +175,6 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   // Barrel vault is a half ellipse of semi-axes W/2 and rise; Ramanujan gives its arc length.
   const a = W / 2, b = rise
   const arc = (Math.PI * (3 * (a + b) - Math.sqrt((3 * a + b) * (a + 3 * b)))) / 2
-  const stone = /stone|marble|flag/.test(h.floor)
   const sideWall = 2 * L * springing
 
   return {
