@@ -20,6 +20,9 @@ function report(lib: Library, field: string, value: string, source: string | nul
 
 const host = (u: string) => new URL(u).hostname.replace(/^www\./, '')
 
+const FIELD: Record<string, string> = { dims: 'Size', status_note: 'Now', remains_today: 'Remains today', recon: 'Reconstruction' }
+const label = (field: string) => FIELD[field] ?? field.replace(/_/g, ' ')
+
 const PARAMS: [keyof Library['hall'], string, string][] = [
   ['length', 'Length', ' m'], ['width', 'Width', ' m'], ['height', 'Height', ' m'],
   ['vault', 'Vault', ''], ['storeys', 'Storeys', ''], ['baysPerSide', 'Bays per side', ''],
@@ -41,7 +44,7 @@ export function buildPanel(lib: Library) {
 
   const facts = el('ul', { class: 'room-facts' })
   for (const f of lib.facts) {
-    facts.append(el('li', {}, el('span', { class: 'k' }, f.field), ' ', f.value, ' ',
+    facts.append(el('li', {}, el('span', { class: 'k' }, label(f.field)), ' ', f.value, ' ',
       el('span', { class: 'src' }, link(f.source, host(f.source)), ' · ', report(lib, f.field, f.value, f.source))))
   }
 
