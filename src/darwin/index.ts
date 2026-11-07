@@ -1,5 +1,5 @@
+import { mountLiving, type LivingSpec } from '../living'
+import spec from '../../data/living/darwin.json'
 import type { Mount } from '../types'
 
-export const mount: Mount = (el) => {
-  el.innerHTML = '<section class="page" data-view="darwin" data-ready="true"><h1>Darwin</h1><p><a href="/">Back to the globe</a></p></section>'
-}
+export const mount: Mount = (el) => mountLiving(el, spec as LivingSpec, 'darwin')
