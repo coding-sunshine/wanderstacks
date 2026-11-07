@@ -1,0 +1,246 @@
+{
+  "phase": "B",
+  "scope": "Four new rooms on three kits (Admont and Strahov on the hall kit, the Library of Congress on a rotunda kit, Celsus on a site kit marked as a reconstruction), with Evidence mode, guided tours and Sabine reverb in all five rooms; the Alexandria ledger with its myth panel; living pages for the Plan of St Gall (e-codices IIIF at runtime) and Darwin; and a First Folio scan reader on the Bodleian IIIF service. Globe pins link to each place. Spec: docs/specs/build-spec.md",
+  "rooms": [
+    "admont",
+    "strahov",
+    "loc",
+    "celsus"
+  ],
+  "cwd": "repo root",
+  "preview": "bun run build && bunx vite preview --port 4173",
+  "recheck": "jq -r '.criteria[]|\"\\(.id)\\t\\(.check)\"' data/phase-b.json | while IFS=$'\\t' read -r id c; do sh -c \"$c\" >/dev/null 2>&1 && echo \"passing $id\" || echo \"failing $id\"; done",
+  "frozen": {
+    "by": "owner autonomy grant (Hardik Shah)",
+    "on": "2026-11-08"
+  },
+  "deferred": [
+    "seeded determinism of room generation",
+    "World Labs Marble splats",
+    "a new hall room in under a week"
+  ],
+  "criteria": [
+    {
+      "id": "build-clean",
+      "what": "Data build, Vite build, typecheck and unit tests all pass",
+      "status": "failing",
+      "check": "bun run build >/dev/null && bun run typecheck && bun run test"
+    },
+    {
+      "id": "phase-a-holds",
+      "what": "Every Phase A criterion still passes, the Phase A file is unchanged and no Phase A expect() line was removed",
+      "status": "failing",
+      "check": "git diff --quiet 451b4e5 -- data/phase-a.json && test -z \"$(git diff 451b4e5 -- e2e | rg '^-[^-].*expect\\(')\" && test -z \"$(jq -r '.criteria[].check' data/phase-a.json | while IFS= read -r x; do sh -c \"$x\" >/dev/null 2>&1 || echo F; done)\""
+    },
+    {
+      "id": "no-new-deps",
+      "what": "package.json dependencies and devDependencies are unchanged from Phase A",
+      "status": "failing",
+      "check": "test \"$(git show 451b4e5:package.json | jq -cS '[.dependencies,.devDependencies]')\" = \"$(jq -cS '[.dependencies,.devDependencies]' package.json)\""
+    },
+    {
+      "id": "rooms-built",
+      "what": "Admont and Strahov build on the hall kit, the Library of Congress on the rotunda kit, Celsus on the site kit, the Long Room stays on the hall kit",
+      "status": "failing",
+      "check": "for f in data/hall/admont.json data/hall/strahov.json data/hall/loc.json data/hall/celsus.json src/room/kits/hall.ts src/room/kits/rotunda.ts src/room/kits/site.ts; do test -s $f || exit 1; done && for p in longroom:hall admont:hall strahov:hall loc:rotunda celsus:site; do jq -e --arg k ${p#*:} '.kit==$k' dist/lib/${p%:*}.json >/dev/null || exit 1; done"
+    },
+    {
+      "id": "facts-traced-b",
+      "what": "Each new room shows 3 or more facts, each one a passing row of data/facts.json for that room with the same field, value and source; facts.json and data/verify are untouched",
+      "status": "failing",
+      "check": "for i in admont strahov loc celsus; do jq -e --arg i $i --slurpfile F data/facts.json '(.facts|length>=3) and all(.facts[]; .lib==$i and (. as $m | $F[0].facts | any(.lib==$m.lib and .field==$m.field and .value==$m.value and .source==$m.source and .status==\"passing\")))' dist/lib/$i.json >/dev/null || exit 1; done && git diff --quiet 451b4e5 -- data/facts.json data/verify"
+    },
+    {
+      "id": "quote-checker",
+      "what": "scripts/recon/check.ts passes every hall file and the good fixture, rejects each of the 5 bad fixtures naming the rule broken, and the lib build step uses it instead of its own basis list",
+      "status": "failing",
+      "check": "bun scripts/recon/check.ts data/hall/*.json && bun scripts/recon/check.ts scripts/recon/fixtures/good.json && for b in bad-number-not-in-quote bad-src-no-fact bad-measured-no-src bad-comparandum-no-building bad-unknown-basis; do test -s scripts/recon/fixtures/$b.json || exit 1; ! o=$(bun scripts/recon/check.ts scripts/recon/fixtures/$b.json 2>&1) || exit 1; echo \"$o\" | rg -qF \"${b#bad-}\" || exit 1; done && test -z \"$(rg -c BASES scripts/build/steps/10-lib.ts)\" && rg -q 'recon/check' scripts/build/steps/10-lib.ts"
+    },
+    {
+      "id": "credits-b",
+      "what": "All five rooms credit every photo they were estimated from, each credit with an https link, author and licence",
+      "status": "failing",
+      "check": "for i in longroom admont strahov loc celsus; do jq -e '(.credits|length>0) and all(.credits[]; (.url|startswith(\"https://\")) and ((.author//\"\")|length>0) and ((.licence//\"\")|length>0)) and ([.credits[].url] as $u | all(.hall[]|select(.basis==\"photo-estimate\"); .src as $s | any($u[]; .==$s)))' dist/lib/$i.json >/dev/null || exit 1; done"
+    },
+    {
+      "id": "estimates-labelled-b",
+      "what": "Every room param carries one of the 6 bases, every comparandum names its building, and the panel shows the matching label in all five rooms",
+      "status": "failing",
+      "check": "for i in longroom admont strahov loc celsus; do jq -e '(.hall|length>0) and all(.hall[]; (.basis|IN(\"measured\",\"photo-estimate\",\"excavated\",\"attested\",\"comparandum\",\"invented\")) and (.basis!=\"comparandum\" or ((.building//\"\")|length>0)))' dist/lib/$i.json >/dev/null || exit 1; done && bunx playwright test e2e/estimated-label-b.spec.ts && test $(bunx playwright test e2e/estimated-label-b.spec.ts --list 2>/dev/null | rg -o '› (longroom|admont|strahov|loc|celsus)( @[14]x)?:' | sort -u | wc -l) -eq 5"
+    },
+    {
+      "id": "room-budget-b",
+      "what": "Each new room has its static asset folder and it stays at or under 25 MB",
+      "status": "failing",
+      "check": "for i in admont strahov loc celsus; do test -d dist/rooms/$i && test $(du -sk dist/rooms/$i | cut -f1) -le 25600 || exit 1; done"
+    },
+    {
+      "id": "room-geometry",
+      "what": "Each room's built shell matches its measured footprint within 5 percent and reaches its measured height",
+      "status": "failing",
+      "check": "bunx playwright test e2e/room-geometry.spec.ts && test $(bunx playwright test e2e/room-geometry.spec.ts --list 2>/dev/null | rg -o '› (longroom|admont|strahov|loc|celsus)( @[14]x)?:' | sort -u | wc -l) -eq 5"
+    },
+    {
+      "id": "evidence-toggle",
+      "what": "Every room has an Evidence toggle that tints the scene by basis with a legend, and tapping a part of the room or choosing it from the element list shows its basis and source",
+      "status": "failing",
+      "check": "bunx playwright test e2e/evidence.spec.ts && test $(bunx playwright test e2e/evidence.spec.ts --list 2>/dev/null | rg -o '› (longroom|admont|strahov|loc|celsus)( @[14]x)?:' | sort -u | wc -l) -eq 5"
+    },
+    {
+      "id": "reconstruction-badge",
+      "what": "Celsus shows a permanent Reconstruction badge that cannot be dismissed; the four standing rooms do not",
+      "status": "failing",
+      "check": "jq -e '.reconstruction==true' dist/lib/celsus.json >/dev/null && for i in longroom admont strahov loc; do jq -e '(.reconstruction//false)==false' dist/lib/$i.json >/dev/null || exit 1; done && bunx playwright test e2e/reconstruction.spec.ts"
+    },
+    {
+      "id": "tours",
+      "what": "Every room has a guided tour of 3 or more stops; each caption is a fact from the room's own data with its source link; Escape ends it",
+      "status": "failing",
+      "check": "for i in longroom admont strahov loc celsus; do test -s data/tour/$i.json || exit 1; jq -e '.facts as $f | (.tour.stops|length>=3) and all(.tour.stops[]; .fact>=0 and .fact<($f|length) and (.at|length==3) and (.look|length==3))' dist/lib/$i.json >/dev/null || exit 1; done && bunx playwright test e2e/tour.spec.ts && test $(bunx playwright test e2e/tour.spec.ts --list 2>/dev/null | rg -o '› (longroom|admont|strahov|loc|celsus)( @[14]x)?:' | sort -u | wc -l) -eq 5"
+    },
+    {
+      "id": "reverb",
+      "what": "Sound is off until asked; turning it on builds one ConvolverNode from a Sabine RT60 that is shown in the panel and labelled estimated; absorption coefficients carry a source",
+      "status": "failing",
+      "check": "jq -e '(.materials|length>0) and all(.materials[]; (.alpha|type==\"number\") and .alpha>0 and .alpha<=1 and (.src|startswith(\"https://\")))' data/acoustics.json >/dev/null && bunx playwright test e2e/reverb.spec.ts && test $(bunx playwright test e2e/reverb.spec.ts --list 2>/dev/null | rg -o '› (longroom|admont|strahov|loc|celsus)( @[14]x)?:' | sort -u | wc -l) -eq 5"
+    },
+    {
+      "id": "ledger-traced",
+      "what": "The Alexandria ledger holds every passing Alexandria fact exactly once, sorted by field into attested, disputed and unknown, each row with an id",
+      "status": "failing",
+      "check": "jq -e --slurpfile F data/facts.json '($F[0].facts|map(select(.lib==\"alexandria\" and .status==\"passing\"))) as $P | (.rows|length)==($P|length) and all(.rows[]; . as $r | (.id|type==\"string\") and ($r.class==(if $r.field==\"volumes\" then \"disputed\" elif ($r.field|IN(\"built\",\"remains_today\")) then \"unknown\" else \"attested\" end)) and ($P|any(.field==$r.field and .value==$r.value and .source==$r.source))) and ([.rows[].class]|unique==[\"attested\",\"disputed\",\"unknown\"]) and ([.rows[].id]|unique|length)==(.rows|length)' dist/lib/alexandria-ledger.json"
+    },
+    {
+      "id": "ledger-page",
+      "what": "/ledger/alexandria shows the three columns, a source link on every row, and the myth panel whose myth and correction are quoted from the build spec and link to the 48 BCE, layout unknown and nothing attributable rows",
+      "status": "failing",
+      "check": "my=$(jq -r '.myth//\"\"' data/ledger/alexandria.json) && co=$(jq -r '.correction//\"\"' data/ledger/alexandria.json) && test -n \"$my\" && test -n \"$co\" && rg -qF \"$my\" docs/specs/build-spec.md && rg -qF \"$co\" docs/specs/build-spec.md && jq -e --slurpfile L dist/lib/alexandria-ledger.json '(.links|length>=3) and all(.links[]; . as $id | $L[0].rows | any(.id==$id))' data/ledger/alexandria.json >/dev/null && bunx playwright test e2e/ledger.spec.ts"
+    },
+    {
+      "id": "living-stgall",
+      "what": "/stgall draws the e-codices IIIF Plan of St Gall at runtime, credits e-codices under CC BY-NC 4.0, and runs predict, reveal, stamp",
+      "status": "failing",
+      "check": "jq -e '(.statement|length>0) and (.source|startswith(\"https://\")) and (.image.service|test(\"^https://([a-z]+\\\\.)?e-codices\\\\.(ch|unifr\\\\.ch)/\"))' data/living/stgall.json >/dev/null && bunx playwright test e2e/living-stgall.spec.ts"
+    },
+    {
+      "id": "living-darwin",
+      "what": "/darwin quotes On the Origin of Species chapter IV and runs predict, reveal, stamp",
+      "status": "failing",
+      "check": "jq -e '(.statement|length>0) and (.source|startswith(\"https://\")) and (.cite|test(\"[Cc]hapter IV|CHAPTER IV\"))' data/living/darwin.json >/dev/null && bunx playwright test e2e/living-darwin.spec.ts"
+    },
+    {
+      "id": "living-quotes-verbatim",
+      "what": "Each living page statement appears word for word in its cited public source, and the checker rejects a mutated quote",
+      "status": "failing",
+      "check": "test $(ls data/living/*.json | wc -l) -ge 2 && bun scripts/living/check.ts data/living/*.json && ! o=$(bun scripts/living/check.ts scripts/living/fixtures/bad-mutated-quote.json 2>&1) && echo \"$o\" | rg -q not-verbatim"
+    },
+    {
+      "id": "scan-pages",
+      "what": "The First Folio page list is built from the Bodleian manifest with an image service, size and label per canvas, carries its licence and credit, and is never committed",
+      "status": "failing",
+      "check": "jq -e '(.manifest|startswith(\"https://iiif.bodleian.ox.ac.uk/\")) and (.licence|test(\"CC BY-NC 4.0\")) and (.credit|test(\"Bodleian\")) and (.pages|length>=900) and all(.pages[]; (.s|startswith(\"https://iiif.bodleian.ox.ac.uk/iiif/image/\")) and .w>0 and .h>0 and (.l|type==\"string\" and length>0))' dist/scan/firstfolio/pages.json >/dev/null && git check-ignore -q public/scan/firstfolio/pages.json"
+    },
+    {
+      "id": "scan-images",
+      "what": "/scan/firstfolio shows 600 px page images and prefetches two spreads either side",
+      "status": "failing",
+      "check": "bunx playwright test e2e/scan.spec.ts -g \"scan images\""
+    },
+    {
+      "id": "scan-zoom",
+      "what": "The scan reader zooms with region tiles of 1536 px or more",
+      "status": "failing",
+      "check": "bunx playwright test e2e/scan.spec.ts -g \"scan zoom\""
+    },
+    {
+      "id": "scan-keyboard",
+      "what": "The scan reader turns pages, zooms and closes zoom by keyboard alone, returning focus",
+      "status": "failing",
+      "check": "bunx playwright test e2e/scan.spec.ts -g \"scan keyboard\""
+    },
+    {
+      "id": "scan-credit",
+      "what": "The scan reader shows the Bodleian credit and a CC BY-NC 4.0 link",
+      "status": "failing",
+      "check": "bunx playwright test e2e/scan.spec.ts -g \"scan credit\""
+    },
+    {
+      "id": "scan-host",
+      "what": "Every scan image comes from the Bodleian IIIF host",
+      "status": "failing",
+      "check": "bunx playwright test e2e/scan.spec.ts -g \"scan host\""
+    },
+    {
+      "id": "pins-href",
+      "what": "Globe pins link to their place: each room, the ledger, the St Gall plan, the First Folio; every other pin has no link or a site path",
+      "status": "failing",
+      "check": "jq -e '([.[]|{(.id):.href}]|add) as $h | $h.longroom==\"/room/longroom\" and $h.admont==\"/room/admont\" and $h.strahov==\"/room/strahov\" and $h.loc==\"/room/loc\" and $h.celsus==\"/room/celsus\" and $h.alexandria==\"/ledger/alexandria\" and $h.stgallen==\"/stgall\" and $h.bodleian==\"/scan/firstfolio\" and all(.[]; .href==null or (.href|startswith(\"/\")))' dist/lib/pins.json >/dev/null && bunx playwright test e2e/globe-b.spec.ts"
+    },
+    {
+      "id": "smoke-b",
+      "what": "Every pin href plus /darwin mounts real content with a clean console and network, and no IIIF image lands in the service worker cache",
+      "status": "failing",
+      "check": "bunx playwright test e2e/smoke-b.spec.ts"
+    },
+    {
+      "id": "frame-time-b",
+      "what": "Walking each room keeps p95 frame time at or under 20 ms and draw calls under 200 on a real GPU",
+      "status": "failing",
+      "check": "bunx playwright test e2e/frame-time-b.spec.ts && test $(bunx playwright test e2e/frame-time-b.spec.ts --list 2>/dev/null | rg -o '› (longroom|admont|strahov|loc|celsus)( @[14]x)?:' | sort -u | wc -l) -eq 5"
+    },
+    {
+      "id": "room-gen-time-b",
+      "what": "Each room builds its first section before the door opens, at 1x and 4x CPU",
+      "status": "failing",
+      "check": "bunx playwright test e2e/room-gen-time-b.spec.ts && test $(bunx playwright test e2e/room-gen-time-b.spec.ts --list 2>/dev/null | rg -o '› (longroom|admont|strahov|loc|celsus)( @[14]x)?:' | sort -u | wc -l) -eq 10"
+    },
+    {
+      "id": "reduced-motion-b",
+      "what": "Under reduced motion every new view and the tour enter with opacity fades of 200 ms or less and camera cuts, and hold pixel-still when idle",
+      "status": "failing",
+      "check": "bunx playwright test e2e/reduced-motion-b.spec.ts"
+    },
+    {
+      "id": "a11y-b",
+      "what": "Every button and link in the new views has an accessible name, and the room controls, ledger and scan reader work by keyboard alone",
+      "status": "failing",
+      "check": "bunx playwright test e2e/a11y-b.spec.ts"
+    },
+    {
+      "id": "route-weight",
+      "what": "A cold load of each new route transfers 5 MB or less",
+      "status": "failing",
+      "check": "bunx playwright test e2e/route-weight.spec.ts"
+    },
+    {
+      "id": "no-committed-scans",
+      "what": "No raster image or PDF is committed except the globe layers, and no committed file is over 500 KB",
+      "status": "failing",
+      "check": "test -z \"$(git ls-files -co --exclude-standard | rg -i '\\.(jpe?g|png|webp|gif|tiff?|jp2|avif|pdf)$' | rg -v '^public/globe/[a-z]+\\.webp$')\" && test -z \"$(git ls-files -co --exclude-standard -z | xargs -0 du -k 2>/dev/null | awk '$1>500')\""
+    },
+    {
+      "id": "content-provenance",
+      "what": "New view and room feature code holds no long prose literals; shown text comes from data files",
+      "status": "failing",
+      "check": "test -z \"$(rg -n --no-heading -e '[\\x22\\x27\\x60][^\\x22\\x27\\x60]{100,}[\\x22\\x27\\x60]' src/ledger src/scan src/stgall src/darwin src/room/kits src/room/tour.ts src/room/sound.ts src/room/evidence.ts 2>/dev/null)\""
+    },
+    {
+      "id": "sources-offline",
+      "what": "When the IIIF hosts are unreachable, /stgall and /scan/firstfolio stay ready, show a source error and throw nothing",
+      "status": "failing",
+      "check": "bunx playwright test e2e/sources-offline.spec.ts"
+    },
+    {
+      "id": "mobile-b",
+      "what": "At 390 px wide the ledger, scan reader, St Gall, Darwin and a room with its tour open have no horizontal scroll",
+      "status": "failing",
+      "check": "bunx playwright test e2e/mobile-b.spec.ts"
+    },
+    {
+      "id": "live-sources",
+      "what": "The live e-codices and Bodleian manifests still carry CC BY-NC 4.0 and their images still serve",
+      "status": "failing",
+      "check": "UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36' && curl -sfL -A \"$UA\" https://e-codices.ch/metadata/iiif/csg-1092/manifest.json | jq -e '.license|tostring|test(\"by-nc/4.0\")' >/dev/null && curl -sfL -A \"$UA\" https://iiif.bodleian.ox.ac.uk/iiif/manifest/390fd0e8-9eae-475d-9564-ed916ab9035c.json | jq -e '.attribution|tostring|test(\"CC BY-NC 4.0\")' >/dev/null && test \"$(curl -sfL -A \"$UA\" -o /dev/null -w '%{content_type}' \"$(jq -r .image.service data/living/stgall.json)/full/600,/0/default.jpg\" | cut -d/ -f1)\" = image && test \"$(curl -sfL -A \"$UA\" -o /dev/null -w '%{content_type}' \"$(jq -r '.pages[0].s' dist/scan/firstfolio/pages.json)/full/600,/0/default.jpg\" | cut -d/ -f1)\" = image"
+    }
+  ]
+}
