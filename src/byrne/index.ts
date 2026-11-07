@@ -4,7 +4,7 @@ import type { Mount } from '../types'
 
 // A(150,300) B(350,300); the circles meet at C(250, 300 - 100*sqrt(3))
 const figure = `
-  <line data-step class="blue" x1="150" y1="300" x2="350" y2="300"/>
+  <line class="blue" x1="150" y1="300" x2="350" y2="300"/>
   <circle data-step class="black" cx="150" cy="300" r="200"/>
   <circle data-step class="black" cx="350" cy="300" r="200"/>
   <line data-step class="red" x1="150" y1="300" x2="250" y2="126.8"/>

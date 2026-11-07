@@ -86,7 +86,7 @@ export function mountLiving(el: HTMLElement, spec: LivingSpec, view: string): ()
     })
     if (reducedMotion()) {
       steps.forEach((s) => s.classList.add('drawn'))
-      await fade(svg, 1, 180)
+      await Promise.all(steps.map((s) => fade(s, 1, 180)))
     } else {
       for (const s of steps) {
         if (disposed) return

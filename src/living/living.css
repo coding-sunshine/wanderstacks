@@ -3,9 +3,9 @@
 .living blockquote { margin: 0 0 1.25rem; padding-left: 1rem; border-left: 2px solid var(--gilt); }
 .living .statement { margin: 0; font-size: 1.25rem; }
 .living .cite { color: var(--paper-dim); font-size: 0.85rem; margin-top: 0.4rem; }
-.living .figure { display: block; width: 100%; height: auto; max-height: 60vh; border: 1px solid var(--oak-light); }
+.living .figure { display: block; width: 100%; height: auto; max-height: 45vh; border: 1px solid var(--oak-light); stroke-linecap: round; }
 .living .figure .paper { fill: var(--paper); }
-.living .figure [data-step] { fill: none; stroke-linecap: round; opacity: 0; }
+.living .figure [data-step] { fill: none; opacity: 0; }
 .living .figure [data-step].drawn { opacity: 1; stroke-dasharray: 1; }
 .living .figure [data-step].done { stroke-dashoffset: 0; }
 .living .question { margin: 1.25rem 0 0.5rem; }
