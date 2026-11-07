@@ -1,3 +1,4 @@
+import * as THREE from 'three'
 import type { RoomApi } from './kit'
 
 const BOX = [
@@ -18,7 +19,7 @@ export function attach(api: RoomApi): () => void {
   const stops = api.lib.tour?.stops
   if (!stops?.length) return () => {}
 
-  const button = el('button', { type: 'button', 'data-action': 'tour', 'aria-expanded': 'false', 'aria-controls': 'room-tour' }, 'Tour')
+  const button = el('button', { type: 'button', 'data-action': 'tour', 'aria-expanded': 'false' }, 'Tour')
   api.controls.append(button)
 
   let box: HTMLElement | null = null
@@ -32,11 +33,15 @@ export function attach(api: RoomApi): () => void {
     box!.querySelector('[data-caption]')!.textContent = fact.value
     const src = box!.querySelector('a')!
     src.href = fact.source
-    src.textContent = new URL(fact.source).hostname.replace(/^www\./, '')
+    src.textContent = URL.canParse(fact.source) ? new URL(fact.source).hostname.replace(/^www\./, '') : fact.source
     box!.querySelector('[data-step]')!.textContent = `${i + 1} of ${stops.length}`
     box!.querySelector('[data-tour-prev]')!.setAttribute('aria-disabled', String(i === 0))
     box!.querySelector('[data-tour-next]')!.setAttribute('aria-disabled', String(i === stops.length - 1))
-    api.goTo(stop.at, stop.look)
+    // Keep the pitch inside the drag clamp (+-1.1) so the first drag after arrival does not snap.
+    const look = new THREE.Vector3(...stop.look)
+    const flat = Math.hypot(look.x - stop.at[0], look.z - stop.at[2])
+    look.y = stop.at[1] + THREE.MathUtils.clamp(look.y - stop.at[1], -Math.tan(1.1) * flat, Math.tan(1.1) * flat)
+    api.goTo(stop.at, look.toArray())
   }
 
   const close = () => {
@@ -45,6 +50,10 @@ export function attach(api: RoomApi): () => void {
     box = null
     delete api.root.dataset.tourStop
     button.setAttribute('aria-expanded', 'false')
+    button.removeAttribute('aria-controls')
+    // A zero-length goTo from where the camera is now ends any flight still in progress.
+    const here = api.camera.position
+    api.goTo(here.toArray(), here.clone().add(api.camera.getWorldDirection(new THREE.Vector3())).toArray())
     button.focus()
   }
 
@@ -59,6 +68,7 @@ export function attach(api: RoomApi): () => void {
     box.append(el('p', { 'data-caption': '', 'aria-live': 'polite', style: 'margin:0' }), row)
     api.controls.after(box)
     button.setAttribute('aria-expanded', 'true')
+    button.setAttribute('aria-controls', 'room-tour')
     prev.onclick = () => at > 0 && show(at - 1)
     next.onclick = () => at < stops.length - 1 && show(at + 1)
     x.onclick = close

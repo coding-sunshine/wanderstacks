@@ -1,21 +1,105 @@
 {
   "kit": "rotunda",
-  "shelfClusters": ["americas"],
+  "shelfClusters": [
+    "americas"
+  ],
   "hall": {
-    "span": { "v": 30.5, "basis": "measured", "src": "https://archive.org/details/handbookofnewlib00smaliala" },
-    "domeHeight": { "v": 38.1, "basis": "measured", "src": "https://archive.org/details/handbookofnewlib00smaliala" },
-    "crownHeight": { "v": 48.8, "basis": "measured", "src": "https://archive.org/details/handbookofnewlib00smaliala" },
-    "sides": { "v": 8, "basis": "measured", "src": "https://archive.org/details/handbookofnewlib00smaliala" },
-    "alcoveDepth": { "v": 4.3, "basis": "measured", "src": "https://archive.org/details/handbookofnewlib00smaliala" },
-    "alcoveWidth": { "v": 9.1, "basis": "measured", "src": "https://archive.org/details/handbookofnewlib00smaliala" },
-    "piers": { "v": 8, "basis": "measured", "src": "https://archive.org/details/handbookofnewlib00smaliala" },
-    "plinthHeight": { "v": 17.7, "basis": "attested", "src": "https://archive.org/details/handbookofnewlib00smaliala" },
-    "galleryHeight": { "v": 7.6, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:LOC_Main_Reading_Room_Highsmith.jpg" },
-    "shelfUnit": { "v": { "width": 0.9, "shelves": 7 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Library_of_Congress_main_reading_room_alcove_4.jpg" },
-    "materials": { "v": "marble piers, painted plaster, wood shelving", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:LOC_Main_Reading_Room_Highsmith.jpg" }
+    "span": {
+      "v": 30.5,
+      "basis": "measured",
+      "src": "https://archive.org/details/handbookofnewlib00smaliala"
+    },
+    "domeHeight": {
+      "v": 38.1,
+      "basis": "measured",
+      "src": "https://archive.org/details/handbookofnewlib00smaliala"
+    },
+    "crownHeight": {
+      "v": 48.8,
+      "basis": "measured",
+      "src": "https://archive.org/details/handbookofnewlib00smaliala"
+    },
+    "sides": {
+      "v": 8,
+      "basis": "measured",
+      "src": "https://archive.org/details/handbookofnewlib00smaliala"
+    },
+    "alcoveDepth": {
+      "v": 4.3,
+      "basis": "measured",
+      "src": "https://archive.org/details/handbookofnewlib00smaliala"
+    },
+    "alcoveWidth": {
+      "v": 9.1,
+      "basis": "measured",
+      "src": "https://archive.org/details/handbookofnewlib00smaliala"
+    },
+    "piers": {
+      "v": 8,
+      "basis": "measured",
+      "src": "https://archive.org/details/handbookofnewlib00smaliala"
+    },
+    "plinthHeight": {
+      "v": 17.7,
+      "basis": "attested",
+      "src": "https://archive.org/details/handbookofnewlib00smaliala"
+    },
+    "galleryHeight": {
+      "v": 7.6,
+      "basis": "photo-estimate",
+      "src": "https://commons.wikimedia.org/wiki/File:LOC_Main_Reading_Room_Highsmith.jpg"
+    },
+    "shelfUnit": {
+      "v": {
+        "width": 0.9,
+        "shelves": 7
+      },
+      "basis": "photo-estimate",
+      "src": "https://commons.wikimedia.org/wiki/File:Library_of_Congress_main_reading_room_alcove_4.jpg"
+    },
+    "materials": {
+      "v": "marble piers, painted plaster, wood shelving",
+      "basis": "photo-estimate",
+      "src": "https://commons.wikimedia.org/wiki/File:LOC_Main_Reading_Room_Highsmith.jpg"
+    },
+    "drumHeight": {
+      "v": 6.3,
+      "basis": "invented",
+      "src": "no source yet; drum wall height is design fill"
+    },
+    "pierWidth": {
+      "v": 2.2,
+      "basis": "invented",
+      "src": "no source yet; pier width is design fill"
+    },
+    "lanternRadius": {
+      "v": 3.4,
+      "basis": "invented",
+      "src": "no source yet; lantern radius is design fill"
+    },
+    "corniceHeight": {
+      "v": 0.7,
+      "basis": "invented",
+      "src": "no source yet; cornice height is design fill"
+    },
+    "corniceDepth": {
+      "v": 0.5,
+      "basis": "invented",
+      "src": "no source yet; cornice depth is design fill"
+    }
   },
   "credits": [
-    { "file": "LOC Main Reading Room Highsmith.jpg", "author": "Carol M. Highsmith", "licence": "Public domain", "url": "https://commons.wikimedia.org/wiki/File:LOC_Main_Reading_Room_Highsmith.jpg" },
-    { "file": "Library of Congress main reading room alcove 4.jpg", "author": "Sdkb", "licence": "CC BY-SA 4.0", "url": "https://commons.wikimedia.org/wiki/File:Library_of_Congress_main_reading_room_alcove_4.jpg" }
+    {
+      "file": "LOC Main Reading Room Highsmith.jpg",
+      "author": "Carol M. Highsmith",
+      "licence": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:LOC_Main_Reading_Room_Highsmith.jpg"
+    },
+    {
+      "file": "Library of Congress main reading room alcove 4.jpg",
+      "author": "Sdkb",
+      "licence": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Library_of_Congress_main_reading_room_alcove_4.jpg"
+    }
   ]
 }

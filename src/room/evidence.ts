@@ -20,7 +20,10 @@ export function attach(api: RoomApi): () => void {
   const hall = api.lib.hall as unknown as Record<string, Param<unknown> | undefined>
   const keys = Object.keys(api.parts)
   const keyOf = new Map<THREE.Object3D, string>()
-  for (const k of keys) for (const o of api.parts[k] ?? []) o.traverse((m) => keyOf.has(m) || keyOf.set(m, k))
+  const index = () => {
+    keyOf.clear()
+    for (const k of keys) for (const o of api.parts[k] ?? []) o.traverse((m) => keyOf.has(m) || keyOf.set(m, k))
+  }
 
   const button = document.createElement('button')
   button.type = 'button'
@@ -70,9 +73,9 @@ export function attach(api: RoomApi): () => void {
   const paint = () => {
     for (const [mesh, key] of keyOf) {
       const p = hall[key]
-      if (!(mesh instanceof THREE.Mesh) || !p || Array.isArray(mesh.material)) continue
+      if (!(mesh instanceof THREE.Mesh) || !p) continue
       saved.set(mesh, mesh.material)
-      mesh.material = tint(p.basis, (mesh.material as THREE.Material).side)
+      mesh.material = Array.isArray(mesh.material) ? mesh.material.map((m) => tint(p.basis, m.side)) : tint(p.basis, mesh.material.side)
     }
   }
 
@@ -117,6 +120,7 @@ export function attach(api: RoomApi): () => void {
     }
     box.append(list)
     api.controls.append(box)
+    index()
     paint()
     api.root.dataset.evidence = 'on'
     api.render()

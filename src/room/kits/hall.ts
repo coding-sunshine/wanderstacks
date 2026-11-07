@@ -23,13 +23,13 @@ function chequer(repeat: [number, number]) {
 const params: KitModule['params'] = [
   ['length', 'Length', ' m'], ['width', 'Width', ' m'], ['height', 'Height', ' m'], ['domeHeight', 'Dome height', ' m'],
   ['vault', 'Vault', ''], ['storeys', 'Storeys', ''], ['baysPerSide', 'Bays per side', ''],
-  ['alcoveDepth', 'Alcove depth', ' m'], ['galleryHeight', 'Gallery height', ' m'], ['domes', 'Domes', ''],
+  ['alcoveDepth', 'Alcove depth', ' m'], ['galleryHeight', 'Gallery height', ' m'], ['domes', 'Domes', ''], ['sideDomeHeight', 'Side dome height', ' m'],
   ['windows', 'Windows', ''], ['shelfUnit', 'Shelf unit', ''], ['wood', 'Wood', ''],
   ['floor', 'Floor', ''], ['light', 'Light', ''],
 ]
 
 function build({ lib, scene, own, dirty }: KitCtx): Built {
-  const h = Object.fromEntries(Object.entries(lib.hall).map(([k, p]) => [k, p.v])) as unknown as Flat & { windows: number; floor: string; domes?: number; domeHeight?: number }
+  const h = Object.fromEntries(Object.entries(lib.hall).map(([k, p]) => [k, p.v])) as unknown as Flat & { windows: number; floor: string; domes?: number; domeHeight?: number; sideDomeHeight?: number }
   const { length: L, width: W, height: H, baysPerSide: N } = h
   const bayLen = L / N
   const springing = h.storeys * h.galleryHeight
@@ -71,7 +71,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
     const sides = Math.floor(h.domes! / 2)
     const rc = W / 2
     const rs = sides ? (L / 2 - central * rc) / (2 * sides) : 0
-    const minor = H + (h.domeHeight - H) / 2
+    const minor = h.sideDomeHeight ?? H + (h.domeHeight - H) / 2
     const domes: { z: number; r: number; peak: number }[] = []
     if (central) domes.push({ z: 0, r: rc, peak: h.domeHeight })
     for (let k = 0; k < sides; k++) {
@@ -100,7 +100,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
       g.computeVertexNormals()
       const m = new THREE.Mesh(g, roof)
       core.add(m)
-      ;(parts[!d ? 'vault' : d.z === 0 ? 'domeHeight' : 'domes'] ??= []).push(m)
+      ;(parts[!d ? 'vault' : d.z === 0 ? 'domeHeight' : 'sideDomeHeight'] ??= []).push(m)
     }
   } else {
     const vaultGeo = own(new THREE.CylinderGeometry(1, 1, L, 40, 1, true, Math.PI / 2, Math.PI))
