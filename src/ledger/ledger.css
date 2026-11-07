@@ -1,0 +1,16 @@
+.ledger { max-width: 72rem; }
+.ledger .lede { color: var(--paper-dim); }
+.ledger ul { list-style: none; margin: 0; padding: 0; }
+.ledger .cols { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1.5rem; }
+.ledger .col h2 { border-bottom: 1px solid var(--gilt); padding-bottom: 0.3rem; }
+.ledger .n { color: var(--paper-dim); font-size: 0.8em; }
+.ledger li[data-row] { padding: 0.6rem 0; border-bottom: 1px solid rgba(201, 162, 74, 0.25); overflow-wrap: anywhere; }
+.ledger li[data-row]:target, .ledger li[data-row]:focus { outline: 2px solid var(--lamp); outline-offset: 2px; }
+.ledger .k { display: block; color: var(--gilt); font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.06em; }
+.ledger [data-source] { display: inline-block; margin-top: 0.2rem; }
+.ledger [data-myth] { border: 1px solid var(--gilt); border-radius: 4px; padding: 0.5rem 1rem 1rem; margin-top: 1.5rem; overflow-wrap: anywhere; }
+.ledger [data-myth] li { padding: 0.25rem 0; }
+.ledger .myth { font-size: 1.2em; font-style: italic; }
+@media (max-width: 800px) {
+  .ledger .cols { grid-template-columns: minmax(0, 1fr); }
+}

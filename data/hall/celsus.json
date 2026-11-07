@@ -1,0 +1,18 @@
+{
+  "kit": "site",
+  "reconstruction": true,
+  "shelfClusters": ["rb-ancient"],
+  "hall": {
+    "length": { "v": 16.7, "basis": "excavated", "src": "https://de.wikipedia.org/wiki/Celsus-Bibliothek" },
+    "depth": { "v": 10.9, "basis": "excavated", "src": "https://de.wikipedia.org/wiki/Celsus-Bibliothek" },
+    "height": { "v": 16, "basis": "excavated", "src": "https://de.wikipedia.org/wiki/Celsus-Bibliothek" },
+    "nicheHeight": { "v": 2.6, "basis": "excavated", "src": "https://de.wikipedia.org/wiki/Celsus-Bibliothek" },
+    "nicheWidth": { "v": 1, "basis": "excavated", "src": "https://de.wikipedia.org/wiki/Celsus-Bibliothek" },
+    "niches": { "v": 6, "basis": "invented", "src": "no source yet; the niche count per wall is design fill" },
+    "storeys": { "v": 3, "basis": "invented", "src": "no source yet; the number of storeys is design fill" },
+    "roof": { "v": "flat timber", "basis": "invented", "src": "no source yet; the roof is design fill" }
+  },
+  "credits": [
+    { "file": "Celsus-Bibliothek (article)", "author": "Wikipedia contributors", "licence": "CC BY-SA 4.0", "url": "https://de.wikipedia.org/wiki/Celsus-Bibliothek" }
+  ]
+}
