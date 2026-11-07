@@ -111,7 +111,7 @@ export const mount: Mount = (el, params) => {
         const h = Math.min(TILE, p.h - y)
         const pc = (a: number, b: number) => `${(a / b) * 100}%`
         const pos = `left:${pc(x, p.w)};top:${pc(y, p.h)};width:${pc(w, p.w)};height:${pc(h, p.h)}`
-        tiles += `<img alt="${esc(p.l)}, tile ${x},${y}" src="${tile(p, x, y, w, h)}" style="${pos}" loading="lazy" data-tile>`
+        tiles += `<img alt="${esc(p.l)}, tile ${x},${y}" src="${tile(p, x, y, w, h)}" style="${pos}" data-tile>`
       }
     }
     d.innerHTML = `<button type="button" class="scan-close" aria-label="Close zoom">&#215;</button>

@@ -1,105 +1,26 @@
 {
   "kit": "hall",
-  "shelfClusters": [
-    "central-europe-2"
-  ],
+  "shelfClusters": ["central-europe-2"],
   "hall": {
-    "length": {
-      "v": 70,
-      "basis": "measured",
-      "src": "https://stiftadmont.at/architektur/"
-    },
-    "width": {
-      "v": 14,
-      "basis": "measured",
-      "src": "https://stiftadmont.at/architektur/"
-    },
-    "height": {
-      "v": 11,
-      "basis": "measured",
-      "src": "https://stiftadmont.at/architektur/"
-    },
-    "domeHeight": {
-      "v": 12.7,
-      "basis": "measured",
-      "src": "https://stiftadmont.at/architektur/"
-    },
-    "domes": {
-      "v": 7,
-      "basis": "measured",
-      "src": "https://stiftadmont.at/architektur/"
-    },
-    "windows": {
-      "v": 48,
-      "basis": "measured",
-      "src": "https://stiftadmont.at/aktuelle-ausstellungen/glanz-und-gelehrsamkeit-die-groesste-klosterbibliothek-der-welt/"
-    },
-    "vault": {
-      "v": "saucer domes",
-      "basis": "photo-estimate",
-      "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1326.jpg"
-    },
-    "storeys": {
-      "v": 2,
-      "basis": "photo-estimate",
-      "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1326.jpg"
-    },
-    "baysPerSide": {
-      "v": 14,
-      "basis": "invented",
-      "src": "no source yet; bay count is design fill, 5 m per bay"
-    },
-    "alcoveDepth": {
-      "v": 1.2,
-      "basis": "photo-estimate",
-      "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg"
-    },
-    "galleryHeight": {
-      "v": 4.2,
-      "basis": "photo-estimate",
-      "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg"
-    },
-    "shelfUnit": {
-      "v": {
-        "width": 0.9,
-        "shelves": 7
-      },
-      "basis": "photo-estimate",
-      "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg"
-    },
-    "wood": {
-      "v": "white-painted timber",
-      "basis": "photo-estimate",
-      "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1326.jpg"
-    },
-    "floor": {
-      "v": "marble chequer",
-      "basis": "photo-estimate",
-      "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg"
-    },
-    "light": {
-      "v": "daylight",
-      "basis": "photo-estimate",
-      "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg"
-    },
-    "sideDomeHeight": {
-      "v": 11.85,
-      "basis": "invented",
-      "src": "no source yet; side dome peak is design fill"
-    }
+    "length": { "v": 70, "basis": "measured", "src": "https://stiftadmont.at/architektur/" },
+    "width": { "v": 14, "basis": "measured", "src": "https://stiftadmont.at/architektur/" },
+    "height": { "v": 11, "basis": "measured", "src": "https://stiftadmont.at/architektur/" },
+    "domeHeight": { "v": 12.7, "basis": "measured", "src": "https://stiftadmont.at/architektur/" },
+    "domes": { "v": 7, "basis": "measured", "src": "https://stiftadmont.at/architektur/" },
+    "windows": { "v": 48, "basis": "measured", "src": "https://stiftadmont.at/aktuelle-ausstellungen/glanz-und-gelehrsamkeit-die-groesste-klosterbibliothek-der-welt/" },
+    "vault": { "v": "saucer domes", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1326.jpg" },
+    "storeys": { "v": 2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1326.jpg" },
+    "baysPerSide": { "v": 14, "basis": "invented", "src": "no source yet; bay count is design fill, 5 m per bay" },
+    "alcoveDepth": { "v": 1.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg" },
+    "galleryHeight": { "v": 4.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 7 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg" },
+    "wood": { "v": "white-painted timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1326.jpg" },
+    "floor": { "v": "marble chequer", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg" },
+    "sideDomeHeight": { "v": 11.85, "basis": "invented", "src": "no source yet; side dome peak is design fill" }
   },
   "credits": [
-    {
-      "file": "Austria - Admont Abbey Library - 1326.jpg",
-      "author": "Jorge Royan",
-      "licence": "CC BY-SA 3.0",
-      "url": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1326.jpg"
-    },
-    {
-      "file": "Austria - Admont Abbey Library - 1277.jpg",
-      "author": "Jorge Royan",
-      "licence": "CC BY-SA 3.0",
-      "url": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg"
-    }
+    { "file": "Austria - Admont Abbey Library - 1326.jpg", "author": "Jorge Royan", "licence": "CC BY-SA 3.0", "url": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1326.jpg" },
+    { "file": "Austria - Admont Abbey Library - 1277.jpg", "author": "Jorge Royan", "licence": "CC BY-SA 3.0", "url": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg" }
   ]
 }
