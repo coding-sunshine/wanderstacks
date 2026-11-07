@@ -1,9 +1,7 @@
 import { expect, test } from '@playwright/test'
-import { watchErrors } from './util'
+import { readableIds, watchErrors } from './util'
 
-const TRINITY = ['gulliver-se', 'vicar-se', 'dracula-se', 'dorian-se', 'playboy-se']
-
-for (const id of TRINITY) {
+for (const id of readableIds()) {
   test(`read ${id} to the last page and close`, async ({ page }) => {
     test.setTimeout(120_000)
     const errors = watchErrors(page)
