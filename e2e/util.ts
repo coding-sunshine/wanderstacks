@@ -24,3 +24,5 @@ export const readableIds = () => {
   const { books } = JSON.parse(readFileSync(new URL('../data/books.json', import.meta.url), 'utf8')) as { books: Row[] }
   return books.filter((b) => b.lib === 'longroom' && b.tier === 'readable-text').map((b) => b.id)
 }
+
+export const roomIds = () => ['longroom', 'admont', 'strahov', 'loc', 'celsus'] as const
