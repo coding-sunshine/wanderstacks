@@ -1,0 +1,13 @@
+{
+  "id": "darwin-iv-divergence",
+  "title": "Darwin on divergence",
+  "statement": "Natural selection, as has just been remarked, leads to divergence of character and to much extinction of the less improved and intermediate forms of life.",
+  "cite": "Charles Darwin, On the Origin of Species, 1859, chapter IV, Natural Selection (Project Gutenberg ebook 1228, public domain).",
+  "source": "https://www.gutenberg.org/cache/epub/1228/pg1228-images.html",
+  "question": "A parent species throws off varieties, and the better-suited ones are kept, generation after generation. Which descendants does natural selection tend to preserve?",
+  "options": ["The most different from each other", "The most like the parent", "All equally"],
+  "answer": 0,
+  "figure": "<path data-step class=\"trunk\" d=\"M250 440 L250 340\"/><path data-step class=\"limb\" d=\"M250 340 L170 240 M250 340 L330 240\"/><path data-step class=\"limb\" d=\"M170 240 L110 130 M170 240 L215 130 M330 240 L285 130 M330 240 L390 130\"/><path data-step class=\"tip\" d=\"M110 130 L100 70 M390 130 L400 70\"/>",
+  "viewBox": "0 40 500 430",
+  "figureLabel": "A line of descent from one parent at the bottom, splitting into two branches, then four, with the outer two reaching furthest"
+}

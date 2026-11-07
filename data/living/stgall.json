@@ -1,0 +1,18 @@
+{
+  "id": "stgall-plan",
+  "title": "The Plan of St Gall",
+  "statement": "The Carolingian Plan of St. Gall is the oldest surviving architectural drawing of the Western world, and thus it is a monument of European cultural history.",
+  "cite": "Cod. Sang. 1092, Stiftsbibliothek St. Gallen, manuscript summary on e-codices.",
+  "source": "https://www.e-codices.ch/en/list/one/csg/1092",
+  "image": {
+    "service": "https://media.e-codices.ch/iip/csg/csg-1092/csg-1092_recto.jp2",
+    "alt": "The Plan of St Gall, a parchment sheet covered in ink drawings of monastery buildings and Latin labels",
+    "credit": "Image: e-codices, Virtual Manuscript Library of Switzerland, St. Gallen, Stiftsbibliothek, Cod. Sang. 1092."
+  },
+  "question": "The plan was drawn on separate pieces of sheep parchment sewn into one sheet. How many pieces?",
+  "options": ["Two", "Three", "Five", "Nine"],
+  "answer": 2,
+  "figure": "<rect data-step class=\"piece\" x=\"20\" y=\"20\" width=\"92\" height=\"132\"/><rect data-step class=\"piece\" x=\"112\" y=\"20\" width=\"92\" height=\"132\"/><rect data-step class=\"piece\" x=\"204\" y=\"20\" width=\"92\" height=\"132\"/><rect data-step class=\"piece\" x=\"296\" y=\"20\" width=\"92\" height=\"132\"/><rect data-step class=\"piece\" x=\"388\" y=\"20\" width=\"92\" height=\"132\"/>",
+  "viewBox": "0 0 500 172",
+  "figureLabel": "Five upright rectangles side by side, the pieces of parchment sewn into one sheet"
+}

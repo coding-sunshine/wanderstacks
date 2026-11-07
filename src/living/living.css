@@ -25,3 +25,10 @@
   letter-spacing: 0.15em; text-transform: uppercase; transform: rotate(-4deg);
 }
 .living .stamp[hidden] { display: none; }
+.living .plan { margin: 0 0 1rem; text-align: center; }
+.living .plan[hidden], .living .plan [hidden] { display: none; }
+.living .plan img { max-width: 100%; max-height: 45vh; width: auto; height: auto; border: 1px solid var(--oak-light); }
+.living .plan figcaption, .living .source-error { color: var(--paper-dim); font-size: 0.85rem; margin: 0.4rem 0 0; }
+.living .plan a { color: var(--gilt); }
+.living .figure .trunk, .living .figure .limb, .living .figure .tip, .living .figure .piece { stroke: #14110d; stroke-width: 3; }
+.living .figure .tip { stroke: #7a1f1f; }

@@ -34,6 +34,8 @@ export interface LivingSpec {
   figure: string
   viewBox: string
   figureLabel: string
+  source?: string
+  image?: { service: string; alt: string; credit: string }
 }
 
 const STEP_MS = 1100
@@ -46,6 +48,7 @@ export function mountLiving(el: HTMLElement, spec: LivingSpec, view: string): ()
   root.innerHTML = `
     <h1></h1>
     <blockquote><p class="statement"></p><footer class="cite"></footer></blockquote>
+    <figure class="plan" hidden><img data-plan hidden><p class="source-error" data-source-error hidden>The image could not be loaded from its source. The question still works without it.</p><figcaption data-credit></figcaption></figure>
     <svg class="figure" role="img" preserveAspectRatio="xMidYMid meet"><rect class="paper" x="-9999" y="-9999" width="19998" height="19998"/>${spec.figure}</svg>
     <div class="ask"><p class="question"></p><div class="options" role="group"></div></div>
     <p class="result" aria-live="polite"></p>
@@ -58,6 +61,23 @@ export function mountLiving(el: HTMLElement, spec: LivingSpec, view: string): ()
   const svg = q<SVGSVGElement>('svg')
   svg.setAttribute('viewBox', spec.viewBox)
   svg.setAttribute('aria-label', spec.figureLabel)
+  if (spec.image) {
+    const plan = q<HTMLElement>('.plan')
+    const img = q<HTMLImageElement>('[data-plan]')
+    const err = q<HTMLElement>('[data-source-error]')
+    const credit = q('[data-credit]')
+    img.alt = spec.image.alt
+    img.addEventListener('load', () => (img.hidden = false))
+    img.addEventListener('error', () => (err.hidden = false))
+    img.src = `${spec.image.service}/full/600,/0/default.jpg`
+    credit.append(`${spec.image.credit} `)
+    const lic = document.createElement('a')
+    lic.href = 'https://creativecommons.org/licenses/by-nc/4.0/'
+    lic.rel = 'noopener'
+    lic.textContent = 'CC BY-NC 4.0'
+    credit.append(lic)
+    plan.hidden = false
+  }
   const steps = [...svg.querySelectorAll<SVGGeometryElement>('[data-step]')]
   steps.forEach((s) => s.setAttribute('pathLength', '1'))
   const result = q('.result')
