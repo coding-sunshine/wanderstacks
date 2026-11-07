@@ -53,7 +53,7 @@ const G = [
   ["github-remote", "start", "Public GitHub repo set as origin",
     `git remote get-url origin >/dev/null 2>&1`, "Needs the owner's go-ahead: repo name and account."],
   ["cloudflare-pages", "start", "Cloudflare Pages project linked to the GitHub repo and answering on pages.dev",
-    `curl -s -o /dev/null -w '%{http_code}' --max-time 15 https://worldlibs.pages.dev/ | rg -q '^(200|304)$'`,
+    `curl -sL -o /dev/null -w '%{http_code}' --max-time 15 https://worldlibs.pages.dev/ | rg -q '^(200|304)$'`,
     "Owner makes a free Cloudflare account and connects the repo with Git integration (no wrangler, no token). Does not block code; needed before the first public deploy."],
   ["criteria-frozen", "start", "Owner signed off the Phase A criteria",
     `jq -e '.frozen.by!=null and .frozen.on!=null' data/phase-a.json`, "Adds frozen: {by, on} to data/phase-a.json once the owner says the criteria are right."],
