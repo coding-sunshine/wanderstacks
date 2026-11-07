@@ -1,0 +1,38 @@
+.room { position: relative; height: 100vh; height: 100dvh; overflow: hidden; background: var(--night); }
+.room canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; outline: none; }
+.room canvas:active { cursor: grabbing; }
+.room-veil { position: absolute; inset: 0; background: var(--night); pointer-events: none; }
+.room-veil[hidden] { display: none; }
+.room-status, .room-hint {
+  position: absolute; left: 1rem; margin: 0; padding: 0.25rem 0.6rem; font-size: 0.9rem; font-style: italic;
+  color: var(--paper-dim); background: rgba(14, 11, 8, 0.6); pointer-events: none;
+}
+.room-status { bottom: 3rem; }
+.room-hint { bottom: 1rem; }
+.room-status[hidden] { display: none; }
+.room-toggle {
+  position: absolute; top: 3.2rem; right: 1rem; z-index: 3; padding: 0.25rem 0.8rem; cursor: pointer;
+  background: rgba(14, 11, 8, 0.85); border: 1px solid var(--gilt); color: var(--paper);
+}
+.room-panel {
+  position: absolute; top: 5.4rem; right: 1rem; bottom: 1rem; z-index: 2; width: min(26rem, calc(100% - 2rem));
+  overflow-y: auto; padding: 0.2rem 1rem 1rem; font-size: 0.95rem; line-height: 1.4;
+  background: rgba(14, 11, 8, 0.88); border: 1px solid var(--oak-light);
+}
+.room-panel[hidden] { display: none; }
+.room-panel h1 { margin: 0.6rem 0 0; font-size: 1.4rem; color: var(--gilt); font-weight: 400; }
+.room-panel h2 { margin: 1.2rem 0 0.4rem; font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gilt); font-weight: 400; }
+.room-panel .where { margin: 0; color: var(--paper-dim); font-style: italic; }
+.room-panel ul { margin: 0; padding: 0; list-style: none; }
+.room-panel li { margin: 0 0 0.5rem; }
+.room-panel .k { color: var(--paper-dim); text-transform: capitalize; }
+.room-panel .src { font-size: 0.85rem; color: var(--paper-dim); }
+.room-hall { display: grid; grid-template-columns: 8rem 1fr; gap: 0.3rem 0.6rem; margin: 0; }
+.room-hall dt { color: var(--paper-dim); }
+.room-hall dd { margin: 0; }
+.room-hall .basis { margin: 0 0.2rem; padding: 0 0.4rem; font-size: 0.8rem; font-style: italic; color: var(--lamp); border: 1px solid var(--oak-light); }
+.room-shelves .card { padding: 0.5rem 0.7rem; border: 1px solid var(--gilt); background: rgba(59, 38, 20, 0.5); }
+@media (max-width: 700px) {
+  .room-panel { top: auto; left: 1rem; height: 55%; }
+  .room-hint { display: none; }
+}
