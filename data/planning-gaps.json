@@ -213,8 +213,8 @@
    "id": "cloudflare-pages",
    "phase": "start",
    "what": "Cloudflare Pages project linked to the GitHub repo and answering on pages.dev",
-   "status": "failing",
-   "check": "curl -s -o /dev/null -w '%{http_code}' --max-time 15 https://worldlibs.pages.dev/ | rg -q '^(200|304)$'",
+   "status": "passing",
+   "check": "curl -sL -o /dev/null -w '%{http_code}' --max-time 15 https://worldlibs.pages.dev/ | rg -q '^(200|304)$'",
    "note": "Owner makes a free Cloudflare account and connects the repo with Git integration (no wrangler, no token). Does not block code; needed before the first public deploy."
   },
   {
