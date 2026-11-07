@@ -1,0 +1,57 @@
+import './style.css'
+import { go } from './app'
+import type { Mount } from './types'
+
+type Route = [RegExp, () => Promise<{ mount: Mount }>]
+
+const routes: Route[] = [
+  [/^\/(?<mode>atlas)?$/, () => import('./globe')],
+  [/^\/room\/(?<lib>[\w-]+)$/, () => import('./room')],
+  [/^\/read\/(?<book>[\w-]+)$/, () => import('./reader')],
+  [/^\/byrne$/, () => import('./byrne')],
+]
+
+const app = document.getElementById('app')!
+const poster = document.getElementById('poster')!
+let cleanup: ReturnType<Mount>
+let token = 0
+
+const notFound: Mount = (el) => {
+  el.innerHTML = '<section class="page"><h1>Not on any shelf</h1><p><a href="/">Back to the globe</a></p></section>'
+}
+
+async function render() {
+  const t = ++token
+  const path = location.pathname.replace(/\/+$/, '') || '/'
+  let mount = notFound
+  let params: Record<string, string> = {}
+  for (const [re, load] of routes) {
+    const m = path.match(re)
+    if (!m) continue
+    mount = (await load()).mount
+    params = Object.fromEntries(Object.entries(m.groups ?? {}).filter(([, v]) => v !== undefined))
+    break
+  }
+  if (t !== token) return
+  const swap = () => {
+    cleanup?.()
+    app.replaceChildren()
+    poster.hidden = path !== '/'
+    cleanup = mount(app, params)
+  }
+  if (document.startViewTransition && app.childElementCount) document.startViewTransition(swap)
+  else swap()
+}
+
+document.addEventListener('click', (e) => {
+  const a = (e.target as Element).closest('a')
+  if (!a || a.target || a.hasAttribute('download') || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+  const url = new URL(a.href)
+  if (url.origin !== location.origin || url.pathname === '/plan') return
+  e.preventDefault()
+  if (url.pathname + url.search !== location.pathname + location.search) go(url.pathname + url.search + url.hash)
+})
+
+addEventListener('popstate', render)
+render()
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js')

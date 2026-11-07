@@ -1,0 +1,23 @@
+{
+  "shelfClusters": ["texts-trinity"],
+  "hall": {
+    "length": { "v": 63.7, "basis": "measured", "src": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php" },
+    "width": { "v": 12.2, "basis": "measured", "src": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php" },
+    "height": { "v": 14.2, "basis": "measured", "src": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php" },
+    "vault": { "v": "barrel", "basis": "measured", "src": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php" },
+    "storeys": { "v": 2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_01.jpg" },
+    "baysPerSide": { "v": 20, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_01.jpg" },
+    "alcoveDepth": { "v": 3, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_05.jpg" },
+    "galleryHeight": { "v": 5.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_05.jpg" },
+    "domes": { "v": 0, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_01.jpg" },
+    "windows": { "v": 20, "basis": "invented", "src": "no source yet; one window per bay is design fill" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 10 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_05.jpg" },
+    "wood": { "v": "dark timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_05.jpg" },
+    "floor": { "v": "timber boards", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_05.jpg" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_05.jpg" }
+  },
+  "credits": [
+    { "file": "Dublin Trinity College Library Long Room 01.jpg", "author": "Zairon", "licence": "CC BY 4.0", "url": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_01.jpg" },
+    { "file": "Dublin Trinity College Library Long Room 05.jpg", "author": "Zairon", "licence": "CC BY 4.0", "url": "https://commons.wikimedia.org/wiki/File:Dublin_Trinity_College_Library_Long_Room_05.jpg" }
+  ]
+}

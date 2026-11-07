@@ -15,3 +15,8 @@ scripts/mapgen/ver.json
 preview.html
 
 .DS_Store
+public/lib/
+public/book/
+.cache/
+test-results/
+playwright-report/

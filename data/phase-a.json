@@ -33,7 +33,7 @@
    "id": "facts-traced",
    "what": "Every fact the room shows matches a passing evidence row",
    "status": "failing",
-   "check": "jq -e --slurpfile F data/facts.json '(.facts|length>0) and all(.facts[] as $m | $F[0].facts | any(.lib==$m.lib and .value==$m.value and .status==\"passing\"))' dist/lib/longroom.json"
+   "check": "jq -e --slurpfile F data/facts.json '(.facts|length>0) and all(.facts[]; . as $m | $F[0].facts | any(.lib==$m.lib and .value==$m.value and .status==\"passing\"))' dist/lib/longroom.json"
   },
   {
    "id": "texts-readable",
