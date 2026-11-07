@@ -205,7 +205,7 @@
    "id": "github-remote",
    "phase": "start",
    "what": "Public GitHub repo set as origin",
-   "status": "failing",
+   "status": "passing",
    "check": "git remote get-url origin >/dev/null 2>&1",
    "note": "Needs the owner's go-ahead: repo name and account."
   },
