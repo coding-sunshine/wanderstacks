@@ -14,8 +14,8 @@ export const mount: Mount = (el) =>
   mountLiving(el, {
     id: 'byrne-i-1',
     title: "Byrne's Euclid, Book I",
-    statement: 'To describe an equilateral triangle upon a given finite straight line.',
-    cite: 'Euclid, Elements I.1, in Oliver Byrne, The First Six Books of the Elements of Euclid, London: William Pickering, 1847 (public domain).',
+    statement: 'On a given finite straight line to describe an equilateral triangle.',
+    cite: 'Book I, Proposition I. Oliver Byrne, The First Six Books of the Elements of Euclid, London: William Pickering, 1847 (public domain). In the original a coloured line stands after "straight line".',
     question: 'The blue line is given. Two circles are drawn, each centred on one end and reaching the other. Join the blue line to where the circles cross. What triangle do you get?',
     options: ['Equilateral', 'Isosceles', 'Scalene', 'Right-angled'],
     answer: 0,
