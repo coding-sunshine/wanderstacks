@@ -1,4 +1,5 @@
 import type { Page } from '@playwright/test'
+import { readFileSync } from 'node:fs'
 import { origin } from '../playwright.config'
 
 export function watchErrors(page: Page) {
@@ -20,6 +21,6 @@ export const ready = (page: Page, view: string) =>
 type Row = { id: string; lib: string | null; tier?: string }
 
 export const readableIds = async () => {
-  const { books } = (await import('../data/books.json')) as { books: Row[] }
+  const { books } = JSON.parse(readFileSync(new URL('../data/books.json', import.meta.url), 'utf8')) as { books: Row[] }
   return books.filter((b) => b.lib === 'longroom' && b.tier === 'readable-text').map((b) => b.id)
 }
