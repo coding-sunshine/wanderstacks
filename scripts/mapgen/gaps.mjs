@@ -1,0 +1,78 @@
+// Write data/planning-gaps.json: every planning gap, its exact check, and a status set by running that check now.
+const ROOT = `${import.meta.dir}/../..`, P = `${ROOT}/data/planning-gaps.json`;
+const old = await Bun.file(P).exists() ? await Bun.file(P).json() : {};
+const G = [
+  ["hosting", "A", "Static host fits: Cloudflare Pages free, 20,000 files and 25 MiB per asset, unlimited bandwidth",
+    `curl -sL --max-time 20 https://developers.cloudflare.com/pages/platform/limits/ | rg -q '20,000 files'`, "Texts ship as one JSON per book part (200 KB max), so 127 readable books stay far under 20,000 files."],
+  ["wikidata-ids", "A", "Every library has a Wikidata QID for live labels and images",
+    `jq -e 'length==30 and all(.[]; .wd|test("^Q[0-9]+$"))' data/libs.json`, ""],
+  ["phase-a-room-dims", "A", "Long Room length, width and height proven from a primary source",
+    `jq -e '[.facts[]|select(.lib=="longroom" and .status=="passing" and .tier=="primary" and (.value|test("^(length|width|height):")))]|length==3' data/facts.json`, ""],
+  ["phase-a-bays-gallery", "A", "Long Room bays per side and gallery floor height",
+    `jq -e '[.facts[]|select(.lib=="longroom" and .status=="passing" and (.value|test("^(bays per side|gallery floor height)")))]|length==2' data/facts.json`,
+    "No public source states them. Build with photo estimates scaled from the proven 63.7 m length, tag basis 'estimated', show the tag in the room panel. Optional: ask Trinity Library for drawings."],
+  ["phase-a-photos", "A", "Long Room reference photos with reuse licence",
+    `jq -e '[.plans[]|select(.lib=="longroom" and .status=="passing")]|length>=1' data/facts.json`, "Per-file CC licences; credits panel must list each file used."],
+  ["phase-a-books", "A", "At least five readable public-domain books tied to Trinity (alumni authors)",
+    `jq -e '[.books[]|select(.lib=="longroom" and .tier=="readable-text")]|length>=5' data/books.json`, "Swift, Goldsmith, Stoker, Wilde, Synge via Standard Ebooks. Synge's Trinity link is weak (listed, study not proven)."],
+  ["kells-access", "A", "Book of Kells shown without an unlicensed scan",
+    `jq -e '[.books[]|select(.title=="Book of Kells")|.tier]|all(.=="catalog")' data/books.json`, "Trinity: Kells images need permission. Phase A shows it as a catalogue card in a glass case."],
+  ["phase-a-acceptance", "A", "Phase A acceptance criteria frozen as JSON with checks",
+    `jq -e '.criteria|length>=10 and all(.[]; .check!=null)' data/phase-a.json`, ""],
+  ["specs", "A", "Build spec: data schemas, hall kit, delivery and cache, link check, error reports, reconstruction policy, globe, dynamic worlds, living pages, performance",
+    `test -s docs/specs/build-spec.md && for h in 'Data files' 'Hall kit' 'Delivery' 'Link check' 'Error reports' 'Reconstruction' 'Globe' 'Dynamic worlds' 'Living pages' 'Performance'; do rg -q "^## $h" docs/specs/build-spec.md || exit 1; done`, ""],
+  ["iiif-page-size", "A", "Manuscript page texture fits a page-turn budget (under 250 KB per page)",
+    `curl -s --max-time 20 -o /dev/null -w '%{size_download}' 'https://iiif.bodleian.ox.ac.uk/iiif/image/137ea492-997c-46a5-a30a-f1dea04c8c43/full/600,/0/default.jpg' | awk '{exit !($1<250000)}'`,
+    "Measured Bodleian Folio: 1024w 541 KB, 768w 332 KB, 600w 196 KB, webp 768w 1.0 MB. Rule: 600w for the turning page, region tiles on zoom, prefetch two spreads ahead."],
+  ["shelf-provenance", "A", "No book sits on a shelf of a library that never held it",
+    `jq -e --slurpfile L data/libs.json '([.books[].lib|select(.!=null)]|unique) - ($L[0]|map(.id))|length==0' data/books.json`,
+    "103 general texts and books from holders we do not model (BL, Beinecke) go to a global reading list, not a replica shelf."],
+  ["licence-decision", "A", "Licence: code MIT and open source; scans and texts keep their holders' licences",
+    `rg -q '^MIT License' LICENSE && jq -e '.decisions.licence.answer!=null' data/planning-gaps.json`, "MIT covers our code and data. Scans load from the holder and are never committed, so CC BY-NC scans stay usable on the free site; a paid fork must drop them."],
+  ["prior-art", "A", "Similar projects researched, closest competitors named",
+    `jq -e '[.projects[]|select(.status=="passing")]|length>=10' data/prior-art.json`, "17 projects, 16 checked. Closest: The Uncensored Library, the Discovery Tour, MyShelves, Pergamon VR+AI. None combines real rooms, readable books and evidence tags."],
+  ["recon-briefs", "B", "Ancient reconstruction briefs: cited elements for Alexandria, Pergamon, Nineveh, Herculaneum, Nalanda, Buda",
+    `jq -e '[.facts[]|select(.field=="recon" and .status=="passing")|.lib]|unique|length>=6' data/verify/recon-ancient.json`, "Cited element lists in data/verify/recon-ancient.json. AI proposes parameters from quotes; people sign off."],
+  ["plans-coverage", "B", "Every library has a passing plan, photo set or reconstruction brief",
+    `jq -e --slurpfile L data/libs.json --slurpfile R data/verify/recon-ancient.json '($L[0]|map(.id)) - ([.plans[]|select(.status=="passing")|.lib] + [$R[0].facts[]?|select(.field=="recon" and .status=="passing")|.lib]|unique)|length==0' data/facts.json`,
+    "Measured plans exist only for LoC (1897 Handbook) and Celsus (OAI plan). Every other hall is rebuilt with the hall kit from proven dims plus licensed photos."],
+  ["unproven-labels", "B", "No starred (unproven) values left in libs.json",
+    `jq -e '[.[]|to_entries[]|select(.value|type=="string" and endswith("*"))]|length==0' data/libs.json`, "Mafra and Escorial dates proven in the labels pass."],
+  ["every-room-has-books", "B", "Every library has at least one book row",
+    `jq -e --slurpfile L data/libs.json '($L[0]|map(.id)) - ([.books[].lib]|unique)|length==0' data/books.json`, "Ottawa rows added in data/verify/books-ottawa.json."],
+  ["gallica-access", "B", "BnF books: catalogue cards that link out to Gallica (embedding is blocked)",
+    `scripts/ab-check.sh 'https://gallica.bnf.fr/iiif/ark:/12148/btv1b8449691v/manifest.json' 'Biblioth' && jq -e '[.books[]|select(.lib=="bnf")|.tier]|all(.=="catalog")' data/books.json`,
+    "Real-browser test 2026-11-08: Gallica pages and the IIIF manifest open in headed Chrome, but its images fail to load inside another site, plain or CORS (Cloudflare challenge, no cookie). A proxy would be blocked too. So BnF books link out."],
+  ["vatican-access", "B", "Vatican books shown without unlicensed scans",
+    `jq -e '[.books[]|select(.lib=="vatican")|.tier]|all(.=="catalog")' data/books.json`, "Vergilius Vaticanus is permission-only."],
+  // phase "start": what must hold before the first line of Phase A code.
+  ["git-repo", "start", "Project folder is a git repo with secrets ignored",
+    `git rev-parse --is-inside-work-tree >/dev/null && git check-ignore -q .env && git check-ignore -q x.local.json`, ""],
+  ["pipeline-in-repo", "start", "Data and page scripts live in the repo, not in a temp folder",
+    `test -f scripts/mapgen/gaps.mjs && test -f scripts/mapgen/plan.template.html && test -f scripts/ab-check.sh && ! rg -q -g '!node_modules' '/Users/[a-z]' scripts`, ""],
+  ["github-remote", "start", "Public GitHub repo set as origin",
+    `git remote get-url origin >/dev/null 2>&1`, "Needs the owner's go-ahead: repo name and account."],
+  ["cloudflare-pages", "start", "Cloudflare Pages project linked to the GitHub repo and answering on pages.dev",
+    `curl -s -o /dev/null -w '%{http_code}' --max-time 15 https://worldlibs.pages.dev/ | rg -q '^(200|304)$'`,
+    "Owner makes a free Cloudflare account and connects the repo with Git integration (no wrangler, no token). Does not block code; needed before the first public deploy."],
+  ["criteria-frozen", "start", "Owner signed off the Phase A criteria",
+    `jq -e '.frozen.by!=null and .frozen.on!=null' data/phase-a.json`, "Adds frozen: {by, on} to data/phase-a.json once the owner says the criteria are right."],
+];
+const sh = c => Bun.spawnSync(["sh", "-c", c], { cwd: ROOT, timeout: 90_000 }).exitCode === 0 ? "passing" : "failing";
+const gaps = G.map(([id, phase, what, check, note]) => ({ id, phase, what, status: sh(check), check, note }));
+const decisions = { ...{
+  licence: { question: "Most open manuscript scans (Bodleian, e-codices, Trinity) are CC BY-NC. Keep WorldLibs free and non-commercial?", answer: "MIT, open source (user, 2026-11-08). The site stays free; scans and texts keep their holders' licences and load as pointers, never committed." },
+  gallica: { question: "Gallica blocks scripts. Embed BnF scans or link out?", answer: "Link out (real-browser test 2026-11-08): images fail to load inside another site; BnF books stay catalogue cards with a Gallica link." },
+  "ai-reconstruction": { question: "Where no plan survives, build an AI-assisted reconstruction from cited sources?", answer: "yes (user, 2026-11-07): AI fills geometry and decoration only; every element tagged excavated, attested, comparandum or invented; room labelled Reconstruction" },
+  hosting: { question: "Where do static files live?", answer: "Cloudflare Pages free plan (verified 2026-11-07)" },
+  globe: { question: "Entry screen: globe or flat atlas?", answer: "Both (2026-11-08): custom three.js globe with NASA Blue Marble and Black Marble KTX2 under 4 MB, terminator on the time slider; it unrolls into the Equal Earth atlas for picking. 'See it today' is a click-to-load MapLibre street: OpenFreeMap tiles, OpenStreetMap 3D buildings, Mapterhorn terrain, free with no key. Google 3D Tiles dropped for cost (owner, 2026-11-08)." },
+  renderer: { question: "WebGL or WebGPU?", answer: "WebGLRenderer by default (2026-11-08). WebGPURenderer only after an A/B test; Spark splats are WebGL2-first." },
+  "dynamic-worlds": { question: "Generate rooms on the device or ship baked rooms?", answer: "Split (2026-11-08): a Worker builds geometry from a seeded hall kit on arrival; lightmaps, atlases, props and splats are baked at build time. AI runs at build time only." },
+}, ...Object.fromEntries(Object.entries(old.decisions || {}).filter(([, d]) => d.answer != null)) };
+// keep this command in sync with the runner above: it re-proves every status.
+const recheck = `jq -r '.gaps[]|"\\(.id)\\t\\(.check)"' data/planning-gaps.json | while IFS=$'\\t' read -r id c; do sh -c "$c" >/dev/null 2>&1 && echo "passing $id" || echo "failing $id"; done`;
+await Bun.write(P, JSON.stringify({ updated: new Date().toISOString().slice(0, 10), cwd: "repo root", recheck, decisions, gaps }, null, 1) + "\n");
+for (const ph of ["A", "B", "start"]) {
+  const p = gaps.filter(g => g.phase === ph), f = p.filter(g => g.status === "failing");
+  console.log(`${ph}: ${p.length - f.length}/${p.length} passing${f.length ? "; failing: " + f.map(g => g.id).join(" ") : ""}`);
+}

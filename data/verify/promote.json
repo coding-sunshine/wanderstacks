@@ -1,0 +1,217 @@
+{
+ "cluster": "promote",
+ "facts": [
+  {
+   "lib": "prunksaal",
+   "field": "built",
+   "value": "1723-1726",
+   "source": "https://webarchiv.onb.ac.at/web/20131103123136/http:/www.onb.ac.at/prunksaal/prunksaal_geschichte.htm",
+   "tier": "primary",
+   "quote": "Erbaut wurde der Prunksaal von 1723 bis 1726 nach Plänen des berühmten Hofarchitekten Johann Bernhard Fischer von Erlach von dessen Sohn Joseph Emanuel.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://webarchiv.onb.ac.at/web/20131103123136/http:/www.onb.ac.at/prunksaal/prunksaal_geschichte.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'Erbaut wurde der Prunksaal.{0,80}'",
+   "earliest": 1723,
+   "latest": 1726
+  },
+  {
+   "lib": "prunksaal",
+   "field": "architect",
+   "value": "Johann Bernhard Fischer von Erlach (design; ONB blog notes no written proof, attribution by research); built by his son Joseph Emanuel Fischer von Erlach",
+   "source": "https://webarchiv.onb.ac.at/web/20131103123136/http:/www.onb.ac.at/prunksaal/prunksaal_geschichte.htm",
+   "tier": "primary",
+   "quote": "nach Plänen des berühmten Hofarchitekten Johann Bernhard Fischer von Erlach von dessen Sohn Joseph Emanuel",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://webarchiv.onb.ac.at/web/20131103123136/http:/www.onb.ac.at/prunksaal/prunksaal_geschichte.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'nach Pl.{0,40}Fischer von Erlach.{0,50}'"
+  },
+  {
+   "lib": "bodleian",
+   "field": "built",
+   "value": "1478-1488",
+   "source": "https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian",
+   "tier": "primary",
+   "quote": "it was begun in 1478 and finally opened in 1488",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'begun in 1478.{0,40}'",
+   "earliest": 1478,
+   "latest": 1488
+  },
+  {
+   "lib": "escorial",
+   "field": "dims",
+   "value": "54 x 9 x 10 m (Salón Principal)",
+   "source": "https://rbme.patrimonionacional.es/s/rbme/page/sal-n-principal",
+   "tier": "primary",
+   "quote": "Las medidas principales de la sala son: 54 m. de largo, 9 m. de ancho y 10 m. de alto.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://rbme.patrimonionacional.es/s/rbme/page/sal-n-principal' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'medidas principales de la sala.{0,70}'"
+  },
+  {
+   "lib": "escorial",
+   "field": "volumes",
+   "value": "up to 40,000 volumes and 600 incunables (Patrimonio Nacional, current)",
+   "source": "https://www.patrimonionacional.es/en/coleccion/real-biblioteca-del-monasterio-de-el-escorial",
+   "tier": "primary",
+   "quote": "acogiendo en su interior hasta 40.000 volúmenes y 600 incunables",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.patrimonionacional.es/en/coleccion/real-biblioteca-del-monasterio-de-el-escorial' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'hasta 40.000 vol.{0,30}'"
+  },
+  {
+   "lib": "escorial",
+   "field": "architect",
+   "value": "Juan de Herrera (architect of the monastery; designed the library furniture)",
+   "source": "https://rbme.patrimonionacional.es/s/rbme/page/sal-n-principal",
+   "tier": "primary",
+   "quote": "las trazas del mobiliario son de Juan de Herrera, que, junto a su misión de arquitecto, era el que supervisaba también todas las labores de decoración del edificio",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://rbme.patrimonionacional.es/s/rbme/page/sal-n-principal' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'trazas del mobiliario son de Juan de Herrera.{0,80}'"
+  },
+  {
+   "lib": "mafra",
+   "field": "volumes",
+   "value": "about 30,000 volumes",
+   "source": "https://www.museusemonumentos.pt/pt/museus-e-monumentos/palacio-nacional-de-mafra",
+   "tier": "primary",
+   "quote": "uma importante biblioteca com cerca de 30 mil volumes, sendo a maior livraria numa só sala em toda a Europa",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.museusemonumentos.pt/pt/museus-e-monumentos/palacio-nacional-de-mafra' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'biblioteca com cerca de .{0,60}'"
+  },
+  {
+   "lib": "klementinum",
+   "field": "built",
+   "value": "1722",
+   "source": "https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/",
+   "tier": "secondary",
+   "quote": "The Baroque library is the most beautiful of Clementinum’s halls. It was built in 1722 by Kilián Ignác Dienzenhofer and is decorated with frescoes by John Hiebel",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'built in 1722 by.{0,60}'",
+   "earliest": 1722,
+   "latest": 1722
+  },
+  {
+   "lib": "klementinum",
+   "field": "architect",
+   "value": "Kilián Ignác Dientzenhofer (per Prague City Tourism; frescoes by Jan Hiebl)",
+   "source": "https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/",
+   "tier": "secondary",
+   "quote": "It was built in 1722 by Kilián Ignác Dienzenhofer and is decorated with frescoes by John Hiebel",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'built in 1722 by.{0,60}'"
+  },
+  {
+   "lib": "klementinum",
+   "field": "volumes",
+   "value": "27,000 historical volumes today (legend: 20,000 when the Jesuit library was finished)",
+   "source": "https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/",
+   "tier": "secondary",
+   "quote": "The library’s collection includes 27 thousand volumes, mainly from the field of theology.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'collection includes 27 thousand volumes'"
+  },
+  {
+   "lib": "loc",
+   "field": "built",
+   "value": "1886 authorized; cornerstone 1890; Jefferson Building in use from 1897",
+   "source": "https://guides.loc.gov/lc-buildings/timelines",
+   "tier": "primary",
+   "quote": "1886 Building authorized with Smithmeyer as supervising architect. ... 1890 Cornerstone laid. ... Thomas Jefferson Building, 1897 to present",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://guides.loc.gov/lc-buildings/timelines' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 '1890 Cornerstone laid.{0,20}'",
+   "earliest": 1890,
+   "latest": 1897
+  },
+  {
+   "lib": "celsus",
+   "field": "built",
+   "value": "early 2nd century AD, by Gaius Julius Aquila for his father Tiberius Julius Celsus Polemaeanus (ÖAI gives no exact years)",
+   "source": "https://www.oeaw.ac.at/en/oeai/events/event-detail/antike-wiederaufgebaut",
+   "tier": "primary",
+   "quote": "It was built in the early 2nd century AD by Gaius Julius Aquila for his father, the Roman senator Tiberius Julius Celsus Polemaeanus.",
+   "status": "passing",
+   "check": "WebFetch 'https://www.oeaw.ac.at/en/oeai/events/event-detail/antike-wiederaufgebaut' (curl is blocked by Cloudflare; use a browser-based fetch)",
+   "earliest": 100,
+   "latest": 150
+  },
+  {
+   "lib": "celsus",
+   "field": "remains_today",
+   "value": "Façade re-erected 1970-1978 from original parts plus additional material; in need of fundamental conservation, ÖAI conservation project launched 2025; UNESCO lists the Library of Celsus among excavated monuments of Ephesus (WHC 1018)",
+   "source": "https://www.oeaw.ac.at/en/oeai/events/event-detail/antike-wiederaufgebaut",
+   "tier": "primary",
+   "quote": "Following excavation at the beginning of the 20th century, the Celsus Library was reconstructed between 1970 and 1978 using original parts and additional materials.",
+   "status": "passing",
+   "check": "WebFetch 'https://www.oeaw.ac.at/en/oeai/events/event-detail/antike-wiederaufgebaut' (curl is blocked by Cloudflare; use a browser-based fetch)"
+  },
+  {
+   "lib": "alexandria",
+   "field": "built",
+   "value": "Layout unknown: no architectural remains or archaeological finds definitely attributable to the Library have been recovered",
+   "source": "https://www.worldhistory.org/article/207/what-happened-to-the-great-library-at-alexandria/",
+   "tier": "secondary",
+   "quote": "no architectural remains or archaeological finds that can definitely be attributed to the ancient Library have ever been recovered",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.worldhistory.org/article/207/what-happened-to-the-great-library-at-alexandria/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'no architectural remains or archaeological finds.{0,100}'"
+  },
+  {
+   "lib": "alexandria",
+   "field": "remains_today",
+   "value": "Nothing definitely attributable to the Library has been recovered; Serapeum temple (where a Christian church was later built) was destroyed under Theophilus",
+   "source": "https://www.worldhistory.org/article/207/what-happened-to-the-great-library-at-alexandria/",
+   "tier": "secondary",
+   "quote": "no architectural remains or archaeological finds that can definitely be attributed to the ancient Library have ever been recovered",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.worldhistory.org/article/207/what-happened-to-the-great-library-at-alexandria/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'no architectural remains or archaeological finds.{0,100}'"
+  }
+ ],
+ "events": [
+  {
+   "lib": "celsus",
+   "kind": "rebuilt",
+   "year": 1978,
+   "earliest": 1970,
+   "latest": 1978,
+   "label": "Façade reconstructed (anastylosis) by the Austrian Archaeological Institute, 1970-1978",
+   "source": "https://www.oeaw.ac.at/en/oeai/events/event-detail/antike-wiederaufgebaut",
+   "tier": "primary",
+   "quote": "the Celsus Library was reconstructed between 1970 and 1978 using original parts and additional materials",
+   "status": "passing",
+   "check": "WebFetch 'https://www.oeaw.ac.at/en/oeai/events/event-detail/antike-wiederaufgebaut' (curl is blocked by Cloudflare; use a browser-based fetch)"
+  },
+  {
+   "lib": "alexandria",
+   "kind": "founded",
+   "year": -285,
+   "earliest": -323,
+   "latest": -246,
+   "label": "Proposed by Ptolemy I Soter, built under Ptolemy II Philadelphus (282-246 BCE); no founding document",
+   "source": "https://www.worldhistory.org/Library_of_Alexandria/",
+   "tier": "secondary",
+   "quote": "it seems to have been proposed by Ptolemy I Soter (r. 323-282 BCE) ... and built under the reign of Ptolemy II Philadelphus (282-246 BCE)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.worldhistory.org/Library_of_Alexandria/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'proposed by Ptolemy I Soter.{0,150}'"
+  },
+  {
+   "lib": "alexandria",
+   "kind": "destroyed",
+   "year": -48,
+   "earliest": -48,
+   "latest": 700,
+   "label": "Scholars disagree: Caesar 48 BCE (most popular claim), Aurelian 272 CE, Diocletian 297, 391/415, or 7th c.; source judges gradual loss of patronage after 145 BCE most probable",
+   "source": "https://www.worldhistory.org/Library_of_Alexandria/",
+   "tier": "secondary",
+   "quote": "destroyed by Julius Caesar by fire in 48 BCE. Other claims cite ... Aurelian ... 272 CE, by Diocletian in 297 CE, by Christian zealots in 391 and 415 CE, or by Muslim Arab invaders in the 7th century",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.worldhistory.org/Library_of_Alexandria/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'destroyed by Julius Caesar by fire in 48 BCE.{0,200}'"
+  }
+ ],
+ "plans": [],
+ "books": [],
+ "corrections": [
+  {
+   "lib": "mafra",
+   "field": "volumes",
+   "old": "over 36,000 volumes",
+   "new": "about 30,000 volumes (Museus e Monumentos de Portugal)",
+   "source": "https://www.museusemonumentos.pt/pt/museus-e-monumentos/palacio-nacional-de-mafra"
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "phase": "A",
+ "scope": "Globe entry (NASA layers, terminator on the time slider, unrolls to the Equal Earth atlas) plus one room: the Long Room (Trinity College Dublin), built on the device from a seeded hall kit, with 5 readable Trinity-linked texts, Kells, Durrow and Armagh as catalogue cards, and the Byrne's Euclid living page. Spec: docs/specs/build-spec.md",
+ "cwd": "repo root",
+ "preview": "bun run build && bunx vite preview --port 4173",
+ "recheck": "jq -r '.criteria[]|\"\\(.id)\\t\\(.check)\"' data/phase-a.json | while IFS=$'\\t' read -r id c; do sh -c \"$c\" >/dev/null 2>&1 && echo \"passing $id\" || echo \"failing $id\"; done",
+ "criteria": [
+  {
+   "id": "lcp",
+   "what": "Largest contentful paint under 3 s (Lighthouse, mobile preset)",
+   "status": "failing",
+   "check": "bunx lighthouse http://localhost:4173 --quiet --output=json --chrome-flags=--headless | jq -e '.audits[\"largest-contentful-paint\"].numericValue < 3000'"
+  },
+  {
+   "id": "initial-transfer",
+   "what": "Initial transfer 5 MB or less",
+   "status": "failing",
+   "check": "bunx lighthouse http://localhost:4173 --quiet --output=json --chrome-flags=--headless | jq -e '.audits[\"total-byte-weight\"].numericValue <= 5242880'"
+  },
+  {
+   "id": "room-budget",
+   "what": "Long Room assets 25 MB or less",
+   "status": "failing",
+   "check": "test -d dist/rooms/longroom && test $(du -sk dist/rooms/longroom | cut -f1) -le 25600"
+  },
+  {
+   "id": "host-limits",
+   "what": "dist fits Cloudflare Pages: under 20,000 files, none over 25 MiB",
+   "status": "failing",
+   "check": "test -d dist && test $(fd -t f . dist | wc -l) -lt 20000 && test -z \"$(fd -t f -S +25m . dist)\""
+  },
+  {
+   "id": "facts-traced",
+   "what": "Every fact the room shows matches a passing evidence row",
+   "status": "failing",
+   "check": "jq -e --slurpfile F data/facts.json '(.facts|length>0) and all(.facts[] as $m | $F[0].facts | any(.lib==$m.lib and .value==$m.value and .status==\"passing\"))' dist/lib/longroom.json"
+  },
+  {
+   "id": "texts-readable",
+   "what": "All 5 Trinity texts built into parts of 200 KB or less",
+   "status": "failing",
+   "check": "jq -r '.books[]|select(.lib==\"longroom\" and .tier==\"readable-text\")|.id' data/books.json | while read -r id; do test -s dist/book/$id/1.json || exit 1; done && test -z \"$(fd -t f -S +200k . dist/book)\""
+  },
+  {
+   "id": "read-end-to-end",
+   "what": "Each Trinity text opens, turns to its last page and closes without errors",
+   "status": "failing",
+   "check": "bunx playwright test e2e/read-end-to-end.spec.ts"
+  },
+  {
+   "id": "offline-reread",
+   "what": "A book read once reopens with the network off",
+   "status": "failing",
+   "check": "bunx playwright test e2e/offline.spec.ts"
+  },
+  {
+   "id": "catalog-cards",
+   "what": "Kells, Durrow and Armagh shown as catalogue cards, no scan",
+   "status": "failing",
+   "check": "jq -e '[.shelves[]|select(.tier==\"catalog\")|.title]|contains([\"Book of Kells\",\"Book of Durrow\",\"Book of Armagh\"])' dist/lib/longroom.json"
+  },
+  {
+   "id": "credits",
+   "what": "Credits list author, licence and URL for every image used",
+   "status": "failing",
+   "check": "jq -e '(.credits|length>0) and all(.credits[]; .author and .licence and .url)' dist/lib/longroom.json"
+  },
+  {
+   "id": "estimates-labelled",
+   "what": "Every hall parameter has a basis; estimated ones show the label in the UI",
+   "status": "failing",
+   "check": "jq -e '(.hall|length>0) and all(.hall[]; .basis!=null)' dist/lib/longroom.json && bunx playwright test e2e/estimated-label.spec.ts"
+  },
+  {
+   "id": "mobile-reader",
+   "what": "Reader usable at 390 px wide: no horizontal scroll, page turn by swipe",
+   "status": "failing",
+   "check": "bunx playwright test e2e/reader-mobile.spec.ts"
+  },
+  {
+   "id": "frame-time",
+   "what": "Walking the room: p95 frame time 20 ms or less on an M1 MacBook Air in Chrome",
+   "status": "failing",
+   "check": "bunx playwright test e2e/frame-time.spec.ts"
+  },
+  {
+   "id": "a11y",
+   "what": "Arrow keys turn pages; reduced motion swaps the page turn for a fade",
+   "status": "failing",
+   "check": "bunx playwright test e2e/a11y.spec.ts"
+  },
+  {
+   "id": "globe-budget",
+   "what": "Globe assets 4 MB or less; poster frame under 60 KB paints first",
+   "status": "failing",
+   "check": "test -d dist/globe && test $(du -sk dist/globe | cut -f1) -le 4096"
+  },
+  {
+   "id": "room-gen-time",
+   "what": "Worker builds the first Long Room bay before the door opens; time logged on desktop and a mid-range Android",
+   "status": "failing",
+   "check": "bunx playwright test e2e/room-gen-time.spec.ts"
+  },
+  {
+   "id": "living-page-byrne",
+   "what": "Byrne's Euclid living page: predict, reveal and stamp work; stamp saved under wl.stamps",
+   "status": "failing",
+   "check": "bunx playwright test e2e/living-page.spec.ts"
+  },
+  {
+   "id": "smoke",
+   "what": "Headless smoke walks globe, atlas, room and reader; fails on console errors, mixed content, non-2xx same-origin requests or an empty mount",
+   "status": "failing",
+   "check": "bunx playwright test e2e/smoke.spec.ts"
+  }
+ ],
+ "frozen": {
+  "by": "owner (Hardik Shah)",
+  "on": "2026-11-08"
+ }
+}

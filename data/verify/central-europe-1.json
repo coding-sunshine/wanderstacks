@@ -1,0 +1,341 @@
+{
+ "cluster": "central-europe-1",
+ "facts": [
+  {
+   "lib": "strahov",
+   "field": "built",
+   "value": "Theological Hall 1671-1679 (completed 1679)",
+   "earliest": 1671,
+   "latest": 1679,
+   "source": "https://www.strahovskyklaster.cz/en/philosophical-hall",
+   "tier": "primary",
+   "quote": "Abbot Jerome Hirnhaim (1670–1679) had a new library hall constructed, which we now call the Theological Hall. In 1679, it housed 5,564 volumes.",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.strahovskyklaster.cz/en/philosophical-hall' | sed 's/<[^>]*>/ /g' | rg -o -m1 'new library hall constructed.{0,80}Theological Hall'"
+  },
+  {
+   "lib": "strahov",
+   "field": "architect",
+   "value": "Jan Dominik Orsi (Theological Hall)",
+   "source": "https://www.strahovskyklaster.cz/en/philosophical-hall",
+   "tier": "primary",
+   "quote": "Its architect was Jan Dominik Orsi, a Prague native of Italian origin",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.strahovskyklaster.cz/en/philosophical-hall' | sed 's/<[^>]*>/ /g' | rg -o -m1 'architect was Jan Dominik Orsi'"
+  },
+  {
+   "lib": "strahov",
+   "field": "built",
+   "value": "Philosophical Hall 1792-1794 (page also says 1791-1797 incl. fresco finished 1796)",
+   "earliest": 1791,
+   "latest": 1797,
+   "source": "https://www.strahovskyklaster.cz/en/philosophical-hall",
+   "tier": "primary",
+   "quote": "built during the tenure of Abbot Václav Mayer (1779–1800) between 1792 and 1794",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.strahovskyklaster.cz/en/philosophical-hall' | sed 's/<[^>]*>/ /g' | rg -o -m1 'between 1792 and 1794'"
+  },
+  {
+   "lib": "strahov",
+   "field": "dims",
+   "value": "Philosophical Hall 32 x 10 x 14 m",
+   "source": "https://www.strahovskyklaster.cz/en/philosophical-hall",
+   "tier": "primary",
+   "quote": "The astonishing dimensions of the hall (length 32 m, width 10 m, height 14 m)",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.strahovskyklaster.cz/en/philosophical-hall' | sed 's/<[^>]*>/ /g' | rg -o -m1 'length 32 m, width 10 m, height 14 m'"
+  },
+  {
+   "lib": "strahov",
+   "field": "volumes",
+   "value": "Theological Hall over 21,000; Philosophical Hall over 60,000",
+   "source": "https://www.strahovskyklaster.cz/en/philosophical-hall",
+   "tier": "primary",
+   "quote": "The Theological Hall houses over 21,000 volumes ... The total number of volumes in this hall exceeds 60,000.",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.strahovskyklaster.cz/en/philosophical-hall' | sed 's/<[^>]*>/ /g' | rg -o -m1 'over 21,000 volumes'"
+  },
+  {
+   "lib": "strahov",
+   "field": "status_note",
+   "value": "Theological Hall interior restored 1993-94; hall extended by several metres c.1727; Theological Hall dims not found",
+   "source": "https://www.strahovskyklaster.cz/en/philosophical-hall",
+   "tier": "primary",
+   "quote": "In 1993-94, the interior was restored, with the shelves completely dismantled and the wood treated.",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.strahovskyklaster.cz/en/philosophical-hall' | sed 's/<[^>]*>/ /g' | rg -o -m1 'In 1993-94, the interior was restored'"
+  },
+  {
+   "lib": "prunksaal",
+   "field": "dims",
+   "value": "length almost 80 m, height 20 m (width/dome diameter not proven)",
+   "source": "https://www.onb.ac.at/en/museums/state-hall",
+   "tier": "primary",
+   "quote": "comes as a surprise with its length of almost 80 metres and a height of 20 metres",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.onb.ac.at/en/museums/state-hall' | sed 's/<[^>]*>/ /g' | rg -o -m1 'length of almost 80 metres and a height of 20 metres'"
+  },
+  {
+   "lib": "prunksaal",
+   "field": "volumes",
+   "value": "around 200,000 historical books",
+   "source": "https://www.onb.ac.at/en/museums/state-hall",
+   "tier": "primary",
+   "quote": "With around 200,000 historical books, the unique library hall",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.onb.ac.at/en/museums/state-hall' | sed 's/<[^>]*>/ /g' | rg -o -m1 'around 200,000 historical books'"
+  },
+  {
+   "lib": "prunksaal",
+   "field": "status_note",
+   "value": "Last extensive conservation 1955; restored Jul-Dec 2022; open Tue-Sun, event closures (e.g. 19 Nov 2026 from 2pm)",
+   "source": "https://www.onb.ac.at/en/museums/state-hall",
+   "tier": "primary",
+   "quote": "last subjected to extensive conservation measures in 1955. From July to December 2022, the 300-year-old baroque splendour was given a new shine.",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.onb.ac.at/en/museums/state-hall' | sed 's/<[^>]*>/ /g' | rg -o -m1 'From July to December 2022'"
+  },
+  {
+   "lib": "prunksaal",
+   "field": "architect",
+   "value": "Johann Bernhard Fischer von Erlach (begun 1721), finished 1723 by Joseph Emanuel Fischer von Erlach",
+   "earliest": 1721,
+   "latest": 1723,
+   "source": "https://en.wikipedia.org/wiki/Prunksaal",
+   "tier": "wikipedia",
+   "quote": "The wing was begun in 1721 by Johann Bernhard Fischer von Erlach and finished after his death in 1723 by his son Joseph Emanuel.",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Prunksaal' | sed 's/<[^>]*>/ /g' | rg -o -m1 'begun in 1721 by Johann Bernhard Fischer von Erlach'"
+  },
+  {
+   "lib": "prunksaal",
+   "field": "built",
+   "value": "1726 end date NOT proven; Daniel Gran frescoes date not fetched",
+   "source": "",
+   "tier": "wikipedia",
+   "quote": "",
+   "status": "failing",
+   "check": "none: no fetched source"
+  },
+  {
+   "lib": "melk",
+   "field": "built",
+   "value": "Library furnished 1735 after Baroque reconstruction; Upper Library (Bergl rooms) added 1768",
+   "earliest": 1735,
+   "latest": 1735,
+   "source": "https://www.stiftmelk.at/en/library-collections/melk-abbey-library/",
+   "tier": "primary",
+   "quote": "were once “the” library of Melk abbey when it was furnished in 1735 after the Baroque reconstruction. Already in 1768 it was expanded by the “Upper Library”",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.stiftmelk.at/en/library-collections/melk-abbey-library/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'furnished in 1735'"
+  },
+  {
+   "lib": "melk",
+   "field": "volumes",
+   "value": "about 100,000 books, c.1,800 manuscripts, 750 incunabula; ~16,000 visible in main room",
+   "source": "https://www.stiftmelk.at/en/library-collections/melk-abbey-library/",
+   "tier": "primary",
+   "quote": "the library holds about 100.000 books, including approximately 1800 manuscripts and 750 incunabula. Guests can see roughly 16.000 books",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.stiftmelk.at/en/library-collections/melk-abbey-library/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'about 100.000 books'"
+  },
+  {
+   "lib": "melk",
+   "field": "status_note",
+   "value": "Comprehensive restoration of interior and books 2022-2032",
+   "source": "https://www.stiftmelk.at/en/library-collections/melk-abbey-library/",
+   "tier": "primary",
+   "quote": "The time has now come to start comprehensive restoration work from 2022 till 2032",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://www.stiftmelk.at/en/library-collections/melk-abbey-library/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'restoration work from 2022 till 2032'"
+  },
+  {
+   "lib": "melk",
+   "field": "architect",
+   "value": "Jakob Prandtauer (abbey, 1702-1736); library architect and Troger fresco date (1731-32) NOT proven",
+   "earliest": 1702,
+   "latest": 1736,
+   "source": "https://en.wikipedia.org/wiki/Melk_Abbey",
+   "tier": "wikipedia",
+   "quote": "Today's Baroque abbey was built between 1702 and 1736 to designs by Jakob Prandtauer.",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Melk_Abbey' | sed 's/<[^>]*>/ /g' | rg -o -m1 'built between 1702 and 1736 to designs by Jakob Prandtauer'"
+  },
+  {
+   "lib": "klementinum",
+   "field": "built",
+   "value": "Main building phase 1709-1726, Baroque library built in it (1722 not proven)",
+   "earliest": 1709,
+   "latest": 1726,
+   "source": "https://en.wikipedia.org/wiki/Klementinum",
+   "tier": "wikipedia",
+   "quote": "The main building phase of Clementinum was in the years 1709–1726, during which the Baroque library was built.",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Klementinum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'main building phase of Clementinum.{0,120}'"
+  },
+  {
+   "lib": "klementinum",
+   "field": "architect",
+   "value": "ceiling fresco by Jan Hiebl; architect not proven",
+   "source": "https://en.wikipedia.org/wiki/Klementinum",
+   "tier": "wikipedia",
+   "quote": "ceiling artwork by Jan Hiebl which shows the medieval depiction of human knowledge",
+   "status": "passing",
+   "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Klementinum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'ceiling artwork by Jan Hiebl'"
+  },
+  {
+   "lib": "klementinum",
+   "field": "volumes",
+   "value": "20,000 volumes NOT proven; no current figure fetched",
+   "source": "",
+   "tier": "wikipedia",
+   "quote": "",
+   "status": "failing",
+   "check": "none: no fetched source"
+  }
+ ],
+ "events": [],
+ "plans": [
+  {
+   "lib": "klementinum",
+   "kind": "photo-set",
+   "title": "Clementinum baroque library 2.jpg (Commons)",
+   "url": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg",
+   "licence": "CC BY-SA 4.0",
+   "status": "passing",
+   "check": "curl -s 'https://commons.wikimedia.org/w/api.php?action=query&titles=File:Clementinum_baroque_library_2.jpg&prop=imageinfo&iiprop=extmetadata&format=json' | rg -o '\"LicenseShortName\":\\{\"value\":\"[^\"]*\"'"
+  },
+  {
+   "lib": "strahov",
+   "kind": "none-found",
+   "title": "no measured drawing or 3D scan found in this run",
+   "url": "",
+   "licence": "n/a",
+   "status": "failing",
+   "check": "none"
+  },
+  {
+   "lib": "prunksaal",
+   "kind": "none-found",
+   "title": "no measured drawing or 3D scan found in this run",
+   "url": "",
+   "licence": "n/a",
+   "status": "failing",
+   "check": "none"
+  },
+  {
+   "lib": "melk",
+   "kind": "none-found",
+   "title": "no measured drawing or 3D scan found in this run",
+   "url": "",
+   "licence": "n/a",
+   "status": "failing",
+   "check": "none"
+  },
+  {
+   "lib": "klementinum",
+   "kind": "none-found",
+   "title": "no measured drawing or 3D scan found in this run",
+   "url": "",
+   "licence": "n/a",
+   "status": "failing",
+   "check": "none"
+  }
+ ],
+ "books": [
+  {
+   "id": "strahov-gospels",
+   "lib": "strahov",
+   "title": "Strahov Gospels (Evangelistarium Strahoviense, olim Treverense)",
+   "author": null,
+   "date": "c. 860 + late 10th c.",
+   "relation": "held",
+   "holder": "Strahov Monastery Library, Prague",
+   "shelfmark": "DF III 3",
+   "catalogue_url": "https://manuscripta.cz/manuscript/Strahov_DF_III_3",
+   "access": "catalog",
+   "read": null,
+   "why": "Oldest book in the Strahov Library; facsimile shown in the entrance exhibition. Digitised copy link exists on Manuscripta but IIIF not tested.",
+   "source": "https://manuscripta.cz/manuscript/Strahov_DF_III_3",
+   "tier": "primary",
+   "quote": "DF III 3 Description Title: Evangelistarium Strahoviense, olim Treverense Language: Latin ... Dating: c. 860 + late 10th c.",
+   "status": "passing",
+   "check": "curl -sL 'https://manuscripta.cz/manuscript/Strahov_DF_III_3' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Evangelistarium Strahoviense.{0,40}'"
+  },
+  {
+   "id": "tabula-peutingeriana",
+   "lib": "prunksaal",
+   "title": "Tabula Peutingeriana",
+   "author": null,
+   "date": "late 12th c. copy of ancient map",
+   "relation": "held",
+   "holder": "Austrian National Library (Map/Manuscript collections; not shown in Prunksaal)",
+   "shelfmark": "Cod. 324",
+   "catalogue_url": "https://www.unesco.at/en/communication/documentary-heritage/memory-of-the-world-in-austria/tabula-peutingeriana",
+   "access": "catalog",
+   "read": null,
+   "why": "ONB Memory of the World treasure; ONB IIIF manifest not found in this run.",
+   "source": "https://www.unesco.at/en/communication/documentary-heritage/memory-of-the-world-in-austria/tabula-peutingeriana",
+   "tier": "secondary",
+   "quote": "The Tabula Peutingeriana is a medieval copy (cod. 324) of an ancient scroll, the original of which has been lost, and is preserved in 11 segments.",
+   "status": "passing",
+   "check": "curl -sL 'https://www.unesco.at/en/communication/documentary-heritage/memory-of-the-world-in-austria/tabula-peutingeriana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'medieval copy \\(cod. 324\\).{0,60}'"
+  },
+  {
+   "id": "vienna-dioscurides",
+   "lib": "prunksaal",
+   "title": "Vienna Dioscurides (Juliana Anicia Codex)",
+   "author": "Dioscorides",
+   "date": "c. 512-515",
+   "relation": "held",
+   "holder": "Austrian National Library (not shown in Prunksaal)",
+   "shelfmark": "Codex Vindobonensis med. gr. 1",
+   "catalogue_url": "https://en.wikipedia.org/wiki/Vienna_Dioscurides",
+   "access": "catalog",
+   "read": null,
+   "why": "Famous ONB codex; only Wikipedia-sourced, no ONB catalogue/IIIF verified.",
+   "source": "https://en.wikipedia.org/wiki/Vienna_Dioscurides",
+   "tier": "wikipedia",
+   "quote": "identified as the Codex Vindobonensis med. gr. 1",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Vienna_Dioscurides' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Codex Vindobonensis med. gr. 1'"
+  }
+ ],
+ "corrections": [
+  {
+   "lib": "prunksaal",
+   "field": "dim",
+   "old": "Over 77 m; oval dome about 18 x 29.2 m",
+   "new": "ONB states length almost 80 m, height 20 m; 77 m and dome figures unproven",
+   "source": "https://www.onb.ac.at/en/museums/state-hall"
+  },
+  {
+   "lib": "prunksaal",
+   "field": "yl",
+   "old": "1721–26",
+   "new": "Wikipedia: begun 1721, finished 1723 by Joseph Emanuel; 1726 unproven",
+   "source": "https://en.wikipedia.org/wiki/Prunksaal"
+  },
+  {
+   "lib": "melk",
+   "field": "yl",
+   "old": "1731–32 (Troger fresco)",
+   "new": "Melk abbey states library furnished 1735; Troger 1731-32 unproven",
+   "source": "https://www.stiftmelk.at/en/library-collections/melk-abbey-library/"
+  },
+  {
+   "lib": "klementinum",
+   "field": "y",
+   "old": "1722",
+   "new": "main building phase 1709-1726 (Wikipedia); 1722 unproven",
+   "source": "https://en.wikipedia.org/wiki/Klementinum"
+  },
+  {
+   "lib": "strahov",
+   "field": "y",
+   "old": "1679",
+   "new": "Theological Hall 1671-1679 confirmed (Orsi); Philosophical Hall 1792-1794 (page also says 1791-1797)",
+   "source": "https://www.strahovskyklaster.cz/en/philosophical-hall"
+  }
+ ]
+}

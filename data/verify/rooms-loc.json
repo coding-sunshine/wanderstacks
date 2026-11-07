@@ -1,0 +1,155 @@
+{
+ "cluster": "rooms-loc",
+ "facts": [
+  {
+   "lib": "loc",
+   "field": "dims",
+   "value": "octagon width across: 100 ft (30.5 m)",
+   "source": "https://archive.org/details/handbookofnewlib00smaliala",
+   "tier": "secondary",
+   "quote": "The ground plan of the room is octagonal in shape, measuring one hundred feet from one side to another.",
+   "status": "passing",
+   "check": "curl -sLA 'Mozilla/5.0' 'https://archive.org/download/handbookofnewlib00smaliala/handbookofnewlib00smaliala_djvu.txt' | tr -d '\\0' | tr '\\n' ' ' | tr -s ' ' | rg -ao -m1 'ground plan of the room is octagonal.{0,80}'"
+  },
+  {
+   "lib": "loc",
+   "field": "dims",
+   "value": "floor to top of dome (where it meets lantern): 125 ft (38.1 m)",
+   "source": "https://archive.org/details/handbookofnewlib00smaliala",
+   "tier": "secondary",
+   "quote": "The height of the room from the floor to the top of the dome, where it converges upon the lantern, is one hundred and twenty-five feet",
+   "status": "passing",
+   "check": "curl -sLA 'Mozilla/5.0' 'https://archive.org/download/handbookofnewlib00smaliala/handbookofnewlib00smaliala_djvu.txt' | tr -d '\\0' | tr '\\n' ' ' | tr -s ' ' | rg -ao -m1 'from the floor to the top of the dome.{0,120}'"
+  },
+  {
+   "lib": "loc",
+   "field": "dims",
+   "value": "floor to crown of lantern ceiling: 160 ft (48.8 m)",
+   "source": "https://archive.org/details/handbookofnewlib00smaliala",
+   "tier": "secondary",
+   "quote": "from the floor to the crown of the domed ceiling of the lantern itself, one hundred and sixty feet",
+   "status": "passing",
+   "check": "curl -sLA 'Mozilla/5.0' 'https://archive.org/download/handbookofnewlib00smaliala/handbookofnewlib00smaliala_djvu.txt' | tr -d '\\0' | tr '\\n' ' ' | tr -s ' ' | rg -ao -m1 'crown of the domed ceiling of the lantern.{0,40}'"
+  },
+  {
+   "lib": "loc",
+   "field": "dims",
+   "value": "lantern height: 35 ft (10.7 m), eight windows",
+   "source": "https://archive.org/details/handbookofnewlib00smaliala",
+   "tier": "secondary",
+   "quote": "Finally comes the lantern, thirty-five feet in height, and pierced by eight windows",
+   "status": "passing",
+   "check": "curl -sLA 'Mozilla/5.0' 'https://archive.org/download/handbookofnewlib00smaliala/handbookofnewlib00smaliala_djvu.txt' | tr -d '\\0' | tr '\\n' ' ' | tr -s ' ' | rg -ao -m1 'Finally comes the lantern.{0,80}'"
+  },
+  {
+   "lib": "loc",
+   "field": "dims",
+   "value": "alcove count: 8 bays, each 14 ft deep x 30 ft wide (4.3 x 9.1 m)",
+   "source": "https://archive.org/details/handbookofnewlib00smaliala",
+   "tier": "secondary",
+   "quote": "divide the octagon into eight bays or alcoves, each fourteen feet deep and thirty wide.",
+   "status": "passing",
+   "check": "curl -sLA 'Mozilla/5.0' 'https://archive.org/download/handbookofnewlib00smaliala/handbookofnewlib00smaliala_djvu.txt' | tr -d '\\0' | tr '\\n' ' ' | tr -s ' ' | rg -ao -m1 'eight bays or alcoves.{0,60}'"
+  },
+  {
+   "lib": "loc",
+   "field": "dims",
+   "value": "piers: 8 massive clustered piers, one per octagon corner, each set ~10 ft forward",
+   "source": "https://archive.org/details/handbookofnewlib00smaliala",
+   "tier": "secondary",
+   "quote": "Eight massive clustered piers, each set some ten feet forward from a corner of the octagon, support a series of heavy arches",
+   "status": "passing",
+   "check": "curl -sLA 'Mozilla/5.0' 'https://archive.org/download/handbookofnewlib00smaliala/handbookofnewlib00smaliala_djvu.txt' | tr -d '\\0' | tr '\\n' ' ' | tr -s ' ' | rg -ao -m1 'Eight massive clustered piers.{0,100}'"
+  },
+  {
+   "lib": "loc",
+   "field": "dims",
+   "value": "floor to statue plinth: 58 ft; semicircular alcove windows 32 ft across at base; 8 statues on entablature",
+   "source": "https://archive.org/details/handbookofnewlib00smaliala",
+   "tier": "secondary",
+   "quote": "From the floor to the plinth or base on which they stand is a distance of fifty- eight feet",
+   "status": "passing",
+   "check": "curl -sLA 'Mozilla/5.0' 'https://archive.org/download/handbookofnewlib00smaliala/handbookofnewlib00smaliala_djvu.txt' | tr -d '\\0' | tr '\\n' ' ' | tr -s ' ' | rg -ao -m1 'distance of fifty- eight feet'"
+  },
+  {
+   "lib": "loc",
+   "field": "dims",
+   "value": "column count and column height: unproven (handbook gives 8 piers and 8 engaged columns only by implication)",
+   "source": "https://archive.org/details/handbookofnewlib00smaliala",
+   "tier": "secondary",
+   "quote": "",
+   "status": "failing",
+   "check": "no passing source; loc.gov and aoc.gov blocked or 404 to curl in this run"
+  },
+  {
+   "lib": "loc",
+   "field": "dims",
+   "value": "HABS DC-351 data pages dimensions",
+   "source": "https://www.loc.gov/pictures/item/dc0053/",
+   "tier": "secondary",
+   "quote": "",
+   "status": "failing",
+   "check": "WebFetch 'https://www.loc.gov/pictures/item/dc0053/' (bot-blocked this run)"
+  }
+ ],
+ "events": [],
+ "plans": [
+  {
+   "lib": "loc",
+   "kind": "published-plan",
+   "title": "Handbook of the new Library of Congress (Small & Caffin, Boston: Curtis & Cameron, 1897): ground plan of building on its text, floor plans in Standard Guide ad",
+   "url": "https://archive.org/details/handbookofnewlib00smaliala",
+   "licence": "NOT_IN_COPYRIGHT (Internet Archive possible-copyright-status)",
+   "status": "passing",
+   "check": "curl -sA 'Mozilla/5.0' 'https://archive.org/metadata/handbookofnewlib00smaliala' | rg -o 'NOT_IN_COPYRIGHT'",
+   "note": "Text states 'the ground plan given on the present page'; plan page images exist in scan, not individually checked; no section drawing found"
+  },
+  {
+   "lib": "loc",
+   "kind": "measured-drawing",
+   "title": "HABS DC-351 measured drawings",
+   "url": "https://www.loc.gov/pictures/item/dc0053/",
+   "licence": "unknown",
+   "status": "failing",
+   "check": "WebFetch 'https://www.loc.gov/pictures/item/dc0053/' (403 bot-blocked this run; item id dc0053 unverified)"
+  },
+  {
+   "lib": "loc",
+   "kind": "3d-scan",
+   "title": "The Great Hall, Library of Congress [Point Cloud] (Thomas Flynn; Great Hall, not Reading Room)",
+   "url": "https://sketchfab.com/3d-models/the-great-hall-library-of-congresspoint-cloud-2f0987ff635e4a7fa85631d54a62dc0b",
+   "licence": "none declared (license: {}), not downloadable",
+   "status": "passing",
+   "check": "curl -sA 'Mozilla/5.0' 'https://api.sketchfab.com/v3/models/2f0987ff635e4a7fa85631d54a62dc0b' | rg -o '\"isDownloadable\":[a-z]+'"
+  },
+  {
+   "lib": "loc",
+   "kind": "3d-scan",
+   "title": "Library Of Congress Low Poly Game Ready (Ruslan Malovsky; exterior, not a scan)",
+   "url": "https://sketchfab.com/3d-models/library-of-congress-low-poly-game-ready-bd141c6786514569a743b9cab1e8ef96",
+   "licence": "Sketchfab Standard, not downloadable",
+   "status": "passing",
+   "check": "curl -sA 'Mozilla/5.0' 'https://api.sketchfab.com/v3/models/bd141c6786514569a743b9cab1e8ef96' | rg -o '\"label\":\"Standard\"'"
+  },
+  {
+   "lib": "loc",
+   "kind": "photo-set",
+   "title": "Carol M. Highsmith, Main Reading Room (LOC image on Wikimedia Commons)",
+   "url": "https://commons.wikimedia.org/wiki/File:LOC_Main_Reading_Room_Highsmith.jpg",
+   "licence": "Public domain; Rights Advisory: No known restrictions on publication.",
+   "status": "passing",
+   "check": "curl -sA 'Mozilla/5.0' 'https://commons.wikimedia.org/w/api.php?action=query&titles=File:LOC_Main_Reading_Room_Highsmith.jpg&prop=imageinfo&iiprop=extmetadata&format=json' | rg -o 'Rights Advisory[^\"]{0,60}'",
+   "note": "Commons category: Category:Main reading room of the Library of Congress; loc.gov original not fetchable (Cloudflare)"
+  }
+ ],
+ "books": [],
+ "corrections": [
+  {
+   "lib": "loc",
+   "field": "dim",
+   "old": "Octagon, eight columns, gold dome; dome height still in conflict",
+   "new": "Octagon 100 ft (30.5 m) across; eight bays/alcoves each 14x30 ft; 125 ft (38.1 m) floor to dome top, 160 ft (48.8 m) floor to lantern crown; lantern 35 ft (1897 Handbook). 195 ft figure (Wikipedia) is exterior, unproven",
+   "source": "https://archive.org/details/handbookofnewlib00smaliala"
+  }
+ ]
+}

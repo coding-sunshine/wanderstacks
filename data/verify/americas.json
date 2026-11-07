@@ -1,0 +1,455 @@
+{
+ "cluster": "americas",
+ "facts": [
+  {
+   "lib": "loc",
+   "field": "built",
+   "value": "1890-1897 (opened to public 1897)",
+   "source": "https://en.wikipedia.org/wiki/Thomas_Jefferson_Building",
+   "tier": "wikipedia",
+   "quote": "The Library opened to the public in 1897 and the finishing work was completed in 1898.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Thomas_Jefferson_Building' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'opened to the public in 1897.{0,60}'",
+   "earliest": 1890,
+   "latest": 1897
+  },
+  {
+   "lib": "loc",
+   "field": "architect",
+   "value": "Smithmeyer & Pelz; Edward Pearce Casey; Bernard R. Green (supt); Army Corps of Engineers (Thomas L. Casey)",
+   "source": "https://web.archive.org/web/2024/https://www.loc.gov/pictures/item/dc0221/",
+   "tier": "primary",
+   "quote": "Related Names: Smithmeyer & Pelz; Casey, Edward P; U.S. Army Corps of Engineers; Casey, Thomas L; Green, Bernard R; Perry, Roland Hinton",
+   "status": "passing",
+   "check": "curl -sL 'https://web.archive.org/web/2024/https://www.loc.gov/pictures/item/dc0221/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'Smithmeyer.{0,150}'"
+  },
+  {
+   "lib": "loc",
+   "field": "dims",
+   "value": "UNPROVEN: HABS DC-351 holds 25 photos, 4 data pages, no listed measured drawings; dome height unresolved",
+   "source": "https://www.loc.gov/pictures/item/dc0221/",
+   "tier": "primary",
+   "quote": "Medium: Photo(s): 25 Color Transparencies: 1 Data Page(s): 4 Photo Caption Page(s): 3",
+   "status": "failing",
+   "check": "curl -sL 'https://web.archive.org/web/2024/https://www.loc.gov/pictures/item/dc0221/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'Photo\\(s\\): 25.{0,80}'"
+  },
+  {
+   "lib": "nypl",
+   "field": "built",
+   "value": "1900-1911 (Carrere & Hastings)",
+   "source": "https://hdc.org/buildings/new-york-public-library-stephen-a-schwarzman-building-interiors-main-reading-room-and-catalog-room/",
+   "tier": "secondary",
+   "quote": "ARCHITECT: Carrere & Hastings DATE: 1900-11 ... Main Reading Room is 297-feet long and 78-feet wide.",
+   "status": "passing",
+   "check": "curl -sL 'https://hdc.org/buildings/new-york-public-library-stephen-a-schwarzman-building-interiors-main-reading-room-and-catalog-room/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'DATE: 1900-11.{0,40}'",
+   "earliest": 1900,
+   "latest": 1911
+  },
+  {
+   "lib": "nypl",
+   "field": "architect",
+   "value": "Carrere & Hastings",
+   "source": "https://hdc.org/buildings/new-york-public-library-stephen-a-schwarzman-building-interiors-main-reading-room-and-catalog-room/",
+   "tier": "secondary",
+   "quote": "ARCHITECT: Carrere & Hastings",
+   "status": "passing",
+   "check": "curl -sL 'https://hdc.org/buildings/new-york-public-library-stephen-a-schwarzman-building-interiors-main-reading-room-and-catalog-room/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'ARCHITECT: Carrere.{0,20}'"
+  },
+  {
+   "lib": "nypl",
+   "field": "dims",
+   "value": "297 ft x 78 ft (90.5 x 23.8 m); height 52 ft not proven in fetched source",
+   "source": "https://hdc.org/buildings/new-york-public-library-stephen-a-schwarzman-building-interiors-main-reading-room-and-catalog-room/",
+   "tier": "secondary",
+   "quote": "the nearly two-block long Main Reading Room is 297-feet long and 78-feet wide.",
+   "status": "passing",
+   "check": "curl -sL 'https://hdc.org/buildings/new-york-public-library-stephen-a-schwarzman-building-interiors-main-reading-room-and-catalog-room/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 '297-feet long.{0,40}'",
+   "length_m": 90.5,
+   "width_m": 23.8
+  },
+  {
+   "lib": "bpl",
+   "field": "built",
+   "value": "1895 (McKim Building completed)",
+   "source": "https://en.wikipedia.org/wiki/Boston_Public_Library",
+   "tier": "wikipedia",
+   "quote": "The McKim Building, designed by Charles Follen McKim and completed in 1895, houses the BPL's research collection.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Boston_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'completed in 1895.{0,40}'",
+   "earliest": 1895,
+   "latest": 1895
+  },
+  {
+   "lib": "bpl",
+   "field": "architect",
+   "value": "Charles Follen McKim (McKim, Mead & White)",
+   "source": "https://en.wikipedia.org/wiki/Boston_Public_Library",
+   "tier": "wikipedia",
+   "quote": "designed by Charles Follen McKim and completed in 1895",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Boston_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'designed by Charles Follen McKim.{0,30}'"
+  },
+  {
+   "lib": "bpl",
+   "field": "dims",
+   "value": "218 x 42 (42.5) x 50 ft = 66.4 x 12.8 x 15.2 m, to top of barrel vault",
+   "source": "https://web.archive.org/web/2024/https://guides.bpl.org/mckim/bateshall",
+   "tier": "primary",
+   "quote": "it is 218 long, 42 feet wide, and 50 feet high, to the top of its barrel vaulted ceiling and created from Ohio sandstone.",
+   "status": "passing",
+   "check": "curl -sL 'https://web.archive.org/web/2024/https://guides.bpl.org/mckim/bateshall' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'it is 218 long.{0,100}'",
+   "length_m": 66.4,
+   "width_m": 12.8,
+   "height_m": 15.2
+  },
+  {
+   "lib": "peabody",
+   "field": "built",
+   "value": "opened 1878",
+   "source": "https://web.archive.org/web/2024/https://www.library.jhu.edu/library-hours/george-peabody-library/",
+   "tier": "primary",
+   "quote": "The library building opened in 1878 and was designed by Baltimore architect Edmund G. Lind, in collaboration with ... Dr. Nathaniel H. Morison.",
+   "status": "passing",
+   "check": "curl -sL 'https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'library building opened in 1878.{0,120}'",
+   "earliest": 1878,
+   "latest": 1878
+  },
+  {
+   "lib": "peabody",
+   "field": "architect",
+   "value": "Edmund G. Lind, with Nathaniel H. Morison",
+   "source": "https://www.library.jhu.edu/library-hours/george-peabody-library/",
+   "tier": "primary",
+   "quote": "designed by Baltimore architect Edmund G. Lind, in collaboration with the Peabody Institute's first provost, Dr. Nathaniel H. Morison",
+   "status": "passing",
+   "check": "same as built check"
+  },
+  {
+   "lib": "peabody",
+   "field": "dims",
+   "value": "five cast-iron tiers; skylight 61 ft (18.6 m) above floor; plan dims not found",
+   "source": "https://www.library.jhu.edu/library-hours/george-peabody-library/",
+   "tier": "primary",
+   "quote": "five tiers of ornamental cast-iron balconies, which rise dramatically to the skylight 61 feet above the floor.",
+   "status": "passing",
+   "check": "same as built check"
+  },
+  {
+   "lib": "peabody",
+   "field": "volumes",
+   "value": "300,000",
+   "source": "https://www.library.jhu.edu/library-hours/george-peabody-library/",
+   "tier": "primary",
+   "quote": "The library contains 300,000 volumes, mainly from the 19th century",
+   "status": "passing",
+   "check": "same as built check | rg -o 'contains 300,000 volumes'"
+  },
+  {
+   "lib": "ottawa",
+   "field": "built",
+   "value": "construction Dec 1859 - opened 28 Feb 1876; architects Thomas Fuller & Chilion Jones",
+   "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+   "tier": "secondary",
+   "quote": "opened on 28 February 1876",
+   "status": "passing",
+   "check": "curl -sL 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'opened on 28 February 1876'",
+   "earliest": 1859,
+   "latest": 1876
+  },
+  {
+   "lib": "ottawa",
+   "field": "status_note",
+   "value": "closed 2019 until Centre Block reopens; reopening year ~2032 NOT proven by a fetched source",
+   "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+   "tier": "secondary",
+   "quote": "In 2019, the Library of Parliament building closed again due to the ongoing rehabilitation of Centre Block. ... remains closed until Centre Block re-opens",
+   "status": "failing",
+   "check": "curl -sL 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'In 2019, the Library of Parliament building closed.{0,200}'"
+  },
+  {
+   "lib": "gabinete",
+   "field": "built",
+   "value": "1880-1887",
+   "source": "https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading",
+   "tier": "wikipedia",
+   "quote": "designed by the Portuguese architect Rafael da Silva e Castro, was erected between 1880 and 1887 in Neo-Manueline style.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'erected between 1880 and 1887'",
+   "earliest": 1880,
+   "latest": 1887
+  },
+  {
+   "lib": "gabinete",
+   "field": "architect",
+   "value": "Rafael da Silva (e) Castro",
+   "source": "https://www.realgabinete.com.br/O-Real-Gabinete/Sobre-o-Real-Gabinete/Historia",
+   "tier": "primary",
+   "quote": "O projeto escolhido foi o do arquiteto portugues Rafael da Silva Castro, com seu traco neomanuelino",
+   "status": "passing",
+   "check": "curl -sL 'https://www.realgabinete.com.br/O-Real-Gabinete/Sobre-o-Real-Gabinete/Historia' | rg -o -m1 'Rafael da Silva Castro.{0,60}'"
+  },
+  {
+   "lib": "gabinete",
+   "field": "volumes",
+   "value": "about 350,000",
+   "source": "https://www.realgabinete.com.br/Biblioteca/Apresentacao",
+   "tier": "primary",
+   "quote": "acervo, inteiramente informatizado, da ordem de 350.000 volumes",
+   "status": "passing",
+   "check": "curl -sL 'https://www.realgabinete.com.br/Biblioteca/Apresentacao' | rg -o -m1 'ordem de 350.000 volumes'"
+  },
+  {
+   "lib": "stockholm",
+   "field": "built",
+   "value": "opened 31 March 1928; west wing added 1932",
+   "source": "https://en.wikipedia.org/wiki/Stockholm_Public_Library",
+   "tier": "wikipedia",
+   "quote": "Officially opened on 31 March 1928 in the presence of Prince Eugen",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Stockholm_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'Officially opened on 31 March 1928'",
+   "earliest": 1928,
+   "latest": 1928
+  },
+  {
+   "lib": "stockholm",
+   "field": "architect",
+   "value": "Gunnar Asplund",
+   "source": "https://en.wikipedia.org/wiki/Stockholm_Public_Library",
+   "tier": "wikipedia",
+   "quote": "designed by Swedish architect Gunnar Asplund",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Stockholm_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'designed by Swedish architect Gunnar Asplund'"
+  },
+  {
+   "lib": "stockholm",
+   "field": "status_note",
+   "value": "closed 20 June 2024 for renovation until early 2028 (temporary site Spelbomskan, Odengatan 59)",
+   "source": "https://web.archive.org/web/2025/https://biblioteket.stockholm.se/",
+   "tier": "primary",
+   "quote": "Den 20 juni 2024 stängde Stadsbiblioteket för renovering och håller stängt till början av 2028.",
+   "status": "passing",
+   "check": "curl -sL 'https://web.archive.org/web/2025/https://biblioteket.stockholm.se/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'Den 20 juni 2024 stängde.{0,100}'"
+  }
+ ],
+ "events": [
+  {
+   "lib": "gabinete",
+   "kind": "opened",
+   "year": 1887,
+   "earliest": 1887,
+   "latest": 1887,
+   "label": "New headquarters inaugurated by Princess Isabel (10 Sep 1887 per Wikipedia)",
+   "source": "https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading",
+   "tier": "wikipedia",
+   "quote": "Isabel ... together with her husband ... inaugurated it on 10 September 1887.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'inaugurated it on 10 September 1887'"
+  },
+  {
+   "lib": "stockholm",
+   "kind": "closed",
+   "year": 2024,
+   "earliest": 2024,
+   "latest": 2024,
+   "label": "Closed for renovation, reopening early 2028",
+   "source": "https://web.archive.org/web/2025/https://biblioteket.stockholm.se/",
+   "tier": "primary",
+   "quote": "Den 20 juni 2024 stängde Stadsbiblioteket för renovering och håller stängt till början av 2028.",
+   "status": "passing",
+   "check": "see facts stockholm status_note"
+  },
+  {
+   "lib": "ottawa",
+   "kind": "closed",
+   "year": 2019,
+   "earliest": 2019,
+   "latest": 2019,
+   "label": "Closed for Centre Block rehabilitation",
+   "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+   "tier": "secondary",
+   "quote": "In 2019, the Library of Parliament building closed again due to the ongoing rehabilitation of Centre Block.",
+   "status": "passing",
+   "check": "see facts ottawa status_note"
+  },
+  {
+   "lib": "ottawa",
+   "kind": "reopened",
+   "year": 2032,
+   "earliest": 2030,
+   "latest": 2032,
+   "label": "Reopening ~2032 (unproven)",
+   "source": "",
+   "tier": "secondary",
+   "quote": "",
+   "status": "failing",
+   "check": "find PSPC Centre Block target date"
+  },
+  {
+   "lib": "ottawa",
+   "kind": "damaged",
+   "year": 1952,
+   "earliest": 1952,
+   "latest": 1952,
+   "label": "Fire in dome; closed ~4 years, restored 1952-56",
+   "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+   "tier": "secondary",
+   "quote": "1952: A fire breaks out in the dome of the Library",
+   "status": "passing",
+   "check": "curl -sL URL | rg -o '1952: A fire breaks out.{0,40}'"
+  }
+ ],
+ "plans": [
+  {
+   "lib": "loc",
+   "kind": "photo-set",
+   "title": "HABS DC-351 Library of Congress, Jefferson Building (25 photos, 4 data pages; NO measured drawings listed)",
+   "url": "https://www.loc.gov/pictures/item/dc0221/",
+   "licence": "No known restrictions on images made by the U.S. Government; images copied from other sources may be restricted.",
+   "status": "passing",
+   "check": "curl -sL 'https://web.archive.org/web/2024/https://www.loc.gov/pictures/item/dc0221/' | rg -o -m1 'Survey number: HABS DC-351'"
+  },
+  {
+   "lib": "loc",
+   "kind": "published-plan",
+   "title": "Nearly 1,000 construction-era architectural drawings of the Jefferson Building digitized (Prints & Photographs Online Catalog)",
+   "url": "https://blogs.loc.gov/picturethis/2024/01/more-jefferson-building-drawings-digitized/",
+   "licence": "not stated in fetched text; verify per item",
+   "status": "failing",
+   "check": "WebFetch 'https://blogs.loc.gov/picturethis/2024/01/more-jefferson-building-drawings-digitized/'"
+  },
+  {
+   "lib": "bpl",
+   "kind": "none-found",
+   "title": "HABS record for BPL McKim Building not located (ma0481 is HABS MA-275, Roxbury, not BPL)",
+   "url": "",
+   "licence": "",
+   "status": "failing",
+   "check": "loc.gov/pictures search blocked by Cloudflare for curl/WebFetch"
+  },
+  {
+   "lib": "peabody",
+   "kind": "none-found",
+   "title": "HABS for Peabody Institute not located (md1689 is HABS MD-1209, Walters Art Gallery, not Peabody)",
+   "url": "",
+   "licence": "",
+   "status": "failing",
+   "check": "loc.gov blocked"
+  },
+  {
+   "lib": "nypl",
+   "kind": "none-found",
+   "title": "none searched beyond NYC LPC landmark text",
+   "url": "",
+   "licence": "",
+   "status": "failing",
+   "check": ""
+  },
+  {
+   "lib": "gabinete",
+   "kind": "none-found",
+   "title": "Sketchfab model by danderson4 viewable, not downloadable (from earlier report; not re-checked)",
+   "url": "",
+   "licence": "",
+   "status": "failing",
+   "check": ""
+  }
+ ],
+ "books": [
+  {
+   "id": "gutenberg-bible-loc",
+   "lib": "loc",
+   "title": "Gutenberg Bible (Biblia latina, Vollbehr copy, vellum)",
+   "author": "Johann Gutenberg",
+   "date": "1455",
+   "relation": "held",
+   "holder": "Library of Congress",
+   "shelfmark": "Otto Vollbehr Collection, Rare Book and Special Collections Division",
+   "catalogue_url": "https://www.loc.gov/exhibits/bibles/the-gutenberg-bible.html",
+   "access": "catalog",
+   "read": {
+    "kind": "iiif",
+    "id": null,
+    "url": null,
+    "licence": "unverified",
+    "edition": "loc.gov IIIF manifest blocked (HTTP 403 Cloudflare) from this machine, so access kept at catalog",
+    "complete": null
+   },
+   "why": "Printed Mainz 1455; one of three perfect vellum copies; displayed in the Jefferson Building",
+   "source": "https://www.loc.gov/exhibits/bibles/the-gutenberg-bible.html",
+   "tier": "primary",
+   "quote": "one of only three perfect vellum copies known to exist ... purchased from Dr. Otto Vollbehr by an act of Congress in 1930",
+   "status": "passing",
+   "check": "curl -sL 'https://www.loc.gov/exhibits/bibles/the-gutenberg-bible.html' | perl -0pe 's/<[^>]*>/ /g;s/&nbsp;/ /g' | rg -o -m1 'one of only three perfect vellum.{0,60}'"
+  },
+  {
+   "id": "giant-bible-mainz",
+   "lib": "loc",
+   "title": "Giant Bible of Mainz",
+   "author": null,
+   "date": "1452-1453",
+   "relation": "held",
+   "holder": "Library of Congress",
+   "shelfmark": "Rosenwald 5, Lessing J. Rosenwald Collection",
+   "catalogue_url": "https://www.loc.gov/exhibits/bibles/the-giant-bible-of-mainz.html",
+   "access": "catalog",
+   "read": {
+    "kind": "iiif",
+    "id": null,
+    "url": null,
+    "licence": "unverified",
+    "edition": "IIIF manifest not verified (loc.gov blocked)",
+    "complete": null
+   },
+   "why": "Handwritten giant Bible, 459 vellum leaves, finished the year Gutenberg printed",
+   "source": "https://www.loc.gov/exhibits/bibles/the-giant-bible-of-mainz.html",
+   "tier": "primary",
+   "quote": "He began his work on April 4, 1452, and ended on July 9, 1453",
+   "status": "passing",
+   "check": "curl -sL 'https://www.loc.gov/exhibits/bibles/the-giant-bible-of-mainz.html' | perl -0pe 's/<[^>]*>/ /g;s/&nbsp;/ /g' | rg -o -m1 'began his work on April 4, 1452.{0,60}'"
+  }
+ ],
+ "corrections": [
+  {
+   "lib": "gabinete",
+   "field": "yl",
+   "old": "1880-87 vs 1876-77 conflict",
+   "new": "1880-1887 for building (cornerstone 10 Jun 1880, inaugurated 10 Sep 1887 per Wikipedia). 1876-77 is not credible for the building: cornerstone postdates it; only appears in unsourced travel blurbs (insideinside.org via search snippet, not fetched).",
+   "source": "https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading"
+  },
+  {
+   "lib": "loc",
+   "field": "read",
+   "old": "geometry from HABS DC-351",
+   "new": "HABS DC-351 record lists 25 photos + 4 data pages, no measured drawings; dome-height conflict not resolvable from it",
+   "source": "https://www.loc.gov/pictures/item/dc0221/"
+  },
+  {
+   "lib": "loc",
+   "field": "y",
+   "old": "1897",
+   "new": "built 1890-1897 (opened to public 1897)",
+   "source": "https://en.wikipedia.org/wiki/Thomas_Jefferson_Building"
+  },
+  {
+   "lib": "ottawa",
+   "field": "yl",
+   "old": "1876*",
+   "new": "1876 confirmed (opened 28 Feb 1876; construction from Dec 1859); architects Fuller & Jones",
+   "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/"
+  },
+  {
+   "lib": "stockholm",
+   "field": "st",
+   "old": "Closed 2024 to 2028",
+   "new": "Closed 20 June 2024; reopening early 2028",
+   "source": "https://web.archive.org/web/2025/https://biblioteket.stockholm.se/"
+  },
+  {
+   "lib": "nypl",
+   "field": "y",
+   "old": "1900-11 (dim 52 ft height)",
+   "new": "1900-11 confirmed; 297 x 78 ft confirmed; 52 ft height not proven",
+   "source": "https://hdc.org/buildings/new-york-public-library-stephen-a-schwarzman-building-interiors-main-reading-room-and-catalog-room/"
+  }
+ ]
+}

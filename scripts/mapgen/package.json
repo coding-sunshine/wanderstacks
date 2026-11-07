@@ -1,0 +1,20 @@
+{
+  "name": "mapgen",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "bun check"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "d3-geo": "^3.1.2",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  }
+}

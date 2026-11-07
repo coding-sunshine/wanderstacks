@@ -1,0 +1,15 @@
+{
+ "cluster": "labels",
+ "facts": [
+  {"lib": "mafra", "field": "built", "value": "shelves built 1771; books moved in 1794", "earliest": 1771, "latest": 1794,
+   "source": "https://pt.wikipedia.org/wiki/Pal%C3%A1cio_Nacional_de_Mafra", "tier": "wikipedia",
+   "quote": "As estantes da Biblioteca foram construídas em 1771 e os livros transferidos para esse espaço em 1794.",
+   "status": "passing",
+   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' https://pt.wikipedia.org/w/api.php --data-urlencode 'titles=Palácio Nacional de Mafra' -d 'action=query&prop=extracts&explaintext=1&format=json' | jq -r '.query.pages[].extract' | rg -q 'construídas em 1771 e os livros transferidos para esse espaço em 1794'"},
+  {"lib": "escorial", "field": "built", "value": "first books arrive 1565", "earliest": 1565,
+   "source": "https://en.wikipedia.org/wiki/Library_of_the_Monastery_of_San_Lorenzo_de_El_Escorial", "tier": "wikipedia",
+   "quote": "The first books began to arrive in 1565.",
+   "status": "passing",
+   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' https://en.wikipedia.org/w/api.php --data-urlencode 'titles=Library of the Monastery of San Lorenzo de El Escorial' -d 'action=query&prop=extracts&explaintext=1&format=json' | jq -r '.query.pages[].extract' | rg -q 'The first books began to arrive in 1565'"}
+ ]
+}

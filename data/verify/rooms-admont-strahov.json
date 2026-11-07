@@ -1,0 +1,227 @@
+{
+ "cluster": "rooms-admont-strahov",
+ "facts": [
+  {
+   "lib": "admont",
+   "field": "dims",
+   "value": "Admont hall length: 70 m",
+   "source": "https://stiftadmont.at/architektur/",
+   "tier": "primary",
+   "quote": "Mit einer Länge von 70 m , einer Breite von 14 m und einer Höhe von 11 m (in der Mittelkuppel 12,7 m)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/architektur/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'Länge von 70 m.{0,80}'"
+  },
+  {
+   "lib": "admont",
+   "field": "dims",
+   "value": "Admont hall width: 14 m",
+   "source": "https://stiftadmont.at/architektur/",
+   "tier": "primary",
+   "quote": "Mit einer Länge von 70 m , einer Breite von 14 m und einer Höhe von 11 m (in der Mittelkuppel 12,7 m)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/architektur/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'Länge von 70 m.{0,80}'"
+  },
+  {
+   "lib": "admont",
+   "field": "dims",
+   "value": "Admont hall height: 11 m (central dome 12.7 m)",
+   "source": "https://stiftadmont.at/architektur/",
+   "tier": "primary",
+   "quote": "Mit einer Länge von 70 m , einer Breite von 14 m und einer Höhe von 11 m (in der Mittelkuppel 12,7 m)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/architektur/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'Länge von 70 m.{0,80}'"
+  },
+  {
+   "lib": "admont",
+   "field": "dims",
+   "value": "Admont hall height: over 11 m to vault crown, over 12 m in central room",
+   "source": "https://stiftadmont.at/aktuelle-ausstellungen/glanz-und-gelehrsamkeit-die-groesste-klosterbibliothek-der-welt/",
+   "tier": "primary",
+   "quote": "Der Saal ist 70 Meter lang, 14 Meter breit und bis in den Gewölbescheitel über elf (im Mittelraum sogar über zwölf) Meter hoch. 48 Fenster",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/aktuelle-ausstellungen/glanz-und-gelehrsamkeit-die-groesste-klosterbibliothek-der-welt/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 '70 Meter lang.{0,120}'"
+  },
+  {
+   "lib": "admont",
+   "field": "dims",
+   "value": "Admont hall domes: 7",
+   "source": "https://stiftadmont.at/architektur/",
+   "tier": "primary",
+   "quote": "Somit wird der gesamte langgestreckte Prunksaal von insgesamt 7 Kuppeln überwölbt.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/architektur/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'insgesamt 7 Kuppeln.{0,20}'"
+  },
+  {
+   "lib": "admont",
+   "field": "dims",
+   "value": "Admont hall windows: 48 (plus 12 hidden behind the bookcases)",
+   "source": "https://stiftadmont.at/aktuelle-ausstellungen/glanz-und-gelehrsamkeit-die-groesste-klosterbibliothek-der-welt/",
+   "tier": "primary",
+   "quote": "48 Fenster geben das nötige Licht, zwölf weitere Fenster sind hinter den Büche",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/aktuelle-ausstellungen/glanz-und-gelehrsamkeit-die-groesste-klosterbibliothek-der-welt/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 '48 Fenster.{0,80}'"
+  },
+  {
+   "lib": "strahov",
+   "field": "dims",
+   "value": "Strahov Philosophical Hall length: 32 m",
+   "source": "https://www.strahovskyklaster.cz/en/architecture/library-halls",
+   "tier": "primary",
+   "quote": "The astonishing dimensions of the hall (length 32 m, width 10 m, height 14 m)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.strahovskyklaster.cz/en/architecture/library-halls' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'length 32 m, width 10 m, height 14 m'"
+  },
+  {
+   "lib": "strahov",
+   "field": "dims",
+   "value": "Strahov Philosophical Hall width: 10 m",
+   "source": "https://www.strahovskyklaster.cz/en/architecture/library-halls",
+   "tier": "primary",
+   "quote": "The astonishing dimensions of the hall (length 32 m, width 10 m, height 14 m)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.strahovskyklaster.cz/en/architecture/library-halls' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'length 32 m, width 10 m, height 14 m'"
+  },
+  {
+   "lib": "strahov",
+   "field": "dims",
+   "value": "Strahov Philosophical Hall height: 14 m",
+   "source": "https://www.strahovskyklaster.cz/architektura/knihovni-saly",
+   "tier": "primary",
+   "quote": "Udivující rozměry sálu (délka 32 m, šířka 10 m, výška 14 m)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.strahovskyklaster.cz/architektura/knihovni-saly' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'délka 32 m, šířka 10 m, výška 14 m'"
+  },
+  {
+   "lib": "strahov",
+   "field": "dims",
+   "value": "Strahov Theological Hall length: unknown",
+   "source": "https://www.strahovskyklaster.cz/en/architecture/library-halls",
+   "tier": "primary",
+   "quote": "No dimensions stated for the Theological Hall; only 'extended by several meters' in 1727.",
+   "status": "failing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.strahovskyklaster.cz/en/architecture/library-halls' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'extended by several meters'"
+  },
+  {
+   "lib": "strahov",
+   "field": "dims",
+   "value": "Strahov Theological Hall width: unknown",
+   "source": "https://www.strahovskyklaster.cz/en/architecture/library-halls",
+   "tier": "primary",
+   "quote": "No dimensions stated for the Theological Hall; only 'extended by several meters' in 1727.",
+   "status": "failing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.strahovskyklaster.cz/en/architecture/library-halls' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'extended by several meters'"
+  },
+  {
+   "lib": "strahov",
+   "field": "dims",
+   "value": "Strahov Theological Hall height: unknown",
+   "source": "https://www.strahovskyklaster.cz/en/architecture/library-halls",
+   "tier": "primary",
+   "quote": "No dimensions stated for the Theological Hall; only 'extended by several meters' in 1727.",
+   "status": "failing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.strahovskyklaster.cz/en/architecture/library-halls' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'extended by several meters'"
+  },
+  {
+   "lib": "admont",
+   "field": "dims",
+   "value": "Admont hall width 14 m / height 13 m (Wikipedia figure)",
+   "source": "https://stiftadmont.at/architektur/",
+   "tier": "wikipedia",
+   "quote": "Official page gives height 11 m (12.7 m in central dome), not 13 m.",
+   "status": "failing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/architektur/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' | rg -o -m1 'Länge von 70 m.{0,80}'"
+  }
+ ],
+ "events": [],
+ "plans": [
+  {
+   "lib": "admont",
+   "kind": "none-found",
+   "title": "No floor plan or section found (Commons search 'Grundriss Stiftsbibliothek Admont', stiftadmont.at architektur page text only)",
+   "url": "https://stiftadmont.at/architektur/",
+   "licence": "n/a",
+   "status": "failing",
+   "check": "curl -s 'https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srsearch=Grundriss+Stiftsbibliothek+Admont&format=json'"
+  },
+  {
+   "lib": "strahov",
+   "kind": "none-found",
+   "title": "No floor plan or section found (Commons search 'Strahov library plan'; strahovskyklaster.cz library-halls page has none)",
+   "url": "https://www.strahovskyklaster.cz/en/architecture/library-halls",
+   "licence": "n/a",
+   "status": "failing",
+   "check": "curl -s 'https://commons.wikimedia.org/w/api.php?action=query&list=search&srnamespace=6&srsearch=Strahov+library+plan&format=json'"
+  },
+  {
+   "lib": "admont",
+   "kind": "photo-set",
+   "title": "Commons: Category:Stiftsbibliothek Admont (82 files incl. Planar series)",
+   "url": "https://commons.wikimedia.org/wiki/Category:Stiftsbibliothek_Admont",
+   "licence": "per-file Commons licences (CC / public domain)",
+   "status": "passing",
+   "check": "curl -s 'https://commons.wikimedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:Stiftsbibliothek_Admont&cmtype=file&cmlimit=500&format=json' | rg -o '\"title\"' | wc -l"
+  },
+  {
+   "lib": "admont",
+   "kind": "photo-set",
+   "title": "Stiftsbibliothek Admont 360.jpg (equirectangular panorama, 2019)",
+   "url": "https://commons.wikimedia.org/wiki/File:Stiftsbibliothek_Admont_360.jpg",
+   "licence": "CC BY-SA 4.0",
+   "status": "passing",
+   "check": "curl -s 'https://commons.wikimedia.org/w/api.php?action=query&titles=File:Stiftsbibliothek_Admont_360.jpg&prop=imageinfo&iiprop=extmetadata&format=json' | rg -o 'CC BY-SA 4.0' | head -1"
+  },
+  {
+   "lib": "strahov",
+   "kind": "photo-set",
+   "title": "Commons: Category:Philosophical hall of Strahov library (61 files)",
+   "url": "https://commons.wikimedia.org/wiki/Category:Philosophical_hall_of_Strahov_library",
+   "licence": "per-file Commons licences (CC / public domain)",
+   "status": "passing",
+   "check": "curl -s 'https://commons.wikimedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:Philosophical_hall_of_Strahov_library&cmtype=file&cmlimit=500&format=json' | rg -o '\"title\"' | wc -l"
+  },
+  {
+   "lib": "strahov",
+   "kind": "photo-set",
+   "title": "Commons: Category:Theological hall of Strahov library (64 files)",
+   "url": "https://commons.wikimedia.org/wiki/Category:Theological_hall_of_Strahov_library",
+   "licence": "per-file Commons licences (CC / public domain)",
+   "status": "passing",
+   "check": "curl -s 'https://commons.wikimedia.org/w/api.php?action=query&list=categorymembers&cmtitle=Category:Theological_hall_of_Strahov_library&cmtype=file&cmlimit=500&format=json' | rg -o '\"title\"' | wc -l"
+  },
+  {
+   "lib": "admont",
+   "kind": "3d-scan",
+   "title": "Sketchfab: no library hall model (search 'admont' returns only 'Admonter Madonna', not downloadable)",
+   "url": "https://sketchfab.com/search?q=admont&type=models",
+   "licence": "n/a",
+   "status": "failing",
+   "check": "curl -s -A 'Mozilla/5.0' 'https://api.sketchfab.com/v3/search?type=models&q=admont'"
+  },
+  {
+   "lib": "strahov",
+   "kind": "3d-scan",
+   "title": "Sketchfab: no library hall model (search 'strahov' returns only exterior bits: wall, steps, door; CC BY-NC-SA)",
+   "url": "https://sketchfab.com/search?q=strahov&type=models",
+   "licence": "n/a",
+   "status": "failing",
+   "check": "curl -s -A 'Mozilla/5.0' 'https://api.sketchfab.com/v3/search?type=models&q=strahov'"
+  }
+ ],
+ "books": [],
+ "corrections": [
+  {
+   "lib": "admont",
+   "field": "dim",
+   "old": "70 m long (14 × 13 m from Wikipedia), seven domes",
+   "new": "70 m long, 14 m wide, 11 m high (12.7 m under central dome), seven domes, 48 windows",
+   "source": "https://stiftadmont.at/architektur/"
+  },
+  {
+   "lib": "strahov",
+   "field": "dim",
+   "old": "Smaller stucco-and-globe room; the Philosophical Hall next door is 32 × 10 × 14 m",
+   "new": "Theological Hall: dimensions not published (unproven); Philosophical Hall next door is 32 × 10 × 14 m (official)",
+   "source": "https://www.strahovskyklaster.cz/en/architecture/library-halls"
+  }
+ ]
+}

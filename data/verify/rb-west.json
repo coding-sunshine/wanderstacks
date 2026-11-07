@@ -1,0 +1,215 @@
+{
+  "cluster": "rb-west",
+  "facts": [
+    {
+      "lib": "longroom",
+      "field": "dims",
+      "value": "bays per side: not stated by any fetched source",
+      "source": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php",
+      "tier": "primary",
+      "quote": "There are 40 of these alcoves",
+      "status": "failing",
+      "check": "find source or measured plan; DCC portal (planning.agileapplications.ie/dublincity) returned 'request is blocked'; tcd.ie/library/using-library/360.php covers only Boland, Lecky, Ussher, Hamilton, Stearne libraries, not Old Library",
+      "note": "Tried: TCD Old Library pages, 360 floorplans page, Wikipedia, Visit Trinity, DCC portal (blocked), web searches. Next lead: DCC planning file (Heneghan Peng AHIA / drawings) via manual portal access, or Irish Architectural Archive."
+    },
+    {
+      "lib": "longroom",
+      "field": "dims",
+      "value": "gallery floor height: not stated by any fetched source",
+      "source": "",
+      "tier": "primary",
+      "quote": "",
+      "status": "failing",
+      "check": "need section drawing from DCC planning file (Heneghan Peng, 2020)",
+      "note": "No section drawing reachable. Same leads as bays."
+    },
+    {
+      "lib": "vatican",
+      "field": "built",
+      "value": "1585-1588 (Salone Sistino built by Domenico Fontana)",
+      "earliest": 1585,
+      "latest": 1588,
+      "source": "https://www.museivaticani.va/content/dam/museivaticani/pdf/eventi_novita/iniziative/eventi/2013/MV_2_Museo_profano_biblioteca_apostolica.pdf",
+      "tier": "primary",
+      "quote": "il grandioso Salone Sistino ... inserito da Domenico Fontana nel corpo di fabbrica ... (1585-1588). La sua ricchissima ornamentazione pittorica fu condotta tra il 1588 e il 1590",
+      "status": "passing",
+      "check": "curl -sL URL | pdftotext - - | rg -o \"\\(1585-1588\\)\""
+    },
+    {
+      "lib": "vatican",
+      "field": "architect",
+      "value": "Domenico Fontana",
+      "source": "https://www.museivaticani.va/content/dam/museivaticani/pdf/eventi_novita/iniziative/eventi/2013/MV_2_Museo_profano_biblioteca_apostolica.pdf",
+      "tier": "primary",
+      "quote": "Domenico Fontana costruì il monumentale Salone intitolato al pontefice",
+      "status": "passing",
+      "check": "curl -sL URL | pdftotext - - | rg 'Fontana costruì'"
+    },
+    {
+      "lib": "vatican",
+      "field": "dims",
+      "value": "70 m long x 11 m wide (hall, two aisles); height not stated",
+      "source": "https://www.vaticannews.va/de/vatikan/news/2017-10/vatikan--lesesaal-erstrahlt-wieder-im-neuen-glanz.print.html",
+      "tier": "secondary",
+      "quote": "zweischiffige Raum ... 70 Meter lang und elf Meter breit",
+      "status": "passing",
+      "check": "curl -sL 'https://www.vaticannews.va/de/vatikan/news/2017-10/vatikan--lesesaal-erstrahlt-wieder-im-neuen-glanz.print.html' | rg -o '70 Meter lang und elf Meter breit'",
+      "note": "Holy See media. Conflicts with libs.json 15 or 16 m width; other (unfetched) sources say 15 m. Width unresolved; 11 m is what this source states."
+    },
+    {
+      "lib": "bodleian",
+      "field": "architect",
+      "value": "not found",
+      "source": null,
+      "tier": "primary",
+      "quote": null,
+      "status": "failing",
+      "check": "n/a",
+      "note": "Tried Bodleian history page (only Radcliffe Camera/Gibbs) and Wikipedia. Lead: Gillam, Divinity School and Duke Humfrey's Library at Oxford (OUP)."
+    },
+    {
+      "lib": "bodleian",
+      "field": "dims",
+      "value": "not found",
+      "source": null,
+      "tier": "primary",
+      "quote": null,
+      "status": "failing",
+      "check": "n/a",
+      "note": "Lead: Gillam (OUP) or British History Online."
+    },
+    {
+      "lib": "escorial",
+      "field": "built",
+      "value": "not proven",
+      "source": null,
+      "tier": "primary",
+      "quote": null,
+      "status": "failing",
+      "check": "n/a",
+      "note": "Wikipedia gives library founded 1565 only (category text); no fetched source for hall build dates. Lead: patrimonionacional.es or revistas.patrimonionacional.es Reales Sitios 1984 articles."
+    },
+    {
+      "lib": "mafra",
+      "field": "built",
+      "value": "library shelving 1771-1772 per Manuel Caetano de Sousa plans (search snippet only, not fetched)",
+      "source": "https://run.unl.pt/bitstream/10362/94867/1/17_campos.pdf",
+      "tier": "secondary",
+      "quote": "",
+      "status": "failing",
+      "check": "fetch the Portuguese PDFs from the search (estudogeral.uc.pt/bitstream/10316/92361/1/2013 - Bibliotecas conventuais setecentistas.pdf) and rg 1771|1772",
+      "note": "Not verified."
+    }
+  ],
+  "events": [],
+  "plans": [
+    {
+      "lib": "longroom",
+      "kind": "none-found",
+      "title": "TCD 'Library Virtual Tours & 3D Floorplans' covers Boland, Lecky, Ussher, Hamilton, Stearne libraries only, not Old Library; DCC planning portal blocked",
+      "url": "https://www.tcd.ie/library/using-library/360.php",
+      "licence": null,
+      "status": "failing",
+      "check": "curl -sL https://www.tcd.ie/library/using-library/360.php | rg 'Boland'"
+    },
+    {
+      "lib": "bodleian",
+      "kind": "none-found",
+      "title": "not searched beyond earlier Commons check",
+      "url": null,
+      "licence": null,
+      "status": "failing",
+      "check": "n/a"
+    },
+    {
+      "lib": "bnf",
+      "kind": "none-found",
+      "title": "not reached in this run",
+      "url": null,
+      "licence": null,
+      "status": "failing",
+      "check": "n/a",
+      "note": "Leads: INHA, BnF Richelieu Labrouste plans"
+    },
+    {
+      "lib": "gabinete",
+      "kind": "none-found",
+      "title": "not reached in this run",
+      "url": null,
+      "licence": null,
+      "status": "failing",
+      "check": "n/a",
+      "note": "Wikipedia: building by Rafael da Silva e Castro, 1880-1887, Neo-Manueline"
+    }
+  ],
+  "books": [
+    {
+      "id": "mendoza",
+      "lib": "bodleian",
+      "title": "Codex Mendoza",
+      "author": null,
+      "date": "1541-1650",
+      "relation": "held",
+      "holder": "Bodleian Libraries",
+      "shelfmark": "MS. Arch. Selden. A. 1",
+      "catalogue_url": "https://digital.bodleian.ox.ac.uk/objects/2fea788e-2aa2-4f08-b6d9-648c00486220/",
+      "access": "readable-scan",
+      "read": {
+        "kind": "iiif",
+        "id": null,
+        "url": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/2fea788e-2aa2-4f08-b6d9-648c00486220.json",
+        "licence": "CC BY-NC 4.0 (non-commercial)",
+        "edition": "Digital Bodleian",
+        "complete": true
+      },
+      "why": "Selden bequest; Selden End of Duke Humfrey's.",
+      "source": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/2fea788e-2aa2-4f08-b6d9-648c00486220.json",
+      "tier": "primary",
+      "quote": "label 'Bodleian Library MS. Arch. Selden. A. 1'; Terms of use: CC BY-NC 4.0; 188 canvases",
+      "status": "passing",
+      "check": "curl -sL https://iiif.bodleian.ox.ac.uk/iiif/manifest/2fea788e-2aa2-4f08-b6d9-648c00486220.json | jq -r '.label,.attribution'"
+    },
+    {
+      "id": "vat-gr-1209",
+      "lib": "vatican",
+      "title": "Biblia. Greco (Vat.gr.1209)",
+      "author": null,
+      "date": "sec. IV",
+      "relation": "held",
+      "holder": "Biblioteca Apostolica Vaticana",
+      "shelfmark": "Vat.gr.1209",
+      "catalogue_url": "https://digi.vatlib.it/view/MSS_Vat.gr.1209",
+      "access": "readable-scan",
+      "read": {
+        "kind": "iiif",
+        "id": null,
+        "url": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1209/manifest.json",
+        "licence": "Permission-only: personal use or study; rights must be requested for printed or online publication",
+        "edition": "DigiVatLib",
+        "complete": true
+      },
+      "why": "Holder metadata: Title 'Biblia. Greco', Date 'sec. IV'. The name 'Codex Vaticanus' is not in the holder manifest.",
+      "source": "https://digi.vatlib.it/iiif/MSS_Vat.gr.1209/manifest.json",
+      "tier": "primary",
+      "quote": "Title: Biblia. Greco; Date: sec. IV; Images Copyright Biblioteca Apostolica Vaticana",
+      "status": "passing",
+      "check": "curl -sL https://digi.vatlib.it/iiif/MSS_Vat.gr.1209/manifest.json | jq -c '.label,.metadata'"
+    }
+  ],
+  "corrections": [
+    {
+      "lib": "vatican",
+      "field": "dim",
+      "old": "70 × 15 or 80 × 16 m (sources conflict)",
+      "new": "70 m long x 11 m wide per Vatican News; width still unsettled",
+      "source": "https://www.vaticannews.va/de/vatikan/news/2017-10/vatikan--lesesaal-erstrahlt-wieder-im-neuen-glanz.print.html"
+    },
+    {
+      "lib": "vatican",
+      "field": "yl",
+      "old": "1585-90",
+      "new": "1585-1588 build; frescoes 1588-1590",
+      "source": "https://www.museivaticani.va/content/dam/museivaticani/pdf/eventi_novita/iniziative/eventi/2013/MV_2_Museo_profano_biblioteca_apostolica.pdf"
+    }
+  ]
+}

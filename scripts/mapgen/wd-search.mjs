@@ -1,0 +1,7 @@
+// Search Wikidata for each library; print top 3 hits so a human picks the QID.
+const Q = { longroom: "Old Library Trinity College Dublin", admont: "Admont Abbey Library", alexandria: "Library of Alexandria", celsus: "Library of Celsus", loc: "Thomas Jefferson Building", strahov: "Strahov Library", bnf: "Salle Labrouste", bodleian: "Duke Humfrey's Library", bpl: "Bates Hall", escorial: "Library of El Escorial", gabinete: "Real Gabinete Português de Leitura", klementinum: "Klementinum library", mafra: "Mafra Palace Library", melk: "Melk Abbey library", nypl: "Rose Main Reading Room", peabody: "George Peabody Library", prunksaal: "Prunksaal", stgallen: "Abbey library of Saint Gall", vatican: "Sistine Hall", weimar: "Duchess Anna Amalia Library", wiblingen: "Wiblingen Abbey library", buda: "Bibliotheca Corviniana", dunhuang: "Library Cave Dunhuang", herculaneum: "Villa of the Papyri", nalanda: "Nalanda mahavihara", nineveh: "Library of Ashurbanipal", ottawa: "Library of Parliament", pergamon: "Library of Pergamum", stockholm: "Stockholm Public Library", timbuktu: "Timbuktu manuscripts" };
+for (const [id, q] of Object.entries(Q)) {
+  const r = await fetch(`https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(q)}&language=en&limit=3&format=json`, { headers: { "User-Agent": "WorldLibs-planning/0.1 (https://github.com/; research script)" } }).then(r => r.json());
+  console.log(id.padEnd(12), (r.search || []).map(s => `${s.id} ${s.label} — ${(s.description || "").slice(0, 50)}`).join(" | "));
+  await Bun.sleep(1000);
+}

@@ -1,0 +1,153 @@
+{
+ "cluster": "plans",
+ "facts": [],
+ "events": [],
+ "plans": [
+  {
+   "lib": "celsus",
+   "kind": "published-plan",
+   "title": "Grundriss der Bibliothek von Ephesos (Commons description: 'map of the library of ephesos'; source Jahreshefte des Oesterreichischen Archaeologischen Institutes, archive.org jahresheftedess09austgoog)",
+   "url": "https://commons.wikimedia.org/wiki/File:Grundriss_der_bibliothek_von_ephesos.jpg",
+   "licence": "Public domain",
+   "status": "passing",
+   "check": "curl -s -G 'https://commons.wikimedia.org/w/api.php' -d 'action=query&prop=imageinfo&iiprop=extmetadata|url&format=json' --data-urlencode 'titles=File:Grundriss der bibliothek von ephesos.jpg' | rg -o 'LicenseShortName.{0,60}'"
+  },
+  {
+   "lib": "alexandria",
+   "kind": "none-found",
+   "title": "Searched Commons (Serapeum Alexandria; Serapeum plan): only photos of Pompey's Pillar site, no plan",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=alexandria'"
+  },
+  {
+   "lib": "peabody",
+   "kind": "none-found",
+   "title": "Searched Commons (Peabody Institute HABS, category George Peabody Library/Peabody Institute) and web: only HALS MD-1 landscape photos; loc.gov Cloudflare-blocked; no library measured drawings found",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=peabody'"
+  },
+  {
+   "lib": "bpl",
+   "kind": "none-found",
+   "title": "Searched Commons (Boston Public Library HABS) and web: no HABS drawings found; loc.gov blocked",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=bpl'"
+  },
+  {
+   "lib": "nypl",
+   "kind": "none-found",
+   "title": "Searched Commons (NYPL HABS, category Main Branch) and web: no HABS drawings found; loc.gov blocked",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=nypl'"
+  },
+  {
+   "lib": "prunksaal",
+   "kind": "none-found",
+   "title": "Searched Commons (Prunksaal Grundriss; Hofbibliothek Querschnitt): no plan",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=prunksaal'"
+  },
+  {
+   "lib": "melk",
+   "kind": "none-found",
+   "title": "Searched Commons (Stiftsbibliothek Melk Grundriss/plan/Schnitt): nothing",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=melk'"
+  },
+  {
+   "lib": "stgallen",
+   "kind": "none-found",
+   "title": "Searched Commons (Stiftsbibliothek St. Gallen Grundriss): only cathedral plan, not library",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=stgallen'"
+  },
+  {
+   "lib": "wiblingen",
+   "kind": "none-found",
+   "title": "Searched Commons (Wiblingen Bibliothek Grundriss): nothing",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=wiblingen'"
+  },
+  {
+   "lib": "escorial",
+   "kind": "none-found",
+   "title": "Searched Commons (Escorial biblioteca planta): only books/PDFs, no plan",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=escorial'"
+  },
+  {
+   "lib": "mafra",
+   "kind": "none-found",
+   "title": "Searched Commons (Biblioteca Mafra planta): nothing",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=mafra'"
+  },
+  {
+   "lib": "bnf",
+   "kind": "none-found",
+   "title": "Searched Commons (Salle Labrouste plan coupe): nothing",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=bnf'"
+  },
+  {
+   "lib": "bodleian",
+   "kind": "none-found",
+   "title": "Searched Commons (Duke Humfrey Library plan Bodleian): nothing",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=bodleian'"
+  },
+  {
+   "lib": "klementinum",
+   "kind": "none-found",
+   "title": "Searched Commons (Klementinum Bibliothek Grundriss): nothing",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=klementinum'"
+  },
+  {
+   "lib": "gabinete",
+   "kind": "none-found",
+   "title": "Searched Commons (Real Gabinete Portugues de Leitura planta): nothing",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=gabinete'"
+  },
+  {
+   "lib": "weimar",
+   "kind": "none-found",
+   "title": "Searched Commons (Anna Amalia Rokokosaal Grundriss): nothing",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": "curl -sG 'https://commons.wikimedia.org/w/api.php' -d 'action=query&list=search&srnamespace=6&format=json' --data-urlencode 'srsearch=weimar'"
+  }
+ ],
+ "books": [],
+ "corrections": []
+}

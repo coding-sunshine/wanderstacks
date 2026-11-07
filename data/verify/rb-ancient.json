@@ -1,0 +1,212 @@
+{
+ "cluster": "rb-ancient",
+ "facts": [
+  {
+   "lib": "nalanda",
+   "field": "remains_today",
+   "value": "Archaeological site of 23 ha with stupas, chaityas, viharas, shrines, votive structures and stucco, stone and metal art works; remains date from c. 3rd c. BCE, main phase 5th-13th c. CE",
+   "source": "https://whc.unesco.org/en/list/1502",
+   "tier": "primary",
+   "quote": "Spread over an area of 23 hectares the Archaeological site of Nalanda Mahavihara presents remains dating from circa. 3rd Cen BCE",
+   "status": "passing",
+   "check": "AB_SESSION=rb-ancient scripts/ab-check.sh 'https://whc.unesco.org/en/list/1502' 'Spread over an area of 23 hectares'",
+   "note": "Earlier '11 viharas and 14 temples' count not found in fetched text; not asserted."
+  },
+  {
+   "lib": "pergamon",
+   "field": "recon",
+   "element": "library room group north of north stoa",
+   "value": "Row of rooms north, behind the upper storey of the north stoa of the Athena sanctuary: one large hall at the east end, and to its west a group of three rooms; a small court with a separate room group (so-called art collection) lies west at stoa ground-floor level. Identification as the royal library (Bohn, Hoepfner) is disputed (Mielsch, Strocka).",
+   "source": "https://arachne.dainst.org/entity/6172",
+   "tier": "primary",
+   "quote": "am weitesten östlich ein großer Saal, westlich anschließend eine Dreiraumgruppe.",
+   "status": "passing",
+   "check": "AB_SESSION=rb-ancient scripts/ab-check.sh 'https://arachne.dainst.org/entity/6172' 'Dreiraumgruppe'",
+   "note": "DAI iDAI.objects record; cites Bohn AvP II 60 f. Taf. XXXIII-XXXV. Laufer 2020 (in same record) would exclude the large hall from library use (banquet hall)."
+  },
+  {
+   "lib": "celsus",
+   "field": "dims",
+   "value": "Reading hall 16.7 m long x 10.9 m deep (about 178 m2); facade 21 m long, over 16 m high; shelf niches 2.6 m high, over 1 m wide",
+   "source": "https://de.wikipedia.org/wiki/Celsus-Bibliothek",
+   "tier": "wikipedia",
+   "quote": "Dieser hat mit 10,9 m Tiefe und 16,7 m Länge eine Größe von rund 178 Quadratmetern.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://de.wikipedia.org/w/index.php?title=Celsus-Bibliothek&action=raw' | rg -o -m1 '10,9 m Tiefe und 16,7 m Länge.{0,50}'",
+   "note": "Wikipedia cites Wilberg in FiE V 1 (1953) and Hueber/Strocka. Primary FiE V 1 is open at https://digi.ub.uni-heidelberg.de/diglit/fie_bd5_1 (ch. I, Das Gebäude, pp. 1-42); the figures were not read there."
+  },
+  {
+   "lib": "alexandria",
+   "field": "recon",
+   "element": "Mouseion/library: excavated remains (scholarly caution)",
+   "basis": "excavated",
+   "value": "No excavated library building is claimed.",
+   "source": null,
+   "tier": null,
+   "quote": null,
+   "status": "failing",
+   "check": null,
+   "note": "Still unproven. Tried Wikipedia raw only (earlier cluster); PCMA site and stoa.org unreachable/not reached this run. Best lead: PCMA Kom el-Dikka pages (pcma.uw.edu.pl) and Empereur, Alexandrina 2."
+  },
+  {
+   "lib": "buda",
+   "field": "recon",
+   "element": "room count and vaulting",
+   "basis": "attested",
+   "value": "Two high vaulted rooms (Greek / Latin) reported by secondary sources.",
+   "source": null,
+   "tier": null,
+   "quote": null,
+   "status": "failing",
+   "check": null,
+   "note": "Not reached this run. Best lead: Csapodi, The Corvinian Library (1973) on tertullian.org, or Naldi / Galeotto Marzio accounts."
+  }
+ ],
+ "events": [],
+ "plans": [
+  {
+   "lib": "herculaneum",
+   "kind": "published-plan",
+   "title": "Karl Weber plan of the Villa dei Papiri, reproduced as Tav. XXIV in Comparetti & De Petra, La villa ercolanese dei Pisoni (Torino, Loescher, 1883); HathiTrust copy from Univ. of Minnesota, 362 page scans",
+   "url": "https://babel.hathitrust.org/cgi/pt?id=umn.31951001668005d",
+   "licence": "Public Domain, Google-digitized (HathiTrust rights statement)",
+   "status": "passing",
+   "quote": "E a cominciare dalla pianta ... essa qui viene fedelissimamente riprodotta (Tav. XXIV) con l'aggiunta di quei nuovi segni di richiamo",
+   "check": "AB_SESSION=rb-ancient scripts/ab-check.sh 'https://babel.hathitrust.org/cgi/pt/search?q1=Tav.+XXIV&id=umn.31951001668005d' 'fedelissimamente ri-\\s*prodotta'",
+   "note": "Text p. 148 (scan #160) says the plan is reproduced as Tav. XXIV; p. 217 footnote says it predates the last excavations (1757). Plate image itself not located by seq number. Catalog record https://catalog.hathitrust.org/Record/008559673. Weber is named as plan author in the same volume (searches for Weber return 118 hits)."
+  },
+  {
+   "lib": "pergamon",
+   "kind": "excavation-plan",
+   "title": "DAI iDAI.objects (Arachne) record 6172, room complex north of the north stoa (so-called library), Athena sanctuary; cites Bohn, AvP II, Taf. XXXIII-XXXV",
+   "url": "https://arachne.dainst.org/entity/6172",
+   "licence": "Site footer: 'Licensed under Creative Commons' (specific CC licence not stated on the record; image licences not checked)",
+   "status": "passing",
+   "quote": "am weitesten östlich ein großer Saal, westlich anschließend eine Dreiraumgruppe.",
+   "check": "AB_SESSION=rb-ancient scripts/ab-check.sh 'https://arachne.dainst.org/entity/6172' 'Dreiraumgruppe'",
+   "note": "Arachne shows 5 linked images, not inspected. Bohn 1885 plates (public domain, archive.org dasheiligtumder00droygoog) already recorded by recon-ancient."
+  },
+  {
+   "lib": "celsus",
+   "kind": "measured-drawing",
+   "title": "Keil (ed.), Forschungen in Ephesos V.1: Die Bibliothek (1953, 2nd unchanged ed.), with Tafel I-II and Wilberg's building description; digitised by OeAI project CELSUS at Heidelberg",
+   "url": "https://digi.ub.uni-heidelberg.de/diglit/fie_bd5_1",
+   "licence": "Public Domain Mark 1.0 (IIIF manifest license field)",
+   "status": "passing",
+   "quote": "Tafel I-II",
+   "check": "curl -sL 'https://digi.ub.uni-heidelberg.de/diglit/iiif/fie_bd5_1/manifest.json' | jq -r '.license // empty' | head -1",
+   "note": "Manifest: https://digi.ub.uni-heidelberg.de/diglit/iiif/fie_bd5_1/manifest.json (curl works; page URLs need browser due to Anubis check). Taf. I is described in the text as the reconstruction drawing. 'Four CC BY models' in libs.json still unverified."
+  },
+  {
+   "lib": "nineveh",
+   "kind": "none-found",
+   "title": "No chamber plan found; British Museum and Oracc plan pages not reached this run",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": null,
+   "note": "Best lead: BM collection term pages for Kouyunjik, Layard 'Discoveries in the Ruins of Nineveh and Babylon' (1853) plates, and Reade/Russell plans of the South-West Palace."
+  },
+  {
+   "lib": "alexandria",
+   "kind": "none-found",
+   "title": "No plan of the Library exists in sources reached; PCMA Kom el-Dikka plan not reached",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": null,
+   "note": "Best lead: pcma.uw.edu.pl Kom el-Dikka pages, Sabottka's auditoria publications."
+  },
+  {
+   "lib": "nalanda",
+   "kind": "none-found",
+   "title": "UNESCO WHC page 1502 loads in the browser; no site plan found in the text read",
+   "url": "https://whc.unesco.org/en/list/1502",
+   "licence": null,
+   "status": "failing",
+   "check": null,
+   "note": "Best lead: the nomination dossier PDF linked from whc.unesco.org/en/list/1502/documents, and ASI Nalanda pages."
+  },
+  {
+   "lib": "dunhuang",
+   "kind": "none-found",
+   "title": "No Cave 17 plan or dimensions found this run",
+   "url": null,
+   "licence": null,
+   "status": "failing",
+   "check": null,
+   "note": "Best lead: IDP (idp.bl.uk) Cave 17 page; Dunhuang Academy digital archive; Stein/Pelliot descriptions."
+  }
+ ],
+ "books": [
+  {
+   "id": "callimachus-pinakes",
+   "lib": "alexandria",
+   "title": "Pinakes (Tables of Men Distinguished in Every Branch of Learning, and their Works)",
+   "author": "Callimachus of Cyrene",
+   "date": "3rd c. BCE",
+   "relation": "known-lost",
+   "holder": "none (lost)",
+   "shelfmark": null,
+   "catalogue_url": null,
+   "access": "ghost",
+   "read": null,
+   "why": "Callimachus's catalogue of the Library's holdings; attested by the Suda only (120 books).",
+   "source": "https://web.archive.org/web/2023/https://www.stoa.org/sol-entries/kappa/227",
+   "tier": "secondary",
+   "quote": "Tables of Men Distinguished in Every Branch of Learning, and their Works (in 120 books)",
+   "status": "passing",
+   "check": "curl -sL -m 30 'https://web.archive.org/web/2023/https://www.stoa.org/sol-entries/kappa/227' | sed 's/<[^>]*>//g' | rg -o -m1 'Tables of Men Distinguished in Every Branch of Learning, and their Works \\(in 120 books\\)'",
+   "note": "Suda On Line, kappa 227 (live stoa.org unreachable, Wayback copy used). The Suda gives the title; it does not itself say the work catalogued the Library."
+  },
+  {
+   "id": "celsus-endowed-reading-material",
+   "lib": "celsus",
+   "title": "Books bought with Celsus's 25,000-denarii legacy (no title attested)",
+   "author": null,
+   "date": null,
+   "relation": "known-lost",
+   "holder": "none (lost)",
+   "shelfmark": null,
+   "catalogue_url": null,
+   "access": "ghost",
+   "read": null,
+   "why": "Aquila's will left 25,000 denarii for the library; interest was to pay repairs, decoration, staff and book purchases. No book title is attested in the inscription commentary read.",
+   "source": "https://digi.ub.uni-heidelberg.de/diglit/fie_bd5_1/0086",
+   "tier": "primary",
+   "quote": "Aquila hatte wohl, als er in seinem Testament den Betrag von 25.000 Denaren für die Bibliothek aussetzte",
+   "status": "passing",
+   "check": "AB_SESSION=rb-ancient scripts/ab-check.sh 'https://digi.ub.uni-heidelberg.de/diglit/fie_bd5_1/0086/image,info,text_ocr' 'Betrag von 25\\.000 Denaren'",
+   "note": "Keil, FiE V 1 (1953) p. 76, commentary on inscription Nr. 13 (IvE 5113 in later numbering, not checked here). Keil infers book purchase ('Ankauf von Büchern') from the interest budget. Pages 0076-0088 skimmed for titles; none found. Reconstructed Greek/Latin text lines on 0085-0087 not read line by line."
+  },
+  {
+   "id": "philostratos-corvina",
+   "lib": "buda",
+   "title": "Philostratos Corvina",
+   "author": "Philostratus, trans. Antonio Bonfini",
+   "date": "1487-88",
+   "relation": "survived",
+   "holder": "National Szechenyi Library (OSZK), Budapest",
+   "shelfmark": null,
+   "catalogue_url": "https://corvina.hu/en/",
+   "access": "catalog",
+   "read": null,
+   "why": "Surviving codex of Matthias Corvinus's royal library, returned to Hungary in 1932.",
+   "source": "https://corvina.hu/en/the-facsimile-edition-of-king-matthias-philostratus-codex-has-been-published/",
+   "tier": "primary",
+   "quote": "From there it was transferred to the National Széchényi Library in 1932 as part of the Venice Agreement.",
+   "status": "passing",
+   "check": "AB_SESSION=rb-ancient scripts/ab-check.sh 'https://corvina.hu/en/the-facsimile-edition-of-king-matthias-philostratus-codex-has-been-published/' 'transferred to the National Sz'",
+   "note": "Shelfmark Cod. Lat. 417 not found on the page, so left null. Facsimile edition published Dec 2024; no IIIF manifest or open scan URL found, so access stays catalog."
+  }
+ ],
+ "corrections": [
+  {
+   "lib": "nalanda",
+   "field": "remains_today",
+   "old": "UNESCO: 23 ha, 11 viharas and 14 temples (snippet only)",
+   "new": "23 ha site with stupas, chaityas, viharas, shrines (UNESCO text read); the 11 vihara / 14 temple counts are unproven",
+   "source": "https://whc.unesco.org/en/list/1502"
+  }
+ ]
+}

@@ -1,0 +1,1252 @@
+<title>WorldLibs experience plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: companion to the WorldLibs report. Same tokens and type. The atlas mock leads at full content width, then the plan sections in one column. */
+:root {
+  --bg: #f4f6f2;
+  --surface: #eaeee7;
+  --ink: #18201c;
+  --muted: #56615a;
+  --rule: #d3dad0;
+  --accent: #1b5a52;
+  --accent-soft: #d8e7e1;
+  --ok: #2f6a2c;
+  --ok-soft: #e0ecd8;
+  --warn: #7a570a;
+  --warn-soft: #f3e8cc;
+  --bad: #9a2b25;
+  --bad-soft: #f6dfdb;
+  --sea: #eef2ec;
+  --land: #d5dcd2;
+  --display: "IM Fell English", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --body: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1512; --surface: #16201b; --ink: #e3e8e2; --muted: #9ba7a0; --rule: #2a3630;
+    --accent: #7cc4b6; --accent-soft: #19302b; --ok: #9ccf86; --ok-soft: #1c2b19;
+    --warn: #e2b75c; --warn-soft: #2d2512; --bad: #f08d84; --bad-soft: #341c19;
+    --sea: #111915; --land: #24302a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1512; --surface: #16201b; --ink: #e3e8e2; --muted: #9ba7a0; --rule: #2a3630;
+  --accent: #7cc4b6; --accent-soft: #19302b; --ok: #9ccf86; --ok-soft: #1c2b19;
+  --warn: #e2b75c; --warn-soft: #2d2512; --bad: #f08d84; --bad-soft: #341c19;
+  --sea: #111915; --land: #24302a;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 48px 72px;
+}
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: 72px; }
+a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; letter-spacing: -0.005em; margin: 0; }
+h1 { font-size: clamp(2.6rem, 7vw, 4.25rem); line-height: 1; }
+h2 { font-size: clamp(1.7rem, 3.6vw, 2.3rem); line-height: 1.1; }
+h3 { font-size: 1.45rem; line-height: 1.15; }
+p { margin: 0; }
+.prose { max-width: 68ch; display: grid; gap: 14px; }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.lede { font-size: 1.2rem; line-height: 1.5; max-width: 60ch; }
+.small { font-size: 14px; color: var(--muted); }
+.mono { font-family: var(--mono); font-size: 13px; }
+section { display: grid; gap: 22px; min-width: 0; }
+.sec-head { display: grid; gap: 10px; max-width: 68ch; }
+
+/* hero */
+.hero { display: grid; gap: 20px; }
+.answers { display: grid; gap: 0; border-top: 1px solid var(--rule); max-width: 820px; }
+.answers > div { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.answers dt { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); }
+.answers dd { margin: 0; }
+@media (min-width: 720px) { .answers > div { grid-template-columns: 190px 1fr; gap: 20px; } }
+
+/* tags */
+.tag { display: inline-block; font-family: var(--mono); font-size: 11.5px; line-height: 1.5; padding: 1px 7px; border-radius: 3px; white-space: nowrap; vertical-align: 1px; }
+.tag.ok { background: var(--ok-soft); color: var(--ok); }
+.tag.warn { background: var(--warn-soft); color: var(--warn); }
+.tag.bad { background: var(--bad-soft); color: var(--bad); }
+.tag.acc { background: var(--accent-soft); color: var(--accent); }
+.tag.plain { background: var(--surface); color: var(--muted); }
+
+/* atlas */
+.atlas { display: grid; gap: 16px; }
+@media (min-width: 940px) { .atlas { grid-template-columns: minmax(0, 1fr) 300px; align-items: start; } }
+.map-col { display: grid; gap: 12px; min-width: 0; }
+.map-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.count { font-size: 14px; color: var(--muted); }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.seg button { font: 600 13px var(--body); padding: 6px 14px; border: 0; background: transparent; color: var(--muted); cursor: pointer; min-height: 32px; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+.map-frame { border: 1px solid var(--rule); border-radius: 10px; background: var(--sea); overflow: hidden; }
+#map { display: block; width: 100%; height: auto; aspect-ratio: 1000 / 444; touch-action: manipulation; }
+.grat { fill: none; stroke: var(--rule); stroke-width: .6; vector-effect: non-scaling-stroke; }
+.gl { cursor: pointer; --c: var(--muted); }
+.gl.tier-mvp { --c: var(--accent); }
+.gl.off { display: none; }
+.gl .shape { fill: var(--c); stroke: var(--c); stroke-width: 1.4; fill-rule: evenodd; stroke-linejoin: round; }
+.gl.st-lost .shape, .gl.st-found .shape { fill: none; }
+.gl.st-spec .shape { fill: none; stroke-dasharray: 3 2; }
+.gl .dot { display: none; fill: var(--c); }
+.gl.st-found .dot { display: inline; }
+.gl .halo { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.2; opacity: 0; }
+.gl.sel .halo { opacity: 1; }
+.gl .hit { fill: transparent; }
+.gl .inner { transition: transform .15s ease-out; }
+.gl:hover .inner { transform: scale(1.3); }
+.gl.pop .inner { animation: pop .45s ease-out; }
+@keyframes pop { 0% { transform: scale(0); } 60% { transform: scale(1.6); } 100% { transform: scale(1); } }
+.leaders line { stroke: var(--muted); stroke-width: .8; vector-effect: non-scaling-stroke; opacity: .55; }
+.leaders circle { fill: var(--muted); opacity: .8; }
+.leaders .off { display: none; }
+.lbl text { font: 600 11.5px var(--body); fill: var(--ink); paint-order: stroke; stroke: var(--sea); stroke-width: 3.5px; stroke-linejoin: round; }
+
+.scrub { display: grid; grid-template-columns: auto auto minmax(0, 1fr); align-items: center; gap: 8px 14px; }
+.play { font: 600 13px var(--body); border: 1px solid var(--accent); color: var(--accent); background: transparent; border-radius: 6px; padding: 6px 12px; min-height: 36px; cursor: pointer; }
+.play:hover { background: var(--accent-soft); }
+.year { font-family: var(--display); font-size: 1.9rem; line-height: 1; min-width: 4.6ch; font-variant-numeric: tabular-nums; }
+.range { position: relative; padding-bottom: 20px; min-width: 0; }
+.range input { width: 100%; accent-color: var(--accent); margin: 0; }
+.ticks { position: absolute; left: 8px; right: 8px; bottom: 0; height: 16px; }
+.ticks span { position: absolute; transform: translateX(-50%); font-family: var(--mono); font-size: 10.5px; color: var(--muted); white-space: nowrap; }
+.ticks span:first-child { transform: none; } .ticks span:last-child { transform: translateX(-100%); }
+@media (max-width: 560px) { .ticks .minor { display: none; } .scrub { grid-template-columns: auto 1fr; } .range { grid-column: 1 / -1; } }
+
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend svg { width: 24px; height: 16px; overflow: visible; }
+.legend .sep { width: 1px; height: 16px; background: var(--rule); }
+.mini .shape { fill: var(--muted); stroke: var(--muted); stroke-width: 1.2; fill-rule: evenodd; }
+.mini.tier-mvp .shape { fill: var(--accent); stroke: var(--accent); }
+.mini.st-lost .shape, .mini.st-found .shape { fill: none; }
+.mini.st-spec .shape { fill: none; stroke-dasharray: 2.5 1.8; }
+.mini .dot { display: none; fill: var(--muted); }
+.mini.tier-mvp .dot { fill: var(--accent); }
+.mini.st-found .dot { display: inline; }
+
+.card { border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); padding: 18px; display: grid; gap: 12px; }
+@media (min-width: 940px) { .card { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); } }
+.card-plan { background: var(--bg); border: 1px solid var(--rule); border-radius: 6px; display: grid; place-items: center; padding: 14px 8px; }
+.card-plan svg { width: 150px; height: 88px; overflow: visible; }
+.card-plan .shape { stroke-width: 1.6; }
+.card h3 { font-size: 1.55rem; }
+.card .place { color: var(--muted); font-size: 14px; margin-top: 2px; }
+.card dl { margin: 0; display: grid; gap: 8px; font-size: 14px; }
+.card dl div { display: grid; grid-template-columns: 82px 1fr; gap: 10px; }
+.card dt { color: var(--muted); font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; padding-top: 2px; }
+.card dd { margin: 0; }
+.card > * { min-width: 0; }
+.card .tag { white-space: normal; }
+.enter { font: 600 14px var(--body); background: var(--accent); color: var(--bg); border: 0; border-radius: 6px; padding: 10px 14px; min-height: 42px; cursor: pointer; }
+.enter:hover { filter: brightness(1.08); }
+
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.list button { width: 100%; text-align: left; display: grid; grid-template-columns: 28px 1fr; gap: 2px 8px; align-items: center; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: transparent; color: var(--ink); font: 14px/1.35 var(--body); cursor: pointer; min-height: 44px; }
+.list button:hover { border-color: var(--accent); }
+.list button[aria-current="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.list svg { width: 26px; height: 16px; grid-row: span 2; overflow: visible; }
+.list .meta { color: var(--muted); font-size: 12.5px; }
+.list .note { grid-column: 2; color: var(--warn); font-size: 12.5px; }
+details.listbox summary { cursor: pointer; font-weight: 600; font-size: 14px; padding: 6px 0; }
+details.listbox[open] summary { margin-bottom: 8px; }
+
+/* tables */
+.table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: 14.5px; }
+th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--rule); }
+th { font-family: var(--mono); font-size: 11.5px; font-weight: 500; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); background: var(--surface); }
+tr:last-child td { border-bottom: 0; }
+tr.pick td { background: var(--accent-soft); }
+td:first-child { font-weight: 600; }
+
+/* glyph kit */
+.kit { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.kit article { border: 1px solid var(--rule); border-radius: 8px; padding: 16px; display: grid; gap: 8px; align-content: start; }
+.kit svg { width: 84px; height: 48px; overflow: visible; }
+.kit .shape { fill: var(--accent); stroke: var(--accent); stroke-width: 1.4; fill-rule: evenodd; }
+.kit h3 { font-size: 1.3rem; }
+.kit p { font-size: 14px; }
+.kit .used { color: var(--muted); font-size: 13px; }
+.kit .used b { color: var(--ink); font-weight: 600; }
+
+/* flow */
+.flow-wrap { overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
+.flow { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(200px, 1fr); gap: 12px; min-width: 0; }
+@media (max-width: 1000px) { .flow { grid-auto-columns: 240px; } }
+.flow li { scroll-snap-align: start; display: grid; gap: 8px; align-content: start; }
+.art { aspect-ratio: 4 / 3; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); overflow: hidden; position: relative; }
+.art svg { width: 100%; height: 100%; display: block; }
+.step { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+.flow h3 { font-size: 1.25rem; }
+.flow p { font-size: 14px; }
+.flow .tech { font-family: var(--mono); font-size: 11.5px; color: var(--muted); line-height: 1.5; }
+.flow li.hot .art { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+
+/* extrude demo */
+.extrude { position: absolute; inset: 0; display: grid; place-items: center; perspective: 520px; }
+.ex-floor { position: relative; width: 140px; height: 38px; transform-style: preserve-3d; background: var(--accent); transform: rotateX(56deg) rotateZ(-30deg); }
+.ex-wall { position: absolute; border: 1px solid var(--accent); background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--accent) 55%, transparent) 0 1.5px, var(--bg) 1.5px 11px); }
+.ex-wall.ew { background: repeating-linear-gradient(0deg, color-mix(in srgb, var(--accent) 55%, transparent) 0 1.5px, var(--bg) 1.5px 11px); }
+.ex-wall.n { left: 0; top: 0; width: 100%; height: 30px; transform-origin: top; transform: rotateX(90deg); }
+.ex-wall.s { left: 0; top: 100%; width: 100%; height: 30px; transform-origin: top; transform: rotateX(90deg) scaleY(.3); }
+.ex-wall.w { left: 0; top: 0; width: 30px; height: 100%; transform-origin: left; transform: rotateY(-90deg); }
+.ex-wall.e { left: 100%; top: 0; width: 30px; height: 100%; transform-origin: left; transform: rotateY(-90deg) scaleX(.3); }
+.ex-room { position: absolute; inset: 0; opacity: 0; background: radial-gradient(ellipse at 50% 30%, color-mix(in srgb, var(--warn) 30%, var(--surface)), var(--surface) 70%); display: grid; place-items: end center; padding-bottom: 10px; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) {
+  .extrude.run .ex-floor { animation: ex-tilt 5s ease-in-out infinite; }
+  .extrude.run .ex-wall.n, .extrude.run .ex-wall.s { animation: ex-ns 5s ease-in-out infinite; }
+  .extrude.run .ex-wall.w, .extrude.run .ex-wall.e { animation: ex-we 5s ease-in-out infinite; }
+  .extrude.run .ex-room { animation: ex-room 5s ease-in-out infinite; }
+}
+@keyframes ex-tilt { 0%, 16% { transform: rotateX(0) rotateZ(0) scale(.75); background: var(--accent); } 42%, 100% { transform: rotateX(56deg) rotateZ(-30deg) scale(1); background: var(--accent-soft); } }
+@keyframes ex-ns { 0%, 36% { transform: rotateX(90deg) scaleY(0); } 70%, 100% { transform: rotateX(90deg) scaleY(var(--k, 1)); } }
+@keyframes ex-we { 0%, 36% { transform: rotateY(-90deg) scaleX(0); } 70%, 100% { transform: rotateY(-90deg) scaleX(var(--k, 1)); } }
+@keyframes ex-room { 0%, 80% { opacity: 0; } 92%, 100% { opacity: 1; } }
+.ex-wall.s, .ex-wall.e { --k: .3; }
+
+/* to scale */
+.scale { display: grid; gap: 14px; }
+.srow { display: grid; grid-template-columns: 1fr; gap: 6px; }
+@media (min-width: 720px) { .srow { grid-template-columns: 190px minmax(0, 1fr) 76px; gap: 16px; align-items: center; } }
+.srow .nm { font-weight: 600; font-size: 14.5px; }
+.srow .nm small { display: block; font-weight: 400; color: var(--muted); font-size: 12.5px; font-family: var(--mono); }
+.srow .walk { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.room { border: 1.5px solid var(--accent); background: repeating-linear-gradient(90deg, var(--accent-soft) 0 6px, transparent 6px 9px), var(--bg); border-radius: 2px; }
+.room.mvp { background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--accent) 35%, transparent) 0 6px, transparent 6px 9px), var(--bg); }
+.room.guess { border-style: dashed; }
+.room.none { border-style: dashed; border-color: var(--muted); background: none; display: grid; place-items: center; font-size: 12.5px; color: var(--muted); padding: 10px; }
+.scalebar { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+.scalebar i { display: block; height: 6px; border: 1.5px solid var(--muted); border-top: 0; }
+
+/* evidence */
+.ev { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.ev article { border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; display: grid; align-content: start; }
+.ev .sw { aspect-ratio: 16 / 9; background: var(--surface); border-bottom: 1px solid var(--rule); }
+.ev .sw svg { width: 100%; height: 100%; display: block; }
+.ev .body { padding: 14px 16px; display: grid; gap: 8px; }
+.ev h3 { font-size: 1.3rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.ev p { font-size: 14px; }
+
+/* phases */
+.phases { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); counter-reset: ph; }
+.phases article { border: 1px solid var(--rule); border-top: 3px solid var(--accent); border-radius: 8px; padding: 16px; display: grid; gap: 10px; align-content: start; }
+.phases .ph, .ready .ph { font-family: var(--mono); font-size: 12px; color: var(--accent); }
+.phases ul { margin: 0; padding-left: 18px; font-size: 14px; display: grid; gap: 4px; }
+.phases .done { font-size: 13.5px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 10px; }
+
+.notes { border-top: 1px solid var(--rule); padding-top: 18px; display: grid; gap: 8px; font-size: 13.5px; color: var(--muted); max-width: 80ch; }
+
+/* lifespans */
+.life { display: grid; gap: 2px; }
+.lrow { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 7px 8px; border: 0; border-radius: 6px; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; width: 100%; }
+.lrow:hover { background: var(--surface); }
+.lrow[aria-pressed="true"] { background: var(--surface); box-shadow: inset 3px 0 0 var(--accent); }
+.lrow .nm { font-weight: 600; font-size: 14px; }
+.lrow .nm small { display: block; font-weight: 400; font-size: 12px; color: var(--muted); font-family: var(--mono); }
+.laxis { position: relative; height: 16px; }
+.laxis span { position: absolute; transform: translateX(-50%); font-family: var(--mono); font-size: 10.5px; color: var(--muted); white-space: nowrap; }
+.laxis span:first-child { transform: none; } .laxis span:last-child { transform: translateX(-100%); }
+@media (min-width: 720px) {
+  .lrow, .laxis-row { grid-template-columns: 190px minmax(0, 1fr); gap: 16px; align-items: center; }
+  .laxis-row { display: grid; padding: 0 8px; }
+}
+@media (max-width: 560px) { .laxis .minor { display: none; } }
+.track { position: relative; height: 18px; }
+.track::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 1px dotted var(--rule); }
+.track .sp { position: absolute; top: 4px; height: 10px; border-radius: 2px; }
+.track .up { background: var(--accent); }
+.track .gone { border: 1.5px dashed var(--muted); box-sizing: border-box; }
+.track .back { background: color-mix(in srgb, var(--warn) 55%, var(--surface)); }
+.track .pin { position: absolute; top: 0; width: 2px; height: 18px; margin-left: -1px; background: var(--ink); }
+.track .pin.x { background: var(--bad); }
+.lkey { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--muted); }
+.lkey i { display: inline-block; width: 22px; height: 9px; border-radius: 2px; vertical-align: -1px; margin-right: 6px; }
+.ldetail { border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; display: grid; gap: 8px; }
+.ldetail h3 { font-size: 1.3rem; }
+.ldetail ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 14px; }
+.ldetail li { display: grid; grid-template-columns: 92px 1fr; gap: 10px; }
+.ldetail .yr { font-family: var(--mono); font-size: 12.5px; color: var(--muted); padding-top: 1px; }
+
+/* layers + tiers share a card grid */
+.cards4 { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.cards4 article { border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; display: grid; align-content: start; }
+.cards4 .sw { aspect-ratio: 16 / 9; background: var(--surface); border-bottom: 1px solid var(--rule); }
+.cards4 .sw svg { width: 100%; height: 100%; display: block; }
+.cards4 .body { padding: 14px 16px; display: grid; gap: 8px; }
+.cards4 h3 { font-size: 1.25rem; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.cards4 p { font-size: 14px; }
+.cards4 .n { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+/* accuracy */
+.vbars { display: grid; gap: 8px; }
+.vrow { display: grid; grid-template-columns: 1fr; gap: 4px; font-size: 14px; }
+@media (min-width: 720px) { .vrow { grid-template-columns: 190px minmax(0, 1fr) 96px; gap: 16px; align-items: center; } }
+.vrow .bar { display: flex; height: 12px; border-radius: 3px; overflow: hidden; background: var(--surface); }
+.vrow .bar b { background: var(--ok); } .vrow .bar s { background: color-mix(in srgb, var(--bad) 45%, var(--surface)); }
+.vrow .num { font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+.todo { margin: 0; padding-left: 22px; display: grid; gap: 10px; max-width: 80ch; }
+.todo li { font-size: 15px; }
+
+/* globe */
+.globe-fig { display: grid; gap: 18px; margin: 0; }
+@media (min-width: 820px) { .globe-fig { grid-template-columns: 320px minmax(0, 1fr); align-items: center; } }
+.globe-fig svg { width: 100%; max-width: 320px; height: auto; display: block; margin: 0 auto; }
+.globe-fig figcaption { font-size: 13.5px; color: var(--muted); }
+#globe .sea { fill: var(--sea); stroke: var(--rule); }
+#globe .gland { fill: var(--land); stroke: color-mix(in srgb, var(--muted) 40%, transparent); stroke-width: .4; }
+#globe .ggrat { fill: none; stroke: var(--rule); stroke-width: .5; }
+#globe .twi { fill: #0b1a2c; opacity: .16; }
+#globe .night { fill: #0b1a2c; opacity: .34; }
+#globe .gpin { fill: var(--accent); stroke: var(--bg); stroke-width: 1.2; }
+#globe .gpin.n { fill: var(--warn); }
+
+/* layers, split, first second, levels */
+.inf { display: inline-block; font: 500 10.5px/1 var(--mono); color: var(--warn); background: var(--warn-soft); border-radius: 3px; padding: 3px 5px 2px; vertical-align: 2px; margin-left: 2px; white-space: nowrap; }
+.lv { font-family: var(--mono); font-size: 12px; padding: 1px 7px; border-radius: 3px; white-space: nowrap; }
+.lv.hi { background: var(--ok-soft); color: var(--ok); }
+.lv.md { background: var(--warn-soft); color: var(--warn); }
+.lv.lo { background: var(--bad-soft); color: var(--bad); }
+.stack { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; max-width: 760px; }
+.stack li { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 10px 14px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); font-size: 14.5px; }
+.stack li:nth-child(odd) { background: var(--surface); }
+.stack b { font-weight: 600; }
+.stack .sz { font-family: var(--mono); font-size: 12px; color: var(--muted); align-self: center; white-space: nowrap; }
+.stack .d { grid-column: 1 / -1; color: var(--muted); font-size: 13.5px; }
+.stack li.opt { border-style: dashed; background: transparent; }
+.split { display: grid; gap: 12px; }
+@media (min-width: 760px) { .split { grid-template-columns: minmax(0, 1fr) 120px minmax(0, 1fr); align-items: stretch; } }
+.split article { border: 1px solid var(--rule); border-radius: 8px; padding: 16px; display: grid; gap: 10px; align-content: start; }
+.split article.dev { border-top: 3px solid var(--accent); }
+.split article.bake { border-top: 3px solid var(--warn); }
+.split ul { margin: 0; padding-left: 18px; font-size: 14px; display: grid; gap: 4px; }
+.split .who { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.split .mid { display: grid; place-items: center; text-align: center; font-family: var(--mono); font-size: 12px; color: var(--muted); padding: 8px; border: 1px dashed var(--rule); border-radius: 8px; }
+.arrive { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); counter-reset: a; }
+.arrive li { counter-increment: a; border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; display: grid; gap: 4px; align-content: start; font-size: 14px; }
+.arrive li::before { content: counter(a); font-family: var(--mono); font-size: 12px; color: var(--accent); }
+.arrive b { font-weight: 600; }
+.arrive .t { font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+.callout { border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 6px; padding: 14px 16px; background: var(--surface); max-width: 70ch; font-size: 15px; }
+.ready { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.ready article { border: 1px solid var(--rule); border-radius: 8px; padding: 16px; display: grid; gap: 8px; align-content: start; }
+.ready .big { font-family: var(--display); font-size: 2.4rem; line-height: 1; }
+.ready ul { margin: 0; padding-left: 18px; font-size: 14px; display: grid; gap: 4px; }
+</style>
+
+<div class="page"><div class="wrap">
+
+<header class="hero">
+  <p class="eyebrow">Companion to the <a href="https://claude.ai/artifact/PdHAVY6XPQDiX3nSTug2pM">WorldLibs research report</a> and the <a href="https://claude.ai/artifact/QNgyGftKgYJXebUQKcMbzS">realistic dynamic worlds report</a></p>
+  <h1>WorldLibs experience plan</h1>
+  <p class="lede">You arrive at a real-looking Earth, built from NASA satellite imagery, with day and night drawn where the sun was in the year on the slider. Give it a nudge and it unrolls into a flat atlas where every library sits as a tiny floor plan of its own room. Pick one and the camera flies there, the plan rises into walls, and your device builds the room while you watch.</p>
+  <dl class="answers">
+    <div><dt>Entry screen</dt><dd>A photoreal globe (NASA Blue Marble by day, Black Marble city lights by night) with a time scrubber from 700 BCE to today. It unrolls into an Equal Earth atlas for picking, so the European cluster never hides behind the curve.</dd></div>
+    <div><dt>First representation</dt><dd>A floor-plan glyph per library, pinned with its lifespan. Outside its dates it fades to a ghost outline. Five shapes cover the whole list, and each shape is one reusable 3D kit, so the legend on the map is the build plan.</dd></div>
+    <div><dt>The big moment</dt><dd>The fly-in. The camera follows a great circle to the city while the room prefetches, the glyph tilts and extrudes, and a Worker on your device builds the shelves from a seed behind the door.</dd></div>
+  </dl>
+</header>
+
+<section aria-labelledby="h-atlas">
+  <div class="sec-head">
+    <h2 id="h-atlas">Try the atlas</h2>
+    <p>A working mock of the atlas the globe unrolls into. Drag the year or press play, switch to Europe, and pick a library to see its card. MVP libraries are in green.</p>
+  </div>
+  <div class="atlas">
+    <div class="map-col">
+      <div class="map-bar">
+        <p class="count" id="count" aria-live="polite"></p>
+        <div class="seg" role="group" aria-label="Map zoom">
+          <button type="button" data-zoom="world" aria-pressed="true">World</button>
+          <button type="button" data-zoom="europe" aria-pressed="false">Europe</button>
+        </div>
+      </div>
+      <div class="map-frame">
+        <svg id="map" viewBox="0 -4 1000 444" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <path class="grat" id="grat"></path>
+          <path id="landpath" style="fill: var(--land)"></path>
+        </svg>
+      </div>
+      <div class="scrub">
+        <button type="button" class="play" id="play">Play</button>
+        <output class="year" id="year" for="yr"></output>
+        <div class="range">
+          <input type="range" id="yr" min="0" max="1000" step="1" aria-label="Year">
+          <div class="ticks" id="ticks"></div>
+        </div>
+      </div>
+      <div class="legend" id="legend"></div>
+      <details class="listbox" open>
+        <summary id="list-sum">Libraries in this year</summary>
+        <ul class="list" id="list"></ul>
+      </details>
+    </div>
+    <aside class="card" id="card" aria-live="polite"></aside>
+  </div>
+</section>
+
+<section aria-labelledby="h-globe">
+  <div class="sec-head">
+    <h2 id="h-globe">A globe that unrolls into the atlas</h2>
+    <p>The earlier plan dropped the globe because the European cluster piles up on it and half the pins face away. We keep the fix and add the spectacle back: the globe is what you see first, and picking happens on the flat atlas it unrolls into. The sketch below is drawn from the same land data as the atlas, with the sun where it stood at noon over Panama.</p>
+  </div>
+  <figure class="globe-fig">
+    <svg id="globe" viewBox="0 0 300 300" role="img" aria-label="Sketch of the globe with day and night sides and library pins"></svg>
+    <figcaption>
+      <ul class="stack">
+        <li><b>Poster frame</b><span class="sz">&lt; 60 KB</span><span class="d">A still of the globe, sent with the HTML and marked fetchpriority=high, so the first paint is the real thing.</span></li>
+        <li><b>Day and night from NASA</b><span class="sz">3 to 4 MB</span><span class="d">Blue Marble by day and Black Marble city lights at night, as 4k KTX2 textures. Ocean glint, a cloud layer and a thin rim of atmosphere.</span></li>
+        <li><b>A terminator on the slider</b><span class="sz">0 KB</span><span class="d">The day and night line follows the year and season you scrub to. Pins carry founded and destroyed dates and fade to a ghost outside them.</span></li>
+        <li><b>Fly-in</b><span class="sz">room prefetch</span><span class="d">Picking a pin flies the camera along a great circle to the city. The room starts downloading the moment the flight begins.</span></li>
+        <li class="opt"><b>See it today</b><span class="sz">click to load</span><span class="d">The real street in 3D, on request: OpenFreeMap streets with OpenStreetMap buildings raised as blocks, on Mapterhorn terrain. Free, no key, no bill. Buildings are plain shapes, not a photo mesh.</span></li>
+      </ul>
+      <p class="small">Static sketch. The real globe uses NASA Blue Marble and Black Marble textures; the night side glows with city lights.</p>
+    </figcaption>
+  </figure>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Option</th><th>Good at</th><th>Breaks on</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr class="pick"><td>Realistic globe that unrolls into the atlas</td><td>A real first impression, then place and time in one flat view for picking</td><td>Needs a poster frame and a lazy 3D chunk to stay fast</td><td><span class="tag ok">Pick</span></td></tr>
+        <tr><td>Flat atlas only</td><td>Instant paint, every pin in view, works as a plain list on phones</td><td>Little spectacle on landing</td><td><span class="tag plain">Folded in as the picking layer</span></td></tr>
+        <tr><td>Google 3D Tiles as the base</td><td>The most realistic Earth on the web</td><td>Costs $6 per 1,000 loads past 1,000 a month, Google's attribution rules, heavy on phones</td><td><span class="tag bad">No, free MapLibre view instead</span></td></tr>
+        <tr><td>Timeline only</td><td>The story of libraries rising and burning</td><td>Loses place, so you never see that the lost libraries ring the eastern Mediterranean</td><td><span class="tag plain">Folded in as the scrubber</span></td></tr>
+        <tr><td>3D hub hall (a Borges-style hexagon with a door per library)</td><td>Immersion from the first frame</td><td>A heavy load before you have chosen anything</td><td><span class="tag warn">Later, as a Borges side-room</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">Deep zoom uses OpenFreeMap or EOX tiles. Ancient sites take coordinates from Pleiades. Historical borders come from OpenHistoricalMap (CC0), not historical-basemaps, which is GPL.</p>
+</section>
+
+<section aria-labelledby="h-kit">
+  <div class="sec-head">
+    <h2 id="h-kit">Five glyphs, five kits</h2>
+    <p>The glyph is the library's footprint reduced to its type. The same typology decides how each room gets built: a hall is one bay module repeated down an axis, so the Long Room, Admont and Strahov share most of their geometry and differ in ceilings, wood and paint.</p>
+  </div>
+  <div class="kit" id="kit"></div>
+  <div class="legend" id="states"></div>
+</section>
+
+<section aria-labelledby="h-flow" id="flow">
+  <div class="sec-head">
+    <h2 id="h-flow">From map to page</h2>
+    <p>Five screens, one continuous camera. A poster frame paints first, then the globe's lazy 3D chunk. The fly-in and the extrude animation cover the download of the room.</p>
+  </div>
+  <div class="flow-wrap">
+    <ol class="flow">
+      <li><div class="art" id="art1"></div><p class="step">01</p><h3>Globe, then atlas</h3><p>Scrub through time, let the globe unroll, zoom to Europe, tap a glyph.</p><p class="tech">Poster under 60 KB first; NASA KTX2 globe, 3 to 4 MB; unrolls to Equal Earth for picking.</p></li>
+      <li id="frame2"><div class="art"><div class="extrude run" id="extrude"><div class="ex-floor"><i class="ex-wall n"></i><i class="ex-wall w ew"></i><i class="ex-wall e ew"></i><i class="ex-wall s"></i></div><div class="ex-room">cross-fade to room</div></div></div><p class="step">02</p><h3>Plan rises</h3><p>The glyph tilts into perspective and its walls extrude into the room shell.</p><p class="tech">Shell and far-end impostor first; a Worker builds bays from the seeded kit behind the door.</p></li>
+      <li><div class="art" id="art3"></div><p class="step">03</p><h3>Walk the room</h3><p>First-person walk at real scale, with a hotspot on each signature object.</p><p class="tech">Baked day and candle lightmaps, three-mesh-bvh capsule collision, joystick and gyro on mobile.</p></li>
+      <li><div class="art" id="art4"></div><p class="step">04</p><h3>Pull a book</h3><p>Readable spines carry a thin bright band. Tap one and it slides out into your hands.</p><p class="tech">InstancedMesh spines from a KTX2 atlas; the hero book is one real mesh.</p></li>
+      <li><div class="art" id="art5"></div><p class="step">05</p><h3>Read it</h3><p>The book opens to a two-page spread and turns page by page to the end.</p><p class="tech">StPageFlip on a CanvasTexture, text from Standard Ebooks or Gutenberg, scans through IIIF.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section aria-labelledby="h-gen">
+  <div class="sec-head">
+    <h2 id="h-gen">Worlds built on arrival</h2>
+    <p>Rooms are not downloaded as finished models. Each one ships as a hall-kit file of a few KB plus a seed, and your device builds the shelves and books in a Worker while the walls rise. Light and fine detail are too slow to make on a phone, so the build server bakes them once and ships them as textures. Roblox splits work the same way: it streams what is near you, shows a baked stand-in (SLIM) for what is far, and can pause a player at the edge of the loaded area until the next part arrives.</p>
+  </div>
+  <div class="split">
+    <article class="dev">
+      <span class="who">Your device, first visit · Web Worker, seeded PRNG</span>
+      <h3>Geometry from parameters</h3>
+      <ul>
+        <li>Hall shell: walls, vault, floor, windows</li>
+        <li>One InstancedMesh per bay, built bay by bay</li>
+        <li>Thousands of books from 2 to 4 base shapes, with colour, height and lean from the seed</li>
+        <li>Spine titles from one shared atlas</li>
+      </ul>
+      <p class="small">Never downloaded and never cached. The same seed always rebuilds the same room.</p>
+    </article>
+    <div class="mid">hall-kit JSON<br>+ seed<br>a few KB<br><br>door holds until<br>the next bay exists</div>
+    <article class="bake">
+      <span class="who">Build server, once · cached forever</span>
+      <h3>Light and detail</h3>
+      <ul>
+        <li>Path-traced lightmaps in two variants, daylight and candlelight</li>
+        <li>Shared wood, plaster and gilding atlases</li>
+        <li>A far-end impostor shown while the bays build</li>
+        <li>Unique props: globes, busts, lecterns</li>
+      </ul>
+      <p class="small">KTX2 and Meshopt glTF with hashed names, 25 MB or less per room. The browser keeps the last 8 rooms.</p>
+    </article>
+  </div>
+  <p class="small">Total Library, a Godot project, generates a whole library in real time from a 17 to 18 MB build, so the approach holds up in practice. Generation time on a mid-range Android is still unmeasured and is the first thing Phase A tests.</p>
+</section>
+
+<section aria-labelledby="h-culture">
+  <div class="sec-head">
+    <h2 id="h-culture">Why each room matters</h2>
+    <p>A faithful room is only half of it. People remember a place for what it held, who worked there and what happened to it. The Digital Library Cave for Dunhuang put 21 zoomable documents and real historical figures inside a 3D hall and logged 14 million visits in a week. Each WorldLibs room gets the same layers, told from sources.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Layer</th><th>What you get</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td>Cases hold real items</td><td>Every display case holds a readable item or a catalogue card, with a source and licence line</td><td>Gulliver's Travels on a Long Room shelf; the Book of Kells as a catalogue card under glass</td></tr>
+        <tr><td>Short tours</td><td>Two or three five-minute tours per room, plus free roam</td><td>"Who built the gallery", "What the vault changed"</td></tr>
+        <tr><td>People as silhouettes</td><td>Figures with a footnote each. No invented faces</td><td>Philodemus at Herculaneum, Xuanzang at Nalanda, the Mamma Haidara family in Timbuktu</td></tr>
+        <tr><td>Phase slider</td><td>Switch the room between building phases</td><td>Long Room: the original flat ceiling against the barrel vault of 1859–61</td></tr>
+        <tr><td>The place today</td><td>What is happening to the real building</td><td>The Old Library closes in 2027 for restoration to about 2030: "visit while it is closed"</td></tr>
+        <tr><td>Sound</td><td>Convolution reverb from an OpenAIR heritage space</td><td>No library hall is in that set, so it is labelled "proxy acoustic, not this room"</td></tr>
+        <tr><td>Sun-true windows</td><td>The time slider sets the sun angle at the library's real latitude</td><td>Scrub to a winter afternoon in 1750 and low light crosses the Long Room floor</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">Following the London Charter and the Seville Principles, the evidence tag drives the renderer: invented elements draw dashed or ghosted, a "show evidence only" toggle hides them, and AI-assisted assets carry a badge with the model and date. No AI-made text, faces or inscriptions appear anywhere.</p>
+</section>
+
+<section aria-labelledby="h-living">
+  <div class="sec-head">
+    <h2 id="h-living">Living pages</h2>
+    <p>Every Joule runs each idea as a loop: predict it, test it, prove it, earn a stamp. We borrow that loop as one shared component and put it on a few books whose central idea you can try with your hands. Each page takes about 2 to 4 days to build.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Book</th><th>Room</th><th>Predict</th><th>Reveal</th><th>Phase</th></tr></thead>
+      <tbody>
+        <tr class="pick"><td>Byrne's Euclid (1847)</td><td>Long Room</td><td>Which coloured shape comes next in the proof?</td><td>The proof unfolds step by step, then a slider sandbox</td><td><span class="tag ok">A</span></td></tr>
+        <tr><td>Plan of St Gall</td><td>St Gallen</td><td>Where do the scriptorium and infirmary sit?</td><td>The plan lifts into 3D. Cod. Sang. 1092 is CC BY-NC 4.0 on e-codices</td><td><span class="tag plain">B</span></td></tr>
+        <tr><td>Darwin's divergence diagram</td><td>A later room</td><td>Which lineage splits first?</td><td>The branching animates through time</td><td><span class="tag plain">B</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">Gamification lifts engagement more than learning (Souropetsis et al. 2023), so stamps stay cosmetic. They live on a library card in localStorage under wl.stamps, with no streaks and no leaderboards. The card can be saved as a PNG to share.</p>
+</section>
+
+<section aria-labelledby="h-play">
+  <div class="sec-head">
+    <h2 id="h-play">Play, without points</h2>
+    <p>The feel of a game, with no score. Each pattern below comes from a game that already proved it.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>From</th><th>What it proved</th><th>What we take</th></tr></thead>
+      <tbody>
+        <tr><td>The Uncensored Library (Minecraft)</td><td>One conceit, real texts and a minimal UI beat a long feature list. About 300 books and 25M+ visitors reported</td><td>Walk in, pull a real book, read it</td></tr>
+        <tr><td>Gone Home</td><td>Objects carry the story better than markers do</td><td>Left-behind objects (marginalia, a ticket slip, a plan fragment) that show up when you walk close</td></tr>
+        <tr><td>Return of the Obra Dinn</td><td>A ledger the player fills in by deduction</td><td>Sort claims about Alexandria or Nalanda into attested, inferred or legend</td></tr>
+        <tr><td>Play the Past on ruins</td><td>Destruction is testimony, never a timer or a win state</td><td>A sensitivity pass on Alexandria, Timbuktu 2013 and Weimar 2004</td></tr>
+        <tr><td>Assassin's Creed Discovery Tour</td><td>Short narrated tours with combat removed</td><td>Guided mode with a sourced script per stop</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">Three modes ship in Phase A: a guided tour, free roam, and a reader list with no 3D at all. Reduced motion swaps the fly-in and page turns for cross-fades.</p>
+</section>
+
+<section aria-labelledby="h-ai">
+  <div class="sec-head">
+    <h2 id="h-ai">Where AI fits</h2>
+    <p>AI works at build time and only makes proposals. A person signs off, and everything ships as static files. Nothing generates a world while you wait.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tool</th><th>Output</th><th>Cost</th><th>Catch</th><th>Use</th></tr></thead>
+      <tbody>
+        <tr><td>World Labs Marble</td><td>Gaussian splats plus collider meshes; renders in Spark</td><td>About $1.20 per world</td><td>Export and commercial rights need the Pro plan; terms not yet read</td><td><span class="tag warn">One backdrop, tagged "invented"</span></td></tr>
+        <tr><td>TRELLIS.2</td><td>GLB with PBR materials from an image</td><td>Hours on a rented 24 GB GPU</td><td>MIT licence</td><td><span class="tag ok">Props from licensed photos</span></td></tr>
+        <tr><td>Meshy, Tripo, Rodin</td><td>Props by API</td><td>Under $50 for a few dozen (estimate)</td><td>Output licences conflict across sources</td><td><span class="tag plain">Fallback after a terms check</span></td></tr>
+        <tr><td>AnySplat, WildGaussians</td><td>Splats from a few casual photos</td><td>Research code</td><td>Unproven on sparse Commons interiors</td><td><span class="tag plain">Watch</span></td></tr>
+        <tr><td>Genie 3</td><td>Streamed interactive worlds</td><td>Ultra subscription</td><td>US only, prototype, no export</td><td><span class="tag bad">None</span></td></tr>
+        <tr><td>HunyuanWorld, Hunyuan3D</td><td>Worlds and meshes</td><td>Self-hosted</td><td>Licence excludes the EU, UK and South Korea</td><td><span class="tag bad">None</span></td></tr>
+        <tr><td>In-browser LLM guide</td><td>A narrator that answers from the evidence rows</td><td>About 450 MB download</td><td>WebGPU only, battery, can still make things up</td><td><span class="tag plain">Later, opt-in</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout"><p><b>The most useful AI job is reading sources.</b> A quote-to-JSON step takes a cited quote and has an LLM propose hall-kit parameters. A schema check runs next, then a check that the quote really contains each number. A person signs off and a paradata record is written. Any element without a quote id is tagged "invented" on its own, and the JSON is committed with the code.</p></div>
+</section>
+
+<section aria-labelledby="h-scale">
+  <div class="sec-head">
+    <h2 id="h-scale">Rooms at true scale</h2>
+    <p>Drawn to one scale. Every room here takes under about a minute to walk at 1.4 m/s, which keeps each one small enough to model and bake by hand, and sets the camera's walking speed. Dashed edges mark a dimension taken from background knowledge.</p>
+  </div>
+  <div class="scale" id="scale"></div>
+</section>
+
+<section aria-labelledby="h-ev">
+  <div class="sec-head">
+    <h2 id="h-ev">Showing how sure we are</h2>
+    <p>The report grades every reconstruction as known, probable or speculative. The app shows that grade in the rendering itself, so nobody mistakes a guess about Alexandria for a survey of Ephesus. Every lost room gets a toggle between the fact layer and the guess.</p>
+  </div>
+  <div class="ev" id="ev"></div>
+</section>
+
+<section aria-labelledby="h-time">
+  <div class="sec-head">
+    <h2 id="h-time">When it stood</h2>
+    <p>Lost libraries need a sense of time as much as a sense of place. Each one gets four layers: a lifespan with honest, blurry ends, a then-and-now view, the evidence shading above, and shelves that show what survived and what is known to be gone. Tap a row to see its dated events.</p>
+  </div>
+  <div class="life" id="life"></div>
+  <div class="lkey"><span><i style="background: var(--accent)"></i>Standing</span><span><i style="border: 1.5px dashed var(--muted)"></i>Lost or buried</span><span><i style="background: color-mix(in srgb, var(--warn) 55%, var(--surface))"></i>Rediscovered, excavated or rebuilt</span><span><i style="background: linear-gradient(90deg, transparent, var(--accent))"></i>Date uncertain</span><span><i style="width: 2px; background: var(--bad)"></i>Damage event</span></div>
+  <div class="ldetail" id="ldetail" aria-live="polite"></div>
+  <div class="cards4" id="layers"></div>
+</section>
+
+<section aria-labelledby="h-books">
+  <div class="sec-head">
+    <h2 id="h-books">Books: what you can open</h2>
+    <p>Every book on a shelf gets a record, but only some can be read. The shelf shows which is which before you reach for it: readable spines carry the bright band, catalog books stay closed, and lost works appear as outlines with their title.</p>
+  </div>
+  <div class="cards4" id="tiers"></div>
+  <p class="small" id="tier-note"></p>
+</section>
+
+<section aria-labelledby="h-data">
+  <div class="sec-head">
+    <h2 id="h-data">Data budget and caching</h2>
+    <p>We store pointers, not copies. Our files hold the checked facts and, for every book, its ID at the source. The pages themselves come from the holder's public API. There is no database: everything we host is static files on a CDN, under 1 GB at full size (facts under 2 MB, a globe of 3 to 4 MB, 30 rooms at up to 25 MB each, a few hundred pre-built texts). Copying the scans is what would make it grow, since the First Folio alone is 920 pages, about 440 MB even at screen size, so we never copy them.</p>
+    <p>Each step loads only what that step needs, with file names that change when the content changes. The browser keeps files forever and asks again only for the small per-library manifests. A second visit to a room costs one tiny request.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>When</th><th>What loads</th><th>Budget</th><th>Cache rule</th></tr></thead>
+      <tbody>
+        <tr><td>Open the site</td><td>One HTML file with the atlas, the land outline and all 30 library rows inlined, plus the globe poster frame. No API calls.</td><td>≤ 150 KB compressed, poster &lt; 60 KB</td><td>Service Worker, cache-first, hashed name</td></tr>
+        <tr><td>Globe goes live</td><td>The lazy three.js chunk, then the NASA day, night and cloud textures as KTX2.</td><td>About 170 KB gzip, then 3 to 4 MB</td><td>Cache-first, immutable</td></tr>
+        <tr><td>Hover or tap a glyph</td><td>That library's manifest: dates, events, sources and its book list with tiers and IDs.</td><td>5 to 10 KB</td><td>Stale-while-revalidate, so it opens instantly and refreshes quietly</td></tr>
+        <tr><td>Enter the room</td><td>The hall-kit JSON and seed, the far-end impostor, then baked lightmaps, atlases and props. Geometry is built on the device and never downloaded.</td><td>A few KB, then 25 MB or less per room</td><td>Cache-first, immutable; last 8 rooms kept, geometry never cached</td></tr>
+        <tr><td>Look at a catalog book</td><td>Nothing new: its details are already in the manifest. One cover thumbnail.</td><td>About 15 KB</td><td>Cache-first</td></tr>
+        <tr><td>Open a readable text</td><td>The book's table of contents and its first chapter, then the next chapter in the background as you read.</td><td>20 to 60 KB per chapter</td><td>Cache-first; whole book kept when saved offline</td></tr>
+        <tr><td>Open a scan</td><td>A slim page list from our CDN, then images straight from the holder's IIIF server at spread size (1024 px), the next two spreads prefetched, 256 px thumbnails for the page strip.</td><td>A few KB, then 270 to 480 KB per page (measured)</td><td>Runtime cache with a size cap, oldest pages evicted first</td></tr>
+        <tr><td>Come back later</td><td>Reading position, bookmarks and offline books live on the device.</td><td>0 requests</td><td>IndexedDB, with persistent storage requested when you save a book</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cards4">
+    <article><div class="body"><h3>Texts are built ahead</h3><p>Gutenberg is the one source a browser cannot read directly: its files send no CORS header, and it asks people not to fetch its site by script. So a build step pulls each text once from Standard Ebooks or a Gutenberg mirror, cuts it into chapter files of plain paragraphs and puts them on our CDN. Gilgamesh is 250 KB as plain text.</p></div></article>
+    <article><div class="body"><h3>Pages are laid out on the device</h3><p>The text arrives as paragraphs, not pages. The reader paginates for the current screen and font size, so a phone and a desktop share the same files and changing the font never refetches anything.</p></div></article>
+    <article><div class="body"><h3>Easy to read</h3><p>Every book also opens in a plain reader without the 3D room: adjustable type, light, sepia and dark, and page turns that switch to a fade when reduced motion is on. The 3D page turn is the treat, the plain reader is the workhorse.</p></div></article>
+    <article><div class="body"><h3>Scans stay at the source</h3><p>e-codices and the Bodleian both let any site load their IIIF images, so the browser asks them for exactly the size it draws. The only thing we pre-process is the manifest. The First Folio's is 1.2 MB, so a build step cuts it to a page list of a few KB. If a holder ever blocks browsers, we mirror the few pages a room shows, never the whole book.</p></div></article>
+    <article><div class="body"><h3>Public APIs feed the build, not the facts</h3><p>Wikidata, Wikimedia Commons and Open Library all answer browsers directly, and we use them. They fill IDs, cover images and author dates at build time, where the checks compare them with our sources before anything ships. They don't serve facts live: anyone can edit Wikidata, and Gutendex returned 503 while this page was being checked.</p></div></article>
+  </div>
+  <div class="sec-head"><h3>The first second</h3><p>Snappy means something is always on screen and every wait is covered by motion. Budgets: 5 MB before the first room, LCP under 3 s, p95 frame time of 20 ms or less. WebGL is the default; WebGPU ships only after an A/B test wins.</p></div>
+  <ol class="arrive">
+    <li><b>Poster</b><span>A globe still in the HTML, fetchpriority=high. This is the LCP.</span><span class="t">&lt; 60 KB</span></li>
+    <li><b>Canvas fades in</b><span>three.js loads lazily behind the poster.</span><span class="t">~160–176 KB gzip</span></li>
+    <li><b>Globe live</b><span>NASA textures stream in, sharpest last.</span><span class="t">3–4 MB</span></li>
+    <li><b>Fly-in</b><span>The camera flies to the city while the room prefetches.</span><span class="t">room prefetch</span></li>
+    <li><b>Doorway</b><span>Shell and far-end impostor on screen.</span><span class="t">~200 ms target</span></li>
+    <li><b>Walk in</b><span>The door holds until the next bay is built.</span><span class="t">room ≤ 25 MB</span></li>
+  </ol>
+</section>
+
+<section aria-labelledby="h-acc">
+  <div class="sec-head">
+    <h2 id="h-acc">Keeping it accurate</h2>
+    <p id="acc-lede"></p>
+  </div>
+  <div class="vbars" id="vbars"></div>
+  <div class="table-wrap" id="fixes-wrap">
+    <table>
+      <thead><tr><th>Library</th><th>Field</th><th>Was</th><th>Now</th></tr></thead>
+      <tbody id="fixes"></tbody>
+    </table>
+  </div>
+  <div class="sec-head"><h3>What else would make it trustworthy</h3></div>
+  <ol class="todo">
+    <li><b>An ID for everything.</b> A Wikidata ID for each library, book and author, plus the holder's shelfmark and catalogue link, so records can be checked against the source and kept in sync.</li>
+    <li><b>Dates as ranges.</b> Store the earliest and latest year with every date and print "c." or a span when they differ. No invented single years for ancient events.</li>
+    <li><b>Say how a book relates to the room.</b> Held here, survived from here and now elsewhere, known to be lost, or only associated. The Book of Kells is held in Dublin; a Gilgamesh tablet from Nineveh is held in London.</li>
+    <li><b>Licence gate before the reader.</b> The read button appears only when the record has a licence that allows it. Non-commercial scans are flagged so they can be dropped if the project ever earns money.</li>
+    <li><b>Name the edition.</b> The title page of every readable book shows the translator, year and source. Partial works say so, for example "volume 1 of 10", and never claim to be complete.</li>
+    <li><b>A weekly link check.</b> A scheduled job reruns every check command in the facts file. A dead manifest or text flips its row to failing and hides the read button until it is fixed.</li>
+    <li><b>Ask the people who know.</b> Request floor plans from the libraries for the MVP rooms, and have one specialist read each lost-library scene before it ships: an Assyriologist for Nineveh, a papyrologist for Herculaneum.</li>
+    <li><b>Report an error.</b> Every card and title page has a link that opens a report with the fact's ID already filled in.</li>
+  </ol>
+</section>
+
+<section aria-labelledby="h-phase">
+  <div class="sec-head">
+    <h2 id="h-phase">Build order</h2>
+    <p>Each phase proves one thing before the next one spends money on it.</p>
+  </div>
+  <div class="phases">
+    <article>
+      <p class="ph">Phase A</p><h3>Prove the loop</h3>
+      <ul><li>Poster-first globe with NASA day and night layers, the terminator on the time slider, unrolling into the atlas</li><li>Long Room built on the device from the seeded hall kit, with day and candle lightmaps and a phase slider for the ceiling against the 1859–61 vault</li><li>Five Trinity-linked texts: Gulliver's Travels, The Vicar of Wakefield, Dracula, The Picture of Dorian Gray, The Playboy of the Western World</li><li>Kells, Durrow and Armagh as catalogue cards</li><li>Byrne's Euclid living page</li><li>Guided, free and reader modes</li><li>Budgets checked in CI</li></ul>
+      <p class="done">Done when someone can scrub to 1733, fly to Dublin, walk the Long Room, pull Gulliver's Travels and read it to the last page.</p>
+    </article>
+    <article>
+      <p class="ph">Phase B</p><h3>Prove the kits</h3>
+      <ul><li>Admont and Strahov reuse the hall bays</li><li>Celsus with the evidence toggle, as the lost-library template</li><li>St Gallen with the Plan of St Gall living page, and the Darwin page</li><li>Library of Congress builds the rotunda kit from HABS photos and data pages (no measured drawings exist)</li><li>Bodleian First Folio as the first scan reader (CC BY-NC 4.0, so non-commercial only)</li><li>Quote-to-JSON pipeline, guided tours, evidence ledger, proxy reverb</li><li>One Marble backdrop, if its size and terms pass</li></ul>
+      <p class="done">Done when a new hall room ships in under a week.</p>
+    </article>
+    <article>
+      <p class="ph">Phase C</p><h3>Scale by kit</h3>
+      <ul><li>Domed halls: Prunksaal, Labrouste</li><li>Atria: Peabody, Real Gabinete</li><li>More halls: Bates, Rose, Wiblingen</li><li>Lost sites: Dunhuang Cave 17, Nineveh, Villa of the Papyri</li><li>OpenHistoricalMap borders and the "see it today" 3D street</li><li>WebGPU A/B, splat hero zones, the opt-in local guide</li></ul>
+      <p class="done">Done when the atlas has no greyed-out glyph without a date for its room.</p>
+    </article>
+  </div>
+</section>
+
+<section aria-labelledby="h-borrow">
+  <div class="sec-head">
+    <h2 id="h-borrow">Borrowed from similar projects</h2>
+    <p>Seventeen similar projects were checked, along with Every Joule, Total Library and Roblox streaming. None combines real rooms, readable books and evidence tags, but each one settles a question we would otherwise test ourselves.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Project</th><th>What it settles</th><th>What we do</th></tr></thead>
+      <tbody>
+        <tr><td>Every Joule</td><td>One hard idea per page, which the reader predicts, tests and then proves</td><td>Living pages for Byrne's Euclid, the Plan of St Gall and Darwin</td></tr>
+        <tr><td>Roblox streaming, SLIM</td><td>A shipped engine pauses the player at the edge of what has loaded instead of showing holes</td><td>The door holds until the next bay exists, and the far end shows an impostor</td></tr>
+        <tr><td>Total Library (Godot)</td><td>A whole library can be generated in real time from a 17 to 18 MB build</td><td>Seeded hall kits built by a Worker</td></tr>
+        <tr><td>The Uncensored Library</td><td>Curation and one clear idea carry a project</td><td>Every room has a reason to exist, stated in one line</td></tr>
+        <tr><td>Assassin's Creed Discovery Tour</td><td>Short narrated tours work</td><td>Guided mode</td></tr>
+        <tr><td>Pergamon VR with AI (ISPRS 2025)</td><td>Academic VR with AI guides, but no evidence shown per element</td><td>Evidence tags on every element</td></tr>
+        <tr><td>Wonderful Ephesus</td><td>Celsus rebuilt from a laser scan; a scan is the strongest evidence a ruin has</td><td>Celsus from the excavation plan and licensed photos</td></tr>
+        <tr><td>MyShelves, 3D Bookshop</td><td>The take-a-book-and-read loop works in a browser, and Foliate JS reads Standard Ebooks EPUBs</td><td>Same loop, with pre-built text parts</td></tr>
+        <tr><td>Mirador, StPageFlip</td><td>Apache-2.0 and MIT, both maintained</td><td>Mirador for the scan panel, StPageFlip for page turns</td></tr>
+        <tr><td>IA BookReader, Turn.js</td><td>AGPL, and a licence that restricts commercial use</td><td>Copy the BookReader UX only; skip Turn.js</td></tr>
+        <tr><td>Trinity College Dublin</td><td>The official page already links to virtual tours and 3D floor plans</td><td>Link out and credit it, and claim no endorsement</td></tr>
+        <tr><td>World Digital Library</td><td>Retired in 2020–21; its address now redirects to a Library of Congress page</td><td>Keep every data file exportable</td></tr>
+        <tr><td>Library of Babel sites</td><td>The Borges name is crowded</td><td>A small Borges side-room, no Babel branding</td></tr>
+        <tr><td>Wikidata WikiProject Libraries</td><td>Library coordinates, labels and images are already modelled</td><td>Live labels and images by QID through SPARQL</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section aria-labelledby="h-ideas">
+  <div class="sec-head">
+    <h2 id="h-ideas">Ideas beyond the plan</h2>
+    <p>From the brainstorm in the dynamic worlds report. The tag shows how likely each one is to work.</p>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Idea</th><th>What it is</th><th>Odds</th></tr></thead>
+      <tbody>
+        <tr><td>Sun-true rooms</td><td>Window light follows the real sun for the place, date and hour on the slider</td><td><span class="lv hi">high</span></td></tr>
+        <tr><td>Far-end impostor</td><td>A baked picture of the hall's far end shows before the bays exist</td><td><span class="lv hi">high</span></td></tr>
+        <tr><td>The address is the shelf</td><td>The URL names the library, bay, shelf and book, so any page can be shared</td><td><span class="lv hi">high</span></td></tr>
+        <tr><td>Evidence only</td><td>One switch hides every invented element</td><td><span class="lv hi">high</span></td></tr>
+        <tr><td>Left-behind objects</td><td>Marginalia, a ticket slip or a plan fragment appears when you walk close</td><td><span class="lv hi">high</span></td></tr>
+        <tr><td>Borges side-room</td><td>A hexagon room that leads into the reading list</td><td><span class="lv hi">high</span></td></tr>
+        <tr><td>Library card</td><td>Stamps from living pages, saved as a PNG</td><td><span class="lv hi">high</span></td></tr>
+        <tr><td>Evidence ledger</td><td>Sort claims about Alexandria or Nalanda into attested, inferred or legend</td><td><span class="lv md">medium-high</span></td></tr>
+        <tr><td>Quote-to-JSON</td><td>An LLM turns a cited quote into hall-kit parameters for a person to sign off</td><td><span class="lv md">medium-high</span></td></tr>
+        <tr><td>Mistranslation page</td><td>Two translations side by side where they disagree</td><td><span class="lv md">medium</span></td></tr>
+        <tr><td>Unrolling scroll</td><td>A papyrus reader that unrolls sideways, for Herculaneum</td><td><span class="lv md">medium</span></td></tr>
+        <tr><td>Splat hero zone</td><td>One photoreal Gaussian splat corner per room, the rest built from the kit</td><td><span class="lv md">medium</span></td></tr>
+        <tr><td>Marble backdrop</td><td>An AI world seen through a window or doorway, tagged invented</td><td><span class="lv md">medium</span></td></tr>
+        <tr><td>See it today</td><td>A click-to-load 3D street of the real site from free OpenStreetMap data</td><td><span class="lv md">medium</span></td></tr>
+        <tr><td>Local guide</td><td>An opt-in narrator running in the browser that answers only from evidence rows</td><td><span class="lv lo">low-medium</span></td></tr>
+        <tr><td>Streaming by rumour</td><td>Load a room before anyone asks for it, based on guesses</td><td><span class="lv lo">not viable</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section aria-labelledby="h-ready">
+  <div class="sec-head">
+    <h2 id="h-ready">Ready to build?</h2>
+    <p>Yes, for Phase A. The open items below each have a default, so none of them blocks the first commit.</p>
+  </div>
+  <div class="ready">
+    <article>
+      <p class="ph">Planning checks</p>
+      <p class="big">18 / 19</p>
+      <p class="small">Each check is a command in data/planning-gaps.json that re-proves its status. The one failing check is listed next.</p>
+    </article>
+    <article>
+      <p class="ph">Open, with a default</p>
+      <ul>
+        <li><b>Long Room bays.</b> No source gives bay count or gallery height. Use photo estimates scaled from 63.7 m and label them "estimated".</li>
+      </ul>
+    </article>
+    <article>
+      <p class="ph">Decided</p>
+      <ul>
+        <li>The globe comes first and unrolls into the atlas</li>
+        <li>Rooms are built on the device; light is baked</li>
+        <li>WebGL by default, WebGPU after an A/B test</li>
+        <li>AI runs at build time only and is tagged</li>
+        <li>Cloudflare Pages, free plan. No server and no database: the data is JSON in git, and running cost is $0 on a pages.dev address</li>
+        <li>MIT licence and open source. Texts and scans keep their holders' licences and load from the holder, so none are committed</li>
+        <li>BnF books link out to Gallica. In a real browser its images will not load inside another site</li>
+      </ul>
+    </article>
+    <article>
+      <p class="ph">Needed from the owner to start</p>
+      <p class="big">4 / 5</p>
+      <ul>
+        <li><b>GitHub repo.</b> Done: public at github.com/coding-sunshine/worldlibs</li>
+        <li><b>Criteria sign-off.</b> Done: the 18 Phase A checks froze on 8 Nov 2026</li>
+        <li><b>Cloudflare.</b> Open: make a free account, then connect the repo in Workers &amp; Pages. Does not block code</li>
+        <li>Trinity email for Long Room drawings: drafted, waiting for the owner to send. Loc.gov and Trinity CAPTCHA pages still need a person</li>
+      </ul>
+    </article>
+    <article>
+      <p class="ph">Measure first in Phase A</p>
+      <ul>
+        <li>three.js bundle size on the current release (r187 today)</li>
+        <li>Room build and KTX2 transcode time on a mid-range Android</li>
+        <li>Spark splats under WebGPU, and splat size per room</li>
+        <li>Marble terms and export size</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<footer class="notes">
+  <p>Dates, sizes and books were rechecked in a verification pass. Each one is stored with its source, a short quote and a command that re-proves it. Values marked * are still unverified. Floor plans remain schematic until measured drawings arrive. Where several libraries share a city, their glyphs are nudged apart and a thin line points back to the true spot.</p>
+  <p>Kanazawa, Binhai, Seattle and Black Diamond are left off the atlas for the reasons given in the report. The globe, on-device rooms, living pages and AI sections draw on the dynamic worlds report; its prices and licence terms were read in November 2026 and change often. Nothing here is legal advice.</p>
+</footer>
+
+</div></div>
+
+<script>
+const M = /*__MAP__*/null;
+const NS = "http://www.w3.org/2000/svg";
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs || {}) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---------- glyphs ---------- */
+const f = n => +n.toFixed(2);
+const rect = (x, y, w, h) => `M${f(x)},${f(y)}h${f(w)}v${f(h)}h${f(-w)}Z`;
+const circ = r => `M${f(-r)},0a${f(r)},${f(r)} 0 1,0 ${f(2 * r)},0a${f(r)},${f(r)} 0 1,0 ${f(-2 * r)},0Z`;
+const poly = (n, r, a0) => "M" + Array.from({ length: n }, (_, i) => { const a = a0 + i * 2 * Math.PI / n; return f(r * Math.cos(a)) + "," + f(r * Math.sin(a)); }).join("L") + "Z";
+function glyphPath(k, s) {
+  if (k === "hall") return rect(-0.85 * s, -0.32 * s, 1.7 * s, 0.64 * s);
+  if (k === "dome") return rect(-0.85 * s, -0.36 * s, 1.7 * s, 0.72 * s) + circ(0.22 * s);
+  if (k === "rotunda") return poly(8, 0.62 * s, Math.PI / 8);
+  if (k === "atrium") return rect(-0.55 * s, -0.55 * s, 1.1 * s, 1.1 * s) + rect(-0.22 * s, -0.22 * s, 0.44 * s, 0.44 * s);
+  return poly(4, 0.66 * s, 0);
+}
+const KINDS = {
+  hall: { name: "Long hall", plan: "A long rectangle.", kit: "One bay module (alcove shelving, gallery, a slice of ceiling) repeated down the axis. Rooms differ in vault, wood and paint." },
+  dome: { name: "Domed hall", plan: "Rectangle with a dome over the crossing.", kit: "Hall bays plus a dome module, or a field of small domes on columns as at Labrouste." },
+  rotunda: { name: "Rotunda", plan: "Octagon or circle.", kit: "One wedge module repeated eight times around a central dome, with radial desks." },
+  atrium: { name: "Atrium", plan: "Galleries around a light well.", kit: "One gallery tier stacked four or five high around an open court, lit from above." },
+  site: { name: "Site", plan: "Diamond, for ruins and lost rooms.", kit: "Terrain and surviving fabric, with anything reconstructed drawn in the evidence shader." }
+};
+const STATES = [["stand", "Standing"], ["lost", "Lost"], ["found", "Rediscovered or rebuilt"], ["spec", "Speculative"]];
+function mini(k, cls, size, box) {
+  const b = box || [-13, -8, 26, 16];
+  return `<svg viewBox="${b.join(" ")}" aria-hidden="true" class="mini ${cls || ""}"><path class="shape" d="${glyphPath(k, size || 10)}"/><circle class="dot" r="${(size || 10) * 0.16}"/></svg>`;
+}
+
+/* ---------- time ---------- */
+const STOPS = [[-700, 0], [1000, 0.3], [1600, 0.55], [2030, 1]];
+function yearAt(t) { for (let i = 1; i < STOPS.length; i++) { const [y0, t0] = STOPS[i - 1], [y1, t1] = STOPS[i]; if (t <= t1) return y0 + (y1 - y0) * (t - t0) / (t1 - t0); } return 2030; }
+function tAt(y) { for (let i = 1; i < STOPS.length; i++) { const [y0, t0] = STOPS[i - 1], [y1, t1] = STOPS[i]; if (y <= y1) return t0 + (t1 - t0) * (y - y0) / (y1 - y0); } return 1; }
+const fmtYear = y => y < 0 ? `${-y} BCE` : y < 1000 ? `${y} CE` : String(y);
+function stateAt(l, Y) {
+  if (Y < l.y) return null;
+  if (l.ev === "speculative") return "spec";
+  const lost = l.lost === true || (typeof l.lost === "number" && Y >= l.lost);
+  if (!lost) return "stand";
+  return l.found && Y >= l.found ? "found" : "lost";
+}
+
+/* ---------- map ---------- */
+const svg = $("#map");
+$("#landpath").setAttribute("d", M.land);
+$("#grat").setAttribute("d", M.grat);
+const V = { world: M.view, europe: [413, 36, 234, 104] };
+const libs = M.libs;
+
+/* ---------- globe sketch ---------- */
+if (M.globe && $("#globe")) {
+  const G = M.globe, gs = $("#globe"), r = G.size / 2;
+  el("circle", { class: "sea", cx: r, cy: r, r: r - 4 }, gs);
+  for (const k of ["grat", "land", "twi", "night"]) el("path", { class: { grat: "ggrat", land: "gland" }[k] || k, d: G[k] }, gs);
+  for (const [x, y, n, id] of G.pins) {
+    const c = el("circle", { class: n ? "gpin n" : "gpin", cx: x, cy: y, r: 3 }, gs);
+    el("title", {}, c).textContent = libs.find(l => l.id === id)?.n || id;
+  }
+}
+const leaders = el("g", { class: "leaders" }, svg), glyphs = el("g", {}, svg), lbl = el("g", { class: "lbl" }, svg);
+const lblText = el("text", { y: 4 }, lbl);
+const nodes = libs.map(l => {
+  const line = el("line", {}, leaders), pin = el("circle", {}, leaders);
+  const g = el("g", { class: "gl tier-" + l.tier }, glyphs);
+  const inner = el("g", { class: "inner" }, g);
+  el("circle", { class: "halo", r: 13 }, inner);
+  el("path", { class: "shape", d: glyphPath(l.k, 11) }, inner);
+  el("circle", { class: "dot", r: 1.8 }, inner);
+  el("circle", { class: "hit", r: 13 }, inner);
+  g.addEventListener("click", () => select(l.id));
+  return { l, line, pin, g, st: undefined };
+});
+
+function mapWidth() { return svg.getBoundingClientRect().width || 800; }
+function relax(upp) {
+  // ponytail: O(n^2) push-apart, fine for ~30 glyphs; swap for a quadtree past a few hundred
+  const min = 19 * upp, P = libs.map(l => ({ x: l.px, y: l.py }));
+  for (let it = 0; it < 160; it++) {
+    P.forEach((p, i) => { p.x += (libs[i].px - p.x) * 0.04; p.y += (libs[i].py - p.y) * 0.04; });
+    for (let i = 0; i < P.length; i++) for (let j = i + 1; j < P.length; j++) {
+      let dx = P[j].x - P[i].x, dy = (P[j].y - P[i].y) * 1.6, d = Math.hypot(dx, dy);
+      if (d >= min) continue;
+      if (d < 1e-6) { const a = i * 2.39996 + j; dx = Math.cos(a); dy = Math.sin(a); d = 1; }
+      const k = (min - d) / 2 / d;
+      P[i].x -= dx * k; P[i].y -= dy * k / 1.6; P[j].x += dx * k; P[j].y += dy * k / 1.6;
+    }
+  }
+  return P;
+}
+let layouts = {}, zoomKey = matchMedia("(max-width: 640px)").matches ? "europe" : "world";
+let curView = V[zoomKey].slice(), curP = null, selected = "longroom", year = 2026;
+const layoutFor = key => layouts[key] || (layouts[key] = relax(V[key][2] / mapWidth()));
+
+function apply(view, P) {
+  svg.setAttribute("viewBox", view.map(f).join(" "));
+  const u = view[2] / mapWidth();
+  nodes.forEach((n, i) => {
+    const p = P[i], l = n.l, moved = Math.hypot(p.x - l.px, p.y - l.py) > 3 * u;
+    n.g.setAttribute("transform", `translate(${f(p.x)} ${f(p.y)}) scale(${u.toFixed(4)})`);
+    n.line.setAttribute("x1", l.px); n.line.setAttribute("y1", l.py); n.line.setAttribute("x2", f(p.x)); n.line.setAttribute("y2", f(p.y));
+    n.pin.setAttribute("cx", l.px); n.pin.setAttribute("cy", l.py); n.pin.setAttribute("r", f(1.4 * u));
+    const off = !n.st || !moved;
+    n.line.classList.toggle("off", off); n.pin.classList.toggle("off", off);
+  });
+  curView = view; curP = P;
+  placeLabel();
+}
+function placeLabel() {
+  const i = libs.findIndex(l => l.id === selected), n = nodes[i];
+  if (!n || !n.st || !curP) { lbl.style.display = "none"; return; }
+  const u = curView[2] / mapWidth(), p = curP[i];
+  const right = (p.x - curView[0]) / curView[2] > 0.72;
+  lbl.style.display = "";
+  lbl.setAttribute("transform", `translate(${f(p.x)} ${f(p.y)}) scale(${u.toFixed(4)})`);
+  lblText.setAttribute("x", right ? -17 : 17);
+  lblText.setAttribute("text-anchor", right ? "end" : "start");
+  lblText.textContent = n.l.n;
+}
+const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+let tweenId = 0;
+function setZoom(key) {
+  zoomKey = key;
+  document.querySelectorAll("[data-zoom]").forEach(b => b.setAttribute("aria-pressed", b.dataset.zoom === key));
+  const from = curView.slice(), to = V[key], A = curP, B = layoutFor(key), id = ++tweenId;
+  if (reduce || !A) return apply(to, B);
+  const t0 = performance.now();
+  (function step(now) {
+    if (id !== tweenId) return;
+    const t = Math.min(1, (now - t0) / 700), e = ease(t);
+    apply(from.map((a, i) => a + (to[i] - a) * e), A.map((p, i) => ({ x: p.x + (B[i].x - p.x) * e, y: p.y + (B[i].y - p.y) * e })));
+    if (t < 1) requestAnimationFrame(step);
+  })(t0);
+}
+document.querySelectorAll("[data-zoom]").forEach(b => b.addEventListener("click", () => setZoom(b.dataset.zoom)));
+new ResizeObserver(() => { layouts = {}; tweenId++; apply(V[zoomKey], layoutFor(zoomKey)); }).observe(svg);
+
+/* ---------- year ---------- */
+const slider = $("#yr");
+const TICKS = [[-700, "700 BCE"], [1, "1 CE", 1], [500, "500", 1], [1000, "1000"], [1300, "1300", 1], [1600, "1600"], [1800, "1800", 1], [2026, "2026"]];
+$("#ticks").innerHTML = TICKS.map(([y, s, minor]) => `<span${minor ? ' class="minor"' : ""} style="left:${(tAt(y) * 100).toFixed(2)}%">${s}</span>`).join("");
+
+function setYear(Y, fromSlider) {
+  year = Math.round(Y) || 1;
+  if (!fromSlider) slider.value = Math.round(tAt(year) * 1000);
+  $("#year").textContent = fmtYear(year);
+  slider.setAttribute("aria-valuetext", fmtYear(year));
+  const c = { stand: 0, lost: 0, found: 0, spec: 0 };
+  nodes.forEach(n => {
+    const st = stateAt(n.l, year), was = n.st;
+    n.st = st;
+    n.g.setAttribute("class", `gl tier-${n.l.tier}${st ? " st-" + st : " off"}${n.l.id === selected ? " sel" : ""}`);
+    if (st && was === null && !reduce) { n.g.classList.add("pop"); setTimeout(() => n.g.classList.remove("pop"), 460); }
+    if (st) c[st]++;
+  });
+  $("#count").textContent = `In ${fmtYear(year)}: ${c.stand} standing, ${c.lost + c.found} lost${c.found ? ` (${c.found} rediscovered or rebuilt)` : ""}${c.spec ? `, ${c.spec} speculative` : ""}`;
+  if (curP) apply(curView, curP);
+  renderList();
+  renderCard();
+}
+slider.addEventListener("input", () => { stopPlay(); setYear(yearAt(slider.value / 1000), true); });
+
+let playId = 0;
+const playBtn = $("#play");
+function stopPlay() { playId++; playBtn.textContent = "Play"; }
+playBtn.addEventListener("click", () => {
+  if (playBtn.textContent === "Pause") return stopPlay();
+  const end = Math.round(tAt(2026) * 1000);
+  if (+slider.value >= end) slider.value = 0;
+  const id = ++playId; playBtn.textContent = "Pause";
+  let last = performance.now();
+  (function step(now) {
+    if (id !== playId) return;
+    const v = Math.min(end, +slider.value + (now - last) * 0.075); last = now;
+    slider.value = v; setYear(yearAt(v / 1000), true);
+    if (v < end) requestAnimationFrame(step); else stopPlay();
+  })(last);
+});
+
+/* ---------- list + card ---------- */
+const WAVE = { mvp: "MVP", w2: "Wave 2", later: "Later", lost: "Lost library, later" };
+const EVTAG = { known: ["ok", "Known"], probable: ["warn", "Probable"], speculative: ["bad", "Speculative"] };
+const statusOn = l => l.st && year >= l.stFrom;
+function renderList() {
+  const vis = nodes.filter(n => n.st).map(n => n.l).sort((a, b) => a.y - b.y);
+  $("#list-sum").textContent = `Libraries on the map in ${fmtYear(year)} (${vis.length})`;
+  $("#list").innerHTML = vis.map(l => `<li><button type="button" data-id="${l.id}" aria-current="${l.id === selected}">${mini(l.k, `tier-${l.tier} st-${stateAt(l, year)}`)}<span>${esc(l.n)}</span><span class="meta">${esc(l.p)} · ${esc(l.yl)}</span>${statusOn(l) ? `<span class="note">${esc(l.st)}</span>` : ""}</button></li>`).join("");
+}
+$("#list").addEventListener("click", e => { const b = e.target.closest("button[data-id]"); if (b) select(b.dataset.id); });
+
+function renderCard() {
+  const l = libs.find(x => x.id === selected), st = stateAt(l, year);
+  const [evc, evt] = EVTAG[l.ev];
+  const wave = l.tier === "mvp" ? `MVP, phase ${l.phase}${l.lost ? ", lost library" : ""}` : WAVE[l.tier];
+  const rows = [
+    ["Built", l.yl],
+    ["Size", l.dim],
+    ["Holdings", l.vol],
+    ["Signature", l.book],
+    ["Use", l.read],
+  ].filter(r => r[1]).map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join("");
+  const status = st === null ? `<span class="tag plain">Not built yet in ${fmtYear(year)}</span>` : statusOn(l) ? `<span class="tag warn">${esc(l.st)}</span>` : "";
+  $("#card").innerHTML = `
+    <div class="card-plan">${mini(l.k, `tier-${l.tier} st-${st || "stand"}`, 34, [-40, -24, 80, 48])}</div>
+    <div><span class="tag ${l.tier === "mvp" ? "acc" : "plain"}">${wave}</span> <span class="tag ${evc}" title="${esc(l.evNote || "")}">${evt}</span></div>
+    <div><h3>${esc(l.n)}</h3><p class="place">${esc(l.p)} · ${KINDS[l.k].name.toLowerCase()}</p></div>
+    ${status ? `<div>${status}</div>` : ""}
+    <dl>${rows}${l.evNote ? `<div><dt>Evidence</dt><dd>${esc(l.evNote)}</dd></div>` : ""}</dl>
+    <button type="button" class="enter" id="enter">Enter room</button>
+    <p class="small">In this mock, Enter plays the plan-to-room transition from step 02 below.${l.bg ? " Dates with * are unverified." : ""}</p>`;
+  $("#enter").addEventListener("click", enterRoom);
+}
+function select(id) {
+  selected = id;
+  nodes.forEach(n => n.g.classList.toggle("sel", n.l.id === id));
+  placeLabel(); renderList(); renderCard();
+}
+function enterRoom() {
+  const ex = $("#extrude"), fr = $("#frame2");
+  ex.classList.remove("run"); void ex.offsetWidth; ex.classList.add("run");
+  fr.classList.add("hot"); setTimeout(() => fr.classList.remove("hot"), 2600);
+  fr.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center", inline: "center" });
+}
+
+/* ---------- legend, kit, states ---------- */
+$("#legend").innerHTML = Object.entries(KINDS).map(([k, v]) => `<span>${mini(k, "tier-mvp st-stand")}${v.name}</span>`).join("") + '<i class="sep"></i>' +
+  STATES.map(([s, t]) => `<span>${mini("hall", "st-" + s)}${t}</span>`).join("");
+$("#kit").innerHTML = Object.entries(KINDS).map(([k, v]) => {
+  const used = libs.filter(l => l.k === k).sort((a, b) => (a.tier !== "mvp") - (b.tier !== "mvp"));
+  return `<article><svg viewBox="-30 -17 60 34" aria-hidden="true"><path class="shape" d="${glyphPath(k, 26)}"/></svg><h3>${v.name}</h3><p>${v.plan} ${v.kit}</p><p class="used">${used.map(l => l.tier === "mvp" ? `<b>${esc(l.n)}</b>` : esc(l.n)).join(", ")}</p></article>`;
+}).join("");
+$("#states").innerHTML = "<span><b>Fill shows state:</b></span>" + STATES.map(([s, t]) => `<span>${mini("hall", "st-" + s)}${t}</span>`).join("");
+
+/* ---------- flow art ---------- */
+(function art1() {
+  const s = el("svg", { viewBox: "380 20 260 195", preserveAspectRatio: "xMidYMid slice", "aria-hidden": "true" }, $("#art1"));
+  el("rect", { x: 380, y: 20, width: 260, height: 195, style: "fill: var(--sea)" }, s);
+  el("use", { href: "#landpath" }, s);
+  libs.filter(l => l.y <= 2026 && l.px > 380 && l.px < 640 && l.py < 215).forEach(l => {
+    el("path", { d: glyphPath(l.k, 5.5), transform: `translate(${l.px} ${l.py})`, style: `fill: ${l.tier === "mvp" ? "var(--accent)" : "var(--muted)"}; fill-rule: evenodd` }, s);
+  });
+  el("rect", { x: 396, y: 196, width: 228, height: 3, rx: 1.5, style: "fill: var(--rule)" }, s);
+  el("rect", { x: 396, y: 196, width: 200, height: 3, rx: 1.5, style: "fill: var(--accent)" }, s);
+  el("circle", { cx: 596, cy: 197.5, r: 5, style: "fill: var(--accent)" }, s);
+})();
+(function art3() {
+  const s = el("svg", { viewBox: "0 0 160 120", "aria-hidden": "true" }, $("#art3"));
+  const vx = 80, vy = 60, line = (x1, y1, x2, y2, w, c) => el("line", { x1, y1, x2, y2, style: `stroke: ${c || "var(--muted)"}; stroke-width: ${w || .7}` }, s);
+  const Z = [1, .72, .52, .38, .28, .2, .145];
+  const L = z => vx - 76 * z, R = z => vx + 76 * z, T = z => vy - 40 * z, B = z => vy + 58 * z;
+  line(L(1), B(1), vx, vy, .5); line(R(1), B(1), vx, vy, .5); line(L(1), T(1), L(Z[6]), T(Z[6]), .5); line(R(1), T(1), R(Z[6]), T(Z[6]), .5);
+  Z.forEach((z, i) => {
+    line(L(z), T(z), L(z), B(z), i % 2 ? .5 : 1, i % 2 ? null : "var(--accent)");
+    line(R(z), T(z), R(z), B(z), i % 2 ? .5 : 1, i % 2 ? null : "var(--accent)");
+    if (i % 2 === 0) el("path", { d: `M${f(L(z))},${f(T(z))} Q${vx},${f(T(z) - 46 * z)} ${f(R(z))},${f(T(z))}`, style: "fill: none; stroke: var(--accent); stroke-width: .8" }, s);
+    if (i < Z.length - 1) for (let k = 1; k < 5; k++) {
+      const z2 = Z[i + 1], yA = T(z) + (B(z) - T(z)) * k / 5, yB = T(z2) + (B(z2) - T(z2)) * k / 5;
+      line(L(z), yA, L(z2), yB, .4); line(R(z), yA, R(z2), yB, .4);
+    }
+  });
+  el("rect", { x: 77.5, y: 63, width: 5, height: 13, rx: 2.5, style: "fill: var(--ink)" }, s);
+  el("circle", { cx: 80, cy: 60.5, r: 2.4, style: "fill: var(--ink)" }, s);
+})();
+(function art4() {
+  const s = el("svg", { viewBox: "0 0 160 120", "aria-hidden": "true" }, $("#art4"));
+  let x = 10, seed = 7;
+  const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+  for (let i = 0; x < 150; i++) {
+    const w = 5 + rnd() * 4, h = 48 + rnd() * 26, pulled = i === 8, readable = i === 3 || i === 13;
+    if (x + w > 150) break;
+    const y = 96 - h, g = el("g", { transform: pulled ? "translate(-3 14) rotate(-8 " + f(x + w / 2) + " 96)" : "" }, s);
+    el("rect", { x: f(x), y: f(y), width: f(w - .8), height: f(h), rx: .8, style: `fill: ${pulled ? "var(--accent)" : "var(--muted)"}; opacity: ${pulled ? 1 : (.35 + rnd() * .45).toFixed(2)}` }, g);
+    if (readable || pulled) el("rect", { x: f(x), y: f(y + 8), width: f(w - .8), height: 2.4, style: "fill: var(--warn)" }, g);
+    x += w;
+  }
+  el("rect", { x: 6, y: 96, width: 148, height: 4, style: "fill: var(--ink); opacity: .7" }, s);
+  el("rect", { x: 6, y: 18, width: 148, height: 3, style: "fill: var(--ink); opacity: .35" }, s);
+})();
+(function art5() {
+  const s = el("svg", { viewBox: "0 0 160 120", "aria-hidden": "true" }, $("#art5"));
+  el("rect", { x: 14, y: 20, width: 132, height: 84, rx: 2, style: "fill: var(--ink); opacity: .12" }, s);
+  el("rect", { x: 16, y: 18, width: 64, height: 82, style: "fill: var(--bg); stroke: var(--rule)" }, s);
+  el("rect", { x: 80, y: 18, width: 64, height: 82, style: "fill: var(--bg); stroke: var(--rule)" }, s);
+  for (let p = 0; p < 2; p++) for (let i = 0; i < 12; i++) {
+    const x0 = p ? 87 : 23, w = (i === 11 ? 28 : 50) - (i * 7 % 5);
+    if (p === 0 && i === 0) { el("rect", { x: 23, y: 26, width: 30, height: 3, style: "fill: var(--accent)" }, s); continue; }
+    el("rect", { x: x0, y: 28 + i * 5.6, width: w, height: 1.6, style: "fill: var(--muted); opacity: .7" }, s);
+  }
+  el("path", { d: "M144,74 Q128,84 124,100 L144,100 Z", style: "fill: var(--surface); stroke: var(--rule)" }, s);
+  el("path", { d: "M144,74 Q132,88 124,100", style: "fill: none; stroke: var(--muted); stroke-width: .6" }, s);
+  el("line", { x1: 80, y1: 18, x2: 80, y2: 100, style: "stroke: var(--muted); stroke-width: .6" }, s);
+})();
+
+/* ---------- rooms to scale ---------- */
+const ROOMS = [
+  { n: "Rose Main Reading Room", s: "NYPL, wave 2", L: 90.5, W: 23.8 },
+  { n: "Mafra", s: "wave 2, Wikipedia size", L: 88, W: 9.5 },
+  { n: "Admont", s: "MVP", L: 70, W: 14, mvp: 1 },
+  { n: "Bates Hall", s: "BPL, wave 2", L: 66.4, W: 12.8 },
+  { n: "Long Room", s: "MVP, width ~12 m*", L: 65, W: 12, mvp: 1, guess: 1 },
+  { n: "El Escorial", s: "wave 2, Wikipedia size", L: 54, W: 9 },
+  { n: "Strahov Philosophical", s: "next to the MVP hall", L: 32, W: 10 },
+  { n: "Wiblingen", s: "wave 2", L: 23, W: 11.5 },
+];
+const maxL = 90.5;
+$("#scale").innerHTML =
+  `<div class="srow"><span></span><div class="scalebar"><i style="width:${(10 / maxL * 100).toFixed(2)}%"></i>10 m</div><span class="walk">walk</span></div>` +
+  ROOMS.map(r => `<div class="srow"><div class="nm">${r.n}<small>${r.L} × ${r.W} m · ${r.s}</small></div><div><div class="room${r.mvp ? " mvp" : ""}${r.guess ? " guess" : ""}" style="width:${(r.L / maxL * 100).toFixed(2)}%;aspect-ratio:${r.L}/${r.W}"></div></div><div class="walk">${Math.round(r.L / 1.4)} s</div></div>`).join("") +
+  `<div class="srow"><div class="nm">LoC Main Reading Room<small>MVP hero</small></div><div class="room none">No verified size yet. HABS DC-351 has photos and data pages but no measured drawings.</div><div class="walk">—</div></div>`;
+
+/* ---------- evidence swatches ---------- */
+function arch(mode) {
+  const st = { known: "fill: color-mix(in srgb, var(--warn) 45%, var(--surface)); stroke: var(--ink); stroke-width: 1", probable: "fill: url(#hatch); stroke: var(--muted); stroke-width: 1", speculative: "fill: none; stroke: var(--muted); stroke-width: 1; stroke-dasharray: 3 2" }[mode];
+  let shelves = "";
+  for (let i = 0; i < 5; i++) shelves += `<line x1="62" y1="${f(58 + i * 11)}" x2="98" y2="${f(58 + i * 11)}" style="stroke: var(--ink); stroke-width: .8; opacity: ${mode === "speculative" ? .4 : .7}${mode === "speculative" ? "; stroke-dasharray: 3 2" : ""}"/>`;
+  return `<svg viewBox="0 0 160 90" aria-hidden="true"><defs><pattern id="hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" style="fill: color-mix(in srgb, var(--warn) 18%, var(--surface))"/><line x1="0" y1="0" x2="0" y2="5" style="stroke: var(--muted); stroke-width: 1; opacity: .5"/></pattern></defs>
+    <path d="M44,112 V44 Q80,4 116,44 V112 Z" style="${st}"/><rect x="58" y="50" width="44" height="62" style="${mode === "known" ? "fill: color-mix(in srgb, var(--ink) 55%, var(--warn)); opacity: .55" : "fill: none"}"/>${shelves}
+    <line x1="20" y1="89" x2="140" y2="89" style="stroke: var(--muted)"/></svg>`;
+}
+const EV = [
+  ["known", "ok", "Known", "Full materials and baked light, modelled from photos, drawings or surveys.", "Long Room, Admont, Strahov, the LoC reading room, the Celsus facade, Dunhuang Cave 17."],
+  ["probable", "warn", "Probable", "Muted materials under a fine hatch, with a chip that says why. Reasoned from close parallels.", "Celsus interior, Ashurbanipal, Pergamon, Nalanda."],
+  ["speculative", "bad", "Speculative", "Line drawing only, no texture, so it reads as a sketch. The toggle swaps it for the fact layer.", "Alexandria and the Serapeum."],
+];
+$("#ev").innerHTML = EV.map(([m, c, t, how, who]) => `<article><div class="sw">${arch(m)}</div><div class="body"><h3>${t} <span class="tag ${c}">${t.toLowerCase()}</span></h3><p>${how}</p><p class="small">${who}</p></div></article>`).join("");
+
+/* ---------- verified data (null until the merge step fills it) ---------- */
+const VER = /*__VER__*/null;
+const byId = Object.fromEntries(libs.map(l => [l.id, l]));
+const TAGS = { passing: ["ok", "checked"], failing: ["warn", "unverified"] };
+const TIERS = { primary: "holder", secondary: "secondary", wikipedia: "Wikipedia" };
+const fuzzy = l => /\*|about/i.test(l.yl);
+
+/* ---------- lifespans ---------- */
+const LIFE = libs.filter(l => l.lost !== undefined || (VER?.events[l.id] || []).some(e => e.k === "damaged" || e.k === "destroyed"))
+  .sort((a, b) => a.y - b.y);
+const pct = y => (tAt(Math.max(-700, Math.min(2026, y))) * 100).toFixed(2);
+const span = (cls, a, b, extra) => `<i class="sp ${cls}" style="left:${pct(a)}%;width:${(pct(b) - pct(a)).toFixed(2)}%;${extra || ""}"></i>`;
+function lifeTrack(l) {
+  const v = VER?.span?.[l.id], b0 = v ? v[0] : fuzzy(l) ? l.y - 40 : l.y, b1 = v ? v[1] : fuzzy(l) ? l.y + 40 : l.y;
+  const end = typeof l.lost === "number" ? l.lost : l.lost === true ? null : 2026;
+  let h = "";
+  if (b1 > b0) h += span("up", b0, b1, "background:linear-gradient(90deg,transparent,var(--accent))");
+  if (end === null) h += span("up", b1, b1 + 500, "background:linear-gradient(90deg,var(--accent),transparent)");
+  else {
+    h += span("up", b1, end);
+    if (end < 2026) h += span("gone", end, l.found || 2026);
+    if (l.found) h += span("back", l.found, 2026);
+  }
+  for (const e of VER?.events[l.id] || []) h += `<i class="pin${e.k === "damaged" || e.k === "destroyed" ? " x" : ""}" style="left:${pct(e.y)}%" title="${esc(fmtYear(e.y) + ": " + e.t)}"></i>`;
+  return h;
+}
+const lifeSub = l => `${l.yl.replace(/\*$/, "")}${typeof l.lost === "number" && l.lost !== l.y ? ` · lost ${fmtYear(l.lost)}` : l.lost === true ? " · loss date unknown" : ""}${l.found ? ` · ${l.found < 1900 ? "found" : "back"} ${l.found}` : ""}`;
+$("#life").innerHTML =
+  `<div class="laxis-row"><span></span><div class="laxis">${TICKS.map(([y, s, m]) => `<span${m ? ' class="minor"' : ""} style="left:${pct(y)}%">${s}</span>`).join("")}</div></div>` +
+  LIFE.map(l => `<button type="button" class="lrow" data-id="${l.id}" aria-pressed="false"><span class="nm">${esc(l.n)}<small>${esc(lifeSub(l))}</small></span><span class="track">${lifeTrack(l)}</span></button>`).join("");
+
+function fallbackEvents(l) {
+  const ev = [{ y: l.y, t: "Built or founded", s: "failing" }];
+  if (typeof l.lost === "number") ev.push({ y: l.lost, t: "Lost, sealed or destroyed", s: "failing" });
+  if (l.found) ev.push({ y: l.found, t: "Rediscovered, excavated or rebuilt", s: "failing" });
+  return ev;
+}
+const yrLabel = e => e.e != null && e.l != null && e.e !== e.l ? `${fmtYear(e.e)}–${fmtYear(e.l)}` : (e.c ? "c. " : "") + fmtYear(e.y);
+function showLife(id) {
+  const l = byId[id], ev = (VER?.events[id] || fallbackEvents(l)).slice().sort((a, b) => a.y - b.y);
+  document.querySelectorAll(".lrow").forEach(b => b.setAttribute("aria-pressed", b.dataset.id === id));
+  $("#ldetail").innerHTML = `<h3>${esc(l.n)}</h3><p class="small">${esc(l.p)}</p><ol>${ev.map(e => {
+    const [c, s] = TAGS[e.s] || TAGS.failing;
+    return `<li><span class="yr">${yrLabel(e)}</span><span>${esc(e.t)} <span class="tag ${c}">${s}</span>${e.r ? ` <span class="tag plain">${TIERS[e.r] || e.r}</span>` : ""}</span></li>`;
+  }).join("")}</ol>${VER?.events[id] ? "" : `<p class="small">Placeholder events from the atlas data. The verification pass replaces them with sourced dates.</p>`}`;
+}
+$("#life").addEventListener("click", e => { const b = e.target.closest(".lrow"); if (b) showLife(b.dataset.id); });
+showLife(byId.alexandria ? "alexandria" : LIFE[0].id);
+
+/* ---------- four layers for lost libraries ---------- */
+const LAYERS = [
+  ["Lifespan", "The bar above, on every card and in every room: fuzzy where a date is a range, a pin for each dated event, a dashed stretch for the centuries it lay lost.",
+    `<rect x="10" y="40" width="22" height="10" style="fill:url(#lg)"/><rect x="32" y="40" width="40" height="10" style="fill:var(--accent)"/><rect x="72.5" y="40.5" width="52" height="9" style="fill:none;stroke:var(--muted);stroke-dasharray:3 2"/><rect x="125" y="40" width="25" height="10" style="fill:color-mix(in srgb,var(--warn) 55%,var(--surface))"/><rect x="71" y="34" width="2" height="22" style="fill:var(--bad)"/>`],
+  ["Then and now", "A toggle in the room swaps the reconstruction for the site as it is today: the Celsus facade, the mound at Nineveh, Cave 17 standing empty.",
+    `<path d="M20,70 V36 Q50,12 80,36 V70 Z" style="fill:color-mix(in srgb,var(--warn) 45%,var(--surface));stroke:var(--ink)"/><line x1="80" y1="14" x2="80" y2="78" style="stroke:var(--ink);stroke-dasharray:2 2"/><path d="M80,70 V52 L92,46 L104,58 L118,50 L140,70 Z" style="fill:color-mix(in srgb,var(--muted) 30%,var(--surface));stroke:var(--muted)"/><line x1="10" y1="70" x2="150" y2="70" style="stroke:var(--muted)"/>`],
+  ["Evidence shading", "The three shaders from the evidence section, applied surface by surface, so a known facade can stand in front of a speculative interior.",
+    `<rect x="16" y="22" width="40" height="48" style="fill:color-mix(in srgb,var(--warn) 45%,var(--surface));stroke:var(--ink)"/><rect x="60" y="22" width="40" height="48" style="fill:url(#hatch);stroke:var(--muted)"/><rect x="104" y="22" width="40" height="48" style="fill:none;stroke:var(--muted);stroke-dasharray:3 2"/>`],
+  ["Shelves of the lost", "Books that survived sit solid and open in the reader. Works known to be lost stand as dashed outlines with their title and the writer who mentions them. Unknown gaps stay empty: nothing is invented to fill a shelf.",
+    `<line x1="10" y1="72" x2="150" y2="72" style="stroke:var(--ink);stroke-width:1.5"/><rect x="18" y="30" width="12" height="42" style="fill:var(--accent)"/><rect x="32" y="36" width="10" height="36" style="fill:var(--accent);opacity:.75"/><rect x="46.5" y="28.5" width="12" height="43" style="fill:none;stroke:var(--muted);stroke-dasharray:3 2"/><rect x="62.5" y="34.5" width="10" height="37" style="fill:none;stroke:var(--muted);stroke-dasharray:3 2"/><rect x="110" y="32" width="11" height="40" style="fill:var(--accent);opacity:.85"/>`],
+];
+const layerDefs = `<defs><linearGradient id="lg"><stop offset="0" style="stop-color:var(--accent);stop-opacity:0"/><stop offset="1" style="stop-color:var(--accent)"/></linearGradient></defs>`;
+$("#layers").innerHTML = LAYERS.map(([t, p, art], i) => `<article><div class="sw"><svg viewBox="0 0 160 90" aria-hidden="true">${i === 0 ? layerDefs : ""}${art}</svg></div><div class="body"><h3><span class="n">${i + 1}</span>${t}</h3><p>${p}</p></div></article>`).join("");
+
+/* ---------- book tiers ---------- */
+const spine = (fill, dash) => `<rect x="64.5" y="18.5" width="31" height="56" rx="2" style="${fill};${dash ? "stroke:var(--muted);stroke-dasharray:3 2" : "stroke:var(--ink)"}"/>`;
+const BOOKTIERS = [
+  ["readable-text", "Readable text", "ok", "Opens in the reader with page turns. Set from clean public-domain text, so it is sharp at any size and works offline once saved.", "Contents plus one chapter at a time, 20 to 60 KB each.",
+    spine("fill:var(--accent)") + `<rect x="64" y="28" width="32" height="5" style="fill:var(--warn)"/><path d="M104,30 h36 M104,38 h36 M104,46 h30 M104,54 h36 M104,62 h22" style="stroke:var(--muted)"/>`],
+  ["readable-scan", "Readable scan", "ok", "The real manuscript, page by page, from the holder's own image server. Turns like the text reader, but every page is a photograph you can zoom.", "One spread at screen size, about 150 to 300 KB a page, the next two prefetched.",
+    spine("fill:var(--accent)") + `<rect x="64" y="28" width="32" height="5" style="fill:var(--warn)"/><rect x="104" y="24" width="38" height="46" style="fill:color-mix(in srgb,var(--warn) 30%,var(--surface));stroke:var(--muted)"/><circle cx="118" cy="40" r="6" style="fill:none;stroke:var(--ink)"/>`],
+  ["catalog", "Catalog card", "plain", "A closed book. Tap it for title, author, date, holder, shelfmark and a link to the holder's page. Used when no open text or scan exists, or the licence does not allow one.", "Nothing new: details come with the library manifest. One cover thumbnail, about 15 KB.",
+    spine("fill:color-mix(in srgb,var(--muted) 45%,var(--surface))") + `<rect x="104" y="28" width="40" height="34" rx="2" style="fill:var(--surface);stroke:var(--muted)"/><path d="M110,38 h28 M110,46 h20 M110,54 h24" style="stroke:var(--muted)"/>`],
+  ["ghost", "Lost work", "bad", "A dashed outline where a work known to be lost once stood, with its title and the source that mentions it. There is nothing to open.", "Nothing. It is a line in the manifest.",
+    spine("fill:none", 1) + `<text x="104" y="50" style="font: italic 11px var(--display); fill: var(--muted)">title only</text>`],
+];
+const sample = k => VER?.samples?.[k];
+$("#tiers").innerHTML = BOOKTIERS.map(([k, t, c, p, load, art]) => {
+  const n = VER?.tiers?.[k], s = sample(k);
+  return `<article><div class="sw"><svg viewBox="0 0 160 90" aria-hidden="true">${art}</svg></div><div class="body"><h3>${t}${n != null ? ` <span class="tag ${c}">${n} ${n === 1 ? "book" : "books"}</span>` : ""}</h3><p>${p}</p><p class="small"><b>Loads:</b> ${load}</p>${s ? `<p class="small"><b>For example:</b> ${esc(s)}</p>` : ""}</div></article>`;
+}).join("");
+$("#tier-note").textContent = VER
+  ? `Counts come from the verification pass: ${VER.counts.books} books recorded across ${VER.counts.libs} libraries. A book counts as readable only when its text or scan was fetched in this pass and its licence allows reuse. Every scan so far is CC BY-NC 4.0, which is fine while WorldLibs stays free.`
+  : "Counts appear once the verification pass finishes.";
+
+/* ---------- accuracy ---------- */
+if (VER) {
+  const c = VER.counts;
+  $("#acc-lede").textContent = `Every date, size and book on this page was checked against a source fetched for the purpose. ${c.pass} of ${c.rows} rows pass, which means a quoted source states the value. The other ${c.rows - c.pass} stay unverified until someone finds a source, and the atlas marks them with an asterisk.`;
+  $("#vbars").innerHTML = VER.clusters.map(k => `<div class="vrow"><span>${esc(k.c)}</span><span class="bar" role="img" aria-label="${k.p} of ${k.f + k.p} passing"><b style="width:${(k.p / (k.p + k.f) * 100).toFixed(1)}%"></b><s style="width:${(k.f / (k.p + k.f) * 100).toFixed(1)}%"></s></span><span class="num">${k.p} / ${k.p + k.f}</span></div>`).join("");
+  $("#fixes").innerHTML = VER.corrections.map(r => `<tr><td>${esc(byId[r.lib]?.n || r.lib)}</td><td>${esc(r.field)}</td><td>${esc(r.old)}</td><td>${esc(r.new)}</td></tr>`).join("");
+  if (!VER.corrections.length) $("#fixes-wrap").hidden = true;
+} else {
+  $("#acc-lede").textContent = "The verification pass is still running. Its results will fill this section.";
+  $("#fixes-wrap").hidden = true;
+}
+
+/* ---------- go ---------- */
+setZoom(zoomKey);
+setYear(2026);
+</script>
