@@ -1,0 +1,27 @@
+.living { max-width: 44rem; margin: 0 auto; padding: 4.5rem 1rem 3rem; }
+.living h1 { font-weight: 400; font-style: italic; color: var(--gilt); margin: 0 0 1rem; }
+.living blockquote { margin: 0 0 1.25rem; padding-left: 1rem; border-left: 2px solid var(--gilt); }
+.living .statement { margin: 0; font-size: 1.25rem; }
+.living .cite { color: var(--paper-dim); font-size: 0.85rem; margin-top: 0.4rem; }
+.living .figure { display: block; width: 100%; height: auto; max-height: 60vh; border: 1px solid var(--oak-light); }
+.living .figure .paper { fill: var(--paper); }
+.living .figure [data-step] { fill: none; stroke-linecap: round; opacity: 0; }
+.living .figure [data-step].drawn { opacity: 1; stroke-dasharray: 1; }
+.living .figure [data-step].done { stroke-dashoffset: 0; }
+.living .question { margin: 1.25rem 0 0.5rem; }
+.living .options { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.living .options button {
+  background: var(--oak); border: 1px solid var(--oak-light); border-radius: 2px;
+  padding: 0.4rem 0.9rem; cursor: pointer;
+}
+.living .options button:hover:not(:disabled) { border-color: var(--gilt); }
+.living .options button:disabled { cursor: default; opacity: 0.6; }
+.living .options button.picked { border-color: var(--lamp); opacity: 1; }
+.living .options button.answer { border-color: var(--gilt); color: var(--lamp); opacity: 1; }
+.living .result { min-height: 1.5em; color: var(--paper-dim); }
+.living .stamp {
+  display: inline-block; margin: 0.5rem 0 0; padding: 0.3rem 1rem;
+  border: 2px solid var(--gilt); border-radius: 3px; color: var(--gilt);
+  letter-spacing: 0.15em; text-transform: uppercase; transform: rotate(-4deg);
+}
+.living .stamp[hidden] { display: none; }
