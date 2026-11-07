@@ -20,6 +20,10 @@ const notFound: Mount = (el) => {
   el.innerHTML = '<section class="page"><h1>Not on any shelf</h1><p><a href="/">Back to the globe</a></p></section>'
 }
 
+const broken: Mount = (el) => {
+  el.innerHTML = '<section class="page"><h1>This page could not load</h1><p>Check your connection and reload.</p></section>'
+}
+
 async function render() {
   const t = ++token
   const path = location.pathname.replace(/\/+$/, '') || '/'
@@ -28,7 +32,7 @@ async function render() {
   for (const [re, load] of routes) {
     const m = path.match(re)
     if (!m) continue
-    mount = (await load()).mount
+    mount = await load().then((mod) => mod.mount, () => broken)
     params = Object.fromEntries(Object.entries(m.groups ?? {}).filter(([, v]) => v !== undefined))
     break
   }

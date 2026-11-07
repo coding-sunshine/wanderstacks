@@ -245,7 +245,14 @@ export const mount: Mount = (app, params) => {
       fetch('/lib/pins.json')
         .then((r) => r.json())
         .then((rows: Parameters<typeof toPin>[0][]) => init(rows.map(toPin)))
-        .catch((e) => console.error('globe pins', e)),
+        .catch((e) => {
+          console.error('globe', e)
+          if (disposed) return
+          const note = el('p', 'globe-credit', 'The globe could not be drawn in this browser. The Long Room is in the menu above.')
+          note.setAttribute('role', 'status')
+          root.append(note)
+          root.dataset.ready = 'true'
+        }),
     700,
   )
 

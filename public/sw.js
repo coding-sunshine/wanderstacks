@@ -34,7 +34,7 @@ self.addEventListener('fetch', (e) => {
   if (req.mode === 'navigate') {
     e.respondWith(
       fetch(req)
-        .then((res) => store('/index.html', res))
+        .then((res) => (res.headers.get('content-type')?.includes('text/html') ? store('/index.html', res) : res))
         .catch(() => caches.match('/index.html')),
     )
   } else if (p.startsWith('/assets/') || /^\/book\/[^/]+\/\d+\.json$/.test(p)) {

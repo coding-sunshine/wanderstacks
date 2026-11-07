@@ -203,6 +203,11 @@ function start(root: HTMLElement, lib: Library) {
     if (built === N) status.hidden = true
     dirty = true
   }
+  worker.onerror = () => {
+    status.textContent = 'The hall could not be built. The notes and shelves are still here.'
+    setOpen(true)
+    root.dataset.ready = 'true'
+  }
   worker.onmessage = (e: MessageEvent<BayMsg>) => {
     addBay(e.data)
     if (e.data.bay === 0) {
