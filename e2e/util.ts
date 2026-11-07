@@ -13,3 +13,13 @@ export function watchErrors(page: Page) {
   })
   return errors
 }
+
+export const ready = (page: Page, view: string) =>
+  page.locator(`[data-view="${view}"][data-ready="true"]`).waitFor({ timeout: 30_000 })
+
+type Row = { id: string; lib: string | null; tier?: string }
+
+export const readableIds = async () => {
+  const { books } = (await import('../data/books.json')) as { books: Row[] }
+  return books.filter((b) => b.lib === 'longroom' && b.tier === 'readable-text').map((b) => b.id)
+}
