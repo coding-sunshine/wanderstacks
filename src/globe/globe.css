@@ -35,6 +35,7 @@
   justify-content: center; max-height: 3.4rem; overflow: auto; font-size: 0.85rem; width: min(52rem, 100%);
 }
 .globe-index li[hidden] { display: none; }
+.globe-index li[data-ghost='true'] button { opacity: 0.55; }
 .globe-index button { background: none; border: 0; padding: 0.15rem 0; color: var(--paper-dim); cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; }
 .globe-index button:hover, .globe-index button[data-on='true'] { color: var(--lamp); }
 .globe-credit { margin: 0; font-size: 0.72rem; color: var(--paper-dim); text-align: center; opacity: 0.85; }

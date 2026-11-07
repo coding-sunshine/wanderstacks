@@ -111,7 +111,7 @@ export const mount: Mount = (el, params) => {
         const h = Math.min(TILE, p.h - y)
         const pc = (a: number, b: number) => `${(a / b) * 100}%`
         const pos = `left:${pc(x, p.w)};top:${pc(y, p.h)};width:${pc(w, p.w)};height:${pc(h, p.h)}`
-        tiles += `<img alt="${esc(p.l)}, tile ${x},${y}" src="${tile(p, x, y, w, h)}" style="${pos}" data-tile>`
+        tiles += `<img alt="${esc(p.l)}, tile ${x},${y}" src="${tile(p, x, y, w, h)}" style="${pos}" loading="lazy" data-tile>`
       }
     }
     d.innerHTML = `<button type="button" class="scan-close" aria-label="Close zoom">&#215;</button>
@@ -120,6 +120,13 @@ export const mount: Mount = (el, params) => {
       </div>`
     d.querySelector('.scan-close')!.addEventListener('click', () => d.close())
     d.addEventListener('error', fail, true)
+    d.addEventListener('keydown', (e) => {
+      if (e.key !== 'Tab') return
+      const f = [...d.querySelectorAll<HTMLElement>('button, [tabindex="0"]')]
+      const i = f.indexOf(document.activeElement as HTMLElement)
+      e.preventDefault()
+      f[(i + (e.shiftKey ? f.length - 1 : 1)) % f.length]?.focus()
+    })
     d.addEventListener('close', () => {
       d.remove()
       dialog = null
@@ -157,24 +164,27 @@ export const mount: Mount = (el, params) => {
     else if (nav === 'next') go(at + step())
     else if (nav === 'last') go(book!.pages.length - 1)
     else if (t.closest('[data-zoom-open]')) openZoom(zoomTarget())
-    else if (t.closest('[data-leaf]')) openZoom(zoomTarget())
+    else if (t.closest('[data-leaf]')) openZoom(Number(t.closest<HTMLElement>('[data-leaf]')!.dataset.leaf))
   })
   document.addEventListener('keydown', onKey)
   const onMedia = () => book && go(at)
   mobile.addEventListener('change', onMedia)
 
+  let dead = false
   fetch('/scan/firstfolio/pages.json')
     .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
     .then((b: Book) => {
+      if (dead) return
       book = b
       credit.hidden = false
       credit.innerHTML = `Images: ${esc(b.credit)}, via the <a href="${esc(b.manifest)}">Bodleian IIIF manifest</a>. Licence: <a href="${DEED}">${esc(b.licence)}</a>.`
       go(0)
       root.dataset.ready = 'true'
     })
-    .catch(fail)
+    .catch(() => dead || fail())
 
   return () => {
+    dead = true
     document.removeEventListener('keydown', onKey)
     mobile.removeEventListener('change', onMedia)
   }

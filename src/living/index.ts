@@ -77,7 +77,7 @@ export function mountLiving(el: HTMLElement, spec: LivingSpec, view: string): ()
     lic.textContent = 'CC BY-NC 4.0'
     credit.append(lic)
     plan.hidden = false
-  }
+  } else q('.plan').remove()
   const steps = [...svg.querySelectorAll<SVGGeometryElement>('[data-step]')]
   steps.forEach((s) => s.setAttribute('pathLength', '1'))
   const result = q('.result')

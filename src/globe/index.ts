@@ -128,7 +128,8 @@ export const mount: Mount = (app, params) => {
     for (const p of pins) {
       const a = alive(p.pin, y)
       p.dot.dataset.ghost = String(!a)
-      p.li.hidden = !a
+      p.li.hidden = y < p.pin.from
+      p.li.dataset.ghost = String(!a)
     }
     dirty = true
     request()

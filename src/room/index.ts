@@ -244,12 +244,15 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   }
 
   const onKey = (e: KeyboardEvent, down: boolean) => {
-    if ((e.target as Element).closest?.('.room-panel, .room-toggle, .room-controls, [data-tour]') || e.ctrlKey || e.metaKey || e.altKey) return
     const k = e.key.length === 1 ? e.key.toLowerCase() : e.key
+    if (!down) keys.delete(k)
+    if ((e.target as Element).closest?.('.room-panel, .room-toggle, .room-controls, [data-tour]') || e.ctrlKey || e.metaKey || e.altKey) return
     if (!['w', 'a', 's', 'd', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(k)) return
     e.preventDefault()
-    down ? keys.add(k) : keys.delete(k)
-    if (down) goal = null
+    if (down) {
+      keys.add(k)
+      goal = null
+    }
   }
   const kd = (e: KeyboardEvent) => onKey(e, true)
   const ku = (e: KeyboardEvent) => onKey(e, false)
@@ -280,7 +283,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     if (!drag) return
     const tap = drag.moved < 8 && e.timeStamp - drag.t < 400
     drag = null
-    if (!tap || !open) return
+    if (!tap || !open || root.dataset.evidence === 'on') return
     const b = canvas.getBoundingClientRect()
     ray.setFromCamera(new THREE.Vector2(((e.clientX - b.left) / b.width) * 2 - 1, -(((e.clientY - b.top) / b.height) * 2 - 1)), camera)
     const hit = ray.ray.intersectPlane(floor, new THREE.Vector3())

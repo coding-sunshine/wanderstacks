@@ -19,7 +19,7 @@ function render(d: Ledger) {
       .map((r) => `<li data-row id="${esc(r.id)}" tabindex="-1"><span class="k">${esc(label(r.field))}</span> ${esc(r.value)}
         <a data-source href="${esc(r.source)}" target="_blank" rel="noopener noreferrer" aria-label="Source for ${esc(label(r.field))}: ${esc(host(r.source))}">${esc(host(r.source))}</a></li>`)
       .join('')
-    return `<section class="col" aria-labelledby="h-${c}"><h2 id="h-${c}">${HEADS[c]} <span class="n">${rows.length}</span></h2><ul data-class="${c}">${items}</ul></section>`
+    return `<section class="col" data-class="${c}" aria-labelledby="h-${c}"><h2 id="h-${c}">${HEADS[c]} <span class="n">${rows.length}</span></h2><ul>${items}</ul></section>`
   }).join('')
   const links = d.links
     .map((id) => d.rows.find((r) => r.id === id))

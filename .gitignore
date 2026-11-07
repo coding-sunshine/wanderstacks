@@ -21,3 +21,4 @@ public/scan/
 .cache/
 test-results/
 playwright-report/
+.claude/
