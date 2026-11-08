@@ -10,7 +10,7 @@ function chequer(repeat: [number, number]) {
   c.width = c.height = 64
   const g = c.getContext('2d')!
   for (let i = 0; i < 4; i++) {
-    g.fillStyle = (i + (i >> 1)) % 2 ? '#8c4f3c' : '#e3d9c8'
+    g.fillStyle = (i + (i >> 1)) % 2 ? '#6e574a' : '#c4b8a2'
     g.fillRect((i % 2) * 32, (i >> 1) * 32, 32, 32)
   }
   const t = new THREE.CanvasTexture(c)
@@ -52,7 +52,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   const wood = own(woodTexture())
   const wallMat = mat({ map: own(spineTexture([L / 3, springing / 2.6])) })
   const floorMat = stone
-    ? mat({ map: own(chequer([W / 1.6, L / 1.6])) })
+    ? mat({ map: own(chequer([W / 0.55, L / 0.55])) })
     : mat({ map: own(floorTexture([W, L])), color: 0x9a8a7a })
   plane('floor', W, L, floorMat, 0, 0, 0, 0, -Math.PI / 2)
   plane('shelfUnit', L, springing, wallMat, -W / 2, springing / 2, 0, Math.PI / 2)
@@ -78,7 +78,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
 
   if ((h.domes ?? 0) > 0 && h.domeHeight) {
     // Domed hall: the roof is one height field per span, the barrel crown raised to a dome inside each dome's plan ellipse.
-    const roof = mat({ map: own(vaultTexture(N)), side: THREE.DoubleSide })
+    const roof = mat({ map: own(vaultTexture(N)), side: THREE.DoubleSide, emissive: 0x3a2412 })
     const crown = (x: number) => springing + rise * Math.sqrt(Math.max(0, 1 - ((2 * x) / W) ** 2))
     const central = h.domes! % 2
     const sides = Math.floor(h.domes! / 2)
@@ -118,7 +118,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   } else {
     const vaultGeo = own(new THREE.CylinderGeometry(1, 1, L, 40, 1, true, Math.PI / 2, Math.PI))
     vaultGeo.rotateX(Math.PI / 2)
-    const vault = new THREE.Mesh(vaultGeo, mat({ map: own(vaultTexture(N)), side: THREE.BackSide }))
+    const vault = new THREE.Mesh(vaultGeo, mat({ map: own(vaultTexture(N)), side: THREE.BackSide, emissive: 0x3a2412 }))
     vault.scale.set(W / 2, rise, 1)
     vault.position.y = springing
     core.add(vault)
