@@ -5,7 +5,7 @@ const G = [
   ["hosting", "A", "Static host fits: Cloudflare Pages free, 20,000 files and 25 MiB per asset, unlimited bandwidth",
     `curl -sL --max-time 20 https://developers.cloudflare.com/pages/platform/limits/ | rg -q '20,000 files'`, "Texts ship as one JSON per book part (200 KB max), so 127 readable books stay far under 20,000 files."],
   ["wikidata-ids", "A", "Every library has a Wikidata QID for live labels and images",
-    `jq -e 'length==30 and all(.[]; .wd|test("^Q[0-9]+$"))' data/libs.json`, ""],
+    `jq -e 'length==47 and all(.[]; .wd|test("^Q[0-9]+$"))' data/libs.json`, ""],
   ["phase-a-room-dims", "A", "Long Room length, width and height proven from a primary source",
     `jq -e '[.facts[]|select(.lib=="longroom" and .status=="passing" and .tier=="primary" and (.value|test("^(length|width|height):")))]|length==3' data/facts.json`, ""],
   ["phase-a-bays-gallery", "A", "Long Room bays per side and gallery floor height",

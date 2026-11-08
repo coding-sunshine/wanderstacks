@@ -10,6 +10,8 @@ export interface Pin {
   from: number
   to: number
   href: string | null
+  wd: string | null
+  st: string | null
 }
 
 interface LibRow {
@@ -22,6 +24,8 @@ interface LibRow {
   lon: number
   lost?: number | boolean
   href?: string | null
+  wd?: string
+  st?: string
 }
 
 // ponytail: `lost: true` means destroyed with no date in libs.json; ghosted after AD 400 until a sourced year exists.
@@ -36,6 +40,8 @@ export function toPin(l: LibRow): Pin {
     lat: (l.lat * Math.PI) / 180,
     lon: (l.lon * Math.PI) / 180,
     href: l.href ?? null,
+    wd: l.wd ?? null,
+    st: l.st ?? null,
     from: l.y,
     to: typeof l.lost === 'number' ? l.lost : l.lost ? UNDATED_END : Infinity,
   }
@@ -73,11 +79,17 @@ export function place(lon: number, lat: number, morph: number, lift = 0): Vector
   return spherePoint(lon, lat, 1 + lift).lerp(new Vector3(fx, fy, lift), morph)
 }
 
-// Sun longitude advances 3.6 degrees a year, so about a hundred years of slider is one day; 2025 puts dusk over Europe.
-export function sunDir(year: number): Vector3 {
-  const lon = ((-70 - (year - 2025) * 3.6) * Math.PI) / 180
-  const dec = ((23.44 * Math.PI) / 180) * Math.sin(((year - 2025) * 2 * Math.PI) / 12)
-  return spherePoint(lon, dec)
+// Low-precision solar position (Astronomical Almanac), good to about 0.01 degrees: subsolar point as a unit vector.
+export function sunNow(date = new Date()): Vector3 {
+  const r = Math.PI / 180
+  const d = (date.getTime() - 946728000000) / 86400000
+  const g = (357.529 + 0.98560028 * d) * r
+  const L = (280.459 + 0.98564736 * d + 1.915 * Math.sin(g) + 0.02 * Math.sin(2 * g)) * r
+  const e = (23.439 - 0.00000036 * d) * r
+  const ra = Math.atan2(Math.cos(e) * Math.sin(L), Math.cos(L))
+  const dec = Math.asin(Math.sin(e) * Math.sin(L))
+  const gmst = ((18.697374558 + 24.06570982441908 * d) % 24) * 15 * r
+  return spherePoint(ra - gmst, dec)
 }
 
 export function greatCircle(a: Vector3, b: Vector3, t: number): Vector3 {

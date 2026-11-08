@@ -2,7 +2,7 @@ import { PerspectiveCamera, PlaneGeometry, Mesh, RepeatWrapping, Scene, ShaderMa
 import { FADE_MS, fade, go, reducedMotion } from '../app'
 import { dprGovernor } from '../governor'
 import type { Mount } from '../types'
-import { alive, easeInOut, formatYear, greatCircle, place, spherePoint, sunDir, toPin, YEAR_MAX, YEAR_MIN, YEAR_START, type Pin } from './geo'
+import { alive, easeInOut, formatYear, greatCircle, place, spherePoint, sunNow, toPin, YEAR_MAX, YEAR_MIN, YEAR_START, type Pin } from './geo'
 import { fragment, vertex } from './shader'
 import './globe.css'
 
@@ -39,6 +39,9 @@ export const mount: Mount = (app, params) => {
   unroll.type = 'button'
   const index = el('ul', 'globe-index')
   index.setAttribute('aria-label', 'Libraries on the globe')
+  const card = el('section', 'globe-card')
+  card.hidden = true
+  card.setAttribute('aria-live', 'polite')
   const credit = el('p', 'globe-credit')
   credit.append(
     'Earth imagery: NASA ',
@@ -49,18 +52,18 @@ export const mount: Mount = (app, params) => {
   )
   time.append(slider, yearOut, unroll)
   hud.append(caption, time, index, credit)
-  root.append(canvas, pinLayer, hud)
+  root.append(canvas, pinLayer, card, hud)
   app.append(root)
 
   let disposed = false
   let raf = 0
   let last = 0
-  let dirty = true
   let year = YEAR_START
   let clock = 0
   let morphP = atlas ? 1 : 0
   let morphTo = morphP
-  let lon = 0.15
+  // Start with the visitor's own longitude facing the camera, so their local day or night shows first.
+  let lon = (-new Date().getTimezoneOffset() / 4) * (Math.PI / 180)
   let lat = 0.5
   let lastTouch = 0
   let down = false
@@ -76,7 +79,7 @@ export const mount: Mount = (app, params) => {
 
   const camera = new PerspectiveCamera(FOV)
   const scene = new Scene()
-  const uniforms = { uMorph: { value: morphP }, uTime: { value: 0 }, uSun: { value: sunDir(year) } } as Record<string, { value: unknown }>
+  const uniforms = { uMorph: { value: morphP }, uTime: { value: 0 }, uSun: { value: sunNow() } } as Record<string, { value: unknown }>
   let w = 1
   let h = 1
   const tanHalf = Math.tan((FOV * Math.PI) / 360)
@@ -86,6 +89,19 @@ export const mount: Mount = (app, params) => {
 
   const pins: { pin: Pin; dot: HTMLElement; li: HTMLLIElement; shown: string }[] = []
 
+  // Hit areas are 44px but dots can sit closer than that (Patna and Nalanda), so a tap goes to the nearest drawn dot.
+  function nearest(e: MouseEvent) {
+    const r = pinLayer.getBoundingClientRect()
+    let best = '', bd = Infinity
+    for (const p of pins) {
+      if (!p.shown) continue
+      const [x, y] = p.shown.split(',').map(Number) as [number, number]
+      const d = (x + r.left - e.clientX) ** 2 + (y + r.top - e.clientY) ** 2
+      if (d < bd) (bd = d), (best = p.pin.id)
+    }
+    return best
+  }
+
   function select(id: string) {
     for (const p of pins) {
       p.dot.dataset.on = String(p.pin.id === id)
@@ -94,14 +110,40 @@ export const mount: Mount = (app, params) => {
         caption.replaceChildren(`${p.pin.name} `, Object.assign(el('i', ''), { textContent: `${p.pin.place}, ${p.pin.years}` }))
       }
     }
-    dirty = true
     request()
+  }
+
+  function showCard(p: Pin) {
+    const up = (Math.asin(Math.max(-1, Math.min(1, spherePoint(p.lon, p.lat).dot(sunNow())))) * 180) / Math.PI
+    const sky = up > 6 ? 'Daylight there now' : up > -6 ? 'Twilight there now' : 'Night there now'
+    const links = el('p', 'globe-card-links')
+    if (p.wd) links.append(Object.assign(el('a', '', 'Read about it'), { href: `https://www.wikidata.org/wiki/Special:GoToLinkedPage/enwiki/${p.wd}`, target: '_blank', rel: 'noopener' }))
+    links.append(el('span', 'globe-card-note', 'No walkable room yet'))
+    const close = el('button', 'globe-card-close', '\u00d7')
+    close.type = 'button'
+    close.setAttribute('aria-label', 'Close')
+    close.addEventListener('click', hideCard)
+    card.replaceChildren(
+      close,
+      el('h2', '', p.name),
+      el('p', 'globe-card-meta', `${p.place}. ${p.years}.`),
+      ...(p.st ? [el('p', 'globe-card-st', p.st)] : []),
+      el('p', 'globe-card-sky', `${sky}, sun ${Math.round(up)}\u00b0 ${up >= 0 ? 'above' : 'below'} the horizon.`),
+      links,
+    )
+    card.hidden = false
+  }
+
+  function hideCard() {
+    card.hidden = true
   }
 
   function enter(id: string) {
     select(id)
     const p = pins.find((q) => q.pin.id === id)!.pin
-    if (!p.href || flight) return
+    if (!p.href) return showCard(p)
+    hideCard()
+    if (flight) return
     const href = p.href
     const room = href.startsWith('/room/')
     if (room) fetch(`/lib/${id}.json`).catch(() => {})
@@ -124,14 +166,12 @@ export const mount: Mount = (app, params) => {
     year = y
     yearOut.textContent = formatYear(y)
     slider.setAttribute('aria-valuetext', formatYear(y))
-    uniforms.uSun!.value = sunDir(y)
     for (const p of pins) {
       const a = alive(p.pin, y)
       p.dot.dataset.ghost = String(!a)
       p.li.hidden = y < p.pin.from
       p.li.dataset.ghost = String(!a)
     }
-    dirty = true
     request()
   }
 
@@ -140,7 +180,6 @@ export const mount: Mount = (app, params) => {
     unroll.setAttribute('aria-pressed', String(to === 1))
     unroll.textContent = to === 1 ? 'Roll up' : 'Unroll'
     if (reducedMotion()) morphP = to
-    dirty = true
     request()
   }
 
@@ -166,13 +205,19 @@ export const mount: Mount = (app, params) => {
     camera.lookAt(0, 0, 0)
     camera.updateMatrixWorld()
     renderer.render(scene, camera)
+    const placed: [number, number][] = []
+    const crowded = (x: number, y: number) => placed.some(([a, b]) => (a - x) ** 2 + (b - y) ** 2 < 144)
     for (const p of pins) {
       const s = project(p.pin, m, c)
-      const key = s.front ? `${s.x.toFixed(1)},${s.y.toFixed(1)}` : ''
+      let { x, y } = s
+      // Libraries in one city land on one pixel, so later ones step 12px aside to stay pointable.
+      for (let k = 1; s.front && crowded(x, y) && k < 8; k++) (x = s.x + 12 * Math.cos(k * 2.4)), (y = s.y + 12 * Math.sin(k * 2.4))
+      if (s.front) placed.push([x, y])
+      const key = s.front ? `${x.toFixed(1)},${y.toFixed(1)}` : ''
       if (key === p.shown) continue
       p.shown = key
       p.dot.style.visibility = s.front ? 'visible' : 'hidden'
-      if (s.front) p.dot.style.transform = `translate(${s.x}px, ${s.y}px)`
+      if (s.front) p.dot.style.transform = `translate(${x}px, ${y}px)`
     }
     gov.frame(now)
     if (!firstFrame) {
@@ -194,7 +239,6 @@ export const mount: Mount = (app, params) => {
     if (morphP !== morphTo) {
       morphP = rm ? morphTo : Math.min(1, Math.max(0, morphP + Math.sign(morphTo - morphP) * (dt / MORPH_MS)))
       moving = morphP !== morphTo
-      dirty = true
     }
     if (flight) {
       flight.t = Math.min(1, flight.t + dt / FLIGHT_MS)
@@ -218,7 +262,6 @@ export const mount: Mount = (app, params) => {
       moving = true
     }
     render(now)
-    dirty = false
     if (moving) request()
   }
 
@@ -234,7 +277,6 @@ export const mount: Mount = (app, params) => {
     renderer?.setPixelRatio(gov.dpr)
     renderer?.setSize(w, h, false)
     for (const p of pins) p.shown = ''
-    dirty = true
     request()
   }
 
@@ -274,10 +316,11 @@ export const mount: Mount = (app, params) => {
       pinLayer.append(dot)
       index.append(li)
       b.addEventListener('click', () => enter(pin.id))
-      dot.addEventListener('click', () => enter(pin.id))
-      dot.addEventListener('pointerenter', () => {
+      dot.addEventListener('click', (e) => enter(nearest(e)))
+      dot.addEventListener('pointermove', (e) => {
         hovering = true
-        select(pin.id)
+        const id = nearest(e)
+        if (pins.find((p) => p.pin.id === id)?.dot.dataset.on !== 'true') select(id)
       })
       dot.addEventListener('pointerleave', () => (hovering = false))
     }
@@ -331,11 +374,17 @@ export const mount: Mount = (app, params) => {
     px = e.clientX
     py = e.clientY
     lastTouch = performance.now()
-    dirty = true
     request()
   })
   on(canvas, 'pointerup', () => ((down = false), (lastTouch = performance.now())))
   on(canvas, 'pointercancel', () => (down = false))
+
+  on(document, 'keydown', (e: KeyboardEvent) => e.key === 'Escape' && hideCard())
+  const sunTimer = setInterval(() => {
+    uniforms.uSun!.value = sunNow()
+    request()
+  }, 60000)
+  cleanups.push(() => clearInterval(sunTimer))
 
   setMorph(morphTo as 0 | 1)
 

@@ -47,7 +47,8 @@ async function render() {
     poster.hidden = path !== '/'
     cleanup = mount(app, params)
   }
-  if (document.startViewTransition && app.childElementCount) document.startViewTransition(swap)
+  // A newer navigation skips the running transition, which rejects ready. That is expected, not an error.
+  if (document.startViewTransition && app.childElementCount) document.startViewTransition(swap).ready.catch(() => {})
   else swap()
 }
 

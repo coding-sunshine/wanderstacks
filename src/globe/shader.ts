@@ -52,7 +52,7 @@ void main() {
   float cloud = texture2D(tClouds, vec2(vUv.x + uTime * 0.0015, vUv.y)).r;
 
   vec3 land = mix(texture2D(tDay, vUv).rgb, vec3(0.96, 0.95, 0.92), cloud * 0.7);
-  vec3 sunLight = mix(vec3(0.05, 0.06, 0.10), vec3(1.0, 0.93, 0.80), day) * (0.35 + 0.75 * clamp(ndl * 1.2 + 0.25, 0.0, 1.0));
+  vec3 sunLight = mix(vec3(0.20, 0.24, 0.36), vec3(1.0, 0.93, 0.80) * (0.35 + 0.75 * clamp(ndl * 1.2 + 0.25, 0.0, 1.0)), day);
   vec3 col = land * sunLight;
 
   vec3 lights = texture2D(tNight, vUv).rgb * vec3(1.0, 0.78, 0.45) * 1.7;
