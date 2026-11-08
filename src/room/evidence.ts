@@ -34,8 +34,9 @@ export function attach(api: RoomApi): () => void {
 
   let box: HTMLElement | null = null
   let info: HTMLElement | null = null
-  const saved = new Map<THREE.Mesh, THREE.Material | THREE.Material[]>()
-  const tints = new Map<string, THREE.Material>()
+  const saved = new Map<THREE.Material, number>()
+  const tintColor = new THREE.Color()
+  const baseColor = new THREE.Color()
 
   const choose = (key: string) => {
     const p = hall[key]
@@ -63,27 +64,25 @@ export function attach(api: RoomApi): () => void {
     box.querySelectorAll('[data-element]').forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute('data-element') === key)))
   }
 
-  const tint = (basis: Basis, side: THREE.Side) => {
-    const id = `${basis}${side}`
-    let m = tints.get(id)
-    if (!m) tints.set(id, (m = new THREE.MeshLambertMaterial({ color: TINT[basis], side })))
-    return m
-  }
-
+  // Wash materials toward the basis hue in place, keeping their textures and shading.
   const paint = () => {
     for (const [mesh, key] of keyOf) {
       const p = hall[key]
       if (!(mesh instanceof THREE.Mesh) || !p) continue
-      saved.set(mesh, mesh.material)
-      mesh.material = Array.isArray(mesh.material) ? mesh.material.map((m) => tint(p.basis, m.side)) : tint(p.basis, mesh.material.side)
+      const mats = Array.isArray(mesh.material) ? mesh.material : [mesh.material]
+      for (const m of mats) {
+        const c = (m as THREE.MeshLambertMaterial).color
+        if (!c || saved.has(m)) continue
+        saved.set(m, c.getHex())
+        tintColor.set(TINT[p.basis]).lerp(baseColor.setHex(saved.get(m)!), 0.5)
+        c.copy(tintColor)
+      }
     }
   }
 
   const unpaint = () => {
-    saved.forEach((m, mesh) => (mesh.material = m))
+    saved.forEach((hex, m) => ((m as THREE.MeshLambertMaterial).color as THREE.Color).setHex(hex))
     saved.clear()
-    tints.forEach((m) => m.dispose())
-    tints.clear()
   }
 
   const open = () => {

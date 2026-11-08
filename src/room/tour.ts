@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import type { RoomApi } from './kit'
 
 const BOX = [
-  'position:absolute;left:1.1rem;bottom:5.2rem;z-index:4;width:min(34rem,calc(100% - 2rem))',
+  'position:absolute;left:1.1rem;bottom:6.9rem;z-index:4;width:min(34rem,calc(100% - 2rem))',
   'box-sizing:border-box;padding:0.7rem 1rem;background:var(--glass);backdrop-filter:blur(10px)',
   'border:1px solid var(--hairline);border-radius:4px;color:var(--paper)',
   'font-size:0.95rem;line-height:1.4',

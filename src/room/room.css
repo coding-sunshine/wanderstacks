@@ -40,6 +40,11 @@
 .room-panel .k { color: var(--paper-dim); text-transform: capitalize; }
 .room-panel .src { font-size: 0.8rem; color: var(--paper-dim); }
 .room-panel .src a { color: inherit; }
+.room-panel a.report {
+  font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; text-decoration-style: dotted;
+  color: var(--paper-dim); opacity: 0.6; transition: opacity 200ms var(--ease), color 200ms var(--ease);
+}
+.room-panel a.report:hover { opacity: 1; color: var(--lamp); }
 .room-hall { display: grid; grid-template-columns: 8rem 1fr; gap: 0.3rem 0.6rem; margin: 0; }
 .room-hall dt { color: var(--paper-dim); }
 .room-hall dd { margin: 0; }
@@ -114,7 +119,7 @@
 }
 .room-shelves button[data-action='find']:hover { color: var(--lamp); border-color: var(--lamp); }
 .room-shelves button[data-action='find']:focus-visible, .room-book button:focus-visible, .room-book a:focus-visible { outline: 2px solid var(--lamp); outline-offset: 2px; }
-.room-shelves li[data-shelf] { display: flex; flex-wrap: wrap; align-items: center; }
+.room-shelves li[data-shelf] { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.55rem; }
 .room-shelves li[data-shelf] a { color: var(--lamp); }
 
 /* Spine tooltip */

@@ -16,7 +16,9 @@ const link = (href: string, text: string, external = true) =>
 function report(lib: Library, field: string, value: string, source: string | null) {
   const body = `Library: ${lib.id}\nField: ${field}\nValue shown: ${value}\nSource: ${source ?? 'none'}\n\nWhat is wrong:\n`
   const q = new URLSearchParams({ title: `Mistake: ${lib.id} / ${field}`, body })
-  return link(`${ISSUES}?${q}`, 'Report a mistake')
+  const a = link(`${ISSUES}?${q}`, 'Report a mistake')
+  a.className = 'report'
+  return a
 }
 
 const host = (u: string) => new URL(u).hostname.replace(/^www\./, '')
