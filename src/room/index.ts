@@ -7,6 +7,7 @@ import * as evidence from './evidence'
 import { hash, type Built, type KitModule, type RoomApi } from './kit'
 import { buildPanel } from './panel'
 import * as sound from './sound'
+import * as sunlight from './sunlight'
 import { dustTexture } from './textures'
 import * as tour from './tour'
 
@@ -224,11 +225,11 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
 
     const api: RoomApi = {
       root, lib, controls, panel, scene, camera, canvas,
-      core: b.core, parts: b.parts, acoustics: b.acoustics, params: kit.params, reduced,
+      core: b.core, parts: b.parts, lamp, lights: b.lights, acoustics: b.acoustics, params: kit.params, reduced,
       goTo,
       render: () => (dirty = true),
     }
-    detach = [evidence, tour, sound].map((m) => m.attach(api))
+    detach = [evidence, tour, sound, sunlight].map((m) => m.attach(api))
 
     b.ready
       .then(() => {

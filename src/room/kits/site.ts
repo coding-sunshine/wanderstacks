@@ -93,13 +93,15 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   add('niches', backs, mat({ color: 0x4a4034, side: THREE.DoubleSide }))
   if (slabs.length) add('storeys', slabs, wall)
 
-  scene.add(new THREE.HemisphereLight(0xffe2b0, 0x2a1a0d, 1.8))
+  const hemi = new THREE.HemisphereLight(0xffe2b0, 0x2a1a0d, 1.8)
+  scene.add(hemi)
   const sun = new THREE.DirectionalLight(0xffe7b8, 0.8)
   sun.position.set(-3, 10, 2)
   scene.add(sun)
 
   const mx = D / 2 - T - 0.6, mz = L / 2 - T - 0.6
   return {
+    lights: { hemi, sun },
     core,
     parts,
     start: { pos: [0, 1.65, mz - 0.6], yaw: 0 },

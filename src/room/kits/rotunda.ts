@@ -158,7 +158,8 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   glow.frustumCulled = false
   scene.add(glow)
 
-  scene.add(new THREE.HemisphereLight(0xffe9c2, 0x3a2a1a, 0.9))
+  const hemi = new THREE.HemisphereLight(0xffe9c2, 0x3a2a1a, 0.9)
+  scene.add(hemi)
   const lantern = new THREE.PointLight(0xffe2b0, 300, 0, 2)
   lantern.position.set(0, 26, 0)
   scene.add(lantern)
@@ -202,6 +203,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   const winA = N * (WIN.drum[0] * WIN.drum[1] + WIN.lantern[0] * WIN.lantern[1] + WIN.alcove[0] * WIN.alcove[1])
 
   return {
+    lights: { hemi, point: lantern, glow: glow.material as THREE.MeshBasicMaterial },
     core,
     parts,
     start: { pos: [0, EYE, 4], yaw: 0 },

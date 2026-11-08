@@ -57,3 +57,11 @@ export const localTime = (tz: string | null, lon: number, date = new Date()) => 
   const solar = new Date(date.getTime() + (lon / 15) * 3_600_000)
   return `${String(solar.getUTCHours()).padStart(2, '0')}:${String(solar.getUTCMinutes()).padStart(2, '0')} solar`
 }
+
+export const precipOf = (code: number): 'rain' | 'snow' | 'none' =>
+  (code >= 51 && code <= 67) || (code >= 80 && code <= 82) || code >= 95 ? 'rain'
+  : (code >= 71 && code <= 77) || code === 85 || code === 86 ? 'snow'
+  : 'none'
+
+export const localLine = (w: Weather | null, lon: number, date = new Date()) =>
+  w ? `${localTime(w.tz, lon, date)} · ${describe(w.code)} · ${Math.round(w.temp)}°C` : localTime(null, lon, date)
