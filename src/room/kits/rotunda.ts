@@ -220,6 +220,12 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
         { material: 'plaster', area: N * (Math.PI * (W / 2) * D + (Math.PI / 2) * (W / 2) ** 2) },
       ],
     },
+    spineSlots: (n) =>
+      Array.from({ length: n }, (_, i) => {
+        const a = ((Math.floor(N / 2) + i) % N) * step
+        const s = Math.sin(a), c = Math.cos(a)
+        return { at: [s * (Ri - 0.45), 0, c * (Ri - 0.45)] as [number, number, number], out: [-s, -c] as [number, number] }
+      }),
     ready: Promise.resolve().then(dirty),
   }
 }

@@ -197,6 +197,12 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
         { material: 'plaster', area: arc * L + 2 * W * H },
       ],
     },
+    spineSlots: (n) =>
+      Array.from({ length: n }, (_, i) => {
+        const side = i % 2 ? 1 : -1
+        const bay = 1 + Math.floor((i * (N - 2)) / n)
+        return { at: [side * (aisle / 2 + 0.1), 0, L / 2 - (bay + 1) * bayLen] as [number, number, number], out: [-side, 0] as [number, number] }
+      }),
     ready,
     status: () => (done >= N ? null : `Building the hall, ${done} of ${N} bays`),
     dispose: () => worker.terminate(),
