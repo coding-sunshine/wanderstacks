@@ -7,6 +7,7 @@ import * as evidence from './evidence'
 import { hash, type Built, type KitModule, type RoomApi } from './kit'
 import { buildPanel } from './panel'
 import * as sound from './sound'
+import * as spines from './spines'
 import { dustTexture } from './textures'
 import * as tour from './tour'
 
@@ -136,10 +137,17 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   let yaw = 0, pitch = 0
   const cam = camera.position.set(0, EYE, 0)
   const vel = new THREE.Vector2()
-  let goal: THREE.Vector3 | null = null
-  let fly: { t: number; from: THREE.Vector3; to: THREE.Vector3; y0: number; y1: number; p0: number; p1: number; done: () => void } | null = null
+  let glide: { t: number; dur: number; from: THREE.Vector3; to: THREE.Vector3 } | null = null
+  let fly: { t: number; ms: number; from: THREE.Vector3; to: THREE.Vector3; y0: number; y1: number; p0: number; p1: number; done: () => void } | null = null
   const keys = new Set<string>()
-  const publishCam = () => (root.dataset.camera = JSON.stringify(cam.toArray().map(round2)))
+  const publishCam = () => {
+    root.dataset.camera = JSON.stringify(cam.toArray().map(round2))
+    root.dataset.yaw = ((yaw * 180) / Math.PI).toFixed(1)
+  }
+  const stopGlide = () => {
+    glide = null
+    delete root.dataset.goal
+  }
 
   let open = false
   let rampStart = 0
@@ -173,14 +181,14 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     ready()
   }
 
-  const goTo: RoomApi['goTo'] = (at, look) =>
+  const goTo: RoomApi['goTo'] = (at, look, ms = FLY_MS) =>
     new Promise((resolve) => {
       fly?.done()
       const to = new THREE.Vector3(...at)
       const d = new THREE.Vector3(...look).sub(to)
       const y1 = Math.atan2(-d.x, -d.z)
       const p1 = Math.atan2(d.y, Math.hypot(d.x, d.z))
-      goal = null
+      stopGlide()
       vel.set(0, 0)
       if (reduced) {
         cam.copy(to)
@@ -193,9 +201,10 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
         return
       }
       const turn = Math.atan2(Math.sin(y1 - yaw), Math.cos(y1 - yaw))
-      fly = { t: 0, from: cam.clone(), to, y0: yaw, y1: yaw + turn, p0: pitch, p1, done: resolve }
+      fly = { t: 0, ms, from: cam.clone(), to, y0: yaw, y1: yaw + turn, p0: pitch, p1, done: resolve }
     })
 
+  const taps: RoomApi['taps'] = []
   let raf = 0
   let detach: (() => void)[] = []
   let built: Built
@@ -225,10 +234,12 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     const api: RoomApi = {
       root, lib, controls, panel, scene, camera, canvas,
       core: b.core, parts: b.parts, acoustics: b.acoustics, params: kit.params, reduced,
-      goTo,
+      goTo, taps,
+      clamp: (p) => built.clamp(p),
+      slots: b.spineSlots,
       render: () => (dirty = true),
     }
-    detach = [evidence, tour, sound].map((m) => m.attach(api))
+    detach = [evidence, tour, sound, spines].map((m) => m.attach(api))
 
     b.ready
       .then(() => {
@@ -246,12 +257,12 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   const onKey = (e: KeyboardEvent, down: boolean) => {
     const k = e.key.length === 1 ? e.key.toLowerCase() : e.key
     if (!down) keys.delete(k)
-    if ((e.target as Element).closest?.('.room-panel, .room-toggle, .room-controls, [data-tour]') || e.ctrlKey || e.metaKey || e.altKey) return
+    if ((e.target as Element).closest?.('.room-panel, .room-toggle, .room-controls, [data-tour], [role=dialog]') || e.ctrlKey || e.metaKey || e.altKey) return
     if (!['w', 'a', 's', 'd', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(k)) return
     e.preventDefault()
     if (down) {
       keys.add(k)
-      goal = null
+      stopGlide()
     }
   }
   const kd = (e: KeyboardEvent) => onKey(e, true)
@@ -281,21 +292,29 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   const floor = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0)
   canvas.addEventListener('pointerup', (e) => {
     if (!drag) return
+    publishCam()
     const tap = drag.moved < 8 && e.timeStamp - drag.t < 400
     drag = null
     if (!tap || !open || root.dataset.evidence === 'on') return
     const b = canvas.getBoundingClientRect()
     ray.setFromCamera(new THREE.Vector2(((e.clientX - b.left) / b.width) * 2 - 1, -(((e.clientY - b.top) / b.height) * 2 - 1)), camera)
+    if (taps.some((h) => h(e))) return
     const hit = ray.ray.intersectPlane(floor, new THREE.Vector3())
     if (!hit) return
-    goal = hit.setY(EYE)
+    const to = hit.clone()
+    built.clamp(to)
+    const d = Math.hypot(to.x - cam.x, to.z - cam.z)
+    if (d < 0.3) return
+    to.y = cam.y
+    vel.set(0, 0)
     if (reduced) {
-      cam.copy(goal)
-      built.clamp(cam)
-      goal = null
+      cam.copy(to)
       dirty = true
       publishCam()
+      return
     }
+    glide = { t: 0, dur: Math.min(4.5, Math.max(0.8, 0.5 + d / 3.5)), from: cam.clone(), to }
+    root.dataset.goal = JSON.stringify([round2(to.x), round2(to.z)])
   })
   canvas.addEventListener('pointercancel', () => (drag = null))
 
@@ -323,7 +342,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     status.hidden = open && line === null
     if (line !== null && status.textContent !== line) status.textContent = line
     if (fly) {
-      fly.t = Math.min(1, fly.t + dt / (FLY_MS / 1000))
+      fly.t = Math.min(1, fly.t + dt / (fly.ms / 1000))
       const e = fly.t * fly.t * (3 - 2 * fly.t)
       cam.lerpVectors(fly.from, fly.to, e)
       yaw = fly.y0 + (fly.y1 - fly.y0) * e
@@ -335,17 +354,20 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
         publishCam()
         f.done()
       }
+    } else if (glide) {
+      glide.t = Math.min(1, glide.t + dt / glide.dur)
+      const e = glide.t * glide.t * (3 - 2 * glide.t)
+      cam.x = glide.from.x + (glide.to.x - glide.from.x) * e
+      cam.z = glide.from.z + (glide.to.z - glide.from.z) * e
+      publishCam()
+      dirty = true
+      if (glide.t === 1) stopGlide()
     } else if (open) {
       const f = +(keys.has('w') || keys.has('ArrowUp')) - +(keys.has('s') || keys.has('ArrowDown'))
       const s = +(keys.has('d') || keys.has('ArrowRight')) - +(keys.has('a') || keys.has('ArrowLeft'))
       fwd.set(-Math.sin(yaw), 0, -Math.cos(yaw))
       rgt.crossVectors(fwd, up)
       want.set(0, 0, 0).addScaledVector(fwd, f).addScaledVector(rgt, s)
-      if (goal) {
-        const to = goal.clone().sub(cam).setY(0)
-        if (to.length() < 0.12) goal = null
-        else want.copy(to.normalize())
-      }
       if (want.lengthSq() > 1) want.normalize()
       want.multiplyScalar(SPEED)
       const k = 1 - Math.exp(-dt * 7)
@@ -356,6 +378,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
         cam.z += vel.y * dt
         built.clamp(cam)
         moving = true
+        publishCam()
       } else vel.set(0, 0)
     }
     if (wasMoving && !moving) publishCam()
