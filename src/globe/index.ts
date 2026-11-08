@@ -28,6 +28,17 @@ export const mount: Mount = (app, params) => {
   const hud = el('div', 'globe-hud')
   const caption = el('p', 'globe-caption')
   caption.setAttribute('aria-live', 'polite')
+  const hero = el('div', 'globe-hero')
+  hero.append(el('p', 'eyebrow', 'An illuminated atlas · 30 libraries'))
+  const display = el('h1', 'display')
+  display.setAttribute('aria-label', 'Walk the world’s great libraries.')
+  for (const [i, word] of 'Walk the world’s great libraries.'.split(' ').entries()) {
+    const w = el('span', 'w', word)
+    w.setAttribute('aria-hidden', 'true')
+    w.style.animationDelay = `${200 + i * 70}ms`
+    display.append(w, ' ')
+  }
+  hero.append(display)
   const time = el('div', 'globe-time')
   const slider = el('input', '')
   slider.type = 'range'
@@ -35,9 +46,21 @@ export const mount: Mount = (app, params) => {
   slider.max = String(YEAR_MAX)
   slider.value = String(YEAR_START)
   slider.setAttribute('aria-label', 'Year')
+  const ticks = el('div', 'globe-ticks')
+  ticks.setAttribute('aria-hidden', 'true')
+  for (const y of [-500, 0, 500, 1000, 1500, 2000]) {
+    const t = el('span', '', formatYear(y))
+    t.style.left = `${(((y - YEAR_MIN) / (YEAR_MAX - YEAR_MIN)) * 100).toFixed(2)}%`
+    ticks.append(t)
+  }
   const yearOut = el('output', 'globe-year')
-  const unroll = el('button', 'globe-unroll')
+  const unroll = el('button', 'btn globe-unroll')
   unroll.type = 'button'
+  const indexBtn = el('button', 'btn globe-index-btn', 'Index')
+  indexBtn.type = 'button'
+  indexBtn.setAttribute('aria-pressed', 'true')
+  const modes = el('div', 'globe-modes')
+  modes.append(unroll, indexBtn)
   const index = el('ul', 'globe-index')
   index.setAttribute('aria-label', 'Libraries on the globe')
   const card = el('section', 'globe-card')
@@ -51,9 +74,9 @@ export const mount: Mount = (app, params) => {
     Object.assign(el('a', '', 'NASA media guidelines'), { href: 'https://www.nasa.gov/nasa-brand-center/images-and-media/', target: '_blank', rel: 'noopener' }),
     '. Resized copies from the three.js r187 example set.',
   )
-  time.append(slider, yearOut, unroll)
+  time.append(slider, ticks, yearOut)
   hud.append(caption, time, index, credit)
-  root.append(canvas, pinLayer, card, hud)
+  root.append(canvas, pinLayer, card, hero, modes, hud)
   app.append(root)
 
   let disposed = false
@@ -127,13 +150,16 @@ export const mount: Mount = (app, params) => {
         enter(p.id)
       })
       links.append(visit)
-    } else links.append(el('span', 'globe-card-note', 'No walkable room yet'))
+    }
     const close = el('button', 'globe-card-close', '\u00d7')
     close.type = 'button'
     close.setAttribute('aria-label', 'Close')
     close.addEventListener('click', hideCard)
+    const visitable = Boolean(p.href?.startsWith('/room/'))
+    const chip = el('span', visitable ? 'chip chip--gilt' : 'chip', visitable ? 'Visitable' : 'Globe only')
     card.replaceChildren(
       close,
+      chip,
       el('h2', '', p.name),
       el('p', 'globe-card-meta', `${p.place}. ${p.years}.`),
       ...(p.st ? [el('p', 'globe-card-st', p.st)] : []),
@@ -366,6 +392,11 @@ export const mount: Mount = (app, params) => {
 
   slider.addEventListener('input', () => setYear(+slider.value))
   unroll.addEventListener('click', () => setMorph(morphTo ? 0 : 1))
+  indexBtn.addEventListener('click', () => {
+    const on = indexBtn.getAttribute('aria-pressed') !== 'true'
+    indexBtn.setAttribute('aria-pressed', String(on))
+    index.hidden = !on
+  })
   const ro = new ResizeObserver(resize)
   ro.observe(root)
   cleanups.push(() => ro.disconnect())

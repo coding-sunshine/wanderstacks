@@ -3,81 +3,152 @@
 .room canvas:active { cursor: grabbing; }
 .room-veil { position: absolute; inset: 0; background: var(--night); pointer-events: none; }
 .room-veil[hidden] { display: none; }
+
+/* Whisper lines */
 .room-status, .room-hint {
-  position: absolute; left: 1rem; margin: 0; padding: 0.25rem 0.6rem; font-size: 0.9rem; font-style: italic;
-  color: var(--paper-dim); background: rgba(14, 11, 8, 0.6); pointer-events: none;
+  position: absolute; left: 1.1rem; margin: 0; padding: 0.3rem 0.7rem; font-size: 0.85rem; font-style: italic;
+  color: var(--paper-dim); background: var(--glass); border: 1px solid rgb(201 162 74 / 0.25); border-radius: 3px;
+  pointer-events: none; backdrop-filter: blur(6px);
 }
-.room-status { bottom: 5rem; }
-.room-hint { bottom: 3rem; }
+.room-status { bottom: 5.2rem; }
+.room-hint { bottom: 3.2rem; }
 .room-status[hidden] { display: none; }
+
+/* Panel toggle */
 .room-toggle {
-  position: absolute; top: 3.2rem; right: 1rem; z-index: 3; padding: 0.25rem 0.8rem; cursor: pointer;
-  background: rgba(14, 11, 8, 0.85); border: 1px solid var(--gilt); color: var(--paper);
+  position: absolute; top: 5rem; right: 1.1rem; z-index: 3; cursor: pointer;
+  padding: 0.34rem 0.95rem; border-radius: 999px; border: 1px solid var(--hairline);
+  background: var(--glass); color: var(--gilt);
+  font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
+  backdrop-filter: blur(10px); transition: color 200ms var(--ease), border-color 200ms var(--ease);
 }
+.room-toggle:hover { color: var(--lamp); border-color: var(--lamp); }
+
+/* About panel */
 .room-panel {
-  position: absolute; top: 5.4rem; right: 1rem; bottom: 3rem; z-index: 2; width: min(26rem, calc(100% - 2rem));
-  overflow-y: auto; padding: 0.2rem 1rem 1rem; font-size: 0.95rem; line-height: 1.4;
-  background: rgba(14, 11, 8, 0.88); border: 1px solid var(--oak-light);
+  position: absolute; top: 7.6rem; right: 1.1rem; bottom: 3rem; z-index: 2; width: min(26rem, calc(100% - 2rem));
+  overflow-y: auto; padding: 1.1rem 1.2rem 1.2rem; font-size: 0.95rem; line-height: 1.45;
+  background: var(--glass); border: 1px solid var(--hairline); border-radius: 4px;
+  backdrop-filter: blur(12px); box-shadow: 0 18px 50px rgb(0 0 0 / 0.5);
 }
 .room-panel[hidden] { display: none; }
-.room-panel h1 { margin: 0.6rem 0 0; font-size: 1.4rem; color: var(--gilt); font-weight: 400; }
-.room-panel h2 { margin: 1.2rem 0 0.4rem; font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gilt); font-weight: 400; }
-.room-panel .where { margin: 0; color: var(--paper-dim); font-style: italic; }
+.room-panel h1 { margin: 0; font-size: 1.7rem; font-weight: 400; line-height: 1.15; color: var(--paper); }
+.room-panel h2 { margin: 1.3rem 0 0.5rem; font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gilt); font-weight: 400; }
+.room-panel .where { margin: 0.3rem 0 0; color: var(--paper-dim); font-style: italic; }
 .room-panel ul { margin: 0; padding: 0; list-style: none; }
 .room-panel li { margin: 0 0 0.5rem; }
 .room-panel .k { color: var(--paper-dim); text-transform: capitalize; }
-.room-panel .src { font-size: 0.85rem; color: var(--paper-dim); }
+.room-panel .src { font-size: 0.8rem; color: var(--paper-dim); }
+.room-panel .src a { color: inherit; }
 .room-hall { display: grid; grid-template-columns: 8rem 1fr; gap: 0.3rem 0.6rem; margin: 0; }
 .room-hall dt { color: var(--paper-dim); }
 .room-hall dd { margin: 0; }
-.room-hall .basis { margin: 0 0.2rem; padding: 0 0.4rem; font-size: 0.8rem; font-style: italic; color: var(--lamp); border: 1px solid var(--oak-light); }
-.room-shelves .card { padding: 0.5rem 0.7rem; border: 1px solid var(--gilt); background: rgba(59, 38, 20, 0.5); }
+.room-hall .basis {
+  display: inline-block; margin: 0 0.2rem; padding: 0.04rem 0.45rem;
+  font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; font-style: normal;
+  color: var(--gilt); border: 1px solid rgb(201 162 74 / 0.55); border-radius: 3px; transform: rotate(-3deg);
+}
+
+/* Catalogue cards on the shelves list */
+.room-shelves .card {
+  padding: 0.6rem 0.8rem; border: 1px solid rgb(201 162 74 / 0.65); border-radius: 3px;
+  background: linear-gradient(160deg, #F2E8D0, var(--paper)); color: var(--ink);
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.35);
+}
+.room-shelves .card .src { color: var(--paper-dim-ink); }
+.room-shelves .card a { color: var(--paper-link); }
+
 @media (max-width: 700px) {
   .room-panel { top: auto; left: 1rem; height: 55%; }
   .room-hint { display: none; }
   .room-controls button, .room-place { min-height: 44px; }
-  .room-badge, .room-estimated { top: 6.4rem; }
-}
-.room-controls { position: absolute; top: 3.2rem; left: 1rem; z-index: 3; display: flex; flex-wrap: wrap; gap: 0.4rem; max-width: calc(100% - 9rem); }
-.room-controls button {
-  padding: 0.25rem 0.8rem; cursor: pointer; background: rgba(14, 11, 8, 0.85); border: 1px solid var(--gilt); color: var(--paper);
-}
-.room-controls button[aria-pressed='true'] { background: var(--gilt); color: var(--night); }
-.room-place {
-  position: absolute; bottom: 4.5rem; left: 50%; transform: translateX(-50%); z-index: 3; padding: 0.4rem 1.2rem; cursor: pointer;
-  background: rgba(14, 11, 8, 0.85); border: 1px solid var(--gilt); color: var(--paper);
-}
-.room-place[hidden], .room-estimated[hidden] { display: none; }
-.room-estimated {
-  position: absolute; top: 5.6rem; right: 1rem; z-index: 3; margin: 0; padding: 0.15rem 0.6rem; font-size: 0.85rem; font-style: italic;
-  color: var(--paper); background: rgba(14, 11, 8, 0.85); border: 1px solid var(--oak-light);
-}
-.room-badge {
-  position: absolute; top: 5.6rem; left: 1rem; z-index: 3; margin: 0; padding: 0.15rem 0.6rem; font-size: 0.85rem; font-style: italic;
-  color: var(--lamp); background: rgba(14, 11, 8, 0.85); border: 1px solid var(--oak-light);
+  .room-badge, .room-estimated { top: 8.6rem; }
+  .room-controls { top: 5.4rem; }
+  .room-toggle { top: 5.4rem; }
 }
 
+/* Controls: evidence / tour / sound */
+.room-controls { position: absolute; top: 5rem; left: 1.1rem; z-index: 3; display: flex; flex-wrap: wrap; gap: 0.45rem; max-width: calc(100% - 9rem); }
+.room-controls button {
+  padding: 0.34rem 0.95rem; min-height: 34px; cursor: pointer; background: var(--glass); border: 1px solid var(--hairline); border-radius: 999px; color: var(--gilt);
+  font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
+  backdrop-filter: blur(10px); transition: color 200ms var(--ease), border-color 200ms var(--ease);
+}
+.room-controls button:hover { color: var(--lamp); border-color: var(--lamp); }
+.room-controls button[aria-pressed='true'] { background: var(--gilt); color: var(--ink); border-color: var(--gilt); }
+
+/* Primary action: go inside / step outside */
+.room-place {
+  position: absolute; bottom: 4.6rem; left: 50%; transform: translateX(-50%); z-index: 3; cursor: pointer;
+  padding: 0.48rem 1.4rem; border-radius: 999px; border: 1px solid var(--gilt);
+  background: var(--gilt); color: var(--ink);
+  font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 0.45);
+  transition: transform 150ms var(--ease), filter 200ms var(--ease);
+}
+.room-place:hover { filter: brightness(1.08); }
+.room-place:active { transform: translateX(-50%) scale(0.98); }
+.room-place[hidden], .room-estimated[hidden] { display: none; }
+
+/* Estimated dimensions: dashed dim stamp */
+.room-estimated {
+  position: absolute; top: 7.6rem; right: 1.1rem; z-index: 3; margin: 0; padding: 0.22rem 0.65rem;
+  font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; font-style: normal;
+  color: var(--paper-dim); border: 1px dashed rgb(201 162 74 / 0.5); border-radius: 3px;
+  background: rgb(17 13 9 / 0.85);
+}
+
+/* Reconstruction badge: permanent ember stamp */
+.room-badge {
+  position: absolute; top: 7.6rem; left: 1.1rem; z-index: 3; margin: 0; padding: 0.22rem 0.65rem;
+  font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; font-style: normal;
+  color: var(--ember); border: 1px dashed var(--ember); border-radius: 3px; transform: rotate(-4deg);
+  background: rgb(17 13 9 / 0.85);
+}
+
+/* Local conditions marginalia */
 .room-local {
-  position: absolute; left: 1rem; bottom: 1rem; z-index: 3; margin: 0; padding: 0.15rem 0.6rem; font-size: 0.9rem;
-  color: var(--paper); background: #14100b; border: 1px solid var(--oak-light);
+  position: absolute; left: 1.1rem; bottom: 1.1rem; z-index: 3; margin: 0; padding: 0.3rem 0.7rem;
+  font-size: 10.5px; letter-spacing: 0.14em; color: var(--paper-dim);
+  background: rgb(17 13 9 / 0.92); border: 1px solid rgb(201 162 74 / 0.25); border-radius: 3px;
+  backdrop-filter: blur(8px);
 }
 .room-local a { color: var(--lamp); }
+
+/* Find buttons */
 .room-shelves button[data-action='find'] {
-  min-width: 44px; min-height: 44px; margin-right: 0.5rem; padding: 0.25rem 0.8rem; cursor: pointer;
-  background: rgba(14, 11, 8, 0.85); border: 1px solid var(--gilt); color: var(--paper);
+  min-width: 44px; min-height: 44px; margin-right: 0.5rem; padding: 0.25rem 0.9rem; cursor: pointer;
+  background: none; border: 1px solid var(--hairline); border-radius: 999px; color: var(--gilt);
+  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+  transition: color 200ms var(--ease), border-color 200ms var(--ease);
 }
-.room-shelves button[data-action='find']:focus-visible, .room-book button:focus-visible, .room-book a:focus-visible { outline: 2px solid var(--gilt); outline-offset: 2px; }
+.room-shelves button[data-action='find']:hover { color: var(--lamp); border-color: var(--lamp); }
+.room-shelves button[data-action='find']:focus-visible, .room-book button:focus-visible, .room-book a:focus-visible { outline: 2px solid var(--lamp); outline-offset: 2px; }
 .room-shelves li[data-shelf] { display: flex; flex-wrap: wrap; align-items: center; }
+.room-shelves li[data-shelf] a { color: var(--lamp); }
+
+/* Spine tooltip */
 [data-spine-title] {
-  position: absolute; z-index: 4; margin: 0; padding: 0.2rem 0.6rem; pointer-events: none; max-width: 18rem;
-  font-size: 0.9rem; color: var(--paper); background: rgba(14, 11, 8, 0.9); border: 1px solid var(--gilt);
+  position: absolute; z-index: 4; margin: 0; padding: 0.3rem 0.7rem; pointer-events: none; max-width: 18rem;
+  font-style: italic; font-size: 0.95rem; color: var(--paper);
+  background: var(--glass); border: 1px solid var(--hairline); border-radius: 3px;
+  backdrop-filter: blur(8px);
 }
+
+/* Pulled book: paper catalogue card dialog */
 .room-book {
-  width: min(24rem, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem); box-sizing: border-box; padding: 1.2rem 1.4rem; overflow-y: auto;
-  color: var(--paper); background: rgba(14, 11, 8, 0.96); border: 1px solid var(--gilt);
+  width: min(24rem, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem); box-sizing: border-box; padding: 1.3rem 1.5rem; overflow-y: auto;
+  color: var(--ink); background: linear-gradient(165deg, #F2E8D0, var(--paper)); border: 1px solid var(--gilt); border-radius: 4px;
+  box-shadow: 0 24px 60px rgb(0 0 0 / 0.55);
 }
-.room-book::backdrop { background: rgba(0, 0, 0, 0.55); }
-.room-book h2 { margin: 0 0 0.4rem; font-size: 1.3rem; font-weight: 400; color: var(--gilt); }
-.room-book p { margin: 0 0 0.3rem; color: var(--paper-dim); }
-.room-book a { display: inline-block; min-height: 44px; margin-right: 1rem; line-height: 44px; color: var(--lamp); }
-.room-book button { display: block; min-width: 44px; min-height: 44px; margin-top: 0.6rem; padding: 0.25rem 1rem; cursor: pointer; background: var(--gilt); border: 0; color: var(--night); }
+.room-book::backdrop { background: rgb(5 3 2 / 0.62); }
+.room-book h2 { margin: 0 0 0.4rem; font-size: 1.45rem; font-weight: 400; color: var(--ink); }
+.room-book p { margin: 0 0 0.3rem; color: var(--paper-dim-ink); }
+.room-book a { display: inline-block; min-height: 44px; margin-right: 1rem; line-height: 44px; color: var(--paper-link); text-decoration: underline; text-underline-offset: 3px; }
+.room-book button {
+  display: block; min-width: 44px; min-height: 44px; margin-top: 0.6rem; padding: 0.3rem 1.1rem; cursor: pointer;
+  background: none; border: 1px solid var(--oak-light); border-radius: 999px; color: var(--ink);
+  font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
+  transition: border-color 200ms var(--ease);
+}
+.room-book button:hover { border-color: var(--gilt); }

@@ -2,11 +2,16 @@ import * as THREE from 'three'
 import type { RoomApi } from './kit'
 
 const BOX = [
-  'position:absolute;left:1rem;bottom:5rem;z-index:4;width:min(34rem,calc(100% - 2rem))',
-  'box-sizing:border-box;padding:0.6rem 0.9rem;background:rgba(14,11,8,0.92)',
-  'border:1px solid var(--gilt);color:var(--paper);font-size:0.95rem;line-height:1.4',
+  'position:absolute;left:1.1rem;bottom:5.2rem;z-index:4;width:min(34rem,calc(100% - 2rem))',
+  'box-sizing:border-box;padding:0.7rem 1rem;background:var(--glass);backdrop-filter:blur(10px)',
+  'border:1px solid var(--hairline);border-radius:4px;color:var(--paper)',
+  'font-size:0.95rem;line-height:1.4',
 ].join(';')
-const BTN = ['padding:0.25rem 0.8rem;cursor:pointer', 'background:rgba(14,11,8,0.85);border:1px solid var(--gilt);color:var(--paper)'].join(';')
+const BTN = [
+  'padding:0.25rem 0.9rem;cursor:pointer;background:none',
+  'border:1px solid var(--hairline);border-radius:999px;color:var(--gilt)',
+  'font-size:10px;letter-spacing:0.16em;text-transform:uppercase',
+].join(';')
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, attrs: Record<string, string> = {}, text = '') {
   const e = document.createElement(tag)

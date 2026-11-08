@@ -51,7 +51,11 @@ void main() {
   day = mix(day, 0.5 + 0.5 * day, uMorph);
   float cloud = texture2D(tClouds, vec2(vUv.x + uTime * 0.0015, vUv.y)).r;
 
-  vec3 land = mix(texture2D(tDay, vUv).rgb, vec3(0.96, 0.95, 0.92), cloud * 0.7);
+  vec3 land = mix(texture2D(tDay, vUv).rgb, vec3(0.96, 0.95, 0.92), cloud * 0.7 * (1.0 - uMorph));
+  // Atlas plate grade: parchment land shaded by real terrain luminance, ink sea, no clouds.
+  float lum = dot(land, vec3(0.299, 0.587, 0.114));
+  vec3 parchment = vec3(0.80, 0.70, 0.50) * (0.55 + 0.6 * lum);
+  land = mix(land, mix(parchment, vec3(0.05, 0.04, 0.032), texture2D(tMask, vUv).r), uMorph);
   vec3 sunLight = mix(vec3(0.20, 0.24, 0.36), vec3(1.0, 0.93, 0.80) * (0.35 + 0.75 * clamp(ndl * 1.2 + 0.25, 0.0, 1.0)), day);
   vec3 col = land * sunLight;
 

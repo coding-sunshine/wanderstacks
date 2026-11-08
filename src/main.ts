@@ -2,6 +2,36 @@ import './style.css'
 import { go } from './app'
 import type { Mount } from './types'
 
+// Procedural film grain: one 128px noise tile, stamped across a viewport-sized canvas.
+// Drawn once (stillness is a feature); no assets, no data: URIs, no committed rasters.
+const grainTile = (() => {
+  const c = document.createElement('canvas')
+  c.width = c.height = 128
+  const ctx = c.getContext('2d')!
+  const img = ctx.createImageData(128, 128)
+  for (let i = 0; i < img.data.length; i += 4) {
+    const v = 90 + Math.random() * 90
+    img.data[i] = img.data[i + 1] = img.data[i + 2] = v
+    img.data[i + 3] = 255
+  }
+  ctx.putImageData(img, 0, 0)
+  return c
+})()
+
+const paintGrain = () => {
+  const g = document.getElementById('grain') as HTMLCanvasElement | null
+  if (!g) return
+  const w = Math.min(Math.ceil(innerWidth / 2), 960)
+  const h = Math.min(Math.ceil(innerHeight / 2), 960)
+  g.width = w
+  g.height = h
+  const ctx = g.getContext('2d')!
+  ctx.clearRect(0, 0, w, h)
+  for (let y = 0; y < h; y += 128) for (let x = 0; x < w; x += 128) ctx.drawImage(grainTile, x, y)
+}
+paintGrain()
+addEventListener('resize', paintGrain)
+
 type Route = [RegExp, () => Promise<{ mount: Mount }>]
 
 const routes: Route[] = [

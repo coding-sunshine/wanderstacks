@@ -1,14 +1,24 @@
 .ledger { max-width: 72rem; }
-.ledger .lede { color: var(--paper-dim); }
+.ledger .lede { color: var(--paper-dim); font-style: italic; }
 .ledger ul { list-style: none; margin: 0; padding: 0; }
 .ledger .cols { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 1.5rem; }
-.ledger .col h2 { border-bottom: 1px solid var(--gilt); padding-bottom: 0.3rem; }
+.ledger .col h2 {
+  border-bottom: 1px solid var(--hairline); padding-bottom: 0.35rem;
+  font-size: 11px; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gilt);
+}
 .ledger .n { color: var(--paper-dim); font-size: 0.8em; }
-.ledger li[data-row] { padding: 0.6rem 0; border-bottom: 1px solid rgba(201, 162, 74, 0.25); overflow-wrap: anywhere; }
+.ledger li[data-row] { padding: 0.6rem 0; border-bottom: 1px solid rgb(201 162 74 / 0.22); overflow-wrap: anywhere; }
 .ledger li[data-row]:target, .ledger li[data-row]:focus { outline: 2px solid var(--lamp); outline-offset: 2px; }
-.ledger .k { display: block; color: var(--gilt); font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.06em; }
+.ledger .k { display: block; color: var(--gilt); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; }
 .ledger [data-source] { display: inline-block; margin-top: 0.2rem; }
-.ledger [data-myth] { border: 1px solid var(--gilt); border-radius: 4px; padding: 0.5rem 1rem 1rem; margin-top: 1.5rem; overflow-wrap: anywhere; }
+.ledger [data-myth] {
+  position: relative; border: 1px dashed var(--ember); border-radius: 4px; padding: 1.4rem 1rem 1rem; margin-top: 2rem; overflow-wrap: anywhere;
+}
+.ledger [data-myth]::before {
+  content: 'MYTH'; position: absolute; top: -0.6rem; left: 1rem; padding: 0.08rem 0.5rem;
+  background: var(--night); color: var(--ember); border: 1px dashed var(--ember); border-radius: 3px;
+  font-size: 10px; letter-spacing: 0.2em; transform: rotate(-3deg);
+}
 .ledger [data-myth] li { padding: 0.25rem 0; }
 .ledger .myth { font-size: 1.2em; font-style: italic; }
 @media (max-width: 800px) {
