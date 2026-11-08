@@ -58,15 +58,6 @@
 .room-shelves .card .src { color: var(--paper-dim-ink); }
 .room-shelves .card a { color: var(--paper-link); }
 
-@media (max-width: 700px) {
-  .room-panel { top: auto; left: 1rem; height: 55%; }
-  .room-hint { display: none; }
-  .room-controls button, .room-place { min-height: 44px; }
-  .room-badge, .room-estimated { top: 8.6rem; }
-  .room-controls { top: 5.4rem; }
-  .room-toggle { top: 5.4rem; }
-}
-
 /* Controls: evidence / tour / sound */
 .room-controls { position: absolute; top: 5rem; left: 1.1rem; z-index: 3; display: flex; flex-wrap: wrap; gap: 0.45rem; max-width: calc(100% - 9rem); }
 .room-controls button {
@@ -152,3 +143,12 @@
   transition: border-color 200ms var(--ease);
 }
 .room-book button:hover { border-color: var(--gilt); }
+
+@media (max-width: 700px) {
+  .room-panel { top: auto; left: 1rem; height: 55%; }
+  .room-hint { display: none; }
+  .room-controls button, .room-place { min-height: 44px; }
+  .room-badge, .room-estimated { top: 8.6rem; }
+  .room-controls { top: 5.4rem; }
+  .room-toggle { top: 5.4rem; }
+}
