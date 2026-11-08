@@ -61,7 +61,7 @@
 .globe-year { min-width: 6ch; text-align: right; font-variant-numeric: tabular-nums; color: var(--lamp); font-size: 12.5px; letter-spacing: 0.1em; }
 
 /* Mode chips, lower right. */
-.globe-modes { position: absolute; right: clamp(1.6rem, 4vw, 3.6rem); bottom: clamp(6.5rem, 15vh, 9.5rem); display: grid; gap: 0.5rem; justify-items: end; z-index: 2; }
+.globe-modes { position: absolute; right: clamp(1.6rem, 4vw, 3.6rem); bottom: clamp(6.5rem, 15vh, 9.5rem); display: grid; gap: 0.5rem; justify-items: end; z-index: 4; }
 
 /* Library index strip. */
 .globe-index {
@@ -84,7 +84,7 @@
 }
 
 /* Pins: gilt lamps that bloom. */
-.globe-pins { position: absolute; inset: 0; pointer-events: none; }
+.globe-pins { position: absolute; inset: 0; pointer-events: none; z-index: 3; }
 .globe-pin {
   position: absolute; left: 0; top: 0; width: 44px; height: 44px; margin: -22px 0 0 -22px;
   pointer-events: auto; cursor: pointer; display: grid; place-items: center;
@@ -107,7 +107,7 @@
 
 /* Visit card: dark glass catalogue card. */
 .globe-card {
-  position: absolute; top: 5.2rem; right: 1.6rem; width: min(21rem, calc(100% - 3.2rem)); padding: 1rem 1.1rem 0.9rem;
+  position: absolute; top: 5.2rem; right: 1.6rem; z-index: 4; width: min(21rem, calc(100% - 3.2rem)); padding: 1rem 1.1rem 0.9rem;
   background: var(--glass); border: 1px solid var(--hairline); border-radius: 4px; color: var(--paper);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 14px 40px rgb(0 0 0 / 0.5);
