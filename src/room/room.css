@@ -181,3 +181,7 @@
 .story-text { margin: 0; line-height: 1.4; }
 .story-quote { margin: 0.35rem 0 0; font-style: italic; color: var(--paper-dim); font-size: 0.85rem; }
 .story-src { display: inline-block; margin-top: 0.3rem; font-size: 0.78rem; color: var(--paper-dim); }
+
+@media (max-width: 700px) {
+  .rules-card { bottom: 11.5rem; }
+}

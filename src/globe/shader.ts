@@ -60,7 +60,7 @@ void main() {
   vec3 col = land * sunLight;
 
   vec3 lights = texture2D(tNight, vUv).rgb * vec3(1.0, 0.78, 0.45) * 1.7;
-  col += lights * (1.0 - day) * (1.0 - cloud * 0.8);
+  col += lights * (1.0 - day) * (1.0 - cloud * 0.8) * (1.0 - uMorph);
 
   vec3 V = normalize(cameraPosition - vPos);
   float spec = pow(max(dot(reflect(-uSun, N), V), 0.0), 140.0) * texture2D(tMask, vUv).r * day * (1.0 - cloud) * (1.0 - uMorph);

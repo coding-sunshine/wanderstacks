@@ -131,7 +131,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   const max = governor.dpr
   renderer.setPixelRatio(max)
 
-  const lamp = new THREE.PointLight(0xffc472, 38, 0, 2)
+  const lamp = new THREE.PointLight(0xffc472, 58, 0, 2)
   scene.add(lamp)
 
   const dust = new THREE.Points(
