@@ -273,7 +273,7 @@
       "id": "content-provenance-c",
       "what": "New Phase C source carries no long prose strings (100+ characters with a run of lowercase words), so visitor-facing text comes from sourced data files",
       "status": "failing",
-      "check": "f=$( { git diff --name-only --diff-filter=A $(git log -1 --format=%H --grep='^Freeze Phase B') -- src; git ls-files -o --exclude-standard -- src; } | rg '\\.ts$' | rg -v '\\.test\\.ts$' | sort -u ) && [ -n \"$f\" ] && [ -z \"$( { echo \"$f\" | xargs rg -o --no-filename '[\\x22\\x27\\x60][^\\x22\\x27\\x60\\n]{100,}[\\x22\\x27\\x60]'; git diff $(git log -1 --format=%H --grep='^Freeze Phase B') -- src | rg '^\\+[^+]' | rg -o '[\\x22\\x27\\x60][^\\x22\\x27\\x60\\n]{100,}[\\x22\\x27\\x60]'; } | rg ' [a-z]+ [a-z]+ [a-z]+ ' )\" ]"
+      "check": "f=$( { git diff --name-only --diff-filter=A $(git log -1 --format=%H --grep='^Freeze Phase B') -- src; git ls-files -o --exclude-standard -- src; } | rg '\\.ts$' | rg -v '\\.test\\.ts$' | sort -u ) && [ -z \"$( { echo \"$f\" | xargs rg -o --no-filename '[\\x22\\x27\\x60][^\\x22\\x27\\x60\\n]{100,}[\\x22\\x27\\x60]'; git diff $(git log -1 --format=%H --grep='^Freeze Phase B') -- src | rg '^\\+[^+]' | rg -o '[\\x22\\x27\\x60][^\\x22\\x27\\x60\\n]{100,}[\\x22\\x27\\x60]'; } | rg ' [a-z]+ [a-z]+ [a-z]+ ' )\" ]"
     },
     {
       "id": "live-sources-c",

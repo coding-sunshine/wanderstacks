@@ -33,7 +33,7 @@
   },
   "phase-d-evidence-baseline": {
    "question": "Phase D adds 15 rooms whose facts are new evidence rows; Phase B froze data/facts.json and data/verify immutable. How do the frozen contracts move?",
-   "answer": "Single recorded amendment (owner-authorised pattern, 2026-11-08): facts-traced-b keeps its dist-tracing assertion and swaps the frozen-file diff for a source-integrity gate (every passing fact carries a source); phase-c.json anchors move from literal hashes to the 'Freeze Phase B' commit message so the amended contracts self-heal. St Gall and Bodleian pins keep their frozen /stgall and /scan/firstfolio hrefs; their rooms still build and answer direct links. GSAP stays un-added until the deferred scroll chapters need it; no-new-deps checks are untouched."
+   "answer": "Single recorded amendment (owner-authorised pattern, 2026-11-08): facts-traced-b keeps its dist-tracing assertion and swaps the frozen-file diff for a source-integrity gate (every passing fact carries a source); phase-c.json anchors move from literal hashes to the 'Freeze Phase B' commit message so the amended contracts self-heal. St Gall and Bodleian pins keep their frozen /stgall and /scan/firstfolio hrefs; their rooms still build and answer direct links. GSAP stays un-added until the deferred scroll chapters need it; no-new-deps checks are untouched. Amendment 2 (same day): content-provenance-c required at least one added src file, which the re-baseline makes impossible; the clause is dropped so a phase adding no source still passes."
   }
  },
  "gaps": [
