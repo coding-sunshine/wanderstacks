@@ -61,6 +61,8 @@ document.addEventListener('click', (e) => {
   if (url.pathname + url.search !== location.pathname + location.search) go(url.pathname + url.search + url.hash)
 })
 
+// Chromium keeps history.state when a same-URL load replaces the entry. Only reload and back/forward resume a place.
+if ((performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined)?.type === 'navigate' && history.state) history.replaceState(null, '')
 addEventListener('popstate', render)
 render()
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js')
