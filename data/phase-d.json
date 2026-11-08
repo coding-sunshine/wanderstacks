@@ -65,7 +65,7 @@
    "id": "estimates-labelled-d",
    "what": "Every Phase D room param carries one of the 6 bases, every comparandum names its building, and the panel shows the matching label in all 15 rooms",
    "status": "failing",
-   "check": "for i in prunksaal bnf stgallen mafra nypl bpl peabody bodleian escorial gabinete melk klementinum vatican wiblingen weimar; do jq -e '(.hall|length>0) and all(.hall[]; (.basis|IN(\"measured\",\"photo-estimate\",\"excavated\",\"attested\",\"comparandum\",\"invented\")) and (.basis!=\"comparandum\" or ((.building//\"\")|length>0)))' dist/lib/$i.json >/dev/null || exit 1; done && bunx playwright test e2e/estimated-label-d.spec.ts && test $(bunx playwright test e2e/estimated-label-d.spec.ts --list 2>/dev/null | rg -o '› (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar):' | sort -u | wc -l) -eq 15"
+   "check": "for i in prunksaal bnf stgallen mafra nypl bpl peabody bodleian escorial gabinete melk klementinum vatican wiblingen weimar; do jq -e '(.hall|length>0) and all(.hall[]; (.basis|IN(\"measured\",\"photo-estimate\",\"excavated\",\"attested\",\"comparandum\",\"invented\")) and (.basis!=\"comparandum\" or ((.building//\"\")|length>0)))' dist/lib/$i.json >/dev/null || exit 1; done && bunx playwright test e2e/estimated-label-d.spec.ts && test $(bunx playwright test e2e/estimated-label-d.spec.ts --list 2>/dev/null | rg -o 'd-[a-z0-9-]+: (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar)' | sort -u | wc -l) -eq 15"
   },
   {
    "id": "credits-d",
@@ -77,7 +77,7 @@
    "id": "tours-d",
    "what": "Every Phase D room has a guided tour of 3 or more stops; each caption is a fact from the room's own data with its source link; Escape ends it",
    "status": "failing",
-   "check": "for i in prunksaal bnf stgallen mafra nypl bpl peabody bodleian escorial gabinete melk klementinum vatican wiblingen weimar; do test -s data/tour/$i.json || exit 1; jq -e '.facts as $f | (.tour.stops|length>=3) and all(.tour.stops[]; .fact>=0 and .fact<($f|length) and (.at|length==3) and (.look|length==3))' dist/lib/$i.json >/dev/null || exit 1; done && bunx playwright test e2e/tour-d.spec.ts && test $(bunx playwright test e2e/tour-d.spec.ts --list 2>/dev/null | rg -o '› (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar):' | sort -u | wc -l) -eq 15"
+   "check": "for i in prunksaal bnf stgallen mafra nypl bpl peabody bodleian escorial gabinete melk klementinum vatican wiblingen weimar; do test -s data/tour/$i.json || exit 1; jq -e '.facts as $f | (.tour.stops|length>=3) and all(.tour.stops[]; .fact>=0 and .fact<($f|length) and (.at|length==3) and (.look|length==3))' dist/lib/$i.json >/dev/null || exit 1; done && bunx playwright test e2e/tour-d.spec.ts && test $(bunx playwright test e2e/tour-d.spec.ts --list 2>/dev/null | rg -o 'd-[a-z0-9-]+: (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar)' | sort -u | wc -l) -eq 15"
   },
   {
    "id": "pins-d",
@@ -101,37 +101,37 @@
    "id": "frame-time-d",
    "what": "Walking each Phase D room keeps p95 frame time at or under 20 ms and draw calls under 200 on a real GPU",
    "status": "failing",
-   "check": "bunx playwright test e2e/frame-time-d.spec.ts && test $(bunx playwright test e2e/frame-time-d.spec.ts --list 2>/dev/null | rg -o '› (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar):' | sort -u | wc -l) -eq 15"
+   "check": "bunx playwright test e2e/frame-time-d.spec.ts && test $(bunx playwright test e2e/frame-time-d.spec.ts --list 2>/dev/null | rg -o 'd-[a-z0-9-]+: (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar)' | sort -u | wc -l) -eq 15"
   },
   {
    "id": "room-gen-time-d",
    "what": "Each Phase D room builds its first bay before the door opens, at 1x and 4x CPU",
    "status": "failing",
-   "check": "bunx playwright test e2e/room-gen-time-d.spec.ts && test $(bunx playwright test e2e/room-gen-time-d.spec.ts --list 2>/dev/null | rg -o '› (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar)( @[14]x)?:' | sort -u | wc -l) -eq 30"
+   "check": "bunx playwright test e2e/room-gen-time-d.spec.ts && test $(bunx playwright test e2e/room-gen-time-d.spec.ts --list 2>/dev/null | rg -o 'd-room-gen-time: (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar) @[14]x' | sort -u | wc -l) -eq 30"
   },
   {
    "id": "route-weight-d",
    "what": "A cold load of each Phase D room transfers 5 MB or less",
    "status": "failing",
-   "check": "bunx playwright test e2e/route-weight-d.spec.ts && test $(bunx playwright test e2e/route-weight-d.spec.ts --list 2>/dev/null | rg -o '› (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar):' | sort -u | wc -l) -eq 15"
+   "check": "bunx playwright test e2e/route-weight-d.spec.ts && test $(bunx playwright test e2e/route-weight-d.spec.ts --list 2>/dev/null | rg -o 'd-[a-z0-9-]+: (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar)' | sort -u | wc -l) -eq 15"
   },
   {
    "id": "a11y-d",
    "what": "Every control in the Phase D rooms is named and the evidence and tour toggles work by keyboard alone",
    "status": "failing",
-   "check": "bunx playwright test e2e/a11y-d.spec.ts && test $(bunx playwright test e2e/a11y-d.spec.ts --list 2>/dev/null | rg -o '› (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar):' | sort -u | wc -l) -eq 15"
+   "check": "bunx playwright test e2e/a11y-d.spec.ts && test $(bunx playwright test e2e/a11y-d.spec.ts --list 2>/dev/null | rg -o 'd-[a-z0-9-]+: (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar)' | sort -u | wc -l) -eq 15"
   },
   {
    "id": "mobile-d",
    "what": "At 390 px each Phase D room has no horizontal scroll and the controls reach 44 px",
    "status": "failing",
-   "check": "bunx playwright test e2e/mobile-d.spec.ts && test $(bunx playwright test e2e/mobile-d.spec.ts --list 2>/dev/null | rg -o '› (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar):' | sort -u | wc -l) -eq 15"
+   "check": "bunx playwright test e2e/mobile-d.spec.ts && test $(bunx playwright test e2e/mobile-d.spec.ts --list 2>/dev/null | rg -o 'd-[a-z0-9-]+: (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar)' | sort -u | wc -l) -eq 15"
   },
   {
    "id": "reduced-motion-d",
    "what": "Under reduced motion each Phase D room enters with a fade and then holds pixel-still with no running animations",
    "status": "failing",
-   "check": "bunx playwright test e2e/reduced-motion-d.spec.ts && test $(bunx playwright test e2e/reduced-motion-d.spec.ts --list 2>/dev/null | rg -o '› (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar):' | sort -u | wc -l) -eq 15"
+   "check": "bunx playwright test e2e/reduced-motion-d.spec.ts && test $(bunx playwright test e2e/reduced-motion-d.spec.ts --list 2>/dev/null | rg -o 'd-[a-z0-9-]+: (prunksaal|bnf|stgallen|mafra|nypl|bpl|peabody|bodleian|escorial|gabinete|melk|klementinum|vatican|wiblingen|weimar)' | sort -u | wc -l) -eq 15"
   }
  ]
 }
