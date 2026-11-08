@@ -171,6 +171,21 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     if (open) return
     open = true
     performance.mark('room:door-open')
+    // Keepsakes: a passport stamp and a visitors' book entry for walking in.
+    try {
+      const stamps = JSON.parse(localStorage.getItem('wl.passport') ?? '[]') as { id: string; at: number }[]
+      if (!stamps.some((s) => s.id === lib.id)) {
+        stamps.push({ id: lib.id, at: Date.now() })
+        localStorage.setItem('wl.passport', JSON.stringify(stamps))
+      }
+      const book = JSON.parse(localStorage.getItem('wl.bookv2') ?? '{"entries":[]}') as { name?: string; entries: { id: string; at: number }[] }
+      if (book.name && !book.entries.some((e) => e.id === lib.id)) {
+        book.entries.push({ id: lib.id, at: Date.now() })
+        localStorage.setItem('wl.bookv2', JSON.stringify(book))
+      }
+    } catch {
+      // keepsakes are best-effort
+    }
     if (reduced) {
       veil.style.opacity = '1'
       fade(veil, 0, 150).then(() => (veil.hidden = true))

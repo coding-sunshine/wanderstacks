@@ -166,3 +166,43 @@ body::before {
 .palette-sub { color: var(--paper-dim); font-size: 0.8rem; font-style: italic; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .palette-item[data-on='true'] .palette-sub { color: inherit; }
 .palette-empty { padding: 1rem; text-align: center; color: var(--paper-dim); font-style: italic; }
+
+/* Reading list and keepsakes */
+.shelf-title { margin: 0 0 0.4rem; font-weight: 400; font-style: italic; font-size: clamp(1.8rem, 4vw, 2.6rem); }
+.shelf-lede { margin: 0 0 1.2rem; color: var(--paper-dim); font-style: italic; }
+.shelf-keep { display: inline-block; margin-bottom: 1.2rem; }
+.shelf-filter {
+  width: 100%; box-sizing: border-box; padding: 0.55rem 0.8rem; margin-bottom: 1.2rem;
+  background: rgb(11 8 6 / 0.5); border: 1px solid var(--hairline); border-radius: 999px;
+  color: var(--paper); font: inherit; outline: none;
+}
+.shelf-filter:focus-visible { outline: 2px solid var(--lamp); outline-offset: 2px; }
+.shelf-h { margin: 1.2rem 0 0.5rem; }
+.shelf-ul { list-style: none; margin: 0; padding: 0; }
+.shelf-ul a {
+  display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid rgb(201 162 74 / 0.18); text-decoration: none; color: var(--paper); border-radius: 3px;
+  transition: color 200ms var(--ease), background-color 200ms var(--ease);
+}
+.shelf-ul a:hover { color: var(--lamp); background: rgb(201 162 74 / 0.08); }
+.shelf-t { font-size: 1.05rem; }
+.shelf-s { color: var(--paper-dim); font-size: 0.85rem; font-style: italic; text-align: right; }
+.passport { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.6rem; }
+.passport-cell a {
+  display: grid; gap: 0.35rem; padding: 0.7rem 0.8rem; border: 1px solid rgb(201 162 74 / 0.3); border-radius: 4px;
+  text-decoration: none; color: var(--paper); background: rgb(11 8 6 / 0.4);
+  transition: border-color 200ms var(--ease);
+}
+.passport-cell a:hover { border-color: var(--gilt); }
+.passport-stamp { justify-self: start; }
+.passport-name { font-size: 0.95rem; line-height: 1.25; }
+.passport-date { color: var(--paper-dim); font-size: 0.78rem; font-style: italic; }
+.book-label { display: block; margin: 0 0 0.5rem; color: var(--gilt); }
+.book-name {
+  display: block; width: 100%; max-width: 22rem; box-sizing: border-box; margin-top: 0.3rem; padding: 0.5rem 0.8rem;
+  background: rgb(11 8 6 / 0.5); border: 1px solid var(--hairline); border-radius: 999px; color: var(--paper);
+  font: inherit; outline: none;
+}
+.book-name:focus-visible { outline: 2px solid var(--lamp); outline-offset: 2px; }
+.ledger { list-style: none; margin: 0.8rem 0 0; padding: 0; }
+.ledger-row { padding: 0.45rem 0.2rem; border-bottom: 1px solid rgb(201 162 74 / 0.18); font-style: italic; color: var(--paper-dim); }
