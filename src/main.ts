@@ -1,6 +1,7 @@
 import './style.css'
 import { go } from './app'
 import type { Mount } from './types'
+import { attachPalette } from './palette'
 
 // Procedural film grain: one 128px noise tile, stamped across a viewport-sized canvas.
 // Drawn once (stillness is a feature); no assets, no data: URIs, no committed rasters.
@@ -30,6 +31,7 @@ const paintGrain = () => {
   for (let y = 0; y < h; y += 128) for (let x = 0; x < w; x += 128) ctx.drawImage(grainTile, x, y)
 }
 paintGrain()
+attachPalette()
 addEventListener('resize', paintGrain)
 
 type Route = [RegExp, () => Promise<{ mount: Mount }>]
