@@ -5,7 +5,9 @@ import { dprGovernor } from '../governor'
 import type { Library, Mount } from '../types'
 import * as evidence from './evidence'
 import { hash, type Built, type KitModule, type RoomApi } from './kit'
+import { buildOutside } from './outside'
 import { buildPanel } from './panel'
+import { addCredits, estimatedLabel, exteriorOf, firstPlace, placeButton, remember, type Place } from './place'
 import * as sound from './sound'
 import { dustTexture } from './textures'
 import * as tour from './tour'
@@ -15,6 +17,7 @@ const SPEED = 2
 const RAMP_MS = 2400
 const FLY_MS = 1400
 const DUST = 1500
+const HINT = 'Drag to look. W A S D or arrow keys to walk. Tap the floor to go there.'
 
 const kits: Record<Library['kit'], () => Promise<KitModule>> = {
   hall: () => import('./kits/hall').then((m) => m.default),
@@ -67,7 +70,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   status.textContent = 'Opening the door'
   const hint = document.createElement('p')
   hint.className = 'room-hint'
-  hint.textContent = 'Drag to look. W A S D or arrow keys to walk. Tap the floor to go there.'
+  hint.textContent = HINT
   const veil = document.createElement('div')
   veil.className = 'room-veil'
   const controls = document.createElement('div')
@@ -77,7 +80,12 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   const canvas = document.createElement('canvas')
   canvas.tabIndex = 0
   canvas.setAttribute('aria-label', `${lib.name}, a walkable reconstruction`)
+  const ex = lib.kit === 'site' ? null : exteriorOf(lib)
+  const enterBtn = placeButton('enter'), exitBtn = placeButton('exit')
+  const estimated = ex ? estimatedLabel(ex) : null
   root.append(canvas, veil, status, hint, controls, toggle, panel)
+  if (ex) root.append(enterBtn, exitBtn, estimated!)
+  addCredits(panel, ex)
   if (lib.reconstruction) {
     const badge = document.createElement('p')
     badge.className = 'room-badge'
@@ -139,7 +147,11 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   let goal: THREE.Vector3 | null = null
   let fly: { t: number; from: THREE.Vector3; to: THREE.Vector3; y0: number; y1: number; p0: number; p1: number; done: () => void } | null = null
   const keys = new Set<string>()
-  const publishCam = () => (root.dataset.camera = JSON.stringify(cam.toArray().map(round2)))
+  const publishYaw = () => (root.dataset.yaw = String(Math.round(((yaw * 180) / Math.PI) * 10) / 10))
+  const publishCam = () => {
+    root.dataset.camera = JSON.stringify(cam.toArray().map(round2))
+    publishYaw()
+  }
 
   let open = false
   let rampStart = 0
@@ -196,14 +208,74 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
       fly = { t: 0, from: cam.clone(), to, y0: yaw, y1: yaw + turn, p0: pitch, p1, done: resolve }
     })
 
+  // The kit builds into `inner`, so the whole interior hides while the visitor is outside.
+  const inner = new THREE.Group()
+  scene.add(inner)
+  const kitScene = Object.create(scene, { add: { value: (...o: THREE.Object3D[]) => inner.add(...o) } }) as THREE.Scene
+  const outside = ex ? buildOutside(ex, own) : null
+  if (outside) scene.add(outside.group)
+  const hallBg = scene.background, hallFog = scene.fog
+  const skyBg = new THREE.Color(0xa9c4dc), skyFog = new THREE.Fog(0xa9c4dc, 40, 140)
+  let place: Place = 'inside'
+  let built: Built
+  const clampAt = (p: THREE.Vector3) => (place === 'outside' ? outside!.clamp(p) : built.clamp(p))
+
+  function show(p: Place) {
+    place = p
+    const out = p === 'outside'
+    root.dataset.place = p
+    inner.visible = lamp.visible = !out
+    dust.visible = !out && dustOn
+    if (outside) outside.group.visible = out
+    scene.background = out ? skyBg : hallBg
+    scene.fog = out ? skyFog : hallFog
+    enterBtn.hidden = !out
+    exitBtn.hidden = p !== 'inside' || !ex
+    if (estimated) estimated.hidden = !(out && ex!.estimated.length)
+    for (const k of ['massing', 'footprint', 'door', 'textures']) delete root.dataset[k]
+    if (out) {
+      root.dataset.massing = JSON.stringify([ex!.w, ex!.d, ex!.h])
+      root.dataset.footprint = JSON.stringify(outside!.footprint)
+      root.dataset.door = JSON.stringify(outside!.door)
+      const count = () => place === 'outside' && (root.dataset.textures = String(outside!.loaded()))
+      count()
+      outside!.load(() => (count(), (dirty = true)))
+    }
+    const s = out ? outside!.spawn : { pos: built.start.pos, yaw: built.start.yaw, pitch: 0 }
+    fly?.done()
+    fly = null
+    goal = null
+    vel.set(0, 0)
+    keys.clear()
+    cam.set(...s.pos)
+    yaw = s.yaw
+    pitch = s.pitch
+    hint.textContent = out ? 'Drag to look. W A S D or arrow keys to walk to the door.' : HINT
+    publishCam()
+    dirty = true
+  }
+  let busy = false
+  function go(p: Place) {
+    if (busy || p === place) return
+    remember(p)
+    keys.clear()
+    vel.set(0, 0)
+    if (reduced) return show(p), canvas.focus({ preventScroll: true })
+    busy = true
+    veil.hidden = false
+    fade(veil, 1, 150)
+      .then(() => (show(p), canvas.focus({ preventScroll: true }), fade(veil, 0, 200)))
+      .then(() => ((veil.hidden = true), (busy = false)))
+  }
+  enterBtn.onclick = () => go('inside')
+  exitBtn.onclick = () => go('outside')
+
   let raf = 0
   let detach: (() => void)[] = []
-  let built: Built
   try {
-    const b = kit.build({ lib, scene, own, dirty: () => (dirty = true), reduced })
+    const b = kit.build({ lib, scene: kitScene, own, dirty: () => (dirty = true), reduced })
     built = b
-    cam.set(...b.start.pos)
-    yaw = b.start.yaw
+    show(firstPlace(lib, ex))
 
     const box = new THREE.Box3().setFromObject(b.core)
     const r = (n: 'x' | 'y' | 'z') => [round2(box.min[n]), round2(box.max[n])]
@@ -246,7 +318,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   const onKey = (e: KeyboardEvent, down: boolean) => {
     const k = e.key.length === 1 ? e.key.toLowerCase() : e.key
     if (!down) keys.delete(k)
-    if ((e.target as Element).closest?.('.room-panel, .room-toggle, .room-controls, [data-tour]') || e.ctrlKey || e.metaKey || e.altKey) return
+    if ((e.target as Element).closest?.('.room-panel, .room-toggle, .room-controls, .room-place, [data-tour]') || e.ctrlKey || e.metaKey || e.altKey) return
     if (!['w', 'a', 's', 'd', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(k)) return
     e.preventDefault()
     if (down) {
@@ -275,6 +347,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     drag.moved += Math.abs(dx) + Math.abs(dy)
     yaw -= dx * 0.004
     pitch = THREE.MathUtils.clamp(pitch - dy * 0.004, -1.1, 1.1)
+    publishYaw()
     dirty = true
   })
   const ray = new THREE.Raycaster()
@@ -291,7 +364,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     goal = hit.setY(EYE)
     if (reduced) {
       cam.copy(goal)
-      built.clamp(cam)
+      clampAt(cam)
       goal = null
       dirty = true
       publishCam()
@@ -354,8 +427,10 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
       if (vel.lengthSq() > 1e-4) {
         cam.x += vel.x * dt
         cam.z += vel.y * dt
-        built.clamp(cam)
+        clampAt(cam)
         moving = true
+        if (place === 'outside') publishCam()
+        if (place === 'outside' && outside!.atDoor(cam)) go('inside')
       } else vel.set(0, 0)
     }
     if (wasMoving && !moving) publishCam()

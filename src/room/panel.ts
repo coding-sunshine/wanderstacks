@@ -83,7 +83,7 @@ export function buildPanel(lib: Library, params: KitModule['params']) {
     section('Facts', facts),
     section('The hall, measured and guessed', hall),
     section('Shelves', shelves),
-    section('Photographs used to estimate the hall', credits),
+    section('Credits', credits),
     el('p', {}, report(lib, 'room', 'general', null), ' · ', link('/byrne', "Byrne's Euclid, a living page", false)),
   )
   return panel

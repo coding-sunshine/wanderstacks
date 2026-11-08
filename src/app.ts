@@ -1,5 +1,5 @@
-export function go(path: string) {
-  history.pushState(null, '', path)
+export function go(path: string, state: unknown = null) {
+  history.pushState(state, '', path)
   dispatchEvent(new PopStateEvent('popstate'))
 }
 
