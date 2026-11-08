@@ -145,17 +145,31 @@ export function attach(api: RoomApi) {
     if (!li) return
     const b = el('button', { type: 'button', 'data-action': 'find', 'aria-label': `Find ${s.title}` }, 'Find')
     b.onclick = () => {
-      const k = slots[i]!
-      look.set(k.at[0] + k.out[0] * FACE, BOOK_Y, k.at[2] + k.out[1] * FACE)
-      at.set(look.x + k.out[0] * DIST, camera.position.y, look.z + k.out[1] * DIST)
-      api.clamp(at)
-      const ms = Math.min(3000, 800 + 50 * Math.hypot(at.x - camera.position.x, at.z - camera.position.z))
-      const mine = ++seq
-      delete root.dataset.bookFocus
-      if (matchMedia('(max-width: 700px)').matches && toggle?.getAttribute('aria-expanded') === 'true') toggle.click()
-      api.goTo([at.x, at.y, at.z], [look.x, look.y, look.z], ms).then(() => {
-        if (mine === seq) root.dataset.bookFocus = s.id
-      })
+      if (b.disabled) return
+      b.disabled = true
+      b.textContent = 'Fetching…'
+      const status = api.root.querySelector<HTMLElement>('.room-status')
+      // Call slip: a beat of waiting, like a real closed-stack request.
+      if (status) {
+        status.textContent = `Fetching “${s.title}” from the stacks…`
+        status.hidden = false
+      }
+      setTimeout(() => {
+        b.disabled = false
+        b.textContent = 'Find'
+        const k = slots[i]!
+        look.set(k.at[0] + k.out[0] * FACE, BOOK_Y, k.at[2] + k.out[1] * FACE)
+        at.set(look.x + k.out[0] * DIST, camera.position.y, look.z + k.out[1] * DIST)
+        api.clamp(at)
+        const ms = Math.min(3000, 800 + 50 * Math.hypot(at.x - camera.position.x, at.z - camera.position.z))
+        const mine = ++seq
+        delete root.dataset.bookFocus
+        if (matchMedia('(max-width: 700px)').matches && toggle?.getAttribute('aria-expanded') === 'true') toggle.click()
+        api.goTo([at.x, at.y, at.z], [look.x, look.y, look.z], ms).then(() => {
+          if (status) status.hidden = true
+          if (mine === seq) root.dataset.bookFocus = s.id
+        })
+      }, 900)
     }
     li.prepend(b)
     finds.push(b)

@@ -156,3 +156,14 @@
   .room-controls { top: 5.4rem; }
   .room-toggle { top: 5.4rem; }
 }
+
+/* House rules, once a session */
+.rules-card {
+  position: absolute; left: 50%; bottom: 8.2rem; transform: translateX(-50%); z-index: 4;
+  width: min(24rem, calc(100% - 2rem)); padding: 0.9rem 1.1rem; text-align: center;
+  background: linear-gradient(165deg, #F2E8D0, var(--paper)); color: var(--ink);
+  border: 1px solid var(--gilt); border-radius: 4px; box-shadow: 0 18px 50px rgb(0 0 0 / 0.5);
+}
+.rules-card .rules-title { color: var(--paper-link); margin: 0 0 0.3rem; }
+.rules-card .rules-body { margin: 0 0 0.7rem; font-style: italic; }
+.rules-card .btn { color: var(--paper-link); border-color: rgb(90 58 30 / 0.5); margin: 0 auto; }

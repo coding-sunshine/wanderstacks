@@ -150,9 +150,16 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   let fly: { t: number; ms: number; from: THREE.Vector3; to: THREE.Vector3; y0: number; y1: number; p0: number; p1: number; done: () => void } | null = null
   const keys = new Set<string>()
   const publishYaw = () => (root.dataset.yaw = String(Math.round(((yaw * 180) / Math.PI) * 10) / 10))
-  const publishCam = () => {
+  let lastShare = 0
+  const publishCam = (share = false) => {
     root.dataset.camera = JSON.stringify(cam.toArray().map(round2))
     publishYaw()
+    // Share-a-view: keep the URL hash pointing at where you stand, so the link reopens this spot.
+    if (share && performance.now() - lastShare > 700) {
+      lastShare = performance.now()
+      const h = `#${cam.toArray().map(round2).join(',')},${root.dataset.yaw}`
+      if (location.hash !== h) history.replaceState(null, '', h)
+    }
   }
   const stopGlide = () => {
     glide = null
@@ -185,6 +192,32 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
       }
     } catch {
       // keepsakes are best-effort
+    }
+    // House rules, once per session: real reading-room etiquette, kept generic on purpose.
+    try {
+      if (!sessionStorage.getItem('wl.rules')) {
+        const card = document.createElement('div')
+        card.className = 'rules-card'
+        card.setAttribute('role', 'note')
+        const title = document.createElement('p')
+        title.className = 'rules-title micro'
+        title.textContent = 'House rules for the reading room'
+        const body = document.createElement('p')
+        body.className = 'rules-body'
+        body.textContent = 'Pencils only. Bags on the floor. Cradle every book. Leave the lamps lit.'
+        const ok = document.createElement('button')
+        ok.type = 'button'
+        ok.className = 'btn'
+        ok.textContent = 'Respectfully noted'
+        ok.addEventListener('click', () => {
+          sessionStorage.setItem('wl.rules', '1')
+          card.remove()
+        })
+        card.append(title, body, ok)
+        root.append(card)
+      }
+    } catch {
+      // session rules are best-effort
     }
     if (reduced) {
       veil.style.opacity = '1'
@@ -272,6 +305,12 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     cam.set(...s.pos)
     yaw = s.yaw
     pitch = s.pitch
+    const shared = /^#(-?[\d.]+),(-?[\d.]+),(-?[\d.]+),(-?[\d.]+)$/.exec(location.hash)
+    if (shared && !out) {
+      cam.set(+shared[1]!, +shared[2]!, +shared[3]!)
+      yaw = (+shared[4]! * Math.PI) / 180
+      clampAt(cam)
+    }
     hint.textContent = out ? 'Drag to look. W A S D or arrow keys to walk to the door.' : HINT
     publishCam()
     dirty = true
@@ -469,7 +508,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
         if (place === 'outside' && outside!.atDoor(cam)) go('inside')
       } else vel.set(0, 0)
     }
-    if (wasMoving && !moving) publishCam()
+    if (wasMoving && !moving) publishCam(true)
     wasMoving = moving
     if (rampStart) {
       const t = Math.min(1, (now - rampStart) / RAMP_MS)

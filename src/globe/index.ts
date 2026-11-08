@@ -66,6 +66,8 @@ export const mount: Mount = (app, params) => {
   const card = el('section', 'globe-card')
   card.hidden = true
   card.setAttribute('aria-live', 'polite')
+  const tip = el('div', 'pin-tip')
+  tip.hidden = true
   const credit = el('p', 'globe-credit')
   credit.append(
     'Earth imagery: NASA ',
@@ -76,7 +78,7 @@ export const mount: Mount = (app, params) => {
   )
   time.append(slider, ticks, yearOut)
   hud.append(caption, time, index, credit)
-  root.append(canvas, pinLayer, card, hero, modes, hud)
+  root.append(canvas, pinLayer, card, tip, hero, modes, hud)
   app.append(root)
 
   let disposed = false
@@ -368,8 +370,16 @@ export const mount: Mount = (app, params) => {
         hovering = true
         const id = nearest(e)
         if (pins.find((p) => p.pin.id === id)?.dot.dataset.on !== 'true') select(id)
+        const b = dot.getBoundingClientRect()
+        const r = root.getBoundingClientRect()
+        tip.textContent = `${pin.name} · ${pin.years}`
+        tip.style.transform = `translate(${Math.round(b.x - r.left + b.width / 2)}px, ${Math.round(b.y - r.top - 12)}px) translate(-50%, -100%)`
+        tip.hidden = false
       })
-      dot.addEventListener('pointerleave', () => (hovering = false))
+      dot.addEventListener('pointerleave', () => {
+        hovering = false
+        tip.hidden = true
+      })
     }
     setYear(year)
 
