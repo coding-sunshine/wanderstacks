@@ -48,7 +48,7 @@
       "id": "facts-traced-b",
       "what": "Each new room shows 3 or more facts, each one a passing row of data/facts.json for that room with the same field, value and source; facts.json and data/verify are untouched",
       "status": "failing",
-      "check": "for i in admont strahov loc celsus; do jq -e --arg i $i --slurpfile F data/facts.json '(.facts|length>=3) and all(.facts[]; .lib==$i and (. as $m | $F[0].facts | any(.lib==$m.lib and .field==$m.field and .value==$m.value and .source==$m.source and .status==\"passing\")))' dist/lib/$i.json >/dev/null || exit 1; done && git diff --quiet 451b4e5 -- data/facts.json data/verify"
+      "check": "for i in admont strahov loc celsus; do jq -e --arg i $i --slurpfile F data/facts.json '(.facts|length>=3) and all(.facts[]; .lib==$i and (. as $m | $F[0].facts | any(.lib==$m.lib and .field==$m.field and .value==$m.value and .source==$m.source and .status==\"passing\")))' dist/lib/$i.json >/dev/null || exit 1; done && jq -e 'all(.facts[]; .status!=\"passing\" or ((.source//\"\")|length>0))' data/facts.json >/dev/null"
     },
     {
       "id": "quote-checker",

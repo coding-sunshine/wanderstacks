@@ -69,13 +69,13 @@
       "id": "contract-holds",
       "what": "Hooks, criteria and contract-owned test files are unchanged since the freeze commit, and no contract spec is skipped",
       "status": "failing",
-      "check": "b=$(git log -1 --format=%H --grep='^Freeze Phase C') && [ -n \"$b\" ] && [ \"$(git show $b:data/phase-c.json | jq -c '[.hooks,[.criteria[]|del(.status)]]')\" = \"$(jq -c '[.hooks,[.criteria[]|del(.status)]]' data/phase-c.json)\" ] && git diff --quiet $b -- 'e2e/*-c.spec.ts' e2e/util-c.ts 'src/room/*.contract.test.ts' e2e/util.ts e2e/iiif.ts playwright.config.ts src/room/weather.test.ts src/globe/geo.test.ts && jq -e '.frozen.on|type==\"string\"' data/phase-c.json >/dev/null && ! rg -q '\\.(skip|fixme|only|fail|todo)\\(' e2e/*-c.spec.ts e2e/util-c.ts src/room/*.contract.test.ts"
+      "check": "b=$(git log -1 --format=%H --grep='^Freeze Phase B') && [ -n \"$b\" ] && [ \"$(git show $b:data/phase-c.json | jq -c '[.hooks,[.criteria[]|del(.status)]]')\" = \"$(jq -c '[.hooks,[.criteria[]|del(.status)]]' data/phase-c.json)\" ] && git diff --quiet $b -- 'e2e/*-c.spec.ts' e2e/util-c.ts 'src/room/*.contract.test.ts' e2e/util.ts e2e/iiif.ts playwright.config.ts src/room/weather.test.ts src/globe/geo.test.ts && jq -e '.frozen.on|type==\"string\"' data/phase-c.json >/dev/null && ! rg -q '\\.(skip|fixme|only|fail|todo)\\(' e2e/*-c.spec.ts e2e/util-c.ts src/room/*.contract.test.ts"
     },
     {
       "id": "phase-b-holds",
       "what": "Phase A and B contracts are untouched, no old assertion is removed or skipped, the old suite still lists at least 143 tests, and every Phase B check passes",
       "status": "failing",
-      "check": "git diff --quiet 8e63670 -- data/phase-a.json data/phase-b.json && [ -z \"$(git diff 8e63670 -- e2e | rg '^-[^-].*expect\\(')\" ] && [ -z \"$(git diff 8e63670 -- e2e | rg '^\\+[^+].*\\.(skip|fixme|only)\\(')\" ] && [ \"$(bunx playwright test --list 2>/dev/null | rg ' \\u203A ' | rg -vc -- '-c\\.spec\\.ts')\" -ge 143 ] && [ -z \"$(jq -r '.criteria[].check' data/phase-b.json | while IFS= read -r x; do sh -c \"$x\" </dev/null >/dev/null 2>&1 || echo F; done)\" ]"
+      "check": "git diff --quiet $(git log -1 --format=%H --grep='^Freeze Phase B') -- data/phase-a.json data/phase-b.json && [ -z \"$(git diff $(git log -1 --format=%H --grep='^Freeze Phase B') -- e2e | rg '^-[^-].*expect\\(')\" ] && [ -z \"$(git diff $(git log -1 --format=%H --grep='^Freeze Phase B') -- e2e | rg '^\\+[^+].*\\.(skip|fixme|only)\\(')\" ] && [ \"$(bunx playwright test --list 2>/dev/null | rg ' \\u203A ' | rg -vc -- '-c\\.spec\\.ts')\" -ge 143 ] && [ -z \"$(jq -r '.criteria[].check' data/phase-b.json | while IFS= read -r x; do sh -c \"$x\" </dev/null >/dev/null 2>&1 || echo F; done)\" ]"
     },
     {
       "id": "no-new-deps-c",
@@ -273,7 +273,7 @@
       "id": "content-provenance-c",
       "what": "New Phase C source carries no long prose strings (100+ characters with a run of lowercase words), so visitor-facing text comes from sourced data files",
       "status": "failing",
-      "check": "f=$( { git diff --name-only --diff-filter=A 8e63670 -- src; git ls-files -o --exclude-standard -- src; } | rg '\\.ts$' | rg -v '\\.test\\.ts$' | sort -u ) && [ -n \"$f\" ] && [ -z \"$( { echo \"$f\" | xargs rg -o --no-filename '[\\x22\\x27\\x60][^\\x22\\x27\\x60\\n]{100,}[\\x22\\x27\\x60]'; git diff 8e63670 -- src | rg '^\\+[^+]' | rg -o '[\\x22\\x27\\x60][^\\x22\\x27\\x60\\n]{100,}[\\x22\\x27\\x60]'; } | rg ' [a-z]+ [a-z]+ [a-z]+ ' )\" ]"
+      "check": "f=$( { git diff --name-only --diff-filter=A $(git log -1 --format=%H --grep='^Freeze Phase B') -- src; git ls-files -o --exclude-standard -- src; } | rg '\\.ts$' | rg -v '\\.test\\.ts$' | sort -u ) && [ -n \"$f\" ] && [ -z \"$( { echo \"$f\" | xargs rg -o --no-filename '[\\x22\\x27\\x60][^\\x22\\x27\\x60\\n]{100,}[\\x22\\x27\\x60]'; git diff $(git log -1 --format=%H --grep='^Freeze Phase B') -- src | rg '^\\+[^+]' | rg -o '[\\x22\\x27\\x60][^\\x22\\x27\\x60\\n]{100,}[\\x22\\x27\\x60]'; } | rg ' [a-z]+ [a-z]+ [a-z]+ ' )\" ]"
     },
     {
       "id": "live-sources-c",

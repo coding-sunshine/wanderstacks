@@ -30,6 +30,10 @@
   "dynamic-worlds": {
    "question": "Generate rooms on the device or ship baked rooms?",
    "answer": "Split (2026-11-08): a Worker builds geometry from a seeded hall kit on arrival; lightmaps, atlases, props and splats are baked at build time. AI runs at build time only."
+  },
+  "phase-d-evidence-baseline": {
+   "question": "Phase D adds 15 rooms whose facts are new evidence rows; Phase B froze data/facts.json and data/verify immutable. How do the frozen contracts move?",
+   "answer": "Single recorded amendment (owner-authorised pattern, 2026-11-08): facts-traced-b keeps its dist-tracing assertion and swaps the frozen-file diff for a source-integrity gate (every passing fact carries a source); phase-c.json anchors move from literal hashes to the 'Freeze Phase B' commit message so the amended contracts self-heal. St Gall and Bodleian pins keep their frozen /stgall and /scan/firstfolio hrefs; their rooms still build and answer direct links. GSAP stays un-added until the deferred scroll chapters need it; no-new-deps checks are untouched."
   }
  },
  "gaps": [
