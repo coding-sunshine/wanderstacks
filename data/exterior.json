@@ -1,0 +1,52 @@
+{
+  "admont": {
+    "w": 72,
+    "d": 17,
+    "h": 20,
+    "source": "estimate",
+    "name": "Admont Abbey library wing",
+    "credit": "Estimated massing",
+    "estimated": [
+      "w",
+      "d",
+      "h"
+    ],
+    "basis": "library hall 70 x 14 m inside the abbey east wing; OSM maps only the whole abbey (way/1168985720, 189 x 109 m)"
+  },
+  "loc": {
+    "w": 143.7,
+    "d": 133.7,
+    "h": 23,
+    "source": "relation/1029374",
+    "name": "Library of Congress, Thomas Jefferson Building",
+    "credit": "© OpenStreetMap contributors, ODbL 1.0, https://www.openstreetmap.org/relation/1029374",
+    "estimated": [
+      "h"
+    ],
+    "basis": "w and d from the minimum-area rectangle of the OSM outer ring; OSM has no height"
+  },
+  "longroom": {
+    "w": 83,
+    "d": 19.1,
+    "h": 20,
+    "source": "way/44075406",
+    "name": "Old Library",
+    "credit": "© OpenStreetMap contributors, ODbL 1.0, https://www.openstreetmap.org/way/44075406",
+    "estimated": [],
+    "basis": "w and d from the minimum-area rectangle of the OSM way; h from its height tag"
+  },
+  "strahov": {
+    "w": 34,
+    "d": 13,
+    "h": 18,
+    "source": "node/3920219970",
+    "name": "Strahovská knihovna",
+    "credit": "© OpenStreetMap contributors, ODbL 1.0, https://www.openstreetmap.org/node/3920219970",
+    "estimated": [
+      "w",
+      "d",
+      "h"
+    ],
+    "basis": "OSM maps the library as a point inside the monastery (relation/6268801); Philosophical Hall is 32 x 10 x 14 m"
+  }
+}

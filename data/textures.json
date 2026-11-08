@@ -1,0 +1,26 @@
+[
+  {
+    "slot": "ground",
+    "asset": "cobblestone_floor_001",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_001/cobblestone_floor_001_diff_1k.jpg",
+    "license": "CC0"
+  },
+  {
+    "slot": "ground-normal",
+    "asset": "cobblestone_floor_001",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_001/cobblestone_floor_001_nor_gl_1k.jpg",
+    "license": "CC0"
+  },
+  {
+    "slot": "facade",
+    "asset": "granite_wall",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/granite_wall/granite_wall_diff_1k.jpg",
+    "license": "CC0"
+  },
+  {
+    "slot": "facade-normal",
+    "asset": "granite_wall",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/granite_wall/granite_wall_nor_gl_1k.jpg",
+    "license": "CC0"
+  }
+]

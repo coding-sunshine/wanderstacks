@@ -102,6 +102,8 @@ interface LibraryBase {
   name: string
   place: string
   years: string
+  lat: number
+  lon: number
   facts: Fact[]
   shelves: Shelf[]
   credits: Credit[]

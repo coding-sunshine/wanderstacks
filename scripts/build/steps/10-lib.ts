@@ -50,6 +50,8 @@ for (const file of await readdir(root + 'data/hall')) {
     name: lib.n,
     place: lib.p,
     years: lib.yl,
+    lat: lib.lat,
+    lon: lib.lon,
     facts: passing,
     kit: src.kit,
     ...(src.reconstruction && { reconstruction: true }),

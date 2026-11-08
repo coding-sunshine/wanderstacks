@@ -1,0 +1,291 @@
+{
+  "phase": "C",
+  "rooms": [
+    "longroom",
+    "admont",
+    "strahov",
+    "loc",
+    "celsus"
+  ],
+  "cwd": "repo root",
+  "preview": "bun run build && bunx vite preview --port 4173",
+  "recheck": "jq -r '.criteria[]|\"\\(.id)\\t\\(.check)\"' data/phase-c.json | while IFS=$'\\t' read -r id c; do sh -c \"$c\" </dev/null >/dev/null 2>&1 && echo \"passing $id\" || echo \"failing $id\"; done",
+  "frozen": {
+    "by": "owner autonomy grant (Hardik Shah)",
+    "on": "2026-11-08"
+  },
+  "scope": "Real-time visits. Each room is lit by the real sun at its coordinates right now and by live Open-Meteo weather, with lamps at night and rain or snow outdoors. Arriving from the globe starts outside the building, in a forecourt under the real sky with a massing model sized from OSM or labelled estimates, and the visitor walks in through the door or presses Go inside. Curated books on the shelves can be found from the index, pulled, read about and put back. Tap-to-walk glides with eased start and stop and no bob. Direct room links still start inside. Spec: reports/WorldLibs realtime walkable library visits.md",
+  "deferred": [
+    "photoreal captures of the five buildings (no openly licensed interior or exterior capture exists; see research_notes capture_inventory.md)",
+    "Gaussian splats and photogrammetry",
+    "Street View, Google Photorealistic 3D Tiles and any keyed or non-free imagery",
+    "HDR environment maps (route weight)",
+    "neighbouring buildings and city context around each exterior",
+    "seeded determinism of room generation"
+  ],
+  "hooks": {
+    "conventions": "All attributes live on [data-view=room] unless stated. Coordinates are metres in the current place's world space, x east-ish, y up, z south-ish, rounded to 2 decimals. Every contract e2e title starts with \"<criterion id>:\". Contract specs mock Open-Meteo with page.route(\"https://api.open-meteo.com/**\") returning {timezone, current:{weather_code, temperature_2m, cloud_cover, precipitation, snowfall, visibility, wind_speed_10m}} and fix time with page.clock unless a criterion says otherwise.",
+    "data-place": "\"outside\" (forecourt in front of the building), \"inside\" (the hall) or \"site\". celsus is always \"site\" and has no inside or outside.",
+    "data-sun": "JSON {\"alt\",\"az\"} in degrees to 1 decimal for the room's lat/lon at the page clock's current time, from sunAngles(sunLocal(lat, lon, now)). alt is elevation above the horizon. az is clockwise from north in [0, 360) (east is 90). Set before data-ready and refreshed at least once per 60 s of page-clock time.",
+    "data-sky": "\"day\" when alt > 0, \"twilight\" when -6 <= alt <= 0, \"night\" when alt < -6.",
+    "data-lamps": "\"on\" when alt < -4, else \"off\".",
+    "data-beams": "\"on\" when alt > 0 and cloud < 70 and data-place is \"inside\", else \"off\".",
+    "data-weather": "Absent until the Open-Meteo lookup settles (success, HTTP error, network error, malformed body or the 4 s timeout), then the describe(code) word, or \"unknown\" on any failure. data-ready does not wait for it. It settles within 4.5 s of navigation.",
+    "data-cloud": "Set with data-weather. Integer cloud_cover percent, 0 on failure. Until it settles the sky is lit as cloud 0.",
+    "data-precip": "Set with data-weather. precipOf(code): \"rain\" for codes 51-67, 80-82, 95-99; \"snow\" for 71-77, 85-86; else \"none\". \"none\" on failure.",
+    "data-particles": "Integer count of live precipitation particles. Above 0 only when data-precip is not \"none\" and data-place is \"outside\" or \"site\". 0 inside and 0 with no precipitation.",
+    "data-massing": "Outside only. JSON [w,d,h] of the building massing, equal to data/exterior.json for the room.",
+    "data-footprint": "Outside only. JSON [minX,minZ,maxX,maxZ], the axis-aligned rectangle the massing occupies in outside world space.",
+    "data-door": "Outside only. JSON [x,z] of the entrance, on the footprint boundary.",
+    "data-camera": "Existing hook, JSON [x,y,z]. data-place and data-camera change in the same frame when the visitor goes in or out.",
+    "data-yaw": "Camera yaw in degrees to 1 decimal. Forward is (-sin yaw, 0, -cos yaw) with yaw in radians.",
+    "data-goal": "JSON [x,z] while a tap-to-walk glide is in progress. Removed when the glide ends or is interrupted.",
+    "data-textures": "Count of texture maps loaded and applied in the current place. 0 when none loaded.",
+    "data-spines": "Count of pickable book spines in the current place. Inside a hall or rotunda room it equals the room JSON shelves length. 0 outside and at celsus.",
+    "data-book-focus": "Book id, set in the frame the camera comes to rest after a find action. Removed when the visitor moves.",
+    "data-book-pulled": "Book id while its dialog is open. Removed on close.",
+    "[data-local]": "Visible strip in every place with an opaque background. Contains [data-local-text] whose text equals localLine(weather, lon, now) from src/room/weather.ts: \"HH:MM · word · N°C\" (U+00B7 separators, N = Math.round(temp), time in the zone from the response) on success; \"HH:MM\" plus \" solar\" from longitude on failure or before the lookup settles. Also contains a[href^=\"https://open-meteo.com\"] and the text \"CC BY 4.0\".",
+    "ul.room-credits": "Present in every place. When the room exterior source is OSM it contains a[href=\"https://www.openstreetmap.org/<source>\"] and the text \"ODbL\". When textures are configured it names each data/textures.json asset by its exact asset id and contains \"CC0\" and \"Poly Haven\".",
+    "[data-estimated]": "Visible outside only when the room's exterior.json estimated array is non-empty. Hidden inside. Names each estimated dimension with the word width, depth or height (for w, d, h).",
+    "button[data-action=enter]": "Accessible name \"Go inside\". Shown outside. Not inside .room-controls.",
+    "button[data-action=exit]": "Accessible name \"Step outside\". Shown inside, including on direct loads. Not inside .room-controls.",
+    ".room-controls": "Holds exactly 3 buttons (evidence, tour, sound) in every place. celsus has no enter or exit button.",
+    "arrival": "The globe navigates to /room/<id> with history.state {arrive:\"outside\"}. A /room/<id> entry whose history.state.arrive is \"outside\" starts outside, and \"inside\" or no state starts inside. Going in or out replaceStates arrive to the new place without changing href or history.length, so reload resumes the current place. Helper gotoOutside(page,id) = goto /room/<id>, replaceState({arrive:\"outside\"}), reload.",
+    "globe card": "The globe card of each room library (longroom, admont, strahov, loc, celsus) holds a[href=\"/room/<id>\"]. Activating it navigates to /room/<id> with history.state {arrive:\"outside\"}. celsus ignores arrive and is always \"site\".",
+    "books": ".room-shelves li holds button[data-action=find] whose accessible name contains the book title (hall and rotunda rooms only), in the room JSON shelves order. Find moves the camera so that book's spine sits under the canvas centre and sets data-book-focus. On viewports 700 px wide or narrower, find also collapses the panel so the canvas centre is uncovered. Clicking or tapping a spine opens [role=dialog][data-book=<id>][aria-modal=true] with aria-labelledby pointing at an element holding the title, a \"Put back\" button, and a[href=\"/read/<id>\"] only when the book is readable. Escape or Put back closes it and returns focus to the find button that led there. On a mouse pointer, hovering a spine shows [data-spine-title] with its title. On touch, tapping a spine pulls it and does not start a glide.",
+    "glide": "Tapping the floor raycasts y=0 and glides the camera to the point with eased start and stop, no vertical bob, and duration in [0.6, max(1.2, d/1.4+0.4)] s for distance d. Any movement key cancels it. Under reduced motion the camera jumps.",
+    "luminance": "Mean over pixels of (0.2126 R + 0.7152 G + 0.0722 B) / 255 of a PNG screenshot of the room canvas, taken with every other room UI element hidden through the screenshot style option and decoded in the page with createImageBitmap.",
+    "unit API": "src/room/daylight.ts exports daylight({alt}, cloud, place) returning {sky, lamps, beams, key} and sunAngles(v) returning {alt, az}. key is the sun light intensity factor. src/room/weather.ts exports precipOf(code) and localLine(weather|null, lon, date), where the time zone is weather.tz.",
+    "data files": "data/exterior.json maps admont, loc, longroom, strahov to {w, d, h, source, name, credit, estimated[]}. source is \"estimate\" or \"(way|relation|node)/<id>\". data/textures.json is an array of {slot, asset, url, license:\"CC0\"} with Poly Haven 1k URLs and at least the slots ground and facade."
+  },
+  "criteria": [
+    {
+      "id": "build-clean-c",
+      "what": "Data build, Vite build, typecheck and unit tests pass",
+      "status": "failing",
+      "check": "bun run build >/dev/null && bun run typecheck && bun run test"
+    },
+    {
+      "id": "contract-holds",
+      "what": "Hooks, criteria and contract-owned test files are unchanged since the freeze commit, and no contract spec is skipped",
+      "status": "failing",
+      "check": "b=$(git log -1 --format=%H --grep='^Freeze Phase C') && [ -n \"$b\" ] && [ \"$(git show $b:data/phase-c.json | jq -c '[.hooks,[.criteria[]|del(.status)]]')\" = \"$(jq -c '[.hooks,[.criteria[]|del(.status)]]' data/phase-c.json)\" ] && git diff --quiet $b -- 'e2e/*-c.spec.ts' e2e/util-c.ts 'src/room/*.contract.test.ts' e2e/util.ts e2e/iiif.ts playwright.config.ts src/room/weather.test.ts src/globe/geo.test.ts && jq -e '.frozen.on|type==\"string\"' data/phase-c.json >/dev/null && ! rg -q '\\.(skip|fixme|only|fail|todo)\\(' e2e/*-c.spec.ts e2e/util-c.ts src/room/*.contract.test.ts"
+    },
+    {
+      "id": "phase-b-holds",
+      "what": "Phase A and B contracts are untouched, no old assertion is removed or skipped, the old suite still lists at least 143 tests, and every Phase B check passes",
+      "status": "failing",
+      "check": "git diff --quiet 8e63670 -- data/phase-a.json data/phase-b.json && [ -z \"$(git diff 8e63670 -- e2e | rg '^-[^-].*expect\\(')\" ] && [ -z \"$(git diff 8e63670 -- e2e | rg '^\\+[^+].*\\.(skip|fixme|only)\\(')\" ] && [ \"$(bunx playwright test --list 2>/dev/null | rg ' \\u203A ' | rg -vc -- '-c\\.spec\\.ts')\" -ge 143 ] && [ -z \"$(jq -r '.criteria[].check' data/phase-b.json | while IFS= read -r x; do sh -c \"$x\" </dev/null >/dev/null 2>&1 || echo F; done)\" ]"
+    },
+    {
+      "id": "no-new-deps-c",
+      "what": "package.json dependencies and devDependencies are unchanged from Phase A",
+      "status": "failing",
+      "check": "[ \"$(git show 451b4e5:package.json | jq -cS '[.dependencies,.devDependencies]')\" = \"$(jq -cS '[.dependencies,.devDependencies]' package.json)\" ]"
+    },
+    {
+      "id": "lib-geo",
+      "what": "Each room JSON carries numeric lat and lon equal to data/libs.json",
+      "status": "failing",
+      "check": "bun run data >/dev/null && for i in longroom admont strahov loc celsus; do jq -e -n --arg i $i --slurpfile L data/libs.json --slurpfile R public/lib/$i.json '($L[0][]|select(.id==$i)) as $l | ($R[0].lat|type==\"number\") and ($R[0].lon|type==\"number\") and $R[0].lat==$l.lat and $R[0].lon==$l.lon' >/dev/null || exit 1; done"
+    },
+    {
+      "id": "daylight-units",
+      "what": "Pure daylight, sun-angle, precipitation and local-line functions behave as the hooks define: sky bands, lamps below -4, beams only inside in sun under 70% cloud, zero key at or below the horizon, overcast at least 10% dimmer, key non-decreasing in altitude, exact local-line strings",
+      "status": "failing",
+      "check": "[ -f src/room/daylight.contract.test.ts ] && bun test src/room/daylight.contract.test.ts src/room/weather.test.ts src/globe/geo.test.ts"
+    },
+    {
+      "id": "sky-matches-sun",
+      "what": "In all 5 rooms on 2026-03-20, data-sun matches sunLocal within 0.5 deg altitude and 1 deg azimuth at local solar noon (sky day), solar noon plus 12 h (sky night, lamps on) and the moment after sunset when altitude is -3 deg (sky twilight, lamps off)",
+      "status": "failing",
+      "check": "bunx playwright test e2e/daylight-c.spec.ts -g 'sky-matches-sun:'"
+    },
+    {
+      "id": "interior-daylight",
+      "what": "Under reduced motion with clear weather, each inside room at solar midnight has luminance below 0.8 x its noon luminance and above 0.04, lamps on at night and off at noon, beams on at noon inside and off at celsus",
+      "status": "failing",
+      "check": "bunx playwright test e2e/daylight-c.spec.ts -g 'interior-daylight:'"
+    },
+    {
+      "id": "sky-advances",
+      "what": "With the page clock installed at solar noon and fast-forwarded 2 h, within 5 s of real time data-sun azimuth has moved at least 10 deg and matches sunLocal for the new time within 1 deg",
+      "status": "failing",
+      "check": "bunx playwright test e2e/daylight-c.spec.ts -g 'sky-advances:'"
+    },
+    {
+      "id": "weather-applied",
+      "what": "Code 63 gives weather rain and precip rain, code 73 gives snow and snow, celsus at noon under code 3 cloud 100 is at least 10% darker than under code 0 cloud 0, and the Long Room interior overcast is at least 3% darker with beams off",
+      "status": "failing",
+      "check": "bunx playwright test e2e/weather-c.spec.ts -g 'weather-applied:'"
+    },
+    {
+      "id": "weather-degrade",
+      "what": "When Open-Meteo returns 500, aborts, hangs or returns a malformed 200, the room is ready within 6 s, weather unknown, cloud 0, precip none, the local line shows solar time only, there is no pageerror, and the only console errors are \"Failed to load resource\" lines",
+      "status": "failing",
+      "check": "bunx playwright test e2e/weather-c.spec.ts -g 'weather-degrade:'"
+    },
+    {
+      "id": "weather-cache",
+      "what": "A cold load makes exactly 1 Open-Meteo request whose URL carries the room lat and lon. A reload 10 min later makes 0 requests and one 16 min later makes 1",
+      "status": "failing",
+      "check": "bunx playwright test e2e/weather-c.spec.ts -g 'weather-cache:'"
+    },
+    {
+      "id": "local-line",
+      "what": "In all 5 rooms with code 61 and temp 9.4 mocked, [data-local-text] equals \"HH:MM · rain · 9°C\" using the Intl time in the room zone, and the Open-Meteo link and CC BY 4.0 text are visible in every place",
+      "status": "failing",
+      "check": "bunx playwright test e2e/weather-c.spec.ts -g 'local-line:'"
+    },
+    {
+      "id": "precip-outdoors",
+      "what": "With rain mocked, data-particles is above 0 outside and at celsus and 0 inside. With clear weather it is 0 everywhere",
+      "status": "failing",
+      "check": "bunx playwright test e2e/weather-c.spec.ts -g 'precip-outdoors:'"
+    },
+    {
+      "id": "outside-arrival",
+      "what": "For longroom, admont, strahov and loc, arriving from the globe by pin button and by the card visit link lands on /room/<id> with empty search, data-place outside and ready. celsus arrives as site with no enter or exit button",
+      "status": "failing",
+      "check": "bunx playwright test e2e/outside-c.spec.ts -g 'outside-arrival:'"
+    },
+    {
+      "id": "enter-exit",
+      "what": "Go inside reaches data-place inside within 2.5 s with href and history.length unchanged, Step outside returns outside, and reload resumes whichever place the visitor was in",
+      "status": "failing",
+      "check": "bunx playwright test e2e/outside-c.spec.ts -g 'enter-exit:'"
+    },
+    {
+      "id": "direct-inside",
+      "what": "A direct load of /room/<id> starts inside for the 4 buildings and as site for celsus",
+      "status": "failing",
+      "check": "bunx playwright test e2e/outside-c.spec.ts -g 'direct-inside:'"
+    },
+    {
+      "id": "spawn-pose",
+      "what": "Outside spawn is 8 to 35 m from the door, faces the door within 5 deg and sits outside the footprint",
+      "status": "failing",
+      "check": "bunx playwright test e2e/outside-c.spec.ts -g 'spawn-pose:'"
+    },
+    {
+      "id": "door-walk",
+      "what": "Holding W from the outside spawn reaches inside within 30 s, the outside path length is at least 0.9 x the spawn-to-door distance, and the camera never enters the footprint shrunk by 0.2 m while outside",
+      "status": "failing",
+      "check": "bunx playwright test e2e/outside-c.spec.ts -g 'door-walk:'"
+    },
+    {
+      "id": "walls-solid",
+      "what": "Holding D then W outside, the camera moves at least 3 m and never enters the footprint shrunk by 0.2 m while outside",
+      "status": "failing",
+      "check": "bunx playwright test e2e/outside-c.spec.ts -g 'walls-solid:'"
+    },
+    {
+      "id": "history-c",
+      "what": "Globe, outside, Go inside, then one Back lands on / with the globe ready, and Forward returns to the room inside, where the visitor left it",
+      "status": "failing",
+      "check": "bunx playwright test e2e/outside-c.spec.ts -g 'history-c:'"
+    },
+    {
+      "id": "controls-c",
+      "what": "Exactly 3 .room-controls buttons in every place, and the enter and exit buttons sit outside .room-controls",
+      "status": "failing",
+      "check": "bunx playwright test e2e/outside-c.spec.ts -g 'controls-c:'"
+    },
+    {
+      "id": "estimated-label-c",
+      "what": "data-massing equals data/exterior.json. [data-estimated] is visible exactly when estimated is non-empty, and the OSM credit text and link are present exactly when the source is OSM",
+      "status": "failing",
+      "check": "bunx playwright test e2e/outside-c.spec.ts -g 'estimated-label-c:'"
+    },
+    {
+      "id": "textures-runtime",
+      "what": "With real Poly Haven loads, data-textures reaches at least 2 within 10 s outside the Long Room and every requested Poly Haven URL is listed in data/textures.json. With those requests aborted the room is still ready with data-textures 0 and no pageerror. The credits name each asset, CC0 and Poly Haven",
+      "status": "failing",
+      "check": "bunx playwright test e2e/outside-c.spec.ts -g 'textures-runtime:'"
+    },
+    {
+      "id": "exterior-geometry",
+      "what": "data/exterior.json covers the 4 buildings with positive dimensions, an OSM source with name and linked ODbL credit or a fully labelled estimate, node sources estimate their dimensions, and the known wrong OSM matches are gone",
+      "status": "failing",
+      "check": "jq -e '(keys|sort)==[\"admont\",\"loc\",\"longroom\",\"strahov\"] and all(.[]; (.w|type==\"number\" and .>0) and (.d|type==\"number\" and .>0) and (.h|type==\"number\" and .>0) and (.estimated|type==\"array\" and all(.[]; IN(\"w\",\"d\",\"h\"))) and ((.source==\"estimate\" and (.estimated|sort)==[\"d\",\"h\",\"w\"]) or ((.source|test(\"^(way|relation|node)/[0-9]+$\")) and (.name|type==\"string\") and (.credit|test(\"ODbL\")) and (.source as $s|.credit|contains(\"https://www.openstreetmap.org/\"+$s)) and ((.source|test(\"^node/\")|not) or (.estimated|length>0)))))' data/exterior.json >/dev/null && ! rg -q '228313892|66418878|32695498' data/exterior.json"
+    },
+    {
+      "id": "textures-data",
+      "what": "data/textures.json lists at least a ground and a facade map, all CC0 Poly Haven 1k URLs",
+      "status": "failing",
+      "check": "jq -e 'type==\"array\" and length>=2 and all(.[]; (.slot|type==\"string\") and (.asset|type==\"string\") and (.url|type==\"string\" and startswith(\"https://dl.polyhaven.org/\") and test(\"/1k/\")) and .license==\"CC0\") and any(.[]; .slot==\"ground\") and any(.[]; .slot==\"facade\")' data/textures.json >/dev/null"
+    },
+    {
+      "id": "books-index",
+      "what": "In longroom, admont, strahov and loc the shelves list has one item per shelves entry, each with a find button named with the title, and data-spines equals the count inside",
+      "status": "failing",
+      "check": "bunx playwright test e2e/books-c.spec.ts -g 'books-index:'"
+    },
+    {
+      "id": "books-pull",
+      "what": "Find then a canvas-centre click opens the book dialog with the JSON title, aria-modal and a labelledby that resolves to the title, a read link only for readable books, Put back and Escape both close it and return focus to the find button, data-book-pulled clears on close, and hovering a spine shows its title",
+      "status": "failing",
+      "check": "bunx playwright test e2e/books-c.spec.ts -g 'books-pull:'"
+    },
+    {
+      "id": "glide-c",
+      "what": "A floor tap sets data-goal and glides with constant y, duration in [0.6, max(1.2, d/1.4+0.4)] s, under 10% of the distance in the first and last tenth, distance to goal non-increasing within 0.01, ending within 0.15 m. Keyboard walking has constant y, W interrupts a glide, and under reduced motion the camera reaches the goal within 2 samples",
+      "status": "failing",
+      "check": "bunx playwright test e2e/glide-c.spec.ts -g 'glide-c:'"
+    },
+    {
+      "id": "route-weight-c",
+      "what": "With the browser cache disabled, at most 5 MB of non-IIIF bytes load until 1.5 s after ready, counted from the globe click for the 4 outside arrivals and from navigation for direct loads of all 5 rooms",
+      "status": "failing",
+      "check": "bunx playwright test e2e/route-weight-c.spec.ts -g 'route-weight-c:'"
+    },
+    {
+      "id": "frame-time-c",
+      "what": "Holding W for 3 s gives p95 frame time at most 20 ms and data-calls under 200 outside each of the 4 buildings in rain, inside the Long Room at night with lamps, and at celsus in rain",
+      "status": "failing",
+      "check": "bunx playwright test e2e/frame-time-c.spec.ts -g 'frame-time-c:'"
+    },
+    {
+      "id": "reduced-motion-c",
+      "what": "Under reduced motion, outside in rain and celsus in rain are pixel-still for 500 ms, going in and out fades with the camera jumping between end poses and then holding still, and find jumps the camera",
+      "status": "failing",
+      "check": "bunx playwright test e2e/reduced-motion-c.spec.ts -g 'reduced-motion-c:'"
+    },
+    {
+      "id": "a11y-c",
+      "what": "Tab reaches the enter, exit and find buttons, each has an accessible name and a visible focus outline of at least 2 px, the book dialog is modal, labelled, traps Tab and returns focus on Escape, and [data-local] text has contrast of at least 4.5:1 on its opaque background",
+      "status": "failing",
+      "check": "bunx playwright test e2e/a11y-c.spec.ts -g 'a11y-c:'"
+    },
+    {
+      "id": "mobile-c",
+      "what": "At 390x844 with touch, globe pin, Go inside, find and a spine tap open the book dialog inside the viewport, scrollWidth stays at most 390, the place, find, dialog and room-control buttons are at least 44x44, and the spine tap does not set data-goal",
+      "status": "failing",
+      "check": "bunx playwright test e2e/mobile-c.spec.ts -g 'mobile-c:'"
+    },
+    {
+      "id": "no-committed-images-c",
+      "what": "No images, models, splats or HDRs are committed beyond the existing globe textures, favicon and room SVGs, no data: images in src, and no file over 500 KB",
+      "status": "failing",
+      "check": "[ -z \"$(git ls-files -co --exclude-standard | rg -i '\\.(jpe?g|png|webp|gif|avif|tiff?|jp2|exr|hdr|ktx2|basis|glb|gltf|obj|fbx|ply|splat|ksplat|spz|usdz|svg|pdf)$' | rg -v '^(public/favicon\\.svg|public/globe/[a-z]+\\.webp|public/rooms/(admont|longroom|strahov)/impostor\\.svg|public/rooms/celsus/stone\\.svg)$')\" ] && ! rg -q 'data:image' src && [ -z \"$(git ls-files -co --exclude-standard -z | xargs -0 du -k 2>/dev/null | awk '$1>500')\" ]"
+    },
+    {
+      "id": "content-provenance-c",
+      "what": "New Phase C source carries no long prose strings (100+ characters with a run of lowercase words), so visitor-facing text comes from sourced data files",
+      "status": "failing",
+      "check": "f=$( { git diff --name-only --diff-filter=A 8e63670 -- src; git ls-files -o --exclude-standard -- src; } | rg '\\.ts$' | rg -v '\\.test\\.ts$' | sort -u ) && [ -n \"$f\" ] && [ -z \"$( { echo \"$f\" | xargs rg -o --no-filename '[\\x22\\x27\\x60][^\\x22\\x27\\x60\\n]{100,}[\\x22\\x27\\x60]'; git diff 8e63670 -- src | rg '^\\+[^+]' | rg -o '[\\x22\\x27\\x60][^\\x22\\x27\\x60\\n]{100,}[\\x22\\x27\\x60]'; } | rg ' [a-z]+ [a-z]+ [a-z]+ ' )\" ]"
+    },
+    {
+      "id": "live-sources-c",
+      "what": "Open-Meteo answers for all 5 rooms and every Poly Haven texture URL answers with an image type and a CORS header for the site origin",
+      "status": "failing",
+      "check": "bun run data >/dev/null && for i in longroom admont strahov loc celsus; do curl -sf \"https://api.open-meteo.com/v1/forecast?latitude=$(jq .lat public/lib/$i.json)&longitude=$(jq .lon public/lib/$i.json)&current=temperature_2m,weather_code,cloud_cover,precipitation,snowfall,visibility,wind_speed_10m&timezone=auto\" | jq -e '.current.weather_code|type==\"number\"' >/dev/null || exit 1; done && [ \"$(jq length data/textures.json)\" -ge 2 ] && jq -r '.[].url' data/textures.json | while read -r u; do h=$(curl -sf -r 0-0 -D - -o /dev/null -H 'Origin: https://worldlibs.pages.dev' \"$u\") || exit 1; echo \"$h\" | rg -qi '^content-type: *image/' || exit 1; echo \"$h\" | rg -qi '^access-control-allow-origin:' || exit 1; done"
+    },
+    {
+      "id": "deployed-c",
+      "what": "On https://worldlibs.pages.dev a direct Long Room load is ready inside with sky day, twilight or night and a local line matching HH:MM( solar)?( · word · N°C)?, and a globe pin arrives outside",
+      "status": "failing",
+      "check": "bunx playwright test e2e/deployed-c.spec.ts"
+    }
+  ]
+}

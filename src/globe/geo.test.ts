@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test'
-import { alive, equalEarth, FLAT_WIDTH, greatCircle, place, spherePoint, sunNow, toPin } from './geo'
+import { alive, equalEarth, FLAT_WIDTH, greatCircle, place, spherePoint, sunLocal, sunNow, toPin } from './geo'
 
 const row = { id: 'x', n: 'X', p: 'P', yl: '1', y: 100, lat: 0, lon: 0 }
 
@@ -39,4 +39,15 @@ test('sun: solstices, equinox and equation of time', () => {
   expect(Math.abs(deg('2024-03-20T03:06Z').dec)).toBeLessThan(0.05)
   expect(deg('2025-12-21T15:03Z').dec).toBeCloseTo(-23.44, 1)
   expect(deg('2026-11-03T12:00Z').lon).toBeCloseTo(-4.1, 0)
+})
+
+test('local sun: Dublin summer noon is high in the south, midnight is below the horizon, morning is east', () => {
+  const alt = (v: { y: number }) => (Math.asin(v.y) * 180) / Math.PI
+  const noon = sunLocal(53.3439, -6.2546, new Date('2024-06-20T12:25Z'))
+  expect(alt(noon)).toBeCloseTo(60.1, 0)
+  expect(noon.z).toBeGreaterThan(0.45)
+  expect(Math.abs(noon.x)).toBeLessThan(0.02)
+  expect(alt(sunLocal(53.3439, -6.2546, new Date('2024-06-21T00:25Z')))).toBeLessThan(-12)
+  expect(sunLocal(53.3439, -6.2546, new Date('2024-06-20T06:00Z')).x).toBeGreaterThan(0.5)
+  expect(sunLocal(-33.86, 151.21, new Date('2024-12-21T01:56Z')).z).toBeLessThan(-0.1)
 })

@@ -92,6 +92,17 @@ export function sunNow(date = new Date()): Vector3 {
   return spherePoint(ra - gmst, dec)
 }
 
+// Sun direction in a local scene frame at a place: x east, y up, z south. y is the sine of the sun's altitude.
+export function sunLocal(latDeg: number, lonDeg: number, date = new Date()): Vector3 {
+  const lat = (latDeg * Math.PI) / 180
+  const lon = (lonDeg * Math.PI) / 180
+  const s = sunNow(date)
+  const up = spherePoint(lon, lat)
+  const east = new Vector3(Math.cos(lon), 0, -Math.sin(lon))
+  const north = new Vector3(-Math.sin(lat) * Math.sin(lon), Math.cos(lat), -Math.sin(lat) * Math.cos(lon))
+  return new Vector3(s.dot(east), s.dot(up), -s.dot(north))
+}
+
 export function greatCircle(a: Vector3, b: Vector3, t: number): Vector3 {
   const w = Math.acos(Math.min(1, Math.max(-1, a.dot(b))))
   if (w < 1e-5) return a.clone()
