@@ -9,6 +9,7 @@ import './globe.css'
 const FOV = 30
 const MORPH_MS = 1100
 const FLIGHT_MS = 2800
+const ARRIVE = { arrive: 'outside' }
 const tex = ['day', 'night', 'mask', 'relief', 'clouds'] as const
 
 const el = <K extends keyof HTMLElementTagNameMap>(tag: K, cls: string, text?: string) => {
@@ -118,7 +119,15 @@ export const mount: Mount = (app, params) => {
     const sky = up > 6 ? 'Daylight there now' : up > -6 ? 'Twilight there now' : 'Night there now'
     const links = el('p', 'globe-card-links')
     if (p.wd) links.append(Object.assign(el('a', '', 'Read about it'), { href: `https://www.wikidata.org/wiki/Special:GoToLinkedPage/enwiki/${p.wd}`, target: '_blank', rel: 'noopener' }))
-    links.append(el('span', 'globe-card-note', 'No walkable room yet'))
+    if (p.href?.startsWith('/room/')) {
+      const visit = Object.assign(el('a', '', 'Visit'), { href: p.href })
+      visit.addEventListener('click', (e) => {
+        e.preventDefault()
+        e.stopPropagation()
+        enter(p.id)
+      })
+      links.append(visit)
+    } else links.append(el('span', 'globe-card-note', 'No walkable room yet'))
     const close = el('button', 'globe-card-close', '\u00d7')
     close.type = 'button'
     close.setAttribute('aria-label', 'Close')
@@ -148,7 +157,7 @@ export const mount: Mount = (app, params) => {
     const room = href.startsWith('/room/')
     if (room) fetch(`/lib/${id}.json`).catch(() => {})
     if (!room || reducedMotion() || morph() > 0.5) {
-      fade(root, 0).then(() => !disposed && go(href))
+      fade(root, 0).then(() => !disposed && go(href, room ? ARRIVE : null))
       return
     }
     flight = {
@@ -249,7 +258,7 @@ export const mount: Mount = (app, params) => {
         const { href } = flight
         flight = null
         render(now)
-        go(href)
+        go(href, ARRIVE)
         return
       }
       moving = true
@@ -316,7 +325,11 @@ export const mount: Mount = (app, params) => {
       pinLayer.append(dot)
       index.append(li)
       b.addEventListener('click', () => enter(pin.id))
-      dot.addEventListener('click', (e) => enter(nearest(e)))
+      dot.addEventListener('click', (e) => {
+        const id = nearest(e)
+        select(id)
+        showCard(pins.find((q) => q.pin.id === id)!.pin)
+      })
       dot.addEventListener('pointermove', (e) => {
         hovering = true
         const id = nearest(e)
