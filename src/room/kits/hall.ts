@@ -57,10 +57,23 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   plane('floor', W, L, floorMat, 0, 0, 0, 0, -Math.PI / 2)
   plane('shelfUnit', L, springing, wallMat, -W / 2, springing / 2, 0, Math.PI / 2)
   plane('shelfUnit', L, springing, wallMat, W / 2, springing / 2, 0, -Math.PI / 2)
-  const impostor = new THREE.TextureLoader().load(`/rooms/${lib.id}/impostor.svg`, dirty)
-  impostor.colorSpace = THREE.SRGBColorSpace
-  own(impostor)
-  plane('length', W, H, new THREE.MeshBasicMaterial({ map: impostor, fog: true }), 0, H / 2, -L / 2, 0)
+  const impostor = new THREE.TextureLoader()
+  const endMat = mat({ color: 0x2b1a0d })
+  // Far-end wall: a baked impostor image when the build ships one, otherwise a dark timber panel.
+  impostor.load(
+    `/rooms/${lib.id}/impostor.svg`,
+    (t) => {
+      t.colorSpace = THREE.SRGBColorSpace
+      own(t)
+      endMat.map = t
+      endMat.color.set(0xffffff)
+      endMat.needsUpdate = true
+      dirty()
+    },
+    undefined,
+    () => dirty(),
+  )
+  plane('length', W, H, endMat, 0, H / 2, -L / 2, 0)
   plane('length', W, H, mat({ color: 0x2b1a0d }), 0, H / 2, L / 2, Math.PI)
 
   if ((h.domes ?? 0) > 0 && h.domeHeight) {

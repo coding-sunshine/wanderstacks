@@ -1,0 +1,22 @@
+{
+  "kit": "hall",
+  "shelfClusters": ["rb-scans", "books-gap-1"],
+  "hall": {
+    "length": { "v": 90.5, "basis": "measured", "src": "https://hdc.org/buildings/new-york-public-library-stephen-a-schwarzman-building-interiors-main-reading-room-and-catalog-room/" },
+    "width": { "v": 23.8, "basis": "measured", "src": "https://hdc.org/buildings/new-york-public-library-stephen-a-schwarzman-building-interiors-main-reading-room-and-catalog-room/" },
+    "height": { "v": 15.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" },
+    "vault": { "v": "barrel", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" },
+    "storeys": { "v": 2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" },
+    "baysPerSide": { "v": 18, "basis": "invented", "src": "no source yet; bay count is design fill, 5 m per bay" },
+    "alcoveDepth": { "v": 1.5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" },
+    "galleryHeight": { "v": 4, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" },
+    "windows": { "v": 16, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 8 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" },
+    "wood": { "v": "dark timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" },
+    "floor": { "v": "stone flags", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room" }
+  ]
+}

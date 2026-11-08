@@ -1,0 +1,22 @@
+{
+  "kit": "hall",
+  "shelfClusters": [],
+  "hall": {
+    "length": { "v": 30, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "width": { "v": 11, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "height": { "v": 10, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "vault": { "v": "barrel", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "storeys": { "v": 2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "baysPerSide": { "v": 10, "basis": "invented", "src": "no source yet; bay count is design fill, 3 m per bay" },
+    "alcoveDepth": { "v": 1.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "galleryHeight": { "v": 4.5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "windows": { "v": 8, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 7 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "wood": { "v": "dark timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "floor": { "v": "marble chequer", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" }
+  },
+  "credits": [
+    { "file": "Clementinum baroque library 2.jpg", "author": "Václav Jiroušek (User:Skot)", "licence": "CC BY-SA 4.0", "url": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg" }
+  ]
+}

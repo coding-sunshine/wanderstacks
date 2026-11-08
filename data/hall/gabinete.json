@@ -1,0 +1,22 @@
+{
+  "kit": "hall",
+  "shelfClusters": ["books-gap-2"],
+  "hall": {
+    "length": { "v": 18, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" },
+    "width": { "v": 12, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" },
+    "height": { "v": 16, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" },
+    "vault": { "v": "barrel", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" },
+    "storeys": { "v": 3, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" },
+    "baysPerSide": { "v": 8, "basis": "invented", "src": "no source yet; bay count is design fill, about 2.5 m per bay" },
+    "alcoveDepth": { "v": 1.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" },
+    "galleryHeight": { "v": 3.5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" },
+    "windows": { "v": 0, "basis": "invented", "src": "no source yet; the iron stacks rise to a skylight and the room has no exterior windows" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 7 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" },
+    "wood": { "v": "dark timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" },
+    "floor": { "v": "marble chequer", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" },
+    "light": { "v": "daylight through the skylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura" }
+  ]
+}

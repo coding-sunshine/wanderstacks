@@ -1,0 +1,24 @@
+{
+  "kit": "hall",
+  "shelfClusters": ["central-europe-1"],
+  "hall": {
+    "length": { "v": 80, "basis": "measured", "src": "https://www.onb.ac.at/en/museums/state-hall" },
+    "width": { "v": 30, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "height": { "v": 20, "basis": "measured", "src": "https://www.onb.ac.at/en/museums/state-hall" },
+    "domeHeight": { "v": 27, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "domes": { "v": 1, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "vault": { "v": "barrel with central dome", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "storeys": { "v": 2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "baysPerSide": { "v": 16, "basis": "invented", "src": "no source yet; bay count is design fill, 5 m per bay" },
+    "alcoveDepth": { "v": 1.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "galleryHeight": { "v": 4.5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "windows": { "v": 16, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 8 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "wood": { "v": "dark timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "floor": { "v": "marble chequer", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library" }
+  ]
+}

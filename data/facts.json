@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T16:29:56.866Z",
+ "generated": "2026-11-08T09:34:55.507Z",
  "facts": [
   {
    "cluster": "americas",
@@ -2567,6 +2567,17 @@
    "quote": null,
    "status": "failing",
    "check": "n/a"
+  },
+  {
+   "cluster": "west-europe",
+   "lib": "bodleian",
+   "field": "volumes",
+   "value": "Duke Humphrey's 1447 bequest was 281 books; only three of his original books remain in the library",
+   "source": "https://en.wikipedia.org/wiki/Duke_Humfrey%27s_Library",
+   "tier": "wikipedia",
+   "quote": "When he died in 1447, he donated his collection of 281 books to the University. ... Today, only three of Humfrey's original books remain in the library.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Duke_Humfrey%27s_Library' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o 'donated his collection of 281 books|only three of Humfrey'"
   },
   {
    "cluster": "west-europe",

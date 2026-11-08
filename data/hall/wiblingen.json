@@ -1,0 +1,22 @@
+{
+  "kit": "hall",
+  "shelfClusters": [],
+  "hall": {
+    "length": { "v": 23, "basis": "measured", "src": "https://www.kloster-wiblingen.de/erlebnis-kloster-garten/kloster-garten/gebaeude/bibliothekssaal" },
+    "width": { "v": 11.5, "basis": "measured", "src": "https://www.kloster-wiblingen.de/erlebnis-kloster-garten/kloster-garten/gebaeude/bibliothekssaal" },
+    "height": { "v": 10.5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen" },
+    "vault": { "v": "barrel", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen" },
+    "storeys": { "v": 2, "basis": "measured", "src": "https://www.kloster-wiblingen.de/erlebnis-kloster-garten/kloster-garten/gebaeude/bibliothekssaal" },
+    "baysPerSide": { "v": 8, "basis": "invented", "src": "no source yet; bay count is design fill, just under 3 m per bay" },
+    "alcoveDepth": { "v": 1.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen" },
+    "galleryHeight": { "v": 3.5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen" },
+    "windows": { "v": 4, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 7 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen" },
+    "wood": { "v": "white-painted timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen" },
+    "floor": { "v": "marble chequer", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "kit": "hall",
+  "shelfClusters": [],
+  "hall": {
+    "length": { "v": 88, "basis": "measured", "src": "https://en.wikipedia.org/wiki/Mafra_National_Palace" },
+    "width": { "v": 9.5, "basis": "measured", "src": "https://en.wikipedia.org/wiki/Mafra_National_Palace" },
+    "height": { "v": 13, "basis": "measured", "src": "https://en.wikipedia.org/wiki/Mafra_National_Palace" },
+    "vault": { "v": "barrel", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace" },
+    "storeys": { "v": 2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace" },
+    "baysPerSide": { "v": 16, "basis": "invented", "src": "no source yet; bay count is design fill, about 5.5 m per bay" },
+    "alcoveDepth": { "v": 1.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace" },
+    "galleryHeight": { "v": 4, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace" },
+    "windows": { "v": 12, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 8 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace" },
+    "wood": { "v": "white-painted timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace" },
+    "floor": { "v": "marble", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace" }
+  ]
+}

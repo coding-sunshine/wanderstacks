@@ -1,0 +1,24 @@
+{
+  "kit": "hall",
+  "shelfClusters": ["books-gap-2"],
+  "hall": {
+    "length": { "v": 20, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "width": { "v": 12, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "height": { "v": 18.6, "basis": "measured", "src": "https://www.library.jhu.edu/library-hours/george-peabody-library/" },
+    "domeHeight": { "v": 19.5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "domes": { "v": 1, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "vault": { "v": "barrel", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "storeys": { "v": 5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "baysPerSide": { "v": 8, "basis": "invented", "src": "no source yet; bay count is design fill, 2.5 m per bay" },
+    "alcoveDepth": { "v": 1.4, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "galleryHeight": { "v": 3.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "windows": { "v": 0, "basis": "invented", "src": "no source yet; the five tiers open under one great skylight, no exterior windows" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 7 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "wood": { "v": "dark timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "floor": { "v": "marble chequer", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" },
+    "light": { "v": "daylight through the skylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library" }
+  ]
+}

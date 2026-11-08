@@ -1,0 +1,22 @@
+{
+  "kit": "hall",
+  "shelfClusters": [],
+  "hall": {
+    "length": { "v": 70, "basis": "measured", "src": "https://www.vaticannews.va/de/vatikan/news/2017-10/vatikan--lesesaal-erstrahlt-wieder-im-neuen-glanz.print.html" },
+    "width": { "v": 11, "basis": "measured", "src": "https://www.vaticannews.va/de/vatikan/news/2017-10/vatikan--lesesaal-erstrahlt-wieder-im-neuen-glanz.print.html" },
+    "height": { "v": 12, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" },
+    "vault": { "v": "barrel", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" },
+    "storeys": { "v": 2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" },
+    "baysPerSide": { "v": 14, "basis": "invented", "src": "no source yet; bay count is design fill, 5 m per bay" },
+    "alcoveDepth": { "v": 1.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" },
+    "galleryHeight": { "v": 3.5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" },
+    "windows": { "v": 8, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 7 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" },
+    "wood": { "v": "dark timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" },
+    "floor": { "v": "stone flags", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino" }
+  ]
+}

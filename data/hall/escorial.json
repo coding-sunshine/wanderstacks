@@ -1,0 +1,22 @@
+{
+  "kit": "hall",
+  "shelfClusters": [],
+  "hall": {
+    "length": { "v": 54, "basis": "measured", "src": "https://en.wikipedia.org/wiki/Library_of_the_Monastery_of_San_Lorenzo_de_El_Escorial" },
+    "width": { "v": 9, "basis": "measured", "src": "https://en.wikipedia.org/wiki/Library_of_the_Monastery_of_San_Lorenzo_de_El_Escorial" },
+    "height": { "v": 10, "basis": "measured", "src": "https://en.wikipedia.org/wiki/Library_of_the_Monastery_of_San_Lorenzo_de_El_Escorial" },
+    "vault": { "v": "barrel", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial" },
+    "storeys": { "v": 2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial" },
+    "baysPerSide": { "v": 12, "basis": "invented", "src": "no source yet; bay count is design fill, about 4.5 m per bay" },
+    "alcoveDepth": { "v": 1, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial" },
+    "galleryHeight": { "v": 3.5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial" },
+    "windows": { "v": 6, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 7 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial" },
+    "wood": { "v": "dark timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial" },
+    "floor": { "v": "marble", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial" }
+  ]
+}

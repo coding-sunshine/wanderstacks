@@ -1,0 +1,22 @@
+{
+  "kit": "hall",
+  "shelfClusters": ["books-gap-1", "rb-scans"],
+  "hall": {
+    "length": { "v": 66.4, "basis": "measured", "src": "https://web.archive.org/web/2024/https://guides.bpl.org/mckim/bateshall" },
+    "width": { "v": 12.8, "basis": "measured", "src": "https://web.archive.org/web/2024/https://guides.bpl.org/mckim/bateshall" },
+    "height": { "v": 15.2, "basis": "measured", "src": "https://web.archive.org/web/2024/https://guides.bpl.org/mckim/bateshall" },
+    "vault": { "v": "barrel", "basis": "measured", "src": "https://web.archive.org/web/2024/https://guides.bpl.org/mckim/bateshall" },
+    "storeys": { "v": 2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ABPL_McKim_Building_Bates_Hall" },
+    "baysPerSide": { "v": 12, "basis": "invented", "src": "no source yet; bay count is design fill, about 5.5 m per bay" },
+    "alcoveDepth": { "v": 1.4, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ABPL_McKim_Building_Bates_Hall" },
+    "galleryHeight": { "v": 4, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ABPL_McKim_Building_Bates_Hall" },
+    "windows": { "v": 8, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ABPL_McKim_Building_Bates_Hall" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 8 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ABPL_McKim_Building_Bates_Hall" },
+    "wood": { "v": "dark timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ABPL_McKim_Building_Bates_Hall" },
+    "floor": { "v": "stone flags", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ABPL_McKim_Building_Bates_Hall" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ABPL_McKim_Building_Bates_Hall" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3ABPL_McKim_Building_Bates_Hall" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "kit": "hall",
+  "shelfClusters": ["central-europe-2", "scans"],
+  "hall": {
+    "length": { "v": 34, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "width": { "v": 13, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "height": { "v": 9, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "vault": { "v": "barrel", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "storeys": { "v": 1, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "baysPerSide": { "v": 10, "basis": "invented", "src": "no source yet; bay count is design fill, about 3.5 m per bay" },
+    "alcoveDepth": { "v": 1.2, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "galleryHeight": { "v": 4, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "windows": { "v": 8, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 7 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "wood": { "v": "white-painted timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "floor": { "v": "marble", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" },
+    "light": { "v": "daylight", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen" }
+  ]
+}

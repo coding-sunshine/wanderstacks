@@ -1,0 +1,24 @@
+{
+  "kit": "hall",
+  "shelfClusters": [],
+  "hall": {
+    "length": { "v": 34, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "width": { "v": 15.5, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "height": { "v": 10, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "domeHeight": { "v": 11, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "domes": { "v": 9, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "vault": { "v": "saucer domes", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "storeys": { "v": 1, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "baysPerSide": { "v": 12, "basis": "invented", "src": "no source yet; bay count is design fill, just under 3 m per bay" },
+    "alcoveDepth": { "v": 1.3, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "galleryHeight": { "v": 4, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "windows": { "v": 0, "basis": "invented", "src": "no exterior windows in sources; the room is lit through its nine domes" },
+    "shelfUnit": { "v": { "width": 0.9, "shelves": 7 }, "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "wood": { "v": "dark timber", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "floor": { "v": "timber boards", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" },
+    "light": { "v": "daylight through the domes", "basis": "photo-estimate", "src": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" }
+  },
+  "credits": [
+    { "file": "Wikimedia Commons category (photo set)", "author": "various contributors", "licence": "various free licences; see file pages", "url": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste" }
+  ]
+}
