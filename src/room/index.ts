@@ -13,6 +13,7 @@ import * as sunlight from './sunlight'
 import * as spines from './spines'
 import { dustTexture } from './textures'
 import * as tour from './tour'
+import * as story from './story'
 
 const EYE = 1.65
 const SPEED = 2
@@ -363,7 +364,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
       slots: b.spineSlots,
       render: () => (dirty = true),
     }
-    detach = [evidence, tour, sound, sunlight, spines].map((m) => m.attach(api))
+    detach = [evidence, tour, sound, sunlight, spines, story].map((m) => m.attach(api))
 
     b.ready
       .then(() => {

@@ -12,6 +12,7 @@ export interface Pin {
   href: string | null
   wd: string | null
   st: string | null
+  hours?: string | null
 }
 
 interface LibRow {
@@ -42,6 +43,7 @@ export function toPin(l: LibRow): Pin {
     href: l.href ?? null,
     wd: l.wd ?? null,
     st: l.st ?? null,
+    hours: (l as { hours?: string | null }).hours ?? null,
     from: l.y,
     to: typeof l.lost === 'number' ? l.lost : l.lost ? UNDATED_END : Infinity,
   }

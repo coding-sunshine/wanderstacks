@@ -150,3 +150,4 @@
   background: var(--glass); border: 1px solid var(--hairline); border-radius: 3px; backdrop-filter: blur(8px);
 }
 .pin-tip[hidden] { display: none; }
+.globe-card-hours { color: var(--paper-dim); margin-top: 0.45rem !important; }

@@ -167,3 +167,17 @@
 .rules-card .rules-title { color: var(--paper-link); margin: 0 0 0.3rem; }
 .rules-card .rules-body { margin: 0 0 0.7rem; font-style: italic; }
 .rules-card .btn { color: var(--paper-link); border-color: rgb(90 58 30 / 0.5); margin: 0 auto; }
+
+/* The library's years: scroll-driven story in the About panel */
+.story { margin-top: 1rem; }
+.story h2 { margin: 0 0 0.5rem; font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gilt); font-weight: 400; }
+.story-list { display: grid; gap: 0.55rem; }
+.story-beat {
+  padding: 0.6rem 0.8rem; border-left: 2px solid rgb(201 162 74 / 0.3); border-radius: 0 3px 3px 0;
+  background: rgb(11 8 6 / 0.35); transition: border-color 300ms var(--ease), background-color 300ms var(--ease);
+}
+.story-beat[data-on='true'] { border-left-color: var(--lamp); background: rgb(201 162 74 / 0.1); }
+.story-year { margin: 0 0 0.25rem; color: var(--gilt); }
+.story-text { margin: 0; line-height: 1.4; }
+.story-quote { margin: 0.35rem 0 0; font-style: italic; color: var(--paper-dim); font-size: 0.85rem; }
+.story-src { display: inline-block; margin-top: 0.3rem; font-size: 0.78rem; color: var(--paper-dim); }

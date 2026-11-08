@@ -206,3 +206,21 @@ body::before {
 .book-name:focus-visible { outline: 2px solid var(--lamp); outline-offset: 2px; }
 .ledger { list-style: none; margin: 0.8rem 0 0; padding: 0; }
 .ledger-row { padding: 0.45rem 0.2rem; border-bottom: 1px solid rgb(201 162 74 / 0.18); font-style: italic; color: var(--paper-dim); }
+
+/* Library of Babel */
+.babel-form { display: flex; gap: 0.6rem; align-items: center; margin-bottom: 1.2rem; }
+.babel-form .shelf-filter { margin-bottom: 0; }
+.babel-shelf {
+  margin: 2rem 0 0; padding: 1rem; overflow: hidden; white-space: pre; line-height: 1.9;
+  color: var(--paper-dim); opacity: 0.4; font: 0.72rem/1.9 ui-monospace, monospace;
+  border: 1px solid rgb(201 162 74 / 0.2); border-radius: 4px; user-select: none;
+}
+.babel-result { margin-top: 0.5rem; }
+.babel-loc { color: var(--gilt); font-style: italic; margin: 0 0 0.6rem; }
+.babel-page {
+  margin: 0; padding: 1rem 1.2rem; background: linear-gradient(165deg, #F2E8D0, var(--paper)); color: var(--ink);
+  border: 1px solid var(--gilt); border-radius: 4px; font-family: ui-monospace, monospace; font-size: 0.85rem;
+  line-height: 1.7; word-break: break-word;
+}
+.babel-page strong { color: #7a1f1f; }
+.babel-note { margin: 0.5rem 0 0; color: var(--paper-dim); }

@@ -43,6 +43,7 @@ const routes: Route[] = [
   [/^\/byrne$/, () => import('./byrne')],
   [/^\/shelf$/, () => import('./shelf')],
   [/^\/book$/, () => import('./book')],
+  [/^\/babel$/, () => import('./babel')],
   [/^\/ledger\/(?<lib>[\w-]+)$/, () => import('./ledger')],
   [/^\/stgall$/, () => import('./stgall')],
   [/^\/darwin$/, () => import('./darwin')],

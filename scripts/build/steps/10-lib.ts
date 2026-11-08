@@ -7,6 +7,7 @@ const read = (p: string) => Bun.file(root + p).json()
 
 const libs: any[] = await read('data/libs.json')
 const facts: any[] = (await read('data/facts.json')).facts
+const eventsAll: any[] = (await read('data/facts.json')).events ?? []
 const books: any[] = (await read('data/books.json')).books
 const KITS: KitId[] = ['hall', 'rotunda', 'site']
 
@@ -53,6 +54,7 @@ for (const file of await readdir(root + 'data/hall')) {
     lat: lib.lat,
     lon: lib.lon,
     facts: passing,
+    events: eventsAll.filter((e) => e.lib === id && e.status === 'passing'),
     kit: src.kit,
     ...(src.reconstruction && { reconstruction: true }),
     ...(tour && { tour }),

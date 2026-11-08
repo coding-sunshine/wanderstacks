@@ -168,6 +168,7 @@ export const mount: Mount = (app, params) => {
       el('p', 'globe-card-sky', `${sky}, sun ${Math.round(up)}\u00b0 ${up >= 0 ? 'above' : 'below'} the horizon.`),
       links,
     )
+    if (p.hours) card.append(el('p', 'globe-card-hours micro', `Hours (OpenStreetMap): ${p.hours}`))
     card.hidden = false
   }
 
