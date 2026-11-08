@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import type { RoomApi } from './kit'
+import { storyBeats } from './story'
 
 const BOX = [
   'position:absolute;left:1.1rem;bottom:6.9rem;z-index:4;width:min(34rem,calc(100% - 2rem))',
@@ -27,6 +28,9 @@ export function attach(api: RoomApi): () => void {
   const button = el('button', { type: 'button', 'data-action': 'tour', 'aria-expanded': 'false' }, 'Tour')
   api.controls.append(button)
 
+  // The same beats the scroll story tells: the era line anchors each stop in the years.
+  const beats = storyBeats(api.lib as Parameters<typeof storyBeats>[0])
+
   let box: HTMLElement | null = null
   let at = 0
 
@@ -35,6 +39,12 @@ export function attach(api: RoomApi): () => void {
     const stop = stops[i]
     const fact = api.lib.facts[stop.fact]
     api.root.dataset.tourStop = String(i)
+    const beat = beats[i]
+    const era = box!.querySelector('[data-era]')! as HTMLElement
+    if (beat) {
+      era.hidden = false
+      era.textContent = beat.year === '·' ? `${api.lib.name} — the story` : `${beat.year} — in the years`
+    } else era.hidden = true
     box!.querySelector('[data-caption]')!.textContent = fact.value
     const src = box!.querySelector('a')!
     src.href = fact.source
@@ -69,8 +79,9 @@ export function attach(api: RoomApi): () => void {
     const src = el('a', { 'data-source': '', target: '_blank', rel: 'noopener noreferrer' })
     const row = el('p', { style: 'display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center;margin:0.5rem 0 0' })
     row.append(prev, next, x, el('span', { 'data-step': '' }), src)
+    const era = el('p', { 'data-era': '', style: 'margin:0 0 0.35rem;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gilt)' })
     box = el('section', { id: 'room-tour', 'data-tour': '', 'aria-label': 'Guided tour', style: BOX })
-    box.append(el('p', { 'data-caption': '', 'aria-live': 'polite', style: 'margin:0' }), row)
+    box.append(era, el('p', { 'data-caption': '', 'aria-live': 'polite', style: 'margin:0' }), row)
     api.controls.after(box)
     button.setAttribute('aria-expanded', 'true')
     button.setAttribute('aria-controls', 'room-tour')

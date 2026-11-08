@@ -24,7 +24,7 @@
   position: absolute; inset: auto 0 0; padding: 2.5rem 1rem 1.5rem;
   display: grid; gap: 0.5rem; justify-items: center;
   background: linear-gradient(transparent, rgb(11 8 6 / 0.82) 55%);
-  z-index: 2; pointer-events: none;
+  z-index: 4; pointer-events: none;
 }
 .globe-hud > * { pointer-events: auto; }
 .globe-caption {

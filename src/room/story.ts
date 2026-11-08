@@ -6,6 +6,22 @@ import type { RoomApi } from './kit'
 
 type Ev = { kind?: string; year?: number; label?: string; value?: string; quote?: string; source?: string }
 
+export type Beat = { year: string; text: string; quote?: string; source?: string }
+
+// One narrative for the room: the intro line, dated evidence, then where it stands now.
+// The scroll story and the guided tour both tell these beats, at their own pace.
+export function storyBeats(lib: { name?: string; place?: string; years?: string; facts?: Ev[]; events?: Ev[] }): Beat[] {
+  const events = [...(lib.events ?? [])].sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999))
+  const now = (lib.facts ?? []).find((f) => f.value && f.source)
+  const beats: Beat[] = [{ year: '·', text: `${lib.name ?? ''}. ${lib.place ?? ''} ${lib.years ?? ''}.`.trim() }]
+  for (const e of events) {
+    if (!e.label && !e.value) continue
+    beats.push({ year: e.year ? String(e.year) : '·', text: (e.label ?? e.value)!, quote: e.quote ?? undefined, source: e.source })
+  }
+  if (now) beats.push({ year: 'Now', text: now.value!, quote: now.quote ?? undefined, source: now.source })
+  return beats
+}
+
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, cls: string, text = '') {
   const e = document.createElement(tag)
   e.className = cls
@@ -17,21 +33,13 @@ export function attach(api: RoomApi): () => void {
   const lib = api.lib as unknown as { name?: string; place?: string; years?: string; facts?: Ev[]; events?: Ev[]; tour?: { stops: { at: number[]; look: number[] }[] } }
   const panel = api.panel
   if (!panel) return () => {}
-  const events = [...(lib.events ?? [])].sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999))
-  const now = (lib.facts ?? []).find((f) => f.value && f.source)
-  if (!events.length && !now) return () => {}
+  const beats = storyBeats(lib)
+  if (beats.length <= 1) return () => {}
 
   const section = el('section', 'story')
   section.append(el('h2', '', 'The library’s years'))
+  section.append(el('p', 'story-hint micro', 'Scroll to walk the years — or press Tour and let the room tell them.'))
   const list = el('div', 'story-list')
-
-  const beats: { year: string; text: string; quote?: string; source?: string }[] = []
-  beats.push({ year: '·', text: `${lib.name ?? ''}. ${lib.place ?? ''} ${lib.years ?? ''}.`.trim() })
-  for (const e of events) {
-    if (!e.label && !e.value) continue
-    beats.push({ year: e.year ? String(e.year) : '·', text: (e.label ?? e.value)!, quote: e.quote ?? undefined, source: e.source })
-  }
-  if (now) beats.push({ year: 'Now', text: now.value!, quote: now.quote ?? undefined, source: now.source })
 
   beats.forEach((b, i) => {
     const card = el('article', 'story-beat')

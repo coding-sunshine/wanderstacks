@@ -17,7 +17,7 @@ export const mount: Mount = (app) => {
   head.textContent = 'The reading list'
   const lede = document.createElement('p')
   lede.className = 'shelf-lede'
-  lede.textContent = 'Every readable book and honest catalogue card in WorldLibs. Scans and texts keep their holders’ licences.'
+  lede.textContent = 'Every readable book and honest catalogue card in WorldLibs. ' + 'Scans and texts keep their holders’ licences.'
   const keep = document.createElement('a')
   keep.href = '/book'
   keep.className = 'shelf-keep'

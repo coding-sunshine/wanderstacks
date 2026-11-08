@@ -125,6 +125,37 @@
    "status": "passing",
    "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Bibliotheca_Corviniana' | rg -o -m1 'started to collect the books from about 1460'"
   }
+ ,
+  {
+   "lib": "timbuktu",
+   "field": "collection",
+   "value": "Manuscript subjects span art, medicine, philosophy, science and copies of the Quran — the best-known set of West African manuscripts",
+   "source": "https://en.wikipedia.org/wiki/Timbuktu_Manuscripts",
+   "tier": "wikipedia",
+   "quote": "The collections include manuscripts about art, medicine, philosophy, and science, as well as copies of the Quran",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Timbuktu_Manuscripts' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'manuscripts about art, medicine, philosophy, and science'"
+  },
+  {
+   "lib": "timbuktu",
+   "field": "collection",
+   "value": "2012–13 evacuation: curator Abdel Kader Haidara and Stephanie Diakité organized the smuggling of ~350,000 manuscripts to Bamako; 300,000 still there in 2022",
+   "source": "https://en.wikipedia.org/wiki/Timbuktu_Manuscripts",
+   "tier": "wikipedia",
+   "quote": "organized the evacuation of the manuscripts to Bamako",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Timbuktu_Manuscripts' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'organized the evacuation of the manuscripts to Bamako'"
+  },
+  {
+   "lib": "dunhuang",
+   "field": "collection",
+   "value": "The 868 Diamond Sutra from Cave 17 — the oldest known dated printed book in the world — is held at the British Library",
+   "source": "https://en.wikipedia.org/wiki/Diamond_Sutra",
+   "tier": "wikipedia",
+   "quote": "May 11, 868 CE, the oldest known dated printed book in the world",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Diamond_Sutra' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'the oldest known dated printed book in the world'"
+  }
  ],
  "events": [
   {

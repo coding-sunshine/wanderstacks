@@ -297,7 +297,9 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
       count()
       outside!.load(() => (count(), (dirty = true)))
     }
-    const s = out ? outside!.spawn : { pos: built.start.pos, yaw: built.start.yaw, pitch: 0 }
+    // Portrait phones frame mostly floor with a level eye; tip the view up so the hall reads.
+    const portrait = root.clientHeight > root.clientWidth * 1.15
+    const s = out ? outside!.spawn : { pos: built.start.pos, yaw: built.start.yaw, pitch: portrait ? 0.14 : 0 }
     fly?.done()
     fly = null
     stopGlide()
@@ -448,6 +450,8 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     const w = root.clientWidth || 1, hh = root.clientHeight || 1
     renderer.setSize(w, hh, false)
     camera.aspect = w / hh
+    // Narrow portrait screens get a wider vertical field so a tall hall fits instead of becoming a floor canyon.
+    camera.fov = w / hh < 0.85 ? 74 : 65
     camera.updateProjectionMatrix()
     dirty = true
   }

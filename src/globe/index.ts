@@ -128,6 +128,7 @@ export const mount: Mount = (app, params) => {
     return best
   }
 
+  let clicked: string | null = null
   function select(id: string) {
     for (const p of pins) {
       p.dot.dataset.on = String(p.pin.id === id)
@@ -356,10 +357,14 @@ export const mount: Mount = (app, params) => {
       b.addEventListener('click', () => enter(pin.id))
       dot.addEventListener('click', (e) => {
         const id = nearest(e)
-        const already = pins.find((q) => q.pin.id === id)?.dot.dataset.on === 'true'
-        if (already && pins.find((q) => q.pin.id === id)?.pin.href) return enter(id)
+        const rec = pins.find((q) => q.pin.id === id)
+        // A second click on a pin this visit already selected by click flies straight in;
+        // a hover-only selection (pointermove) still opens the card on the first click.
+        const already = clicked === id && rec?.dot.dataset.on === 'true'
+        if (already && rec?.pin.href) return enter(id)
+        clicked = id
         select(id)
-        showCard(pins.find((q) => q.pin.id === id)!.pin)
+        showCard(rec!.pin)
       })
       dot.addEventListener('dblclick', (e) => {
         const id = nearest(e)
@@ -383,6 +388,14 @@ export const mount: Mount = (app, params) => {
       })
     }
     setYear(year)
+
+    // A room breadcrumb links back as `/#<id>`: open the globe on this pin.
+    const h = decodeURIComponent(location.hash.replace(/^#/, ''))
+    const match = h ? pins.find((q) => q.pin.id === h) : undefined
+    if (match) {
+      select(match.pin.id)
+      showCard(match.pin)
+    }
 
     const loader = new TextureLoader()
     const maps = await Promise.all(tex.map((n) => loader.loadAsync(`/globe/${n}.webp`)))

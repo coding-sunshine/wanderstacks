@@ -40,7 +40,10 @@ export const mount: Mount = (app) => {
   const lede = document.createElement('p')
   lede.className = 'shelf-lede'
   lede.textContent =
-    'A pastiche after Jorge Luis Borges (1941) — an endless library generated on your device, seeded and deterministic. An invention, labelled as one. Search for any text: somewhere in the library it already waits.'
+    'A pastiche after Jorge Luis Borges (1941) — an endless library ' +
+    'generated on your device, seeded and deterministic. ' +
+    'An invention, labelled as one. Search for any text: ' +
+    'somewhere in the library it already waits.'
   const form = document.createElement('form')
   form.className = 'babel-form'
   const input = document.createElement('input')

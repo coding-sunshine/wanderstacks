@@ -9,14 +9,86 @@ function chequer(repeat: [number, number]) {
   const c = document.createElement('canvas')
   c.width = c.height = 64
   const g = c.getContext('2d')!
+  g.fillStyle = '#4d4034'
+  g.fillRect(0, 0, 64, 64)
   for (let i = 0; i < 4; i++) {
-    g.fillStyle = (i + (i >> 1)) % 2 ? '#6e574a' : '#c4b8a2'
-    g.fillRect((i % 2) * 32, (i >> 1) * 32, 32, 32)
+    g.fillStyle = (i + (i >> 1)) % 2 ? '#7d6f5e' : '#938675'
+    g.fillRect((i % 2) * 32 + 1, (i >> 1) * 32 + 1, 30, 30)
   }
   const t = new THREE.CanvasTexture(c)
   t.colorSpace = THREE.SRGBColorSpace
   t.wrapS = t.wrapT = THREE.RepeatWrapping
   t.repeat.set(...repeat)
+  return t
+}
+
+// A painted end wall for halls with no baked impostor: pilaster rhythm, a lit gallery
+// band, a central arched door and an oculus for domed halls, so the short wall reads
+// as architecture rather than a dark slab.
+function endWall(wins: number, bays: number, springRatio: number, domes: number) {
+  const c = document.createElement('canvas')
+  c.width = c.height = 512
+  const g = c.getContext('2d')!
+  g.fillStyle = '#221409'
+  g.fillRect(0, 0, 512, 512)
+  g.fillStyle = '#33200f'
+  for (let i = 1; i < bays * 2; i++) g.fillRect(Math.round((i * 512) / (bays * 2)) - 4, 0, 8, 512)
+  const band = Math.round((1 - springRatio) * 512)
+  g.fillStyle = '#2b1a0c'
+  g.fillRect(0, band - 10, 512, 20)
+  const n = Math.max(3, Math.min(11, wins || 5))
+  for (let i = 0; i < n; i++) {
+    const x = Math.round(((i + 0.5) * 512) / n)
+    g.fillStyle = 'rgba(255, 214, 140, 0.3)'
+    g.beginPath()
+    g.arc(x, band + 30, 11, Math.PI, 0)
+    g.fill()
+    g.fillRect(x - 11, band + 30, 22, 34)
+    g.strokeStyle = '#5a3c1c'
+    g.lineWidth = 3
+    g.stroke()
+  }
+  if (domes > 0) {
+    g.strokeStyle = '#5a3c1c'
+    g.lineWidth = 5
+    g.beginPath()
+    g.arc(256, Math.max(60, band - 80), 34, 0, 2 * Math.PI)
+    g.stroke()
+    g.lineWidth = 2
+    for (let i = 0; i < 8; i++) {
+      const a = (i * Math.PI) / 4
+      g.beginPath()
+      g.moveTo(256, Math.max(60, band - 80))
+      g.lineTo(256 + 32 * Math.cos(a), Math.max(60, band - 80) + 32 * Math.sin(a))
+      g.stroke()
+    }
+  }
+  const dw = 46, dh = 118
+  g.fillStyle = '#150d06'
+  g.fillRect(256 - dw, 512 - dh, dw * 2, dh)
+  g.beginPath()
+  g.arc(256, 512 - dh, dw, Math.PI, 0)
+  g.fill()
+  g.strokeStyle = '#6a4a24'
+  g.lineWidth = 4
+  g.beginPath()
+  g.moveTo(256, 512)
+  g.lineTo(256, 512 - dh + 4)
+  g.stroke()
+  g.strokeStyle = '#7a5527'
+  g.beginPath()
+  g.moveTo(256 - dw, 512)
+  g.lineTo(256 - dw, 512 - dh)
+  g.arc(256, 512 - dh, dw, Math.PI, 0)
+  g.lineTo(256 + dw, 512)
+  g.stroke()
+  const v = g.createRadialGradient(256, 300, 90, 256, 300, 370)
+  v.addColorStop(0, 'rgba(0,0,0,0)')
+  v.addColorStop(1, 'rgba(0,0,0,0.5)')
+  g.fillStyle = v
+  g.fillRect(0, 0, 512, 512)
+  const t = new THREE.CanvasTexture(c)
+  t.colorSpace = THREE.SRGBColorSpace
   return t
 }
 
@@ -58,8 +130,9 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   plane('shelfUnit', L, springing, wallMat, -W / 2, springing / 2, 0, Math.PI / 2)
   plane('shelfUnit', L, springing, wallMat, W / 2, springing / 2, 0, -Math.PI / 2)
   const impostor = new THREE.TextureLoader()
-  const endMat = mat({ color: 0x2b1a0d })
-  // Far-end wall: a baked impostor image when the build ships one, otherwise a dark timber panel.
+  const endTex = own(endWall(Math.round(h.windows), N, springing / H, h.domes ?? 0))
+  const endMat = mat({ map: endTex })
+  // Far-end wall: a baked impostor image when the build ships one, otherwise the painted wall.
   impostor.load(
     `/rooms/${lib.id}/impostor.svg`,
     (t) => {
@@ -74,7 +147,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
     () => dirty(),
   )
   plane('length', W, H, endMat, 0, H / 2, -L / 2, 0)
-  plane('length', W, H, mat({ color: 0x2b1a0d }), 0, H / 2, L / 2, Math.PI)
+  plane('length', W, H, mat({ map: endTex }), 0, H / 2, L / 2, Math.PI)
 
   if ((h.domes ?? 0) > 0 && h.domeHeight) {
     // Domed hall: the roof is one height field per span, the barrel crown raised to a dome inside each dome's plan ellipse.

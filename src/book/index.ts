@@ -23,7 +23,7 @@ export const mount: Mount = (app) => {
   head.textContent = 'Your keepsakes'
   const lede = document.createElement('p')
   lede.className = 'shelf-lede'
-  lede.textContent = 'A passport stamp for every library you have walked into, and your name in each visitors’ book. Kept only in this browser.'
+  lede.textContent = 'A passport stamp for every library you have walked into, ' + 'and your name in each visitors’ book. Kept only in this browser.'
 
   const h1 = document.createElement('h2')
   h1.className = 'eyebrow shelf-h'

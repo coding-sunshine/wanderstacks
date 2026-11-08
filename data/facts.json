@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T09:34:55.507Z",
+ "generated": "2026-11-08T18:10:27.956Z",
  "facts": [
   {
    "cluster": "americas",
@@ -241,6 +241,116 @@
    "check": "curl -sL 'https://web.archive.org/web/2025/https://biblioteket.stockholm.se/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'Den 20 juni 2024 stängde.{0,100}'"
   },
   {
+   "cluster": "americas",
+   "lib": "ottawa",
+   "field": "collection",
+   "value": "650,000 items covering hundreds of years of parliamentary history",
+   "source": "https://en.wikipedia.org/wiki/Library_of_Parliament",
+   "tier": "wikipedia",
+   "quote": "The library's collection comprises 650,000 items, covering hundreds of years of history",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Library_of_Parliament' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'collection comprises 650,000 items'"
+  },
+  {
+   "cluster": "americas",
+   "lib": "ottawa",
+   "field": "collection",
+   "value": "Survived the 1916 Centre Block fire — clerk Michael MacCormac secured the library's iron doors before the fire could spread",
+   "source": "https://en.wikipedia.org/wiki/Library_of_Parliament",
+   "tier": "wikipedia",
+   "quote": "the library clerk at the time, Michael MacCormac, secured the library's iron doors before the fire could spread",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Library_of_Parliament' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o \"MacCormac.{0,40} secured the library.s iron doors\""
+  },
+  {
+   "cluster": "americas",
+   "lib": "nypl",
+   "field": "collection",
+   "value": "Lenox copy of the Gutenberg Bible — the first Gutenberg Bible in the New World",
+   "source": "https://en.wikipedia.org/wiki/New_York_Public_Library",
+   "tier": "wikipedia",
+   "quote": "including the first Gutenberg Bible in the New World",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/New_York_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'first Gutenberg Bible in the New World'"
+  },
+  {
+   "cluster": "americas",
+   "lib": "nypl",
+   "field": "collection",
+   "value": "Entrance lion statues named Patience and Fortitude; the main branch is a National Historic Landmark (1965)",
+   "source": "https://en.wikipedia.org/wiki/New_York_Public_Library",
+   "tier": "wikipedia",
+   "quote": "easily recognizable by its lion statues named Patience and Fortitude",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/New_York_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'lion statues named Patience and Fortitude'"
+  },
+  {
+   "cluster": "americas",
+   "lib": "nypl",
+   "field": "volumes",
+   "value": "nearly 53 million items across 92 locations — second-largest library in the United States",
+   "source": "https://en.wikipedia.org/wiki/New_York_Public_Library",
+   "tier": "wikipedia",
+   "quote": "With nearly 53 million items and 92 locations, the New York Public Library is the second-largest library in the United States",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/New_York_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'nearly 53 million items and 92 locations'"
+  },
+  {
+   "cluster": "americas",
+   "lib": "bpl",
+   "field": "collection",
+   "value": "Opened to the public 20 March 1854 with 16,000 volumes; opened the first US branch library (East Boston, 1870)",
+   "source": "https://en.wikipedia.org/wiki/Boston_Public_Library",
+   "tier": "wikipedia",
+   "quote": "the first branch library in the United States",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Boston_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'the first branch library in the United States'"
+  },
+  {
+   "cluster": "americas",
+   "lib": "bpl",
+   "field": "collection",
+   "value": "The McKim Building's Bates Hall houses the research collection; the BPL holds about 21 million items",
+   "source": "https://en.wikipedia.org/wiki/Boston_Public_Library",
+   "tier": "wikipedia",
+   "quote": "The McKim Building, designed by Charles Follen McKim and completed in 1895, houses the BPL's research collection",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Boston_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o \"houses the BPL.s research collection\""
+  },
+  {
+   "cluster": "americas",
+   "lib": "gabinete",
+   "field": "collection",
+   "value": "Founded 14 May 1837 by forty-three Portuguese immigrants, political refugees — today the largest collection of Portuguese literature outside Portugal",
+   "source": "https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading",
+   "tier": "wikipedia",
+   "quote": "founded in 1837 by a group of forty-three Portuguese immigrants, political refugees",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'forty-three Portuguese immigrants, political refugees'"
+  },
+  {
+   "cluster": "americas",
+   "lib": "gabinete",
+   "field": "collection",
+   "value": "Among the 350,000 volumes: a princeps edition of Os Lusíadas by Camões (1572)",
+   "source": "https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading",
+   "tier": "wikipedia",
+   "quote": "Among the 350,000 volumes, both national and foreign, are rare works such as a copy of the princeps edition of Os Lusíadas of Camões (1572)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'Os Lusíadas of Camões .1572.'"
+  },
+  {
+   "cluster": "americas",
+   "lib": "gabinete",
+   "field": "collection",
+   "value": "Named the fourth most beautiful library in the world by Time magazine; open to the public since 1900",
+   "source": "https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading",
+   "tier": "wikipedia",
+   "quote": "the fourth most beautiful library in the world by Time magazine",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Royal_Portuguese_Cabinet_of_Reading' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'most beautiful library in the world by Time magazine'"
+  },
+  {
    "cluster": "ancient-east",
    "lib": "nalanda",
    "field": "built",
@@ -364,6 +474,39 @@
    "quote": "Matthias, one of the most powerful rulers of the age, started to collect the books from about 1460.",
    "status": "passing",
    "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Bibliotheca_Corviniana' | rg -o -m1 'started to collect the books from about 1460'"
+  },
+  {
+   "cluster": "ancient-east",
+   "lib": "timbuktu",
+   "field": "collection",
+   "value": "Manuscript subjects span art, medicine, philosophy, science and copies of the Quran — the best-known set of West African manuscripts",
+   "source": "https://en.wikipedia.org/wiki/Timbuktu_Manuscripts",
+   "tier": "wikipedia",
+   "quote": "The collections include manuscripts about art, medicine, philosophy, and science, as well as copies of the Quran",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Timbuktu_Manuscripts' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'manuscripts about art, medicine, philosophy, and science'"
+  },
+  {
+   "cluster": "ancient-east",
+   "lib": "timbuktu",
+   "field": "collection",
+   "value": "2012–13 evacuation: curator Abdel Kader Haidara and Stephanie Diakité organized the smuggling of ~350,000 manuscripts to Bamako; 300,000 still there in 2022",
+   "source": "https://en.wikipedia.org/wiki/Timbuktu_Manuscripts",
+   "tier": "wikipedia",
+   "quote": "organized the evacuation of the manuscripts to Bamako",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Timbuktu_Manuscripts' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'organized the evacuation of the manuscripts to Bamako'"
+  },
+  {
+   "cluster": "ancient-east",
+   "lib": "dunhuang",
+   "field": "collection",
+   "value": "The 868 Diamond Sutra from Cave 17 — the oldest known dated printed book in the world — is held at the British Library",
+   "source": "https://en.wikipedia.org/wiki/Diamond_Sutra",
+   "tier": "wikipedia",
+   "quote": "May 11, 868 CE, the oldest known dated printed book in the world",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Diamond_Sutra' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'the oldest known dated printed book in the world'"
   },
   {
    "cluster": "ancient-west",
@@ -2459,6 +2602,39 @@
    "quote": "Fourteen marble busts were commissioned in the mid-1740s ... Four female busts were added in 2023",
    "status": "failing",
    "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/The_Old_Library,_Trinity_College_Dublin' | rg -o 'Fourteen marble busts.{0,80}'"
+  },
+  {
+   "cluster": "rooms-longroom",
+   "lib": "longroom",
+   "field": "collection",
+   "value": "Brian Boru harp on display — the oldest surviving Gaelic harp in Ireland (medieval, probably 15th century)",
+   "source": "https://www.tcd.ie/library/old-library/long-room/",
+   "tier": "primary",
+   "quote": "There is also a medieval harp on display known as the Brian Boru harp. The harp is the oldest of its kind in Ireland",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.tcd.ie/library/old-library/long-room/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'Brian Boru harp. The harp is the oldest of its kind in Ireland'"
+  },
+  {
+   "cluster": "rooms-longroom",
+   "lib": "longroom",
+   "field": "collection",
+   "value": "One of the few surviving copies of the 1916 Proclamation of the Irish Republic, read outside the GPO at the Easter Rising",
+   "source": "https://www.tcd.ie/library/old-library/long-room/",
+   "tier": "primary",
+   "quote": "Another treasure in the Long Room is one of the few remaining copies of the 1916 Proclamation of the Irish Republic",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.tcd.ie/library/old-library/long-room/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'one of the few remaining copies of the 1916 Proclamation'"
+  },
+  {
+   "cluster": "rooms-longroom",
+   "lib": "longroom",
+   "field": "collection",
+   "value": "Four female marble busts added 2023 — Rosalind Franklin, Augusta Gregory, Ada Lovelace, Mary Wollstonecraft — first new busts in over a century",
+   "source": "https://en.wikipedia.org/wiki/The_Old_Library,_Trinity_College_Dublin",
+   "tier": "wikipedia",
+   "quote": "Four female busts were added in 2023: Rosalind Franklin, Augusta Gregory, Ada Lovelace and Mary Wollstonecraft.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/The_Old_Library,_Trinity_College_Dublin' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o 'Four female busts were added in 2023: Rosalind Franklin'"
   },
   {
    "cluster": "west-europe",

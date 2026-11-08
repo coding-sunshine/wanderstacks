@@ -23,7 +23,7 @@ function report(lib: Library, field: string, value: string, source: string | nul
 
 const host = (u: string) => new URL(u).hostname.replace(/^www\./, '')
 
-const FIELD: Record<string, string> = { dims: 'Size', status_note: 'Now', remains_today: 'Remains today', recon: 'Reconstruction' }
+const FIELD: Record<string, string> = { dims: 'Size', status_note: 'Now', remains_today: 'Remains today', recon: 'Reconstruction', collection: 'Treasures' }
 const label = (field: string) => FIELD[field] ?? field.replace(/_/g, ' ')
 
 function show(v: unknown, unit: string) {
@@ -80,8 +80,13 @@ export function buildPanel(lib: Library, params: KitModule['params']) {
     credits.append(el('li', {}, `${c.file}, ${c.author}, ${c.licence} · `, link(c.url, host(c.url))))
   }
 
+  const sep = el('span', { 'aria-hidden': 'true', class: 'crumb-sep' }, '›')
+  const crumb = el('nav', { class: 'crumb', 'aria-label': 'Breadcrumb' },
+    link('/', 'Globe', false), sep.cloneNode(true), link(`/#${lib.id}`, lib.place, false), sep.cloneNode(true),
+    el('span', { 'aria-current': 'page' }, lib.name))
+
   const panel = el('aside', { id: 'room-panel', class: 'room-panel', 'aria-label': `About ${lib.name}` },
-    el('h1', {}, lib.name), el('p', { class: 'where' }, `${lib.place} · ${lib.years}`),
+    crumb, el('h1', {}, lib.name), el('p', { class: 'where' }, `${lib.place} · ${lib.years}`),
     section('Facts', facts),
     section('The hall, measured and guessed', hall),
     section('Shelves', shelves),
