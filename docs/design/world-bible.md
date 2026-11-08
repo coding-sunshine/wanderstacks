@@ -14,6 +14,13 @@ Design contract for the overhaul. Behaviour, data and budgets stay in
 `docs/specs/build-spec.md`; this file says how the product *looks and moves*.
 The owner judges the visuals; these rules keep every surface consistent.
 
+Status 2026-11-08: globe hero, atlas parchment grade, shell (plate frame,
+grain, vignette, nav island), room chrome and panels, catalogue cards, pulled
+-book dialog, reader chrome, ledger myth panel, scan and living-page styling,
+and the evidence-stamp system are implemented and gate-green. Scroll chapters,
+fly-to starfield, and graticule lines on the atlas stay deferred with the
+B/C deferrals.
+
 ## Thesis
 
 A reading room by lamplight, at planetary scale. Scholarly instrument first,
