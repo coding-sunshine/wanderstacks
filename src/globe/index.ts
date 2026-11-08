@@ -353,8 +353,16 @@ export const mount: Mount = (app, params) => {
       b.addEventListener('click', () => enter(pin.id))
       dot.addEventListener('click', (e) => {
         const id = nearest(e)
+        const already = pins.find((q) => q.pin.id === id)?.dot.dataset.on === 'true'
+        if (already && pins.find((q) => q.pin.id === id)?.pin.href) return enter(id)
         select(id)
         showCard(pins.find((q) => q.pin.id === id)!.pin)
+      })
+      dot.addEventListener('dblclick', (e) => {
+        const id = nearest(e)
+        const pin = pins.find((q) => q.pin.id === id)!.pin
+        if (pin.href) enter(id)
+        else showCard(pin)
       })
       dot.addEventListener('pointermove', (e) => {
         hovering = true
