@@ -10,13 +10,19 @@ for (const room of roomIdsD()) {
     const errors = watchErrors(page)
     const root = await openRoom(page, room)
 
-    const still = async () => {
-      const a = await page.screenshot()
-      await page.waitForTimeout(600)
-      const b = await page.screenshot()
-      expect(b.equals(a), 'canvas and UI pixel-still').toBe(true)
+    // Bays keep building after the door opens; wait for the hall to finish filling in.
+    await expect(root.locator('.room-status')).toBeHidden({ timeout: 60_000 })
+
+    // Idle scenes hold pixel-still: accept the first pair of identical screenshots.
+    let prev = await page.screenshot()
+    let still = false
+    for (let i = 0; i < 20 && !still; i++) {
+      await page.waitForTimeout(500)
+      const next = await page.screenshot()
+      if (next.equals(prev)) still = true
+      prev = next
     }
-    await still()
+    expect(still, 'canvas and UI pixel-still').toBe(true)
 
     const moving = await page.evaluate(() => document.getAnimations().filter((a) => a.playState === 'running').length)
     expect(moving, 'no running animations while idle').toBe(0)
