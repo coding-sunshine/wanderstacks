@@ -45,3 +45,22 @@
   position: absolute; top: 5.6rem; left: 1rem; z-index: 3; margin: 0; padding: 0.15rem 0.6rem; font-size: 0.85rem; font-style: italic;
   color: var(--lamp); background: rgba(14, 11, 8, 0.85); border: 1px solid var(--oak-light);
 }
+.room-shelves button[data-action='find'] {
+  min-width: 44px; min-height: 44px; margin-right: 0.5rem; padding: 0.25rem 0.8rem; cursor: pointer;
+  background: rgba(14, 11, 8, 0.85); border: 1px solid var(--gilt); color: var(--paper);
+}
+.room-shelves button[data-action='find']:focus-visible, .room-book button:focus-visible, .room-book a:focus-visible { outline: 2px solid var(--gilt); outline-offset: 2px; }
+.room-shelves li[data-shelf] { display: flex; flex-wrap: wrap; align-items: center; }
+[data-spine-title] {
+  position: absolute; z-index: 4; margin: 0; padding: 0.2rem 0.6rem; pointer-events: none; max-width: 18rem;
+  font-size: 0.9rem; color: var(--paper); background: rgba(14, 11, 8, 0.9); border: 1px solid var(--gilt);
+}
+.room-book {
+  width: min(24rem, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem); box-sizing: border-box; padding: 1.2rem 1.4rem; overflow-y: auto;
+  color: var(--paper); background: rgba(14, 11, 8, 0.96); border: 1px solid var(--gilt);
+}
+.room-book::backdrop { background: rgba(0, 0, 0, 0.55); }
+.room-book h2 { margin: 0 0 0.4rem; font-size: 1.3rem; font-weight: 400; color: var(--gilt); }
+.room-book p { margin: 0 0 0.3rem; color: var(--paper-dim); }
+.room-book a { display: inline-block; min-height: 44px; margin-right: 1rem; line-height: 44px; color: var(--lamp); }
+.room-book button { display: block; min-width: 44px; min-height: 44px; margin-top: 0.6rem; padding: 0.25rem 1rem; cursor: pointer; background: var(--gilt); border: 0; color: var(--night); }
