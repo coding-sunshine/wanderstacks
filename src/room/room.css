@@ -7,15 +7,15 @@
   position: absolute; left: 1rem; margin: 0; padding: 0.25rem 0.6rem; font-size: 0.9rem; font-style: italic;
   color: var(--paper-dim); background: rgba(14, 11, 8, 0.6); pointer-events: none;
 }
-.room-status { bottom: 3rem; }
-.room-hint { bottom: 1rem; }
+.room-status { bottom: 5rem; }
+.room-hint { bottom: 3rem; }
 .room-status[hidden] { display: none; }
 .room-toggle {
   position: absolute; top: 3.2rem; right: 1rem; z-index: 3; padding: 0.25rem 0.8rem; cursor: pointer;
   background: rgba(14, 11, 8, 0.85); border: 1px solid var(--gilt); color: var(--paper);
 }
 .room-panel {
-  position: absolute; top: 5.4rem; right: 1rem; bottom: 1rem; z-index: 2; width: min(26rem, calc(100% - 2rem));
+  position: absolute; top: 5.4rem; right: 1rem; bottom: 3rem; z-index: 2; width: min(26rem, calc(100% - 2rem));
   overflow-y: auto; padding: 0.2rem 1rem 1rem; font-size: 0.95rem; line-height: 1.4;
   background: rgba(14, 11, 8, 0.88); border: 1px solid var(--oak-light);
 }
@@ -45,3 +45,9 @@
   position: absolute; top: 5.6rem; left: 1rem; z-index: 3; margin: 0; padding: 0.15rem 0.6rem; font-size: 0.85rem; font-style: italic;
   color: var(--lamp); background: rgba(14, 11, 8, 0.85); border: 1px solid var(--oak-light);
 }
+
+.room-local {
+  position: absolute; left: 1rem; bottom: 1rem; z-index: 3; margin: 0; padding: 0.15rem 0.6rem; font-size: 0.9rem;
+  color: var(--paper); background: #14100b; border: 1px solid var(--oak-light);
+}
+.room-local a { color: var(--lamp); }

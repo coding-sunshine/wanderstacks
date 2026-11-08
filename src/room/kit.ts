@@ -9,7 +9,17 @@ export interface KitCtx {
   reduced: boolean
 }
 
+/** Lights and glass the sun driver steers; every field optional per kit. */
+export interface Lights {
+  hemi: THREE.HemisphereLight
+  sun?: THREE.DirectionalLight
+  point?: THREE.PointLight
+  glow?: THREE.MeshBasicMaterial
+  beam?: THREE.MeshBasicMaterial
+}
+
 export interface Built {
+  lights?: Lights
   core: THREE.Object3D
   parts: Partial<Record<string, THREE.Object3D[]>>
   start: { pos: [number, number, number]; yaw: number }
@@ -41,6 +51,9 @@ export interface RoomApi {
   reduced: boolean
   goTo(at: [number, number, number], look: [number, number, number]): Promise<void>
   render(): void
+  /** The visitor's own lamp, and the kit's steerable lights. */
+  lamp?: THREE.PointLight
+  lights?: Lights
 }
 
 export function hash(s: string) {

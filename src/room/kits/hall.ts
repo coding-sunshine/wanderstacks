@@ -112,7 +112,8 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
     parts.vault = [vault]
   }
 
-  scene.add(new THREE.HemisphereLight(0xffe2b0, 0x2a1a0d, 1.0))
+  const hemi = new THREE.HemisphereLight(0xffe2b0, 0x2a1a0d, 1.0)
+  scene.add(hemi)
   const sun = new THREE.DirectionalLight(0xffe7b8, 0.7)
   sun.position.set(-3, 10, 2)
   scene.add(sun)
@@ -178,6 +179,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   const sideWall = 2 * L * springing
 
   return {
+    lights: { hemi, sun, glow: glowM, beam: beamM },
     core,
     parts,
     start: { pos: [0, EYE, L / 2 - 1.2], yaw: 0 },
