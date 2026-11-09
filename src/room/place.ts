@@ -32,8 +32,9 @@ export function addCredits(panel: HTMLElement, ex: Exterior | null) {
   if (ex && ex.source !== 'estimate') {
     ul.append(el('li', {}, `${ex.name}, building outline: `, link(`https://www.openstreetmap.org/${ex.source}`, 'OpenStreetMap'), ', ODbL'))
   }
-  for (const a of new Set(textures.map((t) => t.asset))) {
-    ul.append(el('li', {}, `${a}, CC0, `, link(`https://polyhaven.com/a/${a}`, 'Poly Haven')))
+  for (const t of textures) {
+    const href = /polyhaven\.com/.test(t.url) ? `https://polyhaven.com/a/${t.asset}` : t.url
+    ul.append(el('li', {}, `${t.asset}, ${t.license} · `, link(href, href.replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0])))
   }
 }
 

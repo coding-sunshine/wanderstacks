@@ -1,6 +1,8 @@
 import * as THREE from 'three'
 import { hash, type RoomApi } from './kit'
 import { binding, spineLabel } from './cover'
+import { buildOpenBook, type OpenBook } from './openbook'
+import { go } from '../app'
 
 const FACE = 0.27 // spine face distance from the stand, along `out`
 const BOOK_Y = 1.465 // spine centre height
@@ -61,9 +63,44 @@ export function attach(api: RoomApi) {
 
   // ---- place: spines exist only inside ----
   const finds: HTMLButtonElement[] = []
+  let openBook: OpenBook | null = null
+  let openId: string | null = null
+  let openSeq = 0
+  const clearOpen = () => {
+    if (!openBook) return
+    scene.remove(openBook.group)
+    openBook.dispose()
+    openBook = null
+    openId = null
+    api.render()
+  }
+  // A readable book opens on the lectern it was pulled from, set with its own first page.
+  const showOpen = async (i: number) => {
+    const s = lib.shelves[i]!
+    if (s.tier !== 'readable-text') return clearOpen()
+    if (openId === s.id) return
+    const seq = ++openSeq
+    clearOpen()
+    try {
+      const meta = (await (await fetch(`/book/${s.id}/meta.json`)).json()) as { id: string; title: string; author: string | null }
+      const part = (await (await fetch(`/book/${s.id}/1.json`)).json()) as { chapters: { title: string; html: string }[] }
+      if (seq !== openSeq) return
+      const ob = buildOpenBook(meta, part)
+      const s0 = slots[i]!
+      ob.group.position.set(s0.at[0] + s0.out[0] * 0.34, 1.27, s0.at[2] + s0.out[1] * 0.34)
+      ob.group.rotation.y = Math.atan2(s0.out[0], s0.out[1])
+      scene.add(ob.group)
+      openBook = ob
+      openId = s.id
+      api.render()
+    } catch {
+      /* no built text yet — the dialogue still tells the story */
+    }
+  }
   const update = () => {
     const inside = !root.dataset.place || root.dataset.place === 'inside'
     group.visible = inside
+    if (!inside) clearOpen()
     root.dataset.spines = String(inside ? slots.length : 0)
     finds.forEach((b) => (b.hidden = !inside))
     api.render()
@@ -112,6 +149,7 @@ export function attach(api: RoomApi) {
   const pull = (i: number) => {
     const s = lib.shelves[i]!
     from = finds[i] ?? null
+    void showOpen(i)
     const id = `book-title-${s.id}`
     const put = el('button', { type: 'button', autofocus: '' }, 'Put back')
     put.onclick = () => d.close()
@@ -144,9 +182,20 @@ export function attach(api: RoomApi) {
     root.append(d)
     d.showModal()
     put.focus()
+    // The cover swings open once, like the book being laid down face up.
+    requestAnimationFrame(() => cover.classList.add('is-open'))
     root.dataset.bookPulled = s.id
     delete root.dataset.bookFocus
   }
+  api.taps.push((e) => {
+    if (!openBook || !openId) return false
+    const b = canvas.getBoundingClientRect()
+    camera.updateMatrixWorld()
+    ray.setFromCamera(new THREE.Vector2(((e.clientX - b.left) / b.width) * 2 - 1, -(((e.clientY - b.top) / b.height) * 2 - 1)), camera)
+    if (!ray.intersectObject(openBook.mesh, false).length) return false
+    go(`/read/${openId}`)
+    return true
+  })
   api.taps.push((e) => {
     const i = pick(e)
     if (i < 0) return false
@@ -213,6 +262,7 @@ export function attach(api: RoomApi) {
     dlg?.remove()
     tip.remove()
     finds.forEach((b) => b.remove())
+    clearOpen()
     scene.remove(group)
     owned.forEach((o) => o.dispose())
   }

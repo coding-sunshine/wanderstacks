@@ -127,7 +127,7 @@ export function buildOutside(ex: Exterior, own: <T extends { dispose(): void }>(
     load(onMap) {
       if (started) return
       started = true
-      for (const t of textures) {
+      for (const t of textures.filter((x) => x.slot.startsWith('ground') || x.slot.startsWith('facade'))) {
         loader.load(t.url, (tex) => {
           own(tex)
           apply(t.slot, tex)

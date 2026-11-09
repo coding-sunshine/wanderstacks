@@ -108,3 +108,22 @@ export const dustTexture = () =>
     g.fillStyle = grad
     g.fillRect(0, 0, 32, 32)
   })
+
+/**
+ * Loads a photograph texture (CC0 assets served from /rooms/tex, or an external file page).
+ * Calls ok(texture) on success; on error the caller swaps in a procedural fallback.
+ */
+export function loadPhoto(url: string, repeat: [number, number], mirror: boolean, ok: (t: THREE.Texture) => void, fail: () => void) {
+  new THREE.TextureLoader().load(
+    url,
+    (t) => {
+      t.colorSpace = THREE.SRGBColorSpace
+      t.wrapS = t.wrapT = mirror ? THREE.MirroredRepeatWrapping : THREE.RepeatWrapping
+      t.repeat.set(...repeat)
+      t.anisotropy = 8
+      ok(t)
+    },
+    undefined,
+    fail,
+  )
+}

@@ -147,8 +147,11 @@
   flex: 0 0 6.4rem; height: 9.6rem; margin-top: 0.2rem; border-radius: 2px 4px 4px 2px;
   background-size: cover; background-position: center; border: 1px solid rgb(0 0 0 / 0.45);
   transform: perspective(420px) rotateY(-9deg);
+  transform-origin: left center;
   box-shadow: 5px 0 0 -1.5px #eadfbf, 9px 0 0 -3.5px #d9cba2, 13px 0 0 -6px #efe6cb, 0 16px 26px rgb(0 0 0 / 0.4);
 }
+/* Pulled from the shelf: the cover swings open once, then rests. */
+.room-book-cover:not(.is-open) { transform: perspective(420px) rotateY(-84deg); transition: transform 800ms var(--ease); }
 .room-book-info { min-width: 0; flex: 1; }
 .room-book h2 { margin: 0 0 0.4rem; font-size: 1.4rem; font-weight: 400; color: var(--ink); }
 .room-book-by { margin: 0 0 0.5rem; color: var(--paper-dim-ink); font-style: italic; }
@@ -167,6 +170,9 @@
 .room-book button:hover { border-color: var(--gilt); }
 @media (max-width: 700px) {
   .room-book-cover { flex-basis: 4.6rem; height: 7rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .room-book-cover { transition: none !important; }
 }
 
 @media (max-width: 700px) {

@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import { hash, type Built, type KitCtx, type KitModule } from '../kit'
-import { beamTexture, floorTexture, spineTexture, vaultTexture, woodTexture } from '../textures'
+import { beamTexture, floorTexture, loadPhoto, spineTexture, vaultTexture, woodTexture } from '../textures'
 import type { BayMsg, Flat, Request } from '../worker'
 
 const EYE = 1.65
@@ -113,6 +113,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   scene.add(core)
   const parts: Built['parts'] = {}
   const mat = (p: THREE.MeshLambertMaterialParameters) => own(new THREE.MeshLambertMaterial(p))
+  const std = (p: THREE.MeshStandardMaterialParameters) => own(new THREE.MeshStandardMaterial(p))
   const plane = (key: string, w: number, hh: number, m: THREE.Material, x: number, y: number, z: number, ry = 0, rx = 0) => {
     const mesh = new THREE.Mesh(own(new THREE.PlaneGeometry(w, hh)), m)
     mesh.position.set(x, y, z)
@@ -121,12 +122,64 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
     ;(parts[key] ??= []).push(mesh)
   }
 
+  // Floors: measured chequer for stone, CC0 herringbone parquet for timber, plain boards otherwise.
   const wood = own(woodTexture())
-  const wallMat = mat({ map: own(spineTexture([L / 3, springing / 2.6])) })
+  const timberFloor = /timber|wood|board|parquet/.test(h.floor)
   const floorMat = stone
     ? mat({ map: own(chequer([W / 0.55, L / 0.55])) })
-    : mat({ map: own(floorTexture([W, L])), color: 0x9a8a7a })
+    : timberFloor
+      ? std({ roughness: 0.75 })
+      : mat({ map: own(floorTexture([W, L])), color: 0x9a8a7a })
+  if (timberFloor && !stone) {
+    loadPhoto(
+      '/rooms/tex/herringbone_parquet_diff_1k.jpg',
+      [W / 3.2, L / 3.2],
+      false,
+      (t) => {
+        own(t)
+        ;(floorMat as THREE.MeshStandardMaterial).map = t
+        floorMat.needsUpdate = true
+        dirty()
+      },
+      () => {
+        ;(floorMat as THREE.MeshStandardMaterial).map = own(floorTexture([W, L]))
+        floorMat.needsUpdate = true
+        dirty()
+      },
+    )
+    loadPhoto(
+      '/rooms/tex/herringbone_parquet_nor_gl_1k.jpg',
+      [W / 3.2, L / 3.2],
+      false,
+      (t) => {
+        own(t)
+        ;(floorMat as THREE.MeshStandardMaterial).normalMap = t
+        floorMat.needsUpdate = true
+        dirty()
+      },
+      () => {},
+    )
+  }
   plane('floor', W, L, floorMat, 0, 0, 0, 0, -Math.PI / 2)
+
+  // Shelf walls: a real CC0 photograph of book spines, mirror-tiled; procedural rows as fallback.
+  const wallMat = std({ roughness: 0.92, color: 0xf2ead8 })
+  loadPhoto(
+    '/rooms/tex/spines_unsplash_cc0.jpg',
+    [L / 5, springing / 3.4],
+    true,
+    (t) => {
+      own(t)
+      ;(wallMat as THREE.MeshStandardMaterial).map = t
+      wallMat.needsUpdate = true
+      dirty()
+    },
+    () => {
+      ;(wallMat as THREE.MeshStandardMaterial).map = own(spineTexture([L / 3, springing / 2.6]))
+      wallMat.needsUpdate = true
+      dirty()
+    },
+  )
   plane('shelfUnit', L, springing, wallMat, -W / 2, springing / 2, 0, Math.PI / 2)
   plane('shelfUnit', L, springing, wallMat, W / 2, springing / 2, 0, -Math.PI / 2)
   const impostor = new THREE.TextureLoader()

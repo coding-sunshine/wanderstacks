@@ -22,5 +22,29 @@
     "asset": "granite_wall",
     "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/granite_wall/granite_wall_nor_gl_1k.jpg",
     "license": "CC0"
+  },
+  {
+    "slot": "floor-parquet",
+    "asset": "herringbone_parquet",
+    "url": "/rooms/tex/herringbone_parquet_diff_1k.jpg",
+    "license": "CC0, Poly Haven"
+  },
+  {
+    "slot": "floor-parquet-normal",
+    "asset": "herringbone_parquet",
+    "url": "/rooms/tex/herringbone_parquet_nor_gl_1k.jpg",
+    "license": "CC0, Poly Haven"
+  },
+  {
+    "slot": "wood-dark",
+    "asset": "dark_wooden_planks",
+    "url": "/rooms/tex/dark_wooden_planks_diff_1k.jpg",
+    "license": "CC0, Poly Haven"
+  },
+  {
+    "slot": "spines",
+    "asset": "Old books on bookshelf, Clem Onojeghuo (Unsplash)",
+    "url": "https://commons.wikimedia.org/wiki/File:Old_books_on_bookshelf._(Unsplash).jpg",
+    "license": "CC0"
   }
 ]
