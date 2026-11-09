@@ -63,13 +63,16 @@
 /* Mode chips, lower right. */
 .globe-modes { position: absolute; right: clamp(1.6rem, 4vw, 3.6rem); bottom: clamp(6.5rem, 15vh, 9.5rem); display: grid; gap: 0.5rem; justify-items: end; z-index: 4; }
 
-/* Library index strip. */
+/* Library index strip: one calm row that scrolls sideways, fading at the edges. */
 .globe-index {
-  list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.35rem;
-  justify-content: center; max-height: 2.9rem; overflow: auto; width: min(54rem, 92vw);
-  -webkit-mask-image: linear-gradient(#000 78%, transparent); mask-image: linear-gradient(#000 78%, transparent);
+  list-style: none; margin: 0; padding: 0 1rem; display: flex; flex-wrap: nowrap; gap: 0.35rem;
+  justify-content: flex-start; overflow-x: auto; width: min(64rem, 94vw); scrollbar-width: none;
+  scroll-snap-type: x proximity;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 3.5%, #000 96.5%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 3.5%, #000 96.5%, transparent);
 }
-.globe-index li { flex-shrink: 0; }
+.globe-index::-webkit-scrollbar { display: none; }
+.globe-index li { flex-shrink: 0; scroll-snap-align: start; }
 .globe-index[hidden] { display: none; }
 .globe-index li[hidden] { display: none; }
 .globe-index button {
@@ -139,7 +142,7 @@
   .globe-hero .display { font-size: clamp(1.85rem, 8.2vw, 2.5rem); text-shadow: 0 2px 22px rgb(5 3 2 / 0.85), 0 0 42px rgb(5 3 2 / 0.5); }
   .globe-modes { right: auto; left: 50%; transform: translateX(-50%); bottom: 10.4rem; grid-auto-flow: column; justify-items: center; }
   .globe-hud { padding-bottom: 1.1rem; gap: 0.6rem; }
-  .globe-index { flex-wrap: nowrap; overflow-x: auto; max-height: none; justify-content: flex-start; padding-bottom: 2px; -webkit-mask-image: none; mask-image: none; }
+  .globe-index { width: 100%; }
   .globe-card { top: 4.6rem; right: 1rem; }
 }
 
