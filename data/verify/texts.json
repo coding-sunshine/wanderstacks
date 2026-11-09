@@ -1538,7 +1538,7 @@
     "pg_ids": [
      14591
     ],
-    "se_url": "https://standardebooks.org/ebooks/johann-wolfgang-von-goethe/faust",
+    "se_url": null,
     "translator": "Bayard Taylor",
     "translator_death": 1878,
     "translation_year": 1871,
@@ -1682,7 +1682,7 @@
     "pg_ids": [
      4280
     ],
-    "se_url": "https://standardebooks.org/ebooks/immanuel-kant/critique-of-pure-reason",
+    "se_url": null,
     "translator": "J. M. D. Meiklejohn",
     "translator_death": 1902,
     "translation_year": 1855,
@@ -3147,16 +3147,16 @@
    "catalogue_url": "https://www.gutenberg.org/ebooks/35155",
    "access": "readable-text",
    "read": {
-    "kind": "standardebooks",
+    "kind": "gutenberg",
     "id": null,
-    "url": "https://standardebooks.org/ebooks/alessandro-manzoni/the-betrothed",
+    "url": "https://www.gutenberg.org/ebooks/35155",
     "licence": "CC0 (Standard Ebooks)",
     "edition": "PG 35155",
     "complete": true,
     "pg_ids": [
      35155
     ],
-    "se_url": "https://standardebooks.org/ebooks/alessandro-manzoni/the-betrothed",
+    "se_url": null,
     "translator": null,
     "translator_death": null,
     "translation_year": null,
@@ -3183,16 +3183,16 @@
    "catalogue_url": "https://www.gutenberg.org/ebooks/24869",
    "access": "readable-text",
    "read": {
-    "kind": "standardebooks",
+    "kind": "gutenberg",
     "id": null,
-    "url": "https://standardebooks.org/ebooks/valmiki/the-ramayana/ralph-t-h-griffith",
+    "url": "https://www.gutenberg.org/ebooks/24869",
     "licence": "CC0 (Standard Ebooks)",
     "edition": "PG 24869 | translator: Ralph T. H. Griffith",
     "complete": true,
     "pg_ids": [
      24869
     ],
-    "se_url": "https://standardebooks.org/ebooks/valmiki/the-ramayana/ralph-t-h-griffith",
+    "se_url": null,
     "translator": "Ralph T. H. Griffith",
     "translator_death": 1906,
     "translation_year": 1870,
@@ -3219,16 +3219,16 @@
    "catalogue_url": "https://www.gutenberg.org/ebooks/66057",
    "access": "readable-text",
    "read": {
-    "kind": "standardebooks",
+    "kind": "gutenberg",
     "id": null,
-    "url": "https://standardebooks.org/ebooks/murasaki-shikibu/the-tale-of-genji/arthur-waley",
+    "url": "https://www.gutenberg.org/ebooks/66057",
     "licence": "CC0 (Standard Ebooks)",
     "edition": "PG 66057 | translator: Arthur Waley",
     "complete": true,
     "pg_ids": [
      66057
     ],
-    "se_url": "https://standardebooks.org/ebooks/murasaki-shikibu/the-tale-of-genji/arthur-waley",
+    "se_url": null,
     "translator": "Arthur Waley",
     "translator_death": 1966,
     "translation_year": 1925,

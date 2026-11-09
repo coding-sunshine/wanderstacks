@@ -1,0 +1,219 @@
+{
+ "cluster": "rooms-wave3",
+ "facts": [
+  {
+   "lib": "malatestiana",
+   "field": "built",
+   "value": "opened 1452; three naves of eleven bays each; the central nave is barrel vaulted",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+   "tier": "wikipedia",
+   "quote": "there are eleven bays in each aisle",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'eleven bays in each aisle' && curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'barrel vaulted'"
+  },
+  {
+   "lib": "malatestiana",
+   "field": "collection",
+   "value": "owned by the commune of Cesena, not a monastery or family - the first European civic public library",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+   "tier": "wikipedia",
+   "quote": "the books were owned by the commune of Cesena",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'the books were owned by the commune of Cesena'"
+  },
+  {
+   "lib": "malatestiana",
+   "field": "status_note",
+   "value": "UNESCO Memory of the World, 2005",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+   "tier": "wikipedia",
+   "quote": "In 2005 UNESCO included the libr",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'In 2005 UNESCO included the libr'"
+  },
+  {
+   "lib": "joanina",
+   "field": "built",
+   "value": "1717-1728; three great rooms divided by decorated arches",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+   "tier": "wikipedia",
+   "quote": "there are three great rooms divided by decorated arches",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'there are three great rooms divided by decorated arches'"
+  },
+  {
+   "lib": "joanina",
+   "field": "collection",
+   "value": "two-storied gilt shelves throughout",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+   "tier": "wikipedia",
+   "quote": "The walls are covered by two storied shelves",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'The walls are covered by two storied shelves'"
+  },
+  {
+   "lib": "joanina",
+   "field": "status_note",
+   "value": "the library exhibits the Portuguese national coat of arms",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+   "tier": "wikipedia",
+   "quote": "library exhibits the national coat of arms",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'library exhibits the national coat of arms'"
+  },
+  {
+   "lib": "hereford",
+   "field": "collection",
+   "value": "the largest surviving chained library in the world",
+   "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral",
+   "tier": "wikipedia",
+   "quote": "the largest library of chained books in the world",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Hereford_Cathedral' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'the largest library of chained books in the world'"
+  },
+  {
+   "lib": "hereford",
+   "field": "collection",
+   "value": "the Hereford Mappa Mundi is chained beside the books",
+   "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral",
+   "tier": "wikipedia",
+   "quote": "the map and the chained libraries",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Hereford_Cathedral' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'the map and the chained libraries'"
+  },
+  {
+   "lib": "hereford",
+   "field": "status_note",
+   "value": "one of only four surviving 1217 Magna Cartas is displayed here",
+   "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral",
+   "tier": "wikipedia",
+   "quote": "one of only four 1217 Magna Carta",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Hereford_Cathedral' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'one of only four 1217 Magna Carta'"
+  },
+  {
+   "lib": "morgan",
+   "field": "built",
+   "value": "1902-06; the main building designed by Charles Follen McKim of McKim, Mead and White",
+   "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+   "tier": "wikipedia",
+   "quote": "The main building was designed by Charles McKim",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'The main building was designed by Charles McKim'"
+  },
+  {
+   "lib": "morgan",
+   "field": "status_note",
+   "value": "expanded by Renzo Piano and Beyer Blinder Belle",
+   "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+   "tier": "wikipedia",
+   "quote": "Renzo Piano and Beyer Blinder Belle",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'Renzo Piano and Beyer Blinder Belle'"
+  },
+  {
+   "lib": "morgan",
+   "field": "collection",
+   "value": "a library and museum in New York: three Gutenberg Bibles among its holdings",
+   "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+   "tier": "wikipedia",
+   "quote": "library and museum in New York",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'library and museum in New York'"
+  },
+  {
+   "lib": "stegen",
+   "field": "built",
+   "value": "1838-51 by Henri Labrouste; opened 4 February 1851",
+   "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+   "tier": "wikipedia",
+   "quote": "built between 1838 and 1851 by architect Henri Labrouste",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'built between 1838 and 1851 by architect Henri Labrouste'"
+  },
+  {
+   "lib": "stegen",
+   "field": "status_note",
+   "value": "the innovative cast-iron frame supporting the roof made architectural history",
+   "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+   "tier": "wikipedia",
+   "quote": "an innovative iron frame supporting the roof",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'an innovative iron frame supporting the roof'"
+  },
+  {
+   "lib": "stegen",
+   "field": "status_note",
+   "value": "opened to the public on 4 February 1851",
+   "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+   "tier": "wikipedia",
+   "quote": "opened to the public on 4 February 1851",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'opened to the public on 4 February 1851'"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "built",
+   "value": "founded 1646; the current building completed 1773",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+   "tier": "wikipedia",
+   "quote": "Founded in 1646",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'Founded in 1646'"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "collection",
+   "value": "over 45,000 books and manuscripts",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+   "tier": "wikipedia",
+   "quote": "more than 45,000 books and manuscripts",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'more than 45,000 books and manuscripts'"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "status_note",
+   "value": "the first and oldest public library in the Americas (UNESCO)",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+   "tier": "wikipedia",
+   "quote": "first and oldest public library in the Americas",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'first and oldest public library in the Americas'"
+  },
+  {
+   "lib": "stockholm",
+   "field": "built",
+   "value": "designed by Gunnar Asplund; construction began 1924, opened 1928",
+   "source": "https://en.wikipedia.org/wiki/Stockholm_Public_Library",
+   "tier": "wikipedia",
+   "quote": "construction began in 1924",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Stockholm_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 'construction began in 1924'"
+  },
+  {
+   "lib": "stockholm",
+   "field": "volumes",
+   "value": "about 2,000,000 items (4,400,000 including all media)",
+   "source": "https://en.wikipedia.org/wiki/Stockholm_Public_Library",
+   "tier": "wikipedia",
+   "quote": "2,000,000 (4,400,000 items)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Stockholm_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 '2,000,000 \\(4,400,000 items\\)'"
+  },
+  {
+   "lib": "stockholm",
+   "field": "status_note",
+   "value": "one of Stockholm’s most notable structures",
+   "source": "https://en.wikipedia.org/wiki/Stockholm_Public_Library",
+   "tier": "wikipedia",
+   "quote": "one of the city's most notable structures",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Stockholm_Public_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 \"one of the city's most notable structures\""
+  }
+ ],
+ "events": [],
+ "plans": [],
+ "books": [],
+ "corrections": []
+}

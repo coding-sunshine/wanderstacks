@@ -1,0 +1,99 @@
+{
+ "kit": "rotunda",
+ "shelfClusters": [
+  "books-wave4"
+ ],
+ "hall": {
+  "span": {
+   "v": 26,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "domeHeight": {
+   "v": 14,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "crownHeight": {
+   "v": 16,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "sides": {
+   "v": 12,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "alcoveDepth": {
+   "v": 1.6,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "alcoveWidth": {
+   "v": 4.6,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "piers": {
+   "v": 12,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "plinthHeight": {
+   "v": 6,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "galleryHeight": {
+   "v": 3.4,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "shelfUnit": {
+   "v": {
+    "width": 0.9,
+    "shelves": 7
+   },
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "materials": {
+   "v": "painted plaster, wood shelving",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Stockholm_Public_Library"
+  },
+  "drumHeight": {
+   "v": 3.5,
+   "basis": "invented",
+   "src": "no source yet; drum wall height is design fill"
+  },
+  "pierWidth": {
+   "v": 0.8,
+   "basis": "invented",
+   "src": "no source yet; pier width is design fill"
+  },
+  "lanternRadius": {
+   "v": 2.2,
+   "basis": "invented",
+   "src": "no source yet; lantern radius is design fill"
+  },
+  "corniceHeight": {
+   "v": 0.5,
+   "basis": "invented",
+   "src": "no source yet; cornice height is design fill"
+  },
+  "corniceDepth": {
+   "v": 0.4,
+   "basis": "invented",
+   "src": "no source yet; cornice depth is design fill"
+  }
+ },
+ "credits": [
+  {
+   "file": "Wikimedia Commons (Stockholm Public Library)",
+   "author": "various contributors",
+   "licence": "various free licences; see file pages",
+   "url": "https://commons.wikimedia.org/wiki/Category:Stockholm_Public_Library"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "kit": "hall",
+ "shelfClusters": [],
+ "hall": {
+  "length": {
+   "v": 40,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "width": {
+   "v": 13,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "height": {
+   "v": 9.5,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "vault": {
+   "v": "barrel",
+   "basis": "measured",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "storeys": {
+   "v": 1,
+   "basis": "measured",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "baysPerSide": {
+   "v": 11,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "alcoveDepth": {
+   "v": 1.3,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "galleryHeight": {
+   "v": 4.5,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "windows": {
+   "v": 8,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "shelfUnit": {
+   "v": {
+    "width": 0.9,
+    "shelves": 6
+   },
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "wood": {
+   "v": "dark timber",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "floor": {
+   "v": "stone flags",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  },
+  "light": {
+   "v": "daylight",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana"
+  }
+ },
+ "credits": [
+  {
+   "file": "Wikimedia Commons (Biblioteca Malatestiana interior)",
+   "author": "various contributors",
+   "licence": "various free licences; see file pages",
+   "url": "https://commons.wikimedia.org/wiki/Category:Biblioteca_Malatestiana"
+  }
+ ]
+}

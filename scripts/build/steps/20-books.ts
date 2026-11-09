@@ -176,23 +176,46 @@ const SLICES: Record<string, [RegExp, RegExp]> = {
   'burke-sublime': [/<h2><a id="A_PHILOSOPHICAL_INQUIRY"/, /<h2><a id="A_SHORT_ACCOUNT_OF_A_LATE_SHORT_ADMINISTRATION"/],
 }
 
-const rows = books.filter((b) => b.lib === 'longroom' && b.tier === 'readable-text')
+const rows = books.filter((b) => b.tier === 'readable-text')
 const failed: string[] = []
+const SKIPPED = new Set(['wikisource'])
+
+// Wrap plain full text (archive.org djvu.txt) in paragraphs for the sanitiser.
+const plainToHtml = (t: string) =>
+  t
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .split(/\n\s*\n+/)
+    .map((p) => `<p>${p.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim()}</p>`)
+    .join('\n')
 
 for (const b of rows) {
   try {
+    if (SKIPPED.has(b.read?.kind)) {
+      console.log(`books: ${b.id} skipped (${b.read?.kind} lives outside the reader)`)
+      continue
+    }
     const seBase: string | undefined = [b.read?.se_url, b.read?.url].find((u) => u?.startsWith('https://standardebooks.org/'))
+    const pgIds = (b.read?.id ? String(b.read.id).split(/\s*;\s*/) : ((b.read?.pg_ids ?? []) as unknown[]).map(String)).filter(Boolean)
     let html: string
     if (seBase) html = await download(seBase.replace(/\/$/, '') + '/text/single-page', `${b.id}.se.html`)
-    else if (b.read?.id) html = await download(`https://www.gutenberg.org/cache/epub/${b.read.id}/pg${b.read.id}-images.html`, `${b.id}.pg.html`)
-    else throw new Error('no usable source URL in data/books.json')
+    else if (b.read?.url?.endsWith('.txt')) html = plainToHtml(await download(b.read.url, `${b.id}.txt`))
+    else if (pgIds.length) {
+      html = (
+        await Promise.all(
+          pgIds.map(async (id) => {
+            const one = await download(`https://www.gutenberg.org/cache/epub/${id}/pg${id}-images.html`, `${b.id}.${id}.pg.html`)
+            const a = one.search(/\*\*\* START OF/)
+            const z = one.search(/\*\*\* END OF/)
+            if (a < 0 || z < 0) throw new Error('Gutenberg start/end markers not found')
+            return one.slice(a, z)
+          }),
+        )
+      ).join('\n')
+    } else throw new Error('no usable source URL in data/books.json')
 
     if (seBase) html = html.slice(html.indexOf('<main'), html.lastIndexOf('</main>'))
-    else {
-      const a = html.search(/\*\*\* START OF/)
-      const z = html.search(/\*\*\* END OF/)
-      if (a < 0 || z < 0) throw new Error('Gutenberg start/end markers not found')
-      html = html.slice(a, z)
+    else if (!b.read?.url?.endsWith('.txt')) {
+      // single-volume PG rows built above already sliced; nothing more here
     }
     const s = SLICES[b.id]
     if (s) {

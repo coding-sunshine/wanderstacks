@@ -1,0 +1,82 @@
+{
+ "kit": "hall",
+ "shelfClusters": [],
+ "hall": {
+  "length": {
+   "v": 60,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "width": {
+   "v": 14,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "height": {
+   "v": 11,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "vault": {
+   "v": "barrel",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "storeys": {
+   "v": 2,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "baysPerSide": {
+   "v": 10,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "alcoveDepth": {
+   "v": 1.5,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "galleryHeight": {
+   "v": 4,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "windows": {
+   "v": 10,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "shelfUnit": {
+   "v": {
+    "width": 0.9,
+    "shelves": 7
+   },
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "wood": {
+   "v": "dark timber",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "floor": {
+   "v": "timber boards",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  },
+  "light": {
+   "v": "daylight",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  }
+ },
+ "credits": [
+  {
+   "file": "Wikimedia Commons (Bibliothèque Sainte-Geneviève)",
+   "author": "various contributors",
+   "licence": "various free licences; see file pages",
+   "url": "https://commons.wikimedia.org/wiki/Category:Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve"
+  }
+ ]
+}

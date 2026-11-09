@@ -1,0 +1,82 @@
+{
+ "kit": "hall",
+ "shelfClusters": [],
+ "hall": {
+  "length": {
+   "v": 24,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "width": {
+   "v": 13,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "height": {
+   "v": 10,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "vault": {
+   "v": "barrel",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "storeys": {
+   "v": 2,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "baysPerSide": {
+   "v": 6,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "alcoveDepth": {
+   "v": 1.4,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "galleryHeight": {
+   "v": 4.2,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "windows": {
+   "v": 6,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "shelfUnit": {
+   "v": {
+    "width": 0.9,
+    "shelves": 7
+   },
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "wood": {
+   "v": "dark timber",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "floor": {
+   "v": "timber boards",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  "light": {
+   "v": "daylight",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  }
+ },
+ "credits": [
+  {
+   "file": "Wikimedia Commons (Morgan Library)",
+   "author": "various contributors",
+   "licence": "various free licences; see file pages",
+   "url": "https://commons.wikimedia.org/wiki/Category:Morgan_Library_%26_Museum"
+  }
+ ]
+}

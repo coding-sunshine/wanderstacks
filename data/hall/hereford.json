@@ -1,0 +1,82 @@
+{
+ "kit": "hall",
+ "shelfClusters": [],
+ "hall": {
+  "length": {
+   "v": 18,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "width": {
+   "v": 7.5,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "height": {
+   "v": 7,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "vault": {
+   "v": "barrel",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "storeys": {
+   "v": 2,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "baysPerSide": {
+   "v": 5,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "alcoveDepth": {
+   "v": 1.1,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "galleryHeight": {
+   "v": 3.2,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "windows": {
+   "v": 5,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "shelfUnit": {
+   "v": {
+    "width": 0.9,
+    "shelves": 6
+   },
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "wood": {
+   "v": "dark timber",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "floor": {
+   "v": "stone flags",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  },
+  "light": {
+   "v": "daylight",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Hereford_Cathedral"
+  }
+ },
+ "credits": [
+  {
+   "file": "Wikimedia Commons (Hereford Cathedral chained library)",
+   "author": "various contributors",
+   "licence": "various free licences; see file pages",
+   "url": "https://commons.wikimedia.org/wiki/Category:Chained_library,_Hereford_Cathedral"
+  }
+ ]
+}

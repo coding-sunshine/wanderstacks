@@ -1,0 +1,82 @@
+{
+ "kit": "hall",
+ "shelfClusters": [],
+ "hall": {
+  "length": {
+   "v": 42,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "width": {
+   "v": 11,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "height": {
+   "v": 12,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "vault": {
+   "v": "barrel",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "storeys": {
+   "v": 2,
+   "basis": "measured",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "baysPerSide": {
+   "v": 8,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "alcoveDepth": {
+   "v": 1.4,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "galleryHeight": {
+   "v": 4,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "windows": {
+   "v": 8,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "shelfUnit": {
+   "v": {
+    "width": 0.9,
+    "shelves": 7
+   },
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "wood": {
+   "v": "dark timber",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "floor": {
+   "v": "timber boards",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  },
+  "light": {
+   "v": "daylight",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Joanina"
+  }
+ },
+ "credits": [
+  {
+   "file": "Wikimedia Commons (Biblioteca Joanina)",
+   "author": "various contributors",
+   "licence": "various free licences; see file pages",
+   "url": "https://commons.wikimedia.org/wiki/Category:Biblioteca_Joanina"
+  }
+ ]
+}

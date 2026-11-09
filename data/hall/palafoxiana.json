@@ -1,0 +1,82 @@
+{
+ "kit": "hall",
+ "shelfClusters": [],
+ "hall": {
+  "length": {
+   "v": 35,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "width": {
+   "v": 9,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "height": {
+   "v": 9,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "vault": {
+   "v": "barrel",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "storeys": {
+   "v": 1,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "baysPerSide": {
+   "v": 8,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "alcoveDepth": {
+   "v": 1.2,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "galleryHeight": {
+   "v": 4.5,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "windows": {
+   "v": 7,
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "shelfUnit": {
+   "v": {
+    "width": 0.9,
+    "shelves": 6
+   },
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "wood": {
+   "v": "dark timber",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "floor": {
+   "v": "stone flags",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  },
+  "light": {
+   "v": "daylight",
+   "basis": "photo-estimate",
+   "src": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana"
+  }
+ },
+ "credits": [
+  {
+   "file": "Wikimedia Commons (Biblioteca Palafoxiana)",
+   "author": "various contributors",
+   "licence": "various free licences; see file pages",
+   "url": "https://commons.wikimedia.org/wiki/Category:Biblioteca_Palafoxiana"
+  }
+ ]
+}
