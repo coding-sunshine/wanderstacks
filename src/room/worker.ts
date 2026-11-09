@@ -24,8 +24,8 @@ export interface BayMsg {
 }
 
 const PALETTE = [
-  [0.36, 0.2, 0.12], [0.25, 0.12, 0.09], [0.45, 0.14, 0.1], [0.14, 0.2, 0.15],
-  [0.16, 0.17, 0.26], [0.55, 0.42, 0.26], [0.7, 0.62, 0.45], [0.3, 0.26, 0.2],
+  [0.16, 0.09, 0.06], [0.2, 0.08, 0.06], [0.07, 0.11, 0.08], [0.08, 0.09, 0.14],
+  [0.3, 0.2, 0.11], [0.12, 0.1, 0.08], [0.42, 0.34, 0.22], [0.18, 0.12, 0.09],
 ]
 
 function prng(seed: number) {
@@ -61,8 +61,9 @@ function genBay(seed: number, h: Flat, bay: number): BayMsg {
   const partColors: number[] = []
   const part = (x: number, y: number, z: number, sx: number, sy: number, sz: number) => {
     put(parts, x, y, z, sx, sy, sz)
-    const t = 0.8 + rnd() * 0.4
-    partColors.push(lin(0.3 * t), lin(0.19 * t), lin(0.1 * t))
+    // Warm multiplier only, so the real wood texture shows through.
+    const t = 0.85 + rnd() * 0.3
+    partColors.push(lin(0.95 * t), lin(0.9 * t), lin(0.84 * t))
   }
 
   for (const side of [-1, 1]) {
@@ -86,14 +87,14 @@ function genBay(seed: number, h: Flat, bay: number): BayMsg {
           while (u < alcove - 0.1) {
             if (rnd() < 0.015) { u += 0.1 + rnd() * 0.5; continue }
             const t = 0.025 + rnd() * 0.035
-            const ht = Math.min(spacing - 0.04, 0.17 + rnd() * 0.22 * (spacing / 0.35))
-            const d = 0.15 + rnd() * 0.08
+            const ht = Math.min(spacing - 0.04, 0.16 + rnd() * 0.15 * (spacing / 0.35))
+            const d = 0.1 + rnd() * 0.05
             const lean = rnd() < 0.04 ? (rnd() - 0.5) * 0.5 : 0
             put(books, side * (h.width / 2 - u - t / 2), top + 0.02 + ht / 2, zc + face * (0.17 + d / 2 + rnd() * 0.02), t, ht, d, lean)
             const c = PALETTE[Math.floor(rnd() * PALETTE.length)]
-            const v = 0.8 + rnd() * 0.4
+            const v = 0.75 + rnd() * 0.5
             bookColors.push(lin(c[0] * v), lin(c[1] * v), lin(c[2] * v))
-            u += t + 0.002
+            u += t + 0.001
           }
         }
       }

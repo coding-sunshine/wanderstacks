@@ -105,8 +105,11 @@ export function attach(api: RoomApi): () => void {
     const cl = cloud / 100
     const amb = clamp((s.alt + 8) / 22)
     const dark = clamp((2 - s.alt) / 8)
+    // Gloom: the sun contributes nothing (deep overcast or low sun) - reading rooms light their lamps.
+    const gloom = clamp((0.3 - d.key) / 0.3) * clamp(cl * 1.4)
+    const lit = Math.max(dark, gloom)
     if (lights) {
-      lights.hemi.intensity = base.hemi * (0.45 + 2.5 * amb * (1 - 0.25 * cl))
+      lights.hemi.intensity = base.hemi * (0.45 + 2.5 * amb * (1 - 0.25 * cl) + 0.25 * lit)
       lights.hemi.color.lerpColors(HEMI_NIGHT, HEMI_DAY, amb)
       if (lights.sun) {
         lights.sun.visible = d.key > 0
@@ -114,14 +117,14 @@ export function attach(api: RoomApi): () => void {
         lights.sun.position.copy(v).multiplyScalar(30)
         lights.sun.color.lerpColors(SUN_LOW, SUN_HIGH, clamp(s.alt / 25))
       }
-      if (lights.point) lights.point.intensity = base.point * (0.25 + 0.75 * amb * (1 - 0.3 * cl))
+      if (lights.point) lights.point.intensity = base.point * 1.9 * lit
       if (lights.glow) lights.glow.color.lerpColors(GLOW_NIGHT, GLOW_DAY, amb * (1 - 0.3 * cl))
       if (lights.beam) {
         lights.beam.visible = d.beams === 'on'
         lights.beam.opacity = base.beam * clamp(d.key * 1.5)
       }
     }
-    if (api.lamp) api.lamp.intensity = base.lamp * (0.06 + 2.9 * dark)
+    if (api.lamp) api.lamp.intensity = base.lamp * (0.06 + 2.9 * lit)
 
     // Outdoors: Preetham sky by day, a flat dark blue by night; fog and clear colour match the haze.
     const out = place !== 'inside'

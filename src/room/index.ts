@@ -140,7 +140,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
 
   const dust = new THREE.Points(
     own(new THREE.BufferGeometry()),
-    own(new THREE.PointsMaterial({ size: 0.06, map: own(dustTexture()), transparent: true, opacity: 0.45, depthWrite: false, color: 0xffe2a8 })),
+    own(new THREE.PointsMaterial({ size: 0.05, map: own(dustTexture()), transparent: true, opacity: 0.3, depthWrite: false, color: 0xffe2a8 })),
   )
   const dp = new Float32Array(DUST * 3)
   dust.frustumCulled = false

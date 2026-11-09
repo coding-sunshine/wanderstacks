@@ -5,7 +5,7 @@ import { buildOpenBook, type OpenBook } from './openbook'
 import { go } from '../app'
 
 const FACE = 0.12 // display book distance from the stand, along `out`
-const BOOK_Y = 1.24 // display book centre height
+const BOOK_Y = 1.2 // display book centre height
 const DIST = 2.4 // viewing distance from the book
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, props: Record<string, string> = {}, ...kids: (Node | string)[]) {

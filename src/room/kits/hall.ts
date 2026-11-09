@@ -29,12 +29,12 @@ function endWall(wins: number, bays: number, springRatio: number, domes: number)
   const c = document.createElement('canvas')
   c.width = c.height = 512
   const g = c.getContext('2d')!
-  g.fillStyle = '#221409'
+  g.fillStyle = '#3d2b18'
   g.fillRect(0, 0, 512, 512)
-  g.fillStyle = '#33200f'
+  g.fillStyle = '#54402a'
   for (let i = 1; i < bays * 2; i++) g.fillRect(Math.round((i * 512) / (bays * 2)) - 4, 0, 8, 512)
   const band = Math.round((1 - springRatio) * 512)
-  g.fillStyle = '#2b1a0c'
+  g.fillStyle = '#4a3520'
   g.fillRect(0, band - 10, 512, 20)
   const n = Math.max(3, Math.min(11, wins || 5))
   for (let i = 0; i < n; i++) {
@@ -270,6 +270,10 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   sun.shadow.normalBias = 0.03
   scene.add(sun)
   scene.add(sun.target)
+  // The entrance lantern: warms the threshold inside and lights the facade outside after dark.
+  const point = new THREE.PointLight(0xffc98a, 16, 26, 2)
+  point.position.set(0, 3.4, L / 2 - 0.6)
+  scene.add(point)
 
   // Windows sit on the vault near the springing, alternating sides; each throws a faint beam.
   const wins = Math.max(0, Math.round(h.windows))
@@ -302,6 +306,13 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   const box = own(new THREE.BoxGeometry(1, 1, 1))
   const bookMat = mat({})
   const partMat = mat({ map: wood })
+  // Real dark planks for the shelf boards; the 128px procedural wood stays as fallback.
+  loadPhoto('/rooms/tex/dark_wooden_planks_diff_1k.jpg', [1, 1], false, (t) => {
+    own(t)
+    ;(partMat as THREE.MeshLambertMaterial).map = t
+    partMat.needsUpdate = true
+    dirty()
+  }, () => {})
   const bays = new THREE.Group()
   scene.add(bays)
   let done = 0
@@ -334,7 +345,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   const sideWall = 2 * L * springing
 
   return {
-    lights: { hemi, sun, glow: glowM, beam: beamM },
+    lights: { hemi, sun, point, glow: glowM, beam: beamM },
     core,
     parts,
     start: { pos: [0, EYE, L / 2 - 1.2], yaw: 0 },

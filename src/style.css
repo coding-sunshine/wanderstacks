@@ -73,6 +73,11 @@ body::before {
 .bar .brand { font-style: italic; letter-spacing: 0.04em; color: var(--gilt); font-size: 1.05rem; }
 .bar nav { display: flex; gap: 1.1rem; align-items: baseline; }
 
+@media (max-width: 700px) {
+  /* The palette is the nav on phones: keep the island to brand + Search. */
+  .bar nav a { display: none; }
+}
+
 /* Buttons & chips */
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer;
