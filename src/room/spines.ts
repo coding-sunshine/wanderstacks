@@ -1,12 +1,12 @@
 import * as THREE from 'three'
 import { hash, type RoomApi } from './kit'
-import { binding, spineLabel } from './cover'
+import { binding } from './cover'
 import { buildOpenBook, type OpenBook } from './openbook'
 import { go } from '../app'
 
-const FACE = 0.27 // spine face distance from the stand, along `out`
-const BOOK_Y = 1.465 // spine centre height
-const DIST = 2.4 // viewing distance from the spine face
+const FACE = 0.12 // display book distance from the stand, along `out`
+const BOOK_Y = 1.24 // display book centre height
+const DIST = 2.4 // viewing distance from the book
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, props: Record<string, string> = {}, ...kids: (Node | string)[]) {
   const e = document.createElement(tag)
@@ -30,7 +30,8 @@ export function attach(api: RoomApi) {
   const wood = own(new THREE.MeshLambertMaterial({ color: 0x3b2614 }))
   const leather = own(new THREE.MeshLambertMaterial({ color: 0x3b2614 }))
   const pages = own(new THREE.MeshLambertMaterial({ color: 0xe3d6b4 }))
-  const post = box(0.08, 1.15, 0.08), ledge = box(0.5, 0.04, 0.42)
+  const post = box(0.07, 1.12, 0.07)
+  const desk = box(0.42, 0.025, 0.32) // sloped board the book rests on
 
   const group = new THREE.Group()
   scene.add(group)
@@ -39,26 +40,31 @@ export function attach(api: RoomApi) {
     const g = new THREE.Group()
     g.position.set(...s.at)
     g.rotation.y = Math.atan2(s.out[0], s.out[1])
-    const shelfBook = lib.shelves[i]!
-    // Real spines differ in height and wear; the label faces the room.
-    const h = 0.52 + (hash(shelfBook.id) % 3) * 0.03
-    const tex = own(new THREE.CanvasTexture(spineLabel(shelfBook)))
-    tex.colorSpace = THREE.SRGBColorSpace
-    const spineM = own(new THREE.MeshLambertMaterial({ map: tex }))
-    const book = new THREE.Mesh(box(0.12, h, 0.34), [leather, leather, pages, leather, spineM, leather])
-    book.position.set(0, 1.19 + h / 2, 0.1)
-    book.userData.index = i
-    pickables.push(book)
-    g.add(book)
-    addPost(g)
+    addStand(g, lib.shelves[i]!, i)
     group.add(g)
   })
-  function addPost(g: THREE.Group) {
+  function addStand(g: THREE.Group, shelfBook: NonNullable<RoomApi['lib']['shelves']>[number], i: number) {
     const p = new THREE.Mesh(post, wood)
-    p.position.set(0, 0.575, 0)
-    const l = new THREE.Mesh(ledge, wood)
-    l.position.set(0, 1.17, 0.1)
-    g.add(p, l)
+    p.position.set(0, 0.56, 0)
+    p.castShadow = true
+    // The sloped reading desk; the display volume lies on its plane, parented so it never sinks.
+    const d = new THREE.Mesh(desk, wood)
+    d.position.set(0, 1.155, 0.12)
+    d.rotation.x = -0.25
+    d.castShadow = true
+    const thick = 0.035 + (hash(shelfBook.id) % 3) * 0.008
+    const coverTex = own(new THREE.CanvasTexture(binding(shelfBook)))
+    coverTex.colorSpace = THREE.SRGBColorSpace
+    coverTex.anisotropy = 8
+    // A whisper of emissive so the cover reads even in the shelf's shadow.
+    const coverM = own(new THREE.MeshLambertMaterial({ map: coverTex, emissive: 0x2a1d10 }))
+    const book = new THREE.Mesh(box(0.24, thick, 0.31), [leather, pages, coverM, leather, leather, leather])
+    book.position.set(0, 0.0125 + thick / 2 + 0.004, 0)
+    book.castShadow = true
+    book.userData.index = i
+    d.add(book)
+    pickables.push(book)
+    g.add(p, d)
   }
 
   // ---- place: spines exist only inside ----
@@ -72,6 +78,7 @@ export function attach(api: RoomApi) {
     openBook.dispose()
     openBook = null
     openId = null
+    api.shadows?.()
     api.render()
   }
   // A readable book opens on the lectern it was pulled from, set with its own first page.
@@ -87,11 +94,15 @@ export function attach(api: RoomApi) {
       if (seq !== openSeq) return
       const ob = buildOpenBook(meta, part)
       const s0 = slots[i]!
-      ob.group.position.set(s0.at[0] + s0.out[0] * 0.34, 1.27, s0.at[2] + s0.out[1] * 0.34)
+      // Lies on the same sloped desk plane as the display volume it replaces.
+      ob.group.rotation.order = 'YXZ'
       ob.group.rotation.y = Math.atan2(s0.out[0], s0.out[1])
+      ob.group.rotation.x = -0.25
+      ob.group.position.set(s0.at[0] + s0.out[0] * 0.14, 1.245, s0.at[2] + s0.out[1] * 0.14)
       scene.add(ob.group)
       openBook = ob
       openId = s.id
+      api.shadows?.()
       api.render()
     } catch {
       /* no built text yet — the dialogue still tells the story */

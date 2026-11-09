@@ -63,6 +63,8 @@ export interface RoomApi {
   /** Canvas tap hooks; the first to return true swallows the tap (no walk). */
   taps: ((e: PointerEvent) => boolean)[]
   render(): void
+  /** Ask for a one-off shadow-map recompute (sun, place, or geometry changed). */
+  shadows?(): void
   /** The visitor's own lamp, and the kit's steerable lights. */
   lamp?: THREE.PointLight
   lights?: Lights

@@ -8,7 +8,7 @@ function canvas(w: number, h: number, draw: (g: CanvasRenderingContext2D) => voi
   const t = new THREE.CanvasTexture(c)
   t.colorSpace = THREE.SRGBColorSpace
   t.wrapS = t.wrapT = THREE.RepeatWrapping
-  t.anisotropy = 4
+  t.anisotropy = 8
   if (repeat) t.repeat.set(...repeat)
   return t
 }
@@ -70,18 +70,32 @@ export const spineTexture = (repeat: [number, number]) =>
   }, repeat)
 
 export const vaultTexture = (bays: number) =>
-  canvas(128, 128, (g) => {
+  canvas(256, 128, (g) => {
     const r = rng(31)
-    g.fillStyle = '#8a7c63'
-    g.fillRect(0, 0, 128, 128)
-    for (let i = 0; i < 300; i++) {
-      g.fillStyle = `rgba(60,45,25,${r() * 0.07})`
-      g.fillRect(r() * 128, r() * 128, 3, 3)
+    // Plaster with a gentle crown gradient so the vault reads curved, not flat.
+    const grad = g.createLinearGradient(0, 0, 0, 128)
+    grad.addColorStop(0, '#877857')
+    grad.addColorStop(0.5, '#94876a')
+    grad.addColorStop(1, '#877857')
+    g.fillStyle = grad
+    g.fillRect(0, 0, 256, 128)
+    for (let i = 0; i < 420; i++) {
+      g.fillStyle = `rgba(60,45,25,${r() * 0.06})`
+      g.fillRect(r() * 256, r() * 128, 3, 2)
     }
+    // A rib band for every bay, with a soft highlight on its lit edge.
+    for (let b = 0; b <= bays; b++) {
+      const y = Math.round((b * 128) / bays)
+      g.fillStyle = 'rgba(38,26,12,0.5)'
+      g.fillRect(0, y - 1.5, 256, 3)
+      g.fillStyle = 'rgba(255,236,190,0.14)'
+      g.fillRect(0, y + 1.5, 256, 1.5)
+    }
+    // Springing beam and gilt fillet (the texture edge is both springings).
     g.fillStyle = '#2c1c0f'
-    g.fillRect(0, 0, 128, 10)
+    g.fillRect(0, 0, 256, 10)
     g.fillStyle = 'rgba(201,162,74,0.55)'
-    g.fillRect(0, 10, 128, 1.5)
+    g.fillRect(0, 10, 256, 1.5)
   }, [1, bays])
 
 export const beamTexture = () =>

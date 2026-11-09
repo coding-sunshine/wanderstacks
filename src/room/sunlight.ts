@@ -121,7 +121,7 @@ export function attach(api: RoomApi): () => void {
         lights.beam.opacity = base.beam * clamp(d.key * 1.5)
       }
     }
-    if (api.lamp) api.lamp.intensity = base.lamp * (0.1 + 3.4 * dark)
+    if (api.lamp) api.lamp.intensity = base.lamp * (0.06 + 2.9 * dark)
 
     // Outdoors: Preetham sky by day, a flat dark blue by night; fog and clear colour match the haze.
     const out = place !== 'inside'
@@ -150,6 +150,7 @@ export function attach(api: RoomApi): () => void {
 
     const precipKind = settled && wx ? precipOf(wx.code) : 'none'
     rain.set(out ? precipKind : 'none')
+    api.shadows?.()
     api.render()
   }
 

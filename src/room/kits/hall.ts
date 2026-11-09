@@ -113,11 +113,11 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   scene.add(core)
   const parts: Built['parts'] = {}
   const mat = (p: THREE.MeshLambertMaterialParameters) => own(new THREE.MeshLambertMaterial(p))
-  const std = (p: THREE.MeshStandardMaterialParameters) => own(new THREE.MeshStandardMaterial(p))
   const plane = (key: string, w: number, hh: number, m: THREE.Material, x: number, y: number, z: number, ry = 0, rx = 0) => {
     const mesh = new THREE.Mesh(own(new THREE.PlaneGeometry(w, hh)), m)
     mesh.position.set(x, y, z)
     mesh.rotation.set(rx, ry, 0)
+    mesh.receiveShadow = true
     core.add(mesh)
     ;(parts[key] ??= []).push(mesh)
   }
@@ -128,7 +128,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   const floorMat = stone
     ? mat({ map: own(chequer([W / 0.55, L / 0.55])) })
     : timberFloor
-      ? std({ roughness: 0.75 })
+      ? mat({})
       : mat({ map: own(floorTexture([W, L])), color: 0x9a8a7a })
   if (timberFloor && !stone) {
     loadPhoto(
@@ -137,12 +137,12 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
       false,
       (t) => {
         own(t)
-        ;(floorMat as THREE.MeshStandardMaterial).map = t
+        ;(floorMat as THREE.MeshLambertMaterial).map = t
         floorMat.needsUpdate = true
         dirty()
       },
       () => {
-        ;(floorMat as THREE.MeshStandardMaterial).map = own(floorTexture([W, L]))
+        ;(floorMat as THREE.MeshLambertMaterial).map = own(floorTexture([W, L]))
         floorMat.needsUpdate = true
         dirty()
       },
@@ -153,7 +153,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
       false,
       (t) => {
         own(t)
-        ;(floorMat as THREE.MeshStandardMaterial).normalMap = t
+        ;(floorMat as THREE.MeshLambertMaterial).normalMap = t
         floorMat.needsUpdate = true
         dirty()
       },
@@ -163,19 +163,19 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   plane('floor', W, L, floorMat, 0, 0, 0, 0, -Math.PI / 2)
 
   // Shelf walls: a real CC0 photograph of book spines, mirror-tiled; procedural rows as fallback.
-  const wallMat = std({ roughness: 0.92, color: 0xf2ead8 })
+  const wallMat = mat({ color: 0xf2ead8 })
   loadPhoto(
     '/rooms/tex/spines_unsplash_cc0.jpg',
-    [L / 5, springing / 3.4],
+    [L / 2.8, springing / 2.6],
     true,
     (t) => {
       own(t)
-      ;(wallMat as THREE.MeshStandardMaterial).map = t
+      ;(wallMat as THREE.MeshLambertMaterial).map = t
       wallMat.needsUpdate = true
       dirty()
     },
     () => {
-      ;(wallMat as THREE.MeshStandardMaterial).map = own(spineTexture([L / 3, springing / 2.6]))
+      ;(wallMat as THREE.MeshLambertMaterial).map = own(spineTexture([L / 3, springing / 2.6]))
       wallMat.needsUpdate = true
       dirty()
     },
@@ -238,6 +238,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
       }
       g.computeVertexNormals()
       const m = new THREE.Mesh(g, roof)
+      m.receiveShadow = true
       core.add(m)
       ;(parts[!d ? 'vault' : d.z === 0 ? 'domeHeight' : 'sideDomeHeight'] ??= []).push(m)
     }
@@ -247,6 +248,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
     const vault = new THREE.Mesh(vaultGeo, mat({ map: own(vaultTexture(N)), side: THREE.BackSide, emissive: 0x3a2412 }))
     vault.scale.set(W / 2, rise, 1)
     vault.position.y = springing
+    vault.receiveShadow = true
     core.add(vault)
     parts.vault = [vault]
   }
@@ -255,7 +257,19 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   scene.add(hemi)
   const sun = new THREE.DirectionalLight(0xffe7b8, 0.7)
   sun.position.set(-3, 10, 2)
+  // Real shadows: a single tight orthographic cascade from the daylight sun.
+  sun.castShadow = true
+  sun.shadow.mapSize.set(1024, 1024)
+  sun.shadow.camera.left = -48
+  sun.shadow.camera.right = 48
+  sun.shadow.camera.top = 48
+  sun.shadow.camera.bottom = -48
+  sun.shadow.camera.near = 1
+  sun.shadow.camera.far = 55
+  sun.shadow.bias = -0.0004
+  sun.shadow.normalBias = 0.03
   scene.add(sun)
+  scene.add(sun.target)
 
   // Windows sit on the vault near the springing, alternating sides; each throws a faint beam.
   const wins = Math.max(0, Math.round(h.windows))
@@ -303,6 +317,8 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
       im.instanceMatrix = new THREE.InstancedBufferAttribute(matrices, 16)
       im.instanceColor = new THREE.InstancedBufferAttribute(colors, 3)
       im.matrixAutoUpdate = false
+      im.castShadow = true
+      im.receiveShadow = true
       bays.add(im)
     }
     done++

@@ -16,7 +16,6 @@ preview.html
 
 .DS_Store
 public/lib/
-public/book/
 public/scan/
 .cache/
 test-results/

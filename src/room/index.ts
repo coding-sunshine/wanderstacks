@@ -112,13 +112,17 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
 
   const scene = new THREE.Scene()
   scene.background = new THREE.Color(0x0b0805)
-  scene.fog = new THREE.FogExp2(0x150e08, 0.02)
+  scene.fog = new THREE.FogExp2(0x150e08, 0.013)
   const camera = new THREE.PerspectiveCamera(65, 1, 0.1, 120)
   const owned: { dispose(): void }[] = []
   const own = <T extends { dispose(): void }>(x: T) => (owned.push(x), x)
 
   renderer.toneMapping = THREE.ACESFilmicToneMapping
   renderer.toneMappingExposure = reduced ? 1 : 0.02
+  renderer.shadowMap.enabled = true
+  renderer.shadowMap.type = THREE.PCFShadowMap
+  // Shadows are static while walking: recompute only when the sun, place, or geometry changes.
+  renderer.shadowMap.autoUpdate = false
 
   let dirty = true
   let dustOn = !reduced
@@ -317,6 +321,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     hint.textContent = out ? 'Drag to look. W A S D or arrow keys to walk to the door.' : HINT
     publishCam()
     dirty = true
+    renderer.shadowMap.needsUpdate = true
   }
   let busy = false
   function go(p: Place) {
@@ -340,6 +345,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
     const b = kit.build({ lib, scene: kitScene, own, dirty: () => (dirty = true), reduced })
     built = b
     show(firstPlace(lib, ex))
+    void b.ready.then(() => (renderer.shadowMap.needsUpdate = true))
 
     const box = new THREE.Box3().setFromObject(b.core)
     const r = (n: 'x' | 'y' | 'z') => [round2(box.min[n]), round2(box.max[n])]
@@ -365,6 +371,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
       clamp: (p) => clampAt(p),
       slots: b.spineSlots,
       render: () => (dirty = true),
+      shadows: () => (renderer.shadowMap.needsUpdate = true),
     }
     detach = [evidence, tour, sound, sunlight, spines, story].map((m) => m.attach(api))
 
