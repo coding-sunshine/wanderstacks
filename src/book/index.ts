@@ -3,6 +3,7 @@ import type { Mount } from '../types'
 type Pin = { id: string; n: string; p: string; href: string | null }
 type Stamp = { id: string; at: number }
 type Book = { name: string; entries: { id: string; at: number }[] }
+type Read = { id: string; title: string; at: number }
 
 const read = <T>(key: string, fallback: T): T => {
   try {
@@ -50,7 +51,11 @@ export const mount: Mount = (app) => {
   nameLabel.append(name)
   const ledger = document.createElement('ul')
   ledger.className = 'ledger'
-  root.append(head, lede, h1, grid, h2, nameLabel, ledger)
+  const hReads = document.createElement('h2')
+  hReads.className = 'eyebrow shelf-h'
+  const readsUl = document.createElement('ul')
+  readsUl.className = 'ledger'
+  root.append(head, lede, h1, grid, hReads, readsUl, h2, nameLabel, ledger)
 
   fetch('/lib/pins.json')
     .then((r) => r.json())
@@ -76,6 +81,23 @@ export const mount: Mount = (app) => {
         b.append(stamp, n, d)
         li.append(b)
         grid.append(li)
+      }
+      const reads = read<Read[]>('wl.reads', [])
+      hReads.textContent = `Books finished · ${reads.length}`
+      for (const r of [...reads].reverse()) {
+        const li = document.createElement('li')
+        li.className = 'ledger-row'
+        const a = document.createElement('a')
+        a.href = `/read/${r.id}`
+        a.textContent = r.title
+        li.append(a, ` · ${new Date(r.at).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' })}`)
+        readsUl.append(li)
+      }
+      if (!reads.length) {
+        const li = document.createElement('li')
+        li.className = 'ledger-row'
+        li.textContent = 'No books finished yet — pull one from a shelf and read to the end.'
+        readsUl.append(li)
       }
       const book = read<Book>('wl.bookv2', { name: '', entries: [] })
       const names = new Map(pins.map((p) => [p.id, p.n]))

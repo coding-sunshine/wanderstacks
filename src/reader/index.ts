@@ -3,6 +3,8 @@ import { fade, go, reducedMotion } from '../app'
 import type { BookMeta, BookPart, Mount } from '../types'
 import { paginate } from './paginate'
 import { getMeta, getPart, persistOnce } from './store'
+import { binding } from '../room/cover'
+import { headpiece } from './ornament'
 import './reader.css'
 
 const AHEAD = 6
@@ -95,12 +97,91 @@ export const mount: Mount = (el, { book }) => {
     })
   }
 
+  // The open volume: leather boards around the page block, gilt edges on the right.
+  let coverUrl: string | null = null
+  const volumeOf = () => {
+    const v = h('div', 'rd-volume')
+    if (!coverUrl && meta) {
+      coverUrl = binding({ id: meta.id, title: meta.title, author: meta.author, date: meta.edition }).toDataURL()
+    }
+    if (coverUrl) v.style.setProperty('--rd-cover', `url(${coverUrl})`)
+    return v
+  }
+  // Front matter: the inside of the cover, then a half-title, before page one.
+  const pasteDown = () => {
+    const p = h('div', 'rd-page rd-pastedown')
+    const info = h('p', 'rd-paste-info', meta.edition ?? meta.title)
+    p.append(info)
+    return p
+  }
+  const halfTitle = () => {
+    const p = h('div', 'rd-page rd-halftitle')
+    const orn = h('div', 'rd-orn rd-orn--big')
+    orn.style.backgroundImage = headpiece(meta.title)
+    p.append(orn, h('h1', '', meta.title))
+    if (meta.author) p.append(h('p', 'rd-half-by', meta.author))
+    p.append(h('p', 'rd-half-hint', 'Turn the page to begin'))
+    return p
+  }
+
+  // A soft page-turn rustle, synthesised on the fly; silent under reduced motion.
+  let actx: AudioContext | null = null
+  const rustle = () => {
+    if (reduced) return
+    try {
+      actx ??= new AudioContext()
+      void actx.resume()
+      const dur = 0.09
+      const buf = actx.createBuffer(1, Math.floor(actx.sampleRate * dur), actx.sampleRate)
+      const d = buf.getChannelData(0)
+      for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * (1 - i / d.length) ** 2
+      const src = actx.createBufferSource()
+      src.buffer = buf
+      const bp = actx.createBiquadFilter()
+      bp.type = 'bandpass'
+      bp.frequency.value = 2600
+      bp.Q.value = 0.7
+      const g = actx.createGain()
+      g.gain.value = 0.05
+      src.connect(bp).connect(g).connect(actx.destination)
+      src.start()
+    } catch { /* sound is a garnish, never a blocker */ }
+  }
+
+  // Finishing a book earns a keepsake, like walking into a room earns a stamp.
+  let stamped = false
+  const stampFinish = () => {
+    if (stamped) return
+    stamped = true
+    try {
+      const reads = JSON.parse(localStorage.getItem('wl.reads') ?? '[]') as { id: string; title: string; at: number }[]
+      if (!reads.some((r) => r.id === book)) {
+        reads.push({ id: book, title: meta.title, at: Date.now() })
+        localStorage.setItem('wl.reads', JSON.stringify(reads))
+      }
+      const t = h('p', 'rd-toast')
+      const a = h('a', '', 'keepsakes')
+      a.href = '/book'
+      t.append('Read to the end — stamped in your ', a, '.')
+      root.append(t)
+      requestAnimationFrame(() => (t.dataset.on = 'true'))
+      setTimeout(() => {
+        t.dataset.on = 'false'
+        setTimeout(() => t.remove(), 700)
+      }, 4200)
+    } catch { /* keepsakes are best-effort */ }
+  }
+
   function makeFlip(els: HTMLElement[], start: number, onFlip: (i: number) => void): Turner {
     const host = h('div', 'rd-book')
-    stage.replaceChildren(host)
+    host.style.width = `${size.pw * 2}px` // wide enough for PageFlip to open a two-page spread
+    const volume = volumeOf()
+    volume.append(host)
+    stage.replaceChildren(volume)
     const f = new PageFlip(host, {
-      width: size.pw, height: size.ph, size: 'fixed', usePortrait: true, showCover: false,
+      width: size.pw, height: size.ph, size: 'fixed', usePortrait: false, showCover: false,
       useMouseEvents: false, mobileScrollSupport: false, flippingTime: 700, maxShadowOpacity: 0.4, startPage: start,
+      autoSize: false,
     })
     f.loadFromHTML(els)
     f.on('flip', (e) => onFlip(e.data as number))
@@ -117,7 +198,9 @@ export const mount: Mount = (el, { book }) => {
   function makePlain(els: HTMLElement[], start: number, onFlip: (i: number) => void): Turner {
     const host = h('div', 'rd-book rd-plain')
     host.style.cssText = `width:${size.pw}px;height:${size.ph}px`
-    stage.replaceChildren(host)
+    const volume = volumeOf()
+    volume.append(host)
+    stage.replaceChildren(volume)
     let pages = els
     let i = start
     const show = (n: number, animate: boolean) => {
@@ -152,6 +235,8 @@ export const mount: Mount = (el, { book }) => {
     status.textContent = `Page ${last ? n : i + 1} of ${n}${complete() ? '' : '+'}`
     prev.disabled = i <= 0
     next.disabled = last
+    rustle()
+    if (last && complete()) stampFinish()
     if (!complete() && i >= n - AHEAD) void loadNext()
   }
 
@@ -173,7 +258,7 @@ export const mount: Mount = (el, { book }) => {
 
   function build(start: number) {
     turner?.destroy()
-    const els = elements()
+    const els = [...(size.single ? [halfTitle()] : [pasteDown(), halfTitle()]), ...elements()]
     turner = (size.single ? makePlain : makeFlip)(els, Math.min(start, els.length - 1), onChange)
     onChange(turner.index())
   }

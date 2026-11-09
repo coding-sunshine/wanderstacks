@@ -1,5 +1,7 @@
 export interface Block { k: 'p' | 'h2' | 'h4'; html: string; q: boolean }
 
+import { headpiece } from './ornament'
+
 export function blocks(chapter: { title: string; html: string }): Block[] {
   const out: Block[] = [{ k: 'h2', html: esc(chapter.title), q: false }]
   let q = false
@@ -44,11 +46,19 @@ export function paginate(chapters: { title: string; html: string }[], page: HTML
 
   for (const ch of chapters) {
     commit()
+    // A gilt headpiece opens every chapter, like a well-set printed book.
+    const orn = document.createElement('div')
+    orn.className = 'rd-orn'
+    orn.style.backgroundImage = headpiece(ch.title)
+    text.append(orn)
+    let firstP = true
     for (const b of blocks(ch)) {
       let rest = b.html
       let cont = false
       while (rest) {
         const el = make(b, rest, cont)
+        if (b.k === 'p' && firstP && !cont) el.classList.add('dc')
+        if (b.k === 'p') firstP = false
         text.append(el)
         if (!over() || b.k !== 'p') break
         let lo = 0

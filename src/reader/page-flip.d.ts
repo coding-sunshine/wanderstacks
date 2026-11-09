@@ -11,6 +11,7 @@ declare module 'page-flip' {
     drawShadow: boolean
     maxShadowOpacity: number
     startPage: number
+    autoSize: boolean
   }
   export class PageFlip {
     constructor(block: HTMLElement, setting: Partial<FlipSettings>)
