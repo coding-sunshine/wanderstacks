@@ -3,7 +3,7 @@ import { mockIiif, roomRoot } from './iiif'
 import { ready, roomIds, watchErrors } from './util'
 
 const stops: [string, string][] = [
-  ['/', 'globe'],
+  ['/', 'home'],
   ['/ledger/alexandria', 'ledger'],
   ['/stgall', 'stgall'],
   ['/darwin', 'darwin'],
@@ -26,17 +26,18 @@ test('every Phase B view mounts real content with a clean console and network', 
   expect(errors).toEqual([])
 })
 
-test('client navigation walks globe to ledger, back, then to a room control', async ({ page }) => {
+test('client navigation walks atlas to ledger, back, then to a room control', async ({ page }) => {
   const errors = watchErrors(page)
   await mockIiif(page)
-  await page.goto('/')
-  await ready(page, 'globe')
-  await page.locator('[data-view="globe"]').getByLabel('Year').fill('1000')
-  await page.locator('[data-view="globe"]').getByRole('button', { name: /Alexandria/ }).click()
+  await page.goto('/atlas')
+  await ready(page, 'home')
+  await page.locator('#xrange').fill('1000')
+  await page.locator('#xlist').getByText('Library of Alexandria', { exact: true }).click()
+  await page.locator('#xcard a[href="/ledger/alexandria"]').click()
   await page.waitForURL('**/ledger/alexandria', { timeout: 15_000 })
   await ready(page, 'ledger')
   await page.goBack()
-  await ready(page, 'globe')
+  await ready(page, 'home')
   await page.goto('/room/admont')
   await ready(page, 'room')
   await expect(roomRoot(page).locator('.room-controls button')).toHaveCount(3)
@@ -47,8 +48,10 @@ test('no IIIF in cache', async ({ page }) => {
   const errors = watchErrors(page)
   await mockIiif(page)
   await page.goto('/')
+  await ready(page, 'home')
   await page.evaluate(() => navigator.serviceWorker.ready.then(() => 0))
   await page.reload()
+  await ready(page, 'home')
   await page.waitForFunction(() => !!navigator.serviceWorker.controller)
   for (const [path, view] of [['/scan/firstfolio', 'scan'], ['/stgall', 'stgall']] as const) {
     await page.goto(path)

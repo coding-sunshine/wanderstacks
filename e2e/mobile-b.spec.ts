@@ -5,7 +5,7 @@ import { ready, roomIds, watchErrors } from './util'
 test.use({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true })
 
 const stops: [string, string][] = [
-  ['/', 'globe'],
+  ['/', 'home'],
   ['/ledger/alexandria', 'ledger'],
   ['/stgall', 'stgall'],
   ['/darwin', 'darwin'],

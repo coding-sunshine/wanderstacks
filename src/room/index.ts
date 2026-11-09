@@ -43,7 +43,7 @@ export const mount: Mount = (el, { lib }) => {
       if (!dead) stop = start(root, data, kit)
     })
     .catch(() => {
-      root.innerHTML = '<div class="page"><h1>Not on any shelf</h1><p><a href="/">Back to the globe</a></p></div>'
+      root.innerHTML = '<div class="page"><h1>Not on any shelf</h1><p><a href="/">Back to the atlas</a></p></div>'
       root.dataset.ready = 'true'
     })
   return () => { dead = true; stop() }

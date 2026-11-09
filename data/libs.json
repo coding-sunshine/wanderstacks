@@ -10,8 +10,8 @@
   "yl": "1712–32",
   "tier": "mvp",
   "ev": "known",
-  "st": "Closes for restoration; Kells moves out late 2027, works to about 2030",
-  "stFrom": 2025,
+  "st": "Open to visitors; Old Library closes late 2027, reopening expected 2030",
+  "stFrom": 2026,
   "dim": "63.7 × 12.2 × 14.2 m; 40 alcoves on two storeys; barrel vault of 1859–61",
   "book": "Book of Kells (in the Treasury; scan needs Trinity's permission)",
   "read": "Five Trinity-linked texts: Swift, Goldsmith, Stoker, Wilde, Synge",
@@ -43,8 +43,8 @@
   "lat": 50.0862,
   "lon": 14.3893,
   "k": "hall",
-  "y": 1679,
-  "yl": "1671–79",
+  "y": 1794,
+  "yl": "1792–94",
   "tier": "mvp",
   "ev": "known",
   "dim": "Philosophical Hall 32 × 10 × 14 m; Theological Hall size unpublished",
@@ -83,13 +83,13 @@
   "tier": "mvp",
   "ev": "probable",
   "evNote": "Facade known, interior probable",
-  "st": "Excavated 1903–04; facade rebuilt by anastylosis, 1970–78",
+  "st": "Excavated 1903–04; facade rebuilt by anastylosis, 1970–78; part of the Ephesus UNESCO site (2015)",
   "stFrom": 1970,
   "dim": "Hall 16.7 × 10.9 m; facade 21 m wide, over 16 m high; interior lost 262 CE",
   "book": "Four CC BY models of the facade exist",
   "read": "Fact layer for the Alexandria toggle",
   "phase": "B",
-  "found": 1970,
+  "found": 1903,
   "wd": "Q744406"
  },
  {
@@ -104,8 +104,8 @@
   "lost": true,
   "tier": "mvp",
   "ev": "speculative",
-  "st": "Conjectural scene, shown beside Celsus",
-  "stFrom": -700,
+  "st": "No remains identified; a conjectural scene, shown beside Celsus. The Bibliotheca Alexandrina (2002) commemorates it",
+  "stFrom": 2002,
   "dim": "No plan survives; evidence scored 1 of 5",
   "book": "Myth panel: damaged in 48 BCE, end date unknown",
   "read": "Line-drawing shader, evidence toggle on",
@@ -174,7 +174,7 @@
   "tier": "w2",
   "ev": "known",
   "dim": "88 × 9.5 × 13 m (sources give 83–88 m)",
-  "vol": "About 30,000 volumes (and resident bats)",
+  "vol": "Over 36,000 volumes (and resident bats)",
   "phase": "C",
   "bg": true,
   "st": "Closed Aug 2025 for conservation; reopening unconfirmed",
@@ -258,7 +258,8 @@
   "book": "Codex Aureus, Vitr. 17 (catalog only)",
   "phase": "C",
   "bg": true,
-  "wd": "Q3848863"
+  "wd": "Q3848863",
+  "vol": "More than 40,000 volumes"
  },
  {
   "id": "gabinete",
@@ -315,10 +316,11 @@
   "yl": "1585–88, frescoes to 1590",
   "tier": "w2",
   "ev": "known",
-  "dim": "70 × 11 m (Vatican News); height not published",
+  "dim": "70 × 15 m (Vatican Library); height not published",
   "book": "Vergilius Vaticanus (permission only)",
   "phase": "C",
-  "wd": "Q213678"
+  "wd": "Q213678",
+  "st": "Reading room for qualified scholars only (Salone Sistino reading room since Oct 2017)"
  },
  {
   "id": "wiblingen",
@@ -381,7 +383,7 @@
   "yl": "1928",
   "tier": "w2",
   "ev": "known",
-  "st": "Closed June 2024 to early 2028",
+  "st": "Closed since 20 June 2024, reopening early 2028",
   "stFrom": 2024,
   "phase": "later",
   "wd": "Q1246991"
@@ -418,7 +420,10 @@
   "tier": "lost",
   "ev": "probable",
   "phase": "later",
-  "wd": "Q856590"
+  "wd": "Q856590",
+  "found": 1878,
+  "st": "Ruins on the Acropolis; UNESCO World Heritage Site",
+  "stFrom": 2014
  },
  {
   "id": "herculaneum",
@@ -434,8 +439,8 @@
   "tier": "lost",
   "ev": "known",
   "vol": "About 1,800 carbonised scrolls",
-  "st": "Ink letters seen in PHerc. 1667, Dec 2025",
-  "stFrom": 2025,
+  "st": "PHerc. 1667 virtually unwrapped and read in full, 22 columns, June 2026; villa mostly still buried",
+  "stFrom": 2026,
   "read": "Scroll-unrolling mini-game",
   "phase": "later",
   "bg": true,
@@ -457,7 +462,10 @@
   "phase": "later",
   "bg": true,
   "wd": "Q216243",
-  "dim": "Excavated site of 23 ha (UNESCO); building counts unproven"
+  "dim": "Excavated site of 23 ha (UNESCO); building counts unproven",
+  "found": 1847,
+  "st": "UNESCO World Heritage Site; ASI-managed ruins open to visitors",
+  "stFrom": 2016
  },
  {
   "id": "dunhuang",
@@ -476,7 +484,9 @@
   "book": "Diamond Sutra, 868",
   "phase": "later",
   "bg": true,
-  "wd": "Q28097247"
+  "wd": "Q28097247",
+  "st": "Mogao Caves UNESCO site; Cave 17 manuscripts dispersed (1907–08) to London, Paris and elsewhere",
+  "stFrom": 1987
  },
  {
   "id": "buda",
@@ -508,7 +518,7 @@
   "ev": "known",
   "vol": "Total unknown; about 350,000 evacuated in 2012–13",
   "st": "4,203 burned or stolen in 2012–13; returns began Aug 2025",
-  "stFrom": 2012,
+  "stFrom": 2025,
   "read": "Courtyard walk about the 2025 return",
   "phase": "later",
   "bg": true,
@@ -521,13 +531,15 @@
   "lat": 25.3244,
   "lon": 87.2867,
   "k": "site",
-  "y": 800,
-  "yl": "About 800 to about 1193",
+  "y": 783,
+  "yl": "About 783 to about 1193",
   "lost": 1193,
   "tier": "lost",
   "ev": "probable",
   "phase": "later",
-  "wd": "Q1634624"
+  "wd": "Q1634624",
+  "found": 1960,
+  "st": "Partly excavated ruins with an ASI site museum, Antichak, Bhagalpur"
  },
  {
   "id": "thanjavur",
@@ -537,11 +549,13 @@
   "lon": 79.1361,
   "k": "hall",
   "y": 1535,
-  "yl": "Nayak era, 1535–1676",
+  "yl": "Nayak royal library from 1535; Serfoji II expanded it 1798–1832; public 1918",
   "tier": "later",
-  "ev": "probable",
+  "ev": "known",
   "phase": "later",
-  "wd": "Q3135924"
+  "wd": "Q3135924",
+  "vol": "49,000+ volumes incl. 39,300 manuscripts",
+  "book": "Modi-script records of the Thanjavur Marathas"
  },
  {
   "id": "khudabakhsh",
@@ -553,9 +567,11 @@
   "y": 1891,
   "yl": "1891",
   "tier": "later",
-  "ev": "probable",
+  "ev": "known",
   "phase": "later",
-  "wd": "Q6402791"
+  "wd": "Q6402791",
+  "vol": "21,136 manuscripts; about 2.08 million printed books",
+  "book": "Timurnama"
  },
  {
   "id": "nli",
@@ -565,11 +581,12 @@
   "lon": 88.3333,
   "k": "hall",
   "y": 1836,
-  "yl": "1836",
+  "yl": "1836 (Calcutta Public Library); National Library of India from 1953",
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q619913"
+  "wd": "Q619913",
+  "vol": "2.5 million+ books and records; 3,200 manuscripts"
  },
  {
   "id": "asiatic",
@@ -583,7 +600,9 @@
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q4058307"
+  "wd": "Q4058307",
+  "vol": "100,000+ books; 3,000+ manuscripts",
+  "book": "15th-century Divine Comedy manuscript (Dante)"
  },
  {
   "id": "connemara",
@@ -593,11 +612,12 @@
   "lon": 80.2567,
   "k": "hall",
   "y": 1896,
-  "yl": "1896",
+  "yl": "Opened 1896; founded 1890",
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q5161767"
+  "wd": "Q5161767",
+  "vol": "600,000+ books"
  },
  {
   "id": "sassoon",
@@ -625,7 +645,9 @@
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q501851"
+  "wd": "Q501851",
+  "dim": "Reading room 20,000 m², 11 levels",
+  "vol": "Shelf space for 8 million books"
  },
  {
   "id": "baghdad",
@@ -638,9 +660,10 @@
   "yl": "8th century to 1258",
   "lost": 1258,
   "tier": "lost",
-  "ev": "known",
+  "ev": "probable",
   "phase": "later",
-  "wd": "Q33018"
+  "wd": "Q33018",
+  "st": "No remains known; site lost"
  },
  {
   "id": "palafoxiana",
@@ -654,7 +677,10 @@
   "tier": "w2",
   "ev": "known",
   "phase": "later",
-  "wd": "Q4903485"
+  "wd": "Q4903485",
+  "dim": "43 m long vaulted hall",
+  "vol": "45,000+ books and manuscripts; 9 incunabula",
+  "book": "Nuremberg Chronicle (1493)"
  },
  {
   "id": "vasconcelos",
@@ -668,7 +694,9 @@
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q6294156"
+  "wd": "Q6294156",
+  "dim": "38,000 m²",
+  "vol": "600,000 books"
  },
  {
   "id": "slv",
@@ -677,12 +705,14 @@
   "lat": -37.8098,
   "lon": 144.965,
   "k": "hall",
-  "y": 1854,
-  "yl": "1854",
+  "y": 1856,
+  "yl": "Foundation stone 1854; opened 1856",
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q1200052"
+  "wd": "Q1200052",
+  "dim": "Domed reading room, 1913",
+  "vol": "3.89 million items registered"
  },
  {
   "id": "tianyige",
@@ -691,12 +721,13 @@
   "lat": 29.8736,
   "lon": 121.5358,
   "k": "hall",
-  "y": 1560,
-  "yl": "1560s",
+  "y": 1561,
+  "yl": "1561–66",
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q2066117"
+  "wd": "Q2066117",
+  "vol": "About 300,000 volumes"
  },
  {
   "id": "binhai",
@@ -710,7 +741,9 @@
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q47088811"
+  "wd": "Q47088811",
+  "dim": "33,700 m², 5 levels",
+  "vol": "Capacity 1.2 million books"
  },
  {
   "id": "haeinsa",
@@ -719,12 +752,14 @@
   "lat": 35.8016,
   "lon": 128.0987,
   "k": "hall",
-  "y": 802,
-  "yl": "802",
+  "y": 1398,
+  "yl": "Temple 802; Tripitaka housed since 1398",
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q490798"
+  "wd": "Q490798",
+  "st": "UNESCO World Heritage Site (with the Janggyeong Panjeon depositories); active Seon temple",
+  "stFrom": 1995
  },
  {
   "id": "ashikaga",
@@ -733,13 +768,15 @@
   "lat": 36.3381,
   "lon": 139.4517,
   "k": "hall",
-  "y": 800,
-  "yl": "8th century to 1872",
+  "y": 842,
+  "yl": "About 842 (founding disputed) to 1872",
   "lost": 1872,
   "tier": "lost",
-  "ev": "known",
+  "ev": "probable",
   "phase": "later",
-  "wd": "Q1053852"
+  "wd": "Q1053852",
+  "st": "National Historic Site; restored school open to visitors; Song-edition National Treasures held",
+  "stFrom": 1990
  },
  {
   "id": "mcmillan",
@@ -753,7 +790,10 @@
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q60768249"
+  "wd": "Q60768249",
+  "st": "Closed for restoration from June 2026; phase 1 planned to run to October",
+  "stFrom": 2026,
+  "vol": "400,000+ books; East African newspapers from 1901"
  },
  {
   "id": "malatestiana",
@@ -785,7 +825,6 @@
   "tier": "w2",
   "ev": "known",
   "st": "Bats live in the library, protecting the books from insects",
-  "stFrom": 2025,
   "dim": "three great rooms divided by decorated arches",
   "vol": "about 250,000 works",
   "book": "No single title confirmed yet",
@@ -823,7 +862,7 @@
   "tier": "w2",
   "ev": "known",
   "dim": "the West Room: McKim’s three-room library",
-  "vol": "Gutenberg Bible, plus manuscripts and drawings",
+  "vol": "Three Gutenberg Bibles, plus manuscripts and drawings",
   "book": "A Gutenberg Bible, three of the 48 surviving copies",
   "read": "Rotunda and study visit; the hall stands in for the West Room",
   "phase": "E",

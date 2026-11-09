@@ -36,9 +36,9 @@ async function meter(page: Page) {
 }
 
 for (const id of BUILDINGS) {
-  test(`route-weight-c: ${id} arrival from the globe click`, async ({ page }) => {
+  test(`route-weight-c: ${id} arrival from an atlas card`, async ({ page }) => {
     const m = await meter(page)
-    await fromGlobe(page, id, 'pin', m.reset)
+    await fromGlobe(page, id, m.reset)
     await page.waitForTimeout(1500)
     const { t, n, poly, inflight } = m.total()
     expect(n, 'requests observed').toBeGreaterThan(0)

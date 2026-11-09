@@ -4,7 +4,7 @@ import { readableIds, ready, watchErrors } from './util'
 test('every view mounts real content with a clean console and network', async ({ page }) => {
   const errors = watchErrors(page)
   const [book] = await readableIds()
-  const stops: [string, string][] = [['/', 'globe'], ['/atlas', 'atlas'], ['/room/longroom', 'room'], [`/read/${book}`, 'reader'], ['/byrne', 'byrne']]
+  const stops: [string, string][] = [['/', 'home'], ['/atlas', 'home'], ['/room/longroom', 'room'], [`/read/${book}`, 'reader'], ['/byrne', 'byrne']]
   for (const [path, view] of stops) {
     await page.goto(path)
     await ready(page, view)
@@ -17,17 +17,18 @@ test('every view mounts real content with a clean console and network', async ({
   expect(errors).toEqual([])
 })
 
-test('client navigation walks globe to room to reader and back', async ({ page }) => {
+test('client navigation walks atlas to room to reader and back', async ({ page }) => {
   const errors = watchErrors(page)
-  await page.goto('/')
-  await ready(page, 'globe')
-  await page.locator('header').getByRole('link', { name: 'Long Room' }).click()
+  await page.goto('/atlas')
+  await ready(page, 'home')
+  await page.locator('#xlist').getByText(/^Long Room/).click()
+  await page.locator('#xcard a[href="/room/longroom"]').click()
   await ready(page, 'room')
   await page.locator('[data-view="room"] a[href^="/read/"]').first().click()
   await ready(page, 'reader')
   await page.goBack()
   await ready(page, 'room')
   await page.goBack()
-  await ready(page, 'globe')
+  await ready(page, 'home')
   expect(errors).toEqual([])
 })

@@ -37,7 +37,7 @@ addEventListener('resize', paintGrain)
 type Route = [RegExp, () => Promise<{ mount: Mount }>]
 
 const routes: Route[] = [
-  [/^\/(?<mode>atlas)?$/, () => import('./globe')],
+  [/^\/(?<mode>atlas)?$/, () => import('./cinematic')],
   [/^\/room\/(?<lib>[\w-]+)$/, () => import('./room')],
   [/^\/read\/(?<book>[\w-]+)$/, () => import('./reader')],
   [/^\/byrne$/, () => import('./byrne')],
@@ -52,12 +52,11 @@ const routes: Route[] = [
 ]
 
 const app = document.getElementById('app')!
-const poster = document.getElementById('poster')!
 let cleanup: ReturnType<Mount>
 let token = 0
 
 const notFound: Mount = (el) => {
-  el.innerHTML = '<section class="page"><h1>Not on any shelf</h1><p><a href="/">Back to the globe</a></p></section>'
+  el.innerHTML = '<section class="page"><h1>Not on any shelf</h1><p><a href="/">Back to the atlas</a></p></section>'
 }
 
 const broken: Mount = (el) => {
@@ -80,7 +79,6 @@ async function render() {
   const swap = () => {
     cleanup?.()
     app.replaceChildren()
-    poster.hidden = path !== '/'
     cleanup = mount(app, params)
   }
   // A newer navigation skips the running transition, which rejects ready. That is expected, not an error.

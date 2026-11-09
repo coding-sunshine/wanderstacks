@@ -1,0 +1,834 @@
+{
+ "cluster": "cine-lost-world",
+ "reused": {
+  "nineveh": "ancient-west.json: founded -668, destroyed -612, rediscovered 1849, excavated 1850/1853, 32,000 tablets",
+  "pergamon": "ancient-west.json: destroyed 262, built -197, remains on Acropolis",
+  "celsus": "ancient-west.json: built 117, destroyed 262, rebuilt 1970, excavated 1903",
+  "nalanda": "ancient-east.json: founded 427, destroyed c.1200, excavated 1915, ASI",
+  "dunhuang": "ancient-east.json: sealed 1006, rediscovered 1900, re-sealed 1904, lost 1907",
+  "timbuktu": "ancient-east.json: damaged 2013, reopened 2025",
+  "buda": "ancient-east.json: founded 1460, lost 1526, 216 Corvinas",
+  "herculaneum": "ancient-west.json: sealed 79, rediscovered 1750, 1,800 scrolls",
+  "alexandria": "ancient-west.json: -285 possible, damaged -48, destroyed 272/391"
+ },
+ "facts": [
+  {
+   "lib": "haeinsa",
+   "field": "built",
+   "value": "802 (temple)",
+   "earliest": 802,
+   "latest": 802,
+   "source": "https://en.wikipedia.org/wiki/Haeinsa",
+   "tier": "wikipedia",
+   "quote": "Architecture Completed 802 ( 802 ) UNESCO World Heritage Site",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Haeinsa' | sed 's/<[^>]*>//g' | rg -o -m1 'Completed 802'"
+  },
+  {
+   "lib": "haeinsa",
+   "field": "built",
+   "value": "Tripitaka Koreana housed from 1398",
+   "earliest": 1398,
+   "latest": 1398,
+   "source": "https://en.wikipedia.org/wiki/Haeinsa",
+   "tier": "wikipedia",
+   "quote": "home of the Tripitaka Koreana, the whole of the Buddhist Scriptures carved onto 81,350 wooden printing blocks, which it has housed since 1398",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Haeinsa' | sed 's/<[^>]*>//g' | rg -o -m1 'housed since 1398'"
+  },
+  {
+   "lib": "haeinsa",
+   "field": "status_note",
+   "value": "UNESCO World Heritage since 1995 (ref 737)",
+   "source": "https://en.wikipedia.org/wiki/Haeinsa",
+   "tier": "wikipedia",
+   "quote": "UNESCO World Heritage Site Official name: Haeinsa Temple Janggyeong Panjeon, the Depositories for the Tripitaka Koreana Woodblocks ... Designated 1995 Reference no. 737",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Haeinsa' | sed 's/<[^>]*>//g' | rg -o -m1 'Designated 1995'"
+  },
+  {
+   "lib": "haeinsa",
+   "field": "remains_today",
+   "value": "Depositories survive, National Treasure 32",
+   "source": "https://en.wikipedia.org/wiki/Haeinsa",
+   "tier": "wikipedia",
+   "quote": "Janggyeong Panjeon complex ... designated by the Korean government as a National Treasure on December 20, 1962. ... spared from the 1818 fire",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Haeinsa' | sed 's/<[^>]*>//g' | rg -o -m1 'National Treasure on December 20, 1962'"
+  },
+  {
+   "lib": "haeinsa",
+   "field": "built",
+   "value": "depositories date unknown (commonly c.1488, unproven)",
+   "source": null,
+   "tier": null,
+   "quote": "",
+   "status": "failing",
+   "note": "Construction date of the Janggyeong Panjeon not stated in fetched sources (Wikipedia only says temple renovated 1488); not proven",
+   "check": "none: no source fetched this run"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "built",
+   "value": "c. 839-842 (disputed, early Heian to Kamakura)",
+   "earliest": 800,
+   "latest": 1300,
+   "source": "https://en.wikipedia.org/wiki/Ashikaga_Gakk%C5%8D",
+   "tier": "wikipedia",
+   "quote": "sometime around the year 839 or 842 being the most likely based on documentary evidence",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Ashikaga_Gakk%C5%8D' | sed 's/<[^>]*>//g' | rg -o -m1 '839 or 842'"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "status_note",
+   "value": "School closed after Meiji Restoration",
+   "source": "https://en.wikipedia.org/wiki/Ashikaga_Gakk%C5%8D",
+   "tier": "wikipedia",
+   "quote": "Ashikaga Gakkō was closed and half the site was converted into a local elementary school.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Ashikaga_Gakk%C5%8D' | sed 's/<[^>]*>//g' | rg -o -m1 'was closed and half'"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "status_note",
+   "value": "School abolished 1872",
+   "source": "https://ja.wikipedia.org/wiki/足利学校",
+   "tier": "wikipedia",
+   "quote": "明治5年（1872年）に廃校になった後は組織としては消滅し",
+   "status": "passing",
+   "check": "curl -sL 'https://ja.wikipedia.org/wiki/足利学校' | sed 's/<[^>]*>//g' | rg -o -m1 '明治5年（1872年）に廃校'"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "status_note",
+   "value": "Old collection kept by Ashikaga Gakko Iseki Library from 1903",
+   "source": "https://en.wikipedia.org/wiki/Ashikaga_Gakk%C5%8D",
+   "tier": "wikipedia",
+   "quote": "In 1903, the local government established the first public library in Tochigi Prefecture, on the grounds of the Ashikaga Gakkō to preserve the old collections",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Ashikaga_Gakk%C5%8D' | sed 's/<[^>]*>//g' | rg -o -m1 'In 1903, the local government'"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "remains_today",
+   "value": "National Historic Site 1921; restored 1990; open; holds Song-edition National Treasures",
+   "source": "https://ja.wikipedia.org/wiki/足利学校",
+   "tier": "wikipedia",
+   "quote": "1921年（大正10年）3月3日、「足利学校跡（聖廟および附属建物を含む）」として国の史跡に指定された。『宋版 尚書正義』- 国宝",
+   "status": "passing",
+   "check": "curl -sL 'https://ja.wikipedia.org/wiki/足利学校' | sed 's/<[^>]*>//g' | rg -o -m1 '国の史跡に指定'"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "status_note",
+   "value": "Buildings and garden restored and opened 1990",
+   "source": "https://ja.wikipedia.org/wiki/足利学校",
+   "tier": "wikipedia",
+   "quote": "1990年（平成2年）に方丈や庭園が復元され公開された",
+   "status": "passing",
+   "check": "curl -sL 'https://ja.wikipedia.org/wiki/足利学校' | sed 's/<[^>]*>//g' | rg -o -m1 '1990年（平成2年）に方丈'"
+  },
+  {
+   "lib": "celsus",
+   "field": "status_note",
+   "value": "Excavated 1903-04 (Austrian); facade re-erected 1970-78",
+   "source": "https://en.wikipedia.org/wiki/Library_of_Celsus",
+   "tier": "wikipedia",
+   "quote": "Excavation dates 1903–1904, restored 1970–1978",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Library_of_Celsus' | sed 's/<[^>]*>//g' | rg -o -m1 'Excavation dates 1903'"
+  },
+  {
+   "lib": "celsus",
+   "field": "status_note",
+   "value": "Ephesus UNESCO World Heritage Site since 2015",
+   "source": "https://en.wikipedia.org/wiki/Ephesus",
+   "tier": "wikipedia",
+   "quote": "UNESCO World Heritage Site Criteria Cultural: iii, iv, vi Reference 1018 Inscription 2015 (39th Session )",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Ephesus' | sed 's/<[^>]*>//g' | rg -o -m1 'Inscription 2015'"
+  },
+  {
+   "lib": "dunhuang",
+   "field": "status_note",
+   "value": "Dated documents run 406-1002",
+   "source": "https://en.wikipedia.org/wiki/Library_Cave",
+   "tier": "wikipedia",
+   "quote": "A large number of documents dating from 406 to 1002 were found in the cave",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Library_Cave' | sed 's/<[^>]*>//g' | rg -o -m1 'dating from 406 to 1002'"
+  },
+  {
+   "lib": "dunhuang",
+   "field": "status_note",
+   "value": "Sealing theory c. 1006; date debated",
+   "earliest": 1002,
+   "latest": 1100,
+   "source": "https://en.wikipedia.org/wiki/Library_Cave",
+   "tier": "wikipedia",
+   "quote": "fall of the Buddhist kingdom of Khotan to Karakhanids invaders from Kashgar in 1006 ... so they sealed their library",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Library_Cave' | sed 's/<[^>]*>//g' | rg -o -m1 'in 1006'"
+  },
+  {
+   "lib": "dunhuang",
+   "field": "status_note",
+   "value": "Mogao Caves UNESCO 1987",
+   "source": "https://en.wikipedia.org/wiki/Library_Cave",
+   "tier": "wikipedia",
+   "quote": "The Mogao Caves became one of the UNESCO World Heritage Sites in 1987.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Library_Cave' | sed 's/<[^>]*>//g' | rg -o -m1 'in 1987'"
+  },
+  {
+   "lib": "dunhuang",
+   "field": "built",
+   "source": null,
+   "tier": null,
+   "quote": "",
+   "status": "failing",
+   "note": "No fetched source gives the year the cave began functioning as a library (Hongbian seal, mid-9th c. unquoted); y=1000 is the sealing, not the creation",
+   "check": "none: no source fetched this run"
+  },
+  {
+   "lib": "nalanda",
+   "field": "status_note",
+   "value": "UNESCO World Heritage Site since 2016",
+   "source": "https://en.wikipedia.org/wiki/Nalanda",
+   "tier": "wikipedia",
+   "quote": "Official name Archaeological Site of Nalanda Mahavihara at Nalanda, Bihar ... Reference 1502 Inscription 2016",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Nalanda' | sed 's/<[^>]*>//g' | rg -o -m1 'Inscription 2016'"
+  },
+  {
+   "lib": "vikramashila",
+   "field": "built",
+   "value": "Dharmapala reign 783-820",
+   "earliest": 783,
+   "latest": 820,
+   "source": "https://en.wikipedia.org/wiki/Vikramashila",
+   "tier": "wikipedia",
+   "quote": "founded by King Dharmapala between the late eighth and early ninth centuries",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Vikramashila' | sed 's/<[^>]*>//g' | rg -o -m1 'late eighth and early ninth'"
+  },
+  {
+   "lib": "vikramashila",
+   "field": "status_note",
+   "value": "Destroyed c. 1193",
+   "source": "https://en.wikipedia.org/wiki/Vikramashila",
+   "tier": "wikipedia",
+   "quote": "It was destroyed by the forces of Muhammad bin Bakhtiyar Khalji around 1193.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Vikramashila' | sed 's/<[^>]*>//g' | rg -o -m1 'around 1193'"
+  },
+  {
+   "lib": "vikramashila",
+   "field": "remains_today",
+   "value": "Partly excavated monastery 330 m per side, library building, ASI site museum",
+   "source": "https://en.wikipedia.org/wiki/Vikramashila",
+   "tier": "wikipedia",
+   "quote": "initially by B. P. Sinha of Patna University (1960–69) and subsequently by Archaeological Survey of India (1972–82)",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Vikramashila' | sed 's/<[^>]*>//g' | rg -o -m1 '1960–69'"
+  },
+  {
+   "lib": "pergamon",
+   "field": "status_note",
+   "value": "UNESCO World Heritage Site since 2014",
+   "source": "https://en.wikipedia.org/wiki/Pergamon",
+   "tier": "wikipedia",
+   "quote": "Pergamon and its Multi-Layered Cultural Landscape ... Reference 1457 Inscription 2014",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Pergamon' | sed 's/<[^>]*>//g' | rg -o -m1 'Inscription 2014'"
+  },
+  {
+   "lib": "baghdad",
+   "field": "built",
+   "value": "late 8th c.; Harun (786-809) or al-Mansur (754-775)",
+   "earliest": 754,
+   "latest": 809,
+   "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+   "tier": "wikipedia",
+   "quote": "founded either as a library for the collections of the fifth Abbasid caliph Harun al-Rashid (r. 786–809) in the late 8th century or as a private collection of ... al-Mansur (r. 754–775)",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>//g' | rg -o -m1 'late 8th century'"
+  },
+  {
+   "lib": "baghdad",
+   "field": "status_note",
+   "value": "Destroyed 1258",
+   "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+   "tier": "wikipedia",
+   "quote": "Along with all other libraries in Baghdad, the House of Wisdom was destroyed by Hulagu's army during the Siege of Baghdad.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>//g' | rg -o -m1 'destroyed by Hulagu'"
+  },
+  {
+   "lib": "baghdad",
+   "field": "status_note",
+   "value": "Dissolved 1258",
+   "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+   "tier": "wikipedia",
+   "quote": "Dissolved 1258 ( Mongol conquest )",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>//g' | rg -o -m1 'Dissolved 1258'"
+  },
+  {
+   "lib": "buda",
+   "field": "status_note",
+   "value": "Dispersal after 1526",
+   "source": "https://en.wikipedia.org/wiki/Bibliotheca_Corviniana",
+   "tier": "wikipedia",
+   "quote": "The books were taken to Istanbul after the Hungarian defeat by the Ottomans at the Battle of Mohács in 1526.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Bibliotheca_Corviniana' | sed 's/<[^>]*>//g' | rg -o -m1 'Mohács in 1526'"
+  },
+  {
+   "lib": "timbuktu",
+   "field": "status_note",
+   "value": "UNESCO site 1988; in Danger list 2012-present (per Wikipedia infobox)",
+   "source": "https://en.wikipedia.org/wiki/Timbuktu",
+   "tier": "wikipedia",
+   "quote": "UNESCO World Heritage Site ... ID = 119 | year = 1988 | danger = 1990–2005; 2012–present",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Timbuktu' | sed 's/<[^>]*>//g' | rg -o -m1 'danger = 1990'"
+  },
+  {
+   "lib": "herculaneum",
+   "field": "built",
+   "source": null,
+   "tier": null,
+   "quote": "",
+   "status": "failing",
+   "note": "Villa construction date not proven (no source fetched)",
+   "check": "none: no source fetched this run"
+  },
+  {
+   "lib": "alexandria",
+   "field": "built",
+   "source": null,
+   "tier": null,
+   "quote": "",
+   "status": "failing",
+   "note": "Founding date unproven; sources say only possibly Ptolemy II; end date unknown (48 BCE damage, 272, 391 Serapeum rows exist in ancient-west.json)",
+   "check": "none: no source fetched this run"
+  }
+ ],
+ "events": [
+  {
+   "lib": "haeinsa",
+   "kind": "founded",
+   "year": 802,
+   "earliest": 802,
+   "latest": 802,
+   "label": "Haeinsa temple completed",
+   "source": "https://en.wikipedia.org/wiki/Haeinsa",
+   "tier": "wikipedia",
+   "quote": "Architecture Completed 802",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Haeinsa' | sed 's/<[^>]*>//g' | rg -o -m1 'Completed 802'"
+  },
+  {
+   "lib": "haeinsa",
+   "kind": "built",
+   "year": 1398,
+   "earliest": 1398,
+   "latest": 1398,
+   "label": "Tripitaka Koreana housed at Haeinsa",
+   "source": "https://en.wikipedia.org/wiki/Haeinsa",
+   "tier": "wikipedia",
+   "quote": "which it has housed since 1398",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Haeinsa' | sed 's/<[^>]*>//g' | rg -o -m1 'housed since 1398'"
+  },
+  {
+   "lib": "haeinsa",
+   "kind": "damaged",
+   "year": 1817,
+   "earliest": 1817,
+   "latest": 1818,
+   "label": "Temple burned; depositories spared",
+   "source": "https://en.wikipedia.org/wiki/Haeinsa",
+   "tier": "wikipedia",
+   "quote": "Haeinsa was burned down in a fire in 1817 and was rebuilt in 1818.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Haeinsa' | sed 's/<[^>]*>//g' | rg -o -m1 'burned down in a fire in 1817'"
+  },
+  {
+   "lib": "ashikaga",
+   "kind": "closed",
+   "year": 1872,
+   "earliest": 1872,
+   "latest": 1872,
+   "label": "School abolished",
+   "source": "https://ja.wikipedia.org/wiki/足利学校",
+   "tier": "wikipedia",
+   "quote": "明治5年（1872年）に廃校になった後は組織としては消滅し",
+   "status": "passing",
+   "check": "curl -sL 'https://ja.wikipedia.org/wiki/足利学校' | sed 's/<[^>]*>//g' | rg -o -m1 '明治5年（1872年）に廃校'"
+  },
+  {
+   "lib": "ashikaga",
+   "kind": "reopened",
+   "year": 1903,
+   "earliest": 1903,
+   "latest": 1903,
+   "label": "Site library (Iseki Library) established, collections preserved",
+   "source": "https://en.wikipedia.org/wiki/Ashikaga_Gakk%C5%8D",
+   "tier": "wikipedia",
+   "quote": "In 1903, the local government established the first public library in Tochigi Prefecture, on the grounds of the Ashikaga Gakkō",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Ashikaga_Gakk%C5%8D' | sed 's/<[^>]*>//g' | rg -o -m1 'In 1903, the local government'"
+  },
+  {
+   "lib": "ashikaga",
+   "kind": "rebuilt",
+   "year": 1990,
+   "earliest": 1990,
+   "latest": 1990,
+   "label": "Hojo and garden restored, opened",
+   "source": "https://ja.wikipedia.org/wiki/足利学校",
+   "tier": "wikipedia",
+   "quote": "1990年（平成2年）に方丈や庭園が復元され公開された",
+   "status": "passing",
+   "check": "curl -sL 'https://ja.wikipedia.org/wiki/足利学校' | sed 's/<[^>]*>//g' | rg -o -m1 '1990年（平成2年）に方丈'"
+  },
+  {
+   "lib": "celsus",
+   "kind": "excavated",
+   "year": 1903,
+   "earliest": 1903,
+   "latest": 1904,
+   "label": "Library facade excavated by Austrian team",
+   "source": "https://en.wikipedia.org/wiki/Library_of_Celsus",
+   "tier": "wikipedia",
+   "quote": "fragments that had been excavated by Austrian archaeologists between 1903 and 1904",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Library_of_Celsus' | sed 's/<[^>]*>//g' | rg -o -m1 'between 1903 and 1904'"
+  },
+  {
+   "lib": "celsus",
+   "kind": "rebuilt",
+   "year": 1970,
+   "earliest": 1970,
+   "latest": 1978,
+   "label": "Facade anastylosis",
+   "source": "https://en.wikipedia.org/wiki/Library_of_Celsus",
+   "tier": "wikipedia",
+   "quote": "the façade was re-erected by archaeologists between 1970 and 1978",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Library_of_Celsus' | sed 's/<[^>]*>//g' | rg -o -m1 'between 1970 and 1978'"
+  },
+  {
+   "lib": "dunhuang",
+   "kind": "sealed",
+   "year": 1006,
+   "earliest": 1002,
+   "latest": 1100,
+   "label": "Library Cave sealed, date debated",
+   "source": "https://en.wikipedia.org/wiki/Library_Cave",
+   "tier": "wikipedia",
+   "quote": "so they sealed their library to avoid it being destroyed (Khotan fell 1006); documents dated to 1002",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Library_Cave' | sed 's/<[^>]*>//g' | rg -o -m1 'in 1006'"
+  },
+  {
+   "lib": "dunhuang",
+   "kind": "rediscovered",
+   "year": 1900,
+   "earliest": 1900,
+   "latest": 1900,
+   "label": "Wang Yuanlu finds cave",
+   "source": "https://en.wikipedia.org/wiki/Library_Cave",
+   "tier": "wikipedia",
+   "quote": "on 25 June 1900",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Library_Cave' | sed 's/<[^>]*>//g' | rg -o -m1 '25 June 1900'"
+  },
+  {
+   "lib": "nalanda",
+   "kind": "rediscovered",
+   "year": 1847,
+   "earliest": 1847,
+   "latest": 1847,
+   "label": "Ruins identified as Nalanda",
+   "source": "https://en.wikipedia.org/wiki/Nalanda",
+   "tier": "wikipedia",
+   "quote": "That link was established by Major Markham Kittoe in 1847.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Nalanda' | sed 's/<[^>]*>//g' | rg -o -m1 'Markham Kittoe in 1847'"
+  },
+  {
+   "lib": "nalanda",
+   "kind": "opened",
+   "year": 2016,
+   "earliest": 2016,
+   "latest": 2016,
+   "label": "UNESCO inscription",
+   "source": "https://en.wikipedia.org/wiki/Nalanda",
+   "tier": "wikipedia",
+   "quote": "Reference 1502 Inscription 2016 (40th Session ) Area 23 ha",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Nalanda' | sed 's/<[^>]*>//g' | rg -o -m1 'Inscription 2016'"
+  },
+  {
+   "lib": "vikramashila",
+   "kind": "destroyed",
+   "year": 1193,
+   "earliest": 1193,
+   "latest": 1200,
+   "label": "Destroyed by Bakhtiyar Khalji",
+   "source": "https://en.wikipedia.org/wiki/Vikramashila",
+   "tier": "wikipedia",
+   "quote": "destroyed by the forces of Muhammad bin Bakhtiyar Khalji around 1193",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Vikramashila' | sed 's/<[^>]*>//g' | rg -o -m1 'around 1193'"
+  },
+  {
+   "lib": "vikramashila",
+   "kind": "excavated",
+   "year": 1960,
+   "earliest": 1960,
+   "latest": 1982,
+   "label": "Excavations Patna Univ then ASI",
+   "source": "https://en.wikipedia.org/wiki/Vikramashila",
+   "tier": "wikipedia",
+   "quote": "Meticulous excavation at the site was conducted initially by B. P. Sinha of Patna University (1960–69)",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Vikramashila' | sed 's/<[^>]*>//g' | rg -o -m1 '1960–69'"
+  },
+  {
+   "lib": "pergamon",
+   "kind": "excavated",
+   "year": 1878,
+   "earliest": 1871,
+   "latest": 1886,
+   "label": "German excavations of Acropolis begin (Humann)",
+   "source": "https://en.wikipedia.org/wiki/Pergamon",
+   "tier": "wikipedia",
+   "quote": "Carl Humann ... was entrusted with carry out work in the area of the altar of Zeus in 1878, where he continued to work until 1886.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Pergamon' | sed 's/<[^>]*>//g' | rg -o -m1 'in 1878'"
+  },
+  {
+   "lib": "baghdad",
+   "kind": "destroyed",
+   "year": 1258,
+   "earliest": 1258,
+   "latest": 1258,
+   "label": "Destroyed in Mongol siege",
+   "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+   "tier": "wikipedia",
+   "quote": "It was destroyed in 1258 during the Mongol siege of Baghdad.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>//g' | rg -o -m1 'destroyed in 1258'"
+  },
+  {
+   "lib": "buda",
+   "kind": "closed",
+   "year": 1541,
+   "earliest": 1526,
+   "latest": 1541,
+   "label": "Buda falls; no Hungarian court library afterwards",
+   "source": "https://en.wikipedia.org/wiki/Buda_Castle",
+   "tier": "wikipedia",
+   "quote": "On 29 August 1541 Buda was occupied again by the Ottomans, without any resistance.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Buda_Castle' | sed 's/<[^>]*>//g' | rg -o -m1 '29 August 1541'"
+  },
+  {
+   "lib": "herculaneum",
+   "kind": "reopened",
+   "year": 2026,
+   "earliest": 2026,
+   "latest": 2026,
+   "label": "PHerc. 1667 fully virtually unwrapped and read (22 columns)",
+   "source": "https://en.wikipedia.org/wiki/Herculaneum_papyri",
+   "tier": "wikipedia",
+   "quote": "In June 2026, the Vesuvius Challenge team announced that PHerc. 1667 ... had been virtually unwrapped and read end-to-end.",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Herculaneum_papyri' | sed 's/<[^>]*>//g' | rg -o -m1 'In June 2026'"
+  },
+  {
+   "lib": "herculaneum",
+   "kind": "rediscovered",
+   "year": 1752,
+   "earliest": 1750,
+   "latest": 1752,
+   "label": "First scrolls found (villa found 1750)",
+   "source": "https://en.wikipedia.org/wiki/Herculaneum_papyri",
+   "tier": "wikipedia",
+   "quote": "The first were found in the autumn of 1752 ... in and near the tablinum",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Herculaneum_papyri' | sed 's/<[^>]*>//g' | rg -o -m1 'autumn of 1752'"
+  },
+  {
+   "lib": "alexandria",
+   "kind": "reopened",
+   "year": 2002,
+   "earliest": 2002,
+   "latest": 2002,
+   "label": "Bibliotheca Alexandrina opens",
+   "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+   "tier": "wikipedia",
+   "quote": "Established 16 October 2002",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | sed 's/<[^>]*>//g' | rg -o -m1 'Established 16 October 2002'"
+  }
+ ],
+ "plans": [],
+ "books": [],
+ "corrections": [
+  {
+   "lib": "haeinsa",
+   "field": "y",
+   "old": 802,
+   "new": 1398,
+   "source": "https://en.wikipedia.org/wiki/Haeinsa",
+   "note": "802 = temple; Tripitaka collection housed since 1398 per Wikipedia (tier wikipedia); depository construction date unproven"
+  },
+  {
+   "lib": "haeinsa",
+   "field": "st",
+   "old": null,
+   "new": "UNESCO World Heritage Site (with Janggyeong Panjeon depositories); active Seon temple",
+   "source": "https://en.wikipedia.org/wiki/Haeinsa"
+  },
+  {
+   "lib": "haeinsa",
+   "field": "stFrom",
+   "old": null,
+   "new": 1995,
+   "source": "https://en.wikipedia.org/wiki/Haeinsa"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "lost",
+   "old": 1872,
+   "new": 1872,
+   "source": "https://ja.wikipedia.org/wiki/足利学校",
+   "note": "Keep 1872 only as the school closing; library did not vanish: collection preserved locally, site library from 1903. Consider lost=1872 with st saying collection survives"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "y",
+   "old": 800,
+   "new": 842,
+   "source": "https://en.wikipedia.org/wiki/Ashikaga_Gakk%C5%8D",
+   "note": "839 or 842 most likely; theories span early Heian to Kamakura"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "ev",
+   "old": "known",
+   "new": "probable",
+   "source": "https://en.wikipedia.org/wiki/Ashikaga_Gakk%C5%8D",
+   "note": "founding date disputed"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "st",
+   "old": null,
+   "new": "National Historic Site; restored school open to visitors; Song-edition National Treasures held",
+   "source": "https://ja.wikipedia.org/wiki/足利学校"
+  },
+  {
+   "lib": "ashikaga",
+   "field": "stFrom",
+   "old": null,
+   "new": 1990,
+   "source": "https://ja.wikipedia.org/wiki/足利学校"
+  },
+  {
+   "lib": "celsus",
+   "field": "found",
+   "old": 1970,
+   "new": 1903,
+   "source": "https://en.wikipedia.org/wiki/Library_of_Celsus",
+   "note": "1970-78 is the facade rebuild (stFrom stays 1970); excavation was 1903-04"
+  },
+  {
+   "lib": "celsus",
+   "field": "st",
+   "old": "Excavated 1903–1904; facade rebuilt by anastylosis, 1970–78",
+   "new": "same; add: part of Ephesus UNESCO site (2015)",
+   "source": "https://en.wikipedia.org/wiki/Ephesus"
+  },
+  {
+   "lib": "dunhuang",
+   "field": "y",
+   "old": 1000,
+   "new": null,
+   "source": "https://en.wikipedia.org/wiki/Library_Cave",
+   "note": "1000 is the sealing, not creation; cave-as-library predates it (dated texts from 406); unproven, show as sealed event only"
+  },
+  {
+   "lib": "dunhuang",
+   "field": "lost",
+   "old": 1000,
+   "new": 1006,
+   "source": "https://en.wikipedia.org/wiki/Library_Cave",
+   "note": "sealed c.1002-1006 per Wikipedia; debated, keep as ~1000 on timeline if range unsupported"
+  },
+  {
+   "lib": "dunhuang",
+   "field": "st",
+   "old": null,
+   "new": "Mogao Caves UNESCO site; Cave 17 manuscripts dispersed (1907-08) to London, Paris etc.",
+   "source": "https://en.wikipedia.org/wiki/Library_Cave"
+  },
+  {
+   "lib": "dunhuang",
+   "field": "stFrom",
+   "old": null,
+   "new": 1987,
+   "source": "https://en.wikipedia.org/wiki/Library_Cave"
+  },
+  {
+   "lib": "nalanda",
+   "field": "found",
+   "old": null,
+   "new": 1847,
+   "source": "https://en.wikipedia.org/wiki/Nalanda",
+   "note": "identification by Kittoe 1847; ASI excavation from 1915"
+  },
+  {
+   "lib": "nalanda",
+   "field": "st",
+   "old": null,
+   "new": "UNESCO World Heritage Site; ASI-managed ruins open to visitors",
+   "source": "https://en.wikipedia.org/wiki/Nalanda"
+  },
+  {
+   "lib": "nalanda",
+   "field": "stFrom",
+   "old": null,
+   "new": 2016,
+   "source": "https://en.wikipedia.org/wiki/Nalanda"
+  },
+  {
+   "lib": "vikramashila",
+   "field": "found",
+   "old": null,
+   "new": 1960,
+   "source": "https://en.wikipedia.org/wiki/Vikramashila",
+   "note": "excavation 1960-69 Sinha, ASI 1972-82; earlier identification year not fetched"
+  },
+  {
+   "lib": "vikramashila",
+   "field": "y",
+   "old": 800,
+   "new": 783,
+   "source": "https://en.wikipedia.org/wiki/Vikramashila",
+   "note": "range 783-820 (Dharmapala); 800 sits inside, keep if one number needed"
+  },
+  {
+   "lib": "vikramashila",
+   "field": "st",
+   "old": null,
+   "new": "Partly excavated ruins with ASI site museum, Antichak, Bhagalpur",
+   "source": "https://en.wikipedia.org/wiki/Vikramashila"
+  },
+  {
+   "lib": "pergamon",
+   "field": "found",
+   "old": null,
+   "new": 1878,
+   "source": "https://en.wikipedia.org/wiki/Pergamon",
+   "note": "Humann/Berlin excavations 1878-86; earlier test digs 1871, 1875; site never truly lost, so found optional"
+  },
+  {
+   "lib": "pergamon",
+   "field": "st",
+   "old": null,
+   "new": "Ruins on Acropolis; UNESCO World Heritage Site",
+   "source": "https://en.wikipedia.org/wiki/Pergamon"
+  },
+  {
+   "lib": "pergamon",
+   "field": "stFrom",
+   "old": null,
+   "new": 2014,
+   "source": "https://en.wikipedia.org/wiki/Pergamon"
+  },
+  {
+   "lib": "pergamon",
+   "field": "lost",
+   "old": 262,
+   "new": 262,
+   "source": "data/verify/ancient-west.json",
+   "note": "262 supported by existing row (library did not survive turmoil); a -32 Antony-to-Cleopatra transfer row is also on file"
+  },
+  {
+   "lib": "baghdad",
+   "field": "ev",
+   "old": "known",
+   "new": "probable",
+   "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+   "note": "Wikipedia notes the House of Wisdom narrative is disputed (Gutas); exact building and site unknown"
+  },
+  {
+   "lib": "baghdad",
+   "field": "st",
+   "old": null,
+   "new": "No remains known; site lost",
+   "source": "https://en.wikipedia.org/wiki/House_of_Wisdom"
+  },
+  {
+   "lib": "buda",
+   "field": "lost",
+   "old": 1526,
+   "new": 1526,
+   "source": "https://en.wikipedia.org/wiki/Bibliotheca_Corviniana",
+   "note": "Keep 1526 (dispersal begins; 1529 occupation, 1541 final fall); confirmed as lost-year, 1541 optional end of Buda as Hungarian seat"
+  },
+  {
+   "lib": "timbuktu",
+   "field": "st",
+   "old": "4,203 burned or stolen in 2012–13; returns began Aug 2025",
+   "new": "keep; 2026 status not independently fetched this run",
+   "source": "data/verify/ancient-east.json",
+   "note": "existing rows verify 2013 damage and 2025 return; no 2026 source"
+  },
+  {
+   "lib": "timbuktu",
+   "field": "stFrom",
+   "old": 2012,
+   "new": 2025,
+   "source": "data/verify/ancient-east.json",
+   "note": "current phase (returns) began 2025"
+  },
+  {
+   "lib": "herculaneum",
+   "field": "st",
+   "old": "Ink letters seen in PHerc. 1667, Dec 2025",
+   "new": "PHerc. 1667 fully virtually unwrapped and read, 22 columns, June 2026; villa mostly still buried",
+   "source": "https://en.wikipedia.org/wiki/Herculaneum_papyri"
+  },
+  {
+   "lib": "herculaneum",
+   "field": "stFrom",
+   "old": 2025,
+   "new": 2026,
+   "source": "https://en.wikipedia.org/wiki/Herculaneum_papyri"
+  },
+  {
+   "lib": "alexandria",
+   "field": "stFrom",
+   "old": -700,
+   "new": 2002,
+   "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+   "note": "-700 predates the library; if st stays \"conjectural scene\" stFrom is meaningless. Suggest st \"No remains identified; Bibliotheca Alexandrina (2002) commemorates it\""
+  },
+  {
+   "lib": "alexandria",
+   "field": "lost",
+   "old": true,
+   "new": true,
+   "source": "data/verify/ancient-west.json",
+   "note": "no sourced end date; keep true"
+  }
+ ]
+}

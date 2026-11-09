@@ -1,0 +1,345 @@
+{
+ "cluster": "cine-europe",
+ "facts": [
+  {
+   "lib": "joanina",
+   "field": "built",
+   "value": "construction completed 1728",
+   "earliest": 1728,
+   "latest": 1728,
+   "source": "https://visit.uc.pt/en/joanina-library",
+   "tier": "primary",
+   "quote": "A sua construção ficou concluída em 1728.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/joanina-library' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'constru.{1,20}ficou conclu.{1,20}1728'"
+  },
+  {
+   "lib": "joanina",
+   "field": "status_note",
+   "value": "two colonies of bats have lived in the library for at least 250 years, controlling pests; covered nightly (start year of 2025 not proven)",
+   "earliest": null,
+   "latest": null,
+   "source": "https://visit.uc.pt/en/joanina-library",
+   "tier": "primary",
+   "quote": "Desde há pelo menos dois séculos e meio que habitam a Biblioteca duas colónias de morcegos que contribuem para o controle de pragas.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/joanina-library' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'dois s.{1,20}culos e meio.{0,120}'"
+  },
+  {
+   "lib": "stegen",
+   "field": "built",
+   "value": "building built 1843-1850; opened to public 4 Feb 1851",
+   "earliest": 1850,
+   "latest": 1851,
+   "source": "https://www.bsg.univ-paris3.fr/iguana/uploads/file/BSG__Histoire%20et%20architecture.pdf",
+   "tier": "primary",
+   "quote": "Sainte-Geneviève ouvre ses portes le 4 février 1851. Premier édifice public français spécifiquement construit",
+   "status": "passing",
+   "check": "curl -sL 'https://www.bsg.univ-paris3.fr/iguana/uploads/file/BSG__Histoire%20et%20architecture.pdf' -o /tmp/bsg.pdf && pdftotext /tmp/bsg.pdf - | rg -o -m1 '4 février 1851'"
+  },
+  {
+   "lib": "stegen",
+   "field": "status_note",
+   "value": "Labrouste reading room divided/restructured in 1933 (original public room split); not verified as of Nov 2026 opening hours",
+   "earliest": 1933,
+   "latest": 1933,
+   "source": "https://www.bsg.univ-paris3.fr/iguana/uploads/file/BSG__Histoire%20et%20architecture.pdf",
+   "tier": "primary",
+   "quote": "Une restructuration importante a été entreprise en 1933 : la salle originellement dévolue au public fut divis",
+   "status": "passing",
+   "check": "pdftotext /tmp/bsg.pdf - | tr -s ' \\n' ' ' | rg -o -m1 'restructuration importante.{0,80}'"
+  },
+  {
+   "lib": "malatestiana",
+   "field": "built",
+   "value": "built 1447-1452 (completed 1452)",
+   "earliest": 1447,
+   "latest": 1452,
+   "source": "https://sititematici.comune.cesena.fc.it/malatestiana-antica",
+   "tier": "primary",
+   "quote": "The splendid Renaissance library (1447-1452) was commissioned by Malatesta Novello to M. Nuti for the old Franciscan convent.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://sititematici.comune.cesena.fc.it/malatestiana-antica' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'Renaissance library \\(1447-1452\\).{0,80}'"
+  },
+  {
+   "lib": "malatestiana",
+   "field": "opened",
+   "value": "inaugurated 15 August 1454",
+   "earliest": 1454,
+   "latest": 1454,
+   "source": "https://ipercorsidelsavio.it/2023/07/14/la-biblioteca-malatestiana/",
+   "tier": "secondary",
+   "quote": "edificata forse dal 1447 e completata nel 1452. Fu inaugurata il 15 agosto 1454",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://ipercorsidelsavio.it/2023/07/14/la-biblioteca-malatestiana/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'Fu inaugurata il 15 agosto 1454'"
+  },
+  {
+   "lib": "vatican",
+   "field": "built",
+   "value": "Sixtus V decided between 1587 and 1589 to build new premises; Fontana architect; Salone Sistino 70 x 15 m per holder",
+   "earliest": 1587,
+   "latest": 1589,
+   "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html",
+   "tier": "primary",
+   "quote": "Between 1587 and 1589 ... Sixtus V (1585-1590) decided to construct new premises for the Library; he entrusted the project to the architect Domenico Fontana.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'Between 1587 and 1589.{0,200}'"
+  },
+  {
+   "lib": "vatican",
+   "field": "dims",
+   "value": "Salone Sistino 70 m long x 15 m wide (holder)",
+   "earliest": null,
+   "latest": null,
+   "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html",
+   "tier": "primary",
+   "quote": "large, decorated room with two naves known as the Salone Sistino (70 metres long and 15 metres wide)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'Salone Sistino \\(70 metres long.{0,40}'"
+  },
+  {
+   "lib": "vatican",
+   "field": "status_note",
+   "value": "open to qualified researchers/scholars only; Salone Sistino is a 24-seat reading room since Oct 2017; not a tourist site",
+   "earliest": 2017,
+   "latest": 2017,
+   "source": "https://www.vaticanlibrary.va/en/home.php",
+   "tier": "primary",
+   "quote": "The Library is open to: researchers and scholars with appropriate qualifications and/or relevant scientific publications; teachers and researchers at Universities",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/home.php' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'The Library is open to.{0,200}'"
+  },
+  {
+   "lib": "stockholm",
+   "field": "status_note",
+   "value": "closed for renovation since 20 June 2024; reopening planned early 2028",
+   "earliest": 2024,
+   "latest": 2028,
+   "source": "https://biblioteket.stockholm.se/bibliotek/stadsbiblioteket",
+   "tier": "primary",
+   "quote": "Den 20 juni 2024 stängde Stadsbiblioteket för renovering och håller stängt till början av 2028.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://biblioteket.stockholm.se/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'Den 20 juni 2024 stängde.{0,100}'"
+  },
+  {
+   "lib": "stockholm",
+   "field": "built",
+   "value": "officially opened 31 March 1928 (Asplund)",
+   "earliest": 1928,
+   "latest": 1928,
+   "source": "https://en.wikipedia.org/wiki/Stockholm_Public_Library",
+   "tier": "wikipedia",
+   "quote": "Officially opened on 31 March 1928 in the presence of Prince Eugen",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://en.wikipedia.org/wiki/Stockholm_Public_Library' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'Officially opened on 31 March 1928'"
+  },
+  {
+   "lib": "prunksaal",
+   "field": "built",
+   "value": "ONB timeline lists \"1723: The Baroque World in the State Hall\"; completion year 1726 not proven; hall finished 1723 per central-europe-1",
+   "earliest": 1723,
+   "latest": 1726,
+   "source": "https://www.onb.ac.at/en/museums-collections/state-hall",
+   "tier": "primary",
+   "quote": "1723: The Baroque World in the State Hall",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.onb.ac.at/en/museums-collections/state-hall' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 '1723: The Baroque World in the State Hall'"
+  },
+  {
+   "lib": "strahov",
+   "field": "built",
+   "value": "record names Philosophical Hall: built 1792-1794 (see central-europe-1.json); y=1679 is the Theological Hall",
+   "earliest": 1792,
+   "latest": 1794,
+   "source": "see central-europe-1.json",
+   "tier": "primary",
+   "quote": "built during the tenure of Abbot Václav Mayer (1779–1800) between 1792 and 1794",
+   "status": "passing",
+   "check": "see central-europe-1.json strahov built Philosophical Hall"
+  },
+  {
+   "lib": "klementinum",
+   "field": "volumes",
+   "value": "no current holder figure found (27,000 unproven)",
+   "earliest": null,
+   "latest": null,
+   "source": "",
+   "tier": "primary",
+   "quote": "",
+   "status": "failing",
+   "check": "none"
+  },
+  {
+   "lib": "admont",
+   "field": "status_note",
+   "value": "no live opening-hours/closure page fetched",
+   "earliest": null,
+   "latest": null,
+   "source": "",
+   "tier": "primary",
+   "quote": "",
+   "status": "failing",
+   "check": "none"
+  },
+  {
+   "lib": "wiblingen",
+   "field": "status_note",
+   "value": "see central-europe-2.json (basilica scaffolding only)",
+   "earliest": null,
+   "latest": null,
+   "source": "see central-europe-2.json",
+   "tier": "primary",
+   "quote": "",
+   "status": "failing",
+   "check": "see central-europe-2.json"
+  }
+ ],
+ "events": [
+  {
+   "lib": "vatican",
+   "kind": "closed",
+   "year": 1943,
+   "earliest": 1943,
+   "latest": 1943,
+   "label": "Library closed 13 Jul 1943 - 2 Oct 1944 (WWII); reopened 1944",
+   "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html",
+   "tier": "primary",
+   "quote": "During the Second World War the Library, which remained closed for about one academic year (13th July 1943-2nd October 1944)",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'remained closed for about one academic year.{0,40}'"
+  },
+  {
+   "lib": "stockholm",
+   "kind": "closed",
+   "year": 2024,
+   "earliest": 2024,
+   "latest": 2024,
+   "label": "Closed 20 June 2024 for renovation; reopening planned early 2028",
+   "source": "https://biblioteket.stockholm.se/bibliotek/stadsbiblioteket",
+   "tier": "primary",
+   "quote": "Den 20 juni 2024 stängde Stadsbiblioteket för renovering och håller stängt till början av 2028.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://biblioteket.stockholm.se/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'Den 20 juni 2024 stängde.{0,100}'"
+  },
+  {
+   "lib": "malatestiana",
+   "kind": "opened",
+   "year": 1454,
+   "earliest": 1454,
+   "latest": 1454,
+   "label": "Library inaugurated 15 Aug 1454",
+   "source": "https://ipercorsidelsavio.it/2023/07/14/la-biblioteca-malatestiana/",
+   "tier": "secondary",
+   "quote": "Fu inaugurata il 15 agosto 1454",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://ipercorsidelsavio.it/2023/07/14/la-biblioteca-malatestiana/' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'Fu inaugurata il 15 agosto 1454'"
+  },
+  {
+   "lib": "stegen",
+   "kind": "opened",
+   "year": 1851,
+   "earliest": 1851,
+   "latest": 1851,
+   "label": "Opened to public 4 Feb 1851",
+   "source": "https://www.bsg.univ-paris3.fr/iguana/uploads/file/BSG__Histoire%20et%20architecture.pdf",
+   "tier": "primary",
+   "quote": "ouvre ses portes le 4 février 1851",
+   "status": "passing",
+   "check": "pdftotext /tmp/bsg.pdf - | rg -o -m1 '4 février 1851'"
+  },
+  {
+   "lib": "joanina",
+   "kind": "built",
+   "year": 1728,
+   "earliest": 1728,
+   "latest": 1728,
+   "label": "Construction completed",
+   "source": "https://visit.uc.pt/en/joanina-library",
+   "tier": "primary",
+   "quote": "A sua construção ficou concluída em 1728.",
+   "status": "passing",
+   "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/joanina-library' | sed 's/<[^>]*>/ /g' | tr -s ' \\n' ' ' | rg -o -m1 'ficou conclu.{1,20}1728'"
+  }
+ ],
+ "plans": [],
+ "books": [],
+ "corrections": [
+  {
+   "lib": "strahov",
+   "field": "y/n",
+   "old": "y=1679 with n 'Philosophical Hall'",
+   "new": "y=1794 (Philosophical Hall built 1792-1794) OR rename n to Theological Hall and keep 1679",
+   "source": "central-europe-1.json"
+  },
+  {
+   "lib": "prunksaal",
+   "field": "y",
+   "old": 1723,
+   "new": "keep 1723; 1726 unproven (ONB timeline entry 1723 only)",
+   "source": "https://www.onb.ac.at/en/museums-collections/state-hall"
+  },
+  {
+   "lib": "stegen",
+   "field": "y",
+   "old": 1851,
+   "new": "keep 1851 (opened 4 Feb 1851; built 1843-1850)",
+   "source": "https://www.bsg.univ-paris3.fr/iguana/uploads/file/BSG__Histoire%20et%20architecture.pdf"
+  },
+  {
+   "lib": "malatestiana",
+   "field": "y",
+   "old": 1452,
+   "new": "1452 = building completed; opened 15 Aug 1454; keep 1452 or use 1454 for 'opened' semantics",
+   "source": "https://ipercorsidelsavio.it/2023/07/14/la-biblioteca-malatestiana/"
+  },
+  {
+   "lib": "vatican",
+   "field": "y",
+   "old": 1587,
+   "new": "1589 if completion intended; holder only states decision/building 1587-1589, 1585-1590 pontificate; keep 1587 as start",
+   "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html"
+  },
+  {
+   "lib": "vatican",
+   "field": "dim",
+   "old": "70x15 vs 80x16 open",
+   "new": "70 x 15 m (holder)",
+   "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html"
+  },
+  {
+   "lib": "vatican",
+   "field": "st",
+   "old": "(empty)",
+   "new": "Reading room for qualified scholars only (Salone Sistino reading room since Oct 2017)",
+   "source": "https://www.vaticanlibrary.va/en/home.php"
+  },
+  {
+   "lib": "stockholm",
+   "field": "st",
+   "old": "Closed June 2024 to early 2028",
+   "new": "Closed 20 June 2024 to early 2028 (confirmed; stFrom 2024 ok)",
+   "source": "https://biblioteket.stockholm.se/bibliotek/stadsbiblioteket"
+  },
+  {
+   "lib": "joanina",
+   "field": "stFrom",
+   "old": 2025,
+   "new": "remove/replace: bats resident at least 250 years; 2025 not proven",
+   "source": "https://visit.uc.pt/en/joanina-library"
+  },
+  {
+   "lib": "joanina",
+   "field": "y",
+   "old": 1728,
+   "new": "1728 confirmed (construction concluded)",
+   "source": "https://visit.uc.pt/en/joanina-library"
+  },
+  {
+   "lib": "klementinum",
+   "field": "vol",
+   "old": "About 27,000 historical volumes",
+   "new": "unproven; leave or find NKP figure",
+   "source": ""
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import { sunLocal } from '../globe/geo'
+import { sunLocal } from '../geo'
 import { daylight, sunAngles, type Place } from './daylight'
 import type { RoomApi } from './kit'
 import { precip } from './precip'

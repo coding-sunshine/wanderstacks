@@ -6,7 +6,7 @@ export function watchErrors(page: Page) {
   const errors: string[] = []
   page.on('console', (m) => m.type() === 'error' && errors.push(`console: ${m.text()}`))
   page.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`))
-  page.on('requestfailed', (r) => r.url().startsWith(origin) && errors.push(`failed: ${r.url()} ${r.failure()?.errorText}`))
+  page.on('requestfailed', (r) => r.url().startsWith(origin) && !(r.url().endsWith('/favicon.svg') && r.failure()?.errorText === 'net::ERR_ABORTED') && errors.push(`failed: ${r.url()} ${r.failure()?.errorText}`))
   page.on('response', (r) => {
     const u = r.url()
     if (u.startsWith('http://') && !u.startsWith(origin)) errors.push(`mixed: ${u}`)

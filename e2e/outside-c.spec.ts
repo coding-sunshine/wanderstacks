@@ -11,26 +11,22 @@ test.beforeEach(async ({ page }) => {
 })
 
 for (const id of BUILDINGS) {
-  for (const via of ['pin', 'card'] as const) {
-    test(`outside-arrival: ${id} by ${via}`, async ({ page }) => {
-      await fromGlobe(page, id, via)
-      expect(new URL(page.url()).pathname).toBe(`/room/${id}`)
-      expect(new URL(page.url()).search).toBe('')
-      await expect(root(page)).toHaveAttribute('data-place', 'outside')
-      await expect(page.locator('button[data-action="enter"]')).toBeVisible()
-      if (via === 'card') expect(await page.evaluate(() => history.state?.arrive), 'history.state.arrive').toBe('outside')
-    })
-  }
-}
-for (const via of ['pin', 'card'] as const) {
-  test(`outside-arrival: celsus by ${via} is a site`, async ({ page }) => {
-    await fromGlobe(page, 'celsus', via)
+  test(`outside-arrival: ${id}`, async ({ page }) => {
+    await fromGlobe(page, id)
+    expect(new URL(page.url()).pathname).toBe(`/room/${id}`)
     expect(new URL(page.url()).search).toBe('')
-    await expect(root(page)).toHaveAttribute('data-place', 'site')
-    await expect(page.locator('button[data-action="enter"], button[data-action="exit"]')).toHaveCount(0)
-    if (via === 'card') expect(await page.evaluate(() => history.state?.arrive), 'history.state.arrive').toBe('outside')
+    await expect(root(page)).toHaveAttribute('data-place', 'outside')
+    await expect(page.locator('button[data-action="enter"]')).toBeVisible()
+    expect(await page.evaluate(() => history.state?.arrive), 'history.state.arrive').toBe('outside')
   })
 }
+test('outside-arrival: celsus is a site', async ({ page }) => {
+  await fromGlobe(page, 'celsus')
+  expect(new URL(page.url()).search).toBe('')
+  await expect(root(page)).toHaveAttribute('data-place', 'site')
+  await expect(page.locator('button[data-action="enter"], button[data-action="exit"]')).toHaveCount(0)
+  expect(await page.evaluate(() => history.state?.arrive), 'history.state.arrive').toBe('outside')
+})
 
 for (const id of BUILDINGS) {
   test(`enter-exit: ${id}`, async ({ page }) => {
@@ -124,8 +120,8 @@ for (const id of BUILDINGS) {
   })
 }
 
-test('history-c: back from inside lands on globe, forward returns inside', async ({ page }) => {
-  await fromGlobe(page, 'longroom', 'pin')
+test('history-c: back from inside lands on the atlas, forward returns inside', async ({ page }) => {
+  await fromGlobe(page, 'longroom')
   const r = root(page)
   await expect(r).toHaveAttribute('data-place', 'outside')
   await page.getByRole('button', { name: 'Go inside', exact: true }).click()
@@ -133,8 +129,8 @@ test('history-c: back from inside lands on globe, forward returns inside', async
   await settleIn(page)
   const left = (await jattr(page, 'camera'))!
   await page.goBack()
-  await expect(page.locator('[data-view="globe"][data-ready="true"]')).toBeVisible({ timeout: 15_000 })
-  expect(new URL(page.url()).pathname).toBe('/')
+  await expect(page.locator('[data-view="home"][data-ready="true"]')).toBeVisible({ timeout: 15_000 })
+  expect(new URL(page.url()).pathname).toBe('/atlas')
   await page.goForward()
   await expect(root(page).and(page.locator('[data-ready="true"]'))).toBeVisible({ timeout: 15_000 })
   expect(new URL(page.url()).pathname).toBe('/room/longroom')

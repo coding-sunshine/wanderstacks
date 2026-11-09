@@ -5,7 +5,7 @@ const libs: any[] = await Bun.file(root + 'data/libs.json').json()
 const hours: Record<string, unknown> = await Bun.file(root + 'data/hours.json').json().catch(() => ({}))
 const other: Record<string, string> = { alexandria: '/ledger/alexandria', stgallen: '/stgall', bodleian: '/scan/firstfolio' }
 const href = (id: string) => other[id] ?? (existsSync(root + `data/hall/${id}.json`) ? `/room/${id}` : null)
-const pins = libs.map(({ id, n, p, yl, y, lat, lon, lost, wd, st }) => ({ id, n, p, yl, y, lat, lon, lost, wd, st, href: href(id), hours: (hours[id] as any)?.hours ?? null }))
+const pins = libs.map(({ id, n, p, yl, y, lat, lon, lost, found, wd, st, stFrom, k, ev, evNote, dim, vol, book, read }) => ({ id, n, p, yl, y, lat, lon, lost, found, wd, st, stFrom, k, ev, evNote, dim, vol, book, read, href: href(id), hours: (hours[id] as any)?.hours ?? null }))
 await Bun.write(root + 'public/lib/pins.json', JSON.stringify(pins))
 
 // A small global catalog for the search palette: rooms plus every readable book.

@@ -21,7 +21,7 @@ const noOverflow = async (page: Page, when: string) =>
 
 test('mobile-c: pin, Go inside, find and spine tap', async ({ page }) => {
   const s = shelves('longroom')[0]!
-  await fromGlobe(page, 'longroom', 'pin')
+  await fromGlobe(page, 'longroom')
   const r = root(page)
   await expect(r).toHaveAttribute('data-place', 'outside')
   await noOverflow(page, 'outside')

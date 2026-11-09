@@ -1,6 +1,6 @@
 import { expect, type Locator, type Page } from '@playwright/test'
 import { readFileSync } from 'node:fs'
-import { sunLocal } from '../src/globe/geo'
+import { sunLocal } from '../src/geo'
 import { describe, localTime } from '../src/room/weather'
 import { ready } from './util'
 
@@ -124,27 +124,15 @@ export const settleIn = async (page: Page) => {
   await page.evaluate(() => (document.activeElement as HTMLElement | null)?.blur?.())
 }
 
-export async function fromGlobe(page: Page, id: string, via: 'pin' | 'card' = 'pin', beforeClick?: () => void | Promise<void>) {
+export async function fromGlobe(page: Page, id: string, beforeClick?: () => void | Promise<void>) {
   const pin = pinOf(id)
-  await page.goto('/')
-  const globe = page.locator('[data-view="globe"]')
-  await expect(globe).toHaveAttribute('data-ready', 'true', { timeout: 30_000 })
-  await globe.getByLabel('Year').fill(String(pin.y))
-  if (via === 'pin') {
-    await beforeClick?.()
-    await globe.getByRole('button', { name: pin.n, exact: true }).click()
-  } else {
-    // Hook-silent: a tap on the pin's dot opens the library card; the card carries a link to the room.
-    await globe.getByRole('button', { name: 'Unroll' }).click()
-    const idx = await globe.locator('.globe-index li button').evaluateAll((bs, n) => bs.findIndex((b) => b.textContent === n), pin.n)
-    expect(idx, 'pin listed').toBeGreaterThanOrEqual(0)
-    const dot = globe.locator('.globe-pin').nth(idx)
-    await dot.waitFor({ state: 'visible', timeout: 5000 })
-    const b = (await dot.boundingBox())!
-    await beforeClick?.()
-    await page.mouse.click(b.x + b.width / 2, b.y + b.height / 2)
-    await globe.locator(`.globe-card:not([hidden]) a[href="/room/${id}"]`).click({ timeout: 5000 })
-  }
+  await page.goto('/atlas')
+  const home = page.locator('[data-view="home"]')
+  await expect(home).toHaveAttribute('data-ready', 'true', { timeout: 30_000 })
+  await page.locator('#xrange').fill(String(pin.y))
+  await home.locator('#xlist').getByText(pin.n, { exact: true }).click()
+  await beforeClick?.()
+  await home.locator(`#xcard a[href="/room/${id}"]`).click({ timeout: 5000 })
   await page.waitForURL(`**/room/${id}`, { timeout: 15_000 })
   await ready(page, 'room')
 }

@@ -27,7 +27,7 @@ export const mount: Mount = (app, params) => {
   root.dataset.view = 'place'
   app.append(root)
 
-  const back = '<p class="place-back"><a href="/">Back to the globe</a></p>'
+  const back = '<p class="place-back"><a href="/">Back to the atlas</a></p>'
   const fail = (h: string) => {
     root.innerHTML = `<h1>${h}</h1>${back}`
     root.dataset.ready = 'true'

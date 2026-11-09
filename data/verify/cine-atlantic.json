@@ -1,0 +1,455 @@
+{
+ "cluster": "cine-atlantic",
+ "facts": [
+  {
+   "lib": "longroom",
+   "field": "built",
+   "value": "1712-1732",
+   "source": "west-europe.json",
+   "tier": "primary",
+   "quote": "Foundation stone laid May 1712; finished 1732 (reused row)",
+   "status": "passing",
+   "check": "see west-europe.json longroom built",
+   "earliest": 1712,
+   "latest": 1732
+  },
+  {
+   "lib": "longroom",
+   "field": "status_note",
+   "value": "Open to visitors as of Nov 2026; Old Library closes for restoration late 2027, reopening expected 2030",
+   "source": "https://www.trinitynews.ie/2026/09/old-library-to-close-for-restoration-and-renovation-in-late-2027-following-four-year-delay/",
+   "tier": "secondary",
+   "quote": "Trinity College Dublin's Old Library is set to close in late 2027 for restoration and renovation... The library is now expected to reopen in 2030.",
+   "status": "passing",
+   "check": "WebFetch 'https://www.trinitynews.ie/2026/09/old-library-to-close-for-restoration-and-renovation-in-late-2027-following-four-year-delay/'",
+   "earliest": 2027,
+   "latest": 2027
+  },
+  {
+   "lib": "longroom",
+   "field": "status_note",
+   "value": "Redevelopment project commenced 2021; restoration and construction works due to start mid-2027",
+   "source": "https://libguides.tcd.ie/olrp",
+   "tier": "primary",
+   "quote": "The Old Library Redevelopment Project commenced in 2021. Restoration and construction works are due to start mid-2027.",
+   "status": "passing",
+   "check": "curl -sL 'https://libguides.tcd.ie/olrp' | sed 's/<[^>]*>/ /g' | rg -o 'commenced in 2021.{0,120}'"
+  },
+  {
+   "lib": "longroom",
+   "field": "status_note",
+   "value": "books removed from 2023",
+   "source": "",
+   "tier": "",
+   "quote": "",
+   "status": "failing",
+   "check": "not proven by a fetched source; only a search-engine summary said all books but first four bays removed"
+  },
+  {
+   "lib": "bodleian",
+   "field": "built",
+   "value": "Duke Humfrey's opened 1488 (begun 1478); Bodley's refoundation 1602 not fetched",
+   "source": "west-europe.json",
+   "tier": "primary",
+   "quote": "it was begun in 1478 and finally opened in 1488.",
+   "status": "passing",
+   "check": "see west-europe.json bodleian built",
+   "earliest": 1478,
+   "latest": 1488
+  },
+  {
+   "lib": "bodleian",
+   "field": "built",
+   "value": "Bodley refoundation 1602",
+   "source": "",
+   "tier": "",
+   "quote": "",
+   "status": "failing",
+   "check": "not fetched this run"
+  },
+  {
+   "lib": "hereford",
+   "field": "built",
+   "value": "Chained library arrangement 1611-1841 (original); housed in New Library Building opened 5 May 1996",
+   "source": "https://www.herefordcathedral.org/chained-library",
+   "tier": "primary",
+   "quote": "the whole library can now be seen in its original arrangement as it was from 1611 to 1841",
+   "status": "passing",
+   "check": "curl -sL 'https://www.herefordcathedral.org/chained-library' | sed 's/<[^>]*>/ /g' | rg -o 'as it was from 1611 to 1841'",
+   "earliest": 1611,
+   "latest": 1611
+  },
+  {
+   "lib": "hereford",
+   "field": "built",
+   "value": "New Library Building opened 1996",
+   "source": "https://www.themappamundi.co.uk/about-the-trust.php",
+   "tier": "primary",
+   "quote": "The New Library Building was officially opened by Her Majesty Queen Elizabeth II on 5th May 1996",
+   "status": "passing",
+   "check": "WebFetch 'https://www.themappamundi.co.uk/about-the-trust.php'",
+   "earliest": 1996,
+   "latest": 1996
+  },
+  {
+   "lib": "hereford",
+   "field": "status_note",
+   "value": "Mappa Mundi & Chained Library Museum open Mon-Sat 10am-4.30pm (page updated 2 Nov 2026)",
+   "source": "https://www.herefordcathedral.org/mappa-mundi-and-chained-library-exhibition",
+   "tier": "primary",
+   "quote": "The Mappa Mundi & Chained Library Museum is open Monday - Saturday, 10 am - 4.30 pm",
+   "status": "passing",
+   "check": "WebFetch 'https://www.herefordcathedral.org/mappa-mundi-and-chained-library-exhibition'"
+  },
+  {
+   "lib": "hereford",
+   "field": "volumes",
+   "value": "229 medieval manuscripts (reuse; libs says 229 plus 1,500 printed)",
+   "source": "https://www.herefordcathedral.org/chained-library",
+   "tier": "primary",
+   "quote": "it is one of 229 medieval manuscript",
+   "status": "passing",
+   "check": "curl -sL 'https://www.herefordcathedral.org/chained-library' | sed 's/<[^>]*>/ /g' | rg -o 'one of 229 medieval manuscript'"
+  },
+  {
+   "lib": "escorial",
+   "field": "built",
+   "value": "library hall 1584-1592",
+   "source": "",
+   "tier": "",
+   "quote": "",
+   "status": "failing",
+   "check": "not proven; Wikipedia gave only building completion 1584, no hall dates; no primary fetched (patrimonionacional URL 404)"
+  },
+  {
+   "lib": "escorial",
+   "field": "volumes",
+   "value": "more than 40,000 volumes",
+   "source": "https://en.wikipedia.org/wiki/El_Escorial",
+   "tier": "wikipedia",
+   "quote": "Currently the library has more than 40,000 volumes, located in a great hall 54 metres (177 ft) in length",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/El_Escorial'"
+  },
+  {
+   "lib": "mafra",
+   "field": "built",
+   "value": "1771 library fit-out",
+   "source": "",
+   "tier": "",
+   "quote": "",
+   "status": "failing",
+   "check": "not proven; palace 1717-1755 only (west-europe.json)"
+  },
+  {
+   "lib": "mafra",
+   "field": "status_note",
+   "value": "Closed to public from 20 Aug 2025 for conservation (reuse)",
+   "source": "west-europe.json",
+   "tier": "primary",
+   "quote": "A Biblioteca do Palácio Nacional de Mafra está temporariamente encerrada ao público desde quarta-feira",
+   "status": "passing",
+   "check": "see west-europe.json mafra status_note",
+   "earliest": 2025,
+   "latest": 2025
+  },
+  {
+   "lib": "mafra",
+   "field": "volumes",
+   "value": "over 36,000 volumes (libs.json says about 30,000)",
+   "source": "https://en.wikipedia.org/wiki/Mafra_National_Palace",
+   "tier": "wikipedia",
+   "quote": "They contain over 36,000 leather-bound volumes",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Mafra_National_Palace'"
+  },
+  {
+   "lib": "loc",
+   "field": "built",
+   "value": "Main Reading Room opened to public 1897",
+   "source": "americas.json",
+   "tier": "primary",
+   "quote": "The Library opened to the public in 1897 and the finishing work was completed in 1898.",
+   "status": "passing",
+   "check": "see americas.json loc built",
+   "earliest": 1897,
+   "latest": 1898
+  },
+  {
+   "lib": "loc",
+   "field": "status_note",
+   "value": "Great Hall entrance to Main Reading Room closed; reached via Ground Floor",
+   "source": "https://www.loc.gov/visit/maps-and-floor-plans/thomas-jefferson-building/first-floor/",
+   "tier": "primary",
+   "quote": "The Great Hall entrance to the Main Reading Room is currently closed; navigation to the Main Reading Room is currently accessible through the Ground Floor",
+   "status": "passing",
+   "check": "WebFetch 'https://www.loc.gov/visit/maps-and-floor-plans/thomas-jefferson-building/first-floor/'"
+  },
+  {
+   "lib": "nypl",
+   "field": "built",
+   "value": "1900-1911 (opened 1911)",
+   "source": "americas.json",
+   "tier": "primary",
+   "quote": "ARCHITECT: Carrere & Hastings DATE: 1900-11",
+   "status": "passing",
+   "check": "see americas.json nypl built",
+   "earliest": 1900,
+   "latest": 1911
+  },
+  {
+   "lib": "bpl",
+   "field": "built",
+   "value": "McKim Building completed 1895",
+   "source": "americas.json",
+   "tier": "primary",
+   "quote": "designed by Charles Follen McKim and completed in 1895",
+   "status": "passing",
+   "check": "see americas.json bpl built",
+   "earliest": 1895,
+   "latest": 1895
+  },
+  {
+   "lib": "peabody",
+   "field": "built",
+   "value": "opened 1878",
+   "source": "americas.json",
+   "tier": "primary",
+   "quote": "The library building opened in 1878",
+   "status": "passing",
+   "check": "see americas.json peabody built",
+   "earliest": 1878,
+   "latest": 1878
+  },
+  {
+   "lib": "peabody",
+   "field": "status_note",
+   "value": "open to public",
+   "source": "",
+   "tier": "",
+   "quote": "",
+   "status": "failing",
+   "check": "official JHU page unreachable (403/DNS); only search summary seen"
+  },
+  {
+   "lib": "morgan",
+   "field": "built",
+   "value": "McKim building 1902/1903-1906; incorporated as public institution March 1924",
+   "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+   "tier": "wikipedia",
+   "quote": "The Pierpont Morgan Library was incorporated as a public institution in March 1924",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum'",
+   "earliest": 1903,
+   "latest": 1906
+  },
+  {
+   "lib": "morgan",
+   "field": "volumes",
+   "value": "three Gutenberg Bibles",
+   "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+   "tier": "wikipedia",
+   "quote": "three Gutenberg Bibles",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum'"
+  },
+  {
+   "lib": "ottawa",
+   "field": "built",
+   "value": "opened 28 Feb 1876",
+   "source": "americas.json",
+   "tier": "primary",
+   "quote": "opened on 28 February 1876",
+   "status": "passing",
+   "check": "see americas.json ottawa built",
+   "earliest": 1876,
+   "latest": 1876
+  },
+  {
+   "lib": "ottawa",
+   "field": "status_note",
+   "value": "Centre Block main construction 2030-2031, reopens about 1 year later (Library of Parliament not named on page)",
+   "source": "https://www.canada.ca/en/public-services-procurement/services/infrastructure-buildings/parliamentary-precinct/projects-in-parliamentary-precinct/centre-block-project/quarterly-reports/progress-june-2026.html",
+   "tier": "primary",
+   "quote": "We aim to complete main construction between 2030 and 2031. ... The Centre Block will reopen about 1 year later.",
+   "status": "passing",
+   "check": "WebFetch the URL in source",
+   "earliest": 2031,
+   "latest": 2032
+  },
+  {
+   "lib": "ottawa",
+   "field": "status_note",
+   "value": "Library closed 2019",
+   "source": "americas.json",
+   "tier": "primary",
+   "quote": "In 2019, the Library of Parliament building closed again due to the ongoing rehabilitation of Centre",
+   "status": "passing",
+   "check": "see americas.json ottawa status_note"
+  },
+  {
+   "lib": "gabinete",
+   "field": "built",
+   "value": "building 1880-1887, inaugurated 10 Sep 1887; institution 1837",
+   "source": "americas.json",
+   "tier": "primary",
+   "quote": "erected between 1880 and 1887",
+   "status": "passing",
+   "check": "see americas.json gabinete built",
+   "earliest": 1880,
+   "latest": 1887
+  }
+ ],
+ "events": [
+  {
+   "lib": "ottawa",
+   "kind": "damaged",
+   "year": 1916,
+   "earliest": 1916,
+   "latest": 1916,
+   "label": "Centre Block burned; Library saved by iron doors",
+   "source": "americas.json",
+   "tier": "primary",
+   "quote": "the library clerk at the time, Michael MacCormac, secured the library's iron doors before the fire",
+   "status": "passing",
+   "check": "see americas.json ottawa collection"
+  },
+  {
+   "lib": "ottawa",
+   "kind": "damaged",
+   "year": 1952,
+   "earliest": 1952,
+   "latest": 1952,
+   "label": "Fire in Library dome",
+   "source": "americas.json",
+   "tier": "primary",
+   "quote": "1952: A fire breaks out in the dome of the Library",
+   "status": "passing",
+   "check": "see americas.json ottawa damaged"
+  },
+  {
+   "lib": "ottawa",
+   "kind": "closed",
+   "year": 2019,
+   "earliest": 2019,
+   "latest": 2019,
+   "label": "Library closed for Centre Block rehabilitation",
+   "source": "americas.json",
+   "tier": "primary",
+   "quote": "In 2019, the Library of Parliament building closed again",
+   "status": "passing",
+   "check": "see americas.json"
+  },
+  {
+   "lib": "mafra",
+   "kind": "closed",
+   "year": 2025,
+   "earliest": 2025,
+   "latest": 2025,
+   "label": "Library closed for conservation",
+   "source": "west-europe.json",
+   "tier": "primary",
+   "quote": "temporariamente encerrada ao público",
+   "status": "passing",
+   "check": "see west-europe.json"
+  },
+  {
+   "lib": "longroom",
+   "kind": "closed",
+   "year": 2027,
+   "earliest": 2027,
+   "latest": 2027,
+   "label": "Old Library to close for redevelopment (planned)",
+   "source": "https://www.trinitynews.ie/2026/09/old-library-to-close-for-restoration-and-renovation-in-late-2027-following-four-year-delay/",
+   "tier": "secondary",
+   "quote": "set to close in late 2027 for restoration and renovation",
+   "status": "passing",
+   "check": "WebFetch source"
+  },
+  {
+   "lib": "longroom",
+   "kind": "reopened",
+   "year": 2030,
+   "earliest": 2030,
+   "latest": 2030,
+   "label": "Expected reopening (projected)",
+   "source": "same",
+   "tier": "secondary",
+   "quote": "The library is now expected to reopen in 2030.",
+   "status": "passing",
+   "check": "WebFetch source"
+  },
+  {
+   "lib": "hereford",
+   "kind": "opened",
+   "year": 1996,
+   "earliest": 1996,
+   "latest": 1996,
+   "label": "New Library Building opened; chained library rehoused",
+   "source": "https://www.themappamundi.co.uk/about-the-trust.php",
+   "tier": "primary",
+   "quote": "officially opened by Her Majesty Queen Elizabeth II on 5th May 1996",
+   "status": "passing",
+   "check": "WebFetch source"
+  },
+  {
+   "lib": "morgan",
+   "kind": "opened",
+   "year": 1924,
+   "earliest": 1924,
+   "latest": 1924,
+   "label": "Became public institution",
+   "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+   "tier": "wikipedia",
+   "quote": "incorporated as a public institution in March 1924",
+   "status": "passing",
+   "check": "WebFetch source"
+  }
+ ],
+ "plans": [],
+ "books": [],
+ "corrections": [
+  {
+   "lib": "longroom",
+   "field": "st",
+   "old": "Closes for restoration; Kells moves out late 2027, works to about 2030",
+   "new": "Open to visitors; Old Library closes late 2027, reopening expected 2030",
+   "source": "https://www.trinitynews.ie/2026/09/old-library-to-close-for-restoration-and-renovation-in-late-2027-following-four-year-delay/"
+  },
+  {
+   "lib": "longroom",
+   "field": "stFrom",
+   "old": 2025,
+   "new": 2027,
+   "source": "same (closure has not begun as of Nov 2026; or use 2026, when the delay was announced)"
+  },
+  {
+   "lib": "mafra",
+   "field": "vol",
+   "old": "About 30,000 volumes (and resident bats)",
+   "new": "Over 36,000 volumes (and resident bats)",
+   "source": "https://en.wikipedia.org/wiki/Mafra_National_Palace"
+  },
+  {
+   "lib": "morgan",
+   "field": "vol",
+   "old": "Gutenberg Bible, plus manuscripts and drawings",
+   "new": "Three Gutenberg Bibles, plus manuscripts and drawings",
+   "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum"
+  },
+  {
+   "lib": "escorial",
+   "field": "vol",
+   "old": "",
+   "new": "More than 40,000 volumes (wikipedia tier)",
+   "source": "https://en.wikipedia.org/wiki/El_Escorial"
+  },
+  {
+   "lib": "hereford",
+   "field": "n",
+   "old": "Hereford Cathedral Chained Library",
+   "new": "keep y=1611 (arrangement date); note building is 1996 New Library Building",
+   "source": "https://www.herefordcathedral.org/chained-library"
+  }
+ ]
+}

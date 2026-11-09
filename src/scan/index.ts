@@ -13,7 +13,7 @@ const small = (p: Page, w = 600) => `${p.s}/full/${w},/0/default.jpg`
 const tile = (p: Page, x: number, y: number, w: number, h: number) => `${p.s}/${x},${y},${w},${h}/${w},/0/default.jpg`
 
 const notFound = (el: HTMLElement) => {
-  el.innerHTML = '<section class="page" data-view="scan" data-ready="true"><h1>Not on any shelf</h1><p><a href="/">Back to the globe</a></p></section>'
+  el.innerHTML = '<section class="page" data-view="scan" data-ready="true"><h1>Not on any shelf</h1><p><a href="/">Back to the atlas</a></p></section>'
 }
 
 export const mount: Mount = (el, params) => {

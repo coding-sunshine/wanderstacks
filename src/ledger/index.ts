@@ -6,7 +6,7 @@ interface Ledger { rows: Row[]; myth: string; correction: string; links: string[
 
 const LISTS = ['attested', 'disputed', 'unknown'] as const
 const HEADS = { attested: 'Attested', disputed: 'Disputed', unknown: 'Unknown' }
-const BACK = '<p><a href="/">Back to the globe</a></p>'
+const BACK = '<p><a href="/">Back to the atlas</a></p>'
 
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => `&#${c.charCodeAt(0)};`)
 const host = (u: string) => new URL(u).hostname.replace(/^www\./, '')

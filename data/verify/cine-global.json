@@ -1,0 +1,1163 @@
+{
+ "cluster": "cine-global",
+ "facts": [
+  {
+   "lib": "thanjavur",
+   "field": "name",
+   "value": "Saraswathi Mahal Library (Thanjavur Maharaja Serfoji's Sarasvati Mahal Library)",
+   "source": "https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library",
+   "tier": "wikipedia",
+   "quote": "formally named the 'Thanjavur Maharaja Serfoji's Sarasvati Mahal Library', after the Maratha King of Thanjavur, Serfoji II",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library'"
+  },
+  {
+   "lib": "thanjavur",
+   "field": "built",
+   "value": "Nayak royal library, Nayak rule 1535-1676; expanded by Serfoji II 1798-1832",
+   "source": "https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library",
+   "tier": "wikipedia",
+   "quote": "started by Nayak Kings of Tanjavur as a Royal Library ... 1535 CE till 1676 CE",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library'",
+   "earliest": 1535,
+   "latest": 1676
+  },
+  {
+   "lib": "thanjavur",
+   "field": "volumes",
+   "value": "49,000+ volumes incl. 39,300 Tamil/Sanskrit manuscripts (Wikipedia); other sites say 60,000 printed + 45,000 mss: unsettled",
+   "source": "https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library",
+   "tier": "wikipedia",
+   "quote": "The collection comprises well over 49,000 volumes ... 39,300",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library'"
+  },
+  {
+   "lib": "thanjavur",
+   "field": "status_note",
+   "value": "open to the public; Manuscript Conservation Centre; public since 1918",
+   "source": "https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library",
+   "tier": "wikipedia",
+   "quote": "During 1918 the Saraswathi Mahal Library was open to public.",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library'"
+  },
+  {
+   "lib": "khudabakhsh",
+   "field": "built",
+   "value": "opened to public 29 Oct 1891",
+   "source": "https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library",
+   "tier": "wikipedia",
+   "quote": "opened to public on 29 October 1891",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library'",
+   "earliest": 1891,
+   "latest": 1891
+  },
+  {
+   "lib": "khudabakhsh",
+   "field": "volumes",
+   "value": "21,136 manuscripts; ~2.08M printed books",
+   "source": "https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library",
+   "tier": "wikipedia",
+   "quote": "collection_size = 2,082,904 (printed books) 21,136 (manuscripts)",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Khuda_Bakhsh_Oriental_Library&action=raw' | rg -o -m1 'collection_size.{0,90}'"
+  },
+  {
+   "lib": "khudabakhsh",
+   "field": "status_note",
+   "value": "open; Institution of National Importance by Act of Parliament 26 Dec 1969; 2021 flyover plan threatened part of building",
+   "source": "https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library",
+   "tier": "wikipedia",
+   "quote": "Institution of National Importance by Act of Parliament, 26 December 1969",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Khuda_Bakhsh_Oriental_Library&action=raw' | rg -o -m1 'Institution of National Importance.{0,50}'"
+  },
+  {
+   "lib": "nli",
+   "field": "built",
+   "value": "Calcutta Public Library opened 21 Mar 1836; Imperial Library 1903; National Library opened 1 Feb 1953",
+   "source": "https://en.wikipedia.org/wiki/National_Library_of_India",
+   "tier": "wikipedia",
+   "quote": "On 1 February 1953 the National Library was opened to the public by Maulana Abul Kalam Azad.",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/National_Library_of_India'",
+   "earliest": 1836,
+   "latest": 1953
+  },
+  {
+   "lib": "nli",
+   "field": "place",
+   "value": "Belvedere Estate, Alipore, Kolkata",
+   "source": "https://en.wikipedia.org/wiki/National_Library_of_India",
+   "tier": "wikipedia",
+   "quote": "Situated at Belvedere Estate in Alipore, Kolkata",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/National_Library_of_India'"
+  },
+  {
+   "lib": "nli",
+   "field": "volumes",
+   "value": "2.5M+ books and records; 86,000 maps; 3,200 manuscripts",
+   "source": "https://en.wikipedia.org/wiki/National_Library_of_India",
+   "tier": "wikipedia",
+   "quote": "a collection in excess of 2.5 million books and records ... 86,000 maps and 3,200 manuscripts",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/National_Library_of_India'"
+  },
+  {
+   "lib": "nli",
+   "field": "status_note",
+   "value": "open; 'Museum of Word' inaugurated 19 Jul 2026",
+   "source": "https://en.wikipedia.org/wiki/National_Library_of_India",
+   "tier": "wikipedia",
+   "quote": "On July 19, 2026, the Ministry of Culture inaugurated an immersive 'Museum of Word'",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/National_Library_of_India'"
+  },
+  {
+   "lib": "asiatic",
+   "field": "built",
+   "value": "Literary Society of Bombay first met 26 Nov 1804; moved into Town Hall 1830",
+   "source": "https://asiaticsociety.org.in/index.php/about-us/history-asiatic",
+   "tier": "primary",
+   "quote": "it met for the first time on Nov 26, 1804 ... In 1830, it moved into the Town Hall Building",
+   "status": "passing",
+   "check": "WebFetch 'https://asiaticsociety.org.in/index.php/about-us/history-asiatic'",
+   "earliest": 1804,
+   "latest": 1830
+  },
+  {
+   "lib": "asiatic",
+   "field": "volumes",
+   "value": "100,000+ books, 15,000 rare; 3,000+ manuscripts",
+   "source": "https://en.wikipedia.org/wiki/The_Asiatic_Society_of_Mumbai",
+   "tier": "wikipedia",
+   "quote": "over a hundred thousand books out of which 15,000 are classified as rare and valuable",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/The_Asiatic_Society_of_Mumbai'"
+  },
+  {
+   "lib": "asiatic",
+   "field": "architect",
+   "value": "Town Hall: Col. Thomas Cowper, completed 1833 (secondary search result, not quote-verified)",
+   "source": "https://en.wikipedia.org/wiki/Asiatic_Society_of_Mumbai_Town_Hall",
+   "tier": "wikipedia",
+   "quote": "Construction was completed in 1833",
+   "status": "failing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Asiatic_Society_of_Mumbai_Town_Hall'"
+  },
+  {
+   "lib": "connemara",
+   "field": "built",
+   "value": "foundation 22 Mar 1890; opened to public 1896",
+   "source": "https://en.wikipedia.org/wiki/Connemara_Public_Library",
+   "tier": "wikipedia",
+   "quote": "Established in 1890, and opened for public in 1896",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Connemara_Public_Library&action=raw' | rg -o -m1 'Established in 1890.{0,40}'",
+   "earliest": 1890,
+   "latest": 1896
+  },
+  {
+   "lib": "connemara",
+   "field": "volumes",
+   "value": "600,000+ books",
+   "source": "https://en.wikipedia.org/wiki/Connemara_Public_Library",
+   "tier": "wikipedia",
+   "quote": "The library has a collection of over 600,000 books.",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Connemara_Public_Library'"
+  },
+  {
+   "lib": "connemara",
+   "field": "status_note",
+   "value": "open; one of four National Depository Libraries; UN depository",
+   "source": "https://en.wikipedia.org/wiki/Connemara_Public_Library",
+   "tier": "wikipedia",
+   "quote": "one of the four National Depository Libraries",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Connemara_Public_Library&action=raw' | rg -o -m1 'one of the four.{0,30}'"
+  },
+  {
+   "lib": "sassoon",
+   "field": "built",
+   "value": "built 1867-1870; completed 1870",
+   "source": "https://en.wikipedia.org/wiki/David_Sassoon_Library",
+   "tier": "wikipedia",
+   "quote": "built = 1870 ... constructed from 1867 to 1870 and completed in 1870",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=David_Sassoon_Library&action=raw' | rg -o -m1 'built *=.{0,40}'",
+   "earliest": 1867,
+   "latest": 1870
+  },
+  {
+   "lib": "sassoon",
+   "field": "architect",
+   "value": "J. Campbell and G. E. Gosling",
+   "source": "https://en.wikipedia.org/wiki/David_Sassoon_Library",
+   "tier": "wikipedia",
+   "quote": "architect= J. Campbell and G. E. Gosling",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=David_Sassoon_Library&action=raw' | rg -o -m1 'architect=.{0,40}'"
+  },
+  {
+   "lib": "sassoon",
+   "field": "status_note",
+   "value": "restored 2023 (Abha Narain Lambah Associates with JSW Foundation); part of Victorian Gothic and Art Deco Ensembles of Mumbai WHS (2018)",
+   "source": "https://en.wikipedia.org/wiki/David_Sassoon_Library",
+   "tier": "wikipedia",
+   "quote": "restored = 2023 ... restored_by= Abha Narain Lambah Associates with JSW Foundation",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=David_Sassoon_Library&action=raw' | rg -o -m1 'restored *=.{0,30}'"
+  },
+  {
+   "lib": "alexandrina",
+   "field": "built",
+   "value": "officially inaugurated 16 Oct 2002",
+   "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+   "tier": "wikipedia",
+   "quote": "officially inaugurated on 16 October 2002",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Bibliotheca_Alexandrina&action=raw' | rg -o -m1 'start date and age.2002.{0,12}'",
+   "earliest": 2002,
+   "latest": 2002
+  },
+  {
+   "lib": "alexandrina",
+   "field": "architect",
+   "value": "Snohetta (UNESCO competition 1988, 524 entries)",
+   "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+   "tier": "wikipedia",
+   "quote": "Snohetta, a Norwegian firm that won a UNESCO design competition in 1988 among 524 entries",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina'"
+  },
+  {
+   "lib": "alexandrina",
+   "field": "dims",
+   "value": "main reading room 20,000 m2 on eleven cascading levels",
+   "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+   "tier": "wikipedia",
+   "quote": "20,000 square metres (220,000 sq ft) on eleven cascading levels",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina'"
+  },
+  {
+   "lib": "alexandrina",
+   "field": "volumes",
+   "value": "shelf space for eight million books",
+   "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+   "tier": "wikipedia",
+   "quote": "offers shelf space for eight million books",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina'"
+  },
+  {
+   "lib": "mcmillan",
+   "field": "built",
+   "value": "officially opened 5 June 1931",
+   "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+   "tier": "wikipedia",
+   "quote": "The Library was officially opened on 5 June 1931",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi'",
+   "earliest": 1931,
+   "latest": 1931
+  },
+  {
+   "lib": "mcmillan",
+   "field": "architect",
+   "value": "Herbert Baker (per Wikipedia category only; not quote-verified)",
+   "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+   "tier": "wikipedia",
+   "quote": "category footer: Herbert Baker buildings",
+   "status": "failing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi'"
+  },
+  {
+   "lib": "mcmillan",
+   "field": "volumes",
+   "value": "400,000+ books incl. East African newspapers from 1901",
+   "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+   "tier": "wikipedia",
+   "quote": "The library holds more than 400,000 books including East African newspapers and periodicals dating back to 1901.",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi'"
+  },
+  {
+   "lib": "mcmillan",
+   "field": "status_note",
+   "value": "closed June-Oct 2026 for phase-1 structural restoration (roof, drainage) led by Book Bunk; Oct 2026 reopening not confirmed",
+   "source": "https://standardmedia.co.ke/health/amp/arts-culture/article/2001551272/mcmillan-nairobis-oldest-library-shuts-doors-as-renovation-begins",
+   "tier": "secondary",
+   "quote": "The closure will run from June to October 2026.",
+   "status": "passing",
+   "check": "WebFetch 'https://standardmedia.co.ke/health/amp/arts-culture/article/2001551272/mcmillan-nairobis-oldest-library-shuts-doors-as-renovation-begins'"
+  },
+  {
+   "lib": "tianyige",
+   "field": "built",
+   "value": "built 1561 (Jiajing 40) by Fan Qin; c. 1561-1566",
+   "source": "https://en.wikipedia.org/wiki/Tianyi_Ge",
+   "tier": "wikipedia",
+   "quote": "Tianyi Ge was built in 1561 during the 40th year of the Jiajing reign of the Ming Dynasty by Fan Qin.",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Tianyi_Ge'",
+   "earliest": 1561,
+   "latest": 1566
+  },
+  {
+   "lib": "tianyige",
+   "field": "volumes",
+   "value": "~300,000 volumes today; 70,000 in Fan's 1585 library",
+   "source": "https://en.wikipedia.org/wiki/Tianyi_Ge",
+   "tier": "wikipedia",
+   "quote": "expanding to around 300,000 through donations and acquisitions",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Tianyi_Ge'"
+  },
+  {
+   "lib": "tianyige",
+   "field": "status_note",
+   "value": "museum and library, open Tue-Sun; National Heritage Site 1982",
+   "source": "https://en.wikipedia.org/wiki/Tianyi_Ge",
+   "tier": "wikipedia",
+   "quote": "designated a National Heritage Site in 1982",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Tianyi_Ge'"
+  },
+  {
+   "lib": "tianyige",
+   "field": "place",
+   "value": "Ningbo, Zhejiang",
+   "source": "https://en.wikipedia.org/wiki/Tianyi_Ge",
+   "tier": "wikipedia",
+   "quote": "a library and garden located in Ningbo, Zhejiang Province, China",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Tianyi_Ge'"
+  },
+  {
+   "lib": "binhai",
+   "field": "built",
+   "value": "opened 1 Oct 2017",
+   "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+   "tier": "wikipedia",
+   "quote": "established = 2017 ... 滨海新区图书馆'十一'开放 (1 October 2017)",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Tianjin_Binhai_Library&action=raw' | rg -o -m1 'established = 2017'",
+   "earliest": 2017,
+   "latest": 2017
+  },
+  {
+   "lib": "binhai",
+   "field": "architect",
+   "value": "MVRDV with TUPDI",
+   "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+   "tier": "secondary",
+   "quote": "MVRDV and local designers Tianjin Urban Planning and Design Institute",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Tianjin_Binhai_Library'",
+   "source_note": "WebSearch result summary"
+  },
+  {
+   "lib": "binhai",
+   "field": "dims",
+   "value": "33,700 m2, five levels",
+   "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+   "tier": "wikipedia",
+   "quote": "The five-level library has a total space of 33,700 m2",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Tianjin_Binhai_Library&action=raw' | rg -o -m1 'total space of.{0,30}'"
+  },
+  {
+   "lib": "binhai",
+   "field": "volumes",
+   "value": "capacity 1.2 million books",
+   "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+   "tier": "wikipedia",
+   "quote": "terraced bookshelves able to hold 1.2 million books",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Tianjin_Binhai_Library&action=raw' | rg -o -m1 'able to hold 1.2 million books'"
+  },
+  {
+   "lib": "slv",
+   "field": "built",
+   "value": "foundation stone 3 Jul 1854; opened 11 Feb 1856 as Melbourne Public Library",
+   "source": "https://en.wikipedia.org/wiki/State_Library_Victoria",
+   "tier": "wikipedia",
+   "quote": "The foundation stone was laid on 3 July 1854 ... opened on 11 February 1856",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/State_Library_Victoria'",
+   "earliest": 1854,
+   "latest": 1856
+  },
+  {
+   "lib": "slv",
+   "field": "architect",
+   "value": "Joseph Reed (design competition)",
+   "source": "https://en.wikipedia.org/wiki/State_Library_Victoria",
+   "tier": "wikipedia",
+   "quote": "Joseph Reed won the design competition",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/State_Library_Victoria'"
+  },
+  {
+   "lib": "slv",
+   "field": "volumes",
+   "value": "3,892,523 collection items registered (2022-23)",
+   "source": "https://en.wikipedia.org/wiki/State_Library_Victoria",
+   "tier": "wikipedia",
+   "quote": "collection_size = 3,892,523 collection items electronically registered",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=State_Library_Victoria&action=raw' | rg -o -m1 'collection_size.{0,70}'"
+  },
+  {
+   "lib": "slv",
+   "field": "status_note",
+   "value": "open, free access; Vision 2020 redevelopment completed Dec 2019; domed reading room opened 1913",
+   "source": "https://en.wikipedia.org/wiki/State_Library_Victoria",
+   "tier": "wikipedia",
+   "quote": "officially completed its Vision 2020 redevelopment project in December 2019",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/State_Library_Victoria'"
+  },
+  {
+   "lib": "vasconcelos",
+   "field": "built",
+   "value": "inaugurated 16 May 2006",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos",
+   "tier": "wikipedia",
+   "quote": "Vicente Fox inaugurated the library on 16 May 2006",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Vasconcelos_Library&action=raw' | rg -o -m1 'inaugurated the library on 16 May 2006'",
+   "earliest": 2006,
+   "latest": 2006
+  },
+  {
+   "lib": "vasconcelos",
+   "field": "architect",
+   "value": "Alberto Kalach and Juan Palomar",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos",
+   "tier": "wikipedia",
+   "quote": "designed by the Mexican architects Alberto Kalach and Juan Palomar",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos'"
+  },
+  {
+   "lib": "vasconcelos",
+   "field": "dims",
+   "value": "38,000 m2",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos",
+   "tier": "wikipedia",
+   "quote": "spread across 38,000 square metres",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos'"
+  },
+  {
+   "lib": "vasconcelos",
+   "field": "volumes",
+   "value": "600,000 books (WebFetch summary; not in raw wikitext excerpt)",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos",
+   "tier": "wikipedia",
+   "quote": "holds 600,000 books",
+   "status": "failing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos'"
+  },
+  {
+   "lib": "vasconcelos",
+   "field": "status_note",
+   "value": "closed Mar 2007 for construction defects, reopened Nov 2008; open",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos",
+   "tier": "wikipedia",
+   "quote": "reopened to the public in November 2008 after 22 months",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos'"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "built",
+   "value": "founded 1646 (5,000 volumes donated 6 Sep 1646); current hall completed 1773",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+   "tier": "wikipedia",
+   "quote": "donated 5,000 items on September 6, 1646 ... Francisco Fabian y Fuero ... 1773",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana'",
+   "earliest": 1646,
+   "latest": 1773,
+   "ref": "data/verify/americas.json (existing wikipedia-tier rows)"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "dims",
+   "value": "vaulted hall 43 m long",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+   "tier": "wikipedia",
+   "quote": "a 43-meter-long vaulted hall on the Colegio's second floor",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana'"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "volumes",
+   "value": "45,000+ books and manuscripts, 9 incunabula; oldest: Nuremberg Chronicle 1493",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+   "tier": "wikipedia",
+   "quote": "more than 45,000 books and manuscripts ... Nuremberg Chronicle (1493)",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana'"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "status_note",
+   "value": "open; UNESCO Memory of the World 2005",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+   "tier": "wikipedia",
+   "quote": "In 2005, it was listed on UNESCO's Memory of the World Register",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Biblioteca_Palafoxiana&action=raw' | rg -o -m1 'In 2005, it was listed on UNESCO.{0,30}'"
+  },
+  {
+   "lib": "thanjavur",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open to public; Manuscript Conservation Centre",
+   "stFrom": 1918,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "khudabakhsh",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open; Institution of National Importance",
+   "stFrom": 1969,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "nli",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open to public; India's largest library by volume",
+   "stFrom": 1953,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "asiatic",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open; library in Town Hall, Mumbai",
+   "stFrom": 1830,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "connemara",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open; national depository library",
+   "stFrom": 1896,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "sassoon",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open; restored and reopened 2023",
+   "stFrom": 2023,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "alexandrina",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open to public",
+   "stFrom": 2002,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "mcmillan",
+   "field": "timeline",
+   "lost": null,
+   "st": "Closed for restoration (phase 1, Jun-Oct 2026); reopening unconfirmed",
+   "stFrom": 2026,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "tianyige",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open as museum and library",
+   "stFrom": 1982,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "binhai",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open to public",
+   "stFrom": 2017,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "slv",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open, free access; Vision 2020 redevelopment complete",
+   "stFrom": 2019,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "vasconcelos",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open to public since Nov 2008 reopening",
+   "stFrom": 2008,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "timeline",
+   "lost": null,
+   "st": "Open as research library",
+   "stFrom": 2005,
+   "status": "failing",
+   "note": "st/stFrom synthesised from rows above; stFrom is the year of the supporting event row or the nearest sourced date; no direct 'open Nov 2026' source fetched",
+   "check": "see per-lib status_note/events rows"
+  }
+ ],
+ "events": [
+  {
+   "lib": "thanjavur",
+   "kind": "opened",
+   "year": 1918,
+   "earliest": 1918,
+   "latest": 1918,
+   "label": "Library opened to the public",
+   "source": "https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library",
+   "tier": "wikipedia",
+   "quote": "During 1918 the Saraswathi Mahal Library was open to public.",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library'"
+  },
+  {
+   "lib": "khudabakhsh",
+   "kind": "opened",
+   "year": 1891,
+   "earliest": 1891,
+   "latest": 1891,
+   "label": "Opened to the public 29 Oct 1891",
+   "source": "https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library",
+   "tier": "wikipedia",
+   "quote": "opened to public on 29 October 1891",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library'"
+  },
+  {
+   "lib": "nli",
+   "kind": "founded",
+   "year": 1836,
+   "earliest": 1836,
+   "latest": 1836,
+   "label": "Calcutta Public Library opened (predecessor)",
+   "source": "https://en.wikipedia.org/wiki/National_Library_of_India",
+   "tier": "wikipedia",
+   "quote": "The Calcutta Public Library opened on 21 March 1836",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/National_Library_of_India'"
+  },
+  {
+   "lib": "nli",
+   "kind": "opened",
+   "year": 1953,
+   "earliest": 1953,
+   "latest": 1953,
+   "label": "Opened to public as National Library of India",
+   "source": "https://en.wikipedia.org/wiki/National_Library_of_India",
+   "tier": "wikipedia",
+   "quote": "On 1 February 1953 the National Library was opened to the public by Maulana Abul Kalam Azad.",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/National_Library_of_India'"
+  },
+  {
+   "lib": "asiatic",
+   "kind": "founded",
+   "year": 1804,
+   "earliest": 1804,
+   "latest": 1804,
+   "label": "Literary Society of Bombay first meets",
+   "source": "https://asiaticsociety.org.in/index.php/about-us/history-asiatic",
+   "tier": "primary",
+   "quote": "it met for the first time on Nov 26, 1804",
+   "status": "passing",
+   "check": "WebFetch 'https://asiaticsociety.org.in/index.php/about-us/history-asiatic'"
+  },
+  {
+   "lib": "asiatic",
+   "kind": "built",
+   "year": 1830,
+   "earliest": 1830,
+   "latest": 1830,
+   "label": "Society moves into Town Hall",
+   "source": "https://asiaticsociety.org.in/index.php/about-us/history-asiatic",
+   "tier": "primary",
+   "quote": "In 1830, it moved into the Town Hall Building",
+   "status": "passing",
+   "check": "WebFetch 'https://asiaticsociety.org.in/index.php/about-us/history-asiatic'"
+  },
+  {
+   "lib": "connemara",
+   "kind": "opened",
+   "year": 1896,
+   "earliest": 1896,
+   "latest": 1896,
+   "label": "Opened to the public",
+   "source": "https://en.wikipedia.org/wiki/Connemara_Public_Library",
+   "tier": "wikipedia",
+   "quote": "Established in 1890, and opened for public in 1896",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Connemara_Public_Library&action=raw' | rg -o -m1 'opened for public in 1896'"
+  },
+  {
+   "lib": "sassoon",
+   "kind": "built",
+   "year": 1870,
+   "earliest": 1870,
+   "latest": 1870,
+   "label": "Library building completed",
+   "source": "https://en.wikipedia.org/wiki/David_Sassoon_Library",
+   "tier": "wikipedia",
+   "quote": "built = 1870",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=David_Sassoon_Library&action=raw' | rg -o -m1 'built *=.{0,40}'"
+  },
+  {
+   "lib": "sassoon",
+   "kind": "reopened",
+   "year": 2023,
+   "earliest": 2023,
+   "latest": 2023,
+   "label": "Reopened after restoration",
+   "source": "https://en.wikipedia.org/wiki/David_Sassoon_Library",
+   "tier": "wikipedia",
+   "quote": "restored = 2023 ... restored_by= Abha Narain Lambah Associates with JSW Foundation",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=David_Sassoon_Library&action=raw' | rg -o -m1 'restored *=.{0,30}'"
+  },
+  {
+   "lib": "alexandrina",
+   "kind": "opened",
+   "year": 2002,
+   "earliest": 2002,
+   "latest": 2002,
+   "label": "Officially inaugurated 16 Oct 2002",
+   "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+   "tier": "wikipedia",
+   "quote": "officially inaugurated on 16 October 2002",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Bibliotheca_Alexandrina&action=raw' | rg -o -m1 'start date and age.2002.{0,12}'"
+  },
+  {
+   "lib": "mcmillan",
+   "kind": "opened",
+   "year": 1931,
+   "earliest": 1931,
+   "latest": 1931,
+   "label": "Officially opened 5 June 1931",
+   "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+   "tier": "wikipedia",
+   "quote": "The Library was officially opened on 5 June 1931",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi'"
+  },
+  {
+   "lib": "mcmillan",
+   "kind": "reopened",
+   "year": 1962,
+   "earliest": 1962,
+   "latest": 1962,
+   "label": "Opened to the general public (segregation ended)",
+   "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+   "tier": "wikipedia",
+   "quote": "the library was opened to the general public in 1962",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi'"
+  },
+  {
+   "lib": "mcmillan",
+   "kind": "closed",
+   "year": 2026,
+   "earliest": 2026,
+   "latest": 2026,
+   "label": "Closed for phase-1 restoration (June-Oct 2026)",
+   "source": "https://standardmedia.co.ke/health/amp/arts-culture/article/2001551272/mcmillan-nairobis-oldest-library-shuts-doors-as-renovation-begins",
+   "tier": "secondary",
+   "quote": "The closure will run from June to October 2026.",
+   "status": "passing",
+   "check": "WebFetch 'https://standardmedia.co.ke/health/amp/arts-culture/article/2001551272/mcmillan-nairobis-oldest-library-shuts-doors-as-renovation-begins'"
+  },
+  {
+   "lib": "tianyige",
+   "kind": "built",
+   "year": 1561,
+   "earliest": 1561,
+   "latest": 1566,
+   "label": "Built by Fan Qin (completed c. 1565-66 per secondary sources)",
+   "source": "https://en.wikipedia.org/wiki/Tianyi_Ge",
+   "tier": "wikipedia",
+   "quote": "Tianyi Ge was built in 1561 during the 40th year of the Jiajing reign",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Tianyi_Ge'"
+  },
+  {
+   "lib": "binhai",
+   "kind": "opened",
+   "year": 2017,
+   "earliest": 2017,
+   "latest": 2017,
+   "label": "Opened 1 Oct 2017",
+   "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+   "tier": "wikipedia",
+   "quote": "established = 2017",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Tianjin_Binhai_Library&action=raw' | rg -o -m1 'established = 2017'"
+  },
+  {
+   "lib": "slv",
+   "kind": "founded",
+   "year": 1854,
+   "earliest": 1854,
+   "latest": 1854,
+   "label": "Foundation stone laid 3 Jul 1854",
+   "source": "https://en.wikipedia.org/wiki/State_Library_Victoria",
+   "tier": "wikipedia",
+   "quote": "The foundation stone was laid on 3 July 1854",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/State_Library_Victoria'"
+  },
+  {
+   "lib": "slv",
+   "kind": "opened",
+   "year": 1856,
+   "earliest": 1856,
+   "latest": 1856,
+   "label": "Opened to the public 11 Feb 1856",
+   "source": "https://en.wikipedia.org/wiki/State_Library_Victoria",
+   "tier": "wikipedia",
+   "quote": "opened on 11 February 1856",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/State_Library_Victoria'"
+  },
+  {
+   "lib": "vasconcelos",
+   "kind": "opened",
+   "year": 2006,
+   "earliest": 2006,
+   "latest": 2006,
+   "label": "Inaugurated 16 May 2006",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos",
+   "tier": "wikipedia",
+   "quote": "inaugurated the library on 16 May 2006",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos'"
+  },
+  {
+   "lib": "vasconcelos",
+   "kind": "closed",
+   "year": 2007,
+   "earliest": 2007,
+   "latest": 2007,
+   "label": "Closed in March 2007 for construction defects",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos",
+   "tier": "wikipedia",
+   "quote": "had to close in March 2007 due to construction defects",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos'"
+  },
+  {
+   "lib": "vasconcelos",
+   "kind": "reopened",
+   "year": 2008,
+   "earliest": 2008,
+   "latest": 2008,
+   "label": "Reopened Nov 2008",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos",
+   "tier": "wikipedia",
+   "quote": "reopened to the public in November 2008 after 22 months",
+   "status": "passing",
+   "check": "WebFetch 'https://en.wikipedia.org/wiki/Biblioteca_Vasconcelos'"
+  },
+  {
+   "lib": "palafoxiana",
+   "kind": "founded",
+   "year": 1646,
+   "earliest": 1646,
+   "latest": 1646,
+   "label": "Founded by Bishop Palafox",
+   "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+   "tier": "wikipedia",
+   "quote": "Founded in 1646",
+   "status": "passing",
+   "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Biblioteca_Palafoxiana&action=raw' | rg -o -m1 'Founded in 1646'"
+  }
+ ],
+ "plans": [],
+ "books": [],
+ "corrections": [
+  {
+   "lib": "thanjavur",
+   "field": "ev",
+   "old": "probable",
+   "new": "known",
+   "source": "https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library"
+  },
+  {
+   "lib": "khudabakhsh",
+   "field": "ev",
+   "old": "probable",
+   "new": "known",
+   "source": "https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library"
+  },
+  {
+   "lib": "thanjavur",
+   "field": "yl",
+   "old": "Nayak era, 1535–1676",
+   "new": "Nayak royal library (Nayak rule 1535–1676); Serfoji II expanded 1798–1832; public 1918",
+   "source": "https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library"
+  },
+  {
+   "lib": "slv",
+   "field": "y",
+   "old": 1854,
+   "new": 1856,
+   "source": "https://en.wikipedia.org/wiki/State_Library_Victoria"
+  },
+  {
+   "lib": "slv",
+   "field": "yl",
+   "old": "1854",
+   "new": "foundation stone 1854; opened 1856",
+   "source": "https://en.wikipedia.org/wiki/State_Library_Victoria"
+  },
+  {
+   "lib": "tianyige",
+   "field": "y",
+   "old": 1560,
+   "new": 1561,
+   "source": "https://en.wikipedia.org/wiki/Tianyi_Ge"
+  },
+  {
+   "lib": "tianyige",
+   "field": "yl",
+   "old": "1560s",
+   "new": "1561–66",
+   "source": "https://en.wikipedia.org/wiki/Tianyi_Ge"
+  },
+  {
+   "lib": "nli",
+   "field": "yl",
+   "old": "1836",
+   "new": "1836 (Calcutta Public Library); National Library of India 1953",
+   "source": "https://en.wikipedia.org/wiki/National_Library_of_India"
+  },
+  {
+   "lib": "sassoon",
+   "field": "y",
+   "old": 1870,
+   "new": 1870,
+   "source": "https://en.wikipedia.org/wiki/David_Sassoon_Library"
+  },
+  {
+   "lib": "connemara",
+   "field": "yl",
+   "old": "1896",
+   "new": "opened 1896 (founded 1890)",
+   "source": "https://en.wikipedia.org/wiki/Connemara_Public_Library"
+  },
+  {
+   "lib": "mcmillan",
+   "field": "st",
+   "old": "(none)",
+   "new": "Closed for restoration, phase 1 Jun–Oct 2026; stFrom 2026",
+   "source": "https://standardmedia.co.ke/health/amp/arts-culture/article/2001551272/mcmillan-nairobis-oldest-library-shuts-doors-as-renovation-begins"
+  },
+  {
+   "lib": "thanjavur",
+   "field": "vol",
+   "old": null,
+   "new": "49,000+ volumes incl. 39,300 manuscripts",
+   "source": "see facts rows for thanjavur"
+  },
+  {
+   "lib": "thanjavur",
+   "field": "book",
+   "old": null,
+   "new": "Modi-script records of the Thanjavur Marathas",
+   "source": "see facts rows for thanjavur"
+  },
+  {
+   "lib": "khudabakhsh",
+   "field": "vol",
+   "old": null,
+   "new": "21,136 manuscripts; ~2.08M printed books",
+   "source": "see facts rows for khudabakhsh"
+  },
+  {
+   "lib": "khudabakhsh",
+   "field": "book",
+   "old": null,
+   "new": "Timurnama",
+   "source": "see facts rows for khudabakhsh"
+  },
+  {
+   "lib": "nli",
+   "field": "vol",
+   "old": null,
+   "new": "2.5M+ books and records; 3,200 manuscripts",
+   "source": "see facts rows for nli"
+  },
+  {
+   "lib": "asiatic",
+   "field": "vol",
+   "old": null,
+   "new": "100,000+ books; 3,000+ manuscripts",
+   "source": "see facts rows for asiatic"
+  },
+  {
+   "lib": "asiatic",
+   "field": "book",
+   "old": null,
+   "new": "15th-c. Divine Comedy manuscript (Dante)",
+   "source": "see facts rows for asiatic"
+  },
+  {
+   "lib": "connemara",
+   "field": "vol",
+   "old": null,
+   "new": "600,000+ books",
+   "source": "see facts rows for connemara"
+  },
+  {
+   "lib": "connemara",
+   "field": "book",
+   "old": null,
+   "new": "1608 Bible (unverified lead)",
+   "source": "see facts rows for connemara"
+  },
+  {
+   "lib": "alexandrina",
+   "field": "dim",
+   "old": null,
+   "new": "reading room 20,000 m2, 11 levels",
+   "source": "see facts rows for alexandrina"
+  },
+  {
+   "lib": "alexandrina",
+   "field": "vol",
+   "old": null,
+   "new": "shelf space for 8 million books",
+   "source": "see facts rows for alexandrina"
+  },
+  {
+   "lib": "mcmillan",
+   "field": "vol",
+   "old": null,
+   "new": "400,000+ books; East African newspapers from 1901",
+   "source": "see facts rows for mcmillan"
+  },
+  {
+   "lib": "tianyige",
+   "field": "vol",
+   "old": null,
+   "new": "~300,000 volumes",
+   "source": "see facts rows for tianyige"
+  },
+  {
+   "lib": "binhai",
+   "field": "dim",
+   "old": null,
+   "new": "33,700 m2, 5 levels",
+   "source": "see facts rows for binhai"
+  },
+  {
+   "lib": "binhai",
+   "field": "vol",
+   "old": null,
+   "new": "capacity 1.2 million books",
+   "source": "see facts rows for binhai"
+  },
+  {
+   "lib": "slv",
+   "field": "dim",
+   "old": null,
+   "new": "domed reading room 1913",
+   "source": "see facts rows for slv"
+  },
+  {
+   "lib": "slv",
+   "field": "vol",
+   "old": null,
+   "new": "3.89M items registered",
+   "source": "see facts rows for slv"
+  },
+  {
+   "lib": "vasconcelos",
+   "field": "dim",
+   "old": null,
+   "new": "38,000 m2",
+   "source": "see facts rows for vasconcelos"
+  },
+  {
+   "lib": "vasconcelos",
+   "field": "vol",
+   "old": null,
+   "new": "600,000 books",
+   "source": "see facts rows for vasconcelos"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "dim",
+   "old": null,
+   "new": "43 m vaulted hall",
+   "source": "see facts rows for palafoxiana"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "vol",
+   "old": null,
+   "new": "45,000+ books and manuscripts; 9 incunabula",
+   "source": "see facts rows for palafoxiana"
+  },
+  {
+   "lib": "palafoxiana",
+   "field": "book",
+   "old": null,
+   "new": "Nuremberg Chronicle (1493)",
+   "source": "see facts rows for palafoxiana"
+  }
+ ]
+}

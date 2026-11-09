@@ -64,7 +64,7 @@ test('each view enters with fades only, then holds still', async ({ page }) => {
   const urls: string[] = []
   page.on('request', (r) => urls.push(r.url()))
   const [book] = await readableIds()
-  for (const [path, view] of [['/', 'globe'], ['/atlas', 'atlas'], ['/room/longroom', 'room'], ['/byrne', 'byrne'], [`/read/${book}`, 'reader']]) {
+  for (const [path, view] of [['/', 'home'], ['/atlas', 'home'], ['/room/longroom', 'room'], ['/byrne', 'byrne'], [`/read/${book}`, 'reader']]) {
     await page.goto(path)
     await ready(page, view)
     expect(await offenders(page), `${path} animations`).toEqual([])
@@ -74,11 +74,12 @@ test('each view enters with fades only, then holds still', async ({ page }) => {
   expect(errors).toEqual([])
 })
 
-test('globe fly-in to the Long Room is a cut and cross-fade', async ({ page }) => {
-  await page.goto('/')
-  await ready(page, 'globe')
+test('atlas card to the Long Room is a cut and cross-fade', async ({ page }) => {
+  await page.goto('/atlas')
+  await ready(page, 'home')
+  await page.locator('#xlist').getByText(/^Long Room/).click()
   await clearLog(page)
-  await page.locator('[data-view="globe"]').getByRole('button', { name: /Long Room/ }).click()
+  await page.locator('#xcard a[href="/room/longroom"]').click()
   await ready(page, 'room')
   expect(await offenders(page)).toEqual([])
 })
