@@ -144,7 +144,7 @@ export const mount: Mount = (app, params) => {
     const up = (Math.asin(Math.max(-1, Math.min(1, spherePoint(p.lon, p.lat).dot(sunNow())))) * 180) / Math.PI
     const sky = up > 6 ? 'Daylight there now' : up > -6 ? 'Twilight there now' : 'Night there now'
     const links = el('p', 'globe-card-links')
-    if (p.wd) links.append(Object.assign(el('a', '', 'Read about it'), { href: `https://www.wikidata.org/wiki/Special:GoToLinkedPage/enwiki/${p.wd}`, target: '_blank', rel: 'noopener' }))
+    links.append(Object.assign(el('a', '', 'Read about it'), { href: `/place/${p.id}` }))
     if (p.href?.startsWith('/room/')) {
       const visit = Object.assign(el('a', '', 'Visit'), { href: p.href })
       visit.addEventListener('click', (e) => {

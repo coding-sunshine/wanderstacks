@@ -12,7 +12,7 @@ await Bun.write(root + 'public/lib/pins.json', JSON.stringify(pins))
 const books: any[] = await Bun.file(root + 'data/books.json').json().then((j: any) => j.books)
 const nameOf = Object.fromEntries(libs.map((l) => [l.id, l.n]))
 const catalog = [
-  ...pins.map((p) => ({ kind: 'room', title: p.n, sub: p.p, href: p.href ?? `/` })),
+  ...pins.map((p) => ({ kind: 'room', title: p.n, sub: p.p, href: p.href ?? `/place/${p.id}` })),
   ...books
     .filter((b) => b.status === 'passing')
     .map((b) => ({

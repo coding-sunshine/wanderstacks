@@ -45,6 +45,7 @@ const routes: Route[] = [
   [/^\/book$/, () => import('./book')],
   [/^\/babel$/, () => import('./babel')],
   [/^\/ledger\/(?<lib>[\w-]+)$/, () => import('./ledger')],
+  [/^\/place\/(?<lib>[\w-]+)$/, () => import('./place')],
   [/^\/stgall$/, () => import('./stgall')],
   [/^\/darwin$/, () => import('./darwin')],
   [/^\/scan\/(?<book>[\w-]+)$/, () => import('./scan')],
