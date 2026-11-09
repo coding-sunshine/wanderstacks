@@ -36,12 +36,6 @@
     "license": "CC0, Poly Haven"
   },
   {
-    "slot": "wood-dark",
-    "asset": "dark_wooden_planks",
-    "url": "/rooms/tex/dark_wooden_planks_diff_1k.jpg",
-    "license": "CC0, Poly Haven"
-  },
-  {
     "slot": "spines",
     "asset": "Old books on bookshelf, Clem Onojeghuo (Unsplash)",
     "url": "https://commons.wikimedia.org/wiki/File:Old_books_on_bookshelf._(Unsplash).jpg",

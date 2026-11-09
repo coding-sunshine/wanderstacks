@@ -34,7 +34,8 @@ export function addCredits(panel: HTMLElement, ex: Exterior | null) {
   }
   for (const t of textures) {
     const href = /polyhaven\.com/.test(t.url) ? `https://polyhaven.com/a/${t.asset}` : t.url
-    ul.append(el('li', {}, `${t.asset}, ${t.license} · `, link(href, href.replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0])))
+    const label = (() => { try { return new URL(href).hostname.replace(/^www\./, '') } catch { return href.split('/').pop() || 'local file' } })()
+    ul.append(el('li', {}, `${t.asset}, ${t.license} · `, link(href, label)))
   }
 }
 
