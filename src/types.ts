@@ -81,6 +81,11 @@ export interface Shelf {
   shelfmark: string | null
   url: string | null
   note: string | null
+  date?: string | null
+  holder?: string | null
+  why?: string | null
+  edition?: string | null
+  licence?: string | null
 }
 
 export interface Credit {

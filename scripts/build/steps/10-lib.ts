@@ -37,6 +37,11 @@ for (const file of await readdir(root + 'data/hall')) {
       shelfmark: b.shelfmark ?? null,
       url: b.tier === 'catalog' ? b.catalogue_url : `/read/${b.id}`,
       note: b.why ?? null,
+      date: b.date ?? null,
+      holder: b.holder ?? null,
+      why: b.why ?? null,
+      edition: b.read?.edition ?? null,
+      licence: b.read?.licence ?? null,
     }))
 
   const tourFile = Bun.file(root + `data/tour/${id}.json`)

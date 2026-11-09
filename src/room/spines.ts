@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { hash, type RoomApi } from './kit'
+import { binding, spineLabel } from './cover'
 
-const PALETTE = [0x5c3320, 0x40201a, 0x73241a, 0x243326, 0x292b42, 0x8c6b42, 0xb39e73, 0x4d4333]
 const FACE = 0.27 // spine face distance from the stand, along `out`
 const BOOK_Y = 1.465 // spine centre height
 const DIST = 2.4 // viewing distance from the spine face
@@ -26,8 +26,9 @@ export function attach(api: RoomApi) {
   const own = <T extends { dispose(): void }>(x: T) => (owned.push(x), x)
   const box = (w: number, h: number, d: number) => own(new THREE.BoxGeometry(w, h, d))
   const wood = own(new THREE.MeshLambertMaterial({ color: 0x3b2614 }))
-  const gilt = own(new THREE.MeshLambertMaterial({ color: 0xc9a24a, emissive: 0x2a2008 }))
-  const post = box(0.08, 1.15, 0.08), ledge = box(0.5, 0.04, 0.42), book = box(0.12, 0.55, 0.34), band = box(0.126, 0.03, 0.01)
+  const leather = own(new THREE.MeshLambertMaterial({ color: 0x3b2614 }))
+  const pages = own(new THREE.MeshLambertMaterial({ color: 0xe3d6b4 }))
+  const post = box(0.08, 1.15, 0.08), ledge = box(0.5, 0.04, 0.42)
 
   const group = new THREE.Group()
   scene.add(group)
@@ -36,20 +37,27 @@ export function attach(api: RoomApi) {
     const g = new THREE.Group()
     g.position.set(...s.at)
     g.rotation.y = Math.atan2(s.out[0], s.out[1])
-    const add = (geo: THREE.BufferGeometry, m: THREE.Material, y: number, z: number, pick = false) => {
-      const mesh = new THREE.Mesh(geo, m)
-      mesh.position.set(0, y, z)
-      if (pick) (mesh.userData.index = i), pickables.push(mesh)
-      g.add(mesh)
-    }
-    const cover = own(new THREE.MeshLambertMaterial({ color: PALETTE[hash(lib.shelves[i]!.id) % PALETTE.length] }))
-    add(post, wood, 0.575, 0)
-    add(ledge, wood, 1.17, 0.1)
-    add(book, cover, BOOK_Y, 0.1, true)
-    add(band, gilt, BOOK_Y + 0.15, FACE, true)
-    add(band, gilt, BOOK_Y - 0.15, FACE, true)
+    const shelfBook = lib.shelves[i]!
+    // Real spines differ in height and wear; the label faces the room.
+    const h = 0.52 + (hash(shelfBook.id) % 3) * 0.03
+    const tex = own(new THREE.CanvasTexture(spineLabel(shelfBook)))
+    tex.colorSpace = THREE.SRGBColorSpace
+    const spineM = own(new THREE.MeshLambertMaterial({ map: tex }))
+    const book = new THREE.Mesh(box(0.12, h, 0.34), [leather, leather, pages, leather, spineM, leather])
+    book.position.set(0, 1.19 + h / 2, 0.1)
+    book.userData.index = i
+    pickables.push(book)
+    g.add(book)
+    addPost(g)
     group.add(g)
   })
+  function addPost(g: THREE.Group) {
+    const p = new THREE.Mesh(post, wood)
+    p.position.set(0, 0.575, 0)
+    const l = new THREE.Mesh(ledge, wood)
+    l.position.set(0, 1.17, 0.1)
+    g.add(p, l)
+  }
 
   // ---- place: spines exist only inside ----
   const finds: HTMLButtonElement[] = []
@@ -107,14 +115,25 @@ export function attach(api: RoomApi) {
     const id = `book-title-${s.id}`
     const put = el('button', { type: 'button', autofocus: '' }, 'Put back')
     put.onclick = () => d.close()
+    const clip = (t: string | null | undefined, n: number) => ((t && t.length > n ? `${t.slice(0, n).trimEnd()}…` : t) ?? '')
+    const cover = el('div', { class: 'room-book-cover', role: 'img', 'aria-label': `Binding of ${s.title}` })
+    cover.style.backgroundImage = `url(${binding(s).toDataURL()})`
+    const info = el('div', { class: 'room-book-info' }, el('h2', { id }, s.title))
+    if (s.author || s.date) info.append(el('p', { class: 'room-book-by' }, [s.author, s.date].filter(Boolean).join(' · ')))
+    if (s.why) info.append(el('p', { class: 'room-book-why' }, clip(s.why, 260)))
+    if (s.edition) info.append(el('p', { class: 'room-book-ed' }, clip(s.edition, 140)))
+    if (s.holder || s.shelfmark) {
+      info.append(el('p', { class: 'room-book-holder' }, [s.holder, s.shelfmark ? `shelfmark ${s.shelfmark}` : null].filter(Boolean).join(' · ')))
+    }
+    if (s.licence) info.append(el('p', { class: 'micro room-book-lic' }, clip(s.licence, 200)))
+    const actions = el('div', { class: 'room-book-actions' })
+    if (s.tier === 'readable-text') actions.append(el('a', { href: `/read/${s.id}` }, 'Read it'))
+    else if (s.url) actions.append(el('a', { href: s.url, target: '_blank', rel: 'noopener noreferrer' }, 'See it at the library'))
+    actions.append(put)
+    info.append(actions)
     const d = (dlg = el('dialog', { class: 'room-book', role: 'dialog', 'aria-modal': 'true', 'aria-labelledby': id, 'data-book': s.id },
-      el('h2', { id }, s.title),
+      el('div', { class: 'room-book-body' }, cover, info),
     ))
-    if (s.author) d.append(el('p', {}, s.author))
-    if (s.shelfmark) d.append(el('p', { class: 'mark' }, s.shelfmark))
-    if (s.tier === 'readable-text') d.append(el('a', { href: `/read/${s.id}` }, 'Read it'))
-    else if (s.url) d.append(el('a', { href: s.url, target: '_blank', rel: 'noopener noreferrer' }, 'See it at the library'))
-    d.append(put)
     d.addEventListener('close', close)
     d.addEventListener('keydown', (e) => {
       if (e.key !== 'Tab') return
