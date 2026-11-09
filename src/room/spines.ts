@@ -50,7 +50,7 @@ export function attach(api: RoomApi) {
     // The sloped reading desk; the display volume lies on its plane, parented so it never sinks.
     const d = new THREE.Mesh(desk, wood)
     d.position.set(0, 1.155, 0.12)
-    d.rotation.x = -0.25
+    d.rotation.x = -0.3
     d.castShadow = true
     const thick = 0.035 + (hash(shelfBook.id) % 3) * 0.008
     const coverTex = own(new THREE.CanvasTexture(binding(shelfBook)))
@@ -97,7 +97,7 @@ export function attach(api: RoomApi) {
       // Lies on the same sloped desk plane as the display volume it replaces.
       ob.group.rotation.order = 'YXZ'
       ob.group.rotation.y = Math.atan2(s0.out[0], s0.out[1])
-      ob.group.rotation.x = -0.25
+      ob.group.rotation.x = -0.3
       ob.group.position.set(s0.at[0] + s0.out[0] * 0.14, 1.245, s0.at[2] + s0.out[1] * 0.14)
       scene.add(ob.group)
       openBook = ob

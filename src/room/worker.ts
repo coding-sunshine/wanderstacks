@@ -83,13 +83,15 @@ function genBay(seed: number, h: Flat, bay: number): BayMsg {
         for (let j = 0; j < h.shelfUnit.shelves; j++) {
           const top = base + 0.1 + j * spacing
           part(xMid, top, plankZ, alcove, 0.04, 0.3)
+          // One height per shelf row, like a kept library; gaps are rare and narrow.
+          const rowHt = Math.min(spacing - 0.04, 0.18 + rnd() * 0.12 * (spacing / 0.35))
           let u = 0.06
           while (u < alcove - 0.1) {
-            if (rnd() < 0.015) { u += 0.1 + rnd() * 0.5; continue }
+            if (rnd() < 0.006) { u += 0.06 + rnd() * 0.18; continue }
             const t = 0.025 + rnd() * 0.035
-            const ht = Math.min(spacing - 0.04, 0.16 + rnd() * 0.15 * (spacing / 0.35))
+            const ht = rowHt * (0.94 + rnd() * 0.12)
             const d = 0.1 + rnd() * 0.05
-            const lean = rnd() < 0.04 ? (rnd() - 0.5) * 0.5 : 0
+            const lean = rnd() < 0.04 ? (rnd() - 0.5) * 0.35 : 0
             put(books, side * (h.width / 2 - u - t / 2), top + 0.02 + ht / 2, zc + face * (0.17 + d / 2 + rnd() * 0.02), t, ht, d, lean)
             const c = PALETTE[Math.floor(rnd() * PALETTE.length)]
             const v = 0.75 + rnd() * 0.5

@@ -162,26 +162,51 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   }
   plane('floor', W, L, floorMat, 0, 0, 0, 0, -Math.PI / 2)
 
-  // Shelf walls: a real CC0 photograph of book spines, mirror-tiled; procedural rows as fallback.
-  const wallMat = mat({ color: 0xf2ead8 })
-  loadPhoto(
-    '/rooms/tex/spines_unsplash_cc0.jpg',
-    [L / 2.8, springing / 2.6],
-    true,
+  // Shelf walls: real CC0 book spines at life size, one row per strip with staggered offsets
+  // so the same books never line up; procedural rows as fallback.
+  const STRIPS = 4
+  const stripMats: THREE.MeshLambertMaterial[] = []
+  const photo = new THREE.TextureLoader().load(
+    '/rooms/tex/spines_tile.jpg',
     (t) => {
-      own(t)
-      ;(wallMat as THREE.MeshLambertMaterial).map = t
-      wallMat.needsUpdate = true
+      t.colorSpace = THREE.SRGBColorSpace
+      t.anisotropy = 8
+      for (const m of stripMats) {
+        const map = m.map
+        if (map) (map.colorSpace = THREE.SRGBColorSpace), (map.anisotropy = 8), (map.needsUpdate = true)
+      }
       dirty()
     },
-    () => {
-      ;(wallMat as THREE.MeshLambertMaterial).map = own(spineTexture([L / 3, springing / 2.6]))
-      wallMat.needsUpdate = true
-      dirty()
-    },
+    undefined,
+    () => dirty(),
   )
-  plane('shelfUnit', L, springing, wallMat, -W / 2, springing / 2, 0, Math.PI / 2)
-  plane('shelfUnit', L, springing, wallMat, W / 2, springing / 2, 0, -Math.PI / 2)
+  const wallStrip = (side: 1 | -1, strip: number) => {
+    const m = own(new THREE.MeshLambertMaterial({ color: 0xf2ead8, map: own(spineTexture([L / 3, springing / 2.6])) }))
+    const t = own(photo.clone())
+    t.wrapS = t.wrapT = THREE.RepeatWrapping
+    t.repeat.set(L / 1.86 / STRIPS, springing / 0.49)
+    t.offset.set((strip * 0.173) % 0.5, strip % 2 ? 0.5 : 0)
+    m.map = t
+    stripMats.push(m)
+    const z0 = -L / 2 + (strip * L) / STRIPS
+    const mesh = new THREE.Mesh(own(new THREE.PlaneGeometry(L / STRIPS, springing)), m)
+    mesh.position.set(side * (W / 2), springing / 2, z0 + L / STRIPS / 2)
+    mesh.rotation.y = side < 0 ? Math.PI / 2 : -Math.PI / 2
+    mesh.receiveShadow = true
+    core.add(mesh)
+    ;(parts['shelfUnit'] ??= []).push(mesh)
+  }
+  for (const side of [-1, 1] as const) for (let s = 0; s < STRIPS; s++) wallStrip(side as 1 | -1, s)
+  // A slim wood upright where strip sections meet, like real shelving bays.
+  const upright = own(new THREE.MeshLambertMaterial({ color: 0x2e1c0e }))
+  for (const side of [-1, 1] as const) {
+    for (let s = 1; s < STRIPS; s++) {
+      const z = -L / 2 + (s * L) / STRIPS
+      const post = new THREE.Mesh(own(new THREE.BoxGeometry(0.07, springing, 0.1)), upright)
+      post.position.set(side * (W / 2 - 0.01), springing / 2, z)
+      core.add(post)
+    }
+  }
   const impostor = new THREE.TextureLoader()
   const endTex = own(endWall(Math.round(h.windows), N, springing / H, h.domes ?? 0))
   const endMat = mat({ map: endTex })
