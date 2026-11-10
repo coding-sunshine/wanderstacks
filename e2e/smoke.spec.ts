@@ -17,18 +17,16 @@ test('every view mounts real content with a clean console and network', async ({
   expect(errors).toEqual([])
 })
 
-test('client navigation walks atlas to room to reader and back', async ({ page }) => {
+test('client navigation walks atlas to reader and back to the same card', async ({ page }) => {
   const errors = watchErrors(page)
   await page.goto('/atlas')
   await ready(page, 'home')
   await page.locator('#xlist').getByText(/^Long Room/).click()
-  await page.locator('#xcard a[href="/room/longroom"]').click()
-  await ready(page, 'room')
-  await page.locator('[data-view="room"] a[href^="/read/"]').first().click()
+  await page.locator('#xcard .reads a[href^="/read/"]').first().click()
   await ready(page, 'reader')
   await page.goBack()
-  await ready(page, 'room')
-  await page.goBack()
   await ready(page, 'home')
+  expect(new URL(page.url()).pathname).toBe('/atlas/longroom')
+  await expect(page.locator('#xcard h2')).toHaveText(/Long Room/)
   expect(errors).toEqual([])
 })

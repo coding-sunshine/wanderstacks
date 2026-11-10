@@ -1,5 +1,5 @@
 import { expect, test, type Page } from '@playwright/test'
-import { CLEAR, centre, fromGlobe, gotoRoom, mockWeather, openPanel, root, settleIn, shelves, startSampling, stopSampling } from './util-c'
+import { CLEAR, centre, gotoOutside, gotoRoom, mockWeather, openPanel, root, settleIn, shelves, startSampling, stopSampling } from './util-c'
 
 test.use({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true })
 test.beforeEach(async ({ page }) => {
@@ -21,7 +21,7 @@ const noOverflow = async (page: Page, when: string) =>
 
 test('mobile-c: pin, Go inside, find and spine tap', async ({ page }) => {
   const s = shelves('longroom')[0]!
-  await fromGlobe(page, 'longroom')
+  await gotoOutside(page, 'longroom')
   const r = root(page)
   await expect(r).toHaveAttribute('data-place', 'outside')
   await noOverflow(page, 'outside')

@@ -58,6 +58,44 @@ test('a deep link opens its card with only page-turn reads', async ({ page }) =>
   expect(errors).toEqual([])
 })
 
+test('selecting a library lands outside it on real photographs, then inside', async ({ page }) => {
+  const errors = watchErrors(page)
+  await page.goto('/atlas')
+  await ready(page, 'home')
+  await page.locator('#xlist').getByText(/^Long Room/).click()
+  const cur = page.locator('html.visiting #visit img.cur')
+  await expect(cur).toBeVisible({ timeout: 5000 })
+  expect(await cur.evaluate((i: HTMLImageElement) => i.currentSrc)).toMatch(/\/photo\/longroom\/o0-(960|1920)\.webp$/)
+  await expect(page.locator('#visit figcaption a')).toHaveAttribute('href', /^https:\/\/commons\.wikimedia\.org\//)
+  expect(new URL(page.url()).pathname).toBe('/atlas/longroom')
+
+  await page.locator('#xcard').getByRole('button', { name: 'Step inside' }).click()
+  await expect(page.locator('#xcard').getByRole('button', { name: 'Step outside' })).toBeVisible()
+  await expect.poll(() => cur.evaluate((i: HTMLImageElement) => i.currentSrc)).toMatch(/\/photo\/longroom\/i0-/)
+  await expect(page.locator('#xcard .vcount')).toHaveText(/^1 \/ \d+$/)
+  await page.keyboard.press('ArrowRight')
+  await expect(page.locator('#xcard .vcount')).toHaveText(/^2 \/ \d+$/)
+  await expect.poll(() => cur.evaluate((i: HTMLImageElement) => i.currentSrc)).toMatch(/\/photo\/longroom\/i1-/)
+
+  await page.keyboard.press('Escape')
+  await expect(page.locator('html.visiting')).toHaveCount(0)
+  await expect(page.locator('#xcard')).toBeEmpty()
+  expect(errors).toEqual([])
+})
+
+test('every library photo on the atlas is a licensed Commons file served locally', async ({ page }) => {
+  const pins = await json<(Pin & { ph?: Record<'out' | 'in', { f: string; src: string; lic: string; by: string }[]> })[]>(page, '/lib/pins.json')
+  const shots = pins.flatMap((p) => (p.ph ? [...p.ph.out, ...p.ph.in].map((s) => ({ id: p.id, ...s })) : []))
+  expect(shots.length, 'photos on the atlas').toBeGreaterThan(40)
+  for (const s of shots) {
+    expect(s.f, `${s.id} path`).toMatch(new RegExp(`^/photo/${s.id}/[oi]\\d+$`))
+    expect(s.src, `${s.id} source`).toMatch(/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/)
+    expect(s.lic, `${s.id} licence`).not.toMatch(/\b(NC|ND)\b/i)
+    expect(s.by.length, `${s.id} author`).toBeGreaterThan(0)
+    for (const w of [960, 1920]) expect((await page.request.head(`${s.f}-${w}.webp`)).status(), `${s.f}-${w}`).toBe(200)
+  }
+})
+
 test('the year scrubber lists only libraries founded by then', async ({ page }) => {
   const pins = await json<Pin[]>(page, '/lib/pins.json')
   await explore(page, 1500)
@@ -72,7 +110,7 @@ test('pins carry href as a path or null', async ({ page }) => {
   const by = Object.fromEntries(pins.map((p) => [p.id, p.href]))
   expect(by['alexandria']).toBe('/ledger/alexandria')
   expect(by['stgallen']).toBe('/stgall')
-  expect(by['bodleian']).toBe('/room/bodleian')
+  expect(by['bodleian']).toBeNull()
   for (const p of pins as (Pin & { reads: { href: string }[] })[])
     for (const r of p.reads) expect(/^\/(read|scan)\/|^https:\/\/.+(?<!\.json)$/.test(r.href), `${p.id} read ${r.href}`).toBe(true)
 })

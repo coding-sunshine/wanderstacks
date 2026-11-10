@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync } from 'node:fs'
+import { mkdirSync } from 'node:fs'
 
 // One about page per library, so a globe pin never has to send the reader off-site:
 // verified facts and dated events, the curated summary from libs.json, and the visit link.
@@ -7,7 +7,7 @@ const root = new URL('../../../', import.meta.url).pathname
 const libs: any[] = await Bun.file(root + 'data/libs.json').json()
 const factsJ: any = await Bun.file(root + 'data/facts.json').json()
 const other: Record<string, string> = { alexandria: '/ledger/alexandria', stgallen: '/stgall' }
-const href = (id: string) => other[id] ?? (existsSync(root + `data/hall/${id}.json`) ? `/room/${id}` : null)
+const href = (id: string) => other[id] ?? null
 
 mkdirSync(root + 'public/lib/about', { recursive: true })
 for (const { id, n, p, yl, y, wd, st, dim, vol, book, read } of libs) {

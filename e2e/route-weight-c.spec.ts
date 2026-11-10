@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test'
 import { IIIF_HOST, mockIiif } from './iiif'
-import { ALL, BUILDINGS, CLEAR, POLY, fromGlobe, mockWeather, root } from './util-c'
+import { ALL, BUILDINGS, CLEAR, POLY, gotoOutside, mockWeather, root } from './util-c'
 import { ready } from './util'
 
 const LIMIT = 5 * 1024 * 1024
@@ -36,9 +36,9 @@ async function meter(page: Page) {
 }
 
 for (const id of BUILDINGS) {
-  test(`route-weight-c: ${id} arrival from an atlas card`, async ({ page }) => {
+  test(`route-weight-c: ${id} outside arrival`, async ({ page }) => {
     const m = await meter(page)
-    await fromGlobe(page, id, m.reset)
+    await gotoOutside(page, id, m.reset)
     await page.waitForTimeout(1500)
     const { t, n, poly, inflight } = m.total()
     expect(n, 'requests observed').toBeGreaterThan(0)

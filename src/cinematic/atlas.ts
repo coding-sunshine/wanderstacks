@@ -4,11 +4,14 @@ import { smooth, lerp, fitFov, MOBILE, rng, TAIL } from './util';
 // one record of public/lib/pins.json, as the home reads it
 export type Ev = 'known' | 'probable' | 'speculative';
 export interface Read { id: string; t: string; a: string | null; d: string | null; k: 'book' | 'scan' | 'card'; href: string }
+// f is a base path served as `${f}-1920.webp` and `${f}-960.webp`; src is the Commons file page
+export interface Photo { f: string; w: number; h: number; cap: string; by: string; lic: string; src: string }
 export interface Lib {
   id: string; n: string; p: string; yl: string; y: number; lat: number; lon: number;
   lost?: number | boolean; found?: number; k: string; ev: Ev; evNote?: string;
   st?: string; stFrom?: number; dim?: string; vol?: string; book?: string; read?: string;
   wd?: string; href: string | null; hours: string | null; reads?: Read[];
+  ph?: { out: Photo[]; in: Photo[] };
 }
 type Mark = 'k' | 'p' | 's';
 

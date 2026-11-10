@@ -47,7 +47,7 @@ export const mount: Mount = (app, params) => {
       root.append(crumb, el('h1', 'place-title', d.n), el('p', 'place-where', `${d.p} · ${d.yl}`))
 
       if (d.href) {
-        const visit = el('a', 'btn place-visit', d.href.startsWith('/room/') ? 'Visit the room' : 'Open its page') as HTMLAnchorElement
+        const visit = el('a', 'btn place-visit', 'Open its page') as HTMLAnchorElement
         visit.href = d.href
         root.append(visit)
       }

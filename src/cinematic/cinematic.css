@@ -98,6 +98,24 @@ html[data-home] {
   & .replay { margin-top: 56px; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 20px; border: 1px solid var(--gilt); border-radius: 999px; background: transparent; color: var(--gilt); font: 500 11.5px var(--mono); letter-spacing: .2em; text-transform: uppercase; text-decoration: none; cursor: pointer }
   & .replay:hover { background: rgba(216,166,90,.12) }
 
+  & #visit { position: fixed; inset: 0; margin: 0; z-index: 0; overflow: hidden; background: #050403; opacity: 0; visibility: hidden; touch-action: pan-y; transition: opacity 1.2s var(--ease), visibility 1.2s }
+  &.visiting #visit { opacity: 1; visibility: visible }
+  & #visit img { position: absolute; left: -3%; top: -3%; width: 106%; height: 106%; object-fit: cover; opacity: 0; scale: 1; translate: calc(var(--mx,0)*-12px) calc(var(--my,0)*-8px); transition: opacity 1s var(--ease), translate .8s var(--ease), scale 0s 1s }
+  & #visit img.cur { opacity: 1; scale: 1.08; transition: opacity 1s var(--ease), translate .8s var(--ease), scale 28s linear }
+  & #visit::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg,rgba(3,3,3,.72),rgba(3,3,3,.2) 38%,transparent 60%), linear-gradient(0deg,rgba(3,3,3,.6),transparent 30%) }
+  & #visit figcaption { position: absolute; right: var(--gr); bottom: calc(var(--gb) + 16px); z-index: 1; max-width: min(46ch,50vw); text-align: right; font: 500 10.5px/1.5 var(--mono); letter-spacing: .06em; color: var(--mute) }
+  & #visit figcaption span { display: block; color: rgba(236,228,212,.86) }
+  & #visit figcaption a { text-decoration: none; border-bottom: 1px solid var(--line) }
+  & .xtime { transition: opacity .6s var(--ease), visibility .6s }
+  &.visiting .xtime { opacity: 0; visibility: hidden }
+  &.no-gl.visiting #explore { background: none }
+  & .vctl { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 16px }
+  & #xcard .vctl .replay { margin: 0 }
+  & .vstep { display: inline-flex; align-items: center; gap: 4px; font: 500 11px var(--mono); letter-spacing: .12em; color: var(--mute) }
+  & .vstep[hidden] { display: none }
+  & .vstep button { width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; background: transparent; font: 400 20px/1 var(--text); cursor: pointer }
+  & .vstep button:hover { border-color: var(--gilt); color: #f3cf8f }
+
   &.no-gl #gl { display: none }
   &.no-gl #explore { background: radial-gradient(70% 60% at 70% 55%,#1b2433,#05070b 60%,#030303) }
 
@@ -106,7 +124,11 @@ html[data-home] {
     & .xp .yr { font-size: 44px }
     & .xp:has(#xcard:not(:empty)) :is(.yr, #xera, #xcount, #achips) { display: none }
     & #xcard { border-top: 0; margin-top: 0; padding-top: 0 }
+    & #visit figcaption { top: calc(16px + env(safe-area-inset-top)); bottom: auto; left: var(--gl); right: var(--gr); max-width: none; text-align: left }
   }
   @media (max-width:520px) { & .xticks .w { display: none } }
-  @media (prefers-reduced-motion:reduce) { & .xp, & .reads a { animation: none; transition: none; opacity: 1; transform: none } }
+  @media (prefers-reduced-motion:reduce) {
+    & .xp, & .reads a { animation: none; transition: none; opacity: 1; transform: none }
+    & #visit, &.visiting #visit, & #visit img, & #visit img.cur { transition: none; translate: none; scale: none }
+  }
 }

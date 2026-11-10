@@ -74,13 +74,13 @@ test('each view enters with fades only, then holds still', async ({ page }) => {
   expect(errors).toEqual([])
 })
 
-test('atlas card to the Long Room is a cut and cross-fade', async ({ page }) => {
+test('selecting a library cuts straight to its photograph', async ({ page }) => {
   await page.goto('/atlas')
   await ready(page, 'home')
-  await page.locator('#xlist').getByText(/^Long Room/).click()
   await clearLog(page)
-  await page.locator('#xcard a[href="/room/longroom"]').click()
-  await ready(page, 'room')
+  await page.locator('#xlist').getByText(/^Long Room/).click()
+  await expect(page.locator('html.visiting #visit img.cur')).toBeVisible()
+  await page.keyboard.press('ArrowRight')
   expect(await offenders(page)).toEqual([])
 })
 

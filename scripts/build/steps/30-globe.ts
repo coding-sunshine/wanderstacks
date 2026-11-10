@@ -1,5 +1,3 @@
-import { existsSync } from 'node:fs'
-
 const root = new URL('../../../', import.meta.url).pathname
 const libs: any[] = await Bun.file(root + 'data/libs.json').json()
 const hours: Record<string, unknown> = await Bun.file(root + 'data/hours.json').json().catch(() => ({}))
@@ -8,7 +6,9 @@ const books: any[] = await Bun.file(root + 'data/books.json').json().then((j: an
 const scans = new Set<string>(await Bun.file(root + 'public/scan/index.json').json().catch(() => []))
 
 const other: Record<string, string> = { alexandria: '/ledger/alexandria', stgallen: '/stgall' }
-const href = (id: string) => other[id] ?? (existsSync(root + `data/hall/${id}.json`) ? `/room/${id}` : null)
+const href = (id: string) => other[id] ?? null
+// Curated Commons photographs (outside first, then inside), keyed by library id.
+const photos: Record<string, unknown> = await Bun.file(root + 'data/photos.json').json().catch(() => ({}))
 const kind = (b: any) => (b.tier === 'readable-text' ? 'book' : b.tier === 'readable-scan' ? 'scan' : 'card')
 const bookHref = (b: any): string | null =>
   b.tier === 'readable-text' ? `/read/${b.id}` : b.tier === 'readable-scan' ? (scans.has(b.id) ? `/scan/${b.id}` : (b.catalogue_url ?? b.read?.url ?? null)) : (b.catalogue_url ?? null)
@@ -20,13 +20,13 @@ const reads = (id: string) =>
     .map((b) => ({ id: b.id, t: b.title, a: b.author ?? null, d: b.date ?? null, k: kind(b) as keyof typeof ORDER, href: bookHref(b)! }))
     .sort((x, y) => ORDER[x.k] - ORDER[y.k])
 
-const pins = libs.map(({ id, n, p, yl, y, lat, lon, lost, found, wd, st, stFrom, k, ev, evNote, dim, vol, book, read }) => ({ id, n, p, yl, y, lat, lon, lost, found, wd, st, stFrom, k, ev, evNote, dim, vol, book, read, href: href(id), hours: (hours[id] as any)?.hours ?? null, reads: reads(id) }))
+const pins = libs.map(({ id, n, p, yl, y, lat, lon, lost, found, wd, st, stFrom, k, ev, evNote, dim, vol, book, read }) => ({ id, n, p, yl, y, lat, lon, lost, found, wd, st, stFrom, k, ev, evNote, dim, vol, book, read, href: href(id), hours: (hours[id] as any)?.hours ?? null, reads: reads(id), ph: photos[id] }))
 await Bun.write(root + 'public/lib/pins.json', JSON.stringify(pins))
 
 // A small global catalog for the search palette: rooms plus every readable book.
 const nameOf = Object.fromEntries(libs.map((l) => [l.id, l.n]))
 const catalog = [
-  ...pins.map((p) => ({ kind: 'room', title: p.n, sub: p.p, href: p.href ?? `/place/${p.id}` })),
+  ...pins.map((p) => ({ kind: 'room', title: p.n, sub: p.p, href: p.href ?? `/atlas/${p.id}` })),
   ...books
     .map((b) => ({ kind: kind(b), title: b.title, sub: [b.author, b.lib ? nameOf[b.lib] : null].filter(Boolean).join(' · '), href: bookHref(b) }))
     .filter((b) => b.href),

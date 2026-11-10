@@ -1,5 +1,5 @@
 import { expect, test, type Page } from '@playwright/test'
-import { BUILDINGS, CLEAR, POLY, exterior, fromGlobe, gotoOutside, gotoRoom, hd, holdKey, holdUntil, inside, jattr, mockWeather, root, settleIn, startSampling, stopSampling, textures, type Room } from './util-c'
+import { BUILDINGS, CLEAR, POLY, exterior, gotoOutside, gotoRoom, hd, holdKey, holdUntil, inside, jattr, mockWeather, root, settleIn, startSampling, stopSampling, textures, type Room } from './util-c'
 
 const dist = (c: number[], d: number[]) => Math.hypot(c[0]! - d[0]!, c[2]! - d[1]!)
 const pathLen = (cs: number[][]) => cs.slice(1).reduce((s, c, i) => s + Math.hypot(c[0]! - cs[i]![0]!, c[2]! - cs[i]![2]!), 0)
@@ -8,24 +8,6 @@ const hist = (page: Page) => page.evaluate(() => ({ href: location.href, len: hi
 
 test.beforeEach(async ({ page }) => {
   await mockWeather(page, CLEAR)
-})
-
-for (const id of BUILDINGS) {
-  test(`outside-arrival: ${id}`, async ({ page }) => {
-    await fromGlobe(page, id)
-    expect(new URL(page.url()).pathname).toBe(`/room/${id}`)
-    expect(new URL(page.url()).search).toBe('')
-    await expect(root(page)).toHaveAttribute('data-place', 'outside')
-    await expect(page.locator('button[data-action="enter"]')).toBeVisible()
-    expect(await page.evaluate(() => history.state?.arrive), 'history.state.arrive').toBe('outside')
-  })
-}
-test('outside-arrival: celsus is a site', async ({ page }) => {
-  await fromGlobe(page, 'celsus')
-  expect(new URL(page.url()).search).toBe('')
-  await expect(root(page)).toHaveAttribute('data-place', 'site')
-  await expect(page.locator('button[data-action="enter"], button[data-action="exit"]')).toHaveCount(0)
-  expect(await page.evaluate(() => history.state?.arrive), 'history.state.arrive').toBe('outside')
 })
 
 for (const id of BUILDINGS) {
@@ -119,26 +101,6 @@ for (const id of BUILDINGS) {
     expect(bad.length, `samples inside footprint ${JSON.stringify(bad[0])}`).toBe(0)
   })
 }
-
-test('history-c: back from inside lands on the atlas, forward returns inside', async ({ page }) => {
-  await fromGlobe(page, 'longroom')
-  const r = root(page)
-  await expect(r).toHaveAttribute('data-place', 'outside')
-  await page.getByRole('button', { name: 'Go inside', exact: true }).click()
-  await expect(r).toHaveAttribute('data-place', 'inside', { timeout: 2500 })
-  await settleIn(page)
-  const left = (await jattr(page, 'camera'))!
-  await page.goBack()
-  await expect(page.locator('[data-view="home"][data-ready="true"]')).toBeVisible({ timeout: 15_000 })
-  expect(new URL(page.url()).pathname).toBe('/atlas/longroom')
-  await expect(page.locator('#xcard h2')).toHaveText(/Long Room/)
-  await page.goForward()
-  await expect(root(page).and(page.locator('[data-ready="true"]'))).toBeVisible({ timeout: 15_000 })
-  expect(new URL(page.url()).pathname).toBe('/room/longroom')
-  await expect(root(page)).toHaveAttribute('data-place', 'inside')
-  const back = (await jattr(page, 'camera'))!
-  for (let i = 0; i < 3; i++) expect(Math.abs(back[i]! - left[i]!), `camera axis ${i} after Forward`).toBeLessThanOrEqual(0.01)
-})
 
 const places = [
   ...BUILDINGS.flatMap((id) => [{ id, p: 'outside' }, { id, p: 'inside' }]),

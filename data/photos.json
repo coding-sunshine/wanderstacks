@@ -1,0 +1,2566 @@
+{
+ "longroom": {
+  "out": [
+   {
+    "f": "/photo/longroom/o0",
+    "w": 1920,
+    "h": 1277,
+    "cap": "The Old Library from Fellows' Square, Trinity College Dublin",
+    "by": "User:Jpatokal",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:TrinityCollege_Green.JPG"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/longroom/i0",
+    "w": 1920,
+    "h": 1450,
+    "cap": "The Long Room of the Old Library, Trinity College Dublin",
+    "by": "Diliff",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Long_Room_Interior,_Trinity_College_Dublin,_Ireland_-_Diliff.jpg"
+   },
+   {
+    "f": "/photo/longroom/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "The Long Room looking along the barrel vault",
+    "by": "Rafesmar",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Condado_de_Dubl%C3%ADn_-_Long_Room-Trinity_College_-_20170826100034.jpg"
+   },
+   {
+    "f": "/photo/longroom/i2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "The Long Room with busts along the alcoves",
+    "by": "Beyourbest2",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:County_Dublin_-_Long_Room-Trinity_College_-_20161209101035.jpg"
+   },
+   {
+    "f": "/photo/longroom/i3",
+    "w": 1920,
+    "h": 1250,
+    "cap": "The barrel-vaulted ceiling of the Long Room",
+    "by": "Rob Hurson",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Trinity_College_Long_Room_ceiling.jpg"
+   }
+  ]
+ },
+ "admont": {
+  "out": [
+   {
+    "f": "/photo/admont/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Admont Abbey reflected in a pond, Styria",
+    "by": "Ot",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:StiftAdmont2008.JPG"
+   },
+   {
+    "f": "/photo/admont/o1",
+    "w": 1920,
+    "h": 1190,
+    "cap": "Aerial view of Admont Abbey and the town",
+    "by": "C.Stadler/Bwag",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Admont_-_Benediktinerstift.JPG"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/admont/i0",
+    "w": 1920,
+    "h": 1284,
+    "cap": "The Admont Abbey Library hall",
+    "by": "Jorge Royan",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1307.jpg"
+   },
+   {
+    "f": "/photo/admont/i1",
+    "w": 1920,
+    "h": 1310,
+    "cap": "The central bays of the Admont Abbey Library",
+    "by": "Henry Kellner",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Stift_Admont_3310_Planar_2.jpg"
+   },
+   {
+    "f": "/photo/admont/i2",
+    "w": 1920,
+    "h": 1448,
+    "cap": "The library hall with its ceiling frescoes",
+    "by": "Henry Kellner",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Stift_Admont_3310_Planar_6.jpg"
+   },
+   {
+    "f": "/photo/admont/i3",
+    "w": 1920,
+    "h": 1271,
+    "cap": "Gallery and marble floor of the Admont Abbey Library",
+    "by": "Jorge Royan",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Admont_Abbey_Library_-_1277.jpg"
+   }
+  ]
+ },
+ "strahov": {
+  "out": [
+   {
+    "f": "/photo/strahov/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Strahov Monastery seen from Uvoz street, Prague",
+    "by": "Matěj Baťha",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Praha,_Hradcany_-_Strahovsky_klaster_(pohled_z_ulice_Uvoz).jpg"
+   },
+   {
+    "f": "/photo/strahov/o1",
+    "w": 1920,
+    "h": 1251,
+    "cap": "Baroque front of the library building, Strahov Monastery",
+    "by": "VitVit",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Strahov_knihovna_1.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/strahov/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "The Philosophical Hall, Strahov Library",
+    "by": "Ricardalovesmonuments",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Klosterbibliothek_Strahov_4.jpg"
+   },
+   {
+    "f": "/photo/strahov/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "The Philosophical Hall looking toward the Maulbertsch ceiling",
+    "by": "Jorge Royan",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Strahov_Library,_Prague_-_7521.jpg"
+   },
+   {
+    "f": "/photo/strahov/i2",
+    "w": 1920,
+    "h": 1282,
+    "cap": "Maulbertsch ceiling fresco of the Philosophical Hall",
+    "by": "Skot",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Filozofick%C3%BD_s%C3%A1l_Strahovsk%C3%A9_knihovny_s_freskou_od_F._A._Maulbertsche.jpg"
+   },
+   {
+    "f": "/photo/strahov/i3",
+    "w": 1920,
+    "h": 1282,
+    "cap": "Ceiling and gallery of the Philosophical Hall",
+    "by": "Skot",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Filozofick%C3%BD_s%C3%A1l_Strahovsk%C3%A9_knihovny,_strop_s_freskou_od_F._A._Maulbertsche_02.jpg"
+   }
+  ]
+ },
+ "loc": {
+  "out": [],
+  "in": [
+   {
+    "f": "/photo/loc/i0",
+    "w": 1920,
+    "h": 1281,
+    "cap": "The Main Reading Room, Library of Congress",
+    "by": "Carol M. Highsmith",
+    "lic": "Public domain",
+    "src": "https://commons.wikimedia.org/wiki/File:LOC_Main_Reading_Room_Highsmith.jpg"
+   },
+   {
+    "f": "/photo/loc/i1",
+    "w": 1920,
+    "h": 2265,
+    "cap": "The dome of the Main Reading Room, Thomas Jefferson Building",
+    "by": "Alvesgaspar",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Library_Congress_October_2016-5a.jpg"
+   },
+   {
+    "f": "/photo/loc/i2",
+    "w": 1920,
+    "h": 1633,
+    "cap": "The Great Hall of the Thomas Jefferson Building",
+    "by": "Diliff",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Library_of_Congress_Great_Hall_-_Jan_2006.jpg"
+   },
+   {
+    "f": "/photo/loc/i3",
+    "w": 1920,
+    "h": 1291,
+    "cap": "Ceiling skylight in the Great Hall, Library of Congress",
+    "by": "Alvesgaspar",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Library_Congress_October_2016-1.jpg"
+   }
+  ]
+ },
+ "celsus": {
+  "out": [
+   {
+    "f": "/photo/celsus/o0",
+    "w": 1920,
+    "h": 1488,
+    "cap": "Facade of the Library of Celsus, Ephesus",
+    "by": "Benh LIEU SONG",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ephesus_Celsus_Library_Fa%C3%A7ade.jpg"
+   },
+   {
+    "f": "/photo/celsus/o1",
+    "w": 1920,
+    "h": 1169,
+    "cap": "Library of Celsus and the Gate of Mazaeus and Mithridates",
+    "by": "Herbert Weber",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Library_of_Celsus_6243.jpg"
+   },
+   {
+    "f": "/photo/celsus/o2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "The restored facade of the Library of Celsus, Ephesus",
+    "by": "Herbert Weber",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Library_of_Celsus_6242.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/celsus/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Columns and entablature of the Library of Celsus, from below",
+    "by": "Carlos Delgado",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioteca_de_Celso_-_01.jpg"
+   },
+   {
+    "f": "/photo/celsus/i1",
+    "w": 1920,
+    "h": 1278,
+    "cap": "Carved architrave detail of the Library of Celsus",
+    "by": "rob Stoeltje from loenen, netherlands",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Celsus_library_in_Ephesus_(5632175634).jpg"
+   },
+   {
+    "f": "/photo/celsus/i2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "The two-storey facade of the Library of Celsus",
+    "by": "Hessam M. Armandehi",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Celsus-Library.JPG"
+   }
+  ]
+ },
+ "alexandria": {
+  "out": [
+   {
+    "f": "/photo/alexandria/o0",
+    "w": 1920,
+    "h": 1272,
+    "cap": "The Serapeum site and Pompey's Pillar, Alexandria",
+    "by": "Hatem Moushir",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Pompey%27s_Pillar_(Archaeological_site_in_Alexandria_in_2017)_,_photo_by_Hatem_Moushir_35.jpg"
+   },
+   {
+    "f": "/photo/alexandria/o1",
+    "w": 1920,
+    "h": 1414,
+    "cap": "Remains of the Serapeum of Alexandria",
+    "by": "Institute for the Study of the Ancient World",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:The_Serapeum_of_Alexandria_(X).jpg"
+   },
+   {
+    "f": "/photo/alexandria/o2",
+    "w": 1920,
+    "h": 1272,
+    "cap": "Column stumps at the Serapeum site, Alexandria",
+    "by": "Hatem Moushir",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Pompey%27s_Pillar_(Archaeological_site_in_Alexandria_2017)_,_photo_by_Hatem_moushir_2.jpg"
+   }
+  ],
+  "in": []
+ },
+ "prunksaal": {
+  "out": [],
+  "in": [
+   {
+    "f": "/photo/prunksaal/i0",
+    "w": 1920,
+    "h": 1368,
+    "cap": "Habsburg statue among the shelves of the Prunksaal, Vienna",
+    "by": "Bahnfrend",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:State_Hall_of_the_Austrian_National_Library,_2019_(09).jpg"
+   },
+   {
+    "f": "/photo/prunksaal/i1",
+    "w": 1920,
+    "h": 1281,
+    "cap": "Dome fresco of the Prunksaal, Vienna",
+    "by": "Mihaela Nancu",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:%C3%96NB_Deckenfresco_der_Mittelkuppel.jpg"
+   },
+   {
+    "f": "/photo/prunksaal/i2",
+    "w": 1920,
+    "h": 2920,
+    "cap": "The Prunksaal, State Hall of the Austrian National Library",
+    "by": "Richard Hopkins",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg"
+   },
+   {
+    "f": "/photo/prunksaal/i3",
+    "w": 1920,
+    "h": 2560,
+    "cap": "Looking through the Prunksaal toward the dome",
+    "by": "Azerifactory",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Austrian_National_Library_interior_005.jpg"
+   }
+  ]
+ },
+ "bnf": {
+  "out": [
+   {
+    "f": "/photo/bnf/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Entrance of the Bibliotheque nationale, rue de Richelieu",
+    "by": "Adelphilos",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Fronton_d%27entr%C3%A9e_de_la_Biblioth%C3%A8que_nationale_de_France_-_rue_de_Richelieu.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/bnf/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "The Salle Labrouste, BnF Richelieu site",
+    "by": "Peccadille",
+    "lic": "CC BY 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Salle_Labrouste_3.jpg"
+   },
+   {
+    "f": "/photo/bnf/i1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Reading tables and iron columns of the Salle Labrouste",
+    "by": "Ricardalovesmonuments",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_nationale_de_France,_Salle_Labrouste,_14_September_2019_02.jpg"
+   },
+   {
+    "f": "/photo/bnf/i2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Murals and domes of the Salle Labrouste",
+    "by": "Ricardalovesmonuments",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_nationale_de_France,_Salle_Labrouste,_14_September_2019_03.jpg"
+   },
+   {
+    "f": "/photo/bnf/i3",
+    "w": 1920,
+    "h": 1440,
+    "cap": "The domed ceiling of the Salle Labrouste",
+    "by": "MOSSOT",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_nationale_de_France_-_Site_Richelieu-Louvois_-_Salle_Labrouste_-_Vo%C3%BBte_-3.JPG"
+   }
+  ]
+ },
+ "stgallen": {
+  "out": [
+   {
+    "f": "/photo/stgallen/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "The Abbey of St Gall and the cathedral towers, St Gallen",
+    "by": "A.Savin",
+    "lic": "FAL",
+    "src": "https://commons.wikimedia.org/wiki/File:StGallen_asv2022-10_F%C3%BCrstabtei_img1.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/stgallen/i0",
+    "w": 1920,
+    "h": 2460,
+    "cap": "Entrance doors to the Abbey Library of St Gall",
+    "by": "Gre regiment",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Abbey_library_of_Saint_Gall_entrance.jpg"
+   }
+  ]
+ },
+ "mafra": {
+  "out": [
+   {
+    "f": "/photo/mafra/o0",
+    "w": 1920,
+    "h": 1329,
+    "cap": "Main facade of Mafra National Palace, Portugal",
+    "by": "Alvesgaspar",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Mafra_May_2013-2.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/mafra/i0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "The library of Mafra National Palace",
+    "by": "xiquinhosilva from Cacau",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:22563-Mafra_(48303853981).jpg"
+   },
+   {
+    "f": "/photo/mafra/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "The Mafra palace library hall and its barrel vault",
+    "by": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioteca_do_Pal%C3%A1cio_Nacional_de_Mafra_-_Portugal_(28827783847).jpg"
+   },
+   {
+    "f": "/photo/mafra/i2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Library of the Mafra National Palace, Portugal",
+    "by": "Rosino",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:MafraPalace-Library.jpg"
+   },
+   {
+    "f": "/photo/mafra/i3",
+    "w": 1920,
+    "h": 1285,
+    "cap": "Gallery and chandelier of the Mafra library",
+    "by": "Concierge.2C",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_de_Mafra_-_Biblioteca.jpg"
+   }
+  ]
+ },
+ "nypl": {
+  "out": [
+   {
+    "f": "/photo/nypl/o0",
+    "w": 1920,
+    "h": 1080,
+    "cap": "The Stephen A. Schwarzman Building on Fifth Avenue, New York",
+    "by": "ajay_suresh",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:New_York_Public_Library_-_Main_Branch_(51396225599).jpg"
+   },
+   {
+    "f": "/photo/nypl/o1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Main facade of the Stephen A. Schwarzman Building",
+    "by": "OptimumPx",
+    "lic": "Public domain",
+    "src": "https://commons.wikimedia.org/wiki/File:New_York_Public_Library_May_2011.JPG"
+   },
+   {
+    "f": "/photo/nypl/o2",
+    "w": 1920,
+    "h": 1219,
+    "cap": "The Fifth Avenue entrance of the Schwarzman Building",
+    "by": "Bestbudbrian",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:N.Y._Public_Library_-_Schwarzman_Bldg._-_exterior.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/nypl/i0",
+    "w": 1920,
+    "h": 897,
+    "cap": "The Rose Main Reading Room, New York Public Library",
+    "by": "Diliff",
+    "lic": "CC BY 2.5",
+    "src": "https://commons.wikimedia.org/wiki/File:NYC_Public_Library_Research_Room_Jan_2006.jpg"
+   },
+   {
+    "f": "/photo/nypl/i1",
+    "w": 1920,
+    "h": 830,
+    "cap": "The Rose Main Reading Room tables and ceiling",
+    "by": "Diliff",
+    "lic": "CC BY 2.5",
+    "src": "https://commons.wikimedia.org/wiki/File:NYC_Public_Library_Research_Room_Jan_2006-1-_3.jpg"
+   }
+  ]
+ },
+ "bpl": {
+  "out": [
+   {
+    "f": "/photo/bpl/o0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "The McKim Building of Boston Public Library, Copley Square",
+    "by": "Daniel Schwen",
+    "lic": "CC BY-SA 2.5",
+    "src": "https://commons.wikimedia.org/wiki/File:USA_Boston_Public_Library_2_MA.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/bpl/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Reading lamps and tables in Bates Hall, Boston Public Library",
+    "by": "Ncysea",
+    "lic": "Public domain",
+    "src": "https://commons.wikimedia.org/wiki/File:Boston_Public_Library_McKim_Building_Reading_Room.jpg"
+   },
+   {
+    "f": "/photo/bpl/i1",
+    "w": 1920,
+    "h": 2560,
+    "cap": "The vault of Bates Hall from a reading table",
+    "by": "Pacamah",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:BPL_Bates_Hall_from_Table.jpg"
+   }
+  ]
+ },
+ "peabody": {
+  "out": [
+   {
+    "f": "/photo/peabody/o0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "The Peabody Institute on Mount Vernon Place, Baltimore",
+    "by": "Daderot",
+    "lic": "Public domain",
+    "src": "https://commons.wikimedia.org/wiki/File:Peabody_Institute,_Mount_Vernon_Place,_Baltimore,_MD.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/peabody/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "The atrium of the George Peabody Library, Baltimore",
+    "by": "Matthew Petroff",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:George-peabody-library.jpg"
+   },
+   {
+    "f": "/photo/peabody/i1",
+    "w": 1920,
+    "h": 1554,
+    "cap": "Cast-iron balconies of the George Peabody Library",
+    "by": "Patrick Gillespie",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:George_Peabody_Library_-_24513595561.jpg"
+   },
+   {
+    "f": "/photo/peabody/i2",
+    "w": 1920,
+    "h": 1281,
+    "cap": "The stacks and checkered floor of the Peabody Library",
+    "by": "Bestbudbrian",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Peabody_Library,_Mount_Vernon_Place_Historic_District.jpg"
+   },
+   {
+    "f": "/photo/peabody/i3",
+    "w": 1920,
+    "h": 1274,
+    "cap": "Tiers of stacks in the Peabody Library",
+    "by": "Bestbudbrian",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:View_of_the_stacks,_Peabody_Library,_Mount_Vernon_Place_Historic_District.jpg"
+   }
+  ]
+ },
+ "bodleian": {
+  "out": [
+   {
+    "f": "/photo/bodleian/o0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Old Schools Quadrangle, Bodleian Library, Oxford",
+    "by": "Remi Mathis",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Oxford_-_Bodleian_Library_-_Quad_in_the_sun.JPG"
+   },
+   {
+    "f": "/photo/bodleian/o1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "North side of the Divinity School, Bodleian Library, Oxford",
+    "by": "Ozeye",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:North_face_of_oxford_divinity_school.jpg"
+   },
+   {
+    "f": "/photo/bodleian/o2",
+    "w": 1920,
+    "h": 2880,
+    "cap": "Schools Quadrangle tower window, Bodleian Library, Oxford",
+    "by": "Tony Hisgett from Birmingham, UK",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Bodleian_Library_(5650383370).jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/bodleian/i0",
+    "w": 1920,
+    "h": 1428,
+    "cap": "Duke Humfrey's Library, Bodleian Library, Oxford",
+    "by": "Diliff",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Duke_Humfrey%27s_Library_Interior_6,_Bodleian_Library,_Oxford,_UK_-_Diliff.jpg"
+   },
+   {
+    "f": "/photo/bodleian/i1",
+    "w": 1920,
+    "h": 1650,
+    "cap": "Reading room of Duke Humfrey's Library, Oxford",
+    "by": "Diliff",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Duke_Humfrey%27s_Library_Interior_2,_Bodleian_Library,_Oxford,_UK_-_Diliff.jpg"
+   },
+   {
+    "f": "/photo/bodleian/i2",
+    "w": 1920,
+    "h": 1605,
+    "cap": "Duke Humfrey's Library, Bodleian Library, Oxford",
+    "by": "Diliff",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Duke_Humfrey%27s_Library_Interior_5,_Bodleian_Library,_Oxford,_UK_-_Diliff.jpg"
+   },
+   {
+    "f": "/photo/bodleian/i3",
+    "w": 1901,
+    "h": 1772,
+    "cap": "Ceiling and bays of Duke Humfrey's Library, Oxford",
+    "by": "Diliff",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Duke_Humfrey%27s_Library_Interior_1,_Bodleian_Library,_Oxford,_UK_-_Diliff.jpg"
+   }
+  ]
+ },
+ "escorial": {
+  "out": [],
+  "in": [
+   {
+    "f": "/photo/escorial/i0",
+    "w": 1920,
+    "h": 1377,
+    "cap": "Royal Library, Monastery of El Escorial",
+    "by": "Diego Delso",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Real_Monasterio_de_San_Lorenzo_de_El_Escorial,_Madrid,_Espa%C3%B1a,_2025-12-30,_DD_10-12_HDR.jpg"
+   },
+   {
+    "f": "/photo/escorial/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Main hall of the Royal Library, El Escorial",
+    "by": "Jose Luis Filpo Cabana",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Real_Biblioteca_de_San_Lorenzo_de_El_Escorial._Sal%C3%B3n_principal.jpg"
+   },
+   {
+    "f": "/photo/escorial/i2",
+    "w": 1920,
+    "h": 1920,
+    "cap": "Frescoed barrel vault of the Royal Library, El Escorial",
+    "by": "Jl FilpoC",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Sal%C3%B3n_principal_de_la_Real_Biblioteca_de_El_Escorial.jpg"
+   },
+   {
+    "f": "/photo/escorial/i3",
+    "w": 1920,
+    "h": 2560,
+    "cap": "Armillary sphere in the Royal Library, El Escorial",
+    "by": "Jl FilpoC",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Esfera_armilar_de_Santucci,_Real_Biblioteca_del_Monasterio_de_San_Lorenzo_de_El_Escorial.jpg"
+   }
+  ]
+ },
+ "gabinete": {
+  "out": [
+   {
+    "f": "/photo/gabinete/o0",
+    "w": 1920,
+    "h": 1537,
+    "cap": "Real Gabinete Português de Leitura, Rio de Janeiro",
+    "by": "Stegop",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Real_Gabinete_Portugu%C3%AAs_de_Leitura_11-18.jpg"
+   },
+   {
+    "f": "/photo/gabinete/o1",
+    "w": 1920,
+    "h": 2078,
+    "cap": "Facade of the Real Gabinete Português de Leitura, Rio de Janeiro",
+    "by": "Felipe Restrepo Acosta",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:2018_Rio_de_Janeiro_Real_Gabinete_Portugu%C3%AAs_de_Leitura_(cropped).jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/gabinete/i0",
+    "w": 1920,
+    "h": 1282,
+    "cap": "Reading hall, Real Gabinete Português de Leitura, Rio de Janeiro",
+    "by": "Donatas Dabravolskas",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Real_Gabinete_Portugu%C3%AAs_de_Leitura_10.jpg"
+   },
+   {
+    "f": "/photo/gabinete/i1",
+    "w": 1920,
+    "h": 1282,
+    "cap": "Shelves and skylight, Real Gabinete Português de Leitura",
+    "by": "Donatas Dabravolskas",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Real_Gabinete_Portugu%C3%AAs_de_Leitura_11.jpg"
+   },
+   {
+    "f": "/photo/gabinete/i2",
+    "w": 1920,
+    "h": 1282,
+    "cap": "Three-storey shelving, Real Gabinete Português de Leitura",
+    "by": "Donatas Dabravolskas",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Real_Gabinete_Portugu%C3%AAs_de_Leitura_12.jpg"
+   },
+   {
+    "f": "/photo/gabinete/i3",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Reading hall, Real Gabinete Português de Leitura, Rio de Janeiro",
+    "by": "Felipe Restrepo Acosta",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:2018_Rio_de_Janeiro_2018_Rio_de_Janeiro_-_Busto_de_Pedro_%C3%81lvares_Cabral_-_Real_Gabinete_Portugu%C3%AAs_de_Leitura.jpg"
+   }
+  ]
+ },
+ "melk": {
+  "out": [],
+  "in": [
+   {
+    "f": "/photo/melk/i0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Library hall, Melk Abbey, Austria",
+    "by": "Gerd Eichmann",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Stift_Melk-Bibliothek-02-2006-gje.jpg"
+   },
+   {
+    "f": "/photo/melk/i1",
+    "w": 1920,
+    "h": 1269,
+    "cap": "Library hall, Melk Abbey, Austria",
+    "by": "Jorge Royan",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Austria_-_Melk_Abbey_Library_-_1865.jpg"
+   },
+   {
+    "f": "/photo/melk/i2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Gallery in the main library hall, Melk Abbey",
+    "by": "Uoaei1",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Stift_Melk_Bibliothek_2.JPG"
+   },
+   {
+    "f": "/photo/melk/i3",
+    "w": 1920,
+    "h": 1442,
+    "cap": "Ceiling fresco of the Great Library, Melk Abbey",
+    "by": "Zairon",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Melk_Stift_Melk_Innen_Gro%C3%9Fe_Bibliothek_Decke_2.JPG"
+   }
+  ]
+ },
+ "klementinum": {
+  "out": [
+   {
+    "f": "/photo/klementinum/o0",
+    "w": 1920,
+    "h": 1366,
+    "cap": "The Clementinum seen from Mariánské náměstí, Prague",
+    "by": "VitVit",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Klementinum_z_Mari%C3%A1nsk%C3%A9ho_n%C3%A1m_1.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/klementinum/i0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Baroque Library Hall, Clementinum, Prague",
+    "by": "Václav Jiroušek",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_2.jpg"
+   },
+   {
+    "f": "/photo/klementinum/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Baroque Library Hall, Clementinum, Prague",
+    "by": "Skot",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Clementinum_Baroque_Library_Hall.jpg"
+   },
+   {
+    "f": "/photo/klementinum/i2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Baroque Library Hall, Clementinum, Prague",
+    "by": "Václav Jiroušek",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_1.jpg"
+   },
+   {
+    "f": "/photo/klementinum/i3",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Globes in the Baroque Library Hall, Clementinum, Prague",
+    "by": "Skot",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Clementinum_baroque_library_5.jpg"
+   }
+  ]
+ },
+ "vatican": {
+  "out": [
+   {
+    "f": "/photo/vatican/o0",
+    "w": 1920,
+    "h": 1357,
+    "cap": "Cortile del Belvedere, Vatican City",
+    "by": "Diego Delso",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Patio_del_Belvedere,_Ciudad_del_Vaticano,_2022-09-14,_DD_73-75_HDR.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/vatican/i0",
+    "w": 1920,
+    "h": 1275,
+    "cap": "The Sistine Hall of the Vatican Library, Vatican City",
+    "by": "Michal Osmenda from Brussels, Belgium",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:The_Sistine_Hall_of_the_Vatican_Library_(2994335291).jpg"
+   }
+  ]
+ },
+ "wiblingen": {
+  "out": [
+   {
+    "f": "/photo/wiblingen/o0",
+    "w": 1920,
+    "h": 1114,
+    "cap": "Aerial view of Wiblingen Abbey, Ulm",
+    "by": "Carsten Steger",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Wiblingen_Abbey_(view_from_the_east).jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/wiblingen/i0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Baroque library hall, Wiblingen Abbey, Ulm",
+    "by": "Spatzameez",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Kloster_Wiblingen_Bibliothekssaal_01.jpg"
+   },
+   {
+    "f": "/photo/wiblingen/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Library hall, Wiblingen Abbey, Ulm",
+    "by": "Spatzameez",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Kloster_Wiblingen_Bibliothekssaal_05.jpg"
+   },
+   {
+    "f": "/photo/wiblingen/i2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Library hall, Wiblingen Abbey, Ulm",
+    "by": "Spatzameez",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Kloster_Wiblingen_Bibliothekssaal_04.jpg"
+   },
+   {
+    "f": "/photo/wiblingen/i3",
+    "w": 1920,
+    "h": 1369,
+    "cap": "Gallery of the library hall, Wiblingen Abbey, Ulm",
+    "by": "Holger Uwe Schmitt",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Barocke_Klosterbibliothek_Wiblingen._02.jpg"
+   }
+  ]
+ },
+ "weimar": {
+  "out": [
+   {
+    "f": "/photo/weimar/o0",
+    "w": 1920,
+    "h": 1656,
+    "cap": "Duchess Anna Amalia Library, Weimar",
+    "by": "Steffen Schmitz (more photos)",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Weimar,_Herzogin_Anna_Amalia_Bibliothek,_2019-09_CN-01.jpg"
+   },
+   {
+    "f": "/photo/weimar/o1",
+    "w": 1920,
+    "h": 1392,
+    "cap": "Duchess Anna Amalia Library, Weimar",
+    "by": "Rudolf Klein at de.wikipedia.) Later version(s) were uploaded by Most Curious at de.wikipedia.",
+    "lic": "CC BY-SA 3.0 de",
+    "src": "https://commons.wikimedia.org/wiki/File:Anna_amalia_bib_weimar.jpg"
+   },
+   {
+    "f": "/photo/weimar/o2",
+    "w": 1920,
+    "h": 1920,
+    "cap": "Duchess Anna Amalia Library, Weimar",
+    "by": "Gunnar Klack",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:2026-07-23-Anna-Amalia-Bibliothek-Weimar.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/weimar/i0",
+    "w": 1920,
+    "h": 1081,
+    "cap": "Rococo Hall, Duchess Anna Amalia Library, Weimar",
+    "by": "NoRud",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Weimar_Platz_der_Demokratie_1_Herzogin-Anna-Amalia-Bibliothek_22.jpg"
+   },
+   {
+    "f": "/photo/weimar/i1",
+    "w": 1920,
+    "h": 1348,
+    "cap": "Rococo Hall, Duchess Anna Amalia Library, Weimar",
+    "by": "Steffen Schmitz (more photos)",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Weimar,_Herzogin_Anna_Amalia_Bibliothek,_2019-09_CN-03.jpg"
+   },
+   {
+    "f": "/photo/weimar/i2",
+    "w": 1920,
+    "h": 1363,
+    "cap": "Rococo Hall, Duchess Anna Amalia Library, Weimar",
+    "by": "Steffen Schmitz (more photos)",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Weimar,_Herzogin_Anna_Amalia_Bibliothek,_2019-09_CN-05.jpg"
+   },
+   {
+    "f": "/photo/weimar/i3",
+    "w": 1920,
+    "h": 2756,
+    "cap": "Rococo Hall galleries, Duchess Anna Amalia Library",
+    "by": "Steffen Schmitz (more photos)",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Weimar,_Herzogin_Anna_Amalia_Bibliothek,_2019-09_CN-02.jpg"
+   }
+  ]
+ },
+ "ottawa": {
+  "out": [
+   {
+    "f": "/photo/ottawa/o0",
+    "w": 1920,
+    "h": 1371,
+    "cap": "Library of Parliament and Centre Block, Ottawa",
+    "by": "DXR",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Centre_Block_and_Library_of_Parliament,_Ottawa,_West_view_20170422_1.jpg"
+   },
+   {
+    "f": "/photo/ottawa/o1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Library of Parliament rotunda, Ottawa",
+    "by": "Vanessa Sabino",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Library_of_Parliament_(49119844).jpg"
+   },
+   {
+    "f": "/photo/ottawa/o2",
+    "w": 1920,
+    "h": 2224,
+    "cap": "Library of Parliament, Ottawa",
+    "by": "Wladyslaw (talk)",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ottawa_-_ON_-_Library_of_Parliament.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/ottawa/i0",
+    "w": 1920,
+    "h": 1227,
+    "cap": "Main reading room, Library of Parliament, Ottawa",
+    "by": "DavidWEnstrom",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Canadian_Parlimentary_Library_Interior.jpg"
+   },
+   {
+    "f": "/photo/ottawa/i1",
+    "w": 1920,
+    "h": 1285,
+    "cap": "Main reading room, Library of Parliament, Ottawa",
+    "by": "Concierge.2C",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ottawa_-_Parliament_Hill_-_Biblioth%C3%A8que_-_Int%C3%A9rieur_01.jpg"
+   },
+   {
+    "f": "/photo/ottawa/i2",
+    "w": 1920,
+    "h": 1264,
+    "cap": "Statue of Queen Victoria, Library of Parliament, Ottawa",
+    "by": "Tony Webster",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:The_Library_of_Parliament_Ottawa_Canada_6D2B5588.jpg"
+   },
+   {
+    "f": "/photo/ottawa/i3",
+    "w": 1690,
+    "h": 2048,
+    "cap": "Reading room, Library of Parliament, Ottawa",
+    "by": "Jonathankslim",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Queen_Victoria_statues_in_Parliament_Library.jpg"
+   }
+  ]
+ },
+ "stockholm": {
+  "out": [
+   {
+    "f": "/photo/stockholm/o0",
+    "w": 1920,
+    "h": 1396,
+    "cap": "Stockholm Public Library, Stockholm",
+    "by": "En Dum En",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:AsplundGunnarBibliotheque.jpg"
+   },
+   {
+    "f": "/photo/stockholm/o1",
+    "w": 1920,
+    "h": 1389,
+    "cap": "Stockholm Public Library, Stockholm",
+    "by": "ArildV",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Stockholms_stadsbibliotek_March_2025_01.jpg"
+   },
+   {
+    "f": "/photo/stockholm/o2",
+    "w": 1920,
+    "h": 1264,
+    "cap": "Stockholm Public Library across the pond, Stockholm",
+    "by": "Cederskjold",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:DSC09293x.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/stockholm/i0",
+    "w": 1920,
+    "h": 1282,
+    "cap": "Rotunda, Stockholm Public Library",
+    "by": "Arild Vågen",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Stockholm_Public_Library_January_2015_04.jpg"
+   },
+   {
+    "f": "/photo/stockholm/i1",
+    "w": 1920,
+    "h": 1282,
+    "cap": "Curved shelves, Stockholm Public Library",
+    "by": "Arild Vågen",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Stockholm_Public_Library_January_2015_03.jpg"
+   },
+   {
+    "f": "/photo/stockholm/i2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Rotunda, Stockholm Public Library",
+    "by": "ESM",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioteca_P%C3%BAblica_d%27Estocolm_(2019)_06.jpg"
+   },
+   {
+    "f": "/photo/stockholm/i3",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Rotunda ceiling, Stockholm Public Library",
+    "by": "ESM",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioteca_P%C3%BAblica_d%27Estocolm_(2019)_02.jpg"
+   }
+  ]
+ },
+ "malatestiana": {
+  "out": [
+   {
+    "f": "/photo/malatestiana/o0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Biblioteca Malatestiana, Cesena",
+    "by": "Diego Baglieri",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioteca_Malatestiana_-_Cesena_1.jpg"
+   },
+   {
+    "f": "/photo/malatestiana/o1",
+    "w": 1920,
+    "h": 1379,
+    "cap": "Biblioteca Malatestiana facade, Piazza Bufalini, Cesena",
+    "by": "Terragio67",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Piazza_Bufalini_-_Statua_di_Maurizio_Bufalini_e_sfondo_della_Biblioteca_Malatestiana_-_Cesena.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/malatestiana/i0",
+    "w": 1920,
+    "h": 1281,
+    "cap": "Hall of the Biblioteca Malatestiana, Cesena",
+    "by": "Terragio67",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Cesena_-_Biblioteca_Malatestiana_-_Interno_-_2024-09-08_14-29-45_001.jpg"
+   },
+   {
+    "f": "/photo/malatestiana/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Hall of the Biblioteca Malatestiana, Cesena",
+    "by": "Terragio67",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Cesena_-_Biblioteca_Malatestiana_-_2025-09-09_22-03-05_001.jpg"
+   },
+   {
+    "f": "/photo/malatestiana/i2",
+    "w": 1920,
+    "h": 1320,
+    "cap": "Benches in the Malatestiana Library, Cesena",
+    "by": "Terragio67",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Cesena_-_Biblioteca_Malatestiana_-_lato_sinistro_-_GT_01_-_2025-09-09_21-57-23_001.jpg"
+   },
+   {
+    "f": "/photo/malatestiana/i3",
+    "w": 1920,
+    "h": 960,
+    "cap": "Hall of the Biblioteca Malatestiana, Cesena",
+    "by": "Terragio67",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Cesena_-_Biblioteca_Malatestiana_-_HDR_-_GT_02_-_2025-09-09_22-00-57_001.jpg"
+   }
+  ]
+ },
+ "joanina": {
+  "out": [
+   {
+    "f": "/photo/joanina/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Biblioteca Joanina, University of Coimbra",
+    "by": "Marmontel",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_Joanina_(51543687655).jpg"
+   },
+   {
+    "f": "/photo/joanina/o1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Biblioteca Joanina, University of Coimbra",
+    "by": "Chris",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:BibliotecaJoaninaExterior.jpg"
+   },
+   {
+    "f": "/photo/joanina/o2",
+    "w": 1920,
+    "h": 1035,
+    "cap": "Biblioteca Joanina, University of Coimbra",
+    "by": "Alvesgaspar",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Coimbra_November_2012-7.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/joanina/i0",
+    "w": 1920,
+    "h": 1529,
+    "cap": "Biblioteca Joanina, University of Coimbra",
+    "by": "Jl FilpoC",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioteca_Joanina,_Coimbra.jpg"
+   },
+   {
+    "f": "/photo/joanina/i1",
+    "w": 1920,
+    "h": 1277,
+    "cap": "Biblioteca Joanina, University of Coimbra",
+    "by": "Josep Renalias",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Universitat_de_Co%C3%AFmbra_-_Biblioteca.JPG"
+   },
+   {
+    "f": "/photo/joanina/i2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Middle floor of the Biblioteca Joanina, Coimbra",
+    "by": "Palickap",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Coimbra,_Biblioteca_Joanina,_piso_m%C3%A9dio_(3).jpg"
+   }
+  ]
+ },
+ "hereford": {
+  "out": [
+   {
+    "f": "/photo/hereford/o0",
+    "w": 1920,
+    "h": 1277,
+    "cap": "Hereford Cathedral beyond Wye Bridge, Hereford",
+    "by": "David Merrett",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Wye_Bridge,_Hereford.jpg"
+   },
+   {
+    "f": "/photo/hereford/o1",
+    "w": 1920,
+    "h": 1439,
+    "cap": "Library building, Hereford Cathedral",
+    "by": "User:Giano II",
+    "lic": "Public domain",
+    "src": "https://commons.wikimedia.org/wiki/File:Hereford_Cathedral_Library.jpg"
+   },
+   {
+    "f": "/photo/hereford/o2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Chained Library building, Hereford Cathedral",
+    "by": "Fabian Musto",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Hereford_Cathedral_Library_-_geograph.org.uk_-_5733349.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/hereford/i0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Chained Library, Hereford Cathedral",
+    "by": "Richard Ash",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:2019-08-20_Hereford_Cathedral_Library_01.jpg"
+   },
+   {
+    "f": "/photo/hereford/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Chained books, Hereford Cathedral Library",
+    "by": "Richard Ash",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:2019-08-20_Hereford_Cathedral_Library_04.jpg"
+   },
+   {
+    "f": "/photo/hereford/i2",
+    "w": 1920,
+    "h": 2560,
+    "cap": "Chained Library shelves, Hereford Cathedral",
+    "by": "John Lord",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:2017-10-04_Chained_Library,_Hereford.jpg"
+   },
+   {
+    "f": "/photo/hereford/i3",
+    "w": 1920,
+    "h": 2880,
+    "cap": "Chains on the Chained Library, Hereford Cathedral",
+    "by": "Richard Ash",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:2019-08-20_Hereford_Cathedral_Library_02.jpg"
+   }
+  ]
+ },
+ "nineveh": {
+  "out": [],
+  "in": [
+   {
+    "f": "/photo/nineveh/i0",
+    "w": 1920,
+    "h": 1080,
+    "cap": "Library of Ashurbanipal gallery, British Museum, London",
+    "by": "Gary Todd",
+    "lic": "CC0",
+    "src": "https://commons.wikimedia.org/wiki/File:Library_of_Ashurbanipal.jpg"
+   },
+   {
+    "f": "/photo/nineveh/i1",
+    "w": 1920,
+    "h": 2069,
+    "cap": "Flood Tablet from the Library of Ashurbanipal, Nineveh",
+    "by": "Photograph by Mike Peel (www.mikepeel.net).",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:British_Museum_Flood_Tablet_1.jpg"
+   },
+   {
+    "f": "/photo/nineveh/i2",
+    "w": 1920,
+    "h": 1436,
+    "cap": "Synchronistic History tablet from Ashurbanipal's library, Nineveh",
+    "by": "Zunkir",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Synchronistic_History_K.4401.jpg"
+   },
+   {
+    "f": "/photo/nineveh/i3",
+    "w": 1920,
+    "h": 2253,
+    "cap": "Ritual tablet from Nineveh, 7th century BCE",
+    "by": "Zunkir",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ritual_for_a_substitute_king_Nineveh.jpg"
+   }
+  ]
+ },
+ "pergamon": {
+  "out": [
+   {
+    "f": "/photo/pergamon/o0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "The Acropolis of Pergamon, Bergama",
+    "by": "ykeiko",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:The_Acropolis_of_Pergamum_(Pergamon)_-_panoramio.jpg"
+   },
+   {
+    "f": "/photo/pergamon/o1",
+    "w": 1920,
+    "h": 1390,
+    "cap": "Temple of Trajan on the Pergamon acropolis",
+    "by": "Bernard Gagnon",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Temple_of_Trajan,_Pergamon_01.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/pergamon/i0",
+    "w": 1920,
+    "h": 1262,
+    "cap": "Sanctuary of Athena at Pergamon, northeast room behind the north stoa",
+    "by": "Mark Landon",
+    "lic": "CC BY 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Pergamon_Sanctuary_of_Athena_NE_room_behind_N_stoa.jpg"
+   },
+   {
+    "f": "/photo/pergamon/i1",
+    "w": 1920,
+    "h": 2099,
+    "cap": "Athena Parthenos statue from the Library of Pergamon",
+    "by": "Carole Raddato from FRANKFURT, Germany",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Statue_of_Athena_Parthenos_from_the_Library_of_Pergamon_with_the_temple_of_Zeus_Sosipolis_from_Magnesia_on_the_Maeander_in_the_background,_Pergamon_Museum_Berlin_(8404209815).jpg"
+   },
+   {
+    "f": "/photo/pergamon/i2",
+    "w": 1920,
+    "h": 3157,
+    "cap": "Athena Parthenos from the Library of Pergamon, Pergamon Museum",
+    "by": "Carole Raddato from FRANKFURT, Germany",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Statue_of_Athena_Parthenos_from_the_Library_of_Pergamon,_Pergamon_Museum_Berlin_(8404207129).jpg"
+   },
+   {
+    "f": "/photo/pergamon/i3",
+    "w": 1920,
+    "h": 3252,
+    "cap": "Hellenistic copy of Athena Parthenos from the Pergamon library",
+    "by": "Carole Raddato from FRANKFURT, Germany",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Statue_of_Athena_Parthenos_from_the_Library_of_Pergamon,_Pergamon_Museum_Berlin_(8404177763).jpg"
+   }
+  ]
+ },
+ "herculaneum": {
+  "out": [
+   {
+    "f": "/photo/herculaneum/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Excavated ancient city of Herculaneum, Italy",
+    "by": "Diego Delso",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Antigua_ciudad_de_Herculano,_Italia,_2023-03-27,_DD_141.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/herculaneum/i0",
+    "w": 1920,
+    "h": 2560,
+    "cap": "Bronze runner from the Villa of the Papyri, Naples museum",
+    "by": "NatalyaSole",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Bronze_runner_from_the_Villa_of_the_Papyri_(Herculaneum).jpg"
+   },
+   {
+    "f": "/photo/herculaneum/i1",
+    "w": 1920,
+    "h": 2560,
+    "cap": "Bronze athlete from the Villa of the Papyri, Herculaneum",
+    "by": "Mary Harrsch",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Bronze_portrait_of_young_athlete_recovered_from_the_Villa_dei_Papyri_in_the_1754_excavations_04.jpg"
+   },
+   {
+    "f": "/photo/herculaneum/i2",
+    "w": 1920,
+    "h": 2560,
+    "cap": "Bronze satyr from the Villa of the Papyri garden",
+    "by": "Mary Harrsch",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Original_bronze_fountain_ornament_depicting_a_satyr_with_panther_found_in_a_garden_of_the_Villa_dei_Papyri_in_Herculaneum_in_1754._Roman_1st_century_BCE_-_1st_century_CE._Photographed_at_the_%22Buried_by_Vesuvius%22_exhibit_-_2.jpg"
+   }
+  ]
+ },
+ "nalanda": {
+  "out": [
+   {
+    "f": "/photo/nalanda/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Temple 3 (Sariputta Stupa), Nalanda Mahavihara, Bihar",
+    "by": "Uphogaphy",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Nalanda_The_Great_Stupa.jpg"
+   },
+   {
+    "f": "/photo/nalanda/o1",
+    "w": 1920,
+    "h": 1282,
+    "cap": "Excavated monastery ruins at Nalanda, Bihar",
+    "by": "Indianvagabond",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Temple_No_3_at_Nalanda_Mahavihara.jpg"
+   },
+   {
+    "f": "/photo/nalanda/o2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Temple 13, Nalanda Mahavihara, Bihar",
+    "by": "Rohit Sharma",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Temple_13,_Nalanda_Mahavihara,_Bihar,_India.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/nalanda/i0",
+    "w": 1920,
+    "h": 1313,
+    "cap": "Monastery 1 granary, Nalanda Mahavihara",
+    "by": "Sumitsurai",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Monastery_1_-_Granary_-_Nalanda_Mahavihara_(1).jpg"
+   },
+   {
+    "f": "/photo/nalanda/i1",
+    "w": 1920,
+    "h": 1307,
+    "cap": "Monastery 5 ruins, Nalanda Mahavihara",
+    "by": "Sumitsurai",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Monastery_5_-_Nalanda_Mahavihara_(1).jpg"
+   },
+   {
+    "f": "/photo/nalanda/i2",
+    "w": 1920,
+    "h": 1245,
+    "cap": "Temple 12 brickwork, Nalanda Mahavihara",
+    "by": "Sumitsurai",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Temple_12_-_Nalanda_Mahavihara_(9).jpg"
+   },
+   {
+    "f": "/photo/nalanda/i3",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Stucco work on Temple 3, Nalanda Mahavihara",
+    "by": "Sumitsurai",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Temple_3_-_Sariputta_Stupa_-_Stucco_Works_-_Nalanda_Mahavihara_(20).jpg"
+   }
+  ]
+ },
+ "dunhuang": {
+  "out": [
+   {
+    "f": "/photo/dunhuang/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Mogao Caves nine-storey tower, Dunhuang, China",
+    "by": "Zhangzhugang",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Dunhuang_Mogao_Ku_2013.12.31_12-30-18.jpg"
+   }
+  ],
+  "in": []
+ },
+ "buda": {
+  "out": [
+   {
+    "f": "/photo/buda/o0",
+    "w": 1920,
+    "h": 1276,
+    "cap": "Buda Castle above the Danube, Budapest",
+    "by": "Jakub Hałun",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:20190502_Zamek_w_Budapeszcie_0647_1862_DxO.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/buda/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Breviary of Matthias Corvinus, Vatican Library, Urb.Lat.112",
+    "by": "Attavante degli Attavanti",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Br%C3%A9viaire_de_Matthias_Corvin_en_exposition_-_BAV_Urb.Lat.112.JPG"
+   }
+  ]
+ },
+ "timbuktu": {
+  "out": [
+   {
+    "f": "/photo/timbuktu/o0",
+    "w": 1920,
+    "h": 1166,
+    "cap": "CEDRHAB manuscript research centre, Timbuktu",
+    "by": "upyernoz from Haverford, USA",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:CEDRHAB_Timbuktu.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/timbuktu/i0",
+    "w": 1920,
+    "h": 1285,
+    "cap": "Manuscripts at the Ahmed Baba Centre, Timbuktu",
+    "by": "UNESCO Bureau of Mali",
+    "lic": "CC BY-SA 3.0 igo",
+    "src": "https://commons.wikimedia.org/wiki/File:Timbuktu-139085.jpg"
+   },
+   {
+    "f": "/photo/timbuktu/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Restoring a Timbuktu manuscript",
+    "by": "Mark Fischer",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Timbuktu_Manuscript_(48522180467).jpg"
+   },
+   {
+    "f": "/photo/timbuktu/i2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Manuscripts conserved at SAVAMA-DCI, Timbuktu",
+    "by": "Lazare Eloundou",
+    "lic": "CC BY-SA 3.0 igo",
+    "src": "https://commons.wikimedia.org/wiki/File:Timbuktu-139078.jpg"
+   },
+   {
+    "f": "/photo/timbuktu/i3",
+    "w": 1920,
+    "h": 1277,
+    "cap": "Open manuscript in a Timbuktu library",
+    "by": "UNESCO Bureau of Mali",
+    "lic": "CC BY-SA 3.0 igo",
+    "src": "https://commons.wikimedia.org/wiki/File:Timbuktu-139075.jpg"
+   }
+  ]
+ },
+ "vikramashila": {
+  "out": [
+   {
+    "f": "/photo/vikramashila/o0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Excavated ruins of Vikramshila, Bhagalpur, Bihar",
+    "by": "Prataparya",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Vikramshila_2012-08-10-17.48.39.jpg"
+   },
+   {
+    "f": "/photo/vikramashila/o1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Main stupa temple at Vikramshila, Antichak",
+    "by": "Prataparya",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Vikramshila_2012-08-10-17.10.45.jpg"
+   },
+   {
+    "f": "/photo/vikramashila/o2",
+    "w": 1920,
+    "h": 1278,
+    "cap": "Ruins of Vikramshila University at dusk",
+    "by": "Ayan Sadhu 70",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Vikramshila_ruins.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/vikramashila/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Cells and stupa bases at Vikramshila ruins",
+    "by": "Prataparya",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Vikramshila_2012-08-10-16.52.51.jpg"
+   },
+   {
+    "f": "/photo/vikramashila/i1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Excavated monastery court, Vikramshila",
+    "by": "Prataparya",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Vikramshila_2012-08-10-16.52.47.jpg"
+   },
+   {
+    "f": "/photo/vikramashila/i2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Excavated monastery plan at Vikramshila",
+    "by": "Prataparya",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Vikramshila_2012-08-10-17.04.45.jpg"
+   },
+   {
+    "f": "/photo/vikramashila/i3",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Brick walls of the Vikramshila monastery",
+    "by": "Prataparya",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Vikramshila_2012-08-10-17.42.14.jpg"
+   }
+  ]
+ },
+ "thanjavur": {
+  "out": [
+   {
+    "f": "/photo/thanjavur/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Entrance of the Saraswathi Mahal Library, Thanjavur",
+    "by": "Wiki-uk",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:2013-Sarasvati-Mahal-Library-101.JPG"
+   },
+   {
+    "f": "/photo/thanjavur/o1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Saraswathi Mahal Library entrance, Thanjavur Maratha Palace",
+    "by": "Richard Mortel from Riyadh, Saudi Arabia",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Sarasvati_Mahal_Library,_Thanjavur_(37498369101).jpg"
+   },
+   {
+    "f": "/photo/thanjavur/o2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Saraswathi Mahal Library, Thanjavur",
+    "by": "Vinayaraj",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Sarasvati_Mahal_Library_Thanjavur_ttkcvrvb122k23iph_(10).jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/thanjavur/i0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Painted ceiling at the Saraswathi Mahal Library, Thanjavur",
+    "by": "Wiki-uk",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:2013-Sarasvati-Mahal-Library-102.JPG"
+   },
+   {
+    "f": "/photo/thanjavur/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Painted ceiling panel, Saraswathi Mahal Library",
+    "by": "Wiki-uk",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:2013-Sarasvati-Mahal-Library-103.JPG"
+   },
+   {
+    "f": "/photo/thanjavur/i2",
+    "w": 1920,
+    "h": 2560,
+    "cap": "Painted entrance ceiling, Saraswathi Mahal Library",
+    "by": "Gabriele Giuseppini",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Near_Saraswati_Mahal_Library_-_panoramio.jpg"
+   }
+  ]
+ },
+ "khudabakhsh": {
+  "out": [
+   {
+    "f": "/photo/khudabakhsh/o0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Khuda Bakhsh Oriental Library, Patna",
+    "by": "Sumitsurai",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Khuda_Bakhsh_Oriental_Public_Library_-_Patna_(9).jpg"
+   },
+   {
+    "f": "/photo/khudabakhsh/o1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Khuda Bakhsh Oriental Library building, Patna",
+    "by": "Mukram Khan",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Khuda_Baksh_Oriental_Library.jpg"
+   },
+   {
+    "f": "/photo/khudabakhsh/o2",
+    "w": 1920,
+    "h": 1442,
+    "cap": "Entrance of Khuda Bakhsh Oriental Library, Patna",
+    "by": "Sumitsurai",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Khuda_Bakhsh_Oriental_Public_Library_-_Patna_(6).jpg"
+   }
+  ],
+  "in": []
+ },
+ "nli": {
+  "out": [
+   {
+    "f": "/photo/nli/o0",
+    "w": 1920,
+    "h": 1275,
+    "cap": "Belvedere building, National Library of India, Kolkata",
+    "by": "Biswarup Ganguly",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Belvedere_Building_-_Indian_National_Library_-_Belvedere_Estate_-_Kolkata_2014-05-02_4742.JPG"
+   },
+   {
+    "f": "/photo/nli/o1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "National Library of India, Kolkata",
+    "by": "Biswarup Ganguly",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:National_Library_of_India_02303.JPG"
+   },
+   {
+    "f": "/photo/nli/o2",
+    "w": 1920,
+    "h": 1275,
+    "cap": "Gateway at Belvedere Estate, National Library, Kolkata",
+    "by": "Biswarup Ganguly",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Gateway_-_Rear_View_-_Indian_National_Library_-_Belvedere_Estate_-_Kolkata_2014-05-02_4769.JPG"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/nli/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Book stacks, National Library of India, Kolkata",
+    "by": "Biswarup Ganguly",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ashutosh_Collection_02291.JPG"
+   }
+  ]
+ },
+ "asiatic": {
+  "out": [
+   {
+    "f": "/photo/asiatic/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Asiatic Society of Mumbai, Town Hall, Fort",
+    "by": "A.Savin",
+    "lic": "FAL",
+    "src": "https://commons.wikimedia.org/wiki/File:Mumbai_03-2016_70_Asiatic_Society_Library.jpg"
+   },
+   {
+    "f": "/photo/asiatic/o1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Town Hall steps and portico, Asiatic Society of Mumbai",
+    "by": "DesiBoy101",
+    "lic": "CC BY 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:The_Asiatic_Society_of_Mumbai_in_May_2025.jpg"
+   },
+   {
+    "f": "/photo/asiatic/o2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Asiatic Society State Central Library, Town Hall, Mumbai",
+    "by": "Surendra Chaurasiya",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:SUCHA0384.JPG"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/asiatic/i0",
+    "w": 1920,
+    "h": 2560,
+    "cap": "Statue of Jagannath Shankar Sheth, Asiatic Library, Mumbai",
+    "by": "Pratishkhedekar",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Jagannath_Shankar_Sheth_02.jpg"
+   },
+   {
+    "f": "/photo/asiatic/i1",
+    "w": 1920,
+    "h": 2560,
+    "cap": "Statue in the Asiatic Society Town Hall, Mumbai",
+    "by": "Pratishkhedekar",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Jagannath_Shankar_Sheth_03.jpg"
+   }
+  ]
+ },
+ "connemara": {
+  "out": [
+   {
+    "f": "/photo/connemara/o0",
+    "w": 1600,
+    "h": 1200,
+    "cap": "Connemara Public Library campus, Egmore, Chennai",
+    "by": "SriniG",
+    "lic": "Public domain",
+    "src": "https://commons.wikimedia.org/wiki/File:Connemara_Public_Library.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/connemara/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Main hall, Connemara Public Library, Chennai",
+    "by": "Jm.kaarthik",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Connemara_Public_Library,_Chennai-8.jpg"
+   },
+   {
+    "f": "/photo/connemara/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Ceiling of the Connemara Public Library, Chennai",
+    "by": "Dr. Narayanan Hariharan",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:CONNEMARA_PUBLIC_LIBRARY_01.jpg"
+   },
+   {
+    "f": "/photo/connemara/i2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Reading hall, Connemara Public Library, Chennai",
+    "by": "Dr. Narayanan Hariharan",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:CONNEMARA_PUBLIC_LIBRARY_02.jpg"
+   },
+   {
+    "f": "/photo/connemara/i3",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Stained glass at Connemara Public Library",
+    "by": "Dr. Narayanan Hariharan",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:CONNEMARA_PUBLIC_LIBRARY_04.jpg"
+   }
+  ]
+ },
+ "sassoon": {
+  "out": [
+   {
+    "f": "/photo/sassoon/o0",
+    "w": 1920,
+    "h": 1371,
+    "cap": "David Sassoon Library facade, Mumbai",
+    "by": "Rangan Datta Wiki",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:David_Sasoon_Library,_Mumbai_1.jpg"
+   },
+   {
+    "f": "/photo/sassoon/o1",
+    "w": 1920,
+    "h": 1502,
+    "cap": "David Sassoon Library on Mahatma Gandhi Road, Mumbai",
+    "by": "JSW Group",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:David_Sassoon_Library_in_May_2023.jpg"
+   },
+   {
+    "f": "/photo/sassoon/o2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Front of David Sassoon Library, Colaba, Mumbai",
+    "by": "Timothy A. Gonsalves",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Front_David_Sassoon_Library_Mumbai_Jul25_A7CR_05969.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/sassoon/i0",
+    "w": 1920,
+    "h": 1272,
+    "cap": "Reading room of David Sassoon Library, Mumbai",
+    "by": "Rangan Datta Wiki",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:David_Sasoon_Library,_Mumbai_9.jpg"
+   },
+   {
+    "f": "/photo/sassoon/i1",
+    "w": 1920,
+    "h": 1272,
+    "cap": "Staircase and statue, David Sassoon Library, Mumbai",
+    "by": "Rangan Datta Wiki",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:David_Sasoon_Library,_Mumbai_4.jpg"
+   },
+   {
+    "f": "/photo/sassoon/i2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Entrance hall of David Sassoon Library, Mumbai",
+    "by": "Udaykumar PR",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:David_Sasson_Library_-_panoramio.jpg"
+   },
+   {
+    "f": "/photo/sassoon/i3",
+    "w": 1920,
+    "h": 1272,
+    "cap": "Statue of David Sassoon on the stair landing, Mumbai",
+    "by": "Rangan Datta Wiki",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:David_Sasoon_Library,_Mumbai_5.jpg"
+   }
+  ]
+ },
+ "alexandrina": {
+  "out": [
+   {
+    "f": "/photo/alexandrina/o0",
+    "w": 1920,
+    "h": 1275,
+    "cap": "Carved granite wall and statue, Bibliotheca Alexandrina",
+    "by": "Ahmed Sherif",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:View_of_Bibliotheca_Alexandrina.jpg"
+   },
+   {
+    "f": "/photo/alexandrina/o1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Tilted glass roof disc of Bibliotheca Alexandrina, Alexandria",
+    "by": "René Dinkel",
+    "lic": "CC0",
+    "src": "https://commons.wikimedia.org/wiki/File:Bibliotheca_Alexandrina_(Alexandrie_biblioth%C3%A8que).jpg"
+   },
+   {
+    "f": "/photo/alexandrina/o2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Roof and granite wall of Bibliotheca Alexandrina",
+    "by": "Vyacheslav Argenberg",
+    "lic": "CC BY 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Egypt,_Alexandria,_Bibliotheca_Alexandrina.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/alexandrina/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Main reading room, Bibliotheca Alexandrina",
+    "by": "Rania al-Bahara",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:%D9%85%D9%83%D8%AA%D8%A8%D8%A9_%D8%A7%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9_02.jpg"
+   }
+  ]
+ },
+ "palafoxiana": {
+  "out": [
+   {
+    "f": "/photo/palafoxiana/o0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Casa de la Cultura, former Colegio de San Juan, Puebla",
+    "by": "Octavio Alonso Maya …",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Casa_de_la_Cultura_-_panoramio_(3).jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/palafoxiana/i0",
+    "w": 500,
+    "h": 333,
+    "cap": "Biblioteca Palafoxiana, Puebla",
+    "by": "José P. Torrealba",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:BIBLIOTECA_PALAFOXIANA.tif"
+   },
+   {
+    "f": "/photo/palafoxiana/i1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Palafoxiana reading hall with globe and altar, Puebla",
+    "by": "Bruno Rijsman",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Puebla_(Mexico,_June_2018)_-_20_(50922119131).jpg"
+   },
+   {
+    "f": "/photo/palafoxiana/i2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Reading table and shelves, Biblioteca Palafoxiana",
+    "by": "Another Believer",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Puebla,_Mexico_(2018)_-_313.jpg"
+   },
+   {
+    "f": "/photo/palafoxiana/i3",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Gilded altarpiece at the end of the Palafoxiana",
+    "by": "El Ágora",
+    "lic": "CC BY 2.5",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioteca_Palafoxiana.JPG"
+   }
+  ]
+ },
+ "vasconcelos": {
+  "out": [
+   {
+    "f": "/photo/vasconcelos/o0",
+    "w": 1920,
+    "h": 1272,
+    "cap": "Entrance of Biblioteca Vasconcelos, Mexico City",
+    "by": "ProtoplasmaKid",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Fachada_de_la_Biblioteca_Vasconcelos_Buenavista_Ciudad_de_M%C3%A9xico.jpg"
+   },
+   {
+    "f": "/photo/vasconcelos/o1",
+    "w": 1920,
+    "h": 1272,
+    "cap": "Biblioteca Vasconcelos and its roof garden, Mexico City",
+    "by": "ProtoplasmaKid",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioteca_Vasconcelos_-_vista_a_los_jardines_desde_el_primer_piso.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/vasconcelos/i0",
+    "w": 1920,
+    "h": 1304,
+    "cap": "Main hall of Biblioteca Vasconcelos, Mexico City",
+    "by": "Diego Delso",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioteca_Vasconcelos,_Ciudad_de_M%C3%A9xico,_M%C3%A9xico,_2015-07-20,_DD_16-18_HDR.JPG"
+   },
+   {
+    "f": "/photo/vasconcelos/i1",
+    "w": 1920,
+    "h": 1351,
+    "cap": "Hanging shelves and walkways, Biblioteca Vasconcelos",
+    "by": "Diego Delso",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioteca_Vasconcelos,_Ciudad_de_M%C3%A9xico,_M%C3%A9xico,_2015-07-20,_DD_04-06_HDR.JPG"
+   },
+   {
+    "f": "/photo/vasconcelos/i2",
+    "w": 1920,
+    "h": 1438,
+    "cap": "Stacks and catwalks, Biblioteca Vasconcelos",
+    "by": "Jorge Mendoza",
+    "lic": "CC0",
+    "src": "https://commons.wikimedia.org/wiki/File:Estanter%C3%ADa_de_la_Biblioteca_Vasconcelos.jpg"
+   },
+   {
+    "f": "/photo/vasconcelos/i3",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Glass walkway between shelves, Biblioteca Vasconcelos",
+    "by": "Jorge Mendoza",
+    "lic": "CC0",
+    "src": "https://commons.wikimedia.org/wiki/File:Pasillo_de_la_Biblioteca_Vasconcelos.jpg"
+   }
+  ]
+ },
+ "slv": {
+  "out": [
+   {
+    "f": "/photo/slv/o0",
+    "w": 1920,
+    "h": 1437,
+    "cap": "State Library Victoria portico and dome, Swanston Street",
+    "by": "No machine-readable author provided. Donaldytong assumed (based on copyright claims).",
+    "lic": "Public domain",
+    "src": "https://commons.wikimedia.org/wiki/File:Melbourne_State_Library.jpg"
+   },
+   {
+    "f": "/photo/slv/o1",
+    "w": 1920,
+    "h": 1457,
+    "cap": "State Library Victoria forecourt, Swanston Street, Melbourne",
+    "by": "Nicholas Comer",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:State_Libray_of_Victoria_(Main_Entrance_%26_Forecourt_-_Swanston_St),_Melbourne.jpg"
+   },
+   {
+    "f": "/photo/slv/o2",
+    "w": 1920,
+    "h": 834,
+    "cap": "State Library Victoria front steps, Melbourne",
+    "by": "Wikimedia Commons contributor",
+    "lic": "Public domain",
+    "src": "https://commons.wikimedia.org/wiki/File:Vic_State_Library_Facade_Pano,19.07.06_edit1.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/slv/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "La Trobe Reading Room, State Library Victoria",
+    "by": "Misaochan2",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:State_Library_of_Victoria_2.jpg"
+   },
+   {
+    "f": "/photo/slv/i1",
+    "w": 1600,
+    "h": 1200,
+    "cap": "La Trobe Reading Room desks, State Library Victoria",
+    "by": "User:Orderinchaos",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:SLV_2007_interior_latrobe_1.jpg"
+   },
+   {
+    "f": "/photo/slv/i2",
+    "w": 1920,
+    "h": 2716,
+    "cap": "La Trobe Reading Room dome, State Library Victoria",
+    "by": "Diliff",
+    "lic": "CC BY 2.5",
+    "src": "https://commons.wikimedia.org/wiki/File:State_Library_of_Victoria_La_Trobe_Reading_room_5th_floor_view.jpg"
+   }
+  ]
+ },
+ "tianyige": {
+  "out": [
+   {
+    "f": "/photo/tianyige/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Tianyi Pavilion by the pond, Ningbo",
+    "by": "Zhangzhugang",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ningbo_Tianyige_2013.07.28_09-23-22.jpg"
+   },
+   {
+    "f": "/photo/tianyige/o1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Fan family former residence, Tianyi Pavilion complex, Ningbo",
+    "by": "Zhangzhugang",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ningbo_Tianyige_2013.07.28_09-04-19.jpg"
+   },
+   {
+    "f": "/photo/tianyige/o2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Courtyard hall in the Tianyi Pavilion complex, Ningbo",
+    "by": "Zhangzhugang",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ningbo_Tianyige_2013.07.28_08-42-07.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/tianyige/i0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Interior of the Tianyi Pavilion, Ningbo",
+    "by": "Zhangzhugang",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ningbo_Tianyige_2013.07.28_09-20-09.jpg"
+   },
+   {
+    "f": "/photo/tianyige/i1",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Ceiling beams of the Tianyi Pavilion, Ningbo",
+    "by": "Zhangzhugang",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ningbo_Tianyige_2013.07.28_09-21-17.jpg"
+   },
+   {
+    "f": "/photo/tianyige/i2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Tianyi Pavilion plaque and entrance, Ningbo",
+    "by": "Zhangzhugang",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ningbo_Tianyige_2013.07.28_09-19-22.jpg"
+   }
+  ]
+ },
+ "binhai": {
+  "out": [],
+  "in": [
+   {
+    "f": "/photo/binhai/i0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Atrium and glass wall, Tianjin Binhai Library",
+    "by": "H2v5o68z",
+    "lic": "CC0",
+    "src": "https://commons.wikimedia.org/wiki/File:Tianjin_Binhai_Library_3.jpg"
+   },
+   {
+    "f": "/photo/binhai/i1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Tiered bookshelves and the central sphere, Tianjin Binhai Library",
+    "by": "H2v5o68z",
+    "lic": "CC0",
+    "src": "https://commons.wikimedia.org/wiki/File:Tianjin_Binhai_Library_4.jpg"
+   },
+   {
+    "f": "/photo/binhai/i2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Atrium of Tianjin Binhai Library",
+    "by": "H2v5o68z",
+    "lic": "CC0",
+    "src": "https://commons.wikimedia.org/wiki/File:Tianjin_Binhai_Library_1.jpg"
+   },
+   {
+    "f": "/photo/binhai/i3",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Wave-like shelving, Tianjin Binhai Library",
+    "by": "H2v5o68z",
+    "lic": "CC0",
+    "src": "https://commons.wikimedia.org/wiki/File:Tianjin_Binhai_Library_2.jpg"
+   }
+  ]
+ },
+ "haeinsa": {
+  "out": [
+   {
+    "f": "/photo/haeinsa/o0",
+    "w": 1920,
+    "h": 1105,
+    "cap": "Haeinsa temple courtyard, Gaya-myeon",
+    "by": "Bernard Gagnon",
+    "lic": "CC0",
+    "src": "https://commons.wikimedia.org/wiki/File:Haeinsa_Temple_01.jpg"
+   },
+   {
+    "f": "/photo/haeinsa/o1",
+    "w": 1920,
+    "h": 1080,
+    "cap": "Janggyeong Panjeon depositories, Haeinsa",
+    "by": "SpongeFan0304",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:20170812.%ED%95%B4%EC%9D%B8%EC%82%AC_%EC%9E%A5%EA%B2%BD%ED%8C%90%EC%A0%84(Haeinsa_Janggyeong_Panjeon).02.jpg"
+   },
+   {
+    "f": "/photo/haeinsa/o2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Janggyeong Panjeon seen across the courtyard, Haeinsa",
+    "by": "최옥석",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:%ED%95%B4%EC%9D%B8%EC%82%AC.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/haeinsa/i0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Tripitaka Koreana woodblocks, Haeinsa",
+    "by": "Bernard Gagnon",
+    "lic": "CC0",
+    "src": "https://commons.wikimedia.org/wiki/File:Tripitaka_Koreana_03.jpg"
+   }
+  ]
+ },
+ "ashikaga": {
+  "out": [
+   {
+    "f": "/photo/ashikaga/o0",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Ashikaga Gakko site and moat, Ashikaga",
+    "by": "京浜にけ",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ashikaga_Ashikaga-School_Panorama_1.JPG"
+   },
+   {
+    "f": "/photo/ashikaga/o1",
+    "w": 1920,
+    "h": 1033,
+    "cap": "Historic Ashikaga Gakko seen across the moat",
+    "by": "Yoshio Kohara",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:%E5%8F%B2%E8%B7%A1%E8%B6%B3%E5%88%A9%E5%AD%A6%E6%A0%A1_-_panoramio.jpg"
+   },
+   {
+    "f": "/photo/ashikaga/o2",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Ashikaga Gakko grounds, Ashikaga",
+    "by": "User: (WT-shared) Taketarou at wts wikivoyage / (WT-ja) Taketarou",
+    "lic": "CC BY-SA 1.0",
+    "src": "https://commons.wikimedia.org/wiki/File:AshikagaGakkoView.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/ashikaga/i0",
+    "w": 1920,
+    "h": 1444,
+    "cap": "Koshibyo Confucian shrine, Ashikaga Gakko",
+    "by": "京浜にけ",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ashikaga_Ashikaga-School_Koshibyo_1.JPG"
+   },
+   {
+    "f": "/photo/ashikaga/i1",
+    "w": 1920,
+    "h": 1024,
+    "cap": "Thatched Hojo hall, Ashikaga Gakko",
+    "by": "Yoshio Kohara",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:%E8%B6%B3%E5%88%A9%E5%AD%A6%E6%A0%A1_-_panoramio.jpg"
+   },
+   {
+    "f": "/photo/ashikaga/i2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Hojo hall of Ashikaga Gakko",
+    "by": "京浜にけ",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ashikaga_Ashikaga-School_Hojyo_1.JPG"
+   },
+   {
+    "f": "/photo/ashikaga/i3",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Hojo hall entrance, Ashikaga Gakko",
+    "by": "京浜にけ",
+    "lic": "CC BY 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Ashikaga_Ashikaga-School_Kuri_1.JPG"
+   }
+  ]
+ },
+ "mcmillan": {
+  "out": [
+   {
+    "f": "/photo/mcmillan/o0",
+    "w": 1920,
+    "h": 1484,
+    "cap": "McMillan Memorial Library, Nairobi",
+    "by": "Bahnfrend",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:McMillan_Memorial_Library,_Nairobi,_2025_(01).jpg"
+   }
+  ],
+  "in": []
+ },
+ "morgan": {
+  "out": [
+   {
+    "f": "/photo/morgan/o0",
+    "w": 1920,
+    "h": 1245,
+    "cap": "Morgan Library McKim Building, East 36th Street, New York",
+    "by": "Photograph by Mike Peel (www.mikepeel.net).",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Morgan_Library_%26_Museum,_New_York_2017_02.jpg"
+   },
+   {
+    "f": "/photo/morgan/o1",
+    "w": 1733,
+    "h": 1177,
+    "cap": "Pierpont Morgan Library on East 36th Street, New York",
+    "by": "Elisa.rolle",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Pierpont_Morgan_Library.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/morgan/i0",
+    "w": 1920,
+    "h": 2879,
+    "cap": "East Room of the Morgan Library with a Gutenberg Bible",
+    "by": "Rob Shenk",
+    "lic": "CC BY-SA 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Morgan_Library_Gutenberg_Bible.jpg"
+   },
+   {
+    "f": "/photo/morgan/i1",
+    "w": 1920,
+    "h": 2880,
+    "cap": "Ceiling of the Morgan Library, New York",
+    "by": "Photograph by Mike Peel (www.mikepeel.net).",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Morgan_Library_%26_Museum,_New_York_2017_11.jpg"
+   },
+   {
+    "f": "/photo/morgan/i2",
+    "w": 1920,
+    "h": 2560,
+    "cap": "Fireplace room in the Morgan Library, New York",
+    "by": "Epicgenius",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Morgan_Library_and_Museum_Apr_2026_74.jpg"
+   }
+  ]
+ },
+ "stegen": {
+  "out": [
+   {
+    "f": "/photo/stegen/o0",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Bibliotheque Sainte-Genevieve facade, Paris",
+    "by": "Freepenguin",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve,_Paris_11_November_2012_003.jpg"
+   },
+   {
+    "f": "/photo/stegen/o1",
+    "w": 1920,
+    "h": 1440,
+    "cap": "Bibliotheque Sainte-Genevieve beside the Pantheon, Paris",
+    "by": "Freepenguin",
+    "lic": "CC BY-SA 3.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve,_Paris_11_November_2012_002.jpg"
+   }
+  ],
+  "in": [
+   {
+    "f": "/photo/stegen/i0",
+    "w": 1920,
+    "h": 1275,
+    "cap": "Reading room, Bibliotheque Sainte-Genevieve, Paris",
+    "by": "Marie-Lan Nguyen",
+    "lic": "CC BY 2.0 fr",
+    "src": "https://commons.wikimedia.org/wiki/File:Salle_de_lecture_Bibliotheque_Sainte-Genevieve_n03.jpg"
+   },
+   {
+    "f": "/photo/stegen/i1",
+    "w": 1920,
+    "h": 1275,
+    "cap": "Reading room lamps and iron vaults, Sainte-Genevieve",
+    "by": "Marie-Lan Nguyen",
+    "lic": "CC BY 2.0 fr",
+    "src": "https://commons.wikimedia.org/wiki/File:Salle_de_lecture_Bibliotheque_Sainte-Genevieve_n01.jpg"
+   },
+   {
+    "f": "/photo/stegen/i2",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Iron-ribbed vault, Bibliotheque Sainte-Genevieve",
+    "by": "Marie-Lan Nguyen",
+    "lic": "CC BY 2.0 fr",
+    "src": "https://commons.wikimedia.org/wiki/File:Salle_de_lecture_Bibliotheque_Sainte-Genevieve_n07.jpg"
+   },
+   {
+    "f": "/photo/stegen/i3",
+    "w": 1920,
+    "h": 1280,
+    "cap": "Reading room of Bibliotheque Sainte-Genevieve, Paris",
+    "by": "Pymouss",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Paris_-_biblioth%C3%A8que_Sainte-Genevi%C3%A8ve_20260723-14.JPG"
+   }
+  ]
+ }
+}

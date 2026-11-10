@@ -7,12 +7,12 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { buildAtlas, type Atlas, type Lib } from './atlas';
 import { buildScale } from './extras';
 import { clamp, MOBILE, RM } from './util';
-import { go } from '../app';
 import type { Mount } from '../types';
 import './cinematic.css';
 
 const HTML = `
 <canvas id="gl" role="img" aria-label="A night-side Earth with 52 libraries across 2,700 years lit in gold"></canvas>
+<figure id="visit"><img alt=""><img alt=""><figcaption></figcaption></figure>
 <section id="explore" aria-labelledby="xh1">
   <div class="xp">
     <h1 id="xh1">Libraries of the world<span>Present and past · 668 BCE to today</span></h1>
@@ -44,13 +44,13 @@ const HTML = `
       <h2 class="big">Measured where we can. Marked where we guess.</h2>
       <div class="credits">
         <div><h4>Data</h4><p>Dates, places and sizes come from the WorldLibs records, checked against Wikidata, Wikipedia and each library's own pages. Every figure carries the source tier shown beside it.</p></div>
-        <div><h4>Stand-ins</h4><p>The books, busts, window glazing and harp in the rooms are modelled by hand. Treat them as placeholders until scans or measured drawings exist.</p></div>
+        <div><h4>Photographs</h4><p>Photographs of each library come from Wikimedia Commons under each photographer's own licence, credited on every image.</p></div>
         <div><h4>Earth</h4><p>NASA Black Marble night lights, public domain.</p></div>
         <div><h4>Type</h4><p>Libre Caslon by Impallari Type, a revival of Caslon's 1720s and 1730s faces. IBM Plex Mono.</p></div>
         <div><h4>Texts and scans</h4><p>Public-domain texts from Standard Ebooks, Project Gutenberg and Wikisource. Page scans come from each holder's IIIF service under the holder's own licence, credited on every scan.</p></div>
       </div>
       <ul class="routes">
-        <li><a href="/byrne">Byrne</a></li><li><a href="/shelf">Shelf</a></li><li><a href="/babel">Babel</a></li><li><kbd>⌘K</kbd> Search</li>
+        <li><a href="/atlas">Atlas</a></li><li><a href="/shelf">Shelf</a></li><li><a href="/babel">Babel</a></li><li><kbd>⌘K</kbd> Search</li>
       </ul>
     </div>
   </footer>
@@ -58,8 +58,8 @@ const HTML = `
 
 const ERAS: [number, string][] = [[-Infinity, 'Antiquity'], [500, 'Middle Ages'], [1500, 'Early modern'], [1800, 'Modern']];
 const EV: Record<string, [string, string]> = { known: ['pri', 'Known'], probable: ['sec', 'Probable'], speculative: ['con', 'Speculative'] };
-const KIND: Record<string, [string, string]> = { hall: ['Hall', 'Hall bay kit'], rotunda: ['Rotunda', 'Rotunda kit'], dome: ['Domed hall', 'Dome kit'], atrium: ['Atrium', 'Atrium kit'], site: ['Site', 'Ruin and site kit'] };
-const LINK: Record<string, string> = { room: 'Enter the room', ledger: 'Read the ledger', stgall: 'Walk the plan', scan: 'Turn the pages', place: 'Read the record' };
+const KIND: Record<string, string> = { hall: 'Hall', rotunda: 'Rotunda', dome: 'Domed hall', atrium: 'Atrium', site: 'Site' };
+const LINK: Record<string, string> = { ledger: 'Read the ledger', stgall: 'Walk the plan', scan: 'Turn the pages', place: 'Read the record' };
 const KL: Record<string, string> = { book: 'Text · turn the pages', scan: 'Page scans · turn the pages' };
 // [exposure, bloom strength, radius, threshold]
 const LOOK = [1, .75, .55, .85];
@@ -80,6 +80,36 @@ export const mount: Mount = (el, params) => {
   const cv = $<HTMLCanvasElement>('#gl');
   const xrange = $<HTMLInputElement>('#xrange'), xlist = $('#xlist'), xcard = $('#xcard');
   const base = params.mode ? '/atlas' : '/';
+
+  // Selecting a library lands outside it: the globe zooms, then its photograph fades over the canvas.
+  let view: 'out' | 'in' = 'out', pi = 0, tok = 0, covered = false, t0 = 0;
+  const visit = $('#visit'), vimgs = [...visit.querySelectorAll('img')], vcap = $('#visit figcaption');
+  const set = () => sel >= 0 ? LIBS[sel].ph?.[view] ?? [] : [];
+  async function show() {
+    const ph = set()[pi], my = ++tok; if (!ph) return hide();
+    const next = vimgs.find(i => !i.classList.contains('cur'))!;
+    next.sizes = '100vw'; next.srcset = `${ph.f}-960.webp 960w, ${ph.f}-1920.webp 1920w`; next.src = `${ph.f}-1920.webp`; next.alt = ph.cap;
+    try { await next.decode(); } catch { return; }
+    const wait = RM.matches ? 0 : 1100 - (performance.now() - t0);
+    if (wait > 0) await new Promise(r => setTimeout(r, wait));
+    if (my !== tok || !alive) return;
+    vimgs.forEach(i => i.classList.toggle('cur', i === next));
+    vcap.innerHTML = `<span>${esc(ph.cap)}</span> <a href="${esc(ph.src)}" target="_blank" rel="noopener">${esc(ph.by)} · ${esc(ph.lic)} ↗</a>`;
+    root.classList.add('visiting'); if (RM.matches) covered = true; paint();
+  }
+  function hide() { tok++; covered = false; root.classList.remove('visiting'); }
+  function paint() {
+    const b = xcard.querySelector<HTMLButtonElement>('[data-v]'), c = xcard.querySelector('.vcount'), n = set().length;
+    if (b) b.textContent = view === 'out' ? 'Step inside' : 'Step outside';
+    if (c) c.textContent = n ? `${pi + 1} / ${n}` : '';
+    xcard.querySelector<HTMLElement>('.vstep')?.toggleAttribute('hidden', n < 2);
+  }
+  function step(d: number) { const n = set().length; if (n < 2) return; pi = (pi + d + n) % n; t0 = 0; show(); paint(); }
+  function flip() { const ph = LIBS[sel]?.ph, v = view === 'out' ? 'in' : 'out'; if (!ph?.[v].length) return; view = v; pi = 0; t0 = 0; show(); paint(); }
+  visit.addEventListener('transitionend', e => { if (e.target === visit && e.propertyName === 'opacity' && root.classList.contains('visiting')) covered = true; }, { signal });
+  let sx0 = 0;
+  visit.addEventListener('pointerdown', e => { sx0 = e.clientX; }, { signal });
+  visit.addEventListener('pointerup', e => { const dx = e.clientX - sx0; if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1); }, { signal });
 
   let R: THREE.WebGLRenderer | null = null;
   try { R = new THREE.WebGLRenderer({ canvas: cv, antialias: false, powerPreference: 'high-performance' }); } catch { R = null; }
@@ -128,7 +158,7 @@ export const mount: Mount = (el, params) => {
   }
   addEventListener('resize', () => { clearTimeout(rto); rto = window.setTimeout(() => onResize(false), 150); }, { signal });
   let mx = 0, my = 0;
-  addEventListener('pointermove', (e: PointerEvent) => { if (e.pointerType !== 'mouse') return; mx = e.clientX / vw * 2 - 1; my = e.clientY / vh * 2 - 1; }, { passive: true, signal });
+  addEventListener('pointermove', (e: PointerEvent) => { if (e.pointerType !== 'mouse') return; mx = e.clientX / vw * 2 - 1; my = e.clientY / vh * 2 - 1; visit.style.setProperty('--mx', mx.toFixed(3)); visit.style.setProperty('--my', my.toFixed(3)); }, { passive: true, signal });
 
   // Nothing is selected on arrival: the globe idles and every library waits its turn.
   let xYear = NOW, sel = -1;
@@ -139,7 +169,7 @@ export const mount: Mount = (el, params) => {
     const born = LIBS.filter(r => r.y <= y), lost = born.filter(r => typeof r.lost === 'number' && r.lost <= y);
     const unk = born.filter(r => r.lost === true).length, back = lost.filter(r => typeof r.found === 'number' && r.found <= y).length;
     $('#xcount').textContent = `${born.length - lost.length - unk} standing · ${lost.length} lost` + (back ? ` (${back} rediscovered)` : '') + (unk ? ` · ${unk} fate unknown` : '');
-    if (sel >= 0 && LIBS[sel].y > y) { sel = -1; history.replaceState(history.state, '', base); }
+    if (sel >= 0 && LIBS[sel].y > y) { sel = -1; hide(); history.replaceState(history.state, '', base); }
     if (sel >= 0) return card();
     xcard.innerHTML = ''; renderList(); atlas?.clear();
   }
@@ -150,40 +180,43 @@ export const mount: Mount = (el, params) => {
   function card() {
     const r = LIBS[sel];
     atlas?.focus(r.lat, r.lon);
-    const [evc, evl] = EV[r.ev] || EV.speculative, [kn, kit] = KIND[r.k] || KIND.site;
+    const [evc, evl] = EV[r.ev] || EV.speculative, kn = KIND[r.k] || KIND.site;
     const row = (k: string, s?: string | null | false) => s ? `<dt>${k}</dt><dd>${esc(s)}</dd>` : '';
     const fate = r.lost === true ? 'Lost, date unknown' : typeof r.lost === 'number' && r.lost <= xYear ? `Lost ${yfmt(r.lost)}` : '';
     const found = typeof r.found === 'number' && r.found <= xYear && yfmt(r.found);
     const href = r.href ?? `/place/${r.id}`;
     const reads = (r.reads ?? []).filter(b => b.k !== 'card');
+    const ph = r.ph, both = !!(ph?.out.length && ph.in.length);
+    const vctl = ph && (ph.out.length || ph.in.length) ? `<div class="vctl">${both ? '<button type="button" class="replay" data-v></button>' : ''}<span class="vstep"><button type="button" data-step="-1" aria-label="Previous photograph">‹</button><span class="vcount" aria-live="polite"></span><button type="button" data-step="1" aria-label="Next photograph">›</button></span></div>` : '';
     xcard.innerHTML = '<button type="button" id="xback">All libraries</button>' +
       `<p class="kicker">${deg(r.lat, 'N', 'S')} · ${deg(r.lon, 'E', 'W')}</p><h2 tabindex="-1">${esc(r.n)}</h2><p class="p">${esc(r.p)} · ${esc(r.yl)} · ${kn}</p>` +
-      `<div class="chips"><span class="cchip ${evc}"><i class="${evc === 'con' ? 'ring' : 'dot'}"></i>${evl}</span></div>` +
-      `<dl>${row('Evidence', r.evNote)}${row('Size', r.dim)}${row('Holdings', r.vol)}${row('Treasure', r.book)}${xYear >= (r.stFrom ?? Infinity) ? row('Now', r.st) : ''}${row('Hours', r.hours)}${row('Fate', fate)}${row('Found again', found)}${row('Room', `${kit}${r.read ? ' · ' + r.read : ''}`)}</dl>` +
+      `<div class="chips"><span class="cchip ${evc}"><i class="${evc === 'con' ? 'ring' : 'dot'}"></i>${evl}</span></div>` + vctl +
+      `<dl>${row('Evidence', r.evNote)}${row('Size', r.dim)}${row('Holdings', r.vol)}${row('Treasure', r.book)}${xYear >= (r.stFrom ?? Infinity) ? row('Now', r.st) : ''}${row('Hours', r.hours)}${row('Fate', fate)}${row('Found again', found)}</dl>` +
       `<a class="replay" href="${esc(href)}">${LINK[href.split('/')[1]] ?? 'Open'}</a>` +
       (reads.length ? `<h3 class="kicker">Read here</h3><ul class="reads">${reads.map((b, n) => { const ext = /^https?:/.test(b.href); return `<li style="--i:${n}"><a href="${esc(b.href)}"${ext ? ' target="_blank" rel="noopener"' : ''}><span>${esc(b.t)}</span><small>${[b.a, b.d, ext ? `Page scans · ${new URL(b.href).hostname} ↗` : KL[b.k]].filter(Boolean).map(esc).join(' · ')}</small></a></li>`; }).join('')}</ul>` : '');
-    renderList();
+    renderList(); paint();
   }
   function select(i: number, focus = true): void {
     const r = LIBS[i]; if (!r) return;
+    if (i !== sel) { view = r.ph?.out.length ? 'out' : 'in'; pi = 0; t0 = performance.now(); hide(); }
+    const fresh = i !== sel;
     sel = i; history.replaceState(history.state, '', '/atlas/' + r.id);
+    if (fresh) show();
     if (r.y > xYear) setYearX(r.y); else card();
     $('.xp').scrollTop = 0;
     if (focus) xcard.querySelector<HTMLElement>('h2')?.focus({ preventScroll: true });
   }
   function deselect() {
-    const prev = sel; sel = -1; history.replaceState(history.state, '', base); setYearX(xYear);
+    const prev = sel; sel = -1; hide(); history.replaceState(history.state, '', base); setYearX(xYear);
     xlist.querySelector<HTMLElement>(`[data-i="${prev}"]`)?.focus();
   }
 
   el.addEventListener('click', e => {
-    const t = e.target as Element, a = t.closest('a');
-    if (a?.closest('#xcard') && a.getAttribute('href')!.startsWith('/room/') && !(e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)) {
-      e.preventDefault(); e.stopPropagation(); go(a.getAttribute('href')!, { arrive: 'outside' }); return;
-    }
-    const b = t.closest('button'); if (!b) return;
+    const b = (e.target as Element).closest('button'); if (!b) return;
     if (b.id === 'xback') deselect();
     else if (b.dataset.i) select(+b.dataset.i);
+    else if (b.hasAttribute('data-v')) flip();
+    else if (b.dataset.step) step(+b.dataset.step);
   }, { signal });
   xrange.addEventListener('input', () => setYearX(+xrange.value), { signal });
   cv.addEventListener('click', e => {
@@ -191,7 +224,10 @@ export const mount: Mount = (el, params) => {
     const i = atlas.pick(e.clientX / vw * 2 - 1, -(e.clientY / vh * 2 - 1), 28, vw, vh);
     if (i >= 0) select(i);
   }, { signal });
-  addEventListener('keydown', (e: KeyboardEvent) => { if (e.key === 'Escape' && sel >= 0 && !document.querySelector('dialog[open]')) deselect(); }, { signal });
+  addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'Escape' && sel >= 0 && !document.querySelector('dialog[open]')) deselect();
+    else if ((e.key === 'ArrowLeft' || e.key === 'ArrowRight') && root.classList.contains('visiting') && !(e.target as Element).closest('input')) step(e.key === 'ArrowRight' ? 1 : -1);
+  }, { signal });
 
   // The globe sits behind the first screen only. Below it, stop drawing.
   let onscreen = true;
@@ -202,7 +238,7 @@ export const mount: Mount = (el, params) => {
   function frame(now: number) {
     raf = requestAnimationFrame(frame);
     const dt = Math.min(.1, (now - last) / 1000); last = now;
-    if (!atlas || !onscreen) return;
+    if (!atlas || !onscreen || covered) return;
     time += dt;
     const still = RM.matches, k = 1 - Math.exp(-dt * 3), tm = still ? 0 : time;
     px += ((still ? 0 : mx) - px) * k; py += ((still ? 0 : my) - py) * k;
@@ -241,7 +277,7 @@ export const mount: Mount = (el, params) => {
     cancelAnimationFrame(raf); clearTimeout(rto);
     stopScale();
     pp?.composer.dispose(); R?.dispose(); R?.forceContextLoss();
-    root.classList.remove('open', 'no-gl');
+    root.classList.remove('open', 'no-gl', 'visiting');
     delete root.dataset.home; delete el.dataset.view; delete el.dataset.ready;
   };
 };

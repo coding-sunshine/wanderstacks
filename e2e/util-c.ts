@@ -111,9 +111,10 @@ export async function gotoRoom(page: Page, id: string) {
   await ready(page, 'room')
 }
 
-export async function gotoOutside(page: Page, id: string) {
+export async function gotoOutside(page: Page, id: string, beforeLoad?: () => void | Promise<void>) {
   await page.goto(`/room/${id}`)
   await page.evaluate(() => history.replaceState({ arrive: 'outside' }, ''))
+  await beforeLoad?.()
   await page.reload()
   await ready(page, 'room')
 }
@@ -122,19 +123,6 @@ export async function gotoOutside(page: Page, id: string) {
 export const settleIn = async (page: Page) => {
   await page.waitForTimeout(2600)
   await page.evaluate(() => (document.activeElement as HTMLElement | null)?.blur?.())
-}
-
-export async function fromGlobe(page: Page, id: string, beforeClick?: () => void | Promise<void>) {
-  const pin = pinOf(id)
-  await page.goto('/atlas')
-  const home = page.locator('[data-view="home"]')
-  await expect(home).toHaveAttribute('data-ready', 'true', { timeout: 30_000 })
-  await page.locator('#xrange').fill(String(pin.y))
-  await home.locator('#xlist').getByText(pin.n, { exact: true }).click()
-  await beforeClick?.()
-  await home.locator(`#xcard a[href="/room/${id}"]`).click({ timeout: 5000 })
-  await page.waitForURL(`**/room/${id}`, { timeout: 15_000 })
-  await ready(page, 'room')
 }
 
 export async function openPanel(page: Page) {

@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test'
-import { fromGlobe, root } from './util-c'
+import { root } from './util-c'
 import { ready } from './util'
 
 const LIVE = 'https://worldlibs.pages.dev'
@@ -14,10 +14,13 @@ test('deployed-c: direct Long Room load is inside with a sky and a local line', 
   await expect(page.locator('[data-local-text]')).toHaveText(/^\d{2}:\d{2}( solar)?( · [^·]+ · -?\d+°C)?$/)
 })
 
-test('deployed-c: an atlas card arrives outside', async ({ page }) => {
-  await fromGlobe(page, 'longroom')
-  expect(page.url().startsWith(LIVE)).toBe(true)
-  await expect(root(page)).toHaveAttribute('data-place', 'outside')
+test('deployed-c: a library opens on a real photograph of its outside', async ({ page }) => {
+  await page.goto(`${LIVE}/atlas/longroom`)
+  await ready(page, 'home')
+  const img = page.locator('html.visiting #visit img.cur')
+  await expect(img).toBeVisible({ timeout: 10_000 })
+  expect(await img.evaluate((i: HTMLImageElement) => i.naturalWidth)).toBeGreaterThanOrEqual(960)
+  await expect(page.locator('#visit figcaption a')).toHaveAttribute('href', /^https:\/\/commons\.wikimedia\.org\//)
 })
 
 test('deployed-c: home is neutral and a deep link opens page-turn reads', async ({ page }) => {
