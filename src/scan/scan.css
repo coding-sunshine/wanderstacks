@@ -1,7 +1,11 @@
 .scan { max-width: 80rem; }
-.scan-spread { display: flex; justify-content: center; gap: 4px; min-height: 40vh; }
+.scan-spread { position: relative; display: flex; justify-content: center; gap: 4px; min-height: 40vh; perspective: 2400px; touch-action: pan-y; }
+.scan-meta { margin-top: -0.5rem; color: var(--paper-dim); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; }
+.scan-leaf.scan-ghost { position: absolute; z-index: 1; pointer-events: none; backface-visibility: hidden; }
+.scan-ghost img { animation: none; }
 .scan-leaf {
-  flex: 0 1 50%; min-width: 0; padding: 0; border: 0; background: none; cursor: zoom-in; line-height: 0;
+  position: relative; flex: 0 1 50%; min-width: 0; padding: 0; border: 0; background: none; cursor: zoom-in; line-height: 0;
+  backface-visibility: hidden;
 }
 .scan-spread img {
   width: 100%; height: auto; background: var(--oak); animation: scan-fade 150ms linear;

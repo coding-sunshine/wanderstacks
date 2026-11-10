@@ -12,11 +12,5 @@ export const rng = (s: number) => () => {
 }
 export const MOBILE = matchMedia('(max-width: 760px), (pointer: coarse)').matches
 export const RM = matchMedia('(prefers-reduced-motion: reduce)')
-export const canvas = (w: number, h: number): [HTMLCanvasElement, CanvasRenderingContext2D] => {
-  const c = document.createElement('canvas')
-  c.width = w
-  c.height = h
-  return [c, c.getContext('2d')!]
-}
 // shader tail shared by custom materials: renderer applies tone map + sRGB only when drawing straight to screen
 export const TAIL = '#include <tonemapping_fragment>\n#include <colorspace_fragment>\n'

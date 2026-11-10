@@ -6,7 +6,7 @@ import { existsSync, mkdirSync } from 'node:fs'
 const root = new URL('../../../', import.meta.url).pathname
 const libs: any[] = await Bun.file(root + 'data/libs.json').json()
 const factsJ: any = await Bun.file(root + 'data/facts.json').json()
-const other: Record<string, string> = { alexandria: '/ledger/alexandria', stgallen: '/stgall', bodleian: '/scan/firstfolio' }
+const other: Record<string, string> = { alexandria: '/ledger/alexandria', stgallen: '/stgall' }
 const href = (id: string) => other[id] ?? (existsSync(root + `data/hall/${id}.json`) ? `/room/${id}` : null)
 
 mkdirSync(root + 'public/lib/about', { recursive: true })

@@ -13,25 +13,43 @@ async function explore(page: Page, year: number) {
   await page.locator('#xrange').fill(String(year))
 }
 
-test('film paints with a clean console and network', async ({ page }) => {
+test('home opens neutral: globe, every library listed, none selected', async ({ page }) => {
   const errors = watchErrors(page)
   await page.goto('/')
   await ready(page, 'home')
   await expect(page.locator('#gl')).toBeVisible()
   await expect(page.locator('#achips > *')).toHaveCount(3)
+  await expect(page.locator('#xlist button')).toHaveCount(52)
+  await expect(page.locator('#xlist button[aria-pressed="true"]')).toHaveCount(0)
+  await expect(page.locator('#xcard')).toBeEmpty()
+  await expect(page.locator('#xcount')).toHaveText('41 standing · 10 lost (7 rediscovered) · 1 fate unknown')
+  expect(new URL(page.url()).pathname).toBe('/')
   expect(errors).toEqual([])
 })
 
-test('/atlas opens Explore at 2026 with every library and the standing count', async ({ page }) => {
+test('selecting deep-links to /atlas/<id> and Escape returns to the list', async ({ page }) => {
   const errors = watchErrors(page)
   await page.goto('/atlas')
   await ready(page, 'home')
-  await expect(page.locator('html')).toHaveClass(/\bexp\b/)
-  await expect(page.locator('#xlist button')).toHaveCount(52)
-  await expect(page.locator('#xcount')).toHaveText('41 standing · 10 lost (7 rediscovered) · 1 fate unknown')
+  await page.locator('#xlist').getByText(/^Duke Humfrey/).click()
+  await expect(page.locator('#xcard h2')).toHaveText(/Bodleian/)
+  expect(new URL(page.url()).pathname).toBe('/atlas/bodleian')
   await page.keyboard.press('Escape')
-  await expect(page.locator('html')).not.toHaveClass(/\bexp\b/)
-  expect(new URL(page.url()).pathname).toBe('/')
+  await expect(page.locator('#xcard')).toBeEmpty()
+  expect(new URL(page.url()).pathname).toBe('/atlas')
+  expect(errors).toEqual([])
+})
+
+test('a deep link opens its card with only page-turn reads', async ({ page }) => {
+  const errors = watchErrors(page)
+  await page.goto('/atlas/bodleian')
+  await ready(page, 'home')
+  await expect(page.locator('#xcard h2')).toHaveText(/Bodleian/)
+  const hrefs = await page.locator('#xcard .reads a').evaluateAll((as) => as.map((a) => a.getAttribute('href')))
+  expect(hrefs).toEqual(['/scan/mendoza', '/scan/firstfolio'])
+  await page.locator('#xback').click()
+  await expect(page.locator('#xlist button')).toHaveCount(52)
+  expect(new URL(page.url()).pathname).toBe('/atlas')
   expect(errors).toEqual([])
 })
 
@@ -49,7 +67,9 @@ test('pins carry href as a path or null', async ({ page }) => {
   const by = Object.fromEntries(pins.map((p) => [p.id, p.href]))
   expect(by['alexandria']).toBe('/ledger/alexandria')
   expect(by['stgallen']).toBe('/stgall')
-  expect(by['bodleian']).toBe('/scan/firstfolio')
+  expect(by['bodleian']).toBe('/room/bodleian')
+  for (const p of pins as (Pin & { reads: { href: string }[] })[])
+    for (const r of p.reads) expect(/^\/(read|scan)\/|^https:\/\/.+(?<!\.json)$/.test(r.href), `${p.id} read ${r.href}`).toBe(true)
 })
 
 test.describe('cards', () => {

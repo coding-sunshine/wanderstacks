@@ -130,7 +130,8 @@ test('history-c: back from inside lands on the atlas, forward returns inside', a
   const left = (await jattr(page, 'camera'))!
   await page.goBack()
   await expect(page.locator('[data-view="home"][data-ready="true"]')).toBeVisible({ timeout: 15_000 })
-  expect(new URL(page.url()).pathname).toBe('/atlas')
+  expect(new URL(page.url()).pathname).toBe('/atlas/longroom')
+  await expect(page.locator('#xcard h2')).toHaveText(/Long Room/)
   await page.goForward()
   await expect(root(page).and(page.locator('[data-ready="true"]'))).toBeVisible({ timeout: 15_000 })
   expect(new URL(page.url()).pathname).toBe('/room/longroom')

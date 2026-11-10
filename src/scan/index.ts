@@ -1,12 +1,12 @@
 import './scan.css'
 import type { Mount } from '../types'
+import { reducedMotion } from '../app'
 
 interface Page { s: string; w: number; h: number; l: string }
-interface Book { manifest: string; licence: string; credit: string; pages: Page[] }
+interface Book { title: string; date?: string; holder: string; manifest: string; licence: string; deed: string | null; credit: string; pages: Page[] }
 
 const TILE = 2048
 const AHEAD = 4
-const DEED = 'https://creativecommons.org/licenses/by-nc/4.0/'
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;')
 const small = (p: Page, w = 600) => `${p.s}/full/${w},/0/default.jpg`
@@ -17,10 +17,9 @@ const notFound = (el: HTMLElement) => {
 }
 
 export const mount: Mount = (el, params) => {
-  if (params.book !== 'firstfolio') return notFound(el)
-
   el.innerHTML = `<section class="page scan" data-view="scan" data-page="0">
-    <h1>The First Folio</h1>
+    <h1 data-title>Opening the scans</h1>
+    <p class="scan-meta" data-meta></p>
     <div class="scan-spread" data-spread></div>
     <div class="scan-bar">
       <button type="button" data-nav="first" aria-label="First page">&#171;</button>
@@ -47,7 +46,7 @@ export const mount: Mount = (el, params) => {
 
   const fail = () => {
     if (!root.querySelector('[data-source-error]')) {
-      root.insertAdjacentHTML('beforeend', '<p class="scan-error" data-source-error role="alert">The Bodleian scans could not be reached. Try again later.</p>')
+      root.insertAdjacentHTML('beforeend', `<p class="scan-error" data-source-error role="alert">The scans at ${esc(book?.holder ?? 'the holding library')} could not be reached. Try again later.</p>`)
     }
     root.dataset.ready = 'true'
   }
@@ -56,13 +55,71 @@ export const mount: Mount = (el, params) => {
     if (!book) return
     const n = book.pages.length
     const s = step()
+    const was = at
     at = Math.max(0, Math.min(Math.floor((n - 1) / s) * s, i - (i % s)))
-    show()
+    show(Math.sign(at - was))
   }
 
-  const show = () => {
+  // A page turn in two halves about the spine: the old leaf folds up to edge-on, then the new one lies down.
+  // Transform only, and a new turn finishes the running one at once.
+  let turning: Animation[] = []
+  let ghosts: HTMLElement[] = []
+  const settle = () => {
+    turning.forEach((a) => a.finish())
+    ghosts.forEach((g) => g.remove())
+    turning = []
+    ghosts = []
+  }
+  const ghost = (leaf: Element | null) => {
+    if (!(leaf instanceof HTMLElement)) return null
+    const g = leaf.cloneNode(true) as HTMLElement
+    g.removeAttribute('data-leaf')
+    g.setAttribute('aria-hidden', 'true')
+    g.inert = true
+    g.className = 'scan-leaf scan-ghost'
+    g.style.cssText = `left:${leaf.offsetLeft}px;top:${leaf.offsetTop}px;width:${leaf.offsetWidth}px;height:${leaf.offsetHeight}px`
+    ghosts.push(g)
+    return g
+  }
+  const OUT = { duration: 220, easing: 'cubic-bezier(.55,0,1,.45)', fill: 'forwards' } as const
+  const IN = { duration: 340, delay: 220, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'backwards' } as const
+  const turn = (dir: number, old: Element[]) => {
+    const fresh = [...spread.children] as HTMLElement[]
+    const anims: Animation[] = []
+    if (step() === 1) {
+      const g = ghost(old[0])
+      if (!g) return
+      spread.append(g)
+      g.style.transformOrigin = fresh[0].style.transformOrigin = 'left center'
+      if (dir > 0) anims.push(g.animate([{ transform: 'rotateY(0)' }, { transform: 'rotateY(-90deg)' }], { ...OUT, duration: 300 }))
+      else {
+        g.style.zIndex = '0'
+        fresh[0].style.zIndex = '2'
+        anims.push(fresh[0].animate([{ transform: 'rotateY(-90deg)' }, { transform: 'rotateY(0)' }], { ...IN, delay: 0 }))
+      }
+    } else {
+      const [l, r] = [ghost(old[0]), ghost(old[1])]
+      if (!l || !r) return
+      spread.append(l, r)
+      const [lift, still, land] = dir > 0 ? [r, l, fresh[0]] : [l, r, fresh[1] ?? fresh[0]]
+      still.style.zIndex = '0'
+      lift.style.transformOrigin = dir > 0 ? 'left center' : 'right center'
+      land.style.transformOrigin = dir > 0 ? 'right center' : 'left center'
+      land.style.zIndex = '2'
+      anims.push(
+        lift.animate([{ transform: 'rotateY(0)' }, { transform: `rotateY(${dir > 0 ? -90 : 90}deg)` }], OUT),
+        land.animate([{ transform: `rotateY(${dir > 0 ? 90 : -90}deg)` }, { transform: 'rotateY(0)' }], IN),
+      )
+    }
+    turning = anims
+    Promise.all(anims.map((a) => a.finished)).then(() => turning === anims && settle(), () => {})
+  }
+
+  const show = (dir = 0) => {
     const { pages } = book!
     const shown = pages.slice(at, at + step())
+    settle()
+    const old = dir && !reducedMotion() ? [...spread.children] : []
     root.dataset.page = String(at)
     spread.replaceChildren(
       ...shown.map((p, k) => {
@@ -83,6 +140,7 @@ export const mount: Mount = (el, params) => {
         return b
       }),
     )
+    if (old.length) turn(dir, old)
     count.textContent = `${shown.map((p) => p.l).join(' and ')} (${at + 1} of ${pages.length})`
     q('first').disabled = q('prev').disabled = at === 0
     q('next').disabled = q('last').disabled = at + step() >= pages.length
@@ -170,14 +228,37 @@ export const mount: Mount = (el, params) => {
   const onMedia = () => book && go(at)
   mobile.addEventListener('change', onMedia)
 
+  // Swipe turns the page. A swipe is not a tap, so it must not open the zoom.
+  let x0 = NaN
+  let y0 = NaN
+  let swiped = false
+  spread.addEventListener('pointerdown', (e) => {
+    x0 = e.clientX
+    y0 = e.clientY
+    swiped = false
+  })
+  spread.addEventListener('pointerup', (e) => {
+    const dx = e.clientX - x0
+    if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(e.clientY - y0)) return
+    swiped = true
+    go(at + (dx < 0 ? step() : -step()))
+  })
+  spread.addEventListener('click', (e) => swiped && (e.stopPropagation(), (swiped = false)), true)
+
   let dead = false
-  fetch('/scan/firstfolio/pages.json')
-    .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
-    .then((b: Book) => {
+  // Cloudflare answers a missing path with index.html and a 200, so a book is only JSON.
+  fetch(`/scan/${params.book}/pages.json`)
+    .then((r) => (r.ok && r.headers.get('content-type')?.includes('json') ? r.json() : null))
+    .then((b: Book | null) => {
       if (dead) return
+      if (!b) return notFound(el)
       book = b
+      root.querySelector('[data-title]')!.textContent = b.title
+      root.querySelector('[data-meta]')!.textContent = [b.date, b.holder].filter(Boolean).join(' · ')
+      document.title = `${b.title} · WorldLibs`
+      const lic = b.deed ? `<a href="${esc(b.deed)}">${esc(b.licence)}</a>` : esc(b.licence)
       credit.hidden = false
-      credit.innerHTML = `Images: ${esc(b.credit)}, via the <a href="${esc(b.manifest)}">Bodleian IIIF manifest</a>. Licence: <a href="${DEED}">${esc(b.licence)}</a>.`
+      credit.innerHTML = `Images: ${esc(b.credit)}, from the holder's <a href="${esc(b.manifest)}">IIIF manifest</a>. Licence: ${lic}.`
       go(0)
       root.dataset.ready = 'true'
     })
@@ -185,6 +266,7 @@ export const mount: Mount = (el, params) => {
 
   return () => {
     dead = true
+    settle()
     document.removeEventListener('keydown', onKey)
     mobile.removeEventListener('change', onMedia)
   }

@@ -19,3 +19,18 @@ test('deployed-c: an atlas card arrives outside', async ({ page }) => {
   expect(page.url().startsWith(LIVE)).toBe(true)
   await expect(root(page)).toHaveAttribute('data-place', 'outside')
 })
+
+test('deployed-c: home is neutral and a deep link opens page-turn reads', async ({ page }) => {
+  await page.goto(`${LIVE}/`)
+  await ready(page, 'home')
+  await expect(page.locator('#xlist button')).toHaveCount(52)
+  await expect(page.locator('#xlist button[aria-pressed="true"]')).toHaveCount(0)
+  await expect(page.locator('#xcard')).toBeEmpty()
+  await page.goto(`${LIVE}/atlas/bodleian`)
+  await ready(page, 'home')
+  const reads = page.locator('#xcard .reads a')
+  expect(await reads.evaluateAll((as) => as.map((a) => a.getAttribute('href')))).toEqual(['/scan/mendoza', '/scan/firstfolio'])
+  await reads.first().click()
+  await page.waitForURL('**/scan/mendoza', { timeout: 15_000 })
+  await ready(page, 'scan')
+})

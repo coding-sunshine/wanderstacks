@@ -1,13 +1,14 @@
 import * as THREE from 'three';
-import { smooth, lerp, fitFov, MOBILE, canvas, rng, TAIL } from './util';
+import { smooth, lerp, fitFov, MOBILE, rng, TAIL } from './util';
 
-// one record of public/lib/pins.json, as the film and Explore read it
+// one record of public/lib/pins.json, as the home reads it
 export type Ev = 'known' | 'probable' | 'speculative';
+export interface Read { id: string; t: string; a: string | null; d: string | null; k: 'book' | 'scan' | 'card'; href: string }
 export interface Lib {
   id: string; n: string; p: string; yl: string; y: number; lat: number; lon: number;
   lost?: number | boolean; found?: number; k: string; ev: Ev; evNote?: string;
   st?: string; stFrom?: number; dim?: string; vol?: string; book?: string; read?: string;
-  wd?: string; href: string | null; hours: string | null;
+  wd?: string; href: string | null; hours: string | null; reads?: Read[];
 }
 type Mark = 'k' | 'p' | 's';
 
@@ -136,10 +137,10 @@ export function buildAtlas(tex: THREE.Texture, libs: Lib[]) {
     });
   }
 
-  // focus: angles that bring a point to face the camera. Starts on the Long Room, the one built room.
+  // focus: angles that bring a point to face the camera. Nothing is focused on arrival; the globe drifts.
   const angles = (v: THREE.Vector3) => [Math.atan2(-v.x, v.z), Math.atan2(v.y, Math.hypot(v.x, v.z))];
-  const home = libs.find(r => r.id === 'longroom') || { lat: 53.34, lon: -6.25 };
-  let [fY, fX] = angles(ll(home.lat, home.lon)), [tY, tX] = [fY, fX], lt = 0;
+  const [nY, nX] = angles(ll(20, 20));
+  let [fY, fX] = [nY, nX], [tY, tX] = [fY, fX], lt = 0, focused = false;
   const ringMat = new THREE.MeshBasicMaterial({ color: new THREE.Color('#d8a65a').multiplyScalar(4), transparent: true, opacity: 0,
     side: THREE.DoubleSide, depthWrite: false, blending: THREE.AdditiveBlending });
   const ring = new THREE.Mesh(new THREE.RingGeometry(.012, .016, 64), ringMat);
@@ -149,8 +150,9 @@ export function buildAtlas(tex: THREE.Texture, libs: Lib[]) {
     [tY, tX] = angles(v);
     ring.position.copy(v).multiplyScalar(1.003);
     ring.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), v);
+    focused = true;
   }
-  focus(home.lat, home.lon);
+  function clear() { focused = false; tX = nX; }
 
   // nearest founded, front-facing pin to a click, in normalised device coords; -1 when none is close
   const tmp = new THREE.Vector3();
@@ -184,46 +186,18 @@ export function buildAtlas(tex: THREE.Texture, libs: Lib[]) {
   const stars = new THREE.Points(stg, starMat);
   scene.add(stars);
 
-  // title, set in Libre Caslon Display on a canvas so the planet can pass in front of it
-  const [tc, tx] = canvas(2048, 640), word = 'Libraries', base = 640 * .8, padX = 24;
-  tx.font = '400 520px "Libre Caslon Display", Georgia, serif';
-  const fs = Math.min(520, 520 * 1900 / tx.measureText(word).width);
-  tx.font = `400 ${fs}px "Libre Caslon Display", Georgia, serif`;
-  const tm = tx.measureText(word);
-  tx.fillStyle = '#fff'; tx.fillText(word, padX, base);
-  const fTop = (base - tm.actualBoundingBoxAscent) / 640, fBot = (base + tm.actualBoundingBoxDescent) / 640;
-  const fLeft = (padX - (tm.actualBoundingBoxLeft || 0)) / 2048;
-  const ttex = new THREE.CanvasTexture(tc);
-  ttex.colorSpace = THREE.SRGBColorSpace; ttex.anisotropy = 8;
-  const titleMat = new THREE.MeshBasicMaterial({ map: ttex, color: new THREE.Color(.88, .84, .76), transparent: true, depthWrite: false });
-  const title = new THREE.Mesh(new THREE.PlaneGeometry(1, 640 / 2048), titleMat);
-  title.position.z = -8.2; // camera child: screen-locked, so the CSS kicker and subtitle stay glued to it
-  camera.add(title);
-
-  const heroOff = new THREE.Vector3();
   let baseFov = 35;
-  const css = { tt: 0, tb: 0, tl: 0 };
-
   function resize(w: number, h: number, dpr = 1) {
-    const a = w / h, land = a >= 1;
-    camera.aspect = a; baseFov = fitFov(35, a, 1.0); camera.fov = baseFov; camera.updateProjectionMatrix();
+    camera.aspect = w / h; baseFov = fitFov(35, w / h, 1.0); camera.fov = baseFov; camera.updateProjectionMatrix();
     pinMat.uniforms.uPx.value = 12 * dpr;
     starMat.size = 1.6 * Math.min(dpr, 1.5);
-    const hh = Math.tan(baseFov * Math.PI / 360) * 8.2, hw = hh * a;
-    const tw = land ? Math.min(hw, hh * 2.4) : hw * 2 * .86;
-    const left = land ? hw * 2 * .06 : hw * .14;
-    const yc = land ? hh * .18 : hh * .42;
-    const xc = -hw + left + tw / 2, th = tw * 640 / 2048;
-    title.scale.setScalar(tw); title.position.x = xc; title.position.y = yc;
-    const sy = (y: number) => h * (.5 - y / (2 * hh)), sx = (x: number) => w * (.5 + x / (2 * hw));
-    css.tt = sy(yc + th * (.5 - fTop)); css.tb = sy(yc + th * (.5 - fBot)); css.tl = sx(xc - tw / 2 + fLeft * tw);
-    heroOff.set(land ? .95 : 0, -.5, 0);
   }
 
   const wrap = (d: number) => ((d + Math.PI) % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI) - Math.PI;
-  function update(pA: number, time: number, px = 0, py = 0, sx = 0) {
+  function update(pA: number, time: number, px = 0, py = 0, sx = 0, sy = 0) {
     const dt = time - lt; lt = time;
     const k = dt > 0 ? 1 - Math.exp(-dt * 3.2) : 1, kp = dt > 0 ? 1 - Math.exp(-dt * 2.4) : 1;
+    if (!focused) tY -= dt * .05;
     fY += wrap(tY - fY) * k; fX += (tX - fX) * k;
     let moved = false;
     for (let i = 0; i < n; i++) {
@@ -233,19 +207,17 @@ export function buildAtlas(tex: THREE.Texture, libs: Lib[]) {
     }
     if (moved) writePins();
     const e1 = smooth(.12, .5, pA), e2 = smooth(.5, .78, pA), e3 = smooth(.8, 1, pA);
-    outer.position.copy(heroOff).multiplyScalar(1 - smooth(.2, .5, pA)); outer.position.x += sx;
+    outer.position.set(sx, sy, 0);
     inner.rotation.y = lerp(fY - 1.25 + Math.sin(time * .05) * .25, fY, smooth(.05, .55, pA));
     outer.rotation.x = lerp(.22, fX, smooth(.15, .55, pA));
     const f = 1 - e3;
     camera.position.set(px * .06 * f, -py * .06 * f, 5.2 - 1.8 * e1 - 1 * e2 - .95 * e3);
     camera.fov = baseFov * lerp(1, .7, e3); camera.updateProjectionMatrix();
     camera.lookAt(0, 0, 0);
-    titleMat.opacity = 1 - smooth(.14, .3, pA);
-    title.visible = titleMat.opacity > .002;
     pinMat.uniforms.uA.value = .55 + .45 * smooth(.2, .4, pA);
-    ringMat.opacity = (.55 + .45 * Math.sin(time * 2.4)) * smooth(.45, .65, pA);
+    ringMat.opacity = focused ? (.55 + .45 * Math.sin(time * 2.4)) * smooth(.45, .65, pA) : 0;
     stars.rotation.y = time * .004;
   }
 
-  return { scene, camera, resize, update, css, setYear, focus, pick };
+  return { scene, camera, resize, update, setYear, focus, clear, pick };
 }

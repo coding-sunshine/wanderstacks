@@ -37,7 +37,7 @@ addEventListener('resize', paintGrain)
 type Route = [RegExp, () => Promise<{ mount: Mount }>]
 
 const routes: Route[] = [
-  [/^\/(?<mode>atlas)?$/, () => import('./cinematic')],
+  [/^\/(?:(?<mode>atlas)(?:\/(?<lib>[\w-]+))?)?$/, () => import('./cinematic')],
   [/^\/room\/(?<lib>[\w-]+)$/, () => import('./room')],
   [/^\/read\/(?<book>[\w-]+)$/, () => import('./reader')],
   [/^\/byrne$/, () => import('./byrne')],

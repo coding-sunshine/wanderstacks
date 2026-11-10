@@ -277,7 +277,7 @@ export const mount: Mount = (el, { book }) => {
     await loadAll()
     turner?.go(total() - 1, false)
   }
-  const closeReader = () => (history.length > 1 ? history.back() : go('/room/longroom'))
+  const closeReader = () => (history.length > 1 ? history.back() : go('/atlas'))
 
   close.onclick = closeReader
   end.onclick = () => void toEnd()

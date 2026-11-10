@@ -1,11 +1,4 @@
-import { smooth, RM } from './util';
-
-// Reel three: cover opens, then the title leaf turns. q is scroll progress through #book.
-export function book(el: HTMLElement, q: number) {
-  el.style.setProperty('--c', smooth(.1, .4, q).toFixed(4));
-  el.style.setProperty('--l', smooth(.5, .8, q).toFixed(4));
-  el.style.setProperty('--o', smooth(.1, .4, q).toFixed(4));
-}
+import { RM } from './util';
 
 // Reel four: five rooms in long section at one metre. Solid = measured, dashed = estimated.
 const K = 9, Y = 520, BONE = 'rgba(236,228,212,.92)', GILT = '#d8a65a';
