@@ -24,7 +24,7 @@ function render(d: Ledger) {
   const links = d.links
     .map((id) => d.rows.find((r) => r.id === id))
     .filter((r): r is Row => !!r)
-    .map((r) => `<li><a href="#${esc(r.id)}">${esc(label(r.field))}: ${esc(r.value.length > 70 ? r.value.slice(0, 70) + '…' : r.value)}</a></li>`)
+    .map((r) => `<li><span class="k">${esc(label(r.field))}</span><a href="#${esc(r.id)}">${esc(r.value)}</a></li>`)
     .join('')
   return `<h1>Library of Alexandria, ledger</h1>
     <p class="lede">What the sources attest, what they dispute, and what nobody knows. Every row carries its source.</p>

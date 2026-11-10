@@ -202,7 +202,7 @@ body::before {
   font: inherit; outline: none;
 }
 .book-name:focus-visible { outline: 2px solid var(--lamp); outline-offset: 2px; }
-.ledger { list-style: none; margin: 0.8rem 0 0; padding: 0; }
+.book-ledger { list-style: none; margin: 0.8rem 0 0; padding: 0; }
 .ledger-row { padding: 0.45rem 0.2rem; border-bottom: 1px solid rgb(201 162 74 / 0.18); font-style: italic; color: var(--paper-dim); }
 
 /* Library of Babel */

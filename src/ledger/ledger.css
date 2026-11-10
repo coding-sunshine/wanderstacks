@@ -12,14 +12,13 @@
 .ledger .k { display: block; color: var(--gilt); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; }
 .ledger [data-source] { display: inline-block; margin-top: 0.2rem; }
 .ledger [data-myth] {
-  position: relative; border: 1px dashed var(--ember); border-radius: 4px; padding: 1.4rem 1rem 1rem; margin-top: 2rem; overflow-wrap: anywhere;
+  margin-top: 2rem; padding: 1.1rem 1.3rem; border-left: 2px solid var(--ember);
+  background: rgb(180 85 45 / 0.07); overflow-wrap: anywhere;
 }
-.ledger [data-myth]::before {
-  content: 'MYTH'; position: absolute; top: -0.6rem; left: 1rem; padding: 0.08rem 0.5rem;
-  background: var(--night); color: var(--ember); border: 1px dashed var(--ember); border-radius: 3px;
-  font-size: 10px; letter-spacing: 0.2em; transform: rotate(-3deg);
+.ledger [data-myth] h2 {
+  margin: 0; font-size: 11px; font-weight: 400; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ember);
 }
-.ledger [data-myth] li { padding: 0.25rem 0; }
+.ledger [data-myth] li { padding: 0.45rem 0; border-top: 1px solid rgb(201 162 74 / 0.14); }
 .ledger .myth { font-size: 1.2em; font-style: italic; }
 @media (max-width: 800px) {
   .ledger .cols { grid-template-columns: minmax(0, 1fr); }

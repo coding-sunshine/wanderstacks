@@ -50,11 +50,11 @@ export const mount: Mount = (app) => {
   })
   nameLabel.append(name)
   const ledger = document.createElement('ul')
-  ledger.className = 'ledger'
+  ledger.className = 'book-ledger'
   const hReads = document.createElement('h2')
   hReads.className = 'eyebrow shelf-h'
   const readsUl = document.createElement('ul')
-  readsUl.className = 'ledger'
+  readsUl.className = 'book-ledger'
   root.append(head, lede, h1, grid, hReads, readsUl, h2, nameLabel, ledger)
 
   fetch('/lib/pins.json')
