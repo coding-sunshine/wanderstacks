@@ -27,6 +27,11 @@ test('home opens neutral: globe, every library listed, none selected', async ({ 
   expect(errors).toEqual([])
 })
 
+test('site nav names no single library or book', async ({ page }) => {
+  await page.goto('/shelf')
+  expect(await page.locator('header.bar nav a').evaluateAll((as) => as.map((a) => a.getAttribute('href')))).toEqual(['/atlas', '/shelf', '/babel'])
+})
+
 test('selecting deep-links to /atlas/<id> and Escape returns to the list', async ({ page }) => {
   const errors = watchErrors(page)
   await page.goto('/atlas')

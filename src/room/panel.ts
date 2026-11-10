@@ -82,7 +82,7 @@ export function buildPanel(lib: Library, params: KitModule['params']) {
 
   const sep = el('span', { 'aria-hidden': 'true', class: 'crumb-sep' }, '›')
   const crumb = el('nav', { class: 'crumb', 'aria-label': 'Breadcrumb' },
-    link('/', 'Globe', false), sep.cloneNode(true), link(`/#${lib.id}`, lib.place, false), sep.cloneNode(true),
+    link('/', 'Globe', false), sep.cloneNode(true), link(`/atlas/${lib.id}`, lib.place, false), sep.cloneNode(true),
     el('span', { 'aria-current': 'page' }, lib.name))
 
   const panel = el('aside', { id: 'room-panel', class: 'room-panel', 'aria-label': `About ${lib.name}` },
@@ -91,7 +91,7 @@ export function buildPanel(lib: Library, params: KitModule['params']) {
     section('The hall, measured and guessed', hall),
     section('Shelves', shelves),
     section('Credits', credits),
-    el('p', {}, report(lib, 'room', 'general', null), ' · ', link('/byrne', "Byrne's Euclid, a living page", false)),
+    el('p', {}, report(lib, 'room', 'general', null)),
   )
   return panel
 }
