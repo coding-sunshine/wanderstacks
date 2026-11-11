@@ -1,0 +1,450 @@
+{
+ "weimar": {
+  "nodes": [
+   {
+    "id": "n01",
+    "f": "/sphere/weimar/n01",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 1 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011165.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n02",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n02",
+    "f": "/sphere/weimar/n02",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 2 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011166.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n01",
+      "yaw": 180
+     },
+     {
+      "to": "n03",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n03",
+    "f": "/sphere/weimar/n03",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 3 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011167.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n02",
+      "yaw": 180
+     },
+     {
+      "to": "n04",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n04",
+    "f": "/sphere/weimar/n04",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 4 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011169.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n03",
+      "yaw": 180
+     },
+     {
+      "to": "n05",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n05",
+    "f": "/sphere/weimar/n05",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 5 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011172.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n04",
+      "yaw": 180
+     },
+     {
+      "to": "n06",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n06",
+    "f": "/sphere/weimar/n06",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 6 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011173.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n05",
+      "yaw": 180
+     },
+     {
+      "to": "n07",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n07",
+    "f": "/sphere/weimar/n07",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 7 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011175.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n06",
+      "yaw": 180
+     },
+     {
+      "to": "n08",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n08",
+    "f": "/sphere/weimar/n08",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 8 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011176.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n07",
+      "yaw": 180
+     },
+     {
+      "to": "n09",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n09",
+    "f": "/sphere/weimar/n09",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 9 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011177.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n08",
+      "yaw": 180
+     },
+     {
+      "to": "n10",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "f": "/sphere/weimar/n10",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 10 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011178.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n09",
+      "yaw": 180
+     },
+     {
+      "to": "n11",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n11",
+    "f": "/sphere/weimar/n11",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 11 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011179.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n10",
+      "yaw": 180
+     },
+     {
+      "to": "n12",
+      "yaw": 0
+     }
+    ]
+   },
+   {
+    "id": "n12",
+    "f": "/sphere/weimar/n12",
+    "w": 5376,
+    "h": 2688,
+    "kind": "interior",
+    "real": true,
+    "cap": "Rokokosaal, Herzogin Anna Amalia Bibliothek, Weimar (position 12 of 12)",
+    "by": "Raimond Spekking",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Herzogin_Anna_Amalia_Bibliothek_-_Rokokosaal_-_Kugelpanorama-0011180.jpg",
+    "yaw0": 0,
+    "links": [
+     {
+      "to": "n11",
+      "yaw": 180
+     }
+    ]
+   }
+  ]
+ },
+ "admont": {
+  "nodes": [
+   {
+    "id": "n01",
+    "f": "/sphere/admont/n01",
+    "w": 3584,
+    "h": 1792,
+    "kind": "interior",
+    "real": true,
+    "cap": "Stiftsbibliothek Admont",
+    "by": "Julius2803",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Stiftsbibliothek_Admont_360.jpg"
+   }
+  ]
+ },
+ "prunksaal": {
+  "nodes": [
+   {
+    "id": "n01",
+    "f": "/sphere/prunksaal/n01",
+    "w": 8192,
+    "h": 4096,
+    "kind": "interior",
+    "real": true,
+    "cap": "Prunksaal, Austrian National Library, Vienna",
+    "by": "Stig Nygaard",
+    "lic": "CC BY 2.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Library_Hall_(34740826012).jpg"
+   }
+  ]
+ },
+ "vasconcelos": {
+  "nodes": [
+   {
+    "id": "x01",
+    "f": "/sphere/vasconcelos/x01",
+    "w": 8192,
+    "h": 4096,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Biblioteca Vasconcelos, Mexico City",
+    "by": "ProtoplasmaKid",
+    "lic": "CC BY 4.0",
+    "src": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_360_-_2026_-_Biblioteca_M%C3%A9xico_Jos%C3%A9_Vasconcelos_-_07.jpg"
+   }
+  ]
+ },
+ "peabody": {
+  "nodes": [
+   {
+    "id": "x01",
+    "f": "/sphere/peabody/x01",
+    "w": 7680,
+    "h": 3840,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Street-level 360 near the George Peabody Library, Baltimore",
+    "by": "flashbulb",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://api.panoramax.xyz/#focus=pic&pic=f470007f-fafc-4687-a04b-2b48ae47c022"
+   },
+   {
+    "id": "x02",
+    "f": "/sphere/peabody/x02",
+    "w": 7680,
+    "h": 3840,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Street-level 360 near the George Peabody Library, Baltimore",
+    "by": "flashbulb",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://api.panoramax.xyz/#focus=pic&pic=40d4cb85-2074-4bff-b1d1-cf7977bcc432"
+   },
+   {
+    "id": "x03",
+    "f": "/sphere/peabody/x03",
+    "w": 7680,
+    "h": 3840,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Street-level 360 near the George Peabody Library, Baltimore",
+    "by": "flashbulb",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://api.panoramax.xyz/#focus=pic&pic=a346f12d-3eb8-43a3-b384-097b30738961"
+   },
+   {
+    "id": "x04",
+    "f": "/sphere/peabody/x04",
+    "w": 7680,
+    "h": 3840,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Street-level 360 near the George Peabody Library, Baltimore",
+    "by": "flashbulb",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://api.panoramax.xyz/#focus=pic&pic=73c29a4e-ebe0-4d96-80e7-5e86d8bf7df2"
+   },
+   {
+    "id": "x05",
+    "f": "/sphere/peabody/x05",
+    "w": 7680,
+    "h": 3840,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Street-level 360 near the George Peabody Library, Baltimore",
+    "by": "flashbulb",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://api.panoramax.xyz/#focus=pic&pic=fed7557c-40aa-4f0f-9dfd-de5140bf54f9"
+   }
+  ]
+ },
+ "bnf": {
+  "nodes": [
+   {
+    "id": "x01",
+    "f": "/sphere/bnf/x01",
+    "w": 5760,
+    "h": 2880,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Street-level 360 near the BnF Richelieu site, Paris",
+    "by": "Cyril5C",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://api.panoramax.xyz/#focus=pic&pic=a20dfe31-9d8f-44cc-8f7c-bd59df98a72e"
+   },
+   {
+    "id": "x02",
+    "f": "/sphere/bnf/x02",
+    "w": 5760,
+    "h": 2880,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Street-level 360 near the BnF Richelieu site, Paris",
+    "by": "Cyril5C",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://api.panoramax.xyz/#focus=pic&pic=99a37e26-756d-457b-bfe5-6e72bedf73e3"
+   },
+   {
+    "id": "x03",
+    "f": "/sphere/bnf/x03",
+    "w": 5760,
+    "h": 2880,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Street-level 360 near the BnF Richelieu site, Paris",
+    "by": "Cyril5C",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://api.panoramax.xyz/#focus=pic&pic=29d8ad0b-31ff-441d-82e1-37247d46541e"
+   },
+   {
+    "id": "x04",
+    "f": "/sphere/bnf/x04",
+    "w": 5760,
+    "h": 2880,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Street-level 360 near the BnF Richelieu site, Paris",
+    "by": "Cyril5C",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://api.panoramax.xyz/#focus=pic&pic=91189c2b-ddd7-4480-8f14-e48885639786"
+   },
+   {
+    "id": "x05",
+    "f": "/sphere/bnf/x05",
+    "w": 5760,
+    "h": 2880,
+    "kind": "exterior",
+    "real": true,
+    "cap": "Street-level 360 near the BnF Richelieu site, Paris",
+    "by": "Cyril5C",
+    "lic": "CC BY-SA 4.0",
+    "src": "https://api.panoramax.xyz/#focus=pic&pic=1a534a9e-f8c0-4df2-bf42-acc66511b069"
+   }
+  ]
+ }
+}
