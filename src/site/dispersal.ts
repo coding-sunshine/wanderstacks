@@ -10,7 +10,7 @@ const rows: Holder[] = JSON.parse(readFileSync('data/dispersal.json', 'utf8'))
 export const holdersOf = (id: string) => rows.filter((r) => r.lib === id)
 export const hasDispersal = (id: string) => rows.some((r) => r.lib === id)
 
-// Equal Earth, the projection scripts/mapgen/gen.mjs used for `land`; scale and offset fitted to its map.json pins (error under 0.1 unit).
+// Equal Earth, the projection scripts/mapgen/gen.mjs used for `land`; scale and offset fitted to its map.json pins; data/land.json holds its `land` and `view` (error under 0.1 unit).
 const [A1, A2, A3, A4, K, TX, TY] = [1.340264, -0.081106, 0.000893, 0.003796, 184.7635, 499.9967, 243.391]
 export function project(lat: number, lon: number): [number, number] {
   const p = (lat * Math.PI) / 180, l = (lon * Math.PI) / 180, t = Math.asin((Math.sqrt(3) / 2) * Math.sin(p)), t2 = t * t, t6 = t2 ** 3
@@ -19,7 +19,7 @@ export function project(lat: number, lon: number): [number, number] {
   return [+(TX + K * x).toFixed(1), +(TY - K * y).toFixed(1)]
 }
 
-const map = JSON.parse(readFileSync('scripts/mapgen/map.json', 'utf8')) as { land: string; view: number[] }
+const map = JSON.parse(readFileSync('data/land.json', 'utf8')) as { land: string; view: number[] }
 export const land = map.land
 
 /** Map geometry for one library: pins, arcs and a view box cropped around them. */
