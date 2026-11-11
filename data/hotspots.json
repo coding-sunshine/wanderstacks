@@ -1326,6 +1326,30 @@
           "tier": "primary",
           "source": "https://www.bnf.fr/en/vivienne-garden"
         }
+      ],
+      "x01": [
+        {
+          "id": "lintel",
+          "yaw": 340,
+          "pitch": 28,
+          "kind": "object",
+          "title": "Bibliotheque Nationale doorway",
+          "body": "The words BIBLIOTHEQUE NATIONALE are carved above this doorway on rue Vivienne. This is the Richelieu site of the BnF. The library says the site has two entrances, at 58 rue de Richelieu and 5 rue Vivienne, and is open to all, with a cafe, a book shop and a garden.",
+          "tier": "primary",
+          "source": "https://www.bnf.fr/en/the-bnfs-richelieu-site"
+        }
+      ],
+      "x02": [
+        {
+          "id": "garden-gate",
+          "yaw": 214,
+          "pitch": 7,
+          "kind": "object",
+          "title": "Gate and trees on rue Vivienne",
+          "body": "An iron gate with trees behind it, beside the library front on rue Vivienne. The BnF describes a 1,900 m2 garden on rue Vivienne at this site, on the ground where Cardinal Mazarin had the garden of his palace laid out in the 17th century.",
+          "tier": "primary",
+          "source": "https://www.bnf.fr/en/vivienne-garden"
+        }
       ]
     }
   }

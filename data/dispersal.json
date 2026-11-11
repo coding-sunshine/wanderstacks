@@ -7,7 +7,8 @@
   "lon": -0.126944,
   "what": "Stein collection of Dunhuang manuscripts",
   "tier": "wikipedia",
-  "source": "https://en.wikipedia.org/wiki/Dunhuang_manuscripts"
+  "source": "https://en.wikipedia.org/wiki/Dunhuang_manuscripts",
+  "manifest": "https://data.idp.bl.uk/iiif/3/manifest/6A237A6AAD034D59A7D162148DDF53AD"
  },
  {
   "lib": "dunhuang",
@@ -61,7 +62,8 @@
   "what": "Corvinas, counted from the programme data sheets",
   "count": 40,
   "tier": "primary",
-  "source": "https://corvina.hu/en/category/virtual-corvinas/all/"
+  "source": "https://corvina.hu/en/category/virtual-corvinas/all/",
+  "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/10011269"
  },
  {
   "lib": "buda",
