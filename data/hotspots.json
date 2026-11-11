@@ -1,0 +1,1068 @@
+{
+  "admont": {
+    "nodes": {
+      "n01": [
+        {
+          "id": "dome-fresco",
+          "yaw": 324,
+          "pitch": 41,
+          "kind": "object",
+          "title": "Central dome fresco",
+          "body": "Bartolomeo Altomonte painted all the ceiling pictures. The central dome fresco is the one that matters most to the library programme. Its theme is divine revelation, shown as personified divine wisdom.",
+          "tier": "primary",
+          "source": "https://stiftadmont.at/architektur/"
+        },
+        {
+          "id": "stammel",
+          "yaw": 45,
+          "pitch": 5,
+          "kind": "object",
+          "title": "Stammel's sculptures",
+          "body": "Josef Stammel, the abbey's sculptor, made the sculptures in the hall in lime wood. The best known is the group \"The Four Last Things\": Death, Judgement, Heaven and Hell.",
+          "tier": "primary",
+          "source": "https://stiftadmont.at/en/about-the-abbey-library/"
+        },
+        {
+          "id": "shelves",
+          "yaw": 26,
+          "pitch": 7,
+          "kind": "shelf",
+          "title": "The shelves",
+          "body": "About 60,000 volumes stand in the hall itself, out of roughly 200,000 works in the abbey collection. The most valuable items include over 1,400 manuscripts from the 8th century onwards and 530 incunabula.",
+          "tier": "primary",
+          "source": "https://stiftadmont.at/en/about-the-abbey-library/"
+        },
+        {
+          "id": "windows",
+          "yaw": 75,
+          "pitch": 24,
+          "kind": "object",
+          "title": "Windows",
+          "body": "48 windows light the hall. Twelve more are hidden behind the bookcases.",
+          "tier": "primary",
+          "source": "https://stiftadmont.at/aktuelle-ausstellungen/glanz-und-gelehrsamkeit-die-groesste-klosterbibliothek-der-welt/"
+        },
+        {
+          "id": "length",
+          "yaw": 327,
+          "pitch": 5,
+          "kind": "object",
+          "title": "Down the hall",
+          "body": "The hall is 70 m long and 14 m wide. It is roofed by seven domes.",
+          "tier": "primary",
+          "source": "https://stiftadmont.at/architektur/"
+        }
+      ]
+    },
+    "route": [
+      "n01"
+    ]
+  },
+  "prunksaal": {
+    "nodes": {
+      "n01": [
+        {
+          "id": "charles-vi",
+          "yaw": 96,
+          "pitch": 7,
+          "kind": "object",
+          "title": "Charles VI as Hercules Musarum",
+          "body": "The larger-than-life marble statue in the oval centre of the hall dates from 1735. It was allegedly made by the court sculptor Antonio Corradini. The other marble statues show Austrian and Spanish Habsburgs.",
+          "tier": "primary",
+          "source": "https://www.onb.ac.at/en/museums/state-hall/about-the-state-hall/the-state-halls-statues"
+        },
+        {
+          "id": "cupola",
+          "yaw": 96,
+          "pitch": 72,
+          "kind": "object",
+          "title": "Cupola fresco",
+          "body": "Daniel Gran painted the ceilings from 1726 to 1730. The cupola shows the apotheosis of Emperor Charles VI, with a golden medallion of the emperor held up by Apollo and Hercules.",
+          "tier": "primary",
+          "source": "https://www.onb.ac.at/en/museums/state-hall/about-the-state-hall/cupola-fresco"
+        },
+        {
+          "id": "globes",
+          "yaw": 236,
+          "pitch": -5,
+          "kind": "object",
+          "title": "Venetian globe",
+          "body": "Four Venetian globes, each over one metre across, stand in the hall.",
+          "tier": "primary",
+          "source": "https://www.onb.ac.at/en/museums/state-hall"
+        },
+        {
+          "id": "length",
+          "yaw": 272,
+          "pitch": 5,
+          "kind": "shelf",
+          "title": "Down the hall",
+          "body": "The hall is almost 80 m long and 20 m high. It holds around 200,000 historical books.",
+          "tier": "primary",
+          "source": "https://www.onb.ac.at/en/museums/state-hall"
+        }
+      ]
+    },
+    "route": [
+      "n01"
+    ]
+  },
+  "weimar": {
+    "nodes": {
+      "n01": [
+        {
+          "id": "bust",
+          "yaw": 266,
+          "pitch": -2,
+          "kind": "object",
+          "title": "Busts of poets and thinkers",
+          "body": "Under Duke Carl August and Goethe the library became a pantheon of Weimar Classicism. Busts of the Weimar poets and thinkers were set up, and paintings of them hung on the walls.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        },
+        {
+          "id": "shelves",
+          "yaw": 36,
+          "pitch": 10,
+          "kind": "shelf",
+          "title": "Shelving by subject",
+          "body": "The hall now holds 40,000 volumes on the main level and first gallery. They are grouped by subject, such as history, theology and law, roughly as they stood in the mid 19th century.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ],
+      "n05": [
+        {
+          "id": "gallery",
+          "yaw": 94,
+          "pitch": 34,
+          "kind": "object",
+          "title": "The first gallery",
+          "body": "The main level and the first gallery together hold 40,000 volumes. Old princely portraits were moved to the second gallery when the classical Weimar figures took their place below.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        },
+        {
+          "id": "first-gallery",
+          "yaw": 20,
+          "pitch": 20,
+          "kind": "object",
+          "title": "The first gallery",
+          "body": "The Rokokosaal was fitted out in 1766 for Duchess Anna Amalia by Landbaumeister August Friedrich Strassburger. The main level and the first gallery together hold 40,000 volumes. About 30,000 volumes moved in during 1766.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ],
+      "n02": [
+        {
+          "id": "shelf-run",
+          "yaw": 40,
+          "pitch": 10,
+          "kind": "shelf",
+          "title": "Main-level shelving",
+          "body": "The Rokokosaal holds 40,000 volumes on the main level and first gallery. The arrangement roughly follows the state of the mid-19th century and the logic of the old library's subject order.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ],
+      "n03": [
+        {
+          "id": "busts",
+          "yaw": 337,
+          "pitch": -5,
+          "kind": "object",
+          "title": "Busts of the Weimar writers",
+          "body": "Under Goethe the library became a pantheon of Weimar Classicism. The old princely portraits went to the second gallery. Busts and paintings of Weimar's poets and thinkers took their place.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ]
+    },
+    "route": [
+      "n01",
+      "n02",
+      "n03",
+      "n05"
+    ]
+  },
+  "peabody": {
+    "nodes": {
+      "x01": [
+        {
+          "id": "monument-dedication",
+          "yaw": 263,
+          "pitch": 21,
+          "kind": "text",
+          "title": "Dedication on the Washington Monument",
+          "body": "Lettering on the base of the monument, cut at the foot of the column. The words give the monument to George Washington in the name of the State of Maryland. The plaza the library faces is built around it.",
+          "tier": "secondary",
+          "source": "https://docsteach.org/document/washington-monument-baltimore-md/",
+          "text": {
+            "original": "TO GEORGE WASHINGTON / BY THE STATE OF MARYLAND",
+            "lang": "en",
+            "translation": "Dedicated to George Washington by the State of Maryland."
+          }
+        },
+        {
+          "id": "monument-column",
+          "yaw": 271,
+          "pitch": 15,
+          "kind": "object",
+          "title": "Washington Monument",
+          "body": "Robert Mills won the competition for the monument at 29. The cornerstone was laid on 4 July 1815. Enrico Causici's statue of Washington resigning his commission in 1782 was raised 178 feet up on 25 November 1829.",
+          "tier": "secondary",
+          "source": "https://baltimorehistories.substack.com/p/becoming-the-monumental-city-the"
+        },
+        {
+          "id": "methodist-church",
+          "yaw": 306,
+          "pitch": 15,
+          "kind": "object",
+          "title": "Mount Vernon Place United Methodist Church",
+          "body": "Thomas Dixon and Charles L. Carson designed the church, completed 12 November 1872. Green serpentine from Falls Road and buff and red sandstone make six stone types. The original steeple design topped the monument, and city officials made the architect lower it.",
+          "tier": "primary",
+          "source": "https://mvp-umc.org/history-%26-architecture"
+        }
+      ]
+    },
+    "route": [
+      "x01"
+    ]
+  },
+  "vasconcelos": {
+    "nodes": {
+      "x01": [
+        {
+          "id": "ciudadela",
+          "yaw": 140,
+          "pitch": 8,
+          "kind": "object",
+          "title": "The Ciudadela building",
+          "body": "This red stone building was the Royal Tobacco Factory of New Spain, finished in 1807. José María Morelos was held here in 1815. In 1944 the property was given over to a library, which opened on 27 November 1946 with José Vasconcelos as first director.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Biblioteca_de_M%C3%A9xico"
+        }
+      ]
+    },
+    "route": [
+      "x01"
+    ]
+  },
+  "celsus": {
+    "route": [
+      "r01"
+    ],
+    "nodes": {
+      "r01": [
+        {
+          "id": "apse",
+          "yaw": 0,
+          "pitch": 5.4,
+          "kind": "object",
+          "title": "The apse",
+          "body": "A large arched niche closes the far wall, above a crypt that held the donor's sarcophagus. Strocka writes: \"We will never know whose statue stood in the apse of the Celsus library.\" The image leaves the niche empty, in the centre of the far wall.",
+          "tier": "secondary",
+          "source": "https://freidok.uni-freiburg.de/files/4986/aEfMnZclW_9SHOhd/Strocka_The_Celsus_Library_in_Ephesus.pdf",
+          "basis": "excavated"
+        },
+        {
+          "id": "niches-apse",
+          "yaw": 27,
+          "pitch": -3,
+          "kind": "shelf",
+          "title": "Niches beside the apse",
+          "body": "Strocka records two niches on each side of the apse. The image shows niches with wooden doors beside the apse, on two levels. The doors and frames are guesses.",
+          "tier": "secondary",
+          "source": "https://freidok.uni-freiburg.de/files/4986/aEfMnZclW_9SHOhd/Strocka_The_Celsus_Library_in_Ephesus.pdf",
+          "basis": "excavated"
+        },
+        {
+          "id": "niches-long",
+          "yaw": 122,
+          "pitch": 2,
+          "kind": "shelf",
+          "title": "Wall niches for cupboards",
+          "body": "Ten niches were left in the walls of the 16.72 by 10.92 m hall at floor level: two on each side of the apse and three each on the south and north walls. Each is 2.55 m high and 0.57 to 0.60 m deep. Strocka reconstructs thirty wall cabinets in three rows and calls the third row probable. The image shows tall niches on the long walls, some with wooden doors, in two rows, and three per wall cannot be counted in it. The doors and the stone frames are guesses.",
+          "tier": "secondary",
+          "source": "https://freidok.uni-freiburg.de/files/4986/aEfMnZclW_9SHOhd/Strocka_The_Celsus_Library_in_Ephesus.pdf",
+          "basis": "excavated"
+        },
+        {
+          "id": "podium",
+          "yaw": 135,
+          "pitch": -20,
+          "kind": "object",
+          "title": "The podium",
+          "body": "In front of the niches ran a continuous podium 0.94 m high and 1.02 m wide, with no steps up to it. Attendants would have used movable wooden steps. The image shows a continuous marble podium with no steps along the walls. Its height and width are not checked against the metres.",
+          "tier": "secondary",
+          "source": "https://freidok.uni-freiburg.de/files/4986/aEfMnZclW_9SHOhd/Strocka_The_Celsus_Library_in_Ephesus.pdf",
+          "basis": "excavated"
+        },
+        {
+          "id": "columns",
+          "yaw": 102,
+          "pitch": 5,
+          "kind": "object",
+          "title": "Columns on the podium",
+          "body": "Traces in the back wall show that columns stood on the podium. The image has fluted Corinthian marble columns standing on it. The capital style and the marble colour are guesses.",
+          "tier": "secondary",
+          "source": "https://freidok.uni-freiburg.de/files/4986/aEfMnZclW_9SHOhd/Strocka_The_Celsus_Library_in_Ephesus.pdf",
+          "basis": "excavated"
+        },
+        {
+          "id": "gallery",
+          "yaw": 83,
+          "pitch": 42,
+          "kind": "object",
+          "title": "Gallery level",
+          "body": "Traces in the back wall show that columns carried an entablature and a gallery floor about 4.30 m above the podium, and Strocka thinks a second, shorter row of columns carried a third level. The image shows a gallery level with a shorter row of columns above it. The balustrade and the openings behind the columns are guesses.",
+          "tier": "secondary",
+          "source": "https://freidok.uni-freiburg.de/files/4986/aEfMnZclW_9SHOhd/Strocka_The_Celsus_Library_in_Ephesus.pdf",
+          "basis": "excavated"
+        },
+        {
+          "id": "entrance",
+          "yaw": 177,
+          "pitch": 4,
+          "kind": "object",
+          "title": "Entrance wall",
+          "body": "Strocka records three entrances in the facade wall, the middle one wider and higher, with windows above them. The entrance wall is split across the two edges of the image and shows a single doorway with an opening above it and daylight beyond. One doorway is wrong: the record has three.",
+          "tier": "secondary",
+          "source": "https://freidok.uni-freiburg.de/files/4986/aEfMnZclW_9SHOhd/Strocka_The_Celsus_Library_in_Ephesus.pdf",
+          "basis": "excavated"
+        },
+        {
+          "id": "ceiling",
+          "yaw": 0,
+          "pitch": 76,
+          "kind": "object",
+          "title": "Ceiling",
+          "body": "Strocka gives the wooden ceiling as 12.15 m above the marble floor. The image has a plain flat timber ceiling, which fits the record. The record says nothing about how the ceiling was finished, so the plank pattern is a guess.",
+          "tier": "secondary",
+          "source": "https://freidok.uni-freiburg.de/files/4986/aEfMnZclW_9SHOhd/Strocka_The_Celsus_Library_in_Ephesus.pdf",
+          "basis": "excavated"
+        },
+        {
+          "id": "floor",
+          "yaw": 0,
+          "pitch": -56,
+          "kind": "object",
+          "title": "Marble floor",
+          "body": "Strocka records a marble floor. The image has one. The slab layout is a guess.",
+          "tier": "secondary",
+          "source": "https://freidok.uni-freiburg.de/files/4986/aEfMnZclW_9SHOhd/Strocka_The_Celsus_Library_in_Ephesus.pdf",
+          "basis": "excavated"
+        }
+      ]
+    }
+  },
+  "pergamon": {
+    "route": [
+      "r01"
+    ],
+    "nodes": {
+      "r01": [
+        {
+          "id": "rack-left",
+          "yaw": 234,
+          "pitch": 7.2,
+          "kind": "shelf",
+          "title": "Book racks on the foundation",
+          "body": "Bohn found a foundation 1.05 m wide along the three standing walls of a room 16.95 m deep and 13.53 m wide, set about 0.50 m in from them, with dowel holes, and read it as the footing for wooden book racks. He says the height of the racks cannot be given. The image puts open wooden racks on a stone strip, but the strip runs against the wall instead of 0.5 m in from it. The five rows and the form of the racks are guesses.",
+          "tier": "primary",
+          "source": "https://archive.org/download/dasheiligtumder00droygoog/dasheiligtumder00droygoog_djvu.txt",
+          "basis": "excavated"
+        },
+        {
+          "id": "rack-right",
+          "yaw": 99,
+          "pitch": 11,
+          "kind": "shelf",
+          "title": "Shelves, left empty",
+          "body": "The sources read give no find of books in this room, so the shelves are shown empty. The shelf pattern is a guess.",
+          "tier": "primary",
+          "source": "https://archive.org/download/dasheiligtumder00droygoog/dasheiligtumder00droygoog_djvu.txt",
+          "basis": "invented"
+        },
+        {
+          "id": "wall",
+          "yaw": 252,
+          "pitch": 52,
+          "kind": "object",
+          "title": "Wall finish",
+          "body": "The image shows plaster with a painted band under the ceiling over a marble plinth. Bohn's finds in this room are the foundation, the dowel holes and the stone plates. The sources read record no wall finish, so the plaster, the plinth, the band and the colours are guesses.",
+          "tier": "primary",
+          "source": "https://archive.org/download/dasheiligtumder00droygoog/dasheiligtumder00droygoog_djvu.txt",
+          "basis": "invented"
+        },
+        {
+          "id": "athena",
+          "yaw": 0,
+          "pitch": 2,
+          "kind": "object",
+          "title": "Where Bohn put Athena",
+          "body": "Bohn found a projection 2.74 m wide and 1.05 m out in the middle of the north side, and a statue base 1.19 m was found in the rubble of the stoa. The image has a plain block standing free in front of the far wall and no statue. A free block is not a projection of the wall, so it does not match.",
+          "tier": "primary",
+          "source": "https://archive.org/download/dasheiligtumder00droygoog/dasheiligtumder00droygoog_djvu.txt",
+          "basis": "excavated"
+        },
+        {
+          "id": "ceiling",
+          "yaw": 0,
+          "pitch": 76,
+          "kind": "object",
+          "title": "Timber ceiling",
+          "body": "Exposed curved beams and boards. The roof and ceiling of the room are not known from the sources read, so this is a guess.",
+          "tier": "primary",
+          "source": "https://archive.org/download/dasheiligtumder00droygoog/dasheiligtumder00droygoog_djvu.txt",
+          "basis": "invented"
+        }
+      ]
+    }
+  },
+  "nineveh": {
+    "route": [
+      "r01"
+    ],
+    "nodes": {
+      "r01": [
+        {
+          "id": "doorway",
+          "yaw": 0,
+          "pitch": 5,
+          "kind": "object",
+          "title": "Connecting doorway",
+          "body": "Layard describes two small chambers that opened into each other. The doorway to a second chamber stands for that link. Its size and frame are guesses.",
+          "tier": "primary",
+          "source": "https://www.gutenberg.org/files/39897/39897-8.txt",
+          "basis": "excavated"
+        },
+        {
+          "id": "fish-gods",
+          "yaw": 41,
+          "pitch": 13,
+          "kind": "object",
+          "title": "Fish-cloaked figures",
+          "body": "Layard says the first doorway was guarded by fish-gods. The image puts a relief figure in a fish cloak on each side of the doorway. How they were carved, their height and their pose are guesses.",
+          "tier": "primary",
+          "source": "https://www.gutenberg.org/files/39897/39897-8.txt",
+          "basis": "excavated"
+        },
+        {
+          "id": "walls",
+          "yaw": 90,
+          "pitch": 15,
+          "kind": "object",
+          "title": "Ruined wall slabs",
+          "body": "Layard found the bas-reliefs of these chambers mostly destroyed. The image shows cracked, blackened slabs with almost no carving left. The pattern of the damage is a guess.",
+          "tier": "primary",
+          "source": "https://www.gutenberg.org/files/39897/39897-8.txt",
+          "basis": "excavated"
+        },
+        {
+          "id": "tablets",
+          "yaw": 0,
+          "pitch": -50,
+          "kind": "object",
+          "title": "Broken tablets on the floor",
+          "body": "Layard found the chambers filled a foot or more deep with clay tablets, most of them broken. The largest were about 9 by 6.5 inches and the smallest about an inch long. The image covers the floor with broken pieces. The pieces nearest the viewer are larger than those sizes, and the marks on them are not real cuneiform.",
+          "tier": "primary",
+          "source": "https://www.gutenberg.org/files/39897/39897-8.txt",
+          "basis": "excavated"
+        },
+        {
+          "id": "beams",
+          "yaw": 0,
+          "pitch": 70,
+          "kind": "object",
+          "title": "Roof beams",
+          "body": "Sennacherib's inscriptions say the palace halls were roofed with beams of cedar and cypress. That is borrowed here: the roof of this small chamber is not known. The image shows straight timber beams under reed matting. The matting is a guess, and the beams look slightly curved because of the image projection.",
+          "tier": "secondary",
+          "source": "https://oracc.museum.upenn.edu/rinap/rinap3/rinap31introduction/buildingactivitiesatnineveh/index.html",
+          "basis": "comparandum"
+        }
+      ]
+    }
+  },
+  "herculaneum": {
+    "route": [
+      "r01"
+    ],
+    "nodes": {
+      "r01": [
+        {
+          "id": "shelves-left",
+          "yaw": 243,
+          "pitch": 22,
+          "kind": "shelf",
+          "title": "Shelves around the walls",
+          "body": "Wikipedia, citing Amedeo Maiuri, says the rolls lay in wooden capsae, some of them on shelves around the walls. It counts over 1,800 rolls. The image has open wooden shelves with cupboards below, holding stacks of rolls. The shelf heights, the panelled cupboard doors and their knobs are guesses.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Villa_of_the_Papyri",
+          "basis": "excavated"
+        },
+        {
+          "id": "centre-unit",
+          "yaw": 0,
+          "pitch": -18,
+          "kind": "shelf",
+          "title": "Double-sided shelf unit",
+          "body": "Maiuri, as Wikipedia reports him, puts some rolls on the two sides of a set of shelves in the middle of the room. The image has a free-standing unit with rolls on two sides. Its size and shape are guesses.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Villa_of_the_Papyri",
+          "basis": "excavated"
+        },
+        {
+          "id": "shelves-right",
+          "yaw": 117,
+          "pitch": 23,
+          "kind": "shelf",
+          "title": "Charred rolls",
+          "body": "The Getty gives approximately 1,100 carbonized rolls recovered between 1752 and 1754, many of them writings of Philodemus of Gadara. The image shows mostly dark, charred rolls here, which fits the find. Whether the room held them in this stacked form is not known.",
+          "tier": "secondary",
+          "source": "https://www.getty.edu/art/exhibitions/villa_papiri/inner.html",
+          "basis": "excavated"
+        },
+        {
+          "id": "pale-rolls",
+          "yaw": 216,
+          "pitch": 22,
+          "kind": "object",
+          "title": "Pale rolls, a mismatch",
+          "body": "Some rolls on the left and rear shelves are pale tan, as intact papyrus would be. The real rolls were charred black by the eruption of AD 79. These do not match the record.",
+          "tier": "secondary",
+          "source": "https://www.getty.edu/art/exhibitions/villa_papiri/inner.html",
+          "basis": "invented"
+        },
+        {
+          "id": "walls",
+          "yaw": 0,
+          "pitch": 40,
+          "kind": "object",
+          "title": "Plain plaster",
+          "body": "Plain cream plaster walls, a red marble skirting and a smooth vaulted ceiling. No wall finish from this room appears in the sources read, so all of it is a guess.",
+          "tier": "secondary",
+          "source": "https://www.getty.edu/art/exhibitions/villa_papiri/inner.html",
+          "basis": "invented"
+        },
+        {
+          "id": "floor",
+          "yaw": 0,
+          "pitch": -72,
+          "kind": "object",
+          "title": "Mosaic floor",
+          "body": "The Getty shows an in-situ mosaic floor with a meander in room O of the Villa, first century BC. It does not say which room held the rolls. A floor of this kind is borrowed here from elsewhere in the building. The pattern drawn is a guess.",
+          "tier": "secondary",
+          "source": "https://www.getty.edu/art/exhibitions/villa_papiri/inner.html",
+          "basis": "comparandum"
+        }
+      ]
+    }
+  },
+  "alexandria": {
+    "route": [
+      "r01"
+    ],
+    "nodes": {
+      "r01": [
+        {
+          "id": "walk",
+          "yaw": 12,
+          "pitch": 5,
+          "kind": "object",
+          "title": "The public walk",
+          "body": "Strabo writes that the Museum is part of the palaces and has a public walk. The curved colonnade stands for that walk. The column style, the curve, the roof and the proportions are guesses.",
+          "tier": "primary",
+          "source": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0239:book=17:chapter=1:section=8",
+          "basis": "attested"
+        },
+        {
+          "id": "seats",
+          "yaw": 50,
+          "pitch": -11,
+          "kind": "object",
+          "title": "Place with seats",
+          "body": "Strabo also lists a place furnished with seats. He gives no size or look. The curved stone steps are invented and look more like a small theatre than anything he describes.",
+          "tier": "primary",
+          "source": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0239:book=17:chapter=1:section=8",
+          "basis": "attested"
+        },
+        {
+          "id": "hall-door",
+          "yaw": 137,
+          "pitch": 5,
+          "kind": "object",
+          "title": "Door to the large hall",
+          "body": "Strabo names a large hall in which the men of learning of the Museum take their common meal. He does not say where it stood or what it looked like. The stone block and its doorway are a guess.",
+          "tier": "primary",
+          "source": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0239:book=17:chapter=1:section=8",
+          "basis": "attested"
+        },
+        {
+          "id": "sea",
+          "yaw": 190.8,
+          "pitch": -0.9,
+          "kind": "object",
+          "title": "Sea and gardens",
+          "body": "Sea, palms, cypresses and distant pedimented buildings beyond the walk. Strabo's sentence gives no view. They are invented.",
+          "tier": "primary",
+          "source": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0239:book=17:chapter=1:section=8",
+          "basis": "invented"
+        },
+        {
+          "id": "paving",
+          "yaw": 0,
+          "pitch": -63,
+          "kind": "object",
+          "title": "Paving",
+          "body": "Stone slabs. Nothing is recorded of the surface. A tower-shaped shadow falls across them to one side, and no building in the image casts it.",
+          "tier": "primary",
+          "source": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0239:book=17:chapter=1:section=8",
+          "basis": "invented"
+        }
+      ]
+    }
+  },
+  "dunhuang": {
+    "route": [
+      "r01"
+    ],
+    "nodes": {
+      "r01": [
+        {
+          "id": "mural",
+          "yaw": 73.8,
+          "pitch": 3.6,
+          "kind": "object",
+          "title": "Mural of two trees",
+          "body": "The Dunhuang Academy records a Late Tang painting of two trees on the north wall of Cave 17. Under one tree stands an attendant with staffs and a towel, under the other a nun with a fan, with a cloth bag and a water vessel hung from the branches. The image shows both figures, the bags and the trees. A third tree and a figure appear at the left edge of the image. They are not in the record.",
+          "tier": "primary",
+          "source": "https://www.e-dunhuang.com/cave/10.0001/0001.0001.0017",
+          "basis": "excavated"
+        },
+        {
+          "id": "platform",
+          "yaw": 112.5,
+          "pitch": -52.5,
+          "kind": "object",
+          "title": "Low platform on the north wall",
+          "body": "A low rectangular platform of meditation-bed type fills the foot of the north wall. A seated stucco statue of the monk Hongbian stood on it, since the cave began as his memorial chamber. The image shows a seated monk on a plain platform. The statue was moved elsewhere when the cave was used to store manuscripts, so the face, robe and pose are guesses.",
+          "tier": "primary",
+          "source": "https://www.e-dunhuang.com/cave/10.0001/0001.0001.0017",
+          "basis": "excavated"
+        },
+        {
+          "id": "heap",
+          "yaw": -95.6,
+          "pitch": -26.3,
+          "kind": "shelf",
+          "title": "The manuscript heap",
+          "body": "Aurel Stein described bundles heaped in layers, a solid mass nearly ten feet high that left floor room for about two people. Around 50,000 documents are estimated, among them about 1,100 bundles of scrolls. The image has neat stacks about waist to shoulder high against one wall and plenty of open floor. That is tidier and far emptier than Stein's account. How the bundles were wrapped when the cave was closed is not known.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Library_Cave",
+          "basis": "attested"
+        },
+        {
+          "id": "door",
+          "yaw": -1.9,
+          "pitch": 0,
+          "kind": "object",
+          "title": "The doorway",
+          "body": "Cave 17 faces south and has no antechamber or corridor of its own. It opens off the north wall of the corridor of Cave 16 and was walled up in the early eleventh century. The image has a framed door on the wall beside the platform wall, where the record puts the opening opposite the platform, on the south. A long corridor runs beyond the door. Both the door position and the corridor are wrong.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Library_Cave",
+          "basis": "excavated"
+        },
+        {
+          "id": "ceiling",
+          "yaw": 0,
+          "pitch": 78.8,
+          "kind": "object",
+          "title": "Flat ceiling, a mismatch",
+          "body": "The Academy record gives the cave a truncated-pyramid ceiling (覆斗形顶) with no murals. The image has a flat, rough, unpainted ceiling. The bare surface agrees with the record. The flat shape does not.",
+          "tier": "primary",
+          "source": "https://www.e-dunhuang.com/cave/10.0001/0001.0001.0017",
+          "basis": "invented"
+        },
+        {
+          "id": "walls",
+          "yaw": -48.8,
+          "pitch": 15,
+          "kind": "object",
+          "title": "Bare plaster walls",
+          "body": "The east and south walls of Cave 17 carry no murals. The image has bare rough plaster there. The plaster colour, the roughness and the warm light are guesses; nothing in the record says how the cave looked inside when it was sealed.",
+          "tier": "primary",
+          "source": "https://www.e-dunhuang.com/cave/10.0001/0001.0001.0017",
+          "basis": "invented"
+        },
+        {
+          "id": "stele",
+          "yaw": 35.2,
+          "pitch": -7.5,
+          "kind": "object",
+          "title": "Stele of 851",
+          "body": "The Academy record lists a stele of 851 set into the west wall, carrying the text of the imperial edict honouring Hongbian. The image shows a carved stone stele on a base, standing free beside the door. The characters on it are not real writing and are not the edict.",
+          "tier": "primary",
+          "source": "https://www.e-dunhuang.com/cave/10.0001/0001.0001.0017",
+          "basis": "excavated"
+        }
+      ]
+    }
+  },
+  "buda": {
+    "route": [
+      "r01"
+    ],
+    "nodes": {
+      "r01": [
+        {
+          "id": "shelves",
+          "yaw": 138.7,
+          "pitch": 11.3,
+          "kind": "shelf",
+          "title": "Gilded shelves",
+          "body": "Naldo Naldi describes gilded shelves in three rows running all around the walls, with the books grouped by content. The image has wooden shelves with gilt trim round the walls, but they appear to have four rows, not three. The books stand upright with their spines out. The sources do not say how the books were placed.",
+          "tier": "secondary",
+          "source": "https://tertullian.org/articles/csapodi_corviniana.htm",
+          "basis": "attested"
+        },
+        {
+          "id": "curtains",
+          "yaw": 113.4,
+          "pitch": 33.8,
+          "kind": "object",
+          "title": "Curtains against dust",
+          "body": "Curtains woven of coloured and gold thread protected the books from dust. The image has swagged brocade curtains in blue, red and gold, tied back at each bay. How they hung and their exact colours are guesses.",
+          "tier": "secondary",
+          "source": "https://tertullian.org/articles/csapodi_corviniana.htm",
+          "basis": "attested"
+        },
+        {
+          "id": "windows",
+          "yaw": -17.1,
+          "pitch": 10.8,
+          "kind": "object",
+          "title": "Two stained-glass windows",
+          "body": "The room had two stained-glass windows with the king's couch between them. The image has two tall pointed windows with coloured heraldic glass. The window style, the arched shape and the pattern of the glass are guesses.",
+          "tier": "secondary",
+          "source": "https://tertullian.org/articles/csapodi_corviniana.htm",
+          "basis": "attested"
+        },
+        {
+          "id": "couch",
+          "yaw": 1.9,
+          "pitch": -30,
+          "kind": "object",
+          "title": "The king's couch",
+          "body": "The king's couch stood between the windows under a golden cloth. The image has a carved couch under a gold cloth below the windows. The cloth is the attested part; the shape of the couch is a guess.",
+          "tier": "secondary",
+          "source": "https://tertullian.org/articles/csapodi_corviniana.htm",
+          "basis": "attested"
+        },
+        {
+          "id": "chests",
+          "yaw": 91.9,
+          "pitch": -33.7,
+          "kind": "object",
+          "title": "Carved chests",
+          "body": "Books too numerous for the shelves lay in richly carved chests beneath them. The image has carved wooden chests under each shelf bay. The carving pattern and the way they join the shelf bases are guesses.",
+          "tier": "secondary",
+          "source": "https://tertullian.org/articles/csapodi_corviniana.htm",
+          "basis": "attested"
+        },
+        {
+          "id": "chairs",
+          "yaw": 85.3,
+          "pitch": -49.7,
+          "kind": "object",
+          "title": "Chairs",
+          "body": "Csapodi, following Naldi, lists three-legged chairs for readers. The image has three-legged stools with cushioned tops and no backs. They are stools, not chairs, and the design is a guess.",
+          "tier": "secondary",
+          "source": "https://tertullian.org/articles/csapodi_corviniana.htm",
+          "basis": "attested"
+        },
+        {
+          "id": "bindings",
+          "yaw": -131.3,
+          "pitch": 9.4,
+          "kind": "shelf",
+          "title": "Bindings",
+          "body": "Corvinus codices were bound in gilded leather or in red, green, blue or violet silk or velvet, with the king's arms, gilded silver studs and enamelled clasps. The image shows red, blue and gold bindings standing upright, with gilt shields of arms across groups of spines. The colours loosely agree with the record. No source says arms showed on the spines, and the spine layout and clasps are not taken from any surviving codex.",
+          "tier": "secondary",
+          "source": "https://tertullian.org/articles/csapodi_corviniana.htm",
+          "basis": "attested"
+        },
+        {
+          "id": "vault",
+          "yaw": 0,
+          "pitch": 67.5,
+          "kind": "object",
+          "title": "The vault",
+          "body": "Csapodi's account gives a vault painted with the constellation of the stars at the moment Matthias became king of Bohemia in 1469. The image has a deep blue vault with gold stars and constellation figures, which follows that account. The star pattern is not the real 1469 sky. Csapodi reports that an adjoining room was added later, and Miklos Olah describes two connected vaulted rooms. The image shows one.",
+          "tier": "secondary",
+          "source": "https://tertullian.org/articles/csapodi_corviniana.htm",
+          "basis": "attested"
+        },
+        {
+          "id": "floor",
+          "yaw": 0,
+          "pitch": -75,
+          "kind": "object",
+          "title": "Floor",
+          "body": "No source read describes the floor, the room dimensions or the vault height. The stone flag floor, the ribbed vault, the candle sconces, the side tables and the proportions of the room are invented.",
+          "tier": "secondary",
+          "source": "https://tertullian.org/articles/csapodi_corviniana.htm",
+          "basis": "invented"
+        }
+      ]
+    }
+  },
+  "nalanda": {
+    "route": [
+      "r01"
+    ],
+    "nodes": {
+      "r01": [
+        {
+          "id": "cells",
+          "yaw": -75,
+          "pitch": 7.5,
+          "kind": "object",
+          "title": "Row of monks' cells",
+          "body": "Every excavated monastery at Nalanda is a rectangle with a central court, a verandah and an outer row of cells for the monks. The image shows two storeys of open cells with small niches round the court. The count, size and doorways are not tied to one monastery.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Nalanda",
+          "basis": "excavated"
+        },
+        {
+          "id": "verandah",
+          "yaw": -123.7,
+          "pitch": 15,
+          "kind": "object",
+          "title": "The pillared verandah",
+          "body": "Excavators found a pillared verandah around the court of several monasteries. Only the brick footing and plan survive. The image draws it as brick pillars on both storeys. The material, spacing and height are guesses; the timber posts and beams are not shown.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Nalanda",
+          "basis": "excavated"
+        },
+        {
+          "id": "well",
+          "yaw": -0.9,
+          "pitch": -31.9,
+          "kind": "object",
+          "title": "The court well",
+          "body": "The sources give a well in the monastery court, with drains carrying water out. The image has a round brick well with drains running across the paving. The round shape, the curb, its size and the drain layout are the image's guess.",
+          "tier": "secondary",
+          "source": "https://indianvagabond.com/2024/01/27/nalanda-mahavihara-archaeological-site/",
+          "basis": "excavated"
+        },
+        {
+          "id": "shrine",
+          "yaw": 1.9,
+          "pitch": 15,
+          "kind": "object",
+          "title": "Shrine opposite the entrance",
+          "body": "Several monasteries have a central shrine chamber facing the entrance across the court. Monastery 1 held a colossal seated Buddha. The image has a seated Buddha in a deep niche. The niche, the figure and its size are invented.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Nalanda",
+          "basis": "excavated"
+        },
+        {
+          "id": "stairs",
+          "yaw": 91.9,
+          "pitch": 5.6,
+          "kind": "object",
+          "title": "Stairs to an upper floor",
+          "body": "The excavated monasteries have staircases in the south-west corner. The image has a straight brick stair on the right side of the court. That position is not sourced. Xuanzang also mentions towers and upper rooms rising above the clouds, which excavations do not confirm in detail.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Nalanda",
+          "basis": "excavated"
+        },
+        {
+          "id": "roofs",
+          "yaw": -48.8,
+          "pitch": 40.9,
+          "kind": "object",
+          "title": "No roof shown",
+          "body": "The image leaves the walls open to the sky, with no roof at all. Nothing excavated tells us how Nalanda's monasteries were roofed, so this is a gap, not a finding. The library is not in this view: the three Dharmaganja buildings known from Tibetan tradition have not been found.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Nalanda",
+          "basis": "invented"
+        }
+      ]
+    }
+  },
+  "vikramashila": {
+    "route": [
+      "r01"
+    ],
+    "nodes": {
+      "r01": [
+        {
+          "id": "vents",
+          "yaw": -105,
+          "pitch": -7.5,
+          "kind": "object",
+          "title": "Vents in the back wall",
+          "body": "The Archaeological Survey of India reports a rectangular library building with a range of vents in its back wall, letting in air cooled by water from the reservoir next to it. The image has square vents low on the wall facing the water and repeats them on another face of the block. The record gives them in the back wall only. Their shape, size and number and the wall height are guesses.",
+          "tier": "secondary",
+          "source": "https://en.wikipedia.org/wiki/Vikramashila",
+          "basis": "excavated"
+        },
+        {
+          "id": "reservoir",
+          "yaw": -105,
+          "pitch": -31.9,
+          "kind": "object",
+          "title": "The adjoining reservoir",
+          "body": "The reservoir beside the library is part of the excavated record, and the vents are tied to it. The image has a long rectangular pool with a brick curb. Its shape, banks and water level are invented.",
+          "tier": "secondary",
+          "source": "https://en.wikipedia.org/wiki/Vikramashila",
+          "basis": "excavated"
+        },
+        {
+          "id": "corridor",
+          "yaw": 26.2,
+          "pitch": -33.7,
+          "kind": "object",
+          "title": "Narrow corridor to the monastery",
+          "body": "The library stands about 32 m south of the monastery, at its south-west corner, joined to it by a narrow corridor. The image has a long walled brick path running from the reservoir toward the monastery, and it meets the outer wall with no visible doorway into it. Its width, walls and paving are guesses.",
+          "tier": "secondary",
+          "source": "https://en.wikipedia.org/wiki/Vikramashila",
+          "basis": "excavated"
+        },
+        {
+          "id": "monastery",
+          "yaw": 53.4,
+          "pitch": 15,
+          "kind": "object",
+          "title": "The monastery and stupa",
+          "body": "The excavated monastery is a square 330 m on each side with 208 cells, 52 a side, round a cruciform stupa about 15 m high. The image has a low walled square with a stepped pyramid in the middle. The stupa is not cruciform and the pyramid is wrong. The same square vents are repeated along the monastery wall, which the record does not give, and the cells are not visible.",
+          "tier": "secondary",
+          "source": "https://en.wikipedia.org/wiki/Vikramashila",
+          "basis": "excavated"
+        },
+        {
+          "id": "brick",
+          "yaw": -133.1,
+          "pitch": 24.4,
+          "kind": "object",
+          "title": "Brick fabric",
+          "body": "The wall material of the library is not given in the sources read. Brick is taken from the rest of the site, whose terracotta plaques and brickwork are well documented. The image has plain brick coursing on a very tall block with no openings above the vents. The courses and colour are borrowed, not recorded, and the height is more than any source supports.",
+          "tier": "secondary",
+          "source": "https://en.wikipedia.org/wiki/Vikramashila",
+          "basis": "comparandum"
+        },
+        {
+          "id": "landscape",
+          "yaw": 129.4,
+          "pitch": 1.9,
+          "kind": "object",
+          "title": "Trees, low wall and haze",
+          "body": "The trees on the horizon, the flat plain and the clear sky are invented. No source read describes the surroundings.",
+          "tier": "secondary",
+          "source": "https://en.wikipedia.org/wiki/Vikramashila",
+          "basis": "invented"
+        }
+      ]
+    }
+  },
+  "ashikaga": {
+    "route": [
+      "r01"
+    ],
+    "nodes": {
+      "r01": [
+        {
+          "id": "hojo",
+          "yaw": -24.4,
+          "pitch": 5.6,
+          "kind": "object",
+          "title": "Thatched main hall",
+          "body": "The city's plan gives the Hojo of the restored area a thatched hip-and-gable roof. The large hall in the image has a thatched roof and wooden walls. It is a building of that kind, not a portrait of the real Hojo.",
+          "tier": "primary",
+          "source": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fc61161ace.pdf",
+          "basis": "attested"
+        },
+        {
+          "id": "outbuilding",
+          "yaw": 75,
+          "pitch": -1.9,
+          "kind": "object",
+          "title": "Board-roofed outbuildings",
+          "body": "The city's plan lists board roofs for the Shoin, Shuryo and the new storehouse, and lists the Kuri under both thatch and board. The long low buildings at the left and right of the image have board roofs and no tiles, which agrees. Which of them is which building is not known.",
+          "tier": "primary",
+          "source": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fc61161ace.pdf",
+          "basis": "attested"
+        },
+        {
+          "id": "garden",
+          "yaw": -90,
+          "pitch": -22.5,
+          "kind": "object",
+          "title": "Rocks and planting",
+          "body": "The north and south gardens were restored to match picture maps, according to the city's plan. The image has a rock-edged planting bed with clipped shrubs and no pond. The layout and the rocks were not taken from those maps and are invented.",
+          "tier": "primary",
+          "source": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fc61161ace.pdf",
+          "basis": "invented"
+        },
+        {
+          "id": "pines",
+          "yaw": -88.1,
+          "pitch": 18.8,
+          "kind": "object",
+          "title": "Pines and planting",
+          "body": "The city plan names a historic pine (Jifuri-matsu) among the site's features but gives no planting layout. The single shaped pine in this view is invented and is not that tree.",
+          "tier": "primary",
+          "source": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fc61161ace.pdf",
+          "basis": "invented"
+        },
+        {
+          "id": "fence",
+          "yaw": -168.7,
+          "pitch": -22.5,
+          "kind": "object",
+          "title": "Bamboo fence",
+          "body": "The bamboo fence, the plain gravel yard, the thatched gate on the right and the wooded hills behind are guesses. No source read describes the enclosure or its materials.",
+          "tier": "primary",
+          "source": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fc61161ace.pdf",
+          "basis": "invented"
+        },
+        {
+          "id": "west",
+          "yaw": 43.1,
+          "pitch": 5.6,
+          "kind": "object",
+          "title": "What is not in view",
+          "body": "The Confucius temple hall (Daiseiden) and the School Gate stand in the west zone and are historic buildings, not rebuilt. They are not in this image. The restored buildings stand in the east. Where the books were kept in the Edo period is not covered by sources read here.",
+          "tier": "primary",
+          "source": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fc61161ace.pdf",
+          "basis": "attested"
+        }
+      ]
+    }
+  },
+  "bnf": {
+    "route": [
+      "x04",
+      "x02",
+      "x01",
+      "x03",
+      "x05"
+    ],
+    "nodes": {
+      "x04": [
+        {
+          "id": "vivienne-garden",
+          "yaw": 295,
+          "pitch": 2,
+          "kind": "object",
+          "title": "Jardin Vivienne",
+          "body": "A 1,900 m2 garden on rue Vivienne at the Richelieu site, by Mirabelle Croizier, Antoine Quenardel and Gilles Clement. Its plants are those used for writing materials: paper mulberry, bamboo, rice-paper plant, papyrus and paper birch. It reinstates the garden of Mazarin's palace, later recreated by Labrouste.",
+          "tier": "primary",
+          "source": "https://www.bnf.fr/en/vivienne-garden"
+        }
+      ]
+    }
+  }
+}

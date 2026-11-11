@@ -1,5 +1,7 @@
 import * as THREE from 'three'
 import type { RoomApi } from './kit'
+import { hush, loadNeural, neuralConsented, neuralLoaded, NEURAL, setNeural, speak, speakNeural } from '../narrate'
+import { roomBus } from './sound'
 import { storyBeats } from './story'
 
 const BOX = [
@@ -34,16 +36,82 @@ export function attach(api: RoomApi): () => void {
   let box: HTMLElement | null = null
   let at = 0
 
+  const root = () => box!
+  const say = (sel: string, text: string) => (root().querySelector(sel)!.textContent = text)
+  const listenBtn = () => root().querySelector<HTMLElement>('[data-tour-listen]')!
+  const betterBtn = () => root().querySelector<HTMLElement>('[data-tour-voice]')!
+  const consentBox = () => root().querySelector<HTMLElement>('[data-voice-consent]')!
+  const stopListening = () => {
+    hush()
+    if (!box) return
+    listenBtn().setAttribute('aria-pressed', 'false')
+  }
+  const syncVoice = () => {
+    betterBtn().setAttribute('aria-pressed', String(neuralConsented()))
+    say('[data-voice-status]', neuralConsented() ? 'Voice: better voice on' : 'Voice: browser speech')
+  }
+
+  // Browser speech cannot enter Web Audio, so only the neural voice is heard in the room's reverb. The status line says which.
+  const listen = async () => {
+    const btn = listenBtn()
+    if (btn.getAttribute('aria-pressed') === 'true') return stopListening()
+    btn.setAttribute('aria-pressed', 'true')
+    const text = root().querySelector('[data-caption]')!.textContent!
+    const done = () => btn.setAttribute('aria-pressed', 'false')
+    const browser = (note: string) => {
+      api.root.dataset.narrationRoute = 'speech'
+      say('[data-voice-status]', note)
+      speak(text, 'en', done)
+    }
+    if (!neuralConsented()) return browser('Browser speech, heard dry')
+    try {
+      if (!neuralLoaded()) say('[data-voice-status]', 'Loading the better voice...')
+      await loadNeural((p) => say('[data-voice-status]', `Downloading the better voice, ${p}%`))
+      const bus = roomBus()
+      api.root.dataset.narrationRoute = bus ? 'room-convolver' : 'neural-dry'
+      say('[data-voice-status]', bus ? "Better voice, heard in the room's reverb" : 'Better voice, heard dry (turn Sound on for the room reverb)')
+      await speakNeural(text, bus ?? undefined)
+      done()
+    } catch {
+      browser('Better voice failed, using browser speech, heard dry')
+    }
+  }
+
+  const betterVoice = () => {
+    if (neuralConsented()) {
+      setNeural(false)
+      stopListening()
+      return syncVoice()
+    }
+    consentBox().hidden = false
+    consentBox().querySelector<HTMLElement>('button')!.focus()
+  }
+
+  const accept = async () => {
+    consentBox().hidden = true
+    setNeural(true)
+    syncVoice()
+    try {
+      await loadNeural((p) => say('[data-voice-status]', `Downloading the better voice, ${p}%`))
+      say('[data-voice-status]', 'Better voice ready')
+    } catch {
+      setNeural(false)
+      syncVoice()
+      say('[data-voice-status]', 'Better voice failed to load, using browser speech')
+    }
+  }
+
   const show = (i: number) => {
     at = i
     const stop = stops[i]
     const fact = api.lib.facts[stop.fact]
     api.root.dataset.tourStop = String(i)
+    stopListening()
     const beat = beats[i]
     const era = box!.querySelector('[data-era]')! as HTMLElement
     if (beat) {
       era.hidden = false
-      era.textContent = beat.year === '·' ? `${api.lib.name} — the story` : `${beat.year} — in the years`
+      era.textContent = beat.year === '·' ? (i ? 'Undated' : `${api.lib.name}: the story`) : beat.year === 'Now' ? 'Now' : `${beat.year}, in the years`
     } else era.hidden = true
     box!.querySelector('[data-caption]')!.textContent = fact.value
     const src = box!.querySelector('a')!
@@ -61,6 +129,7 @@ export function attach(api: RoomApi): () => void {
 
   const close = () => {
     if (!box) return
+    hush()
     box.remove()
     box = null
     delete api.root.dataset.tourStop
@@ -80,14 +149,31 @@ export function attach(api: RoomApi): () => void {
     const row = el('p', { style: 'display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center;margin:0.5rem 0 0' })
     row.append(prev, next, x, el('span', { 'data-step': '' }), src)
     const era = el('p', { 'data-era': '', style: 'margin:0 0 0.35rem;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gilt)' })
+    const listenB = el('button', { type: 'button', 'data-tour-listen': '', 'aria-pressed': 'false', style: BTN }, 'Listen')
+    const betterB = el('button', { type: 'button', 'data-tour-voice': '', 'aria-pressed': 'false', style: BTN }, 'Better voice')
+    const status = el('span', { 'data-voice-status': '', 'aria-live': 'polite', style: 'font-size:12px;opacity:0.8' })
+    const yes = el('button', { type: 'button', 'data-voice-yes': '', style: BTN }, `Download ${NEURAL.mb} MB`)
+    const no = el('button', { type: 'button', 'data-voice-no': '', style: BTN }, 'Not now')
+    const consent = el('p', { 'data-voice-consent': '', hidden: '', style: 'margin:0.5rem 0 0;font-size:13px;display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center' },
+      `The better voice runs in your browser. It downloads about ${NEURAL.mb} MB: 93 MB of model weights from the Hugging Face CDN (huggingface.co) and a 3 MB speech runtime from jsDelivr. Nothing you type or say is sent. Browser speech downloads nothing.`)
+    consent.append(yes, no)
+    row.append(listenB, betterB)
     box = el('section', { id: 'room-tour', 'data-tour': '', 'aria-label': 'Guided tour', style: BOX })
-    box.append(era, el('p', { 'data-caption': '', 'aria-live': 'polite', style: 'margin:0' }), row)
+    box.append(era, el('p', { 'data-caption': '', 'aria-live': 'polite', style: 'margin:0' }), row, status, consent)
     api.controls.after(box)
     button.setAttribute('aria-expanded', 'true')
     button.setAttribute('aria-controls', 'room-tour')
     prev.onclick = () => at > 0 && show(at - 1)
     next.onclick = () => at < stops.length - 1 && show(at + 1)
     x.onclick = close
+    listenB.onclick = listen
+    betterB.onclick = betterVoice
+    yes.onclick = accept
+    no.onclick = () => {
+      consent.hidden = true
+      betterB.focus()
+    }
+    syncVoice()
     show(0)
   }
 
@@ -99,6 +185,7 @@ export function attach(api: RoomApi): () => void {
 
   return () => {
     removeEventListener('keydown', onKey)
+    hush()
     box?.remove()
     box = null
     delete api.root.dataset.tourStop

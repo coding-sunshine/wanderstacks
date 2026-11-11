@@ -3,8 +3,8 @@
 .place-crumb a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; }
 .place-crumb a:hover { color: var(--lamp); border-bottom-color: var(--lamp); }
 .place-sep { color: var(--gilt); }
-.place-title { margin: 0; font-weight: 400; line-height: 1.1; color: var(--paper); }
-.place-where { margin: 0; color: var(--paper-dim); font-style: italic; }
+.place-title { margin: 0; font: 400 clamp(2rem, 5vw, 3.6rem)/1.05 var(--display); color: var(--paper); }
+.place-where { margin: 0; color: var(--paper-dim); }
 .place-visit { justify-self: start; text-decoration: none; }
 .place-st { margin: 0; color: var(--gilt); font-style: italic; }
 .place-meta { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 0.3rem 0.9rem; }

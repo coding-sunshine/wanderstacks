@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro'
+import { libs } from '../site/data'
+import { facts, events, generated, LICENCE, SITE, REPO } from '../site/record'
+const files = [
+  ['libraries.json', 'One row per library: name, place, coordinates, years, Wikidata id.', libs.length],
+  ['facts.json', 'Every sourced claim, with source URL, evidence tier and the source quote where held.', facts.length],
+  ['events.json', 'Dated events: founding, closure, damage, destruction, rebuilding.', events.length],
+  ['libraries.jsonld', 'The libraries as schema.org Library entries with Wikidata sameAs.', libs.length],
+  ['README.md', 'Shape of each file, the tiers and the licence.', null],
+]
+const ld = {
+  '@context': 'https://schema.org', '@type': 'Dataset',
+  name: 'WorldLibs open data', url: `${SITE}/data/`,
+  description: `Sourced facts and dated events for ${libs.length} famous and lost libraries, each with a source URL and an evidence tier.`,
+  license: LICENCE, isAccessibleForFree: true, dateModified: generated.slice(0, 10),
+  creator: { '@type': 'Organization', name: 'WorldLibs', url: SITE },
+  distribution: files.filter(([f]) => !f.endsWith('.md')).map(([f]) => ({ '@type': 'DataDownload', contentUrl: `${SITE}/data/${f}`, encodingFormat: f.endsWith('ld') ? 'application/ld+json' : 'application/json' })),
+}
+---
+<Base title="Open data" desc={`Download the WorldLibs record: ${facts.length} sourced facts and ${events.length} events across ${libs.length} libraries.`} index>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(ld)} is:inline />
+  <article class="wrap sec">
+    <h1>Open data</h1>
+    <p class="lede">The record behind every library page, free to reuse. Each row carries its source and evidence tier. Last generated {generated.slice(0, 10)}.</p>
+    <h2>Files</h2>
+    <ul class="rows files">
+      {files.map(([f, what, n]) => (
+        <li><a class="frow" href={`/data/${f}`}><span class="n">{f}</span><span>{what}</span><span class="mark">{n == null ? '' : `${n} rows`}</span></a></li>
+      ))}
+    </ul>
+    <h2>Tiers</h2>
+    <p><span class="stamp" data-s="primary">primary</span> the institution or an original document. <span class="stamp" data-s="secondary">secondary</span> scholarship or press. <span class="stamp" data-s="wikipedia">wikipedia</span> Wikipedia, cited as such. <span class="stamp" data-s="unproven">unproven</span> stated but not yet sourced.</p>
+    <p>Claims whose source check failed are left out. Each fact has a stable id; its page is <code>/libraries/&lt;lib&gt;/#&lt;id&gt;</code>.</p>
+    <h2>Licence</h2>
+    <p>The compilation is released under <a href={LICENCE}>CC BY 4.0</a>. Quoted source text keeps its own licence. Found a mistake? Every fact has a Dispute link, or <a href={`${REPO}/issues`}>open an issue</a>.</p>
+  </article>
+</Base>
+<style>
+  .lede { font-size: 1.3rem; margin: 1rem 0 2.5rem; }
+  h2 { margin: 2.5rem 0 1rem; }
+  .frow { display: grid; grid-template-columns: 12rem 1fr 6rem; gap: 1.2rem; align-items: baseline; padding: 0.7rem 0; text-decoration: none; }
+  .frow .n { font-family: var(--mono); font-size: 1rem; }
+  @media (max-width: 760px) { .frow { grid-template-columns: 1fr; gap: 0.1rem; } }
+</style>

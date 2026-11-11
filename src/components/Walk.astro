@@ -1,27 +1,84 @@
 ---
 import type { SphereNode } from '../site/data'
-interface Props { nodes: SphereNode[]; name: string }
-const { nodes, name } = Astro.props
+import { hotspotsOf, type Hotspot } from '../site/hotspots'
+interface Props { nodes: SphereNode[]; name: string; lib?: string }
+const { nodes, name, lib } = Astro.props
 const real = nodes.filter((n) => n.real).length
+const hs = hotspotsOf(lib)
+const spotsOf = (id: string): Hotspot[] => hs?.nodes[id] ?? []
+const ids = nodes.map((n) => n.id)
+const route = (hs?.route ?? ids).filter((id) => ids.includes(id))
+const hasSpots = nodes.some((n) => spotsOf(n.id).length)
+const hasText = nodes.some((n) => spotsOf(n.id).some((h) => h.kind === 'text'))
+const langName = (c: string) => new Intl.DisplayNames(['en'], { type: 'language' }).of(c) ?? c
+const kindName = { object: 'Object', shelf: 'Shelf', text: 'Text' }
+const basisNote = {
+  excavated: 'The thing described was found on the ground, and the source below says by whom.',
+  attested: 'The thing described is in the written record, and the source below says where.',
+  comparandum: 'The thing described is borrowed from a comparable building. The source below describes that building, not this one.',
+  invented: 'The thing described is a guess. No source records it for this library.',
+}
 ---
-<section class="walk" id="walk" data-nodes={JSON.stringify(nodes)}>
+<section class="walk" id="walk" data-nodes={JSON.stringify(nodes)} data-lib={lib} data-route={JSON.stringify(route)}>
   <div class="wrap">
     <h2>{real === nodes.length ? 'Walk through it' : real ? 'Walk through it, real and imagined' : 'A reconstruction, imagined'}</h2>
-    <p class="how">Drag to look around. {nodes.some((n) => n.links?.length) && 'Follow the arrows on the floor to move.'}</p>
+    <p class="how">Drag to look around. {nodes.some((n) => n.links?.length) && 'Follow the arrows on the floor to move. '}{hasSpots && 'Tap the round markers to learn what you are looking at.'}</p>
   </div>
-  <div class="stage" aria-label={`360 degree view of ${name}`}>
+  <div class="stage" aria-label={`360 degree view of ${name}`} data-text="on">
     <span class="stamp flag" data-s="recon" hidden>reconstruction, imagined</span>
     <p class="wait">Loading the room</p>
+    {hasText && <button type="button" class="ttoggle" aria-pressed="true" hidden>Inscriptions: shown</button>}
+    <div class="hint" hidden>
+      <p>Drag to look around.{hasSpots && ' Tap a marker for detail.'}{route.length > 1 && ' Next and Previous follow a route.'}</p>
+      <button type="button">Got it</button>
+    </div>
+    <aside class="card" role="dialog" aria-labelledby="card-t" tabindex="-1" inert>
+      <button type="button" class="x" aria-label="Close">Close</button>
+      <p class="kind mark"></p>
+      <h3 id="card-t"></h3>
+      <div class="detail"></div>
+    </aside>
   </div>
   <div class="wrap">
+    {route.length > 1 && (
+      <div class="route" role="group" aria-label="Guided route" hidden>
+        <button type="button" data-step="-1">Previous</button>
+        <p class="stop" aria-live="polite"></p>
+        <button type="button" data-step="1">Next</button>
+        <button type="button" class="say" hidden>Read aloud</button>
+      </div>
+    )}
     <ol class="stops">
       {nodes.map((n, i) => (
-        <li>
+        <li data-node={n.id}>
           <button type="button" data-go={n.id} aria-current={i === 0 ? 'true' : undefined}>
             <b>{i + 1}</b>
             <span>{n.cap}{!n.real && ' (reconstruction, imagined)'}</span>
           </button>
+          <span class="seen mark" hidden>visited</span>
           <span class="mark"><a href={n.src}>{n.by}</a>, {n.lic}{n.basis && `. Based on ${n.basis}`}</span>
+          {spotsOf(n.id).length > 0 && (
+            <ul class="spots">
+              {spotsOf(n.id).map((h) => (
+                <li id={`spot-${lib}-${n.id}-${h.id}`} data-spot={h.id} data-node={n.id} data-kind={h.kind} data-yaw={h.yaw} data-pitch={h.pitch}>
+                  <h4>{h.title}</h4>
+                  <span class="kind mark">{kindName[h.kind]}{!n.real && ', in an imagined view'}</span>
+                  <div class="detail">
+                    <p>{h.body}</p>
+                    {!n.real && <p class="note">This view is imagined. {h.basis ? basisNote[h.basis] : 'The thing described is attested, and the source below says by whom.'}</p>}
+                    {h.text && (
+                      <div class="text">
+                        <blockquote lang={h.text.lang}>{h.text.original}</blockquote>
+                        <p><span class="mark">{langName(h.text.lang)}, translation:</span> {h.text.translation}</p>
+                      </div>
+                    )}
+                    <p class="cite">{h.basis && <span class="stamp" data-s={h.basis === 'invented' ? 'unproven' : h.basis === 'comparandum' ? 'secondary' : undefined}>{h.basis}</span>} <span class="stamp" data-s={h.tier}>{h.tier}</span> <a href={h.source}>Source</a></p>
+                  </div>
+                  <button type="button" data-spot-go={h.id} hidden>Show in the view</button>
+                </li>
+              ))}
+            </ul>
+          )}
         </li>
       ))}
     </ol>
@@ -30,66 +87,231 @@ const real = nodes.filter((n) => n.real).length
 <script>
   import '@photo-sphere-viewer/core/index.css'
   import '@photo-sphere-viewer/virtual-tour-plugin/index.css'
+  import '@photo-sphere-viewer/markers-plugin/index.css'
+  import { speak, hush, canSpeak } from '../narrate'
   type N = { id: string; f: string; w: number; real: boolean; cap: string; yaw0?: number; links?: { to: string; yaw: number }[] }
   const root = document.querySelector<HTMLElement>('.walk')
-  if (root) new IntersectionObserver(async ([e], io) => {
-    if (!e.isIntersecting) return
-    io.disconnect()
-    const [{ Viewer }, { VirtualTourPlugin }] = await Promise.all([import('@photo-sphere-viewer/core'), import('@photo-sphere-viewer/virtual-tour-plugin')])
+  const $ = <T extends HTMLElement>(q: string) => root!.querySelector<T>(q)!
+  // localStorage can throw (private mode, blocked data); the walk must work without it
+  const load = (k: string) => { try { return JSON.parse(localStorage.getItem(k) ?? 'null') } catch { return null } }
+  const save = (k: string, v: unknown) => { try { localStorage.setItem(k, JSON.stringify(v)) } catch {} }
+  if (root) {
     const nodes: N[] = JSON.parse(root.dataset.nodes!)
-    const stage = root.querySelector<HTMLElement>('.stage')!, flag = root.querySelector<HTMLElement>('.flag')!
-    // ponytail: one size per device (4096+ textures fail on many phones); add lo-then-hi swap if first paint feels slow
-    const big = matchMedia('(min-width: 900px)').matches
-    const rad = (d = 0) => (d * Math.PI) / 180
-    const still = matchMedia('(prefers-reduced-motion: reduce)').matches
-    const viewer = new Viewer({
-      container: stage,
-      navbar: ['zoom', 'fullscreen'],
-      defaultYaw: rad(nodes[0].yaw0),
-      defaultZoomLvl: nodes[0].w < 4000 ? 0 : 50, // small images look soft zoomed in; open them wide
-      moveInertia: !still,
-      loadingTxt: '',
-      plugins: [[VirtualTourPlugin, {
-        positionMode: 'manual',
-        renderMode: '3d',
-        preload: true,
-        transitionOptions: { showLoader: false, speed: still ? 0 : '20rpm', effect: still ? 'none' : 'fade', rotation: !still },
-        nodes: nodes.map((n) => ({
-          id: n.id,
-          panorama: `${n.f}${big ? '' : '-lo'}.webp`,
-          name: n.cap,
-          links: (n.links ?? []).map((l) => ({ nodeId: l.to, position: { yaw: rad(l.yaw), pitch: -0.25 } })),
-        })),
-        startNodeId: nodes[0].id,
-      }]],
-    })
-    const tour = viewer.getPlugin(VirtualTourPlugin) as InstanceType<typeof VirtualTourPlugin>
-    const show = (id: string) => {
-      flag.hidden = nodes.find((n) => n.id === id)?.real !== false
-      root.querySelectorAll<HTMLElement>('[data-go]').forEach((b) => b.dataset.go === id ? b.setAttribute('aria-current', 'true') : b.removeAttribute('aria-current'))
-    }
-    tour.addEventListener('node-changed', ({ node }) => show(node.id))
-    viewer.addEventListener('ready', () => { root.querySelector('.wait')?.remove(); show(nodes[0].id) }, { once: true })
-    root.addEventListener('click', (ev) => {
-      const b = (ev.target as HTMLElement).closest<HTMLElement>('[data-go]')
-      if (b) { tour.setCurrentNode(b.dataset.go!); stage.scrollIntoView({ block: 'nearest', behavior: still ? 'auto' : 'smooth' }) }
-    })
-  }, { rootMargin: '300px' }).observe(root)
+    const order: string[] = JSON.parse(root.dataset.route!)
+    const vkey = `wl:walk:${root.dataset.lib ?? 'x'}`, hkey = 'wl:walk:hint'
+    const seen = new Set<string>(load(vkey) ?? [])
+    const paint = (id: string) => root.querySelector<HTMLElement>(`.stops > li[data-node="${id}"] .seen`)?.removeAttribute('hidden')
+    seen.forEach(paint)
+    new IntersectionObserver(async ([e], io) => {
+      if (!e.isIntersecting) return
+      io.disconnect()
+      const [{ Viewer }, { VirtualTourPlugin }, { MarkersPlugin }] = await Promise.all([import('@photo-sphere-viewer/core'), import('@photo-sphere-viewer/virtual-tour-plugin'), import('@photo-sphere-viewer/markers-plugin')])
+      const stage = $('.stage'), flag = $('.flag'), card = $('.card'), hint = $('.hint')
+      const toggle = root.querySelector<HTMLButtonElement>('.ttoggle'), route = root.querySelector<HTMLElement>('.route'), say = root.querySelector<HTMLButtonElement>('.say')
+      // ponytail: one size per device (4096+ textures fail on many phones); add lo-then-hi swap if first paint feels slow
+      const big = matchMedia('(min-width: 900px)').matches
+      const rad = (d = 0) => (d * Math.PI) / 180
+      const still = matchMedia('(prefers-reduced-motion: reduce)').matches
+      const spots = [...root.querySelectorAll<HTMLElement>('li[data-spot]')]
+      const spotsOf = (id: string) => spots.filter((li) => li.dataset.node === id)
+      const esc = (t: string) => t.replace(/[&<>"]/g, (c) => `&#${c.charCodeAt(0)};`)
+      const dot = (li: HTMLElement, i: number) => {
+        const b = document.createElement('button')
+        b.type = 'button'
+        b.className = `spot k-${li.dataset.kind}`
+        b.style.setProperty('--i', String(i))
+        b.setAttribute('aria-label', `${li.querySelector('h4')!.textContent}. Open detail`)
+        // PSV only hears pointer clicks, so keyboard activation needs its own path
+        b.addEventListener('keydown', (e) => {
+          if (e.key !== 'Enter' && e.key !== ' ') return
+          e.preventDefault(); e.stopPropagation()
+          openCard(li.dataset.spot!)
+        })
+        return b
+      }
+      // PSV warns that a lone node is never linked to; the check has no option, so mute it for that one construction
+      const warn = console.warn
+      if (nodes.length === 1) console.warn = () => {}
+      const viewer = new Viewer({
+        container: stage,
+        navbar: ['zoom', 'fullscreen'],
+        defaultYaw: rad(nodes[0].yaw0),
+        defaultZoomLvl: nodes[0].w < 4000 ? 0 : 50, // small images look soft zoomed in; open them wide
+        moveInertia: !still,
+        loadingTxt: '',
+        plugins: [MarkersPlugin, [VirtualTourPlugin, {
+          positionMode: 'manual',
+          renderMode: '3d',
+          preload: true,
+          transitionOptions: { showLoader: false, speed: still ? 0 : '20rpm', effect: still ? 'none' : 'fade', rotation: !still },
+          nodes: nodes.map((n) => ({
+            id: n.id,
+            panorama: `${n.f}${big ? '' : '-lo'}.webp`,
+            name: n.cap,
+            links: (n.links ?? []).map((l) => ({ nodeId: l.to, position: { yaw: rad(l.yaw), pitch: -0.25 } })),
+            markers: spotsOf(n.id).map((li, i) => ({
+              id: li.dataset.spot!,
+              position: { yaw: rad(+li.dataset.yaw!), pitch: rad(+li.dataset.pitch!) },
+              element: dot(li, i),
+              size: { width: 34, height: 34 },
+              tooltip: { content: esc(li.querySelector('h4')!.textContent!), position: 'top center' },
+            })),
+          })),
+          startNodeId: nodes[0].id,
+        }]],
+      })
+      console.warn = warn
+      const tour = viewer.getPlugin(VirtualTourPlugin) as InstanceType<typeof VirtualTourPlugin>
+      const marks = viewer.getPlugin(MarkersPlugin) as InstanceType<typeof MarkersPlugin>
+      let cur = nodes[0].id, open: { id: string; from?: HTMLElement } | null = null
+      const shut = (back = true) => {
+        if (!open) return
+        const from = open.from
+        open = null
+        card.removeAttribute('data-open')
+        card.setAttribute('inert', '')
+        if (back && from?.isConnected) from.focus()
+      }
+      const openCard = (id: string) => {
+        const li = spots.find((s) => s.dataset.node === cur && s.dataset.spot === id)
+        if (!li) return
+        const from = (document.activeElement instanceof HTMLElement && stage.contains(document.activeElement)) ? document.activeElement : undefined
+        card.querySelector('.kind')!.textContent = li.querySelector('.kind')!.textContent
+        card.querySelector('h3')!.textContent = li.querySelector('h4')!.textContent
+        card.querySelector('.detail')!.replaceChildren(...[...li.querySelector('.detail')!.childNodes].map((c) => c.cloneNode(true)))
+        open = { id, from }
+        card.removeAttribute('inert')
+        card.setAttribute('data-open', '')
+        card.focus({ preventScroll: true })
+        hint.hidden = true; save(hkey, 1)
+      }
+      const show = (id: string) => {
+        cur = id
+        shut(false)
+        hush()
+        flag.hidden = nodes.find((n) => n.id === id)?.real !== false
+        root.querySelectorAll<HTMLElement>('[data-go]').forEach((b) => b.dataset.go === id ? b.setAttribute('aria-current', 'true') : b.removeAttribute('aria-current'))
+        if (!seen.has(id)) { seen.add(id); save(vkey, [...seen]) }
+        paint(id)
+        if (toggle) toggle.hidden = !spotsOf(id).some((li) => li.dataset.kind === 'text')
+        if (route) {
+          const i = order.indexOf(id)
+          $('.stop').textContent = `${i < 0 ? 'Off the route' : `Stop ${i + 1} of ${order.length}`}: ${nodes.find((n) => n.id === id)!.cap}`
+          route.querySelector<HTMLButtonElement>('[data-step="-1"]')!.disabled = i <= 0
+          route.querySelector<HTMLButtonElement>('[data-step="1"]')!.disabled = i >= order.length - 1
+        }
+      }
+      tour.addEventListener('node-changed', ({ node }) => show(node.id))
+      marks.addEventListener('select-marker', ({ marker }) => openCard(marker.id))
+      viewer.addEventListener('ready', () => {
+        root.querySelector('.wait')?.remove()
+        show(nodes[0].id)
+        if (route) route.hidden = false
+        if (say && canSpeak()) say.hidden = false
+        spots.forEach((li) => li.querySelector<HTMLElement>('[data-spot-go]')!.hidden = false)
+        if (!load(hkey)) hint.hidden = false
+      }, { once: true })
+      const go = (id: string) => tour.setCurrentNode(id)
+      root.addEventListener('click', async (ev) => {
+        const t = ev.target as HTMLElement
+        const b = t.closest<HTMLElement>('[data-go]')
+        if (b) { go(b.dataset.go!); stage.scrollIntoView({ block: 'nearest', behavior: still ? 'auto' : 'smooth' }) }
+        const st = t.closest<HTMLElement>('[data-step]')
+        if (st) { const i = order.indexOf(cur); go(order[i < 0 ? 0 : i + +st.dataset.step!]); stage.scrollIntoView({ block: 'nearest', behavior: still ? 'auto' : 'smooth' }) }
+        const sp = t.closest<HTMLElement>('[data-spot-go]')
+        if (sp) {
+          const li = sp.closest<HTMLElement>('li[data-spot]')!
+          if (li.dataset.node !== cur) await go(li.dataset.node!)
+          stage.scrollIntoView({ block: 'nearest', behavior: still ? 'auto' : 'smooth' })
+          await marks.gotoMarker(li.dataset.spot!, still ? 0 : undefined)
+          openCard(li.dataset.spot!)
+        }
+        if (t.closest('.card .x')) shut()
+        if (t.closest('.hint button')) { hint.hidden = true; save(hkey, 1) }
+        if (t.closest('.ttoggle')) {
+          const on = stage.dataset.text === 'off'
+          stage.dataset.text = on ? 'on' : 'off'
+          toggle!.setAttribute('aria-pressed', String(on))
+          toggle!.textContent = `Inscriptions: ${on ? 'shown' : 'hidden'}`
+          if (!on && open && spots.find((s) => s.dataset.node === cur && s.dataset.spot === open!.id)?.dataset.kind === 'text') shut()
+        }
+        if (t.closest('.say')) {
+          if (speechSynthesis.speaking) hush()
+          else speak([nodes.find((n) => n.id === cur)!.cap, ...spotsOf(cur).map((li) => `${li.querySelector('h4')!.textContent}. ${li.querySelector('.detail p')!.textContent}`)].join('. '))
+        }
+      })
+      root.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') shut() })
+    }, { rootMargin: '300px' }).observe(root)
+  }
 </script>
 <style>
   .walk { padding-block: clamp(3rem, 8vw, 6rem); border-top: 1px solid var(--rule); }
   h2 { font-family: var(--display); }
   .how { color: var(--dim); max-width: 60ch; }
-  .stage { position: relative; width: 100%; height: min(78vh, 62vw); min-height: 22rem; margin-block: 1.5rem; background: var(--leaf); }
+  .stage { position: relative; width: 100%; height: min(78vh, 62vw); min-height: 22rem; margin-block: 1.5rem; background: var(--leaf); overflow: hidden; }
   .wait { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; color: var(--dim); font-family: var(--mono); font-size: .8rem; }
   .flag { position: absolute; z-index: 40; top: 1rem; left: var(--gutter); pointer-events: none; background: var(--stacks); }
   .flag[hidden] { display: none; }
+  button.ttoggle, .hint, .card { background: var(--stacks); border: 1px solid var(--rule); color: var(--paper); }
+  button.ttoggle { position: absolute; z-index: 40; top: 1rem; right: 1rem; font: .72rem var(--mono); padding: .35rem .7rem; border-radius: 999px; cursor: pointer; }
+  button.ttoggle:hover, button.ttoggle[aria-pressed='true'] { border-color: var(--brass); color: var(--brass); }
+  button.ttoggle[hidden] { display: none; }
+  .hint { position: absolute; z-index: 40; left: 50%; bottom: 1.25rem; translate: -50% 0; width: min(30rem, calc(100% - 2rem)); display: flex; gap: 1rem; align-items: center; justify-content: space-between; padding: .7rem 1rem; border-radius: 4px; }
+  .hint[hidden] { display: none; }
+  .hint p { margin: 0; font-size: .95rem; line-height: 1.4; }
+  .hint button, .route button { font: .8rem var(--mono); color: var(--paper); background: none; border: 1px solid var(--rule); border-radius: 999px; padding: .35rem .9rem; cursor: pointer; white-space: nowrap; }
+  .hint button:hover, .route button:hover:not(:disabled) { border-color: var(--brass); color: var(--brass); }
+  .route button:disabled { opacity: .4; cursor: default; }
+  .card { position: absolute; z-index: 50; left: 1rem; bottom: 1rem; width: min(26rem, calc(100% - 2rem)); max-height: calc(100% - 2rem); overflow: auto; padding: 1.1rem 1.25rem 1.25rem; border-radius: 4px; visibility: hidden; opacity: 0; translate: 0 1rem; transition: opacity 280ms var(--ease), translate 280ms var(--ease), visibility 0s 280ms; }
+  .card[data-open] { visibility: visible; opacity: 1; translate: 0; transition-delay: 0s; }
+  .card:focus-visible { outline-offset: -3px; }
+  .card h3 { font-size: 1.6rem; margin: .1rem 0 .6rem; padding-right: 4rem; }
+  .card .kind { margin: 0; }
+  .card .x { position: absolute; top: .7rem; right: .7rem; font: .75rem var(--mono); color: var(--dim); background: none; border: 0; cursor: pointer; padding: .2rem .3rem; }
+  .card .x:hover { color: var(--brass); }
+  .detail p { margin: 0 0 .7rem; font-size: 1.02rem; line-height: 1.5; }
+  .detail .note { color: var(--stamp); font-size: .9rem; }
+  .detail blockquote { margin: 0 0 .5rem; padding-left: .9rem; border-left: 2px solid var(--brass); font-size: 1.15rem; }
+  .detail .cite { margin: 0; font-size: .9rem; }
+  .stamp[data-s='primary'] { color: var(--baize); }
+  .stamp[data-s='secondary'], .stamp[data-s='wikipedia'] { color: var(--dim); }
+  .stamp[data-s='unproven'] { color: var(--stamp); }
+  .route { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin-bottom: 1.25rem; }
+  .route[hidden] { display: none; }
+  .route .stop { flex: 1 1 14rem; margin: 0; color: var(--dim); font-size: .95rem; line-height: 1.35; order: -1; width: 100%; }
   .stops { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: .25rem 2rem; }
-  .stops li { padding-block: .6rem; border-top: 1px solid var(--rule); display: grid; gap: .2rem; }
-  .stops button { all: unset; cursor: pointer; display: flex; gap: .75rem; align-items: baseline; color: var(--paper); }
+  .stops > li { padding-block: .6rem; border-top: 1px solid var(--rule); display: grid; gap: .2rem; align-content: start; }
+  .stops button[data-go] { all: unset; cursor: pointer; display: flex; gap: .75rem; align-items: baseline; color: var(--paper); }
   .stops button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
   .stops b { font-family: var(--mono); font-weight: 400; color: var(--dim); min-width: 1.5em; }
   .stops button:is(:hover, [aria-current]) b { color: var(--brass); }
   .stops button[aria-current] span { color: var(--brass); }
-  .stops .mark { padding-left: 2.25em; }
+  .stops button[aria-current] span::after { content: ' (you are here)'; font-family: var(--mono); font-size: .72rem; }
+  .stops > li > .mark { padding-left: 2.25em; }
+  .stops > li > .seen { color: var(--baize); }
+  .spots { list-style: none; margin: .5rem 0 0 2.25em; padding: 0; display: grid; gap: .9rem; }
+  .spots li { padding-left: .9rem; border-left: 1px solid var(--rule); display: grid; gap: .2rem; justify-items: start; }
+  .spots h4 { margin: 0; font: 400 1.1rem/1.3 var(--display); }
+  .spots .detail { max-width: 52ch; }
+  .spots button { font: .75rem var(--mono); color: var(--brass); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: .2em; }
+  .spots button[hidden] { display: none; }
+  @media (prefers-reduced-motion: reduce) { .card, .card[data-open] { transition: none; } }
+</style>
+<style is:global>
+  .spot { all: unset; box-sizing: border-box; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; border: 2px solid #c9a961; background: rgb(15 22 19 / .6); color: #ece5d3; font: 600 .68rem 'IBM Plex Mono', monospace; cursor: pointer; animation: spot-in 520ms cubic-bezier(.2, .7, .2, 1) backwards; animation-delay: calc(var(--i, 0) * 70ms + 250ms); }
+  .spot::before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: #c9a961; }
+  .spot::after { content: ''; position: absolute; inset: -2px; border-radius: 50%; border: 2px solid #c9a961; animation: spot-ring 2.4s ease-out infinite; animation-delay: calc(var(--i, 0) * 70ms + 900ms); pointer-events: none; }
+  .spot.k-shelf { border-radius: 8px; }
+  .spot.k-shelf::before { border-radius: 2px; width: 12px; height: 12px; }
+  .spot.k-shelf::after { border-radius: 8px; }
+  .spot.k-text { border-radius: 8px; border-color: #58a583; }
+  .spot.k-text::before { content: 'Aa'; width: auto; height: auto; background: none; }
+  .spot.k-text::after { border-color: #58a583; border-radius: 8px; }
+  .spot:hover, .spot:focus-visible { background: #c9a961; color: #0f1613; outline: 2px solid #ece5d3; outline-offset: 3px; }
+  .spot:hover::before, .spot:focus-visible::before { background: #0f1613; }
+  .spot.k-text:hover::before, .spot.k-text:focus-visible::before { background: none; }
+  [data-text='off'] .spot.k-text { display: none !important; }
+  @keyframes spot-in { from { opacity: 0; scale: .2; } }
+  @keyframes spot-ring { 0% { opacity: .7; scale: 1; } 70%, 100% { opacity: 0; scale: 1.9; } }
+  @media (prefers-reduced-motion: reduce) { .spot, .spot::after { animation: none; } }
 </style>

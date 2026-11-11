@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro'
 import BookRows from '../../components/BookRows.astro'
+import Save from '../../components/Save.astro'
 import { books, readHere, libs, booksOf, letter, sortKey } from '../../site/data'
 const by = (a: { title: string }, b: { title: string }) => sortKey(a.title).localeCompare(sortKey(b.title))
 const open = books.filter((b) => readHere(b.id)).sort(by)
@@ -20,6 +21,10 @@ const shelves = libs.map((l) => ({ l, n: booksOf(l.id).length })).filter((x) => 
     </div>
     <div id="list"><BookRows books={shown} /></div>
     <p id="none" class="dim" hidden>No book matches. <a href="/search/">Search everything</a> instead.</p>
+  </section>
+  <section class="wrap sec">
+    <h2>Saved for offline</h2>
+    <Save kind="shelf" />
   </section>
   <section class="wrap sec">
     <h2>By library</h2>

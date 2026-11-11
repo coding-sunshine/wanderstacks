@@ -7,7 +7,7 @@
 /* Whisper lines */
 .room-status, .room-hint {
   position: absolute; left: 1.1rem; margin: 0; padding: 0.3rem 0.7rem; font-size: 0.85rem; font-style: italic;
-  color: var(--paper-dim); background: var(--glass); border: 1px solid rgb(201 162 74 / 0.25); border-radius: 3px;
+  color: var(--paper-dim); background: var(--glass); border: 1px solid var(--rule); border-radius: 3px;
   pointer-events: none; backdrop-filter: blur(6px);
 }
 .room-status { bottom: 5.2rem; }
@@ -19,7 +19,7 @@
   position: absolute; top: 5rem; right: 1.1rem; z-index: 3; cursor: pointer;
   padding: 0.34rem 0.95rem; border-radius: 999px; border: 1px solid var(--hairline);
   background: var(--glass); color: var(--gilt);
-  font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
+  font: 0.75rem var(--mono);
   backdrop-filter: blur(10px); transition: color 200ms var(--ease), border-color 200ms var(--ease);
 }
 .room-toggle:hover { color: var(--lamp); border-color: var(--lamp); }
@@ -32,10 +32,10 @@
   backdrop-filter: blur(12px); box-shadow: 0 18px 50px rgb(0 0 0 / 0.5);
 }
 .room-panel[hidden] { display: none; }
-.room-panel h1 { margin: 0; font-size: 1.7rem; font-weight: 400; line-height: 1.15; color: var(--paper); }
-.room-panel h2 { margin: 1.3rem 0 0.5rem; font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gilt); font-weight: 400; }
+.room-panel h1 { margin: 0; font: 400 1.8rem/1.1 var(--display); color: var(--paper); }
+.room-panel h2 { margin: 1.3rem 0 0.5rem; font: 0.75rem var(--mono); color: var(--gilt); font-weight: 400; }
 .room-panel .where { margin: 0.3rem 0 0; color: var(--paper-dim); font-style: italic; }
-.crumb { margin: 0 0 0.6rem; font-size: 0.72rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--paper-dim); }
+.crumb { margin: 0 0 0.6rem; font: 0.75rem var(--mono); color: var(--paper-dim); }
 .crumb a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; }
 .crumb a:hover { color: var(--lamp); border-bottom-color: var(--lamp); }
 .crumb [aria-current] { color: var(--gilt); }
@@ -46,7 +46,7 @@
 .room-panel .src { font-size: 0.8rem; color: var(--paper-dim); }
 .room-panel .src a { color: inherit; }
 .room-panel a.report {
-  font-size: 9.5px; letter-spacing: 0.08em; text-transform: uppercase; text-decoration-style: dotted;
+  font: 0.75rem var(--mono); text-decoration-style: dotted;
   color: var(--paper-dim); opacity: 0.6; transition: opacity 200ms var(--ease), color 200ms var(--ease);
 }
 .room-panel a.report:hover { opacity: 1; color: var(--lamp); }
@@ -55,13 +55,13 @@
 .room-hall dd { margin: 0; }
 .room-hall .basis {
   display: inline-block; margin: 0 0.2rem; padding: 0.04rem 0.45rem;
-  font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; font-style: normal;
-  color: var(--gilt); border: 1px solid rgb(201 162 74 / 0.55); border-radius: 3px; transform: rotate(-3deg);
+  font: 0.75rem var(--mono); font-style: normal;
+  color: var(--gilt); border: 1px solid rgb(201 169 97 / 0.55); border-radius: 3px; transform: rotate(-3deg);
 }
 
 /* Catalogue cards on the shelves list */
 .room-shelves .card {
-  padding: 0.6rem 0.8rem; border: 1px solid rgb(201 162 74 / 0.65); border-radius: 3px;
+  padding: 0.6rem 0.8rem; border: 1px solid rgb(201 169 97 / 0.65); border-radius: 3px;
   background: linear-gradient(160deg, #F2E8D0, var(--paper)); color: var(--ink);
   box-shadow: 0 6px 18px rgb(0 0 0 / 0.35);
 }
@@ -71,8 +71,8 @@
 /* Controls: evidence / tour / sound */
 .room-controls { position: absolute; top: 5rem; left: 1.1rem; z-index: 3; display: flex; flex-wrap: wrap; gap: 0.45rem; max-width: calc(100% - 9rem); }
 .room-controls button {
-  padding: 0.34rem 0.95rem; min-height: 34px; cursor: pointer; background: var(--glass); border: 1px solid var(--hairline); border-radius: 999px; color: var(--gilt);
-  font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 0.34rem 0.95rem; min-height: 34px; cursor: pointer; background: var(--glass); border: 1px solid var(--hairline); border-radius: 999px; color: var(--paper);
+  font: inherit; font-size: 1rem;
   backdrop-filter: blur(10px); transition: color 200ms var(--ease), border-color 200ms var(--ease);
 }
 .room-controls button:hover { color: var(--lamp); border-color: var(--lamp); }
@@ -83,7 +83,7 @@
   position: absolute; bottom: 4.6rem; left: 50%; transform: translateX(-50%); z-index: 3; cursor: pointer;
   padding: 0.48rem 1.4rem; border-radius: 999px; border: 1px solid var(--gilt);
   background: var(--gilt); color: var(--ink);
-  font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  font: 0.75rem var(--mono);
   box-shadow: 0 6px 24px rgb(0 0 0 / 0.45);
   transition: transform 150ms var(--ease), filter 200ms var(--ease);
 }
@@ -94,15 +94,15 @@
 /* Estimated dimensions: dashed dim stamp */
 .room-estimated {
   position: absolute; top: 7.6rem; right: 1.1rem; z-index: 3; margin: 0; padding: 0.22rem 0.65rem;
-  font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; font-style: normal;
-  color: var(--paper-dim); border: 1px dashed rgb(201 162 74 / 0.5); border-radius: 3px;
+  font: 0.75rem var(--mono); font-style: normal;
+  color: var(--paper-dim); border: 1px dashed rgb(201 169 97 / 0.5); border-radius: 3px;
   background: rgb(17 13 9 / 0.85);
 }
 
 /* Reconstruction badge: permanent ember stamp */
 .room-badge {
   position: absolute; top: 7.6rem; left: 1.1rem; z-index: 3; margin: 0; padding: 0.22rem 0.65rem;
-  font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; font-style: normal;
+  font: 0.75rem var(--mono); font-style: normal;
   color: var(--ember); border: 1px dashed var(--ember); border-radius: 3px; transform: rotate(-4deg);
   background: rgb(17 13 9 / 0.85);
 }
@@ -110,16 +110,16 @@
 /* Local conditions marginalia: opaque for a measurable contrast surface */
 .room-local {
   position: absolute; left: 1.1rem; bottom: 1.1rem; z-index: 3; margin: 0; padding: 0.3rem 0.7rem;
-  font-size: 10.5px; letter-spacing: 0.14em; color: var(--paper-dim);
-  background: #110D09; border: 1px solid rgb(201 162 74 / 0.25); border-radius: 3px;
+  font-size: 12px; letter-spacing: 0.14em; color: var(--paper-dim);
+  background: var(--leaf); border: 1px solid var(--rule); border-radius: 3px;
 }
 .room-local a { color: var(--lamp); }
 
 /* Find buttons */
 .room-shelves button[data-action='find'] {
   min-width: 44px; min-height: 44px; margin-right: 0.5rem; padding: 0.25rem 0.9rem; cursor: pointer;
-  background: none; border: 1px solid var(--hairline); border-radius: 999px; color: var(--gilt);
-  font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+  background: none; border: 1px solid var(--hairline); border-radius: 999px; color: var(--paper);
+  font: inherit; font-size: 1rem;
   transition: color 200ms var(--ease), border-color 200ms var(--ease);
 }
 .room-shelves button[data-action='find']:hover { color: var(--lamp); border-color: var(--lamp); }
@@ -153,7 +153,7 @@
 /* Pulled from the shelf: the cover swings open once, then rests. */
 .room-book-cover:not(.is-open) { transform: perspective(420px) rotateY(-84deg); transition: transform 800ms var(--ease); }
 .room-book-info { min-width: 0; flex: 1; }
-.room-book h2 { margin: 0 0 0.4rem; font-size: 1.4rem; font-weight: 400; color: var(--ink); }
+.room-book h2 { margin: 0 0 0.4rem; font: 400 1.5rem/1.15 var(--display); color: var(--ink); }
 .room-book-by { margin: 0 0 0.5rem; color: var(--paper-dim-ink); font-style: italic; }
 .room-book-why { margin: 0 0 0.5rem; line-height: 1.45; }
 .room-book-ed { margin: 0 0 0.5rem; font-size: 0.9rem; color: var(--paper-dim-ink); }
@@ -164,7 +164,7 @@
 .room-book button {
   display: inline-block; min-width: 44px; min-height: 44px; padding: 0.3rem 1.1rem; cursor: pointer;
   background: none; border: 1px solid var(--oak-light); border-radius: 999px; color: var(--ink);
-  font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
+  font: inherit; font-size: 1rem;
   transition: border-color 200ms var(--ease);
 }
 .room-book button:hover { border-color: var(--gilt); }
@@ -197,19 +197,23 @@
 
 /* The library's years: scroll-driven story in the About panel */
 .story { margin-top: 1rem; }
-.story h2 { margin: 0 0 0.5rem; font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gilt); font-weight: 400; }
+.story h2 { margin: 0 0 0.5rem; font: 0.75rem var(--mono); color: var(--gilt); font-weight: 400; }
 .story-hint { margin: 0 0 0.6rem; color: var(--paper-dim); font-style: italic; }
 .story-list { display: grid; gap: 0.55rem; }
 .story-beat {
-  padding: 0.6rem 0.8rem; border-left: 2px solid rgb(201 162 74 / 0.3); border-radius: 0 3px 3px 0;
+  padding: 0.6rem 0.8rem; border-left: 2px solid var(--rule); border-radius: 0 3px 3px 0;
   background: rgb(11 8 6 / 0.35); transition: border-color 300ms var(--ease), background-color 300ms var(--ease);
 }
-.story-beat[data-on='true'] { border-left-color: var(--lamp); background: rgb(201 162 74 / 0.1); }
+.story-beat[data-on='true'] { border-left-color: var(--lamp); background: rgb(201 169 97 / 0.1); }
 .story-year { margin: 0 0 0.25rem; color: var(--gilt); }
 .story-text { margin: 0; line-height: 1.4; }
 .story-quote { margin: 0.35rem 0 0; font-style: italic; color: var(--paper-dim); font-size: 0.85rem; }
 .story-src { display: inline-block; margin-top: 0.3rem; font-size: 0.78rem; color: var(--paper-dim); }
 
+/* inline flex on the consent line would otherwise beat [hidden] */
+[data-voice-consent][hidden] { display: none !important; }
+/* the house rules wait while the tour is open, so they never sit on its buttons */
+.room:has(#room-tour) .rules-card { display: none; }
 @media (max-width: 700px) {
   .rules-card { bottom: 11.5rem; }
 }

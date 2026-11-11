@@ -90,7 +90,7 @@ export const mount: Mount = (el, params) => {
     const next = vimgs.find(i => !i.classList.contains('cur'))!;
     next.sizes = '100vw'; next.srcset = `${ph.f}-960.webp 960w, ${ph.f}-1920.webp 1920w`; next.src = `${ph.f}-1920.webp`; next.alt = ph.cap;
     try { await next.decode(); } catch { return; }
-    const wait = RM.matches ? 0 : 1100 - (performance.now() - t0);
+    const wait = RM.matches ? 0 : (LIBS[sel]?.dp?.length && view === 'out' && !pi ? 3400 : 1100) - (performance.now() - t0);
     if (wait > 0) await new Promise(r => setTimeout(r, wait));
     if (my !== tok || !alive) return;
     vimgs.forEach(i => i.classList.toggle('cur', i === next));
@@ -180,6 +180,7 @@ export const mount: Mount = (el, params) => {
   function card() {
     const r = LIBS[sel];
     atlas?.focus(r.lat, r.lon);
+    atlas?.setArcs(r.id, r.lat, r.lon, r.dp ?? []);
     const [evc, evl] = EV[r.ev] || EV.speculative, kn = KIND[r.k] || KIND.site;
     const row = (k: string, s?: string | null | false) => s ? `<dt>${k}</dt><dd>${esc(s)}</dd>` : '';
     const fate = r.lost === true ? 'Lost, date unknown' : typeof r.lost === 'number' && r.lost <= xYear ? `Lost ${yfmt(r.lost)}` : '';
@@ -187,7 +188,7 @@ export const mount: Mount = (el, params) => {
     const href = r.href ?? `/place/${r.id}`;
     const reads = (r.reads ?? []).filter(b => b.k !== 'card');
     const ph = r.ph, both = !!(ph?.out.length && ph.in.length);
-    const vctl = ph && (ph.out.length || ph.in.length) ? `<div class="vctl">${both ? '<button type="button" class="replay" data-v></button>' : ''}<span class="vstep"><button type="button" data-step="-1" aria-label="Previous photograph">‹</button><span class="vcount" aria-live="polite"></span><button type="button" data-step="1" aria-label="Next photograph">›</button></span></div>` : '';
+    const vctl = ph && (ph.out.length || ph.in.length) ? `<div class="vctl">${both ? '<button type="button" class="replay" data-v></button>' : ''}${r.dp?.length ? `<button type="button" class="replay" data-arcs>Where it went · ${r.dp.length}</button>` : ''}<span class="vstep"><button type="button" data-step="-1" aria-label="Previous photograph">‹</button><span class="vcount" aria-live="polite"></span><button type="button" data-step="1" aria-label="Next photograph">›</button></span></div>` : '';
     xcard.innerHTML = '<button type="button" id="xback">All libraries</button>' +
       `<p class="kicker">${deg(r.lat, 'N', 'S')} · ${deg(r.lon, 'E', 'W')}</p><h2 tabindex="-1">${esc(r.n)}</h2><p class="p">${esc(r.p)} · ${esc(r.yl)} · ${kn}</p>` +
       `<div class="chips"><span class="cchip ${evc}"><i class="${evc === 'con' ? 'ring' : 'dot'}"></i>${evl}</span></div>` + vctl +
@@ -217,6 +218,7 @@ export const mount: Mount = (el, params) => {
     else if (b.dataset.i) select(+b.dataset.i);
     else if (b.hasAttribute('data-v')) flip();
     else if (b.dataset.step) step(+b.dataset.step);
+    else if ('arcs' in b.dataset) { if (root.classList.contains('visiting')) hide(); else void show(); }
   }, { signal });
   xrange.addEventListener('input', () => setYearX(+xrange.value), { signal });
   cv.addEventListener('click', e => {

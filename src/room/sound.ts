@@ -1,8 +1,15 @@
 import acoustics from '../../data/acoustics.json'
+import irTable from '../../data/ir.json'
 import { hash, type RoomApi } from './kit'
+import { pickIr } from './ir'
 import { addParamRow } from './panel'
 
 const alphas: Record<string, { alpha: number }> = acoustics.materials
+
+/** Where narration can be fed into the room: the same context and convolver the room tone uses. Null while Sound is off. */
+export type RoomBus = { ctx: AudioContext; input: AudioNode }
+let bus: RoomBus | null = null
+export const roomBus = () => bus
 
 export function attach(api: RoomApi): () => void {
   const { volume, surfaces } = api.acoustics
@@ -18,6 +25,9 @@ export function attach(api: RoomApi): () => void {
   api.root.dataset.acoustics = JSON.stringify({ volume: Number(volume.toFixed(2)), absorption: Number(absorption.toFixed(3)) })
   const row = addParamRow(api.panel, 'rt60', 'Reverberation (RT60)', `${rt60.toFixed(1)} s`, 'estimated')
   const label = row.previousElementSibling
+  const measured = pickIr(irTable as Record<string, never>, api.lib.id)
+  const irRow = measured && addParamRow(api.panel, 'ir', 'Impulse response', 'measured', `${measured.by}, ${measured.lic}, ${measured.src}`)
+  const irLabel = irRow?.previousElementSibling
 
   const button = document.createElement('button')
   button.type = 'button'
@@ -45,9 +55,26 @@ export function attach(api: RoomApi): () => void {
   const build = (c: AudioContext) => {
     const conv = c.createConvolver()
     conv.buffer = impulse(c)
+    // The real recording replaces the estimate once decoded; until then (or if it fails) the estimate stands.
+    if (measured)
+      fetch(`/ir/${measured.f}`)
+        .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(String(r.status)))))
+        .then((b) => c.decodeAudioData(b))
+        .then((b) => {
+          conv.buffer = b
+          api.root.dataset.irLoaded = measured.f
+        })
+        .catch(() => {})
     const out = c.createGain()
     out.gain.value = 0.25
     conv.connect(out).connect(c.destination)
+    // Narration entry: a dry path to the speakers plus a send into the convolver (its output is wet only).
+    const input = c.createGain()
+    const dry = c.createGain()
+    const send = c.createGain()
+    send.gain.value = 3
+    input.connect(dry).connect(c.destination)
+    input.connect(send).connect(conv)
     // Looping room tone: two seconds of seeded noise, low-passed, fed to the convolver.
     const n = 2 * c.sampleRate
     const tone = c.createBuffer(1, n, c.sampleRate)
@@ -60,27 +87,30 @@ export function attach(api: RoomApi): () => void {
     const g = c.createGain()
     g.gain.value = 0.08
     lp.connect(g).connect(conv)
-    return () => {
+    return { input, play: () => {
       const src = c.createBufferSource()
       src.buffer = tone
       src.loop = true
       src.connect(lp)
       src.start()
       return src
-    }
+    } }
   }
 
   let play!: () => AudioBufferSourceNode
+  let input!: AudioNode
   let src: AudioBufferSourceNode | null = null
   const start = () => {
-    if (!ctx) play = build((ctx = new AudioContext()))
+    if (!ctx) ({ play, input } = build((ctx = new AudioContext())))
     ctx.resume().catch(() => {})
     src = play()
+    bus = { ctx, input }
   }
 
   const stop = () => {
     src?.stop()
     src = null
+    bus = null
     ctx?.suspend().catch(() => {})
   }
 
@@ -97,7 +127,10 @@ export function attach(api: RoomApi): () => void {
     button.remove()
     row.remove()
     label?.remove()
+    irRow?.remove()
+    irLabel?.remove()
     delete api.root.dataset.rt60
+    delete api.root.dataset.irLoaded
     delete api.root.dataset.acoustics
   }
 }

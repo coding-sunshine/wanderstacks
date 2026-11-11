@@ -43,12 +43,16 @@ for (const b of scans) {
   const m = await manifest(b.id, b.read.url).catch((e) => (console.warn(`scan: ${b.id} manifest failed (${e.message}), linking to holder`), null))
   if (!m) continue
   const v3 = !m.sequences
-  const canvases: any[] = v3 ? m.items : m.sequences[0].canvases
+  const all: any[] = v3 ? m.items : m.sequences[0].canvases
+  // A scroll is one strip: the manifest says so with behavior "continuous" (v3) or viewingHint (v2).
+  const scroll = [m.behavior, m.viewingHint].flat().includes('continuous')
+  // IDP manifests mix the stitched scroll, section photos and detail shots; read.group picks the one image group to unroll.
+  const canvases = b.read.group ? all.filter((c) => c.metadata?.some((e: any) => lang(e.value) === b.read.group)) : all
   const pages = canvases.map((c, i) => ({
     s: String(service(v3 ? c.items[0].items[0].body.service : c.images[0].resource.service)).replace(/\/info\.json$/, ''),
     w: c.width,
     h: c.height,
-    l: label(lang(c.label), i),
+    l: scroll ? `Section ${i + 1}` : label(lang(c.label), i),
   }))
   if (!pages.length || pages.some((p) => !p.s || !p.w || !p.h)) throw new Error(`scan: ${b.id} has canvases without an image service`)
 
@@ -56,12 +60,13 @@ for (const b of scans) {
   const stated = fromUrl(v3 ? m.rights : m.license) ?? att.match(LICENCE)?.[0]
   const ours = String(b.read.licence ?? '').match(LICENCE)?.[0]
   if (stated && ours && stated !== ours) throw new Error(`scan: ${b.id} data says ${ours}, manifest says ${stated}`)
-  const licence = stated ?? ours ?? 'Public domain by age; the holder states no licence'
-  const credit = att.split(/\s*Terms of use/i)[0].replace(/^Photo:\s*/i, '').replace(/,(?=\S)/g, ', ').replace(/[\s.]+$/, '') || b.holder
+  const licence = stated ?? ours ?? b.read.rights ?? 'Public domain by age; the holder states no licence'
+  const credit = b.read.credit ?? (att.split(/\s*Terms of use/i)[0].replace(/^Photo:\s*/i, '').replace(/,(?=\S)/g, ', ').replace(/[\s.]+$/, '') || b.holder)
 
   await mkdir(root + `public/scan/${b.id}`, { recursive: true })
   await Bun.write(root + `public/scan/${b.id}/pages.json`, JSON.stringify({
     id: b.id, title: b.title, date: b.date, holder: b.holder, manifest: b.read.url, licence, deed: DEEDS[licence] ?? null, credit, pages,
+    ...(scroll && { scroll: true, dir: m.viewingDirection ?? 'left-to-right' }),
   }))
   built.push(b.id)
 }

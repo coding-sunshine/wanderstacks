@@ -1,0 +1,57 @@
+---
+// Where this library's books are now: its sourced holders on a map, then a plain list. Nothing without records.
+import { holdersOf, land, mapOf } from '../site/dispersal'
+import { host } from '../site/record'
+interface Props { lib: string }
+const { lib } = Astro.props
+const has = holdersOf(lib).length > 0
+const m = has ? mapOf(lib) : null
+---
+{m && (
+  <section class="wrap sec dispersal" id="dispersal" data-dispersal>
+    <h2>Where the books are now</h2>
+    <p class="lede">Surviving items, by the institution that holds them today. Each line has its source and how well it is proven.</p>
+    <svg viewBox={m.box} role="img" aria-label={`Map: ${m.hs.length} institutions that hold items from this library`} class="dmap">
+      <path class="land" d={land} />
+      {m.hs.map((h, i) => <path class="arc" data-s={h.tier} d={h.d} pathLength="1" style={`--i:${i}`} />)}
+      {m.hs.map((h) => <circle class="pt" data-s={h.tier} cx={h.to[0]} cy={h.to[1]} r={m.r}><title>{h.holder}, {h.place}</title></circle>)}
+      <circle class="home" cx={m.home[0]} cy={m.home[1]} r={m.r * 1.6}><title>The library</title></circle>
+    </svg>
+    <ul class="holders">
+      {m.hs.map((h) => (
+        <li>
+          <b>{h.holder}</b> <span class="pl">{h.place}</span>
+          <p>{h.what}{h.count != null && <> <span class="n">Count: {h.count.toLocaleString('en')}</span></>}</p>
+          <p class="meta"><span class="stamp" data-s={h.tier}>{h.tier}</span> <a href={h.source}>{host(h.source)}</a>{h.manifest && <> <a href={h.manifest}>IIIF manifest</a></>}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+<style>
+  .dmap { width: 100%; height: auto; display: block; background: var(--leaf); border: 1px solid var(--rule); border-radius: 2px; margin-block: 1.4rem; }
+  .land { fill: var(--rule); stroke: none; }
+  .arc { fill: none; stroke: var(--baize); stroke-width: 1.6; vector-effect: non-scaling-stroke; opacity: 0.85; }
+  .arc[data-s='secondary'] { stroke: var(--brass); stroke-width: 1.3; }
+  .arc[data-s="wikipedia"] { stroke: var(--dim); stroke-width: 1; }
+  .arc[data-s='unproven'] { stroke: var(--stamp); stroke-width: 1; }
+  .pt { fill: var(--paper); }
+  .home { fill: var(--stamp); }
+  .holders { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); background: var(--rule); border: 1px solid var(--rule); }
+  .holders li { background: var(--stacks); padding: 1rem 1.1rem; }
+  .holders p { margin: 0.3rem 0 0; }
+  .pl, .n { color: var(--dim); font-size: 0.9em; }
+  .meta { display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap; font-family: var(--mono); font-size: 0.75rem; }
+  @media (prefers-reduced-motion: no-preference) {
+    .dmap.draw .arc { stroke-dasharray: 1; stroke-dashoffset: 1; }
+    .dmap.draw.on .arc { stroke-dashoffset: 0; transition: stroke-dashoffset 1.6s var(--ease) calc(var(--i) * 0.18s); }
+  }
+</style>
+<script>
+  // Arcs start hidden only once the script runs, then draw as the map scrolls into view.
+  const svg = document.querySelector<SVGSVGElement>('[data-dispersal] .dmap')
+  if (svg && !matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+    svg.classList.add('draw')
+    new IntersectionObserver((es, o) => es.forEach((e) => e.isIntersecting && (svg.classList.add('on'), o.disconnect())), { threshold: 0.4 }).observe(svg)
+  }
+</script>

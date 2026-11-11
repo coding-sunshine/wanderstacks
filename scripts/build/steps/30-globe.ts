@@ -9,6 +9,12 @@ const other: Record<string, string> = { alexandria: '/ledger/alexandria', stgall
 const href = (id: string) => other[id] ?? null
 // Curated Commons photographs (outside first, then inside), keyed by library id.
 const photos: Record<string, unknown> = await Bun.file(root + 'data/photos.json').json().catch(() => ({}))
+// Holders of a lost library's surviving items: the globe draws an arc to each.
+const dispersal: any[] = await Bun.file(root + 'data/dispersal.json').json().catch(() => [])
+const dp = (id: string) => {
+  const h = dispersal.filter((d) => d.lib === id).map(({ lat, lon, tier }) => ({ lat, lon, tier }))
+  return h.length ? h : undefined
+}
 const kind = (b: any) => (b.tier === 'readable-text' ? 'book' : b.tier === 'readable-scan' ? 'scan' : 'card')
 const bookHref = (b: any): string | null =>
   b.tier === 'readable-text' ? `/read/${b.id}` : b.tier === 'readable-scan' ? (scans.has(b.id) ? `/scan/${b.id}` : (b.catalogue_url ?? b.read?.url ?? null)) : (b.catalogue_url ?? null)
@@ -20,7 +26,7 @@ const reads = (id: string) =>
     .map((b) => ({ id: b.id, t: b.title, a: b.author ?? null, d: b.date ?? null, k: kind(b) as keyof typeof ORDER, href: bookHref(b)! }))
     .sort((x, y) => ORDER[x.k] - ORDER[y.k])
 
-const pins = libs.map(({ id, n, p, yl, y, lat, lon, lost, found, wd, st, stFrom, k, ev, evNote, dim, vol, book, read }) => ({ id, n, p, yl, y, lat, lon, lost, found, wd, st, stFrom, k, ev, evNote, dim, vol, book, read, href: href(id), hours: (hours[id] as any)?.hours ?? null, reads: reads(id), ph: photos[id] }))
+const pins = libs.map(({ id, n, p, yl, y, lat, lon, lost, found, wd, st, stFrom, k, ev, evNote, dim, vol, book, read }) => ({ id, n, p, yl, y, lat, lon, lost, found, wd, st, stFrom, k, ev, evNote, dim, vol, book, read, href: href(id), hours: (hours[id] as any)?.hours ?? null, reads: reads(id), ph: photos[id], dp: dp(id) }))
 await Bun.write(root + 'public/lib/pins.json', JSON.stringify(pins))
 
 // A small global catalog for the search palette: rooms plus every readable book.

@@ -127,6 +127,7 @@ export interface BookMeta {
   licence: string
   source: string
   parts: number
+  orig?: boolean // a parallel original text exists under orig/
   toc: { title: string; part: number }[]
 }
 

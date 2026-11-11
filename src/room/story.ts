@@ -4,7 +4,7 @@ import type { RoomApi } from './kit'
 // Scrolling the panel walks the camera through the tour stops while dated
 // evidence rows pass by. Every beat is a passing row; nothing is invented.
 
-type Ev = { kind?: string; year?: number; label?: string; value?: string; quote?: string; source?: string }
+type Ev = { field?: string; kind?: string; year?: number; label?: string; value?: string; quote?: string; source?: string }
 
 export type Beat = { year: string; text: string; quote?: string; source?: string }
 
@@ -12,7 +12,8 @@ export type Beat = { year: string; text: string; quote?: string; source?: string
 // The scroll story and the guided tour both tell these beats, at their own pace.
 export function storyBeats(lib: { name?: string; place?: string; years?: string; facts?: Ev[]; events?: Ev[] }): Beat[] {
   const events = [...(lib.events ?? [])].sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999))
-  const now = (lib.facts ?? []).find((f) => f.value && f.source)
+  // "Now" is today's state, never the build date or a dimension
+  const now = ['remains_today', 'volumes', 'collection'].map((k) => (lib.facts ?? []).find((f) => f.field === k && f.value && f.source)).find(Boolean)
   const beats: Beat[] = [{ year: '·', text: `${lib.name ?? ''}. ${lib.place ?? ''} ${lib.years ?? ''}.`.trim() }]
   for (const e of events) {
     if (!e.label && !e.value) continue
@@ -38,13 +39,13 @@ export function attach(api: RoomApi): () => void {
 
   const section = el('section', 'story')
   section.append(el('h2', '', 'The library’s years'))
-  section.append(el('p', 'story-hint micro', 'Scroll to walk the years — or press Tour and let the room tell them.'))
+  section.append(el('p', 'story-hint micro', 'Scroll to walk the years, or press Tour and let the room tell them.'))
   const list = el('div', 'story-list')
 
   beats.forEach((b, i) => {
     const card = el('article', 'story-beat')
     card.dataset.beat = String(i)
-    card.append(el('p', 'story-year micro', b.year))
+    card.append(el('p', 'story-year micro', b.year === '·' ? (i ? 'Undated' : 'Overview') : b.year))
     card.append(el('p', 'story-text', b.text))
     if (b.quote) card.append(el('p', 'story-quote', `“${b.quote}”`))
     if (b.source?.startsWith('http')) {

@@ -3,6 +3,7 @@ import { fade, go, reducedMotion } from '../app'
 import type { BookMeta, BookPart, Mount } from '../types'
 import { paginate } from './paginate'
 import { getMeta, getPart, persistOnce } from './store'
+import { locate, mark, terms } from './find'
 import { binding } from '../room/cover'
 import { headpiece } from './ornament'
 import './reader.css'
@@ -39,6 +40,11 @@ export const mount: Mount = (el, { book }) => {
   const top = h('div', 'rd-top')
   top.append(close, title, end)
   const stage = h('div', 'rd-stage')
+  stage.lang = 'en'
+  const orig = h('aside', 'rd-orig')
+  orig.setAttribute('aria-label', 'Original text')
+  const main = h('div', 'rd-main')
+  main.append(stage, orig)
   const msg = h('p', 'rd-msg', 'Opening the book')
   stage.append(msg)
   const prev = h('button', '', 'Previous')
@@ -50,22 +56,37 @@ export const mount: Mount = (el, { book }) => {
   const bottom = h('div', 'rd-bottom')
   bottom.append(prev, status, next)
   const licence = h('p', 'rd-licence')
-  root.append(top, stage, bottom, licence)
+  root.append(top, main, bottom, licence)
   el.append(root)
 
   let meta: BookMeta
   const parts: BookPart[] = []
   let pageHtml: string[][] = []
+  let pageStarts: number[][] = []
   let turner: Turner | undefined
   let size = { pw: 0, ph: 0, single: true }
   let loading: Promise<void> | undefined
   let idx = 0
 
+  const qs = new URLSearchParams(location.search)
+  const words = terms(qs.get('q'))
+  const num = (k: string, d: number) => (/^\d+$/.test(qs.get(k) ?? '') ? +qs.get(k)! : d)
+  const want = { part: Math.max(num('part', 1), 1), ch: num('ch', 0), to: num('to', num('ch', 0)) }
+  // Global page index to open on: the first page of the chapter run, or the one holding most of the words.
+  function target() {
+    const pi = Math.min(want.part, parts.length) - 1
+    const s = pageStarts[pi]
+    const base = pageHtml.slice(0, pi).reduce((n, p) => n + p.length, 0)
+    const lo = s[Math.min(want.ch, s.length - 1)] ?? 0
+    const hi = s[want.to + 1] ?? pageHtml[pi].length
+    return base + lo + Math.max(locate(pageHtml[pi].slice(lo, hi), words), 0)
+  }
+
   const total = () => pageHtml.reduce((n, p) => n + p.length, 0)
   const complete = () => parts.length === meta.parts
 
   function measure() {
-    const W = root.clientWidth
+    const W = stage.clientWidth
     const single = reduced || W < 760
     const pw = single ? Math.min(W - 16, 520) : Math.min(Math.floor((W - 48) / 2), 460)
     const avail = stage.clientHeight - 16
@@ -80,10 +101,18 @@ export const mount: Mount = (el, { book }) => {
     page.append(text)
     host.append(page)
     root.append(host)
-    await Promise.all([document.fonts.load('17px "EB Garamond"'), document.fonts.load('italic 17px "EB Garamond"')])
+    await Promise.all([document.fonts.load('19px "EB Garamond"'), document.fonts.load('italic 19px "EB Garamond"')])
     const out = paginate(p.chapters, page, text)
     host.remove()
     return out
+  }
+  const addPart = async (p: BookPart) => {
+    const r = await paginatePart(p)
+    if (signal.aborted) return false
+    parts.push(p)
+    pageHtml.push(r.pages)
+    pageStarts.push(r.starts)
+    return true
   }
 
   function elements(): HTMLElement[] {
@@ -91,7 +120,7 @@ export const mount: Mount = (el, { book }) => {
     return pageHtml.flat().map((html) => {
       const page = h('div', 'rd-page')
       const text = h('div')
-      text.innerHTML = html
+      text.innerHTML = mark(html, words)
       page.append(text, h('div', 'rd-num', String(++n)))
       return page
     })
@@ -228,6 +257,65 @@ export const mount: Mount = (el, { book }) => {
     }
   }
 
+  // Parallel text: the original beside the translation on wide screens, swapped in on phones.
+  interface Orig { lang: string; title: string; edition: string; source: string; licence: string }
+  let om: Orig | undefined
+  const op = new Map<number, Promise<BookPart | undefined>>()
+  const origPart = (n: number) => {
+    let p = op.get(n)
+    if (!p) op.set(n, (p = fetch(`/book/${book}/orig/${n}.json`).then((r) => (r.ok ? (r.json() as Promise<BookPart>) : undefined), () => undefined)))
+    return p
+  }
+  const chapterAt = (i: number) => {
+    let g = Math.max(i - (size.single ? 1 : 2), 0)
+    for (let p = 0; p < pageHtml.length; p++) {
+      if (g < pageHtml[p].length || p === pageHtml.length - 1) {
+        const s = pageStarts[p]
+        let c = 0
+        while (c + 1 < s.length && s[c + 1] <= g) c++
+        return { p, c }
+      }
+      g -= pageHtml[p].length
+    }
+    return { p: 0, c: 0 }
+  }
+  let shown = ''
+  async function showOrig() {
+    if (!om || !root.dataset.orig) return
+    const { p, c } = chapterAt(idx)
+    const key = `${p}:${c}`
+    if (key === shown) return
+    shown = key
+    const part = await origPart(p + 1)
+    if (signal.aborted || shown !== key) return
+    const ch = part?.chapters[c]
+    const head = h('h2', '', parts[p]?.chapters[c]?.title ?? '')
+    const body = h('div', 'rd-orig-text')
+    if (ch?.html) { body.lang = om.lang; body.innerHTML = ch.html } else body.append(h('p', 'rd-orig-none', 'No original is aligned to this section.'))
+    const note = h('p', 'rd-orig-note', `${om.edition}. ${om.licence}. `)
+    const a = h('a', '', 'Source')
+    a.href = om.source
+    a.target = '_blank'
+    a.rel = 'noopener noreferrer'
+    note.append(a)
+    orig.replaceChildren(head, body, note)
+    orig.scrollTop = 0
+  }
+  const origMode = () => (root.clientWidth >= 1100 ? 'side' : 'only')
+  function toggleOrig() {
+    if (root.dataset.orig) delete root.dataset.orig
+    else root.dataset.orig = origMode()
+    origBtn.setAttribute('aria-pressed', String(!!root.dataset.orig))
+    shown = ''
+    void showOrig()
+    if (root.dataset.orig !== 'only') requestAnimationFrame(() => void relayout())
+  }
+  const origBtn = h('button', '')
+  origBtn.hidden = true
+  origBtn.setAttribute('aria-pressed', 'false')
+  origBtn.onclick = toggleOrig
+  top.insertBefore(origBtn, end)
+
   function onChange(i: number) {
     idx = i
     const n = total()
@@ -237,16 +325,14 @@ export const mount: Mount = (el, { book }) => {
     next.disabled = last
     rustle()
     if (last && complete()) stampFinish()
+    void showOrig()
     if (!complete() && i >= n - AHEAD) void loadNext()
   }
 
   function loadNext() {
     return (loading ??= (async () => {
       const p = await getPart(book, parts.length + 1)
-      const pages = await paginatePart(p)
-      if (signal.aborted) return
-      parts.push(p)
-      pageHtml.push(pages)
+      if (!(await addPart(p))) return
       turner?.append(elements())
       onChange(idx)
     })().finally(() => { loading = undefined }))
@@ -267,8 +353,9 @@ export const mount: Mount = (el, { book }) => {
     measure()
     const ratio = total() ? idx / total() : 0
     pageHtml = []
-    for (const p of parts) pageHtml.push(await paginatePart(p))
-    if (signal.aborted) return
+    pageStarts = []
+    const old = parts.splice(0)
+    for (const p of old) if (!(await addPart(p))) return
     build(Math.round(ratio * total()))
   }
 
@@ -332,13 +419,18 @@ export const mount: Mount = (el, { book }) => {
       a.rel = 'noopener noreferrer'
       a.title = meta.edition
       licence.append(a)
+      if (meta.orig) void fetch(`/book/${book}/orig/meta.json`).then((r) => (r.ok ? (r.json() as Promise<Orig>) : undefined)).then((o) => {
+        if (!o || signal.aborted) return
+        om = o
+        origBtn.textContent = o.lang === 'la' ? 'Latin' : o.lang === 'grc' ? 'Greek' : 'Original'
+        origBtn.setAttribute('aria-label', `Show the ${origBtn.textContent} original`)
+        origBtn.hidden = false
+      }, () => {})
       measure()
-      const first = await getPart(book, 1)
-      const pages = await paginatePart(first)
-      if (signal.aborted) return
-      parts.push(first)
-      pageHtml.push(pages)
-      build(0)
+      if (!(await addPart(await getPart(book, 1)))) return
+      // A link from search names a part and chapters; read up to it and open on the page holding the words.
+      while (parts.length < Math.min(want.part, meta.parts)) if (!(await addPart(await getPart(book, parts.length + 1)))) return
+      build((size.single ? 1 : 2) + target())
       root.dataset.ready = 'true'
     } catch {
       msg.textContent = 'This book could not be opened.'

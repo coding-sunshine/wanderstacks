@@ -9,6 +9,7 @@ import { buildOutside } from './outside'
 import { buildPanel } from './panel'
 import { addCredits, estimatedLabel, exteriorOf, firstPlace, placeButton, remember, type Place } from './place'
 import * as sound from './sound'
+import * as splat from './splat'
 import * as sunlight from './sunlight'
 import * as spines from './spines'
 import { dustTexture } from './textures'
@@ -370,10 +371,11 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
       goTo, taps,
       clamp: (p) => clampAt(p),
       slots: b.spineSlots,
+      renderer,
       render: () => (dirty = true),
       shadows: () => (renderer.shadowMap.needsUpdate = true),
     }
-    detach = [evidence, tour, sound, sunlight, spines, story].map((m) => m.attach(api))
+    detach = [evidence, tour, sound, sunlight, spines, story, splat].map((m) => m.attach(api))
 
     b.ready
       .then(() => {

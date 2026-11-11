@@ -1,16 +1,8 @@
 .rd {
   position: fixed; inset: 0; z-index: 20;
   display: flex; flex-direction: column;
-  background:
-    radial-gradient(90% 60% at 50% 18%, rgb(64 42 18 / 0.55) 0%, transparent 60%),
-    radial-gradient(120% 90% at 50% 30%, #241708 0%, var(--night) 72%);
+  background: radial-gradient(90% 70% at 50% 40%, var(--leaf) 0%, var(--stacks) 75%);
   overflow: hidden;
-}
-/* The desk: a warm pool of lamplight the book sits in. */
-.rd::before {
-  content: ''; position: absolute; inset: auto 0 0; height: 34%;
-  background: linear-gradient(transparent, rgb(46 30 14 / 0.75) 70%);
-  pointer-events: none;
 }
 .rd-top, .rd-bottom {
   display: flex; align-items: center; gap: 0.6rem;
@@ -18,15 +10,15 @@
 }
 .rd-top { padding-top: 4.1rem; } /* #app is a stacking context under the global .bar */
 .rd-top h1 {
-  flex: 1; min-width: 0; margin: 0; font-size: 0.95rem; font-weight: 400; font-style: italic;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center; color: var(--gilt);
+  flex: 1; min-width: 0; margin: 0; font: 400 1.3rem/1.2 var(--display);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: center; color: var(--paper);
 }
 .rd button {
-  background: rgb(11 8 6 / 0.5); border: 1px solid var(--hairline); color: var(--gilt);
-  padding: 0.3rem 0.9rem; border-radius: 999px; cursor: pointer; min-height: 2.25rem;
-  font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase;
+  background: none; border: 1px solid var(--rule); color: var(--paper);
+  padding: 0.3rem 0.95rem; border-radius: 999px; cursor: pointer; min-height: 2.5rem;
+  font: inherit; font-size: 1rem; transition: border-color 200ms var(--ease), color 200ms var(--ease);
 }
-.rd button:hover:not(:disabled) { border-color: var(--lamp); color: var(--lamp); }
+.rd button:hover:not(:disabled), .rd button[aria-pressed='true'] { border-color: var(--brass); color: var(--brass); }
 .rd button:disabled { opacity: 0.4; cursor: default; }
 .rd-stage {
   flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center;
@@ -39,7 +31,6 @@
   position: relative; padding: 13px 16px 13px 22px; border-radius: 5px 12px 12px 5px;
   background: linear-gradient(150deg, #4a2f1a 0%, #33200f 55%, #241608 100%);
   box-shadow: 0 40px 80px rgb(0 0 0 / 0.65), 0 6px 18px rgb(0 0 0 / 0.5), inset 0 1px 0 rgb(255 220 160 / 0.14);
-  transform: rotateX(5deg);
 }
 /* The spine ridge on the left. */
 .rd-volume::before {
@@ -56,23 +47,24 @@
 .rd-book { position: relative; box-shadow: 0 2px 14px rgb(0 0 0 / 0.45); }
 .rd-bottom { justify-content: center; padding-bottom: 0.9rem; }
 .rd-bottom > * { position: relative; }
-.rd-status { color: var(--paper-dim); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; }
+.rd-status { color: var(--dim); font: 0.75rem var(--mono); }
 .rd-licence {
   margin: 0; padding: 0 0.75rem 0.6rem; flex: none; text-align: center; position: relative; z-index: 2;
-  font-size: 10px; letter-spacing: 0.05em; line-height: 1.3; color: var(--paper-dim);
+  font: 0.75rem/1.4 var(--mono); color: var(--dim);
 }
 
 .rd-page {
   overflow: hidden; background: linear-gradient(165deg, #F2E8D0, var(--paper)); color: var(--ink);
-  padding: 22px 24px 40px; font: 17px/1.45 var(--serif); text-align: justify; hyphens: auto;
+  padding: 30px 34px 46px; font: 19px/1.5 var(--serif); text-align: justify; hyphens: auto;
+  font-variant-numeric: oldstyle-nums; font-kerning: normal; hanging-punctuation: first;
 }
-.rd-page h2 { margin: 0 0 0.9em; font-size: 1.25em; font-weight: 400; text-align: center; letter-spacing: 0.03em; }
+.rd-page h2 { margin: 0 0 0.9em; font: 400 1.5em/1.15 var(--display); text-align: center; text-wrap: balance; hyphens: none; }
 .rd-page h4 { margin: 0.8em 0 0.4em; font-size: 1em; font-style: italic; font-weight: 400; }
 .rd-page p { margin: 0; text-indent: 1.2em; }
 .rd-page h2 + p, .rd-page h4 + p, .rd-page p.c { text-indent: 0; }
 .rd-page p.q { margin-left: 1.2em; font-size: 0.95em; }
 .rd-page strong { font-weight: 400; font-variant-caps: small-caps; letter-spacing: 0.05em; color: #6b4a1c; } /* speaker names in plays and dialogues */
-.rd-page .rd-num { position: absolute; bottom: 14px; left: 0; right: 0; text-align: center; color: #7a6540; font-size: 0.8rem; }
+.rd-page .rd-num { position: absolute; bottom: 16px; left: 0; right: 0; text-align: center; color: #7a6540; font: 0.75rem var(--mono); }
 .rd-plain > .rd-page { position: absolute; inset: 0; }
 .rd-measure { position: absolute; left: -99999px; top: 0; visibility: hidden; }
 .rd-measure .rd-page { position: relative; }
@@ -92,13 +84,13 @@
   color: rgb(242 232 208 / 0.85); padding: 18px;
 }
 .rd-paste-info {
-  margin: 0; font-size: 10px; letter-spacing: 0.08em; line-height: 1.4; text-align: center;
+  margin: 0; font-size: 12px; letter-spacing: 0.08em; line-height: 1.4; text-align: center;
   padding: 0.45rem 0.7rem; border-radius: 3px; background: rgb(20 12 5 / 0.72);
 }
 .rd-halftitle { display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: 20%; }
-.rd-halftitle h1 { margin: 0.4em 0 0.3em; font-size: 1.7em; font-weight: 400; line-height: 1.2; }
+.rd-halftitle h1 { margin: 0.4em 0 0.3em; font: 400 2em/1.1 var(--display); text-wrap: balance; hyphens: none; }
 .rd-half-by { margin: 0; font-style: italic; color: #5c4a2e; }
-.rd-half-hint { margin-top: 3em !important; font-size: 0.8em; letter-spacing: 0.2em; text-transform: uppercase; color: #8a7452; text-indent: 0 !important; }
+.rd-half-hint { margin-top: 3em !important; font: 0.75rem var(--mono); color: #8a7452; text-indent: 0 !important; }
 
 /* Keepsake toast when the last page turns. */
 .rd-toast {
@@ -114,3 +106,22 @@
 @media (prefers-reduced-motion: reduce) {
   .rd * { transition: none !important; }
 }
+
+/* Parallel text */
+.rd-main { flex: 1; min-height: 0; display: flex; position: relative; z-index: 1; }
+.rd-main .rd-stage { flex: 1; min-width: 0; }
+.rd-orig {
+  display: none; overflow: auto; min-width: 0; margin: 0.4rem 0.75rem 0.4rem 0; padding: 22px 24px;
+  background: linear-gradient(165deg, #F2E8D0, var(--paper)); color: var(--ink); border-radius: 4px;
+  font: 19px/1.55 var(--serif);
+}
+.rd[data-orig='side'] .rd-orig { display: block; flex: 0 0 min(40%, 520px); }
+.rd[data-orig='only'] .rd-orig { display: block; flex: 1; margin: 0.4rem 0.75rem; }
+.rd[data-orig='only'] .rd-stage { display: none; }
+.rd-orig h2 { margin: 0 0 0.9em; font: 400 1.5em/1.15 var(--display); text-align: center; }
+.rd-orig .verse { margin: 0; }
+.rd-orig-none { font-style: italic; color: #5c4a2e; }
+.rd-orig-note { margin: 1.5em 0 0; font-size: 12px; line-height: 1.4; color: #5c4a2e; }
+.rd-orig-note a { color: #6b4a1c; }
+.rd-page mark { background: rgb(214 160 60 / 0.45); color: inherit; border-radius: 2px; }
+.rd button[hidden] { display: none; }

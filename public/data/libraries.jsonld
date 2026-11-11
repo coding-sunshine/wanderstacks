@@ -1,0 +1,816 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/longroom/",
+   "url": "https://worldlibs.pages.dev/libraries/longroom/",
+   "name": "Long Room, Trinity College",
+   "address": "Dublin, Ireland",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.3439,
+    "longitude": -6.2546
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1319605"
+   ],
+   "foundingDate": "1712"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/admont/",
+   "url": "https://worldlibs.pages.dev/libraries/admont/",
+   "name": "Admont Abbey library",
+   "address": "Styria, Austria",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.5753,
+    "longitude": 14.4614
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q304668"
+   ],
+   "foundingDate": "1776"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/strahov/",
+   "url": "https://worldlibs.pages.dev/libraries/strahov/",
+   "name": "Strahov Library, Philosophical Hall",
+   "address": "Prague, Czechia",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.0862,
+    "longitude": 14.3893
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q12056498"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/loc/",
+   "url": "https://worldlibs.pages.dev/libraries/loc/",
+   "name": "Library of Congress Main Reading Room",
+   "address": "Washington DC, USA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.8887,
+    "longitude": -77.0047
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q2615945"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/celsus/",
+   "url": "https://worldlibs.pages.dev/libraries/celsus/",
+   "name": "Library of Celsus",
+   "address": "Ephesus, Türkiye",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.9393,
+    "longitude": 27.3408
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q744406"
+   ],
+   "foundingDate": "0117"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/alexandria/",
+   "url": "https://worldlibs.pages.dev/libraries/alexandria/",
+   "name": "Library of Alexandria",
+   "address": "Alexandria, Egypt",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 31.2001,
+    "longitude": 29.9187
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q435"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/prunksaal/",
+   "url": "https://worldlibs.pages.dev/libraries/prunksaal/",
+   "name": "Prunksaal, Austrian National Library",
+   "address": "Vienna, Austria",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.2066,
+    "longitude": 16.3669
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q12207289"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/bnf/",
+   "url": "https://worldlibs.pages.dev/libraries/bnf/",
+   "name": "Labrouste Reading Room, BnF",
+   "address": "Paris, France",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.8676,
+    "longitude": 2.3389
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q114361821"
+   ],
+   "foundingDate": "1368"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/stgallen/",
+   "url": "https://worldlibs.pages.dev/libraries/stgallen/",
+   "name": "Abbey Library of St Gall",
+   "address": "St. Gallen, Switzerland",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.4233,
+    "longitude": 9.377
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q689896"
+   ],
+   "foundingDate": "1767"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/mafra/",
+   "url": "https://worldlibs.pages.dev/libraries/mafra/",
+   "name": "Mafra Palace library",
+   "address": "Mafra, Portugal",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.9369,
+    "longitude": -9.3256
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q20919348"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/nypl/",
+   "url": "https://worldlibs.pages.dev/libraries/nypl/",
+   "name": "Rose Main Reading Room, NYPL",
+   "address": "New York, USA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.7532,
+    "longitude": -73.9822
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q7013887"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/bpl/",
+   "url": "https://worldlibs.pages.dev/libraries/bpl/",
+   "name": "Bates Hall, Boston Public Library",
+   "address": "Boston, USA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.3493,
+    "longitude": -71.0782
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q118130179"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/peabody/",
+   "url": "https://worldlibs.pages.dev/libraries/peabody/",
+   "name": "George Peabody Library",
+   "address": "Baltimore, USA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.2972,
+    "longitude": -76.6155
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q5543273"
+   ],
+   "foundingDate": "1857"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/bodleian/",
+   "url": "https://worldlibs.pages.dev/libraries/bodleian/",
+   "name": "Duke Humfrey's Library, Bodleian",
+   "address": "Oxford, England",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.754,
+    "longitude": -1.254
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q5312796"
+   ],
+   "foundingDate": "1488"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/escorial/",
+   "url": "https://worldlibs.pages.dev/libraries/escorial/",
+   "name": "El Escorial library",
+   "address": "San Lorenzo de El Escorial, Spain",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.589,
+    "longitude": -4.1475
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q3848863"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/gabinete/",
+   "url": "https://worldlibs.pages.dev/libraries/gabinete/",
+   "name": "Real Gabinete Português de Leitura",
+   "address": "Rio de Janeiro, Brazil",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -22.9056,
+    "longitude": -43.1817
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q5411113"
+   ],
+   "foundingDate": "1887"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/melk/",
+   "url": "https://worldlibs.pages.dev/libraries/melk/",
+   "name": "Melk Abbey library",
+   "address": "Melk, Austria",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.2283,
+    "longitude": 15.3317
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1589808"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/klementinum/",
+   "url": "https://worldlibs.pages.dev/libraries/klementinum/",
+   "name": "Klementinum Baroque Library",
+   "address": "Prague, Czechia",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.0866,
+    "longitude": 14.4162
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q139474114"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/vatican/",
+   "url": "https://worldlibs.pages.dev/libraries/vatican/",
+   "name": "Sistine Hall, Vatican Library",
+   "address": "Vatican City",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.9045,
+    "longitude": 12.454
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q213678"
+   ],
+   "foundingDate": "1588"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/wiblingen/",
+   "url": "https://worldlibs.pages.dev/libraries/wiblingen/",
+   "name": "Wiblingen Abbey library",
+   "address": "Ulm, Germany",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.36,
+    "longitude": 9.9876
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q28790041"
+   ],
+   "foundingDate": "1744"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/weimar/",
+   "url": "https://worldlibs.pages.dev/libraries/weimar/",
+   "name": "Rococo Hall, Anna Amalia Library",
+   "address": "Weimar, Germany",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.9789,
+    "longitude": 11.3318
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q50711"
+   ],
+   "foundingDate": "1766"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/ottawa/",
+   "url": "https://worldlibs.pages.dev/libraries/ottawa/",
+   "name": "Library of Parliament",
+   "address": "Ottawa, Canada",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4249,
+    "longitude": -75.699
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1125633"
+   ],
+   "foundingDate": "1859"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/stockholm/",
+   "url": "https://worldlibs.pages.dev/libraries/stockholm/",
+   "name": "Stockholm Public Library",
+   "address": "Stockholm, Sweden",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 59.3434,
+    "longitude": 18.0547
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1246991"
+   ]
+  },
+  {
+   "@type": "LandmarksOrHistoricalBuildings",
+   "@id": "https://worldlibs.pages.dev/libraries/nineveh/",
+   "url": "https://worldlibs.pages.dev/libraries/nineveh/",
+   "name": "Library of Ashurbanipal",
+   "address": "Nineveh, near Mosul, Iraq",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.3592,
+    "longitude": 43.1525
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q856544"
+   ]
+  },
+  {
+   "@type": "LandmarksOrHistoricalBuildings",
+   "@id": "https://worldlibs.pages.dev/libraries/pergamon/",
+   "url": "https://worldlibs.pages.dev/libraries/pergamon/",
+   "name": "Library of Pergamon",
+   "address": "Bergama, Türkiye",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.1325,
+    "longitude": 27.184
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q856590"
+   ]
+  },
+  {
+   "@type": "LandmarksOrHistoricalBuildings",
+   "@id": "https://worldlibs.pages.dev/libraries/herculaneum/",
+   "url": "https://worldlibs.pages.dev/libraries/herculaneum/",
+   "name": "Villa of the Papyri",
+   "address": "Herculaneum, Italy",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.807,
+    "longitude": 14.346
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1347586"
+   ]
+  },
+  {
+   "@type": "LandmarksOrHistoricalBuildings",
+   "@id": "https://worldlibs.pages.dev/libraries/nalanda/",
+   "url": "https://worldlibs.pages.dev/libraries/nalanda/",
+   "name": "Nalanda",
+   "address": "Bihar, India",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.1357,
+    "longitude": 85.443
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q216243"
+   ]
+  },
+  {
+   "@type": "LandmarksOrHistoricalBuildings",
+   "@id": "https://worldlibs.pages.dev/libraries/dunhuang/",
+   "url": "https://worldlibs.pages.dev/libraries/dunhuang/",
+   "name": "Library Cave (Cave 17)",
+   "address": "Dunhuang, China",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.042,
+    "longitude": 94.809
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q28097247"
+   ]
+  },
+  {
+   "@type": "LandmarksOrHistoricalBuildings",
+   "@id": "https://worldlibs.pages.dev/libraries/buda/",
+   "url": "https://worldlibs.pages.dev/libraries/buda/",
+   "name": "Bibliotheca Corviniana",
+   "address": "Buda, Hungary",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.4961,
+    "longitude": 19.0399
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q688736"
+   ]
+  },
+  {
+   "@type": "LandmarksOrHistoricalBuildings",
+   "@id": "https://worldlibs.pages.dev/libraries/timbuktu/",
+   "url": "https://worldlibs.pages.dev/libraries/timbuktu/",
+   "name": "Timbuktu manuscripts",
+   "address": "Timbuktu, Mali",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 16.7666,
+    "longitude": -3.0026
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q2209578"
+   ]
+  },
+  {
+   "@type": "LandmarksOrHistoricalBuildings",
+   "@id": "https://worldlibs.pages.dev/libraries/vikramashila/",
+   "url": "https://worldlibs.pages.dev/libraries/vikramashila/",
+   "name": "Vikramaśīla University",
+   "address": "Bhagalpur district, India",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.3244,
+    "longitude": 87.2867
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1634624"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/thanjavur/",
+   "url": "https://worldlibs.pages.dev/libraries/thanjavur/",
+   "name": "Saraswathi Mahal Library",
+   "address": "Thanjavur, India",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 10.7914,
+    "longitude": 79.1361
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q3135924"
+   ],
+   "foundingDate": "1535"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/khudabakhsh/",
+   "url": "https://worldlibs.pages.dev/libraries/khudabakhsh/",
+   "name": "Khuda Bakhsh Oriental Library",
+   "address": "Patna, India",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 25.61,
+    "longitude": 85.1414
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q6402791"
+   ],
+   "foundingDate": "1969"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/nli/",
+   "url": "https://worldlibs.pages.dev/libraries/nli/",
+   "name": "National Library of India",
+   "address": "Kolkata, India",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 22.5332,
+    "longitude": 88.3333
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q619913"
+   ],
+   "foundingDate": "1891"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/asiatic/",
+   "url": "https://worldlibs.pages.dev/libraries/asiatic/",
+   "name": "Asiatic Society of Mumbai",
+   "address": "Mumbai, India",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 18.9322,
+    "longitude": 72.8362
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q4058307"
+   ],
+   "foundingDate": "1804"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/connemara/",
+   "url": "https://worldlibs.pages.dev/libraries/connemara/",
+   "name": "Connemara Public Library",
+   "address": "Egmore, Chennai, India",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 13.0706,
+    "longitude": 80.2567
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q5161767"
+   ],
+   "foundingDate": "1890"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/sassoon/",
+   "url": "https://worldlibs.pages.dev/libraries/sassoon/",
+   "name": "David Sassoon Library",
+   "address": "Mumbai, India",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 18.928,
+    "longitude": 72.8311
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q4120540"
+   ],
+   "foundingDate": "1847"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/alexandrina/",
+   "url": "https://worldlibs.pages.dev/libraries/alexandrina/",
+   "name": "Bibliotheca Alexandrina",
+   "address": "Alexandria, Egypt",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 31.2089,
+    "longitude": 29.9092
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q501851"
+   ],
+   "foundingDate": "1974"
+  },
+  {
+   "@type": "LandmarksOrHistoricalBuildings",
+   "@id": "https://worldlibs.pages.dev/libraries/baghdad/",
+   "url": "https://worldlibs.pages.dev/libraries/baghdad/",
+   "name": "House of Wisdom",
+   "address": "Round city of Baghdad, Abbasid Caliphate",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.3423,
+    "longitude": 44.3836
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q33018"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/palafoxiana/",
+   "url": "https://worldlibs.pages.dev/libraries/palafoxiana/",
+   "name": "Biblioteca Palafoxiana",
+   "address": "Heroica Puebla de Zaragoza, Mexico",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 19.0425,
+    "longitude": -98.1989
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q4903485"
+   ],
+   "foundingDate": "1646"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/vasconcelos/",
+   "url": "https://worldlibs.pages.dev/libraries/vasconcelos/",
+   "name": "Vasconcelos Library",
+   "address": "Mexico City, Mexico",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 19.4474,
+    "longitude": -99.1508
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q6294156"
+   ],
+   "foundingDate": "2006"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/slv/",
+   "url": "https://worldlibs.pages.dev/libraries/slv/",
+   "name": "State Library Victoria",
+   "address": "City of Melbourne, Australia",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -37.8098,
+    "longitude": 144.965
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1200052"
+   ],
+   "foundingDate": "1854"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/tianyige/",
+   "url": "https://worldlibs.pages.dev/libraries/tianyige/",
+   "name": "Tian Yi Ge",
+   "address": "Ningbo, People's Republic of China",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 29.8736,
+    "longitude": 121.5358
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q2066117"
+   ],
+   "foundingDate": "1994"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/binhai/",
+   "url": "https://worldlibs.pages.dev/libraries/binhai/",
+   "name": "Tianjin Binhai Library",
+   "address": "Tianjin, People's Republic of China",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.016,
+    "longitude": 117.6812
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q47088811"
+   ],
+   "foundingDate": "2017"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/haeinsa/",
+   "url": "https://worldlibs.pages.dev/libraries/haeinsa/",
+   "name": "Haeinsa",
+   "address": "Gaya-myeon, South Korea",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 35.8016,
+    "longitude": 128.0987
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q490798"
+   ],
+   "foundingDate": "0802"
+  },
+  {
+   "@type": "LandmarksOrHistoricalBuildings",
+   "@id": "https://worldlibs.pages.dev/libraries/ashikaga/",
+   "url": "https://worldlibs.pages.dev/libraries/ashikaga/",
+   "name": "Ashikaga Gakkō",
+   "address": "Ashikaga, Japan",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.3381,
+    "longitude": 139.4517
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1053852"
+   ]
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/mcmillan/",
+   "url": "https://worldlibs.pages.dev/libraries/mcmillan/",
+   "name": "McMillan Memorial Library, Nairobi",
+   "address": "Nairobi, Kenya",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -1.2835,
+    "longitude": 36.8212
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q60768249"
+   ],
+   "foundingDate": "1931"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/malatestiana/",
+   "url": "https://worldlibs.pages.dev/libraries/malatestiana/",
+   "name": "Biblioteca Malatestiana",
+   "address": "Cesena, Italy",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 44.139,
+    "longitude": 12.243
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1113843"
+   ],
+   "foundingDate": "1447"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/joanina/",
+   "url": "https://worldlibs.pages.dev/libraries/joanina/",
+   "name": "Biblioteca Joanina",
+   "address": "Coimbra, Portugal",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.207,
+    "longitude": -8.426
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1773229"
+   ],
+   "foundingDate": "1717"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/hereford/",
+   "url": "https://worldlibs.pages.dev/libraries/hereford/",
+   "name": "Hereford Cathedral Chained Library",
+   "address": "Hereford, England",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.054,
+    "longitude": -2.716
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q15223702"
+   ],
+   "foundingDate": "1611"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/morgan/",
+   "url": "https://worldlibs.pages.dev/libraries/morgan/",
+   "name": "The Morgan Library, McKim Building",
+   "address": "New York, USA",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.749,
+    "longitude": -73.981
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q1478423"
+   ],
+   "foundingDate": "1924"
+  },
+  {
+   "@type": "Library",
+   "@id": "https://worldlibs.pages.dev/libraries/stegen/",
+   "url": "https://worldlibs.pages.dev/libraries/stegen/",
+   "name": "Sainte-Geneviève Library",
+   "address": "Paris, France",
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.847,
+    "longitude": 2.346
+   },
+   "sameAs": [
+    "https://www.wikidata.org/entity/Q517249"
+   ],
+   "foundingDate": "0831"
+  }
+ ]
+}

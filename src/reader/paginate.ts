@@ -30,8 +30,9 @@ export function cut(html: string, n: number): [string, string] {
 export const wordCount = (html: string) => (html.match(/\S+\s*/g) ?? []).length
 
 // Fills fixed-size pages in the DOM: `page` is a laid-out box with the reader's page styles, `text` its content node.
-export function paginate(chapters: { title: string; html: string }[], page: HTMLElement, text: HTMLElement): string[] {
+export function paginate(chapters: { title: string; html: string }[], page: HTMLElement, text: HTMLElement): { pages: string[]; starts: number[] } {
   const pages: string[] = []
+  const starts: number[] = [] // page index where each chapter opens
   const over = () => page.scrollHeight > page.clientHeight
   const commit = () => {
     if (text.childElementCount) pages.push(text.innerHTML)
@@ -46,6 +47,7 @@ export function paginate(chapters: { title: string; html: string }[], page: HTML
 
   for (const ch of chapters) {
     commit()
+    starts.push(pages.length)
     // A gilt headpiece opens every chapter, like a well-set printed book.
     const orn = document.createElement('div')
     orn.className = 'rd-orn'
@@ -80,5 +82,5 @@ export function paginate(chapters: { title: string; html: string }[], page: HTML
     }
   }
   commit()
-  return pages
+  return { pages, starts }
 }

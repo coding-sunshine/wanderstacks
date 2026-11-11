@@ -40,8 +40,8 @@ export const mount: Mount = (app) => {
   const lede = document.createElement('p')
   lede.className = 'shelf-lede'
   lede.textContent =
-    'A pastiche after Jorge Luis Borges (1941) — an endless library ' +
-    'generated on your device, seeded and deterministic. ' +
+    'A pastiche after Jorge Luis Borges (1941). An endless library ' +
+    'generated on your device from a fixed seed. ' +
     'An invention, labelled as one. Search for any text: ' +
     'somewhere in the library it already waits.'
   const form = document.createElement('form')

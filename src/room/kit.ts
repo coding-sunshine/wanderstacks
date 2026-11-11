@@ -52,6 +52,7 @@ export interface RoomApi {
   scene: THREE.Scene
   camera: THREE.PerspectiveCamera
   canvas: HTMLCanvasElement
+  renderer?: THREE.WebGLRenderer
   core: THREE.Object3D
   parts: Built['parts']
   acoustics: Built['acoustics']

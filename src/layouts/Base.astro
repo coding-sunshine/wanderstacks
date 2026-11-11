@@ -1,9 +1,11 @@
 ---
 import '../site/site.css'
-interface Props { title: string; desc?: string; index?: boolean }
-const { title, desc = "Walk the world's great libraries, standing and lost, and read their books.", index = false } = Astro.props
+interface Props { title: string; desc?: string; index?: boolean; image?: string }
+const { title, desc = "Walk the world's great libraries, standing and lost, and read their books.", index = false, image } = Astro.props
 const at = Astro.url.pathname
-const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/atlas/', 'Globe'], ['/search/', 'Search']]
+const url = new URL(at, Astro.site).href
+const full = title === 'WorldLibs' ? title : `${title} | WorldLibs`
+const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/atlas/', 'Globe'], ['/shelf/', 'Shelf'], ['/search/', 'Search']]
 ---
 <!doctype html>
 <html lang="en">
@@ -11,8 +13,16 @@ const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/atlas/', 'Gl
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
-    <title>{title === 'WorldLibs' ? title : `${title} | WorldLibs`}</title>
+    <title>{full}</title>
     <meta name="description" content={desc} />
+    <link rel="canonical" href={url} />
+    <meta property="og:site_name" content="WorldLibs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={full} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={url} />
+    {image && <meta property="og:image" content={new URL(image, Astro.site).href} />}
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <slot name="head" />
   </head>
@@ -26,6 +36,8 @@ const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/atlas/', 'Gl
       <p>Every photograph, panorama and scan carries its author and licence beside it.</p>
       <p><a href="/libraries/">All libraries</a></p>
       <p><a href="/books/">All books</a></p>
+      <p><a href="/calendar/">Calendar</a></p>
+      <p><a href="/data/">Open data</a></p>
     </footer>
   </body>
 </html>

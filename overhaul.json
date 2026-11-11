@@ -2,7 +2,10 @@
   "note": "WorldLibs overhaul task state. Status is passing or failing only. Unproven is failing. Each item carries the command that decides it.",
   "contracts": {
     "spheres": "data/spheres.json: { [libId]: { nodes: [{ id, f, w, h, kind: 'interior'|'exterior', real: boolean, basis?: string, cap, by, lic, src, yaw0?: number, links?: [{ to, yaw }] }] } }. Files: public<f>.webp (equirect, max 8192 wide) and public<f>-lo.webp (2048 wide). real:false means reconstruction and must carry basis.",
-    "catalogue": "data/catalogue.ndjson: one JSON per line { id, title, author?, date?, lang?, lib: libId|null, holder, shelfmark?, kind, rights: 'open'|'nc'|'link-only', read?: { type: 'iiif'|'text'|'link', url }, thumb?, src, wd? }"
+    "catalogue": "data/catalogue.ndjson: one JSON per line { id, title, author?, date?, lang?, lib: libId|null, holder, shelfmark?, kind, rights: 'open'|'nc'|'link-only', read?: { type: 'iiif'|'text'|'link', url }, thumb?, src, wd? }",
+    "hotspots": "data/hotspots.json: { [libId]: { route?: nodeId[], nodes: { [nodeId]: [{ id, yaw, pitch (degrees), kind: 'object'|'shelf'|'text', title, body, tier: 'primary'|'secondary'|'wikipedia'|'unproven', source, text?: { original, lang, translation } }] } } }",
+    "dispersal": "data/dispersal.json: [{ lib, holder, place, lat, lon, what, count?, tier, source, manifest? }]",
+    "checks": "Phase 5 items: scripts/checks/<id>.ts exits 0 only when the feature is proven against built output (dist/) or data. Run after bun run build."
   },
   "items": [
     {
@@ -90,6 +93,13 @@
       "status": "passing"
     },
     {
+      "id": "p5-recon-text",
+      "phase": 5,
+      "what": "Reconstruction captions, basis texts and stops describe the installed image and state where it departs from the record",
+      "cmd": "fresh-context verifier subagent compares public/sphere/<lib>/r01.webp with data/recon.json and data/hotspots.json for all 10 lost libraries (run 2026-11-11: 6 pass, 5 texts patched, recheck 5 of 5 pass)",
+      "status": "passing"
+    },
+    {
       "id": "p6-book-content",
       "phase": 6,
       "what": "Every book page carries researched content (summary, context, people, places, key passages or pages) with sources, plus interactive pieces",
@@ -115,6 +125,139 @@
       "phase": 7,
       "what": "Every photo carries an allow-listed licence and a real author",
       "cmd": "jq -e \"[.[]|(.out+.in)[]|select((.lic|test(\\\"^(CC0|CC BY(-SA)? [0-9]|Public domain|PD)\\\";\\\"i\\\")|not) or (.by|test(\\\"contributor\\\";\\\"i\\\")))]|length==0\" data/photos.json",
+      "status": "passing"
+    },
+    {
+      "id": "f01-hotspots",
+      "phase": 5,
+      "what": "Click any object or shelf in a walk-through for sourced, tiered detail",
+      "cmd": "bun scripts/checks/f01-hotspots.ts",
+      "status": "passing"
+    },
+    {
+      "id": "f02-text-layer",
+      "phase": 5,
+      "what": "Legible text layer for spines, plaques, inscriptions: transcription, translation, source tier",
+      "cmd": "bun scripts/checks/f02-text-layer.ts",
+      "status": "passing"
+    },
+    {
+      "id": "f03-guided-route",
+      "phase": 5,
+      "what": "Guided route, you-are-here map with visited marks, eye-level hotspots, onboarding",
+      "cmd": "bun scripts/checks/f03-guided-route.ts",
+      "status": "passing"
+    },
+    {
+      "id": "f04-dunhuang-dispersal",
+      "phase": 5,
+      "what": "Dunhuang 'where the books are now' map from IDP IIIF manifests",
+      "cmd": "bun scripts/checks/f04-dunhuang-dispersal.ts",
+      "status": "passing"
+    },
+    {
+      "id": "f05-scroll-viewer",
+      "phase": 5,
+      "what": "Horizontal scroll viewer, reading direction from manifest, Dunhuang and Herculaneum",
+      "cmd": "bun scripts/checks/f05-scroll-viewer.ts",
+      "status": "passing"
+    },
+    {
+      "id": "f06-corvina-dispersal",
+      "phase": 5,
+      "what": "Corvina (Buda) dispersal map",
+      "cmd": "bun scripts/checks/f06-corvina-dispersal.ts",
+      "status": "passing"
+    },
+    {
+      "id": "f07-measured-ir",
+      "phase": 5,
+      "what": "Room acoustics from measured impulse responses where one exists, labelled estimate otherwise",
+      "cmd": "bun scripts/checks/f07-measured-ir.ts",
+      "status": "failing"
+    },
+    {
+      "id": "f08-splat-rooms",
+      "phase": 5,
+      "what": "Gaussian-splat room fused with three.js shelves (Spark)",
+      "cmd": "bun scripts/checks/f08-splat-rooms.ts",
+      "status": "failing"
+    },
+    {
+      "id": "f09-narration",
+      "phase": 5,
+      "what": "Narration: browser speech default, opt-in in-browser neural voice",
+      "cmd": "bun scripts/checks/f09-narration.ts",
+      "status": "passing"
+    },
+    {
+      "id": "f10-page-structure",
+      "phase": 5,
+      "what": "Library pages restructured: heading hierarchy, self-contained tiered fact chunks, JSON-LD, light phone path",
+      "cmd": "bun scripts/checks/f10-page-structure.ts",
+      "status": "passing"
+    },
+    {
+      "id": "b1-dispersal-arcs",
+      "phase": 5,
+      "what": "Globe arcs from every lost library to current holders, each arc tiered",
+      "cmd": "bun scripts/checks/b1-dispersal-arcs.ts",
+      "status": "passing"
+    },
+    {
+      "id": "b2-concordance",
+      "phase": 5,
+      "what": "Cross-book concordance: search inside every on-site text, jump to the reader page",
+      "cmd": "bun scripts/checks/b2-concordance.ts",
+      "status": "passing"
+    },
+    {
+      "id": "b3-parallel-text",
+      "phase": 5,
+      "what": "Parallel original and translation reading",
+      "cmd": "bun scripts/checks/b3-parallel-text.ts",
+      "status": "passing"
+    },
+    {
+      "id": "b4-narration-reverb",
+      "phase": 5,
+      "what": "Narration played through the room reverb",
+      "cmd": "bun scripts/checks/b4-narration-reverb.ts",
+      "status": "passing"
+    },
+    {
+      "id": "b5-offline-shelf",
+      "phase": 5,
+      "what": "Offline shelf: save a book or a room",
+      "cmd": "bun scripts/checks/b5-offline-shelf.ts",
+      "status": "passing"
+    },
+    {
+      "id": "b6-cite-fact",
+      "phase": 5,
+      "what": "Cite-this-fact export with source tier and check date",
+      "cmd": "bun scripts/checks/b6-cite-fact.ts",
+      "status": "passing"
+    },
+    {
+      "id": "b7-open-data",
+      "phase": 5,
+      "what": "Open data release: libs, facts, events with JSON-LD and Wikidata IDs",
+      "cmd": "bun scripts/checks/b7-open-data.ts",
+      "status": "passing"
+    },
+    {
+      "id": "b8-calendar",
+      "phase": 5,
+      "what": "Closure and reopening calendar from event data",
+      "cmd": "bun scripts/checks/b8-calendar.ts",
+      "status": "passing"
+    },
+    {
+      "id": "b9-dispute",
+      "phase": 5,
+      "what": "Dispute-this-fact link pre-filling a GitHub issue",
+      "cmd": "bun scripts/checks/b9-dispute.ts",
       "status": "passing"
     }
   ]

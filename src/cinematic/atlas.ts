@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { smooth, lerp, fitFov, MOBILE, rng, TAIL } from './util';
+import { smooth, lerp, fitFov, MOBILE, rng, TAIL, RM } from './util';
 
 // one record of public/lib/pins.json, as the home reads it
 export type Ev = 'known' | 'probable' | 'speculative';
@@ -10,9 +10,11 @@ export interface Lib {
   id: string; n: string; p: string; yl: string; y: number; lat: number; lon: number;
   lost?: number | boolean; found?: number; k: string; ev: Ev; evNote?: string;
   st?: string; stFrom?: number; dim?: string; vol?: string; book?: string; read?: string;
-  wd?: string; href: string | null; hours: string | null; reads?: Read[];
+  wd?: string; href: string | null; hours: string | null; reads?: Read[]; dp?: Held[];
   ph?: { out: Photo[]; in: Photo[] };
 }
+// one holder of a lost library's surviving items, from data/dispersal.json via pins.json
+export interface Held { lat: number; lon: number; tier: string }
 type Mark = 'k' | 'p' | 's';
 
 export const SUN = new THREE.Vector3(1, .35, -.6).normalize();
@@ -69,7 +71,7 @@ export type Atlas = ReturnType<typeof buildAtlas>;
 
 export function buildAtlas(tex: THREE.Texture, libs: Lib[]) {
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color('#030303');
+  scene.background = new THREE.Color('#0f1613');
   const camera = new THREE.PerspectiveCamera(35, 1, .01, 200);
   camera.position.set(0, 0, 5.2);
   scene.add(camera);
@@ -155,7 +157,25 @@ export function buildAtlas(tex: THREE.Texture, libs: Lib[]) {
     ring.quaternion.setFromUnitVectors(new THREE.Vector3(0, 0, 1), v);
     focused = true;
   }
-  function clear() { focused = false; tX = nX; }
+  // arcs from a lost library to the institutions that hold its books; they draw in over a second and a half
+  const TIER: Record<string, string> = { primary: '#58a583', secondary: '#c9a961', wikipedia: '#a8a892', unproven: '#d0664f' };
+  const arcs = new THREE.Group(); inner.add(arcs);
+  let arcKey = '', arcT = 0;
+  const ARC_N = 64;
+  function setArcs(id: string, lat: number, lon: number, list: Held[]) {
+    if (id === arcKey) return;
+    arcKey = id; arcT = RM.matches ? 1 : 0;
+    for (const c of arcs.children.splice(0)) { (c as THREE.Line).geometry.dispose(); ((c as THREE.Line).material as THREE.Material).dispose(); }
+    const a = ll(lat, lon);
+    for (const h of list) {
+      const b = ll(h.lat, h.lon), lift = .35 * a.angleTo(b) / Math.PI, pts: THREE.Vector3[] = [];
+      for (let i = 0; i <= ARC_N; i++) { const t = i / ARC_N; pts.push(a.clone().lerp(b, t).normalize().multiplyScalar(1.004 + lift * Math.sin(Math.PI * t))); }
+      const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineBasicMaterial({ color: TIER[h.tier] ?? TIER.unproven, transparent: true, opacity: h.tier === 'primary' ? .95 : .7, depthWrite: false }));
+      line.geometry.setDrawRange(0, RM.matches ? ARC_N + 1 : 0);
+      arcs.add(line);
+    }
+  }
+  function clear() { focused = false; tX = nX; arcKey = ''; for (const c of arcs.children.splice(0)) { (c as THREE.Line).geometry.dispose(); ((c as THREE.Line).material as THREE.Material).dispose(); } }
 
   // nearest founded, front-facing pin to a click, in normalised device coords; -1 when none is close
   const tmp = new THREE.Vector3();
@@ -201,6 +221,10 @@ export function buildAtlas(tex: THREE.Texture, libs: Lib[]) {
     const dt = time - lt; lt = time;
     const k = dt > 0 ? 1 - Math.exp(-dt * 3.2) : 1, kp = dt > 0 ? 1 - Math.exp(-dt * 2.4) : 1;
     if (!focused) tY -= dt * .05;
+    if (arcT < 1 && arcs.children.length) {
+      arcT = Math.min(1, arcT + Math.min(dt, .1) / 1.5);
+      for (const c of arcs.children) (c as THREE.Line).geometry.setDrawRange(0, Math.ceil(smooth(0, 1, arcT) * (ARC_N + 1)));
+    }
     fY += wrap(tY - fY) * k; fX += (tX - fX) * k;
     let moved = false;
     for (let i = 0; i < n; i++) {
@@ -222,5 +246,5 @@ export function buildAtlas(tex: THREE.Texture, libs: Lib[]) {
     stars.rotation.y = time * .004;
   }
 
-  return { scene, camera, resize, update, setYear, focus, clear, pick };
+  return { scene, camera, resize, update, setYear, focus, clear, pick, setArcs };
 }

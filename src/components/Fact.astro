@@ -1,0 +1,28 @@
+---
+// One self-contained claim: names its library, shows tier and source, can be cited or disputed.
+import { cite, disputeUrl, host, libUrl } from '../site/record'
+interface Props { id: string; lib: string; name: string; lead: string; text: string; source: string; tier: string; kind?: string; y?: string; anchor?: string; link?: boolean }
+const { id, lib, name, lead, text, source, tier, kind, y, anchor = id, link } = Astro.props
+const c = { name, lead, text, source, tier, url: libUrl(lib, anchor) }
+---
+<li class="fact" id={id} data-k={kind}>
+  <p class="claim">{y && <span class="y">{y}</span>}<span><span class="lead">{link ? <a href={`/libraries/${lib}/#${anchor}`}>{name}</a> : name}, {lead}:</span> {text}</span></p>
+  <div class="meta mark">
+    <span class="stamp" data-s={tier}>{tier}</span>
+    {source ? <a href={source}>{host(source)}</a> : <span>no source</span>}
+    <span class="ftools" data-pagefind-ignore>
+      <details class="fcite"><summary>Cite</summary><pre>{cite(c)}</pre><button type="button" hidden data-copy>Copy</button></details>
+      <a href={disputeUrl(c)} rel="noopener" target="_blank">Dispute</a>
+      <a href={`#${id}`} aria-label="Link to this fact">#</a>
+    </span>
+  </div>
+</li>
+<script>
+  // Clipboard is optional: without it the citation stays a selectable block inside the open details.
+  if (navigator.clipboard) document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((b) => {
+    b.hidden = false
+    b.addEventListener('click', () => navigator.clipboard.writeText(b.previousElementSibling!.textContent!).then(() => {
+      b.textContent = 'Copied'; setTimeout(() => (b.textContent = 'Copy'), 1500)
+    }, () => {}))
+  })
+</script>

@@ -1,0 +1,60 @@
+---
+import Base from '../layouts/Base.astro'
+import Fact from '../components/Fact.astro'
+import { libById, lost } from '../site/data'
+import { events, groups, groupOf, yr, generated } from '../site/record'
+const now = new Date().getFullYear()
+const rows = events.filter((e) => groupOf(e.kind) && libById.has(e.lib)).sort((a, b) => (a.year ?? 0) - (b.year ?? 0))
+// Closed now: a working library whose latest closing has no later reopening in the data.
+const state = (id: string) => events.filter((e) => e.lib === id && e.year != null && e.year <= now && ['closed', 'reopened', 'opened', 'rebuilt'].includes(e.kind)).sort((a, b) => a.year! - b.year!).at(-1)
+const closedNow = rows.filter((e) => e.kind === 'closed' && !lost(libById.get(e.lib)!) && state(e.lib) === e)
+const soon = rows.filter((e) => e.kind === 'closed' && e.year! > now)
+const nameOf = (id: string) => libById.get(id)!.n
+const label = (g: string) => g[0].toUpperCase() + g.slice(1)
+const lead = (e: (typeof rows)[number]) => `${e.kind}${e.year == null ? '' : ', ' + yr(e.year)}`
+---
+<Base title="Calendar" desc={`${rows.length} dated closures, reopenings, damage, destruction and rebuilding across ${libById.size} libraries, each sourced.`} index>
+  <article class="wrap sec">
+    <h1>Calendar</h1>
+    <p class="lede">What has closed, reopened, burned, fallen and been rebuilt, on one timeline. Each entry links to its library page and carries its source. Data as of {generated.slice(0, 10)}.</p>
+    {(closedNow.length > 0 || soon.length > 0) && (
+      <section aria-labelledby="now">
+        <h2 id="now">Closed now and closing soon</h2>
+        <ul class="facts now">
+          {closedNow.map((e) => <Fact id={`now-${e.id}`} lib={e.lib} name={nameOf(e.lib)} lead={`closed now, since ${yr(e.year!)}`} text={e.label} source={e.source} tier={e.tier} kind="closed" anchor={e.id} link />)}
+          {soon.map((e) => <Fact id={`soon-${e.id}`} lib={e.lib} name={nameOf(e.lib)} lead={`closing in ${yr(e.year!)}`} text={e.label} source={e.source} tier={e.tier} kind="closed" anchor={e.id} link />)}
+        </ul>
+      </section>
+    )}
+    <section aria-labelledby="all">
+      <h2 id="all">Timeline</h2>
+      <p class="picks" role="group" aria-label="Filter by kind" hidden id="filters">
+        <button class="pick" type="button" aria-pressed="true" data-g="">All ({rows.length})</button>
+        {Object.keys(groups).map((g) => <button class="pick" type="button" aria-pressed="false" data-g={g}>{label(g)} ({rows.filter((e) => groupOf(e.kind) === g).length})</button>)}
+      </p>
+      <ol class="time facts" id="tl" data-map={JSON.stringify(Object.fromEntries(rows.map((e) => [e.kind, groupOf(e.kind)])))}>
+        {rows.map((e) => <Fact id={e.id} lib={e.lib} name={nameOf(e.lib)} lead={lead(e)} text={e.label} source={e.source} tier={e.tier} kind={e.kind} y={e.year == null ? '' : yr(e.year)} link />)}
+      </ol>
+    </section>
+  </article>
+</Base>
+<script>
+  // Without script every entry stays listed; the buttons only appear when they can work.
+  const bar = document.querySelector<HTMLElement>('#filters')!
+  const items = [...document.querySelectorAll<HTMLElement>('#tl > li')]
+  const group: Record<string, string> = JSON.parse(document.querySelector('#tl')!.getAttribute('data-map')!)
+  bar.hidden = false
+  bar.addEventListener('click', (e) => {
+    const b = (e.target as Element).closest<HTMLButtonElement>('button')
+    if (!b) return
+    bar.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
+    items.forEach((li) => (li.hidden = !!b.dataset.g && group[li.dataset.k!] !== b.dataset.g))
+  })
+</script>
+<style>
+  .lede { font-size: 1.3rem; margin: 1rem 0 2.5rem; }
+  h2 { margin: 2.5rem 0 1rem; }
+  .now { border-top: 1px solid var(--stamp); }
+  .picks { margin-bottom: 1.5rem; }
+  .picks[hidden] { display: none; }
+</style>

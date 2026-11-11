@@ -5,6 +5,11 @@ import Base from '../layouts/Base.astro'
   <section class="wrap sec">
     <h1>Search</h1>
     <input class="field" id="q" type="search" placeholder="A library, a book, an author, a city" aria-label="Search" autofocus />
+    <div class="picks" id="where" role="group" aria-label="Where to search">
+      <button class="pick" data-w="site" aria-pressed="true">Libraries and books</button>
+      <button class="pick" data-w="books" aria-pressed="false">Inside the books</button>
+      <button class="pick" data-w="conc" aria-pressed="false">Concordance</button>
+    </div>
     <div class="picks" id="kinds" hidden>
       <button class="pick" data-k="" aria-pressed="true">Everything</button>
       <button class="pick" data-k="Library" aria-pressed="false">Libraries</button>
@@ -23,17 +28,64 @@ import Base from '../layouts/Base.astro'
   .hits img { width: 7.5rem; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 2px; }
   .hits b { font: 400 1.5rem/1.15 var(--display); display: block; }
   .hits p { margin: 0.3rem 0 0; color: var(--dim); font-size: 1.05rem; }
+  .hits li.grp { padding: 1rem 0; }
+  .hits .grp > b { font: 400 1.5rem/1.15 var(--display); }
+  .hits .grp > b span { font: 400 1rem var(--body, inherit); color: var(--dim); margin-left: 0.6rem; }
+  .hits .grp a { display: block; padding: 0.5rem 0 0.5rem 1rem; margin-top: 0.4rem; border-left: 2px solid var(--rule); }
+  .hits .grp a:hover { border-color: var(--brass); }
+  .hits .grp a small { display: block; color: var(--dim); }
+  .hits .grp p { margin: 0.2rem 0 0; font-size: 1rem; }
+  .conc { width: 100%; max-width: 44rem; border-collapse: collapse; margin-top: 1rem; }
+  .conc td { padding: 0.55rem 0; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+  .conc td:last-child { text-align: right; width: 5rem; font-variant-numeric: tabular-nums; }
+  .conc i { display: block; height: 4px; background: var(--brass); margin-top: 0.35rem; min-width: 2px; }
+  .conc a { text-decoration: none; }
+  .conc .dim { display: block; font-size: 0.95rem; }
   .hits mark { background: none; color: var(--brass); }
   @media (max-width: 560px) { .hits a { grid-template-columns: 1fr; } .hits img, .hits a > span:empty { display: none; } }
 </style>
 <script is:inline type="module">
-  const q = document.getElementById('q'), hits = document.getElementById('hits'), say = document.getElementById('say'), kinds = document.getElementById('kinds')
-  let pf, kind = '', turn = 0
+  const q = document.getElementById('q'), hits = document.getElementById('hits'), say = document.getElementById('say'), kinds = document.getElementById('kinds'), where = document.getElementById('where')
+  const url = new URLSearchParams(location.search)
+  let pf, pb, names, kind = '', turn = 0, mode = ['books', 'conc'].includes(url.get('in')) ? url.get('in') : 'site', only = url.get('book') || ''
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
+  const link = (u, term) => `${u}${u.includes('?') ? '&' : '?'}q=${encodeURIComponent(term)}`
+  const sync = () => {
+    where.querySelectorAll('[data-w]').forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.w === mode)))
+    q.placeholder = mode === 'site' ? 'A library, a book, an author, a city' : 'A word or a phrase from any book'
+  }
+  async function loadBooks() {
+    if (!pb) { pb = await import('/pagefind-books/pagefind.js'); await pb.filters() } // loads the facet index, so results carry per-book counts
+    names ??= await (await fetch('/pagefind-books/books.json')).json()
+  }
+  async function inBooks(term, mine) {
+    try { await loadBooks() } catch { say.textContent = 'The book index is built with the site. Run the build, then reload.'; return }
+    const res = await pb.debouncedSearch(term, only ? { filters: { book: only } } : {}, 120)
+    if (!res || mine !== turn) return
+    if (mode === 'conc') {
+      // The facet counts sections (about 60,000 characters of text each) that contain the word, per book.
+      const f = Object.entries(res.filters.book ?? {}).filter(([, n]) => n).sort((a, b) => b[1] - a[1])
+      if (mine !== turn) return
+      say.textContent = f.length ? `"${term}" appears in ${f.length} book${f.length === 1 ? '' : 's'}. Counts are sections of about 60,000 characters that contain it.` : `No book uses "${term}".`
+      const top = f[0]?.[1] ?? 1
+      hits.innerHTML = f.length ? `<table class="conc"><tbody>${f.map(([id, n]) => `<tr><td><a href="?in=books&book=${esc(id)}&q=${encodeURIComponent(term)}"><b>${esc(names[id]?.title ?? id)}</b><span class="dim">${esc(names[id]?.author ?? '')}</span><i style="width:${Math.max(1, (n / top) * 100)}%"></i></a></td><td>${n}</td></tr>`).join('')}</tbody></table>` : ''
+      return
+    }
+    const rows = await Promise.all(res.results.slice(0, only ? 20 : 60).map((r) => r.data()))
+    if (mine !== turn) return
+    const by = new Map()
+    for (const r of rows) (by.get(r.meta.book) ?? by.set(r.meta.book, []).get(r.meta.book)).push(r)
+    const n = (only ? 20 : 3)
+    const nb = Object.values(res.filters.book ?? {}).filter(Boolean).length
+    say.innerHTML = rows.length ? `${res.results.length} passage${res.results.length === 1 ? '' : 's'} in ${only ? esc(names[only]?.title ?? only) : `${nb} book${nb === 1 ? '' : 's'}`}.${only ? ` <a href="?in=books&q=${encodeURIComponent(term)}">All books</a>` : ''}` : `Nothing found for "${esc(term)}" in the books.`
+    hits.innerHTML = [...by].slice(0, 12).map(([id, rs]) => `<li class="grp"><b>${esc(names[id]?.title ?? id)}<span>${esc(names[id]?.author ?? '')}</span></b>${rs.slice(0, n).map((r) => `<a href="${esc(link(r.url, term))}"><small>${esc(r.meta.chapter ?? '')}</small><p>${r.excerpt}</p></a>`).join('')}</li>`).join('')
+  }
   async function run() {
     const term = q.value.trim(), mine = ++turn
-    history.replaceState(null, '', term ? `?q=${encodeURIComponent(term)}` : location.pathname)
-    if (term.length < 2) { hits.replaceChildren(); kinds.hidden = true; say.textContent = 'Type two letters or more.'; return }
+    history.replaceState(null, '', term ? `?q=${encodeURIComponent(term)}${mode === 'site' ? '' : `&in=${mode}`}${only ? `&book=${only}` : ''}` : location.pathname)
+    kinds.hidden = true
+    if (term.length < 2) { hits.replaceChildren(); say.textContent = 'Type two letters or more.'; return }
+    if (mode !== 'site') return inBooks(term, mine)
     try { pf ??= await import('/pagefind/pagefind.js') } catch { say.textContent = 'Search is built with the site. Run the build, then reload.'; return }
     const res = await pf.debouncedSearch(term, kind ? { filters: { kind } } : {}, 120)
     if (!res || mine !== turn) return
@@ -42,14 +94,28 @@ import Base from '../layouts/Base.astro'
     kinds.hidden = false
     say.textContent = rows.length ? `${res.results.length} found for "${term}".` : `Nothing found for "${term}". Try a city, an author, or fewer letters.`
     hits.innerHTML = rows.map((r) => `<li><a href="${esc(r.url)}"><span>${r.meta.image ? `<img src="${esc(r.meta.image)}" alt="" loading="lazy">` : ''}</span><span><b>${esc(r.meta.title ?? '')}</b><p>${r.excerpt}</p></span></a></li>`).join('')
+    // the page index holds only libraries and books; the words inside the books live in the second index, so say so here too
+    try {
+      await loadBooks()
+      const b = await pb.debouncedSearch(term, {}, 120)
+      if (b?.results.length && mine === turn) { const nb = Object.values(b.filters.book ?? {}).filter(Boolean).length; say.innerHTML += ` <a href="?in=books&q=${encodeURIComponent(term)}">${b.results.length} passage${b.results.length === 1 ? '' : 's'} in ${nb} book${nb === 1 ? '' : 's'}</a> mention it.` }
+    } catch {}
   }
   q.addEventListener('input', run)
+  where.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-w]'); if (!b) return
+    mode = b.dataset.w
+    only = ''
+    sync()
+    run()
+  })
   kinds.addEventListener('click', (e) => {
     const b = e.target.closest('[data-k]'); if (!b) return
     kind = b.dataset.k
     kinds.querySelectorAll('[data-k]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
     run()
   })
-  q.value = new URLSearchParams(location.search).get('q') ?? ''
+  sync()
+  q.value = url.get('q') ?? ''
   if (q.value) run()
 </script>

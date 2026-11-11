@@ -1,0 +1,99 @@
+---
+// Offline shelf. kind book|room saves one item; kind shelf lists everything saved, with remove.
+import { libById, spheres } from '../site/data'
+interface Props { kind: 'book' | 'room' | 'shelf'; id?: string }
+const { kind, id = '' } = Astro.props
+const lib = kind === 'room' ? libById.get(id) : undefined
+const urls = kind === 'room' ? (spheres[id]?.nodes ?? []).map((n) => `${n.f}-lo.webp`) : []
+---
+<div class="save" data-kind={kind} data-id={id} data-title={lib?.n ?? ''} data-urls={JSON.stringify(urls)} data-pagefind-ignore>
+  {kind !== 'shelf' && <button type="button" class="sv-btn">{kind === 'book' ? 'Save this book for offline' : 'Save this room for offline'}</button>}
+  <span class="sv-say" role="status" aria-live="polite"></span>
+  {kind !== 'shelf' ? <progress class="sv-bar" hidden max="1" value="0"></progress> : <ul class="sv-list"></ul>}
+</div>
+
+<script>
+  import { size } from '../site/size'
+  const sw = () => navigator.serviceWorker?.ready.then((r) => r.active)
+  const ask = (msg: object, on?: (m: any) => void) =>
+    new Promise<any>((ok, no) => {
+      sw()?.then((w) => {
+        if (!w) return no(new Error('Offline saving needs a service worker'))
+        const ch = new MessageChannel()
+        ch.port1.onmessage = (e) => {
+          if (e.data.error) no(new Error(e.data.error))
+          else if (e.data.progress) on?.(e.data.progress)
+          else ok(e.data)
+        }
+        w.postMessage(msg, [ch.port2])
+      }) ?? no(new Error('Offline saving is not available in this browser'))
+    })
+  type Item = { key: string; title: string; bytes: number; kind: string }
+  const roots = [...document.querySelectorAll<HTMLElement>('.save')]
+  const draw = (items: Item[]) => {
+    for (const r of roots) {
+      const say = r.querySelector<HTMLElement>('.sv-say')!
+      if (r.dataset.kind === 'shelf') {
+        const ul = r.querySelector('.sv-list')!
+        ul.replaceChildren(...items.map((i) => {
+          const li = document.createElement('li')
+          const b = document.createElement('button')
+          b.type = 'button'
+          b.textContent = 'Remove'
+          b.onclick = () => ask({ type: 'remove', key: i.key }).then((d) => draw(d.items))
+          li.append(`${i.title} (${i.kind}, ${size(i.bytes)}) `, b)
+          return li
+        }))
+        say.textContent = items.length ? '' : 'Nothing saved yet.'
+        continue
+      }
+      const btn = r.querySelector<HTMLButtonElement>('.sv-btn')!
+      const key = `${r.dataset.kind}:${r.dataset.id}`
+      const mine = items.find((i) => i.key === key)
+      btn.textContent = mine ? 'Remove from offline' : r.dataset.kind === 'book' ? 'Save this book for offline' : 'Save this room for offline'
+      btn.dataset.saved = mine ? '1' : ''
+      say.textContent = mine ? `Saved, ${size(mine.bytes)}. Works without a connection.` : ''
+    }
+  }
+  const load = () => ask({ type: 'list' }).then((d) => draw(d.items), () => {})
+  for (const r of roots) {
+    const btn = r.querySelector<HTMLButtonElement>('.sv-btn')
+    if (!btn) continue
+    const bar = r.querySelector<HTMLProgressElement>('.sv-bar')!
+    const say = r.querySelector<HTMLElement>('.sv-say')!
+    btn.onclick = async () => {
+      const key = `${r.dataset.kind}:${r.dataset.id}`
+      btn.disabled = true
+      try {
+        if (btn.dataset.saved) draw((await ask({ type: 'remove', key })).items)
+        else {
+          bar.hidden = false
+          const d = await ask(
+            { type: 'save', kind: r.dataset.kind, id: r.dataset.id, title: r.dataset.title, urls: JSON.parse(r.dataset.urls ?? '[]') },
+            (p) => { bar.value = p.done / p.total; say.textContent = `Saving ${p.done} of ${p.total} files, ${size(p.bytes)}` },
+          )
+          draw(d.items)
+        }
+      } catch (e) {
+        say.textContent = `Could not save: ${(e as Error).message}`
+      }
+      bar.hidden = true
+      btn.disabled = false
+    }
+  }
+  if (roots.length) {
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').then(load, () => {})
+    else for (const r of roots) r.querySelector<HTMLElement>('.sv-say')!.textContent = 'Offline saving is not available in this browser.'
+  }
+</script>
+
+<style>
+  .save { margin: 1.2rem 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; }
+  .sv-btn, .sv-list button { font: 400 1.05rem/1 var(--display); padding: 0.7rem 1.2rem; background: none; color: var(--paper); border: 1px solid var(--brass); border-radius: 2px; cursor: pointer; }
+  .sv-btn:hover, .sv-list button:hover { background: var(--brass); color: var(--stacks); }
+  .sv-btn:disabled { opacity: 0.6; cursor: progress; }
+  .sv-say { color: var(--dim); font-size: 1rem; }
+  .sv-bar { width: 12rem; accent-color: var(--brass); }
+  .sv-list { list-style: none; padding: 0; margin: 0; width: 100%; display: grid; gap: 0.6rem; }
+  .sv-list button { padding: 0.35rem 0.8rem; font-size: 0.95rem; margin-left: 0.6rem; }
+</style>

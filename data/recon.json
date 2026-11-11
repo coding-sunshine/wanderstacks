@@ -8,11 +8,11 @@
         "h": 1456,
         "kind": "interior",
         "real": false,
-        "cap": "Reading hall of the Library of Celsus as it may have looked in the 2nd century, facing the apse",
+        "cap": "Hall of the Library of Celsus after Strocka's measurements: apse, niches, 0.94 m podium, columns and a gallery. The image has two rows of niches where Strocka reconstructs three, and one doorway where the facade had three",
         "by": "Generated image",
         "lic": "not a photograph",
-        "src": "https://en.wikipedia.org/wiki/Library_of_Celsus",
-        "basis": "the written record: a hall 16.7 by 10.9 m, an apse framed by an arch in the far wall opposite the east-facing entrance, and two or three levels of wall niches averaging 2.55 by 1.1 m that held the cupboards for scrolls. The image shows two levels of cupboards, an upper gallery with stone balustrades and a doorway in a side wall. The gallery's form, the balustrades, the cupboard doors, the position of the doorway, the marble, the timber ceiling and the light are guesses",
+        "src": "https://freidok.uni-freiburg.de/files/4986/aEfMnZclW_9SHOhd/Strocka_The_Celsus_Library_in_Ephesus.pdf",
+        "basis": "Strocka: hall 16.72 by 10.92 m; ten niches at floor level, two on each side of the apse and three each on the south and north walls, 2.55 m high and 0.57 to 0.60 m deep; thirty wall cabinets in three rows, the third row probable; podium 0.94 m high; gallery about 4.30 m above the podium; a wooden ceiling 12.15 m above a marble floor; three entrances in the facade wall, the middle one wider and higher, with windows above; a crypt with the donor's sarcophagus under the apse. The image is a 360 view from the middle of the hall: apse wall in the centre, long walls to each side, entrance wall split across the two edges. It follows the record in an empty apse, a continuous podium, columns on the podium, a gallery with a shorter row of columns above, and a flat wooden ceiling. Not matched: it shows two rows of niches, not three; the niche count per wall cannot be read off the image; the entrance wall shows one doorway, not three; daylight and an outer colonnade show at the image edges, which the record does not give; the proportions are not checked against the metres. Guessed: the niche doors, the capital style, marble colours, ceiling boards and floor slab layout",
         "yaw0": 0,
         "links": []
       }
@@ -23,15 +23,15 @@
       {
         "id": "r01",
         "f": "/sphere/pergamon/r01",
-        "w": 1920,
-        "h": 960,
+        "w": 2912,
+        "h": 1456,
         "kind": "interior",
         "real": false,
-        "cap": "A room of the Library of Pergamon as it may have looked, with the wooden book racks Richard Bohn inferred from a foundation along its walls",
+        "cap": "A room of the Library of Pergamon: Bohn's room size and wall-side rack foundation, with guessed racks, wall finish, ceiling and floor. The racks sit against the walls, not 0.5 m in from them",
         "by": "Generated image",
         "lic": "not a photograph",
         "src": "https://archive.org/download/dasheiligtumder00droygoog/dasheiligtumder00droygoog_djvu.txt",
-        "basis": "Richard Bohn's 1885 excavation report: a room 16.95 by 13.53 m, a foundation 1.05 m wide set about 0.50 m in from the walls that he read as the footing for wooden book racks, anchor holes for shelving, and a projection 2.74 m wide on the north wall for a statue of Athena. The marble plinth under a plastered, painted wall is Bohn's own conjecture. The statue is left out. Bohn and Hoepfner took these rooms for the royal library; Mielsch and Strocka dispute that. Rack design, ceiling, floor and light are guesses",
+        "basis": "Richard Bohn's excavation report: a room 16.95 m deep and 13.53 m in clear width; a foundation 1.05 m wide along the three standing walls, about 0.50 m in from them; dowel holes; upright plates 0.465 to 0.47 m and cover plates 0.152 m; a projection 2.74 m wide and 1.05 m out in the middle of the north side; a statue base 1.19 m found in the rubble of the stoa. Bohn says the height of the racks cannot be given. The image shows empty wooden racks on a stone strip, a painted band on plastered walls over a marble plinth, and one base on the far wall with no statue. Contradicted: the racks stand against the walls, not 0.5 m in, and the base is a free-standing block, not a projection of the wall. The five shelf rows, the rack design, the wall finish, ceiling and floor are guesses",
         "yaw0": 0,
         "links": []
       }
@@ -42,15 +42,15 @@
       {
         "id": "r01",
         "f": "/sphere/nineveh/r01",
-        "w": 1920,
-        "h": 960,
+        "w": 2912,
+        "h": 1456,
         "kind": "interior",
         "real": false,
-        "cap": "A record chamber in the South-West Palace at Nineveh as it may have looked while the tablets were still in use",
+        "cap": "A record chamber in the South-West Palace at Nineveh as Layard found it: ruined wall slabs, a doorway flanked by fish-cloaked figures, and broken tablets covering the floor. Room size, light and roof are guesses",
         "by": "Generated image",
         "lic": "not a photograph",
         "src": "https://www.gutenberg.org/files/39897/39897-8.txt",
-        "basis": "Layard's account of two small connecting chambers once panelled with bas-reliefs, where clay tablets lay broken on the floor a foot deep or more. He gives no room dimensions and describes no shelves, and Budge writes that how the tablets were arranged is not known. The neat stacking, the room's size, the ceiling and the light are all guesses",
+        "basis": "Layard: two small chambers opening into each other, their bas-reliefs mostly destroyed, the first doorway guarded by fish-gods, the floor filled a foot or more deep with clay tablets, most of them broken, the largest about 9 by 6.5 inches and the smallest about an inch long. The image shows cracked, blackened wall slabs with almost no carving left, one doorway to a second chamber with a fish-cloaked figure on each side, a floor covered in broken tablet pieces, and timber beams under reed matting. Guessed: the room size, the light, the cracking and blackening, and how the fish figures were carved. Not matched: the floor pieces nearest the viewer are larger than the sizes Layard gives, and the marks on them are not real cuneiform. The beams look slightly curved because of the image projection. The roof of this room is not recorded, and the reed matting is a guess",
         "yaw0": 0,
         "links": []
       }
@@ -61,15 +61,15 @@
       {
         "id": "r01",
         "f": "/sphere/herculaneum/r01",
-        "w": 1920,
-        "h": 960,
+        "w": 2912,
+        "h": 1456,
         "kind": "interior",
         "real": false,
-        "cap": "The small book room of the Villa of the Papyri as it may have looked while it was in use",
+        "cap": "The book room of the Villa of the Papyri: wall shelves and a free-standing double-sided unit from the find record, with carbonised rolls. Size, cabinet height, floor and wall finish are guesses",
         "by": "Generated image",
         "lic": "not a photograph",
         "src": "https://www.getty.edu/art/exhibitions/villa_papiri/inner.html",
-        "basis": "the excavation record as later scholars report it (the Getty Museum, and David Sider as quoted on Wikipedia): most of the scrolls were in one small room fitted with book cabinets, some found neatly stacked on shelves or in cases, with shelves around the walls and a double-sided unit in the middle. No dimensions were found in the sources read. The room's size, the cabinet height, the wall painting and the floor are guesses, and the marks the image shows on the scrolls are not writing",
+        "basis": "the excavation record as later accounts report it (the Getty Museum, and Wikipedia citing Amedeo Maiuri): the rolls lay in wooden capsae, some on shelves around the walls and some on the two sides of a set of shelves in the middle of the room. Wikipedia counts over 1,800 rolls; the Getty gives approximately 1,100 recovered between 1752 and 1754. No dimensions were found in the sources read. The image shows wall shelves, a central double-sided unit and charred black rolls. Contradicted: some rolls on the left and rear shelves are pale tan, as if unburnt, and the image shows the room before the eruption while the carbonised state came after it. The panelled cabinet doors with knobs and the red marble skirting are not in any source. The room's size, cabinet height, wall finish and floor are guesses",
         "yaw0": 0,
         "links": []
       }
@@ -80,15 +80,15 @@
       {
         "id": "r01",
         "f": "/sphere/nalanda/r01",
-        "w": 1920,
-        "h": 960,
+        "w": 2912,
+        "h": 1456,
         "kind": "exterior",
         "real": false,
-        "cap": "A monastery court at Nalanda as it may have looked, facing the shrine. This is not the library, which no excavation has identified",
+        "cap": "A monastery court at Nalanda as it may have looked, after the excavated plan. Not the library, which no excavation has identified. The curved walls come from the image projection",
         "by": "Generated image",
         "lic": "not a photograph",
         "src": "https://en.wikipedia.org/wiki/Nalanda",
-        "basis": "the excavated monastery plan: a rectangular building around a central court, a verandah, a row of monks' cells and a shrine chamber facing the entrance. The three library buildings appear only in later Tibetan tradition and no excavated structure has been identified as any of them, so this view shows a court of the kind the monks lived in. Upper storeys, roofs, plaster and colour are guesses",
+        "basis": "the excavated monastery plan: a rectangular building round a central court with a verandah, an outer row of monks' cells, a shrine chamber facing the entrance, a well and drains, and staircases in the south-west corner. The three library buildings (Dharmaganja) are known only from later Tibetan tradition and none has been found. The image shows two storeys of cells, a central shrine with a seated Buddha, a stair and a well with drains. The walls look curved because of the image projection, not because the court was round. Some columns stand free under bare sky and carry nothing. Brick pillars, the stair position, the roofless tops, the shrine niche and the paving are guesses",
         "yaw0": 0,
         "links": []
       }
@@ -99,15 +99,15 @@
       {
         "id": "r01",
         "f": "/sphere/alexandria/r01",
-        "w": 3320,
-        "h": 1660,
+        "w": 2912,
+        "h": 1456,
         "kind": "exterior",
         "real": false,
-        "cap": "A public walk of the kind Strabo describes at the Mouseion in Alexandria. This is not the Library, whose layout is unknown",
+        "cap": "A public walk, seats and a hall of the kind Strabo names at the Museum of Alexandria. Strabo does not mention the Library in this passage, and no remains of it have been found",
         "by": "Generated image",
         "lic": "not a photograph",
         "src": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0239:book=17:chapter=1:section=8",
-        "basis": "one sentence of Strabo (Geography 17.1.8): the Mouseion stood in the palace quarter and had a public walk, an exedra with seats and a large common dining hall. No remains of the Library have been recovered, so nothing here shows its rooms. The columns, paving, colours and proportions are guesses, and the image is mirrored left to right to close the circle",
+        "basis": "one sentence of Strabo (Geography 17.1.8): the Museum is part of the palaces and has a public walk, a place furnished with seats and a large hall in which the men of learning of the Museum take their common meal. Strabo is describing the Museum. He does not mention the Library in this passage, and no remains of the Library have been recovered, so nothing here shows its rooms. The image shows a colonnade, a stepped seating recess and a stone hall with a door. The seating looks like a small theatre and the planters look modern. A tower-shaped shadow falls across the paving with no tower to cast it, and faint ghost columns show at the image edges. The distant pedimented buildings, columns, paving, colours, proportions, sea view and planting are guesses",
         "yaw0": 0,
         "links": []
       }
@@ -118,15 +118,15 @@
       {
         "id": "r01",
         "f": "/sphere/dunhuang/r01",
-        "w": 1920,
-        "h": 960,
+        "w": 2912,
+        "h": 1456,
         "kind": "interior",
         "real": false,
-        "cap": "Cave 17 at Mogao as it may have looked when it was sealed, with the manuscript bundles heaped against the walls",
+        "cap": "Cave 17 at Mogao as it may have looked when sealed. The image is partly wrong: the ceiling, the stele, the door position, the height of the heap and a lit lamp",
         "by": "Generated image",
         "lic": "not a photograph",
         "src": "https://www.e-dunhuang.com/cave/10.0001/0001.0001.0017",
-        "basis": "the Dunhuang Academy's description of the cave (a near-square chamber with an unpainted ceiling, a low platform before the north wall, and a mural of two trees with a cloth bag and a water flask hanging from them) and Aurel Stein's account of bundles heaped in layers nearly ten feet high, leaving floor room for two people. The size, about 2.6 by 2.7 m and 3 m high, comes from a travel guide and is approximate. The image gets several things wrong: the real ceiling is a truncated pyramid, the heap should fill most of the room, and the door is opposite the mural. The statue of Hong Bian, the two painted attendants and the inscribed stele are left out. Wall colour, wrapping cloth and light are guesses",
+        "basis": "the Dunhuang Academy record (a near-square cave facing south, a truncated-pyramid ceiling with no murals, a platform and seated Hongbian statue on the north wall, a two-tree mural, a stele of 851 set into the west wall, no antechamber) and Stein's account of bundles heaped nearly ten feet high. The image shows the platform with a seated monk, the two-tree mural with an attendant and a nun, a stele, a door and a stack of bundles. Its ceiling is flat, not a truncated pyramid. The stele stands free beside the door, not set into the west wall. The door is on the wall next to the platform wall, where the record puts the opening opposite, on the south. The stack is tidy and does not fill the room to ten feet. The door opens on a long corridor. A lit lamp stands at the lower left, which no source gives. The painted wall wraps across the image seam. Wall colour, bundle wrapping and light are guesses",
         "yaw0": 0,
         "links": []
       }
@@ -137,15 +137,15 @@
       {
         "id": "r01",
         "f": "/sphere/buda/r01",
-        "w": 1920,
-        "h": 960,
+        "w": 2912,
+        "h": 1456,
         "kind": "interior",
         "real": false,
-        "cap": "The library hall of King Matthias in Buda Castle as it may have looked around 1490, following Naldo Naldi's description",
+        "cap": "The library of King Matthias in Buda Castle as it may have looked around 1490, after Naldo Naldi. Shelf rows, stools and floor differ from the record",
         "by": "Generated image",
         "lic": "not a photograph",
         "src": "https://tertullian.org/articles/csapodi_corviniana.htm",
-        "basis": "Naldo Naldi's poem as summarised by Csaba Csapodi and Klára Pajorin: a high vaulted room on the first floor of the Danube wing beside the chapel, gilded shelves in three rows around the walls with curtains woven with gold against dust, carved chests beneath, two stained-glass windows with the king's couch under a golden cloth between them, and three-legged chairs. Naldi describes one room; Miklós Oláh later describes two, and later visitors mention a painted sky on the vault that Naldi does not. No source read gives dimensions. The image shows four rows of shelves on two walls only. Curtain colour, glass pattern, floor and the shape of every piece of furniture are guesses",
+        "basis": "Naldo Naldi's poem as summarised by Csaba Csapodi: a vaulted first-floor room on the Danube side beside the chapel, gilded shelves in three rows round the walls, curtains of coloured and gold thread, carved chests beneath, two stained-glass windows with the king's couch under a golden cloth, and three-legged chairs. Csapodi adds a vault painted with stars and reports that an adjoining room was added later. Miklos Olah describes two connected vaulted rooms. The image shows a vault with gold stars and constellations, two stained-glass windows, a couch under gold cloth, brocade curtains, carved chests and three-legged stools. The shelves appear to have four rows, not three. The stools are backless, where the record says chairs. The books stand upright with spines facing out and gilt shields of arms across groups of spines, which no source states. The candle sconces and side tables are not in any source. The stone floor, the room shape and the vault ribs are guesses",
         "yaw0": 0,
         "links": []
       }
@@ -156,15 +156,15 @@
       {
         "id": "r01",
         "f": "/sphere/vikramashila/r01",
-        "w": 1920,
-        "h": 960,
+        "w": 2912,
+        "h": 1456,
         "kind": "exterior",
         "real": false,
-        "cap": "The library building at Vikramashila as it may have looked, seen from the reservoir behind it",
+        "cap": "The library at Vikramashila as it may have looked, seen from the reservoir behind it. The stepped stupa and the vents on the monastery wall are wrong",
         "by": "Generated image",
         "lic": "not a photograph",
         "src": "https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp",
-        "basis": "the Archaeological Survey of India's site description: a rectangular building about 32 m south of the monastery at its south-west corner, joined to it by a narrow corridor, with a range of vents in the back wall that let in air cooled by water from the adjoining reservoir. The Survey gives no dimensions, wall material or roof for it. Brick is taken from the rest of the site. The wall height, the flat roofline, the large building in the distance, the shape of the reservoir and the landscape are guesses",
+        "basis": "the Archaeological Survey of India description: a rectangular library about 32 m south of the monastery at its south-west corner, joined to it by a narrow corridor, with vents in the back wall cooled by an adjoining reservoir. No dimensions, material or roof are given. The monastery itself is a 330 m square with 208 cells round a cruciform stupa. The image shows a blank brick block with rows of vents beside a rectangular reservoir, a walled path, and a low walled monastery with a central stepped pyramid. The pyramid is not cruciform. Vents appear on more than one face of the block and on the monastery wall, where the record gives them only in the library's back wall. The path runs along the monastery's outer wall with no visible doorway into it. The block is drawn far taller than anything the record supports, and no cells are visible. A faint vertical streak marks the image seam. Wall height, vent shape, reservoir shape, trees and haze are guesses",
         "yaw0": 0,
         "links": []
       }
@@ -175,15 +175,15 @@
       {
         "id": "r01",
         "f": "/sphere/ashikaga/r01",
-        "w": 1920,
-        "h": 960,
+        "w": 2912,
+        "h": 1456,
         "kind": "exterior",
         "real": false,
-        "cap": "The grounds of the Ashikaga School as they may have looked in the mid Edo period",
+        "cap": "The grounds of the Ashikaga School in the restored east zone, as they may have looked. The buildings are generic, not portraits of the real ones",
         "by": "Generated image",
         "lic": "not a photograph",
         "src": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fc61161ace.pdf",
-        "basis": "what the city of Ashikaga and the Japan Heritage directory record: the main hall and garden were rebuilt in 1990 to their mid-Edo appearance after excavation, the main hall carries a thatched roof and the smaller buildings board roofs. No source read describes the interiors or where the books were kept, so this view stays outside. The plan of the yard, the pond, the planting, the fence and the tiled roof the image gives the smaller building are guesses",
+        "basis": "the city of Ashikaga's summary of its second conservation and improvement basic plan (史跡足利学校跡第２次保存整備基本計画書〔概要版〕): the restored buildings stand in the east zone. The Hojo has a thatched hip-and-gable roof, the Shoin, Shuryo and the new storehouse have board roofs, and the plan lists the Kuri under both thatch and board roofing. The Confucius temple and School Gate are historic and stand in the west zone, not shown. The image shows a thatched main hall, a second thatched building, board-roofed outbuildings, a thatched gate and a gravel yard. Which building is which is not known. The pine, shrubs, rocks, bamboo fence and wooded hills are guesses",
         "yaw0": 0,
         "links": []
       }

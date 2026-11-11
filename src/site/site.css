@@ -36,7 +36,7 @@ h2 { font-size: clamp(1.7rem, 3.4vw, 2.6rem); }
 h3 { font-size: 1.3rem; }
 p { margin: 0 0 1em; max-width: 68ch; }
 .dim { color: var(--dim); }
-.mark { font-family: var(--mono); font-size: 0.72rem; color: var(--dim); }
+.mark { font-family: var(--mono); font-size: 0.75rem; color: var(--dim); }
 
 .top {
   position: sticky; top: 0; z-index: 20; display: flex; align-items: baseline; gap: 1.6rem;
@@ -55,10 +55,40 @@ p { margin: 0 0 1em; max-width: 68ch; }
 .foot { border-top: 1px solid var(--rule); padding: 2.5rem var(--gutter) 3.5rem; color: var(--dim); font-size: 1rem; display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; }
 .foot p { margin: 0; max-width: none; }
 
+/* A fact is one self-contained claim with its tier, source and tools. */
+.facts { list-style: none; margin: 0; padding: 0; }
+.fact { padding: 0.7rem 0; }
+.fact + .fact { border-top: 1px solid var(--rule); }
+.fact p { margin: 0; }
+.claim .lead { color: var(--dim); font-size: 0.95rem; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.9rem; margin-top: 0.3rem; }
+.ftools { display: contents; }
+.meta a { color: var(--dim); }
+.fcite[open] { flex-basis: 100%; order: 9; }
+.fcite summary { cursor: pointer; list-style: none; text-decoration: underline; text-decoration-color: var(--brass); text-underline-offset: 0.18em; }
+.fcite summary::-webkit-details-marker { display: none; }
+.fcite pre { margin: 0.2rem 0 0; padding: 0.7rem 0.9rem; background: var(--leaf); border: 1px solid var(--rule); border-radius: 3px; font: inherit; font-size: 0.78rem; color: var(--paper); white-space: pre-wrap; overflow-wrap: anywhere; user-select: all; }
+.fcite button { font: inherit; color: var(--brass); background: none; border: 1px solid var(--rule); border-radius: 999px; padding: 0.15rem 0.7rem; cursor: pointer; margin-top: 0.4rem; }
+.time { border-left: 1px solid var(--brass); }
+.time .fact { padding-left: 1.2rem; position: relative; border-top: 0; }
+.time .claim { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem; }
+.time .fact::before { content: ''; position: absolute; left: -4px; top: 1.35rem; width: 7px; height: 7px; border-radius: 50%; background: var(--brass); }
+.time .fact:is([data-k='destroyed'], [data-k='lost'], [data-k='damaged'], [data-k='closed']):before { background: var(--stamp); }
+.time .y { font-variant-numeric: tabular-nums; color: var(--brass); }
+.fact:target { background: var(--leaf); }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .fact { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 35%; }
+    @keyframes rise { from { opacity: 0.2; translate: 0 0.6rem; } }
+  }
+}
+
 /* A stamp states where an image or a text comes from. */
-.stamp { display: inline-block; font-family: var(--mono); font-size: 0.7rem; padding: 0.15rem 0.5rem; border: 1px solid currentColor; border-radius: 2px; color: var(--baize); }
+.stamp { display: inline-block; font-family: var(--mono); font-size: 0.75rem; padding: 0.15rem 0.5rem; border: 1px solid currentColor; border-radius: 2px; color: var(--baize); }
 .stamp[data-s='recon'], .stamp[data-s='lost'] { color: var(--stamp); }
-.stamp[data-s='photo'], .stamp[data-s='link-only'], .stamp[data-s='nc'] { color: var(--dim); }
+.stamp[data-s='secondary'] { color: var(--brass); }
+.stamp[data-s='unproven'] { color: var(--stamp); }
+.stamp[data-s='wikipedia'], .stamp[data-s='photo'], .stamp[data-s='link-only'], .stamp[data-s='nc'] { color: var(--dim); }
 
 .field {
   width: 100%; font: inherit; color: var(--paper); background: var(--leaf); border: 1px solid var(--rule);

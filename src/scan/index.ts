@@ -1,9 +1,10 @@
 import './scan.css'
 import type { Mount } from '../types'
 import { reducedMotion } from '../app'
+import { unroll } from './scroll'
 
 interface Page { s: string; w: number; h: number; l: string }
-interface Book { title: string; date?: string; holder: string; manifest: string; licence: string; deed: string | null; credit: string; pages: Page[] }
+interface Book { title: string; date?: string; holder: string; manifest: string; licence: string; deed: string | null; credit: string; pages: Page[]; scroll?: boolean; dir?: string }
 
 const TILE = 2048
 const AHEAD = 4
@@ -39,6 +40,7 @@ export const mount: Mount = (el, params) => {
   const mobile = matchMedia('(max-width: 699px)')
 
   let book: Book | null = null
+  let sc: ReturnType<typeof unroll> | null = null
   let at = 0
   let dialog: HTMLDialogElement | null = null
   const warmed = new Set<number>()
@@ -197,7 +199,7 @@ export const mount: Mount = (el, params) => {
 
   const zoomTarget = () => {
     const f = document.activeElement?.closest<HTMLElement>('[data-leaf]')
-    return f ? Number(f.dataset.leaf) : at
+    return f ? Number(f.dataset.leaf) : sc ? sc.current() : at
   }
 
   const onKey = (e: KeyboardEvent) => {
@@ -205,6 +207,7 @@ export const mount: Mount = (el, params) => {
     const t = e.target as HTMLElement
     if (/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName)) return
     const n = book.pages.length
+    if (sc?.key(e)) return e.preventDefault()
     if (e.key === 'ArrowRight') go(at + step())
     else if (e.key === 'ArrowLeft') go(at - step())
     else if (e.key === 'Home') go(0)
@@ -217,7 +220,8 @@ export const mount: Mount = (el, params) => {
   root.addEventListener('click', (e) => {
     const t = e.target as HTMLElement
     const nav = t.closest<HTMLElement>('[data-nav]')?.dataset.nav
-    if (nav === 'first') go(0)
+    if (nav && sc) sc.nav(nav)
+    else if (nav === 'first') go(0)
     else if (nav === 'prev') go(at - step())
     else if (nav === 'next') go(at + step())
     else if (nav === 'last') go(book!.pages.length - 1)
@@ -225,7 +229,7 @@ export const mount: Mount = (el, params) => {
     else if (t.closest('[data-leaf]')) openZoom(Number(t.closest<HTMLElement>('[data-leaf]')!.dataset.leaf))
   })
   document.addEventListener('keydown', onKey)
-  const onMedia = () => book && go(at)
+  const onMedia = () => book && !sc && go(at)
   mobile.addEventListener('change', onMedia)
 
   // Swipe turns the page. A swipe is not a tap, so it must not open the zoom.
@@ -238,6 +242,7 @@ export const mount: Mount = (el, params) => {
     swiped = false
   })
   spread.addEventListener('pointerup', (e) => {
+    if (sc) return
     const dx = e.clientX - x0
     if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(e.clientY - y0)) return
     swiped = true
@@ -259,7 +264,8 @@ export const mount: Mount = (el, params) => {
       const lic = b.deed ? `<a href="${esc(b.deed)}">${esc(b.licence)}</a>` : esc(b.licence)
       credit.hidden = false
       credit.innerHTML = `Images: ${esc(b.credit)}, from the holder's <a href="${esc(b.manifest)}">IIIF manifest</a>. Licence: ${lic}.`
-      go(0)
+      if (b.scroll) sc = unroll(spread, { pages: b.pages, dir: b.dir ?? 'left-to-right', src: small, fail, count, bar: q })
+      else go(0)
       root.dataset.ready = 'true'
     })
     .catch(() => dead || fail())
@@ -267,6 +273,7 @@ export const mount: Mount = (el, params) => {
   return () => {
     dead = true
     settle()
+    sc?.dispose()
     document.removeEventListener('keydown', onKey)
     mobile.removeEventListener('change', onMedia)
   }
