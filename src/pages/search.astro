@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro'
+---
+<Base title="Search" desc="Search every library and every book on WorldLibs.">
+  <section class="wrap sec">
+    <h1>Search</h1>
+    <input class="field" id="q" type="search" placeholder="A library, a book, an author, a city" aria-label="Search" autofocus />
+    <div class="picks" id="kinds" hidden>
+      <button class="pick" data-k="" aria-pressed="true">Everything</button>
+      <button class="pick" data-k="Library" aria-pressed="false">Libraries</button>
+      <button class="pick" data-k="Book" aria-pressed="false">Books</button>
+    </div>
+    <p id="say" class="dim" aria-live="polite">Type two letters or more.</p>
+    <ol class="hits" id="hits"></ol>
+  </section>
+</Base>
+<style is:global>
+  #q { max-width: 44rem; font-size: 1.4rem; margin: 1.5rem 0 1rem; }
+  #say { margin-top: 1.2rem; }
+  .hits { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .hits li { border-bottom: 1px solid var(--rule); }
+  .hits a { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1.4rem; padding: 1rem 0; text-decoration: none; align-items: start; }
+  .hits img { width: 7.5rem; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 2px; }
+  .hits b { font: 400 1.5rem/1.15 var(--display); display: block; }
+  .hits p { margin: 0.3rem 0 0; color: var(--dim); font-size: 1.05rem; }
+  .hits mark { background: none; color: var(--brass); }
+  @media (max-width: 560px) { .hits a { grid-template-columns: 1fr; } .hits img, .hits a > span:empty { display: none; } }
+</style>
+<script is:inline type="module">
+  const q = document.getElementById('q'), hits = document.getElementById('hits'), say = document.getElementById('say'), kinds = document.getElementById('kinds')
+  let pf, kind = '', turn = 0
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
+  async function run() {
+    const term = q.value.trim(), mine = ++turn
+    history.replaceState(null, '', term ? `?q=${encodeURIComponent(term)}` : location.pathname)
+    if (term.length < 2) { hits.replaceChildren(); kinds.hidden = true; say.textContent = 'Type two letters or more.'; return }
+    try { pf ??= await import('/pagefind/pagefind.js') } catch { say.textContent = 'Search is built with the site. Run the build, then reload.'; return }
+    const res = await pf.debouncedSearch(term, kind ? { filters: { kind } } : {}, 120)
+    if (!res || mine !== turn) return
+    const rows = await Promise.all(res.results.slice(0, 40).map((r) => r.data()))
+    if (mine !== turn) return
+    kinds.hidden = false
+    say.textContent = rows.length ? `${res.results.length} found for "${term}".` : `Nothing found for "${term}". Try a city, an author, or fewer letters.`
+    hits.innerHTML = rows.map((r) => `<li><a href="${esc(r.url)}"><span>${r.meta.image ? `<img src="${esc(r.meta.image)}" alt="" loading="lazy">` : ''}</span><span><b>${esc(r.meta.title ?? '')}</b><p>${r.excerpt}</p></span></a></li>`).join('')
+  }
+  q.addEventListener('input', run)
+  kinds.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-k]'); if (!b) return
+    kind = b.dataset.k
+    kinds.querySelectorAll('[data-k]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
+    run()
+  })
+  q.value = new URLSearchParams(location.search).get('q') ?? ''
+  if (q.value) run()
+</script>

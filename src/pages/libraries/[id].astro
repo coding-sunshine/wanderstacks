@@ -1,0 +1,162 @@
+---
+import Base from '../../layouts/Base.astro'
+import Shot from '../../components/Shot.astro'
+import BookRows from '../../components/BookRows.astro'
+import Walk from '../../components/Walk.astro'
+import { libs, type Lib, photos, lead, lost, year, factsOf, eventsOf, booksOf, seeing, spheres } from '../../site/data'
+export const getStaticPaths = () => libs.map((l) => ({ params: { id: l.id }, props: { l } }))
+const { l } = Astro.props as { l: Lib }
+const p = lead(l.id)
+const facts = factsOf(l.id), events = eventsOf(l.id), held = booksOf(l.id), s = seeing(l.id)
+const shots = [...(photos[l.id]?.in ?? []), ...(photos[l.id]?.out ?? [])].filter((x) => x !== p)
+// Reading order of the record; each field shows once with all its sourced values.
+const names: Record<string, string> = {
+  place: 'Where', built: 'Built', architect: 'Architect', dims: 'Size', volumes: 'Volumes', collection: 'Collection',
+  remains_today: 'What remains', status_note: 'Today', recon: 'Reconstruction',
+}
+const rank = (k: string) => { const r = Object.keys(names).indexOf(k); return r < 0 ? 99 : r }
+const groups = [...new Set(facts.map((f) => f.field))].sort((a, b) => rank(a) - rank(b)).map((k) => ({ k, list: facts.filter((f) => f.field === k) }))
+const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, '') } catch { return u } }
+const sources = [...new Set([...facts, ...events].map((x) => x.source).filter(Boolean))]
+const i = libs.indexOf(l), prev = libs[(i + libs.length - 1) % libs.length], next = libs[(i + 1) % libs.length]
+---
+<Base title={l.n} desc={`${l.n}, ${l.p}. ${l.st ?? ''}`} index>
+  <article>
+    <header class="head">
+      {p && <figure><a class="zoom" href={`${p.f}-1920.webp`}><Shot p={p} sizes="100vw" eager name={`lib-${l.id}`} /></a><figcaption class="mark">{p.cap}. <a href={p.src}>{p.by}</a>, {p.lic}</figcaption></figure>}
+      <div class="wrap">
+        <h1 data-pagefind-filter="kind:Library">{l.n}</h1>
+        <p class="where"><span data-pagefind-meta="place">{l.p}</span>, {l.yl || year(l.y)}</p>
+        <p class="see">
+          {lost(l) && <span class="stamp" data-s="lost">lost</span>}
+          {s.walk > 0 && <a class="stamp" href="#walk">walk-through, {s.walk} real {s.walk === 1 ? 'panorama' : 'panoramas'}</a>}
+          {s.recon > 0 && <span class="stamp" data-s="recon">reconstruction, imagined</span>}
+        </p>
+        {l.st && <p class="lede">{l.st}</p>}
+        <p class="picks">
+          <a class="pick" href={`/atlas/${l.id}/`}>See it on the globe</a>
+          {held.length > 0 && <a class="pick" href="#books">{held.length} books from here</a>}
+        </p>
+      </div>
+    </header>
+    {spheres[l.id]?.nodes.length > 0 && <Walk nodes={spheres[l.id].nodes} name={l.n} />}
+    <section class="wrap sec cols">
+      <div>
+        <h2>The record</h2>
+        <dl>
+          {l.dim && !groups.some((g) => g.k === 'dims') && <><dt>Room</dt><dd>{l.dim}</dd></>}
+          {groups.map(({ k, list }) => <><dt>{names[k] ?? k}</dt><dd>{list.map((f) => <p>{f.value} <a class="mark" href={f.source}>{host(f.source)}</a></p>)}</dd></>)}
+        </dl>
+      </div>
+      {events.length > 0 && (
+        <div>
+          <h2>What happened here</h2>
+          <ol class="time">
+            {events.map((e) => <li data-k={e.kind}><span class="y">{e.year == null ? '' : year(e.year)}</span><span>{e.label} <a class="mark" href={e.source}>{host(e.source)}</a></span></li>)}
+          </ol>
+        </div>
+      )}
+    </section>
+    {shots.length > 0 && (
+      <section class="wrap sec">
+        <h2>Photographs</h2>
+        <div class="wall">
+          {shots.map((x) => <figure><a class="zoom" href={`${x.f}-1920.webp`}><Shot p={x} sizes="(max-width: 760px) 100vw, 33vw" /></a><figcaption class="mark">{x.cap}. <a href={x.src}>{x.by}</a>, {x.lic}</figcaption></figure>)}
+        </div>
+      </section>
+    )}
+    {held.length > 0 && (
+      <section class="wrap sec" id="books">
+        <h2>Books from this library</h2>
+        <BookRows books={held} holder={false} />
+      </section>
+    )}
+    {sources.length > 0 && (
+      <section class="wrap sec">
+        <h2>Sources</h2>
+        <ul class="src">{sources.map((u) => <li><a href={u}>{u}</a></li>)}</ul>
+      </section>
+    )}
+    <nav class="wrap pn" aria-label="More libraries" data-pagefind-ignore>
+      <a href={`/libraries/${prev.id}/`}><span class="dim">Before</span> {prev.n}</a>
+      <a href={`/libraries/${next.id}/`}><span class="dim">Next</span> {next.n}</a>
+    </nav>
+  </article>
+  <dialog class="lb" aria-label="Photograph">
+    <figure><img alt="" /><figcaption class="mark"></figcaption></figure>
+    <p class="mark n" aria-live="polite"></p>
+    <button class="pick x">Close</button>
+    <button class="pick prev" aria-label="Previous photograph">&lsaquo;</button>
+    <button class="pick next" aria-label="Next photograph">&rsaquo;</button>
+  </dialog>
+</Base>
+<script>
+  // Photographs open in place, each with its caption, author and licence. Without script the link still opens the file.
+  const lb = document.querySelector<HTMLDialogElement>('.lb')!
+  const links = [...document.querySelectorAll<HTMLAnchorElement>('a.zoom')]
+  const img = lb.querySelector('img')!, cap = lb.querySelector('figcaption')!
+  let at = 0
+  const show = (i: number) => {
+    at = (i + links.length) % links.length
+    const a = links[at], small = a.querySelector('img')!
+    Object.assign(img, { src: a.href, alt: small.alt, width: small.width, height: small.height })
+    cap.replaceChildren(...[...a.closest('figure')!.querySelector('figcaption')!.childNodes].map((n) => n.cloneNode(true)))
+    lb.querySelector('.n')!.textContent = `${at + 1} of ${links.length}`
+  }
+  links.forEach((a, i) => a.addEventListener('click', (e) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey) return
+    e.preventDefault(); show(i); lb.showModal()
+  }))
+  lb.classList.toggle('one', links.length < 2)
+  lb.querySelector('.x')!.addEventListener('click', () => lb.close())
+  lb.querySelector('.prev')!.addEventListener('click', () => show(at - 1))
+  lb.querySelector('.next')!.addEventListener('click', () => show(at + 1))
+  document.addEventListener('keydown', (e) => { if (!lb.open) return; if (e.key === 'ArrowLeft') show(at - 1); if (e.key === 'ArrowRight') show(at + 1) })
+  lb.addEventListener('click', (e) => { if (!(e.target as Element).closest('img, button, figcaption')) lb.close() })
+</script>
+<style>
+  .head figure { margin: 0; position: relative; }
+  .zoom { display: block; cursor: zoom-in; }
+  .head figure :global(img) { width: 100%; height: min(72svh, 48rem); object-fit: cover; }
+  .head figcaption { padding: 0.5rem var(--gutter); }
+  .head h1 { margin-top: clamp(1.5rem, 4vw, 3rem); }
+  .where { font-size: 1.4rem; color: var(--dim); margin: 0.6rem 0; }
+  .see { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .lede { font-size: 1.3rem; }
+  .picks a { text-decoration: none; }
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: clamp(2rem, 6vw, 5rem); }
+  dl { margin: 0; display: grid; grid-template-columns: 9rem 1fr; border-top: 1px solid var(--rule); }
+  dt, dd { margin: 0; padding: 0.7rem 0; border-bottom: 1px solid var(--rule); }
+  dt { color: var(--dim); }
+  dd p { margin: 0; }
+  dd p + p { margin-top: 0.55rem; }
+  .time { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--brass); }
+  .time li { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem; padding: 0.7rem 0 0.7rem 1.2rem; position: relative; }
+  .time li::before { content: ''; position: absolute; left: -4px; top: 1.35rem; width: 7px; height: 7px; border-radius: 50%; background: var(--brass); }
+  .time li:is([data-k='destroyed'], [data-k='lost'], [data-k='damaged'], [data-k='closed'])::before { background: var(--stamp); }
+  .time .y { font-variant-numeric: tabular-nums; color: var(--brass); }
+  .wall { columns: 3 20rem; column-gap: 1rem; }
+  .wall figure { margin: 0 0 1.2rem; break-inside: avoid; }
+  .wall :global(img) { width: 100%; border-radius: 2px; }
+  :global(html:has(.lb[open])) { overflow: hidden; }
+  .lb { border: 0; margin: 0; padding: 4rem var(--gutter) 1rem; background: none; color: var(--paper); width: 100vw; height: 100dvh; max-width: none; max-height: none; place-items: center; }
+  .lb[open] { display: grid; }
+  .lb::backdrop { background: rgb(8 12 10 / 0.95); }
+  .lb figure { margin: 0; display: grid; gap: 0.7rem; justify-items: center; text-align: center; }
+  .lb img { max-width: 100%; max-height: calc(100dvh - 10rem); width: auto; height: auto; object-fit: contain; border-radius: 2px; }
+  .lb button { position: absolute; min-width: 44px; min-height: 44px; background: var(--leaf); }
+  .lb .x { top: 0.8rem; right: var(--gutter); }
+  .lb .prev, .lb .next { top: 50%; translate: 0 -50%; font-size: 1.6rem; line-height: 1; }
+  .lb .prev { left: 0.6rem; }
+  .lb .next { right: 0.6rem; }
+  .lb .n { position: absolute; top: 1.3rem; left: var(--gutter); margin: 0; }
+  .lb.one :is(.prev, .next, .n) { display: none; }
+  @media (prefers-reduced-motion: no-preference) {
+    .lb[open] img { animation: lb 0.22s ease-out; }
+    @keyframes lb { from { opacity: 0; scale: 0.98; } }
+  }
+  .src { padding-left: 1.1rem; font-size: 1rem; overflow-wrap: anywhere; color: var(--dim); }
+  .pn { display: flex; justify-content: space-between; gap: 2rem; padding-block: 2rem 4rem; font-family: var(--display); font-size: 1.4rem; }
+  .pn a { text-decoration: none; }
+  @media (max-width: 560px) { dl { grid-template-columns: 1fr; } dt { border: 0; padding-bottom: 0; } dd { padding-top: 0.1rem; } }
+</style>

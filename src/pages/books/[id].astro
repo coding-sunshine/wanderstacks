@@ -1,0 +1,231 @@
+---
+import Base from '../../layouts/Base.astro'
+import BookRows from '../../components/BookRows.astro'
+import { books, type Book, libById, readHere, booksOf, bookContent, textMeta, scanMeta, shape, year } from '../../site/data'
+export const getStaticPaths = () => books.map((b) => ({ params: { id: b.id }, props: { b } }))
+const { b } = Astro.props as { b: Book }
+const lib = b.lib ? libById.get(b.lib) : undefined
+const here = readHere(b.id)
+const c = bookContent(b.id)
+const text = textMeta(b.id), scan = scanMeta(b.id)
+const bars = text ? shape(b.id) : []
+const most = Math.max(1, ...bars.map((x) => x.words)), total = bars.reduce((n, x) => n + x.words, 0)
+const mins = (w: number) => Math.max(1, Math.round(w / 230))
+const span = (m: number) => (m < 90 ? `${m} min` : `${Math.round(m / 60)} h`)
+const label = { open: 'free to read', nc: 'non-commercial', 'link-only': 'catalogue record' } as const
+const others = lib ? booksOf(lib.id).filter((x) => x.id !== b.id).slice(0, 8) : []
+
+// Map window: the places' bounding box, padded, never narrower than 40 degrees, always 2:1.
+const pl = c?.places ?? []
+let box = { w: 360, x: -180, y: 90 }
+if (pl.length) {
+  const lons = pl.map((p) => p.lon), lats = pl.map((p) => p.lat)
+  const w = Math.min(360, Math.max(40, (Math.max(...lons) - Math.min(...lons)) * 1.5, (Math.max(...lats) - Math.min(...lats)) * 3))
+  const cx = (Math.max(...lons) + Math.min(...lons)) / 2, cy = (Math.max(...lats) + Math.min(...lats)) / 2
+  box = { w, x: Math.min(180 - w, Math.max(-180, cx - w / 2)), y: Math.max(-90 + w / 2, Math.min(90, cy + w / 4)) }
+}
+const k = 360 / box.w
+const layer = `width:${k * 100}%;left:${(-(box.x + 180) / 360) * k * 100}%;top:${(-(90 - box.y) / 180) * k * 100}%`
+const at = (p: { lat: number; lon: number }) => `left:${((p.lon + 180) / 360) * 100}%;top:${((90 - p.lat) / 180) * 100}%`
+
+// Timeline: the gap before each entry grows with the log of the years since the last one.
+const tl = [...(c?.timeline ?? [])].sort((x, y) => x.year - y.year)
+const gap = (i: number) => (i === 0 ? 0 : Math.min(4, Math.log10(1 + tl[i].year - tl[i - 1].year) * 1.1))
+---
+<Base title={b.title} desc={b.why ?? `${b.title}${b.author ? `, ${b.author}` : ''}. Held by ${b.holder}.`} index>
+  <article>
+    <header class="wrap sec head">
+      <h1 data-pagefind-filter="kind:Book">{b.title}</h1>
+      <p class="by">{[b.author, b.date].filter(Boolean).join(', ')}</p>
+      <p class="held">
+        Held by {lib ? <a href={`/libraries/${lib.id}/`}>{lib.n}</a> : b.holder}{b.shelfmark && <span class="dim">, {b.shelfmark}</span>}
+        <span class="stamp" data-pagefind-ignore data-s={here ? 'open' : b.rights}>{here ? 'read here' : label[b.rights]}</span>
+      </p>
+      {here
+        ? <p><a class="go" href={here}>{scan ? `Turn the pages, ${scan.pages.length} of them` : 'Read it here'}</a>{total > 0 && <span class="dim"> about {span(mins(total))} of reading</span>}</p>
+        : <p class="dim">Not open on this site yet. <a href={b.src}>See the holder's record</a>.</p>}
+      {c ? <p class="lede">{c.summary}</p> : b.why && <p class="lede">{b.why}</p>}
+    </header>
+
+    {pl.length > 0 && (
+      <section class="wrap sec" id="places">
+        <h2>Where it happens</h2>
+        <div class="geo">
+          <div class="map" role="img" aria-label={`Map of ${pl.length} places tied to this book`}>
+            <div class="layer" style={layer}>
+              <img src="/globe/night.webp" alt="" loading="lazy" />
+              {pl.map((p, i) => <button class="dot" style={at(p)} data-i={i} aria-label={p.name}></button>)}
+            </div>
+          </div>
+          <ol class="plist">
+            {pl.map((p, i) => <li data-i={i} tabindex="0"><b>{p.name}</b> {p.note}{p.s.map((n) => <sup><a href={`#src-${n + 1}`}>{n + 1}</a></sup>)}</li>)}
+          </ol>
+        </div>
+      </section>
+    )}
+
+    {(tl.length > 0 || (c?.people.length ?? 0) > 0) && (
+      <section class="wrap sec cols">
+        {tl.length > 0 && (
+          <div>
+            <h2>Through time</h2>
+            <ol class="time">
+              {tl.map((t, i) => <li style={`margin-top:${gap(i)}rem`}><span class="y">{year(t.year)}</span><span>{t.label}{t.s.map((n) => <sup><a href={`#src-${n + 1}`}>{n + 1}</a></sup>)}</span></li>)}
+            </ol>
+          </div>
+        )}
+        {c && c.people.length > 0 && (
+          <div>
+            <h2>Who is in it, and behind it</h2>
+            {c.people.map((p, i) => (
+              <details open={i === 0}>
+                <summary>{p.name} <span class="dim">{p.role}</span></summary>
+                <p>{p.note}{p.s.map((n) => <sup><a href={`#src-${n + 1}`}>{n + 1}</a></sup>)}</p>
+              </details>
+            ))}
+          </div>
+        )}
+      </section>
+    )}
+
+    {c && c.ideas.length > 0 && (
+      <section class="wrap sec">
+        <h2>What it is about</h2>
+        <div class="ideas">
+          {c.ideas.map((x, i) => (
+            <details open={i === 0}>
+              <summary>{x.title}</summary>
+              <p>{x.note}{x.s.map((n) => <sup><a href={`#src-${n + 1}`}>{n + 1}</a></sup>)}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {c?.passages && c.passages.length > 0 && (
+      <section class="wrap sec">
+        <h2>In its own words</h2>
+        {c.passages.map((p) => (
+          <figure class="quote">
+            <blockquote>{p.quote}</blockquote>
+            <figcaption><span class="dim">{p.chapter}.</span> {p.why} {here && <a href={here}>Read on</a>}</figcaption>
+          </figure>
+        ))}
+      </section>
+    )}
+
+    {c?.pages && c.pages.length > 0 && (
+      <section class="wrap sec">
+        <h2>Pages worth stopping at</h2>
+        <ol class="leaves">
+          {c.pages.map((p) => (
+            <li><a href={here ?? b.src}><span class="y">{scan?.pages[p.n - 1]?.l ?? `Image ${p.n}`}</span></a><span>{p.note}{p.s.map((n) => <sup><a href={`#src-${n + 1}`}>{n + 1}</a></sup>)}</span></li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {bars.length > 1 && (
+      <section class="wrap sec" data-pagefind-ignore>
+        <h2>The shape of the book</h2>
+        <p class="dim" id="tell" aria-live="polite">{bars.length} chapters, {total.toLocaleString('en')} words. Point at a bar.</p>
+        <div class="shape">
+          {bars.map((x) => <button style={`height:${Math.max(3, (x.words / most) * 100)}%`} data-t={`${x.title}: ${x.words.toLocaleString('en')} words, about ${span(mins(x.words))}`} aria-label={`${x.title}, ${x.words} words`}></button>)}
+        </div>
+      </section>
+    )}
+
+    {c && (
+      <section class="wrap sec prose">
+        <h2>How it came to be here</h2>
+        <p>{c.context}</p>
+      </section>
+    )}
+
+    <section class="wrap sec">
+      <h2>Sources</h2>
+      <ol class="src">
+        {c?.sources.map((s, i) => <li id={`src-${i + 1}`}><a href={s.url}>{s.title}</a></li>)}
+        {!c && <li><a href={b.src}>{b.holder}</a></li>}
+      </ol>
+      <p class="dim fine">
+        {text && <>Text: {text.edition}. {text.licence}. </>}
+        {scan && <>Images: {scan.credit}. {scan.licence}. </>}
+        {c && <a href={b.src}>Holder's record</a>}
+      </p>
+    </section>
+
+    {others.length > 0 && (
+      <section class="wrap sec" data-pagefind-ignore>
+        <h2>Also from {lib!.n}</h2>
+        <BookRows books={others} holder={false} />
+      </section>
+    )}
+  </article>
+</Base>
+<style>
+  .head h1 { max-width: 18ch; }
+  .by { font-size: 1.5rem; color: var(--dim); margin: 0.6rem 0 1rem; }
+  .held .stamp { margin-left: 0.6rem; }
+  .go { display: inline-block; margin: 1rem 1rem 0 0; padding: 0.8rem 1.6rem; background: var(--brass); color: var(--stacks); font: 400 1.4rem/1 var(--display); text-decoration: none; border-radius: 2px; }
+  .go:hover { background: var(--paper); }
+  .lede { font-size: 1.35rem; max-width: 62ch; margin-top: 1.8rem; }
+  .geo { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+  .map { position: sticky; top: 4.5rem; aspect-ratio: 2 / 1; overflow: hidden; border: 1px solid var(--rule); border-radius: 2px; }
+  .layer { position: absolute; aspect-ratio: 2 / 1; }
+  .layer img { width: 100%; height: 100%; display: block; }
+  .dot { position: absolute; width: 0.9rem; height: 0.9rem; margin: -0.45rem; padding: 0; border-radius: 50%; border: 2px solid var(--stacks); background: var(--brass); cursor: pointer; transition: scale 0.2s; }
+  .dot.on { background: var(--paper); scale: 1.9; z-index: 1; }
+  .plist { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--rule); }
+  .plist li { padding: 0.75rem 0.6rem; border-bottom: 1px solid var(--rule); cursor: default; }
+  .plist li.on { background: color-mix(in srgb, var(--brass) 14%, transparent); }
+  .plist b { font-weight: 400; color: var(--paper); margin-right: 0.3rem; }
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: clamp(2rem, 6vw, 5rem); }
+  .time, .leaves { list-style: none; margin: 0; padding: 0; }
+  .time { border-left: 1px solid var(--brass); }
+  .time li, .leaves li { display: grid; grid-template-columns: 5.5rem 1fr; gap: 1rem; padding: 0.55rem 0 0.55rem 1.2rem; position: relative; }
+  .time li::before { content: ''; position: absolute; left: -4px; top: 1.2rem; width: 7px; height: 7px; border-radius: 50%; background: var(--brass); }
+  .y { font-variant-numeric: tabular-nums; color: var(--brass); }
+  .leaves li { padding-left: 0; border-bottom: 1px solid var(--rule); grid-template-columns: 9rem 1fr; }
+  details { border-bottom: 1px solid var(--rule); }
+  details:first-of-type { border-top: 1px solid var(--rule); }
+  summary { cursor: pointer; padding: 0.8rem 0; font: 400 1.35rem/1.2 var(--display); }
+  summary .dim { font: 400 1rem var(--body, inherit); margin-left: 0.5rem; }
+  details p { margin: 0 0 1rem; max-width: 62ch; }
+  .ideas { max-width: 50rem; }
+  .quote { margin: 0 0 2.4rem; max-width: 46rem; }
+  .quote blockquote { margin: 0; padding-left: 1.4rem; border-left: 2px solid var(--brass); font: 400 clamp(1.4rem, 2.4vw, 1.9rem)/1.35 var(--display); color: var(--paper); }
+  .quote figcaption { margin: 0.8rem 0 0 1.4rem; }
+  .shape { display: flex; align-items: flex-end; gap: 1px; height: 11rem; border-bottom: 1px solid var(--rule); }
+  .shape button { flex: 1; min-width: 1px; padding: 0; border: 0; background: var(--brass); opacity: 0.55; cursor: pointer; }
+  .shape button:is(:hover, :focus-visible, .on) { opacity: 1; background: var(--paper); }
+  .prose p { max-width: 62ch; font-size: 1.2rem; }
+  .src { padding-left: 1.4rem; overflow-wrap: anywhere; }
+  .src li:target { color: var(--paper); }
+  .fine { font-size: 0.95rem; }
+  sup { margin-left: 0.15em; font-size: 0.7em; }
+  sup a { text-decoration: none; color: var(--brass); }
+  @media (max-width: 760px) { .geo { grid-template-columns: 1fr; } .map { position: relative; } }
+  @media (prefers-reduced-motion: reduce) { .dot { transition: none; } }
+</style>
+<script>
+  const pair = (i?: string) => document.querySelectorAll('#places [data-i]').forEach((e) => e.classList.toggle('on', (e as HTMLElement).dataset.i === i))
+  const places = document.getElementById('places')
+  for (const type of ['pointerover', 'focusin', 'click'] as const)
+    places?.addEventListener(type, (e) => {
+      const hit = (e.target as HTMLElement).closest<HTMLElement>('[data-i]')
+      if (!hit) return
+      pair(hit.dataset.i)
+      if (type === 'click' && hit.matches('.dot')) places.querySelector(`li[data-i="${hit.dataset.i}"]`)?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
+    })
+  const tell = document.getElementById('tell')
+  const shape = document.querySelector('.shape')
+  for (const type of ['pointerover', 'focusin', 'click'] as const)
+    shape?.addEventListener(type, (e) => {
+      const bar = (e.target as HTMLElement).closest<HTMLElement>('button')
+      if (!bar) return
+      shape.querySelector('.on')?.classList.remove('on')
+      bar.classList.add('on')
+      tell!.textContent = bar.dataset.t!
+    })
+</script>

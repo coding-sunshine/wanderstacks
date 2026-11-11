@@ -21,3 +21,6 @@ public/scan/
 test-results/
 playwright-report/
 .claude/
+
+# astro generated types
+.astro/

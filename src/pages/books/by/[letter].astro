@@ -1,0 +1,28 @@
+---
+import Base from '../../../layouts/Base.astro'
+import BookRows from '../../../components/BookRows.astro'
+import { books, type Book, letter, sortKey } from '../../../site/data'
+export function getStaticPaths() {
+  const groups = Map.groupBy(books, (b) => letter(b.title))
+  return [...groups].map(([c, list]) => ({
+    params: { letter: c === '#' ? '0' : c.toLowerCase() },
+    props: { c, list: list.sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title))), all: [...groups.keys()].sort() },
+  }))
+}
+const { c, list, all } = Astro.props as { c: string; list: Book[]; all: string[] }
+---
+<Base title={`Books: ${c}`} desc={`${list.length} books whose titles begin with ${c}.`}>
+  <section class="wrap sec">
+    <h1>Books, {c === '#' ? 'numbers and signs' : c}</h1>
+    <nav class="picks az" aria-label="By first letter">
+      <a class="pick" href="/books/">All</a>
+      {all.map((x) => <a class="pick" aria-current={x === c ? 'page' : undefined} href={`/books/by/${x === '#' ? '0' : x.toLowerCase()}/`}>{x}</a>)}
+    </nav>
+    <BookRows books={list} />
+  </section>
+</Base>
+<style>
+  .az { margin: 1.6rem 0; }
+  .az a { text-decoration: none; min-width: 2.4rem; text-align: center; }
+  .az a[aria-current] { border-color: var(--brass); color: var(--brass); }
+</style>

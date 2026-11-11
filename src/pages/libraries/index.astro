@@ -1,0 +1,86 @@
+---
+import Base from '../../layouts/Base.astro'
+import Shot from '../../components/Shot.astro'
+import { libs, lead, lost, year, seeing, booksOf } from '../../site/data'
+const rows = [...libs].sort((a, b) => a.n.localeCompare(b.n))
+---
+<Base title="Libraries" desc={`${libs.length} great libraries, standing and lost: where they are, when they were founded, and what you can see of each.`}>
+  <section class="wrap sec">
+    <h1>Libraries</h1>
+    <p class="dim lede">{libs.filter((l) => !lost(l)).length} standing, {libs.filter(lost).length} lost. Each row says what you can see: a real walk-through, photographs, or a reconstruction.</p>
+    <div class="tools">
+      <input class="field" id="q" type="search" placeholder="Filter by name, city or country" aria-label="Filter libraries" />
+      <div class="picks" role="group" aria-label="Show">
+        <button class="pick" data-f="all" aria-pressed="true">All</button>
+        <button class="pick" data-f="standing" aria-pressed="false">Standing</button>
+        <button class="pick" data-f="lost" aria-pressed="false">Lost</button>
+        <button class="pick" data-f="walk" aria-pressed="false">Walk-through</button>
+        <button class="pick" data-f="books" aria-pressed="false">Has books to read</button>
+        <button class="pick" id="sort" aria-pressed="false">Oldest first</button>
+      </div>
+    </div>
+    <ul class="rows" id="list">
+      {rows.map((l) => {
+        const s = seeing(l.id), p = lead(l.id), nb = booksOf(l.id).length
+        return (
+          <li data-q={`${l.n} ${l.p} ${l.k}`.toLowerCase()} data-y={l.y} data-n={l.n}
+            data-tags={[lost(l) ? 'lost' : 'standing', s.walk && 'walk', nb && 'books'].filter(Boolean).join(' ')}>
+            <a class="row" href={`/libraries/${l.id}/`}>
+              {p ? <Shot p={p} sizes="120px" name={`lib-${l.id}`} /> : <span />}
+              <span class="n">{l.n}</span>
+              <span class="dim">{l.p}</span>
+              <span class="y dim">{year(l.y)}</span>
+              <span class="see">
+                {lost(l) && <span class="stamp" data-s="lost">lost</span>}
+                {s.walk > 0 && <span class="stamp">walk-through</span>}
+                {s.recon > 0 && <span class="stamp" data-s="recon">reconstruction</span>}
+                {s.photos > 0 && <span class="stamp" data-s="photo">{s.photos} photographs</span>}
+                {nb > 0 && <span class="stamp" data-s="photo">{nb} books</span>}
+              </span>
+            </a>
+          </li>
+        )
+      })}
+    </ul>
+    <p id="none" class="dim" hidden>No library matches. Clear the filter to see all {libs.length}.</p>
+  </section>
+</Base>
+<style>
+  .lede { font-size: 1.3rem; margin-top: 1rem; }
+  .tools { display: grid; gap: 0.9rem; margin: 2rem 0 1.4rem; position: sticky; top: 3.1rem; z-index: 5; background: var(--stacks); padding-block: 0.8rem; }
+  #q { max-width: 34rem; }
+</style>
+<script>
+  const list = document.getElementById('list')!
+  const items = [...list.children] as HTMLElement[]
+  const q = document.getElementById('q') as HTMLInputElement
+  const none = document.getElementById('none')!
+  let f = 'all'
+  const apply = () => {
+    const s = q.value.trim().toLowerCase()
+    let n = 0
+    for (const li of items) {
+      const on = (!s || li.dataset.q!.includes(s)) && (f === 'all' || li.dataset.tags!.split(' ').includes(f))
+      li.hidden = !on
+      if (on) n++
+    }
+    none.hidden = n > 0
+  }
+  q.addEventListener('input', apply)
+  document.querySelectorAll<HTMLButtonElement>('[data-f]').forEach((b) =>
+    b.addEventListener('click', () => {
+      f = b.dataset.f!
+      document.querySelectorAll('[data-f]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
+      apply()
+    }),
+  )
+  const sort = document.getElementById('sort')!
+  sort.addEventListener('click', () => {
+    const old = sort.getAttribute('aria-pressed') !== 'true'
+    sort.setAttribute('aria-pressed', String(old))
+    const order = [...items].sort((a, b) => (old ? +a.dataset.y! - +b.dataset.y! : a.dataset.n!.localeCompare(b.dataset.n!)))
+    const move = () => list.append(...order)
+    if (document.startViewTransition) document.startViewTransition(move)
+    else move()
+  })
+</script>

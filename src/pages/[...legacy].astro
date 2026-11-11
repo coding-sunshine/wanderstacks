@@ -1,0 +1,43 @@
+---
+// The immersive views (globe, page-turn reader, scan viewer, shelf, Babel) are client-rendered by src/main.ts.
+// Each of their URLs gets this same shell so a direct visit or a reload works on any static host.
+import { readdirSync, existsSync } from 'node:fs'
+import { libs } from '../site/data'
+export function getStaticPaths() {
+  const ls = (p: string) => (existsSync(p) ? readdirSync(p).filter((x) => !x.includes('.')) : [])
+  const ids = libs.map((l) => l.id)
+  return [
+    'atlas', 'shelf', 'babel', 'byrne', 'stgall', 'darwin', 'book',
+    ...ids.flatMap((id) => [`atlas/${id}`, `ledger/${id}`, `place/${id}`, `room/${id}`]),
+    ...ls('public/book').map((id) => `read/${id}`),
+    ...ls('public/scan').map((id) => `scan/${id}`),
+  ].map((legacy) => ({ params: { legacy } }))
+}
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>WorldLibs</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="description" content="Walk the world's great libraries, past and present, and read their books." />
+  </head>
+  <body>
+    <header class="bar">
+      <a href="/" class="brand">WorldLibs</a>
+      <nav aria-label="Main">
+        <a href="/libraries/">Libraries</a>
+        <a href="/books/">Books</a>
+        <a href="/atlas">Globe</a>
+        <a href="/shelf">Shelf</a>
+        <button id="navsearch" type="button">Search</button>
+      </nav>
+    </header>
+    <canvas id="grain" width="128" height="128" aria-hidden="true"></canvas>
+    <div class="plate" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <main id="app"></main>
+    <script>import '../main.ts'</script>
+  </body>
+</html>

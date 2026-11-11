@@ -1,0 +1,19 @@
+---
+import { type Book, libById, readHere } from '../site/data'
+interface Props { books: Book[]; holder?: boolean }
+const { books, holder = true } = Astro.props
+const label = { open: 'free to read', nc: 'non-commercial', 'link-only': 'catalogue record' } as const
+---
+<ul class="rows">
+  {books.map((b) => (
+    <li data-q={`${b.title} ${b.author ?? ''} ${b.holder}`.toLowerCase()} data-kind={b.kind}>
+      <a class="brow" href={`/books/${b.id}/`}>
+        <span class="t">{b.title}</span>
+        <span class="dim">{b.author ?? ''}</span>
+        <span class="dim">{b.date ?? ''}</span>
+        <span class="dim">{holder ? (b.lib ? libById.get(b.lib)?.n : b.holder) : (b.shelfmark ?? '')}</span>
+        <span class="stamp" data-s={readHere(b.id) ? 'open' : b.rights}>{readHere(b.id) ? 'read here' : label[b.rights]}</span>
+      </a>
+    </li>
+  ))}
+</ul>

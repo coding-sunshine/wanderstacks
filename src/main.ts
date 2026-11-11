@@ -37,7 +37,7 @@ addEventListener('resize', paintGrain)
 type Route = [RegExp, () => Promise<{ mount: Mount }>]
 
 const routes: Route[] = [
-  [/^\/(?:(?<mode>atlas)(?:\/(?<lib>[\w-]+))?)?$/, () => import('./cinematic')],
+  [/^\/(?<mode>atlas)(?:\/(?<lib>[\w-]+))?$/, () => import('./cinematic')],
   [/^\/room\/(?<lib>[\w-]+)$/, () => import('./room')],
   [/^\/read\/(?<book>[\w-]+)$/, () => import('./reader')],
   [/^\/byrne$/, () => import('./byrne')],
@@ -66,6 +66,8 @@ const broken: Mount = (el) => {
 async function render() {
   const t = ++token
   const path = location.pathname.replace(/\/+$/, '') || '/'
+  // Everything outside these routes is a static page: hand it to the browser.
+  if (!routes.some(([re]) => re.test(path)) && document.readyState === 'complete') return location.assign(location.href)
   let mount = notFound
   let params: Record<string, string> = {}
   for (const [re, load] of routes) {
@@ -90,7 +92,7 @@ document.addEventListener('click', (e) => {
   const a = (e.target as Element).closest('a')
   if (!a || a.target || a.hasAttribute('download') || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
   const url = new URL(a.href)
-  if (url.origin !== location.origin || url.pathname === '/plan') return
+  if (url.origin !== location.origin || !routes.some(([re]) => re.test(url.pathname.replace(/\/+$/, '')))) return
   e.preventDefault()
   if (url.pathname + url.search !== location.pathname + location.search) go(url.pathname + url.search + url.hash)
 })

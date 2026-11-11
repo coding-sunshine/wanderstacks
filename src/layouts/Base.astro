@@ -1,0 +1,31 @@
+---
+import '../site/site.css'
+interface Props { title: string; desc?: string; index?: boolean }
+const { title, desc = "Walk the world's great libraries, standing and lost, and read their books.", index = false } = Astro.props
+const at = Astro.url.pathname
+const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/atlas/', 'Globe'], ['/search/', 'Search']]
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>{title === 'WorldLibs' ? title : `${title} | WorldLibs`}</title>
+    <meta name="description" content={desc} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <slot name="head" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="/">WorldLibs</a>
+      {nav.map(([href, label]) => <a href={href} aria-current={at.startsWith(href) ? 'page' : undefined}>{label}</a>)}
+    </header>
+    <main {...(index ? { 'data-pagefind-body': '' } : {})}><slot /></main>
+    <footer class="foot">
+      <p>Every photograph, panorama and scan carries its author and licence beside it.</p>
+      <p><a href="/libraries/">All libraries</a></p>
+      <p><a href="/books/">All books</a></p>
+    </footer>
+  </body>
+</html>

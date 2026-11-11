@@ -1,0 +1,95 @@
+---
+import type { SphereNode } from '../site/data'
+interface Props { nodes: SphereNode[]; name: string }
+const { nodes, name } = Astro.props
+const real = nodes.filter((n) => n.real).length
+---
+<section class="walk" id="walk" data-nodes={JSON.stringify(nodes)}>
+  <div class="wrap">
+    <h2>{real === nodes.length ? 'Walk through it' : real ? 'Walk through it, real and imagined' : 'A reconstruction, imagined'}</h2>
+    <p class="how">Drag to look around. {nodes.some((n) => n.links?.length) && 'Follow the arrows on the floor to move.'}</p>
+  </div>
+  <div class="stage" aria-label={`360 degree view of ${name}`}>
+    <span class="stamp flag" data-s="recon" hidden>reconstruction, imagined</span>
+    <p class="wait">Loading the room</p>
+  </div>
+  <div class="wrap">
+    <ol class="stops">
+      {nodes.map((n, i) => (
+        <li>
+          <button type="button" data-go={n.id} aria-current={i === 0 ? 'true' : undefined}>
+            <b>{i + 1}</b>
+            <span>{n.cap}{!n.real && ' (reconstruction, imagined)'}</span>
+          </button>
+          <span class="mark"><a href={n.src}>{n.by}</a>, {n.lic}{n.basis && `. Based on ${n.basis}`}</span>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
+<script>
+  import '@photo-sphere-viewer/core/index.css'
+  import '@photo-sphere-viewer/virtual-tour-plugin/index.css'
+  type N = { id: string; f: string; w: number; real: boolean; cap: string; yaw0?: number; links?: { to: string; yaw: number }[] }
+  const root = document.querySelector<HTMLElement>('.walk')
+  if (root) new IntersectionObserver(async ([e], io) => {
+    if (!e.isIntersecting) return
+    io.disconnect()
+    const [{ Viewer }, { VirtualTourPlugin }] = await Promise.all([import('@photo-sphere-viewer/core'), import('@photo-sphere-viewer/virtual-tour-plugin')])
+    const nodes: N[] = JSON.parse(root.dataset.nodes!)
+    const stage = root.querySelector<HTMLElement>('.stage')!, flag = root.querySelector<HTMLElement>('.flag')!
+    // ponytail: one size per device (4096+ textures fail on many phones); add lo-then-hi swap if first paint feels slow
+    const big = matchMedia('(min-width: 900px)').matches
+    const rad = (d = 0) => (d * Math.PI) / 180
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches
+    const viewer = new Viewer({
+      container: stage,
+      navbar: ['zoom', 'fullscreen'],
+      defaultYaw: rad(nodes[0].yaw0),
+      defaultZoomLvl: nodes[0].w < 4000 ? 0 : 50, // small images look soft zoomed in; open them wide
+      moveInertia: !still,
+      loadingTxt: '',
+      plugins: [[VirtualTourPlugin, {
+        positionMode: 'manual',
+        renderMode: '3d',
+        preload: true,
+        transitionOptions: { showLoader: false, speed: still ? 0 : '20rpm', effect: still ? 'none' : 'fade', rotation: !still },
+        nodes: nodes.map((n) => ({
+          id: n.id,
+          panorama: `${n.f}${big ? '' : '-lo'}.webp`,
+          name: n.cap,
+          links: (n.links ?? []).map((l) => ({ nodeId: l.to, position: { yaw: rad(l.yaw), pitch: -0.25 } })),
+        })),
+        startNodeId: nodes[0].id,
+      }]],
+    })
+    const tour = viewer.getPlugin(VirtualTourPlugin) as InstanceType<typeof VirtualTourPlugin>
+    const show = (id: string) => {
+      flag.hidden = nodes.find((n) => n.id === id)?.real !== false
+      root.querySelectorAll<HTMLElement>('[data-go]').forEach((b) => b.dataset.go === id ? b.setAttribute('aria-current', 'true') : b.removeAttribute('aria-current'))
+    }
+    tour.addEventListener('node-changed', ({ node }) => show(node.id))
+    viewer.addEventListener('ready', () => { root.querySelector('.wait')?.remove(); show(nodes[0].id) }, { once: true })
+    root.addEventListener('click', (ev) => {
+      const b = (ev.target as HTMLElement).closest<HTMLElement>('[data-go]')
+      if (b) { tour.setCurrentNode(b.dataset.go!); stage.scrollIntoView({ block: 'nearest', behavior: still ? 'auto' : 'smooth' }) }
+    })
+  }, { rootMargin: '300px' }).observe(root)
+</script>
+<style>
+  .walk { padding-block: clamp(3rem, 8vw, 6rem); border-top: 1px solid var(--rule); }
+  h2 { font-family: var(--display); }
+  .how { color: var(--dim); max-width: 60ch; }
+  .stage { position: relative; width: 100%; height: min(78vh, 62vw); min-height: 22rem; margin-block: 1.5rem; background: var(--leaf); }
+  .wait { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; color: var(--dim); font-family: var(--mono); font-size: .8rem; }
+  .flag { position: absolute; z-index: 40; top: 1rem; left: var(--gutter); pointer-events: none; background: var(--stacks); }
+  .flag[hidden] { display: none; }
+  .stops { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: .25rem 2rem; }
+  .stops li { padding-block: .6rem; border-top: 1px solid var(--rule); display: grid; gap: .2rem; }
+  .stops button { all: unset; cursor: pointer; display: flex; gap: .75rem; align-items: baseline; color: var(--paper); }
+  .stops button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .stops b { font-family: var(--mono); font-weight: 400; color: var(--dim); min-width: 1.5em; }
+  .stops button:is(:hover, [aria-current]) b { color: var(--brass); }
+  .stops button[aria-current] span { color: var(--brass); }
+  .stops .mark { padding-left: 2.25em; }
+</style>

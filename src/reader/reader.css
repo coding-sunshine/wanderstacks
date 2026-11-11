@@ -71,6 +71,7 @@
 .rd-page p { margin: 0; text-indent: 1.2em; }
 .rd-page h2 + p, .rd-page h4 + p, .rd-page p.c { text-indent: 0; }
 .rd-page p.q { margin-left: 1.2em; font-size: 0.95em; }
+.rd-page strong { font-weight: 400; font-variant-caps: small-caps; letter-spacing: 0.05em; color: #6b4a1c; } /* speaker names in plays and dialogues */
 .rd-page .rd-num { position: absolute; bottom: 14px; left: 0; right: 0; text-align: center; color: #7a6540; font-size: 0.8rem; }
 .rd-plain > .rd-page { position: absolute; inset: 0; }
 .rd-measure { position: absolute; left: -99999px; top: 0; visibility: hidden; }

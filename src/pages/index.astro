@@ -1,0 +1,438 @@
+---
+import Base from '../layouts/Base.astro'
+import Shot from '../components/Shot.astro'
+import BookRows from '../components/BookRows.astro'
+import { libs, libById, photos, spheres, lead, lost, books, readHere, year } from '../site/data'
+
+// Hero: one real 360 photograph per library that has one, interiors first.
+const rooms = Object.entries(spheres)
+  .map(([id, s]) => ({ l: libById.get(id)!, n: s.nodes.filter((n) => n.real).sort((a, b) => +(b.kind === 'interior') - +(a.kind === 'interior'))[0] }))
+  .filter((r) => r.l && r.n)
+  .map(({ l, n }) => ({ id: l.id, name: l.n, place: l.p, f: n.f, by: n.by, lic: n.lic, src: n.src, p: lead(l.id), fact: l.dim || l.vol }))
+const poster = (rooms[0] && lead(rooms[0].id)) || photos.longroom.in[0]
+const posterLib = libById.get(rooms[0] && lead(rooms[0].id) ? rooms[0].id : 'longroom')!
+
+// Timeline: eight libraries with a photograph, spread evenly from the oldest to the newest.
+const dated = libs.filter((l) => lead(l.id)).sort((a, b) => a.y - b.y)
+const eras = Array.from({ length: 8 }, (_, i) => dated[Math.round((i * (dated.length - 1)) / 7)])
+const byName = [...libs].sort((a, b) => a.n.localeCompare(b.n))
+const half = Math.ceil(byName.length / 2)
+const gone = libs.filter(lost).sort((a, b) => a.y - b.y).slice(0, 6)
+const open = books.filter((b) => readHere(b.id))
+const goneCount = libs.filter(lost).length
+// Hero headings, one picked per visit. The lede under it states a fact about the library on screen, taken from its own record.
+const heads = [
+  ['The great libraries,', 'to walk through', 'and to read in'],
+  ['Twenty-seven centuries', 'of reading rooms,', 'behind one door'],
+  ['Walk the stacks,', 'open the books,', 'stay as long as you like'],
+  ['The libraries still standing,', 'and the ones', 'that are gone'],
+  ['Step inside.', 'The books are', 'already open'],
+  ['Every great library,', 'one room', 'at a time'],
+]
+const more = libs.filter((l) => lead(l.id) && !lost(l))
+const say = `${libs.length} libraries across twenty-seven centuries. ${goneCount} of them are gone, and appear here only as reconstructions that say so. The rest are shown in real photographs, each with its author and licence beside it. ${open.length} of their books lie open on the desk.`
+---
+<Base title="WorldLibs">
+  <script is:inline>
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const d = document.documentElement
+      d.classList.add('mo')
+      try { if (!sessionStorage.wl) { sessionStorage.wl = 1; d.classList.add('pre') } } catch {}
+      setTimeout(() => { d.classList.remove('pre'); d.classList.add('go') }, 6000)
+    }
+  </script>
+  <div class="veil" aria-hidden="true"><p><b>0</b><span class="mark">libraries</span></p></div>
+  <div class="cur" aria-hidden="true"></div>
+  <div class="peek" aria-hidden="true"><img alt="" /></div>
+
+  <section class="hero" data-total={libs.length} data-rooms={JSON.stringify(rooms)} data-heads={JSON.stringify(heads)} data-open={open.length}>
+    <div class="frame">
+      <figure>
+        <Shot p={poster} sizes="100vw" eager />
+      </figure>
+    </div>
+    <p class="mark credit"><a href={`/libraries/${posterLib.id}/`}>{posterLib.n}</a>, {posterLib.p}. Photograph by {poster.by}, {poster.lic}</p>
+    <div class="over wrap">
+      <h1><span><i>The great libraries,</i></span> <span><i>to walk through</i></span> <span><i>and to read in</i></span></h1>
+      <div class="rise">
+        <p class="lede">{libs.length} libraries, standing and lost. {open.length} of their books open here, page by page.</p>
+        <form action="/search/" role="search">
+          <input class="field" name="q" type="search" placeholder="Search a library, a book, an author" aria-label="Search WorldLibs" />
+          <button class="pick">Search</button>
+        </form>
+        <p class="picks">
+          <a class="pick" href="/atlas/">Spin the globe</a>
+          <a class="pick" href="/libraries/">Libraries A to Z</a>
+          <a class="pick" href="/books/">Books</a>
+          <button class="pick any" data-ids={libs.map((l) => l.id).join(' ')}>Take me somewhere</button>
+        </p>
+      </div>
+    </div>
+    <p class="now"><span class="mark">You are standing in</span><a href={`/libraries/${posterLib.id}/`} data-cur="Walk in">{posterLib.n}</a><span class="dim">{posterLib.p}</span></p>
+  </section>
+  <script is:inline>
+    {
+      // Every visit opens on a different library: swap the poster and its credit before the first paint.
+      const h = document.querySelector('.hero'), rooms = JSON.parse(h.dataset.rooms)
+      const i = Math.floor(Math.random() * rooms.length), r = rooms[i]
+      h.dataset.start = i
+      if (i && r.p) {
+        const el = (href, textContent) => Object.assign(document.createElement('a'), { href, textContent })
+        const at = `/libraries/${r.id}/`
+        Object.assign(h.querySelector('.frame img'), { srcset: `${r.p.f}-960.webp 960w, ${r.p.f}-1920.webp 1920w`, src: `${r.p.f}-960.webp`, alt: r.p.cap, width: r.p.w, height: r.p.h })
+        h.querySelector('.credit').replaceChildren(el(at, r.name), `, ${r.place}. Photograph by `, el(r.p.src, r.p.by), `, ${r.p.lic}`)
+        Object.assign(h.querySelector('.now a'), { href: at, textContent: r.name })
+        h.querySelector('.now .dim').textContent = r.place
+      }
+      const head = JSON.parse(h.dataset.heads)
+      head[Math.floor(Math.random() * head.length)].forEach((t, k) => (h.querySelectorAll('h1 i')[k].textContent = t))
+      if ((i ? r.p : true) && r.fact) h.querySelector('.lede').textContent = `${r.name}: ${r.fact.replace(/\.$/, '')}. One of ${h.dataset.total} libraries here, with ${h.dataset.open} books open to read.`
+    }
+  </script>
+
+  <nav class="tape" aria-label="Every library">
+    {[byName.slice(0, half), byName.slice(half)].map((row) => (
+      <p>{row.map((l) => <a href={`/libraries/${l.id}/`}>{l.n}</a>)}</p>
+    ))}
+  </nav>
+
+  <section class="wrap creed"><p>{say}</p></section>
+  <section class="era" style={`--n:${eras.length}`}>
+    <div class="stage">
+      <h2 class="wrap">Twenty-seven centuries of reading rooms</h2>
+      <p class="count" aria-hidden="true"></p>
+      <ol>
+        {eras.map((l) => {
+          const p = lead(l.id)!
+          return (
+            <li data-y={l.y}>
+              <figure>
+                <Shot p={p} sizes="100vw" />
+                <figcaption class="mark">Photograph by <a href={p.src}>{p.by}</a>, {p.lic}</figcaption>
+              </figure>
+              <a class="say wrap" data-cur="Enter" href={`/libraries/${l.id}/`}>
+                <span class="when">{l.yl || year(l.y)}</span>
+                <span class="n">{l.n}</span>
+                <span class="dim">{l.p}{lost(l) && <span class="stamp" data-s="lost">lost</span>}</span>
+                {l.dim && <span class="fact">{l.dim}</span>}
+              </a>
+            </li>
+          )
+        })}
+      </ol>
+      <span class="rail" aria-hidden="true"></span>
+    </div>
+  </section>
+
+  <section class="wrap sec">
+    <h2>Lost, and what is left of them</h2>
+    <ul class="rows">
+      {gone.map((l) => (
+        <li><a class="row" data-cur="Open" href={`/libraries/${l.id}/`}>
+          {lead(l.id) ? <Shot p={lead(l.id)!} sizes="120px" name={`lib-${l.id}`} /> : <span />}
+          <span class="n">{l.n}</span><span class="dim">{l.p}</span><span class="y dim">{year(l.y)}</span>
+          <span class="see"><span class="stamp" data-s="lost">lost</span></span>
+        </a></li>
+      ))}
+    </ul>
+    <p><a href="/libraries/">All {libs.length} libraries</a></p>
+  </section>
+  <section class="wrap sec">
+    <h2>Open on the desk</h2>
+    <BookRows books={open.slice(0, 10)} />
+    <p><a href="/books/">All {books.length} books</a></p>
+  </section>
+  <section class="wrap sec">
+    <h2>More rooms to walk into</h2>
+    <ul class="rows more">
+      {more.map((l) => (
+        <li><a class="row" data-cur="Open" href={`/libraries/${l.id}/`}>
+          <Shot p={lead(l.id)!} sizes="120px" />
+          <span class="n">{l.n}</span><span class="dim">{l.p}</span><span class="y dim">{year(l.y)}</span>
+          <span class="see">{lost(l) && <span class="stamp" data-s="lost">lost</span>}</span>
+        </a></li>
+      ))}
+    </ul>
+    <script is:inline>
+      {
+        // A different dozen on every visit. Without script the whole list shows.
+        const ul = document.querySelector('.rows.more'), li = [...ul.children]
+        for (let i = li.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [li[i], li[j]] = [li[j], li[i]] }
+        li.forEach((el, i) => { el.hidden = i >= 12; ul.append(el) })
+      }
+    </script>
+    <p><a href="/libraries/">All {libs.length} libraries</a></p>
+  </section>
+  <section class="out wrap">
+    <h2>Not sure where to begin?</h2>
+    <p class="dim">One of {libs.length}, picked for you.</p>
+    <button class="any leap" data-ids={libs.map((l) => l.id).join(' ')}>Take me somewhere</button>
+  </section>
+</Base>
+<style is:global>
+  /* Home only. With script and motion allowed, html carries .mo; without it every block below is a plain readable page. */
+  html.mo { scroll-behavior: auto; }
+  .veil { display: none; position: fixed; inset: 0; z-index: 60; background: var(--stacks); place-items: end start; padding: var(--gutter); }
+  .pre .veil { display: grid; }
+  .veil p { margin: 0; display: flex; align-items: baseline; gap: 1rem; }
+  .veil b { font-family: var(--display); font-weight: 400; font-size: clamp(6rem, 26vw, 24rem); line-height: 0.8; color: var(--brass); font-variant-numeric: tabular-nums; }
+
+  /* Pointer follower and the photograph that follows it over the lost rows. Fine pointers only. */
+  .cur, .peek { display: none; position: fixed; left: 0; top: 0; pointer-events: none; }
+  .fine .cur { display: grid; opacity: 0; place-items: center; z-index: 50; width: 0.7rem; height: 0.7rem; margin: -0.35rem; border-radius: 50%; background: var(--brass); color: var(--stacks); font-family: var(--mono); font-size: 0; transition: width 0.35s var(--ease), height 0.35s var(--ease), margin 0.35s var(--ease); }
+  .fine .cur.big { width: 5.6rem; height: 5.6rem; margin: -2.8rem; font-size: 0.72rem; }
+  .fine .peek { display: block; z-index: 49; width: 17rem; aspect-ratio: 4 / 5; margin: -11rem 0 0 2.4rem; overflow: hidden; clip-path: inset(100% 0 0 0); transition: clip-path 0.5s var(--ease); }
+  .fine .peek.on { clip-path: inset(0); }
+  .peek img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* Hero: a real 360 photograph that turns slowly and follows the pointer. On scroll the view closes into an arched window. */
+  .hero { position: relative; height: min(94svh, 62rem); min-height: 36rem; display: grid; align-items: end; overflow: hidden; }
+  .mo .hero { height: 100svh; }
+  .frame { position: absolute; inset: 0; clip-path: inset(0% 0% 0% 0% round 0vw 0vw 0px 0px); will-change: clip-path; }
+  .frame figure { position: absolute; inset: 0; margin: 0; }
+  .frame img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.6); }
+  .frame canvas { position: absolute; inset: 0; width: 100%; height: 100%; filter: brightness(0.66); opacity: 0; transition: opacity 1.6s var(--ease); }
+  .frame canvas.on { opacity: 1; }
+  .frame::after { content: ''; position: absolute; inset: 35% 0 0; background: linear-gradient(transparent, var(--stacks)); pointer-events: none; }
+  .credit { position: absolute; right: var(--gutter); top: 1rem; z-index: 2; text-align: right; margin: 0; }
+  .mo .credit { top: 4.6rem; }
+  .over { position: relative; z-index: 1; width: 100%; padding-bottom: clamp(2rem, 6vw, 4.5rem); }
+  .mo:not(.go) .over { opacity: 0; }
+  .over h1 { font-size: clamp(2.9rem, 9.4vw, 9rem); line-height: 0.98; }
+  .over h1 span { display: block; overflow: hidden; padding-bottom: 0.08em; }
+  .over h1 i { display: block; font-style: normal; }
+  .over h1 span:nth-child(2) i { padding-left: 1.2em; }
+  .lede { font-size: 1.35rem; margin: 1.4rem 0 1.4rem; }
+  .hero form { display: flex; gap: 0.5rem; max-width: 38rem; margin-bottom: 1rem; }
+  .hero form .field { flex: 1; }
+  .now { display: none; }
+  .mo .now { display: grid; justify-items: center; gap: 0.2rem; position: absolute; z-index: 2; left: 0; right: 0; bottom: 4svh; margin: 0; max-width: none; text-align: center; visibility: hidden; }
+  .now a { font-family: var(--display); font-size: clamp(1.7rem, 3.6vw, 3.2rem); line-height: 1.05; text-decoration: none; color: var(--paper); }
+
+  /* Tape: every library by name. It runs on its own, faster with the scroll, and leans with its speed. */
+  .tape { overflow: hidden; padding-block: clamp(1.5rem, 4vw, 3rem); border-block: 1px solid var(--rule); }
+  .tape p { display: flex; width: max-content; max-width: none; margin: 0; gap: 0; white-space: nowrap; will-change: transform; font-family: var(--display); font-size: clamp(1.8rem, 5vw, 4.2rem); line-height: 1.25; }
+  .tape a { text-decoration: none; padding-inline: 0.45em; color: var(--dim); }
+  .tape a::after { content: '✦'; font-size: 0.35em; vertical-align: middle; margin-left: 2.6em; color: var(--brass); }
+  .tape a:hover { color: var(--paper); }
+  .tape:not(.live) { overflow-x: auto; }
+
+  /* Creed: one paragraph that fills in word by word as it is scrolled through. */
+  .creed { padding-block: clamp(5rem, 16vw, 13rem); }
+  .creed p { margin: 0; max-width: 24ch; font-family: var(--display); font-size: clamp(2rem, 5.6vw, 5.4rem); line-height: 1.08; text-wrap: balance; }
+  @media (min-width: 60rem) { .creed p { max-width: 21ch; margin-left: auto; margin-right: 8%; } }
+
+  /* Timeline. Without script or with reduced motion it is a plain list; with .live it pins and each room wipes over the last. */
+  .era ol { list-style: none; margin: 0; padding: 0; }
+  .era h2 { padding-block: clamp(2.5rem, 7vw, 5rem) 1.4rem; }
+  .era li { position: relative; display: grid; align-items: end; min-height: 70svh; overflow: hidden; }
+  .era figure { position: absolute; inset: 0; margin: 0; }
+  .era figure img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.55); }
+  .era figcaption { position: absolute; right: var(--gutter); bottom: 1rem; z-index: 2; }
+  .say { position: relative; z-index: 1; width: 100%; display: grid; gap: 0.2rem; padding-block: 3rem; text-decoration: none; color: var(--paper); }
+  .say .when { font-family: var(--mono); font-size: 0.9rem; color: var(--brass); }
+  .say .n { font-family: var(--display); font-size: clamp(2.2rem, 6.5vw, 6rem); line-height: 1; max-width: 14ch; text-wrap: balance; }
+  .say .stamp { margin-left: 0.8em; }
+  .say .fact { max-width: 46ch; margin-top: 0.6rem; }
+  .count, .rail { display: none; }
+
+  .era.live { height: calc(var(--n) * 90svh + 100svh); }
+  .era.live .stage { position: sticky; top: 0; height: 100svh; overflow: hidden; }
+  .era.live h2 { position: absolute; z-index: 3; top: 4.2rem; left: 0; right: 0; padding-block: 0; font-family: var(--mono); font-size: 0.8rem; color: var(--dim); }
+  .era.live li { position: absolute; inset: 0; min-height: 0; clip-path: inset(100% 0 0 0); transition: clip-path 1s var(--ease); }
+  .era.live li[data-s='on'], .era.live li[data-s='past'] { clip-path: inset(0); }
+  .era.live figure img { transform: scale(1.25); transition: transform 2.4s var(--ease); }
+  .era.live li[data-s='on'] figure img { transform: scale(1.04); }
+  .era.live .say { padding-bottom: clamp(3rem, 9vh, 6rem); }
+  .era.live .say > * { opacity: 0; transform: translateY(2rem); transition: opacity 0.7s var(--ease), transform 0.9s var(--ease); }
+  .era.live li[data-s='on'] .say > * { opacity: 1; transform: none; transition-delay: calc(0.25s + var(--k, 0) * 0.08s); }
+  .era.live .say > :nth-child(2) { --k: 1; } .era.live .say > :nth-child(3) { --k: 2; } .era.live .say > :nth-child(4) { --k: 3; }
+  .era.live .when { visibility: hidden; }
+  .era.live .count { display: block; position: absolute; z-index: 3; right: var(--gutter); top: 3.2rem; margin: 0; max-width: none; font-family: var(--display); font-size: clamp(4.5rem, 17vw, 17rem); line-height: 1; color: var(--brass); font-variant-numeric: tabular-nums; mix-blend-mode: plus-lighter; opacity: 0.85; pointer-events: none; }
+  @media (max-width: 40rem) { .era.live .count { top: 5.6rem; } }
+  .credit, .era figcaption { text-shadow: 0 1px 6px rgb(0 0 0 / 0.85); }
+  .credit { color: var(--paper); }
+  .era.live .rail { display: block; position: absolute; z-index: 3; left: 0; bottom: 0; height: 3px; width: 100%; background: var(--brass); transform-origin: left; transform: scaleX(var(--p, 0)); }
+
+  .mo main h2:not(.era h2) { overflow: hidden; }
+  .mo main h2 > span { display: block; }
+
+  /* Way out: one large button that leans toward the pointer. */
+  .out { padding-block: clamp(5rem, 14vw, 11rem); display: grid; justify-items: center; text-align: center; gap: 0.6rem; }
+  .out p { margin: 0; }
+  .leap { margin-top: 1.2rem; padding: 0 0 0.08em; border: 0; border-bottom: 0.05em solid var(--brass); background: none; color: var(--paper); cursor: pointer; font-family: var(--display); font-size: clamp(2.8rem, 10.5vw, 10.5rem); line-height: 1; will-change: transform; }
+  .leap:hover, .leap:focus-visible { color: var(--brass); }
+</style>
+<script>
+  import gsap from 'gsap'
+  import { ScrollTrigger } from 'gsap/ScrollTrigger'
+  import { SplitText } from 'gsap/SplitText'
+  import Lenis from 'lenis'
+
+  for (const any of document.querySelectorAll<HTMLElement>('.any')) any.addEventListener('click', () => {
+    const ids = any.dataset.ids!.split(' ')
+    location.href = `/libraries/${ids[Math.floor(Math.random() * ids.length)]}/`
+  })
+
+  const root = document.documentElement
+  if (root.classList.contains('mo')) {
+    gsap.registerPlugin(ScrollTrigger, SplitText)
+    const lenis = new Lenis({ lerp: 0.09, wheelMultiplier: 0.9, anchors: true })
+    lenis.on('scroll', ScrollTrigger.update)
+    gsap.ticker.add((t) => lenis.raf(t * 1000))
+    gsap.ticker.lagSmoothing(0)
+
+    // Opening: on the first visit of a session a counter runs to the number of libraries, then the headline comes up letter by letter.
+    const hero = document.querySelector<HTMLElement>('.hero')!
+    const chars = SplitText.create('.over h1 i', { type: 'words,chars' }).chars
+    const open = gsap.timeline({ defaults: { ease: 'power4.out' } })
+    if (root.classList.contains('pre')) {
+      const n = { v: 0 }, b = document.querySelector('.veil b')!
+      lenis.stop()
+      open.to(n, { v: Number(hero.dataset.total), duration: 1.3, ease: 'power2.inOut', onUpdate: () => (b.textContent = String(Math.round(n.v))) })
+        .to('.veil', { yPercent: -100, duration: 0.9, ease: 'power4.inOut', onComplete: () => { root.classList.remove('pre'); lenis.start() } }, '+=0.15')
+    }
+    open.add(() => root.classList.add('go'), '>-0.5')
+      .from(chars, { yPercent: 115, rotate: 7, duration: 1, stagger: 0.016 }, '<')
+      .from('.rise > *', { y: 28, autoAlpha: 0, duration: 0.9, stagger: 0.09 }, '<0.45')
+
+    // Hero stays put while the photograph closes into an arched window and the camera pushes in.
+    let push = 0
+    const arch = innerWidth < 720 ? 'inset(13% 12% 25% 12% round 50vw 50vw 0px 0px)' : 'inset(11% 33% 23% 33% round 50vw 50vw 0px 0px)'
+    gsap.timeline({ scrollTrigger: { trigger: hero, start: 'top top', end: '+=110%', pin: true, scrub: 1, anticipatePin: 1, onUpdate: (s) => (push = s.progress) } })
+      .to('.frame', { clipPath: arch, ease: 'power2.inOut', duration: 1 }, 0)
+      .fromTo('.over', { yPercent: 0, autoAlpha: 1 }, { yPercent: -18, autoAlpha: 0, ease: 'power2.in', duration: 0.45 }, 0)
+      .fromTo('.now', { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, duration: 0.4 }, 0.55)
+
+    // Creed fills in word by word; headings rise out of a mask; rows arrive in order.
+    gsap.fromTo(SplitText.create('.creed p', { type: 'words' }).words, { opacity: 0.16 }, { opacity: 1, stagger: 0.1, ease: 'none', scrollTrigger: { trigger: '.creed', start: 'top 78%', end: 'bottom 55%', scrub: 0.8 } })
+    for (const h of document.querySelectorAll<HTMLElement>('main h2')) {
+      if (h.closest('.era')) continue
+      const s = document.createElement('span'); s.append(...h.childNodes); h.append(s)
+      gsap.from(s, { yPercent: 110, duration: 1, ease: 'power4.out', scrollTrigger: { trigger: h, start: 'top 86%' } })
+    }
+    ScrollTrigger.batch('.rows li', { start: 'top 90%', once: true, onEnter: (els) => gsap.from(els, { y: 36, autoAlpha: 0, duration: 0.8, ease: 'power3.out', stagger: 0.06 }) })
+
+    if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      root.classList.add('fine')
+      const cur = document.querySelector<HTMLElement>('.cur')!, peek = document.querySelector<HTMLElement>('.peek')!, img = peek.querySelector('img')!
+      const to = (el: HTMLElement, d: number) => [gsap.quickTo(el, 'x', { duration: d, ease: 'power3' }), gsap.quickTo(el, 'y', { duration: d, ease: 'power3' })]
+      const [cx, cy] = to(cur, 0.25), [px, py] = to(peek, 0.6)
+      addEventListener('pointermove', (e) => { cur.style.opacity = '1'; cx(e.clientX); cy(e.clientY); px(e.clientX); py(e.clientY) })
+      document.addEventListener('pointerover', (e) => {
+        const t = (e.target as Element).closest<HTMLElement>('[data-cur]')
+        cur.textContent = t?.dataset.cur ?? ''
+        cur.classList.toggle('big', !!t)
+        const src = t?.matches('.row') ? t.querySelector('img')?.src : undefined
+        if (src) img.src = src
+        peek.classList.toggle('on', !!src)
+      })
+      const go = document.querySelector<HTMLElement>('.leap')!, out = go.parentElement!
+      const [gx, gy] = [gsap.quickTo(go, 'x', { duration: 0.6, ease: 'power3' }), gsap.quickTo(go, 'y', { duration: 0.6, ease: 'power3' })]
+      out.addEventListener('pointermove', (e) => { const r = go.getBoundingClientRect(); gx((e.clientX - r.left - r.width / 2) * 0.18); gy((e.clientY - r.top - r.height / 2) * 0.3) })
+      out.addEventListener('pointerleave', () => { gx(0); gy(0) })
+    }
+
+    // Tape: constant drift plus the scroll distance, leaning with the scroll speed.
+    const tape = document.querySelector<HTMLElement>('.tape')!
+    const rows = [...tape.querySelectorAll<HTMLElement>('p')]
+    for (const r of rows) for (const a of [...r.children]) { const c = a.cloneNode(true) as HTMLElement; c.setAttribute('aria-hidden', 'true'); c.tabIndex = -1; r.append(c) }
+    tape.classList.add('live')
+    let drift = 0, last = performance.now(), lean = 0
+
+    // Timeline: scroll position picks the room and runs the year counter between their dates.
+    const era = document.querySelector<HTMLElement>('.era')!
+    const slides = [...era.querySelectorAll<HTMLElement>('li')]
+    const years = slides.map((s) => Number(s.dataset.y))
+    const count = era.querySelector<HTMLElement>('.count')!
+    let shown = years[0]
+    // A date label too long for the big counter stays in the caption; the counter then shows that room's own year.
+    const labels = slides.map((s) => { const w = s.querySelector<HTMLElement>('.when')!; const t = w.textContent!.trim(); if (t.length > 9) { w.style.visibility = 'visible'; return '' } return t })
+    era.classList.add('live')
+    ScrollTrigger.refresh()
+
+    const frame = (now: number) => {
+      drift += (now - last) * 0.03; last = now
+      lean += (Math.max(-9, Math.min(9, lenis.velocity * 0.22)) - lean) * 0.12
+      rows.forEach((r, i) => {
+        const w = r.scrollWidth / 2, x = (drift + scrollY * 0.6) % w
+        r.style.transform = `translateX(${i ? x - w : -x}px) skewX(${i ? lean : -lean}deg)`
+      })
+      const box = era.getBoundingClientRect()
+      const p = Math.min(1, Math.max(0, -box.top / (box.height - innerHeight)))
+      const on = Math.round(p * (slides.length - 1))
+      slides.forEach((s, i) => (s.dataset.s = i === on ? 'on' : i < on ? 'past' : 'next'))
+      // The counter runs toward the date of the room on screen and lands on that room's own date label, so no room rests beside a year that is not its own.
+      shown += (years[on] - shown) * 0.1
+      const y = Math.round(shown)
+      count.textContent = Math.abs(years[on] - shown) < 1 && labels[on] ? labels[on] : y < 0 ? `${-y} BC` : String(y)
+      era.style.setProperty('--p', String(p))
+      requestAnimationFrame(frame)
+    }
+    requestAnimationFrame(frame)
+
+    // Hero: load three only after first paint, then turn inside a real panorama and change room every 12 seconds.
+    const rooms: { id: string; name: string; place: string; f: string; by: string; lic: string; src: string; fact?: string }[] = JSON.parse(hero.dataset.rooms!)
+    if (rooms.length) addEventListener('load', async () => {
+      const T = await import('three')
+      const renderer = new T.WebGLRenderer({ antialias: false, powerPreference: 'low-power' })
+      renderer.setPixelRatio(Math.min(devicePixelRatio, 2))
+      const cam = new T.PerspectiveCamera(78, 1, 1, 1000)
+      cam.rotation.order = 'YXZ'
+      const scene = new T.Scene()
+      const ball = (r: number) => { const g = new T.SphereGeometry(r, 48, 32); g.scale(-1, 1, 1); const m = new T.Mesh(g, new T.MeshBasicMaterial({ transparent: true })); scene.add(m); return m.material }
+      const back = ball(500), front = ball(480)
+      front.opacity = 0
+      const lo = matchMedia('(max-width: 900px)').matches ? '-lo' : ''
+      const load = async (i: number) => { const t = await new T.TextureLoader().loadAsync(`${rooms[i].f}${lo}.webp`); t.colorSpace = T.SRGBColorSpace; return t }
+      const credit = hero.querySelector('.credit')!, now = hero.querySelector('.now')!
+      const name = (i: number) => {
+        const r = rooms[i]
+        credit.innerHTML = ''
+        const a = Object.assign(document.createElement('a'), { href: `/libraries/${r.id}/`, textContent: r.name })
+        const by = Object.assign(document.createElement('a'), { href: r.src, textContent: r.by })
+        credit.append(a, `, ${r.place}. 360 photograph by `, by, `, ${r.lic}`)
+        Object.assign(now.querySelector('a')!, { href: `/libraries/${r.id}/`, textContent: r.name })
+        now.querySelector('.dim')!.textContent = r.place
+        // The lede names the library on screen, so it follows the photograph.
+        hero.querySelector('.lede')!.textContent = `${r.name}${r.fact ? `: ${r.fact.replace(/\.$/, '')}` : ''}. One of ${hero.dataset.total} libraries here, with ${hero.dataset.open} books open to read.`
+      }
+      let wide = 78
+      const size = () => { renderer.setSize(hero.clientWidth, hero.clientHeight, false); cam.aspect = hero.clientWidth / hero.clientHeight; wide = cam.aspect < 1 ? 95 : 78 }
+      new ResizeObserver(size).observe(hero)
+      size()
+      const start = +hero.dataset.start! || 0
+      back.map = await load(start)
+      hero.querySelector('.frame')!.append(renderer.domElement)
+      requestAnimationFrame(() => renderer.domElement.classList.add('on'))
+      name(start)
+
+      let at = start, yaw = 0, mx = 0, my = 0, ex = 0, ey = 0, seen = true, then = performance.now()
+      hero.addEventListener('pointermove', (e) => { mx = e.clientX / innerWidth - 0.5; my = e.clientY / innerHeight - 0.5 })
+      new IntersectionObserver(([e]) => (seen = e.isIntersecting)).observe(hero)
+      setInterval(async () => {
+        if (!seen || document.hidden || front.opacity > 0) return
+        const next = (at + 1) % rooms.length
+        front.map = await load(next); front.needsUpdate = true
+        at = next; name(at)
+        front.opacity = 0.001
+      }, 12000)
+      const draw = (t: number) => {
+        const dt = t - then; then = t
+        if (seen && !document.hidden) {
+          yaw -= dt * 0.00005
+          ex += (mx - ex) * 0.04; ey += (my - ey) * 0.04
+          cam.fov = wide - push * 24; cam.updateProjectionMatrix()
+          cam.rotation.set(-ey * 0.35, yaw - ex * 0.7 - push * 0.9, 0)
+          if (front.opacity > 0) {
+            front.opacity = Math.min(1, front.opacity + dt / 1800)
+            if (front.opacity === 1) { back.map?.dispose(); back.map = front.map; back.needsUpdate = true; front.map = null; front.opacity = 0 }
+          }
+          renderer.render(scene, cam)
+        }
+        requestAnimationFrame(draw)
+      }
+      requestAnimationFrame(draw)
+    })
+  }
+</script>
