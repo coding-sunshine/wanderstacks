@@ -1,0 +1,62 @@
+{
+  "note": "Open items carried from the overhaul, checked 2026-11-12. Status is passing or failing; cmd decides it (run from repo root, exit 0 = passing). Each was researched and has no known path yet; see blocker before retrying.",
+  "items": [
+    {
+      "id": "bnf-x03-x05-stops",
+      "what": "Sourced walkthrough stops for BnF street panoramas x03 and x05",
+      "blocker": "No fetched source ties the buildings on those corners to the BnF. A stop would be a guess. Needs a map or bnf.fr page that names the corner; Overpass and Nominatim were rate-limited.",
+      "cmd": "jq -e '.bnf.nodes | (.x03|length) > 0 and (.x05|length) > 0' data/hotspots.json",
+      "status": "failing"
+    },
+    {
+      "id": "dunhuang-manifests",
+      "what": "IIIF manifest for the four Dunhuang holders other than the British Library (BnF, National Library of China, Institute of Oriental Manuscripts, Tokyo National Museum)",
+      "blocker": "Gallica, nlc.cn and orientalstudies.ru returned 403 or a bot challenge to curl. Not bypassed. Try from a browser, or ask each holder for a manifest URL.",
+      "cmd": "jq -e '[.[] | select(.lib==\"dunhuang\" and .manifest==null)] | length == 0' data/dispersal.json",
+      "status": "failing"
+    },
+    {
+      "id": "buda-vatican-manifest",
+      "what": "IIIF manifest for the Vatican Library's Corvina",
+      "blocker": "The Vat.lat.8541 manifest loads, but nothing in it says the book is a Corvina; that came from a search summary only. Needs a primary source naming the shelfmark as a Corvina before linking.",
+      "cmd": "jq -e '[.[] | select(.lib==\"buda\" and .holder==\"Vatican Library\" and .manifest!=null)] | length == 1' data/dispersal.json",
+      "status": "failing"
+    },
+    {
+      "id": "f07-measured-ir",
+      "what": "Measured impulse response for at least one listed library, in data/ir.json",
+      "blocker": "Only find is the Mafra Library set (REVERBDATA, CC BY-NC-SA 4.0): Mafra is not a listed library. OpenAIR had an expired TLS certificate, not bypassed; retry it.",
+      "cmd": "bun scripts/checks/f07-measured-ir.ts",
+      "status": "failing"
+    },
+    {
+      "id": "f08-splat-rooms",
+      "what": "Gaussian-splat capture for at least one listed library, in data/splats.json",
+      "blocker": "No splat file found for any listed library. State Library Victoria has GLB meshes on Zenodo (CC BY-NC-SA), not splats. A Sketchfab Morgan Library model needs a login.",
+      "cmd": "bun scripts/checks/f08-splat-rooms.ts",
+      "status": "failing"
+    },
+    {
+      "id": "peabody-interior-360",
+      "what": "Real interior 360 panorama for the Peabody library",
+      "blocker": "None exists on Commons (40 files, none wider than 1.9:1) or Panoramax (street shots only). Needs a new capture or a licensed one from the library.",
+      "cmd": "jq -e '[.peabody.nodes[] | select(.real and .kind==\"interior\")] | length > 0' data/spheres.json",
+      "status": "failing"
+    },
+    {
+      "id": "vasconcelos-interior",
+      "what": "Real interior view of the Vasconcelos Library at Buenavista (the current panorama shows Biblioteca de México at La Ciudadela, and says so)",
+      "blocker": "Only wide interior is Commons File:Vestibulo Biblioteca Vasconcelos.jpg (ProtoplasmaKid, CC BY-SA 3.0, 12780x2344): a cylindrical vestibule shot, not a 360. Owner call: use it as a flat image or wait for a true 360.",
+      "cmd": "jq -e '[.vasconcelos.nodes[] | select(.real and .kind==\"interior\")] | length > 0' data/spheres.json",
+      "status": "failing"
+    },
+    {
+      "id": "audio-listening-test",
+      "what": "Owner listens to the room tour in both voices (browser speech and Better voice) and signs off",
+      "blocker": "Needs human ears. Open any room tour, click Better voice, accept the 96 MB download. Then set listened to today's date.",
+      "listened": null,
+      "cmd": "jq -e '.items[] | select(.id==\"audio-listening-test\") | .listened != null' todo.json",
+      "status": "failing"
+    }
+  ]
+}
