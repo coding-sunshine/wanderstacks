@@ -1,0 +1,121 @@
+{
+  "note": "WorldLibs overhaul task state. Status is passing or failing only. Unproven is failing. Each item carries the command that decides it.",
+  "contracts": {
+    "spheres": "data/spheres.json: { [libId]: { nodes: [{ id, f, w, h, kind: 'interior'|'exterior', real: boolean, basis?: string, cap, by, lic, src, yaw0?: number, links?: [{ to, yaw }] }] } }. Files: public<f>.webp (equirect, max 8192 wide) and public<f>-lo.webp (2048 wide). real:false means reconstruction and must carry basis.",
+    "catalogue": "data/catalogue.ndjson: one JSON per line { id, title, author?, date?, lang?, lib: libId|null, holder, shelfmark?, kind, rights: 'open'|'nc'|'link-only', read?: { type: 'iiif'|'text'|'link', url }, thumb?, src, wd? }"
+  },
+  "items": [
+    {
+      "id": "p1-astro-build",
+      "phase": 1,
+      "what": "Static site builds clean",
+      "cmd": "bun run build",
+      "status": "passing"
+    },
+    {
+      "id": "p1-typecheck",
+      "phase": 1,
+      "what": "Type check passes",
+      "cmd": "bun run typecheck",
+      "status": "passing"
+    },
+    {
+      "id": "p1-library-pages",
+      "phase": 1,
+      "what": "One static page per library (52)",
+      "cmd": "test $(ls -d dist/libraries/*/ | wc -l) -ge 52",
+      "status": "passing"
+    },
+    {
+      "id": "p1-book-pages",
+      "phase": 1,
+      "what": "One static page per book record",
+      "cmd": "test $(ls -d dist/books/*/ | wc -l) -ge 202",
+      "status": "passing"
+    },
+    {
+      "id": "p1-search-index",
+      "phase": 1,
+      "what": "Pagefind index exists",
+      "cmd": "test -f dist/pagefind/pagefind.js",
+      "status": "passing"
+    },
+    {
+      "id": "p0-no-dev-notes",
+      "phase": 0,
+      "what": "No dev notes in public HTML",
+      "cmd": "! rg -l -i 'design fill|hall bay kit|No single title confirmed yet' dist --glob '*.html'",
+      "status": "passing"
+    },
+    {
+      "id": "p2-home",
+      "phase": 2,
+      "what": "Home: turning 360 photographic hero, search, Globe / A-Z / Take me somewhere, pinned scroll timeline with smooth scroll (owner asked for motion 2026-11-11), reduced-motion fallback",
+      "cmd": "owner review of home screenshots at 1440 and 390 wide (owner: \"looks good\", 2026-11-11)",
+      "status": "passing"
+    },
+    {
+      "id": "p3-outside-spheres",
+      "phase": 3,
+      "what": "Real exterior spheres ingested with licence",
+      "cmd": "jq '[.[]|.nodes[]|select(.kind==\"exterior\" and .real)]|length >= 5' data/spheres.json | grep true",
+      "status": "passing"
+    },
+    {
+      "id": "p4-weimar-tour",
+      "phase": 4,
+      "what": "Weimar interior tour, 18 real linked spheres",
+      "cmd": "jq '.weimar.nodes|map(select(.real))|length >= 18' data/spheres.json | grep true",
+      "status": "failing"
+    },
+    {
+      "id": "p4-catalogue",
+      "phase": 1,
+      "what": "Catalogue has 5000+ records with rights state",
+      "cmd": "test $(wc -l < data/catalogue.ndjson) -ge 5000",
+      "status": "passing"
+    },
+    {
+      "id": "p5-recon-proof",
+      "phase": 5,
+      "what": "One photoreal reconstruction sphere proven seamless in the viewer",
+      "cmd": "owner review of prototype screenshots (owner approved direction 2026-11-11)",
+      "status": "passing"
+    },
+    {
+      "id": "p5-recon-all",
+      "phase": 5,
+      "what": "Every lost library has a labelled reconstruction; standing libraries use real photographs only (owner decision 2026-11-11)",
+      "cmd": "bun scripts/check-spheres.ts",
+      "status": "passing"
+    },
+    {
+      "id": "p6-book-content",
+      "phase": 6,
+      "what": "Every book page carries researched content (summary, context, people, places, key passages or pages) with sources, plus interactive pieces",
+      "cmd": "bun scripts/check-book-content.ts",
+      "status": "passing"
+    },
+    {
+      "id": "p7-facts-merged",
+      "phase": 7,
+      "what": "Researched per-library facts from data/facts-add merged into data/facts.json, deduped, every passing record backed by a quote",
+      "cmd": "jq -e \"[.facts[],.events[]]|map(select(.status!=\\\"failing\\\" and ((.quote//\\\"\\\")|length)<5))|length==0\" data/facts.json",
+      "status": "passing"
+    },
+    {
+      "id": "p7-record-grouped",
+      "phase": 7,
+      "what": "Library page shows each record field once with all its sourced values",
+      "cmd": "bun run build && for f in dist/libraries/*/index.html; do rg -o \"<dt[^>]*>[^<]*</dt>\" $f | sort | uniq -d; done | wc -l | grep -qx \" *0\"",
+      "status": "passing"
+    },
+    {
+      "id": "p7-photo-licences",
+      "phase": 7,
+      "what": "Every photo carries an allow-listed licence and a real author",
+      "cmd": "jq -e \"[.[]|(.out+.in)[]|select((.lic|test(\\\"^(CC0|CC BY(-SA)? [0-9]|Public domain|PD)\\\";\\\"i\\\")|not) or (.by|test(\\\"contributor\\\";\\\"i\\\")))]|length==0\" data/photos.json",
+      "status": "passing"
+    }
+  ]
+}

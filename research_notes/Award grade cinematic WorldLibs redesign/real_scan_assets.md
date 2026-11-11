@@ -2,7 +2,7 @@
 
 Date of research: 2026-11-10. Coverage is thin by design: ~20 tool calls; several loc.gov / Commons pages returned 403/404, so those items are marked unverified. Nothing was downloaded.
 
-Repo scope (read-only): `/Users/hardik/Code/Personal/worldlibs/data/libs.json` lists 52 libraries (ids: longroom, admont, strahov, loc, celsus, alexandria, prunksaal, bnf, stgallen, mafra, nypl, bpl, peabody, bodleian, escorial, gabinete, melk, klementinum, vatican, wiblingen, weimar, ottawa, stockholm, nineveh, pergamon, herculaneum, nalanda, dunhuang, buda, timbuktu, ... joanina, hereford, morgan, stegen). `rg -l Admont src` returns nothing; hall data is in `data/libs.json`. Bespoke room folders exist only for longroom, admont, strahov, loc, celsus under `/Users/hardik/Code/Personal/worldlibs/public/rooms/` (plus `tex`, 5 MB of shared textures).
+Repo scope (read-only): `data/libs.json` lists 52 libraries (ids: longroom, admont, strahov, loc, celsus, alexandria, prunksaal, bnf, stgallen, mafra, nypl, bpl, peabody, bodleian, escorial, gabinete, melk, klementinum, vatican, wiblingen, weimar, ottawa, stockholm, nineveh, pergamon, herculaneum, nalanda, dunhuang, buda, timbuktu, ... joanina, hereford, morgan, stegen). `rg -l Admont src` returns nothing; hall data is in `data/libs.json`. Bespoke room folders exist only for longroom, admont, strahov, loc, celsus under `public/rooms/` (plus `tex`, 5 MB of shared textures).
 
 ## 1. Per-library asset inventory (licences, sizes, redistribution)
 
