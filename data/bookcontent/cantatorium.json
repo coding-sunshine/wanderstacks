@@ -1,0 +1,128 @@
+{
+ "id": "cantatorium",
+ "summary": "The Cantatorium of St Gallen is a book of 166 pages holding the solo chants sung at Mass, written with early musical signs called neumes. It is the oldest known cantatorium in which every chant carries them. Its cover is an ivory diptych carved with reliefs of Dionysos, and inside are a title page and large decorated initials, such as the A that opens Ad te levavi for the first Sunday of Advent.",
+ "context": "The manuscript was made at St Gallen around 922 to 925, in the time of Abbot Hartmann. Wood from the oak used in the binding was felled between 923 and 931. Scholars identify it with the cantatorium that the monk Ekkehart IV described in his chronicle of the abbey. The ivory panels are far older than the book, perhaps sixth century and of Eastern origin. A name, Fridiburc, was added in the tenth century.",
+ "sources": [
+  {
+   "title": "e-codices: St Gallen Cod. Sang. 359",
+   "url": "https://www.e-codices.unifr.ch/en/description/csg/0359"
+  },
+  {
+   "title": "e-codices IIIF manifest for Cod. Sang. 359",
+   "url": "https://www.e-codices.unifr.ch/metadata/iiif/csg-0359/manifest.json"
+  }
+ ],
+ "people": [
+  {
+   "name": "Hartmann",
+   "role": "abbot of St Gallen",
+   "note": "The book dates to his time, 922 to 925.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ekkehart IV",
+   "role": "monk and chronicler",
+   "note": "Described the cantatorium in his history of the abbey.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Fridiburc",
+   "role": "named in the book",
+   "note": "Her name was added in the tenth century.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "St Gallen, Abbey Library",
+   "lat": 47.4233,
+   "lon": 9.377,
+   "note": "Where the book was made and is still kept.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 922,
+   "label": "Start of Abbot Hartmann's time, when the book was made.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 925,
+   "label": "End of the likely period of writing, 922 to 925.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 931,
+   "label": "Latest date when the oak of the binding could have been felled.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Music before staves",
+   "note": "The neumes record the rise and fall of a melody without fixed pitch lines.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Ivory from the East",
+   "note": "The carved cover is much older than the book and comes from the Eastern Mediterranean.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Chants for the soloist",
+   "note": "A cantatorium holds only the solo parts of the Mass, not the choir chants.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "n": 0,
+   "note": "Front cover, an ivory diptych with Dionysos reliefs.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 31,
+   "note": "Page 24, the title page.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 32,
+   "note": "Page 25, the large initial A of Ad te levavi, the first Sunday of Advent.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 172,
+   "note": "Page 165, where the name Fridiburc appears, added in the tenth century.",
+   "s": [
+    0
+   ]
+  }
+ ]
+}

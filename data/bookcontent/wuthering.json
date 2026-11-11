@@ -1,0 +1,230 @@
+{
+ "id": "wuthering",
+ "summary": "Mr Lockwood rents Thrushcross Grange in 1801 and visits his landlord Heathcliff at the bleak Wuthering Heights. A ghostly dream leads him to ask the housekeeper Nelly Dean, who tells the story of the Earnshaws and the Lintons. Heathcliff, brought home as a foundling, grows close to Catherine Earnshaw, but she marries Edgar Linton. Heathcliff leaves, returns rich, and takes revenge on both families. The second generation, Cathy and Hareton, finally find a gentler path.",
+ "context": "Emily Brontë published her only novel in 1847 under the pen name Ellis Bell. Thomas Newby printed it with her sister Anne's Agnes Grey as a three-volume set. Reviewers were divided. Charlotte edited a second edition in 1850, smoothing punctuation and the servant Joseph's dialect. Virginia Woolf praised the book in 1925. Readers have linked its settings to the moorland around Haworth, including the ruined farm at Top Withens and Ponden Hall.",
+ "sources": [
+  {
+   "title": "Wuthering Heights (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Wuthering_Heights"
+  },
+  {
+   "title": "Wuthering Heights (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/emily-bronte/wuthering-heights"
+  }
+ ],
+ "people": [
+  {
+   "name": "Emily Brontë",
+   "role": "author",
+   "note": "Published the novel as Ellis Bell in 1847; it was her only one.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Charlotte Brontë",
+   "role": "author",
+   "note": "Edited and added a foreword to the second edition of 1850.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Thomas Cautley Newby",
+   "role": "printer",
+   "note": "Published the first edition of 1847 together with Agnes Grey.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Heathcliff",
+   "role": "character",
+   "note": "A foundling from Liverpool who returns wealthy and seeks revenge.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Catherine Earnshaw",
+   "role": "character",
+   "note": "Heathcliff's childhood companion, who marries Edgar Linton.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Edgar Linton",
+   "role": "character",
+   "note": "Lives at Thrushcross Grange and marries Catherine.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mr Lockwood",
+   "role": "character",
+   "note": "The 1801 tenant at the Grange who frames the story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nelly Dean",
+   "role": "character",
+   "note": "The housekeeper who tells Lockwood the story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Hareton Earnshaw",
+   "role": "character",
+   "note": "Hindley's son, raised as a servant, who reclaims Wuthering Heights.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Haworth, West Yorkshire",
+   "lat": 53.83,
+   "lon": -1.959,
+   "note": "Village whose dialect and landscape are tied to the Brontë novels.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Top Withens",
+   "lat": 53.788,
+   "lon": -1.978,
+   "note": "Ruined farmhouse near Haworth suggested as the model for Wuthering Heights.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ponden Hall",
+   "lat": 53.8036,
+   "lon": -2.0062,
+   "note": "House said to inspire Thrushcross Grange, which Brontë visited often.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Liverpool",
+   "lat": 53.4084,
+   "lon": -2.9916,
+   "note": "Mr Earnshaw returns from here with the child Heathcliff.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1847,
+   "label": "Thomas Newby publishes the novel under the name Ellis Bell, with Anne Brontë's Agnes Grey.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1848,
+   "label": "Harper & Brothers of New York publish the first American edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1850,
+   "label": "Charlotte Brontë edits a second edition with her foreword, after Emily's death.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1925,
+   "label": "Virginia Woolf affirms the greatness of the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1926,
+   "label": "C. P. Sanger's study of the chronology shows Emily's careful planning.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Two houses, two worlds",
+   "note": "The wild Wuthering Heights and the genteel Thrushcross Grange mirror their occupants.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Revenge over forgiveness",
+   "note": "Heathcliff's long campaign against both families drives the plot until the next generation softens it.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Stories within a story",
+   "note": "Lockwood frames the narrative and Nelly tells it, so the reader hears everything second hand.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Love as possession",
+   "note": "Love and possession are central themes of the first volume.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "“Wuthering” being a significant provincial adjective, descriptive of the atmospheric tumult to which its station is exposed in stormy weather.",
+   "why": "Lockwood explains the book's title in the first chapter."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "“My name is Hareton Earnshaw,” growled the other; “and I’d counsel you to respect it!” “I’ve shown no disrespect,” was my reply, laughing internally at the dignity with which he announced himself.",
+   "why": "Lockwood meets Hareton at the Heights, where the family mystery starts."
+  },
+  {
+   "part": 2,
+   "chapter": "X",
+   "quote": "I tell you, I have such faith in Linton’s love, that I believe I might kill him, and he wouldn’t wish to retaliate.” I advised her to value him the more for his affection.",
+   "why": "Catherine speaks of Edgar in the second part, during her illness."
+  },
+  {
+   "part": 3,
+   "chapter": "XVII",
+   "quote": "But it is utterly impossible I can ever be revenged, and therefore I cannot forgive him.",
+   "why": "Isabella, in a letter, on why she cannot forgive Heathcliff."
+  },
+  {
+   "part": 4,
+   "chapter": "XXXIV",
+   "quote": "I lingered round them, under that benign sky: watched the moths fluttering among the heath and harebells, listened to the soft wind breathing through the grass, and wondered how anyone could ever imagine unquiet slumbers for the sleepers in that quiet earth.",
+   "why": "Lockwood at the graves, in the final lines of the book."
+  }
+ ]
+}

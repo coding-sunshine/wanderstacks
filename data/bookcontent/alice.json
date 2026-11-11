@@ -1,0 +1,206 @@
+{
+ "summary": "Alice, bored on a riverbank, follows a waistcoated White Rabbit down a rabbit hole and lands in a world where she shrinks and grows, swims in a pool of her own tears and meets a Caterpillar, a grinning Cheshire Cat, a Mad Hatter and a March Hare at an endless tea party. She ends up at the Queen of Hearts's croquet game and then in her trial court, where the Queen keeps calling for heads. Alice finally refuses to be scared of a pack of cards. The book plays with logic, language and the rules adults set for children.",
+ "context": "Lewis Carroll, the pen name of the Oxford mathematician Charles Dodgson, first told the story to a girl named Alice Liddell and her sisters on a boat trip and wrote it out for her as Alice's Adventures Under Ground in 1864. On advice he sought a professional illustrator and chose John Tenniel. Macmillan published the book in 1865 after Carroll withdrew a first printing because Tenniel disliked the quality. It has never gone out of print and exists in 174 languages. A sequel, Through the Looking-Glass, followed in 1871. The site carries Tenniel's illustrated edition.",
+ "sources": [
+  {
+   "title": "Alice's Adventures in Wonderland (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Alice's_Adventures_in_Wonderland"
+  },
+  {
+   "title": "Lewis Carroll (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Lewis_Carroll"
+  },
+  {
+   "title": "Alice's Adventures in Wonderland, illustrated by John Tenniel (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/lewis-carroll/alices-adventures-in-wonderland/john-tenniel"
+  }
+ ],
+ "people": [
+  {
+   "name": "Lewis Carroll",
+   "role": "author",
+   "note": "Pen name of Charles Lutwidge Dodgson, English author, mathematician and Anglican deacon who lived and taught at Christ Church, Oxford.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "John Tenniel",
+   "role": "printer",
+   "note": "Punch cartoonist who produced 42 wood-engraved illustrations for the first edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alice Liddell",
+   "role": "subject",
+   "note": "Girl Carroll knew who shares her name with the heroine, though scholars disagree about how closely the character follows her.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alexander Macmillan",
+   "role": "patron",
+   "note": "London publisher whom Carroll met in October 1863 and whose firm published the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "George MacDonald",
+   "role": "patron",
+   "note": "Writer whose children read the manuscript, and whose family urged Carroll to publish.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alice",
+   "role": "character",
+   "note": "Girl who follows a white rabbit down a hole into a world of talking creatures.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "The Mad Hatter",
+   "role": "character",
+   "note": "Host of the tea party where the March Hare and a dormouse also sit.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Queen of Hearts",
+   "role": "character",
+   "note": "Ruler of Wonderland who cries \"Off with her head\" at every offence.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Christ Church, Oxford",
+   "lat": 51.75,
+   "lon": -1.2562,
+   "note": "College where Carroll lived for most of his life as scholar, teacher and deacon.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Daresbury",
+   "lat": 53.332,
+   "lon": -2.642,
+   "note": "Cheshire village where Dodgson was born in 1832, the third of 11 children.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1832,
+   "label": "Charles Dodgson, later Lewis Carroll, is born at Daresbury in Cheshire.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1863,
+   "label": "Carroll meets the publisher Alexander Macmillan on 19 October.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1864,
+   "label": "Carroll gives Alice the manuscript Alice's Adventures Under Ground on 26 November.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1865,
+   "label": "Macmillan publishes the book in November after the first printing is halted and reprinted by Richard Clay.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1871,
+   "label": "The sequel Through the Looking-Glass appears.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1907,
+   "label": "UK copyright expires and the book enters the public domain.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Nonsense with logic",
+   "note": "The tale plays with logic and belongs to the literary nonsense genre, which is why adults enjoy it as much as children.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "End of didactic children's books",
+   "note": "It is credited with helping end an era of moralizing for children and starting one where books aimed to delight.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Who is Alice now",
+   "note": "After shrinking and growing, Alice asks who in the world she is, turning identity into a puzzle.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations",
+   "why": "The opening sentence, with Alice bored on the bank before the rabbit appears."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "“Curiouser and curiouser!” cried Alice (she was so much surprised, that for the moment she quite forgot how to speak good English); “now I’m opening out like the largest telescope that ever was",
+   "why": "Alice's famous exclamation as she grows, in a book playing with how she speaks."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "I’m not the same, the next question is, Who in the world am I? Ah, that’s the great puzzle",
+   "why": "The identity puzzle at the heart of the book."
+  },
+  {
+   "part": 1,
+   "chapter": "VI",
+   "quote": "It’s a Cheshire cat,” said the Duchess, “and that’s why. Pig!” She said the last word with such sudden violence that Alice quite jumped; but she saw in another moment that it was addressed to the baby, and not to her, so she took courage, and went on again:⁠— “I didn’t know that Cheshire cats always",
+   "why": "The grinning cat is introduced with a bark of explanation."
+  },
+  {
+   "part": 1,
+   "chapter": "VIII",
+   "quote": "Why, they’re only a pack of cards, after all. I needn’t be afraid of them",
+   "why": "Alice sees through the court and loses her fear."
+  }
+ ],
+ "id": "alice"
+}

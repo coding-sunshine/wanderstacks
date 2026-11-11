@@ -1,0 +1,247 @@
+{
+ "id": "genji",
+ "summary": "The Tale of Genji follows Hikaru Genji, the emperor's son who is demoted to commoner status for political reasons, through a long run of love affairs at the Heian court. His longing for Lady Fujitsubo, his rearing of the girl Murasaki, and his exile at Suma fill the first part. The later chapters cover his decline and move on to his supposed son Kaoru and grandson Niou. The volume on this site is Waley's translation of the first nine chapters, from Kiritsubo to Aoi.",
+ "context": "Murasaki Shikibu, a noblewoman and lady-in-waiting, wrote the tale in the early eleventh century, in the years when Fujiwara no Michinaga ruled the court. It is largely in hiragana, the script then associated with women's writing. Her own manuscript is lost, and some 300 later copies differ from each other. A complete copy was prized by 1021, according to the Sarashina diary. Arthur Waley's English version, published 1925 to 1933, brought the book to Western readers, and the volume here holds its first nine chapters.",
+ "sources": [
+  {
+   "title": "The Tale of Genji (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Tale_of_Genji"
+  },
+  {
+   "title": "The tale of Genji, tr. Arthur Waley (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/66057"
+  }
+ ],
+ "people": [
+  {
+   "name": "Murasaki Shikibu",
+   "role": "author",
+   "note": "Noblewoman, poet and lady-in-waiting at the Heian court, traditionally credited with the tale.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Arthur Waley",
+   "role": "translator",
+   "note": "Translated almost the whole work between 1925 and 1933, leaving out chapter 38.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Hikaru Genji",
+   "role": "character",
+   "note": "The 'Shining Genji', an emperor's son made a commoner with the surname Minamoto.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lady Fujitsubo",
+   "role": "character",
+   "note": "A former princess who resembles Genji's dead mother; their secret affair produces a son, Reizei.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Murasaki no Ue",
+   "role": "character",
+   "note": "The ten-year-old niece of Fujitsubo whom Genji takes into his household and later marries.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Emperor Kiritsubo",
+   "role": "character",
+   "note": "Genji's father, who removes him from the line of succession.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Fujiwara no Michinaga",
+   "role": "subject",
+   "note": "Regent in all but name in Murasaki's day and thought to have shaped the figure of Genji.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Akiko Yosano",
+   "role": "translator",
+   "note": "Poet who made the first modern Japanese translation in the early twentieth century.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Kyoto (Heian court)",
+   "lat": 35.0116,
+   "lon": 135.7681,
+   "note": "The capital where the court intrigues and Genji's love affairs take place; he returns here from exile.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kitayama",
+   "lat": 35.06,
+   "lon": 135.74,
+   "note": "Hilly country north of Kyoto where Genji first sees the girl who becomes Murasaki.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Suma",
+   "lat": 34.65,
+   "lon": 135.12,
+   "note": "The rural coast, now part of Kobe, where Emperor Suzaku exiles Genji.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Akashi",
+   "lat": 34.6455,
+   "lon": 134.9979,
+   "note": "Home of the Akashi Novice, whose daughter bears Genji's only daughter.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1008,
+   "label": "Murasaki's diary mentions the tale, so part of it was circulating by about this date.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1021,
+   "label": "The author of the Sarashina diary records her joy at obtaining a complete copy, with over fifty chapters.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1236,
+   "label": "Minamoto no Chikayuki begins his edition of the differing manuscripts; Fujiwara Teika's more conservative edition follows in the same century.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1882,
+   "label": "Suematsu Kencho publishes the first English translation, poor and left incomplete.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1925,
+   "label": "Waley begins his translation, finished in 1933; this site carries the first nine chapters.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 2008,
+   "label": "A late Kamakura manuscript of the sixth chapter, Suetsumuhana, is announced in Kyoto.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "A court seen through desire",
+   "note": "Genji's affairs, mostly rebuffed or cut short, drive a portrait of aristocratic life in the Heian period.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Characters without names",
+   "note": "Most people are called by rank, role or relation, not by name, following court manners that made direct naming rude.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Women's script, women's tale",
+   "note": "The work is mainly in hiragana, in a style linked to women's writing, and may have been delivered to ladies-in-waiting in instalments.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Secret parentage and decline",
+   "note": "A hidden son of Genji becomes emperor, and a similar situation later gives Genji a son, Kaoru, who is not his.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A text lost at the source",
+   "note": "The original manuscript is gone and some 300 later copies disagree, so editors rebuild the tale in layers.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "CHAPTER I KIRITSUBO",
+   "quote": "looked with scorn and hatred upon the upstart who had dispelled their dreams. Still less were her former companions, the minor ladies of the Wardrobe, content to see her raised so far above them. Thus her position at Court, preponderant though it was, exposed her to constant jealousy and ill will;",
+   "why": "The opening chapter shows how the favoured consort's rise stirs jealousy among the ladies of the court."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER II THE BROOM-TREE",
+   "quote": "I know my experience is not large, but that is the conclusion I have come to so far.’ Then Genji, smiling: ‘And are there any who lack even one accomplishment?’ ‘No doubt, but in such a case it is unlikely that anyone would be successfully decoyed.",
+   "why": "On the rainy night of the Broom-tree chapter, the young men trade views on women, an extended scene of court talk."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER II THE BROOM-TREE",
+   "quote": "true penmanship preserves in every letter its balance and form, and though at first some letters may seem but half-formed, yet when we compare them with the copy-books we find that there is nothing at all amiss. ‘So it is in these trifling matters.",
+   "why": "A small analogy from the same night's talk, about craft against show."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER IV YŪGAO",
+   "quote": "The affair was soon known to all the household, and the ladies were at first somewhat uneasy at seeing their mistress carried off in this fashion; but on the whole they did not think he looked the sort of person who would do her any harm. It was now almost daylight. The cocks had stopped crowing.",
+   "why": "Genji carries off a woman from her house in the Yugao chapter, a typical impulsive episode."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER I KIRITSUBO",
+   "quote": "The young prince was now three years old. The Putting on of the Trousers was performed with as much ceremony as in the case of the Heir Apparent. Marvellous gifts flowed from the Imperial Treasury and Tribute House. This too incurred the censure of many, but brought no enmity to the child himself;",
+   "why": "A ceremony for the young Genji, showing how the emperor honours him as though he were heir."
+  },
+  {
+   "part": 3,
+   "chapter": "CHAPTER VII THE FESTIVAL OF RED LEAVES",
+   "quote": "There was a wonderful moment when the rays of the setting sun fell upon him and the music grew suddenly louder. Never had the onlookers seen feet tread so delicately nor head so exquisitely poised; and in the song which follows the first movement of the dance his voice was sweet as that of Kalavinka whose music is Buddha’s Law.",
+   "why": "A court performance in the Festival of Red Leaves chapter, setting Genji against the best dancers."
+  },
+  {
+   "part": 4,
+   "chapter": "CHAPTER IX AOI",
+   "quote": "A constant succession of banquets and entertainments, the magnificence of which became the talk of the whole country, helped to enliven the ex-Emperor’s retirement and he was on the whole very well content with his new condition.",
+   "why": "Court life after the old Emperor retires: banquets and entertainments that the whole country talks about."
+  }
+ ]
+}

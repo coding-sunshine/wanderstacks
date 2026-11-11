@@ -1,0 +1,194 @@
+{
+  "facts": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "collection",
+      "value": "First record of the library dates from 831 and mentions a donation of three texts to the Abbey.",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "The first record of the existence of the Sainte-Genevieve library dates from 831, and mentions the donation of three texts to the Abbey",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+first\\s+record\\s+of\\s+the\\s+existence'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "collection",
+      "value": "226 titles and authors in the 13th-century inventory.",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "The 226 titles and authors included in the 13th century inventory",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+226\\s+titles\\s+and\\s+authors\\s+include'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "status_note",
+      "value": "Refounded by Cardinal Francois de La Rochefoucauld: possession of the abbey in 1619, library re-instituted in 1624 with an initial deposit of 600 volumes (French article); English article gives 1619.",
+      "source": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "qui réinstitue véritablement la bibliothèque en 1624",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'qui\\s+r.institue\\s+v.ritablement\\s+la\\s+bi'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "collection",
+      "value": "Du Mollinet founded a famous small museum.",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "Du Mollinet founded a famous small museum",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Du\\s+Mollinet\\s+founded\\s+a\\s+famous\\s+small'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "status_note",
+      "value": "Abbey secularized in 1790; Pingre director until his death in 1796.",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "Pingré remained as director until his death in 1796",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Pingr.\\s+remained\\s+as\\s+director\\s+until'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "dims",
+      "value": "Labrouste building on a narrow plot of 85 m by 21 m, built 1843 to 1850.",
+      "source": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "sur une étroite parcelle de 85 mètres sur 21 mètres",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'sur\\s+une\\s+.troite\\s+parcelle\\s+de\\s+85\\s+m.t'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "dims",
+      "value": "Eighteen slender fluted cast-iron columns.",
+      "source": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "dix-huit fines colonnes en fonte cannelée",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'dix.huit\\s+fines\\s+colonnes\\s+en\\s+fonte\\s+c'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "dims",
+      "value": "41 windows.",
+      "source": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "41 fenêtres",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 '41\\s+fen.tres'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "status_note",
+      "value": "Opening date differs: 5 February 1851 (French article body), 2 February 1851 (French infobox), 4 February 1851 (existing record).",
+      "source": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "terminé en 1850 et inauguré le 5 février 1851",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'termin.\\s+en\\s+1850\\s+et\\s+inaugur.\\s+le\\s+5\\s+f'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "collection",
+      "value": "Charles-Maurice Le Tellier bequeathed manuscripts and about 16,000 volumes (1710).",
+      "source": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "qui lègue sa collection de manuscrits et environ 16 000 volumes",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'qui\\s+l.gue\\s+sa\\s+collection\\s+de\\s+manuscr'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "volumes",
+      "value": "Around 2 million documents (English article).",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "around 2 million documents",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'around\\s+2\\s+million\\s+documents'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "field": "status_note",
+      "value": "Opening hours extended to 22:00; reading rooms seat 500 to 700.",
+      "source": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "l'ouverture de la bibliothèque jusqu'à 22 heures",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'l.ouverture\\s+de\\s+la\\s+biblioth.que\\s+jus'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "kind": "founded",
+      "year": 831,
+      "earliest": 831,
+      "latest": 831,
+      "label": "First record: donation of three texts to the Abbey",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "dates from 831, and mentions the donation of three texts to the Abbey",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'dates\\s+from\\s+831.\\s+and\\s+mentions\\s+the\\s+d'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "kind": "reopened",
+      "year": 1624,
+      "earliest": 1619,
+      "latest": 1624,
+      "label": "Library re-instituted by Cardinal de La Rochefoucauld",
+      "source": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "qui réinstitue véritablement la bibliothèque en 1624",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'qui\\s+r.institue\\s+v.ritablement\\s+la\\s+bi'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "kind": "built",
+      "year": 1850,
+      "earliest": 1843,
+      "latest": 1850,
+      "label": "Labrouste building finished",
+      "source": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "terminé en 1850",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'termin.\\s+en\\s+1850'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "stegen",
+      "kind": "opened",
+      "year": 1851,
+      "earliest": 1851,
+      "latest": 1851,
+      "label": "Labrouste building inaugurated (5 Feb per body text)",
+      "source": "https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve",
+      "tier": "wikipedia",
+      "quote": "inauguré le 5 février 1851",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_Sainte-Genevi%C3%A8ve' | sed 's/<[^>]*>/ /g' | rg -o -m1 'inaugur.\\s+le\\s+5\\s+f.vrier\\s+1851'"
+    }
+  ]
+}

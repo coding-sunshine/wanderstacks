@@ -1,0 +1,223 @@
+{
+ "id": "lookingglass",
+ "summary": "Alice climbs through the mirror above her drawing-room fireplace into a reversed world where running keeps you in place and the chessmen are alive. Her journey across a landscape of squares and brooks, one chapter per square, turns into a chess game she is meant to win by becoming a queen. On the way she meets the Red and White Queens, Tweedledum and Tweedledee, Humpty Dumpty and the White Knight, and hears verses such as 'Jabberwocky'. She wakes to find it was a dream and asks her kitten who dreamed it.",
+ "context": "Charles Dodgson, an Oxford mathematics lecturer writing as Lewis Carroll, began planning a sequel to Alice's Adventures in Wonderland in 1866. He sent his publisher Macmillan the first chapter in January 1869 and finished the text on 4 January 1871. John Tenniel reluctantly agreed to illustrate it, and the book was on sale for Christmas 1871 with 1872 on the title page. Fifteen thousand copies sold within weeks. Carroll paid all costs himself and controlled every detail. Critics ranked it close to the first book, and its phrases passed into everyday English.",
+ "sources": [
+  {
+   "title": "Through the Looking-Glass (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Through_the_Looking-Glass"
+  },
+  {
+   "title": "Lewis Carroll (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Lewis_Carroll"
+  }
+ ],
+ "people": [
+  {
+   "name": "Lewis Carroll",
+   "role": "author",
+   "note": "Pen name of Charles Lutwidge Dodgson, an Oxford mathematics lecturer.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "John Tenniel",
+   "role": "printer",
+   "note": "Punch cartoonist who illustrated the book after first declining the commission.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alexander Macmillan",
+   "role": "printer",
+   "note": "Carroll's publisher, whose firm printed and distributed the book while Carroll paid the costs.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alice Liddell",
+   "role": "subject",
+   "note": "Daughter of the Dean of Christ Church, widely identified as the original inspiration for Alice.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Alice Raikes",
+   "role": "subject",
+   "note": "Carroll's cousin, who recalled a mirror conversation with him that may lie behind the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Humpty Dumpty",
+   "role": "character",
+   "note": "Rude and opinionated egg who tells Alice that words mean what he chooses.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The Red Queen",
+   "role": "character",
+   "note": "Severe chess queen who tells Alice about running to stay in place.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Oxford",
+   "lat": 51.7548,
+   "lon": -1.2544,
+   "note": "Carroll lectured in mathematics at Christ Church and lived there most of his life.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Charlton Kings, near Cheltenham",
+   "lat": 51.8885,
+   "lon": -2.0509,
+   "note": "The Liddell children stayed at Hetton Lawn here, where a large looking-glass hung over the drawing-room fireplace.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Macmillan & Co published the book; Tenniel drew for Punch here.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1865,
+   "label": "Alice's Adventures in Wonderland is published.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1866,
+   "label": "Carroll writes to Macmillan of a floating idea for a sequel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1869,
+   "label": "He sends the first completed chapter to Macmillan.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1871,
+   "label": "The text is finished on 4 January and the book goes on sale for Christmas; 15,000 copies sell within weeks.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1872,
+   "label": "Lee and Sheppard of Boston and New York issue the first American edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1982,
+   "label": "A memorial stone to Carroll is unveiled in Poets' Corner, Westminster Abbey.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "A reversed world",
+   "note": "Logic runs backwards: running keeps one still and walking away leads toward things.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Chess as structure",
+   "note": "The story plays out as a chess game, with Alice a pawn advancing to become queen.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Nonsense verse",
+   "note": "The book contains \"Jabberwocky\" and \"The Walrus and the Carpenter\" and coins words such as portmanteau.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Dream and waking",
+   "note": "Alice wakes and the book closes on the question of who dreamed whom.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Freed from moralising",
+   "note": "Carroll's Alice books broke from didactic children's fiction.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Let’s pretend.” She had had quite a long argument with her sister only the day before⁠—all because Alice had begun with “Let’s pretend we’re kings and queens;” and her sister, who liked being very exa",
+   "why": "Alice proposes the game that begins the book, before she steps through the glass."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Twas brillig, and the slithy toves Did gyre and gimble in the wabe; All mimsy were the borogoves, And the mome raths outgrabe. “Beware the Jabberwock, my son! The jaws that bite, the claws that catch! Beware the Jubjub bird, and shun The frumious Bandersnatch!”",
+   "why": "The poem \"Jabberwocky\", invented words and all."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "it takes all the running you can do, to keep in the same place. If you want to get somewhere else, you must run at least twice as fast as that!” “I’d rather not try, please!”",
+   "why": "The Red Queen explains the rules of her country."
+  },
+  {
+   "part": 1,
+   "chapter": "IV",
+   "quote": "The time has come,’ the Walrus said, ‘To talk of many things: Of shoes⁠—and ships⁠—and sealing-wax⁠— Of cabbages⁠—and kings⁠— And why the sea is boiling hot⁠— And whether pigs have wings.’",
+   "why": "The Walrus's famous list of things to talk about."
+  },
+  {
+   "part": 1,
+   "chapter": "VI",
+   "quote": "When I use a word,” Humpty Dumpty said in rather a scornful tone, “it means just what I choose it to mean⁠—neither more nor less.” “The question is,” said Alice, “whether you can make words mean so many different things.”",
+   "why": "Humpty Dumpty on who is master of words."
+  },
+  {
+   "part": 2,
+   "chapter": "XII",
+   "quote": "A boat beneath a sunny sky, Lingering onward dreamily In an evening of July⁠— Children three that nestle near, Eager eye and willing ear, Pleased a simple tale to hear⁠— Long has paled that sunny sky: Echoes fade and memories die. Autumn frosts have slain July.",
+   "why": "The closing verse, which recalls the sunny boat trip of long ago."
+  }
+ ]
+}

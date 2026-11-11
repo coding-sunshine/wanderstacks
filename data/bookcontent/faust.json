@@ -1,0 +1,277 @@
+{
+ "summary": "This is the first part of Goethe's tragic play, in Bayard Taylor's English version that keeps the original metres. A wager between the Lord and Mephistopheles opens it. Faust, a scholar who feels his learning has left him no wiser, turns to magic and then makes a pact: Mephistopheles will serve him on earth, and Faust forfeits his soul if he ever asks a moment to last. The devil leads him through a tavern and a witch's kitchen to Gretchen. Her mother and brother die, she kills her child, and she refuses to flee prison, so a voice from above declares her saved.",
+ "context": "Goethe drew on the German Faust legend. Early versions, called the Urfaust, date from 1772 to 1775, a fragment was printed in 1790, and Part One was published in 1808, with a revised text in 1828 and 1829. Part Two was finished in 1831 and appeared after his death in 1832. Many consider the play the greatest work of German literature. Bayard Taylor, an American poet, translated it into English in the original metres, and the site carries an illustrated edition with drawings by Harry Clarke, from Project Gutenberg.",
+ "sources": [
+  {
+   "title": "Goethe's Faust - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Goethe%27s_Faust"
+  },
+  {
+   "title": "Faust - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Faust"
+  },
+  {
+   "title": "Faust [part 1], translated into English in the original metres by Goethe - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/14591"
+  },
+  {
+   "title": "Bayard Taylor - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Bayard_Taylor"
+  },
+  {
+   "title": "Johann Wolfgang von Goethe - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe"
+  }
+ ],
+ "people": [
+  {
+   "name": "Johann Wolfgang von Goethe",
+   "role": "author",
+   "note": "German writer who reworked the Faust legend over most of his life and published Part One in 1808.",
+   "s": [
+    0,
+    4
+   ]
+  },
+  {
+   "name": "Bayard Taylor",
+   "role": "translator",
+   "note": "American poet and diplomat whose English Faust, in the original metres, stayed in print through 1969.",
+   "s": [
+    3,
+    2
+   ]
+  },
+  {
+   "name": "Harry Clarke",
+   "role": "subject",
+   "note": "Illustrator named on the title page of the edition the site carries.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Heinrich Faust",
+   "role": "character",
+   "note": "Scholar who suspects his learning is worthless and turns to magic and a pact with the Devil.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mephistopheles",
+   "role": "character",
+   "note": "The Devil, who bets with God that he can lure Faust from righteous pursuits.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gretchen",
+   "role": "character",
+   "note": "Faust's love, short for Margarete, whose family and life are destroyed after he seduces her.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Marthe Schwerdtlein",
+   "role": "character",
+   "note": "Gretchen's neighbour, who helps Mephistopheles bring the two together.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Valentin",
+   "role": "character",
+   "note": "Gretchen's brother, who challenges Faust and dies at his hands.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Johann Georg Faust",
+   "role": "subject",
+   "note": "Historical figure, born around 1480 and died in 1540, on whom the legend is based.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Christopher Marlowe",
+   "role": "subject",
+   "note": "Popularised the Faust story in England with his play of about 1592.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Frankfurt",
+   "lat": 50.1109,
+   "lon": 8.6821,
+   "note": "Goethe was born in the Free City of Frankfurt in 1749.",
+   "s": [
+    4
+   ]
+  },
+  {
+   "name": "Weimar",
+   "lat": 50.9795,
+   "lon": 11.3235,
+   "note": "Goethe died here in 1832, the year Part Two was published.",
+   "s": [
+    4
+   ]
+  },
+  {
+   "name": "Leipzig",
+   "lat": 51.3397,
+   "lon": 12.3731,
+   "note": "Setting of the Auerbach's Cellar scene, where Mephistopheles bewitches the students.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Brocken, Harz Mountains",
+   "lat": 51.7992,
+   "lon": 10.6157,
+   "note": "Mountain where the witches gather on Walpurgis Night in the play.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Cleveland",
+   "lat": 41.4993,
+   "lon": -81.6944,
+   "note": "The World Publishing Company of Cleveland, Ohio, issued the illustrated edition on the site.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1592,
+   "label": "Marlowe stages his Doctor Faustus, bringing the legend to England.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1772,
+   "label": "Goethe starts the earliest form of Faust, later called the Urfaust.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1790,
+   "label": "Faust, a Fragment appears, the first appearance of the work in print.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1808,
+   "label": "Part One is published after Goethe completes a preliminary version in 1806.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1832,
+   "label": "Part Two is published after Goethe's death, having been finished in 1831.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1886,
+   "label": "A copy of the lost Urfaust manuscript is discovered.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "The wager on striving",
+   "note": "Faust loses only if he asks a moment of bliss to stay forever and stops striving.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Learning that leaves no wiser",
+   "note": "Faust has studied every faculty and still finds the vanity of learning, which drives him to magic.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The cost of the bargain",
+   "note": "Faust's seduction of Gretchen brings deaths and a conviction, so the pact harms others as well as him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Salvation despite guilt",
+   "note": "A voice from Heaven declares Gretchen saved at the end of Part One.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "It is twenty years since I first determined to attempt the translation of Faust , in the original metres. At that time, although more than a score of English translations of the First Part, and three or four of the Second Part, were in existence, the experiment had not yet been made",
+   "why": "Taylor explains how he set out to translate the play in the original metres."
+  },
+  {
+   "part": 1,
+   "chapter": "PROLOGUE IN HEAVEN",
+   "quote": "RAPHAEL The sun-orb sings, in emulation, ’Mid brother-spheres, his ancient round: His path predestined through Creation He ends with step of thunder-sound",
+   "why": "The archangels open the Prologue in Heaven, where the wager over Faust is set."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "I’ve studied now Philosophy And Jurisprudence, Medicine,— And even, alas! Theology,— From end to end, with labor keen; And here, poor fool! with all my lore I stand, no wiser than before: I’m Magister—yea, Doctor—hight, And straight or cross-wise, wrong or right, These ten years long, with many woes, I’ve led my scholars by the nose,— And see, that nothing can be known",
+   "why": "Faust's opening complaint about the limits of all his learning."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "Two souls, alas! reside within my breast, And each withdraws from, and repels, its brother",
+   "why": "Faust describes the pull between two impulses in himself."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "I am the Spirit that Denies! And justly so: for all things, from the Void Called forth, deserve to be destroyed: ’Twere better, then, were naught created. Thus, all which you as Sin have rated,— Destruction,—aught with Evil blent,— That is my proper element",
+   "why": "Mephistopheles introduces himself to Faust."
+  },
+  {
+   "part": 2,
+   "chapter": "XXI",
+   "quote": "WITCHES ( in chorus ) The witches ride to the Brocken’s top, The stubble is yellow, and green the crop",
+   "why": "The witches' song on the way to the Brocken on Walpurgis Night."
+  },
+  {
+   "part": 2,
+   "chapter": "XXV",
+   "quote": "MEPHISTOPHELES She is judged! VOICE ( from above ) She is saved! MEPHISTOPHELES ( to FAUST) Hither to me",
+   "why": "The play's last exchange, where a voice from above overrules the devil."
+  }
+ ],
+ "id": "faust"
+}

@@ -1,0 +1,275 @@
+{
+ "id": "gabinete-lusiads-burton-1880",
+ "summary": "Os Lusiadas is the Portuguese national epic, ten cantos of eight-line stanzas that follow Vasco da Gama's fleet sailing to India. The Olympian gods take sides: Venus protects the Portuguese, Bacchus tries to wreck them. Along the way Gama tells the king of Melinde the history of Portugal, from the first kings to the crisis of 1383-85, and the poem stops for set pieces such as the giant Adamastor, the storm, and the Isle of Love where the sailors are rewarded. This edition is Richard Burton's English version, which carries the first six cantos.",
+ "context": "Luis de Camoes wrote the poem in the sixteenth century, partly while an exile in Macau, and it was first printed in 1572, three years after he came home from the Indies. He died in 1580. It borrows the form of Virgil's Aeneid to give Portugal a founding epic of sea voyages and is dedicated to the young King Sebastian. Richard Burton's English translation appeared in London in 1880, with a preface by his wife Isabel, and is the text here. It matters as the poem a nation reads about itself.",
+ "sources": [
+  {
+   "title": "The Lusiads (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Lusiads"
+  },
+  {
+   "title": "Os Lusiadas (The Lusiads), vol. 1 of 2 (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/77660"
+  }
+ ],
+ "people": [
+  {
+   "name": "Luis de Camoes",
+   "role": "author",
+   "note": "Portuguese poet (c. 1524/5 to 1580) who wrote the epic and dedicated it to King Sebastian.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Richard F. Burton",
+   "role": "translator",
+   "note": "Rendered the poem into English; his translation was published in London in 1880.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Isabel Burton",
+   "role": "translator",
+   "note": "Burton's wife, who edited the translation and wrote its editor's preface.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Vasco da Gama",
+   "role": "character",
+   "note": "The captain whose voyage to India is the subject, and who narrates Portugal's history to the king of Melinde.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "King Sebastian of Portugal",
+   "role": "patron",
+   "note": "The young king to whom Camoes dedicated the poem.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Adamastor",
+   "role": "character",
+   "note": "A giant who confronts the fleet in the episode told in Canto V.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Venus",
+   "role": "character",
+   "note": "The goddess who favours the Portuguese and shields the fleet from Bacchus.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Bacchus",
+   "role": "character",
+   "note": "Opposes the Portuguese because he resents their coming into the East, which he treats as his territory.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Lisbon",
+   "lat": 38.7223,
+   "lon": -9.1393,
+   "note": "The fleet sails from here, and the Old Man of the Restelo warns the departing sailors against the voyage.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cape of Good Hope",
+   "lat": -34.3568,
+   "lon": 18.474,
+   "note": "The poem opens in medias res after the fleet has already rounded the Cape.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mozambique Island",
+   "lat": -15.0333,
+   "lon": 40.7333,
+   "note": "Scene of the first clash, the so-called battle of the Island of Mozambique.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mombasa",
+   "lat": -4.0435,
+   "lon": 39.6682,
+   "note": "Where Gama makes a speech at a moment of danger in Canto II.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Malindi",
+   "lat": 3.2192,
+   "lon": 40.1169,
+   "note": "The Sultan of Melinde welcomes the fleet, and Gama tells him the history of Portugal.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Calicut",
+   "lat": 11.2588,
+   "lon": 75.7804,
+   "note": "The Indian city the fleet reaches, where the Samorin receives Gama and the Catual holds him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Aljubarrota",
+   "lat": 39.5833,
+   "lon": -8.8167,
+   "note": "Battle of the 1383-85 Crisis recounted in Canto IV, with Nuno Alvares Pereira at its centre.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Macau",
+   "lat": 22.1987,
+   "lon": 113.5439,
+   "note": "Camoes was an exile here when he wrote the poem.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1383,
+   "label": "The crisis of 1383-85 begins; Gama tells its story in Canto IV, with Aljubarrota at its centre.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1524,
+   "label": "Camoes is born around this date (given as c. 1524/5).",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1572,
+   "label": "Os Lusiadas is first printed, three years after the poet's return from the Indies.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1580,
+   "label": "Camoes dies.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1776,
+   "label": "Mickle's English verse translation appears, one of several before Burton.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1880,
+   "label": "Burton's English translation is published in London by Wyman and Sons, the version on this site.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "A nation's founding epic",
+   "note": "Camoes casts the Portuguese as the sons of Lusus, a people fated for great deeds, and sets their voyages beside the Aeneid and Homer.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Gods divided over Portugal",
+   "note": "Venus backs the fleet and Bacchus opposes it, echoing the split among the gods in the epics of Odysseus and Aeneas.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Doubt inside the glory",
+   "note": "The Old Man of the Restelo speaks against the voyage as the ships leave, a rare dissent in a poem of praise.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Reward on the Isle of Love",
+   "note": "Venus prepares an island where nymphs welcome the sailors, and Thetis shows Gama the universe and the future of Portuguese conquest.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Poetry measured against glory",
+   "note": "The poet laments in several places that his contemporaries scorn verse, tying fame itself to the poets who record it.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Preface.",
+   "quote": "A wayfarer and voyager from his youth; a soldier, somewhat turbulent withal, wounded and blamed for his wounds; a moralist, a humourist, a satirist, and, consequently, no favourite with King Demos;",
+   "why": "Burton's portrait of Camoes as soldier, traveller and satirist, the life behind the poem."
+  },
+  {
+   "part": 1,
+   "chapter": "Canto I.",
+   "quote": "Cease Alexander, Trajan cease to ’joy the fame of vict’ories that have pass’d away: The noble Lusian’s stouter breast sing I, whom Mars and Neptune dared not disobey: Cease all that antique Muse hath sung, for now a better Brav’ry rears its bolder brow.",
+   "why": "The proposition of Canto I: the new Portuguese hero outranks the heroes of antiquity."
+  },
+  {
+   "part": 1,
+   "chapter": "Canto III.",
+   "quote": "Thou biddest me, O King! to say my say anent our grand genealogy of old: Thou bidd’st me not relate an alien story; thou bidd’st me laud my brother Lusians’ glory. “That one praise others’ exploits and renown4 is honour’d custom which we all desire; yet fear I ’tis unfit to praise mine own;",
+   "why": "Gama begins his history of Portugal to the king of Melinde, the frame for Cantos III and IV."
+  },
+  {
+   "part": 2,
+   "chapter": "Canto V.",
+   "quote": "Remained dear Tagus, and the breezy line of Cintran peaks, long, long, our gaze detaining: Remainèd eke in that dear country mine our hearts with pangs of mem’ory ever paining: Till, when all veilèd sank in darkling air, naught but the welkin and the wave was there.",
+   "why": "The fleet leaves Lisbon in Canto V and the sailors look back at their homeland as it sinks from view."
+  },
+  {
+   "part": 2,
+   "chapter": "Canto V.",
+   "quote": "To tell the many dangers of the deep,16 sea-changes landsman never apprehendeth, sudden Tornados, storms the seas that sweep, Levens, whose fire the depths of air accendeth;",
+   "why": "Gama lists the sea's hazards in Canto V, the poem's most direct account of what the voyage cost."
+  },
+  {
+   "part": 1,
+   "chapter": "Editor’s Preface.",
+   "quote": "I have been daily and hourly consulted as to this expression, or this or that change of word, this or that peculiarity of Camoens. What, then, are those difficulties, you, the reader, will ask me? Let me try to explain. So many enterprising poet-authors have translated Camoens, and received their meed of praise and popularity.",
+   "why": "Isabel Burton on how closely her husband worked at the translation, and why his odd words are deliberate."
+  }
+ ]
+}

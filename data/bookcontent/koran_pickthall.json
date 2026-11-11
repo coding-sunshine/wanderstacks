@@ -1,0 +1,183 @@
+{
+ "id": "koran_pickthall",
+ "summary": "The Koran is the central text of Islam, arranged in 114 chapters called surahs, from the short opening prayer Al-Fatiha to the long Al-Baqara and on to the brief last chapters. The surahs deal with God's oneness, creation and judgment, the stories of earlier prophets such as Joseph and Mary, rules for prayer, charity and family life, and the duties of believers. This file is a Project Gutenberg volume that prints three English translations side by side, verse by verse. The quotes here come from Pickthall's, marked P: in the text.",
+ "context": "Muslims believe the Koran was revealed to Muhammad by the angel Gabriel over some 23 years, ending in 632, the year of his death. After his death, the first caliph Abu Bakr ordered it compiled, and the caliph Uthman later set a standard version. Marmaduke Pickthall, an Englishman and a convert to Islam, published his translation in 1930 as The Meaning of the Glorious Koran. It remains one of the most widely used English versions. The volume on this site puts his text beside the translations of Yusuf Ali and Shakir.",
+ "sources": [
+  {
+   "title": "Marmaduke Pickthall (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Marmaduke_Pickthall"
+  },
+  {
+   "title": "Quran (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Quran"
+  }
+ ],
+ "people": [
+  {
+   "name": "Muhammad",
+   "role": "subject",
+   "note": "The prophet to whom, in Muslim belief, the Koran was revealed over about 23 years.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Marmaduke Pickthall",
+   "role": "translator",
+   "note": "English novelist and convert to Islam, born in London in 1875; his Koran translation appeared in 1930.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Abu Bakr",
+   "role": "subject",
+   "note": "First caliph, who ordered the Koran compiled after Muhammad's death.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Uthman",
+   "role": "subject",
+   "note": "Caliph from 644 to 656 who established the standard text.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Mecca",
+   "lat": 21.4225,
+   "lon": 39.8262,
+   "note": "Birthplace of Muhammad and setting for the earlier revelations.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Medina",
+   "lat": 24.4672,
+   "lon": 39.6111,
+   "note": "City of the later revelations.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5072,
+   "lon": -0.1276,
+   "note": "Where Pickthall was born and where he declared his conversion in 1917.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 632,
+   "label": "Muhammad dies; the revelation is held to be complete.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 644,
+   "label": "Uthman becomes caliph and later standardizes the text.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1875,
+   "label": "Marmaduke Pickthall is born in London on 7 April.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1917,
+   "label": "Pickthall declares his conversion to Islam on 29 November.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1930,
+   "label": "Pickthall's translation, The Meaning of the Glorious Koran, appears.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Revelation",
+   "note": "Muslims regard the text as God's own speech, given to Muhammad through Gabriel.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "A guide for humanity",
+   "note": "The text describes itself as a guide for people.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Earlier prophets",
+   "note": "It alludes to narratives found in biblical texts without quoting them directly.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Three translations at once",
+   "note": "The volume prints Yusuf Ali, Pickthall and Shakir verse by verse, so the reader can compare them.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 2,
+   "chapter": "Al-Baqara (The Cow)",
+   "quote": "Allah! There is no deity save Him, the Alive, the Eternal. Neither slumber nor sleep overtaketh Him. Unto Him belongeth whatsoever is in the heavens and whatsoever is in the earth.",
+   "why": "The opening of the Throne Verse, 2:255."
+  },
+  {
+   "part": 2,
+   "chapter": "Al-Baqara (The Cow)",
+   "quote": "There is no compulsion in religion. The right direction is henceforth distinct from error. And he who rejecteth false deities and believeth in Allah hath grasped a firm handhold which will never break. Allah is Hearer, Knower.",
+   "why": "Verse 2:256, on freedom in religion."
+  },
+  {
+   "part": 10,
+   "chapter": "Al-Noor (The Light)",
+   "quote": "Allah is the Light of the heavens and the earth. The similitude of His light is as a niche wherein is a lamp. The lamp is in a glass. The glass is as it were a shining star.",
+   "why": "The Light Verse, 24:35."
+  },
+  {
+   "part": 14,
+   "chapter": "Al-Hujraat (The Private Apartments)",
+   "quote": "O mankind! Lo! We have created you male and female, and have made you nations and tribes that ye may know one another. Lo! the noblest of you, in the sight of Allah, is the best in conduct. Lo! Allah is Knower, Aware.",
+   "why": "Verse 49:13 on human diversity."
+  },
+  {
+   "part": 8,
+   "chapter": "Al-Isra (The Night Journey)",
+   "quote": "Thy Lord hath decreed, that ye worship none save Him, and (that ye show) kindness to parents. If one of them or both of them attain old age with thee, say not \"Fie\" unto them nor repulse them, but speak unto them a gracious word.",
+   "why": "Verse 17:23, on kindness to parents."
+  },
+  {
+   "part": 9,
+   "chapter": "Al-Mumenoon (The Believers)",
+   "quote": "Then fashioned We the drop a clot, then fashioned We the clot a little lump, then fashioned We the little lump bones, then clothed the bones with flesh, and then produced it as another creation. So blessed be Allah, the Best of creators!",
+   "why": "Verse 23:14, on the stages of human creation."
+  }
+ ]
+}

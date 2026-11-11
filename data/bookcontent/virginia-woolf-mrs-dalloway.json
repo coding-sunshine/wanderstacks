@@ -1,0 +1,203 @@
+{
+ "id": "virginia-woolf-mrs-dalloway",
+ "summary": "Mrs Dalloway follows one June day in London in 1923. Clarissa Dalloway, fifty-one, buys flowers for an evening party and thinks back to her youth at Bourton. Peter Walsh returns from India and she meets him again. The shell-shocked veteran Septimus Warren Smith and his wife Lucrezia spend the same day in the city, and the two stories meet at the party. The book moves between minds, linked by Big Ben's strokes.",
+ "context": "Woolf published it on 14 May 1925 after finishing the manuscript in late autumn 1924. Her working title was The Hours. It grew from two short stories, Mrs Dalloway in Bond Street and The Prime Minister. In 1924 she gave a talk at Cambridge called Character in Fiction. The book is a stream of consciousness novel often read as a reply to Joyce's Ulysses. Clarissa was based in part on Kitty Lushington.",
+ "sources": [
+  {
+   "url": "https://standardebooks.org/ebooks/virginia-woolf/mrs-dalloway",
+   "title": "Mrs Dalloway by Virginia Woolf (Standard Ebooks)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Mrs_Dalloway",
+   "title": "Mrs Dalloway (Wikipedia)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Virginia Woolf",
+   "role": "Author",
+   "note": "Published the novel in 1925.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Clarissa Dalloway",
+   "role": "Protagonist",
+   "note": "Fifty-one; she hosts a party on the day.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Peter Walsh",
+   "role": "Former suitor",
+   "note": "Returns to London and calls on Clarissa.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Septimus Warren Smith",
+   "role": "Veteran",
+   "note": "Shell-shocked, he becomes Clarissa's dark double.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Lucrezia",
+   "role": "Wife of Septimus",
+   "note": "Tries to hold him to the world.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Sir William Bradshaw",
+   "role": "Doctor",
+   "note": "Treats Septimus.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Kitty Lushington",
+   "role": "Model",
+   "note": "The person on whom the main character was in part based.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "London",
+   "lat": 51.51,
+   "lon": -0.13,
+   "note": "The whole action takes place here on a June day in 1923.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Bond Street",
+   "lat": 51.5126,
+   "lon": -0.1449,
+   "note": "Where Clarissa goes in the short story that seeded the novel.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Victoria Street",
+   "lat": 51.4966,
+   "lon": -0.1387,
+   "note": "Street she crosses in the first pages.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Big Ben, Westminster",
+   "lat": 51.5007,
+   "lon": -0.1246,
+   "note": "Its strokes mark the hours through the book.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1923,
+   "label": "The novel's single day falls in mid-June",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1924,
+   "label": "Woolf finishes the manuscript in late autumn",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1924,
+   "label": "Woolf gives her Cambridge talk Character in Fiction",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1925,
+   "label": "Mrs Dalloway is published on 14 May",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Time and bells",
+   "note": "Big Ben marks hours that no character can stop.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Inner life over plot",
+   "note": "The narration slides from one mind to another.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Death as defiance",
+   "note": "Septimus's suicide is imagined as an attempt to communicate.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Connection at the party",
+   "note": "Clarissa's gift is to bring people together.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Mrs Dalloway",
+   "quote": "Mrs. Dalloway said she would buy the flowers herself. For Lucy had her work cut out for her. The doors would be taken off their hinges; Rumpelmayer’s men were coming. And then, thought Clarissa Dalloway, what a morning⁠—fresh as if issued to children on a beach. What a lark! What a plunge!",
+   "why": "Opens the day and sets the tone of free thought."
+  },
+  {
+   "part": 1,
+   "chapter": "Mrs Dalloway",
+   "quote": "Big Ben strikes. There! Out it boomed. First a warning, musical; then the hour, irrevocable. The leaden circles dissolved in the air. Such fools we are, she thought, crossing Victoria Street.",
+   "why": "Shows how the bells measure the day."
+  },
+  {
+   "part": 1,
+   "chapter": "Mrs Dalloway",
+   "quote": "She had a perpetual sense, as she watched the taxi cabs, of being out, out, far out to sea and alone; she always had the feeling that it was very, very dangerous to live even one day. Not that she thought herself clever, or much out of the ordinary. How she had got through life on the few twigs of knowledge Fräulein Daniels gave them she could not think.",
+   "why": "Clarissa's sense of being far out to sea."
+  },
+  {
+   "part": 2,
+   "chapter": "Mrs Dalloway (continued)",
+   "quote": "Death was defiance. Death was an attempt to communicate; people feeling the impossibility of reaching the centre which, mystically, evaded them; closeness drew apart; rapture faded; one was alone. There was an embrace in death. But this young man who had killed himself⁠—had he plunged holding his treasure?",
+   "why": "Septimus's thought on his death."
+  },
+  {
+   "part": 3,
+   "chapter": "Mrs Dalloway (continued)",
+   "quote": "Fear no more the heat of the sun. She must go back to them. But what an extraordinary night! She felt somehow very like him⁠—the young man who had killed himself. She felt glad that he had done it; thrown it away while they went on living. The clock was striking. The leaden circles dissolved in the air. But she must go back. She must assemble. She must find Sally and Peter.",
+   "why": "Clarissa's thought at the party after she learns of Septimus."
+  }
+ ]
+}

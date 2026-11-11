@@ -1,0 +1,299 @@
+{
+ "summary": "Candide is a young man raised in a Westphalian castle under the philosopher Pangloss, who teaches that all is for the best in the best of all possible worlds. Thrown out for loving Cunegonde, he is pressed into an army, caught in the Lisbon earthquake, flogged at an auto-da-fe, and sent across the Atlantic. He reaches El Dorado and loses its wealth, meets the pessimist Martin, and crosses Europe to Constantinople, where the survivors reunite. Voltaire mocks Leibnizian optimism, churches, armies and philosophers through the chain of disasters. The book ends with the plain rule that people must cultivate their garden.",
+ "context": "Voltaire wrote Candide in late 1758, perhaps starting in 1757, partly at Les Delices near Geneva, and it appeared in January 1759. The Lisbon earthquake of 1755 and the Seven Years' War pushed him against the optimism of Leibniz. The book was published without Voltaire's name, was widely banned for blasphemy and sedition, and in 1762 reached the Index of prohibited books. It is now among the most taught works of French literature. The site carries a Modern Library English edition from Project Gutenberg, with an introduction and footnotes.",
+ "sources": [
+  {
+   "title": "Candide (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Candide"
+  },
+  {
+   "title": "Voltaire (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Voltaire"
+  },
+  {
+   "title": "Candide, Project Gutenberg ebook 19942",
+   "url": "https://www.gutenberg.org/ebooks/19942"
+  }
+ ],
+ "people": [
+  {
+   "name": "Voltaire",
+   "role": "author",
+   "note": "French Enlightenment writer and satirist who published Candide in 1759.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Candide",
+   "role": "character",
+   "note": "The title character, illegitimate nephew of the Baron of Thunder-ten-Tronckh, in love with Cunegonde.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cunegonde",
+   "role": "character",
+   "note": "The baron's daughter, whom Candide loves.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Pangloss",
+   "role": "character",
+   "note": "The household philosopher who preaches that all is for the best.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cacambo",
+   "role": "character",
+   "note": "Candide's valet in America, of mixed Spanish and Indigenous parentage.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Martin",
+   "role": "character",
+   "note": "A Dutch amateur philosopher and Manichaean who travels with Candide from Suriname.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The Old Woman",
+   "role": "character",
+   "note": "Cunegonde's maid, who flees with her and Candide to the New World.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gottfried Wilhelm Leibniz",
+   "role": "subject",
+   "note": "His theodicy of optimism is the philosophy Voltaire ridicules.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ira Wade",
+   "role": "subject",
+   "note": "Voltaire scholar who found the La Valliere manuscript in 1956.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Lisbon",
+   "lat": 38.7223,
+   "lon": -9.1393,
+   "note": "The 1755 earthquake that struck here shapes the book and Voltaire's attack on optimism.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Les Delices, Geneva",
+   "lat": 46.2044,
+   "lon": 6.1432,
+   "note": "Voltaire is believed to have written part of Candide while living here.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Schwetzingen",
+   "lat": 49.3833,
+   "lon": 8.5667,
+   "note": "Voltaire visited the Elector Palatine here for three weeks in summer 1758 and may have written part of the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Buenos Aires",
+   "lat": -34.6037,
+   "lon": -58.3816,
+   "note": "Its Spanish governor wants Cunegonde as a mistress.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Paramaribo",
+   "lat": 5.852,
+   "lon": -55.2038,
+   "note": "In Suriname, Candide meets Martin and they travel on together.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Paris",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "Candide and Martin meet a scamming abbot and a fake marchioness.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Venice",
+   "lat": 45.4408,
+   "lon": 12.3155,
+   "note": "Candide and Martin visit the noble Pococurante and dine with six dethroned kings during carnival.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Constantinople",
+   "lat": 41.0082,
+   "lon": 28.9784,
+   "note": "Candide travels here to find Cunegonde, who works as a slave.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1694,
+   "label": "Voltaire, born Francois-Marie Arouet, is born.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1755,
+   "label": "The Lisbon earthquake shakes theologians and Voltaire's faith in optimism.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1758,
+   "label": "Voltaire composes most of Candide, and sends chapters to the Duke and Duchess La Valliere.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1759,
+   "label": "Candide is published in January, banned soon after.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1762,
+   "label": "The Catholic Church lists Candide on the Index of prohibited books.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1956,
+   "label": "Ira Wade finds the La Valliere manuscript, the only surviving manuscript from before publication.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Against Leibnizian optimism",
+   "note": "Pangloss's claim that all is for the best is tested and mocked by each disaster.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Cultivate our garden",
+   "note": "Voltaire ends with a practical rule of working at what is near, in place of Pangloss's maxim.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Problem of evil",
+   "note": "The Lisbon earthquake and war push the book to treat suffering more directly than the philosophers did.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Satire of institutions",
+   "note": "Religion, governments, armies and philosophers are all ridiculed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Three-day legend",
+   "note": "A popular tale says Voltaire wrote it in three days, but scholars date composition to 1758 or earlier.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "INTRODUCTION",
+   "quote": "Ever since 1759, when Voltaire wrote \"Candide\" in ridicule of the notion that this is the best of all possible worlds, this world has been a gayer place for readers",
+   "why": "The edition's introduction, which repeats the story of three-day composition."
+  },
+  {
+   "part": 1,
+   "chapter": "I: HOW CANDIDE WAS BROUGHT UP IN A MAGNIFICENT CASTLE, AND HOW HE WAS EXPELLED THENCE.",
+   "quote": "In a castle of Westphalia, belonging to the Baron of Thunder-ten-Tronckh, lived a youth, whom nature had endowed with the most gentle manners",
+   "why": "Opening of the story."
+  },
+  {
+   "part": 1,
+   "chapter": "I: HOW CANDIDE WAS BROUGHT UP IN A MAGNIFICENT CASTLE, AND HOW HE WAS EXPELLED THENCE.",
+   "quote": "\"It is demonstrable,\" said he, \"that things cannot be otherwise than as they are; for all being created for an end, all is necessarily for the best end",
+   "why": "Pangloss states optimism in his own words."
+  },
+  {
+   "part": 1,
+   "chapter": "VI: HOW THE PORTUGUESE MADE A BEAUTIFUL AUTO-DA-FÉ, TO PREVENT ANY FURTHER EARTHQUAKES; AND HOW CANDIDE WAS PUBLICLY WHIPPED.",
+   "quote": "After the earthquake had destroyed three-fourths of Lisbon, the sages of that country could think of no means more effectual to prevent utter ruin than to give the people a beautiful auto-da-fé ; for it had been decided by the University of Coimbra, that the burning of a few people alive by a slow fire, and with great ceremony, is an infallible secret to hinder the earth from quaking",
+   "why": "The authorities answer the earthquake with an auto-da-fe."
+  },
+  {
+   "part": 1,
+   "chapter": "XVII: ARRIVAL OF CANDIDE AND HIS VALET AT EL DORADO, AND WHAT THEY SAW THERE.",
+   "quote": "\"You see,\" said Cacambo to Candide, as soon as they had reached the frontiers of the Oreillons, \"that this hemisphere is not better than the others, take my word for it; let us go back to Europe by the shortest way.\"",
+   "why": "Cacambo urges going back to Europe before they stumble on El Dorado."
+  },
+  {
+   "part": 1,
+   "chapter": "XIX: WHAT HAPPENED TO THEM AT SURINAM AND HOW CANDIDE GOT ACQUAINTED WITH MARTIN.",
+   "quote": "This is the price at which you eat sugar in Europe.",
+   "why": "A mutilated slave in Suriname turns Candide against optimism."
+  },
+  {
+   "part": 2,
+   "chapter": "XXVII: CANDIDE'S VOYAGE TO CONSTANTINOPLE.",
+   "quote": "\"You see,\" said Candide to Martin on the way, \"we supped with six dethroned kings, and of those six there was one to whom I gave charity",
+   "why": "After the supper with six dethroned kings, Candide takes stock of his own misfortunes."
+  },
+  {
+   "part": 2,
+   "chapter": "XXX: THE CONCLUSION.",
+   "quote": "\"I know also,\" said Candide, \"that we must cultivate our garden.\"",
+   "why": "The line the book is known for."
+  }
+ ],
+ "id": "candide"
+}

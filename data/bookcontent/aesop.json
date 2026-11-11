@@ -1,0 +1,212 @@
+{
+ "summary": "A collection of short animal fables credited to Aesop, the Greek storyteller said to have lived in the sixth century BCE. Each story is a few lines long: a fox gives up on grapes it cannot reach, a tortoise outlasts a hare, the body's members strike against the belly. Most end with a plain moral. The edition here is George Fyler Townsend's translation, which opens with a preface and a life of Aesop and gathers three hundred fables.",
+ "context": "The fables were oral for roughly three centuries after Aesop's death before anyone collected them, and the corpus kept growing, absorbing tales from West Asia and beyond. Manuscripts in Greek and Latin carried them forward, and printing made Aesop one of the earliest titles in many languages. First told to adults on social and political themes, they became a staple of moral teaching for children from the Renaissance on. This site carries the Townsend translation, the English text Project Gutenberg offers as Three Hundred Aesop's Fables.",
+ "sources": [
+  {
+   "title": "Aesop's Fables (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Aesop's_Fables"
+  },
+  {
+   "title": "Aesop (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Aesop"
+  },
+  {
+   "title": "Three Hundred Aesop's Fables, translated by George Fyler Townsend (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/21"
+  }
+ ],
+ "people": [
+  {
+   "name": "Aesop",
+   "role": "author",
+   "note": "Greek fabulist and storyteller, c. 620 to 564 BCE, whose existence is unclear and under whose name the fables were gathered.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "George Fyler Townsend",
+   "role": "translator",
+   "note": "Clergyman whose English translation, with a preface and life of Aesop, is the text on this site.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Herodotus",
+   "role": "subject",
+   "note": "Greek historian who mentions Aesop the fable writer as a slave of the fifth century BCE.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Socrates",
+   "role": "subject",
+   "note": "In Plato's Phaedo he passes his time in prison putting some of Aesop's fables into verse.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Apollonius of Tyana",
+   "role": "subject",
+   "note": "First-century philosopher recorded as saying Aesop taught great truths through humble incidents.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ben E. Perry",
+   "role": "subject",
+   "note": "Loeb editor who argued in 1965 that no Greek fable comes from an Indian source.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Samos",
+   "lat": 37.7547,
+   "lon": 26.9778,
+   "note": "Greek island that claims to be Aesop's birthplace in the life that prefaces this edition.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Sardis",
+   "lat": 38.4883,
+   "lon": 28.0403,
+   "note": "Capital of Lydia and one of four places the preface says contend to be Aesop's birthplace.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Mesembria",
+   "lat": 42.6583,
+   "lon": 27.7342,
+   "note": "Ancient colony in Thrace, another claimant to Aesop's birth.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -2500,
+   "label": "Fables and proverbs of Aesopic form already exist in Sumer and Akkad, as early as the third millennium BCE.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -620,
+   "label": "Approximate birth of Aesop, the Greek fabulist, who is traditionally said to have died around 564 BCE.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": -564,
+   "label": "Approximate death of Aesop, after which his fables circulate orally for about three centuries.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1593,
+   "label": "Portuguese missionaries print Esopo no Fabulas in Japan, one of the earliest translations of Aesop outside Europe.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1965,
+   "label": "Ben E. Perry's Babrius and Phaedrus argues against Indian origins for the Greek fable tradition.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "A fable ends in a moral",
+   "note": "The animals play fixed types, the fox sly and the lion bold, and the story is told to deliver one lesson.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Authorship by attribution",
+   "note": "Contradictory morals and contradictory ancient biographies suggest Aesop did not originate all the fables credited to him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Fables travel between cultures",
+   "note": "Aesopic tales have Sumerian and Akkadian parallels and share about a dozen with Indian collections such as the Jataka tales and the Panchatantra.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "From adults to children",
+   "note": "The stories began as political and social commentary for adults and became a tool of moral education for children from the Renaissance.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "PREFACE",
+   "quote": "He is neither a narrator, nor an allegorist. He is a great teacher, a corrector of morals, a censor of vice, and a commender of virtue",
+   "why": "Townsend's preface sums up what the fabulist is for: a teacher and censor of vice rather than a storyteller."
+  },
+  {
+   "part": 1,
+   "chapter": "The Hare and the Tortoise",
+   "quote": "A HARE one day ridiculed the short feet and slow pace of the Tortoise, who replied, laughing: “Though you be swift as the wind, I will beat you in a race",
+   "why": "The best-known race in the collection, short enough to see how a fable sets up its lesson."
+  },
+  {
+   "part": 1,
+   "chapter": "The Belly and the Members",
+   "quote": "THE MEMBERS of the Body rebelled against the Belly, and said, “Why should we be perpetually engaged in administering to your wants, while you do nothing but take your rest, and enjoy yourself in luxury and self-indulgence",
+   "why": "A political fable about cooperation, told in a few lines."
+  },
+  {
+   "part": 1,
+   "chapter": "The Fox and the Grapes",
+   "quote": "A FAMISHED FOX saw some clusters of ripe black grapes hanging from a trellised vine",
+   "why": "The source of the phrase sour grapes, a full fable in three sentences."
+  },
+  {
+   "part": 1,
+   "chapter": "The Crow and the Pitcher",
+   "quote": "A CROW perishing with thirst saw a pitcher, and hoping to find water, flew to it with delight",
+   "why": "A fable of ingenuity rather than vice, with the moral left to the reader."
+  },
+  {
+   "part": 2,
+   "chapter": "The Dove and the Crow",
+   "quote": "A DOVE shut up in a cage was boasting of the large number of young ones which she had hatched",
+   "why": "A fable from the second half whose moral turns a boast into a warning."
+  },
+  {
+   "part": 2,
+   "chapter": "The Mother and the Wolf",
+   "quote": "A FAMISHED WOLF was prowling about in the morning in search of food. As he passed the door of a cottage built in the forest, he heard a Mother say to her child, “Be quiet, or I will throw you out of the window, and the Wolf shall eat you",
+   "why": "A wolf takes a mother's threat literally, showing how many fables turn on a single misplaced trust."
+  }
+ ],
+ "id": "aesop"
+}

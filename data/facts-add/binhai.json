@@ -1,0 +1,175 @@
+{
+  "facts": [
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "dims",
+      "value": "33,700 m2 total, five levels (English Wikipedia); MVRDV project page gives 33,700 m2, MVRDV 2016 news gives 34,200 m2. Sources disagree.",
+      "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+      "tier": "wikipedia",
+      "quote": "The five-level library has a total space of 33,700 square meters",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/Tianjin_Binhai_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The five-level library has a total space of 3'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "dims",
+      "value": "33,700 m2 cultural centre (MVRDV project page).",
+      "source": "https://www.mvrdv.com/projects/246/tianjinbinhai-",
+      "tier": "secondary",
+      "quote": "The 33,700m2 cultural centre",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://www.mvrdv.com/projects/246/tianjinbinhai-' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The 33,700m2 cultural centre'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "dims",
+      "value": "34,200 m2 building per MVRDV news of 22 June 2016, against 33,700 m2 elsewhere. Sources disagree.",
+      "source": "https://mvrdv.com/zh/news/mvrdv-library-in-tianjin-tops-out",
+      "tier": "secondary",
+      "quote": "The 34,200 m 2 building",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://mvrdv.com/zh/news/mvrdv-library-in-tianjin-tops-out' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The 34,200 m 2 building'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "volumes",
+      "value": "1.2 million books (English Wikipedia infobox).",
+      "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+      "tier": "wikipedia",
+      "quote": "Collection Size 1.2 million books",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/Tianjin_Binhai_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Collection Size 1.2 million books'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "architect",
+      "value": "Designed by Rotterdam-based MVRDV (English Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+      "tier": "wikipedia",
+      "quote": "designed by the Rotterdam -based architectural firm MVRDV",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/Tianjin_Binhai_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'designed by the Rotterdam -based architectura'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "built",
+      "value": "2014 to 2017 (MVRDV project page); Wikipedia says it opened in October 2017.",
+      "source": "https://www.mvrdv.com/projects/246/tianjinbinhai-",
+      "tier": "secondary",
+      "quote": "Year 2014–2017",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://www.mvrdv.com/projects/246/tianjinbinhai-' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Year 2014–2017'",
+      "earliest": 2014,
+      "latest": 2017
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "built",
+      "value": "Opened in October 2017 (English Wikipedia); MVRDV in June 2016 had estimated opening in mid-2017.",
+      "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+      "tier": "wikipedia",
+      "quote": "It opened in October 2017.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/Tianjin_Binhai_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'It opened in October 2017.'",
+      "earliest": 2017,
+      "latest": 2017
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "place",
+      "value": "Part of the Binhai Cultural Centre in Tianjin Binhai District; masterplan by GMP, 120,000 m2.",
+      "source": "https://www.mvrdv.com/projects/246/tianjinbinhai-",
+      "tier": "secondary",
+      "quote": "GMP’s 120,000m2 masterplan",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://www.mvrdv.com/projects/246/tianjinbinhai-' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'GMP'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "status_note",
+      "value": "Visitors: approximately 10,000 people a day (English Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+      "tier": "wikipedia",
+      "quote": "approximately 10,000 people a day",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/Tianjin_Binhai_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'approximately 10,000 people a day'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "status_note",
+      "value": "Awards: 2019 AD 100 China Award, 2018 Architizer A+ Award (MVRDV project page).",
+      "source": "https://www.mvrdv.com/projects/246/tianjinbinhai-",
+      "tier": "secondary",
+      "quote": "2019 AD 100 China Award",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://www.mvrdv.com/projects/246/tianjinbinhai-' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '2019 AD 100 China Award'",
+      "earliest": 2018,
+      "latest": 2019
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "field": "collection",
+      "value": "Book spines printed onto the backs of the shelf space (English Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+      "tier": "wikipedia",
+      "quote": "book spines were printed onto the backs of the shelf space",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/Tianjin_Binhai_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'book spines were printed onto the backs of th'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "kind": "built",
+      "year": 2016,
+      "earliest": 2016,
+      "latest": 2016,
+      "label": "MVRDV announced the library topping out, 22 June 2016",
+      "source": "https://mvrdv.com/zh/news/mvrdv-library-in-tianjin-tops-out",
+      "tier": "secondary",
+      "quote": "MVRDV library in Tianjin tops out",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://mvrdv.com/zh/news/mvrdv-library-in-tianjin-tops-out' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'MVRDV library in Tianjin tops out'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "kind": "built",
+      "year": 2017,
+      "earliest": 2014,
+      "latest": 2017,
+      "label": "Design and construction 2014 to 2017",
+      "source": "https://www.mvrdv.com/projects/246/tianjinbinhai-",
+      "tier": "secondary",
+      "quote": "Year 2014–2017",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://www.mvrdv.com/projects/246/tianjinbinhai-' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Year 2014–2017'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "binhai",
+      "kind": "opened",
+      "year": 2017,
+      "earliest": 2017,
+      "latest": 2017,
+      "label": "Opened October 2017",
+      "source": "https://en.wikipedia.org/wiki/Tianjin_Binhai_Library",
+      "tier": "wikipedia",
+      "quote": "It opened in October 2017.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/Tianjin_Binhai_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'It opened in October 2017.'"
+    }
+  ]
+}

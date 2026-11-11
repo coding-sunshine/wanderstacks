@@ -1,0 +1,245 @@
+{
+ "id": "pride",
+ "summary": "Pride and Prejudice follows the five Bennet sisters in rural Hertfordshire after a wealthy bachelor, Charles Bingley, rents the neighbouring estate. His friend Fitzwilliam Darcy insults Elizabeth Bennet at a ball, and she in turn trusts the charming officer Wickham and believes the worst of him. Darcy's first proposal is angrily refused, and a long letter from him forces her to reconsider what she thought she knew. Visits to Kent and to Derbyshire, and a family scandal over her youngest sister, change both of them. The book ends in marriages built on revised judgement rather than on money alone.",
+ "context": "Austen drafted the story as First Impressions between October 1796 and August 1797, and the publisher Thomas Egerton later bought the rewritten text. It appeared in three volumes on 28 January 1813 with a second edition the same year and a third in 1817. The final title came from a phrase in Fanny Burney's Cecilia. Readers have returned to it ever since, and it appears on lists such as the BBC's 100 Greatest British Novels. The site carries the Standard Ebooks edition, a free modern text made from the original.",
+ "sources": [
+  {
+   "title": "Pride and Prejudice - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Pride_and_Prejudice"
+  },
+  {
+   "title": "Pride and Prejudice, by Jane Austen - Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/jane-austen/pride-and-prejudice"
+  }
+ ],
+ "people": [
+  {
+   "name": "Jane Austen",
+   "role": "author",
+   "note": "Wrote the first draft as First Impressions in the late 1790s and saw the book printed in 1813.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Elizabeth Bennet",
+   "role": "character",
+   "note": "The second Bennet daughter, quick-witted, who refuses Darcy's first proposal and later revises her opinion of him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Fitzwilliam Darcy",
+   "role": "character",
+   "note": "Owner of Pemberley in Derbyshire, wealthy and handsome but stiff in manner, whom many misjudge at first.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jane Bennet",
+   "role": "character",
+   "note": "The eldest sister, thought the most beautiful in the neighbourhood and inclined to see only good in others.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Charles Bingley",
+   "role": "character",
+   "note": "Rich newcomer to Netherfield who falls in love with Jane.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mr Collins",
+   "role": "character",
+   "note": "A clergyman and distant cousin who will inherit Longbourn because the estate is entailed to male heirs.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lady Catherine de Bourgh",
+   "role": "character",
+   "note": "Darcy's overbearing aunt and Collins's patroness, mistress of Rosings Park in Kent.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Thomas Egerton",
+   "role": "printer",
+   "note": "The publisher to whom Austen sold the manuscript for £110.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Hertfordshire",
+   "lat": 51.81,
+   "lon": -0.24,
+   "note": "County where the Bennets live at Longbourn near the town of Meryton.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kent",
+   "lat": 51.28,
+   "lon": 0.52,
+   "note": "County of Hunsford and Rosings Park, where Elizabeth visits Charlotte and Mr Collins in the spring.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Derbyshire",
+   "lat": 53.1,
+   "lon": -1.56,
+   "note": "Home county of Darcy's estate Pemberley, visited by Elizabeth on a tour with her aunt and uncle.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Brighton",
+   "lat": 50.82,
+   "lon": -0.14,
+   "note": "Seaside town where the militia regiment is camped and where Lydia's elopement story begins.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1796,
+   "label": "Austen begins writing First Impressions in October, the first version of the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1797,
+   "label": "First Impressions is finished in August, and the manuscript is later sold to Thomas Egerton.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1813,
+   "label": "The first edition appears in three volumes on 28 January.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1813,
+   "label": "A second edition follows in October of the same year.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1817,
+   "label": "A third edition is printed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 2015,
+   "label": "The BBC ranks the novel number 11 in its list of the 100 Greatest British Novels.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Marriage, money and entail",
+   "note": "Because Longbourn passes only to a male heir, the Bennet daughters need marriages to be secure, and dowries shape who can marry whom.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "First impressions can mislead",
+   "note": "Elizabeth and Darcy each judge the other quickly and wrongly, and the plot is the work of correcting those judgements.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "What makes a gentleman",
+   "note": "Elizabeth refuses Darcy's first proposal partly because his behaviour toward her is not gentlemanlike, so manners count against rank.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Letters as plot",
+   "note": "Letters carry key revelations, and the book describes them as physical objects with envelopes, sheets and handwriting.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+   "why": "The famous opening line sets the novel's ironic voice and its subject, marriage and property."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "She is tolerable; but not handsome enough to tempt me ; and I am in no humour at present to give consequence to young ladies who are slighted by other men.",
+   "why": "Darcy's careless insult at the Meryton ball is the first impression Elizabeth cannot forget."
+  },
+  {
+   "part": 1,
+   "chapter": "XI",
+   "quote": "There is, I believe, in every disposition a tendency to some particular evil, a natural defect, which not even the best education can overcome.”",
+   "why": "Darcy and Elizabeth trade their faults in a sharp exchange that shows how well matched they are."
+  },
+  {
+   "part": 2,
+   "chapter": "XIX",
+   "quote": "first, that I think it a right thing for every clergyman in easy circumstances (like myself) to set the example of matrimony in his parish. Secondly, that I am convinced it will add very greatly to my happiness; and thirdly⁠—which perhaps I ought to have mentioned earlier, that it is the particular advice and recommendation of the very noble lady whom I have the honour of calling patroness.",
+   "why": "Mr Collins's proposal reasons are a comic look at marriage as a practical arrangement."
+  },
+  {
+   "part": 3,
+   "chapter": "XXXIV",
+   "quote": "In vain have I struggled. It will not do. My feelings will not be repressed. You must allow me to tell you how ardently I admire and love you.”",
+   "why": "Darcy's first proposal, made with open contempt for her family, is what Elizabeth rejects."
+  },
+  {
+   "part": 3,
+   "chapter": "XXXV",
+   "quote": "Be not alarmed, Madam, on receiving this letter, by the apprehension of its containing any repetition of those sentiments, or renewal of those offers, which were last night so disgusting to you.",
+   "why": "The letter that reopens the whole story and starts Elizabeth's reappraisal."
+  },
+  {
+   "part": 4,
+   "chapter": "LVIII",
+   "quote": "I have been a selfish being all my life, in practice, though not in principle. As a child I was taught what was right , but I was not taught to correct my temper. I was given good principles, but left to follow them in pride and conceit.",
+   "why": "Darcy's self-account explains how pride was bred into him and why he changed."
+  },
+  {
+   "part": 5,
+   "chapter": "LXI",
+   "quote": "Darcy, as well as Elizabeth, really loved them; and they were both ever sensible of the warmest gratitude towards the persons who, by bringing her into Derbyshire, had been the means of uniting them.",
+   "why": "One of the closing lines on the Gardiners, whose Derbyshire trip brought the couple together."
+  }
+ ]
+}

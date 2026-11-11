@@ -1,0 +1,201 @@
+{
+  "facts": [
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "status_note",
+      "value": "Conceived as the Royal Palace Library by the Nayak kings of Thanjavur (1535-1675); the Maratha rulers (1676-1855) kept it up. Sources differ on the Maratha start: the Wikipedia palace page says the Bhonsle family ruled Tanjore from 1674 to 1855",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html",
+      "tier": "primary",
+      "quote": "Conceived and christened as the Royal Palace Library by the Nayak Kings of Thanjavur (1535-1675 AD). And the Maratha rulers (1676-1855) nourished it for intellectual enrichment.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Royal Palace Library by the Nayak Kings of Thanjavur'",
+      "earliest": 1535,
+      "latest": 1675
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "status_note",
+      "value": "Made a public library in 1918: Government of Madras G.O. Ms. No.1306 Home (Education) dated 5 Oct 1918 took possession under the Charitable Endowment Act; one lakh rupees given for upkeep",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html",
+      "tier": "primary",
+      "quote": "took possession of the Library under the Charitable Endowment Act",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'took possession of the Library under the Charitable Endowment Act'",
+      "earliest": 1918,
+      "latest": 1918
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "status_note",
+      "value": "Declared an Institution of National Importance in 1983; run by a registered society constituted 9 July 1986 under the Tamilnadu Registered Societies Act of 1975",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html",
+      "tier": "primary",
+      "quote": "In 1983, the Library was declared as an Institution of National Importance.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'In 1983, the Library was declared as an Institution of National Importance'",
+      "earliest": 1983,
+      "latest": 1983
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "collection",
+      "value": "Sanskrit manuscripts exceed 39,300, in Grantha, Devanagari, Nandinagari and Telugu scripts among others",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html",
+      "tier": "primary",
+      "quote": "which exceed 39,300 and written in Grantha, Devanagari, Nandinagari, Telugu scripts etc.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'which exceed 39,300'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "collection",
+      "value": "Tamil manuscripts: 3780 per the library own archived site (titles of literature and medicine); the Wikipedia article says over 4500. Sources disagree",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html",
+      "tier": "primary",
+      "quote": "The total number of Tamil manuscripts is 3780 comprising titles of literature and medicine.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'The total number of Tamil manuscripts is 3780'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "collection",
+      "value": "Tamil manuscripts over 4500 (Wikipedia figure, conflicts with the official 3780)",
+      "source": "https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library",
+      "tier": "wikipedia",
+      "quote": "Manuscripts number over 4500, comprising titles in literature and medicine.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Manuscripts number over 4500'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "collection",
+      "value": "3076 Marathi manuscripts, plus 1342 bundles of Maratha Raj records in Modi script",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html",
+      "tier": "primary",
+      "quote": "Apart from these manuscripts there are 1342 bundles of Maratha Raj records available at the Library.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 '1342 bundles of Maratha Raj records'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "collection",
+      "value": "Among the oldest manuscripts: Bhamati of Vachaspatimisra, an Advaita work copied in Banaras in 1468 AD",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html",
+      "tier": "primary",
+      "quote": "the Adwaita work, Bhamati of Vachaspatimisra, which was copied in Banaras in 1468 A.D.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Bhamati of Vachaspatimisra, which was copied in Banaras in 1468'",
+      "earliest": 1468,
+      "latest": 1468
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "collection",
+      "value": "52 descriptive catalogues of the manuscripts exist in printed form",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html",
+      "tier": "primary",
+      "quote": "There are 52 descriptive catalogues in printed form available for the manuscripts.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'There are 52 descriptive catalogues'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "volumes",
+      "value": "More than 49,000 books and manuscripts (Wikipedia infobox)",
+      "source": "https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library",
+      "tier": "wikipedia",
+      "quote": "Size More than 49,000",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'More than 49,000'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "status_note",
+      "value": "Designated a Manuscript Conservation Centre under the National Mission for Manuscripts, established 2003",
+      "source": "https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library",
+      "tier": "wikipedia",
+      "quote": "It is also a designated 'Manuscript Conservation Centre' (MCC) under the National Mission for Manuscripts established in 2003.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Saraswathi_Mahal_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Manuscript Conservation Centre'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "status_note",
+      "value": "Library computerisation began: computers installed in 1998, catalogues first to be stored in them",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html",
+      "tier": "primary",
+      "quote": "The Library has installed computers in 1998 for the Computerisation of Library activities.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'installed computers in 1998'",
+      "earliest": 1998,
+      "latest": 1998
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "field": "place",
+      "value": "Palace first built by the Nayaks of the Thanjavur Nayak kingdom; became the official residence of the Thanjavur Marathas after the Nayak fall",
+      "source": "https://en.wikipedia.org/wiki/Thanjavur_Maratha_Palace",
+      "tier": "wikipedia",
+      "quote": "Thanjavur Maratha palace was originally constructed by the Nayaks of the Thanjavur Nayak kingdom.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Thanjavur_Maratha_Palace' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'originally constructed by the Nayaks'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "kind": "founded",
+      "year": 1535,
+      "earliest": 1535,
+      "latest": 1675,
+      "label": "Royal Palace Library conceived under the Nayak kings (1535-1675)",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html",
+      "tier": "primary",
+      "quote": "Conceived and christened as the Royal Palace Library by the Nayak Kings of Thanjavur (1535-1675 AD).",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Royal Palace Library by the Nayak Kings of Thanjavur'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "kind": "opened",
+      "year": 1918,
+      "earliest": 1918,
+      "latest": 1918,
+      "label": "Made a public library (G.O. Ms. No.1306, 5 Oct 1918)",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html",
+      "tier": "primary",
+      "quote": "In 1918 this Library was made as a public Library.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'In 1918 this Library was made as a public Library'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "thanjavur",
+      "kind": "founded",
+      "year": 1986,
+      "earliest": 1986,
+      "latest": 1986,
+      "label": "Registered society to administer the library constituted 9 July 1986",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html",
+      "tier": "primary",
+      "quote": "The Society was constituted and got registered on 9-7-1986",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'got registered on 9-7-1986'"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+ "id": "kwaidan",
+ "summary": "Kwaidan collects Japanese ghost stories retold by Lafcadio Hearn, followed by short essays on insects. A blind biwa player is called each night to sing for the dead of a drowned clan, and his body is painted with scripture to protect him, except for his ears. A woodcutter meets a snow woman who spares him on one condition. A hunter kills a mandarin duck and is shown what he has done. A man dreams a whole life under a tree. Each tale is told in plain, level prose, and notes follow some of the stories. The last pages cover butterflies, mosquitoes and ants.",
+ "context": "Hearn published the book in 1904 and wrote its introduction on 20 January of that year, eight months before his death. He said most of the stories were translated from old Japanese texts. The Yuki-Onna tale, however, came from a farmer in Musashi Province, and Hearn's version of a harmful snow woman is original. Hearn was born on Lefkada, grew up in Dublin, worked as a journalist in Cincinnati and New Orleans, and moved to Japan in 1890. He became a Japanese citizen as Koizumi Yakumo. Masaki Kobayashi adapted the book as a film in 1964.",
+ "sources": [
+  {
+   "title": "Kwaidan: Stories and Studies of Strange Things (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Kwaidan:_Stories_and_Studies_of_Strange_Things"
+  },
+  {
+   "title": "Lafcadio Hearn (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Lafcadio_Hearn"
+  }
+ ],
+ "people": [
+  {
+   "name": "Lafcadio Hearn (Koizumi Yakumo)",
+   "role": "author",
+   "note": "Greek and Irish writer who moved to Japan in 1890 and took Japanese citizenship.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Setsuko Koizumi",
+   "role": "subject",
+   "note": "Hearn's Japanese wife, with whom he had four children.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Masaki Kobayashi",
+   "role": "subject",
+   "note": "Director of the 1964 film Kwaidan based on the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Hoichi",
+   "role": "character",
+   "note": "The blind musician of the story of Mimi-nashi Hoichi, later called Hoichi-the-Earless.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Minokichi",
+   "role": "character",
+   "note": "The young woodcutter in Yuki-Onna who is spared by the snow woman on a condition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rosa Cassimati",
+   "role": "subject",
+   "note": "Hearn's Greek mother, whom he loved throughout his life.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Lefkada",
+   "lat": 38.7,
+   "lon": 20.65,
+   "note": "Greek island where Hearn was born on 27 June 1850.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Dublin",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "note": "Where Hearn grew up after his parents left him.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Cincinnati",
+   "lat": 39.1031,
+   "lon": -84.512,
+   "note": "Where Hearn first worked as a newspaper reporter in the United States.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "New Orleans",
+   "lat": 29.9511,
+   "lon": -90.0715,
+   "note": "Where he lived for about a decade and wrote about the city.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Martinique",
+   "lat": 14.6415,
+   "lon": -61.0242,
+   "note": "French West Indies, where he stayed for two years as a correspondent.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1850,
+   "label": "Lafcadio Hearn is born on Lefkada on 27 June.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1890,
+   "label": "Hearn goes to Japan and remains there for life.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1904,
+   "label": "Hearn writes the introduction to Kwaidan on 20 January and dies on 26 September.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1964,
+   "label": "Masaki Kobayashi releases a film based on the book.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Ghost stories from old texts",
+   "note": "Hearn said most of the tales came from old Japanese sources, though some he heard or lived.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A harmful snow woman",
+   "note": "His Yuki-Onna is original: legends existed, but the harmful version was his.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Insects and the soul",
+   "note": "The final essays tie butterflies to the human soul, mosquitoes to karmic rebirth, and ants to an ideal society.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Personal memory",
+   "note": "Riki-Baka comes from experience, and Hi-Mawari reads as a childhood memory set in Wales.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "THE STORY OF MIMI-NASHI-HŌÏCHI",
+   "quote": "More than seven hundred years ago, at Dan-no-ura, in the Straits of Shimonoséki, was fought the last battle of the long contest between the Heiké, or Taira clan, and the Genji, or Minamoto clan. There the Heiké perished utterly, with their women and children, and their infant emperor likewise—now remembered as Antoku Tennō.",
+   "why": "The opening of the Hōïchi tale: the dead clan that haunts the sea."
+  },
+  {
+   "part": 1,
+   "chapter": "THE STORY OF MIMI-NASHI-HŌÏCHI",
+   "quote": "But from the time of his adventure, he was known only by the appellation of Mimi-nashi-Hōïchi: “Hōïchi-the-Earless.”",
+   "why": "How the scar becomes the name."
+  },
+  {
+   "part": 1,
+   "chapter": "OSHIDORI",
+   "quote": "There was a falconer and hunter, named Sonjō, who lived in the district called Tamura-no-Gō, of the province of Mutsu. One day he went out hunting, and could not find any game.",
+   "why": "The plain opening of a story about killing one of a pair."
+  },
+  {
+   "part": 1,
+   "chapter": "MUJINA",
+   "quote": "On the Akasaka Road, in Tōkyō, there is a slope called Kii-no-kuni-zaka,—which means the Slope of the Province of Kii. I do not know why it is called the Slope of the Province of Kii.",
+   "why": "Hearn places a ghost on a real Tokyo road."
+  },
+  {
+   "part": 1,
+   "chapter": "YUKI-ONNA",
+   "quote": "In a village of Musashi Province (1), there lived two woodcutters: Mosaku and Minokichi. At the time of which I am speaking, Mosaku was an old man; and Minokichi, his apprentice, was a lad of eighteen years.",
+   "why": "How the snow woman story begins."
+  },
+  {
+   "part": 1,
+   "chapter": "YUKI-ONNA",
+   "quote": "I intended to treat you like the other man. But I cannot help feeling some pity for you,—because you are so young... You are a pretty boy, Minokichi; and I will not hurt you now. But, if you ever tell anybody—even your own mother—about what you have seen this night, I shall know it; and then I will kill you... Remember what I say!”",
+   "why": "The snow woman's warning, the hinge of the tale."
+  }
+ ]
+}

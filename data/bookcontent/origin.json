@@ -1,0 +1,229 @@
+{
+  "id": "origin",
+  "summary": "Darwin argues that living species were not created fixed but have changed over generations. He starts with breeders, who shape varieties by choosing which individuals to breed. He then points out that wild creatures are born in far greater numbers than can survive, so small useful differences give some a better chance. Over very long time this process of natural selection yields new species. He goes through the objections himself, including the eye, missing fossils and the instincts of insects, and answers each with evidence.",
+  "context": "Darwin published this book on 24 November 1859 drawing on evidence from the Beagle voyage of the 1830s and later research. He rushed to finish when Alfred Russel Wallace sent him a similar theory in 1858. He called the book an abstract of a larger work and wrote it for non-specialists. The publisher John Murray objected to the word abstract in the title, and the book became On the Origin of Species. By Darwin's death in 1882 it had reached a sixth edition.",
+  "sources": [
+    {
+      "title": "On the Origin of Species (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species"
+    },
+    {
+      "title": "The Origin of Species (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/charles-darwin/the-origin-of-species"
+    }
+  ],
+  "people": [
+    {
+      "name": "Charles Darwin",
+      "role": "Author",
+      "note": "English naturalist who joined the Beagle expedition in December 1831 as a gentleman naturalist and geologist.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Alfred Russel Wallace",
+      "role": "Co-discoverer",
+      "note": "His 1858 parcel from the Maluku Islands set out a similar theory and pushed Darwin to publish.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Charles Lyell",
+      "role": "Geologist and friend",
+      "note": "His Principles of Geology gave Darwin a key to landscape history; he introduced Darwin to the publisher Murray.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "John Murray",
+      "role": "Publisher",
+      "note": "Agreed to publish without seeing the manuscript and paid Darwin 180 pounds for the first edition.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Thomas Malthus",
+      "role": "Economist",
+      "note": "Darwin read his Essay on the Principle of Population in September 1838, which fed his theory.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Thomas Henry Huxley",
+      "role": "Defender",
+      "note": "Used the debate over the book to promote scientific naturalism with the X Club.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Jean-Baptiste Lamarck",
+      "role": "Earlier theorist",
+      "note": "Published a developed theory of transmutation in 1809; Darwin kept a lesser role for his mechanism.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Galapagos Islands",
+      "lat": -0.9538,
+      "lon": -90.9656,
+      "note": "In 1837 Gould announced that mockingbirds collected here represented separate species; by 1836 Darwin was already noting that species might not be fixed.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Maluku Islands (Ternate)",
+      "lat": 0.7893,
+      "lon": 127.3775,
+      "note": "Where Wallace stayed when he sent Darwin his parcel on 18 June 1858.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Sandown",
+      "lat": 50.6573,
+      "lon": -1.1514,
+      "note": "Holiday town where Darwin began his abstract on 20 July 1858.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1831,
+      "label": "Darwin joins the Beagle expedition as naturalist",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1838,
+      "label": "Darwin reads Malthus and links selection by breeders to nature",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1858,
+      "label": "Wallace's parcel arrives; joint papers read at the Linnean Society on 1 July",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1859,
+      "label": "First edition published on 24 November",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1882,
+      "label": "Darwin dies; the book is in its sixth edition",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1930,
+      "label": "The modern evolutionary synthesis begins and puts natural selection at the center",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Natural selection",
+      "note": "Individuals vary, much variation is inherited, and those better fitted leave more offspring.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "title": "Common descent",
+      "note": "The diversity of life arose by a branching pattern of evolution from shared ancestors.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Struggle for existence",
+      "note": "More are born than can survive, so resources limit populations.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Species are mutable",
+      "note": "Species are not independent creations fixed for all time but have been shaped by selection.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "title": "An argument for lay readers",
+      "note": "The book was written for non-specialists, and the evidence from breeding, geography and fossils is laid out in plain steps.",
+      "s": [
+        0,
+        1
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "Introduction",
+      "quote": "As many more individuals of each species are born than can possibly survive; and as, consequently, there is a frequently recurring struggle for existence, it follows that any being, if it vary however slightly in any manner profitable to itself, under the complex and sometimes varying conditions of life, will have a better chance of surviving, and thus be naturally selected",
+      "why": "Darwin's argument in one sentence: overproduction, struggle, small useful variation, selection."
+    },
+    {
+      "part": 2,
+      "chapter": "Summary of Chapter",
+      "quote": "This principle of preservation, or the survival of the fittest, I have called natural selection. It leads to the improvement of each creature in relation to its organic and inorganic conditions of life;",
+      "why": "Darwin's own name for the process, and what it does to each creature."
+    },
+    {
+      "part": 3,
+      "chapter": "Organs of Extreme Perfection and Complication",
+      "quote": "To suppose that the eye with all its inimitable contrivances for adjusting the focus to different distances, for admitting different amounts of light, and for the correction of spherical and chromatic aberration, could have been formed by natural selection, seems, I freely confess, absurd in the highest degree.",
+      "why": "Darwin states the strongest objection to his theory himself, before answering it."
+    },
+    {
+      "part": 4,
+      "chapter": "Special Instincts",
+      "quote": "I will select only three, namely, the instinct which leads the cuckoo to lay her eggs in other birds’ nests; the slave-making instinct of certain ants; and the cell-making power of the hive-bee",
+      "why": "Instincts are treated as inherited traits that selection can shape, with three test cases."
+    },
+    {
+      "part": 6,
+      "chapter": "Summary of the Preceding and Present Chapters",
+      "quote": "I have attempted to show that the geological record is extremely imperfect; that only a small portion of the globe has been geologically explored with care;",
+      "why": "His reply to the objection that fossils show too few transitional forms."
+    },
+    {
+      "part": 8,
+      "chapter": "XV",
+      "quote": "It is interesting to contemplate a tangled bank, clothed with many plants of many kinds, with birds singing on the bushes, with various insects flitting about, and with worms crawling through the damp earth, and to reflect that these elaborately constructed forms, so different from each other, and dependent upon each other in so complex a manner, have all been produced by laws acting around us.",
+      "why": "The famous image of an ordinary bank of plants and animals as the product of natural law."
+    },
+    {
+      "part": 8,
+      "chapter": "XV",
+      "quote": "There is grandeur in this view of life, with its several powers, having been originally breathed by the Creator into a few forms or into one; and that, whilst this planet has gone circling on according to the fixed law of gravity, from so simple a beginning endless forms most beautiful and most wonderful have been, and are being evolved.",
+      "why": "The closing sentence of the book, which holds a religious phrase and a scientific claim together."
+    }
+  ]
+}

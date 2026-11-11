@@ -1,0 +1,275 @@
+{
+ "id": "rubaiyat",
+ "summary": "A sequence of short rhyming quatrains in English, each a self-contained thought, strung loosely from dawn to evening. The speaker looks at the shortness of life and the silence of heaven, and answers with wine, friends, a book of verses and the present day. He doubts the promises of priests, wonders why the maker breaks what he makes, and watches potters shape clay that was once people. The mood runs from cheerful to bleak, and the poem never settles on a doctrine, only on the claim that today is all anyone holds.",
+ "context": "The quatrains are attributed to Omar Khayyam, an eleventh-century Persian astronomer and mathematician from Nishapur. Edward FitzGerald, a Suffolk gentleman scholar, worked from a manuscript copy Edward Cowell found in Calcutta and sent him in 1857. He published a free, rearranged version anonymously on 15 January 1859. It sold so badly that it ended up in the bargain bins, then became one of the most loved poems in English. Later editions grew, and the Persian originals are still disputed.",
+ "sources": [
+  {
+   "title": "Omar Khayyam - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Omar_Khayyam"
+  },
+  {
+   "title": "Edward FitzGerald (poet) - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Edward_FitzGerald_(poet)"
+  },
+  {
+   "title": "Rubaiyat of Omar Khayyam - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/246"
+  }
+ ],
+ "people": [
+  {
+   "name": "Omar Khayyam",
+   "role": "author",
+   "note": "Persian poet and polymath born in Nishapur in 1048, to whom the quatrains are attributed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Edward FitzGerald",
+   "role": "translator",
+   "note": "English poet born in 1809 at Bredfield near Woodbridge, Suffolk, who published the first English version in 1859.",
+   "s": [
+    1,
+    2
+   ]
+  },
+  {
+   "name": "Edward Byles Cowell",
+   "role": "subject",
+   "note": "Scholar who found a set of Khayyam's Persian quatrains in the Asiatic Society library in Calcutta and sent them to FitzGerald in 1857.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Bernard Quaritch",
+   "role": "printer",
+   "note": "FitzGerald's publisher, who let the unsold pamphlet drift to the penny box on the bookstalls.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Malik-Shah I",
+   "role": "patron",
+   "note": "Seljuk sultan who took Khayyam into his service in 1074.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nizam al-Mulk",
+   "role": "patron",
+   "note": "Grand vizier who invited Khayyam to meet the sultan at Merv.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Thomas Hyde",
+   "role": "subject",
+   "note": "First European to draw attention to Khayyam and translate one of his quatrains, into Latin in 1700.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "William Simpson",
+   "role": "subject",
+   "note": "Artist who in 1886 took rose hips from near Khayyam's tomb and gave them to FitzGerald's publisher.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Nishapur",
+   "lat": 36.2133,
+   "lon": 58.7959,
+   "note": "Khayyam's birthplace and the place he died and was buried; the poem names it as Naishapur.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Merv",
+   "lat": 37.6644,
+   "lon": 62.1922,
+   "note": "City where Khayyam met Sultan Malik-Shah I at the invitation of the vizier.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Isfahan",
+   "lat": 32.6546,
+   "lon": 51.668,
+   "note": "Site of the observatory where Khayyam worked on calendar reform from 1074.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Calcutta",
+   "lat": 22.5726,
+   "lon": 88.3639,
+   "note": "The Asiatic Society library here held the manuscript of Persian quatrains Cowell sent to FitzGerald.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Woodbridge, Suffolk",
+   "lat": 52.0943,
+   "lon": 1.3128,
+   "note": "Town near FitzGerald's birthplace, in the county where he lived quietly and made the translation.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Boulge",
+   "lat": 52.1165,
+   "lon": 1.3419,
+   "note": "Suffolk churchyard where FitzGerald was buried in 1883.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1048,
+   "label": "Omar Khayyam is born in Nishapur, in the Seljuk Empire.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1074,
+   "label": "Khayyam enters the service of Sultan Malik-Shah I and is commissioned to build an observatory and reform the calendar.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1131,
+   "label": "Khayyam dies in Nishapur on 4 December.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1857,
+   "label": "Cowell finds Persian quatrains by Khayyam in Calcutta and sends them to FitzGerald.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1859,
+   "label": "FitzGerald's anonymous pamphlet appears on 15 January and at first draws almost no notice.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1883,
+   "label": "FitzGerald dies in his sleep and is buried at Boulge.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1886,
+   "label": "Rose hips from near Khayyam's tomb are given to FitzGerald's publisher and later grown in England.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Seize the present day",
+   "note": "With heaven silent and the future hidden, the speaker falls back on today as the only ground to stand on.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Doubt toward religious promises",
+   "note": "Quatrains weigh the hopes of paradise and fear of hell against the plain certainty that life ends.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Fate and the maker",
+   "note": "The poem keeps asking why the maker shapes and breaks his creatures, and who the potter is and who the pot.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A loose rather than literal translation",
+   "note": "FitzGerald rendered the quatrains freely and arranged them as one poem, which is why the English book differs from the Persian originals.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Is it Khayyam at all",
+   "note": "Attribution of Persian quatrains to Khayyam is a tradition, and readings of his outlook range from Epicurean to Sufi.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "XII",
+   "quote": "A Book of Verses underneath the Bough, A Jug of Wine, a Loaf of Bread⁠—and Thou Beside me singing in the Wilderness⁠— Oh, Wilderness were Paradise enow!",
+   "why": "The most quoted stanza in the book: a picnic as a private heaven."
+  },
+  {
+   "part": 1,
+   "chapter": "XIII",
+   "quote": "Some for the Glories of This World; and some Sigh for the Prophet’s Paradise to come; Ah, take the Cash, and let the Credit go, Nor heed the rumble of a distant Drum!",
+   "why": "Take the cash and let the credit go: the poem's answer to promised rewards."
+  },
+  {
+   "part": 1,
+   "chapter": "VIII",
+   "quote": "Whether at Naishápúr or Babylon, Whether the Cup with sweet or bitter run, The Wine of Life keeps oozing drop by drop, The Leaves of Life keep falling one by one.",
+   "why": "Names Khayyam's own city and puts the whole theme of passing time in four lines."
+  },
+  {
+   "part": 1,
+   "chapter": "XXXVII",
+   "quote": "For I remember stopping by the way To watch a Potter thumping his wet Clay: And with its all-obliterated Tongue It murmur’d⁠—“Gently, Brother, gently, pray!”",
+   "why": "The potter and the talking clay, the first of the book's pottery scenes."
+  },
+  {
+   "part": 1,
+   "chapter": "LXIII",
+   "quote": "Oh, threats of Hell and Hopes of Paradise! One thing at least is certain⁠— This Life flies; One thing is certain and the rest is Lies; The Flower that once has blown for ever dies.",
+   "why": "The bluntest statement of doubt about the afterlife."
+  },
+  {
+   "part": 1,
+   "chapter": "LXXI",
+   "quote": "The Moving Finger writes; and, having writ, Moves on: nor all your Piety nor Wit Shall lure it back to cancel half a Line, Nor all your Tears wash out a Word of it.",
+   "why": "One of the best known quatrains in English; what is done cannot be undone."
+  },
+  {
+   "part": 1,
+   "chapter": "LXXXVII",
+   "quote": "Whereat some one of the loquacious Lot⁠— I think a Súfi pipkin⁠—waxing hot⁠— “All this of Pot and Potter⁠—Tell me then, Who is the Potter, pray, and who the Pot?”",
+   "why": "The pots argue about their maker, and the book ends its long run of clay images."
+  }
+ ]
+}

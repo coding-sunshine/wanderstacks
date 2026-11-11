@@ -1,0 +1,192 @@
+{
+  "facts": [
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "built",
+      "value": "Established and officially opened 5 June 1931 by Sir Joseph A. Byrne, Governor of Kenya (English Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+      "tier": "wikipedia",
+      "quote": "officially opened on 5 June 1931 by Sir Joseph A. Byrne",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'officially opened on 5 June 1931 by Sir Josep'",
+      "earliest": 1931,
+      "latest": 1931
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "built",
+      "value": "Opened in 1931 (Book Bunk).",
+      "source": "https://bookbunk.org/libraries/mcmillan-memorial-library/",
+      "tier": "secondary",
+      "quote": "Opened in 1931",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://bookbunk.org/libraries/mcmillan-memorial-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Opened in 1931'",
+      "earliest": 1931,
+      "latest": 1931
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "status_note",
+      "value": "Largely financed by the Carnegie Corporation of New York (English Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+      "tier": "wikipedia",
+      "quote": "largely financed by the Carnegie Corporation of New York",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'largely financed by the Carnegie Corporation'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "status_note",
+      "value": "Named for Lucie McMillan (English Wikipedia spelling); Book Bunk says Lady Lucy McMillan built it. Spelling differs.",
+      "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+      "tier": "wikipedia",
+      "quote": "Lucie McMillan",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Lucie McMillan'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "status_note",
+      "value": "Governed by the McMillan Memorial Library Act, Cap 217 of 1938 (English Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+      "tier": "wikipedia",
+      "quote": "McMillan Memorial Library Act Cap 217 of 1938",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'McMillan Memorial Library Act Cap 217 of 1938'",
+      "earliest": 1938,
+      "latest": 1938
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "status_note",
+      "value": "Opened to the general public in 1962 (English Wikipedia); Book Bunk says European-only use was restricted until 1958. Sources disagree.",
+      "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+      "tier": "wikipedia",
+      "quote": "opened to the general public in 1962",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'opened to the general public in 1962'",
+      "earliest": 1958,
+      "latest": 1962
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "status_note",
+      "value": "Restricted to segregated use by European settlers until 1958 (Book Bunk).",
+      "source": "https://bookbunk.org/libraries/mcmillan-memorial-library/",
+      "tier": "secondary",
+      "quote": "Restricted to segregated use by European settlers until 1958",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://bookbunk.org/libraries/mcmillan-memorial-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Restricted to segregated use by European sett'",
+      "earliest": 1958,
+      "latest": 1958
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "architect",
+      "value": "Neo-classical design (English Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+      "tier": "wikipedia",
+      "quote": "neo-classical design",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'neo-classical design'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "volumes",
+      "value": "More than 400,000 books including East African newspapers and periodicals dating back to 1901 (English Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+      "tier": "wikipedia",
+      "quote": "more than 400,000 books including East African newspapers and periodicals dating back to 1901",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'more than 400,000 books including East Africa'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "status_note",
+      "value": "Second oldest library in Kenya after the Seif bin Salim Library in Mombasa (English Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+      "tier": "wikipedia",
+      "quote": "second oldest in Kenya after the Seif bin Salim Library in Mombasa",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'second oldest in Kenya after the Seif bin Sal'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "status_note",
+      "value": "Only building in Kenya covered by its own Act of Parliament (Book Bunk).",
+      "source": "https://bookbunk.org/libraries/mcmillan-memorial-library/",
+      "tier": "secondary",
+      "quote": "the only building in Kenya covered by its own Act of Parliament",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://bookbunk.org/libraries/mcmillan-memorial-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the only building in Kenya covered by its own'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "field": "remains_today",
+      "value": "Closed to the public from June to October 2026 (The Standard).",
+      "source": "https://standardmedia.co.ke/health/amp/arts-culture/article/2001551272/mcmillan-nairobis-oldest-library-shuts-doors-as-renovation-begins",
+      "tier": "secondary",
+      "quote": "the closure will run from June to October 2026",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://standardmedia.co.ke/health/amp/arts-culture/article/2001551272/mcmillan-nairobis-oldest-library-shuts-doors-as-renovation-begins' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the closure will run from June to October 202'",
+      "earliest": 2026,
+      "latest": 2026
+    }
+  ],
+  "events": [
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "kind": "opened",
+      "year": 1931,
+      "earliest": 1931,
+      "latest": 1931,
+      "label": "Opened 5 June 1931 by Governor Sir Joseph Byrne",
+      "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+      "tier": "wikipedia",
+      "quote": "officially opened on 5 June 1931 by Sir Joseph A. Byrne",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'officially opened on 5 June 1931 by Sir Josep'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "kind": "opened",
+      "year": 1962,
+      "earliest": 1958,
+      "latest": 1962,
+      "label": "Opened to the general public (1962 per Wikipedia; 1958 per Book Bunk)",
+      "source": "https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi",
+      "tier": "wikipedia",
+      "quote": "opened to the general public in 1962",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://en.wikipedia.org/wiki/McMillan_Memorial_Library,_Nairobi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'opened to the general public in 1962'"
+    },
+    {
+      "cluster": "new-six",
+      "lib": "mcmillan",
+      "kind": "closed",
+      "year": 2026,
+      "earliest": 2026,
+      "latest": 2026,
+      "label": "Closed for restoration, June 2026",
+      "source": "https://standardmedia.co.ke/health/amp/arts-culture/article/2001551272/mcmillan-nairobis-oldest-library-shuts-doors-as-renovation-begins",
+      "tier": "secondary",
+      "quote": "has officially closed its doors to the public",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0 (compatible; reference-fetcher/1.0)' 'https://standardmedia.co.ke/health/amp/arts-culture/article/2001551272/mcmillan-nairobis-oldest-library-shuts-doors-as-renovation-begins' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'has officially closed its doors to the public'"
+    }
+  ]
+}

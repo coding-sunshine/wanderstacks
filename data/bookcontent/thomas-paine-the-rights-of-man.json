@@ -1,0 +1,200 @@
+{
+ "id": "thomas-paine-the-rights-of-man",
+ "summary": "Rights of Man is Thomas Paine's two-part answer to Edmund Burke's attack on the French Revolution. Part one came out in March 1791 and part two in February 1792. It argues that every generation is free to act for itself, that a charter does not create rights, and that government exists for the people it serves. Part two moves from defense to proposal and includes a plan for welfare and education in England. Standard Ebooks notes that nearly a million copies sold.",
+ "context": "Burke's Reflections appeared in 1790, and Paine replied with a book dedicated to Washington and Lafayette. Printer Joseph Johnson was threatened with legal action, so J. S. Jordan published it. William Blake advised Paine to go to France. Paine was later tried in absentia for seditious libel. The book reproduces the Declaration of the Rights of Man and of the Citizen of 1789. Its welfare plan for England counts a population of about seven million, with about one fifth poor.",
+ "sources": [
+  {
+   "url": "https://standardebooks.org/ebooks/thomas-paine/the-rights-of-man",
+   "title": "Rights of Man by Thomas Paine (Standard Ebooks)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Rights_of_Man",
+   "title": "Rights of Man (Wikipedia)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Thomas Paine",
+   "role": "Author",
+   "note": "Wrote both parts as a reply to Burke.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Edmund Burke",
+   "role": "Opponent",
+   "note": "His 1790 Reflections on the Revolution in France drew Paine's reply.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Joseph Johnson",
+   "role": "Publisher",
+   "note": "Was threatened with legal action over the book and dropped it.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "J. S. Jordan",
+   "role": "Publisher",
+   "note": "Published the book after Johnson stepped aside.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "William Blake",
+   "role": "Poet",
+   "note": "Advised Paine to go to France.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Thomas Jefferson",
+   "role": "Statesman",
+   "note": "Talked with Paine in France about the book's themes.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "London",
+   "lat": 51.51,
+   "lon": -0.13,
+   "note": "City where the book was published and where Paine was prosecuted.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Paris",
+   "lat": 48.86,
+   "lon": 2.35,
+   "note": "Paine's French refuge; he reproduces the Declaration of 1789 in the book.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Philadelphia",
+   "lat": 39.95,
+   "lon": -75.16,
+   "note": "Home of the conservative James Wilson, whose pamphlet came up in Paine's talks with Jefferson.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1789,
+   "label": "The Declaration of the Rights of Man and of the Citizen is adopted",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1790,
+   "label": "Burke's Reflections on the Revolution in France appears",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1791,
+   "label": "Part one of Rights of Man is published in March",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1792,
+   "label": "Part two is published in February",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Each generation decides for itself",
+   "note": "Paine argues that no age may bind those that follow.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Charters do not give rights",
+   "note": "He calls it a perversion of terms to say a charter gives rights.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Society before government",
+   "note": "He holds that most social order comes from society itself, not from government.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A world citizen",
+   "note": "He gives his creed as a country that is the world and a religion of doing good.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Welfare in England",
+   "note": "Part two proposes support for the poor and for education.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 2,
+   "chapter": "Rights of Man",
+   "quote": "Every age and generation must be as free to act for itself in all cases as the age and generations which preceded it. The vanity and presumption of governing beyond the grave is the most ridiculous and insolent of all tyrannies. Man has no property in man; neither has any generation a property in the generations which are to follow.",
+   "why": "Core of Paine's break with inherited authority."
+  },
+  {
+   "part": 2,
+   "chapter": "Rights of Man",
+   "quote": "Man did not enter into society to become worse than he was before, nor to have fewer rights than he had before, but to have those rights better secured. His natural rights are the foundation of all his civil rights. But in order to pursue this distinction with more precision, it will be necessary to mark the different qualities of natural and civil rights.",
+   "why": "Frames natural rights as what society must protect."
+  },
+  {
+   "part": 3,
+   "chapter": "Miscellaneous Chapter",
+   "quote": "Mr. Burke’s book is all Miscellany. His intention was to make an attack on the French Revolution; but instead of proceeding with an orderly arrangement, he has stormed it with a mob of ideas tumbling over and destroying one another. But this confusion and contradiction in Mr.",
+   "why": "A sample of Paine's open mockery of his opponent."
+  },
+  {
+   "part": 3,
+   "chapter": "I",
+   "quote": "Great part of that order which reigns among mankind is not the effect of government. It has its origin in the principles of society and the natural constitution of man. It existed prior to government, and would exist if the formality of government was abolished.",
+   "why": "Opens the chapter on society and civilisation."
+  },
+  {
+   "part": 4,
+   "chapter": "V",
+   "quote": "It is a perversion of terms to say that a charter gives rights. It operates by a contrary effect⁠—that of taking rights away. Rights are inherently in all the inhabitants; but charters, by annulling those rights, in the majority, leave the right, by exclusion, in the hands of a few.",
+   "why": "Direct attack on the idea of rights from charters."
+  },
+  {
+   "part": 4,
+   "chapter": "V",
+   "quote": "Independence is my happiness, and I view things as they are, without regard to place or person; my country is the world, and my religion is to do good. Mr.",
+   "why": "Paine states the principle on which he judges rewards and offers."
+  }
+ ]
+}

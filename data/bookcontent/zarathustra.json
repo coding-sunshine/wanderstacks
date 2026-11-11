@@ -1,0 +1,208 @@
+{
+ "id": "zarathustra",
+ "summary": "Zarathustra spends ten years alone on a mountain with an eagle and a serpent, then comes down to share what he has learned. In the town below he announces the Superman, teaches that God is dead and has the crowd mock him while a tightrope walker falls. He keeps speaking: about the will to power and the return of all things. In the fourth part, a group of higher men gather at his cave, and he tells them they are only the forerunners of what he waits for.",
+ "context": "Nietzsche wrote the book in four parts between 1883 and 1885, much of it during long walks. He said the central idea, eternal recurrence, first came to him in August 1881 by a stone near Lake Silvaplana, and he worked in Rapallo and Nice. The first three parts were issued separately and appeared together in 1887. A small private printing of part four followed in 1885. It was published openly in 1892. This site carries Thomas Common's English version.",
+ "sources": [
+  {
+   "title": "Thus Spoke Zarathustra (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Thus_Spoke_Zarathustra"
+  },
+  {
+   "title": "Thus Spake Zarathustra, Thomas Common translation (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/friedrich-nietzsche/thus-spake-zarathustra/thomas-common"
+  }
+ ],
+ "people": [
+  {
+   "name": "Friedrich Nietzsche",
+   "role": "author",
+   "note": "German philosopher who wrote and published the work between 1883 and 1885.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Zarathustra",
+   "role": "character",
+   "note": "The prophet of the book, modelled loosely on the Persian Zoroaster.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Thomas Common",
+   "role": "translator",
+   "note": "Translator of the English text this site carries.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Lou Andreas-Salomé",
+   "role": "subject",
+   "note": "Rejected Nietzsche's proposals of marriage, a blow he suffered while writing.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The tightrope walker",
+   "role": "character",
+   "note": "Falls during Zarathustra's first public speech and is comforted by him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Richard Strauss",
+   "role": "subject",
+   "note": "Composed a tone poem inspired by the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Frederick Delius",
+   "role": "subject",
+   "note": "Composer of A Mass of Life, a cantata drawing on the work.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Lake Silvaplana, Upper Engadine",
+   "lat": 46.45,
+   "lon": 9.79,
+   "note": "Nietzsche had the idea of eternal recurrence near here in August 1881.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rapallo",
+   "lat": 44.35,
+   "lon": 9.227,
+   "note": "He lived here while conceiving the first part, walking the road to Zoagli.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nice",
+   "lat": 43.7102,
+   "lon": 7.262,
+   "note": "Where he found the third part during the following winter.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1881,
+   "label": "The idea of eternal recurrence comes to Nietzsche near Lake Silvaplana.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1883,
+   "label": "The first parts begin to appear; Nietzsche is in Rapallo.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1885,
+   "label": "Part four is written; forty copies are privately printed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1887,
+   "label": "Parts one to three appear together in a single volume.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1888,
+   "label": "In Ecce Homo Nietzsche explains why he chose Zarathustra as his speaker.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1892,
+   "label": "Part four is published, and all four parts are issued in one volume.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "The Superman",
+   "note": "Zarathustra says humankind's aim is to create something higher than itself, the Übermensch.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "God is dead",
+   "note": "A hermit has not yet heard that God is dead; the theme runs through the speeches.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Will to power",
+   "note": "The concept is introduced in the first part's later discourses.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Eternal recurrence",
+   "note": "Nietzsche called it the central idea of the work.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Zarathustra’s Prologue",
+   "quote": "And Zarathustra spake thus unto the people: I teach you the Superman.",
+   "why": "Zarathustra's first announcement of the Superman to the crowd."
+  },
+  {
+   "part": 1,
+   "chapter": "Zarathustra’s Prologue",
+   "quote": "Is not pity the cross on which he is nailed who loveth man?",
+   "why": "A line on pity in the opening sections, where Zarathustra first speaks of God."
+  },
+  {
+   "part": 2,
+   "chapter": "XXXIV",
+   "quote": "That is your entire will, ye wisest ones, as a Will to Power; and even when ye speak of good and evil, and of estimates of value.",
+   "why": "Zarathustra names the will to power in the second part."
+  },
+  {
+   "part": 3,
+   "chapter": "LVII",
+   "quote": "“Everything goeth, everything returneth; eternally rolleth the wheel of existence.",
+   "why": "Eternal recurrence in the third part."
+  },
+  {
+   "part": 4,
+   "chapter": "LXXIX",
+   "quote": "—Hearest thou not how it mysteriously, frightfully, and cordially speaketh unto thee , the old deep, deep midnight?",
+   "why": "The midnight bell in the fourth part, with the higher men."
+  }
+ ]
+}

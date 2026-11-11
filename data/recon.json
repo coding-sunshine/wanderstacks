@@ -1,0 +1,192 @@
+{
+  "celsus": {
+    "nodes": [
+      {
+        "id": "r01",
+        "f": "/sphere/celsus/r01",
+        "w": 2912,
+        "h": 1456,
+        "kind": "interior",
+        "real": false,
+        "cap": "Reading hall of the Library of Celsus as it may have looked in the 2nd century, facing the apse",
+        "by": "Generated image",
+        "lic": "not a photograph",
+        "src": "https://en.wikipedia.org/wiki/Library_of_Celsus",
+        "basis": "the written record: a hall 16.7 by 10.9 m, an apse framed by an arch in the far wall opposite the east-facing entrance, and two or three levels of wall niches averaging 2.55 by 1.1 m that held the cupboards for scrolls. The image shows two levels of cupboards, an upper gallery with stone balustrades and a doorway in a side wall. The gallery's form, the balustrades, the cupboard doors, the position of the doorway, the marble, the timber ceiling and the light are guesses",
+        "yaw0": 0,
+        "links": []
+      }
+    ]
+  },
+  "pergamon": {
+    "nodes": [
+      {
+        "id": "r01",
+        "f": "/sphere/pergamon/r01",
+        "w": 1920,
+        "h": 960,
+        "kind": "interior",
+        "real": false,
+        "cap": "A room of the Library of Pergamon as it may have looked, with the wooden book racks Richard Bohn inferred from a foundation along its walls",
+        "by": "Generated image",
+        "lic": "not a photograph",
+        "src": "https://archive.org/download/dasheiligtumder00droygoog/dasheiligtumder00droygoog_djvu.txt",
+        "basis": "Richard Bohn's 1885 excavation report: a room 16.95 by 13.53 m, a foundation 1.05 m wide set about 0.50 m in from the walls that he read as the footing for wooden book racks, anchor holes for shelving, and a projection 2.74 m wide on the north wall for a statue of Athena. The marble plinth under a plastered, painted wall is Bohn's own conjecture. The statue is left out. Bohn and Hoepfner took these rooms for the royal library; Mielsch and Strocka dispute that. Rack design, ceiling, floor and light are guesses",
+        "yaw0": 0,
+        "links": []
+      }
+    ]
+  },
+  "nineveh": {
+    "nodes": [
+      {
+        "id": "r01",
+        "f": "/sphere/nineveh/r01",
+        "w": 1920,
+        "h": 960,
+        "kind": "interior",
+        "real": false,
+        "cap": "A record chamber in the South-West Palace at Nineveh as it may have looked while the tablets were still in use",
+        "by": "Generated image",
+        "lic": "not a photograph",
+        "src": "https://www.gutenberg.org/files/39897/39897-8.txt",
+        "basis": "Layard's account of two small connecting chambers once panelled with bas-reliefs, where clay tablets lay broken on the floor a foot deep or more. He gives no room dimensions and describes no shelves, and Budge writes that how the tablets were arranged is not known. The neat stacking, the room's size, the ceiling and the light are all guesses",
+        "yaw0": 0,
+        "links": []
+      }
+    ]
+  },
+  "herculaneum": {
+    "nodes": [
+      {
+        "id": "r01",
+        "f": "/sphere/herculaneum/r01",
+        "w": 1920,
+        "h": 960,
+        "kind": "interior",
+        "real": false,
+        "cap": "The small book room of the Villa of the Papyri as it may have looked while it was in use",
+        "by": "Generated image",
+        "lic": "not a photograph",
+        "src": "https://www.getty.edu/art/exhibitions/villa_papiri/inner.html",
+        "basis": "the excavation record as later scholars report it (the Getty Museum, and David Sider as quoted on Wikipedia): most of the scrolls were in one small room fitted with book cabinets, some found neatly stacked on shelves or in cases, with shelves around the walls and a double-sided unit in the middle. No dimensions were found in the sources read. The room's size, the cabinet height, the wall painting and the floor are guesses, and the marks the image shows on the scrolls are not writing",
+        "yaw0": 0,
+        "links": []
+      }
+    ]
+  },
+  "nalanda": {
+    "nodes": [
+      {
+        "id": "r01",
+        "f": "/sphere/nalanda/r01",
+        "w": 1920,
+        "h": 960,
+        "kind": "exterior",
+        "real": false,
+        "cap": "A monastery court at Nalanda as it may have looked, facing the shrine. This is not the library, which no excavation has identified",
+        "by": "Generated image",
+        "lic": "not a photograph",
+        "src": "https://en.wikipedia.org/wiki/Nalanda",
+        "basis": "the excavated monastery plan: a rectangular building around a central court, a verandah, a row of monks' cells and a shrine chamber facing the entrance. The three library buildings appear only in later Tibetan tradition and no excavated structure has been identified as any of them, so this view shows a court of the kind the monks lived in. Upper storeys, roofs, plaster and colour are guesses",
+        "yaw0": 0,
+        "links": []
+      }
+    ]
+  },
+  "alexandria": {
+    "nodes": [
+      {
+        "id": "r01",
+        "f": "/sphere/alexandria/r01",
+        "w": 3320,
+        "h": 1660,
+        "kind": "exterior",
+        "real": false,
+        "cap": "A public walk of the kind Strabo describes at the Mouseion in Alexandria. This is not the Library, whose layout is unknown",
+        "by": "Generated image",
+        "lic": "not a photograph",
+        "src": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0239:book=17:chapter=1:section=8",
+        "basis": "one sentence of Strabo (Geography 17.1.8): the Mouseion stood in the palace quarter and had a public walk, an exedra with seats and a large common dining hall. No remains of the Library have been recovered, so nothing here shows its rooms. The columns, paving, colours and proportions are guesses, and the image is mirrored left to right to close the circle",
+        "yaw0": 0,
+        "links": []
+      }
+    ]
+  },
+  "dunhuang": {
+    "nodes": [
+      {
+        "id": "r01",
+        "f": "/sphere/dunhuang/r01",
+        "w": 1920,
+        "h": 960,
+        "kind": "interior",
+        "real": false,
+        "cap": "Cave 17 at Mogao as it may have looked when it was sealed, with the manuscript bundles heaped against the walls",
+        "by": "Generated image",
+        "lic": "not a photograph",
+        "src": "https://www.e-dunhuang.com/cave/10.0001/0001.0001.0017",
+        "basis": "the Dunhuang Academy's description of the cave (a near-square chamber with an unpainted ceiling, a low platform before the north wall, and a mural of two trees with a cloth bag and a water flask hanging from them) and Aurel Stein's account of bundles heaped in layers nearly ten feet high, leaving floor room for two people. The size, about 2.6 by 2.7 m and 3 m high, comes from a travel guide and is approximate. The image gets several things wrong: the real ceiling is a truncated pyramid, the heap should fill most of the room, and the door is opposite the mural. The statue of Hong Bian, the two painted attendants and the inscribed stele are left out. Wall colour, wrapping cloth and light are guesses",
+        "yaw0": 0,
+        "links": []
+      }
+    ]
+  },
+  "buda": {
+    "nodes": [
+      {
+        "id": "r01",
+        "f": "/sphere/buda/r01",
+        "w": 1920,
+        "h": 960,
+        "kind": "interior",
+        "real": false,
+        "cap": "The library hall of King Matthias in Buda Castle as it may have looked around 1490, following Naldo Naldi's description",
+        "by": "Generated image",
+        "lic": "not a photograph",
+        "src": "https://tertullian.org/articles/csapodi_corviniana.htm",
+        "basis": "Naldo Naldi's poem as summarised by Csaba Csapodi and Klára Pajorin: a high vaulted room on the first floor of the Danube wing beside the chapel, gilded shelves in three rows around the walls with curtains woven with gold against dust, carved chests beneath, two stained-glass windows with the king's couch under a golden cloth between them, and three-legged chairs. Naldi describes one room; Miklós Oláh later describes two, and later visitors mention a painted sky on the vault that Naldi does not. No source read gives dimensions. The image shows four rows of shelves on two walls only. Curtain colour, glass pattern, floor and the shape of every piece of furniture are guesses",
+        "yaw0": 0,
+        "links": []
+      }
+    ]
+  },
+  "vikramashila": {
+    "nodes": [
+      {
+        "id": "r01",
+        "f": "/sphere/vikramashila/r01",
+        "w": 1920,
+        "h": 960,
+        "kind": "exterior",
+        "real": false,
+        "cap": "The library building at Vikramashila as it may have looked, seen from the reservoir behind it",
+        "by": "Generated image",
+        "lic": "not a photograph",
+        "src": "https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp",
+        "basis": "the Archaeological Survey of India's site description: a rectangular building about 32 m south of the monastery at its south-west corner, joined to it by a narrow corridor, with a range of vents in the back wall that let in air cooled by water from the adjoining reservoir. The Survey gives no dimensions, wall material or roof for it. Brick is taken from the rest of the site. The wall height, the flat roofline, the large building in the distance, the shape of the reservoir and the landscape are guesses",
+        "yaw0": 0,
+        "links": []
+      }
+    ]
+  },
+  "ashikaga": {
+    "nodes": [
+      {
+        "id": "r01",
+        "f": "/sphere/ashikaga/r01",
+        "w": 1920,
+        "h": 960,
+        "kind": "exterior",
+        "real": false,
+        "cap": "The grounds of the Ashikaga School as they may have looked in the mid Edo period",
+        "by": "Generated image",
+        "lic": "not a photograph",
+        "src": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fc61161ace.pdf",
+        "basis": "what the city of Ashikaga and the Japan Heritage directory record: the main hall and garden were rebuilt in 1990 to their mid-Edo appearance after excavation, the main hall carries a thatched roof and the smaller buildings board roofs. No source read describes the interiors or where the books were kept, so this view stays outside. The plan of the yard, the pond, the planting, the fence and the tiled roof the image gives the smaller building are guesses",
+        "yaw0": 0,
+        "links": []
+      }
+    ]
+  }
+}

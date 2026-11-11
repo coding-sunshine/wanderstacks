@@ -1,0 +1,259 @@
+{
+ "id": "rumi",
+ "summary": "A long Persian poem of spiritual teaching, here in Redhouse's English verse rendering of the first book. It opens with a reed flute crying for the reed bed it was torn from, a picture of the soul longing for God. Stories follow one after another, each stopping for talk and comment: a prince who falls in love with a handmaid and sends for healers, an oilman who beats his parrot, a harper who plays for the dead. The tales warn against pride, the lower self and empty talk, and point to love and surrender as the way to God.",
+ "context": "Rumi began dictating the Masnavi around 1258, when he was about 54, and kept at it until he died in 1273. His disciple Husam al-Din Chalabi prompted it and wrote down the verses. The work has six books of about 25,000 verses, and the sixth was left unfinished. James Redhouse, a British lexicographer, translated the first book into English verse in 1881 and added anecdotes from the life of Rumi taken from the chronicle of Eflaki. This text is that edition. Later translators completed the whole poem.",
+ "sources": [
+  {
+   "title": "Masnavi - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Masnavi"
+  },
+  {
+   "title": "Rumi - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Rumi"
+  },
+  {
+   "title": "The Mesnevi by Maulana Jalal al-Din Rumi - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/61724"
+  }
+ ],
+ "people": [
+  {
+   "name": "Jalal al-Din Rumi",
+   "role": "author",
+   "note": "Sufi poet and founder of the Mevlevi Order, born in 1207 and died in Konya in 1273.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Husam al-Din Chalabi",
+   "role": "scribe",
+   "note": "Rumi's favourite disciple, who asked for the work and wrote the verses down as Rumi spoke them.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Shams-e Tabrizi",
+   "role": "subject",
+   "note": "Wandering dervish whom Rumi met in 1244 and whose disappearance in 1248 brought out an outpouring of lyric poetry.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "James W. Redhouse",
+   "role": "translator",
+   "note": "British lexicographer who published the first book of the Mesnevi in English verse in 1881.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Baha ud-Din Walad",
+   "role": "subject",
+   "note": "Rumi's father, a preacher and jurist who led the family west and settled in Konya in 1228.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Sana'i and Attar",
+   "role": "subject",
+   "note": "Earlier Persian poets whose didactic works Rumi's followers read, and in whose style he composed the Masnavi.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Sultan Walad",
+   "role": "subject",
+   "note": "Rumi's son, who with his followers founded the Mevlevi Order after Rumi's death.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Moses",
+   "role": "character",
+   "note": "Personifies reason and knowledge in the third and fourth books.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Balkh",
+   "lat": 36.758,
+   "lon": 66.897,
+   "note": "Greater Balkh was a centre of Persian culture and Sufism, and the family's origin; Rumi's family left it as a child.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Baghdad",
+   "lat": 33.3152,
+   "lon": 44.3661,
+   "note": "One of the cities the family passed through while fleeing the Mongols.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Damascus",
+   "lat": 33.5138,
+   "lon": 36.2765,
+   "note": "Another stop on the family's journey west.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Konya",
+   "lat": 37.8715,
+   "lon": 32.4846,
+   "note": "Capital of the Seljuk Sultanate of Rum, where Rumi settled, composed the Masnavi, died and was buried.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1207,
+   "label": "Rumi is born on 30 September, in the Balkh region.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1228,
+   "label": "Baha ud-Din Walad and his family finally settle in Konya.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1244,
+   "label": "Rumi meets the dervish Shams-e Tabrizi on 15 November.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1258,
+   "label": "Rumi begins dictating the first book of the Masnavi to Husam al-Din Chalabi.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1273,
+   "label": "Rumi dies in Konya on 17 December, leaving the sixth book incomplete.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1881,
+   "label": "James Redhouse publishes the first book in English verse, with anecdotes from Eflaki.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1924,
+   "label": "R. A. Nicholson begins issuing the first complete English translation, finished in 1940.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "The soul's longing for home",
+   "note": "The reed flute cries for the bed it was cut from, an image of the soul parted from God.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Mastering the lower self",
+   "note": "The first two books are chiefly concerned with the nafs, the lower self, and its self-deception.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Stories that teach",
+   "note": "Each tale illustrates a point, often with side stories and analogies breaking in to explain a claim.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Love as the way to God",
+   "note": "The poem is a spiritual text teaching Sufis how to reach the goal of being in love with God.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 3,
+   "chapter": "Proem. The Reed-Flute.",
+   "quote": "From reed-flute hear what tale it tells; What plaint it makes of absence’ ills: “From jungle-bed since me they tore, Men’s, women’s, eyes have wept right sore.",
+   "why": "The famous opening, the reed's lament for the reed bed it was torn from."
+  },
+  {
+   "part": 3,
+   "chapter": "I. The Prince and the Handmaid.",
+   "quote": "A prince there was, long since in time it is. Of Church and State the power and wealth were his. The chase on horse one day to follow, bent; With pompous courtier-train afield he went. A handmaid fair was wand’ring near a grove. Her he espied, and straightway fell in love.",
+   "why": "First story of the poem: a prince, a handmaid and a failing cure."
+  },
+  {
+   "part": 3,
+   "chapter": "II. The Oilman and the Parrot.",
+   "quote": "An oilman there was, who a parrot possessed, Soft-voiced, and green-coated; could talk with the best. The oilshop her charge when the man was away; The customers coaxed she the whole live-long day.",
+   "why": "The parrot tale, short and light, with a hard point about speech and punishment."
+  },
+  {
+   "part": 4,
+   "chapter": "V. The Lion and the Beasts.",
+   "quote": "Kalīl’ and Dimna’s book relates a charming tale, From which males may a moral draw;—and eke, female. Within a shelter’d vale, four-footed game in droves, Were kept in tremor by a lion from its groves.",
+   "why": "The beasts and the lion, a fable the poet turns toward the self."
+  },
+  {
+   "part": 4,
+   "chapter": "VI. The Greater (Spiritual) Warfare.",
+   "quote": "Great Princes all! We’ve killed our dread external foe. Within us, still, a worse than he remains, I trow. To slay this inner foe is not the task of mind; Our moral lion’s not destroyed by tricks refined.",
+   "why": "The greater warfare: the enemy within is harder to kill than the one outside."
+  },
+  {
+   "part": 5,
+   "chapter": "XIV. The Chinese and Roman Artists.",
+   "quote": "Give ear to this advice from one who’s well informed: “Lay down your head where’er by wine you’ve been transformed.",
+   "why": "Wine as an image for the ecstasy of the saints."
+  },
+  {
+   "part": 6,
+   "chapter": "XVII. Conclusion.",
+   "quote": "Alas! By one poor morsel, tasted through a sin, The fount of thought’s congealed; heart’s blood diluted thin. One grain of wheat has cast eclipse o’er sun of mind, As “dragon’s tail” doth dull the full moon, when inclined.",
+   "why": "The closing section of the translated book, on how one wrong act clouds the mind."
+  },
+  {
+   "part": 1,
+   "chapter": "TRANSLATOR’S PREFACE.",
+   "quote": "Jelāl was five years old when they left Balkh. By way of Bagdād they went to Mekka, thence to Damascus,",
+   "why": "Redhouse's preface on the family's flight from Balkh, with the stops they made."
+  }
+ ]
+}

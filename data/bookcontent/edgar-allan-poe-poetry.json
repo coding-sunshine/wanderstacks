@@ -1,0 +1,257 @@
+{
+ "summary": "This is the complete public-domain poetry of Edgar Allan Poe in the order he wrote it, from the early Tamerlane and Other Poems to his late lyrics. It holds the dream-haunted early pieces, the sonnet to science, the long Al Aaraaf, and the Gothic poems he is best known for: The City in the Sea, The Raven, Ulalume, The Bells and Annabel Lee. The Raven tells of a grieving lover and a bird that answers every question with a single word, nevermore.",
+ "context": "Poe's first book, Tamerlane and Other Poems (1827), appeared under the name 'a Bostonian' and sold only about fifty copies. Success came with The Raven, first printed with his name in the Evening Mirror on 29 January 1845 and then in the American Review under the pseudonym Quarles. It made him popular but earned little. In 1846 his essay The Philosophy of Composition described how he built the poem. The Standard Ebooks edition collects all of Poe's completed poetry in chronological order of writing.",
+ "sources": [
+  {
+   "title": "The Raven (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Raven"
+  },
+  {
+   "title": "Edgar Allan Poe (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Edgar_Allan_Poe"
+  },
+  {
+   "title": "Poetry, by Edgar Allan Poe, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/edgar-allan-poe/poetry"
+  }
+ ],
+ "people": [
+  {
+   "name": "Edgar Allan Poe",
+   "role": "author",
+   "note": "American writer and critic (1809 to 1849), the first well-known American author to live on writing alone.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "George Rex Graham",
+   "role": "patron",
+   "note": "Editor of Graham's Magazine in Philadelphia, who turned down The Raven but gave Poe $15.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nathaniel Parker Willis",
+   "role": "printer",
+   "note": "Editor of the Evening Mirror, which printed the poem on 29 January 1845 with high praise.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Elizabeth Barrett",
+   "role": "subject",
+   "note": "Her poem Lady Geraldine's Courtship was the model for the rhythm and meter of The Raven.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Charles Dickens",
+   "role": "subject",
+   "note": "His 1841 novel Barnaby Rudge, with its talking raven, partly inspired the poem.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Tenniel",
+   "role": "subject",
+   "note": "Illustrated a British Poe anthology in 1858.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gustave Doré",
+   "role": "subject",
+   "note": "His woodcuts for The Raven were published in 1884, after he had died.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Stéphane Mallarmé",
+   "role": "translator",
+   "note": "Translated The Raven into French for the 1875 edition illustrated by Manet.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "Poe's birthplace; he published his first book as 'a Bostonian'.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Richmond, Virginia",
+   "lat": 37.5407,
+   "lon": -77.436,
+   "note": "Where John and Frances Allan took in Poe after his mother died.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Philadelphia",
+   "lat": 39.9526,
+   "lon": -75.1652,
+   "note": "Home of Graham's Magazine, where Poe first offered The Raven.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "New York City",
+   "lat": 40.7128,
+   "lon": -74.006,
+   "note": "Evening Mirror, which printed The Raven under Poe's name, was published here.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Baltimore",
+   "lat": 39.2904,
+   "lon": -76.6122,
+   "note": "One of the cities Poe moved between while working as a critic.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1809,
+   "label": "Poe is born in Boston on 19 January.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1827,
+   "label": "Poe publishes Tamerlane and Other Poems, credited to 'a Bostonian'.",
+   "s": [
+    1,
+    2
+   ]
+  },
+  {
+   "year": 1845,
+   "label": "The Raven appears in the American Review and in the Evening Mirror with his name.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1846,
+   "label": "Poe explains how he wrote the poem in The Philosophy of Composition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1849,
+   "label": "Poe dies on 7 October.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1875,
+   "label": "A French edition with Mallarmé's translation and Manet's lithographs is published.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1884,
+   "label": "The Raven is published with Gustave Doré's woodcuts.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Poetry built by method",
+   "note": "Poe said he composed The Raven logically, with every element chosen for effect.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Death of a beautiful woman",
+   "note": "Poe called the death of a beautiful woman the most poetical topic, and told the poem from the lips of a bereaved lover.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Sound and repetition",
+   "note": "Internal rhyme, alliteration and the long o of nevermore carry the poem's mood.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Alone",
+   "quote": "From childhood’s hour I have not been As others were⁠—I have not seen As others saw⁠—I could not bring My passions from a common spring⁠— From the same source I have not taken My sorrow⁠—I could not awaken My heart to joy at the same tone⁠— And all I loved⁠— I loved alone⁠— Thou ⁠—in my childhood⁠—in the dawn Of a most stormy life⁠—was drawn From every depth of good and ill The mystery which binds",
+   "why": "The poem Alone, on being set apart."
+  },
+  {
+   "part": 1,
+   "chapter": "Sonnet⁠—To Science",
+   "quote": "Science! true daughter of Old Time thou art! Who alterest all things with thy peering eyes",
+   "why": "The sonnet that attacks the cold gaze of science."
+  },
+  {
+   "part": 1,
+   "chapter": "Israfel",
+   "quote": "In Heaven a spirit doth dwell “Whose heart-strings are a lute”; None sing so wildly well As the angel Israfel, And the giddy Stars (so legends tell) Ceasing their hymns, attend the spell Of his voice, all mute",
+   "why": "The opening of Israfel, a poem about song."
+  },
+  {
+   "part": 1,
+   "chapter": "The City in the Sea",
+   "quote": "Lo! Death has reared himself a throne In a strange city lying alone Far down within the dim West, Where the good and the bad and the worst and the best Have gone to their eternal rest",
+   "why": "The City in the Sea begins."
+  },
+  {
+   "part": 1,
+   "chapter": "The Raven",
+   "quote": "Once upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten lore⁠— While I nodded, nearly napping, suddenly there came a tapping, As of some one gently rapping⁠—rapping at my chamber door",
+   "why": "The first stanza of The Raven."
+  },
+  {
+   "part": 1,
+   "chapter": "The Bells: I",
+   "quote": "Hear the sledges with the bells⁠— Silver bells! What a world of merriment their melody foretells",
+   "why": "The Bells opens by imitating the sound it describes."
+  },
+  {
+   "part": 1,
+   "chapter": "Annabel Lee",
+   "quote": "It was many and many a year ago, In a kingdom by the sea, That a maiden lived whom you may know By the name of Annabel Lee ; And this maiden she lived with no other thought Than to love and be loved by me",
+   "why": "The opening of Annabel Lee."
+  },
+  {
+   "part": 1,
+   "chapter": "A Dream Within a Dream",
+   "quote": "Take this kiss upon the brow! And, in parting from you now, Thus much let me avow⁠— You are not wrong, who deem That my days have been a dream: Yet if hope has flown away In a night, or in a day, In a vision, or in none, Is it therefore the less gone",
+   "why": "A Dream Within a Dream begins on a parting."
+  }
+ ],
+ "id": "edgar-allan-poe-poetry"
+}

@@ -1,0 +1,236 @@
+{
+ "summary": "The Diamond Sutra records the Buddha teaching his disciple Subhuti in the grove of Jeta, near the city of Shravasti. Through a string of questions the Buddha shows that even the Buddha, the Law and the very idea of a self cannot be grasped through outward marks. He compares the Law to a raft that is left behind once the far shore is reached, and he says that all conditioned things are like a dream, a bubble, a shadow, dew or lightning. Giving, merit and enlightenment are all to be held without attachment.",
+ "context": "The Sanskrit text was composed between the 2nd and 5th centuries, and the first Chinese translation, by Kumarajiva, dates to 401. His version became the most widely chanted in China. A printed copy dated 868 was found among the Dunhuang manuscripts and is thought to be the oldest dated printed book. The site carries William Gemmell's English translation from that Chinese text, published in London in 1912 with a long introduction and notes drawn from other scriptures and scholars.",
+ "sources": [
+  {
+   "title": "Diamond Sutra (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Diamond_Sutra"
+  },
+  {
+   "title": "Kumarajiva (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Kum%C4%81raj%C4%ABva"
+  },
+  {
+   "title": "The Diamond Sutra (Chin-Kang-Ching), translated by William Gemmell, Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/64623"
+  }
+ ],
+ "people": [
+  {
+   "name": "The Buddha",
+   "role": "character",
+   "note": "Teacher in the dialogue, addressed in the text as the Lord Buddha.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Subhuti",
+   "role": "character",
+   "note": "A leading disciple who asks the questions and answers the Buddha.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Kumarajiva",
+   "role": "translator",
+   "note": "Monk and translator who made the first Chinese translation, thought to date to 401.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "William Gemmell",
+   "role": "translator",
+   "note": "Made the English translation, printed in London in 1912.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Wang Jie",
+   "role": "printer",
+   "note": "Named in the 868 colophon as the maker of the copy, for his parents and for universal free distribution.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Wang Yuanlu",
+   "role": "subject",
+   "note": "Daoist monk who found the Dunhuang manuscripts, including this copy, in 1900.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Aurel Stein",
+   "role": "subject",
+   "note": "Archaeologist who bought the 868 scroll in 1907.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Shravasti",
+   "lat": 27.5063,
+   "lon": 82.0501,
+   "note": "The city where the Buddha begs for food before the dialogue in the grove of Jeta.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Dunhuang (Mogao Caves)",
+   "lat": 40.1421,
+   "lon": 94.662,
+   "note": "Where the 868 printed scroll was found in a walled-up cave.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kucha",
+   "lat": 41.7167,
+   "lon": 82.9667,
+   "note": "The kingdom Kumarajiva came from, in present-day Xinjiang.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Gemmell's translation was published here in 1912, and the 868 scroll is held at the British Library.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 401,
+   "label": "Kumarajiva makes the first Chinese translation, thought to date to this year.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 868,
+   "label": "Wang Jie has the Dunhuang copy printed, the oldest dated printed book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1900,
+   "label": "Wang Yuanlu discovers the scroll among the Dunhuang manuscripts.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1907,
+   "label": "Aurel Stein buys the scroll at Dunhuang.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1912,
+   "label": "William Gemmell's English translation is published in London.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 2010,
+   "label": "The British Library restores its copy of the scroll.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "No fixed self",
+   "note": "The text says ideas of a self, a being and a person are no-ideas.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "The Law as a raft",
+   "note": "The Buddha's teaching is a raft to be left behind once it has carried disciples to the other shore.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Phenomena like a dream",
+   "note": "Conditioned things are compared to a dream, a bubble, a shadow, dew and lightning.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Wisdom that cuts through",
+   "note": "The title treats prajna-paramita, the perfection of wisdom, as a diamond that cuts through illusion.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "PREFACE",
+   "quote": "This English version of The Diamond Sutra , translated from the Chinese text of Kumarajiva, owes its inception to successive conversations with a friend, profoundly interested in the interpretation of oriental systems of philosophy",
+   "why": "The translator explains where his text comes from."
+  },
+  {
+   "part": 2,
+   "chapter": "THE DIAMOND SUTRA",
+   "quote": "Thus have I heard concerning our Lord Buddha:— Upon a memorable occasion, the Lord Buddha sojourned in the kingdom of Shravasti, lodging in the grove of Jeta, a park within the imperial domain, which Jeta, the heir-apparent, bestowed upon Sutana, a benevolent Minister of State, renowned for his charities and benefactions",
+   "why": "The opening scene at Shravasti."
+  },
+  {
+   "part": 2,
+   "chapter": "THE DIAMOND SUTRA",
+   "quote": "The Lord Buddha interrogated Subhuti, saying: “What think you? Is it possible that by means of his physical body, the Lord Buddha may be clearly perceived",
+   "why": "The Buddha cannot be seen in his body."
+  },
+  {
+   "part": 2,
+   "chapter": "THE DIAMOND SUTRA",
+   "quote": "Subhuti enquired of the Lord Buddha, saying: “Honoured of the Worlds! In future ages, when this scripture is proclaimed, amongst those beings destined to hear, shall any conceive within their minds a sincere, unmingled faith",
+   "why": "Subhuti asks whether later ages can believe."
+  },
+  {
+   "part": 2,
+   "chapter": "THE DIAMOND SUTRA",
+   "quote": "Upon that occasion, the venerable Subhuti, hearing the text of this scripture proclaimed, and profoundly realising its meaning, was moved to tears",
+   "why": "Subhuti weeps when he understands."
+  },
+  {
+   "part": 2,
+   "chapter": "THE DIAMOND SUTRA",
+   "quote": "You disciples must realise that the Law which I enunciated, was presented before your minds in the simile of a raft",
+   "why": "The simile of the raft for the Law."
+  },
+  {
+   "part": 2,
+   "chapter": "THE DIAMOND SUTRA",
+   "quote": "And why? Because, the phenomena of life may be likened unto a dream, a phantasm, a bubble, a shadow, the glistening dew, or lightning flash, and thus they ought to be contemplated",
+   "why": "The closing verse of the sutra."
+  }
+ ],
+ "id": "diamond-sutra-text"
+}

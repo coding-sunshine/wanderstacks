@@ -1,0 +1,209 @@
+{
+  "id": "iliad",
+  "summary": "The Iliad covers a few weeks in the tenth year of the Greek siege of Troy. Agamemnon, commander of the Greek armies, takes the war prize Briseis from Achilles, the best of the Greek fighters, who then refuses to fight. With him out, the Trojans under Hector push the Greeks back to their ships. Achilles sends his friend Patroclus into battle in his armor, Hector kills Patroclus, and Achilles returns in rage to kill Hector and drag his body behind his chariot. The poem ends when Hector's father Priam comes to Achilles at night and begs for his son's body.",
+  "context": "The poem is attributed to Homer and was probably composed in the late 8th or early 7th century BC, in a mixed Greek literary dialect. How it was composed, whether by one poet and whether it was oral, is still debated as the Homeric Question. Professional reciters performed it at festivals such as the Panathenaia, and it became part of Greek schooling. This site carries Samuel Butler's English prose translation from Project Gutenberg, with a verse version by Pope in the same volume. Readers have long taken the poem as a starting point for European literature.",
+  "sources": [
+    {
+      "title": "Iliad (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Iliad"
+    },
+    {
+      "title": "Homer (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Homer"
+    },
+    {
+      "title": "Samuel Butler (novelist) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Samuel_Butler_(novelist)"
+    },
+    {
+      "title": "The Iliad by Homer (Project Gutenberg)",
+      "url": "https://www.gutenberg.org/ebooks/2199"
+    }
+  ],
+  "people": [
+    {
+      "name": "Homer",
+      "role": "author",
+      "note": "Traditionally credited as author of the Iliad and the Odyssey; his identity and existence are debated.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Achilles",
+      "role": "character",
+      "note": "The greatest Greek warrior, whose wrath drives the plot from his quarrel with Agamemnon to the killing of Hector.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Agamemnon",
+      "role": "character",
+      "note": "King of Mycenae and commander of the united Greek armies; his seizure of Briseis starts Achilles' anger.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Hector",
+      "role": "character",
+      "note": "Trojan prince and the city's leading hero, killed by Achilles.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Patroclus",
+      "role": "character",
+      "note": "Achilles' companion, who fights in his armor and is killed by Hector.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Priam",
+      "role": "character",
+      "note": "King of Troy, who crosses the Greek camp with gifts to ask for Hector's body.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Thetis",
+      "role": "character",
+      "note": "Sea nymph and mother of Achilles, who asks Zeus to favor the Trojans until her son's honor is restored.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Samuel Butler",
+      "role": "translator",
+      "note": "English novelist and critic whose prose translations of the Iliad and Odyssey are still consulted.",
+      "s": [
+        2
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Troy",
+      "lat": 39.9575,
+      "lon": 26.2389,
+      "note": "The city besieged for ten years by a coalition of Greek states; the poem covers the war's final weeks.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Mycenae",
+      "lat": 37.7308,
+      "lon": 22.7564,
+      "note": "Seat of Agamemnon, who leads the Greek armies at Troy.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Athens",
+      "lat": 37.9715,
+      "lon": 23.7257,
+      "note": "Host of the Panathenaia, one of the festivals where professional reciters performed the poem.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": -800,
+      "label": "Homer, traditional author of the Iliad and Odyssey, is possibly born around the 8th century BC.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "year": -725,
+      "label": "The Iliad is likely composed between the late 8th and early 7th century BC.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1835,
+      "label": "Samuel Butler, later translator of the Iliad into English prose, is born at Langar, Nottinghamshire.",
+      "s": [
+        2
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "The wrath of Achilles",
+      "note": "The first word, menis, names the theme. Achilles' wounded pride sets off the Greek defeats, the deaths of Patroclus and Hector, and the fall of Troy.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Fate binds gods and men",
+      "note": "Fate drives most events, and neither gods nor mortals can change it; heroes accept their appointed deaths and fight on.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Glory against going home",
+      "note": "Achilles gives up a homecoming for kleos, imperishable fame, so heroism and its price are the poem's central matter.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Gods as partisans",
+      "note": "The Olympians help favored warriors and cities and quarrel among themselves, which made them concrete for Greek audiences.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "BOOK I.",
+      "quote": "Sing, O goddess, the anger of Achilles son of Peleus, that brought countless ills upon the Achaeans.",
+      "why": "The opening invocation, naming the wrath that the whole poem follows."
+    },
+    {
+      "part": 2,
+      "chapter": "BOOK VI.",
+      "quote": "Dear husband,” said she, “your valour will bring you to destruction; think on your infant son, and on my hapless self who ere long shall be your widow—for the Achaeans will set upon you in a body and kill you.",
+      "why": "Andromache pleads with Hector on the walls of Troy, the poem's domestic side."
+    },
+    {
+      "part": 4,
+      "chapter": "BOOK XIX.",
+      "quote": "Patroclus is lying dead in my tent, all hacked and hewn, with his feet to the door, and his comrades are mourning round him. Therefore I can take thought of nothing save only slaughter and blood and the rattle in the throat of the dying.”",
+      "why": "Achilles refuses food as grief for Patroclus replaces his quarrel with Agamemnon."
+    },
+    {
+      "part": 5,
+      "chapter": "BOOK XXII.",
+      "quote": "no covenants between men and lions, wolves and lambs can never be of one mind, but hate each other out and out all through. Therefore there can be no understanding between you and me, nor may there be any covenants between us, till one or other shall fall and glut grim Mars with his life’s blood.",
+      "why": "Achilles rejects Hector's offer of terms before their duel."
+    },
+    {
+      "part": 6,
+      "chapter": "BOOK XXIV.",
+      "quote": "Think of your father, O Achilles like unto the gods, who is such even as I am, on the sad threshold of old age. It may be that those who dwell near him harass him, and there is none to keep war and ruin from him.",
+      "why": "Priam's appeal to Achilles, the emotional close of the poem."
+    },
+    {
+      "part": 6,
+      "chapter": "BOOK XXIV.",
+      "quote": "two urns, the one filled with evil gifts, and the other with good ones.",
+      "why": "Achilles tells Priam how Zeus doles out good and evil, the poem's view of human fortune."
+    }
+  ]
+}

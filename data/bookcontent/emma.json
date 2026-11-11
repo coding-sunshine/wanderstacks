@@ -1,0 +1,261 @@
+{
+ "summary": "Emma Woodhouse, young, rich and sure of her own judgment, lives with her father in the village of Highbury. After her governess marries, she decides she is a gifted matchmaker and sets about pairing her new friend Harriet Smith with the vicar, Mr Elton. Her schemes go wrong in several directions. Mr Elton proposes to Emma instead, Frank Churchill and Jane Fairfax turn out to be secretly engaged, and Emma wounds Miss Bates on a day trip. Mr Knightley, her one honest critic, helps her see her mistakes, and she finally recognizes that she loves him.",
+ "context": "Austen wrote Emma at Chawton, after Pride and Prejudice. When John Murray offered her a sum for the rights to this and two earlier novels, she refused and paid for a print run of 2000 copies herself. The three volumes came out in December 1815 with a 1816 title page and a dedication to the Prince Regent. Sir Walter Scott reviewed it in the Quarterly Review. It was the last novel she saw published before she died in 1817. This site carries the Standard Ebooks text.",
+ "sources": [
+  {
+   "title": "Emma (novel) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Emma_(novel)"
+  },
+  {
+   "title": "Jane Austen (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Jane_Austen"
+  },
+  {
+   "title": "Emma, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/jane-austen/emma"
+  }
+ ],
+ "people": [
+  {
+   "name": "Jane Austen",
+   "role": "author",
+   "note": "English novelist (1775 to 1817) who published Emma at her own expense.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Emma Woodhouse",
+   "role": "character",
+   "note": "The spoiled, clever heroine who overrates her matchmaking and misjudges others.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "George Knightley",
+   "role": "character",
+   "note": "Emma's neighbour and only critic, owner of Donwell Abbey.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Harriet Smith",
+   "role": "character",
+   "note": "Emma's new friend, whom Emma persuades to refuse a farmer's proposal.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Frank Churchill",
+   "role": "character",
+   "note": "Mr Weston's son, adopted by a wealthy aunt, who arrives for a visit and conceals an engagement.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jane Fairfax",
+   "role": "character",
+   "note": "Miss Bates's niece, as old as Emma, who plans to become a governess.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Murray II",
+   "role": "printer",
+   "note": "The London publisher to whom Austen submitted the book in autumn 1815.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sir Walter Scott",
+   "role": "subject",
+   "note": "Wrote an anonymous review in the Quarterly Review in March 1816.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Surrey",
+   "lat": 51.2362,
+   "lon": -0.5704,
+   "note": "The county where the fictional village of Highbury and its estates are set.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Box Hill",
+   "lat": 51.2527,
+   "lon": -0.3166,
+   "note": "The scenic spot where Emma mocks Miss Bates during the group excursion.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Bath",
+   "lat": 51.3811,
+   "lon": -2.359,
+   "note": "Mr Elton goes here and comes back with a wealthy new wife.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Where John Murray published Austen's work and where Carlton House stood.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Chawton",
+   "lat": 51.0937,
+   "lon": -0.9899,
+   "note": "Austen lived in a cottage here from 1809, and Emma was written after the move.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Winchester",
+   "lat": 51.0632,
+   "lon": -1.308,
+   "note": "Where Austen died in 1817 and is buried in the cathedral.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1809,
+   "label": "Austen, her sister and her mother move into Chawton cottage on 7 July.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1815,
+   "label": "Austen submits Emma to John Murray in autumn and publishes it herself in December.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1816,
+   "label": "Scott's review appears in the Quarterly Review in March, and the novel's title page carries this year.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1817,
+   "label": "Austen dies in Winchester on 18 July.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1833,
+   "label": "Richard Bentley republishes her novels in his Standard Novels series, widening her readership.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1995,
+   "label": "Clueless, a modern American adaptation set in Beverly Hills, appears.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Self-deception and meddling",
+   "note": "Emma's confidence in her own judgment leads her to misread everyone around her.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Class and marriage",
+   "note": "The book looks at the social barriers to marriage between people of unequal rank in Regency England.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "A comedy of manners",
+   "note": "Austen draws her plot from a handful of families in one village.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The honest critic",
+   "note": "Mr Knightley is the one person who tells Emma when she is wrong.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Emma Woodhouse, handsome, clever, and rich, with a comfortable home and happy disposition, seemed to unite some of the best blessings of existence; and had lived nearly twenty-one years in the world with very little to distress or vex her",
+   "why": "The famous opening sentence introduces the heroine."
+  },
+  {
+   "part": 2,
+   "chapter": "XIV",
+   "quote": "Now, it so happened that in spite of Emma’s resolution of never marrying, there was something in the name, in the idea of Mr. Frank Churchill, which always interested her. She had frequently thought⁠—especially since his father’s marriage with Miss Taylor⁠—that if she were to marry, he was the very person to suit her in age, character and condition",
+   "why": "Emma, who has vowed never to marry, is drawn to the idea of Frank Churchill."
+  },
+  {
+   "part": 3,
+   "chapter": "XXVI",
+   "quote": "“This is coming as you should do,” said she; “like a gentleman.⁠—I am quite glad to see you",
+   "why": "Emma praises Mr Knightley for arriving on foot like a gentleman."
+  },
+  {
+   "part": 5,
+   "chapter": "XLIII",
+   "quote": "How could you be so unfeeling to Miss Bates? How could you be so insolent in your wit to a woman of her character, age, and situation",
+   "why": "Mr Knightley reproves Emma after the Box Hill outing."
+  },
+  {
+   "part": 5,
+   "chapter": "XLVII",
+   "quote": "It darted through her, with the speed of an arrow, that Mr. Knightley must marry no one but herself",
+   "why": "The moment Emma realizes she loves Mr Knightley."
+  },
+  {
+   "part": 5,
+   "chapter": "XLIX",
+   "quote": "“I cannot make speeches, Emma” he soon resumed; and in a tone of such sincere, decided, intelligible tenderness as was tolerably convincing",
+   "why": "Mr Knightley's plain declaration of love."
+  },
+  {
+   "part": 6,
+   "chapter": "LV",
+   "quote": "The wedding was very much like other weddings, where the parties have no taste for finery or parade; and Mrs. Elton, from the particulars detailed by her husband, thought it all extremely shabby, and very inferior to her own",
+   "why": "The quiet closing paragraphs of the book."
+  }
+ ],
+ "id": "emma"
+}

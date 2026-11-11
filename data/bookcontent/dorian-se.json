@@ -1,0 +1,243 @@
+{
+ "summary": "Basil Hallward paints a portrait of the beautiful young Dorian Gray, and Basil's friend Lord Henry Wotton fills Dorian with the idea that beauty and pleasure are all that matter. Dorian wishes that the portrait would age instead of him, and the wish comes true. He cruelly drops the actress Sibyl Vane and then lives a long libertine life while the painting records every sin on its face. Basil is killed, and in the end Dorian turns on the portrait itself.",
+ "context": "Wilde was inspired by a portrait sitting in December 1887. A shorter version ran in Lippincott's Monthly Magazine in July 1890, after the editor cut about 500 words without his approval. Critics attacked it, and Wilde answered with a preface of epigrams on art. The novel-length version appeared in April 1891. It was long under-read, and it is now among the best-known Gothic novels. The site carries the Standard Ebooks text, which restores the novel version with Wilde's preface.",
+ "sources": [
+  {
+   "title": "The Picture of Dorian Gray (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Picture_of_Dorian_Gray"
+  },
+  {
+   "title": "Oscar Wilde (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Oscar_Wilde"
+  },
+  {
+   "title": "The Picture of Dorian Gray, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/oscar-wilde/the-picture-of-dorian-gray"
+  }
+ ],
+ "people": [
+  {
+   "name": "Oscar Wilde",
+   "role": "author",
+   "note": "Irish writer (1854 to 1900) for whom this was his only novel.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Dorian Gray",
+   "role": "character",
+   "note": "The young man whose portrait ages while he stays beautiful.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Basil Hallward",
+   "role": "character",
+   "note": "The artist who paints Dorian's portrait and is infatuated with his beauty.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lord Henry Wotton",
+   "role": "character",
+   "note": "The aristocrat whose hedonism enthralls Dorian.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sibyl Vane",
+   "role": "character",
+   "note": "A young actress of Shakespeare who is courted by Dorian and then rejected.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Frances Richards",
+   "role": "subject",
+   "note": "The Canadian artist whose portrait of Wilde in 1887 inspired the plot.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "J. M. Stoddart",
+   "role": "patron",
+   "note": "The Lippincott's editor who commissioned the story in 1889 and cut about 500 words from it.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "The Victorian city where the story is set.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Langham Hotel, London",
+   "lat": 51.5183,
+   "lon": -0.1432,
+   "note": "Stoddart dined here with Wilde and Arthur Conan Doyle on 30 August 1889 and commissioned the novella.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ottawa",
+   "lat": 45.4215,
+   "lon": -75.6972,
+   "note": "Where Wilde met the artist Frances Richards in 1882.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dublin",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "note": "Wilde's birthplace and the home of his Anglo-Irish parents.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1887,
+   "label": "A December portrait sitting gives Wilde the idea for the plot.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1889,
+   "label": "Stoddart commissions a novella from Wilde at the Langham Hotel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1890,
+   "label": "The shorter version appears in Lippincott's Monthly Magazine in July.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1891,
+   "label": "The novel-length version with Wilde's preface is published in April.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1895,
+   "label": "Wilde is convicted of gross indecency.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 2011,
+   "label": "The Belknap Press publishes an uncensored edition from the original typescript.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Art for art's sake",
+   "note": "Wilde's preface treats art as an aim in itself and says all art is quite useless.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Beauty and sensation as the goal",
+   "note": "Lord Henry's view that beauty and sensual fulfilment are all that matter drives Dorian's choices.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A double life",
+   "note": "Dorian keeps a spotless face while the portrait records his sins.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Books are not moral or immoral",
+   "note": "The preface says books are only well or badly written, a reply to the critics of 1890.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "There is no such thing as a moral or an immoral book. Books are well written, or badly written",
+   "why": "Wilde's preface answers his critics."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn",
+   "why": "The novel's opening scene."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "“How sad it is!” murmured Dorian Gray with his eyes still fixed upon his own portrait",
+   "why": "Dorian makes his wish."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "The only way to get rid of a temptation is to yield to it. Resist it, and your soul grows sick with longing for the things it has forbidden to itself, with desire for what its monstrous laws have made monstrous and unlawful",
+   "why": "Lord Henry's creed on temptation."
+  },
+  {
+   "part": 2,
+   "chapter": "VII",
+   "quote": "One would have said that there was a touch of cruelty in the mouth.",
+   "why": "The portrait first changes."
+  },
+  {
+   "part": 2,
+   "chapter": "X",
+   "quote": "His eye fell on the yellow book that Lord Henry had sent him. What was it, he wondered",
+   "why": "The book that shapes Dorian's life."
+  },
+  {
+   "part": 3,
+   "chapter": "XIV",
+   "quote": "What was that loathsome red dew that gleamed, wet and glistening, on one of the hands, as though the canvas had sweated blood",
+   "why": "The portrait shows the blood of a crime."
+  },
+  {
+   "part": 3,
+   "chapter": "XX",
+   "quote": "When they entered, they found hanging upon the wall a splendid portrait of their master as they had last seen him, in all the wonder of his exquisite youth and beauty",
+   "why": "The final image of the portrait and the body."
+  }
+ ],
+ "id": "dorian-se"
+}

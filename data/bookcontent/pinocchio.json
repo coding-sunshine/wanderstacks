@@ -1,0 +1,235 @@
+{
+ "id": "pinocchio",
+ "summary": "A carpenter finds a log that cries out, and his neighbour Geppetto carves it into a puppet he names Pinocchio. The puppet is cheerful, greedy and unwilling to obey. He kills the Talking Cricket who warns him, sells his schoolbook, is tempted by a fox and a cat, and is lured away to play. After he meets the Fire-Eater and a long run of misadventures, he is swallowed by a huge Dogfish and finds Geppetto inside. They escape. Pinocchio works hard, cares for his father, and is rewarded by becoming a real boy.",
+ "context": "Carlo Collodi, the pen name of Carlo Lorenzini, wrote the story as a serial called The Story of a Puppet. It ran in the Giornale per i bambini from 7 July 1881 to 25 January 1883. In February 1883 it came out as a single book of 36 chapters, issued in Florence by Felice Paggi with pictures by Enrico Mazzanti. It has been translated into many languages and is one of the most translated books in the world. The site carries Carol Della Chiesa's English translation, from Project Gutenberg.",
+ "sources": [
+  {
+   "title": "The Adventures of Pinocchio - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Adventures_of_Pinocchio"
+  },
+  {
+   "title": "The Adventures of Pinocchio by Carlo Collodi - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/500"
+  },
+  {
+   "title": "The Adventures of Pinocchio, by Carlo Collodi - Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/carlo-collodi/the-adventures-of-pinocchio"
+  }
+ ],
+ "people": [
+  {
+   "name": "Carlo Collodi",
+   "role": "author",
+   "note": "Italian writer, 1826 to 1890, respected in his lifetime as a writer and social commentator.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Pinocchio",
+   "role": "character",
+   "note": "The mischievous marionette who learns goodness before he becomes a real boy.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Geppetto",
+   "role": "character",
+   "note": "An elderly, poor woodcarver who makes Pinocchio and acts as his father.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Master Antonio",
+   "role": "character",
+   "note": "The carpenter who finds the log that cries out and gives it to Geppetto.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The Talking Cricket",
+   "role": "character",
+   "note": "Pinocchio kills him for giving advice, and he returns as a ghost to go on advising.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mangiafuoco (Fire-Eater)",
+   "role": "character",
+   "note": "Director of the Great Marionette Theater who lets Pinocchio go after hearing about Geppetto's poverty.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Enrico Mazzanti",
+   "role": "subject",
+   "note": "Illustrator of the first book edition in 1883.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Felice Paggi",
+   "role": "printer",
+   "note": "Florence publisher who issued the first book edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Carol Della Chiesa",
+   "role": "translator",
+   "note": "Translator, 1887 to 1972, of the English version read on the site.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Tuscany",
+   "lat": 43.4,
+   "lon": 11,
+   "note": "The region of Italy where the story opens.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Florence",
+   "lat": 43.7696,
+   "lon": 11.2558,
+   "note": "City where the first book edition was published in February 1883.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "Place of a pirated edition issued by Jordan Marsh using Murray's English translation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1826,
+   "label": "Carlo Collodi, the author, is born.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1881,
+   "label": "The story starts in the Giornale per i bambini on 7 July, as The Story of a Puppet.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1883,
+   "label": "The serial ends on 25 January and the book edition appears in Florence in February.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1890,
+   "label": "Collodi dies.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1940,
+   "label": "Walt Disney's animated film of Pinocchio is released.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Growing up by obeying",
+   "note": "Pinocchio learns goodness through a run of perils and temptations before he earns his wish to be a real boy.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Lies show on the face",
+   "note": "The idea of a liar's long nose comes from the book and has become commonplace.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Idle temptation",
+   "note": "The Cricket warns him against disobedience and laziness, and the Fox, the Cat and the Land of Toys all pull him off course.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Duty to a father",
+   "note": "Pinocchio ends by working to support the ailing Geppetto.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "There was once upon a time a piece of wood in the shop of an old carpenter named Master Antonio. Everybody, however, called him Master Cherry, on account of the end of his nose, which was always as red and polished as a ripe cherry.",
+   "why": "The opening, which starts by teasing the reader about who the hero will be."
+  },
+  {
+   "part": 1,
+   "chapter": "IV",
+   "quote": "Pinocchio jumped up in a rage and, snatching a wooden hammer from the bench, he threw it at the Talking-Cricket. Perhaps he never meant to hit him, but unfortunately it struck him exactly on the head, so that the poor Cricket had scarcely breath to cry “Cri-cri-cri!”",
+   "why": "The moment he kills the Talking Cricket for calling him a wooden head."
+  },
+  {
+   "part": 1,
+   "chapter": "XVII",
+   "quote": "Lies, my dear boy, are found out immediately, because they are of two sorts. There are lies that have short legs, and lies that have long noses. Your lie, as it happens, is one of those that have a long nose.”",
+   "why": "Source of the long-nose lie: two sorts of lies, and the nose gives them away."
+  },
+  {
+   "part": 1,
+   "chapter": "XII",
+   "quote": "In this field you must dig a little hole, and you put into it, we will say, one gold sovereign. You then cover up the hole with a little earth; you must water it with two pails of water from the fountain, then sprinkle it with two pinches of salt, and when night comes you can go quietly to bed.",
+   "why": "The Fox and the Cat sell Pinocchio the idea of planting gold."
+  },
+  {
+   "part": 1,
+   "chapter": "XXIV",
+   "quote": "terrible Dogfish, who for some days past has been spreading devastation and ruin in our waters.” “Is this Dogfish very big?” asked Pinocchio, who was already beginning to quake with fear.",
+   "why": "The first report of the sea monster that later swallows Geppetto."
+  },
+  {
+   "part": 2,
+   "chapter": "XXXV",
+   "quote": "Pinocchio, having taken leave of his friend the Tunny, began to grope his way in the dark through the body of the Dogfish, taking a step at a time in the direction of the light that he saw shining dimly at a great distance.",
+   "why": "Inside the Dogfish, Pinocchio gropes toward a light and finds his father."
+  },
+  {
+   "part": 2,
+   "chapter": "XXXVI",
+   "quote": "How ridiculous I was when I was a puppet! And how glad I am that I have become a well-behaved little boy!”",
+   "why": "The last line, as the new boy looks at the puppet he used to be."
+  }
+ ]
+}

@@ -1,0 +1,198 @@
+{
+ "id": "kalevala",
+ "summary": "The Kalevala tells of the people of Kalevala and their rivals in Pohjola, the Northland. It opens with Ilmatar, a daughter of the air who drifts on the sea for seven hundred years and gives birth to the singer Wainamoinen. He sings the world into order, while the smith Ilmarinen forges the Sampo, a mill that grinds out grain, salt and gold. Suitors court the maiden of the North, the reckless Lemminkainen goes to his death and returns, and the Sampo is stolen and broken. The poem ends as Wainamoinen sails away in a copper boat.",
+ "context": "Elias Lonnrot, a country doctor, compiled the poem from Finnish, Karelian and Ingrian oral songs gathered on eleven field trips over fifteen years. The first version, the Old Kalevala, appeared in 1835 with 12,078 verses. The 1849 edition has fifty runot and 22,795 verses. It became the national epic of Finland and fed the push for independence, declared in 1917. Tolkien drew on it. The site carries John Martin Crawford's English translation, which keeps the trochaic meter of the original.",
+ "sources": [
+  {
+   "title": "Kalevala (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Kalevala"
+  },
+  {
+   "title": "Elias Lonnrot (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Elias_L%C3%B6nnrot"
+  },
+  {
+   "title": "The Kalevala, translated by John Martin Crawford (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/elias-lonnrot/the-kalevala/john-martin-crawford"
+  }
+ ],
+ "people": [
+  {
+   "name": "Elias Lonnrot",
+   "role": "author",
+   "note": "Born in Sammatti in 1802, he was a physician in Kajaani who collected the songs and shaped them into one poem.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "John Martin Crawford",
+   "role": "translator",
+   "note": "Translator of the English text on this site.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Wainamoinen",
+   "role": "character",
+   "note": "The ancient singer and sage, born of Ilmatar, whose music and magic shape the world.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ilmarinen",
+   "role": "character",
+   "note": "The eternal smith who forges the Sampo.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lemminkainen",
+   "role": "character",
+   "note": "The reckless wizard and ladies' man of the poem.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ilmatar",
+   "role": "character",
+   "note": "Daughter of the air and mother of Wainamoinen.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Sammatti",
+   "lat": 60.3,
+   "lon": 24,
+   "note": "Lonnrot's birthplace in southern Finland.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Kajaani",
+   "lat": 64.2227,
+   "lon": 27.7285,
+   "note": "Where Lonnrot served as district health officer from 1833 and prepared his collecting trips.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Helsinki",
+   "lat": 60.1699,
+   "lon": 24.9384,
+   "note": "Capital of the Finland that the epic helped to imagine.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1802,
+   "label": "Elias Lonnrot is born in Sammatti on 9 April.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1835,
+   "label": "The Old Kalevala appears with 12,078 verses.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1849,
+   "label": "The final Kalevala appears with fifty runot and 22,795 verses.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1862,
+   "label": "An abridged edition follows.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1917,
+   "label": "Finland declares independence, with the epic cited as part of its national identity.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Singing as power",
+   "note": "Wainamoinen wins by song and spell rather than by sword.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "The Sampo",
+   "note": "The mill that grinds grain, salt and gold stands for prosperity, and for the fight over who owns it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A nation from folk song",
+   "note": "The poem was stitched from oral verse and became a national epic.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Gods and heroes",
+   "note": "The preface calls the main figures divine in origin and mostly superhuman.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Proem",
+   "quote": "Mastered by desire impulsive, By a mighty inward urging, I am ready now for singing, Ready to begin the chanting Of our nation’s ancient folk-song Handed down from by-gone ages.",
+   "why": "The singer's opening vow."
+  },
+  {
+   "part": 1,
+   "chapter": "Rune I",
+   "quote": "In primeval times, a maiden, Beauteous Daughter of the Ether, Passed for ages her existence In the great expanse of heaven, O’er the prairies yet enfolded.",
+   "why": "Ilmatar, before the world has a shape."
+  },
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "Wainamoinen, the ancient singer, Ilmarinen, the eternal forgeman, and Lemminkainen, the reckless wizard, as mentioned above, are conceived as being of divine origin. In fact, the acting characters of the Kalevala are mostly superhuman, magic beings.",
+   "why": "The translator on who the heroes are."
+  },
+  {
+   "part": 5,
+   "chapter": "Rune XXXVIII",
+   "quote": "Sampo grinds unceasing, Noisy rocks the lid in colors; Grinds one day the flour for eating, Grinds the second flour for selling, Grinds the third day flour for keeping; Thus it is Pohyola prospers. While the Sampo is in Northland, There is plowing, there is sowing, There is growth of every virtue, There is welfare never-ending.",
+   "why": "What the Sampo does for its owners."
+  },
+  {
+   "part": 6,
+   "chapter": "Rune L",
+   "quote": "boat of copper, Beautiful his bark of magic; At the helm sat the magician, Sat the ancient wisdom-singer. Westward, westward, sailed the hero O’er the blue-back of the waters, Singing as he left Wainola, This his plaintive song and echo:",
+   "why": "Wainamoinen leaves, the poem's close."
+  }
+ ]
+}

@@ -1,0 +1,246 @@
+{
+  "id": "james-joyce-dubliners",
+  "summary": "Dubliners is fifteen short stories about middle-class life in and around Dublin in the early twentieth century. The first three are told by boys, and later stories turn to older and older people, in Joyce's own scheme of childhood, adolescence, maturity and public life. A boy fails to bring a gift home from a bazaar, a young woman cannot make herself leave with a sailor, a clerk learns too late what he did to a friend, and a man at a party hears of his wife's dead sweetheart. Each story tends to close on a moment of sudden insight, and many characters are stuck in place.",
+  "context": "Joyce wrote the stories between 1904 and 1907, when Irish nationalism was at its height, and saw them as a polished mirror held up to the Irish. He thought nationalism, the Catholic church and British rule had all produced a paralysis. Publishing was hard: he sent the book eighteen times to fifteen publishers over nine years. A London printer refused to set \"Two Gallants\", and a Dublin printer burned the sheets, though Joyce saved one copy. Grant Richards finally issued it on 15 June 1914. Some characters return in Ulysses.",
+  "sources": [
+    {
+      "title": "Dubliners (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dubliners"
+    },
+    {
+      "title": "James Joyce (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/James_Joyce"
+    },
+    {
+      "title": "Dubliners by James Joyce (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/james-joyce/dubliners"
+    }
+  ],
+  "people": [
+    {
+      "name": "James Joyce",
+      "role": "author",
+      "note": "Born in Dublin in 1882; left Ireland with Nora Barnacle in 1904 and taught English in Trieste.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Grant Richards",
+      "role": "printer",
+      "note": "London publisher who accepted the book in 1905, backed out over objections to some passages, and finally published it in 1914.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Maunsel & Roberts",
+      "role": "printer",
+      "note": "Dublin house that agreed to publish in 1909, then refused; its printers burned the sheets.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Eveline Hill",
+      "role": "character",
+      "note": "A young woman who weighs leaving Ireland with a sailor, Frank, for Buenos Aires.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Gabriel Conroy",
+      "role": "character",
+      "note": "Hero of \"The Dead\", who has a revelation after his wife Gretta tells him about her youthful sweetheart Michael Furey.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "James Duffy",
+      "role": "character",
+      "note": "Rebuffs his friend Emily Sinico in \"A Painful Case\" and understands, four years on, what he did to her.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Mrs Mooney",
+      "role": "character",
+      "note": "Boarding-house keeper who maneuvers her daughter Polly into marriage with a lodger.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Father James Flynn",
+      "role": "character",
+      "note": "The dead priest of \"The Sisters\", about whom a boy hears incredible stories.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Dublin",
+      "lat": 53.3498,
+      "lon": -6.2603,
+      "note": "Setting of the collection; Joyce used real locations and the slang of the time.",
+      "s": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Trieste",
+      "lat": 45.6495,
+      "lon": 13.7768,
+      "note": "Where Joyce taught English after leaving Ireland in 1904, and wrote much of the book.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Pola (Pula)",
+      "lat": 44.8683,
+      "lon": 13.8481,
+      "note": "Where Joyce briefly worked after leaving Ireland in 1904.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "London",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "note": "Home of Grant Richards, the publisher who first accepted the book in 1905, and where Ignatius Gallaher works as a journalist.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Buenos Aires",
+      "lat": -34.6037,
+      "lon": -58.3816,
+      "note": "The destination Eveline imagines for a new life with Frank.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1882,
+      "label": "James Joyce is born in Dublin on 2 February.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "year": 1904,
+      "label": "Joyce meets Nora Barnacle, leaves for continental Europe, and begins the stories.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "year": 1905,
+      "label": "Joyce first sends a manuscript to a publisher; Grant Richards agrees to publish but later backs out.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1907,
+      "label": "Joyce finishes writing the stories.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1909,
+      "label": "Maunsel & Roberts of Dublin takes the book, then refuses, and the sheets are burned.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1914,
+      "label": "Grant Richards publishes Dubliners on 15 June, using proofs saved from Maunsel.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Paralysis of a city",
+      "note": "Joyce blamed nationalism, Catholicism and British rule for a collective paralysis that runs through the stories.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "The epiphany",
+      "note": "Stories turn on a moment when a character suddenly sees himself or his situation clearly.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "A looking-glass for Ireland",
+      "note": "Joyce called the book a nicely polished looking-glass and a first step towards the spiritual liberation of Ireland.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Four stages of life",
+      "note": "The order moves from child narrators to adults to public life, ending on the long story \"The Dead\".",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "The Sisters",
+      "quote": "There was no hope for him this time: it was the third stroke.",
+      "why": "The first sentence of the collection, a death told flatly."
+    },
+    {
+      "part": 1,
+      "chapter": "Araby",
+      "quote": "Gazing up into the darkness I saw myself as a creature driven and derided by vanity; and my eyes burned with anguish and anger.",
+      "why": "The boy's epiphany at the end of Araby."
+    },
+    {
+      "part": 1,
+      "chapter": "Eveline",
+      "quote": "She set her white face to him, passive, like a helpless animal. Her eyes gave him no sign of love or farewell or recognition.",
+      "why": "Eveline at the quay, unable to follow Frank."
+    },
+    {
+      "part": 2,
+      "chapter": "A Painful Case",
+      "quote": "He gnawed the rectitude of his life; he felt that he had been outcast from life’s feast. One human being had seemed to love him and he had denied her life and happiness: he had sentenced her to ignominy, a death of shame. He knew that the prostrate creatures down by the wall were watching him and wished him gone.",
+      "why": "Duffy's late understanding of the loneliness he caused."
+    },
+    {
+      "part": 3,
+      "chapter": "The Dead",
+      "quote": "snow was general all over Ireland. It was falling on every part of the dark central plain, on the treeless hills, falling softly upon the Bog of Allen and, farther westward, softly falling into the dark mutinous Shannon waves.",
+      "why": "Opening of the book's famous ending, as the snow covers the whole country."
+    },
+    {
+      "part": 3,
+      "chapter": "The Dead",
+      "quote": "His soul swooned slowly as he heard the snow falling faintly through the universe and faintly falling, like the descent of their last end, upon all the living and the dead.",
+      "why": "The last sentence of the collection."
+    }
+  ]
+}

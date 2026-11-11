@@ -1,0 +1,302 @@
+{
+ "summary": "Captain Robert Walton writes letters home from an Arctic voyage and tells of rescuing Victor Frankenstein. Victor, a student of chemistry at Ingolstadt, learns how to give life to assembled body parts, and then flees in horror when his creature wakes. Alone, the creature teaches himself language by watching a family, meets rejection everywhere, and demands that Victor make him a companion. Victor refuses, and the creature kills his brother, his friend and his bride. Victor chases him north, dies, and the creature vows to end his own life.",
+ "context": "Mary Shelley began the story at eighteen, during a cold summer in 1816 when she, Percy Shelley, Lord Byron and John Polidori each agreed to write a ghost story. It came out anonymously in London on 1 January 1818, and her name first appeared on the French translation of 1821. A revised edition under her name followed in 1831 with a new preface about how the idea came to her, and the site carries that text. The book is Gothic and Romantic, and it spawned films, plays and a whole genre of horror.",
+ "sources": [
+  {
+   "title": "Frankenstein - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Frankenstein"
+  },
+  {
+   "title": "Frankenstein, by Mary Shelley - Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/mary-shelley/frankenstein"
+  }
+ ],
+ "people": [
+  {
+   "name": "Mary Shelley",
+   "role": "author",
+   "note": "English writer who began the novel at eighteen and published it anonymously in 1818.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Percy Bysshe Shelley",
+   "role": "subject",
+   "note": "Mary's lover and future husband, who joined the 1816 ghost-story contest.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Lord Byron",
+   "role": "subject",
+   "note": "Proposed the ghost-story contest at the Villa Diodati by Lake Geneva.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "John Polidori",
+   "role": "subject",
+   "note": "One of the four who agreed to write a ghost story in 1816.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Victor Frankenstein",
+   "role": "character",
+   "note": "Young scientist from Geneva who makes a creature and abandons it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The Creature",
+   "role": "character",
+   "note": "Learns language, finds Paradise Lost, and turns on Victor after being rejected.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Robert Walton",
+   "role": "character",
+   "note": "Ship captain whose letters frame the novel and who hears Victor's story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Elizabeth Lavenza",
+   "role": "character",
+   "note": "Victor's childhood friend, born in Italy, murdered on their wedding night.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "William Godwin",
+   "role": "subject",
+   "note": "Mary Shelley's father, with whom she grew close after her mother died.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Johann Konrad Dippel",
+   "role": "subject",
+   "note": "Alchemist who experimented at Frankenstein Castle about a century before Shelley passed nearby.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Geneva",
+   "lat": 46.2044,
+   "lon": 6.1432,
+   "note": "Victor's family home, and the region where much of the story takes place.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ingolstadt",
+   "lat": 48.7665,
+   "lon": 11.4257,
+   "note": "Victor studies at the university here and brings the creature to life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Villa Diodati, Cologny",
+   "lat": 46.22,
+   "lon": 6.176,
+   "note": "Byron's villa by Lake Geneva, where the ghost-story contest was proposed in 1816.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Gernsheim",
+   "lat": 49.7544,
+   "lon": 8.4888,
+   "note": "Shelley stopped here on the Rhine in 1815, near Frankenstein Castle.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Bath",
+   "lat": 51.3811,
+   "lon": -2.359,
+   "note": "Shelley was staying here when she started writing the story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Naples",
+   "lat": 40.8518,
+   "lon": 14.2681,
+   "note": "Victor is born here to an upper-class Genevese family.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "The first edition was published here anonymously on 1 January 1818.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Paris",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "A French translation here in 1821 first printed Shelley's name.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1815,
+   "label": "Shelley travels along the Rhine, stopping at Gernsheim near Frankenstein Castle.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1816,
+   "label": "At Byron's suggestion four friends agree to write ghost stories, and Mary begins Frankenstein.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1818,
+   "label": "The first edition is published anonymously in London on 1 January.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1821,
+   "label": "A French translation, published in Paris, is the first to name Mary Shelley.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1823,
+   "label": "A second English edition credits Shelley as author on its title page.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1831,
+   "label": "A revised one-volume edition appears under her name, with a new preface; the site carries this text.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1931,
+   "label": "James Whale's film adaptation shapes the popular image of the monster.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Creator's duty to creation",
+   "note": "Victor abandons what he makes, and the creature insists that a maker owes care to his creature.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Danger of seeking knowledge",
+   "note": "Victor warns Walton about the harm that comes from pursuing knowledge without restraint.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Rejection breeds violence",
+   "note": "The creature turns to murder only after humans, including Victor, spurn him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Nested narration",
+   "note": "Walton's letters frame Victor's account, which in turn contains the creature's own story.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Introduction",
+   "quote": "“We will each write a ghost story,” said Lord Byron; and his proposition was acceded to",
+   "why": "The 1816 contest that started the book, in Shelley's own words."
+  },
+  {
+   "part": 1,
+   "chapter": "Letter I",
+   "quote": "You will rejoice to hear that no disaster has accompanied the commencement of an enterprise which you have regarded with such evil forebodings",
+   "why": "Walton's first letter, the start of the framing narrative."
+  },
+  {
+   "part": 1,
+   "chapter": "Chapter IV",
+   "quote": "Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge, and how much happier that man is who believes his native town to be the world, than he who aspires to become greater than his nature will allow",
+   "why": "Victor's warning to Walton about the pursuit of knowledge."
+  },
+  {
+   "part": 1,
+   "chapter": "Chapter V",
+   "quote": "How can I describe my emotions at this catastrophe, or how delineate the wretch whom with such infinite pains and care I had endeavoured to form",
+   "why": "The moment the creature opens his eye."
+  },
+  {
+   "part": 2,
+   "chapter": "Chapter X",
+   "quote": "Remember, that I am thy creature; I ought to be thy Adam; but I am rather the fallen angel, whom thou drivest from joy for no misdeed",
+   "why": "The creature calls himself Adam and the fallen angel."
+  },
+  {
+   "part": 2,
+   "chapter": "Chapter XVI",
+   "quote": "Cursed, cursed creator! Why did I live? Why, in that instant, did I not extinguish the spark of existence which you had so wantonly bestowed",
+   "why": "In his own account the creature curses Victor for giving him life."
+  },
+  {
+   "part": 3,
+   "chapter": "Walton, in Continuation",
+   "quote": "I shall ascend my funeral pile triumphantly, and exult in the agony of the torturing flames",
+   "why": "The creature's vow to end his own life."
+  }
+ ],
+ "id": "frankenstein"
+}

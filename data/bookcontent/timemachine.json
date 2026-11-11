@@ -1,0 +1,179 @@
+{
+ "id": "timemachine",
+ "summary": "The Time Machine is H. G. Wells's 1895 novel about a Victorian inventor who builds a machine to travel through time. A circle of dinner guests hears his account of a journey to the year 802,701, where he meets the gentle Eloi and the underground Morlocks. He loses his machine, finds it, and travels about thirty million years further into a dying world. The book gave English the term and the concept of a time machine.",
+ "context": "Wells built the book on his 1888 college paper The Chronic Argonauts. W. E. Henley, editor of the National Observer, asked for a revision, and the story ran in the New Review in 1895. The traveller's home is at Richmond, and the Palace of Green Porcelain stands in the far future. Wells wrote a preface in 1931. Wells drew on contemporary ideas such as Ray Lankester's work on degeneration, and the Sphinx appeared on the cover of the first London edition.",
+ "sources": [
+  {
+   "url": "https://standardebooks.org/ebooks/h-g-wells/the-time-machine",
+   "title": "The Time Machine by H. G. Wells (Standard Ebooks)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/The_Time_Machine",
+   "title": "The Time Machine (Wikipedia)"
+  }
+ ],
+ "people": [
+  {
+   "name": "H. G. Wells",
+   "role": "Author",
+   "note": "Turned his earlier story The Chronic Argonauts into this novel.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "The Time Traveller",
+   "role": "Narrator figure",
+   "note": "The unnamed inventor whose story is retold by a guest.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "W. E. Henley",
+   "role": "Editor",
+   "note": "Editor of the National Observer who asked Wells to rewrite the earlier story.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Weena",
+   "role": "Character",
+   "note": "A young Eloi the Traveller rescues and travels with.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Ray Lankester",
+   "role": "Scientist",
+   "note": "His theories of degeneration lie behind the book's picture of the future.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Richmond",
+   "lat": 51.46,
+   "lon": -0.3,
+   "note": "Where the narrator visits the Time Traveller and hears of the journey.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Wimbledon",
+   "lat": 51.42,
+   "lon": -0.21,
+   "note": "Direction Weena and the Traveller walk toward in the far future.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.51,
+   "lon": -0.13,
+   "note": "Home of the first edition, whose cover carried the Sphinx.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1888,
+   "label": "Wells writes The Chronic Argonauts in a college paper",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1895,
+   "label": "The story runs in the New Review",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1895,
+   "label": "The Time Machine appears as a book",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1931,
+   "label": "Wells writes a preface for a later edition",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Time as a fourth dimension",
+   "note": "The Traveller argues that any real body must have extension in four directions.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Eloi and Morlocks",
+   "note": "A split future humanity, after the Traveller reaches the year 802,701.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Intelligence needs trouble",
+   "note": "He says intellectual versatility is the compensation for change, danger and trouble.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A dying Earth",
+   "note": "He travels about thirty million years ahead into a cooling world.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His grey eyes shone and twinkled, and his usually pale face was flushed and animated. The fire burned brightly, and the soft radiance of the incandescent lights in the lilies of silver caught the bubbles that flashed and passed in our glasses.",
+   "why": "Opens the frame story of dinner guests."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Time is only a kind of Space. Here is a popular scientific diagram, a weather record. This line I trace with my finger shows the movement of the barometer. Yesterday it was so high, yesterday night it fell, then this morning it rose again, and so gently upward to here. Surely the mercury did not trace this line in any of the dimensions of Space generally recognized?",
+   "why": "The idea at the center of the machine."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "I felt naked in a strange world. I felt as perhaps a bird may feel in the clear air, knowing the hawk wings above and will swoop. My fear grew to frenzy. I took a breathing space, set my teeth, and again grappled fiercely, wrist and knee, with the machine. It gave under my desperate onset and turned over. It struck my chin violently.",
+   "why": "Marks the Traveller's loss of footing after he arrives."
+  },
+  {
+   "part": 1,
+   "chapter": "X",
+   "quote": "It is a law of nature we overlook, that intellectual versatility is the compensation for change, danger, and trouble. An animal perfectly in harmony with its environment is a perfect mechanism. Nature never appeals to intelligence until habit and instinct are useless. There is no intelligence where there is no change and no need of change.",
+   "why": "The Traveller's theory of why the Eloi decline."
+  },
+  {
+   "part": 2,
+   "chapter": "XII",
+   "quote": "The Time Traveller turned to us. “Where are the matches?” he said. He lit one and spoke over his pipe, puffing. “To tell you the truth⁠ ⁠… I hardly believe it myself.⁠ ⁠… And yet⁠ ⁠…” His eye fell with a mute inquiry upon the withered white flowers upon the little table.",
+   "why": "Ends the book on the pocket flowers as proof."
+  }
+ ]
+}

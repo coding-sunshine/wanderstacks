@@ -1,0 +1,204 @@
+{
+ "id": "jane-austen-persuasion",
+ "summary": "Anne Elliot is 27, unmarried, and overlooked by her vain father Sir Walter and her sister Elizabeth. Eight years earlier she broke her engagement to the naval officer Frederick Wentworth because her friend Lady Russell and her family thought him a poor match. Debts force the Elliots to let Kellynch Hall and move to Bath, and Wentworth returns from the war with a fortune, still hurt. Anne meets him again among the Musgroves, at Lyme and then in Bath, where a suitor in her own family complicates matters. Both come to see what the broken engagement cost them.",
+ "context": "Persuasion was the last novel Jane Austen completed. She died in July 1817, and it was published with Northanger Abbey on 20 December of that year, six months later, with a title page dated 1818. It was well received at first, but its larger fame came later in the century. Scholars now often call Anne Austen's most mature heroine and the book her most refined. It shows Austen's free indirect speech, which lets the narrator report characters' thoughts and self-deceptions, and it is set just after the Napoleonic Wars, which made some naval officers rich.",
+ "sources": [
+  {
+   "title": "Persuasion (novel) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Persuasion_(novel)"
+  },
+  {
+   "title": "Jane Austen (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Jane_Austen"
+  },
+  {
+   "title": "Persuasion by Jane Austen (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/jane-austen/persuasion"
+  }
+ ],
+ "people": [
+  {
+   "name": "Jane Austen",
+   "role": "author",
+   "note": "English novelist who died in July 1817, before this last completed novel was published.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Anne Elliot",
+   "role": "character",
+   "note": "The second daughter of Sir Walter, intelligent and unmarried at 27, who once let herself be persuaded to give up Wentworth.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Captain Frederick Wentworth",
+   "role": "character",
+   "note": "A naval officer, now wealthy from captured prize ships, who has not forgiven Anne for ending their engagement.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sir Walter Elliot",
+   "role": "character",
+   "note": "A vain baronet whose lavish spending forces the family to let Kellynch Hall.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lady Russell",
+   "role": "character",
+   "note": "Anne's second mother, who persuaded her to break the engagement.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Admiral Croft",
+   "role": "character",
+   "note": "Takes the lease of Kellynch Hall; his wife Sophia is Wentworth's sister.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Louisa Musgrove",
+   "role": "character",
+   "note": "Charles Musgrove's sister, seriously hurt in a fall at Lyme.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "William Elliot",
+   "role": "character",
+   "note": "Anne's cousin, a wealthy widower and heir to Kellynch Hall, who courts her in Bath.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Bath",
+   "lat": 51.3811,
+   "lon": -2.359,
+   "note": "The Elliots move here to cut expenses, and the story's resolution plays out in the city.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lyme Regis",
+   "lat": 50.7253,
+   "lon": -2.937,
+   "note": "Coastal town where Anne's party visits Captains Harville and Benwick and where Louisa is injured.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1775,
+   "label": "Jane Austen is born on 16 December.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1811,
+   "label": "Austen's first novel, Sense and Sensibility, appears anonymously.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1817,
+   "label": "Austen dies in July; Persuasion is published with Northanger Abbey on 20 December.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1818,
+   "label": "The date printed on the title page of the first edition.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Persuasion and self-trust",
+   "note": "Anne yielded to advice at 19 and has paid for it for eight years; the book asks when to take advice and when to follow one's own feeling.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Rank against merit",
+   "note": "The Elliots judge Wentworth by his lack of status, while the navy offers men of worth a way up.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Inner life through narration",
+   "note": "Free indirect speech lets the narrator show characters' thoughts and self-deceptions without quoting them.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A second chance",
+   "note": "Both Anne and Wentworth must learn about themselves before they can come together again.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "IV",
+   "quote": "She had been forced into prudence in her youth, she learned romance as she grew older: the natural sequel of an unnatural beginning.",
+   "why": "A single sentence that sums up Anne's history and the book's argument."
+  },
+  {
+   "part": 1,
+   "chapter": "IV",
+   "quote": "persuaded to believe the engagement a wrong thing: indiscreet, improper, hardly capable of success, and not deserving it. But it was not a merely selfish caution, under which she acted, in putting an end to it.",
+   "why": "The reasons behind the broken engagement, given from Anne's side."
+  },
+  {
+   "part": 2,
+   "chapter": "XII",
+   "quote": "There was no wound, no blood, no visible bruise; but her eyes were closed, she breathed not, her face was like death. The horror of that moment to all who stood around! Captain Wentworth, who had caught her up, knelt with her in his arms, looking on her with a face as pallid as her own, in an agony of silence.",
+   "why": "Louisa's fall on the Cobb at Lyme, the book's one moment of physical crisis."
+  },
+  {
+   "part": 3,
+   "chapter": "XXIII",
+   "quote": "Men have had every advantage of us in telling their own story. Education has been theirs in so much higher a degree; the pen has been in their hands. I will not allow books to prove anything.",
+   "why": "Anne's reply to Captain Harville, a rare direct comment on who gets to tell the story."
+  },
+  {
+   "part": 3,
+   "chapter": "XXIII",
+   "quote": "All the privilege I claim for my own sex (it is not a very enviable one; you need not covet it), is that of loving longest, when existence or when hope is gone.",
+   "why": "Anne speaks within Wentworth's hearing, and her words prompt his letter."
+  },
+  {
+   "part": 3,
+   "chapter": "XXIII",
+   "quote": "You pierce my soul. I am half agony, half hope. Tell me not that I am too late, that such precious feelings are gone forever. I offer myself to you again with a heart even more your own than when you almost broke it, eight years and a half ago.",
+   "why": "Wentworth's letter, among the most quoted love letters in English fiction."
+  }
+ ]
+}

@@ -1,0 +1,234 @@
+{
+ "id": "gita",
+ "summary": "The Gita is a dialogue of eighteen chapters between the warrior Arjuna and his charioteer Krishna, held between two armies on the eve of a great battle. Arjuna sees kinsmen and teachers on the other side and refuses to fight. Krishna answers with a teaching on the undying self, on acting without clinging to results, on duty, devotion and knowledge, and shows Arjuna his terrifying cosmic form. This edition is Edwin Arnold's 1885 verse rendering, The Song Celestial, which brought the text to many English readers.",
+ "context": "The Gita sits inside the Mahabharata and is usually dated to the second or first century BCE, though estimates run from the fifth century BCE to the first century CE. Tradition names the sage Vyasa as author, while scholars treat it as a composite. Charles Wilkins made the first English translation in 1785, with an introduction by Warren Hastings. Edwin Arnold's verse version of 1885 is the one here. Commentators from Shankara and Ramanuja to Gandhi have read it differently, as a call to selfless action, a path of devotion, or a lesson in knowledge.",
+ "sources": [
+  {
+   "title": "Bhagavad Gita (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Bhagavad_Gita"
+  },
+  {
+   "title": "The Song Celestial; Or, Bhagavad-Gita (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/2388"
+  }
+ ],
+ "people": [
+  {
+   "name": "Arjuna",
+   "role": "character",
+   "note": "Pandava prince who loses heart before the battle and receives Krishna's teaching.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Krishna",
+   "role": "character",
+   "note": "Arjuna's charioteer and guide, presented as an avatar of Vishnu, who delivers the teaching.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Vyasa",
+   "role": "traditional author",
+   "note": "Sage to whom tradition attributes the Gita and the Mahabharata; scholars consider the name symbolic.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sir Edwin Arnold",
+   "role": "translator",
+   "note": "Rendered the Gita into English verse as The Song Celestial, published in 1885.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Charles Wilkins",
+   "role": "translator",
+   "note": "Published the first English translation in 1785.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Adi Shankara",
+   "role": "commentator",
+   "note": "Eighth-century commentator who states the text has 700 verses and reads the Gita through non-dual Vedanta.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ramanuja",
+   "role": "commentator",
+   "note": "Sri Vaishnava teacher of the 11th and early 12th centuries whose Gita Bhashya reads Krishna as a personal Lord.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mahatma Gandhi",
+   "role": "reader",
+   "note": "Memorised the last 19 verses of chapter two and called the Gita the Gospel of Selfless Action.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Kurukshetra",
+   "lat": 29.9695,
+   "lon": 76.8783,
+   "note": "The battlefield where the dialogue is set, called the Field of Dharma in the first verse.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Udupi",
+   "lat": 13.3409,
+   "lon": 74.7421,
+   "note": "Home of the Madhva tradition, in which Krishna is the central deity and the Gita is read in a dualist way.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kashmir",
+   "lat": 34.0837,
+   "lon": 74.7973,
+   "note": "Region where an alternate version of the Gita survives.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -400,
+   "label": "Earliest scholarly estimates place the Gita's composition around the fifth century BCE.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -200,
+   "label": "About 200 BCE is suggested as the date of a major revision; the usual dating is the second or first century BCE.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 800,
+   "label": "Shankara writes his commentary, stating the Gita has 700 verses.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1785,
+   "label": "Charles Wilkins publishes the first English translation, with an introduction by Warren Hastings.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1885,
+   "label": "Edwin Arnold publishes The Song Celestial, the poetic translation used here.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "The self that does not die",
+   "note": "Krishna tells Arjuna that the spirit is never born and never ends, so grief over the slain is misplaced.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Act without clinging to the fruit",
+   "note": "Work is to be done as duty, with equanimity in good and bad outcomes. Gandhi named this selfless action.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Dharma, one's own duty",
+   "note": "The text praises doing one's own duty imperfectly over another's well, against the ascetic ideal of leaving all action.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Devotion to God",
+   "note": "Arjuna is told to give all action to God, joining yoga and knowledge with bhakti.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Battlefield as allegory",
+   "note": "Many readers take the war as the struggle inside a person, and the dialogue as one between individual and supreme self.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "CHAPTER I",
+   "quote": "On Kurukshetra--say, Sanjaya! say What wrought my people, and the Pandavas? Sanjaya: When he beheld the host of Pandavas, Raja Duryodhana to Drona drew, And spake these words: \"Ah, Guru! see this line, How vast it is of Pandu fighting-men, Embattled by the son of Drupada, Thy scholar in the war!",
+   "why": "The poem opens on the plain of battle, with a blind king asking what his sons and the Pandavas did."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER II",
+   "quote": "Thou grievest where no grief should be! thou speak'st Words lacking wisdom! for the wise in heart Mourn not for those that live, nor those that die. Nor I, nor thou, nor any one of these, Ever was not, nor ever will not be, For ever and for ever afterwards.",
+   "why": "Krishna begins his answer to Arjuna: neither the living nor the dead are to be mourned."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER II",
+   "quote": "Never the spirit was born; the spirit shall cease to be never; Never was time it was not; End and Beginning are dreams! Birthless and deathless and changeless remaineth the spirit for ever; Death hath not touched it at all, dead though the house of it seems! Who knoweth it exhaustless, self-sustained, Immortal, indestructible,--shall such Say, \"I have killed a man, or caused to kill?\"",
+   "why": "The teaching that the self is deathless, central to the case against Arjuna's grief."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER II",
+   "quote": "And live in action! Labour! Make thine acts Thy piety, casting all self aside, Contemning gain and merit; equable In good or evil: equability Is Yog, is piety! Yet, the right act Is less, far less, than the right-thinking mind. Seek refuge in thy soul; have there thy heaven! Scorn them that follow virtue for her gifts!",
+   "why": "The doctrine of working without self, treating action itself as devotion."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER II",
+   "quote": "from attraction grows desire, Desire flames to fierce passion, passion breeds Recklessness; then the memory--all betrayed-- Lets noble purpose go, and saps the mind, Till purpose, mind, and man are all undone.",
+   "why": "The chain from sense attachment to ruin of mind, a short account of how desire undoes purpose."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER XI",
+   "quote": "Thou seest Me as Time who kills, Time who brings all to doom, The Slayer Time, Ancient of Days, come hither to consume; Excepting thee, of all these hosts of hostile chiefs arrayed, There stands not one shall leave alive the battlefield! Dismayed No longer be! Arise! obtain renown! destroy thy foes!",
+   "why": "Krishna reveals himself as Time the destroyer and tells Arjuna to rise and fight."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER XVIII",
+   "quote": "Better thine own work is, though done with fault, Than doing others' work, ev'n excellently. He shall not fall in sin who fronts the task Set him by Nature's hand! Let no man leave His natural duty, Prince! though it bear blame!",
+   "why": "Duty and its flaws: every work has blame, as every flame is wrapped in smoke."
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "id": "volsunga",
+ "summary": "The Volsunga Saga is an Old Norse prose saga of the Volsung family. It begins with Sigi, a son of Odin, and runs through Sigmund, Sinfjotli and Sigurd. Sigurd slays the dragon Fafnir, wins gold and wakes the valkyrie Brynhild. Through the schemes of Grimhild he marries Gudrun instead. Brynhild has him killed, and Gudrun's marriage to Atli ends in feud and fire. This edition adds translated excerpts from the Poetic Edda.",
+ "context": "The saga was written in the late 13th century and is based on poems of the Elder Edda. It echoes the destruction of the Burgundians by the Huns in the fifth century. The Ramsund carving in Sweden, from about 1000 CE, shows scenes from Sigurd's story, which suggests the tale was known well before the saga was written. Sigurd's sword Gram is mended from the shards of Sigmund's blade.",
+ "sources": [
+  {
+   "url": "https://www.gutenberg.org/ebooks/1152",
+   "title": "The Volsunga Saga (Project Gutenberg)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/V%C3%B6lsunga_saga",
+   "title": "Völsunga saga (Wikipedia)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Sigi",
+   "role": "Founder",
+   "note": "Son of Odin and first of the line in chapter one.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sigmund",
+   "role": "Volsung",
+   "note": "Father of Sigurd; wields the sword later reforged as Gram.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sigurd",
+   "role": "Hero",
+   "note": "Slays Fafnir and wakes Brynhild.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Brynhild",
+   "role": "Valkyrie",
+   "note": "Her wrath leads to Sigurd's death.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gudrun",
+   "role": "Wife",
+   "note": "Marries Sigurd, then Atli.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Atli",
+   "role": "King",
+   "note": "Invites the Giukings to a fatal feast.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Ramsund, Sweden",
+   "lat": 59.37,
+   "lon": 16.72,
+   "note": "Site of a carving of Sigurd's story, dated about 1000 CE.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Denmark",
+   "lat": 56,
+   "lon": 10,
+   "note": "Kingdom named repeatedly in the saga.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Norway",
+   "lat": 61,
+   "lon": 9,
+   "note": "Land named repeatedly in the saga.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 450,
+   "label": "Huns destroy the Burgundian kingdom, an event the saga echoes (approximate)",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1000,
+   "label": "Ramsund carving made (approximate)",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1290,
+   "label": "Saga written in the late 13th century (approximate)",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1030,
+   "label": "Alternative dating of the Ramsund carving, about 1030",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Fate and vengeance",
+   "note": "Revenge drives each generation of the family.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The cursed gold",
+   "note": "Fafnir's hoard brings ruin on its owners.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Heroic honor",
+   "note": "Characters speak of reward and loyalty in formal terms.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Women as agents",
+   "note": "Brynhild and Gudrun shape the plot.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "CHAPTER I. Of Sigi, the Son of Odin.",
+   "quote": "Here begins the tale, and tells of a man who was named Sigi, and called of men the son of Odin; another man withal is told of in the tale, hight Skadi, a great man and mighty of his hands; yet was Sigi the mightier and the higher of kin, according to the speech of men of that time.",
+   "why": "Opening of the saga proper, with Sigi."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER XVII. Of Sigurd's Avenging of Sigmund his Father.: Now Sigurd went to the kings, and spake thus—",
+   "quote": "Now Sigurd went to the kings, and spake thus— \"Here have I abode a space with you, and I owe you thanks and reward, for great love and many gifts and all due honour; but now will I away from the land and go meet the sons of Hunding, and do them to wit that the Volsungs are not all dead; and your might would I have to strengthen me therein.\"",
+   "why": "Sigurd leaves to avenge his father."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER XIV. Regin's tale of his Brothers, and of the Gold called Andvari's Hoard.",
+   "quote": "\"Hreidmar was my father's name, a mighty man and a wealthy: and his first son was named Fafnir, his second Otter, and I was the third, and the least of them all both for prowess and good conditions, but I was cunning to work in iron, and silver, and gold, whereof I could make matters that availed somewhat.",
+   "why": "Regin begins the story of the gold."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER XXIX. Of Brynhild's great Grief and Mourning.",
+   "quote": "Awake, Brynhild! The sun shineth now over all the house, and thou hast slept enough; cast off grief from thee, and take up gladness!\" She said, \"And how then hast thou dared to come to me? in this treason none was worse to me than thou.\" Said Sigurd, \"Why wilt thou not speak to folk? for what cause sorrowest thou?\" Brynhild answers, \"Ah, to thee will I tell of my wrath!\"",
+   "why": "Sigurd wakes the shield-maiden."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER XXXIV. Atli bids the Giukings to him.: Now tells the tale that on a night King Atli woke from sleep and spake to Gudrun—",
+   "quote": "Now tells the tale that on a night King Atli woke from sleep and spake to Gudrun— \"Medreamed,\" said he, \"that thou didst thrust me through with a sword.\" Then Gudrun areded the dream, and said that it betokened fire, whenas folk dreamed of iron. \"It befalls of thy pride belike, in that thou deemest thyself the first of men.\"",
+   "why": "Atli's dream foreshadows the feud."
+  }
+ ]
+}

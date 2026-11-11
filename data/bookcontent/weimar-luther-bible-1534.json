@@ -1,0 +1,221 @@
+{
+  "id": "weimar-luther-bible-1534",
+  "summary": "The first complete Bible in German, translated by Martin Luther with a team and printed at Wittenberg in 1534. It joined the New Testament of 1522 to a new Old Testament and the Apocrypha, 75 books in all, in clear everyday German rather than word-for-word Latin. The edition was set in six parts and filled with 117 woodcuts. The Weimar copy shown here holds the Old Testament, from the cover and title page through Genesis, Exodus and the later books to the Song of Songs.",
+  "context": "Luther made the New Testament in about eleven weeks while hiding at Wartburg Castle in 1521 and 1522. He then worked with Melanchthon, Bugenhagen, Jonas, Creuziger, Aurogallus and Rörer on the whole Bible. Hans Lufft printed the 1534 edition in Wittenberg and offered it at the Michaelmas fair. It sold about 200,000 copies in many editions before Luther died in 1546, helped spread literacy, and shaped the German language. The Weimar copy belongs to the Herzogin Anna Amalia Bibliothek, shelfmark Cl I : 58 (b).",
+  "sources": [
+    {
+      "title": "Luther Bible (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Luther_Bible"
+    },
+    {
+      "title": "Herzogin Anna Amalia Bibliothek, IIIF manifest of the 1534 Bible, Cl I : 58 (b)",
+      "url": "https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/935008438/manifest/"
+    }
+  ],
+  "people": [
+    {
+      "name": "Martin Luther",
+      "role": "translator",
+      "note": "Reformer who translated the Bible into German and kept revising it until 1546.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Philipp Melanchthon",
+      "role": "translator",
+      "note": "Greek scholar who helped with the New Testament and with the Apocrypha.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Matthäus Aurogallus",
+      "role": "translator",
+      "note": "Linguist and Hebrew scholar on the translation team.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Johannes Bugenhagen",
+      "role": "translator",
+      "note": "Collaborator on the 1534 edition.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Georg Rörer",
+      "role": "scribe",
+      "note": "Collaborator on the 1534 edition.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Hans Lufft",
+      "role": "printer",
+      "note": "Wittenberg printer who produced the 1534 edition and over 100,000 copies by 1574.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Erasmus of Rotterdam",
+      "role": "subject",
+      "note": "His Greek and Latin New Testament of 1519 was one textual basis for Luther's New Testament.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Wittenberg",
+      "lat": 51.8671,
+      "lon": 12.6484,
+      "note": "Where Lufft printed the 1534 Bible and sold it at the Michaelmas fair.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Wartburg Castle, Eisenach",
+      "lat": 50.9667,
+      "lon": 10.3066,
+      "note": "Luther made the first draft of his New Testament here in 1521 and 1522.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Weimar",
+      "lat": 50.9795,
+      "lon": 11.3235,
+      "note": "The Herzogin Anna Amalia Bibliothek holds this copy.",
+      "s": [
+        1
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1519,
+      "label": "Erasmus publishes the Greek and Latin New Testament that Luther used.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1522,
+      "label": "Luther's New Testament, the September Bible, is printed.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1534,
+      "label": "The complete Bible in six parts appears from the Lufft press in Wittenberg, with 117 woodcuts.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1546,
+      "label": "Luther dies after revising the text up to his last edition.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1574,
+      "label": "By now Lufft has printed over 100,000 copies of the Bible.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Idiomatic German over literalism",
+      "note": "Luther chose natural German phrasing rather than word-for-word translation from the Vulgate.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Apocrypha set apart",
+      "note": "Luther gathered the apocryphal books between the Old and New Testaments instead of dropping them.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Pictures reinforce the text",
+      "note": "The 1534 edition carries 117 original woodcuts, such as the Creation, the Flood and the Golden Calf.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "title": "A team translation",
+      "note": "Luther relied on scholars of Greek and Hebrew and on editors, not on his own work alone.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "n": 9,
+      "note": "The title page of the volume.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "n": 11,
+      "note": "The dedication page.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "n": 24,
+      "note": "A woodcut of the Creation of the world, before Genesis.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "n": 25,
+      "note": "The first leaves of the First Book of Moses, Genesis.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "n": 111,
+      "note": "A woodcut of the Israelites crossing the Red Sea.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "n": 138,
+      "note": "A woodcut of the dance around the Golden Calf.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "n": 720,
+      "note": "The Psalter opens with a woodcut of David as psalmist with his harp.",
+      "s": [
+        1
+      ]
+    }
+  ]
+}

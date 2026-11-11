@@ -1,0 +1,169 @@
+{
+  "facts": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "built",
+      "value": "Named for its founder King John V of Portugal, who began construction in 1717. Received its first books in 1750.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "who began construction on the library in 1717",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'who\\s+began\\s+construction\\s+on\\s+the\\s+libr'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "architect",
+      "value": "English Wikipedia infobox names the architect as João Carvalho Ferreira; style Baroque.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "Architect João Carvalho Ferreira Style Baroque",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Architect\\s+Jo.o\\s+Carvalho\\s+Ferreira\\s+S'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "dims",
+      "value": "Exterior walls are around 2.11 m (83 in) thick.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "exterior walls around 2.11 metres (83 in) thick",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'exterior\\s+walls\\s+around\\s+2.11\\s+metres'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "dims",
+      "value": "About 1250 square metres of usable area today, gained by arranging two levels of cellars.",
+      "source": "https://pt.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "Os seus cerca de 1250 m² úteis actuais foram obtidos com o arranjo de dois níveis de caves",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://pt.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Os\\s+seus\\s+cerca\\s+de\\s+1250\\s+m.\\s+.teis\\s+act'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "collection",
+      "value": "Constant temperature of 18-20 C kept with a teak door to the vault; humidity around 60%.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "constant temperature of 18–20 °C",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'constant\\s+temperature\\s+of\\s+18.20\\s+.C'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "volumes",
+      "value": "Counts differ in one source set: about 70,000 volumes (infobox, lead, Portuguese article) versus about 200,000 (architecture section of the English article).",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "It is home to more than 70,000 volumes",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'It\\s+is\\s+home\\s+to\\s+more\\s+than\\s+70.000\\s+vol'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "collection",
+      "value": "Books are protected from insects by a colony of bats living in the library.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "whose books are protected from insects by the presence of a colony of bats within the library",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'whose\\s+books\\s+are\\s+protected\\s+from\\s+ins'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "architect",
+      "value": "Carver Francesco Gualdini made the woodwork; shelves painted and gilded by Manuel da Silva.",
+      "source": "https://pt.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "a pintura e douradura das estantes foi realizada por Manuel da Silva",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://pt.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'a\\s+pintura\\s+e\\s+douradura\\s+das\\s+estantes'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "built",
+      "value": "Painted ceilings by the Lisbon artists Simoes Ribeiro and Vicente Nunes; executed by Domenico Dupra in 1725.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "executed by Domenico Duprà in 1725",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'executed\\s+by\\s+Domenico\\s+Dupr.\\s+in\\s+1725'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "status_note",
+      "value": "Designated UNESCO World Heritage in 2013 as part of the University of Coimbra (reference 1387).",
+      "source": "https://en.wikipedia.org/wiki/University_of_Coimbra",
+      "tier": "wikipedia",
+      "quote": "Reference no. 1387",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/University_of_Coimbra' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Reference\\s+no.\\s+1387'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "field": "status_note",
+      "value": "Added to the biennial World Monuments Watch list in 2014.",
+      "source": "https://pt.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "em 2014 a Biblioteca entrou para a lista bienal do World Monuments Watch",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://pt.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'em\\s+2014\\s+a\\s+Biblioteca\\s+entrou\\s+para\\s+a'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "kind": "founded",
+      "year": 1717,
+      "earliest": 1717,
+      "latest": 1717,
+      "label": "Construction begun under King John V",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "who began construction on the library in 1717",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'who\\s+began\\s+construction\\s+on\\s+the\\s+libr'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "kind": "built",
+      "year": 1728,
+      "earliest": 1717,
+      "latest": 1728,
+      "label": "Construction completed",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "its construction completed between 1717 and 1728",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'its\\s+construction\\s+completed\\s+between'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "joanina",
+      "kind": "opened",
+      "year": 1750,
+      "earliest": 1750,
+      "latest": 1750,
+      "label": "Library receives its first books",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
+      "tier": "wikipedia",
+      "quote": "received its first books in 1750",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'received\\s+its\\s+first\\s+books\\s+in\\s+1750'"
+    }
+  ]
+}

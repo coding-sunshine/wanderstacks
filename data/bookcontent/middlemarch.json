@@ -1,0 +1,224 @@
+{
+  "id": "middlemarch",
+  "summary": "Set in a fictional Midlands town in the years just before the 1832 Reform Act, the novel follows several linked lives. Dorothea Brooke, a rich young woman of religious idealism, marries the much older scholar Edward Casaubon and finds the marriage sterile. Dr Tertius Lydgate has medical ambitions, Fred Vincy and Mary Garth have an uncertain courtship, and the banker Nicholas Bulstrode is headed for a fall. Eliot weighs marriage, reform, vocation and the cost of idealism in a settled community facing change.",
+  "context": "Mary Ann Evans, writing as George Eliot, built the book from two unfinished pieces of 1869 and 1870: a novel about Lydgate and a story called Miss Brooke about Dorothea. By March 1871 she was merging them. Her publisher John Blackwood proposed eight instalments, a method borrowed from Les Misérables. They appeared from December 1871 to December 1872, with a four-volume edition in parallel. Early reviews were mixed. About seventy years later it was seen as her best work and one of the great English novels.",
+  "sources": [
+    {
+      "title": "Middlemarch (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Middlemarch"
+    },
+    {
+      "title": "George Eliot (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/George_Eliot"
+    }
+  ],
+  "people": [
+    {
+      "name": "George Eliot",
+      "role": "author",
+      "note": "Pen name of Mary Ann Evans, English novelist, 1819 to 1880.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "George Henry Lewes",
+      "role": "partner and agent",
+      "note": "Lived with Eliot from 1854 and acted as her literary agent.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "John Blackwood",
+      "role": "publisher",
+      "note": "Suggested issuing the novel in eight parts.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Dorothea Brooke",
+      "role": "character",
+      "note": "Wealthy, idealistic young woman who marries Casaubon.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Edward Casaubon",
+      "role": "character",
+      "note": "Older clergyman and scholar; Dorothea hopes to help with his research.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Tertius Lydgate",
+      "role": "character",
+      "note": "Doctor with medical ambitions.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Fred Vincy",
+      "role": "character",
+      "note": "One of the romantic strands, with Mary Garth.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Nicholas Bulstrode",
+      "role": "character",
+      "note": "Banker who is eventually brought down.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Nuneaton, Warwickshire",
+      "lat": 52.5232,
+      "lon": -1.4652,
+      "note": "Where Mary Ann Evans was born.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Coventry",
+      "lat": 52.4068,
+      "lon": -1.5197,
+      "note": "Eliot attended Miss Franklin's school here from ages thirteen to sixteen.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Rome",
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "note": "Dorothea's honeymoon, where she finds the marriage sterile.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1819,
+      "label": "Mary Ann Evans is born on 22 November.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "year": 1854,
+      "label": "Eliot begins living with George Henry Lewes.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "year": 1869,
+      "label": "Eliot starts the Middlemarch novel; her work stops after the death of Lewes's son Thornie.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1871,
+      "label": "The novel is completed and the instalments begin in December.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1872,
+      "label": "The final instalments appear in December.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1880,
+      "label": "Eliot dies on 22 December.",
+      "s": [
+        1
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Status of women",
+      "note": "The novel treats the status of women and the nature of marriage.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Idealism and self-interest",
+      "note": "Dorothea's idealism meets the limits of her marriage and her community.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Reform and change",
+      "note": "It looks at the Reform Act 1832, early railways, and a settled community facing unwelcome change.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Realism",
+      "note": "Eliot is known for realism, psychological insight and a sense of place.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "title": "Medicine",
+      "note": "The novel looks at medicine of the time through Lydgate.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "Prelude",
+      "quote": "Who that cares much to know the history of man, and how the mysterious mixture behaves under the varying experiments of Time, has not dwelt, at least briefly, on the life of Saint Theresa, has not smiled with some gentleness at the thought of the little girl walking forth one morning hand-in-hand with her still smaller brother, to go and seek martyrdom in the country of the Moors?",
+      "why": "The Prelude compares Dorothea to Saint Theresa."
+    },
+    {
+      "part": 1,
+      "chapter": "I",
+      "quote": "Miss Brooke had that kind of beauty which seems to be thrown into relief by poor dress.",
+      "why": "Opening line, in a calm and sharp tone."
+    },
+    {
+      "part": 3,
+      "chapter": "XX",
+      "quote": "If we had a keen vision and feeling of all ordinary human life, it would be like hearing the grass grow and the squirrel’s heart beat, and we should die of that roar which lies on the other side of silence. As it is, the quickest of us walk about well wadded with stupidity.",
+      "why": "Eliot on how ordinary life goes unnoticed."
+    },
+    {
+      "part": 11,
+      "chapter": "Finale",
+      "quote": "finely touched spirit had still its fine issues, though they were not widely visible. Her full nature, like that river of which Cyrus broke the strength, spent itself in channels which had no great name on the earth.",
+      "why": "Final judgment on Dorothea's life."
+    },
+    {
+      "part": 11,
+      "chapter": "Finale",
+      "quote": "for the growing good of the world is partly dependent on unhistoric acts; and that things are not so ill with you and me as they might have been, is half owing to the number who lived faithfully a hidden life, and rest in unvisited tombs.",
+      "why": "The famous closing thought about hidden lives."
+    }
+  ]
+}

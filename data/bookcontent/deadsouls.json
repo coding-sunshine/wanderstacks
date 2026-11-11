@@ -1,0 +1,259 @@
+{
+ "summary": "Chichikov, a gentleman of modest means, drives his britchka into a provincial Russian town and begins buying the names of dead serfs from the local landowners. Serfs are counted as souls in the property registers, and the dead ones still count until the next census. Each squire is a type: sentimental Manilov, the widow Korobochka, the bully Nozdrev, the miser Plyushkin. Gogol meant the book as a prose epic, the first part of three. The surviving second part breaks off, and the novel ends in mid-sentence.",
+ "context": "Gogol published Dead Souls in Moscow in 1842. His friend Pushkin suggested the plot. He meant it as the Inferno of Russian life, with later parts showing Chichikov's regeneration. Shortly before his death in 1852 he burned the manuscript of the second part, and editors have rebuilt what survives from his notebooks. Many English versions followed, from Hapgood in 1886 to Hogarth in 1916. The site carries Hogarth's translation in the Standard Ebooks edition, with the translator's introduction.",
+ "sources": [
+  {
+   "title": "Dead Souls (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Dead_Souls"
+  },
+  {
+   "title": "Nikolai Gogol (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Nikolai_Gogol"
+  },
+  {
+   "title": "Dead Souls, translated by C. J. Hogarth, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/nikolai-gogol/dead-souls/c-j-hogarth"
+  }
+ ],
+ "people": [
+  {
+   "name": "Nikolai Gogol",
+   "role": "author",
+   "note": "Russian novelist of Ukrainian origin who lived from 1809 to 1852.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Pavel Ivanovich Chichikov",
+   "role": "character",
+   "note": "The traveller who buys dead serfs, and the book's picture of complacent vulgarity.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alexander Pushkin",
+   "role": "subject",
+   "note": "Gogol's friend, who suggested the plot.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Sobakevich",
+   "role": "character",
+   "note": "A strong, silent and economical squire.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Manilov",
+   "role": "character",
+   "note": "A sentimentalist among the landowners Chichikov visits.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Madame Korobochka",
+   "role": "character",
+   "note": "A widow who owns serfs.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nozdryov",
+   "role": "character",
+   "note": "A bully among the squires.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Plyushkin",
+   "role": "character",
+   "note": "A miser who seems to rise above the book's vulgarity because he is miserable, not complacent.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "C. J. Hogarth",
+   "role": "translator",
+   "note": "Made the 1916 English translation that is now in the public domain.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lon": 37.6173,
+   "note": "The first edition appeared here in 1842.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Saint Petersburg",
+   "lat": 59.9343,
+   "lon": 30.3351,
+   "note": "Gogol went here after college and took a clerk's post.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Rome",
+   "lat": 41.9028,
+   "lon": 12.4964,
+   "note": "Gogol's favourite refuge, to which he returned again and again.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Jerusalem",
+   "lat": 31.7683,
+   "lon": 35.2137,
+   "note": "Gogol made a pilgrimage to the Holy Land in 1848.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1809,
+   "label": "Gogol is born in Little Russia, now Ukraine.",
+   "s": [
+    1,
+    2
+   ]
+  },
+  {
+   "year": 1842,
+   "label": "Dead Souls is first published in Moscow.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1848,
+   "label": "Gogol makes a pilgrimage to the Holy Land.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 1852,
+   "label": "Gogol dies, having burned the second part of the novel shortly before.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1886,
+   "label": "Isabel Hapgood publishes the first English translation in the list.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1916,
+   "label": "C. J. Hogarth's translation appears.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Dead serfs as property",
+   "note": "Serfs were counted as souls in registers, so dead ones still counted and could be traded or mortgaged.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Poshlost and vulgarity",
+   "note": "The characters stand for different kinds of moral and spiritual commonplace.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Satire of Russian bureaucracy",
+   "note": "The novel mocks the Russian middle aristocracy and the system around them.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A poem in prose",
+   "note": "Gogol called it an epic poem in prose and planned it as a Divine Comedy of Russian life.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Introduction",
+   "quote": "first published in 1842, is the great prose classic of Russia.",
+   "why": "The translator's view of the novel's place."
+  },
+  {
+   "part": 1,
+   "chapter": "Part I: I",
+   "quote": "To the door of an inn in the provincial town of N. there drew up a smart britchka ⁠—a light spring-carriage of the sort affected by bachelors, retired lieutenant-colonels, staff-captains, landowners possessed of about a hundred souls, and, in short, all persons who rank as gentlemen of the intermediate category",
+   "why": "The opening scene of Chichikov's arrival."
+  },
+  {
+   "part": 2,
+   "chapter": "IV",
+   "quote": "Upon that Chichikov recognised Nozdrev⁠—the man whom he had met at dinner at the Public Prosecutor’s, and who, within a minute or two of the introduction, had become so intimate with his fellow guest as to address him in the second person singular, in spite of the fact that Chichikov had given him no opportunity for doing so",
+   "why": "The bully Nozdryov appears."
+  },
+  {
+   "part": 3,
+   "chapter": "VII",
+   "quote": "Plushkin’s list was distinguished by a conciseness of exposition which had led to certain of the items being represented merely by Christian name, patronymic, and a couple of dots; and Sobakevitch’s list was remarkable for its amplitude and circumstantiality, in that not a single peasant had such of his peculiar characteristics omitted as that the deceased had been “excellent at joinery,” or “sobe",
+   "why": "The dead-soul lists on the page."
+  },
+  {
+   "part": 4,
+   "chapter": "XI",
+   "quote": "Ah, Russia, Russia, from my beautiful home in a strange land I can still see you",
+   "why": "The lyric address to Russia."
+  },
+  {
+   "part": 4,
+   "chapter": "Part II: I",
+   "quote": "Why do I so persistently paint the poverty, the imperfections of Russian life, and delve into the remotest depths, the most retired holes and corners, of our Empire for my subjects",
+   "why": "The second part's reflection on the author's purpose."
+  },
+  {
+   "part": 5,
+   "chapter": "III",
+   "quote": "“If Colonel Koshkarev should turn out to be as mad as the last one it is a bad lookout,” said Chichikov to himself on opening his eyes amid fields and open country⁠—everything else having disappeared save the vault of heaven and a couple of low-lying clouds",
+   "why": "Chichikov in the unfinished second part."
+  },
+  {
+   "part": 6,
+   "chapter": "IV",
+   "quote": "I invite those men to remember the duty which confronts us, whatsoever our respective stations; I invite them to observe more closely their duty, and to keep more constantly in mind their obligations of holding true to their country, in that before us the future looms dark, and that we can scarcely",
+   "why": "The text breaks off in mid-appeal."
+  }
+ ],
+ "id": "deadsouls"
+}

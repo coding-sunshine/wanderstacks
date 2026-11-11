@@ -1,0 +1,255 @@
+{
+  "id": "nibelungen-b",
+  "summary": "This volume, called the St Gall epic manuscript, is a Middle High German collection written in two columns on parchment. It holds Wolfram von Eschenbach's Parzival and Willehalm, the Nibelungenlied in version B with its Klage, the Stricker's Karl der Grosse, and five verses by Friedrich von Sonnenburg. The Nibelungenlied tells how Siegfried wins Kriemhild at Worms and is murdered through Hagen's plot, and how Kriemhild later marries Etzel, king of the Huns, and brings about the death of the Burgundians.",
+  "context": "Three main scribes and four helpers copied the manuscript in the third quarter of the 13th century, probably around 1260, perhaps in South Tyrol or Salzburg. A wealthy patron interested in German epics likely ordered it, and its 78 initials come from painters of the Padua school. Its first named owner was the Swiss scholar Aegidius Tschudi, and the abbey of St Gall bought his manuscripts in 1768. Of the 37 known Nibelungenlied manuscripts, this is one of the three oldest complete ones.",
+  "sources": [
+    {
+      "title": "e-codices IIIF manifest and summary, Cod. Sang. 857",
+      "url": "https://www.e-codices.unifr.ch/metadata/iiif/csg-0857/manifest.json"
+    },
+    {
+      "title": "Nibelungenlied (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nibelungenlied"
+    }
+  ],
+  "people": [
+    {
+      "name": "Wolfram von Eschenbach",
+      "role": "author",
+      "note": "Author of Parzival and Willehalm, both copied in this volume.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Der Stricker",
+      "role": "author",
+      "note": "Poet of Karl der Grosse, which fills pages 452 to 558.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Friedrich von Sonnenburg",
+      "role": "author",
+      "note": "Five of his sung gnomic verses close the volume on page 693.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Aegidius Tschudi",
+      "role": "subject",
+      "note": "Swiss scholar from Glarus, the first known owner of the manuscript.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Siegfried",
+      "role": "character",
+      "note": "Prince who wins Kriemhild with Gunther's help and is killed through Hagen's plot.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Kriemhild",
+      "role": "character",
+      "note": "Burgundian princess, widowed, who marries Etzel and takes revenge on the Burgundians.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Hagen",
+      "role": "character",
+      "note": "Burgundian warrior who learns Siegfried's weak spot and is finally killed by Kriemhild.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Etzel",
+      "role": "character",
+      "note": "King of the Huns, Kriemhild's second husband, at whose court the slaughter takes place.",
+      "s": [
+        1
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Worms",
+      "lat": 49.6325,
+      "lon": 8.3597,
+      "note": "Capital of the Burgundian kingdom, where Kriemhild grows up and Siegfried comes to woo her.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Passau",
+      "lat": 48.5667,
+      "lon": 13.4667,
+      "note": "Region the anonymous poet most likely came from.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Salzburg",
+      "lat": 47.8095,
+      "lon": 13.055,
+      "note": "Possible place of origin of the manuscript, together with South Tyrol.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Padua",
+      "lat": 45.4064,
+      "lon": 11.8768,
+      "note": "Its painting school is the source of the 78 initials.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Glarus",
+      "lat": 47.0405,
+      "lon": 9.068,
+      "note": "Home of Aegidius Tschudi, the first named owner.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "St Gallen",
+      "lat": 47.4233,
+      "lon": 9.3777,
+      "note": "The abbey bought the manuscript in 1768 and still holds it.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1200,
+      "label": "The anonymous poet composes the Nibelungenlied around this date.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "year": 1260,
+      "label": "Manuscript B is copied, probably around this year.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1508,
+      "label": "The Nibelungenlied is last copied in manuscript, in the Ambraser Heldenbuch.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "year": 1768,
+      "label": "The abbey of St Gall buys the Tschudi manuscripts, including this volume.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1755,
+      "label": "Manuscript C of the poem is rediscovered and the work returns to notice.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "year": 1924,
+      "label": "Fritz Lang's film Die Nibelungen brings the story to cinema.",
+      "s": [
+        1
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "First written German hero epic",
+      "note": "The Nibelungenlied was the first heroic epic put into writing in German and began a whole genre.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "title": "Courtly and heroic poems together",
+      "note": "One book holds knightly romance and heroic song, showing what a wealthy reader of the 1260s wanted.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Revenge ends in total ruin",
+      "note": "Kriemhild's revenge kills all the Burgundians who come to Etzel's court; medieval audiences found this troubling and wrote the Klage in answer.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "title": "Versions B and C differ",
+      "note": "The manuscripts vary, and version B begins with Kriemhild rather than the famous opening of version C.",
+      "s": [
+        1
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "n": 4,
+      "note": "Page 5 opens Wolfram's Parzival, which runs to page 288.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 236,
+      "note": "Page 291 opens the Nibelungenlied in version B, which runs to page 416.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 360,
+      "note": "Page 416 is where the Nibelungenlied ends and the Klage begins.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 396,
+      "note": "Page 452 begins the Stricker's Karl der Grosse.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 507,
+      "note": "Page 561 begins Wolfram's Willehalm.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 639,
+      "note": "Page 693 carries five verses by Friedrich von Sonnenburg.",
+      "s": [
+        0
+      ]
+    }
+  ]
+}

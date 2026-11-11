@@ -1,0 +1,244 @@
+{
+  "id": "mendoza",
+  "summary": "The Codex Mendoza is an Aztec pictorial manuscript of 71 folios made in Mexico around 1541 by native artists, with Spanish glosses added by priests. It has three sections: a history of the Aztec rulers from the founding of Tenochtitlan in 1325 to the Spanish conquest, with the towns each ruler took; a list of the towns of the empire and the tribute each paid; and a picture of Aztec life from birth to death. It is painted in native style but bound like a European book.",
+  "context": "It was made in the 1540s, named for Antonio de Mendoza, first viceroy of New Spain, who supervised the work. Artists and scribes schooled at the Franciscan college in Tlatelolco worked in a workshop under Spanish priests. The manuscript was meant for the Spanish king but was seized by French privateers, and by 1553 it belonged to the French cosmographer André Thévet. It then passed through Hakluyt, Purchas and Selden to the Bodleian Library, where it has been since the 1650s and was rediscovered by scholars in 1831.",
+  "sources": [
+    {
+      "title": "Codex Mendoza (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Codex_Mendoza"
+    },
+    {
+      "title": "Bodleian Library MS. Arch. Selden. A. 1, IIIF manifest and catalogue summary",
+      "url": "https://iiif.bodleian.ox.ac.uk/iiif/manifest/2fea788e-2aa2-4f08-b6d9-648c00486220.json"
+    }
+  ],
+  "people": [
+    {
+      "name": "Antonio de Mendoza",
+      "role": "patron",
+      "note": "Viceroy of New Spain who supervised the making of the codex and gives it its name.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "André Thévet",
+      "role": "subject",
+      "note": "French royal cosmographer who owned the codex by 1553 and signed his name on several folios.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Richard Hakluyt",
+      "role": "subject",
+      "note": "English geographer who later owned the codex, reportedly buying it for 20 French francs.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Samuel Purchas",
+      "role": "subject",
+      "note": "Later owner who in 1625 told how French privateers took the codex and brought it to France.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "John Selden",
+      "role": "subject",
+      "note": "Collector who held the codex before its deposit in the Bodleian Library.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Hernán Cortés",
+      "role": "subject",
+      "note": "Named on folio 15r as marques del Valle, which dates the manuscript after July 1529.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Tenochtitlan (Mexico City)",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "note": "The Aztec capital whose founding opens the history in the first section.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Tlatelolco",
+      "lat": 19.4527,
+      "lon": -99.137,
+      "note": "The Franciscan college here trained the native artists and scribes who made the codex.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Paris",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "note": "The codex reached France and was owned by the cosmographer to Henry II, André Thévet.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Oxford",
+      "lat": 51.7548,
+      "lon": -1.2544,
+      "note": "The Bodleian Library has held the codex since 1659 at the latest.",
+      "s": [
+        0,
+        1
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1325,
+      "label": "Start of the history in the first section, the founding of Tenochtitlan.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "year": 1529,
+      "label": "Earliest possible date, since Cortés is named marques del Valle on folio 15r.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1541,
+      "label": "Approximate date the codex was made in Mexico under Viceroy Mendoza.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1553,
+      "label": "Thévet owns the codex and writes his name in it with this date.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1659,
+      "label": "Codex is deposited in the Bodleian Library.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1831,
+      "label": "Viscount Kingsborough rediscovers it and brings it to scholars.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 2023,
+      "label": "Shown in the Bodleian exhibition Gifts and Books.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "History as a list of conquests",
+      "note": "Each Aztec ruler is shown with the towns he conquered, from Tenochtitlan's founding to the Spanish conquest in 1521.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "title": "Tribute as political record",
+      "note": "Section two lists the towns of the empire and what each paid, and seems copied from the Matricula de Tributos.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "title": "Daily life from birth to death",
+      "note": "The last section shows Aztec life cycles, from a newborn to the punishments and chores of children aged 11 to 14.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "title": "Native hand, Spanish glosses",
+      "note": "Painted in the traditional pictographic style, with Spanish text added to explain it, in a European binding.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "n": 13,
+      "note": "Folio 2r shows the founding of Tenochtitlan, the start of the Aztec history.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 18,
+      "note": "Folio 4v shows the conquests of the ruler Chimalpopoca.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 29,
+      "note": "Folio 10r shows the conquests of Axayacatl.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 35,
+      "note": "Folio 13r shows the conquests of Ahuitzotl.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 123,
+      "note": "Folio 57r shows the birth of a baby, in the section on Aztec daily life.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 129,
+      "note": "Folio 60r shows punishments and chores of children aged 11 to 14.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 152,
+      "note": "Folio 71v bears one of André Thévet's signatures of ownership.",
+      "s": [
+        0
+      ]
+    }
+  ]
+}

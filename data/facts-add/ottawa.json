@@ -1,0 +1,200 @@
+{
+  "facts": [
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "field": "architect",
+      "value": "Fuller and Jones selected over 15 other proposals in a competition with just ten weeks to design.",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "secondary",
+      "quote": "The winning bid by Toronto architects Thomas Fuller and Chilion Jones was selected over 15 other proposals",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+winning\\s+bid\\s+by\\s+Toronto\\s+archite'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "field": "built",
+      "value": "Work halted in 1861; the collection arrived in 1866.",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Parliament",
+      "tier": "wikipedia",
+      "quote": "the collection arrived in Ottawa in 1866, work was halted in 1861",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Library_of_Parliament' | sed 's/<[^>]*>/ /g' | rg -o -m1 'arrived in Ottawa in 1866'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "field": "collection",
+      "value": "47,000 volumes, including several donated by Queen Victoria, installed.",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Parliament",
+      "tier": "wikipedia",
+      "quote": "the 47,000 volumes—including several donated by Queen Victoria—were installed",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Library_of_Parliament' | sed 's/<[^>]*>/ /g' | rg -o -m1 'the\\s+47.000\\s+volumes.including\\s+sever'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "field": "built",
+      "value": "Thomas Fairbairn Engineering Co. of Manchester contracted for a prefabricated dome.",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Parliament",
+      "tier": "wikipedia",
+      "quote": "had to be contracted to provide a prefabricated dome",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Library_of_Parliament' | sed 's/<[^>]*>/ /g' | rg -o -m1 'had\\s+to\\s+be\\s+contracted\\s+to\\s+provide\\s+a'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "field": "built",
+      "value": "First building in North America with a state-of-the-art wrought iron roof.",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Parliament",
+      "tier": "wikipedia",
+      "quote": "the first building in North America to have a state-of-the-art wrought iron roof",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Library_of_Parliament' | sed 's/<[^>]*>/ /g' | rg -o -m1 'the\\s+first\\s+building\\s+in\\s+North\\s+Americ'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "field": "collection",
+      "value": "White marble statue of Queen Victoria by Marshall Wood, 1871.",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Parliament",
+      "tier": "wikipedia",
+      "quote": "sculpted by Marshall Wood in 1871",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Library_of_Parliament' | sed 's/<[^>]*>/ /g' | rg -o -m1 'sculpted\\s+by\\s+Marshall\\s+Wood\\s+in\\s+1871'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "field": "status_note",
+      "value": "Library of Parliament Act of 1871 formally established the institution.",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "secondary",
+      "quote": "1871: The Library of Parliament Act formally establishes the institution",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | sed 's/<[^>]*>/ /g' | rg -o -m1 '1871.\\s+The\\s+Library\\s+of\\s+Parliament\\s+Ac'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "field": "status_note",
+      "value": "Survived two fires and several restorations; 1952-1956 significant restoration.",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "secondary",
+      "quote": "It has survived two fires and undergone several restorations",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'It\\s+has\\s+survived\\s+two\\s+fires\\s+and\\s+unde'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "field": "status_note",
+      "value": "Centre Block including the Library is closed to visitors during construction.",
+      "source": "https://www.canada.ca/en/public-services-procurement/services/infrastructure-buildings/parliamentary-precinct/projects-in-parliamentary-precinct/centre-block-project/about-centre-block-project.html",
+      "tier": "primary",
+      "quote": "is closed to visitors and tourists during construction",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.canada.ca/en/public-services-procurement/services/infrastructure-buildings/parliamentary-precinct/projects-in-parliamentary-precinct/centre-block-project/about-centre-block-project.html' | sed 's/<[^>]*>/ /g' | rg -o -m1 'is\\s+closed\\s+to\\s+visitors\\s+and\\s+tourists'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "field": "status_note",
+      "value": "More than 500 base isolators being installed; when it reopens Centre Block will look very much as before.",
+      "source": "https://www.canada.ca/en/public-services-procurement/services/infrastructure-buildings/parliamentary-precinct/projects-in-parliamentary-precinct/centre-block-project/about-centre-block-project.html",
+      "tier": "primary",
+      "quote": "When it reopens, the Centre Block will look very much as it did before",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.canada.ca/en/public-services-procurement/services/infrastructure-buildings/parliamentary-precinct/projects-in-parliamentary-precinct/centre-block-project/about-centre-block-project.html' | sed 's/<[^>]*>/ /g' | rg -o -m1 'When\\s+it\\s+reopens.\\s+the\\s+Centre\\s+Block'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "kind": "founded",
+      "year": 1859,
+      "earliest": 1859,
+      "latest": 1859,
+      "label": "International design competition launched",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "secondary",
+      "quote": "In 1859, the Legislative Assembly launched an international design competition",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'In\\s+1859.\\s+the\\s+Legislative\\s+Assembly'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "kind": "founded",
+      "year": 1871,
+      "earliest": 1871,
+      "latest": 1871,
+      "label": "Library of Parliament Act",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "secondary",
+      "quote": "1871: The Library of Parliament Act formally establishes the institution",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | sed 's/<[^>]*>/ /g' | rg -o -m1 '1871.\\s+The\\s+Library\\s+of\\s+Parliament\\s+Ac'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "kind": "opened",
+      "year": 1876,
+      "earliest": 1876,
+      "latest": 1876,
+      "label": "Library opened (28 February)",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "secondary",
+      "quote": "opened on 28 February 1876",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'opened\\s+on\\s+28\\s+February\\s+1876'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "kind": "damaged",
+      "year": 1916,
+      "earliest": 1916,
+      "latest": 1916,
+      "label": "Fire destroys the Centre Block; Library only part left standing",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "secondary",
+      "quote": "1916: A fire destroys the original Centre Block, and the Library is the only part of the building left standing",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | sed 's/<[^>]*>/ /g' | rg -o -m1 '1916.\\s+A\\s+fire\\s+destroys\\s+the\\s+original'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "kind": "rebuilt",
+      "year": 1956,
+      "earliest": 1952,
+      "latest": 1956,
+      "label": "Significant restoration",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "secondary",
+      "quote": "1952–1956: The Library undergoes significant restoration",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | sed 's/<[^>]*>/ /g' | rg -o -m1 '1952.1956.\\s+The\\s+Library\\s+undergoes\\s+s'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "ottawa",
+      "kind": "reopened",
+      "year": 2006,
+      "earliest": 2002,
+      "latest": 2006,
+      "label": "Tours resume after major renovation (5 June 2006)",
+      "source": "https://en.wikipedia.org/wiki/Library_of_Parliament",
+      "tier": "wikipedia",
+      "quote": "tours of the library resuming on 5 June 2006",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Library_of_Parliament' | sed 's/<[^>]*>/ /g' | rg -o -m1 'tours\\s+of\\s+the\\s+library\\s+resuming\\s+on\\s+5'"
+    }
+  ]
+}

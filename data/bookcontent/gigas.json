@@ -1,0 +1,182 @@
+{
+ "id": "gigas",
+ "summary": "The Codex Gigas, or Devil's Bible, is the largest known medieval manuscript: 310 leaves, 92 cm tall and about 75 kg. It holds the Latin Bible, the works of Josephus, Isidore's Etymologiae, medical texts and a chronicle of Bohemia. Its famous full-page Devil faces a picture of the Kingdom of Heaven. Legend says one monk wrote it in a single night with help from the Devil.",
+ "context": "The book was made between 1204 and 1230 at the Podlazice monastery at Chrast in Bohemia. Swedish troops took it in 1648 when they seized Prague, and it has been in Stockholm since 1649. It was thrown from a window during the palace fire of 1697 and survived. Today it belongs to the National Library of Sweden as A 148.",
+ "sources": [
+  {
+   "title": "Wikipedia: Codex Gigas",
+   "url": "https://en.wikipedia.org/wiki/Codex_Gigas"
+  },
+  {
+   "title": "National Library of Sweden IIIF manifest for Codex Gigas",
+   "url": "https://www.manuscripta.se/iiif/100500/manifest.json"
+  }
+ ],
+ "people": [
+  {
+   "name": "Cosmas of Prague",
+   "role": "chronicler",
+   "note": "His Chronica Boemorum starts on f. 294.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Isidore of Seville",
+   "role": "encyclopedist",
+   "note": "His Etymologiae begins at f. 201.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Flavius Josephus",
+   "role": "historian",
+   "note": "His works open at f. 118v.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Podlazice monastery, Chrast",
+   "lat": 49.938,
+   "lon": 15.467,
+   "note": "Where the manuscript was made.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Prague",
+   "lat": 50.0755,
+   "lon": 14.4378,
+   "note": "Taken as war booty by Sweden in 1648.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Stockholm",
+   "lat": 59.3293,
+   "lon": 18.0686,
+   "note": "Home of the book since 1649.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1204,
+   "label": "Earliest date for the making of the manuscript, to 1230.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1648,
+   "label": "Swedish troops take the codex from Prague.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1649,
+   "label": "The codex reaches Stockholm.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1697,
+   "label": "The palace fire; the book is thrown from a window.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "The Devil's Bible",
+   "note": "A full-page Devil, about 50 cm tall, gives the book its nickname.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A library in one volume",
+   "note": "The Bible, history, encyclopedia and medicine share one binding.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A legend of one night",
+   "note": "The tale says a single monk wrote it in a night with the Devil's help.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "n": 1,
+   "note": "Folio 1v, with Hebrew alphabets.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "n": 233,
+   "note": "Folio 118v, the first page of Josephus, with pictures of Heaven and Earth.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "n": 398,
+   "note": "Folio 201r, where Isidore's Etymologiae begins.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "n": 575,
+   "note": "Folio 289v, the Kingdom of Heaven, opposite the Devil.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "n": 576,
+   "note": "Folio 290r, the full-page Devil.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "n": 584,
+   "note": "Folio 294r, the start of Cosmas's Chronica Boemorum.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "n": 606,
+   "note": "Folio 305r, the brothers list and calendar.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ]
+}

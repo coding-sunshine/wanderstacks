@@ -1,0 +1,234 @@
+{
+ "summary": "Burke's treatise separates two kinds of aesthetic experience that earlier writers had run together. The sublime comes from pain, danger and terror held at a safe distance, and it works through obscurity, vastness and power. The beautiful comes from love and is tied to qualities such as smallness, smoothness and gradual variation, not to proportion or fitness. Burke builds the case from passions, bodily response and the way words work on the mind. Parts I and II cover passion and the sublime, Part III the beautiful, Part IV the physical causes of both, and Part V the power of words.",
+ "context": "Burke, a young Dublin-born writer in London, published the Enquiry in 1757, with a second edition in 1759. It was the first full philosophical account that placed the beautiful and the sublime in separate categories. Diderot and Kant both read it, and Kant faulted it for gathering observations without explaining their causes. Its preference for the sublime over the beautiful is seen as part of the move from Neoclassical to Romantic taste. The site carries it in a nineteenth-century collected edition of Burke's works, taken from Project Gutenberg.",
+ "sources": [
+  {
+   "title": "A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/A_Philosophical_Enquiry_into_the_Origin_of_Our_Ideas_of_the_Sublime_and_Beautiful"
+  },
+  {
+   "title": "Edmund Burke (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Edmund_Burke"
+  },
+  {
+   "title": "Project Gutenberg ebook 15043",
+   "url": "https://www.gutenberg.org/ebooks/15043"
+  }
+ ],
+ "people": [
+  {
+   "name": "Edmund Burke",
+   "role": "author",
+   "note": "Anglo-Irish writer, philosopher and politician who wrote the Enquiry in 1757.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Denis Diderot",
+   "role": "subject",
+   "note": "French thinker whose attention the treatise drew.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Immanuel Kant",
+   "role": "subject",
+   "note": "Read the Enquiry and criticised Burke for not explaining the causes of the mental effects he described.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jane Mary Nugent",
+   "role": "subject",
+   "note": "Burke's wife, married in 1757, the year the Enquiry appeared.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Richard Burke Jr.",
+   "role": "subject",
+   "note": "Burke's son, who succeeded him as member of Parliament.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Dublin",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "note": "Burke was born here in 1729.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Trinity College Dublin",
+   "lat": 53.3438,
+   "lon": -6.2546,
+   "note": "Burke studied here, at a Protestant college that did not grant degrees to Catholics until 1793.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Bristol",
+   "lat": 51.4545,
+   "lon": -2.5879,
+   "note": "Burke sat for Bristol in Parliament from 1774 to 1780.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Malton",
+   "lat": 54.135,
+   "lon": -0.796,
+   "note": "Burke sat for Malton in Parliament from 1780 to 1794.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Beaconsfield",
+   "lat": 51.6,
+   "lon": -0.65,
+   "note": "Burke died here in 1797.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1729,
+   "label": "Edmund Burke is born in Dublin.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1756,
+   "label": "Burke publishes A Vindication of Natural Society.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1757,
+   "label": "The Enquiry into the sublime and the beautiful is published.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1759,
+   "label": "A second edition of the Enquiry appears.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1790,
+   "label": "Burke publishes Reflections on the Revolution in France.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1797,
+   "label": "Burke dies at Beaconsfield.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Sublime rests on terror",
+   "note": "The sublime has the power to compel and destroy us, and it comes from what is terrible or close to danger.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Beauty is not proportion",
+   "note": "Burke doubts that beauty belongs to proportion of parts, and looks for positive qualities in the object instead.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Sublime over beautiful",
+   "note": "His preference for the sublime marks the move from Neoclassical to Romantic taste.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Kant's complaint",
+   "note": "Kant held that Burke only collected observations and left their explanation to a later thinker.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "SECTION VII. OF THE SUBLIME.",
+   "quote": "Whatever is fitted in any sort to excite the ideas of pain and danger, that is to say, whatever is in any sort terrible, or is conversant about terrible objects, or operates in a manner analogous to terror, is a source of the sublime ; that is, it is productive of the strongest emotion which the mind",
+   "why": "Burke's definition of the sublime, the core claim of the book."
+  },
+  {
+   "part": 1,
+   "chapter": "PART II.: SECTION I. OF THE PASSION CAUSED BY THE SUBLIME.",
+   "quote": "The passion caused by the great and sublime in nature , when those causes operate most powerfully, is astonishment: and astonishment is that state of the soul in which all its motions are suspended, with some degree of horror",
+   "why": "Names astonishment as the strongest effect of the sublime."
+  },
+  {
+   "part": 1,
+   "chapter": "SECTION III. OBSCURITY.",
+   "quote": "To make anything very terrible, obscurity seems in general to be necessary",
+   "why": "Argues that what we cannot see clearly frightens us most."
+  },
+  {
+   "part": 1,
+   "chapter": "SECTION VIII. INFINITY.",
+   "quote": "Infinity has a tendency to fill the mind with that sort of delightful horror, which is the most genuine effect, and truest test of the sublime",
+   "why": "Burke on how endless things fill the mind."
+  },
+  {
+   "part": 1,
+   "chapter": "SECTION II. PROPORTION NOT THE CAUSE OF BEAUTY IN VEGETABLES.",
+   "quote": "Beauty hath usually been said to consist in certain proportions of parts",
+   "why": "Starts his attack on proportion as the cause of beauty."
+  },
+  {
+   "part": 1,
+   "chapter": "PART III.: SECTION I. OF BEAUTY.",
+   "quote": "By beauty, I mean that quality, or those qualities in bodies, by which they cause love, or some passion similar to it",
+   "why": "His working definition of beauty as a social quality tied to love."
+  },
+  {
+   "part": 2,
+   "chapter": "SECTION XIII. BEAUTIFUL OBJECTS SMALL.",
+   "quote": "The most obvious point that presents itself to us in examining any object is its extent or quantity",
+   "why": "Beautiful objects are small, supported by how languages name loved things."
+  },
+  {
+   "part": 2,
+   "chapter": "PART V.: SECTION I. OF WORDS.",
+   "quote": "Natural objects affect us by the laws of that connection which Providence has established between certain motions and configurations of bodies, and certain consequent feelings in our mind",
+   "why": "Opens Part V on how words move us without images."
+  }
+ ],
+ "id": "burke-sublime"
+}

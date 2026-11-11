@@ -1,0 +1,245 @@
+{
+ "id": "peterpan",
+ "summary": "Three children of the Darling family in Bloomsbury, Wendy, John and Michael, are taught to fly by Peter Pan, a boy who never grows up, and carried off to a distant island with his fairy Tinker Bell. There Wendy mothers the Lost Boys, and the children are drawn into a feud between Peter and the pirate Captain Hook, whose hand was cut off in a fight and who is hunted by a crocodile. Peter finally kicks Hook to the crocodile. The children go home, are adopted, and grow up, while Peter stays a boy.",
+ "context": "J. M. Barrie first wrote about Peter in The Little White Bird in 1902, and the play Peter Pan opened at the Duke of York's Theatre in London on 27 December 1904. The novel Peter and Wendy followed on 18 October 1911 from Hodder and Stoughton, with plates by F. D. Bedford, and Scribner's brought it out in New York days later. Barrie had told the stories to the sons of Sylvia Llewelyn Davies, and Peter took his name partly from one of them. In 1929 he gave the rights to Great Ormond Street Hospital, which still benefits from them.",
+ "sources": [
+  {
+   "title": "Peter and Wendy - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Peter_and_Wendy"
+  },
+  {
+   "title": "Peter and Wendy, by J. M. Barrie - Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/j-m-barrie/peter-and-wendy"
+  }
+ ],
+ "people": [
+  {
+   "name": "J. M. Barrie",
+   "role": "author",
+   "note": "Wrote the Peter Pan stories, the play and the novel, and in 1929 gave the copyright to Great Ormond Street Hospital.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sylvia Llewelyn Davies",
+   "role": "subject",
+   "note": "Barrie told the Peter stories to her sons, and one of them lent his name to the hero.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Peter Llewelyn Davies",
+   "role": "subject",
+   "note": "One of the boys Barrie knew; the name Peter Pan combines his first name with the god Pan.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Peter Pan",
+   "role": "character",
+   "note": "The boy who will not grow up; he leads the Lost Boys and flies without fairy dust.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Wendy Darling",
+   "role": "character",
+   "note": "The eldest Darling child, who goes to the island and becomes a mother to the Lost Boys.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Captain Hook",
+   "role": "character",
+   "note": "The pirate captain named for the hook that replaced the hand Peter cut off; he is Peter's enemy.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Tinker Bell",
+   "role": "character",
+   "note": "Peter's fairy, jealous of Wendy; the book has her die during the year Peter forgets her.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nina Boucicault",
+   "role": "subject",
+   "note": "Played Peter in the first London production of the play in December 1904.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Great Ormond Street Hospital",
+   "role": "patron",
+   "note": "The London children's hospital that received the copyright to the Peter Pan works from Barrie in 1929.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Bloomsbury, London",
+   "lat": 51.5226,
+   "lon": -0.1262,
+   "note": "The Darling family's house is in Bloomsbury, and Peter calls on it at night.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kensington Gardens, London",
+   "lat": 51.5059,
+   "lon": -0.1877,
+   "note": "Peter first appeared in Barrie's earlier stories set in this park, later reprinted as a book with pictures by Arthur Rackham.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Duke of York's Theatre, London",
+   "lat": 51.5105,
+   "lon": -0.1273,
+   "note": "Opening night of the play, 27 December 1904.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Great Ormond Street Hospital, London",
+   "lat": 51.5224,
+   "lon": -0.1204,
+   "note": "Recipient of the Peter Pan copyright in 1929.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1902,
+   "label": "Peter Pan first appears in Barrie's novel The Little White Bird.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1904,
+   "label": "The play Peter Pan opens in London on 27 December at the Duke of York's Theatre.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1906,
+   "label": "The Peter chapters of The Little White Bird are published alone as Peter Pan in Kensington Gardens, with Rackham's illustrations.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1911,
+   "label": "Peter and Wendy is published in October by Hodder and Stoughton in London and by Scribner's in New York.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1928,
+   "label": "The script of the play is published.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1929,
+   "label": "Barrie gives the copyright of the Peter Pan works to Great Ormond Street Hospital.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Refusing to grow up",
+   "note": "Peter stays a boy while Wendy and her brothers return home and age, and the book closes on that difference.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Mothering and play",
+   "note": "Wendy takes on the role of mother to the Lost Boys, which sets her wish for a family against Peter's wish for adventure.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Forgetting and loss",
+   "note": "Peter forgets Tinker Bell, the Lost Boys and even Hook by the time Wendy returns.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Villain with manners",
+   "note": "Hook is a genteel pirate who is driven mad by Peter's cockiness, and he dies calling it bad form.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother.",
+   "why": "The famous opening line, and the sentence on which the whole book turns."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Neverland is always more or less an island, with astonishing splashes of colour here and there, and coral reefs and rakish-looking craft in the offing, and savages and lonely lairs, and gnomes who are mostly tailors, and caves through which a river runs, and princes with six elder brothers, and a hut fast going to decay, and one very small old lady with a hooked nose.",
+   "why": "Barrie's picture of the island as the map in every child's mind."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "Second to the right,” said Peter, “and then straight on till morning.” “What a funny address!” Peter had a sinking.",
+   "why": "Peter's address, the line that sends the children off."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "think lovely wonderful thoughts,” Peter explained, “and they lift you up in the air.” He showed them again.",
+   "why": "How the book explains flying."
+  },
+  {
+   "part": 2,
+   "chapter": "XIII",
+   "quote": "Do You Believe in Fairies? The more quickly this horror is disposed of the better. The first to emerge from his tree was Curly. He rose out of it into the arms of Cecco, who flung him to Smee, who flung him to Starkey, who flung him to Bill Jukes, who flung him to Noodler, and so he was tossed from one to another till he fell at the feet of the black pirate.",
+   "why": "The chapter in which Tinker Bell's life depends on the reader."
+  },
+  {
+   "part": 2,
+   "chapter": "XIV",
+   "quote": "Hook was not his true name. To reveal who he really was would even at this date set the country in a blaze; but as those who read between the lines must already have guessed, he had been at a famous public school; and its traditions still clung to him like garments, with which indeed they are largely concerned.",
+   "why": "Barrie's portrait of the villain as an old-school gentleman."
+  },
+  {
+   "part": 2,
+   "chapter": "XVII",
+   "quote": "As you look at Wendy you may see her hair becoming white, and her figure little again, for all this happened long ago. Jane is now a common grownup, with a daughter called Margaret; and every spring-cleaning time, except when he forgets, Peter comes for Margaret and takes her to the Neverland, where she tells him stories about himself, to which he listens eagerly.",
+   "why": "The close, as Wendy grows old and Peter's visits go on."
+  }
+ ]
+}

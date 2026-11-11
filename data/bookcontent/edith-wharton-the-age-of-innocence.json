@@ -1,0 +1,254 @@
+{
+ "summary": "In 1870s New York, the lawyer Newland Archer is about to marry May Welland, a sheltered and well-matched bride. Then her cousin Ellen Olenska arrives from Europe, having left a bad marriage to a Polish count. Ellen ignores the city's unwritten rules, and Newland falls in love with her. Pressure from family and from May, who announces a pregnancy, keeps him in his marriage. Twenty-six years later, widowed and in Paris with his son, he is offered a chance to see Ellen again and does not take it.",
+ "context": "Wharton wrote the novel in her fifties while living in France, after the First World War had destroyed the world of her New York childhood. Pictorial Review serialized it in four parts in 1920, and D. Appleton and Company issued the book the same year, on 25 October. It won the 1921 Pulitzer Prize for Fiction, which made her the first woman to receive it. Critics have long praised its structure and quiet irony. Martin Scorsese filmed it in 1993. This site carries the Standard Ebooks text.",
+ "sources": [
+  {
+   "title": "The Age of Innocence (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Age_of_Innocence"
+  },
+  {
+   "title": "Edith Wharton (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Edith_Wharton"
+  },
+  {
+   "title": "The Age of Innocence, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/edith-wharton/the-age-of-innocence"
+  }
+ ],
+ "people": [
+  {
+   "name": "Edith Wharton",
+   "role": "author",
+   "note": "American novelist (1862 to 1937) who drew on her knowledge of upper-class New York society.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Newland Archer",
+   "role": "character",
+   "note": "A gentleman lawyer from a leading New York family who is torn between two women.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "May Welland",
+   "role": "character",
+   "note": "Newland's fiancee and later wife, a product of Old New York society.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ellen Olenska",
+   "role": "character",
+   "note": "May's cousin, who has returned from Europe after separating from Count Olenski.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Count Olenski",
+   "role": "character",
+   "note": "Ellen's Polish husband, who threatens her reputation if she seeks a divorce.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Julius Beaufort",
+   "role": "character",
+   "note": "A figure of doubtful reputation whom Ellen is willing to be seen with.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "D. Appleton and Company",
+   "role": "printer",
+   "note": "The publisher that issued the first book edition in 1920.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Martin Scorsese",
+   "role": "subject",
+   "note": "Directed the 1993 film adaptation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "New York City",
+   "lat": 40.7128,
+   "lon": -74.006,
+   "note": "The Gilded Age setting of the story, and Wharton's own birthplace.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Newport, Rhode Island",
+   "lat": 41.4901,
+   "lon": -71.3128,
+   "note": "Newland and May are here when their paths cross Ellen's again.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "Newland follows Ellen here out of love for her.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Washington, D.C.",
+   "lat": 38.9072,
+   "lon": -77.0369,
+   "note": "Ellen lives here for a time and stays distant from Newland.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Paris",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "Where the novel ends, and where Wharton settled after leaving her marriage.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Saint-Brice-sous-Forêt",
+   "lat": 49.0044,
+   "lon": 2.3531,
+   "note": "Wharton bought the house Pavillon Colombe here after the war and lived there until her death.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1913,
+   "label": "Wharton's marriage to Edward Wharton ends in divorce.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1920,
+   "label": "The novel appears in Pictorial Review, then as a book from D. Appleton and Company on 25 October.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1921,
+   "label": "It wins the Pulitzer Prize for Fiction, the first awarded to a woman.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1937,
+   "label": "Wharton dies at Saint-Brice-sous-Forêt on 11 August.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1993,
+   "label": "Martin Scorsese directs a film adaptation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Convention against desire",
+   "note": "Newland's longing for Ellen collides with the rules of a society that dreads scandal above all.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Old world versus new",
+   "note": "Scholars read the book as an effort to reconcile the vanished world of Wharton's childhood with the changed one after 1914.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Shifting meaning of innocence",
+   "note": "May's innocence looks different once she tells Ellen of a pregnancy to keep her away from Newland.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Class and acceptance",
+   "note": "Old money feels threatened by new money, and acceptance by high society is the goal that governs the characters.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Book I: I",
+   "quote": "On a January evening of the early seventies, Christine Nilsson was singing in Faust at the Academy of Music in New York",
+   "why": "The opening line sets the scene at the opera in 1870s New York."
+  },
+  {
+   "part": 1,
+   "chapter": "V",
+   "quote": "“Women ought to be free⁠—as free as we are,” he declared, making a discovery of which he was too irritated to measure the terrific consequences",
+   "why": "Newland states a view he has not thought through, and its consequences follow."
+  },
+  {
+   "part": 1,
+   "chapter": "VI",
+   "quote": "In reality they all lived in a kind of hieroglyphic world, where the real thing was never said or done or even thought, but only represented by a set of arbitrary signs; as when Mrs. Welland, who knew exactly why Archer had pressed her to announce her daughter’s engagement at the Beaufort ball (and had indeed expected him to do no less), yet felt obliged to simulate reluctance, and the air of havi",
+   "why": "A compact picture of how Old New York says things without saying them."
+  },
+  {
+   "part": 2,
+   "chapter": "XVII",
+   "quote": "Born in a rut, and you can’t root ’em out of it. When I built this house you’d have thought I was moving to California",
+   "why": "Mrs. Mingott speaks bluntly about a society afraid of being different."
+  },
+  {
+   "part": 3,
+   "chapter": "XXI",
+   "quote": "Newland Archer, standing on the verandah of the house, looked curiously down upon this scene",
+   "why": "The Newport archery party, a scene of social display."
+  },
+  {
+   "part": 4,
+   "chapter": "XXXIII",
+   "quote": "It was the old New York way of taking life “without effusion of blood”: the way of people who dreaded scandal more than disease, who placed decency above courage, and who considered that nothing was more ill-bred than “scenes,” except the behaviour of those who gave rise to them",
+   "why": "Wharton names the code of decorum that governs the whole book."
+  },
+  {
+   "part": 4,
+   "chapter": "XXXIV",
+   "quote": "“It’s more real to me here than if I went up,” he suddenly heard himself say; and the fear lest that last shadow of reality should lose its edge kept him rooted to his seat as the minutes succeeded each other",
+   "why": "The closing scene, where Newland chooses memory over meeting Ellen."
+  }
+ ],
+ "id": "edith-wharton-the-age-of-innocence"
+}

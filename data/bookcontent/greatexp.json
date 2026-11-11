@@ -1,0 +1,259 @@
+{
+ "id": "greatexp",
+ "summary": "Pip, an orphan raised by his harsh sister and her gentle husband Joe the blacksmith, meets an escaped convict on the Kent marshes and does him a small kindness. He is taken to play at the decaying house of Miss Havisham, falls for her cold ward Estella, then learns that a secret benefactor will make him a gentleman in London. He grows ashamed of Joe, runs up debts, and finds that his money comes from the convict he helped. Pip learns what he owes to loyalty and how little wealth has to do with worth.",
+ "context": "Charles Dickens published the novel in weekly instalments in All the Year Round from December 1860 to August 1861, then in three volumes in October 1861. It is his second novel after David Copperfield to be narrated entirely in the first person. Dickens first wrote a bleak ending, then changed it at the urging of his friend Bulwer-Lytton so that Pip meets Estella in the ruins of Satis House. The book was written soon after the break-up of his marriage and his move to Gad's Hill in Kent, and it draws on the Rochester countryside.",
+ "sources": [
+  {
+   "title": "Great Expectations (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Great_Expectations"
+  },
+  {
+   "title": "Great Expectations by Charles Dickens (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/charles-dickens/great-expectations"
+  }
+ ],
+ "people": [
+  {
+   "name": "Philip Pirrip (Pip)",
+   "role": "narrator",
+   "note": "Orphan and blacksmith's apprentice who narrates his own rise and his mistakes.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Abel Magwitch",
+   "role": "character",
+   "note": "The escaped convict from the churchyard, later revealed as Pip's benefactor.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Miss Havisham",
+   "role": "character",
+   "note": "Wealthy recluse who lives in decay at Satis House, still in the wedding dress of the day she was jilted.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Estella",
+   "role": "character",
+   "note": "Miss Havisham's adopted daughter, raised to be aloof and to hurt men.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Joe Gargery",
+   "role": "character",
+   "note": "Pip's kind blacksmith brother-in-law and the book's picture of plain goodness.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mr. Jaggers",
+   "role": "character",
+   "note": "London lawyer who tells Pip of his anonymous patron and handles his money.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Herbert Pocket",
+   "role": "character",
+   "note": "Pip's London friend, the boy he once fought at Satis House.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Charles Dickens",
+   "role": "author",
+   "note": "Serialised the novel in All the Year Round; he lived at Gad's Hill in Kent.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Edward Bulwer-Lytton",
+   "role": "adviser",
+   "note": "Urged Dickens to change the draft ending after reading the proofs.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Rochester, Kent",
+   "lat": 51.3889,
+   "lon": 0.5063,
+   "note": "Town near where Dickens lived; Satis House is said to be based on Restoration House here.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gad's Hill Place, Higham",
+   "lat": 51.405,
+   "lon": 0.464,
+   "note": "The Kent house Dickens bought in 1856 and moved into in 1858.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Where Pip lives as a gentleman, at Barnard's Inn, and where Jaggers has his office.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Richmond",
+   "lat": 51.4613,
+   "lon": -0.3037,
+   "note": "Estella is sent here to be introduced into society.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "New South Wales",
+   "lat": -33.8688,
+   "lon": 151.2093,
+   "note": "Where Magwitch was transported and made his fortune.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1812,
+   "label": "On Christmas Eve Pip meets the convict in the churchyard.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1856,
+   "label": "Dickens buys Gad's Hill Place in Higham, Kent.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1860,
+   "label": "Serial publication begins on 1 December in All the Year Round.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1861,
+   "label": "Serial ends in August; Chapman & Hall publish the three-volume edition in October.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Shame at home",
+   "note": "Pip grows ashamed of Joe and the forge once he thinks of himself as a gentleman.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Wealth and worth",
+   "note": "Money from a convict rather than a lady shows that his expectations rested on the wrong person.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Childhood injustice",
+   "note": "Pip's account of being wrongly treated as a child shapes his feeling and later conduct.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Love that harms",
+   "note": "Estella is trained to break hearts, and Pip loves her against reason.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Two endings",
+   "note": "Dickens softened a bleak ending so that Pip and Estella are reunited in the ruins of Satis House.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "My father’s family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip. So, I called myself Pip, and came to be called Pip.",
+   "why": "Opening lines: Pip names himself, giving the book its voice."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Hold your noise!” cried a terrible voice, as a man started up from among the graves at the side of the church porch. “Keep still, you little devil, or I’ll cut your throat!” A fearful man, all in coarse gray, with a great iron on his leg. A man with no hat, and with broken shoes, and with an old rag tied round his head.",
+   "why": "Magwitch seizes Pip in the churchyard, the scene that sets the plot moving."
+  },
+  {
+   "part": 1,
+   "chapter": "VIII",
+   "quote": "I saw that the bride within the bridal dress had withered like the dress, and like the flowers, and had no brightness left but the brightness of her sunken eyes. I saw that the dress had been put upon the rounded figure of a young woman, and that the figure upon which it now hung loose had shrunk to skin and bone.",
+   "why": "First sight of Miss Havisham's room, where time is stopped on her wedding day."
+  },
+  {
+   "part": 1,
+   "chapter": "VIII",
+   "quote": "In the little world in which children have their existence whosoever brings them up, there is nothing so finely perceived and so finely felt as injustice.",
+   "why": "Pip on how keenly children feel injustice."
+  },
+  {
+   "part": 2,
+   "chapter": "XIV",
+   "quote": "It is a most miserable thing to feel ashamed of home. There may be black ingratitude in the thing, and the punishment may be retributive and well deserved; but that it is a miserable thing, I can testify. Home had never been a very pleasant place to me, because of my sister’s temper.",
+   "why": "Pip admits to shame about home once he has been taught what a gentleman is."
+  },
+  {
+   "part": 3,
+   "chapter": "XXIX",
+   "quote": "I loved her against reason, against promise, against peace, against hope, against happiness, against all discouragement that could be. Once for all; I loved her none the less because I knew it, and it had no more influence in restraining me than if I had devoutly believed her to be human perfection.",
+   "why": "Pip on loving Estella even knowing it is unwise."
+  },
+  {
+   "part": 3,
+   "chapter": "XXVII",
+   "quote": "Pip, dear old chap, life is made of ever so many partings welded together, as I may say, and one man’s a blacksmith, and one’s a whitesmith, and one’s a goldsmith, and one’s a coppersmith. Diwisions among such must come, and must be met as they come. If there’s been any fault at all today, it’s mine.",
+   "why": "Joe's gentle farewell after Pip behaves coldly in London."
+  },
+  {
+   "part": 6,
+   "chapter": "LIX",
+   "quote": "I took her hand in mine, and we went out of the ruined place; and, as the morning mists had risen long ago when I first left the forge, so the evening mists were rising now, and in all the broad expanse of tranquil light they showed to me, I saw no shadow of another parting from her.",
+   "why": "The last lines, after the revised ending brings Pip and Estella together."
+  }
+ ]
+}

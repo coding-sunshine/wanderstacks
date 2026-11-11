@@ -1,0 +1,269 @@
+{
+ "id": "hafez",
+ "summary": "Hafiz of Shiraz wrote the ghazals that many Persian speakers know by heart. This selection gives forty-three poems from his Divan in English verse by Gertrude Bell, with a long introduction on his life and times and notes on each poem. The poems turn on the rose and the nightingale, wine, the cup-bearer, the tavern and a distant beloved. They can be read as love songs or as mystical verse. The introduction places them in a fourteenth-century Persia torn by war.",
+ "context": "Hafiz lived in Shiraz in the fourteenth century, a period of civil war and invasion under the Muzaffarid rulers and then Timur. Few facts of his life are certain, and early accounts rest on anecdote. His Divan was probably compiled after his death and survives in about 1,700 manuscripts. Persians use his lines as proverbs and consult his book for guidance. European scholars began translating him in the seventeenth century. Gertrude Bell's versions keep the rhymes, and her notes quote earlier commentators.",
+ "sources": [
+  {
+   "title": "Hafez (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Hafez"
+  },
+  {
+   "title": "Poems from the Divan of Hafiz (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/74883"
+  }
+ ],
+ "people": [
+  {
+   "name": "Hafiz of Shiraz",
+   "role": "poet",
+   "note": "Persian lyric poet, born in Shiraz in the early fourteenth century; his names mean the Sun of the Faith and One who can recite the Koran.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Gertrude Bell",
+   "role": "translator",
+   "note": "Rendered the poems in rhymed English verse and added the introduction and notes.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Shah Shuja",
+   "role": "patron",
+   "note": "Ruler whose 27-year reign was the high point of Hafiz's work, though the poet briefly fell out of favour for mocking inferior poets.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Abu Ishaq",
+   "role": "patron",
+   "note": "Came to power in Shiraz while Hafiz was in his teens and supported him.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Timur",
+   "role": "conqueror",
+   "note": "Took Shiraz in 1393; legend has him summon Hafiz over a verse offering Samarkand and Bukhara for a girl's mole.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Shah Yahya",
+   "role": "ruler",
+   "note": "Ruler whose court Hafiz visited at Yezd where he got less than he expected; the poet wrote homesick lines there.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Hulagu",
+   "role": "Mongol ruler",
+   "note": "Grandson of Chinghis Khan who took Baghdad about fifty years before Hafiz was born.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "William Jones",
+   "role": "translator",
+   "note": "Made the first English translation of Hafiz, in 1771, and read him as a conventional love poet.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Shiraz",
+   "lat": 29.5918,
+   "lon": 52.5837,
+   "note": "Hafiz's birthplace and home for most of his life; he died there near the end of the century.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Hafezieh, Musalla Gardens",
+   "lat": 29.6317,
+   "lon": 52.5582,
+   "note": "Site of his tomb, built about twenty years after his death, among rose gardens.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Isfahan",
+   "lat": 32.6546,
+   "lon": 51.668,
+   "note": "City taken by Abu Ishaq along with Shiraz, and named among the places his poems travelled.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Yazd",
+   "lat": 31.8974,
+   "lon": 54.3569,
+   "note": "Where Hafiz wrote a poem of exile longing to return to Shiraz.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Baghdad",
+   "lat": 33.3152,
+   "lon": 44.3661,
+   "note": "Seat of the Sultan to whom Persian governors paid a nominal allegiance, and a place that offered patronage to the poet.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Samarkand",
+   "lat": 39.627,
+   "lon": 66.975,
+   "note": "Timur's capital, named in the verse that legend says brought Hafiz before him.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1316,
+   "label": "Hafiz is born in Shiraz, by modern scholars' estimate of 1315 or 1317.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1335,
+   "label": "Abu Said dies and Hulagu's house loses control, opening years of anarchy.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1353,
+   "label": "Muzaffarid rulers begin to govern most of Persia, in a period of constant civil war.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1390,
+   "label": "Hafiz dies, according to Jami.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1393,
+   "label": "Timur conquers Shiraz for the second and last time.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1771,
+   "label": "William Jones makes the first English translation of Hafiz.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "The rose and the nightingale",
+   "note": "The nightingale sings of the rose; the pair stands for the lover and the beloved in Persian poetry.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Wine and the dervish dress",
+   "note": "Wine, taverns and freedom from restraint run through the poems, set against hypocritical piety.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Love or mysticism",
+   "note": "Readers have taken the ghazals as plain love lyrics or as Sufi ecstasy, and scholars still disagree.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Homesickness and exile",
+   "note": "Hafiz was a devoted lover of Shiraz and wrote of longing for home when away.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Joy against time",
+   "note": "The poems urge one to enjoy the stream, the shade and a friend before hours slip away.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "INTRODUCTION",
+   "quote": "Shemsuddin Mahommad, better known by his poetical surname of Hafiz, was born in Shiraz in the early part of the fourteenth century.",
+   "why": "Opening line of the introduction: who Hafiz was and where he lived."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "Wind from the east, oh Lapwing of the day, I send thee to my Lady, though the way Is far to Saba, where I bid thee fly; Lest in the dust thy tameless wings should lie, Broken with grief, I send thee to thy nest, Fidelity.",
+   "why": "The first poem sends a lapwing as messenger to a distant lady."
+  },
+  {
+   "part": 1,
+   "chapter": "VII",
+   "quote": "From the garden of Heaven a western breeze Blows through the leaves of my garden of earth; With a love like a huri I’ld take mine ease, And wine! bring me wine, the giver of mirth! To-day the beggar may boast him a king, His banqueting-hall is the ripening field, And his tent the shadow that soft clouds fling.",
+   "why": "A spring song with wine, a beggar who boasts of being a king, and a tent of clouds."
+  },
+  {
+   "part": 1,
+   "chapter": "XIV",
+   "quote": "The nightingale with drops of his heart’s blood Had nourished the red rose, then came a wind, And catching at the boughs in envious mood, A hundred thorns about his heart entwined. Like to the parrot crunching sugar, good Seemed the world to me who could not stay The wind of Death that swept my hopes away.",
+   "why": "The nightingale and the rose, written after the death of the poet's son according to the notes."
+  },
+  {
+   "part": 1,
+   "chapter": "XL",
+   "quote": "The margin of a stream, the willow’s shade, A mind inclined to song, a mistress sweet, A Cup-bearer whose cheek outshines the rose, A friend upon whose heart thy heart is laid: Oh Happy-starred!",
+   "why": "A short list of what makes a good hour: water, shade, song and a friend."
+  },
+  {
+   "part": 1,
+   "chapter": "XXI",
+   "quote": "Not all the sum of earthly happiness Is worth the bowed head of a moment’s pain, And if I sell for wine my dervish dress, Worth more than what I sell is what I gain! Land where my Lady dwells, thou holdest me Enchained; else Fars were but a barren soil, Not worth the journey over land and sea, Not worth the toil!",
+   "why": "Trading the dervish dress for wine, and homesick praise of the beloved's land."
+  },
+  {
+   "part": 1,
+   "chapter": "XXVI",
+   "quote": "The secret draught of wine and love repressed Are joys foundationless—then come whate’er May come, slave to the grape I stand confessed! Unloose, oh friend, the knot of thy heart’s care, Despite the warning that the Heavens reveal! For all his thought, never astronomer That loosed the knot of Fate those Heavens conceal!",
+   "why": "Wine, love and the limits of the astronomer's knowledge of fate."
+  }
+ ]
+}

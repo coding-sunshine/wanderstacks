@@ -1,0 +1,228 @@
+{
+ "summary": "A young Gascon, d'Artagnan, rides to Paris in 1625 to join the King's Musketeers. On the way a stranger steals his letter of introduction. In Paris he provokes duels with three inseparable musketeers, Athos, Porthos and Aramis, and the four of them turn against the Cardinal's men instead. They are drawn into court intrigue around the queen and the English Duke of Buckingham, and into a long fight with the woman called Milady. The story runs on swordplay, disguise and loyalty, and its motto is all for one, one for all.",
+ "context": "Dumas wrote the novel in 1844 and published it that year, working with his ghostwriting collaborator Auguste Maquet. In the preface he says he found the Memoirs of M. d'Artagnan while researching in the Royal Library for his history of Louis XIV. The story is set between 1625 and 1628, and d'Artagnan is loosely based on a real soldier, Charles de Batz-Castelmore d'Artagnan. It opened the d'Artagnan Romances and counts among the best-loved swashbuckler novels. The site carries William Robson's English translation, in the Standard Ebooks edition.",
+ "sources": [
+  {
+   "title": "The Three Musketeers (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Three_Musketeers"
+  },
+  {
+   "title": "Alexandre Dumas (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Alexandre_Dumas"
+  },
+  {
+   "title": "The Three Musketeers, translated by William Robson (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/alexandre-dumas/the-three-musketeers/william-robson"
+  }
+ ],
+ "people": [
+  {
+   "name": "Alexandre Dumas",
+   "role": "author",
+   "note": "French novelist and playwright, born 1802, who published the novel in 1844.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Auguste Maquet",
+   "role": "scribe",
+   "note": "Ghostwriting collaborator with whom Dumas wrote the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "William Robson",
+   "role": "translator",
+   "note": "Translator of the English text this site carries.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "d'Artagnan",
+   "role": "character",
+   "note": "Young Gascon who goes to Paris to join the King's Musketeers; loosely based on a real soldier of that name.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Athos",
+   "role": "character",
+   "note": "One of the three inseparable musketeers whom d'Artagnan first meets as an opponent in a duel.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Porthos",
+   "role": "character",
+   "note": "Second of the three musketeers d'Artagnan is set to duel and then joins.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Aramis",
+   "role": "character",
+   "note": "Third of the musketeers, who becomes d'Artagnan's friend after their ambushed duels.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Charles de Batz-Castelmore d'Artagnan",
+   "role": "subject",
+   "note": "Real soldier on whom the hero is loosely based.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Milady",
+   "role": "character",
+   "note": "Woman first glimpsed in the opening chapter who later stands against the musketeers.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Duke of Buckingham",
+   "role": "character",
+   "note": "English duke whose visit to France drives the court intrigue around the queen.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Meung-sur-Loire",
+   "lat": 47.8281,
+   "lon": 1.6964,
+   "note": "Market town where the story opens in April 1625 and where d'Artagnan's letter is stolen.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Gascony",
+   "lat": 43.8,
+   "lon": 0.3,
+   "note": "Region in south-west France that d'Artagnan leaves to travel to Paris.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Paris",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "Capital where d'Artagnan seeks the musketeers' commander and where most of the intrigue unfolds.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "La Rochelle",
+   "lat": 46.1603,
+   "lon": -1.1511,
+   "note": "Huguenot stronghold that the opening chapter names when comparing the uproar at Meung to a second La Rochelle.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1802,
+   "label": "Alexandre Dumas is born in France.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1625,
+   "label": "The story opens in April with d'Artagnan's arrival at Meung.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 1628,
+   "label": "The period covered by the novel ends; it is set between 1625 and 1628.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1844,
+   "label": "Dumas writes and publishes The Three Musketeers with his collaborator Auguste Maquet.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "All for one, one for all",
+   "note": "The four friends swear a motto of mutual loyalty that holds them together through the plots against them.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Rivalry against the Cardinal",
+   "note": "Musketeers and the Cardinal's men are set against each other, so a duel can turn into a joint fight.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "History as adventure",
+   "note": "Real figures such as Louis XIII, Anne of Austria, Richelieu and Buckingham are bent around invented heroes.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Author’s Preface",
+   "quote": "stumbled by chance upon the Memoirs of M. d’Artagnan , printed⁠—as were most of the works of that period, in which authors could not tell the truth without the risk of a residence, more or less long, in the Bastille⁠—at Amsterdam, by Pierre Rouge",
+   "why": "Dumas claims the story comes from a memoir he found in the Royal Library."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "On the first Monday of the month of April, 1625, the market town of Meung, in which the author of Romance of the Rose was born, appeared to be in as perfect a state of revolution as if the Huguenots had just made a second La Rochelle of it",
+   "why": "Opening line: the date and the town where d'Artagnan's journey begins."
+  },
+  {
+   "part": 2,
+   "chapter": "IX",
+   "quote": "“All for one, one for all⁠—that is our motto, is it not?” “And yet⁠—” said Porthos",
+   "why": "The motto, sworn on the spot, that has come to stand for the whole book."
+  },
+  {
+   "part": 4,
+   "chapter": "XXVII",
+   "quote": "“A fleur-de-lis,” said Athos. “She was branded.” Athos emptied at a single draught the glass he held in his hand",
+   "why": "Athos tells d'Artagnan about a brand, a fleur-de-lis, on a woman's body."
+  },
+  {
+   "part": 9,
+   "chapter": "LXV",
+   "quote": "The executioner of Lille, the executioner of Lille!” cried Milady, a prey to insensate terror, and clinging with her hands to the wall to avoid falling",
+   "why": "Milady cries out in terror at the sight of the executioner of Lille."
+  }
+ ],
+ "id": "alexandre-dumas-the-three-musketeers-william-robson"
+}

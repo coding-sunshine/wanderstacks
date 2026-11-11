@@ -1,0 +1,211 @@
+{
+ "id": "leviathan",
+ "summary": "Leviathan argues that people without a common power live in a war of everyone against everyone, where life is solitary, poor, nasty, brutish and short. To escape it they agree to hand their right of self-government to a single sovereign, who must be strong and undivided. Hobbes describes the commonwealth as an artificial man and sets out the sovereign's rights, along with the duty of subjects. Later parts apply the argument to Christian religion and attack what he calls the kingdom of darkness, meaning churches that rival the state's authority.",
+ "context": "Hobbes wrote Leviathan during the English Civil War and published it in 1651, with a revised Latin edition in 1668. The title comes from the sea monster in the Book of Job, and the frontispiece, etched by the Parisian Abraham Bosse after discussion with Hobbes, shows a crowned giant built from hundreds of tiny people holding a sword and a crosier. Contemporaries argued fiercely over the book; some called it excellent in parts and dangerous in others, and critics later painted it as universally rejected. It is a founding text of social contract theory.",
+ "sources": [
+  {
+   "title": "Leviathan (Hobbes book) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)"
+  },
+  {
+   "title": "Leviathan (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/thomas-hobbes/leviathan"
+  },
+  {
+   "title": "Thomas Hobbes (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Thomas_Hobbes"
+  }
+ ],
+ "people": [
+  {
+   "name": "Thomas Hobbes",
+   "role": "author",
+   "note": "English philosopher (1588-1679) who wrote the book during the English Civil War.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Abraham Bosse",
+   "role": "printer",
+   "note": "Parisian etcher who made the frontispiece after lengthy discussion with Hobbes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Charles II",
+   "role": "patron",
+   "note": "A manuscript copy of Leviathan was made for him in 1651.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Brian Duppa",
+   "role": "subject",
+   "note": "Early reader who wrote that the book mixed things said so well he could embrace them with things wild and unchristian.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alexander Ross",
+   "role": "subject",
+   "note": "Early critic who found the book to contain much gold and much dross.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Westport, Malmesbury",
+   "lat": 51.5845,
+   "lon": -2.0997,
+   "note": "Hobbes was born here in Wiltshire in 1588.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Oxford",
+   "lat": 51.752,
+   "lon": -1.2577,
+   "note": "Hobbes studied at the University of Oxford and encountered classical literature and mathematics there.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Paris",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "The etcher of the frontispiece, Abraham Bosse, was a Parisian.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1588,
+   "label": "Thomas Hobbes is born in Westport, Wiltshire.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 1642,
+   "label": "The English Civil War begins; Hobbes publishes De Cive the same year.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "year": 1651,
+   "label": "Leviathan is published, with a manuscript copy made for Charles II.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1668,
+   "label": "A revised Latin edition appears.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1679,
+   "label": "Hobbes dies.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 2012,
+   "label": "Noel Malcolm's critical edition of the English and Latin texts is published by Oxford University Press.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Social contract and absolute sovereign",
+   "note": "People escape the war of all against all by authorising one sovereign to govern them.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The state of nature",
+   "note": "Without a visible power to keep them in awe, men live in constant fear and danger of violent death.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The state as an artificial man",
+   "note": "The commonwealth is built like a machine or body, with sovereignty as its artificial soul.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Church under the state",
+   "note": "Hobbes wants spiritual and secular power united in the sovereign, which the frontispiece's sword and crosier express.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Words and definitions",
+   "note": "Hobbes opens his account of the mind by stressing that true knowledge starts from examining definitions.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Introduction",
+   "quote": "Leviathan” called a “Commonwealth,” or “State,” in Latin Civitas , which is but an artificial man; though of greater stature and strength than the natural, for whose protection and defence it was intended; and in which the “sovereignty” is an artificial “soul,” as giving life and motion to the whole body; the “magistrates,” and ",
+   "why": "Hobbes's image of the state as an artificial man, from the introduction."
+  },
+  {
+   "part": 1,
+   "chapter": "XI",
+   "quote": "a perpetual and restless desire of power after power, that ceaseth only in death.",
+   "why": "Hobbes names the general inclination of mankind."
+  },
+  {
+   "part": 2,
+   "chapter": "XIII",
+   "quote": "Hereby it is manifest, that during the time men live without a common power to keep them all in awe, they are in that condition which is called war; and such a war, as is of every man, against every man.",
+   "why": "The war of all against all, stated plainly."
+  },
+  {
+   "part": 2,
+   "chapter": "XIII",
+   "quote": "continual fear and danger of violent death; and the life of man, solitary, poor, nasty, brutish, and short.",
+   "why": "The end of the famous description of life without government."
+  },
+  {
+   "part": 2,
+   "chapter": "XVII",
+   "quote": "I authorize and give up my right of governing myself, to this man, or to this assembly of men, on this condition, that thou give up thy right to him, and authorize all his actions in like manner.”",
+   "why": "The formula by which a multitude becomes a commonwealth."
+  },
+  {
+   "part": 4,
+   "chapter": "XXXI",
+   "quote": "The right of nature, whereby God reigneth over men, and punisheth those that break His laws, is to be derived not from His creating them, as if He required obedience as of gratitude for His benefits, but from His “irresistible power.”",
+   "why": "Hobbes bases God's authority on irresistible power, a line that angered critics."
+  }
+ ]
+}

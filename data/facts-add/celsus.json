@@ -1,0 +1,158 @@
+{
+  "facts": [
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "field": "collection",
+      "value": "Believed to have held around 12,000 scrolls.",
+      "source": "https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw",
+      "tier": "wikipedia",
+      "quote": "is believed to have held around 12,000 scrolls",
+      "status": "passing",
+      "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw' | rg -o -m1 'is\\s+believed\\s+to\\s+have\\s+held\\s+around\\s+12'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "field": "collection",
+      "value": "A holding capacity of up to 16,000 scrolls is also given.",
+      "source": "https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw",
+      "tier": "wikipedia",
+      "quote": "a holding capacity of up to sixteen thousand scrolls",
+      "status": "passing",
+      "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw' | rg -o -m1 'a\\s+holding\\s+capacity\\s+of\\s+up\\s+to\\s+sixtee'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "field": "remains_today",
+      "value": "Celsus is buried in a decorated marble sarcophagus in a crypt beneath the library.",
+      "source": "https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw",
+      "tier": "wikipedia",
+      "quote": "Celsus is buried in a crypt beneath the library in a decorated marble",
+      "status": "passing",
+      "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw' | rg -o -m1 'Celsus\\s+is\\s+buried\\s+in\\s+a\\s+crypt\\s+beneat'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "field": "architect",
+      "value": "Commissioned in the 110s CE by consul Tiberius Julius Aquila Polemaeanus; completed after Aquila death under Hadrian.",
+      "source": "https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw",
+      "tier": "wikipedia",
+      "quote": "commissioned in the years 110s CE by a",
+      "status": "passing",
+      "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw' | rg -o -m1 'commissioned\\s+in\\s+the\\s+years\\s+110s\\s+CE'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "field": "architect",
+      "value": "German article: built after Celsus death at the cost of his son Iulius Aquila, also consul.",
+      "source": "https://de.wikipedia.org/wiki/Celsus-Bibliothek",
+      "tier": "wikipedia",
+      "quote": "auf Kosten seines Sohnes Iulius Aquila",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://de.wikipedia.org/wiki/Celsus-Bibliothek' | sed 's/<[^>]*>/ /g' | rg -o -m1 'auf\\s+Kosten\\s+seines\\s+Sohnes\\s+Iulius\\s+Aq'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "field": "dims",
+      "value": "German article: facade 21 m long and over 16 m high.",
+      "source": "https://de.wikipedia.org/wiki/Celsus-Bibliothek",
+      "tier": "wikipedia",
+      "quote": "Die Bibliotheksfassade ist 21 Meter lang und über 16 Meter hoch",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://de.wikipedia.org/wiki/Celsus-Bibliothek' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Die\\s+Bibliotheksfassade\\s+ist\\s+21\\s+Mete'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "field": "dims",
+      "value": "Monumental nine-step flight of stairs; ten niches per storey.",
+      "source": "https://de.wikipedia.org/wiki/Celsus-Bibliothek",
+      "tier": "wikipedia",
+      "quote": "eine monumentale, neunstufige Freitreppe",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://de.wikipedia.org/wiki/Celsus-Bibliothek' | sed 's/<[^>]*>/ /g' | rg -o -m1 'eine\\s+monumentale.\\s+neunstufige\\s+Frei'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "field": "remains_today",
+      "value": "Four statues of the female virtues on the facade are not originals.",
+      "source": "https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw",
+      "tier": "wikipedia",
+      "quote": "The four statues of the female virtues are not originals",
+      "status": "passing",
+      "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw' | rg -o -m1 'The\\s+four\\s+statues\\s+of\\s+the\\s+female\\s+vir'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "field": "remains_today",
+      "value": "Some architectural elements are held in museums in Vienna and Istanbul.",
+      "source": "https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw",
+      "tier": "wikipedia",
+      "quote": "some of the architectural elements had been acquired by",
+      "status": "passing",
+      "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw' | rg -o -m1 'some\\s+of\\s+the\\s+architectural\\s+elements'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "field": "remains_today",
+      "value": "Reconstruction 1970 to 1978 led by Austrian archaeologists, based on fragments excavated 1903-1904.",
+      "source": "https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw",
+      "tier": "wikipedia",
+      "quote": "Strocka analysed the fragments that had been excavated by Austrian archaeologists between 1903 and 1904",
+      "status": "passing",
+      "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw' | rg -o -m1 'Strocka\\s+analysed\\s+the\\s+fragments\\s+tha'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "kind": "founded",
+      "year": 115,
+      "earliest": 110,
+      "latest": 119,
+      "label": "Library commissioned by consul Aquila Polemaeanus (110s CE)",
+      "source": "https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw",
+      "tier": "wikipedia",
+      "quote": "commissioned in the years 110s CE by a",
+      "status": "passing",
+      "check": "curl -sL 'https://en.wikipedia.org/w/index.php?title=Library_of_Celsus&action=raw' | rg -o -m1 'commissioned\\s+in\\s+the\\s+years\\s+110s\\s+CE'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "kind": "excavated",
+      "year": 1904,
+      "earliest": 1903,
+      "latest": 1904,
+      "label": "Parts of the building uncovered, 1903 to 1904 (German article)",
+      "source": "https://de.wikipedia.org/wiki/Celsus-Bibliothek",
+      "tier": "wikipedia",
+      "quote": "Teile des Gebäudes konnten in den Jahren 1903 bis 1904 freigelegt werden",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://de.wikipedia.org/wiki/Celsus-Bibliothek' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Teile\\s+des\\s+Geb.udes\\s+konnten\\s+in\\s+den'"
+    },
+    {
+      "cluster": "ancient-west",
+      "lib": "celsus",
+      "kind": "rebuilt",
+      "year": 1978,
+      "earliest": 1970,
+      "latest": 1978,
+      "label": "Collapsed facade rebuilt (German article)",
+      "source": "https://de.wikipedia.org/wiki/Celsus-Bibliothek",
+      "tier": "wikipedia",
+      "quote": "Der Wiederaufbau der eingestürzten Fassade erfolgte von 1970 bis 1978",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://de.wikipedia.org/wiki/Celsus-Bibliothek' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Der\\s+Wiederaufbau\\s+der\\s+eingest.rzten'"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "facts": [
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "dims",
+      "value": "Oval Room: 43.70 m by 32.80 m, 18 m high.",
+      "source": "https://www.bnf.fr/fr/le-site-richelieu-un-palais-au-coeur-de-paris",
+      "tier": "primary",
+      "quote": "un ovale de 43,70 m sur 32,80 m, 18 m de hauteur",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bnf.fr/fr/le-site-richelieu-un-palais-au-coeur-de-paris' | sed 's/<[^>]*>/ /g' | rg -o -m1 'un\\s+ovale\\s+de\\s+43.70\\s+m\\s+sur\\s+32.80\\s+m.\\s+1'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "architect",
+      "value": "Oval Room construction by Jean-Louis Pascal started in 1897, completed in 1932 by Alfred Recoura.",
+      "source": "https://www.bnf.fr/en/richelieu-site-palace-heart-paris",
+      "tier": "primary",
+      "quote": "The Oval Room’s construction by Jean-Louis Pascal started in 1897, and it was completed in 1932 by Alfred Recoura",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bnf.fr/en/richelieu-site-palace-heart-paris' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+Oval\\s+Room.s\\s+construction\\s+by\\s+Je'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "built",
+      "value": "Storeroom built to house 1.2 million volumes, already too small on opening day.",
+      "source": "https://www.bnf.fr/en/richelieu-site-palace-heart-paris",
+      "tier": "primary",
+      "quote": "Built to house 1.2 million volumes, the storeroom was already too small as from the day it opened",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bnf.fr/en/richelieu-site-palace-heart-paris' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Built\\s+to\\s+house\\s+1.2\\s+million\\s+volumes'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "status_note",
+      "value": "Closed for works in September 2016, reopened in 2022 as a freely accessible room.",
+      "source": "https://www.bnf.fr/en/richelieu-site-palace-heart-paris",
+      "tier": "primary",
+      "quote": "It closed for works in September 2016 and finally reopened in 2022 as a freely accessible room",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bnf.fr/en/richelieu-site-palace-heart-paris' | sed 's/<[^>]*>/ /g' | rg -o -m1 'It\\s+closed\\s+for\\s+works\\s+in\\s+September\\s+2'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "place",
+      "value": "Richelieu site: first establishment in Cardinal Mazarin former palace in 1721-1722.",
+      "source": "https://www.bnf.fr/en/richelieu-site-palace-heart-paris",
+      "tier": "primary",
+      "quote": "tricentennial of its first establishment in Cardinal Mazarin",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bnf.fr/en/richelieu-site-palace-heart-paris' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Cardinal\\s+Mazarin'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "place",
+      "value": "The Richelieu site was the main location of the library for 275 years, 1721 to 1996.",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France",
+      "tier": "wikipedia",
+      "quote": "This site was the main location of the library for 275 years, from 1721 to 1996",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France' | sed 's/<[^>]*>/ /g' | rg -o -m1 'This\\s+site\\s+was\\s+the\\s+main\\s+location\\s+of'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "collection",
+      "value": "Library traces its origin to the royal library founded at the Louvre Palace by Charles V in 1368.",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France",
+      "tier": "wikipedia",
+      "quote": "traces its origin to the royal library founded at the Louvre Palace by Charles V in 1368",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France' | sed 's/<[^>]*>/ /g' | rg -o -m1 'traces\\s+its\\s+origin\\s+to\\s+the\\s+royal\\s+lib'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "collection",
+      "value": "Collection bought by the Duke of Bedford, regent of France, and moved to England in 1424.",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France",
+      "tier": "wikipedia",
+      "quote": "who transferred it to England in 1424",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France' | sed 's/<[^>]*>/ /g' | rg -o -m1 'who\\s+transferred\\s+it\\s+to\\s+England\\s+in\\s+1'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "status_note",
+      "value": "Opened to the public in 1692 under Abbot Camille le Tellier de Louvois.",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France",
+      "tier": "wikipedia",
+      "quote": "The library opened to the public in 1692",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+library\\s+opened\\s+to\\s+the\\s+public\\s+i'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "collection",
+      "value": "Gallica: tenth millionth document added on 30 March 2023; millionth was on 10 February 2010.",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France",
+      "tier": "wikipedia",
+      "quote": "on 30 March 2023 the ten millionth document was added",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France' | sed 's/<[^>]*>/ /g' | rg -o -m1 'on\\s+30\\s+March\\s+2023\\s+the\\s+ten\\s+millionth'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "field": "collection",
+      "value": "The Rare Book Reserve storeroom held copies of the Gutenberg Bible until 1998.",
+      "source": "https://www.bnf.fr/en/richelieu-site-palace-heart-paris",
+      "tier": "primary",
+      "quote": "It housed a storeroom of the Rare Book Reserve until 1998",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bnf.fr/en/richelieu-site-palace-heart-paris' | sed 's/<[^>]*>/ /g' | rg -o -m1 'It\\s+housed\\s+a\\s+storeroom\\s+of\\s+the\\s+Rare'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "kind": "founded",
+      "year": 1368,
+      "earliest": 1368,
+      "latest": 1368,
+      "label": "Royal library founded at the Louvre by Charles V",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France",
+      "tier": "wikipedia",
+      "quote": "founded at the Louvre Palace by Charles V in 1368",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France' | sed 's/<[^>]*>/ /g' | rg -o -m1 'founded\\s+at\\s+the\\s+Louvre\\s+Palace\\s+by\\s+Ch'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "kind": "lost",
+      "year": 1424,
+      "earliest": 1424,
+      "latest": 1424,
+      "label": "Collection bought by the Duke of Bedford and taken to England",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France",
+      "tier": "wikipedia",
+      "quote": "who transferred it to England in 1424",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France' | sed 's/<[^>]*>/ /g' | rg -o -m1 'who\\s+transferred\\s+it\\s+to\\s+England\\s+in\\s+1'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "kind": "opened",
+      "year": 1692,
+      "earliest": 1692,
+      "latest": 1692,
+      "label": "Library opens to the public",
+      "source": "https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France",
+      "tier": "wikipedia",
+      "quote": "The library opened to the public in 1692",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioth%C3%A8que_nationale_de_France' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+library\\s+opened\\s+to\\s+the\\s+public\\s+i'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "kind": "opened",
+      "year": 1741,
+      "earliest": 1741,
+      "latest": 1741,
+      "label": "Cabinet du Roi opened to visitors",
+      "source": "https://www.bnf.fr/en/richelieu-site-palace-heart-paris",
+      "tier": "primary",
+      "quote": "The Cabinet du Roi was opened to visitors in 1741",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bnf.fr/en/richelieu-site-palace-heart-paris' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+Cabinet\\s+du\\s+Roi\\s+was\\s+opened\\s+to\\s+v'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "kind": "built",
+      "year": 1932,
+      "earliest": 1897,
+      "latest": 1932,
+      "label": "Oval Room completed by Alfred Recoura",
+      "source": "https://www.bnf.fr/en/richelieu-site-palace-heart-paris",
+      "tier": "primary",
+      "quote": "completed in 1932 by Alfred Recoura",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bnf.fr/en/richelieu-site-palace-heart-paris' | sed 's/<[^>]*>/ /g' | rg -o -m1 'completed\\s+in\\s+1932\\s+by\\s+Alfred\\s+Recour'"
+    },
+    {
+      "cluster": "west-europe",
+      "lib": "bnf",
+      "kind": "closed",
+      "year": 2016,
+      "earliest": 2016,
+      "latest": 2016,
+      "label": "Richelieu site closed for works (September)",
+      "source": "https://www.bnf.fr/en/richelieu-site-palace-heart-paris",
+      "tier": "primary",
+      "quote": "It closed for works in September 2016",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bnf.fr/en/richelieu-site-palace-heart-paris' | sed 's/<[^>]*>/ /g' | rg -o -m1 'It\\s+closed\\s+for\\s+works\\s+in\\s+September\\s+2'"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+ "id": "junglebook",
+ "summary": "Seven stories set in the Indian forest and shore. A wolf pack adopts the human child Mowgli, and the bear Baloo and panther Bagheera teach him the Law of the Jungle while the tiger Shere Khan hunts him. The boy befriends the python Kaa, is kidnapped by monkeys, and in the end faces Shere Khan and then leaves for the village. Other tales follow a white seal looking for a safe beach, a mongoose fighting two cobras in a garden, and a young elephant driver who sees the elephants dance.",
+ "context": "Kipling wrote the stories in 1893 and 1894 and printed them in magazines before collecting them as The Jungle Book in 1894, with sketches by his father John Lockwood Kipling. He was born in Bombay, spent his first six years there, and wrote the book in Vermont. The Wimpole Hall copy of a first edition with a handwritten note to his daughter Josephine suggests he wrote it for her. The book has been popular since publication, and its code of animal law influenced the Scout movement.",
+ "sources": [
+  {
+   "title": "The Jungle Book (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Jungle_Book"
+  },
+  {
+   "title": "Rudyard Kipling (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Rudyard_Kipling"
+  },
+  {
+   "title": "The Jungle Book by Rudyard Kipling (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/rudyard-kipling/the-jungle-book"
+  }
+ ],
+ "people": [
+  {
+   "name": "Rudyard Kipling",
+   "role": "author",
+   "note": "Born in Bombay in 1865; first English-language Nobel laureate in literature, 1907.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "John Lockwood Kipling",
+   "role": "subject",
+   "note": "The author's father, who drew some of the original illustrations.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Josephine Kipling",
+   "role": "subject",
+   "note": "Kipling's daughter, who died of pneumonia in 1899 aged six; he seems to have written the stories for her.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mowgli",
+   "role": "character",
+   "note": "The man-cub raised by wolves who moves between jungle and village.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Shere Khan",
+   "role": "character",
+   "note": "The lame tiger who hunts Mowgli.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Baloo",
+   "role": "character",
+   "note": "The bear who teaches the Law of the Jungle.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Bagheera",
+   "role": "character",
+   "note": "The black panther who guards Mowgli.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Robert Baden-Powell",
+   "role": "subject",
+   "note": "Founder of the Scout movement and a friend of Kipling, who drew on the book.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Mumbai (Bombay)",
+   "lat": 19.076,
+   "lon": 72.8777,
+   "note": "Kipling's birthplace, where he spent his first six years.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Seoni (Seeonee), Madhya Pradesh",
+   "lat": 22.0857,
+   "lon": 79.544,
+   "note": "The forest district named repeatedly as Mowgli's home.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dummerston, Vermont",
+   "lat": 42.9223,
+   "lon": -72.5948,
+   "note": "Kipling's home Naulakha, where he wrote the stories.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Wimpole Hall, Cambridgeshire",
+   "lat": 52.1427,
+   "lon": -0.0437,
+   "note": "Where a first edition inscribed to Josephine was found in 2010.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1865,
+   "label": "Kipling is born in Bombay on 30 December.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1893,
+   "label": "First Mowgli stories appear in magazines.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1894,
+   "label": "The Jungle Book is published as a collection.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1895,
+   "label": "The Second Jungle Book follows with eight more stories.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1907,
+   "label": "Kipling wins the Nobel Prize in Literature.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 2010,
+   "label": "An inscribed first edition is found at Wimpole Hall.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Law and freedom",
+   "note": "The stories teach respect for authority and one's place, yet also the freedom to move between worlds.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Abandonment and fostering",
+   "note": "Mowgli's story echoes Kipling's own childhood away from his parents.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Human types in animal form",
+   "note": "Animal characters stand for human archetypes more than for real animal behaviour.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Wildness and lawlessness",
+   "note": "Critics see in the tales an energy that the Law of the Jungle only partly contains.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Mowgli’s Brothers",
+   "quote": "It was seven o’clock of a very warm evening in the Seeonee hills when Father Wolf woke up from his day’s rest, scratched himself, yawned, and spread out his paws one after the other to get rid of the sleepy feeling in the tips.",
+   "why": "The opening sentence, which places the story in the Seeonee hills."
+  },
+  {
+   "part": 1,
+   "chapter": "Mowgli’s Brothers",
+   "quote": "The man’s cub is ours⁠—to kill if we choose.” “Ye choose and ye do not choose! What talk is this of choosing?",
+   "why": "Shere Khan claims the child at the wolves' cave."
+  },
+  {
+   "part": 1,
+   "chapter": "Kaa’s Hunting",
+   "quote": "We be of one blood, ye and I,” said Mowgli, giving the words the Bear accent which all the Hunting People of the Jungle use.",
+   "why": "The Master Words of the Jungle, spoken to each kind of animal."
+  },
+  {
+   "part": 1,
+   "chapter": "The White Seal",
+   "quote": "Kotick, Matkah’s baby, was born in the middle of that confusion, and he was all head and shoulders, with pale, watery blue eyes, as tiny seals must be; but there was something about his coat that made his mother look at him very closely.",
+   "why": "The birth of the white seal who will lead his people to safety."
+  },
+  {
+   "part": 2,
+   "chapter": "“Rikki-Tikki-Tavi”",
+   "quote": "This is the story of the great war that Rikki-tikki-tavi fought single-handed, through the bathrooms of the big bungalow in Segowlee cantonment.",
+   "why": "A mock-epic opening for the mongoose's fight."
+  },
+  {
+   "part": 2,
+   "chapter": "Toomai of the Elephants",
+   "quote": "Kala Nag, which means Black Snake, had served the Indian Government in every way that an elephant could serve it for forty-seven years",
+   "why": "Introduces Kala Nag, the elephant in Little Toomai's story."
+  }
+ ]
+}

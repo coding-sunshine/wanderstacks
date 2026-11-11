@@ -1,0 +1,218 @@
+{
+ "summary": "A short Chinese treatise on war in thirteen chapters, attributed to Sun Tzu, covering planning, the cost of war, attack by stratagem, terrain, the use of spies and more. The author treats war as costly and destructive, a last resort, and argues that prolonged fighting drains the state faster than the enemy can. He stresses intelligence and espionage and says the best result is to win without fighting. This edition is Lionel Giles's 1910 English translation with his introduction on Sun Wu and the history of the text.",
+ "context": "The work dates from the late Spring and Autumn period, roughly the fifth century BC, though the earliest parts of the text probably date to at least a century after Sun Tzu. Han historian Sima Qian placed him as a minister to King Helü of Wu, living 544 to 496 BC. Cao Cao wrote the earliest known commentary in the early third century. For almost 1,500 years it led an anthology that Emperor Shenzong of Song formalised as the Seven Military Classics in 1080. Amiot produced the first European translation in 1772, and Giles the first annotated English one in 1910.",
+ "sources": [
+  {
+   "title": "The Art of War (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Art_of_War"
+  },
+  {
+   "title": "Sun Tzu (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Sun_Tzu"
+  },
+  {
+   "title": "The Art of War, translated by Lionel Giles (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/sun-tzu/the-art-of-war/lionel-giles"
+  }
+ ],
+ "people": [
+  {
+   "name": "Sun Tzu",
+   "role": "author",
+   "note": "Traditional author, honorific meaning Master Sun, birth name said to be Sun Wu.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Lionel Giles",
+   "role": "translator",
+   "note": "British scholar who published the first annotated English translation in 1910.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "King Helü of Wu",
+   "role": "patron",
+   "note": "Ruler whom Han historians say Sun Tzu served as a minister.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Sima Qian",
+   "role": "subject",
+   "note": "Han dynasty historian who dated Sun Tzu's life to 544 to 496 BC.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Cao Cao",
+   "role": "scribe",
+   "note": "Strategist and warlord who wrote the earliest known commentary in the early third century.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Jean Joseph Marie Amiot",
+   "role": "translator",
+   "note": "French Jesuit whose 1772 version was the first in a European language.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sun Bin",
+   "role": "subject",
+   "note": "Descendant credited with a separate treatise of the same title, rediscovered in 1972.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "London",
+   "lat": 51.5072,
+   "lon": -0.1276,
+   "note": "Luzac and Company published the Giles translation here in 1910.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Oxford",
+   "lat": 51.752,
+   "lon": -1.2577,
+   "note": "Oxford University Press published Samuel Griffith's translation in 1963.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "Shambhala published Thomas Cleary's translation here in 1988.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "New York",
+   "lat": 40.7128,
+   "lon": -74.006,
+   "note": "Columbia University Press issued Victor Mair's translation in 2007.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -544,
+   "label": "Traditional birth year of Sun Tzu, who died in 496 BC.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 220,
+   "label": "Cao Cao writes the earliest known commentary in the early third century of the Common Era.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1080,
+   "label": "Emperor Shenzong of Song formalises the Seven Military Classics anthology.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1772,
+   "label": "Jean Joseph Marie Amiot produces the first European translation, in French.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1910,
+   "label": "Lionel Giles publishes the first annotated English translation through Luzac and Company.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "War as a costly last resort",
+   "note": "Prolonged warfare erodes a state faster than the enemy could.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Win without fighting",
+   "note": "The text prizes breaking resistance by strategy and diplomacy over battle.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Intelligence and espionage",
+   "note": "Foreknowledge from spies matters to the war effort and to preventing war.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "All warfare is based on deception. Hence, when able to attack, we must seem unable; when using our forces, we must seem inactive; when we are near, we must make the enemy believe we are far away; when far away, we must make him believe we are near",
+   "why": "The text's best-known claim about strategy."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "There is no instance of a country having benefited from prolonged warfare.",
+   "why": "The argument against long wars."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "supreme excellence consists in breaking the enemy’s resistance without fighting.",
+   "why": "Best result in this book's terms."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "If you know the enemy and know yourself, you need not fear the result of a hundred battles",
+   "why": "The famous line on knowledge of enemy and self."
+  },
+  {
+   "part": 1,
+   "chapter": "VII",
+   "quote": "Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt",
+   "why": "Speed and secrecy in movement."
+  },
+  {
+   "part": 1,
+   "chapter": "XIII",
+   "quote": "foreknowledge . Now this foreknowledge cannot be elicited from spirits; it cannot be obtained inductively from experience, nor by any deductive calculation",
+   "why": "Why spies matter: foreknowledge cannot come from spirits or calculation."
+  }
+ ],
+ "id": "artofwar"
+}

@@ -1,0 +1,246 @@
+{
+ "id": "mark-twain-the-adventures-of-tom-sawyer",
+ "summary": "Tom Sawyer, an orphan of twelve or thirteen, lives with Aunt Polly in the river town of St. Petersburg. He dodges school, tricks other boys into whitewashing a fence for him, and falls for the new girl Becky Thatcher. With his outcast friend Huckleberry Finn he sees a murder in the graveyard, goes pirating on an island, and attends his own funeral. He testifies against the killer, Injun Joe, and later gets lost in a cave with Becky. The boys find a hoard of gold, and Huck is adopted by the Widow Douglas.",
+ "context": "Mark Twain published the novel on 9 June 1876. In November 1875 he gave the manuscript to Elisha Bliss of the American Publishing Company, who sent it to True Williams for the illustrations. Chatto and Windus of London issued the text in June 1876 without pictures, and pirate editions appeared quickly in Canada and Germany. The American edition came in December 1876. St. Petersburg is based on Hannibal, Missouri, the Mississippi town where Twain spent his boyhood. The book was not a success at first, but it became his best seller in his lifetime.",
+ "sources": [
+  {
+   "title": "The Adventures of Tom Sawyer (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Adventures_of_Tom_Sawyer"
+  },
+  {
+   "title": "Hannibal, Missouri (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Hannibal,_Missouri"
+  }
+ ],
+ "people": [
+  {
+   "name": "Mark Twain",
+   "role": "author",
+   "note": "Pen name of Samuel Langhorne Clemens (1835 to 1910), who grew up in Hannibal.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Tom Sawyer",
+   "role": "character",
+   "note": "Orphan boy of twelve or thirteen who lives with Aunt Polly.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Huckleberry Finn",
+   "role": "character",
+   "note": "Vagrant boy admired by the others, who later is adopted by the Widow Douglas.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Becky Thatcher",
+   "role": "character",
+   "note": "New girl in town, daughter of Judge Thatcher, whom Tom pursues.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Injun Joe",
+   "role": "character",
+   "note": "Murderer of Dr. Robinson, who frames Muff Potter and dies in the cave.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Aunt Polly",
+   "role": "character",
+   "note": "Tom's guardian, who punishes him with the fence.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Elisha Bliss",
+   "role": "publisher",
+   "note": "Of the American Publishing Company, who received the manuscript in November 1875.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "True Williams",
+   "role": "illustrator",
+   "note": "Illustrated the first American edition.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Hannibal, Missouri",
+   "lat": 39.7084,
+   "lon": -91.3585,
+   "note": "Twain's boyhood town on the Mississippi, the model for St. Petersburg.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Jackson's Island",
+   "lat": 39.6,
+   "lon": -91.4,
+   "note": "Island in the Mississippi where Tom, Joe and Huck play pirates. Position is approximate.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Chatto and Windus issued an unillustrated edition here in June 1876.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "St. Louis",
+   "lat": 38.627,
+   "lon": -90.1994,
+   "note": "About 110 miles southeast of Hannibal.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1835,
+   "label": "Samuel Clemens, later Mark Twain, is born.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1846,
+   "label": "Hannibal is Missouri's third-largest city when its railroad is organized by Twain's father.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1875,
+   "label": "In November Twain gives the manuscript to Elisha Bliss.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1876,
+   "label": "The novel appears on 9 June and the American edition follows in December.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1884,
+   "label": "Adventures of Huckleberry Finn is published.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1910,
+   "label": "Twain dies.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Work and play",
+   "note": "The fence episode shows work as what one must do and play as what one need not do.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Outcast freedom",
+   "note": "Huck is hated by mothers and admired by their children for living outside the rules.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Conscience and an oath",
+   "note": "Tom breaks his oath to Huck and testifies to save Muff Potter.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Social satire",
+   "note": "The novel mixes humor with social criticism of the town.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Criticism of Injun Joe",
+   "note": "The portrayal of Injun Joe has been criticised as a caricature of Native Americans.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Tom! ” No answer. “ Tom! ” No answer. “What’s gone with that boy, I wonder? You Tom !” No answer. The old lady pulled her spectacles down and looked over them about the room; then she put them up and looked out under them.",
+   "why": "The novel opens with Aunt Polly hunting for her ward."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "Work consists of whatever a body is obliged to do, and that Play consists of whatever a body is not obliged to do. And this would help him to understand why constructing artificial flowers or performing on a treadmill is work, while rolling tenpins or climbing Mont Blanc is only amusement.",
+   "why": "Twain turns the fence into a theory of work and play."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "whitewash and a long-handled brush. He surveyed the fence, and all gladness left him and a deep melancholy settled down upon his spirit. Thirty yards of board fence nine feet high. Life to him seemed hollow, and existence but a burden.",
+   "why": "Tom contemplates his punishment."
+  },
+  {
+   "part": 1,
+   "chapter": "VI",
+   "quote": "Huckleberry Finn, son of the town drunkard. Huckleberry was cordially hated and dreaded by all the mothers of the town, because he was idle and lawless and vulgar and bad⁠—and because all their children admired him so, and delighted in his forbidden society, and wished they dared to be like him.",
+   "why": "Huck is introduced as the boy every other boy admires."
+  },
+  {
+   "part": 1,
+   "chapter": "VI",
+   "quote": "Becky Thatcher. What’s yours? Oh, I know. It’s Thomas Sawyer.” “That’s the name they lick me by. I’m Tom when I’m good. You call me Tom, will you?” “Yes.” Now Tom began to scrawl something on the slate, hiding the words from the girl. But she was not backward this time. She begged to see. Tom said: “Oh, it ain’t anything.” “Yes it is.”",
+   "why": "Tom tries to win Becky with a slate."
+  },
+  {
+   "part": 1,
+   "chapter": "IX",
+   "quote": "Injun Joe.” “That’s so⁠—that murderin’ half-breed! I’d druther they was devils a dern sight. What kin they be up to?” The whisper died wholly out, now, for the three men had reached the grave and stood within a few feet of the boys’ hiding-place.",
+   "why": "The boys hide in the graveyard as the grave robbers approach."
+  },
+  {
+   "part": 2,
+   "chapter": "XXIX",
+   "quote": "The Widow Douglas’ splendid hospitality was a tempting bait. It and Tom’s persuasions presently carried the day. So it was decided to say nothing to anybody about the night’s programme. Presently it occurred to Tom that maybe Huck might come this very night and give the signal.",
+   "why": "Late in the book, hospitality tempts Huck back."
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+{
+ "summary": "Dante tells of a journey through the three realms of the dead in the spring of 1300. Lost in a dark wood, he is led by the Roman poet Virgil down through Hell, a pit of ordered punishments, and up the mountain of Purgatory. Beatrice then guides him through the spheres of Paradise, and Saint Bernard takes him to the last vision. Each cantica has 33 cantos, and the whole is 14,233 lines of terza rima. The poem reads as the soul's road from sin to repentance to God.",
+ "context": "Dante began the poem around 1308 and finished it about 1321, shortly before his death. He wrote it in Tuscan rather than Latin, which helped fix standard Italian. The first complete translation, into Latin prose, was made by Giovanni da Serravalle in 1416, and the first printed edition appeared at Foligno in 1472. No manuscript in Dante's hand survives, only copies. Boccaccio later added Divina to the title. The site carries Henry Wadsworth Longfellow's English version from the Standard Ebooks edition.",
+ "sources": [
+  {
+   "title": "Divine Comedy (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Divine_Comedy"
+  },
+  {
+   "title": "Dante Alighieri (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Dante_Alighieri"
+  },
+  {
+   "title": "The Divine Comedy, translated by Henry Wadsworth Longfellow, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/dante-alighieri/the-divine-comedy/henry-wadsworth-longfellow"
+  }
+ ],
+ "people": [
+  {
+   "name": "Dante Alighieri",
+   "role": "author",
+   "note": "Italian poet (c. 1265 to 1321) who wrote in the Tuscan vernacular.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Virgil",
+   "role": "character",
+   "note": "The Roman poet who stands for human reason and guides Dante through Hell and most of Purgatory.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Beatrice",
+   "role": "character",
+   "note": "Represents divine revelation and guides Dante from the end of Purgatory onward.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Saint Bernard of Clairvaux",
+   "role": "character",
+   "note": "Represents contemplative mysticism and guides Dante in the last cantos of Paradiso.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Henry Wadsworth Longfellow",
+   "role": "translator",
+   "note": "Made the English translation in the Standard Ebooks edition.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Giovanni Boccaccio",
+   "role": "subject",
+   "note": "The earliest known user of the adjective Divina for the poem.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Giovanni da Serravalle",
+   "role": "translator",
+   "note": "Made the first complete translation, into Latin prose, in 1416.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Florence",
+   "lat": 43.7696,
+   "lon": 11.2558,
+   "note": "Dante's Florentine dialect formed the base of the poem's Tuscan and later of standard Italian.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Foligno",
+   "lat": 42.9533,
+   "lon": 12.7036,
+   "note": "The first printed edition appeared here on 11 April 1472.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Konstanz",
+   "lat": 47.6633,
+   "lon": 9.1753,
+   "note": "Serravalle made the first complete translation here during the Council of Constance.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jerusalem",
+   "lat": 31.7683,
+   "lon": 35.2137,
+   "note": "In Purgatorio it is dawn here when it is sunset on the mountain, a use of a spherical Earth.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1265,
+   "label": "Dante is born, in about May.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1300,
+   "label": "The year of the pilgrim's journey, from the night before Good Friday to the Wednesday after Easter.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1308,
+   "label": "Dante begins the poem, around this date.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1321,
+   "label": "The poem is finished, around the year of Dante's death.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1416,
+   "label": "Giovanni da Serravalle completes the first full translation, into Latin prose.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1472,
+   "label": "The first printed edition appears at Foligno.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Soul's road to God",
+   "note": "Read allegorically, the three parts show the soul rejecting sin, living in penance, and rising to God.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Punishment fits the deed",
+   "note": "Each soul gets a reward or punishment that matches what it did in life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Reason, then revelation",
+   "note": "Virgil stands for human reason and Beatrice for divine revelation, so Dante's guides change with his stage.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Vernacular as a literary language",
+   "note": "Writing in Tuscan, not Latin, helped establish standard Italian.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Threes in the form",
+   "note": "Three cantiche, 33 cantos each and interlocking three-line rhymes shape the poem.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Canto I",
+   "quote": "Midway upon the journey of our life I found myself within a forest dark, For the straightforward pathway had been lost",
+   "why": "The poem's famous opening lines."
+  },
+  {
+   "part": 1,
+   "chapter": "Canto III",
+   "quote": "“Through me the way is to the city dolent; Through me the way is to eternal dole; Through me the way among the people lost",
+   "why": "The inscription on the gate of Hell."
+  },
+  {
+   "part": 1,
+   "chapter": "Canto V",
+   "quote": "“There is no greater sorrow Than to be mindful of the happy time In misery, and that thy Teacher knows",
+   "why": "Francesca on remembering happiness."
+  },
+  {
+   "part": 2,
+   "chapter": "Canto XXXIV",
+   "quote": "Thence we came forth to rebehold the stars.",
+   "why": "The last line of Inferno."
+  },
+  {
+   "part": 2,
+   "chapter": "Canto I",
+   "quote": "To run o’er better waters hoists its sail The little vessel of my genius now, That leaves behind itself a sea so cruel; And of that second kingdom will I sing Wherein the human spirit doth purge itself, And to ascend to heaven becometh worthy",
+   "why": "Purgatorio opens on a lighter sea."
+  },
+  {
+   "part": 3,
+   "chapter": "Canto XIX",
+   "quote": "It was the hour when the diurnal heat No more can warm the coldness of the moon, Vanquished by earth, or peradventure Saturn, When geomancers their Fortuna Major See in the orient before the dawn Rise by a path that long remains not dim, There came to me in dreams a stammering woman, Squint in her eyes, and in her feet distorted, With hands dissevered and of sallow hue",
+   "why": "A dream of the Siren in Purgatorio."
+  },
+  {
+   "part": 4,
+   "chapter": "Canto XVII",
+   "quote": "As came to Clymene, to be made certain Of that which he had heard against himself, He who makes fathers chary still to children, Even such was I, and such was I perceived By Beatrice and by the holy light That first on my account had changed its place",
+   "why": "Dante learns of his coming exile."
+  },
+  {
+   "part": 4,
+   "chapter": "Canto XXXIII",
+   "quote": "But now was turning my desire and will, Even as a wheel that equally is moved, The Love which moves the sun and the other stars",
+   "why": "The final lines of the poem."
+  }
+ ],
+ "id": "divinecomedy"
+}

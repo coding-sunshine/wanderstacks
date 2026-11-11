@@ -1,0 +1,165 @@
+{
+ "id": "abrogans",
+ "summary": "Abrogans is a Latin word list with Old High German equivalents, and this manuscript, kept in the Abbey Library of St Gallen, is the oldest surviving book in the German language. The glossary fills pages 4 to 289 and was written by at least three scribes. Two pages after it are blank apart from two runic words. Next come a Latin text on church doctrine by Gennadius and, at the very end, the Lord's Prayer and a creed in Old High German.",
+ "context": "The volume dates to the later eighth century, roughly 765 to 775, and has 323 pages. The glossary lists about 3,670 Old High German words, which makes it a rare window on the earliest written German. Scholars have named Bishop Arbeo of Freising and a monk called Kero as possible authors, and the translation was probably made at Freising. A second copy survives in Paris. The St Gallen manuscript is the best known and is now digitised in full.",
+ "sources": [
+  {
+   "title": "e-codices: St Gallen Cod. Sang. 911",
+   "url": "https://www.e-codices.unifr.ch/en/description/csg/0911"
+  },
+  {
+   "title": "Wikipedia: Abrogans",
+   "url": "https://en.wikipedia.org/wiki/Abrogans"
+  }
+ ],
+ "people": [
+  {
+   "name": "Arbeo of Freising",
+   "role": "bishop",
+   "note": "Named as one possible author of the glossary.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Kero",
+   "role": "monk",
+   "note": "Also proposed as the author of the translation.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Gennadius",
+   "role": "author",
+   "note": "His text on church doctrine fills pages 292 to 319.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "St Gallen, Abbey Library",
+   "lat": 47.4233,
+   "lon": 9.377,
+   "note": "The manuscript has been kept here as Cod. Sang. 911.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Freising",
+   "lat": 48.4028,
+   "lon": 11.7489,
+   "note": "The translation was probably made here.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Paris, Bibliotheque nationale",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "Holds the other surviving copy, lat. 7640.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 765,
+   "label": "Start of the likely window for writing the manuscript, to about 775.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 770,
+   "label": "Middle of the likely writing window, 765 to 775.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 775,
+   "label": "End of the likely window for writing the manuscript.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Oldest German book",
+   "note": "The manuscript is regarded as the oldest preserved book in German.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "A word list as a dictionary",
+   "note": "Latin entries are paired with Old High German words, about 3,670 of them.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "A short prayer at the back",
+   "note": "The last pages hold the Lord's Prayer and a creed in Old High German.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "n": 5,
+   "note": "Page 4, where the Latin to Old High German glossary begins.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 291,
+   "note": "Page 290, empty except for two runic words.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 292,
+   "note": "Page 291, also empty apart from the runic words.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 293,
+   "note": "Page 292, where Gennadius on church doctrine begins.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 320,
+   "note": "Page 320, with the Old High German Lord's Prayer and creed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 322,
+   "note": "Page 322, the last of the pages with the vernacular prayer and creed.",
+   "s": [
+    0
+   ]
+  }
+ ]
+}

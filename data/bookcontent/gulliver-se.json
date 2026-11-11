@@ -1,0 +1,239 @@
+{
+ "id": "gulliver-se",
+ "summary": "Lemuel Gulliver, an English ship's surgeon, tells of four voyages. He is shipwrecked among six-inch Lilliputians, abandoned among giants in Brobdingnag, carried to the flying island of Laputa and its ruinous academy, and finally left among the Houyhnhnms, rational horses who rule brutish human-like Yahoos. Each land turns Gulliver's view of Europe upside down. He comes home a misanthrope who prefers the company of horses. The book mocks politics, science, travel writing and human pride.",
+ "context": "Swift wrote the book mostly between about 1720 and 1725. In March 1726 he went to London, and the publisher Benjamin Motte brought out the first edition in two volumes on 28 October 1726, cutting passages he feared would bring a prosecution. George Faulkner's Dublin edition of 1735 is regarded as closer to Swift's text. The book sold out within a week and has stayed in print. It was written as political satire, though it is often shelved as a children's story. This is the Standard Ebooks edition.",
+ "sources": [
+  {
+   "title": "Gulliver's Travels (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Gulliver%27s_Travels"
+  },
+  {
+   "title": "Gulliver's Travels by Jonathan Swift (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/jonathan-swift/gullivers-travels"
+  }
+ ],
+ "people": [
+  {
+   "name": "Jonathan Swift",
+   "role": "author",
+   "note": "Anglo-Irish writer and clergyman who wrote the book as political satire and published it anonymously.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lemuel Gulliver",
+   "role": "narrator",
+   "note": "English surgeon and later ship's captain whose four voyages make up the book.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Benjamin Motte",
+   "role": "publisher",
+   "note": "Brought out the first edition in 1726, using five printing houses to speed production, and cut the worst offending passages.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "George Faulkner",
+   "role": "publisher",
+   "note": "Dublin printer whose 1735 edition of Swift's works is regarded as the first edition with Swift's text restored.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alexander Pope",
+   "role": "friend of the author",
+   "note": "Member of the Scriblerus Club and author of five Verses on Gulliver's Travels, which Swift added to the second edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Glumdalclitch",
+   "role": "character",
+   "note": "The farmer's daughter who cares for Gulliver in Brobdingnag; he calls her his little nurse.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Don Pedro de Mendez",
+   "role": "character",
+   "note": "Portuguese captain who rescues Gulliver at the end and treats him kindly despite Gulliver's horror of humankind.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Gay",
+   "role": "early reader",
+   "note": "Remarked that the book is universally read, from the cabinet council to the nursery.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Dublin",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "note": "City that the rebellious town of Lindalino stands for in an allegory of Swift's Drapier's Letters campaign.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Loughry Manor, Cookstown",
+   "lat": 54.6446,
+   "lon": -6.7436,
+   "note": "County Tyrone house where much of the writing was done.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Japan",
+   "lat": 36.2048,
+   "lon": 138.2529,
+   "note": "Gulliver reaches Japan at the end of the third voyage and asks the Emperor to excuse the ceremony of trampling the crucifix.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1713,
+   "label": "Swift, Gay, Pope and Arbuthnot form the Scriblerus Club, which some sources link to the book's start.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1720,
+   "label": "Swift's correspondence shows that composition proper began, with Parts I and II first.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1725,
+   "label": "By August the manuscript is complete.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1726,
+   "label": "Motte publishes the first edition in two volumes on 28 October.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1735,
+   "label": "Faulkner prints an edition in Dublin, regarded as the first with Swift's text.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1899,
+   "label": "The suppressed Lindalino passage is first included in a modern edition.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Size changes the view",
+   "note": "Gulliver is huge among the Lilliputians and tiny among giants, and each country judges Europe the way he judged the other.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Petty quarrels as politics",
+   "note": "Lilliput splits over which end of an egg to break, a joke at party and religious conflict.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Science without use",
+   "note": "Laputa and the academy at Lagado pursue schemes such as sunbeams from cucumbers, a satire on the Royal Society.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Reason versus the Yahoo",
+   "note": "The horses are rational and the Yahoos brutish, and Gulliver comes to see his own kind as Yahoos with a little reason.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Travel writing mocked",
+   "note": "Swift satirises the genre of travellers' tales, then borrows its plain, factual voice.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "IV",
+   "quote": "the primitive way of breaking eggs, before we eat them, was upon the larger end; but his present majesty’s grandfather, while he was a boy, going to eat an egg, and breaking it according to the ancient practice, happened to cut one of his fingers. Whereupon the emperor his father published an edict, commanding all his subjects, upon great penalties, to break the smaller end of their eggs.",
+   "why": "The Big-Endian quarrel, Lilliput's comic image of religious and party strife."
+  },
+  {
+   "part": 2,
+   "chapter": "VII",
+   "quote": "whoever could make two ears of corn, or two blades of grass, to grow upon a spot of ground where only one grew before, would deserve better of mankind, and do more essential service to his country, than the whole race of politicians put together.”",
+   "why": "The King of Brobdingnag's judgement of what truly serves a country."
+  },
+  {
+   "part": 2,
+   "chapter": "VI",
+   "quote": "I cannot but conclude the bulk of your natives to be the most pernicious race of little odious vermin that nature ever suffered to crawl upon the surface of the earth.”",
+   "why": "The giant king's verdict on Gulliver's account of Europe."
+  },
+  {
+   "part": 3,
+   "chapter": "V",
+   "quote": "The first man I saw was of a meagre aspect, with sooty hands and face, his hair and beard long, ragged, and singed in several places. His clothes, shirt, and skin, were all of the same colour. He has been eight years upon a project for extracting sunbeams out of cucumbers, which were to be put in phials hermetically sealed, and let out to warm the air in raw inclement summers.",
+   "why": "The projector at Lagado, Swift's mockery of useless science."
+  },
+  {
+   "part": 3,
+   "chapter": "II",
+   "quote": "The sorrel nag offered me a root, which he held (after their manner, as we shall describe in its proper place) between his hoof and pastern; I took it in my hand, and, having smelt it, returned it to him again as civilly as I could.",
+   "why": "Gulliver first dealing with the horses, who treat him with a courtesy no animal should show."
+  },
+  {
+   "part": 4,
+   "chapter": "IX",
+   "quote": "Houyhnhnms have no word in their language to express anything that is evil, except what they borrow from the deformities or ill qualities of the Yahoos.",
+   "why": "On how the Houyhnhnms speak of evil, only by borrowing from Yahoo traits."
+  },
+  {
+   "part": 4,
+   "chapter": "XII",
+   "quote": "I write for the noblest end, to inform and instruct mankind; over whom I may, without breach of modesty, pretend to some superiority, from the advantages I received by conversing so long among the most accomplished Houyhnhnms. I write without any view to profit or praise.",
+   "why": "Gulliver's closing claim of high purpose, Swift's last joke at his narrator."
+  }
+ ]
+}

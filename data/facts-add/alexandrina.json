@@ -1,0 +1,213 @@
+{
+  "facts": [
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "built",
+      "value": "Officially inaugurated 16 October 2002; construction began 1995",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "the complex was officially inaugurated on 16 October 2002",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'officially inaugurated on 16 October 2002'",
+      "earliest": 1995,
+      "latest": 2002
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "status_note",
+      "value": "Idea of reviving the library dates to 1974, when an Alexandria University committee chose a plot between the campus and the seafront near the ancient library site",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "The idea of reviving the Library of Alexandria dates back to 1974",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'The idea of reviving the Library of Alexandria dates back to 1974'",
+      "earliest": 1974,
+      "latest": 1974
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "architect",
+      "value": "Snohetta, Norwegian firm, won the UNESCO-organised architectural competition (1988) among 524 other entries",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "UNESCO organized an architectural design competition in 1988",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'UNESCO organized an architectural design competition in 1988'",
+      "earliest": 1988,
+      "latest": 1988
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "architect",
+      "value": "UNESCO organised the architectural competition; the Norwegian firm Snohetta was selected (Information Today, Dec 2002)",
+      "source": "http://www.infotoday.com/it/dec02/bilboul.htm",
+      "tier": "secondary",
+      "quote": "(Norwegian firm Snohetta was selected.)",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'http://www.infotoday.com/it/dec02/bilboul.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Norwegian firm Snohetta was selected'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "dims",
+      "value": "Main reading room 20,000 square metres (220,000 sq ft) on eleven cascading levels",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "the main reading room covering 20,000 square metres (220,000 sq ft) on eleven cascading levels",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'the main reading room covering 20,000 square metres'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "dims",
+      "value": "Reading room beneath a 32-metre-high glass-panelled roof tilted toward the sea, about 160 m in diameter; granite walls carved with characters from 120 scripts",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "The main reading room stands beneath a 32-meter-high glass-panelled roof",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'beneath a 32-meter-high glass-panelled roof'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "volumes",
+      "value": "Shelf space for eight million books",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "The library offers shelf space for eight million books",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'shelf space for eight million books'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "volumes",
+      "value": "Held only 500,000 books in 2002; a further 500,000 came from the Bibliotheque nationale de France (Wikipedia dates the gift 2009 in the lead and 2010 in the criticism section)",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "the library held only 500,000 books in 2002",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'the library held only 500,000 books in 2002'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "collection",
+      "value": "Four museums (Antiquities, Manuscripts, Sadat, History of Science), a Planetarium Science Center, six specialised libraries and a copy of the Internet Archive",
+      "source": "https://www.bibalex.org/en/page/overview",
+      "tier": "primary",
+      "quote": "Four museums: The Antiquities Museum The Manuscripts Museum The Sadat Museum The History of Science Museum",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bibalex.org/en/page/overview' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Four museums'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "status_note",
+      "value": "Receives about 1.5 million visitors a year (official overview)",
+      "source": "https://www.bibalex.org/en/page/overview",
+      "tier": "primary",
+      "quote": "receiving about 1.5 million visitors a year",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.bibalex.org/en/page/overview' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'receiving about 1.5 million visitors a year'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "place",
+      "value": "About 100 yards from where the ancient library stood",
+      "source": "http://www.infotoday.com/it/dec02/bilboul.htm",
+      "tier": "secondary",
+      "quote": "About 100 yards from where the ancient library stood",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'http://www.infotoday.com/it/dec02/bilboul.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'About 100 yards from where the ancient library stood'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "status_note",
+      "value": "Cost: more than $200 million (Information Today, 2002); Wikipedia reports US$65 million pledged in 1990 and about US$220 million further spent. Figures differ",
+      "source": "http://www.infotoday.com/it/dec02/bilboul.htm",
+      "tier": "secondary",
+      "quote": "The project, which cost more than $200 million",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'http://www.infotoday.com/it/dec02/bilboul.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'The project, which cost more than $200 million'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "field": "status_note",
+      "value": "Opened by President Hosni Mubarak on 16 October 2002 with the presidents of France, Greece and Italy present",
+      "source": "http://www.infotoday.com/it/dec02/bilboul.htm",
+      "tier": "secondary",
+      "quote": "Egyptian president Hosni Mubarak inaugurated the new library on October 16.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'http://www.infotoday.com/it/dec02/bilboul.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Egyptian president Hosni Mubarak inaugurated the new library on October 16'",
+      "earliest": 2002,
+      "latest": 2002
+    }
+  ],
+  "events": [
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "kind": "founded",
+      "year": 1974,
+      "earliest": 1974,
+      "latest": 1974,
+      "label": "Alexandria University committee selects a site for a new library",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "The idea of reviving the Library of Alexandria dates back to 1974",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'The idea of reviving the Library of Alexandria dates back to 1974'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "kind": "founded",
+      "year": 1988,
+      "earliest": 1988,
+      "latest": 1988,
+      "label": "UNESCO design competition won by Snohetta",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "UNESCO organized an architectural design competition in 1988",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'UNESCO organized an architectural design competition in 1988'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "kind": "built",
+      "year": 1995,
+      "earliest": 1995,
+      "latest": 1995,
+      "label": "Construction begins",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "Construction work began in 1995",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Construction work began in 1995'"
+    },
+    {
+      "cluster": "africa",
+      "lib": "alexandrina",
+      "kind": "opened",
+      "year": 2002,
+      "earliest": 2002,
+      "latest": 2002,
+      "label": "Officially inaugurated 16 October 2002",
+      "source": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+      "tier": "wikipedia",
+      "quote": "the complex was officially inaugurated on 16 October 2002",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'officially inaugurated on 16 October 2002'"
+    }
+  ]
+}

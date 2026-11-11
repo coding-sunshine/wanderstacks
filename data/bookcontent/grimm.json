@@ -1,0 +1,233 @@
+{
+ "id": "grimm",
+ "summary": "This is a large English selection from the Children's and Household Tales gathered by Jacob and Wilhelm Grimm: Hansel and Gretel, Little Red-Cap, Snowdrop, Rumpelstiltskin, Ashputtel, Briar Rose, The Fisherman and His Wife, The Frog-Prince and dozens more. They are short, plain stories of poor woodcutters, wicked stepmothers, talking animals, clever tailors and lucky fools. Many open in a forest or at a spinning wheel and end with a marriage or a punishment. Reading them together shows how a folk tradition and a scholarly project became children's reading.",
+ "context": "The brothers began collecting in the years after their studies, helped by friends in Kassel and by old books, and with the encouragement of Achim von Arnim and Clemens Brentano. The first volume appeared on 20 December 1812 with 86 stories, and a second followed in 1815. By the seventh edition of 1857 the collection held 210 tales. Early critics said the book was not fit for children, so the Grimms softened some tales, turning wicked mothers into stepmothers and removing sexual references, while making punishments harsher. UNESCO lists the collection in its Memory of the World register.",
+ "sources": [
+  {
+   "title": "Grimms' Fairy Tales (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Grimms%27_Fairy_Tales"
+  },
+  {
+   "title": "Grimms' Fairy Tales (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/2591"
+  }
+ ],
+ "people": [
+  {
+   "name": "Jacob Grimm",
+   "role": "collector",
+   "note": "Elder brother; turned from law to German literature and later wrote the German Grammar that made the family name internationally known.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Wilhelm Grimm",
+   "role": "collector",
+   "note": "Younger brother who completed his law degree at Marburg and took up German literature.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Friedrich Carl von Savigny",
+   "role": "mentor",
+   "note": "Marburg law professor and founder of the historical school, whose library the brothers used.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Achim von Arnim",
+   "role": "friend",
+   "note": "Writer who with Brentano wanted to publish folk tales and asked the brothers to collect them.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Clemens Brentano",
+   "role": "friend",
+   "note": "Writer who with Arnim urged the brothers to collect oral tales.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ludwig Emil Grimm",
+   "role": "illustrator",
+   "note": "Brother who illustrated the 1825 small edition of 50 tales for children.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Joseph Jacobs",
+   "role": "successor",
+   "note": "English folklorist inspired by the Grimms, who said what Perrault began, the Grimms completed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jack Zipes",
+   "role": "scholar",
+   "note": "Believes the Grimms changed mothers to stepmothers because they held motherhood sacred.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Kassel",
+   "lat": 51.3127,
+   "lon": 9.4797,
+   "note": "Home city where Jacob returned in 1806 and where friends told the brothers tales.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Marburg",
+   "lat": 50.8021,
+   "lon": 8.7667,
+   "note": "University where both brothers studied law.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Paris",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "Jacob went there for a year as Savigny's assistant.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1802,
+   "label": "Jacob begins at the University of Marburg; Wilhelm joins a year later.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1812,
+   "label": "First volume published on 20 December with 86 stories.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1815,
+   "label": "Second volume adds 70 more tales.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1825,
+   "label": "Small edition of 50 tales for child readers appears.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1857,
+   "label": "Seventh edition, with 210 tales, is the last in the brothers' lifetimes.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Folklore as national history",
+   "note": "The brothers saw the tales as the pure form of German culture, a view that shaped romantic nationalism across Europe.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Poverty and hunger",
+   "note": "Many tales begin with famine, a poor woodcutter or a miller short of money, so want drives the plot.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Wicked stepmothers",
+   "note": "Later editions replaced mothers with stepmothers, shifting blame for cruelty in Snow White and Hansel and Gretel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Cunning and luck",
+   "note": "The weak win by wit or luck: the tailor, the youngest son, the child who tricks the witch.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "A book rewritten for children",
+   "note": "Added violence for villains while sexual references were cut, as the collection was reshaped for the nursery.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "HANSEL AND GRETEL",
+   "quote": "Hard by a great forest dwelt a poor wood-cutter with his wife and his two children. The boy was called Hansel and the girl Gretel. He had little to bite and to break, and once when great dearth fell on the land, he could no longer procure even daily bread.",
+   "why": "The opening of Hansel and Gretel, where famine drives the plot."
+  },
+  {
+   "part": 1,
+   "chapter": "HANSEL AND GRETEL",
+   "quote": "Nibble, nibble, gnaw, Who is nibbling at my little house?’ The children answered: ‘The wind, the wind, The heaven-born wind,’ and went on eating without disturbing themselves.",
+   "why": "The witch's cottage of gingerbread and the call that lures children to it."
+  },
+  {
+   "part": 1,
+   "chapter": "THE FISHERMAN AND HIS WIFE",
+   "quote": "There was once a fisherman who lived with his wife in a pigsty, close by the seaside.",
+   "why": "Opening of The Fisherman and His Wife, a tale of greed against a humble start."
+  },
+  {
+   "part": 2,
+   "chapter": "LITTLE RED-CAP [LITTLE RED RIDING HOOD]",
+   "quote": "Oh! grandmother,’ she said, ‘what big ears you have!’ ‘The better to hear you with, my child,’ was the reply. ‘But, grandmother, what big eyes you have!’ she said. ‘The better to see you with, my dear.’ ‘But, grandmother, what large hands you have!’",
+   "why": "The best-known exchange in Little Red-Cap, before the wolf springs."
+  },
+  {
+   "part": 2,
+   "chapter": "SNOWDROP",
+   "quote": "Tell me, glass, tell me true! Of all the ladies in the land, Who is fairest, tell me, who?’ And the glass had always answered: ‘Thou, queen, art the fairest in all the land.’ But Snowdrop grew more and more beautiful; and when she was seven years old she was as bright as the day, and fairer than the queen herself.",
+   "why": "The queen's vanity in Snowdrop, the cause of the story's hatred."
+  },
+  {
+   "part": 2,
+   "chapter": "RUMPELSTILTSKIN",
+   "quote": "Little does my lady dream Rumpelstiltskin is my name!”",
+   "why": "Rumpelstiltskin names himself, the turn that frees the queen."
+  },
+  {
+   "part": 1,
+   "chapter": "BRIAR ROSE",
+   "quote": "Now that very day the hundred years were ended; and as the prince came to the thicket he saw nothing but beautiful flowering shrubs, through which he went with ease, and they shut in after him as thick as ever.",
+   "why": "The prince arrives in Briar Rose just as the hundred years of enchantment finish."
+  }
+ ]
+}

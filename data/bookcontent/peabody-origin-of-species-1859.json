@@ -1,0 +1,229 @@
+{
+ "id": "peabody-origin-of-species-1859",
+ "summary": "Darwin argues that living things change over generations and that the many forms of life descend from common ancestors in a branching pattern. He begins with plants and animals under domestication, moves to variation and the struggle for existence in nature, and then sets out natural selection: useful variations are kept and harmful ones lost. He takes on the hard cases, such as the eye, instinct and hybrid sterility, and the gaps in the fossil record. Later chapters use geography, classification and embryos as evidence, and the last chapter sums up and looks ahead.",
+ "context": "Darwin worked on the theory from the late 1830s and wrote a 230-page essay in 1844, but held back from publishing. In June 1858 a letter from Alfred Russel Wallace with a matching idea pushed him to act. Papers by both men were read at the Linnean Society on 1 July 1858, and Darwin then wrote what he called an abstract of his work. John Murray published it on 24 November 1859, aimed at general readers. Murray paid Darwin 180 pounds for the first edition, and the book reached a sixth edition by 1882. The site carries the 1859 text.",
+ "sources": [
+  {
+   "title": "On the Origin of Species - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species"
+  },
+  {
+   "title": "On the Origin of Species (first edition) by Charles Darwin - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/1228"
+  }
+ ],
+ "people": [
+  {
+   "name": "Charles Darwin",
+   "role": "author",
+   "note": "English naturalist who joined the Beagle expedition in December 1831 and published the book in 1859.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alfred Russel Wallace",
+   "role": "subject",
+   "note": "Wrote from the Maluku Islands in 1858 with an idea close to natural selection, and is named in the introduction.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Charles Lyell",
+   "role": "subject",
+   "note": "Geologist who urged Darwin in 1856 to publish and suggested the publisher John Murray.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Joseph Dalton Hooker",
+   "role": "subject",
+   "note": "Botanist who read Darwin's 1844 essay and helped arrange the 1858 Linnean Society papers.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Murray",
+   "role": "printer",
+   "note": "Publisher who agreed to issue the book without seeing the manuscript.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "T. H. Huxley",
+   "role": "subject",
+   "note": "Used the debate over the book to promote scientific naturalism with the X Club.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Herbert Spencer",
+   "role": "subject",
+   "note": "Active supporter of Lamarckism and progressive development in the 1850s.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Galapagos Islands",
+   "lat": -0.6,
+   "lon": -90.5,
+   "note": "Mockingbirds collected here were found by John Gould to be three separate species.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ternate",
+   "lat": 0.7833,
+   "lon": 127.3667,
+   "note": "One of the Maluku islands from which Wallace sent his parcel to Darwin in 1858.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Halmahera (Gilolo)",
+   "lat": 0.6,
+   "lon": 128,
+   "note": "Maluku island also named as Wallace's location when his paper reached Darwin.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sandown",
+   "lat": 50.656,
+   "lon": -1.151,
+   "note": "Seaside town where Darwin began his abstract on 20 July 1858 while on holiday.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1831,
+   "label": "Darwin joins the Beagle expedition as a gentleman naturalist and geologist.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1844,
+   "label": "Darwin writes a 230-page essay setting out his theory, to be published if he died early.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1858,
+   "label": "Wallace's parcel arrives and papers by both men are read at the Linnean Society on 1 July.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1859,
+   "label": "John Murray publishes the book on 24 November.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1882,
+   "label": "By Darwin's death the book is in its sixth edition.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Natural selection",
+   "note": "Favourable variations are preserved and injurious ones rejected, and Darwin gives this process that name.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Common descent",
+   "note": "The diversity of life arose through a branching pattern of descent from shared ancestors.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Artificial selection as a guide",
+   "note": "Darwin compares selection in nature to what animal breeders practise, and stresses competition between individuals.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Struggle for existence",
+   "note": "More individuals are born than can survive, so a recurring struggle follows from this.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "INTRODUCTION.",
+   "quote": "Mr. Wallace, who is now studying the natural history of the Malay archipelago, has arrived at almost exactly the same general conclusions that I have on the origin of species.",
+   "why": "Darwin credits Wallace for reaching nearly the same conclusions."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER III. STRUGGLE FOR EXISTENCE.",
+   "quote": "entangled bank, we are tempted to attribute their proportional numbers and kinds to what we call chance. But how false a view is this! Every one has heard that when an American forest is cut down, a very different vegetation springs up;",
+   "why": "A warning against explaining life by chance, from the chapter on the struggle for existence."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER IV. NATURAL SELECTION.",
+   "quote": "preservation of favourable variations and the rejection of injurious variations, I call Natural Selection.",
+   "why": "Darwin names natural selection."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER IV. NATURAL SELECTION.",
+   "quote": "I can see no limit to the amount of change, to the beauty and infinite complexity of the coadaptations between all organic beings, one with another and with their physical conditions of life, which may be effected in the long course of time by nature’s power of selection.",
+   "why": "Darwin on how far selection can change a living thing."
+  },
+  {
+   "part": 3,
+   "chapter": "CHAPTER VI. DIFFICULTIES ON THEORY.",
+   "quote": "To suppose that the eye, with all its inimitable contrivances for adjusting the focus to different distances, for admitting different amounts of light, and for the correction of spherical and chromatic aberration, could have been formed by natural selection, seems, I freely confess, absurd in the highest possible degree.",
+   "why": "Darwin raises the eye as the hardest case against his own theory."
+  },
+  {
+   "part": 4,
+   "chapter": "CHAPTER IX. ON THE IMPERFECTION OF THE GEOLOGICAL RECORD.",
+   "quote": "imperfectly kept, and written in a changing dialect; of this history we possess the last volume alone, relating only to two or three countries. Of this volume, only here and there a short chapter has been preserved; and of each page, only here and there a few lines.",
+   "why": "The fossil record compared to a history of which only the last volume survives."
+  },
+  {
+   "part": 7,
+   "chapter": "CHAPTER XIV. RECAPITULATION AND CONCLUSION.",
+   "quote": "Light will be thrown on the origin of man and his history. Authors of the highest eminence seem to be fully satisfied with the view that each species has been independently created.",
+   "why": "The single remark in the book on human origins."
+  },
+  {
+   "part": 7,
+   "chapter": "CHAPTER XIV. RECAPITULATION AND CONCLUSION.",
+   "quote": "There is grandeur in this view of life, with its several powers, having been originally breathed into a few forms or into one; and that, whilst this planet has gone cycling on according to the fixed law of gravity, from so simple a beginning endless forms most beautiful and most wonderful have been, and are being, evolved.",
+   "why": "The closing thought of the book."
+  }
+ ]
+}

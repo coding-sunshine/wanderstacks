@@ -1,0 +1,227 @@
+{
+ "id": "karamazov",
+ "summary": "Fyodor Pavlovitch Karamazov, a greedy, lying landowner, has three sons by two marriages and perhaps a fourth, his servant Smerdyakov. Dmitri, a passionate officer, fights his father over money and the same woman, Grushenka. Ivan, a rationalist, writes the legend of the Grand Inquisitor and rejects God's world. Alyosha, a novice, follows the elder Zossima. When the father is murdered, suspicion falls on Dmitri, who is tried and convicted. The book asks about faith, doubt, guilt and free will, and ends with Alyosha and a group of schoolboys at a boy's grave.",
+ "context": "Dostoevsky wrote his last novel over nearly two years and published it in installments in The Russian Messenger from January 1879 to November 1880. He died less than four months after it ended. Much of it was composed in Staraya Russa. His three-year-old son Alyosha died of epilepsy in 1878, and the grief shaped the book's hero and the story of the boy Ilyusha. A visit to the Optina Monastery that year fed the portrait of Zossima. The site carries Constance Garnett's English translation.",
+ "sources": [
+  {
+   "title": "The Brothers Karamazov (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov"
+  },
+  {
+   "title": "Fyodor Dostoevsky (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky"
+  },
+  {
+   "title": "Constance Garnett (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Constance_Garnett"
+  }
+ ],
+ "people": [
+  {
+   "name": "Fyodor Dostoevsky",
+   "role": "author",
+   "note": "Born in Moscow in 1821; The Brothers Karamazov was his sixteenth and last novel.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Constance Garnett",
+   "role": "translator",
+   "note": "English translator of 71 volumes of Russian literature, including almost all of Dostoevsky's fiction.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Fyodor Pavlovitch Karamazov",
+   "role": "character",
+   "note": "A 55-year-old sensualist and compulsive liar who neglects his sons.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dmitri Karamazov",
+   "role": "character",
+   "note": "The eldest son, passionate and in conflict with his father.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ivan Karamazov",
+   "role": "character",
+   "note": "The second son, an intellectual who rejects God's world.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alyosha Karamazov",
+   "role": "character",
+   "note": "The youngest son, a novice in the monastery, modeled on the qualities Dostoevsky admired.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Smerdyakov",
+   "role": "character",
+   "note": "The rumored illegitimate son, employed as the father's servant.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Elder Zossima",
+   "role": "character",
+   "note": "The monastery elder; his life draws on a text Dostoevsky found at Optina.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Staraya Russa",
+   "lat": 57.9917,
+   "lon": 31.3556,
+   "note": "Town where Dostoevsky composed much of the novel; it inspired the setting.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Optina Monastery",
+   "lat": 54,
+   "lon": 35.9,
+   "note": "Monastery Dostoevsky visited in 1878 after his son's death; source for Zossima.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lon": 37.6173,
+   "note": "Dostoevsky's birthplace in 1821.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1821,
+   "label": "Dostoevsky is born in Moscow.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1869,
+   "label": "He begins the unfinished The Life of a Great Sinner, whose themes feed the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1878,
+   "label": "His son Alyosha dies in May; he begins notes for the novel and visits Optina.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1879,
+   "label": "Serial publication begins in The Russian Messenger in January.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1880,
+   "label": "The serial ends in November.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1881,
+   "label": "Dostoevsky dies on 9 February.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Free will and God",
+   "note": "The novel treats God, free will and morality as one question.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Rebellion against a suffering world",
+   "note": "Ivan says he does not reject God but the world created by Him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Patricide and guilt",
+   "note": "The plot turns on a murder and the shared responsibility for it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Active love",
+   "note": "Zossima teaches that faith grows from loving one's neighbor in practice.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Part I: Book I",
+   "quote": "Alexey Fyodorovitch Karamazov was the third son of Fyodor Pavlovitch Karamazov, a land owner well known in our district in his own day, and still remembered among us owing to his gloomy and tragic death, which happened thirteen years ago, and which I shall describe in its proper place.",
+   "why": "The narrator introduces the hero and the murder to come."
+  },
+  {
+   "part": 3,
+   "chapter": "Book III",
+   "quote": "Beauty is a terrible and awful thing! It is terrible because it has not been fathomed and never can be fathomed, for God sets us nothing but riddles. Here the boundaries meet and all contradictions exist side by side.",
+   "why": "Dmitri on beauty and contradiction."
+  },
+  {
+   "part": 5,
+   "chapter": "Book V",
+   "quote": "I don’t accept this world of God’s, and, although I know it exists, I don’t accept it at all. It’s not that I don’t accept God, you must understand, it’s the world created by Him I don’t and cannot accept. Let me make it plain.",
+   "why": "Ivan's rebellion, the center of his case."
+  },
+  {
+   "part": 2,
+   "chapter": "Book II",
+   "quote": "active love. Strive to love your neighbor actively and indefatigably. In as far as you advance in love you will grow surer of the reality of God and of the immortality of your soul.",
+   "why": "Zossima's answer to doubt."
+  },
+  {
+   "part": 15,
+   "chapter": "III",
+   "quote": "nothing higher and stronger and more wholesome and good for life in the future than some good memory, especially a memory of childhood, of home.",
+   "why": "Alyosha's speech at the stone, on memory as education."
+  },
+  {
+   "part": 15,
+   "chapter": "III",
+   "quote": "Hurrah for Karamazov!” Kolya shouted ecstatically. “And may the dead boy’s memory live forever!” Alyosha added again with feeling. “Forever!” the boys chimed in again.",
+   "why": "The last scene of the novel."
+  }
+ ]
+}

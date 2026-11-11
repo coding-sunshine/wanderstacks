@@ -1,0 +1,223 @@
+{
+  "id": "notredame",
+  "summary": "In Paris in 1482, the street dancer Esmeralda draws the eyes of a poet, a soldier and the cathedral's archdeacon, Claude Frollo. Frollo's obsession sets the plot moving, and he orders his bell-ringer Quasimodo, the deformed bell-ringer, to kidnap her. Quasimodo is caught and sentenced to a public flogging, yet Esmeralda's kindness to him earns a pure love in return. Frollo's jealousy then brings her to a charge of murder and a death sentence. The cathedral itself, with its towers, bells and stone, is as much the subject as any person.",
+  "context": "Victor Hugo published the novel in 1831, after a delay that ended with him writing steadily through the autumn of 1830 to meet his publisher's deadline. He meant it as a plea to save France's neglected Gothic buildings, and its success helped start the preservation movement that led to the 19th-century restoration of Notre-Dame under Eugène Viollet-le-Duc. The first English version changed the title to The Hunchback of Notre-Dame. This site uses Isabel F. Hapgood's English translation, as prepared by Standard Ebooks.",
+  "sources": [
+    {
+      "title": "The Hunchback of Notre-Dame (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Hunchback_of_Notre-Dame"
+    },
+    {
+      "title": "Notre-Dame de Paris, translated by Isabel F. Hapgood (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/victor-hugo/notre-dame-de-paris/isabel-f-hapgood"
+    }
+  ],
+  "people": [
+    {
+      "name": "Victor Hugo",
+      "role": "Author",
+      "note": "Published the novel in 1831 and argued in it, and in an earlier paper, for saving France's medieval architecture.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Quasimodo",
+      "role": "Bell-ringer",
+      "note": "The deformed bell-ringer of the cathedral, whose love for Esmeralda is described as pure.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Esmeralda",
+      "role": "Street dancer",
+      "note": "A sixteen-year-old Roma dancer who attracts the attention of several men and is condemned for murder.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Claude Frollo",
+      "role": "Archdeacon",
+      "note": "Archdeacon of Notre-Dame, torn between his obsessive lust for Esmeralda and the rules of the cathedral.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Phoebus de Chateaupers",
+      "role": "Captain of the guard",
+      "note": "One of the men drawn to Esmeralda; she is infatuated with him.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Pierre Gringoire",
+      "role": "Poet",
+      "note": "Wanders into the Court of Miracles, the district of the Roma and beggars.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Eugène Viollet-le-Duc",
+      "role": "Architect",
+      "note": "Led the major 19th-century renovations at Notre-Dame that the novel helped bring about.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Frederic Shoberl",
+      "role": "Translator",
+      "note": "His 1833 English translation gave the book the title The Hunchback of Notre-Dame.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Notre-Dame de Paris",
+      "lat": 48.853,
+      "lon": 2.3499,
+      "note": "The Gothic cathedral at the centre of the story; Hugo wanted its architecture preserved.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Paris",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "note": "The setting is Paris in 1482 during the reign of Louis XI.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Montfaucon gibbet",
+      "lat": 48.878,
+      "lon": 2.372,
+      "note": "Site of the great gibbet mentioned in the story, to which executed bodies were taken.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1482,
+      "label": "Year in which the story takes place, in Paris under Louis XI",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1828,
+      "label": "Hugo agrees to write the book for the publisher Gosselin",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1830,
+      "label": "Gosselin demands the book by February 1831; Hugo writes steadily from September",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1831,
+      "label": "Notre-Dame de Paris is published",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "year": 1833,
+      "label": "Shoberl's English translation gives the title The Hunchback of Notre-Dame",
+      "s": [
+        0,
+        1
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "The cathedral as hero",
+      "note": "Hugo put the building at the centre so that kings, nobles, bell-ringers and beggars could all share the story.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "title": "Preservation of Gothic architecture",
+      "note": "The novel argues that medieval buildings belong to France's cultural heritage and spurred the preservation movement.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Lust, obsession and fate",
+      "note": "Frollo cannot control his desire for Esmeralda, and his action draws all four men into her orbit with tragic consequences.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "title": "Love that asks nothing",
+      "note": "Quasimodo's feeling is described as the one pure love in the story, given in return for a single kindness.",
+      "s": [
+        1
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "Book I: I",
+      "quote": "Three hundred and forty-eight years, six months, and nineteen days ago today, the Parisians awoke to the sound of all the bells in the triple circuit of the city, the university, and the town ringing a full peal.",
+      "why": "The opening fixes the day, the Parisian crowd and the sound of bells that run through the novel."
+    },
+    {
+      "part": 2,
+      "chapter": "VI",
+      "quote": "“Upon my soul,” resumed Gringoire, “I certainly do behold the blind who see, and the lame who walk, but where is the Saviour?”",
+      "why": "Gringoire stumbles into the beggars' kingdom, the Court of Miracles, and the joke about false cripples shows Hugo's mix of comedy and menace."
+    },
+    {
+      "part": 3,
+      "chapter": "II",
+      "quote": "“This will kill that. The book will kill the edifice.”",
+      "why": "Hugo's central argument about printing and architecture, voiced by the archdeacon, gets a whole chapter of explanation in the novel."
+    },
+    {
+      "part": 4,
+      "chapter": "V",
+      "quote": "“Oh, yes!” continued the priest, in a voice which seemed to proceed from the depths of his being, “behold here a symbol of all. She flies, she is joyous, she is just born; she seeks the spring, the open air, liberty: oh, yes! but let her come in contact with the fatal network, and the spider issues from it, the hideous spider!",
+      "why": "Frollo reads the spider and the fly as a symbol of fate, a picture of his own trap and Esmeralda's."
+    },
+    {
+      "part": 5,
+      "chapter": "VI",
+      "quote": "“Sanctuary! Sanctuary!” repeated the crowd; and the clapping of ten thousand hands made Quasimodo’s single eye sparkle with joy and pride.",
+      "why": "Quasimodo rescues Esmeralda from the gallows and claims the cathedral's right of sanctuary, the high point of his role."
+    },
+    {
+      "part": 7,
+      "chapter": "IV",
+      "quote": "The other, which held this one in a close embrace, was the skeleton of a man. It was noticed that his spinal column was crooked, his head seated on his shoulder blades, and that one leg was shorter than the other. Moreover, there was no fracture of the vertebrae at the nape of the neck, and it was evident that he had not been hanged.",
+      "why": "The last image: two skeletons found at Montfaucon, one with a crooked spine, tells of Quasimodo's end without a word of explanation."
+    }
+  ]
+}

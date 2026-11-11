@@ -1,0 +1,251 @@
+{
+ "id": "meditations",
+ "summary": "The Meditations is a set of private notes written by the Roman emperor Marcus Aurelius to himself, arranged in twelve books. They return again and again to a few Stoic ideas: judge things as they are, accept change and death as part of nature, control your anger, and act for the common good. Marcus writes as a man at work, partly on military campaign, reminding himself to do the job in front of him and to bear with difficult people. He seems never to have meant the text to be published.",
+ "context": "Marcus Aurelius ruled Rome from 161 to 180, a reign marked by war on the Danube frontier and by the Antonine plague. He wrote in Greek, and two books carry notes on where they were written: among the Quadi by the river Granova, and at Carnuntum. The earliest clear mention of the book dates from about the early 900s, when Arethas of Caesarea had a worn copy recopied. Wilhelm Xylander printed the first edition at Zurich in 1558 or 1559. George Long, a classical scholar, published his English translation in 1862.",
+ "sources": [
+  {
+   "title": "Meditations (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Meditations"
+  },
+  {
+   "title": "Marcus Aurelius (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Marcus_Aurelius"
+  },
+  {
+   "title": "George Long (scholar) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/George_Long_(scholar)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Marcus Aurelius",
+   "role": "author",
+   "note": "Roman emperor from 161 to 180 and a Stoic philosopher.",
+   "s": [
+    1,
+    0
+   ]
+  },
+  {
+   "name": "George Long",
+   "role": "translator",
+   "note": "English classical scholar best known for his Meditations of Marcus Aurelius of 1862.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Antoninus Pius",
+   "role": "adoptive father",
+   "note": "Adopted Marcus as heir and became emperor in 138.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Lucius Verus",
+   "role": "co-emperor",
+   "note": "Adoptive brother who ruled beside Marcus from 161.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Commodus",
+   "role": "son",
+   "note": "Marcus's son and successor in 180.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Arethas of Caesarea",
+   "role": "copyist",
+   "note": "Bishop who had an old copy recopied before 907 and gave the first direct mention of the work.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Wilhelm Xylander",
+   "role": "editor",
+   "note": "Produced the first printed edition in 1558 or 1559, with a Latin translation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Rome",
+   "lat": 41.9028,
+   "lon": 12.4964,
+   "note": "Marcus was born here on 26 April 121.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Sirmium",
+   "lat": 44.9733,
+   "lon": 19.6122,
+   "note": "Modern Sremska Mitrovica, where he may have written large parts while planning campaigns.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Carnuntum",
+   "lat": 48.1103,
+   "lon": 16.8658,
+   "note": "Where the second book was written, according to its own note.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Granova (Hron River)",
+   "lat": 47.9,
+   "lon": 18.9,
+   "note": "The first book was written in the country of the Quadi by the Granova, modern Hron River in Slovakia.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Zurich",
+   "lat": 47.3769,
+   "lon": 8.5417,
+   "note": "City where the first printed edition appeared in 1558 or 1559.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 121,
+   "label": "Marcus is born in Rome on 26 April.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 161,
+   "label": "He becomes emperor with Lucius Verus.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 170,
+   "label": "He plans campaigns at Sirmium in the years 170 to 180, where parts may have been written.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 180,
+   "label": "Marcus dies on 17 March and Commodus succeeds him.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 907,
+   "label": "Arethas has an old copy recopied, about this date.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1559,
+   "label": "Xylander's first printed edition appears at Zurich, in 1558 or 1559.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1862,
+   "label": "George Long publishes his translation.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Judge only impressions",
+   "note": "Do not add to what first impressions report, and do not treat a report as harm.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A cosmic view",
+   "note": "See everything as coming from nature and returning to it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Control of anger",
+   "note": "Rage is not manly; gentleness and civility are stronger.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The logos",
+   "note": "A rational order runs through all things, and clear thinking lets one live in harmony with it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Indifference to fame and wealth",
+   "note": "Things outside one's control are neither good nor bad.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Book II",
+   "quote": "Begin the morning by saying to thyself, I shall meet with the busybody, the ungrateful, arrogant, deceitful, envious, unsocial. All these things happen to them by reason of their ignorance of what is good and evil.",
+   "why": "Marcus prepares for the day among difficult people."
+  },
+  {
+   "part": 1,
+   "chapter": "Book II",
+   "quote": "Remember how long thou hast been putting off these things, and how often thou hast received an opportunity from the gods, and yet dost not use it.",
+   "why": "A reproach to himself for delay."
+  },
+  {
+   "part": 1,
+   "chapter": "Book IV",
+   "quote": "Do not act as if thou wert going to live ten thousand years. Death hangs over thee. While thou livest, while it is in thy power, be good.",
+   "why": "Death as a reason to be good now."
+  },
+  {
+   "part": 1,
+   "chapter": "Book IV",
+   "quote": "Thou art a little soul bearing about a corpse, as Epictetus used to say. It is no evil for things to undergo change, and no good for things to subsist in consequence of change.",
+   "why": "Quoting Epictetus on the body, and on change as no evil."
+  },
+  {
+   "part": 1,
+   "chapter": "Book VIII",
+   "quote": "Remember that to change thy opinion and to follow him who corrects thy error is as consistent with freedom as it is to persist in thy error.",
+   "why": "Correction is consistent with freedom."
+  },
+  {
+   "part": 1,
+   "chapter": "Book I",
+   "quote": "From my grandfather Verus I learned good morals and the government of my temper. From the reputation and remembrance of my father, modesty and a manly character.",
+   "why": "The first book thanks the people who shaped him."
+  }
+ ]
+}

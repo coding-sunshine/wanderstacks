@@ -1,0 +1,255 @@
+{
+ "id": "gulistan",
+ "summary": "The Gulistan, or Rose Garden, is a book of short stories, aphorisms and small poems by the Persian poet Saadi of Shiraz, finished in 1258. Its eight chapters take up kings, dervishes, contentment, silence, love, old age, education and rules of conduct. Most tales run only a few lines and end in a pointed verse. Advice to rulers sits beside comic scenes, and the dervish stories carry Sufi teaching. This edition is an English version in the Gutenberg collection of Persian literature.",
+ "context": "Saadi says a friend took him to a garden on 21 April 1258, where flowers were gathered to carry back to town. He proposed a garden of words that would outlast them. The book became one of the most widely read in Persian, admired for plain, elegant prose, and its proverbs still turn up in everyday talk in Persian-speaking countries. It reached the West through many English translations, and La Fontaine and Voltaire drew on it. Emerson and Thoreau quoted it. This text opens with a short introduction on the poet's life.",
+ "sources": [
+  {
+   "title": "Gulistan (book) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Gulistan_(book)"
+  },
+  {
+   "title": "The Persian Literature, including the Gulistan (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/13060"
+  }
+ ],
+ "people": [
+  {
+   "name": "Saadi of Shiraz",
+   "role": "author",
+   "note": "Persian poet, c. 1203 to 1291, who wrote the Gulistan and the Bustan, and is counted among the great medieval Persian poets.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Harun al-Rashid",
+   "role": "figure in a story",
+   "note": "His son appears in a Chapter 1 story, one of the many tales in the book of rulers and their families.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Francis Gladwin",
+   "role": "translator",
+   "note": "Published an English translation at Calcutta in 1808, with a preface by Ralph Waldo Emerson.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Edward Backhouse Eastwick",
+   "role": "translator",
+   "note": "Published an English translation in 1852 and noted the Persian saying that each word of Saadi has seventy-two meanings.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ralph Waldo Emerson",
+   "role": "reader",
+   "note": "Wrote the preface to Gladwin's translation and praised the variety of situation and incident in Saadi.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Henry David Thoreau",
+   "role": "reader",
+   "note": "Quoted the Gulistan in A Week on the Concord and Merrimack Rivers and in Walden.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "La Fontaine",
+   "role": "adapter",
+   "note": "Based his tale of a Mogul's dream on a story from Chapter 2 of the Gulistan.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Voltaire",
+   "role": "reader",
+   "note": "Knew a French translation, rendered some verses, and wrote the preface of Zadig in Saadi's name.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Shiraz",
+   "lat": 29.5918,
+   "lon": 52.5837,
+   "note": "Saadi's home city and the origin of his name; he returned there in old age to his hermitage and garden.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Mecca",
+   "lat": 21.4225,
+   "lon": 39.8262,
+   "note": "Destination of the pilgrim caravan in a Chapter 7 tale told by the author.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Calcutta",
+   "lat": 22.5726,
+   "lon": 88.3639,
+   "note": "City where the first English translations of 1807 and 1808 were printed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Hartford",
+   "lat": 41.7658,
+   "lon": -72.6734,
+   "note": "Place of publication of Eastwick's 1852 English translation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1203,
+   "label": "Saadi is born, by the dates given for his life (1203 to 1291).",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1258,
+   "label": "Saadi completes the Gulistan, after the garden outing described in his introduction.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1291,
+   "label": "Saadi dies, at the end of the span of life given for him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1774,
+   "label": "The first English selections appear in London, translated by Stephen Sullivan.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1808,
+   "label": "Francis Gladwin's translation is published at Calcutta, with Emerson's preface.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1852,
+   "label": "Eastwick's translation is published at Hartford.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "A garden that does not fade",
+   "note": "Saadi sets a book against cut flowers: the roses fade in days, his pages should last.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Advice to rulers",
+   "note": "The first chapter belongs to the mirror for princes tradition, with stories of kings, viziers and the cost of honest or flattering speech.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Contentment over ambition",
+   "note": "Dervish tales set poverty and freedom from want against the pomp of a court.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Education and its limits",
+   "note": "Chapter 7 holds that teaching works only on a fit nature, yet knowledge is the one inheritance that cannot be squandered.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Bitter medicine mixed with honey",
+   "note": "Saadi says counsel is strung like pearls and the bitter medicine of advice mixed with wit.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "INTRODUCTION",
+   "quote": "What can a nosegay of flowers avail thee? Pluck but one leaf from my Rose Garden; the rose from yonder bush lasts but a few days, but this Rose must bloom to all eternity.\" Sa'di has been proved quite correct in this estimate of his own work. The book is indeed a sweet garden of unfading freshness.",
+   "why": "Saadi's own reason for the book: a garden of pages that outlives real roses."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER I",
+   "quote": "I was better pleased with his falsehood than with this truth that you have told; for that bore the face of good policy, and this was founded in malignity;",
+   "why": "A king prefers a kind lie to a cruel truth, a signature piece of court wisdom from Chapter 1."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER I",
+   "quote": "Inasmuch as contentment is the enjoyment of a kingdom, the dervish did not raise his head, nor show him the least mark of attention; and, inasmuch as sovereignty is regal pomp, the king took offence, and said, \"The tribe of ragged mendicants resemble brute beasts, and have neither grace nor good manners.\" The vizir stepped up to him, and said: \"O generous man!",
+   "why": "A dervish ignores a king, and the king takes offence; contentment meets power."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER VII",
+   "quote": "Where the innate capacity is good, education may make an impression upon it; but no furbisher knows how to give a polish to iron which is of a bad temper. Wash a dog seven times in the ocean, and so long as he is wet he is all the filthier.",
+   "why": "On teaching: education cannot polish a nature that is bad at the root."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER VII",
+   "quote": "A certain learned man was superintending the education of a king's son; and he was chastising him without mercy, and reproving him with asperity. The boy, out of all patience, complained to the king his father, and laid bare before him his much-bruised body. The king was much offended, and sending for the master, said:",
+   "why": "Opens a Chapter 7 tale about a harsh teacher and a prince."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER VII",
+   "quote": "I heard a certain learned senior observing to a disciple:—\"If the sons of Adam were as solicitous after Providence, or God, as they are after their means of sustenance, their places in Paradise would surpass those of the angels.\" God did not overlook thee in that state when thou wert a senseless embryo in thy mother's womb.",
+   "why": "Why people should trust Providence as much as they chase their livelihood."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER VII",
+   "quote": "They asked a scorpion: \"Why do you not make your appearance during the winter?\" It answered:",
+   "why": "A short joke about character, typical of the brisk anecdotes."
+  },
+  {
+   "part": 1,
+   "chapter": "INTRODUCTION",
+   "quote": "The Rose Garden was an actual thing, and was part of the little hermitage, to which he retired, after the vicissitudes and travels of his earlier life, to spend his days in religious contemplation, and the embodiment of his experience in reminiscences, which took the form of anecdotes, sage and pious reflections, bon-mots , and ",
+   "why": "The introduction ties the title to a real garden at the poet's hermitage."
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "summary": "A selection of Hans Christian Andersen's literary fairy tales. An emperor parades in clothes that do not exist until a child says so. A swineherd prince, a princess tested with a pea, a fir tree that wants to be grander than it is, two children whose lives turn on a splinter of a troll's mirror in The Snow Queen. Later pages hold darker stories: a poor match girl on the last evening of the year, a shadow that outgrows its owner, a girl cursed to dance in red shoes. Most carry a moral about vanity, pride or innocence.",
+ "context": "Andersen began writing fairy tales in 1835, when the Copenhagen publisher C. A. Reitzel issued the first of three small booklets of Fairy Tales Told for Children. The first three tales drew on folktales he had heard as a boy, and The Little Mermaid and The Emperor's New Clothes came in April 1837. Danish critics disliked the chatty, informal style, but a second series began in 1838 and a third in 1845, and he was celebrated across Europe. His fairy tales, 156 in nine volumes, are now translated into more than 125 languages. The site carries the Project Gutenberg selection.",
+ "sources": [
+  {
+   "title": "Hans Christian Andersen (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Hans_Christian_Andersen"
+  },
+  {
+   "title": "Andersen's Fairy Tales by H. C. Andersen (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/1597"
+  }
+ ],
+ "people": [
+  {
+   "name": "Hans Christian Andersen",
+   "role": "author",
+   "note": "Danish writer, 1805 to 1875, born in Odense, best remembered for his literary fairy tales.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "C. A. Reitzel",
+   "role": "printer",
+   "note": "Copenhagen publisher of the three booklets of Fairy Tales Told for Children from 1835 to 1837.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Just Mathias Thiele",
+   "role": "patron",
+   "note": "Folklorist and early benefactor of Andersen, whose daughter Ida was the audience for Little Ida's Flowers.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Horace Scudder",
+   "role": "patron",
+   "note": "Editor of Riverside Magazine who in 1868 offered Andersen $500 for twelve new stories.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kay and Gerda",
+   "role": "character",
+   "note": "Neighbouring children in The Snow Queen, one of whom is touched by the splinter from the troll's mirror.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "The Emperor",
+   "role": "character",
+   "note": "Vain ruler duped by two weavers into parading in nonexistent clothes.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "The Little Match Girl",
+   "role": "character",
+   "note": "Poor barefoot girl wandering the street on the last evening of the year.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Odense",
+   "lat": 55.4038,
+   "lon": 10.4024,
+   "note": "Danish town where Andersen was born on 2 April 1805.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Copenhagen",
+   "lat": 55.6761,
+   "lon": 12.5683,
+   "note": "Capital where Reitzel published the first fairy tale booklets and where Andersen lived and died.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rome",
+   "lat": 41.9028,
+   "lon": 12.4964,
+   "note": "City Andersen reached in October 1834 on the Italian travels that fed his novel The Improvisatore.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1805,
+   "label": "Andersen is born in Odense on 2 April.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1835,
+   "label": "The first booklet of fairy tales appears on 8 May, with The Tinderbox and The Princess and the Pea.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1837,
+   "label": "The third booklet, with The Little Mermaid and The Emperor's New Clothes, appears on 7 April.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1838,
+   "label": "Andersen starts a second series of fairy tales.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1845,
+   "label": "A third series of fairy tales begins.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1868,
+   "label": "Horace Scudder offers Andersen $500 for twelve new stories for an American magazine.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Vanity and pretence",
+   "note": "In The Emperor's New Clothes a ruler and his court fear looking foolish more than they fear looking naked.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Innocence tells the truth",
+   "note": "A child's remark breaks the court's collective pretence.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Tales that amuse as well as teach",
+   "note": "Danish critics disliked the chatty, informal style because children's books were meant to educate rather than amuse.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Distorted vision",
+   "note": "The Snow Queen opens with a mirror that makes good things look poor and ugly things look worse.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "THE EMPEROR'S NEW CLOTHES",
+   "quote": "the Emperor has nothing at all on!” said a little child. “Listen to the voice of innocence!” exclaimed his father; and what the child had said was whispered from one to another",
+   "why": "The turning point of The Emperor's New Clothes."
+  },
+  {
+   "part": 1,
+   "chapter": "THE FIR TREE",
+   "quote": "Out in the woods stood a nice little Fir Tree. The place he had was a very good one: the sun shone on him: as to fresh air, there was enough of that, and round him grew many large-sized comrades, pines as well as firs",
+   "why": "The Fir Tree opens in the sunlit wood before the tree is cut down."
+  },
+  {
+   "part": 1,
+   "chapter": "THE SNOW QUEEN: FIRST STORY. Which Treats of a Mirror and of the Splinters",
+   "quote": "In this mirror the most beautiful landscapes looked like boiled spinach, and the best persons were turned into frights, or appeared to stand on their heads; their faces were so distorted that they were not to be recognised; and if anyone had a mole, you might be sure that it would be magnified and sp",
+   "why": "The sprite's mirror in The Snow Queen: how the story starts."
+  },
+  {
+   "part": 2,
+   "chapter": "THE LEAP-FROG",
+   "quote": "A Flea, a Grasshopper, and a Leap-frog once wanted to see which could jump highest; and they invited the whole world, and everybody else besides who chose to come to see the festival",
+   "why": "A short comic tale of rivals judged by a king."
+  },
+  {
+   "part": 2,
+   "chapter": "THE LITTLE MATCH GIRL",
+   "quote": "Most terribly cold it was; it snowed, and was nearly quite dark, and evening—the last evening of the year",
+   "why": "The opening of The Little Match Girl."
+  },
+  {
+   "part": 2,
+   "chapter": "THE RED SHOES",
+   "quote": "There was once a little girl who was very pretty and delicate, but in summer she was forced to run about with bare feet, she was so poor, and in winter wear very large wooden shoes, which made her little insteps quite red, and that looked so dangerous",
+   "why": "The first line of The Red Shoes."
+  }
+ ],
+ "id": "andersen"
+}

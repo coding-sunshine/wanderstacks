@@ -1,0 +1,250 @@
+{
+ "id": "holmes",
+ "summary": "The Adventures of Sherlock Holmes gathers twelve stories by Arthur Conan Doyle, all told by Holmes's friend Dr. Watson. Each case stands alone: a king's compromising photograph, a pawnbroker hired to copy an encyclopaedia for being red-haired, a bride abandoned at the church door, a girl terrified by a whistle in the night. Holmes solves them by noticing small things others overlook and reasoning from them. The book made the consulting detective a fixture of popular fiction.",
+ "context": "Doyle had already written two Holmes novels, but the short story proved the better fit for a magazine. The twelve tales ran in The Strand Magazine from July 1891 to June 1892, each with illustrations by Sidney Paget, and the series boosted the magazine's circulation. They were collected in book form in October 1892. The first story, A Scandal in Bohemia, introduced Irene Adler, who appears in no other story yet became a prominent figure in later adaptations. This edition is the Standard Ebooks text of about 105,000 words.",
+ "sources": [
+  {
+   "title": "The Adventures of Sherlock Holmes (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Adventures_of_Sherlock_Holmes"
+  },
+  {
+   "title": "The Adventures of Sherlock Holmes (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/arthur-conan-doyle/the-adventures-of-sherlock-holmes"
+  }
+ ],
+ "people": [
+  {
+   "name": "Arthur Conan Doyle",
+   "role": "author",
+   "note": "Wrote the twelve stories for The Strand Magazine after his two earlier Holmes novels.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Sherlock Holmes",
+   "role": "consulting detective",
+   "note": "Solves each case by observation and inference, and works from rooms in Baker Street.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Dr. John Watson",
+   "role": "narrator",
+   "note": "Holmes's friend and chronicler; all twelve stories are told in his first person voice.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Irene Adler",
+   "role": "adventuress",
+   "note": "Appears only in A Scandal in Bohemia, yet Holmes always thinks of her as the woman, and she is prominent in modern adaptations.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Sidney Paget",
+   "role": "illustrator",
+   "note": "Drew the illustrations for the Strand serialisation, beginning with ten pictures for the July 1891 issue.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Herbert Greenhough Smith",
+   "role": "magazine editor",
+   "note": "Editor of The Strand, who received Doyle's first submissions to the new monthly.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jabez Wilson",
+   "role": "client",
+   "note": "Pawnbroker of Coburg Square whose red hair draws him into the League of the Red-Headed Men.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Dr. Grimesby Roylott",
+   "role": "villain",
+   "note": "Stepfather of the frightened sisters in The Speckled Band and last of the Roylotts of Stoke Moran, a once rich Surrey family.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Baker Street, London",
+   "lat": 51.5237,
+   "lon": -0.1585,
+   "note": "Holmes and Watson's lodgings, where clients call and the cases are discussed.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "St. John's Wood, London",
+   "lat": 51.5347,
+   "lon": -0.1745,
+   "note": "Home district of Irene Adler, whose house Briony Lodge stands on Serpentine Avenue.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Fleet Street, London",
+   "lat": 51.5142,
+   "lon": -0.1085,
+   "note": "Where the League of the Red-Headed Men has its office and the street fills with redheaded applicants.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Reading",
+   "lat": 51.4543,
+   "lon": -0.9781,
+   "note": "Railway town on the road to the Boscombe Valley and near the Berkshire village in The Engineer's Thumb.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Surrey",
+   "lat": 51.3148,
+   "lon": -0.56,
+   "note": "County of the Stoke Moran estate in The Speckled Band.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1891,
+   "label": "The Strand Magazine opens with the new monthly; Doyle's short stories begin in its July issue with A Scandal in Bohemia.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1892,
+   "label": "The twelfth story appears in the Strand in June, ending the first run of the series.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1892,
+   "label": "The twelve stories are collected as a book on 14 October.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1891,
+   "label": "Sidney Paget supplies ten illustrations for the first Strand issue to carry a Holmes story.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Seeing versus observing",
+   "note": "Holmes's first lesson to Watson: everyone sees the stairs, almost no one has counted them.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Data before theory",
+   "note": "He refuses to theorise early, because one begins to twist facts to suit theories.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Small things matter most",
+   "note": "Cases turn on a cuff, a typewriter, a sleeve, details a client would never think to mention.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Logic over drama",
+   "note": "Holmes scolds Watson for turning the cases into romance; the reasoning is the point, not the crime.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "The country can hide worse than the city",
+   "note": "In The Copper Beeches he warns that isolated houses lack the check of public opinion.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "A Scandal in Bohemia: I",
+   "quote": "To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind.",
+   "why": "Watson sets the terms of the Holmes and Irene Adler relationship in the opening lines."
+  },
+  {
+   "part": 1,
+   "chapter": "A Scandal in Bohemia: I",
+   "quote": "You see, but you do not observe. The distinction is clear. For example, you have frequently seen the steps which lead up from the hall to this room.” “Frequently.” “How often?” “Well, some hundreds of times.”",
+   "why": "Holmes's famous demonstration of the gap between seeing and observing."
+  },
+  {
+   "part": 1,
+   "chapter": "A Scandal in Bohemia: I",
+   "quote": "It is a capital mistake to theorise before one has data. Insensibly one begins to twist facts to suit theories, instead of theories to suit facts. But the note itself. What do you deduce from it?”",
+   "why": "The rule against early theory that governs his method."
+  },
+  {
+   "part": 1,
+   "chapter": "A Case of Identity",
+   "quote": "It has long been an axiom of mine that the little things are infinitely the most important. Can you remember any other little things about Mr. Hosmer Angel?” “He was a very shy man, Mr. Holmes.",
+   "why": "Holmes on why trivia solves cases, from A Case of Identity."
+  },
+  {
+   "part": 1,
+   "chapter": "The Redheaded League",
+   "quote": "I begin to think, Watson,” said Holmes, “that I make a mistake in explaining. ‘ Omne ignotum pro magnifico ,’ you know, and my poor little reputation, such as it is, will suffer shipwreck if I am so candid. Can you not find the advertisement, Mr. Wilson?”",
+   "why": "Holmes half-mocks his own habit of explaining, in The Redheaded League."
+  },
+  {
+   "part": 3,
+   "chapter": "The Adventure of the Speckled Band",
+   "quote": "It is a swamp adder!” cried Holmes; “the deadliest snake in India. He has died within ten seconds of being bitten. Violence does, in truth, recoil upon the violent, and the schemer falls into the pit which he digs for another.",
+   "why": "The climax of The Speckled Band, with Holmes's moral aside."
+  },
+  {
+   "part": 4,
+   "chapter": "The Adventure of the Copper Beeches",
+   "quote": "Crime is common. Logic is rare. Therefore it is upon the logic rather than upon the crime that you should dwell.",
+   "why": "Holmes chides Watson for dressing the cases as stories, from The Copper Beeches."
+  },
+  {
+   "part": 4,
+   "chapter": "The Adventure of the Copper Beeches",
+   "quote": "It is my belief, Watson, founded upon my experience, that the lowest and vilest alleys in London do not present a more dreadful record of sin than does the smiling and beautiful countryside.” “You horrify me!” “But the reason is very obvious. The pressure of public opinion can do in the town what the law cannot accomplish.",
+   "why": "The city and country contrast, a chilling note on rural isolation."
+  }
+ ]
+}

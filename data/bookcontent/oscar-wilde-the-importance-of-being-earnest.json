@@ -1,0 +1,195 @@
+{
+  "id": "oscar-wilde-the-importance-of-being-earnest",
+  "summary": "Two young men about town each keep an invented second self to dodge social duties. Jack Worthing is Ernest in London and a guardian in the country, while Algernon Moncrieff invents a sick friend named Bunbury to escape dinners with his aunt. Both end up wooing women who say they could only love a man named Ernest. Algernon turns up at Jack's country house pretending to be Jack's brother Ernest, and the two lies collide in front of Gwendolen, Cecily, the imposing Lady Bracknell and the governess Miss Prism. A lost baby and a handbag at a railway station then settle who Jack really is.",
+  "context": "Wilde began the play in the summer of 1894 while staying with his family at Worthing on the Sussex coast. It opened at the St James's Theatre in London on 14 February 1895, trimmed from four acts to three at the request of the actor-manager George Alexander. Within weeks Wilde's feud with the Marquess of Queensberry led to the trials that ended in his imprisonment, and the play closed in May after 86 performances. Leonard Smithers agreed in 1898 to publish it, and it has since become Wilde's most performed play.",
+  "sources": [
+    {
+      "title": "The Importance of Being Earnest (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Importance_of_Being_Earnest"
+    },
+    {
+      "title": "The Importance of Being Earnest by Oscar Wilde (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/oscar-wilde/the-importance-of-being-earnest"
+    }
+  ],
+  "people": [
+    {
+      "name": "Oscar Wilde",
+      "role": "author",
+      "note": "Wrote the play as the last of his four drawing-room comedies, then published it from exile in Paris after prison.",
+      "s": [0]
+    },
+    {
+      "name": "Algernon Moncrieff",
+      "role": "character",
+      "note": "A young man about town who invents the invalid Bunbury, and who later poses as Ernest at Jack's country house.",
+      "s": [0]
+    },
+    {
+      "name": "Jack Worthing",
+      "role": "character",
+      "note": "Known as Ernest in town and Jack in the country, he invents a wicked brother to excuse his trips to London.",
+      "s": [0]
+    },
+    {
+      "name": "Lady Bracknell",
+      "role": "character",
+      "note": "Gwendolen's formidable mother, who interviews Jack as a suitor; the part has sometimes been played by men.",
+      "s": [0]
+    },
+    {
+      "name": "Gwendolen Fairfax",
+      "role": "character",
+      "note": "Algernon's cousin, who places her faith in the name Ernest.",
+      "s": [0]
+    },
+    {
+      "name": "Miss Prism",
+      "role": "character",
+      "note": "Cecily's fussy governess.",
+      "s": [0]
+    },
+    {
+      "name": "George Alexander",
+      "role": "subject",
+      "note": "Actor-manager at the St James's Theatre, who played Jack in 1895 and asked Wilde to cut the play from four acts to three.",
+      "s": [0]
+    },
+    {
+      "name": "Marquess of Queensberry",
+      "role": "subject",
+      "note": "Father of Lord Alfred Douglas, whose feud with Wilde led to the 1895 trials.",
+      "s": [0]
+    },
+    {
+      "name": "Leonard Smithers",
+      "role": "printer",
+      "note": "Agreed with Wilde in 1898 to publish the play, and Wilde sent detailed instructions on the proofs.",
+      "s": [0]
+    }
+  ],
+  "places": [
+    {
+      "name": "St James's Theatre, London",
+      "lat": 51.5069,
+      "lon": -0.1383,
+      "note": "Where the play opened on 14 February 1895 and was revived in 1909, 1913 and later years.",
+      "s": [0]
+    },
+    {
+      "name": "Worthing, Sussex",
+      "lat": 50.8148,
+      "lon": -0.3728,
+      "note": "Where Wilde spent the summer of 1894 with his family and began writing the play.",
+      "s": [0]
+    },
+    {
+      "name": "Half Moon Street, London",
+      "lat": 51.5072,
+      "lon": -0.1456,
+      "note": "The street of Algernon Moncrieff's flat, where the first act is set.",
+      "s": [0]
+    },
+    {
+      "name": "Paris",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "note": "Wilde's place of exile after prison, from where he saw the play into print.",
+      "s": [0]
+    },
+    {
+      "name": "Empire Theatre, New York",
+      "lat": 40.7537,
+      "lon": -73.9871,
+      "note": "The first Broadway production opened here on 22 April 1895 and closed after sixteen performances.",
+      "s": [0]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1894,
+      "label": "Wilde spends the summer at Worthing and begins work on the play.",
+      "s": [0]
+    },
+    {
+      "year": 1895,
+      "label": "The play opens at the St James's Theatre on 14 February, then closes in May after 86 performances as Wilde's trials unfold.",
+      "s": [0]
+    },
+    {
+      "year": 1898,
+      "label": "Leonard Smithers agrees with Wilde to publish the play, Wilde's last.",
+      "s": [0]
+    },
+    {
+      "year": 1909,
+      "label": "Alexander revives it at the St James's with Aynesworth, and it runs for 316 performances.",
+      "s": [0]
+    },
+    {
+      "year": 1952,
+      "label": "Anthony Asquith directs the first of three English-language film versions.",
+      "s": [0]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Double lives as escape",
+      "note": "Both men invent a second self, Ernest or Bunbury, to get out of social duties, and the lies pile up into farce.",
+      "s": [0]
+    },
+    {
+      "title": "Faith in a name",
+      "note": "Gwendolen and Cecily both insist on marrying a man called Ernest, so the name matters more than the man.",
+      "s": [0]
+    },
+    {
+      "title": "Satire of Victorian manners",
+      "note": "Wilde mocks late Victorian etiquette and dramatic conventions, with Lady Bracknell as its sharpest voice.",
+      "s": [0]
+    },
+    {
+      "title": "What Bunbury means",
+      "note": "Critics offer several origins for the word and read the play's double lives in light of Wilde's own secret life.",
+      "s": [0]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "Act I",
+      "quote": "Please don’t touch the cucumber sandwiches. They are ordered specially for Aunt Augusta.",
+      "why": "Algernon guards the sandwiches, then eats them himself, the first small hypocrisy of the play."
+    },
+    {
+      "part": 1,
+      "chapter": "Act I",
+      "quote": "To lose one parent, Mr. Worthing, may be regarded as a misfortune; to lose both looks like carelessness.",
+      "why": "Lady Bracknell's interview of Jack, and one of the best-known lines in the play."
+    },
+    {
+      "part": 1,
+      "chapter": "Act I",
+      "quote": "Very seriously. Yes, Lady Bracknell. I was in a handbag",
+      "why": "Jack explains how he was found as a baby, the absurd fact the plot will hang on."
+    },
+    {
+      "part": 1,
+      "chapter": "Act I",
+      "quote": "now that I know you to be a confirmed Bunburyist I naturally want to talk to you about Bunburying. I want to tell you the rules.",
+      "why": "Algernon names the practice of keeping an invented excuse, which gives the play its engine."
+    },
+    {
+      "part": 1,
+      "chapter": "Act II",
+      "quote": "I hope you have not been leading a double life, pretending to be wicked and being really good all the time. That would be hypocrisy.",
+      "why": "Cecily's reply to Algernon, who is posing as the wicked brother, inverts the usual moral order."
+    },
+    {
+      "part": 1,
+      "chapter": "Act III",
+      "quote": "In matters of grave importance, style, not sincerity is the vital thing.",
+      "why": "Gwendolen's line, close to the play's own motto about manner over matter."
+    }
+  ]
+}

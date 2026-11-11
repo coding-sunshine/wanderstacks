@@ -1,0 +1,248 @@
+{
+ "summary": "Aristotle asks what the best life for a human being is and answers that it is flourishing, a lifelong activity of the soul in line with virtue. He treats moral virtue as a habit of choosing a mean between extremes, learned by practice, and works through courage, generosity, justice and other traits. Book VI turns to the intellectual virtues, including practical wisdom. Later books examine self-control, pleasure and, at length, friendship. The closing section ranks contemplation highest and sends the reader on to politics and the making of good laws.",
+ "context": "The text comes from Aristotle's lectures at the Lyceum in Athens and reads like lecture notes rather than a work he prepared for publication. No one has fixed its date; the traditional view puts it in his last years in Athens, from 335 BC to 322 BC. The title probably refers to his son Nicomachus. His library had a long, damaged journey before Andronicus of Rhodes edited it in Rome. Aquinas and other medieval thinkers built on it. This site carries F. H. Peters's translation from Standard Ebooks.",
+ "sources": [
+  {
+   "title": "Nicomachean Ethics (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Nicomachean_Ethics"
+  },
+  {
+   "title": "Aristotle (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Aristotle"
+  },
+  {
+   "title": "Nicomachean Ethics, translated by F. H. Peters, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/aristotle/nicomachean-ethics/f-h-peters"
+  }
+ ],
+ "people": [
+  {
+   "name": "Aristotle",
+   "role": "author",
+   "note": "Greek philosopher (384 to 322 BC) who founded the Peripatetic school at the Lyceum.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Nicomachus",
+   "role": "subject",
+   "note": "Aristotle's son, whom the title most likely names as dedicatee or editor.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Plato",
+   "role": "subject",
+   "note": "Aristotle's friend and teacher, whose ideas on the good the book examines.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Theophrastus",
+   "role": "subject",
+   "note": "Aristotle's successor as head of the Lyceum, who inherited his library and writings.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Apellicon",
+   "role": "subject",
+   "note": "Bought the damaged library and had it copied, guessing at the unreadable gaps.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Andronicus of Rhodes",
+   "role": "scribe",
+   "note": "Organized the texts in Rome into the first complete edition of Aristotle's works.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Aspasius",
+   "role": "subject",
+   "note": "Wrote a commentary in the early 2nd century CE, the earliest surviving on any Aristotle work.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Thomas Aquinas",
+   "role": "subject",
+   "note": "Wrote a commentary on the book and used its arguments in his Summa Theologica.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "F. H. Peters",
+   "role": "translator",
+   "note": "Translator of the English text carried on this site.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Athens",
+   "lat": 37.9838,
+   "lon": 23.7275,
+   "note": "Where Aristotle taught at the Lyceum and, on the traditional view, composed the work.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Stagira",
+   "lat": 40.5906,
+   "lon": 23.7894,
+   "note": "Aristotle's birthplace in Chalkidiki, northern Greece.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Pergamon",
+   "lat": 39.1325,
+   "lon": 27.1839,
+   "note": "Its kings gathered books for a royal library, which led Neleus's heirs to hide Aristotle's collection.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rome",
+   "lat": 41.9028,
+   "lon": 12.4964,
+   "note": "Sulla took the library here, where Andronicus of Rhodes edited it.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -335,
+   "label": "Aristotle begins his second period in Athens, the time to which the traditional view assigns the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -322,
+   "label": "Aristotle dies, and his library and writings pass to Theophrastus.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": -100,
+   "label": "Apellicon buys the hidden library and brings it back to Athens, about this year.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -86,
+   "label": "Sulla seizes Athens and sends the library to Rome, where Andronicus edits it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 175,
+   "label": "Atticus gives the oldest known reference to the work under this title.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Flourishing as the human good",
+   "note": "Aristotle names eudaimonia, flourishing or happiness, as the highest good, a way of acting through a whole life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Virtue as a chosen mean",
+   "note": "Virtue is a habit of choosing the mean, and finding the mean takes knowledge.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Ethics as practical",
+   "note": "The aim is to help people become good, not only to describe goodness.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Friendship as virtue",
+   "note": "Friendship is treated as a virtue or something that implies virtue, and as necessary to life.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Contemplation and legislation",
+   "note": "The book ends on the contemplative life and then turns to law, since knowing virtue is not enough.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Book I: The End",
+   "quote": "Every art and every kind of inquiry, and likewise every act and purpose, seems to aim at some good: and so it has been well said that the good is that at which everything aims",
+   "why": "The opening line states the thesis that every action aims at some good."
+  },
+  {
+   "part": 1,
+   "chapter": "Book I: The End",
+   "quote": "But there must also be a full term of years for this exercise; for one swallow or one fine day does not make a spring, nor does one day or any small space of time make a blessed or happy man",
+   "why": "The swallow and the spring: happiness takes a whole life."
+  },
+  {
+   "part": 1,
+   "chapter": "Book II: Moral Virtue",
+   "quote": "we become builders by building, and harpers by harping. And so by doing just acts we become just, and by doing acts of temperance and courage we become temperate and courageous",
+   "why": "Virtue is learned by acting, the book's central claim about habit."
+  },
+  {
+   "part": 2,
+   "chapter": "Book V: Justice",
+   "quote": "We now have to inquire about justice and injustice, and to ask what sorts of acts they are concerned with, and in what sense justice observes the mean, and what are the extremes whose mean is that which is just",
+   "why": "Book V opens its analysis of justice."
+  },
+  {
+   "part": 3,
+   "chapter": "Book VIII: Friendship or Love",
+   "quote": "For no one would care to live without friends, though he had all other good things",
+   "why": "Aristotle explains why friendship matters even to the rich and powerful."
+  },
+  {
+   "part": 4,
+   "chapter": "Conclusion",
+   "quote": "Now that we have discussed the several kinds of virtue and friendship and pleasure, it remains to give a summary account of happiness, since we assume that it is the end of all that man does",
+   "why": "The summary account of happiness that closes the book."
+  }
+ ],
+ "id": "ethics"
+}

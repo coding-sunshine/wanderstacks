@@ -1,0 +1,234 @@
+{
+ "id": "jataka",
+ "summary": "Jataka tales recount the earlier lives of the future Buddha, called the Bodisat in this translation, who appears as a merchant, a king's chaplain, a deer or a quail. The English book opens with a long introduction on how the stories travelled to Persia, Arabia and Europe, then gives the first stories in full: the ass dressed in a lion's skin who is undone by his own bray, the tortoise who cannot keep silent, the cruel crane who tricks fish. Each tale ends with a moral and a verse, and a note links the story to the living Buddha's own situation.",
+ "context": "The Jataka form one of the oldest classes of Buddhist literature. The largest collection belongs to the Theravada Pali Canon. T. W. Rhys Davids, who learned Pali while serving as a magistrate in Ceylon, published this English version in 1880 as Buddhist Birth Stories, translating from the Pali text edited by Viggo Fausboll. His long introduction argues that many European fables, among them tales found in Aesop, trace back to Indian Buddhist stories. The book therefore reads as folklore history as much as scripture.",
+ "sources": [
+  {
+   "title": "Jataka (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Jataka"
+  },
+  {
+   "title": "Thomas William Rhys Davids (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Thomas_William_Rhys_Davids"
+  },
+  {
+   "title": "Buddhist Birth Stories; or, Jataka Tales, Volume 1 (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/51880"
+  }
+ ],
+ "people": [
+  {
+   "name": "Gautama Buddha",
+   "role": "subject",
+   "note": "The tales show his many past lives, which he is said to have recalled in order to teach.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "T. W. Rhys Davids",
+   "role": "translator",
+   "note": "Welsh Pali scholar (1843-1922) who published Buddhist Birth Stories in 1880 and later founded the Pali Text Society.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Caroline Augusta Foley Rhys Davids",
+   "role": "subject",
+   "note": "Pali scholar who married Rhys Davids in 1894.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Sir Hercules Robinson",
+   "role": "subject",
+   "note": "Governor of Ceylon who founded the Archaeological Commission in 1868, under which Rhys Davids helped dig Anuradhapura.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Peter Skilling",
+   "role": "subject",
+   "note": "Scholar quoted as calling the Jataka one of the oldest classes of Buddhist literature.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Naomi Appleton",
+   "role": "subject",
+   "note": "Scholar who writes that Jataka collections shaped ideas about buddhahood, karma and merit.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Sanchi",
+   "lat": 23.4793,
+   "lon": 77.7396,
+   "note": "Site of some of the earliest carved illustrations of Jataka stories.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Bharhut",
+   "lat": 24.4167,
+   "lon": 80.8667,
+   "note": "Stupa with some of the earliest Jataka reliefs.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Anuradhapura",
+   "lat": 8.3114,
+   "lon": 80.4037,
+   "note": "Ancient Sinhalese city whose excavation Rhys Davids helped begin in the 1870s.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Colchester",
+   "lat": 51.8959,
+   "lon": 0.8919,
+   "note": "Birthplace of Rhys Davids.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Wroclaw (Breslau)",
+   "lat": 51.1079,
+   "lon": 17.0385,
+   "note": "Where Rhys Davids studied Sanskrit before joining the Civil Service.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1843,
+   "label": "Rhys Davids is born at Colchester on 12 May.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1863,
+   "label": "He passes the Civil Service exams and is posted to Ceylon, where he first meets Pali.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1871,
+   "label": "He becomes Assistant Government Agent at Nuwarakalaviya, with Anuradhapura as its centre.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1880,
+   "label": "Buddhist Birth Stories (Jataka Tales) is published in London.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1882,
+   "label": "Rhys Davids becomes Professor of Pali at the University of London.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1922,
+   "label": "Rhys Davids dies on 27 December at Chipstead, Surrey.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Past lives teach virtue",
+   "note": "In every form the future Buddha shows some quality, and the tale presses it on the listener.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Karma and rebirth",
+   "note": "The stories sit inside a framework of merit, karma and many lives on the road to buddhahood.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Fables travelling westward",
+   "note": "Rhys Davids traces the ass in the lion's skin through Greek, medieval and later European versions.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Stories in stone",
+   "note": "Jataka scenes were carved on stupa railings and gateways, at Sanchi and Bharhut among others.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "The Ass in the Lion’s Skin",
+   "quote": "Once upon a time, while Brahma-datta was reigning in Benāres, the future Buddha was born one of a peasant family; and when he grew up, he gained his living by tilling the ground.",
+   "why": "The standard opening formula: a king at Benares, the Bodisat in a humble role."
+  },
+  {
+   "part": 1,
+   "chapter": "The Ass in the Lion’s Skin",
+   "quote": "Terrified with the fear of death, the ass uttered a cry—the cry of an ass!",
+   "why": "The turn of the tale, when the disguise fails."
+  },
+  {
+   "part": 1,
+   "chapter": "The Ass in the Lion’s Skin",
+   "quote": "This story will doubtless sound familiar enough to English ears; for a similar tale is found in our modern collections of so-called ‘Æsop’s Fables.’",
+   "why": "Rhys Davids links the tale to the Aesop tradition."
+  },
+  {
+   "part": 1,
+   "chapter": "The Talkative Tortoise",
+   "quote": "We can take you, if you can only hold your tongue, and will say nothing to anybody.",
+   "why": "The geese's condition, which the tortoise cannot keep."
+  },
+  {
+   "part": 3,
+   "chapter": "No. 1.—Holding to the Truth.",
+   "quote": "Once upon a time in the country of Kāsi and the city of Benares, there was a king called Brahma-datta. The Bodisat was at that time born in a merchant’s family;",
+   "why": "The Bodisat as merchant, in the first story of the second volume."
+  },
+  {
+   "part": 4,
+   "chapter": "No. 21. KURUNGA-MIGA JĀTAKA. The Wily Antelope.",
+   "quote": "Those platform-hunters sometimes make their platforms on the trees. I wonder can there be any danger of that kind.",
+   "why": "The Bodisat as an antelope, wary of a trap."
+  },
+  {
+   "part": 5,
+   "chapter": "No. 38. BAKA JĀTAKA. The Cruel Crane Outwitted.",
+   "quote": "Now at that time the water used to run short at the dry season in a certain pond, not over large, in which there were a good many fish. And a crane thought, on seeing the fish— “I must outwit these fish somehow or other and make a prey of them.”",
+   "why": "The setup for one of the best-known animal tales."
+  }
+ ]
+}

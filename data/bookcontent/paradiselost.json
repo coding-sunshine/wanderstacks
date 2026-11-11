@@ -1,0 +1,250 @@
+{
+  "id": "paradiselost",
+  "summary": "Satan and his rebel angels, thrown into Hell after losing a war in Heaven, hold a council and decide to strike back by corrupting the newly made humans. Satan crosses Chaos alone and reaches the Garden of Eden, where he finds Adam and Eve. The angel Raphael warns them and tells of the war in Heaven and the making of the world. Satan returns as a serpent and persuades Eve to eat the forbidden fruit, and Adam eats too. A vision from the angel Michael shows them what lies ahead, and the pair leave Eden.",
+  "context": "John Milton, who had gone blind in 1652, dictated this blank-verse epic to helpers and friends. A contemporary biographer says it was written between 1658 and 1663. The first version came out in 1667 in ten books. A second edition in 1674 reorganised the text into twelve books, in the manner of Virgil's Aeneid. Milton set out to build an English, Christian epic in place of the Greek and Roman ones, and to justify the ways of God to men. This site carries the text from Standard Ebooks.",
+  "sources": [
+    {
+      "title": "Paradise Lost (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Paradise_Lost"
+    },
+    {
+      "title": "Paradise Lost by John Milton (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/john-milton/paradise-lost"
+    },
+    {
+      "title": "John Milton (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/John_Milton"
+    }
+  ],
+  "people": [
+    {
+      "name": "John Milton",
+      "role": "Author",
+      "note": "English poet who went blind in 1652 and dictated the poem to amanuenses and friends.",
+      "s": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Satan",
+      "role": "Fallen angel",
+      "note": "Leads the rebel angels, speaks as a skilled orator, and tempts Eve in the form of a serpent.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Adam",
+      "role": "First man",
+      "note": "Eats the fruit knowing it is wrong, which makes him a greater sinner than Eve in Milton's telling.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Eve",
+      "role": "First woman",
+      "note": "Tempted by Satan, who plays on her vanity; critics read her character in different ways.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Raphael",
+      "role": "Archangel",
+      "note": "Sent to Eden to strengthen Adam and Eve, and tells the story of the war in Heaven.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Michael",
+      "role": "Archangel",
+      "note": "Shows Adam a vision of what will happen to mankind until the Great Flood.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Beelzebub",
+      "role": "Fallen angel",
+      "note": "Aids Satan in organising the rebels in Pandaemonium.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Samuel Simmons",
+      "role": "Printer",
+      "note": "First registered Paradise Lost for publication in his name in 1667.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "London",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "note": "Milton was born in Bread Street, London, in 1608, and was buried here in 1674.",
+      "s": [
+        2
+      ]
+    },
+    {
+      "name": "Cambridge",
+      "lat": 52.2053,
+      "lon": 0.1218,
+      "note": "Milton entered Christ's College, University of Cambridge, in 1625 and took his BA in 1629.",
+      "s": [
+        2
+      ]
+    },
+    {
+      "name": "Naples",
+      "lat": 40.8518,
+      "lon": 14.2681,
+      "note": "Milton wanted to leave Naples for Sicily and Greece but went home to England in 1639 as civil war loomed.",
+      "s": [
+        2
+      ]
+    },
+    {
+      "name": "Westminster",
+      "lat": 51.4994,
+      "lon": -0.1273,
+      "note": "Milton married Katherine Woodcock at St Margaret's, Westminster, in 1656.",
+      "s": [
+        2
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1608,
+      "label": "John Milton is born in Bread Street, London",
+      "s": [
+        2
+      ]
+    },
+    {
+      "year": 1652,
+      "label": "Milton is totally blind and from now on dictates his work",
+      "s": [
+        0,
+        2
+      ]
+    },
+    {
+      "year": 1658,
+      "label": "The date from which Milton's contemporary Aubrey says the poem was written; Milton's second wife dies",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1667,
+      "label": "First edition in ten books, registered by Samuel Simmons",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1674,
+      "label": "Second edition in twelve books; Milton dies the same year",
+      "s": [
+        0,
+        2
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "A Christian epic in place of a pagan one",
+      "note": "Milton invokes a Christian muse and reuses epic conventions to replace the value system of Achilles, Odysseus and Aeneas with Christian virtue.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Heroism redefined",
+      "note": "Pride, wrath and cunning are given to Satan, while the Son is shown as heroic for love, mercy, humility and self-sacrifice.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Satan's changing mind",
+      "note": "Early on he is a sublime leader and orator; by Book IV he is inwardly isolated and laments his state on seeing Eden.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Free will and justice",
+      "note": "Milton explores how humans can fall by deception while angels fell by their own cause, and how God offers redemption.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Politics under the surface",
+      "note": "Milton mourns the end of the Commonwealth after the Restoration of 1660, and the Garden of Eden may reflect his view of England.",
+      "s": [
+        2
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "Book I",
+      "quote": "Of Man’s first disobedience, and the fruit Of that forbidden Tree, whose mortal taste Brought death into the world, and all our woe,",
+      "why": "The opening sentence names the subject of the whole poem: the first disobedience and its cost."
+    },
+    {
+      "part": 1,
+      "chapter": "Book I",
+      "quote": "I may assert the Eternal Providence, And justify the ways of God to men.",
+      "why": "Milton states what he means to do, and the line is the most quoted summary of the poem's purpose."
+    },
+    {
+      "part": 1,
+      "chapter": "Book I",
+      "quote": "The mind is its own place, and in itself Can make a Heaven of Hell, a Hell of Heaven.",
+      "why": "Satan, newly fallen, claims that the mind makes its own heaven or hell, an early sign of his self-regard."
+    },
+    {
+      "part": 1,
+      "chapter": "Book I",
+      "quote": "To reign is worth ambition though in Hell: Better to reign in Hell, than serve in Heaven.",
+      "why": "Satan's pride in one line, spoken to the fallen angels."
+    },
+    {
+      "part": 2,
+      "chapter": "Book IV",
+      "quote": "Which way I fly is Hell; myself am Hell; And, in the lowest deep, a lower deep Still threatening to devour me opens wide,",
+      "why": "Alone in Eden, Satan admits that his torment travels with him."
+    },
+    {
+      "part": 2,
+      "chapter": "Book IV",
+      "quote": "Hail, wedded Love, mysterious law, true source Of human offspring, sole propriety In Paradise of all things common else!",
+      "why": "The narrator praises married love in Eden, a counterweight to Satan's despair."
+    },
+    {
+      "part": 4,
+      "chapter": "Book XII",
+      "quote": "but shalt possess A Paradise within thee, happier far.",
+      "why": "The archangel Michael tells Adam that the paradise he is losing can be replaced by one within himself."
+    },
+    {
+      "part": 4,
+      "chapter": "Book XII",
+      "quote": "The world was all before them, where to choose Their place of rest, and Providence their guide.",
+      "why": "The last lines: Adam and Eve leave Eden hand in hand with the world open ahead."
+    }
+  ]
+}

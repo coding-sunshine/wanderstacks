@@ -1,0 +1,268 @@
+{
+ "id": "swann",
+ "summary": "A narrator looks back over his life in the France of the late 1800s and early 1900s. The first volume opens with a boy lying awake, waiting for his mother's goodnight kiss, and a mouthful of tea and cake that suddenly brings back his childhood at Combray. The story then follows the love of Charles Swann for Odette de Crécy, the narrator's own first loves, his time at the seaside and in high society, and the loss of Albertine. The novel ends with the narrator seeing that his memories are the material for a book.",
+ "context": "Marcel Proust began shaping the novel in 1909 and worked on it until his last illness in autumn 1922. Leading publishers turned down the first volume, so he paid Grasset to print Swann's Way in 1913. The rest appeared up to 1927, and his brother Robert saw the last volumes through the press. C. K. Scott Moncrieff translated the early volumes into English as Remembrance of Things Past, a title taken from a Shakespeare sonnet. This edition carries the six volumes of his translation, and the Gutenberg page covers Swann's Way.",
+ "sources": [
+  {
+   "title": "In Search of Lost Time - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/In_Search_of_Lost_Time"
+  },
+  {
+   "title": "Marcel Proust - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Marcel_Proust"
+  },
+  {
+   "title": "Swann's Way by Marcel Proust - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/7178"
+  }
+ ],
+ "people": [
+  {
+   "name": "Marcel Proust",
+   "role": "author",
+   "note": "French novelist, born in Auteuil in 1871, who died of pneumonia in 1922 aged 51.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "C. K. Scott Moncrieff",
+   "role": "translator",
+   "note": "Scotsman who first translated the early volumes into English as Remembrance of Things Past.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Charles Swann",
+   "role": "character",
+   "note": "Elegant man of Jewish origin with strong ties to society, a friend of the narrator's family at Combray.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Odette de Crécy",
+   "role": "character",
+   "note": "Former courtesan whom Swann meets in the Verdurin circle and loves.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mme. Verdurin",
+   "role": "character",
+   "note": "Rich and autocratic hostess who demands total obedience in her little clan.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Françoise",
+   "role": "character",
+   "note": "The family servant, uneducated but with an earthy wisdom.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "André Gide",
+   "role": "subject",
+   "note": "Read the manuscript for the Nouvelle Revue Française and advised against publishing it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Robert Proust",
+   "role": "subject",
+   "note": "Marcel's brother, who oversaw the editing and publication of the last volumes after his death.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Illiers-Combray",
+   "lat": 48.2987,
+   "lon": 1.2374,
+   "note": "Town where Proust spent holidays as a child, the model for the narrator's Combray.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Auteuil, Paris",
+   "lat": 48.8473,
+   "lon": 2.2696,
+   "note": "District of Paris where Proust was born in 1871 and whose great-uncle's house fed the Combray memories.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Cabourg",
+   "lat": 49.2878,
+   "lon": -0.1231,
+   "note": "Seaside resort where Proust vacationed and wrote parts of the novel; the model for Balbec.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Père Lachaise Cemetery, Paris",
+   "lat": 48.8614,
+   "lon": 2.3933,
+   "note": "Burial place of Proust.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Chatto & Windus issued the Scott Moncrieff translation here.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1871,
+   "label": "Marcel Proust is born in Auteuil, Paris, on 10 July.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1909,
+   "label": "Proust begins to shape the novel, after the essay Contre Sainte-Beuve of 1908 to 1909.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1913,
+   "label": "Swann's Way appears from Grasset at the author's own cost after other publishers refused it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1922,
+   "label": "Scott Moncrieff's English Swann's Way is issued; Proust dies in November.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1927,
+   "label": "Finding Time Again, the last volume, is published.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 2013,
+   "label": "Yale University Press begins a revised Scott Moncrieff translation, completed in 2025.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Involuntary memory",
+   "note": "A taste of cake dipped in tea brings back a whole lost world, a recollection the will could not summon.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Love as projection",
+   "note": "Swann realises he has loved a woman who did not suit him, so the passion belonged to him and not to her.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Social worlds and their rules",
+   "note": "Parlours, salons and hosts like Mme. Verdurin set the stage for ambition and snobbery.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Absence reveals attachment",
+   "note": "Separation shows the narrator that he loved Albertine, after a stretch of telling himself otherwise.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A life that becomes a book",
+   "note": "The narrator discovers that his wasted years supply the material for his work.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Overture",
+   "quote": "For a long time I used to go to bed early. Sometimes, when I had put out my candle, my eyes would close so quickly that I had not even time to say “I’m going to sleep.”",
+   "why": "The opening of the novel: sleep, candlelight and a reader dropping off with a book in his hands."
+  },
+  {
+   "part": 1,
+   "chapter": "Overture",
+   "quote": "No sooner had the warm liquid, and the crumbs with it, touched my palate than a shudder ran through my whole body, and I stopped, intent upon the extraordinary changes that were taking place.",
+   "why": "The tea and cake moment, the start of the narrator's involuntary memory."
+  },
+  {
+   "part": 1,
+   "chapter": "Overture",
+   "quote": "And suddenly the memory returns. The taste was that of the little crumb of madeleine which on Sunday mornings at Combray (because on those mornings I did not go out before church-time), when I went to say good day to her in her bedroom, my aunt Léonie used to give me,",
+   "why": "The narrator names the source of the memory and links it to Sundays at Combray."
+  },
+  {
+   "part": 7,
+   "chapter": "Swann in Love (continued)",
+   "quote": "To think that I have wasted years of my life, that I have longed for death, that the greatest love that I have ever known has been for a woman who did not please me, who was not in my style!”",
+   "why": "Swann sees that the great love of his life was for a woman who did not suit him."
+  },
+  {
+   "part": 15,
+   "chapter": "Part II (continued)",
+   "quote": "whenever I saw her I noticed that she had a mole, but my inaccurate memory made it wander about the face of Albertine,",
+   "why": "A small detail about Albertine shows how memory moves things around."
+  },
+  {
+   "part": 23,
+   "chapter": "Part II (continued)",
+   "quote": "the unnecessary round of many wasted years through which I was yet to pass before there was revealed to me that invisible vocation of which these volumes are the history.",
+   "why": "The narrator looks back on years lost before his vocation became clear."
+  },
+  {
+   "part": 41,
+   "chapter": "I",
+   "quote": "“Mademoiselle Albertine has gone!” How much farther does anguish penetrate in psychology than psychology itself!",
+   "why": "The housekeeper's news hits the narrator harder than his own analysis predicted."
+  },
+  {
+   "part": 43,
+   "chapter": "II",
+   "quote": "The persistence in myself of an old tendency to work, to make up for lost time, to change my way of life, or rather to begin to live",
+   "why": "Late in the book the narrator thinks about making up for lost time."
+  }
+ ]
+}

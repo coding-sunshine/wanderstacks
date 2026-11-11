@@ -1,0 +1,283 @@
+{
+ "id": "ramayana",
+ "summary": "A Sanskrit epic in seven books about Rama, prince of Ayodhya. Banished for fourteen years through his stepmother Kaikeyi's demand, he goes into the forest with his wife Sita and his brother Lakshmana. Ravana, king of Lanka, carries Sita off. Rama allies with the vanara Sugriva, Hanuman finds Sita, and Rama defeats Ravana in war. He returns to be crowned, though doubts about Sita's purity trouble the ending. The poem is about duty between son and father, brother and brother, husband and wife, and ruler and people.",
+ "context": "Scholars place the oral composition of the text attributed to Valmiki between the 8th and 4th centuries BCE, with later additions running to the 3rd century CE. Two regional recensions, northern and southern, grew from one oral source before being written down. The first and last books are usually judged later than the rest. The epic spread through India and South-East Asia in many retellings. This site carries Ralph T. H. Griffith's English verse translation of 1870, taken from Project Gutenberg.",
+ "sources": [
+  {
+   "title": "Ramayana - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ramayana"
+  },
+  {
+   "title": "Ralph T. H. Griffith - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ralph_T._H._Griffith"
+  },
+  {
+   "title": "The Rámáyan of Válmíki, translated into English verse - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/24869"
+  }
+ ],
+ "people": [
+  {
+   "name": "Valmiki",
+   "role": "author",
+   "note": "The sage to whom the epic is traditionally attributed; in the poem he invents the shloka metre after seeing two birds shot.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ralph T. H. Griffith",
+   "role": "translator",
+   "note": "English Indologist and Boden Professor of Sanskrit who produced the verse translation published in 1870.",
+   "s": [
+    1,
+    2
+   ]
+  },
+  {
+   "name": "Rama",
+   "role": "character",
+   "note": "Prince of Ayodhya and seventh avatar of Vishnu, whose fourteen-year exile drives the story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sita",
+   "role": "character",
+   "note": "Rama's wife, kidnapped by Ravana and later asked to prove her fidelity by entering a pyre.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lakshmana",
+   "role": "character",
+   "note": "Rama's brother and constant companion through the exile.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ravana",
+   "role": "character",
+   "note": "King of the rakshasas in Lanka who kidnaps Sita and is killed by Rama.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Hanuman",
+   "role": "character",
+   "note": "The greatest of the vanara heroes and Rama's devoted follower, who leaps the sea to find Sita.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dasharatha",
+   "role": "character",
+   "note": "King of Ayodhya and father of Rama, who performs a fire sacrifice to gain sons.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kaikeyi",
+   "role": "character",
+   "note": "Rama's stepmother, whose request leads to his fourteen-year exile.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lava and Kusha",
+   "role": "character",
+   "note": "The twin boys Valmiki teaches the poem to; they recite it at Rama's court.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Ayodhya",
+   "lat": 26.7993,
+   "lon": 82.2047,
+   "note": "Capital of Kosala and Rama's home, where the exile is decreed and where he is crowned after the war.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mithila (Janakpur)",
+   "lat": 26.7288,
+   "lon": 85.9266,
+   "note": "King Janaka's kingdom, where Rama is brought to a sacrifice whose bow no one had been able to string.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Chitrakuta",
+   "lat": 25.2,
+   "lon": 80.85,
+   "note": "Where Bharata meets Rama; a stone panel of the scene survives at Nagarjunakonda from the 3rd century CE.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Varanasi (Benares)",
+   "lat": 25.3176,
+   "lon": 82.9739,
+   "note": "In the Buddhist Dasharatha Jataka the king rules from Benares, and Griffith later led Benares College.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Prambanan",
+   "lat": -7.752,
+   "lon": 110.4915,
+   "note": "Ninth-century temple in Yogyakarta whose balustrades carry Ramayana reliefs.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -750,
+   "label": "Oral composition of Valmiki's Ramayana begins, by Robert Goldman's estimate of 750 to 500 BCE.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -500,
+   "label": "Core portions of the epic are thought to be complete by the 6th or 5th century BCE, since they do not mention Buddhism.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 250,
+   "label": "A stone panel at Nagarjunakonda shows Bharata meeting Rama at Chitrakuta, and later stages of the text reach into the 3rd century CE.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 850,
+   "label": "Ramayana scenes are carved on the balustrades of the Prambanan temple in Java.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1576,
+   "label": "Tulsidas composes the Awadhi Ramacharitmanas, a devotional retelling.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1870,
+   "label": "Griffith publishes his English verse translation, the edition this site carries.",
+   "s": [
+    1,
+    2
+   ]
+  },
+  {
+   "year": 2008,
+   "label": "Project Gutenberg releases Griffith's translation as ebook 24869.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Duties of ideal relationships",
+   "note": "The poem portrays the ideal son, brother, husband, wife and king, and uses their conflicts to teach the goals of human life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Exile and filial obedience",
+   "note": "Rama accepts banishment to honour his father's word, which sets the whole narrative in motion.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Rama's rule as ideal state",
+   "note": "The epic's moral influence includes the picture of a state where a virtuous king rules, later called a utopia.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Public opinion and Sita's trial",
+   "note": "Sita enters a pyre to answer the citizens' doubts, and Agni returns her unharmed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "One story, many versions",
+   "note": "Northern and southern recensions, plus Buddhist, Jain and South-East Asian retellings, change the plot in important ways.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Canto IV. The Rhapsodists.",
+   "quote": "Behold, in hermit's raiment dressed, Kuśá and Lava came to greet Their master and embrace his feet.",
+   "why": "Valmiki hands the poem to its first reciters, the twins who will later sing it before Rama."
+  },
+  {
+   "part": 5,
+   "chapter": "Canto LXI. Kausalyá's Lament.",
+   "quote": "Thy name, O Monarch, far and wide Through the three worlds is glorified:",
+   "why": "Kausalya confronts Dasaratha after the exile; the grief of the court is felt here."
+  },
+  {
+   "part": 8,
+   "chapter": "Canto LXIX. The Death Of Jatáyus.",
+   "quote": "This royal bird with faithful thought For my advantage strove and fought.",
+   "why": "Rama mourns the vulture Jatayus, who died fighting Ravana to save Sita."
+  },
+  {
+   "part": 11,
+   "chapter": "Canto XXXVII. Sítá's Speech.",
+   "quote": "Bliss, that he wears me in his heart, Pain, that he wakes and weeps apart,",
+   "why": "Sita in captivity answers Hanuman, bound between hope and grief."
+  },
+  {
+   "part": 11,
+   "chapter": "Canto XXVII. Trijatá's Dream.",
+   "quote": "Last night I dreamt a dream; and still The fear and awe my bosom chill;",
+   "why": "Trijata warns the guards of Sita that Ravana's house will fall."
+  },
+  {
+   "part": 11,
+   "chapter": "Canto XLIX. Rávan.",
+   "quote": "Ten heads he reared, as Mandar's hill Lifts woody peaks which tigers fill,",
+   "why": "Hanuman's first sight of the ten-headed Ravana on his throne."
+  },
+  {
+   "part": 14,
+   "chapter": "Page 342. The Fall Of Báli.",
+   "quote": "it certainly seems to refer to some real event amongst the aboriginal tribes: namely, the quarrel between an elder and younger brother for the possession of a Ráj;",
+   "why": "A footnote in the book reading the Bali and Sugriva quarrel as history."
+  }
+ ]
+}

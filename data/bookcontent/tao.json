@@ -1,0 +1,222 @@
+{
+ "id": "tao",
+ "summary": "The Tao Te Ching is a collection of 81 short sections attributed to Laozi and dated by Standard Ebooks to about the 6th century BC. This edition uses the English translation by James Legge. The sections speak in compact, paradoxical lines about the Tao, the way that cannot be fully named, and about how a ruler or an ordinary person should act in line with it. Water, softness, small beginnings and restraint recur as images, and each section can be read alone in a minute.",
+ "context": "The oldest excavated pieces are the Guodian bamboo slips, from about 300 BCE, found in 1993 near Guodian in Hubei. The Mawangdui silk texts, from a tomb dated 168 BCE and opened in 1973, put the Te section before the Tao section. Later readers worked through commentary editions, among them those of Heshang Gong and Wang Bi. Sima Qian tells of Laozi as an archivist who wrote the book for a gatekeeper at the Han-ku Pass. The text was first translated into French in the early 19th century.",
+ "sources": [
+  {
+   "url": "https://standardebooks.org/ebooks/laozi/tao-te-ching/james-legge",
+   "title": "Tao Te Ching by Laozi, translated by James Legge (Standard Ebooks)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Tao_Te_Ching",
+   "title": "Tao Te Ching (Wikipedia)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Laozi",
+   "role": "Attributed author",
+   "note": "Standard Ebooks gives him as the author of the text, in about the 6th century BC.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "James Legge",
+   "role": "Translator",
+   "note": "Produced the English translation used in this edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sima Qian",
+   "role": "Historian",
+   "note": "Tells the story of Laozi as an archivist who left the book at the Han-ku Pass.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Yinxi",
+   "role": "Gatekeeper",
+   "note": "In Sima Qian's account, the keeper of the pass who asked Laozi to write down his teaching.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Wang Bi",
+   "role": "Commentator",
+   "note": "Lived 226 to 249 CE; his edition is one of the two major commentary lines.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Heshang Gong",
+   "role": "Commentator",
+   "note": "Name attached to the other major commentary edition of the text.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Guodian, Jingmen",
+   "lat": 31,
+   "lon": 112.2,
+   "note": "Site near Jingmen, Hubei, where the oldest excavated slips were found in 1993.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Mawangdui, Changsha",
+   "lat": 28.21,
+   "lon": 113.02,
+   "note": "Tomb dated 168 BCE that held the silk texts, found in 1973.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Dunhuang",
+   "lat": 40.14,
+   "lon": 94.66,
+   "note": "Source of manuscripts of the text found there.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Hangu Pass",
+   "lat": 34.52,
+   "lon": 110.87,
+   "note": "Where Sima Qian places Laozi's handing over of the book to the gatekeeper.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -600,
+   "label": "Traditional date of Laozi, about the 6th century BC",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -300,
+   "label": "Guodian bamboo slips, the oldest excavated fragments, date from about now",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": -168,
+   "label": "Tomb at Mawangdui is sealed with its silk copies of the text",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 226,
+   "label": "Wang Bi, later author of a major edition, is born (he lived 226 to 249)",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1973,
+   "label": "Mawangdui silk texts are found",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1993,
+   "label": "Guodian slips are found",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "The Tao cannot be named",
+   "note": "Section I opens by saying that the Tao that can be trodden is not the enduring Tao, and the name that can be named is not the enduring name.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Water as the model",
+   "note": "Section VIII praises water for benefiting all things without contest.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Small beginnings",
+   "note": "Section LXIV says the tree that fills the arms grew from a tiny sprout.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Softness outlasts hardness",
+   "note": "Section LXXVI sets the supple and weak of living things against the stiff and strong of the dead.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Three things to hold",
+   "note": "Section LXVII lists three precious things the speaker prizes and holds fast.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Part I: I",
+   "quote": "The Tao that can be trodden is not the enduring and unchanging Tao. The name that can be named is not the enduring and unchanging name. (Conceived of as) having no name, it is the Originator of heaven and earth; (conceived of as) having a name, it is the Mother of all things.",
+   "why": "Opening line of the whole book and its best-known claim about language."
+  },
+  {
+   "part": 1,
+   "chapter": "VIII",
+   "quote": "The highest excellence is like (that of) water. The excellence of water appears in its benefiting all things, and in its occupying, without striving (to the contrary), the low place which all men dislike. Hence (its way) is near to (that of) the Tao.",
+   "why": "Water is the book's favorite picture of effortless goodness."
+  },
+  {
+   "part": 1,
+   "chapter": "VII",
+   "quote": "Heaven is long-enduring and earth continues long. The reason why heaven and earth are able to endure and continue thus long is because they do not live of, or for, themselves. This is how they are able to continue and endure.",
+   "why": "Explains endurance through not living for oneself."
+  },
+  {
+   "part": 1,
+   "chapter": "LXIV",
+   "quote": "The tree which fills the arms grew from the tiniest sprout; the tower of nine storeys rose from a (small) heap of earth; the journey of a thousand li commenced with a single step. He who acts (with an ulterior purpose) does harm; he who takes hold of a thing (in the same way) loses his hold.",
+   "why": "Shows the principle of patient, small starts."
+  },
+  {
+   "part": 1,
+   "chapter": "LXVII",
+   "quote": "I have three precious things which I prize and hold fast. The first is gentleness; the second is economy; and the third is shrinking from taking precedence of others. With that gentleness I can be bold; with that economy I can be liberal; shrinking from taking precedence of others, I can become a vessel of the highest honour.",
+   "why": "A compact statement of the speaker's own practice."
+  },
+  {
+   "part": 1,
+   "chapter": "LXXVI",
+   "quote": "Man at his birth is supple and weak; at his death, firm and strong. (So it is with) all things. Trees and plants, in their early growth, are soft and brittle; at their death, dry and withered. Thus it is that firmness and strength are the concomitants of death; softness and weakness, the concomitants of life.",
+   "why": "Argues for softness from the contrast of life and death."
+  }
+ ]
+}

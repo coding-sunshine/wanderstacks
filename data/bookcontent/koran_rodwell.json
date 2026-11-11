@@ -1,0 +1,197 @@
+{
+ "id": "koran_rodwell",
+ "summary": "This is the Koran in J. M. Rodwell's English, with the 114 suras in the order he thought chronological, from the early short Meccan suras on the Day of Judgment to the long Medinan ones on law and community. Each sura carries a heading, its place of revelation and its verse count, and many verses carry footnote numbers. A brief introduction gives the life of Muhammad. Rodwell's version puts God's oneness, the Last Day, and the stories of earlier prophets in the order a reader meets them.",
+ "context": "John Medows Rodwell, a Church of England clergyman, translated the Koran in 1861. He had been a friend of Charles Darwin at Cambridge and was for decades rector of St Ethelburga's, Bishopsgate, in London. His edition reorders the suras by date and adds notes tying passages to the Bible. The 1994 Everyman's Library edition put them back in the traditional order from long to short and replaced his outdated preface. The text here keeps his chronological order and is preceded by an introduction by G. Margoliouth.",
+ "sources": [
+  {
+   "title": "John Medows Rodwell (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/John_Medows_Rodwell"
+  },
+  {
+   "title": "Quran (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Quran"
+  }
+ ],
+ "people": [
+  {
+   "name": "John Medows Rodwell",
+   "role": "translator",
+   "note": "Anglican clergyman and Islamic studies scholar (1808-1900) who translated the Koran in 1861.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "G. Margoliouth",
+   "role": "author",
+   "note": "Wrote the introductory notes printed in this edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Charles Darwin",
+   "role": "subject",
+   "note": "A friend of Rodwell at Cambridge, with whom he kept up a correspondence.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Muhammad",
+   "role": "subject",
+   "note": "The prophet to whom the Koran was revealed over about 23 years.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Abu Bakr",
+   "role": "subject",
+   "note": "First caliph, who ordered the text compiled.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Mecca",
+   "lat": 21.4225,
+   "lon": 39.8262,
+   "note": "Where the early suras in Rodwell's order were revealed.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Medina",
+   "lat": 24.4672,
+   "lon": 39.6111,
+   "note": "City of the later revelations.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "St Ethelburga's, Bishopsgate",
+   "lat": 51.5159,
+   "lon": -0.0817,
+   "note": "London church where Rodwell was rector from 1843 to 1900.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 632,
+   "label": "Muhammad dies, ending the revelation.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1808,
+   "label": "John Medows Rodwell is born.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1843,
+   "label": "Rodwell becomes rector of St Ethelburga's, Bishopsgate.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1861,
+   "label": "Rodwell's The Koran is first published.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1994,
+   "label": "The Everyman's Library edition restores the traditional order of the suras.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Chronological order",
+   "note": "Rodwell ordered the suras by date, not by length.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Biblical cross-references",
+   "note": "His notes link passages to the Bible, a strength of his edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Revelation and recitation",
+   "note": "The Koran is believed to be God's speech given through Gabriel.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Compilation",
+   "note": "The text was compiled under Abu Bakr and standardized under Uthman.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "TRANSLATED FROM THE ARABIC BY THE REV. J.M. RODWELL, M.A. WITH AN INTRODUCTION BY THE REV. G. MARGOLIOUTH, M.A.",
+   "quote": "MOHAMMED was born at Mecca in A.D. 567 or 569. His flight (hijra) to Medina, which marks the beginning of the Mohammedan era, took place on 16th June 622. He died on 7th June 632.",
+   "why": "The introduction's first lines, with its dates."
+  },
+  {
+   "part": 1,
+   "chapter": "INTRODUCTION",
+   "quote": "THE Koran admittedly occupies an important position among the great religious books of the world. Though the youngest of the epoch-making works belonging to this class of literature, it yields to hardly any in the wonderful effect which it has produced on large masses of men.",
+   "why": "The introduction on the Koran's reach."
+  },
+  {
+   "part": 1,
+   "chapter": "PREFACE",
+   "quote": "SAY: He is God alone: God the eternal! He begetteth not, and He is not begotten; And there is none like unto Him.",
+   "why": "The short sura of the Unity."
+  },
+  {
+   "part": 1,
+   "chapter": "PREFACE",
+   "quote": "Save those who believe and do the things which be right, and enjoin truth and enjoin stedfastness on each other.",
+   "why": "The close of the sura of the Declining Day."
+  },
+  {
+   "part": 6,
+   "chapter": "SURA LVI.-THE INEVITABLE [XLV.] (continued)",
+   "quote": "God is the LIGHT of the Heavens and of the Earth. His Light is like a niche in which is a lamp-the lamp encased in glass-the glass, as it were, a glistening star.",
+   "why": "The Light verse in Rodwell's wording."
+  },
+  {
+   "part": 5,
+   "chapter": "SURA LVI.-THE INEVITABLE [XLV.] (continued)",
+   "quote": "God is the patron of believers: He shall bring them out of darkness into light:",
+   "why": "From the verse that follows the one on religion."
+  },
+  {
+   "part": 2,
+   "chapter": "SURA LVI.-THE INEVITABLE [XLV.]",
+   "quote": "He created man of clay like that of the potter. And He created the djinn of pure fire:",
+   "why": "From Sura LV, The Merciful."
+  }
+ ]
+}

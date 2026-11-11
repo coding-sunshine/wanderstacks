@@ -1,0 +1,234 @@
+{
+ "id": "metamorphoses",
+ "summary": "Ovid's Metamorphoses is a long Latin poem that tells the history of the world through myths of transformation, from the ordering of Chaos to the deification of Julius Caesar. More than 250 stories pass in fifteen books, and they leap from one to another with little link. Apollo chases Daphne, Phaethon begs to drive the Sun's chariot, Arachne is turned into a spider by Pallas, and Medea argues with herself over Jason. Love, in many forms, returns again and again as the theme. The poem treats gods, mortals and metamorphosis with an unstable mix of epic, elegy and play.",
+ "context": "Ovid finished the poem in 8 CE, writing in dactylic hexameter, the meter of the Iliad, the Odyssey and the Aeneid. It runs to 11,995 lines. Ovid took the idea of a collection of transformation myths from Hellenistic poetry, notably Nicander's Heteroioumena, but made his book longer and gave it a historical frame. Augustus later exiled him to Tomis on the Black Sea, where he spent his last nine or ten years. Dante, Boccaccio, Chaucer and Shakespeare all drew on the poem, and William Caxton made the first English translation in 1480.",
+ "sources": [
+  {
+   "title": "Metamorphoses (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Metamorphoses"
+  },
+  {
+   "title": "Ovid (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Ovid"
+  }
+ ],
+ "people": [
+  {
+   "name": "Ovid",
+   "role": "author",
+   "note": "Publius Ovidius Naso, Roman poet of the age of Augustus, born 20 March 43 BC.",
+   "s": [
+    1,
+    0
+   ]
+  },
+  {
+   "name": "Augustus",
+   "role": "emperor",
+   "note": "Roman emperor during whose reign Ovid lived and who exiled him to Tomis.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Julius Caesar",
+   "role": "subject",
+   "note": "His deification is the endpoint of the poem; he died the year before Ovid's birth.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nicander of Colophon",
+   "role": "source",
+   "note": "His Heteroioumena is a clear influence; 21 of its stories appear in the poem.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "William Caxton",
+   "role": "translator",
+   "note": "Made the first English translation in 1480.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Virgil",
+   "role": "contemporary",
+   "note": "Older contemporary whom Ovid met only briefly.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Horace",
+   "role": "contemporary",
+   "note": "Ovid claims to have heard him recite.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Sulmona (Sulmo)",
+   "lat": 42.05,
+   "lon": 13.92,
+   "note": "Ovid's birthplace in an Apennine valley east of Rome.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Rome",
+   "lat": 41.9028,
+   "lon": 12.4964,
+   "note": "Where Ovid was educated in rhetoric.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Athens",
+   "lat": 37.9838,
+   "lon": 23.7275,
+   "note": "One of the places he travelled to after his brother's death.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Tomis (Constanta)",
+   "lat": 44.1733,
+   "lon": 28.6383,
+   "note": "On the Black Sea; the place of Ovid's exile for his last nine or ten years.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Crete",
+   "lat": 35.24,
+   "lon": 24.81,
+   "note": "Island to which Jupiter, as a bull, carries off Europa in Book II.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -44,
+   "label": "Julius Caesar dies, a year before Ovid's birth.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -43,
+   "label": "Ovid is born in Sulmo on 20 March.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": -25,
+   "label": "His first recitation, about this year, at eighteen.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 8,
+   "label": "The Metamorphoses is written, about this year.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 17,
+   "label": "Ovid dies in exile, in AD 17 or 18.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1480,
+   "label": "William Caxton publishes the first English translation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Transformation as structure",
+   "note": "Over 250 myths are strung together by change of form.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Genre trouble",
+   "note": "Scholars have called it epic, anti-epic, mock-epic, or a poem that refuses categories.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Love as a recurring theme",
+   "note": "As in nearly all of Ovid's work, love in its forms runs through the poem.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "History and myth",
+   "note": "A continuous chronology runs from the creation to the deification of Julius Caesar.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Play with models",
+   "note": "Ovid treated myth as an object of play and artful manipulation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "BOOK THE FIRST.",
+   "quote": "My design leads me to speak of forms changed into new bodies. Ye Gods, (for you it was who changed them,) favor my attempts, and bring down the lengthened narrative from the very beginning of the world, even to my own times.",
+   "why": "The poem's opening statement of its subject."
+  },
+  {
+   "part": 1,
+   "chapter": "BOOK THE FIRST.",
+   "quote": "The Golden Age was first founded, which, without any avenger, of its own accord, without laws, practised both faith and rectitude.",
+   "why": "The first of the ages of the world, ruled by innocence and justice."
+  },
+  {
+   "part": 2,
+   "chapter": "BOOK THE SECOND.",
+   "quote": "Thou desirest, Phaëton, a gift too great, and one which is suited neither to thy strength, nor to such youthful years.",
+   "why": "The Sun warns Phaethon not to drive his chariot."
+  },
+  {
+   "part": 5,
+   "chapter": "BOOK THE SIXTH.",
+   "quote": "Pallas, taking compassion, bore her up as she hung; and thus she said: “Live on indeed, wicked one, but still hang; and let the same decree of punishment be pronounced against thy race, and against thy latest posterity, that thou mayst not be free from care in time to come.”",
+   "why": "Pallas turns the defeated Arachne into a spider with a curse."
+  },
+  {
+   "part": 6,
+   "chapter": "BOOK THE SEVENTH.",
+   "quote": "If he can do this, and if he is capable of preferring another to me, let him perish in his ingratitude.",
+   "why": "Medea argues with herself over Jason."
+  }
+ ]
+}

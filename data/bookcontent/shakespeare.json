@@ -1,0 +1,280 @@
+{
+ "id": "shakespeare",
+ "summary": "A single volume of everything William Shakespeare is known to have written: the sonnets, the comedies, the histories, the tragedies, the late romances and the narrative poems. The plays range from the lovers of Verona and the scheming Scottish thane to the Danish prince who cannot decide, the Venetian moneylender, a Roman crowd swayed by a funeral speech, and a magician who gives up his art on an island. The sonnets turn to love, time, rivalry and the power of verse to outlast its subject.",
+ "context": "Shakespeare was born in Stratford-upon-Avon in 1564 and made his career in London as actor, writer and part-owner of a playing company. His plays were staged at the Theatre, the Globe and Blackfriars, and several were printed in quarto in his lifetime. He died in 1616. In 1623 two fellow actors, John Heminges and Henry Condell, issued the First Folio with 36 plays, 18 of them in print for the first time. This Project Gutenberg volume gathers the plays and poems together in one text.",
+ "sources": [
+  {
+   "title": "William Shakespeare - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/William_Shakespeare"
+  },
+  {
+   "title": "First Folio - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/First_Folio"
+  },
+  {
+   "title": "Complete Works of Shakespeare - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Complete_Works_of_Shakespeare"
+  },
+  {
+   "title": "The Complete Works of William Shakespeare - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/100"
+  }
+ ],
+ "people": [
+  {
+   "name": "William Shakespeare",
+   "role": "author",
+   "note": "Playwright and poet from Stratford-upon-Avon, 1564 to 1616, who wrote for the Lord Chamberlain's Men and later the King's Men.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Heminges",
+   "role": "printer",
+   "note": "Fellow actor who, with Henry Condell, compiled and published the First Folio in 1623.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Henry Condell",
+   "role": "printer",
+   "note": "King's Men actor and co-editor of the First Folio.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "William Jaggard",
+   "role": "printer",
+   "note": "London printer, with his son Isaac and the bookseller Edward Blount, behind the 1623 First Folio.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Martin Droeshout",
+   "role": "scribe",
+   "note": "Engraver of the portrait of Shakespeare on the First Folio title page.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Richard Burbage",
+   "role": "subject",
+   "note": "Leading actor of Shakespeare's company who first played Richard III, Hamlet, Othello and King Lear.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Henry Wriothesley",
+   "role": "patron",
+   "note": "3rd Earl of Southampton, to whom Shakespeare dedicated Venus and Adonis and The Rape of Lucrece.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Anne Hathaway",
+   "role": "subject",
+   "note": "Shakespeare's wife, whom he married at 18 when she was 26; they had three children.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Stratford-upon-Avon",
+   "lat": 52.1917,
+   "lon": -1.7083,
+   "note": "Shakespeare's birthplace, where he was baptised in 1564, retired and is buried at Holy Trinity Church.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Globe Theatre, Southwark",
+   "lat": 51.5081,
+   "lon": -0.0972,
+   "note": "Playhouse on the south bank of the Thames built in 1599 by members of Shakespeare's company.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Shoreditch",
+   "lat": 51.5265,
+   "lon": -0.0793,
+   "note": "North London district where the Theatre and the Curtain stood and early plays were performed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Blackfriars",
+   "lat": 51.5128,
+   "lon": -0.1048,
+   "note": "Indoor theatre taken over by Shakespeare's company in 1608.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Washington, D.C.",
+   "lat": 38.8897,
+   "lon": -77.0047,
+   "note": "Home of the Folger Shakespeare Library, which holds 82 First Folios, over a third of the surviving copies.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1564,
+   "label": "Shakespeare is baptised at Stratford-upon-Avon.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1593,
+   "label": "Venus and Adonis, his first printed work, appears while the theatres are closed for plague.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1599,
+   "label": "His company builds the Globe Theatre on the south bank of the Thames.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1609,
+   "label": "The Sonnets are published, the last of his non-dramatic works to reach print.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1616,
+   "label": "Shakespeare dies on 23 April, aged 52.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1623,
+   "label": "Heminges and Condell publish the First Folio with 36 plays, 18 never printed before.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1623,
+   "label": "The Droeshout engraving of Shakespeare is published with the First Folio.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Plays preserved by colleagues",
+   "note": "The First Folio is arguably the only reliable text for about 20 plays, so much of what we read survives because two actors collected it.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Comedies, histories, tragedies",
+   "note": "The Folio sorted the plays into these three groups, and the sorting still shapes how collected editions are arranged.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Authorship across collaborations",
+   "note": "Some plays, such as Pericles and The Two Noble Kinsmen, are shared work, and editions differ over which to include.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Printing against bad copies",
+   "note": "Heminges and Condell called earlier printings stolen and maimed copies, and offered the Folio as the corrected text.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Verse as lasting memorial",
+   "note": "The sonnets repeatedly argue that poetry can outlive its subject and time.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "THE SONNETS",
+   "quote": "Shall I compare thee to a summer’s day? Thou art more lovely and more temperate: Rough winds do shake the darling buds of May, And summer’s lease hath all too short a date: Sometime too hot the eye of heaven shines, And often is his gold complexion dimmed, And every fair from fair sometime declines, By chance, or nature’s changing course untrimmed: But thy eternal summer shall not fade",
+   "why": "Sonnet 18 states the idea that verse can keep a person alive past their years."
+  },
+  {
+   "part": 3,
+   "chapter": "SCENE VII. Another part of the Forest",
+   "quote": "All the world’s a stage, And all the men and women merely players;",
+   "why": "Jaques opens his speech on the ages of man with the best-known stage metaphor in English."
+  },
+  {
+   "part": 7,
+   "chapter": "ACT III: SCENE I. A room in the Castle.",
+   "quote": "To be, or not to be, that is the question: Whether ’tis nobler in the mind to suffer The slings and arrows of outrageous fortune,",
+   "why": "Hamlet weighs endurance against action in the soliloquy at the centre of the play."
+  },
+  {
+   "part": 15,
+   "chapter": "SCENE II. The same. The Forum.",
+   "quote": "Friends, Romans, countrymen, lend me your ears; I come to bury Caesar, not to praise him.",
+   "why": "Antony begins his funeral speech for Caesar, turning the crowd against the conspirators."
+  },
+  {
+   "part": 18,
+   "chapter": "SCENE V. Dunsinane. Within the castle.",
+   "quote": "Tomorrow, and tomorrow, and tomorrow, Creeps in this petty pace from day to day, To the last syllable of recorded time;",
+   "why": "Macbeth hears of his wife's death and reduces life to a short span of days."
+  },
+  {
+   "part": 20,
+   "chapter": "ACT IV: SCENE I. Venice. A court of justice.",
+   "quote": "The quality of mercy is not strain’d, It droppeth as the gentle rain from heaven",
+   "why": "Portia answers Shylock in the trial scene with an argument for mercy over law."
+  },
+  {
+   "part": 26,
+   "chapter": "SCENE II. Capulet’s Garden.",
+   "quote": "O Romeo, Romeo, wherefore art thou Romeo? Deny thy father and refuse thy name.",
+   "why": "Juliet speaks alone on her balcony, unaware that Romeo is listening."
+  },
+  {
+   "part": 28,
+   "chapter": "ACT IV: SCENE I. Before Prospero’s cell.",
+   "quote": "Our revels now are ended. These our actors, As I foretold you, were all spirits and Are melted into air, into thin air:",
+   "why": "Prospero ends the masque and tells Ferdinand that the actors have melted away, a speech often read as Shakespeare's farewell to the stage."
+  }
+ ]
+}

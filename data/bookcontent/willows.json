@@ -1,0 +1,237 @@
+{
+ "id": "willows",
+ "summary": "A Mole leaves his spring cleaning, meets a river for the first time and befriends the Water Rat. Together they row, picnic and visit the vain, car-mad Toad, whose passions end with him in prison. The animals face the Wild Wood, where Badger lives, and an odd night search for Otter's lost son brings them close to the god Pan. In the last chapters Toad escapes disguised as a washerwoman, and his friends retake Toad Hall from the stoats and weasels who have moved in.",
+ "context": "Kenneth Grahame published the book in 1908 with Methuen in Britain and Scribner in the United States. It grew from bedtime stories and letters about a toad that he sent to his young son Alastair, who was born in 1900. Grahame retired from the Bank of England in 1908 and moved to Blewbury in Berkshire. Theodore Roosevelt wrote to him about the book in 1909. By 1951 it had reached 100 editions in Britain. E. H. Shepard illustrated it in 1931.",
+ "sources": [
+  {
+   "title": "The Wind in the Willows (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Wind_in_the_Willows"
+  },
+  {
+   "title": "The Wind in the Willows (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/kenneth-grahame/the-wind-in-the-willows"
+  }
+ ],
+ "people": [
+  {
+   "name": "Kenneth Grahame",
+   "role": "author",
+   "note": "Retired from the Bank of England in 1908, the year the book appeared.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alastair Grahame",
+   "role": "subject",
+   "note": "Grahame's only child, born 1900, for whom the first tales and letters were written.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mole",
+   "role": "character",
+   "note": "Leaves his home for the river and becomes Rat's friend.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rat",
+   "role": "character",
+   "note": "A river dweller who takes Mole in and later helps rescue Toad.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Toad",
+   "role": "character",
+   "note": "Wealthy owner of Toad Hall, known to friends as Toady.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Badger",
+   "role": "character",
+   "note": "A fearless fighter who helps clear the Wild-Wooders from Toad Hall.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Pan",
+   "role": "character",
+   "note": "The wild god who appears once, in chapter 7, and looks after Portly.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "E. H. Shepard",
+   "role": "subject",
+   "note": "Illustrated the book in 1931.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Theodore Roosevelt",
+   "role": "subject",
+   "note": "Wrote to Grahame about the book in 1909.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Blewbury, Berkshire",
+   "lat": 51.5875,
+   "lon": -1.215,
+   "note": "Grahame moved to an old farmhouse here and wrote the manuscript from his bedtime stories.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Quarry Wood, Cookham Dean",
+   "lat": 51.562,
+   "lon": -0.748,
+   "note": "The place Ackroyd suggests as the model for the Wild Wood.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mapledurham House, Oxfordshire",
+   "lat": 51.4885,
+   "lon": -1.0306,
+   "note": "One of several houses said to inspire Toad Hall.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1900,
+   "label": "Alastair, Grahame's only child, is born.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1908,
+   "label": "The book is published by Methuen, with Scribner in the US; Grahame retires from the Bank of England.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1909,
+   "label": "Theodore Roosevelt writes to Grahame about the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1929,
+   "label": "A. A. Milne's stage version Toad of Toad Hall is produced; the book is in its 31st printing.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1931,
+   "label": "E. H. Shepard illustrates the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1951,
+   "label": "The book has reached 100 editions in Britain.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1967,
+   "label": "Pink Floyd name an album after chapter 7, The Piper at the Gates of Dawn.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Home against the wild",
+   "note": "The cosy river bank is set against the dangerous Wild Wood, with Toad Hall in between as the home to win back.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Friendship and loyalty",
+   "note": "Rat, Mole and Badger keep rescuing a boastful friend and help him recover his house.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A god among the reeds",
+   "note": "Chapter 7 gives Pan a single quiet appearance, apart from the comic Toad plot.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Stories that began aloud",
+   "note": "The book grew out of bedtime tales and letters to a child.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "The Mole was bewitched, entranced, fascinated.",
+   "why": "Mole's first reaction to the river, near the opening of the book."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "“And beyond the Wild Wood again?” he asked; “where it’s all blue and dim, and one sees what may be hills or perhaps they mayn’t, and something like the smoke of towns, or is it only cloud-drift?” “Beyond the Wild Wood comes the Wide World,” said the Rat.",
+   "why": "Rat describes the world beyond the Wild Wood to a curious Mole."
+  },
+  {
+   "part": 2,
+   "chapter": "VII",
+   "quote": "Little Portly is missing again; and you know what a lot his father thinks of him, though he never says much about it.” “What, that child?” said the Mole lightly.",
+   "why": "The worry that sends Rat and Mole out on the night of the Pan chapter."
+  },
+  {
+   "part": 2,
+   "chapter": "VIII",
+   "quote": "Now the gaoler had a daughter, a pleasant wench and good-hearted, who assisted her father in the lighter duties of his post.",
+   "why": "The gaoler's daughter enters Toad's prison story in chapter VIII."
+  },
+  {
+   "part": 2,
+   "chapter": "XI",
+   "quote": "What haven’t I heard?” “Do you mean to tell me,” shouted the Rat, thumping with his little fist upon the table, “that you’ve heard nothing about the Stoats and Weasels?” “What, the Wild Wooders?” cried Toad, trembling in every limb.",
+   "why": "News of the Wild Wooders who have taken over Toad Hall."
+  },
+  {
+   "part": 3,
+   "chapter": "XII",
+   "quote": "You know I shouldn’t like you to blame me afterwards and say I had forgotten anything !” When all was quite ready, the Badger took a dark lantern in one paw, grasped his great stick with the other, and said, “Now then, follow me!",
+   "why": "The friends set out to retake Toad Hall in the final chapter."
+  }
+ ]
+}

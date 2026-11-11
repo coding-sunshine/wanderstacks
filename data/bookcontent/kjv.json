@@ -1,0 +1,198 @@
+{
+ "id": "kjv",
+ "summary": "The King James Bible gathers 80 books: 39 of the Old Testament, 14 of the Apocrypha and 27 of the New Testament. It runs from Genesis and the creation, through law, history, psalms, wisdom writing and the prophets, to the Gospels, the letters of Paul and the Revelation of John. This edition is the Gutenberg text, split into 34 parts. It has no commentary, a choice the king made so that no note could carry anti-monarchist meaning. Verse numbers run inline, so every verse can be cited.",
+ "context": "King James VI and I called the Hampton Court Conference in January 1604, in answer to Puritan grievances. A new English translation was proposed there. The translators were told to follow the order of the Church of England and to avoid marginal notes, which the Geneva Bible of 1560 had used to promote Calvinist views. It followed the Great Bible of 1535 and the Bishops' Bible of 1568. It was published in 1611 and by the early 1700s had no rival in English Protestant churches. Its phrasing shaped English hymns, liturgy and everyday idiom.",
+ "sources": [
+  {
+   "title": "King James Version (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/King_James_Version"
+  },
+  {
+   "title": "James VI and I (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/James_VI_and_I"
+  },
+  {
+   "title": "Hampton Court Conference (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Hampton_Court_Conference"
+  },
+  {
+   "title": "William Tyndale (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/William_Tyndale"
+  }
+ ],
+ "people": [
+  {
+   "name": "James VI and I",
+   "role": "patron",
+   "note": "King of Scotland from 1567 and of England from 1603, who commissioned the translation.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "William Tyndale",
+   "role": "subject",
+   "note": "Scholar executed in 1536 who first translated much of the Bible into English from Hebrew and Greek.",
+   "s": [
+    3
+   ]
+  },
+  {
+   "name": "Puritan ministers",
+   "role": "subject",
+   "note": "About a thousand signed the Millenary Petition that prompted the 1604 conference.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Hampton Court Palace",
+   "lat": 51.4037,
+   "lon": -0.3377,
+   "note": "Site of the 1604 conference where a new translation was proposed.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Geneva",
+   "lat": 46.2044,
+   "lon": 6.1432,
+   "note": "Home of the Geneva Bible of 1560, the Protestant version the king distrusted.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Capital of the king who commissioned the Bible.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1535,
+   "label": "The Great Bible, the first English translation approved by the Church of England.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1536,
+   "label": "William Tyndale is executed in October.",
+   "s": [
+    3
+   ]
+  },
+  {
+   "year": 1560,
+   "label": "The Geneva Bible appears, with Calvinist footnotes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1568,
+   "label": "The Bishops' Bible, the second Church-approved translation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1604,
+   "label": "King James convenes the Hampton Court Conference in January.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "year": 1611,
+   "label": "The King James Bible is published.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Majesty of style",
+   "note": "The text is noted for its rhythm and has shaped English literature and thought more than any other English Bible.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A Bible without notes",
+   "note": "Translators were told to avoid marginal notes, to keep partisan comment out.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Idiom and liturgy",
+   "note": "Its phrases entered hymns, liturgy and everyday speech.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Archaic words",
+   "note": "Some words look familiar but carry obsolete meanings.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "The First Book of Moses: Called Genesis",
+   "quote": "In the beginning God created the heaven and the earth. 1:2 And the earth was without form, and void; and darkness was upon the face of the deep. And the Spirit of God moved upon the face of the waters. 1:3 And God said, Let there be light: and there was light.",
+   "why": "The opening of the whole Bible."
+  },
+  {
+   "part": 17,
+   "chapter": "The Book of Psalms",
+   "quote": "The LORD is my shepherd; I shall not want. 23:2 He maketh me to lie down in green pastures: he leadeth me beside the still waters. 23:3 He restoreth my soul: he leadeth me in the paths of righteousness for his name’s sake.",
+   "why": "Psalm 23, one of the most quoted passages."
+  },
+  {
+   "part": 19,
+   "chapter": "Ecclesiastes",
+   "quote": "To every thing there is a season, and a time to every purpose under the heaven: 3:2 A time to be born, and a time to die; a time to plant, and a time to pluck up that which is planted; 3:3 A time to kill, and a time to heal; a time to break down, and a time to build up;",
+   "why": "The time for everything, in measured parallel lines."
+  },
+  {
+   "part": 27,
+   "chapter": "The Gospel According to Saint Matthew",
+   "quote": "Our Father which art in heaven, Hallowed be thy name. 6:10 Thy kingdom come, Thy will be done in earth, as it is in heaven. 6:11 Give us this day our daily bread. 6:12 And forgive us our debts, as we forgive our debtors.",
+   "why": "The Lord's Prayer in the wording of the English liturgy."
+  },
+  {
+   "part": 30,
+   "chapter": "The Gospel According to Saint John",
+   "quote": "In the beginning was the Word, and the Word was with God, and the Word was God. 1:2 The same was in the beginning with God. 1:3 All things were made by him; and without him was not any thing made that was made.",
+   "why": "John echoes Genesis to open his Gospel."
+  },
+  {
+   "part": 32,
+   "chapter": "The First Epistle of Paul the Apostle to the Corinthians",
+   "quote": "Though I speak with the tongues of men and of angels, and have not charity, I am become as sounding brass, or a tinkling cymbal.",
+   "why": "The start of Paul's hymn to charity."
+  },
+  {
+   "part": 34,
+   "chapter": "The Revelation of Saint John the Divine",
+   "quote": "And I saw a new heaven and a new earth: for the first heaven and the first earth were passed away; and there was no more sea. 21:2 And I John saw the holy city, new Jerusalem, coming down from God out of heaven, prepared as a bride adorned for her husband.",
+   "why": "The vision that closes the Bible."
+  }
+ ]
+}

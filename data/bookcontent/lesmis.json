@@ -1,0 +1,277 @@
+{
+ "id": "lesmis",
+ "summary": "Les Misérables follows Jean Valjean, a peasant freed from nineteen years in the galleys of Toulon. A bishop's mercy sets him on a new course, and he becomes a wealthy factory owner and mayor under a false name. The police inspector Javert keeps circling him. Valjean's rescue of Fantine's daughter Cosette ties his life to the Thénardiers, to the student Marius and finally to the Paris barricades of June 1832. Between the plot strands Hugo inserts long essays on Waterloo, convents, argot and the Paris sewers, all aimed at law, poverty and grace.",
+ "context": "Hugo noted real incidents for years, including a convict's arrest he saw in 1829 and a visit to the Toulon prison in 1839, and he began writing in 1845. The first two volumes appeared in Brussels and Paris in spring 1862 after a large advertising campaign, and the rest on 15 May. Critics were divided: Flaubert and the Goncourts disliked it, Baudelaire praised its social focus in print. Readers bought it in huge numbers, and translations followed within the year. Isabel Hapgood's English version of 1887 is the one this site carries.",
+ "sources": [
+  {
+   "title": "Les Misérables (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables"
+  },
+  {
+   "title": "Les Misérables, translated by Isabel F. Hapgood (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/victor-hugo/les-miserables/isabel-f-hapgood"
+  },
+  {
+   "title": "Victor Hugo (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Victor_Hugo"
+  },
+  {
+   "title": "Eugène François Vidocq (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Eug%C3%A8ne_Fran%C3%A7ois_Vidocq"
+  },
+  {
+   "title": "Eugène-François Vidocq (Wikipédia)",
+   "url": "https://fr.wikipedia.org/wiki/Eug%C3%A8ne-Fran%C3%A7ois_Vidocq"
+  }
+ ],
+ "people": [
+  {
+   "name": "Victor Hugo",
+   "role": "author",
+   "note": "French Romantic writer who began the novel in 1845 and finished it in 1861 near Waterloo.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Jean Valjean",
+   "role": "character",
+   "note": "Ex-convict, bread thief and later mayor, whose life is the novel's central thread.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Javert",
+   "role": "character",
+   "note": "The police inspector who knew Valjean from the Toulon bagne and hunts him.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Fantine",
+   "role": "character",
+   "note": "A Paris grisette abandoned by Tholomyès, dismissed from Valjean's factory and driven to prostitution to pay for her daughter.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cosette",
+   "role": "character",
+   "note": "Fantine's daughter, raised by the Thénardiers until Valjean ransoms her and cares for her.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Bishop Myriel",
+   "role": "character",
+   "note": "The Bishop of Digne whose mercy sets Valjean on a new path after the theft of his silver.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Marius Pontmercy",
+   "role": "character",
+   "note": "A young law student who falls in love with Cosette and fights at the barricade.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Eugène François Vidocq",
+   "role": "subject",
+   "note": "Real ex-convict who headed an undercover police unit and later founded France's first private detective agency. Valjean is loosely based on his life, and Javert is also said to draw on him.",
+   "s": [
+    0,
+    3,
+    4
+   ]
+  },
+  {
+   "name": "Isabel Florence Hapgood",
+   "role": "translator",
+   "note": "Translator of the 1887 English version used on this site.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Digne",
+   "lat": 44.0925,
+   "lon": 6.2356,
+   "note": "Valjean, released in 1815, is sheltered by Bishop Myriel and steals his silver.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Toulon",
+   "lat": 43.1242,
+   "lon": 5.928,
+   "note": "Hugo visited the prison here in 1839 and took notes for the story of Valjean's years in the bagne.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Montreuil-sur-Mer",
+   "lat": 50.4647,
+   "lon": 1.7627,
+   "note": "Valjean, as Monsieur Madeleine, becomes a factory owner and mayor.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Montfermeil",
+   "lat": 48.8979,
+   "lon": 2.5703,
+   "note": "Fantine leaves Cosette with the Thénardiers at their inn here.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Paris",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "Most of the later volumes take place here, ending with the June 1832 rebellion.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Waterloo",
+   "lat": 50.68,
+   "lon": 4.4128,
+   "note": "Hugo visited the battlefield in 1861 and finished the novel there.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1829,
+   "label": "Hugo sees a bread thief taken away by a police officer, one of the incidents behind the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1839,
+   "label": "Hugo visits the Toulon bagne and takes extensive notes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1845,
+   "label": "Hugo starts writing the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1862,
+   "label": "The first two volumes are published in Brussels and Paris, the remaining volumes on 15 May.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1862,
+   "label": "Charles Wilbour's American translation and Lascelles Wraxall's British translation are published the same year.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1887,
+   "label": "Isabel F. Hapgood's English translation is published.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Law, grace and redemption",
+   "note": "Hugo sets the harshness of social law against the mercy that redeems Valjean.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Social condemnation of the poor",
+   "note": "The preface names poverty, the ruin of women and the stunting of children as problems the age has not solved.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Digressions as argument",
+   "note": "More than a quarter of the book is essays on Waterloo, convents, argot and the sewers.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Progress from evil to good",
+   "note": "Hugo describes the book as a movement from injustice to justice, from matter to the soul.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "So long as there shall exist, by virtue of law and custom, decrees of damnation pronounced by society, artificially creating hells amid the civilization of earth, and adding the element of human fate to divine destiny; so long as the three great problems of the century⁠—the degradation of man through pauperism, the corruption of",
+   "why": "Hugo's own statement of purpose, placed before the story starts."
+  },
+  {
+   "part": 2,
+   "chapter": "Book II",
+   "quote": "It is your soul that I buy from you; I withdraw it from black thoughts and the spirit of perdition, and I give it to God.”",
+   "why": "The bishop's words to Valjean after he lies to the police for him."
+  },
+  {
+   "part": 4,
+   "chapter": "Book V",
+   "quote": "He was a man about fifty years of age, who had a preoccupied air, and who was good. That was all that could be said about him.",
+   "why": "How Hugo introduces Monsieur Madeleine, the new identity Valjean has built."
+  },
+  {
+   "part": 10,
+   "chapter": "Book I",
+   "quote": "Gavroche Eight or nine years after the events narrated in the second part of this story, people noticed on the Boulevard du Temple, and in the regions of the Château-d’Eau, a little boy eleven or twelve years of age, who would have realized with tolerable accuracy that ideal of the gamin sketched ou",
+   "why": "Opens the book about Gavroche and the street children of Paris."
+  },
+  {
+   "part": 21,
+   "chapter": "Book I",
+   "quote": "The book which the reader has under his eye at this moment is, from one end to the other, as a whole and in detail, whatever may be its intermittences, exceptions and faults, the march from evil to good, from the unjust to the just, from night to day, from appetite to conscience, from rottenness to life, from hell to heaven, from nothingness to God.",
+   "why": "Hugo summarizes the whole book's shape, from matter to the soul."
+  },
+  {
+   "part": 22,
+   "chapter": "Book II",
+   "quote": "The sewer. Twenty-five millions is the most moderate approximative figure which the valuations of special science have set upon it.",
+   "why": "One of the long essays on Paris, here about its sewers and waste."
+  }
+ ]
+}

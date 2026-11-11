@@ -1,0 +1,224 @@
+{
+  "id": "musketeers",
+  "summary": "A poor young Gascon, d'Artagnan, rides to Paris in 1625 hoping to join the King's Musketeers. A stolen letter of introduction and a run of quarrels put him in duels with Athos, Porthos and Aramis, who become his closest friends. Together they defend Queen Anne from Cardinal Richelieu's plot, bring back her diamond studs from England, and face the poisonous Milady de Winter. The story ends at the siege of La Rochelle, where a sharp comedy of swordplay turns into a hard reckoning with justice and revenge.",
+  "context": "Alexandre Dumas published the novel in 1844, writing with his collaborator Auguste Maquet, and it first appeared as a serial in the newspaper Le Siècle from March to July of that year. He says in his preface that he found the idea in an old book of memoirs of d'Artagnan, printed in the early 1700s, that he came across while researching his history of Louis XIV. It is set between 1625 and 1628. This site carries William Robson's English translation, produced as a Standard Ebooks edition.",
+  "sources": [
+    {
+      "title": "The Three Musketeers (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Three_Musketeers"
+    },
+    {
+      "title": "The Three Musketeers, translated by William Robson (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/alexandre-dumas/the-three-musketeers/william-robson"
+    }
+  ],
+  "people": [
+    {
+      "name": "Alexandre Dumas",
+      "role": "Author",
+      "note": "Wrote the novel in 1844 with ghostwriter Auguste Maquet and drew on Courtilz de Sandras's earlier memoirs of d'Artagnan.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Auguste Maquet",
+      "role": "Collaborator",
+      "note": "Suggested plot outlines after historical research; Dumas then expanded them in his own style.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "d'Artagnan",
+      "role": "Protagonist",
+      "note": "Young Gascon who leaves home for Paris to join the Musketeers; loosely based on a real soldier, Charles de Batz-Castelmore d'Artagnan.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Athos, Porthos and Aramis",
+      "role": "The three musketeers",
+      "note": "Inseparable friends whom d'Artagnan first provokes into duels, then joins.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Cardinal Richelieu",
+      "role": "Antagonist",
+      "note": "Chief minister of France who wants to reduce Queen Anne's influence and plots to convince the king she has had an affair with Buckingham.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Milady de Winter",
+      "role": "Richelieu's agent",
+      "note": "Steals two of the queen's diamond studs, and Buckingham has replacements made while she is delayed.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Gatien de Courtilz de Sandras",
+      "role": "Source author",
+      "note": "Author of Mémoires de Monsieur d'Artagnan (1700), the book that inspired Dumas.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Duke of Buckingham",
+      "role": "English first minister",
+      "note": "Meets Queen Anne in secret and supplies replacement diamond studs.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Meung-sur-Loire",
+      "lat": 47.8281,
+      "lon": 1.6906,
+      "note": "Town where an older man mocks d'Artagnan's horse and the introductory letter is stolen.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Paris",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "note": "Goal of d'Artagnan's journey and the centre of the court intrigue.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "La Rochelle",
+      "lat": 46.1603,
+      "lon": -1.1511,
+      "note": "Huguenot stronghold besieged by the French army, where the four friends are ordered with their regiments.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Gascony",
+      "lat": 43.6458,
+      "lon": 0.5859,
+      "note": "Home region of d'Artagnan, which he leaves at the start of the book.",
+      "s": [
+        0,
+        1
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1625,
+      "label": "Story opens as d'Artagnan leaves Gascony for Paris",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "year": 1628,
+      "label": "End of the period the story covers, closing at La Rochelle",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1700,
+      "label": "Courtilz de Sandras's Mémoires de Monsieur d'Artagnan is printed",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1844,
+      "label": "Dumas writes and serialises the novel in Le Siècle",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Friendship and loyalty",
+      "note": "The four friends bind themselves with a pledge of mutual loyalty that drives most of the action.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Court intrigue",
+      "note": "Richelieu's schemes against the queen turn a plot about jewels into a contest over political influence.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "title": "Ambition of a provincial",
+      "note": "A penniless young man from the provinces climbs toward a place in the guard through courage and luck.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "title": "History turned into adventure",
+      "note": "Dumas wraps real events, including the siege of La Rochelle, around a fictional adventure built on a historical memoir.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "I",
+      "quote": "On the first Monday of the month of April, 1625, the market town of Meung, in which the author of Romance of the Rose was born, appeared to be in as perfect a state of revolution as if the Huguenots had just made a second La Rochelle of it.",
+      "why": "The book opens on a precise date in a real town, Meung, where d'Artagnan's journey to Paris begins with an insult over his horse."
+    },
+    {
+      "part": 2,
+      "chapter": "IX",
+      "quote": "“All for one, one for all⁠—that is our motto, is it not?”",
+      "why": "The best-known line in the book, here invented on the spot by d'Artagnan as the four friends swear loyalty."
+    },
+    {
+      "part": 2,
+      "chapter": "XIV",
+      "quote": "He will wear on his doublet twelve diamond studs; get as near to him as you can, and cut off two.",
+      "why": "Milady's orders from Richelieu show how the diamond plot is built to shame the queen in public."
+    },
+    {
+      "part": 4,
+      "chapter": "XXVII",
+      "quote": "“A fleur-de-lis,” said Athos. “She was branded.”",
+      "why": "Athos reveals the brand that links Milady to his past and begins the darker half of the novel."
+    },
+    {
+      "part": 7,
+      "chapter": "L",
+      "quote": "John Felton, I trust your word! John Felton, I put faith in your loyalty!”",
+      "why": "Lord de Winter entrusts Milady to Felton, a guard she will turn against Buckingham."
+    },
+    {
+      "part": 9,
+      "chapter": "Epilogue",
+      "quote": "La Rochelle, deprived of the assistance of the English fleet and of the diversion promised by Buckingham, surrendered after a siege of a year. On the twenty-eighth of October, 1628, the capitulation was signed.",
+      "why": "The epilogue ties the fiction to history: the siege of La Rochelle ends on 28 October 1628."
+    }
+  ]
+}

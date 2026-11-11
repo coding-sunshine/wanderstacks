@@ -1,0 +1,204 @@
+{
+ "summary": "Eleven-year-old Anne Shirley, an orphan, is sent by mistake to Matthew and Marilla Cuthbert, a middle-aged brother and sister who wanted a boy to help on their farm at Green Gables in Avonlea, Prince Edward Island. Marilla first means to send her back, then keeps her. The book follows Anne through school, her friendship with Diana Barry, her rivalry with Gilbert Blythe and the scrapes her imagination and temper get her into, as she becomes part of the community and the first real home she has known.",
+ "context": "L. M. Montgomery drew on notes she had made as a girl about an elderly pair mistakenly sent an orphan, and on her own childhood in rural Prince Edward Island. L. C. Page and Company of Boston first published it on 13 June 1908, and it sold over 19,000 copies in five months. It has since sold more than 50 million copies and been translated into at least 36 languages. The New York Times review of 1908 was harsh, but the paper reconsidered in 1996. Montgomery's manuscript is held in Charlottetown.",
+ "sources": [
+  {
+   "title": "Anne of Green Gables (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Anne_of_Green_Gables"
+  },
+  {
+   "title": "Anne of Green Gables, by L. M. Montgomery (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/l-m-montgomery/anne-of-green-gables"
+  }
+ ],
+ "people": [
+  {
+   "name": "L. M. Montgomery",
+   "role": "author",
+   "note": "Canadian author who published the novel in 1908 and wrote numerous sequels.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Anne Shirley",
+   "role": "character",
+   "note": "Imaginative orphan who insists her name be spelled with an e.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Matthew Cuthbert",
+   "role": "character",
+   "note": "Quiet farmer who encourages Marilla to keep Anne.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Marilla Cuthbert",
+   "role": "character",
+   "note": "Stern sister who at first says Anne must go back to the orphanage.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Diana Barry",
+   "role": "character",
+   "note": "Girl next door and Anne's best friend.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gilbert Blythe",
+   "role": "character",
+   "note": "Schoolmate whom Montgomery based in part on people she knew.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "L. C. Page & Co.",
+   "role": "printer",
+   "note": "Boston firm that first published the book on 13 June 1908.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Cavendish, Prince Edward Island",
+   "lat": 46.4944,
+   "lon": -63.3883,
+   "note": "Real community that Montgomery drew on for the fictional Avonlea.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "New London, Prince Edward Island",
+   "lat": 46.4333,
+   "lon": -63.4,
+   "note": "Real community behind Bolingbroke, where Anne's story begins.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Charlottetown",
+   "lat": 46.2382,
+   "lon": -63.1311,
+   "note": "Home of the Confederation Centre of the Arts, which preserves Montgomery's manuscript.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "City of L. C. Page and Company, the first publisher.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1908,
+   "label": "L. C. Page of Boston publishes the novel on 13 June.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1926,
+   "label": "Montgomery's The Blue Castle appears, her one setting outside Atlantic Canada.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1975,
+   "label": "Canada Post issues an 8 cent stamp for Montgomery and the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1996,
+   "label": "The New York Times reconsiders its harsh 1908 review.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 2020,
+   "label": "A Scottish Gaelic translation, Anna Ruadh, is released.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Imagination as survival",
+   "note": "Anne turns places and trees into named things, and talks through her dreams.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Belonging and a first home",
+   "note": "Green Gables is the first real home Anne has known.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Orphan story, reshaped",
+   "note": "Montgomery took the formula orphan tale of her day and made her heroine a distinct character.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "I shall call it⁠—let me see⁠—the Lake of Shining Waters. Yes, that is the right name for it",
+   "why": "Anne renames a pond, showing how she sees the world."
+  },
+  {
+   "part": 1,
+   "chapter": "IV",
+   "quote": "I called it Snow Queen because it was so white. Of course, it won’t always be in blossom, but one can imagine that it is, can’t one",
+   "why": "Anne names a cherry tree from her window."
+  },
+  {
+   "part": 1,
+   "chapter": "VIII",
+   "quote": "do you think that I shall ever have a bosom friend in Avonlea?” “A⁠—a what kind of a friend?” “A bosom friend⁠—an intimate friend, you know⁠—a really kindred spirit to whom I can confide my inmost soul",
+   "why": "Anne asks for a kindred spirit, which sets up her friendship with Diana."
+  },
+  {
+   "part": 2,
+   "chapter": "XV",
+   "quote": "I guess Gilbert Blythe will be in school today,” said Diana. “He’s been visiting his cousins over in New Brunswick all summer and he only came home Saturday night",
+   "why": "First mention of Gilbert before the school rivalry."
+  },
+  {
+   "part": 4,
+   "chapter": "XXXVIII",
+   "quote": "God’s in his heaven, all’s right with the world,’ ” whispered Anne softly",
+   "why": "Closing words of the book."
+  }
+ ],
+ "id": "anne"
+}

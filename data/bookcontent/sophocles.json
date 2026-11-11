@@ -1,0 +1,255 @@
+{
+ "id": "sophocles",
+ "summary": "Three Greek tragedies about the royal house of Thebes, in Francis Storr's English verse. In Oedipus the King, a plague strikes Thebes and Oedipus searches for the killer of the old king, only to learn that he himself is the killer and that his wife Jocasta is his mother. In Oedipus at Colonus, the blind exile reaches Athens, is shielded by King Theseus and dies in a sacred grove. In Antigone, his daughter buries her brother against the order of Creon, the new ruler, and pays with her life.",
+ "context": "Sophocles was an Athenian dramatist who lived about 90 years, from around 497 BC to 406 or 405 BC, and wrote for the Festival of Dionysus. The three plays are known as the Theban plays, though he wrote them for different festivals across about 36 years and did not stage them together. Antigone came first, around 442 or 440 BC. Oedipus the King followed about a dozen years later. Oedipus at Colonus was written last, near his death, and was staged in 401 BC by his grandson. Aristotle singled out Oedipus the King in his Poetics. Storr translated this version.",
+ "sources": [
+  {
+   "title": "Sophocles - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Sophocles"
+  },
+  {
+   "title": "Oedipus Rex - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Oedipus_Rex"
+  },
+  {
+   "title": "Oedipus at Colonus - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Oedipus_at_Colonus"
+  },
+  {
+   "title": "Antigone (Sophocles play) - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Antigone_(Sophocles_play)"
+  },
+  {
+   "title": "Oedipus Plays and Antigone - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/31"
+  }
+ ],
+ "people": [
+  {
+   "name": "Sophocles",
+   "role": "author",
+   "note": "Athenian tragedian who died aged 90 or 91 in the winter of 406/5 BC and added a third actor to the stage.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Oedipus",
+   "role": "character",
+   "note": "King of Thebes who unknowingly killed his father Laius and married his mother Jocasta.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Jocasta",
+   "role": "character",
+   "note": "Queen of Thebes, wife of Laius and then of Oedipus, and sister of Creon.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Creon",
+   "role": "character",
+   "note": "Brother of Jocasta who becomes ruler of Thebes and forbids the burial of Polynices.",
+   "s": [
+    3
+   ]
+  },
+  {
+   "name": "Antigone",
+   "role": "character",
+   "note": "Daughter of Oedipus who buries her brother Polynices against Creon's edict.",
+   "s": [
+    3
+   ]
+  },
+  {
+   "name": "Tiresias",
+   "role": "character",
+   "note": "Blind prophet whose testimony reveals that Oedipus himself is the cause of the plague.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Theseus",
+   "role": "character",
+   "note": "King of Athens who shelters Oedipus at Colonus.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Francis Storr",
+   "role": "translator",
+   "note": "Translator of the English verse version carried by this edition.",
+   "s": [
+    4
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Thebes",
+   "lat": 38.3222,
+   "lon": 23.3186,
+   "note": "City ruled by Oedipus, struck by plague in Oedipus the King and the setting for Antigone.",
+   "s": [
+    1,
+    3
+   ]
+  },
+  {
+   "name": "Colonus, Athens",
+   "lat": 37.9946,
+   "lon": 23.7161,
+   "note": "Village near Athens, Sophocles' own home deme, where Oedipus finds refuge and dies.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Delphi",
+   "lat": 38.4824,
+   "lon": 22.501,
+   "note": "Site of the oracle that Creon consults about the plague and that Oedipus asked about his parents.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Athens",
+   "lat": 37.9715,
+   "lon": 23.7257,
+   "note": "Home city of Sophocles, whose plays were staged at its Festival of Dionysus.",
+   "s": [
+    0,
+    3
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -496,
+   "label": "Sophocles is born about this time, in Colonus near Athens.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -441,
+   "label": "Antigone is first performed around this date at the Festival of Dionysus.",
+   "s": [
+    3
+   ]
+  },
+  {
+   "year": -406,
+   "label": "Sophocles dies at about 90, having finished Oedipus at Colonus shortly before.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "year": -401,
+   "label": "His grandson stages Oedipus at Colonus after his death.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Knowledge as the tragic wound",
+   "note": "Oedipus pushes to learn the truth and the answer ruins him.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Unwritten law against state decree",
+   "note": "Antigone says she must obey the eternal laws of heaven even when Creon's order forbids it.",
+   "s": [
+    3
+   ]
+  },
+  {
+   "title": "Fate and responsibility together",
+   "note": "Oedipus acts unwittingly yet is still held to account.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Exile and sacred refuge",
+   "note": "At Colonus the banished king is given shelter by Athens, and his tomb carries a blessing for the city.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Three plays, no trilogy",
+   "note": "The works were written decades apart and belong to different sets, though they are published together.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "OEDIPUS THE KING",
+   "quote": "Wretch, may he pine in utter wretchedness! And for myself, if with my privity He gain admittance to my hearth, I pray The curse I laid on others fall on me.",
+   "why": "Oedipus curses the unknown killer of Laius and, without knowing it, curses himself."
+  },
+  {
+   "part": 1,
+   "chapter": "OEDIPUS THE KING",
+   "quote": "I say thou art the murderer of the man Whose murderer thou pursuest.",
+   "why": "Tiresias answers the king's demand, naming Oedipus as the killer he is hunting."
+  },
+  {
+   "part": 1,
+   "chapter": "OEDIPUS THE KING",
+   "quote": "Alas, alas, what misery to be wise When wisdom profits nothing!",
+   "why": "Tiresias is reluctant to speak what he knows, a line often quoted on the cost of knowledge."
+  },
+  {
+   "part": 1,
+   "chapter": "OEDIPUS AT COLONUS",
+   "quote": "Heaven’s justice never smites Him who ill with ill requites.",
+   "why": "The chorus at Colonus meet the blind exile with suspicion and talk about fair retribution."
+  },
+  {
+   "part": 1,
+   "chapter": "OEDIPUS AT COLONUS",
+   "quote": "The eye of Heaven beholds the just of men, And the unjust, nor ever in this world Has one sole godless sinner found escape.",
+   "why": "Oedipus tells the Athenians that no wrongdoer escapes the gods' sight as he pleads for protection."
+  },
+  {
+   "part": 2,
+   "chapter": "ANTIGONE",
+   "quote": "’tis ordained that none Shall give him burial or make mourn for him, But leave his corpse unburied, to be meat For dogs and carrion crows, a ghastly sight.",
+   "why": "Creon announces his edict that Polynices must lie unburied, the order that sets the tragedy in motion."
+  },
+  {
+   "part": 2,
+   "chapter": "ANTIGONE",
+   "quote": "Scorn, if thou wilt, the eternal laws of Heaven. ISMENE. I scorn them not, but to defy the State Or break her ordinance I have no skill.",
+   "why": "Antigone tells her sister what she will do and Ismene answers that she cannot defy the state."
+  },
+  {
+   "part": 2,
+   "chapter": "ANTIGONE",
+   "quote": "Shall we not perish wretchedest of all, If in defiance of the law we cross A monarch’s will?—weak women, think of that, Not framed by nature to contend with men.",
+   "why": "Ismene argues that women cannot oppose a king's will, in contrast to Antigone's resolve."
+  }
+ ]
+}

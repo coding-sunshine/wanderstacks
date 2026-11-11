@@ -1,0 +1,196 @@
+{
+  "id": "irish-evangelary",
+  "summary": "A Gospel book holding the four Gospels in Latin, written in two columns in Irish script on 134 parchment leaves. Irish monks made it in the 8th century, and it is counted among the finest illustrated manuscripts of its kind. Each Gospel opens with an evangelist portrait facing a decorated first page, and the volume also has a carpet page, a Crucifixion and a Last Judgment. Its text mixes Old Latin readings, strongest in John, with the Vulgate in the other Gospels.",
+  "context": "The book was made in Ireland, probably in the midlands, around 750 according to the library or around 780 according to one scholar. DNA from the vellum confirms an Irish origin. A 9th century note in Carolingian script on page 265 shows it had reached the continent, likely St Gall, by the 9th or 10th century, and the earliest St Gall library catalogue lists it by the 10th century. It matters as a surviving piece of Insular book art and as evidence of Irish monks' books travelling to Swiss monasteries.",
+  "sources": [
+    {
+      "title": "Irish Gospels of St. Gall (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Irish_Gospels_of_St._Gall"
+    },
+    {
+      "title": "e-codices IIIF manifest and summary, Cod. Sang. 51",
+      "url": "https://www.e-codices.unifr.ch/metadata/iiif/csg-0051/manifest.json"
+    }
+  ],
+  "people": [
+    {
+      "name": "Marcus",
+      "role": "patron",
+      "note": "An Irish bishop who gave books to St Gall between 849 and 872, though no evidence ties this manuscript to his gift.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Móengal",
+      "role": "patron",
+      "note": "Nephew of Bishop Marcus and co-donor of books to St Gall in the same period.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Mark the Evangelist",
+      "role": "subject",
+      "note": "His portrait on page 78 faces the decorated opening of his Gospel.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "John the Evangelist",
+      "role": "subject",
+      "note": "His portrait on page 208 faces the decorated opening of his Gospel, in a style that differs from the other openings.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Gustav Scherrer",
+      "role": "subject",
+      "note": "Cataloguer whose 1875 list of the St Gall manuscripts describes this volume.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Birr, County Offaly",
+      "lat": 53.0969,
+      "lon": -7.9136,
+      "note": "Bog find of the Faddan More Psalter near here, whose style is close to this Gospel book and supports a midlands origin.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "St Gallen",
+      "lat": 47.4233,
+      "lon": 9.3777,
+      "note": "The abbey library has held the manuscript since at least the 10th century, as MS 51.",
+      "s": [
+        0,
+        1
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 750,
+      "label": "Irish monks write and decorate the Gospel book, dated about 750 by the e-codices description.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "year": 780,
+      "label": "Joseph Flahive dates the manuscript to around 780.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 849,
+      "label": "Start of the period when Bishop Marcus and Móengal gave books to St Gall; a link to this volume is possible but unproven.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 900,
+      "label": "By the 9th or 10th century the book is on the continent, probably at St Gall.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1875,
+      "label": "Gustav Scherrer describes the manuscript in his catalogue of the St Gall library.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 2006,
+      "label": "e-codices puts the digitised manuscript online.",
+      "s": [
+        1
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Portrait facing decorated incipit",
+      "note": "Each Gospel opens with an evangelist portrait on the left and an ornate first page on the right, a balance praised as a high point of Irish book art.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Mixed Latin text",
+      "note": "John follows Old Latin readings of the Western text-type, while the other three Gospels follow the Vulgate.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Two illuminators at work",
+      "note": "The openings for Mark and John differ in style from the rest, so two different artists probably worked on it.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Origin proved by vellum",
+      "note": "DNA taken from the vellum confirms it was produced in Ireland even though the book gives no place of origin.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "n": 4,
+      "note": "Page 3 carries the opening words of Matthew, Liber generationis, as an ornamented initial.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 7,
+      "note": "Page 6 is a carpet page, a full-page ornamental panel with no text.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 79,
+      "note": "Page 78 shows the portrait of Saint Mark, facing the decorated start of his Gospel on page 79.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 209,
+      "note": "Page 208 shows the portrait of John the Evangelist, facing the decorated opening on page 209.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 267,
+      "note": "Page 266 holds the Crucifixion, one of the closing full-page pictures.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "n": 268,
+      "note": "Page 267 holds the Last Judgment, facing the Crucifixion at the end of the book.",
+      "s": [
+        0
+      ]
+    }
+  ]
+}

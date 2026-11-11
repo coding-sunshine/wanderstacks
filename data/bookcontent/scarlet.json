@@ -1,0 +1,258 @@
+{
+ "id": "scarlet",
+ "summary": "In Puritan Boston in the 1640s, Hester Prynne stands on the scaffold with her baby and must wear a scarlet A for adultery for the rest of her life. She will not name the father. Her husband, who was thought lost at sea, arrives under the name Roger Chillingworth and sets out to find the man. He lodges with the young minister Arthur Dimmesdale and slowly works out that Dimmesdale is the father. Hester and Dimmesdale plan to flee, but he confesses publicly and dies on the scaffold. Hester returns and keeps wearing the letter.",
+ "context": "Hawthorne wrote the book in Salem after losing his post at the Custom House there, and opened it with a long preface about that job. Ticknor, Reed and Fields published it in March 1850. The first printing of 2,500 copies sold out within ten days, which made it one of the first mass-produced books in America. It was popular at once and has been counted among the Great American Novels. D. H. Lawrence called it a perfect work of the American imagination. Many film, television and stage versions followed.",
+ "sources": [
+  {
+   "title": "The Scarlet Letter - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Scarlet_Letter"
+  },
+  {
+   "title": "Nathaniel Hawthorne - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Nathaniel_Hawthorne"
+  },
+  {
+   "title": "The Scarlet Letter by Nathaniel Hawthorne - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/25344"
+  }
+ ],
+ "people": [
+  {
+   "name": "Nathaniel Hawthorne",
+   "role": "author",
+   "note": "Born in Salem in 1804; published the novel in March 1850 after his dismissal from the Salem Custom House.",
+   "s": [
+    1,
+    0
+   ]
+  },
+  {
+   "name": "Hester Prynne",
+   "role": "character",
+   "note": "Young woman who bears a child out of wedlock, refuses to name the father and lives on in Boston wearing the scarlet A.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Arthur Dimmesdale",
+   "role": "character",
+   "note": "Hester's minister and the hidden father, whose unconfessed guilt wears down his health.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Roger Chillingworth",
+   "role": "character",
+   "note": "Hester's long-lost husband, who takes a new name and a physician's role to find and torment the father.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Pearl",
+   "role": "character",
+   "note": "Hester's daughter, described as the embodiment of her parents' sin and passion.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Wilson",
+   "role": "character",
+   "note": "Reverend who joins Dimmesdale in questioning Hester on the scaffold.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Richard Bellingham",
+   "role": "character",
+   "note": "Governor of Massachusetts, a historical figure who appears in the story as the one Hester appeals to about keeping Pearl.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ann Hibbins",
+   "role": "character",
+   "note": "Historical woman executed for witchcraft in 1656, shown in the book as a witch who tempts Hester.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "James T. Fields",
+   "role": "printer",
+   "note": "Publisher at Ticknor, Reed and Fields who persuaded Hawthorne to publish the novel on its own.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sophia Peabody",
+   "role": "subject",
+   "note": "Hawthorne's wife; they became engaged in 1838.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "Setting of the story, in the Puritan Massachusetts Bay Colony between 1642 and 1649.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Salem, Massachusetts",
+   "lat": 42.5195,
+   "lon": -70.8967,
+   "note": "Hawthorne's birthplace, the site of the Custom House, and where he wrote the manuscript at the Peter Edgerley House.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Lenox, Massachusetts",
+   "lat": 42.3584,
+   "lon": -73.2848,
+   "note": "Berkshire town where Hawthorne moved at the end of March 1850 and soon met Herman Melville.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1642,
+   "label": "The story begins in the Massachusetts Bay Colony, running through 1649.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1804,
+   "label": "Hawthorne is born in Salem on 4 July.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1846,
+   "label": "Hawthorne is appointed Surveyor of the Port of Salem, the post he later loses.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1850,
+   "label": "Ticknor, Reed and Fields publishes The Scarlet Letter in March.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1850,
+   "label": "The first printing of 2,500 copies sells out within ten days.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1864,
+   "label": "Hawthorne dies on 19 May.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Sin, guilt and legalism",
+   "note": "The book weighs public punishment against the private damage of hidden guilt.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Knowledge from sin",
+   "note": "Like Adam and Eve, Hester and Dimmesdale suffer exile, but also learn what it means to be immoral.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A neutral ground between real and imagined",
+   "note": "In the Custom House preface Hawthorne calls romance a territory where the actual and the imaginary meet.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A mark that becomes an identity",
+   "note": "The scarlet letter is a physical sign of Hester's sin, and of her solitude.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "The Customhouse",
+   "quote": "you would inquire in vain for the Locofoco Surveyor. The besom of reform has swept him out of office;",
+   "why": "Hawthorne's own preface jokes about his dismissal from the Custom House."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "A throng of bearded men, in sad-colored garments, and gray, steeple-crowned hats, intermixed with women, some wearing hoods and others bareheaded, was assembled in front of a wooden edifice, the door of which was heavily timbered with oak, and studded with iron spikes.",
+   "why": "The opening picture of the Puritan crowd outside the prison."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "It is too deeply branded. Ye cannot take it off. And would that I might endure his agony, as well as mine!”",
+   "why": "Hester refuses to name the father; Dimmesdale looks on."
+  },
+  {
+   "part": 1,
+   "chapter": "V",
+   "quote": "Her prison-door was thrown open, and she came forth into the sunshine, which, falling on all alike, seemed, to her sick and morbid heart, as if meant for no other purpose than to reveal the scarlet letter on her breast.",
+   "why": "Hester walks out of prison into the sun, which seems to light the letter."
+  },
+  {
+   "part": 2,
+   "chapter": "VIII",
+   "quote": "Speak thou for me!” cried she. “Thou wast my pastor, and hadst charge of my soul, and knowest me better than these men can. I will not lose the child!",
+   "why": "Hester pleads with Dimmesdale to keep Pearl."
+  },
+  {
+   "part": 2,
+   "chapter": "XIII",
+   "quote": "Years had come and gone. Pearl was now seven years old. Her mother, with the scarlet letter on her breast, glittering in its fantastic embroidery, had long been a familiar object to the townspeople.",
+   "why": "Time jump: Hester has become a fixture of the town."
+  },
+  {
+   "part": 3,
+   "chapter": "XX",
+   "quote": "No man, for any considerable period, can wear one face to himself, and another to the multitude, without finally getting bewildered as to which may be the true.",
+   "why": "Hawthorne on Dimmesdale's divided life."
+  },
+  {
+   "part": 3,
+   "chapter": "XXIV",
+   "quote": "Be true! Be true! Be true! Show freely to the world, if not your worst, yet some trait whereby the worst may be inferred!”",
+   "why": "The moral the narrator draws near the close."
+  }
+ ]
+}

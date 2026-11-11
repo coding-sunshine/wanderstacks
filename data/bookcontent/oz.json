@@ -1,0 +1,231 @@
+{
+  "id": "oz",
+  "summary": "Dorothy is a girl from the Kansas prairie whose house is carried off by a cyclone and dropped in Munchkin Country, where it lands on a witch. Wearing the dead witch's silver shoes, she follows the yellow brick road toward the Emerald City, gathering a Scarecrow, a Tin Woodman and a Cowardly Lion, each hoping the Wizard will grant a wish. The Wizard turns out to be an ordinary man from Omaha, a humbug. After the Wicked Witch of the West melts in a bucket of water, Dorothy finds her own way back home.",
+  "context": "L. Frank Baum wrote this children's fantasy, and W. W. Denslow illustrated it. The George M. Hill Company published it in 1900, and it began the long Oz series, which has thirteen sequels. The Library of Congress has called it America's greatest and best-loved homegrown fairytale. When Hill went bankrupt in 1901, Bobbs-Merrill took over publishing, and by 1956 the book had sold three million copies. A Broadway musical followed in 1902. The site's text comes from Project Gutenberg.",
+  "sources": [
+    {
+      "title": "The Wonderful Wizard of Oz (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Wonderful_Wizard_of_Oz"
+    },
+    {
+      "title": "The Wonderful Wizard of Oz (Project Gutenberg)",
+      "url": "https://www.gutenberg.org/ebooks/55"
+    }
+  ],
+  "people": [
+    {
+      "name": "L. Frank Baum",
+      "role": "Author",
+      "note": "Wrote the novel and went on to write thirteen sequels in the Oz series.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "W. W. Denslow",
+      "role": "Illustrator",
+      "note": "Illustrated the first edition of 1900.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Dorothy",
+      "role": "Protagonist",
+      "note": "A Kansas girl who travels to Oz with her dog Toto and wants only to go home.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "The Scarecrow",
+      "role": "Companion",
+      "note": "Joins Dorothy on the yellow brick road.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "The Tin Woodman",
+      "role": "Companion",
+      "note": "Joins Dorothy and hopes to be given a heart.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "The Cowardly Lion",
+      "role": "Companion",
+      "note": "Joins Dorothy and hopes to be given courage.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "The Wizard of Oz",
+      "role": "Ruler of the Emerald City",
+      "note": "Revealed to be a humbug from Omaha.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "The Wicked Witch of the West",
+      "role": "Antagonist",
+      "note": "Sends the Winged Monkeys after Dorothy and melts when water is thrown on her.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Kansas",
+      "lat": 38.5,
+      "lon": -98,
+      "note": "Dorothy's home, from which a cyclone carries her house away.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Chicago",
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "note": "Home of the George M. Hill Company; the book was shown at the Palmer House here in July 1900.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Omaha",
+      "lat": 41.2565,
+      "lon": -95.9345,
+      "note": "The city the humbug Wizard says he comes from.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "New York",
+      "lat": 40.758,
+      "lon": -73.9855,
+      "note": "The 1902 musical adaptation played on Broadway.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1900,
+      "label": "Baum's novel appears; the first copy comes off the press on 17 May",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1900,
+      "label": "The book is displayed at the Palmer House in Chicago in July and distributed in September",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1901,
+      "label": "The George M. Hill Company goes bankrupt and Bobbs-Merrill takes over publishing",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1902,
+      "label": "A musical version opens on Broadway",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1956,
+      "label": "Sales reach three million copies",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Home",
+      "note": "After every wonder of Oz, Dorothy wants only to return to Kansas, and the book ends with her glad to be there.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "title": "Wishes the heroes already have",
+      "note": "The Scarecrow, Woodman and Lion each seek a gift from the Wizard, and the story shows them acting with those qualities along the way.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "The humbug in charge",
+      "note": "The great ruler is exposed as an ordinary man from Omaha, so authority turns out to rest on show.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "An American fairytale",
+      "note": "The Library of Congress calls it America's greatest and best-loved homegrown fairytale.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "Chapter I The Cyclone",
+      "quote": "Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, who was a farmer, and Aunt Em, who was the farmer’s wife.",
+      "why": "The first sentence sets Dorothy in a plain farm world that the rest of the book contrasts with Oz."
+    },
+    {
+      "part": 1,
+      "chapter": "Chapter IV The Road Through the Forest",
+      "quote": "“That is because you have no brains” answered the girl. “No matter how dreary and gray our homes are, we people of flesh and blood would rather live there than in any other country, be it ever so beautiful. There is no place like home.”",
+      "why": "Dorothy answers the Scarecrow, and the line states the book's closing idea early."
+    },
+    {
+      "part": 1,
+      "chapter": "Chapter XI The Wonderful City of Oz",
+      "quote": "I am Oz, the Great and Terrible. Who are you, and why do you seek me?” It was not such an awful voice as she had expected to come from the big Head; so she took courage and answered: “I am Dorothy, the Small and Meek. I have come to you for help.”",
+      "why": "The Wizard's first appearance in the form of a giant head, answered by Dorothy's small, honest reply."
+    },
+    {
+      "part": 1,
+      "chapter": "Chapter VI The Cowardly Lion",
+      "quote": "I learned that if I roared very loudly every living thing was frightened and got out of my way. Whenever I’ve met a man I’ve been awfully scared; but I just roared at him, and he has always run away as fast as he could go.",
+      "why": "The Lion explains how a reputation for bravery hides his fear; the book treats courage as something already there."
+    },
+    {
+      "part": 1,
+      "chapter": "Chapter XV The Discovery of Oz, the Terrible",
+      "quote": "“Exactly so!” declared the little man, rubbing his hands together as if it pleased him. “I am a humbug.” “But this is terrible,” said the Tin Woodman. “How shall I ever get my heart?” “Or I my courage?” asked the Lion. “Or I my brains?” wailed the Scarecrow",
+      "why": "The screen falls, the Wizard admits he is a humbug, and the three companions fear they were fooled."
+    },
+    {
+      "part": 1,
+      "chapter": "Chapter XV The Discovery of Oz, the Terrible",
+      "quote": "I think you are wrong to want a heart. It makes most people unhappy. If you only knew it, you are in luck not to have a heart.”",
+      "why": "The Wizard's odd reply to the Tin Woodman, which the Woodman answers by choosing feeling over comfort."
+    },
+    {
+      "part": 2,
+      "chapter": "Chapter XXIV Home Again",
+      "quote": "Aunt Em had just come out of the house to water the cabbages when she looked up and saw Dorothy running toward her. “My darling child!” she cried, folding the little girl in her arms and covering her face with kisses. “Where in the world did you come from?” “From the Land of Oz,” said Dorothy gravely. “And here is Toto, too. And oh, Aunt Em! I’m so glad to be at home again!”",
+      "why": "The return to Kansas, shown in a few plain lines."
+    }
+  ]
+}

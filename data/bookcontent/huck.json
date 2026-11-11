@@ -1,0 +1,243 @@
+{
+  "id": "huck",
+  "summary": "Huck Finn, a boy in 1840s Missouri, fakes his own murder to escape his brutal father and the efforts of respectable women to civilize him. On Jackson's Island he meets Jim, a man who has run away from slavery, and the two drift down the Mississippi on a raft. They meet a feuding family, two con men calling themselves the King and the Duke, and a town full of easy marks. Huck tells the story in his own dialect. He decides, against everything he has been taught, to help Jim go free, then watches Tom Sawyer turn Jim's rescue into a game.",
+  "context": "Mark Twain wrote the book in pen between 1876 and 1883, after Tom Sawyer, setting it in a Mississippi world that had already vanished by the time he published. It appeared in Britain and Canada in December 1884 and in the United States in February 1885, with drawings by E. W. Kemble. Some libraries, Concord's among them, banned it at once for coarseness. Later arguments turned on its use of racial slurs and on whether the book attacks racism or repeats it. Critics still name it a candidate for the Great American Novel, and many point to it as the start of American vernacular fiction.",
+  "sources": [
+    {
+      "title": "Adventures of Huckleberry Finn (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn"
+    },
+    {
+      "title": "Mark Twain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mark_Twain"
+    },
+    {
+      "title": "Huckleberry Finn by Mark Twain (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/mark-twain/the-adventures-of-huckleberry-finn"
+    }
+  ],
+  "people": [
+    {
+      "name": "Mark Twain (Samuel Clemens)",
+      "role": "author",
+      "note": "Raised in Hannibal, Missouri, he worked as a printer and Mississippi riverboat pilot before writing the book.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Huckleberry Finn",
+      "role": "character",
+      "note": "The narrator, a boy of about thirteen or fourteen whose good nature contrasts with the injustices around him.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Jim",
+      "role": "character",
+      "note": "Miss Watson's slave, who runs away and becomes Huck's companion on the river; the book shows him as honorable and perceptive.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Tom Sawyer",
+      "role": "character",
+      "note": "Huck's friend, who arrives at the Phelps farm and stages an elaborate escape plan for Jim.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Pap Finn",
+      "role": "character",
+      "note": "Huck's brutal, alcoholic father, who tries to take his son's money.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "The King and the Duke",
+      "role": "character",
+      "note": "Two confidence men who join the raft and run scams in river towns, including a plot on Peter Wilks's estate.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "E. W. Kemble",
+      "role": "printer",
+      "note": "Young Life magazine artist whom Twain picked to illustrate the first edition.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "James Fraser Gluck",
+      "role": "subject",
+      "note": "Buffalo library curator who persuaded Twain in 1885 to donate the manuscript.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Hannibal, Missouri",
+      "lat": 39.7083,
+      "lon": -91.3585,
+      "note": "Twain's boyhood home, the model for the book's St. Petersburg.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Cairo, Illinois",
+      "lat": 37.0053,
+      "lon": -89.1765,
+      "note": "The free-state town where Huck and Jim plan to leave the river; they pass it in fog without knowing.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Concord, Massachusetts",
+      "lat": 42.4604,
+      "lon": -71.3489,
+      "note": "Its public library committee excluded the book in 1885 as coarse.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Buffalo, New York",
+      "lat": 42.8864,
+      "lon": -78.8784,
+      "note": "The public library received the manuscript in 1885; the missing first half turned up in 1991.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1876,
+      "label": "Twain begins writing the novel in pen, working on it until 1883.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1884,
+      "label": "First published in Canada and the United Kingdom on December 10.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1885,
+      "label": "US edition appears on February 18; Concord's library committee bans it.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1905,
+      "label": "Brooklyn Public Library bans the book over its language.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1991,
+      "label": "The lost first half of the manuscript is found in a steamer trunk and returned to Buffalo.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 2011,
+      "label": "NewSouth Books issues an edition replacing the racial slur with \"slave\".",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Conscience against society",
+      "note": "Huck believes helping Jim is a sin that will damn him, and does it anyway. The book sets lived decency against taught morality.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Satire of Southern manners",
+      "note": "The feud, the con men and the Wilks funeral expose entrenched attitudes, particularly racism.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Vernacular American voice",
+      "note": "Written throughout in dialect, it was among the first major American novels to do so.",
+      "s": [
+        0,
+        2
+      ]
+    },
+    {
+      "title": "The river as freedom",
+      "note": "The raft is the one place Huck and Jim feel free, set against the shore towns.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "The ending dispute",
+      "note": "Critics such as Hemingway faulted the last chapters, where Tom's games turn Jim's rescue into farce.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "I",
+      "quote": "You don’t know about me without you have read a book by the name of The Adventures of Tom Sawyer ; but that ain’t no matter. That book was made by Mr. Mark Twain, and he told the truth, mainly.",
+      "why": "Huck's first words set the voice and the book's running joke about truth and lies."
+    },
+    {
+      "part": 2,
+      "chapter": "XVIII",
+      "quote": "Other places do seem so cramped up and smothery, but a raft don’t. You feel mighty free and easy and comfortable on a raft.",
+      "why": "The raft as a place outside the shore's rules, stated plainly."
+    },
+    {
+      "part": 3,
+      "chapter": "XXXI",
+      "quote": "It was a close place. I took it up, and held it in my hand. I was a-trembling, because I’d got to decide, forever, betwixt two things, and I knowed it. I studied a minute, sort of holding my breath, and then says to myself: “All right, then, I’ll go to hell”⁠—and tore it up.",
+      "why": "The moral turning point: Huck tears up his letter betraying Jim."
+    },
+    {
+      "part": 3,
+      "chapter": "XXXI",
+      "quote": "I felt good and all washed clean of sin for the first time I had ever felt so in my life, and I knowed I could pray now.",
+      "why": "Huck's relief just before the decision shows how fully he has absorbed the morality he is about to reject."
+    },
+    {
+      "part": 3,
+      "chapter": "XXXIII",
+      "quote": "It was a dreadful thing to see. Human beings can be awful cruel to one another. We see we was too late⁠—couldn’t do no good.",
+      "why": "Huck's reaction to the King and the Duke being tarred and feathered, pity for rogues he disliked."
+    },
+    {
+      "part": 4,
+      "chapter": "Chapter the Last",
+      "quote": "But I reckon I got to light out for the Territory ahead of the rest, because Aunt Sally she’s going to adopt me and sivilize me, and I can’t stand it. I been there before.",
+      "why": "The closing lines: Huck refuses to be civilized and heads west."
+    }
+  ]
+}

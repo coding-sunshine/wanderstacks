@@ -1,0 +1,260 @@
+{
+ "id": "plato-dialogues-benjamin-jowett",
+ "summary": "This is the collected dialogues of Plato in Benjamin Jowett's English version, with Jowett's introduction to each dialogue. In them Socrates and others test ideas by question and answer: what courage, temperance, love or justice really are. The Apology gives Socrates' defence at his trial and the Phaedo his last hours. The Republic builds an ideal city, argues that philosophers should rule, and uses the image of the cave to describe education. The Symposium treats love as a climb toward beauty itself, and the Timaeus and Critias tell of the cosmos and of Atlantis.",
+ "context": "Plato wrote the dialogues in Athens in the fourth century BC, most of them after he founded the Academy around 383 BC. His works survive complete, which is rare for writers of his age. The Latin translation by Marsilio Ficino was printed in Florence in 1484, and Henri Estienne's Greek edition appeared at Geneva in 1578. Benjamin Jowett, a classicist and later master of Balliol College, Oxford, grew a plan for a book on Plato into a full translation with introductory essays. Standard Ebooks prepared the edition read on this site.",
+ "sources": [
+  {
+   "title": "Plato - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Plato"
+  },
+  {
+   "title": "Benjamin Jowett - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Benjamin_Jowett"
+  },
+  {
+   "title": "Dialogues, by Plato, translated by Benjamin Jowett - Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett"
+  }
+ ],
+ "people": [
+  {
+   "name": "Plato",
+   "role": "author",
+   "note": "Athenian philosopher, c. 428 to 347 BC, who wrote the dialogues and founded the Academy.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Socrates",
+   "role": "character",
+   "note": "Plato's teacher and the main speaker in most of the dialogues.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Benjamin Jowett",
+   "role": "translator",
+   "note": "Oxford classicist who translated the dialogues and wrote the introductions, 1817 to 1893.",
+   "s": [
+    1,
+    2
+   ]
+  },
+  {
+   "name": "Aristotle",
+   "role": "subject",
+   "note": "Came from Stagira to the Academy in 367 BC and later became a philosopher as famous as Plato.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dion of Syracuse",
+   "role": "subject",
+   "note": "Brother-in-law of the tyrant Dionysius, who became a disciple of Plato on his first Syracuse visit.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Marsilio Ficino",
+   "role": "translator",
+   "note": "His Latin translation of Plato was printed at Florence in 1484.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Florence Nightingale",
+   "role": "subject",
+   "note": "Friend of Jowett whose criticism he gratefully received while translating the dialogues.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Athens",
+   "lat": 37.9838,
+   "lon": 23.7275,
+   "note": "Plato's home city and the setting of most dialogues.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Academy of Plato",
+   "lat": 37.9944,
+   "lon": 23.7122,
+   "note": "School Plato founded near the grove of Hecademus, around 383 BC.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Piraeus",
+   "lat": 37.9425,
+   "lon": 23.6469,
+   "note": "Port of Athens, used by the democrats to re-enter the city in 403 BC.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Syracuse",
+   "lat": 37.0755,
+   "lon": 15.2866,
+   "note": "Sicilian city Plato visited around 385 BC, where he was drawn into local politics.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Balliol College, Oxford",
+   "lat": 51.7545,
+   "lon": -1.2567,
+   "note": "Jowett's college, where he was a fellow, tutor and later master.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Geneva",
+   "lat": 46.2044,
+   "lon": 6.1432,
+   "note": "Place of the 1578 edition of Plato's works by Henri Estienne.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -385,
+   "label": "Plato makes his first visit to Syracuse and meets Dion.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -383,
+   "label": "Plato founds the Academy near the grove of Hecademus.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -347,
+   "label": "Plato dies and is buried in his garden at the Academy.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1484,
+   "label": "Ficino's Latin translation of Plato is printed in Florence.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1578,
+   "label": "Estienne's edition with parallel Latin text is published at Geneva.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1855,
+   "label": "Jowett becomes Regius Professor of Greek, work on Plato grows into a full translation.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1870,
+   "label": "Jowett is elected master of Balliol College.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1893,
+   "label": "Jowett dies.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Theory of Forms",
+   "note": "Plato holds that the material world is only a copy of a real world of Forms, such as justice, truth and beauty.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Philosopher kings",
+   "note": "The Republic argues that cities will not be well governed until philosophers rule or rulers take up philosophy.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Socratic questioning",
+   "note": "Socrates asks for the meaning of a general term and rejects single examples in place of the quality they share.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Myths as argument",
+   "note": "Plato uses stories such as Atlantis, the Myth of Er and the Allegory of the Cave to carry ideas.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 12,
+   "chapter": "Apology",
+   "quote": "discourse about virtue, and of those other things about which you hear me examining myself and others, is the greatest good of man, and that the unexamined life is not worth living, you are still less likely to believe me.",
+   "why": "Socrates tells the jury that examining himself and others is the greatest good, and why he will not stop."
+  },
+  {
+   "part": 14,
+   "chapter": "Phaedo",
+   "quote": "Crito, I owe a cock to Asclepius; will you remember to pay the debt? The debt shall be paid, said Crito; is there anything else? There was no answer to this question; but in a minute or two a movement was heard, and the attendants uncovered him; his eyes were set, and Crito closed his eyes and mouth.",
+   "why": "The last words of Socrates in the Phaedo, and the plain closing of his story."
+  },
+  {
+   "part": 23,
+   "chapter": "The Republic (continued)",
+   "quote": "Until philosophers are kings, or the kings and princes of this world have the spirit and power of philosophy, and political greatness and wisdom meet in one, and those commoner natures who pursue either to the exclusion of the other are compelled to stand aside, cities will never have rest from their evils⁠—nor the human race, as I believe⁠—",
+   "why": "The Republic's central claim about who should rule."
+  },
+  {
+   "part": 24,
+   "chapter": "The Republic (continued)",
+   "quote": "show in a figure how far our nature is enlightened or unenlightened:⁠—Behold! human beings living in a underground den, which has a mouth open towards the light and reaching all along the den; here they have been from their childhood, and have their legs and necks chained so that they cannot move, and can only see before them, being prevented by the chains from turning round their heads.",
+   "why": "The opening of the allegory of the cave, the best-known image in the dialogues."
+  },
+  {
+   "part": 10,
+   "chapter": "Symposium",
+   "quote": "the true order of going, or being led by another, to the things of love, is to begin from the beauties of earth and mount upwards for the sake of that other beauty, using these as steps only, and from one going on to two, and from two to all fair forms,",
+   "why": "The ladder of love in the Symposium, climbing from earthly beauty to beauty itself."
+  },
+  {
+   "part": 28,
+   "chapter": "Timaeus",
+   "quote": "island of Atlantis there was a great and wonderful empire which had rule over the whole island and several others, and over parts of the continent, and, furthermore, the men of Atlantis had subjected the parts of Libya within the columns of Heracles as far as Egypt, and of Europe as far as Tyrrhenia.",
+   "why": "The Timaeus account of Atlantis, the earliest source for the story."
+  }
+ ]
+}

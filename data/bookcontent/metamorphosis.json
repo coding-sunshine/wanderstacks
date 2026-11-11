@@ -1,0 +1,222 @@
+{
+ "id": "metamorphosis",
+ "summary": "Gregor Samsa, a traveling salesman who supports his parents and sister, wakes one morning transformed into a huge insect. He tries to go on as before, but the chief clerk flees and his family locks him in his room. His sister Grete feeds him and clears out his furniture, and his father wounds him with a thrown apple. As the family finds work and takes in lodgers, they neglect him. When the lodgers see him, Grete says the creature is no longer Gregor and must go. Gregor dies of starvation, and the family leaves for the countryside relieved.",
+ "context": "Franz Kafka published the novella in 1915, first in the October issue of the journal Die weissen Blaetter edited by Rene Schickele, then as a book in December in Kurt Wolff's series Der juengste Tag. At about 70 printed pages it is the longest story Kafka considered finished and published in his life. Kafka was a German-speaking Jewish writer from Prague who worked in legal and insurance jobs and felt that writing was his true vocation. Critics have offered many readings of the story, and its insect is commonly pictured as a cockroach, though the German says only ungeheueres Ungeziefer.",
+ "sources": [
+  {
+   "title": "The Metamorphosis (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Metamorphosis"
+  },
+  {
+   "title": "Franz Kafka (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Franz_Kafka"
+  }
+ ],
+ "people": [
+  {
+   "name": "Franz Kafka",
+   "role": "author",
+   "note": "German-language Jewish writer from Prague, 1883 to 1924.",
+   "s": [
+    1,
+    0
+   ]
+  },
+  {
+   "name": "Gregor Samsa",
+   "role": "character",
+   "note": "Salesman who wakes as an insect and dies of starvation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Grete Samsa",
+   "role": "character",
+   "note": "Gregor's sister, first his only carer and finally the one who says he must go.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mr. Samsa",
+   "role": "character",
+   "note": "The father, who bombards Gregor with apples.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rene Schickele",
+   "role": "editor",
+   "note": "Edited Die weissen Blaetter, where the story first appeared.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kurt Wolff",
+   "role": "publisher",
+   "note": "Edited the series Der juengste Tag, which issued the first book edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Max Brod",
+   "role": "executor",
+   "note": "Kafka's friend, who ignored his wish to destroy his remaining works.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Prague",
+   "lat": 50.0755,
+   "lon": 14.4378,
+   "note": "Kafka's birthplace, near the Old Town Square.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Humpolec",
+   "lat": 49.5436,
+   "lon": 15.3598,
+   "note": "Town in eastern Bohemia, home of Kafka's maternal grandfather, a cloth-maker.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Osek (near Strakonice)",
+   "lat": 49.2,
+   "lon": 13.85,
+   "note": "Village in southern Bohemia of Kafka's paternal grandfather. Position is approximate.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1883,
+   "label": "Kafka is born on 3 July.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1912,
+   "label": "His collection Contemplation appears.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1915,
+   "label": "The Metamorphosis appears in Die weissen Blaetter in October and as a book in December.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1919,
+   "label": "A Country Doctor is published.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1924,
+   "label": "Kafka dies of tuberculosis on 3 June, aged 40.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1925,
+   "label": "The Trial appears after his death.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Work and obligation",
+   "note": "Gregor's job weighs on him as the only way to pay his father's debts.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Isolation",
+   "note": "He is isolated from society and misunderstood by those around him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The family reverses",
+   "note": "His transformation makes the family go back to work and, in time, do without him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Many readings",
+   "note": "Critics have offered varied interpretations of the story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Humanity at the end",
+   "note": "Grete says the creature is no longer Gregor, and the family is relieved by his death.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.",
+   "why": "The famous opening, with no pause before the transformation."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Grete! Grete!” she then cried. “Mother?” his sister called from the other side. They communicated across Gregor’s room. “You’ll have to go for the doctor straight away. Gregor is ill. Quick, get the doctor. Did you hear the way Gregor spoke just now?”",
+   "why": "Mother and sister call across Gregor's room for the doctor."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "apple; then another one immediately flew at him; Gregor froze in shock; there was no longer any point in running as his father had decided to bombard him. He had filled his pockets with fruit from the bowl on the sideboard and now, without even taking the time for careful aim, threw one apple after another.",
+   "why": "The father drives Gregor back with fruit from the sideboard."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "Was he an animal if music could captivate him so? It seemed to him that he was being shown the way to the unknown nourishment he had been yearning for.",
+   "why": "Gregor listens to Grete's violin and doubts that he is only an animal."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "We have to try and get rid of it”, said Gregor’s sister, now speaking only to her father, as her mother was too occupied with coughing to listen, “it’ll be the death of both of you, I can see it coming.",
+   "why": "Grete turns against her brother."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "If it were Gregor he would have seen long ago that it’s not possible for human beings to live with an animal like that and he would have gone of his own free will. We wouldn’t have a brother any more, then, but we could carry on with our lives and remember him with respect.",
+   "why": "Grete says the creature cannot be Gregor."
+  }
+ ]
+}

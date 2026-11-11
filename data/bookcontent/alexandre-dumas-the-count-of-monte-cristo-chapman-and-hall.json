@@ -1,0 +1,275 @@
+{
+ "summary": "Edmond Dantès, a young sailor about to become captain and marry, is denounced as a Bonapartist agent by rivals and shut up without trial in the Château d'If. A fellow prisoner, the Abbé Faria, teaches him and tells him where a fortune lies hidden on the island of Monte Cristo. Dantès escapes, finds it, and returns to Paris as the wealthy Count of Monte Cristo. Over many years he ruins the men who betrayed him, Danglars, Fernand and Villefort, until the cost of his revenge on the innocent makes him pull back.",
+ "context": "Dumas wrote the novel for newspaper serial publication. It ran in the Journal des Débats from August 1844 to January 1846 and came out as a book in 1846, while Auguste Maquet helped him build the plot. Dumas drew on a police-archive story of a Nîmes shoemaker, Pierre Picaud, wrongly jailed and later avenging himself, which Jacques Peuchet had retold in 1838. The tale is set between 1815 and 1839, from Napoleon's escape from Elba to the reign of Louis Philippe. It is now counted among the classics of French and world fiction. The site carries the Chapman and Hall English translation.",
+ "sources": [
+  {
+   "title": "The Count of Monte Cristo (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo"
+  },
+  {
+   "title": "Alexandre Dumas (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Alexandre_Dumas"
+  },
+  {
+   "title": "The Count of Monte Cristo, Chapman and Hall translation (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/alexandre-dumas/the-count-of-monte-cristo/chapman-and-hall"
+  }
+ ],
+ "people": [
+  {
+   "name": "Alexandre Dumas",
+   "role": "author",
+   "note": "French novelist who wrote the book, with plot outlines from his collaborator Auguste Maquet.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Auguste Maquet",
+   "role": "scribe",
+   "note": "Ghostwriting collaborator whose plot outlines Dumas expanded into the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Edmond Dantès",
+   "role": "character",
+   "note": "Sailor falsely accused of treason and jailed in the Château d'If, who later returns as the Count of Monte Cristo.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Abbé Faria",
+   "role": "character",
+   "note": "Fellow prisoner who educates Dantès and reveals the hidden treasure on Monte Cristo.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Danglars",
+   "role": "character",
+   "note": "Ship's supercargo and one of the three men who betray Dantès.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Fernand",
+   "role": "character",
+   "note": "Cousin and rival suitor of Dantès's fiancée, who joins the plot against him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Villefort",
+   "role": "character",
+   "note": "Crown prosecutor who ensures Dantès's imprisonment to protect his own career.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Haydée",
+   "role": "character",
+   "note": "Dantès's former slave and lover, who leaves with him at the end.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gaspard Caderousse",
+   "role": "character",
+   "note": "Marseilles tailor and neighbour who knew of the plot but stayed silent out of cowardice.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Pierre Picaud",
+   "role": "subject",
+   "note": "Nîmes shoemaker whose wrongful jailing, recorded in police archives, is a source for the plot.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Marseille",
+   "lat": 43.2965,
+   "lon": 5.3698,
+   "note": "Port where the story opens in 1815 with the arrival of the Pharaon and Dantès's arrest.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Château d'If",
+   "lat": 43.2799,
+   "lon": 5.3256,
+   "note": "Prison island where Dantès is held and meets Abbé Faria.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Island of Monte Cristo",
+   "lat": 42.3333,
+   "lon": 10.3167,
+   "note": "Island where the treasure is hidden and Dantès takes the title of count.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Elba",
+   "lat": 42.78,
+   "lon": 10.19,
+   "note": "Napoleon's island of exile, whose departure on the opening day sets the political frame.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Paris",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "Where Dantès enters high society as the Count and carries out his plan.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rome",
+   "lat": 41.9028,
+   "lon": 12.4964,
+   "note": "Italian city where part of the novel unfolds during the Count's travels.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nîmes",
+   "lat": 43.8367,
+   "lon": 4.3601,
+   "note": "Home of Pierre Picaud, whose 1807 story inspired the plot.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1807,
+   "label": "Pierre Picaud, a Nîmes shoemaker, is wrongly jailed, the anecdote Dumas later builds on.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1815,
+   "label": "The novel opens on 24 February with Napoleon leaving Elba and Dantès's ship arriving at Marseille.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "year": 1838,
+   "label": "Jacques Peuchet retells the Picaud story from the police archives.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1844,
+   "label": "Serial publication begins in the Journal des Débats on 28 August.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1846,
+   "label": "Serialisation ends in January and the book appears in print.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Hope and patience",
+   "note": "The closing letter reduces human wisdom to the two words wait and hope.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Revenge and its limits",
+   "note": "Dantès plans a cold revenge but pulls back once he sees the harm it does to the innocent.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Justice outside the law",
+   "note": "A man failed by the courts takes judgment into his own hands, which the novel tests rather than endorses.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "History as the frame",
+   "note": "The plot runs from Napoleon's escape from Elba through the Restoration, so politics decides private fates.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "On the 24th of February, 1815, the lookout at Notre-Dame de la Garde signalled the three-master, the Pharaon from Smyrna, Trieste, and Naples",
+   "why": "The opening line fixes the date and the ship whose arrival starts everything."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "“No, my dear fellow!” replied Dantès, “I am not proud, but I am happy, and happiness blinds, I think, more than pride",
+   "why": "Dantès at his happiest, just before the betrayal that ends it."
+  },
+  {
+   "part": 2,
+   "chapter": "XIV",
+   "quote": "no longer called Edmond Dantès⁠—he was now number 34",
+   "why": "The moment a man becomes a prison number."
+  },
+  {
+   "part": 4,
+   "chapter": "XXIX",
+   "quote": "e day you will receive a letter signed ‘Sinbad the Sailor.’ Do exactly what the letter bids you, however strange it may appear",
+   "why": "The first sign of the Count's disguises and his hidden hand."
+  },
+  {
+   "part": 6,
+   "chapter": "XXXIV",
+   "quote": "that the Count of Monte Cristo is living on the same floor with yourselves",
+   "why": "A hotel keeper tells two young travelers who their neighbour in Rome is."
+  },
+  {
+   "part": 17,
+   "chapter": "CXVII",
+   "quote": "You told me to wait and hope; do you know what you did, unfortunate adviser",
+   "why": "Villefort's world falls apart and the book's motto comes into focus."
+  }
+ ],
+ "id": "alexandre-dumas-the-count-of-monte-cristo-chapman-and-hall"
+}

@@ -1,0 +1,255 @@
+{
+ "summary": "Kant asks what human reason can and cannot know without leaning on experience. He argues that space and time are forms of our own intuition, so we know things only as they appear and never as they are in themselves. Knowledge needs both the senses and the understanding's concepts. When reason tries to prove the world's beginning, the soul or the existence of God, it falls into contradictions and illusions. Kant limits such claims in order to leave room for moral belief, and he calls this method criticism.",
+ "context": "Kant published the first edition in 1781 and a revised second edition in 1787. It is the first of his three Critiques, followed by the Critique of Practical Reason in 1788 and the Critique of Judgment in 1790. He wrote in response to the empiricism of Locke and Hume and the rationalism of Descartes, Leibniz and Wolff. Francis Haywood made the first English translation in 1838. The site carries John Meiklejohn's 1855 translation from Project Gutenberg.",
+ "sources": [
+  {
+   "title": "Critique of Pure Reason (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Critique_of_Pure_Reason"
+  },
+  {
+   "title": "Immanuel Kant (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Immanuel_Kant"
+  },
+  {
+   "title": "The Critique of Pure Reason, Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/4280"
+  }
+ ],
+ "people": [
+  {
+   "name": "Immanuel Kant",
+   "role": "author",
+   "note": "German philosopher born in Konigsberg in 1724 who died in 1804.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "David Hume",
+   "role": "subject",
+   "note": "Empiricist whose scepticism about cause and effect Kant tried to answer.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Locke",
+   "role": "subject",
+   "note": "Empiricist philosopher on whose work Kant builds.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rene Descartes",
+   "role": "subject",
+   "note": "Rationalist whose scepticism about the external world Kant addresses.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gottfried Wilhelm Leibniz",
+   "role": "subject",
+   "note": "Rationalist philosopher whose work Kant builds on.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Christian Wolff",
+   "role": "subject",
+   "note": "Rationalist whose dogmatic method Kant criticises.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Meiklejohn",
+   "role": "translator",
+   "note": "Translator of the English version of 1855 that the site carries.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Francis Haywood",
+   "role": "translator",
+   "note": "Made the first English translation, published in 1838.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Markus Herz",
+   "role": "subject",
+   "note": "Former student and friend to whom Kant admitted gaps in his earlier dissertation.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Konigsberg",
+   "lat": 54.7104,
+   "lon": 20.4522,
+   "note": "Kant's birthplace, in the Kingdom of Prussia.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "William Pickering published Haywood's first English translation here in 1838.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cambridge",
+   "lat": 52.2053,
+   "lon": 0.1218,
+   "note": "Cambridge University Press published the Guyer and Wood translation in 1999.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1724,
+   "label": "Kant is born on 22 April.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1781,
+   "label": "First edition of the Critique of Pure Reason appears.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1787,
+   "label": "Kant publishes the second edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1788,
+   "label": "Critique of Practical Reason follows.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1838,
+   "label": "Haywood's first English translation is published in London.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1855,
+   "label": "Meiklejohn's English translation appears.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1929,
+   "label": "Norman Kemp Smith's translation is published.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Transcendental idealism",
+   "note": "Space and time are forms of our intuition, so we know appearances, not things in themselves.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "A priori knowledge",
+   "note": "Knowledge independent of experience is necessary and universal, unlike what the senses give us.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Limits of metaphysics",
+   "note": "Kant sets out to decide whether metaphysics is possible, and aims to answer Hume and Descartes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Criticism over dogmatism",
+   "note": "He finds both the dogmatists and the sceptics faulty and offers criticism as the remaining path.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "PREFACE TO THE FIRST EDITION 1781",
+   "quote": "Human reason, in one sphere of its cognition, is called upon to consider questions, which it cannot decline, as they are presented by its own nature, but which it cannot answer, as they transcend every faculty of the mind",
+   "why": "The opening of the first preface: reason raises questions it cannot answer."
+  },
+  {
+   "part": 1,
+   "chapter": "PREFACE TO THE SECOND EDITION 1787",
+   "quote": "I must, therefore, abolish knowledge , to make room for belief . The dogmatism of metaphysics, that is, the presumption that it is possible to advance in metaphysics without previous criticism, is the true source of the unbelief (always dogmatic) which militates against morality",
+   "why": "Kant's own statement of why he limits knowledge."
+  },
+  {
+   "part": 1,
+   "chapter": "I. Of Logic in General.",
+   "quote": "Thoughts without content are void; intuitions without conceptions, blind",
+   "why": "Why both senses and concepts are needed."
+  },
+  {
+   "part": 1,
+   "chapter": "§ 2. Metaphysical Exposition of this Conception.",
+   "quote": "Space is not a conception which has been derived from outward experiences.",
+   "why": "The first argument that space is a form of intuition."
+  },
+  {
+   "part": 3,
+   "chapter": "Chapter III Of the Ground of the Division of all Objects into Phenomena and Noumena",
+   "quote": "We have now not only traversed the region of the pure understanding and carefully surveyed every part of it, but we have also measured it, and assigned to everything therein its proper place",
+   "why": "Kant surveys the territory of the understanding before turning to its limits."
+  },
+  {
+   "part": 5,
+   "chapter": "Section II. Antithetic of Pure Reason",
+   "quote": "THESIS. The world has a beginning in time, and is also limited in regard to space",
+   "why": "The first of the antinomies, where reason argues both sides."
+  },
+  {
+   "part": 6,
+   "chapter": "Section IV. Of the Impossibility of an Ontological Proof of the Existence of God",
+   "quote": "Being is evidently not a real predicate, that is, a conception of something which is added to the conception of some other thing",
+   "why": "The key step in his reply to the ontological proof of God."
+  },
+  {
+   "part": 8,
+   "chapter": "Chapter IV. The History of Pure Reason",
+   "quote": "The critical path alone is still open. If my reader has been kind and patient enough to accompany me on this hitherto untravelled route, he can now judge whether, if he and others will contribute their exertions towards making this narrow footpath a high road of thought, that which many centuries have failed to accomplish may not be executed before the close of the present—namely, to bring Reason ",
+   "why": "The closing call to follow his method."
+  }
+ ],
+ "id": "cpr"
+}

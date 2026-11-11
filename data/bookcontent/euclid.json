@@ -1,0 +1,275 @@
+{
+ "summary": "The Elements builds geometry from a short list of definitions, postulates and common notions, then proves each proposition from those and from earlier propositions. This edition, by John Casey, carries the first six books and the first propositions of Book XI. Book I treats angles, triangles, parallels and parallelograms, and ends with the Pythagorean theorem. Book II handles rectangles, Book III the circle, Book IV figures inscribed in and drawn around circles, Book V proportion, Book VI similar figures, and Book XI planes and solid angles. Casey adds notes and exercises for students.",
+ "context": "Euclid compiled the Elements around 300 BC, and it is the oldest large deductive treatment of mathematics that survives. Proclus wrote a commentary on it, and Theon of Alexandria edited it in the fourth century. Arabic translations followed in the ninth century, and Adelard of Bath made a Latin version from Arabic in the twelfth. Ratdolt printed the first Latin edition in Venice in 1482, and Grynaeus the first Greek one in Basel in 1533. Casey dated his preface from Dublin in November 1885, writing for Irish colleges and schools.",
+ "sources": [
+  {
+   "title": "Euclid's Elements - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Euclid%27s_Elements"
+  },
+  {
+   "title": "Euclid - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Euclid"
+  },
+  {
+   "title": "The First Six Books of the Elements of Euclid by Euclid and John Casey - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/21076"
+  }
+ ],
+ "people": [
+  {
+   "name": "Euclid",
+   "role": "author",
+   "note": "Greek mathematician who worked in Alexandria around 300 BC and wrote the Elements.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "John Casey",
+   "role": "translator",
+   "note": "Irish editor of this edition, who signed his preface in Dublin in November 1885.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Proclus",
+   "role": "subject",
+   "note": "Greek mathematician whose commentary on the Elements is a main source on its background.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Theon of Alexandria",
+   "role": "scribe",
+   "note": "Edited the Elements in the fourth century, and later Greek copies descend from his version.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Arethas",
+   "role": "patron",
+   "note": "Byzantine scholar who commissioned a Greek manuscript of Euclid in the late ninth century, one of the two oldest surviving.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Adelard of Bath",
+   "role": "translator",
+   "note": "Made a twelfth-century Latin translation of the Elements from Arabic.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Erhard Ratdolt",
+   "role": "printer",
+   "note": "Printed the first Latin edition of the Elements in Venice in 1482.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Dee",
+   "role": "subject",
+   "note": "Wrote the Mathematical Preface to Henry Billingsley's English edition of 1570.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Alexandria",
+   "lat": 31.2001,
+   "lon": 29.9187,
+   "note": "Euclid is placed here around 300 BC, where the Elements was written.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Oxyrhynchus",
+   "lat": 28.5333,
+   "lon": 30.65,
+   "note": "Findspot of a papyrus fragment of the Elements with a diagram for Book II, Proposition 5.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Venice",
+   "lat": 45.4408,
+   "lon": 12.3155,
+   "note": "Ratdolt printed the first Latin edition here in 1482.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Basel",
+   "lat": 47.5596,
+   "lon": 7.5886,
+   "note": "Grynaeus printed the first Greek edition here in 1533.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Oxford",
+   "lat": 51.752,
+   "lon": -1.2577,
+   "note": "The Bodleian Library holds copies of the Greek text.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dublin",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "note": "Casey signed his preface to this edition here in 1885.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -300,
+   "label": "Euclid writes the Elements in Alexandria, in thirteen books.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 100,
+   "label": "A papyrus fragment of the Elements from Oxyrhynchus is dated to about this time.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 800,
+   "label": "Arabic translations of the Elements appear in the ninth century.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1482,
+   "label": "Ratdolt prints the first Latin edition in Venice.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1533,
+   "label": "Grynaeus prints the first Greek edition in Basel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1570,
+   "label": "Billingsley's first English edition appears with a preface by John Dee.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1885,
+   "label": "Casey signs the preface to his edition of the first six books.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Proof from stated starting points",
+   "note": "Each result rests on listed definitions, postulates and axioms, so a reader can check every step back to them.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "The parallel postulate",
+   "note": "The fifth postulate is less obvious than the first four, and questions about it led to non-Euclidean geometry.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Geometry without numbers",
+   "note": "Magnitudes of shapes are compared through constructions rather than treated as numbers.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Theory of proportion",
+   "note": "Book V treats ratio for any kind of magnitude, and Book VI applies it to similar figures.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "INTRODUCTION.",
+   "quote": "Geometry is the Science of figured Space. Figured Space is of one, two, or three dimensions, according as it consists of lines, surfaces, or solids",
+   "why": "Casey opens his introduction by saying what geometry is about."
+  },
+  {
+   "part": 1,
+   "chapter": "BOOK I. THEORY OF ANGLES, TRIANGLES, PARALLEL LINES, AND PARALLELOGRAMS.",
+   "quote": "A point is that which has position but not dimensions. A geometrical magnitude which has three dimensions, that is, length, breadth, and thickness, is a solid; that which has two dimensions, such as length and breadth, is a surface; and that which has but one dimension is a line",
+   "why": "The first definition of Book I, with Casey's commentary on solids, surfaces and lines."
+  },
+  {
+   "part": 1,
+   "chapter": "BOOK I. THEORY OF ANGLES, TRIANGLES, PARALLEL LINES, AND PARALLELOGRAMS.",
+   "quote": "Axioms. i. Things which are equal to the same, or to equals, are equal to each other",
+   "why": "The first axiom, with Casey's worked reading of it."
+  },
+  {
+   "part": 1,
+   "chapter": "BOOK I. THEORY OF ANGLES, TRIANGLES, PARALLEL LINES, AND PARALLELOGRAMS.",
+   "quote": "PROP. V.—Theorem. The angles (ABC, ACB) at the base (BC) of an isosceles triangle are equal to one another, and if the equal sides (AB, AC) be produced, the external angles (DBC, ECB) below the base shall be equal",
+   "why": "The isosceles triangle theorem, with its demonstration."
+  },
+  {
+   "part": 1,
+   "chapter": "BOOK I. THEORY OF ANGLES, TRIANGLES, PARALLEL LINES, AND PARALLELOGRAMS.",
+   "quote": "PROP. XLVII.—Theorem. In a right-angled triangle (ABC) the square on the hypotenuse (AB) is equal to the sum of the squares on the other two sides (AC, BC)",
+   "why": "The Pythagorean theorem as Book I proves it."
+  },
+  {
+   "part": 2,
+   "chapter": "BOOK V. THEORY OF PROPORTION",
+   "quote": "Ratio is the mutual relation of two magnitudes of the same kind with respect to quantity",
+   "why": "A definition from Book V, the theory of proportion."
+  },
+  {
+   "part": 2,
+   "chapter": "BOOK III. THEORY OF THE CIRCLE",
+   "quote": "Euclid’s definition for a tangent is quite inadequate for any curve but the circle, and those derived from it by projection (the conic sections); and even for these the modern definition is better",
+   "why": "Casey judges one of Euclid's definitions against modern practice."
+  },
+  {
+   "part": 3,
+   "chapter": "BOOK VI. APPLICATION OF THE THEORY OF PROPORTION",
+   "quote": "Similar Rectilineal Figures are those whose several angles are equal, each to each, and whose sides about the equal angles are proportional",
+   "why": "The opening definition of Book VI."
+  }
+ ],
+ "id": "euclid"
+}

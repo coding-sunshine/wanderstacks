@@ -1,0 +1,281 @@
+{
+ "id": "gilgamesh",
+ "summary": "This is the oldest known form of the Gilgamesh story: two clay tablets from the Old Babylonian period, rendered into English. The Pennsylvania tablet has Gilgamesh, king of Erech, dream of a companion; the wild man Enkidu is lured into the city by a woman, then fights Gilgamesh and becomes his friend. The Yale tablet carries the pair toward the cedar forest and its guardian Humbaba, with Gilgamesh set on winning a name even if he dies. Long introduction and commentary by Morris Jastrow place the fragments within the later twelve-tablet epic.",
+ "context": "The epic grew from Sumerian poems of about 2100 BCE into an Akkadian poem, and its best-known form was copied for the library of Ashurbanipal at Nineveh. Hundreds of years older are the tablets here, dated to the age of Hammurabi, long before that version. The Pennsylvania tablet was first published by Stephen Langdon, and Albert Clay made the English translation used here. Jastrow's introduction of 1920 argues these texts show how the story looked before later editors added the flood and the quest for immortality at length.",
+ "sources": [
+  {
+   "title": "Epic of Gilgamesh (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh"
+  },
+  {
+   "title": "An Old Babylonian Version of the Gilgamesh Epic (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/11000"
+  }
+ ],
+ "people": [
+  {
+   "name": "Gilgamesh",
+   "role": "hero",
+   "note": "King of Uruk, the two-thirds divine hero of the epic who is shown on these tablets before his long journey after Enkidu's death.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Enkidu",
+   "role": "hero",
+   "note": "Wild man made by the gods to check Gilgamesh; he is civilised by a woman, brought to Uruk, and becomes the king's friend.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Shamhat",
+   "role": "character",
+   "note": "The woman who initiates Enkidu and leads him toward the city; the Old Babylonian tablet calls her a courtesan.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Humbaba",
+   "role": "character",
+   "note": "The guardian of the cedar forest, whom the heroes set out to kill. This book spells his name Huwawa.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Utnapishtim",
+   "role": "character",
+   "note": "Survivor of the flood whom Gilgamesh later seeks out to learn the secret of life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sin-leqi-unninni",
+   "role": "editor",
+   "note": "Scholar thought to have compiled the later Standard Babylonian version of twelve tablets.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "George Smith",
+   "role": "scholar",
+   "note": "British Museum scholar who read translated fragments of the epic in 1872 and published fuller versions in 1875 and 1876.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Morris Jastrow",
+   "role": "author",
+   "note": "Pennsylvania Semitist who wrote the introduction and commentary for this edition.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Albert T. Clay",
+   "role": "translator",
+   "note": "Translated the two tablets into English for this edition.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Uruk (Erech)",
+   "lat": 31.3226,
+   "lon": 45.6361,
+   "note": "Gilgamesh's city; Enkidu is led here and the two heroes fight in its streets.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Nineveh",
+   "lat": 36.3594,
+   "lon": 43.1528,
+   "note": "Site of the library of Ashurbanipal, where the best copies of the later version were found.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kish",
+   "lat": 32.5556,
+   "lon": 44.6197,
+   "note": "City tied by legend to Gilgamesh's rivals; its early ruler Enmebaragesi lends the story some historical footing.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nippur",
+   "lat": 32.1267,
+   "lon": 45.2308,
+   "note": "Source of a collection of tablets in which Gilgamesh appears as a king of Erech.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Sippar",
+   "lat": 33.0561,
+   "lon": 44.2556,
+   "note": "Source of the Sippar tablet, whose Meissner fragment is an Old Babylonian witness to the epic.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Baghdad",
+   "lat": 33.3152,
+   "lon": 44.3661,
+   "note": "Where Meissner picked up an early epic tablet in a dealer's shop.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -2100,
+   "label": "Earliest Sumerian poems about Gilgamesh, some perhaps from the Third Dynasty of Ur.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -1800,
+   "label": "Old Babylonian tablets, the earliest surviving single epic narrative, including those printed here.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -1300,
+   "label": "Start of the window in which the Standard Babylonian version is compiled by Sin-leqi-unninni.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -650,
+   "label": "Library of Ashurbanipal at Nineveh gathers copies of the epic.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1853,
+   "label": "Hormuzd Rassam finds the Standard Babylonian tablets at Nineveh.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1872,
+   "label": "George Smith reads translated fragments before the Society of Biblical Archaeology.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Friendship across a divide",
+   "note": "Gilgamesh dreams of a companion before he meets him, and Enkidu is shaped by the gods to match him.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Civilisation changes the wild",
+   "note": "Enkidu forgets his birthplace after days with the woman.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Name against death",
+   "note": "Gilgamesh insists on facing Humbaba, saying that if he falls he will still have made his name.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Death as every person's share",
+   "note": "The later epic ends on the idea that only the specially chosen live forever and the rest meet death.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "A story that grew in layers",
+   "note": "The tablets show an older shorter epic beneath the Assyrian version, with the flood story added later.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Introduction.",
+   "quote": "The Gilgamesh Epic is the most notable literary product of Babylonia as yet discovered in the mounds of Mesopotamia.",
+   "why": "Jastrow's opening judgment of the poem and what survives of it."
+  },
+  {
+   "part": 1,
+   "chapter": "Translation.",
+   "quote": "Gish sought to interpret the dream; 2Spoke to his mother: 3“My mother, during my night 4I became strong and moved about 5among the heroes; 6And from the starry heaven 7A meteor(?) of Anu fell upon me: 8I bore it and it grew heavy upon me, 9I became weak and its weight I could not endure.",
+   "why": "Gilgamesh tells his mother of the dream that announces Enkidu."
+  },
+  {
+   "part": 1,
+   "chapter": "Translation.",
+   "quote": "Six days and seven nights 47Enkidu continued 48To cohabit with [the courtesan]. 49[The woman] opened her [mouth] and 50Spoke to Enkidu: 51“I gaze upon thee, O Enkidu, like a god art thou!",
+   "why": "Enkidu is drawn from the wild by the woman, and she speaks to him as if he were a god."
+  },
+  {
+   "part": 1,
+   "chapter": "Introduction.",
+   "quote": "The woman leads Enkidu from the outskirts of Erech into the city itself, where the people on seeing him remark upon his likeness to Gilgamesh. He is the very counterpart of the latter, though somewhat smaller in stature.",
+   "why": "The encounter of Enkidu and Gilgamesh in the streets of Erech, as summarised by Jastrow."
+  },
+  {
+   "part": 1,
+   "chapter": "Introduction.",
+   "quote": "He declares himself superior to Enkidu’s warning, and in bold terms []says that he prefers to perish in the attempt to overcome Ḫuwawa rather than abandon it. “Wherever terror is to be faced, Thou, forsooth, art in fear of death. Thy prowess lacks strength. I will go before thee, Though thy mouth shouts to me: ‘thou art afraid to approach,’ If I fall, I will establish my name.”",
+   "why": "Gilgamesh answers Enkidu's fear of Humbaba with defiance."
+  },
+  {
+   "part": 1,
+   "chapter": "Introduction.",
+   "quote": "Only those singled out by the special favor of the gods can hope to be removed to the distant “source of the streams” and live forever. The rest of mankind must face death as the end of life.",
+   "why": "Jastrow's reading of the flood story's lesson on mortality."
+  },
+  {
+   "part": 1,
+   "chapter": "Introduction.",
+   "quote": "Utnapishtim, the survivor of the deluge, is moved through pity for Gilgamesh, worn out by his long wanderings. At the request of his wife, Utnapishtim decides to tell Gilgamesh of this plant, and he succeeds in finding it.",
+   "why": "The last stage of the later epic: the plant of youth found and lost."
+  }
+ ]
+}

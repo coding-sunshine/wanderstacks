@@ -1,0 +1,234 @@
+{
+ "summary": "Anna Karenina, a Petersburg statesman's wife, travels to Moscow to mend her brother Stiva Oblonsky's marriage and meets the cavalry officer Count Vronsky. Their affair scandalises society and ends their old lives. Beside it runs a second plot: the landowner Konstantin Levin courts and marries Kitty, who first turned him down for Vronsky, and tries to work out how to live on his land and what he believes. Anna's fall comes through jealousy and isolation. Levin's story ends in a quieter search for faith and purpose.",
+ "context": "Tolstoy published the novel in installments from 1875 to 1877 in The Russian Messenger, and as a book in 1878. He called it his first true novel, and by the last installments he had come to hate it and finished it unwillingly. It is set in the years of Alexander II's liberal reforms and rapid social change, and trains recur through the plot. Many readers take Levin to be Tolstoy's alter ego. The site carries Constance Garnett's 1901 English translation in the Standard Ebooks edition.",
+ "sources": [
+  {
+   "title": "Anna Karenina (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Anna_Karenina"
+  },
+  {
+   "title": "Leo Tolstoy (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Leo_Tolstoy"
+  },
+  {
+   "title": "Anna Karenina, translated by Constance Garnett (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/leo-tolstoy/anna-karenina/constance-garnett"
+  }
+ ],
+ "people": [
+  {
+   "name": "Leo Tolstoy",
+   "role": "author",
+   "note": "Russian writer, 1828 to 1910, author of War and Peace and Resurrection as well as this novel.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Constance Garnett",
+   "role": "translator",
+   "note": "Translator of the 1901 English version used here.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Anna Karenina",
+   "role": "character",
+   "note": "Stepan Oblonsky's sister, Karenin's wife and Vronsky's lover.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Count Vronsky",
+   "role": "character",
+   "note": "Cavalry officer and Anna's lover.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alexei Karenin",
+   "role": "character",
+   "note": "Senior statesman and Anna's husband, twenty years her senior.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Konstantin Levin",
+   "role": "character",
+   "note": "Landowner and Kitty's suitor, often considered Tolstoy's alter ego.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Kitty Shcherbatskaya",
+   "role": "character",
+   "note": "Dolly's younger sister and later Levin's wife.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Stepan Oblonsky",
+   "role": "character",
+   "note": "Anna's brother, a civil servant and man about town whose unfaithfulness opens the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dolly Oblonskaya",
+   "role": "character",
+   "note": "Stiva's wife, who has discovered his affair with a former governess.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lon": 37.6173,
+   "note": "Where the Oblonskys live and where Anna arrives to mend her brother's marriage.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Saint Petersburg",
+   "lat": 59.9311,
+   "lon": 30.3609,
+   "note": "Home of Karenin and Anna and the social circle her affair scandalises.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Italy",
+   "lat": 42.5,
+   "lon": 12.5,
+   "note": "Where Anna and Vronsky flee after the scandal in search of happiness.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1828,
+   "label": "Leo Tolstoy is born.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1869,
+   "label": "War and Peace appears before Tolstoy turns to Anna Karenina.",
+   "s": [
+    1,
+    2
+   ]
+  },
+  {
+   "year": 1875,
+   "label": "Serialisation of the novel begins in The Russian Messenger.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1878,
+   "label": "The novel is first published in book form.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "year": 1901,
+   "label": "Constance Garnett's English translation appears.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Happy and unhappy families",
+   "note": "The first line sets the book's question: why each unhappy family differs, as the Oblonskys' crisis shows.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Vengeance is mine",
+   "note": "The epigraph, from Romans, hangs over the judgement of Anna by herself and by society.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "City against land",
+   "note": "The novel sets Petersburg and Moscow society against the life of a landowner tied to his farm.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Faith and meaning",
+   "note": "Levin's struggles with religion, which echo Tolstoy's own, answer Anna's tragedy.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Part I: I",
+   "quote": "Happy families are all alike; every unhappy family is unhappy in its own way",
+   "why": "The first sentence in world fiction on family, and the Oblonsky scandal follows at once."
+  },
+  {
+   "part": 1,
+   "chapter": "XVII",
+   "quote": "Vronsky drove to the station of the Petersburg railway to meet his mother, and the first person he came across on the great flight of steps was Oblonsky, who was expecting his sister by the same train",
+   "why": "The station where Anna and Vronsky first meet, the first of the novel's train scenes."
+  },
+  {
+   "part": 4,
+   "chapter": "IV",
+   "quote": "Levin lost all sense of time, and could not have told whether it was late or early now. A change began to come over his work, which gave him immense satisfaction. In the midst of his toil there were moments during which he forgot what he was doing, and it came all easy to him, and at those same moments his row was almost as smooth and well cut as Tit’s",
+   "why": "Levin mowing with the peasants, the novel's picture of labour on the land."
+  },
+  {
+   "part": 7,
+   "chapter": "VII",
+   "quote": "Do you know Madame Karenina? We are traveling together. I am going to see her now,” he said in French, carefully scrutinizing Golenishtchev’s face",
+   "why": "Vronsky, traveling with Anna, introduces her to an old acquaintance: the couple seen from outside."
+  },
+  {
+   "part": 11,
+   "chapter": "XXXI",
+   "quote": "Where am I? What am I doing? What for?” She tried to get up, to drop backwards; but something huge and merciless struck her on the head and rolled her on her back",
+   "why": "The railway scene near the end of Anna's story."
+  },
+  {
+   "part": 12,
+   "chapter": "II",
+   "quote": "God save the Tsar,” then shouts of “hurrah!” and “ jivio! ” One of the volunteers, a tall, very young man with a hollow chest, was particularly conspicuous, bowing and waving his felt hat and a nosegay over his head",
+   "why": "Near the end of the book, volunteers leave by train for the war, a public scene far from the novel's love plots."
+  }
+ ],
+ "id": "anna"
+}

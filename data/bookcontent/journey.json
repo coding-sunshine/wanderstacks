@@ -1,0 +1,249 @@
+{
+ "id": "journey",
+ "summary": "A stone on Flower and Fruit Mountain splits open and gives birth to a monkey, Sun, who learns Taoist magic, cloud-riding somersaults and seventy-two transformations. He raids the Peach Banquet of heaven, eats the Immortal Pills and is imprisoned under a mountain for five hundred years. Freed by the pilgrim monk Hsuan Tsang, he joins a party that includes a pig and a river monster. They cross Asia and its demon-haunted lands to fetch scriptures, and each convert earns pardon for old sins. Timothy Richard's 1913 version is a condensed English telling, with an introduction.",
+ "context": "This is Timothy Richard's A Mission to Heaven, published in Shanghai in 1913. It adapts the Chinese novel Journey to the West, and its title page credits the Taoist master Ch'iu Ch'ang Ch'un, an attribution scholars no longer accept; the novel is now ascribed to Wu Cheng'en and took its 100-chapter form in the 16th century, from older folk tales and drama. Richard, a Welsh Baptist missionary, read it as an allegory of good against evil. His introduction separates it from the historical monk Xuanzang's record of travel to India.",
+ "sources": [
+  {
+   "title": "Journey to the West (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Journey_to_the_West"
+  },
+  {
+   "title": "Timothy Richard (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Timothy_Richard"
+  },
+  {
+   "title": "Qiu Chuji (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Qiu_Chuji"
+  },
+  {
+   "title": "Sun Wukong (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Sun_Wukong"
+  }
+ ],
+ "people": [
+  {
+   "name": "Timothy Richard",
+   "role": "translator",
+   "note": "Welsh Baptist missionary (1845-1919) who worked in China from 1869 and helped found Shanxi University.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Wu Cheng'en",
+   "role": "author",
+   "note": "Traditional author of the 16th-century novel, though the attribution is disputed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Qiu Chuji (Ch'iu Ch'ang Ch'un)",
+   "role": "subject",
+   "note": "Taoist master (1148-1227) named on the title page as author; he travelled to meet Genghis Khan in 1222.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Xuanzang (Hsuan Tsang)",
+   "role": "subject",
+   "note": "Buddhist monk who travelled to India for 19 years in the 7th century and is the basis of the story's pilgrim.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sun Wukong (Sun the Monkey)",
+   "role": "character",
+   "note": "Stone-born monkey of great strength and magic who becomes Tang Sanzang's first disciple.",
+   "s": [
+    0,
+    3
+   ]
+  },
+  {
+   "name": "Tang Sanzang",
+   "role": "character",
+   "note": "The monk sent for the scriptures; his disciples include Zhu Bajie, Sha Wujing and a dragon horse.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Genghis Khan",
+   "role": "subject",
+   "note": "Mongol ruler who invited Qiu Chuji west in 1219 and received him near the Hindu Kush.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Xi'an (Chang'an)",
+   "lat": 34.3416,
+   "lon": 108.9398,
+   "note": "Tang capital from which the historical Xuanzang set out for India in 629.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Yantai, Shandong",
+   "lat": 37.5365,
+   "lon": 121.3914,
+   "note": "First posting of Timothy Richard in China, assigned in 1869.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Taiyuan, Shanxi",
+   "lat": 37.8706,
+   "lon": 112.5489,
+   "note": "Where Richard helped found Shanxi University in 1902.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Samarkand",
+   "lat": 39.627,
+   "lon": 66.975,
+   "note": "Halting point of Qiu Chuji on his journey west to Genghis Khan.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Hindu Kush",
+   "lat": 36.5,
+   "lon": 70,
+   "note": "Region of Genghis Khan's camp where Qiu Chuji reached him in 1222.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 629,
+   "label": "The monk Xuanzang leaves for India; the pilgrimage becomes the basis of the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1148,
+   "label": "Qiu Chuji is born in Shandong.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 1222,
+   "label": "Qiu Chuji reaches Genghis Khan's camp near the Hindu Kush.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 1592,
+   "label": "Earliest surviving edition of Journey to the West published at Nanjing.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1845,
+   "label": "Timothy Richard is born in Carmarthenshire, Wales.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1913,
+   "label": "Richard's A Mission to Heaven is published at Shanghai.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1942,
+   "label": "Arthur Waley's abridged translation Monkey appears.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Journey as spiritual progress",
+   "note": "Richard reads the pilgrimage as moving from animal nature to intellect and then to concern for others.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Cooperation and atonement",
+   "note": "Four disciples help the monk to atone for their sins, and enlightenment comes through the virtue of cooperation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Satire of heaven's bureaucracy",
+   "note": "The novel is also a comic adventure and a satire of Chinese officialdom.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Trickster against order",
+   "note": "Sun rebels against heaven and is subdued by the Buddha, then turned into a protector.",
+   "s": [
+    3
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Introduction",
+   "quote": "The Master in the Epic is of the same name as the monk who travelled to India, but he started on his journey in 639, ten years after the other. His destination was Heaven, not India.",
+   "why": "Richard separates the epic from the historical Xuanzang."
+  },
+  {
+   "part": 1,
+   "chapter": "Introduction",
+   "quote": "It is not a book of travels, yet it describes a journey across Asia, and scenes in various continents of the then known world",
+   "why": "Richard's attempt to classify a book that fits no Western genre."
+  },
+  {
+   "part": 1,
+   "chapter": "Introduction",
+   "quote": "The hero possesses himself of a tiny steel wire which he can carry in his ear",
+   "why": "The monkey's magic staff, described by Richard in the introduction."
+  },
+  {
+   "part": 1,
+   "chapter": "I. Search for Immortality",
+   "quote": "On a certain day it split open and produced a stone egg, round like a big ball. After exposure to the air, this was transformed into a stone monkey with the five senses of the body complete, and able to creep and run.",
+   "why": "The monkey's birth from the living stone."
+  },
+  {
+   "part": 1,
+   "chapter": "II. Monkey studies Magic",
+   "quote": "Then with a clenched fist and a spring, the Searcher was off 107,000 li.",
+   "why": "The first cloud-somersault, learned from his master."
+  },
+  {
+   "part": 1,
+   "chapter": "V. Upsets the Peach Banquet",
+   "quote": "So he turned the pills out of the gourds and swallowed them all as he would have swallowed some peas.",
+   "why": "Sun eats the Immortal Pills, the offence that brings him down."
+  }
+ ]
+}

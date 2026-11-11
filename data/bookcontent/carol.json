@@ -1,0 +1,252 @@
+{
+ "summary": "Ebenezer Scrooge, a cold London miser, is visited on Christmas Eve by the ghost of his dead partner Jacob Marley, who warns him of the chains he is forging. Three spirits of Christmas Past, Present and Yet to Come then take him through his lonely youth, the poor but happy home of his clerk Bob Cratchit and his sick son Tiny Tim, and a grave with his own name. Scrooge wakes on Christmas morning changed, sends a turkey to the Cratchits, and keeps Christmas from then on.",
+ "context": "Dickens wrote the novella in late 1843, during a money squeeze after the poor sales of Martin Chuzzlewit. He had been shaken by the Children's Employment Commission report, a visit to the Cornish tin mines and a visit to the Field Lane Ragged School. Chapman and Hall published it in London on 19 December 1843, with illustrations by John Leech, and the first edition sold out by Christmas Eve. It was pirated in January 1844, and from 1849 Dickens performed readings from it. It has never been out of print. The site carries the Project Gutenberg text, as prepared by Standard Ebooks.",
+ "sources": [
+  {
+   "title": "A Christmas Carol (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/A_Christmas_Carol"
+  },
+  {
+   "title": "Charles Dickens (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Charles_Dickens"
+  },
+  {
+   "title": "A Christmas Carol, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/charles-dickens/a-christmas-carol"
+  }
+ ],
+ "people": [
+  {
+   "name": "Charles Dickens",
+   "role": "author",
+   "note": "English novelist, born in Portsmouth, who wrote the novella in 1843 and later read it aloud to audiences.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Ebenezer Scrooge",
+   "role": "character",
+   "note": "An elderly miser who is changed by the visits of Christmas spirits.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jacob Marley",
+   "role": "character",
+   "note": "Scrooge's dead business partner, who returns as a ghost.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Leech",
+   "role": "subject",
+   "note": "Illustrated the first edition of the novella.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Washington Irving",
+   "role": "subject",
+   "note": "His Sketch Book essays on old English Christmas customs influenced Dickens.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Douglas Jerrold",
+   "role": "subject",
+   "note": "A friend of Dickens whose 1841 and 1843 essays were an influence on the Carol.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Chapman & Hall",
+   "role": "printer",
+   "note": "The London publishers of the first edition in December 1843.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Chapman and Hall published the first edition here in 1843.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Marshalsea prison, Southwark",
+   "lat": 51.5015,
+   "lon": -0.0925,
+   "note": "Dickens's father was committed here as a debtor in 1824.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Field Lane Ragged School",
+   "lat": 51.52,
+   "lon": -0.107,
+   "note": "A visit to this school for London's street children helped inspire the novella.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cornish tin mines",
+   "lat": 50.24,
+   "lon": -5.3,
+   "note": "In early 1843 Dickens toured the mines and was angered by the child labour there.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Portsmouth",
+   "lat": 50.8198,
+   "lon": -1.088,
+   "note": "The birthplace of Dickens.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1824,
+   "label": "Dickens's father is sent to the Marshalsea and Dickens, aged 12, is put to work in a blacking factory.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1843,
+   "label": "Dickens tours the Cornish tin mines and visits the Field Lane Ragged School.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1843,
+   "label": "A Christmas Carol is published on 19 December and sells out by Christmas Eve.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1844,
+   "label": "A pirated copy appears in January, and Dickens sues the publishers.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1849,
+   "label": "Dickens begins public readings of the story, giving 127 more by 1870.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1870,
+   "label": "Dickens dies, ending the readings.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Redemption of a selfish man",
+   "note": "Scrooge turns from miser to generous neighbour, and the story weighs whether this is secular or Christian allegory.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Treatment of the poor",
+   "note": "The poor and poor children are central, shaped by Dickens's reaction to the child-labour report.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Revival of Christmas customs",
+   "note": "Dickens wrote amid renewed interest in carols and Christmas traditions and sought to promote social connection.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Fairy tale as conversion story",
+   "note": "Dickens linked fairy tales to Christmas as stories of conversion and transformation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Stave I",
+   "quote": "Marley was dead, to begin with. There is no doubt whatever about that.",
+   "why": "The famous opening line, fixing the ghost story's premise."
+  },
+  {
+   "part": 1,
+   "chapter": "Stave I",
+   "quote": "“Bah!” said Scrooge. “Humbug!” He had so heated himself with rapid walking in the fog and frost, this nephew of Scrooge’s, that he was all in a glow; his face was ruddy and handsome; his eyes sparkled, and his breath smoked again",
+   "why": "Scrooge's first reply to his nephew's Christmas greeting."
+  },
+  {
+   "part": 1,
+   "chapter": "Stave I",
+   "quote": "“Business!” cried the Ghost, wringing its hands again. “Mankind was my business",
+   "why": "Marley's ghost says what his life should have been about."
+  },
+  {
+   "part": 1,
+   "chapter": "Stave II",
+   "quote": "Why, it’s old Fezziwig! Bless his heart, it’s Fezziwig alive again!” Old Fezziwig laid down his pen, and looked up at the clock, which pointed to the hour of seven",
+   "why": "Scrooge sees his old employer's Christmas party in the Spirit of Christmas Past's visit."
+  },
+  {
+   "part": 1,
+   "chapter": "Stave III",
+   "quote": "This boy is Ignorance. This girl is Want. Beware of them both, and all of their degree, but most of all beware this boy, for on his brow I see that written which is Doom, unless the writing be erased",
+   "why": "The Spirit of Christmas Present reveals two children, Ignorance and Want."
+  },
+  {
+   "part": 1,
+   "chapter": "Stave III",
+   "quote": "“God bless us every one!” said Tiny Tim, the last of all. He sat very close to his father’s side, upon his little stool",
+   "why": "Tiny Tim's blessing at the Cratchit table, which became the book's refrain."
+  },
+  {
+   "part": 1,
+   "chapter": "Stave IV",
+   "quote": "I will honour Christmas in my heart, and try to keep it all the year. I will live in the Past, the Present, and the Future",
+   "why": "Scrooge's promise to change, made to the last spirit."
+  },
+  {
+   "part": 1,
+   "chapter": "Stave V",
+   "quote": "And so, as Tiny Tim observed, “God Bless Us, Every One!”",
+   "why": "The closing line of the novella, echoing Tiny Tim's blessing."
+  }
+ ],
+ "id": "carol"
+}

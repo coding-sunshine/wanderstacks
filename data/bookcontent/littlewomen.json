@@ -1,0 +1,233 @@
+{
+ "id": "littlewomen",
+ "summary": "Little Women follows the four March sisters, Meg, Jo, Beth and Amy, growing up in a New England household while their father serves as an army chaplain in the Civil War. Their mother, Marmee, keeps the family steady through genteel poverty. The girls befriend their neighbor Mr. Laurence and his grandson Laurie. Each sister has a fault to overcome: Meg is vain, Jo hotheaded, Beth shy and Amy materialistic. The second half follows their marriages, work and losses, including Jo's writing life and Beth's death.",
+ "context": "Alcott's publisher, Thomas Niles, asked her in 1868 to write a girls' story, and she agreed reluctantly, preferring short stories and writing quickly for money. She drew on her own childhood with three sisters and set the book in an imagined version of Orchard House in Concord, where she wrote it. Roberts Brothers published the first volume in 1868 and the second in 1869, with the first edition illustrated by her sister May. Both did well, and the two were issued as a single novel in 1880. Alcott later added the sequels Little Men and Jo's Boys.",
+ "sources": [
+  {
+   "title": "Little Women (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Little_Women"
+  },
+  {
+   "title": "Louisa May Alcott (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Louisa_May_Alcott"
+  }
+ ],
+ "people": [
+  {
+   "name": "Louisa May Alcott",
+   "role": "author",
+   "note": "Wrote the novel at Orchard House in Concord, loosely based on her three sisters.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Jo March",
+   "role": "character",
+   "note": "The tomboy who writes, in a book loosely based on Alcott and her sisters.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Meg March",
+   "role": "character",
+   "note": "The eldest sister, beautiful and traditional, who is courted by John Brooke.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Beth March",
+   "role": "character",
+   "note": "The shy pianist and peacemaker of the family.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Amy March",
+   "role": "character",
+   "note": "The youngest sister, an artist who longs for fine society; inspired by Alcott's sister May.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Marmee",
+   "role": "character",
+   "note": "The sisters' mother, who leads the family while the father is away at war.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Theodore \"Laurie\" Laurence",
+   "role": "character",
+   "note": "Mr. Laurence's orphaned grandson, who becomes close friends with the sisters, especially Jo.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Thomas Niles",
+   "role": "patron",
+   "note": "Alcott's publisher, who pushed her to write a girls' novel in 1868.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Amos Bronson Alcott",
+   "role": "subject",
+   "note": "Alcott's father, a transcendentalist educator who urged her to write the book.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Concord, Massachusetts",
+   "lat": 42.4604,
+   "lon": -71.3489,
+   "note": "The March neighborhood is loosely based on Concord, where Alcott lived at Orchard House and wrote the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Washington, D.C.",
+   "lat": 38.9072,
+   "lon": -77.0369,
+   "note": "Marmee travels here to nurse Mr. March when he falls ill with pneumonia.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "Alcott's publisher Roberts Brothers brought out the first edition; Alcott died in Boston in 1888.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1832,
+   "label": "Louisa May Alcott is born in Germantown, Pennsylvania.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1868,
+   "label": "Alcott agrees to try a girls' book; Roberts Brothers publishes volume one.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1869,
+   "label": "The second volume appears, called Good Wives in the United Kingdom.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1871,
+   "label": "Alcott follows with the sequel Little Men.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1880,
+   "label": "The two volumes are issued together as a single novel under the title Little Women.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1888,
+   "label": "Alcott dies in Boston.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Domesticity, work and love",
+   "note": "The novel is said to treat domesticity, work and true love as interdependent routes to a woman's identity.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Growing up between girlhood and womanhood",
+   "note": "The title draws on a sense of the period when childhood overlaps with young womanhood.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Realism in everyday family life",
+   "note": "The book depicts the ordinary work, play and quarrels of nineteenth-century women.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Equal marriages",
+   "note": "Alcott gave serious thought to marriages built on equal partnership.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Part I: I",
+   "quote": "Christmas won’t be Christmas without any presents,” grumbled Jo, lying on the rug. “It’s so dreadful to be poor!” sighed Meg, looking down at her old dress.",
+   "why": "The book opens with four sisters grumbling about a poor Christmas."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "Don’t laugh at me, Jo! I didn’t mean anyone should know till the time came. I only meant to change the little bottle for a big one, and I gave all my money to get it, and I’m truly trying not to be selfish any more.”",
+   "why": "Amy's attempt to change, one of the book's small lessons about selfishness."
+  },
+  {
+   "part": 1,
+   "chapter": "VIII",
+   "quote": "I am angry nearly every day of my life, Jo; but I have learned not to show it; and I still hope to learn not to feel it, though it may take me another forty years to do so.”",
+   "why": "Marmee confesses that she too has a temper, which Jo takes to heart."
+  },
+  {
+   "part": 4,
+   "chapter": "XXVII",
+   "quote": "Jo had never tried this style before, contenting herself with very mild romances for the Spread Eagle .",
+   "why": "Jo turns to sensational stories, her route into paid writing."
+  },
+  {
+   "part": 6,
+   "chapter": "XL",
+   "quote": "The Valley of the Shadow When the first bitterness was over, the family accepted the inevitable, and tried to bear it cheerfully, helping one another by the increased affection which comes to bind households tenderly together in times of tr",
+   "why": "Opening of the chapter in which the family faces Beth's illness."
+  },
+  {
+   "part": 6,
+   "chapter": "XLIV",
+   "quote": "I’m not afraid of storms, for I’m learning how to sail my ship.",
+   "why": "Amy's line to her husband in the closing chapters."
+  }
+ ]
+}

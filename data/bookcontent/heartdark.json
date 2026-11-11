@@ -1,0 +1,232 @@
+{
+ "id": "heartdark",
+ "summary": "Heart of Darkness is Joseph Conrad's 1899 novella. On a boat anchored in the Thames, the sailor Charles Marlow tells his friends how he took a job captaining a river steamer for a Belgian ivory company in the African interior. His real errand is to find Kurtz, an agent far upriver who has become a power unto himself. The journey, the stations of the company and the dying workers along the way turn the story into a hard look at European empire and at what it does to the people who run it.",
+ "context": "Conrad was 32 in 1890 when a Belgian trading company hired him to serve on a steamer in the Congo, where he briefly took command of a sick captain's boat. He wrote the novella eight years later, drawing on his travel journals, and it ran in three parts in Blackwood's Magazine in 1899. At the time the Congo Free State was the private colony of Belgium's King Leopold II. Critics have argued about the book ever since, from Chinua Achebe's 1975 attack to praise for its ambiguity. This site's text comes from Standard Ebooks' Conrad short fiction collection.",
+ "sources": [
+  {
+   "title": "Heart of Darkness (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Heart_of_Darkness"
+  },
+  {
+   "title": "Short Fiction by Joseph Conrad (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/joseph-conrad/short-fiction"
+  }
+ ],
+ "people": [
+  {
+   "name": "Joseph Conrad",
+   "role": "author",
+   "note": "Polish-born writer who published in English; in 1890 he served on a Congo steamer, the basis of the story.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Charles Marlow",
+   "role": "narrator",
+   "note": "Sailor who tells the story of his assignment as steamer captain for a Belgian company.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kurtz",
+   "role": "ivory trader",
+   "note": "Agent at a far inner station, the object of Marlow's journey; critics have proposed more than twenty real models.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Georges-Antoine Klein",
+   "role": "possible model for Kurtz",
+   "note": "Agent who fell ill and died aboard Conrad's steamer; some critics see him in Kurtz.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Leopold II of Belgium",
+   "role": "king",
+   "note": "Ruler of the Congo Free State, a private colony, where most of the story is set.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Chinua Achebe",
+   "role": "critic",
+   "note": "Nigerian novelist whose 1975 lecture called the book an offensive and deplorable one that dehumanised Africans.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Orson Welles",
+   "role": "adapter",
+   "note": "Adapted the story for CBS Radio on 6 November 1938, then planned a film version in 1939.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Adam Hochschild",
+   "role": "historian",
+   "note": "Author of King Leopold's Ghost (1998), who discussed how scholars read the novella.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Thames estuary",
+   "lat": 51.45,
+   "lon": 0.35,
+   "note": "The sea-reach of the Thames, where Marlow tells his story aboard the Nellie.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "'The greatest town on earth,' set by Conrad beside Africa as another place of darkness.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Congo River",
+   "lat": -5.85,
+   "lon": 13.05,
+   "note": "The unnamed river up which Marlow's steamer travels.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kindu",
+   "lat": -2.9436,
+   "lon": 25.9222,
+   "note": "The innermost station of Conrad's own 1890 journey, up the Lualaba.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1890,
+   "label": "Conrad, then 32, is appointed to a Belgian company steamer and sails up the Congo.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1899,
+   "label": "The story runs in Blackwood's Magazine in February, March and April, the magazine's 1000th issue marking the first part.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1902,
+   "label": "Published in Youth: A Narrative; and Two Other Stories on 13 November.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1975,
+   "label": "Chinua Achebe gives his lecture on racism in Conrad's novella.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1979,
+   "label": "Francis Ford Coppola's film Apocalypse Now takes the story as its inspiration.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Civilised and savage",
+   "note": "The book argues there is little difference between 'civilised' people and 'savages', and draws parallels between London and Africa.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The cost of empire",
+   "note": "Marlow's account of conquest as taking land from those with a different complexion is the moral heart of the first part.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Kurtz and the abyss",
+   "note": "Kurtz's writing speaks of civilising while ending with a call to exterminate all the brutes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Blank spaces on the map",
+   "note": "A childhood fascination with the empty places drives Marlow toward the river.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Ambiguity and debate",
+   "note": "Harold Bloom ties the novella's heavy analysis to Conrad's gift for ambiguity; Achebe's critics say he confuses Marlow with Conrad.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 4,
+   "chapter": "Heart of Darkness: I",
+   "quote": "The dreams of men, the seed of commonwealths, the germs of empires. The sun set; the dusk fell on the stream, and lights began to appear along the shore. The Chapman lighthouse, a three-legged thing erect on a mudflat, shone strongly.",
+   "why": "The Thames at dusk, ships setting out for the empire the story will question."
+  },
+  {
+   "part": 4,
+   "chapter": "Heart of Darkness: I",
+   "quote": "At that time there were many blank spaces on the earth, and when I saw one that looked particularly inviting on a map (but they all look that) I would put my finger on it and say, ‘When I grow up I will go there.’ The North Pole was one of these places, I remember. Well, I haven’t been there yet, and shall not try now.",
+   "why": "Marlow's boyhood map, the start of the lure of the river."
+  },
+  {
+   "part": 4,
+   "chapter": "Heart of Darkness: I",
+   "quote": "The conquest of the earth, which mostly means the taking it away from those who have a different complexion or slightly flatter noses than ourselves, is not a pretty thing when you look into it too much. What redeems it is the idea only. An idea at the back of it; not a sentimental pretence but an idea;",
+   "why": "The line Marlow's unease keeps returning to: only an idea redeems empire."
+  },
+  {
+   "part": 4,
+   "chapter": "Heart of Darkness: I",
+   "quote": "has been one of the dark places of the earth.” He was the only man of us who still “followed the sea.”",
+   "why": "Marlow's opening remark to his friends about the Thames."
+  },
+  {
+   "part": 5,
+   "chapter": "III",
+   "quote": "The horror! The horror!’ “I blew the candle out and left the cabin.",
+   "why": "Kurtz's last words, whispered as Marlow blows out the candle."
+  },
+  {
+   "part": 5,
+   "chapter": "III",
+   "quote": "Mistah Kurtz⁠—he dead.’ “All the pilgrims rushed out to see. I remained, and went on with my dinner. I believe I was considered brutally callous. However, I did not eat much. There was a lamp in there⁠—light, don’t you know⁠—and outside it was so beastly, beastly dark.",
+   "why": "The news of Kurtz's death, delivered flatly in dialect."
+  }
+ ]
+}

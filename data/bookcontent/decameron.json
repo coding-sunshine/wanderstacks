@@ -1,0 +1,255 @@
+{
+ "summary": "Ten young Florentines, seven women and three men, leave plague-struck Florence for a country villa. To pass the time they agree that each will tell one story a day for ten days, and the book gathers all one hundred tales. A king or queen is chosen each day and sets the theme: fortune, will, unhappy love, happy love, quick replies, tricks played by wives, and generous deeds. The stories run from bawdy jokes to tragedy, and Dioneo is free to pick any topic.",
+ "context": "Boccaccio wrote the book in Florentine vernacular prose, probably between 1348 and 1353, in the shadow of the Black Death. Most of the tales were older than he was, and he gave them his own style. Chaucer drew on it for The Canterbury Tales. The first recorded translation into another language was a Catalan manuscript made at Sant Cugat in 1429. Later writers kept reworking the stories, and the site carries John Payne's English version from the Standard Ebooks edition.",
+ "sources": [
+  {
+   "title": "The Decameron (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Decameron"
+  },
+  {
+   "title": "Giovanni Boccaccio (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Giovanni_Boccaccio"
+  },
+  {
+   "title": "The Decameron, translated by John Payne, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/giovanni-boccaccio/the-decameron/john-payne"
+  }
+ ],
+ "people": [
+  {
+   "name": "Giovanni Boccaccio",
+   "role": "author",
+   "note": "Italian writer and humanist, born in Certaldo in 1313 and dead in 1375.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "John Payne",
+   "role": "translator",
+   "note": "Made the English translation in the Standard Ebooks edition.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Dioneo",
+   "role": "character",
+   "note": "One of the three young men, who is allowed to pick any topic and usually tells the tenth tale of each day.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ser Ciappelletto",
+   "role": "character",
+   "note": "The villain of the first tale, who is mistaken for a saint after his death.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Petrarch",
+   "role": "subject",
+   "note": "Boccaccio's friend and teacher, whose letter version of a tale served as a source for translators.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Dante Alighieri",
+   "role": "subject",
+   "note": "Boccaccio named Dante's Comedy 'Divine' and copied its manuscripts.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Geoffrey Chaucer",
+   "role": "subject",
+   "note": "English poet influenced by the Decameron's tales.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Florence",
+   "lat": 43.7696,
+   "lon": 11.2558,
+   "note": "The city the ten storytellers flee when the Black Death strikes.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Fiesole",
+   "lat": 43.8056,
+   "lon": 11.2937,
+   "note": "The countryside villa where the company shelters and tells its tales.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Certaldo",
+   "lat": 43.5469,
+   "lon": 11.0408,
+   "note": "Boccaccio's birthplace, from which he took the nickname the Certaldese.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Sant Cugat del Valles",
+   "lat": 41.4725,
+   "lon": 2.0856,
+   "note": "Site of the first recorded foreign translation, a Catalan manuscript of 1429.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1313,
+   "label": "Boccaccio is born in Certaldo.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1348,
+   "label": "The Black Death strikes Florence, the setting of the frame story and the likely start of composition.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "year": 1353,
+   "label": "The Decameron is thought to be finished by about this year.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1375,
+   "label": "Boccaccio dies.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1429,
+   "label": "A Catalan manuscript becomes the first recorded translation into another language.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1701,
+   "label": "Apostolo Zeno writes the libretto Griselda, drawn from the last tale.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1971,
+   "label": "G. H. McWilliam publishes a complete English translation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Storytelling against the plague",
+   "note": "The frame story shows ten people choosing order and conversation while death spreads through the city.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "One theme each day",
+   "note": "Each day has a ruler who sets a topic, such as fortune, wit or generosity, which gives the hundred tales a shape.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Vernacular prose as art",
+   "note": "Boccaccio wrote in Florentine, and later critics treated his style as a model of Italian prose.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Everyday life in tales",
+   "note": "The stories give a picture of daily life in fourteenth-century Italy.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Proem",
+   "quote": "A kindly thing it is to have compassion of the afflicted and albeit it well beseemeth everyone, yet of those is it more particularly required who have erst had need of comfort and have found it in any, amongst whom, if ever any had need thereof or held it dear or took pleasure therein aforetimes, certes, I am one of these",
+   "why": "The proem states why Boccaccio wrote."
+  },
+  {
+   "part": 1,
+   "chapter": "Day the First: Day the First Introduction",
+   "quote": "I say, then, that the years [of the era] of the fruitful Incarnation of the Son of God had attained to the number of one thousand three hundred and forty-eight, when into the notable city of Florence, fair over every other of Italy, there came the death-dealing pestilence, which, through the operation of the heavenly bodies or of our own iniquitous dealings, being sent down upon mankind for our co",
+   "why": "The plague arrives in Florence and the frame begins."
+  },
+  {
+   "part": 1,
+   "chapter": "The First Story",
+   "quote": "“It is a seemly thing, dearest ladies, that whatsoever a man doth, he give it beginning from the holy and admirable name of Him who is the maker of all things",
+   "why": "The first tale begins."
+  },
+  {
+   "part": 2,
+   "chapter": "The Fifth Story",
+   "quote": "There was once in Perugia, as I have heard tell aforetime, a young man, a horse-courser, by name Andreuccio di Pietro, who, hearing that horses were good cheap at Naples, put five hundred gold florins in his purse and betook himself thither with other merchants, having never before been away from home",
+   "why": "The start of the Andreuccio story."
+  },
+  {
+   "part": 3,
+   "chapter": "Day the Third: Day the Third Introduction",
+   "quote": "The dawn from vermeil began to grow orange-tawny, at the approach of the sun, when on the Sunday the queen arose and caused all her company rise also",
+   "why": "A day's frame, away from the stories."
+  },
+  {
+   "part": 4,
+   "chapter": "Day the Fourth: Day the Fourth Introduction",
+   "quote": "Dearest ladies, as well by words of wise men heard as by things many a time both seen and read of myself, I had conceived that the boisterous and burning blast of envy was apt to smite none but lofty towers or the highest summits of the trees; but I find myself mistaken in my conceit, for that, fleeing, as I have still studied to flee, from the cruel onslaught of that raging wind, I have striven t",
+   "why": "Boccaccio's voice on envy and criticism."
+  },
+  {
+   "part": 5,
+   "chapter": "The Eighth Story",
+   "quote": "“There are some, noble ladies, who believe themselves to know more than other folk, albeit, to my thinking, they know less, and who, by reason thereof, presume to oppose their judgment not only to the counsels of men, but even to set it up against the very nature of things; of which presumption very grave ills have befallen aforetime, nor ever was any good known to come thereof",
+   "why": "A storyteller opens the tale of Girolamo and Salvestra."
+  },
+  {
+   "part": 10,
+   "chapter": "Conclusion of the Author",
+   "quote": "Most noble damsels, for whose solace I have addressed myself to so long a labour, I have now, methinketh, with the aid of the Divine favour, (vouchsafed me, as I deem, for your pious prayers and not for my proper merits), throughly accomplished that which I engaged, at the beginning of this present work, to do; wherefore, returning thanks first to God and after to you, it behoveth to give rest to ",
+   "why": "The author's own conclusion to the book."
+  }
+ ],
+ "id": "decameron"
+}

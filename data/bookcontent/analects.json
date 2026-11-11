@@ -1,0 +1,204 @@
+{
+ "summary": "The Analects is a collection of short sayings and conversations of Confucius and his disciples, in twenty books. The Master talks about learning, filial piety, ritual, the conduct of rulers and the gentleman, and answers pupils who ask what virtue and knowledge are. There is no plot. The book reads as a set of remarks on how to cultivate oneself so that a family and a state can be governed well, from the saying that learning is a pleasure to his account of his own growth from fifteen to seventy.",
+ "context": "Tradition says disciples kept records of what Confucius said and, after his death in 479 BCE, edited them together. Scholars hold that much of the text came together in the Warring States period, between 475 and 221 BCE, and took its final form under the Han dynasty. By the Song dynasty it ranked as one of the Four Books. Han sources record Lu, Qi and an Old Text version found in a wall of Confucius's home. The text has been widely read in China for over two thousand years. The site carries James Legge's English translation.",
+ "sources": [
+  {
+   "title": "Analects (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Analects"
+  },
+  {
+   "title": "Confucius (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Confucius"
+  },
+  {
+   "title": "Analects, translated by James Legge (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/confucius/analects/james-legge"
+  },
+  {
+   "title": "Qufu (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Qufu"
+  }
+ ],
+ "people": [
+  {
+   "name": "Confucius",
+   "role": "subject",
+   "note": "Chinese philosopher, c. 551 to c. 479 BCE, whose sayings the book records.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Confucius's disciples",
+   "role": "scribe",
+   "note": "Followers who traditionally kept records of the Master's conversations and edited them after his death.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "James Legge",
+   "role": "translator",
+   "note": "Translator whose English text the site carries.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Ban Gu",
+   "role": "scribe",
+   "note": "Han dynasty writer whose Book of Han gives the traditional account of how the text arose.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Liu Xiang",
+   "role": "scribe",
+   "note": "Han dynasty scholar who reports two versions, Lu and Qi, at the start of the Han.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Zhu Xi",
+   "role": "scribe",
+   "note": "Song dynasty neo-Confucian who held the Analects to be records of first and second generation pupils.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cui Shu",
+   "role": "scribe",
+   "note": "Qing dynasty philologist who argued from language that the last five books are later than the rest.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Qufu",
+   "lat": 35.5967,
+   "lon": 116.9865,
+   "note": "Capital of Lu and birthplace of Confucius, now home to the Temple, Cemetery and Family Mansion of Confucius.",
+   "s": [
+    3
+   ]
+  },
+  {
+   "name": "Zoucheng",
+   "lat": 35.4,
+   "lon": 116.97,
+   "note": "Birthplace of Mencius, tied with Qufu in the name Zoulu for the home of Confucian learning.",
+   "s": [
+    3
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -479,
+   "label": "Confucius dies; disciples later gather their records of his conversations.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -475,
+   "label": "Start of the Warring States period, when most of the text is thought to have been composed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -150,
+   "label": "In the reign of Emperor Jing of Han an Old Text version is found hidden in a wall of a house believed to be Confucius's.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 220,
+   "label": "End of the Han dynasty, by which time the Analects has become a central Confucian text.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1279,
+   "label": "By the end of the Song dynasty the Analects ranks among the Four Books above the older Five Classics.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Learning as pleasure",
+   "note": "The opening saying asks whether it is not pleasant to learn with constant application.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Ren and filial piety",
+   "note": "Virtue starts with devotion to parents and elders, which the book calls the root of benevolent actions.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Ritual and propriety",
+   "note": "Li, ritual and proper forms, lets people reconcile their desires with respect for others.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Rule by virtue",
+   "note": "A ruler's virtue, de, is his main qualification for leading.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "The Master said, “Is it not pleasant to learn with a constant perseverance and application? “Is it not delightful to have friends coming from distant quarters",
+   "why": "The opening saying of the book, on learning, friends and calm."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "The superior man bends his attention to what is radical. That being established, all practical courses naturally grow up. Filial piety and fraternal submission",
+   "why": "Why filial piety is called the root of benevolent action."
+  },
+  {
+   "part": 1,
+   "chapter": "IV",
+   "quote": "The Master said, “At fifteen, I had my mind bent on learning. “At thirty, I stood firm. “At forty, I had no doubts. “At fifty, I knew the decrees of Heaven. “At sixty, my ear was an obedient organ for the reception of truth",
+   "why": "Confucius sums up his own life in stages."
+  },
+  {
+   "part": 1,
+   "chapter": "XVII",
+   "quote": "Yû, shall I teach you what knowledge is? When you know a thing, to hold that you know it; and when you do not know a thing, to allow that you do not know it;⁠—this is knowledge",
+   "why": "A short definition of knowledge as knowing what you do and do not know."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "not to do to others as you would not wish done to yourself; to have no murmuring against you in the country, and none in the family",
+   "why": "The negative form of the Golden Rule as the Master gives it to a pupil."
+  }
+ ],
+ "id": "analects"
+}

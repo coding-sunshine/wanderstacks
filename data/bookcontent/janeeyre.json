@@ -1,0 +1,214 @@
+{
+ "id": "janeeyre",
+ "summary": "Jane Eyre, an orphan, is raised unkindly by her aunt at Gateshead and sent to Lowood, a harsh charity school where she loses her friend Helen Burns. She becomes a governess at Thornfield Hall and falls in love with her moody employer, Edward Rochester. On their wedding day she learns he already has a wife, who is locked in the attic. Jane flees, nearly starves, and is taken in at Moor House by the clergyman St John Rivers and his sisters. When a mysterious call reaches her, she returns to Thornfield and finds Rochester blind and free.",
+ "context": "Charlotte Bronte published Jane Eyre as 'Currer Bell' through Smith, Elder & Co. of London on 19 October 1847. It was a success at once. Critics noted its first-person voice, which follows Jane's moral and spiritual growth from the inside. Lowood was drawn from the Clergy Daughters' School at Cowan Bridge, where Bronte's two elder sisters fell ill and died. The book touches class, religion, sexuality and the limits placed on women, and the BBC's Big Read poll of 2003 ranked it tenth among Britain's best-loved books.",
+ "sources": [
+  {
+   "title": "Jane Eyre (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Jane_Eyre"
+  },
+  {
+   "title": "Charlotte Bronte (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Charlotte_Bront%C3%AB"
+  },
+  {
+   "title": "Jane Eyre by Charlotte Bronte (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/charlotte-bronte/jane-eyre"
+  }
+ ],
+ "people": [
+  {
+   "name": "Charlotte Bronte",
+   "role": "author",
+   "note": "Born 1816, eldest surviving of the Bronte sisters; she published under the name Currer Bell.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Jane Eyre",
+   "role": "character",
+   "note": "The orphan narrator, who grows from a mistreated child to an independent woman.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Edward Rochester",
+   "role": "character",
+   "note": "Master of Thornfield Hall, whose secret marriage nearly ruins Jane's life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "St John Rivers",
+   "role": "character",
+   "note": "Earnest, cold clergyman and Jane's cousin, who proposes to her.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Helen Burns",
+   "role": "character",
+   "note": "Jane's friend at Lowood, who bears injustice with patience.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mrs Reed",
+   "role": "character",
+   "note": "Jane's aunt, who abuses her at Gateshead Hall.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Smith, Elder & Co.",
+   "role": "printer",
+   "note": "London firm that published the novel in October 1847.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Cowan Bridge, Lancashire",
+   "lat": 54.2051,
+   "lon": -2.578,
+   "note": "Site of the Clergy Daughters' School that Bronte used as the model for Lowood.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Mirfield (Roe Head)",
+   "lat": 53.673,
+   "lon": -1.69,
+   "note": "Where Bronte attended school in 1831 and taught from 1835.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Brussels",
+   "lat": 50.8503,
+   "lon": 4.3517,
+   "note": "Bronte studied and taught at the Heger Pensionnat here from 1842.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Home of Smith, Elder & Co., first publisher of the book.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1816,
+   "label": "Charlotte Bronte is born on 21 April.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1842,
+   "label": "Bronte joins the Heger Pensionnat in Brussels.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1847,
+   "label": "Jane Eyre appears as 'Currer Bell' on 19 October, in three volumes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1848,
+   "label": "First American edition from Harper & Brothers, January.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1855,
+   "label": "Bronte dies on 31 March, aged 38.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Independence and equality",
+   "note": "Jane insists on being treated as a free human being, whatever her rank or looks.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Inner life told in first person",
+   "note": "The book was among the first to centre on one person's moral and spiritual development.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Duty against passion",
+   "note": "Rochester offers love without honesty and St John offers duty without love; Jane refuses both on those terms.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Class and the governess",
+   "note": "Jane's position as a poor, educated woman shows how fragile and constrained such lives were.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "There was no possibility of taking a walk that day.",
+   "why": "The plain opening line, setting a restless, confined child."
+  },
+  {
+   "part": 4,
+   "chapter": "XXIII",
+   "quote": "Do you think, because I am poor, obscure, plain, and little, I am soulless and heartless? You think wrong!⁠—I have as much soul as you⁠—and full as much heart!",
+   "why": "Jane's outburst against Rochester's assumption that she can be kept or dismissed."
+  },
+  {
+   "part": 4,
+   "chapter": "XXIII",
+   "quote": "I am no bird; and no net ensnares me; I am a free human being with an independent will, which I now exert to leave you.",
+   "why": "Her declaration of independence, stated plainly."
+  },
+  {
+   "part": 6,
+   "chapter": "XXXIV",
+   "quote": "I would always rather be happy than dignified",
+   "why": "Jane chooses warmth over St John's cold propriety."
+  },
+  {
+   "part": 7,
+   "chapter": "XXXVIII",
+   "quote": "Reader, I married him. A quiet wedding we had: he and I, the parson and clerk, were alone present.",
+   "why": "The famous direct address that opens the ending."
+  }
+ ]
+}

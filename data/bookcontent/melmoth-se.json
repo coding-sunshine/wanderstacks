@@ -1,0 +1,257 @@
+{
+ "id": "melmoth-se",
+ "summary": "John Melmoth, a Dublin student, finds the portrait of an ancestor who sold his soul for 150 extra years of life and now roams the world looking for someone to take over the pact. The book is a set of stories nested inside one another. A Spaniard, Alonzo Monçada, tells of a monastery and the Inquisition, then a manuscript tells of Immalee, a castaway girl on an Indian Ocean island whom Melmoth tries to corrupt. No one he approaches will trade places with him, however desperate they are.",
+ "context": "Charles Maturin, an Irish clergyman of the Church of Ireland, published the novel in 1820. He was under pressure from his publisher to meet a contract, which helps explain its uneven, story-by-story shape. He did much of his reading in Marsh's Library in Dublin, near his home on York Street, and built himself a desk there. The book denounces Roman Catholicism in favour of Protestantism and offers comment on England of its day. A French translation appeared in 1821, and Balzac, Baudelaire and Poe admired it. Oscar Wilde, a relation by marriage, later took the name Melmoth in exile.",
+ "sources": [
+  {
+   "title": "Melmoth the Wanderer (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Melmoth_the_Wanderer"
+  },
+  {
+   "title": "Charles Maturin (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Charles_Maturin"
+  }
+ ],
+ "people": [
+  {
+   "name": "Charles Maturin",
+   "role": "author",
+   "note": "Irish Protestant clergyman and Gothic writer, 1780 to 1824.",
+   "s": [
+    1,
+    0
+   ]
+  },
+  {
+   "name": "John Melmoth",
+   "role": "character",
+   "note": "Dublin student who inherits the portrait and the family story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Melmoth the Wanderer",
+   "role": "character",
+   "note": "Scholar who traded his soul for 150 extra years of life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alonzo Monçada",
+   "role": "character",
+   "note": "Spaniard confined to a monastery who escapes the Inquisition and tells his tale.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Immalee / Isidora",
+   "role": "character",
+   "note": "Castaway raised alone on an island, later restored to her family in Madrid.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Stanton",
+   "role": "character",
+   "note": "Man whose manuscript describes his search for Melmoth, and who is sent to a madhouse.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Oscar Wilde",
+   "role": "relation",
+   "note": "Great-nephew by marriage of Maturin, who took the name Melmoth in exile in France.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Honore de Balzac",
+   "role": "reader",
+   "note": "Wrote the parody Melmoth Reconcilie in 1835.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Dublin",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "note": "Home of Maturin and of the Melmoth family in the story.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Marsh's Library, Dublin",
+   "lat": 53.3395,
+   "lon": -6.2713,
+   "note": "Ireland's first public library, opened in 1707, where Maturin researched the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Madrid",
+   "lat": 40.4168,
+   "lon": -3.7038,
+   "note": "Where Immalee, now Isidora, is restored to her family.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Loughrea",
+   "lat": 53.1983,
+   "lon": -8.5667,
+   "note": "In County Galway, where Maturin was ordained curate in 1803.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Yorkshire",
+   "lat": 53.96,
+   "lon": -1.08,
+   "note": "Home of Elinor in the Lovers' Tale.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1646,
+   "label": "The date on the portrait of the first Melmoth.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1780,
+   "label": "Maturin is born in Dublin on 25 September.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1803,
+   "label": "Maturin is ordained curate of Loughrea.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1820,
+   "label": "Melmoth the Wanderer is published.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1821,
+   "label": "A French translation appears.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1824,
+   "label": "Maturin dies in Dublin on 30 October.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1835,
+   "label": "Balzac writes the parody Melmoth Reconcilie.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Stories within stories",
+   "note": "The novel is built from nested tales that slowly reveal Melmoth's life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The bargain of the soul",
+   "note": "Melmoth seeks someone who will take over his pact, in the manner of the Wandering Jew.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Innocence tested",
+   "note": "Melmoth shows Immalee the failings of human societies and religions.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Convent and Inquisition",
+   "note": "Monçada's tale presents monastic life and the Inquisition as cruelty.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Anti-Catholic polemic",
+   "note": "The book denounces Roman Catholicism in favour of the virtues of Protestantism.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "I am a very poor man. I never troubled a clergyman before, and all I want is, that you will grant me two trifling requests, very little matters in your way⁠—save my soul, and (whispering) make interest to get me a parish coffin⁠—I have not enough left to bury me.",
+   "why": "A dying man's plain request to a clergyman, early in the book."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "laugh so loud, wild, and protracted, that the peasants, starting with as much horror at the sound as at that of the storm, hurried away, bearing the corse with them.",
+   "why": "Melmoth's laugh frightens the peasants."
+  },
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "Inquisition. I defended myself, by trying to point out to my friend, that I had made the misery of conventual life depend less on the startling adventures one meets with in romances, than on that irritating series of petty torments which constitutes the misery of life in general, and which, amid the tideless stagnation of monastic existence, solitude gives its inmates leisure t",
+   "why": "Maturin explains in his preface that he took small daily torments as the real misery of convent life."
+  },
+  {
+   "part": 5,
+   "chapter": "XV",
+   "quote": "Immalee, for that was the name her votarists had given her, was standing on the shore, when a being approached her unlike any she had ever beheld.",
+   "why": "Immalee on the shore sees Melmoth for the first time."
+  },
+  {
+   "part": 5,
+   "chapter": "XV",
+   "quote": "world that suffers,’ from which you came; and I believe you came from it, for, till I saw you, I never felt a pain that was not pleasure; but now, it is all pain when I think you will not return.”",
+   "why": "Immalee tells Melmoth that she feels pain only since he came."
+  },
+  {
+   "part": 9,
+   "chapter": "XXXVIII",
+   "quote": "I have traversed the world in the search, and no one, to gain that world, would lose his own soul!",
+   "why": "Melmoth's failure: no one will lose his soul to gain the world."
+  }
+ ]
+}

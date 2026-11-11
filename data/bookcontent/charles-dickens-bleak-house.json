@@ -1,0 +1,255 @@
+{
+ "summary": "A long inheritance case in the Court of Chancery, Jarndyce and Jarndyce, hangs over a large London cast. Esther Summerson, an orphan who tells part of the story herself, is brought up by her harsh godmother and later moves into the home of John Jarndyce. The rest is told by an omniscient narrator in the present tense. Lady Dedlock has a secret past, the lawyer Mr Tulkinghorn tries to dig it out, and Inspector Bucket investigates. The truth about Esther's parentage comes out as the lawsuit consumes those who depend on it.",
+ "context": "Dickens published Bleak House in twenty monthly parts from March 1852 to September 1853, issued by Bradbury and Evans with two illustrations by Hablot Knight Browne, called Phiz, in each. His preface said real cases lay behind Jarndyce and Jarndyce, and the novel supported a judicial reform movement that led to legal reform in the 1870s. It is credited with bringing urban fog into the novel. The site carries the Standard Ebooks edition of the public-domain text. Burt's ranking of the greatest novels places it twelfth.",
+ "sources": [
+  {
+   "title": "Bleak House (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Bleak_House"
+  },
+  {
+   "title": "Charles Dickens (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Charles_Dickens"
+  },
+  {
+   "title": "Bleak House, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/charles-dickens/bleak-house"
+  }
+ ],
+ "people": [
+  {
+   "name": "Charles Dickens",
+   "role": "author",
+   "note": "English writer who serialised the novel between 1852 and 1853 and lived 1812 to 1870.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Esther Summerson",
+   "role": "character",
+   "note": "The heroine and Dickens's only female narrator, raised as an orphan by her aunt, who is also her godmother.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lady Dedlock",
+   "role": "character",
+   "note": "The haughty mistress of Chesney Wold, who is secretly Esther's mother.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mr Tulkinghorn",
+   "role": "character",
+   "note": "The family lawyer who pries into Lady Dedlock's secret.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Captain Hawdon (Nemo)",
+   "role": "character",
+   "note": "A law-writer who lodges at Krook's shop, found to be Esther's father.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Jarndyce",
+   "role": "character",
+   "note": "A party to the Chancery suit who hires Charley as a maid to Esther.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Hablot Knight Browne (Phiz)",
+   "role": "subject",
+   "note": "The illustrator of the monthly instalments.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Bradbury & Evans",
+   "role": "printer",
+   "note": "The publisher of the serial and the book.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "The novel depicts London as a fogbound Gothic city, centred on the Court of Chancery.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Broadstairs, Kent",
+   "lat": 51.359,
+   "lon": 1.433,
+   "note": "A house here, where Dickens stayed with his family, has been called Bleak House.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "St Albans, Hertfordshire",
+   "lat": 51.755,
+   "lon": -0.336,
+   "note": "Dickens set the fictional Bleak House here and wrote part of the book here.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Leek, Staffordshire",
+   "lat": 53.1035,
+   "lon": -2.023,
+   "note": "Thomas Cook of Onecote, near Leek, was the real case behind the Chancery suitor Gridley.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1797,
+   "label": "The will in Thellusson v Woodford, a likely model for Jarndyce and Jarndyce, is read.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1849,
+   "label": "Thomas Cook's Chancery case is brought to Dickens's attention.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1852,
+   "label": "Bleak House begins as a 20-part serial on 12 March.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1853,
+   "label": "The serial ends on 12 September and the novel appears as a book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1859,
+   "label": "The real Thellusson case is finally settled.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1870,
+   "label": "Dickens dies on 9 June.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1901,
+   "label": "The Death of Poor Joe, the earliest filmed Dickens adaptation, is released.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Law as a destructive machine",
+   "note": "The endless Chancery case shows courts consuming the people who depend on them, and helped support legal reform.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Two narrators",
+   "note": "A modest first-person Esther runs alongside a dispassionate third-person narrator in the present tense.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Fog as urban Gothic",
+   "note": "London is shown as a murky city wrapped in fog, a device later common in urban Gothic.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Secrets and hidden parentage",
+   "note": "Lady Dedlock's hidden past and Esther's parentage drive much of the plot.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Fog everywhere. Fog up the river, where it flows among green aits and meadows; fog down the river, where it rolls defiled among the tiers of shipping and the waterside pollutions of a great (and dirty) city",
+   "why": "The fog opening that ties the city and the Court of Chancery together."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "I have a great deal of difficulty in beginning to write my portion of these pages, for I know I am not clever",
+   "why": "Esther's modest first words as narrator."
+  },
+  {
+   "part": 2,
+   "chapter": "VII",
+   "quote": "While Esther sleeps, and while Esther wakes, it is still wet weather down at the place in Lincolnshire",
+   "why": "The omniscient narrator turns to the rain on the Ghost's Walk at Chesney Wold."
+  },
+  {
+   "part": 4,
+   "chapter": "XVI",
+   "quote": "My Lady Dedlock is restless, very restless. The astonished fashionable intelligence hardly knows where to have her",
+   "why": "A look at Lady Dedlock in the present-tense narration."
+  },
+  {
+   "part": 5,
+   "chapter": "XXII",
+   "quote": "Allegory looks pretty cool in Lincoln’s Inn Fields, though the evening is hot, for both Mr",
+   "why": "Mr Tulkinghorn's rooms, as Inspector Bucket arrives."
+  },
+  {
+   "part": 9,
+   "chapter": "XL",
+   "quote": "England has been in a dreadful state for some weeks. Lord Coodle would go out, Sir Thomas Doodle wouldn’t come in, and there being nobody in Great Britain (to speak of) except Coodle and Doodle, there has been no government",
+   "why": "Dickens satirises politicians through Coodle and Doodle."
+  },
+  {
+   "part": 10,
+   "chapter": "XLVII",
+   "quote": "Dead! Dead, your Majesty. Dead, my lords and gentlemen. Dead, right reverends and wrong reverends of every order",
+   "why": "The narrator addresses the powerful over the body of the poor boy Jo."
+  },
+  {
+   "part": 13,
+   "chapter": "LXVII",
+   "quote": "Full seven happy years I have been the mistress of Bleak House. The few words that I have to add to what I have written are soon penned; then I and the unknown friend to whom I write will part for ever",
+   "why": "The opening of Esther's closing chapter."
+  }
+ ],
+ "id": "charles-dickens-bleak-house"
+}

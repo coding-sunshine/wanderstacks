@@ -1,0 +1,201 @@
+{
+ "id": "modest-proposal",
+ "summary": "Swift's narrator, a calm and reasonable projector, describes the sight of beggar women crowded with ragged children in the streets of Dublin and the countryside. After careful calculation, he proposes that the poor sell their one-year-old children as food to the rich, and he lists recipes, prices and benefits. The tone never wavers. Near the end he sets aside, by saying he will not mention them, the real remedies: taxing absentee landlords, buying Irish goods, loving one's country, and showing landlords mercy toward their tenants.",
+ "context": "Jonathan Swift, an Anglo-Irish clergyman and dean of St Patrick's Cathedral in Dublin, published the essay in 1729. It is one of the best-known cases of sustained irony in English and a leading example of Juvenalian satire. The narrator's jokes mock the economic arithmetic associated with William Petty and the followers of Francis Bacon. Critics disagree about Swift's target, with readings that point to mercantilism, to tax law passed by the Irish Parliament, or to the Irish upper class's support of British rule. Since the mid-20th century, scholars have also examined Swift's own often hostile views of the Irish poor.",
+ "sources": [
+  {
+   "title": "A Modest Proposal (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/A_Modest_Proposal"
+  },
+  {
+   "title": "Jonathan Swift (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Jonathan_Swift"
+  }
+ ],
+ "people": [
+  {
+   "name": "Jonathan Swift",
+   "role": "author",
+   "note": "Anglo-Irish satirist and Anglican cleric, 1667 to 1745, dean of St Patrick's Cathedral from 1713.",
+   "s": [
+    1,
+    0
+   ]
+  },
+  {
+   "name": "William Petty",
+   "role": "target",
+   "note": "Economist whose style of social arithmetic the essay lampoons.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Francis Bacon",
+   "role": "target",
+   "note": "His followers' social engineering is lampooned along with Petty's.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Psalmanazar",
+   "role": "reference",
+   "note": "Imposter who claimed to come from Formosa; cited in the essay as an authority.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The narrator",
+   "role": "persona",
+   "note": "A deadpan projector who proposes selling children as food.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Dublin",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "note": "The town where the narrator sees beggars, and where Swift was dean of St Patrick's.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Where the narrator's \"very knowing American\" acquaintance lives.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Trim, County Meath",
+   "lat": 53.555,
+   "lon": -6.79,
+   "note": "Swift moved here in 1700, when many of his major works were written.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1667,
+   "label": "Swift is born on 30 November.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1713,
+   "label": "He is appointed dean of St Patrick's Cathedral, Dublin.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1726,
+   "label": "Gulliver's Travels is published.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1729,
+   "label": "A Modest Proposal is published.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1745,
+   "label": "Swift dies on 19 October.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Sustained irony",
+   "note": "The essay is widely held to be among the greatest examples of sustained irony in English.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Satire of calculation",
+   "note": "It lampoons social arithmetic and projects for social engineering.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Apophasis",
+   "note": "The real reforms are named by saying that no one should talk of them.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Poverty and dehumanisation",
+   "note": "The essay explores social injustice, poverty and class dehumanisation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A debated target",
+   "note": "Critics argue over what Swift meant to criticise, and some challenge the satire label.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "by Dr. Jonathan Swift: 1729",
+   "quote": "It is a melancholy object to those, who walk through this great town, or travel in the country, when they see the streets, the roads, and cabbin-doors crowded with beggars of the female sex, followed by three, four, or six children, all in rags, and importuning every passenger for an alms.",
+   "why": "The opening image of the beggars, plain and unironic."
+  },
+  {
+   "part": 1,
+   "chapter": "by Dr. Jonathan Swift: 1729",
+   "quote": "I think it is agreed by all parties, that this prodigious number of children in the arms, or on the backs, or at the heels of their mothers, and frequently of their fathers, is in the present deplorable state of the kingdom, a very great additional grievance; and therefore whoever could find out a fair, cheap and easy method of making these children sound and useful members of the common",
+   "why": "The projector frames the poor's children as a grievance to be solved."
+  },
+  {
+   "part": 1,
+   "chapter": "by Dr. Jonathan Swift: 1729",
+   "quote": "As to my own part, having turned my thoughts for many years upon this important subject, and maturely weighed the several schemes of our projectors, I have always found them grossly mistaken in their computation.",
+   "why": "The narrator introduces himself as a careful reasoner."
+  },
+  {
+   "part": 1,
+   "chapter": "by Dr. Jonathan Swift: 1729",
+   "quote": "I have been assured by a very knowing American of my acquaintance in London, that a young healthy child well nursed, is, at a year old, a most delicious nourishing and wholesome food, whether stewed, roasted, baked, or boiled; and I make no doubt that it will equally serve in a fricasee, or a ragous",
+   "why": "The proposal itself, set in a reference to an American acquaintance."
+  },
+  {
+   "part": 1,
+   "chapter": "by Dr. Jonathan Swift: 1729",
+   "quote": "I grant this food will be somewhat dear, and therefore very proper for landlords, who, as they have already devoured most of the parents, seem to have the best title to the children.",
+   "why": "The joke about landlords turns the satire on the rich."
+  },
+  {
+   "part": 1,
+   "chapter": "by Dr. Jonathan Swift: 1729",
+   "quote": "Dublin, shambles may be appointed for this purpose, in the most convenient parts of it, and butchers we may be assured will not be wanting; although I rather recommend buying the children alive, and dressing them hot from the knife, as we do roasting pigs.",
+   "why": "Practical suggestions for slaughter, delivered in a business tone."
+  }
+ ]
+}

@@ -1,0 +1,239 @@
+{
+ "id": "galileo",
+ "summary": "A short pamphlet in which Galileo reports what he saw when he turned a telescope he had improved on the sky in 1609 and early 1610. He describes a Moon with mountains and valleys, far more stars than the eye can see, a Milky Way made of faint stars, and four small bodies that change position beside Jupiter night after night and so must circle it. He names them the Medicean Stars for the Medici. The translation here adds Kepler's reply and a note on the later history of the book.",
+ "context": "Galileo was a mathematics professor at Padua in the service of Venice when he heard of the Dutch spyglass in 1609 and built better ones. He rushed the results into print in Latin, dated from Padua in March 1610, and dedicated them to Cosimo II de' Medici in hope of a post at Florence. It was the first published scientific work based on telescope observations, and the Jupiter moons gave support to the Copernican system. Edward Stafford Carlos translated it after finding the 1653 London printing in a school library at Christ's Hospital.",
+ "sources": [
+  {
+   "title": "Sidereus Nuncius (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Sidereus_Nuncius"
+  },
+  {
+   "title": "The sidereal messenger of Galileo Galilei (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/46036"
+  }
+ ],
+ "people": [
+  {
+   "name": "Galileo Galilei",
+   "role": "author",
+   "note": "Mathematician at Padua who built the telescope used for these observations and published the results in March 1610.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Cosimo II de' Medici",
+   "role": "patron",
+   "note": "Grand Duke of Tuscany and Galileo's former pupil, to whom the book is dedicated; the Jupiter moons are named after his family.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Johannes Kepler",
+   "role": "subject",
+   "note": "Astronomer who answered the book with a Discussion in 1610 and supported its findings, although he had no telescope to check them.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Edward Stafford Carlos",
+   "role": "translator",
+   "note": "Translated the Latin into English after finding the 1653 London volume among old books at Christ's Hospital.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Hans Lippershey",
+   "role": "subject",
+   "note": "Middelburg spectacle-maker who tried to patent the telescope in the Netherlands in 1608.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Giuliano de' Medici",
+   "role": "subject",
+   "note": "Tuscan ambassador at the court of Emperor Rudolph II who carried Galileo's invitation to Kepler to correspond.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Padua",
+   "lat": 45.4064,
+   "lon": 11.8768,
+   "note": "Galileo was professor of mathematics here, and the dedication is dated from Padua on 12 March 1610.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Venice",
+   "lat": 45.4408,
+   "lon": 12.3155,
+   "note": "The Venetian Republic employed Galileo, and the first printing of Sidereus Nuncius appeared here in 1610.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Middelburg",
+   "lat": 51.4988,
+   "lon": 3.611,
+   "note": "Home of the spectacle-maker Hans Lippershey, whose 1608 patent attempt marks the first telescopes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Florence",
+   "lat": 43.7696,
+   "lon": 11.2558,
+   "note": "Galileo wanted to return here under Medici patronage, and Kepler's Discussion was printed here in 1610.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Prague",
+   "lat": 50.0755,
+   "lon": 14.4378,
+   "note": "Kepler published his work on Mars here and heard of Galileo's discoveries while at Rudolph II's court.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "The Latin text was reprinted here in 1653, the copy Carlos later found and translated.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1608,
+   "label": "Hans Lippershey tries to patent the telescope in the Netherlands.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1609,
+   "label": "Galileo learns of the invention and builds improved telescopes.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1610,
+   "label": "Sidereus Nuncius is published on 13 March; Kepler answers it later in the year.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1611,
+   "label": "Kepler's Narrative reports observations that confirm Galileo's, and his Dioptrics preface discusses the telescope.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1653,
+   "label": "Carlos later found this London volume at Christ's Hospital and translated Galileo's text from it, which is the edition on this site.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "A rough, mountainous Moon",
+   "note": "Galileo reads the jagged terminator as proof that the Moon has mountains and valleys, and judges the peaks to be at least four miles high.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "More stars than the eye sees",
+   "note": "Through the telescope he counts far more stars in Orion and the Pleiades, and concludes that the Milky Way and nebulae are masses of tiny stars.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Moons around Jupiter",
+   "note": "Four points of light shifting along a line beside Jupiter persuade him they orbit it, a model for the Copernican system.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Patronage in the naming",
+   "note": "Calling the moons the Medicean Stars won Galileo a Medici post, though the name did not last.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Others must repeat the sight",
+   "note": "Doubters blamed lens defects, so the announcement pushed astronomers toward independent reproduction of observations.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "PREFATORY NOTE.",
+   "quote": "About five years ago I was engaged in preparing a catalogue of the ancient books which belong to Christ’s Hospital.",
+   "why": "The translator explains how a school library copy of the 1653 printing led to this English version."
+  },
+  {
+   "part": 1,
+   "chapter": "THE ASTRONOMICAL MESSENGER",
+   "quote": "IN the present small treatise I set forth some matters of great interest for all observers of natural phenomena to look at and consider. They are of great Introduction.interest, I think, first, from their intrinsic excellence; secondly, from their absolute novelty;",
+   "why": "Galileo's own statement of what is new: the Moon, the fixed stars, the Milky Way and four unseen planets."
+  },
+  {
+   "part": 1,
+   "chapter": "THE ASTRONOMICAL MESSENGER",
+   "quote": "Let me speak first of the surface of the Moon, which is turned towards us. For the sake of being[15] understood more easily, I distinguish two parts in it, which I call respectively the brighter and the darker. The brighter part seems to surround and pervade the whole hemisphere;",
+   "why": "The start of the lunar observations, where he separates the brighter and darker parts of the face."
+  },
+  {
+   "part": 1,
+   "chapter": "THE ASTRONOMICAL MESSENGER",
+   "quote": "But beyond the stars of the sixth magnitude you will behold through the telescope a host of other stars, [41]which escape the unassisted sight, so numerous as to be almost beyond belief, for you may see more than six other differences of magnitude, and the largest of these, which I may call stars of the seventh magnitude, or of ",
+   "why": "How the telescope shows a host of faint stars the unaided eye misses."
+  },
+  {
+   "part": 1,
+   "chapter": "THE ASTRONOMICAL MESSENGER",
+   "quote": "I therefore concluded, and decided unhesitatingly, that there are three stars in the heavens moving about Jupiter, as Venus and Mercury round the Sun; which at length was established as clear as daylight by numerous other subsequent observations.",
+   "why": "The reasoning that turns shifting points of light into satellites of Jupiter."
+  },
+  {
+   "part": 1,
+   "chapter": "Extract from the Preface of Kepler’s Dioptrics. Augsburg, 1611.",
+   "quote": "Actual sight testified that there is a certain bright heavenly body which we call the Moon. It was demonstrated from the laws of optics that this body is round; also Astronomy, by[80] some arguments founded upon optics, had built up the conclusion that its distance from the earth is about sixty semi-diameters of the earth.",
+   "why": "Kepler's reply: what sight, optics and astronomy had told people about the Moon before the telescope."
+  }
+ ]
+}

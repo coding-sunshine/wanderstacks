@@ -1,0 +1,186 @@
+{
+ "id": "vicar-se",
+ "summary": "The Vicar of Wakefield is Oliver Goldsmith's novel about Dr Charles Primrose, a kind and vain country clergyman, and his large family. The Primroses lose their fortune, move to land held by Squire Thornhill, and suffer fire, a daughter's fall and the vicar's jail term. A mysterious Mr Burchell turns out to be Sir William Thornhill. The vicar's patient faith carries the family to a late, happy ending.",
+ "context": "Goldsmith wrote it in 1761 and 1762. It was published in London in 1766 after Samuel Johnson sold the manuscript to Francis Newbery, nephew of John Newbery. The book has 32 chapters in three parts and mixes sentiment with satire. The Primrose children include Olivia, Sophia, George, Moses, Bill and Dick, and the vicar's wife is Deborah. The novel became a Victorian favourite.",
+ "sources": [
+  {
+   "url": "https://standardebooks.org/ebooks/oliver-goldsmith/the-vicar-of-wakefield",
+   "title": "The Vicar of Wakefield by Oliver Goldsmith (Standard Ebooks)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/The_Vicar_of_Wakefield",
+   "title": "The Vicar of Wakefield (Wikipedia)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Oliver Goldsmith",
+   "role": "Author",
+   "note": "Wrote it in 1761 and 1762.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Samuel Johnson",
+   "role": "Helper",
+   "note": "Arranged the sale of the manuscript to Francis Newbery.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Francis Newbery",
+   "role": "Publisher",
+   "note": "Bought the manuscript and published it in 1766.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Dr Charles Primrose",
+   "role": "Narrator",
+   "note": "The vicar whose family the book follows.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Squire Thornhill",
+   "role": "Antagonist",
+   "note": "His land the Primroses are moved onto; he causes them trouble.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sir William Thornhill",
+   "role": "Benefactor",
+   "note": "Appears first as Mr Burchell.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "London",
+   "lat": 51.51,
+   "lon": -0.13,
+   "note": "Where the book was published in 1766.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Oxford",
+   "lat": 51.75,
+   "lon": -1.26,
+   "note": "The vicar says his eldest son George was bred there.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Amsterdam",
+   "lat": 52.37,
+   "lon": 4.9,
+   "note": "A ship sailing to Amsterdam is offered as a way out for George.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1761,
+   "label": "Goldsmith begins writing the novel",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1762,
+   "label": "He finishes writing it",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1766,
+   "label": "Johnson sells the manuscript to Francis Newbery",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1766,
+   "label": "The novel is published in London in 32 chapters and three parts",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Family over theory",
+   "note": "The vicar prefers an honest man who raises a large family to one who only talks of population.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Quality over show",
+   "note": "He picks a wife for qualities that wear well, not a glossy surface.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Resilience under loss",
+   "note": "The family keeps its good temper through ruin.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Late reward",
+   "note": "Benevolence is repaid with unexpected interest in the last chapters.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "I was ever of opinion, that the honest man who married and brought up a large family, did more service than he who continued single, and only talked of population. From this motive, I had scarce taken orders a year before I began to think seriously of matrimony, and chose my wife as she did her wedding gown, not for a fine glossy surface, but such qualities as would wear well.",
+   "why": "Sets the vicar's warm, self-satisfied voice."
+  },
+  {
+   "part": 1,
+   "chapter": "VIII",
+   "quote": "Man wants but little here below, Nor wants that little long.” Soft as the dew from heav’n descends, His gentle accents fell: The modest stranger lowly bends, And follows to the cell. Far in a wilderness obscure The lonely mansion lay; A refuge to the neighbouring poor, And strangers led astray.",
+   "why": "A verse the vicar hears, on how little a person needs."
+  },
+  {
+   "part": 2,
+   "chapter": "XXIV",
+   "quote": "When lovely woman stoops to folly, And finds too late that men betray, What charm can soothe her melancholy, What art can wash her guilt away? The only art her guilt to cover, To hide her shame from every eye, To give repentance to her lover, And wring his bosom⁠—is to die.”",
+   "why": "The best-known verse of the book, sung after a family disgrace."
+  },
+  {
+   "part": 3,
+   "chapter": "XXXI",
+   "quote": "“No fawning, Sir, at present,” cried the Baronet, with a look of severity, “the only way to my heart is by the road of honour; but here I only see complicated instances of falsehood, cowardice, and oppression. How is it, Sir, that this poor man, for whom I know you professed a friendship, is used thus hardly?",
+   "why": "Sir William confronts his nephew in the final reversal."
+  },
+  {
+   "part": 3,
+   "chapter": "XXXII",
+   "quote": "We were no sooner returned to the inn, but numbers of my parishioners, hearing of my success, came to congratulate me, but among the rest were those who rose to rescue me, and whom I formerly rebuked with such sharpness.",
+   "why": "The parishioners return to congratulate the vicar."
+  }
+ ]
+}

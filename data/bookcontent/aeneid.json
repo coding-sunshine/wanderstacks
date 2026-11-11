@@ -1,0 +1,247 @@
+{
+ "summary": "Virgil's Latin epic follows Aeneas, a Trojan prince who escapes the burning city with his father and son and sails toward Italy, driven on by fate and hounded by the goddess Juno. In Carthage he loves the queen Dido, then leaves her at the gods' command. After visiting the underworld he reaches Latium, where the first six books of wandering give way to six of war against the Latins and Turnus. The poem ends with Aeneas killing Turnus, and it ties Rome's origins to Troy.",
+ "context": "Virgil wrote the poem between 29 and 19 BC, in the years after the civil wars and the battle of Actium, when Augustus was restoring order and traditional Roman values. The poem gave Augustus's family a mythic ancestor in Aeneas's son Iulus, and it was still unfinished when Virgil died. It became a standard school text and shaped later poets, Dante most of all, who made Virgil his guide through Hell and Purgatory. This site carries John Dryden's English verse translation from the Standard Ebooks edition.",
+ "sources": [
+  {
+   "title": "Aeneid (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Aeneid"
+  },
+  {
+   "title": "Virgil (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Virgil"
+  },
+  {
+   "title": "The Aeneid, translated by John Dryden (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/virgil/the-aeneid/john-dryden"
+  }
+ ],
+ "people": [
+  {
+   "name": "Virgil",
+   "role": "author",
+   "note": "Roman poet of the Augustan period who wrote the Eclogues, the Georgics and the Aeneid.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Aeneas",
+   "role": "character",
+   "note": "Trojan who flees the fall of Troy and travels to Italy, where he becomes the ancestor of the Romans.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Juno",
+   "role": "character",
+   "note": "Goddess whose resentment of the Trojans, and love of Carthage, drives the opening storm and the principal conflict.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Dido",
+   "role": "character",
+   "note": "Queen of Carthage, who falls in love with Aeneas when he reaches her city.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Anchises",
+   "role": "character",
+   "note": "Aeneas's father, whom he carries out of the ruins of Troy.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Turnus",
+   "role": "character",
+   "note": "Latin warrior in love with Lavinia who leads the war against the Trojans and is killed by Aeneas.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Augustus",
+   "role": "subject",
+   "note": "The first emperor, whose rule and ancestry the poem legitimises and to whom Virgil is said to have recited Books 2, 4 and 6.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Dryden",
+   "role": "translator",
+   "note": "Translator of the English verse version this site carries.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Troy",
+   "lat": 39.9575,
+   "lon": 26.2389,
+   "note": "Aeneas flees the fallen city with his father Anchises and his son Ascanius.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Carthage",
+   "lat": 36.8528,
+   "lon": 10.3233,
+   "note": "Juno's favourite city, where Aeneas meets and falls in love with Queen Dido.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Lavinium",
+   "lat": 41.6572,
+   "lon": 12.4731,
+   "note": "City founded by Aeneas in Italy, and the site of early worship of him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Actium",
+   "lat": 38.95,
+   "lon": 20.7667,
+   "note": "Octavian's naval victory of 31 BC, which the shield of Aeneas depicts.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rome",
+   "lat": 41.9028,
+   "lon": 12.4964,
+   "note": "The city Aeneas's descendants will found, and the audience for whom Virgil wrote.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -280,
+   "label": "War against Pyrrhus of Epirus, after which Romans most likely took up Greek myth and Troy as part of their own origin story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -31,
+   "label": "Battle of Actium, which later appears on Aeneas's shield in the poem.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -29,
+   "label": "Virgil begins writing the Aeneid, a work that occupies him until 19 BC.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -19,
+   "label": "Virgil dies with the poem unfinished.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1374,
+   "label": "Chaucer, in The House of Fame, gives Virgil a uniquely prominent place in history.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Founding myth of Rome",
+   "note": "The poem ties Rome to the legends of Troy, explains the Punic Wars and presents the Julio-Claudian line as descended from heroes and gods.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Pietas as the hero's virtue",
+   "note": "Aeneas is defined by scrupulous duty to gods, family and country rather than by personal gain.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Odyssey then Iliad",
+   "note": "Books 1 to 6 echo Homer's wandering and Books 7 to 12 echo his warfare, so Virgil rivals both epics in one poem.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Celebration or doubt?",
+   "note": "Critics split on whether the poem praises the Augustan regime or quietly undermines it, especially in Aeneas's merciless killing of Turnus.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Book I",
+   "quote": "Arms, and the man I sing, who, forc’d by fate, And haughty Juno’s unrelenting hate, Expell’d and exil’d, left the Trojan shore",
+   "why": "The opening lines state the theme and name Juno's hatred as the cause of everything that follows."
+  },
+  {
+   "part": 1,
+   "chapter": "Book III",
+   "quote": "Proceeding on, another Troy I see, Or, in less compass, Troy’s epitome.",
+   "why": "In Book III the exiles find a small copy of Troy, a picture of how the poem keeps looking back at what was lost."
+  },
+  {
+   "part": 2,
+   "chapter": "Book VI",
+   "quote": "The gates of hell are open night and day; Smooth the descent, and easy is the way: But to return, and view the cheerful skies, In this the task and mighty labour lies",
+   "why": "The Sibyl's warning on entering the underworld, one of the poem's best-known lines."
+  },
+  {
+   "part": 2,
+   "chapter": "Book VI",
+   "quote": "Let others better mould the running mass Of metals, and inform the breathing brass, And soften into flesh a marble face; Plead better at the bar; describe the skies, And when the stars descend, and when they rise",
+   "why": "Anchises tells Aeneas what Rome's art will be: not bronze and marble but rule, peace and mercy."
+  },
+  {
+   "part": 3,
+   "chapter": "Book VIII",
+   "quote": "Actium surveys the well-disputed prize; Leucate’s wat’ry plain with foamy billows fries",
+   "why": "The shield of Aeneas shows Augustus's victory, the poem's clearest link to its own present."
+  },
+  {
+   "part": 4,
+   "chapter": "Book X",
+   "quote": "Fortune befriends the bold.” Nor more he said, But balanc’d whom to leave, and whom to lead; Then these elects, the landing to prevent; And those he leaves, to keep the city pent",
+   "why": "A line from the fighting in Italy, in the second half where the poem turns to war."
+  },
+  {
+   "part": 5,
+   "chapter": "Book XII",
+   "quote": "Traitor, dost thou, dost thou to grace pretend, Clad, as thou art, in trophies of my friend",
+   "why": "Aeneas's final outburst before killing Turnus, where the poem ends abruptly on the blow."
+  }
+ ],
+ "id": "aeneid"
+}

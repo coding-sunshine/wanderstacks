@@ -1,0 +1,251 @@
+{
+ "id": "marcus-aurelius-meditations-george-long",
+ "summary": "The Meditations is a set of private notes written by the Roman emperor Marcus Aurelius to himself, arranged in twelve books. They return again and again to a few Stoic ideas: judge things as they are, accept change and death as part of nature, control your anger, and act for the common good. Marcus writes as a man at work, partly on military campaign, reminding himself to do the job in front of him and to bear with difficult people. He seems never to have meant the text to be published.",
+ "context": "Marcus Aurelius ruled Rome from 161 to 180, a reign marked by war on the Danube frontier and by the Antonine plague. He wrote in Greek, and two books carry notes on where they were written: among the Quadi by the river Granova, and at Carnuntum. The earliest clear mention of the book dates from about the early 900s, when Arethas of Caesarea had a worn copy recopied. Wilhelm Xylander printed the first edition at Zurich in 1558 or 1559. George Long, a classical scholar, published his English translation in 1862.",
+ "sources": [
+  {
+   "title": "Meditations (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Meditations"
+  },
+  {
+   "title": "Marcus Aurelius (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Marcus_Aurelius"
+  },
+  {
+   "title": "George Long (scholar) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/George_Long_(scholar)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Marcus Aurelius",
+   "role": "author",
+   "note": "Roman emperor from 161 to 180 and a Stoic philosopher.",
+   "s": [
+    1,
+    0
+   ]
+  },
+  {
+   "name": "George Long",
+   "role": "translator",
+   "note": "English classical scholar best known for his Meditations of Marcus Aurelius of 1862.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Antoninus Pius",
+   "role": "adoptive father",
+   "note": "Adopted Marcus as heir and became emperor in 138.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Lucius Verus",
+   "role": "co-emperor",
+   "note": "Adoptive brother who ruled beside Marcus from 161.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Commodus",
+   "role": "son",
+   "note": "Marcus's son and successor in 180.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Arethas of Caesarea",
+   "role": "copyist",
+   "note": "Bishop who had an old copy recopied before 907 and gave the first direct mention of the work.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Wilhelm Xylander",
+   "role": "editor",
+   "note": "Produced the first printed edition in 1558 or 1559, with a Latin translation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Rome",
+   "lat": 41.9028,
+   "lon": 12.4964,
+   "note": "Marcus was born here on 26 April 121.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Sirmium",
+   "lat": 44.9733,
+   "lon": 19.6122,
+   "note": "Modern Sremska Mitrovica, where he may have written large parts while planning campaigns.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Carnuntum",
+   "lat": 48.1103,
+   "lon": 16.8658,
+   "note": "Where the second book was written, according to its own note.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Granova (Hron River)",
+   "lat": 47.9,
+   "lon": 18.9,
+   "note": "The first book was written in the country of the Quadi by the Granova, modern Hron River in Slovakia.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Zurich",
+   "lat": 47.3769,
+   "lon": 8.5417,
+   "note": "City where the first printed edition appeared in 1558 or 1559.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 121,
+   "label": "Marcus is born in Rome on 26 April.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 161,
+   "label": "He becomes emperor with Lucius Verus.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 170,
+   "label": "He plans campaigns at Sirmium in the years 170 to 180, where parts may have been written.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 180,
+   "label": "Marcus dies on 17 March and Commodus succeeds him.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 907,
+   "label": "Arethas has an old copy recopied, about this date.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1559,
+   "label": "Xylander's first printed edition appears at Zurich, in 1558 or 1559.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1862,
+   "label": "George Long publishes his translation.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Judge only impressions",
+   "note": "Do not add to what first impressions report, and do not treat a report as harm.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A cosmic view",
+   "note": "See everything as coming from nature and returning to it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Control of anger",
+   "note": "Rage is not manly; gentleness and civility are stronger.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The logos",
+   "note": "A rational order runs through all things, and clear thinking lets one live in harmony with it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Indifference to fame and wealth",
+   "note": "Things outside one's control are neither good nor bad.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Book II",
+   "quote": "Every moment think steadily as a Roman and a man to do what thou hast in hand with perfect and simple dignity, and feeling of affection, and freedom, and justice; and to give thyself relief from all other thoughts.",
+   "why": "A rule for doing the task at hand."
+  },
+  {
+   "part": 1,
+   "chapter": "Book VI",
+   "quote": "Death is a cessation of the impressions through the senses, and of the pulling of the strings which move the appetites, and of the discursive movements of the thoughts, and of the service to the flesh. It is a shame for the soul to be first to give way in this life, when thy body does not give way.",
+   "why": "A plain account of death."
+  },
+  {
+   "part": 1,
+   "chapter": "Book VIII",
+   "quote": "Men exist for the sake of one another. Teach them then or bear with them. In one way an arrow moves, in another way the mind. The mind indeed, both when it exercises caution and when it is employed about inquiry, moves straight onward not the less, and to its object.",
+   "why": "On teaching or bearing with others."
+  },
+  {
+   "part": 1,
+   "chapter": "Book VI",
+   "quote": "The best way of avenging thyself is not to become like the wrong doer. Take pleasure in one thing and rest in it, in passing from one social act to another social act, thinking of God.",
+   "why": "Marcus refuses revenge and answers wrong by staying unlike the wrongdoer."
+  },
+  {
+   "part": 1,
+   "chapter": "Book VI",
+   "quote": "Look within. Let neither the peculiar quality of anything nor its value escape thee. All existing things soon change, and they will either be reduced to vapour, if indeed all substance is one, or they will be dispersed.",
+   "why": "On the change in all things."
+  },
+  {
+   "part": 1,
+   "chapter": "Book V",
+   "quote": "Be not disgusted, nor discouraged, nor dissatisfied, if thou dost not succeed in doing everything according to right principles; but when thou hast failed, return back again, and be content if the greater part of what thou doest is consistent with man’s nature, and love this to which thou returnest;",
+   "why": "On failing at principles, and returning to them without disgust."
+  }
+ ]
+}

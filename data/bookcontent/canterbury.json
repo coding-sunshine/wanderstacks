@@ -1,0 +1,232 @@
+{
+ "summary": "A group of about thirty pilgrims gathers at the Tabard inn in Southwark, bound for the shrine of Saint Thomas Becket at Canterbury. The host Harry Bailly proposes that each tell stories on the road, and the best teller wins a supper. The General Prologue sketches the company, from the Knight and the Miller to the Wife of Bath and the Pardoner. Their tales run from courtly romance to bawdy fabliau, beast fable, saint's life and sermon. The work is unfinished: far fewer than the planned stories survive, and it closes with the Parson's long treatise and Chaucer's own retraction.",
+ "context": "Chaucer wrote the Tales in Middle English between about 1387 and 1400, while holding posts in the royal customs and works. England was unsettled by the 1381 Peasants' Revolt, Lollardy, and the Western Schism, and choosing English over French or Latin was a notable step. Most scholars think the work was still unfinished when he died, so the order of tales comes from the manuscripts, among them the Ellesmere. William Caxton printed it about seventy-five years after Chaucer's death. The site carries the Standard Ebooks edition, based on Project Gutenberg text 2383, in a modernised spelling.",
+ "sources": [
+  {
+   "title": "The Canterbury Tales (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Canterbury_Tales"
+  },
+  {
+   "title": "Geoffrey Chaucer (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Geoffrey_Chaucer"
+  },
+  {
+   "title": "The Canterbury Tales, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/geoffrey-chaucer/the-canterbury-tales"
+  }
+ ],
+ "people": [
+  {
+   "name": "Geoffrey Chaucer",
+   "role": "author",
+   "note": "Born in London in the early 1340s, he served the crown as a diplomat and customs official and died on 25 October 1400.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Saint Thomas Becket",
+   "role": "subject",
+   "note": "The pilgrims travel to his shrine at Canterbury Cathedral.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The Wife of Bath",
+   "role": "character",
+   "note": "A pilgrim from near Bath whose tale and long prologue are among the most discussed parts of the work.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "The Miller",
+   "role": "character",
+   "note": "His tale follows the Knight's, and his interruption breaks the order the Host had expected.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The Pardoner",
+   "role": "character",
+   "note": "A pilgrim who preaches against greed while selling pardons, and tells a tale of three men who find gold.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "William Caxton",
+   "role": "printer",
+   "note": "Chose the Tales as one of the first books printed in England, roughly seventy-five years after Chaucer died.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "John Wycliffe",
+   "role": "subject",
+   "note": "Led Lollardy, an early English religious movement that troubled the Church in Chaucer's time.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Southwark, London",
+   "lat": 51.5045,
+   "lon": -0.0865,
+   "note": "The pilgrims meet at the Tabard inn here before setting out.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Chaucer's birthplace and the starting point of the journey, and the city where he held his customs posts.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Canterbury Cathedral",
+   "lat": 51.2798,
+   "lon": 1.083,
+   "note": "The destination, where the shrine of Saint Thomas Becket stood.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Westminster Abbey",
+   "lat": 51.4993,
+   "lon": -0.1273,
+   "note": "Chaucer was the first writer buried in what became Poets' Corner.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1374,
+   "label": "Chaucer is appointed Comptroller of the Customs for the port of London.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1381,
+   "label": "The Peasants' Revolt shakes England, part of the unrest behind the Tales.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1387,
+   "label": "Chaucer begins writing the Canterbury Tales, working on them until 1400.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1400,
+   "label": "Chaucer dies on 25 October, leaving the Tales unfinished.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1475,
+   "label": "About now, William Caxton prints the Tales, among the first books printed in England.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Frame tale as social survey",
+   "note": "The pilgrim company brings knights, clergy, tradesmen and women together, and each tale reveals its teller.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "English as a literary language",
+   "note": "Chaucer helped make Middle English acceptable for serious literature, at a time when French and Latin dominated.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Church and clergy criticised",
+   "note": "Pardoners, friars and summoners are shown as corrupt in an age of Lollardy and the Western Schism.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Retraction at the end",
+   "note": "After the Parson's treatise, Chaucer asks forgiveness for his worldly writing, a puzzle for later readers.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "The Prologue",
+   "quote": "When that Aprilis, with his showers swoot, The drought of March hath pierced to the root, And bathed every vein in such licóur, Of which virtúe engender’d is the flower; When Zephyrus eke with his swootë breath Inspired hath in every holt and heath The tender croppës, and the youngë sun Hath in the Ram his halfë course y-run, And smallë fowlës makë melody, That sleepen all the night with open eye,",
+   "why": "The famous opening of the General Prologue, setting the season of pilgrimage."
+  },
+  {
+   "part": 1,
+   "chapter": "The Prologue",
+   "quote": "Befell that, in that season on a day, In Southwark at the Tabard as I lay, Ready to wenden on my pilgrimage To Canterbury with devout coráge, At night was come into that hostelry Well nine and twenty in a company Of sundry folk, by áventure y-fall In fellowship, and pilgrims were they all, That toward Canterbury wouldë ride",
+   "why": "The narrator lodges at the Tabard in Southwark and the company arrives."
+  },
+  {
+   "part": 2,
+   "chapter": "The Wife of Bath’s Tale: The Prologue",
+   "quote": "Experience, though none authority Were in this world, is right enough for me To speak of woe that is in marriáge: For, lordings, since I twelve year was of age, (Thanked be God that is etern on live), Husbands at the church door have I had five⁠— For I so often have y-wedded be⁠— And all were worthy men in their degree",
+   "why": "The Wife of Bath opens her prologue by arguing from experience against authority."
+  },
+  {
+   "part": 3,
+   "chapter": "The Tale",
+   "quote": "There is, right at the west side of Itále, Down at the root of Vesulus the cold, A lusty plain, abundant of vitáille; There many a town and tow’r thou may’st behold, That founded were in time of fathers old, And many another délectáble sight; And Saluces this noble country hight",
+   "why": "The Clerk begins the tale of patient Griselda in northern Italy."
+  },
+  {
+   "part": 4,
+   "chapter": "The Tale",
+   "quote": "My theme is always one, and ever was; Radix malorum est cupiditas . First I pronouncë whencë that I come, And then my bullës shew I all and some; Our liegë lordë’s seal on my patént, That shew I first, my body to warrent, That no man be so hardy, priest nor clerk, Me to disturb of Christë’s holy werk",
+   "why": "The Pardoner reveals his single sermon theme: greed is the root of evil."
+  },
+  {
+   "part": 5,
+   "chapter": "The Tale",
+   "quote": "In which she had a cock, hight Chanticleer; In all the land of crowing n’as his peer",
+   "why": "The Nun's Priest introduces Chanticleer, the proud cock of his beast fable."
+  },
+  {
+   "part": 6,
+   "chapter": "The Tale",
+   "quote": "Wherefore I beseech you meekly for the mercy of God that ye pray for me, that God have mercy on me and forgive me my guilts, and namely my translations and of inditing in worldly vanities, which I revoke in my Retractions, as is the Book of Troilus, the Book also of Fame, the Book of Twenty-five Ladies, the Book of the Duchess, the Book of Saint Valentine’s Day and of the Parliament of Birds, the ",
+   "why": "Chaucer's retraction near the end, asking prayers and forgiveness for his worldly writing."
+  }
+ ],
+ "id": "canterbury"
+}

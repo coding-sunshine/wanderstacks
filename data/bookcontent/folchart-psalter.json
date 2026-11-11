@@ -1,0 +1,160 @@
+{
+ "id": "folchart-psalter",
+ "summary": "The Folchart Psalter is a large book of 368 pages, 38 by 29 cm, in which three scribes wrote the Psalms in gold and silver. It opens with a litany, a picture of King David as author, and a dedication naming Folchart and Abbot Hartmut. Psalm 1 has a splendid initial, and the book later warns against taking it out of St Gallen.",
+ "context": "Folchart, a monk who later became prior, had the manuscript made at St Gallen between 872 and 883 while Hartmut was abbot. The litany on pages 7 to 14 names saints dear to the abbey, including Gallus, Otmar and Columbanus. Around 1545 the book was rebound, and by 1633 it was already in the library. A dedication in two lines of verse sits on pages 26 and 27.",
+ "sources": [
+  {
+   "title": "e-codices: St Gallen Cod. Sang. 23",
+   "url": "https://www.e-codices.unifr.ch/en/description/csg/0023"
+  },
+  {
+   "title": "Wikipedia: Folchart Psalter",
+   "url": "https://en.wikipedia.org/wiki/Folchart_Psalter"
+  }
+ ],
+ "people": [
+  {
+   "name": "Folchart",
+   "role": "monk and prior",
+   "note": "Had the psalter made; monk in 849 to 854 and 898 to 899, prior 869 to 878.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Hartmut",
+   "role": "abbot of St Gallen",
+   "note": "The book was made under him.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "King David",
+   "role": "biblical author",
+   "note": "Pictured as the author of the Psalms.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jerome",
+   "role": "church father",
+   "note": "His prologue appears on the pages before the Psalms.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "St Gallen, Abbey Library",
+   "lat": 47.4233,
+   "lon": 9.377,
+   "note": "Where the psalter was made and is kept.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 872,
+   "label": "Start of the period in which the psalter was made.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 883,
+   "label": "End of that period.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1545,
+   "label": "Approximate year of the rebinding.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1633,
+   "label": "By this year the book was already in the library.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Gold and silver script",
+   "note": "Three scribes wrote the text in precious metal inks.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "A gift in verse",
+   "note": "A two-line dedication names the people behind the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Do not remove it",
+   "note": "A note on one page warns against taking the book away from Gall.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "n": 8,
+   "note": "Page 7, where the litany begins, naming Gallus, Otmar and Columbanus.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 10,
+   "note": "Page 9, King David as author with scribes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 13,
+   "note": "Page 12, the dedication with Folchart and Hartmut.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 31,
+   "note": "Page 30, the title page.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 32,
+   "note": "Page 31, Psalm 1 (Beatus vir).",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 136,
+   "note": "Page 135, Psalm 51 with a large Q initial and the warning not to take the book from Gall.",
+   "s": [
+    0
+   ]
+  }
+ ]
+}

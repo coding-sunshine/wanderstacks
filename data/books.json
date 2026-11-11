@@ -92,7 +92,7 @@
    "lib": "dunhuang",
    "title": "The Diamond Sutra (Chin-Kang-Ching) or Prajna-Paramita (Gemmell translation)",
    "author": "Unknown; trans. William Gemmell (from Kumarajiva)",
-   "date": "Gemmell 1912 per Wikipedia citation (Wikipedia table says 1894; unresolved)",
+   "date": "1912?",
    "relation": "associated",
    "holder": "Project Gutenberg #64623",
    "shelfmark": null,
@@ -111,7 +111,8 @@
    "tier": "readable-text",
    "quote": "Translator Gemmell, William Translator Kumārajīva, -412? ... Copyright Public domain in the USA.",
    "status": "passing",
-   "check": "curl -sL 'https://www.gutenberg.org/ebooks/64623' | rg -o -m1 'Public domain in the USA'"
+   "check": "curl -sL 'https://www.gutenberg.org/ebooks/64623' | rg -o -m1 'Public domain in the USA'",
+   "note": "Date: Gemmell 1912 per Wikipedia citation (Wikipedia table says 1894; unresolved)."
   },
   {
    "cluster": "ancient-east",

@@ -1,0 +1,224 @@
+{
+ "id": "warpeace",
+ "summary": "Tolstoy's novel follows five Russian families, among them the Bezukhovs, Bolkonskys and Rostovs, from a St Petersburg soirée in July 1805 through the Napoleonic wars. Pierre, Andrei and Natasha love, fail and change while Austerlitz, Borodino and the burning of Moscow unfold around them. Between scenes of fiction, Tolstoy stops to argue about how history works and how little great men steer it. The book ends with two epilogues, the second wholly given to that argument. Its characters meet real figures such as Napoleon and mix them with invented ones.",
+ "context": "Tolstoy began work in 1863. An early version ran as The Year 1805 in The Russian Messenger from 1865 to 1867. He rewrote it between 1866 and 1869 and published the whole in 1869. His wife Sophia Tolstaya copied the manuscript by hand, by one count up to seven full times. He drew on histories, letters and diaries, and on people who remembered the 1812 invasion. This site carries the Maude translation, first printed by Oxford University Press in 1922 and 1923 and revised in 1933. Louise and Aylmer Maude knew Tolstoy personally.",
+ "sources": [
+  {
+   "title": "War and Peace (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/War_and_Peace"
+  },
+  {
+   "title": "War and Peace, Maude translation (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/leo-tolstoy/war-and-peace/louise-maude_aylmer-maude"
+  }
+ ],
+ "people": [
+  {
+   "name": "Leo Tolstoy",
+   "role": "author",
+   "note": "Began the novel in 1863 and published the full text in 1869.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sophia Tolstaya",
+   "role": "scribe",
+   "note": "Tolstoy's wife, who copied the manuscript by hand as many as seven times before it went to print.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Louise and Aylmer Maude",
+   "role": "translator",
+   "note": "Friends of Tolstoy whose English version appeared from Oxford University Press in 1922 and 1923.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Pierre Bezukhov",
+   "role": "character",
+   "note": "Awkward, educated abroad and the central figure, often voicing Tolstoy's own doubts.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Andrei Bolkonsky",
+   "role": "character",
+   "note": "A sceptical, thoughtful aide-de-camp in the Napoleonic campaigns.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Natasha Rostova",
+   "role": "character",
+   "note": "Introduced as not pretty but full of life, romantic and impulsive.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Platon Karataev",
+   "role": "character",
+   "note": "A fellow prisoner of Pierre's during the French occupation of Moscow.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Napoleon Bonaparte",
+   "role": "subject",
+   "note": "The French emperor whose invasion of Russia drives the historical plot.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Saint Petersburg",
+   "lat": 59.9343,
+   "lon": 30.3351,
+   "note": "The novel opens at Anna Pavlovna Scherer's soirée here in July 1805.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Austerlitz (Slavkov u Brna)",
+   "lat": 49.0872,
+   "lon": 16.8761,
+   "note": "Site of the battle that Tolstoy weaves into the early plot.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Borodino",
+   "lat": 55.5236,
+   "lon": 35.8228,
+   "note": "Battle shown in the novel before the French reach Moscow.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lon": 37.6173,
+   "note": "Occupied by the French and burned, as the novel tells it.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1863,
+   "label": "Tolstoy begins writing the novel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1865,
+   "label": "Early chapters appear as The Year 1805 in The Russian Messenger, running to 1867.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1869,
+   "label": "After rewriting, Tolstoy publishes the complete book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1922,
+   "label": "The Maude translation is published by Oxford University Press (volumes dated 1922 and 1923).",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1933,
+   "label": "The Maude translation is revised.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "History without great men",
+   "note": "Tolstoy argues in the narrative chapters that history comes from many small acts, not from rulers or generals.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Five families, one invasion",
+   "note": "Five interlocking family stories show how the French invasion reached ordinary Russian aristocratic lives.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Fiction beside real events",
+   "note": "Invented characters share the page with Austerlitz, Borodino and the fire of Moscow.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Searching for a way to live",
+   "note": "Pierre, the central figure, often carries Tolstoy's own struggles and beliefs.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Book I: Part I",
+   "quote": "1805 I “Well, Prince, so Genoa and Lucca are now just family estates of the Buonapartes.",
+   "why": "The famous opening speech at Anna Pavlovna's soirée, where the war and the plot begin."
+  },
+  {
+   "part": 6,
+   "chapter": "Part III (continued)",
+   "quote": "Above him was a clear blue sky, and the sun’s vast orb quivered like a huge hollow, crimson float on the surface of that milky sea of mist.",
+   "why": "Andrei lies wounded at Austerlitz and sees the sky for the first time."
+  },
+  {
+   "part": 16,
+   "chapter": "Part II",
+   "quote": "The facts clearly show that Napoleon did not foresee the danger of the advance on Moscow, nor did Alexander and the Russian commanders then think of luring Napoleon on, but quite the contrary.",
+   "why": "A narrator's verdict on how Napoleon misread his own campaign."
+  },
+  {
+   "part": 20,
+   "chapter": "Part III (continued)",
+   "quote": "After the last two days spent in solitude and unusual circumstances, Pierre was in a state bordering on insanity.",
+   "why": "A quiet turn in Pierre's inner life during the Moscow chapters."
+  },
+  {
+   "part": 21,
+   "chapter": "Book IV: Part I",
+   "quote": "“Ah, my dear fellow!” rejoined Karatáev, “never decline a prison or a beggar’s sack!” He seated himself more comfortably and coughed, evidently preparing to tell a long story.",
+   "why": "Pierre reflects on what he has learned in captivity."
+  },
+  {
+   "part": 26,
+   "chapter": "Second Epilogue",
+   "quote": "The most usual generalizations adopted by almost all the historians are: freedom, equality, enlightenment, progress, civilization, and culture.",
+   "why": "Tolstoy's closing argument about history, from the second epilogue."
+  }
+ ]
+}

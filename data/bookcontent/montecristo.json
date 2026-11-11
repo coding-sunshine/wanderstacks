@@ -1,0 +1,239 @@
+{
+  "id": "montecristo",
+  "summary": "Edmond Dantès, a young sailor from Marseille, is about to become a captain and marry Mercédès when three jealous men denounce him as a Bonapartist agent. A prosecutor who wants to protect his own family buries the case, and Dantès spends fourteen years in the Château d’If. A fellow prisoner, the Abbé Faria, schools him and tells him of a buried fortune. Dantès escapes, finds the treasure, and returns as the wealthy Count of Monte Cristo to ruin the men who wronged him, only to find that revenge costs the innocent as well.",
+  "context": "Alexandre Dumas wrote the story with his collaborator Auguste Maquet, and it first ran as a serial in the Paris newspaper Journal des Débats before appearing as a book. Once published in book form it was enormously popular and has never been out of print. It is set between 1815 and 1839, from Napoleon's return from Elba to the reign of Louis Philippe. This site offers the anonymous English translation first published by Chapman and Hall in 1846, as prepared by Standard Ebooks.",
+  "sources": [
+    {
+      "title": "The Count of Monte Cristo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo"
+    },
+    {
+      "title": "The Count of Monte Cristo, translated by Chapman and Hall (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/alexandre-dumas/the-count-of-monte-cristo/chapman-and-hall"
+    }
+  ],
+  "people": [
+    {
+      "name": "Alexandre Dumas",
+      "role": "Author",
+      "note": "Wrote the novel with ghostwriter Auguste Maquet, expanding it from plot outlines Maquet suggested.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Auguste Maquet",
+      "role": "Collaborator",
+      "note": "Ghostwriter who supplied plot outlines that Dumas expanded, as with many of his novels.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Edmond Dantès",
+      "role": "Protagonist",
+      "note": "First mate of the Pharaon, falsely accused and jailed, later the Count of Monte Cristo.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Abbé Faria",
+      "role": "Fellow prisoner",
+      "note": "Italian priest and former secretary to Cardinal Spada who educates Dantès and reveals the treasure on Monte Cristo.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Danglars",
+      "role": "Antagonist",
+      "note": "The ship's supercargo, jealous when Morrel promotes Dantès to captain.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Villefort",
+      "role": "Antagonist",
+      "note": "The magistrate who destroys the incriminating letter and sentences Dantès to life imprisonment without trial.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Mercédès",
+      "role": "Dantès's fiancée",
+      "note": "Loses Dantès to his arrest; her son Albert de Morcerf befriends the Count in Rome.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Jacques Peuchet",
+      "role": "Source of the revenge theme",
+      "note": "Paris police archivist whose anecdote Le Diamant et la Vengeance, Dumas wrote, gave him the germ of the revenge theme.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Marseille",
+      "lat": 43.2965,
+      "lon": 5.3698,
+      "note": "Port where the Pharaon docks and Dantès is arrested; he later returns in search of information.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Château d’If",
+      "lat": 43.28,
+      "lon": 5.3256,
+      "note": "Notorious island prison where Dantès is held and meets Abbé Faria.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Island of Monte Cristo",
+      "lat": 42.3333,
+      "lon": 10.3133,
+      "note": "Mediterranean island where Faria's treasure lies; Dantès later buys it and the title of count.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Rome",
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "note": "Carnival-time setting where Dantès befriends Albert de Morcerf and Luigi Vampa kidnaps Albert.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Auteuil, Paris",
+      "lat": 48.847,
+      "lon": 2.268,
+      "note": "Suburb of Paris where the Count buys a home.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1815,
+      "label": "Dantès is arrested in Marseille as Napoleon escapes Elba",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1838,
+      "label": "Dantès reappears as the wealthy Count of Monte Cristo",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1844,
+      "label": "Serialisation begins in the Journal des Débats",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1845,
+      "label": "Remaining sixteen volumes of the first Paris book edition issued",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1846,
+      "label": "Chapman and Hall publish the English translation still most used today",
+      "s": [
+        0,
+        1
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Revenge and its limits",
+      "note": "Dantès plans a long, patient vengeance on three men, and the plan harms people who had no part in the wrong.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Wrongful imprisonment and education",
+      "note": "The prison becomes a school: Faria teaches language and science and passes on hints of a hidden fortune.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "title": "Wealth as power",
+      "note": "The treasure turns a sailor with no standing into a count whom Parisian society cannot ignore.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "title": "Politics behind private ruin",
+      "note": "Dantès falls because Bonapartist suspicion in 1815 gives ambitious men a weapon against him.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "I",
+      "quote": "On the 24th of February, 1815, the lookout at Notre-Dame de la Garde signalled the three-master, the Pharaon from Smyrna, Trieste, and Naples.",
+      "why": "The novel opens on a real date and in a real port, Marseille, which anchors the adventure in 1815."
+    },
+    {
+      "part": 1,
+      "chapter": "VI",
+      "quote": "He was⁠—nay, probably may still be⁠—a Bonapartist, and is called Noirtier; I, on the contrary, am a staunch royalist, and style myself de Villefort.",
+      "why": "Villefort sets out the irony that will drive the plot: a royalist son who is ashamed of his Bonapartist father and will sacrifice an innocent man to hide it."
+    },
+    {
+      "part": 2,
+      "chapter": "XVI",
+      "quote": "I am the Abbé Faria, and have been imprisoned as you know in this Château d’If since the year 1811; previously to which I had been confined for three years in the fortress of Fenestrelle.",
+      "why": "The prisoner next door introduces himself, and his learning will turn the Château d’If from a grave into a school."
+    },
+    {
+      "part": 3,
+      "chapter": "XVIII",
+      "quote": "If we ever escape together, half this treasure is yours; if I die here, and you escape alone, the whole belongs to you.",
+      "why": "Faria promises the Spada fortune, the hinge between Dantès the victim and the Count of Monte Cristo."
+    },
+    {
+      "part": 3,
+      "chapter": "XIX",
+      "quote": "The treasure of the Spadas exists. God grants me the boon of vision unrestricted by time or space. I see it in the depths of the inner cavern. My eyes pierce the inmost recesses of the earth, and are dazzled at the sight of so much riches. If you do escape, remember that the poor abbé, whom all the world called mad, was not so.",
+      "why": "On his deathbed Faria hands over the secret that makes the later revenge possible."
+    },
+    {
+      "part": 17,
+      "chapter": "CXVII",
+      "quote": "Live, then, and be happy, beloved children of my heart, and never forget that until the day when God shall deign to reveal the future to man, all human wisdom is summed up in these two words⁠—‘Wait and hope.’",
+      "why": "The closing letter gives the book its moral: patience and hope."
+    }
+  ]
+}

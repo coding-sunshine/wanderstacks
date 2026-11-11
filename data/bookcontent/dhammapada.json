@@ -1,0 +1,240 @@
+{
+ "summary": "The Dhammapada is a collection of short verses, grouped into chapters on themes such as thought, earnestness, anger, the fool, the wise, the self and thirst. Each verse puts one point plainly: the mind shapes what we are, hatred is not ended by hatred, taming oneself is the hardest victory, and craving drives suffering. The verses are sayings attributed to the Buddha, and they point toward the eightfold path and Nirvana. This edition is F. Max Muller's English translation from the Pali.",
+ "context": "Tradition says the Buddha spoke each verse on a particular occasion, and the commentary attributed to Buddhaghosa, in the fourth or fifth century CE, supplies stories to go with them. The text sits in the Khuddaka Nikaya of the Pali Canon, and similar collections survive in Gandhari, Sanskrit, Tibetan and Chinese. European scholars took it up in the nineteenth century: Fausboll edited the Pali in 1855, and Max Muller made the first complete English translation in 1870. The site carries that translation, as it appears at Project Gutenberg.",
+ "sources": [
+  {
+   "title": "Dhammapada (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Dhammapada"
+  },
+  {
+   "title": "Pali Canon (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Pali_Canon"
+  },
+  {
+   "title": "Dhammapada, translated by F. Max Muller, Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/2017"
+  }
+ ],
+ "people": [
+  {
+   "name": "The Buddha",
+   "role": "subject",
+   "note": "Tradition says he spoke each of the verses on a separate occasion.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Buddhaghosa",
+   "role": "scribe",
+   "note": "Scholar to whom the commentary with 305 explanatory stories is attributed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "F. Max Muller",
+   "role": "translator",
+   "note": "Made the first complete English translation from the Pali, published in 1870, which the site uses.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Viggo Fausboll",
+   "role": "scribe",
+   "note": "Danish scholar who produced a critical edition of the Pali text in 1855.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Daniel Gogerly",
+   "role": "translator",
+   "note": "Printed the first English translation, of verses 1 to 255, in Ceylon in 1840.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ananda",
+   "role": "subject",
+   "note": "Tradition says he recited the Sutta Pitaka at the First Buddhist Council.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Rajgir",
+   "lat": 25.0293,
+   "lon": 85.4208,
+   "note": "Where, by tradition, the First Buddhist Council gathered after the Buddha's death.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Ceylon (Sri Lanka)",
+   "lat": 7.8731,
+   "lon": 80.7718,
+   "note": "The Pali Canon passed to Sri Lanka and was written down on palm leaves, and Gogerly printed his translation here in 1840.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Oxford",
+   "lat": 51.752,
+   "lon": -1.2577,
+   "note": "Max Muller's translation was reprinted by Clarendon Press in Sacred Books of the East in 1881.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rangoon",
+   "lat": 16.8661,
+   "lon": 96.1951,
+   "note": "J. Gray published an English translation here with the American Mission Press in 1881.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -29,
+   "label": "The Pali Canon is written down on palm leaves, according to tradition at the Fourth Buddhist Council.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 224,
+   "label": "Weizhinan translates and compiles a Chinese version, the Faju jing.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1840,
+   "label": "Daniel Gogerly prints the first English translation, covering verses 1 to 255.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1855,
+   "label": "Viggo Fausboll publishes a critical edition of the Pali text.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1870,
+   "label": "F. Max Muller publishes the first complete English translation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1881,
+   "label": "Max Muller's translation is reprinted in Sacred Books of the East, volume X.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Mind makes what we are",
+   "note": "The opening verses say our experience follows our thoughts, as a wheel follows the ox's foot.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Earnestness against heedlessness",
+   "note": "The earnest do not die, while the thoughtless are as if dead already.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Overcome anger by love",
+   "note": "A man should beat anger with love and evil with good.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Craving causes suffering",
+   "note": "The chapter on thirst compares craving to a creeper that grows and to water that falls off a lotus leaf once overcome.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Training the self",
+   "note": "Taming oneself is called better than taming elephants or horses.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Chapter I. The Twin-Verses",
+   "quote": "All that we are is the result of what we have thought: it is founded on our thoughts, it is made up of our thoughts",
+   "why": "The first verse, on thought and suffering."
+  },
+  {
+   "part": 1,
+   "chapter": "Chapter II. On Earnestness",
+   "quote": "Earnestness is the path of immortality (Nirvana), thoughtlessness the path of death",
+   "why": "Earnestness against thoughtlessness."
+  },
+  {
+   "part": 1,
+   "chapter": "Chapter III. Thought",
+   "quote": "As a fletcher makes straight his arrow, a wise man makes straight his trembling and unsteady thought, which is difficult to guard, difficult to hold back",
+   "why": "The unsteady mind compared to an arrow."
+  },
+  {
+   "part": 1,
+   "chapter": "Chapter X. Punishment",
+   "quote": "All men tremble at punishment, all men fear death; remember that you are like unto them, and do not kill, nor cause slaughter",
+   "why": "The ground of the rule against killing."
+  },
+  {
+   "part": 1,
+   "chapter": "Chapter XVII. Anger",
+   "quote": "Let a man overcome anger by love, let him overcome evil by good; let him overcome the greedy by liberality, the liar by truth",
+   "why": "The best-known verse on anger."
+  },
+  {
+   "part": 1,
+   "chapter": "Chapter XX. The Way",
+   "quote": "The best of ways is the eightfold; the best of truths the four words; the best of virtues passionlessness; the best of men he who has eyes to see",
+   "why": "The eightfold path named."
+  },
+  {
+   "part": 1,
+   "chapter": "Chapter XXIII. The Elephant",
+   "quote": "Mules are good, if tamed, and noble Sindhu horses, and elephants with large tusks; but he who tames himself is better still",
+   "why": "Taming oneself beats taming animals."
+  },
+  {
+   "part": 1,
+   "chapter": "Chapter XXIV. Thirst",
+   "quote": "The thirst of a thoughtless man grows like a creeper; he runs from life to life, like a monkey seeking fruit in the forest",
+   "why": "The image of craving."
+  }
+ ],
+ "id": "dhammapada"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "stgall-plan",
+  "summary": "The Plan of St Gall is a drawing of a whole Benedictine monastery on one composite sheet of parchment, about 113 by 78 cm. It shows a church and cloister, an abbot's house, a school, guest houses, an infirmary, workshops, a brewery and animal pens, with some 333 short Latin notes naming each part. A dedication letter addresses Gozbert. By the Wikipedia count the layout would have housed about 110 monks, 115 lay visitors and 150 workers. The monastery was never built from it.",
+  "context": "The sheet was drawn in the early ninth century, in the 820s on the usual dating, by scribes tied to Reichenau Abbey for Gozbert, abbot of St Gall. Scholars disagree on whether it is an original or a copy of an imperial model issued after the Aachen synods of 816 and 817. It stayed in the St Gall library. Around the end of the 12th century the blank back was used for a Life of St Martin, and the sheet was folded into a booklet, so it survives as Cod. Sang. 1092.",
+  "sources": [
+    { "title": "e-codices IIIF manifest and description, Stiftsbibliothek St. Gallen, Cod. Sang. 1092", "url": "https://www.e-codices.ch/metadata/iiif/csg-1092/manifest.json" },
+    { "title": "Wikipedia: Plan of Saint Gall", "url": "https://en.wikipedia.org/wiki/Plan_of_Saint_Gall" }
+  ],
+  "people": [
+    { "name": "Gozbert", "role": "patron", "note": "Abbot of St Gall from 816 to 836, the person the dedication letter addresses and the abbot who decided to build a new church in the 820s.", "s": [1] },
+    { "name": "Reginbert", "role": "scribe", "note": "The librarian who, with a younger Reichenau brother, wrote the Latin annotations on the Plan.", "s": [0, 1] },
+    { "name": "Heito", "role": "subject", "note": "A Reichenau abbot under whom the Plan may have been made, the other candidate being Erlebald.", "s": [0] },
+    { "name": "Erlebald", "role": "subject", "note": "A Reichenau abbot named in the e-codices description as the alternative date and patron for the Plan's making.", "s": [0] },
+    { "name": "Saint Gall", "role": "subject", "note": "The hermit who founded the monastery; the planned church was meant to hold his relics.", "s": [1] },
+    { "name": "Louis the Pious", "role": "subject", "note": "His court is named in one theory as the source of an original that the St Gall Plan copies.", "s": [1] },
+    { "name": "Sulpicius Severus", "role": "author", "note": "His Life of St Martin is the basis of the text added on the back of the sheet in the 12th century.", "s": [0, 1] }
+  ],
+  "places": [
+    { "name": "Reichenau", "lat": 47.7, "lon": 9.06, "note": "The island abbey where the Plan was drawn and where its two scribes have been placed.", "s": [0, 1] },
+    { "name": "St Gallen", "lat": 47.4233, "lon": 9.3773, "note": "The abbey the Plan was made for, and the library where it has been kept ever since.", "s": [0, 1] },
+    { "name": "Aachen", "lat": 50.7753, "lon": 6.0839, "note": "Site of the synods of 816 and 817 that, in one theory, led the court to issue a model monastery plan.", "s": [1] }
+  ],
+  "timeline": [
+    { "year": 816, "label": "The first of the Aachen synods on Benedictine reform, which one theory ties to an original plan.", "s": [1] },
+    { "year": 820, "label": "The Plan is drawn at Reichenau, dated 819 or around 827 to 830 by e-codices and 820 to 830 by Wikipedia.", "s": [0, 1] },
+    { "year": 1199, "label": "Around the end of the 12th century a Life of St Martin is written on the back at St Gall.", "s": [0] },
+    { "year": 1979, "label": "Horn and Born publish The Plan of St Gall and argue it copies a court original.", "s": [1] }
+  ],
+  "ideas": [
+    { "title": "A monastery that is self-sufficient", "note": "The Plan puts church, school, infirmary, workshops, farm buildings and guest quarters in one enclosure so the monks need not look outside it.", "s": [1] },
+    { "title": "Original or copy", "note": "Horn and Born saw a copy of a model drawn at the imperial court; Jacobsen, Stachura and Nees argue it is an original made at Reichenau.", "s": [1] },
+    { "title": "Drawn but never built", "note": "No monastery was raised to this layout, so it records an intention, not a building.", "s": [1] },
+    { "title": "A sheet reused as a book", "note": "The parchment was folded into a quarto booklet and its blank back was filled with a saint's life, which is why it survives in a library codex.", "s": [0, 1] }
+  ],
+  "pages": [
+    { "n": 0, "note": "The recto, the Plan itself: red-ink building outlines and brown Latin notes, with the dedication letter. Look for the abbey church and cloister.", "s": [0, 1] },
+    { "n": 1, "note": "The verso, where the Life of St Martin was written in the 12th century after the sheet had been folded into a booklet.", "s": [0, 1] }
+  ]
+}

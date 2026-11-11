@@ -1,0 +1,272 @@
+{
+ "summary": "This is a large collection of ghost stories and Gothic tales by Sheridan Le Fanu. Many come from his Irish storytelling, such as the bonesetter who meets a ghost and the painter Schalken and his strange suitor. The collection also holds the 1872 stories of In a Glass Darkly, framed as the case papers of the occult doctor Martin Hesselius. In Green Tea a clergyman is followed by a demonic monkey, The Familiar tells of a Dublin sea captain stalked by a watcher, and Carmilla follows Laura, a young woman in a Styrian castle befriended by a female vampire.",
+ "context": "Le Fanu, born in Dublin in 1814, began publishing ghost stories in the Dublin University Magazine in 1838 and became a leading Victorian writer of the genre. Carmilla ran in the magazine The Dark Blue in 1871 and 1872, and In a Glass Darkly appeared from Richard Bentley and Son in 1872, a year before his death. Critics later revived his work, and M. R. James held him in very high regard. Carmilla came about 25 years before Dracula. The site carries the Standard Ebooks Short Fiction collection, a large gathering of his stories.",
+ "sources": [
+  {
+   "title": "Short Fiction by J. Sheridan Le Fanu, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/j-sheridan-le-fanu/short-fiction"
+  },
+  {
+   "title": "Joseph Sheridan Le Fanu (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Joseph_Sheridan_Le_Fanu"
+  },
+  {
+   "title": "Carmilla (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Carmilla"
+  },
+  {
+   "title": "In a Glass Darkly (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/In_a_Glass_Darkly"
+  }
+ ],
+ "people": [
+  {
+   "name": "Joseph Sheridan Le Fanu",
+   "role": "author",
+   "note": "Irish writer of Gothic horror, born in Dublin in 1814 and owner of several local newspapers by 1840.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Dr. Martin Hesselius",
+   "role": "character",
+   "note": "The fictional occult detective whose posthumous papers frame the five stories of In a Glass Darkly.",
+   "s": [
+    2,
+    3
+   ]
+  },
+  {
+   "name": "Carmilla",
+   "role": "character",
+   "note": "The vampire who is taken into Laura's family after a carriage accident.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Laura",
+   "role": "character",
+   "note": "The young narrator of Carmilla, who lives in an Austrian castle in Styria.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Mr. Jennings",
+   "role": "character",
+   "note": "The clergyman of Green Tea who is followed by a monkey only he can see.",
+   "s": [
+    3
+   ]
+  },
+  {
+   "name": "Elijah Harbottle",
+   "role": "character",
+   "note": "A cruel judge of the Court of Common Pleas who is attacked by vengeful spirits.",
+   "s": [
+    3
+   ]
+  },
+  {
+   "name": "M. R. James",
+   "role": "subject",
+   "note": "Ghost-story writer who ranked Le Fanu in the first rank and thought The Familiar his best ghost story.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Bram Stoker",
+   "role": "subject",
+   "note": "Author of Dracula (1897), influenced by Carmilla.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Dublin",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "note": "Le Fanu was born in Dominick Street Lower in 1814, and the sea captain of The Familiar lives here.",
+   "s": [
+    1,
+    3
+   ]
+  },
+  {
+   "name": "Trinity College Dublin",
+   "lat": 53.3438,
+   "lon": -6.2546,
+   "note": "Le Fanu took his BA here.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Chapelizod",
+   "lat": 53.3465,
+   "lon": -6.3463,
+   "note": "The village beside Phoenix Park that appears in Le Fanu's later stories.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Merrion Square, Dublin",
+   "lat": 53.3407,
+   "lon": -6.2487,
+   "note": "After 1851 Le Fanu and his wife moved into her parents' former house here.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Styria",
+   "lat": 47.25,
+   "lon": 15.2,
+   "note": "Carmilla is set in a castle in this Austrian province.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1814,
+   "label": "Sheridan Le Fanu is born in Dublin on 28 August.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1838,
+   "label": "Le Fanu starts writing stories for the Dublin University Magazine, including his first ghost story, The Ghost and the Bone-Setter.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1864,
+   "label": "Uncle Silas, one of his best-known novels, appears.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1871,
+   "label": "Carmilla begins to run in the magazine The Dark Blue, ending in 1872.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 1872,
+   "label": "In a Glass Darkly, with Carmilla, is published by Richard Bentley and Son.",
+   "s": [
+    2,
+    3
+   ]
+  },
+  {
+   "year": 1873,
+   "label": "Le Fanu dies on 7 February.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1880,
+   "label": "The Purcell Papers, with thirteen lesser-known tales, appear after his death.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Case-file framing of the supernatural",
+   "note": "The In a Glass Darkly stories are presented as papers of Dr. Hesselius, so ghosts are treated as cases to analyse.",
+   "s": [
+    2,
+    3
+   ]
+  },
+  {
+   "title": "Haunting as mind and conscience",
+   "note": "In Green Tea and The Familiar the haunting is psychological as well as supernatural, tied to a mind or a past sin.",
+   "s": [
+    3
+   ]
+  },
+  {
+   "title": "Prototype of the female vampire",
+   "note": "Carmilla is seen as the literary model for later female vampires and predated Dracula by 25 years.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Irish folklore and landscape",
+   "note": "Le Fanu grew up amid folklore and rural landscape, which fed his early tales.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 3,
+   "chapter": "Strange Event in the Life of Schalken the Painter",
+   "quote": "You will no doubt be surprised, my dear friend, at the subject of the following narrative. What had I to do with Schalken, or Schalken with me? He had returned to his native land, and was probably dead and buried, before I was born; I never visited Holland nor spoke with a native of that country",
+   "why": "Opens the Schalken story, framed as an extract from a priest's papers."
+  },
+  {
+   "part": 8,
+   "chapter": "An Account of Some Strange Disturbances in Aungier Street",
+   "quote": "It is not worth telling, this story of mine⁠—at least, not worth writing. Told, indeed, as I have sometimes been called upon to tell it, to a circle of intelligent and eager faces, lighted up by a good after-dinner fire on a winter’s evening, with a cold wind rising and wailing outside, and all snug and cosy within, it has gone off⁠—though I say it, who should not⁠—indifferent well",
+   "why": "The Aungier Street narrator begins his house-haunting tale with a disclaimer."
+  },
+  {
+   "part": 10,
+   "chapter": "I",
+   "quote": "The Rev. Mr. Jennings is tall and thin. He is middle-aged, and dresses with a natty, old-fashioned, high-church precision",
+   "why": "Hesselius meets the clergyman of Green Tea."
+  },
+  {
+   "part": 10,
+   "chapter": "VI",
+   "quote": "now to perceive an outline of something black, and I soon saw with tolerable distinctness the outline of a small black monkey, pushing its face forward in mimicry to meet mine; those were its eyes, and I now dimly saw its teeth grinning at me",
+   "why": "Jennings describes first seeing the monkey."
+  },
+  {
+   "part": 11,
+   "chapter": "I",
+   "quote": "In Styria, we, though by no means magnificent people, inhabit a castle, or schloss . A small income, in that part of the world, goes a great way. Eight or nine hundred a year does wonders",
+   "why": "The opening of Carmilla, setting the Styrian castle."
+  },
+  {
+   "part": 11,
+   "chapter": "IV",
+   "quote": "Sometimes after an hour of apathy, my strange and beautiful companion would take my hand and hold it with a fond pressure, renewed again and again; blushing softly, gazing in my face with languid and burning eyes, and breathing so fast that her dress rose and fell with the tumultuous respiration",
+   "why": "A much-discussed passage on Carmilla and Laura's intimacy."
+  },
+  {
+   "part": 12,
+   "chapter": "XIII",
+   "quote": "But after all these proceedings according to law,” he continued⁠—“so many graves opened, and so many vampires deprived of their horrible animation⁠—the village was not relieved",
+   "why": "A story of vampire hunting in the village that frames Carmilla's fate."
+  },
+  {
+   "part": 13,
+   "chapter": "I",
+   "quote": "Captain Barton was apparently some two or three-and-forty years of age.",
+   "why": "Introduces the haunted sea captain of The Familiar."
+  }
+ ],
+ "id": "carmilla"
+}

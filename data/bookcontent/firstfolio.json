@@ -1,0 +1,181 @@
+{
+ "id": "firstfolio",
+ "summary": "The Bodleian's First Folio is Shakespeare's collected plays as printed in London in 1623, thirty-six plays in one volume. It carries verse by Ben Jonson, Leonard Digges and Hugh Holland, and the Droeshout portrait in its second state. This copy lacks the first leaf, the address 'To the Reader'. Hard use shows in the pages of Romeo and Juliet, the most thumbed play in a 1917 record.",
+ "context": "Two actors, Heminge and Condell, edited the book, and Isaac Jaggard and Edward Blount printed it. The Bodleian got the copy in early 1624 and had it bound on 17 February, then chained it in Duke Humfrey's library. In 1664 it was sold for 24 pounds after the Third Folio replaced it. It passed to the Turbutt family of Ogston Hall, and in 1906 public subscription bought it back for 3,000 pounds. About 750 copies were printed and 235 are known.",
+ "sources": [
+  {
+   "title": "Bodleian Digital Library: First Folio, Arch. G c.7",
+   "url": "https://digital.bodleian.ox.ac.uk/objects/390fd0e8-9eae-475d-9564-ed916ab9035c/"
+  },
+  {
+   "title": "Wikipedia: First Folio",
+   "url": "https://en.wikipedia.org/wiki/First_Folio"
+  }
+ ],
+ "people": [
+  {
+   "name": "William Shakespeare",
+   "role": "playwright",
+   "note": "The author of the plays collected here.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "John Heminge and Henry Condell",
+   "role": "editors",
+   "note": "The actors who gathered the plays.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Isaac Jaggard and Edward Blount",
+   "role": "printers",
+   "note": "Printed the volume.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Martin Droeshout",
+   "role": "engraver",
+   "note": "Engraved the portrait.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Leonard Digges",
+   "role": "poet",
+   "note": "Wrote a commendatory poem in the book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Hugh Holland",
+   "role": "poet",
+   "note": "Wrote another poem in praise.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Where the Folio was printed in 1623.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Oxford, Bodleian Library",
+   "lat": 51.7548,
+   "lon": -1.2544,
+   "note": "Acquired the book in 1624 and bought it back in 1906.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ogston Hall, Derbyshire",
+   "lat": 53.1,
+   "lon": -1.4,
+   "note": "Home of the Turbutt family, who held the book after 1664.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1623,
+   "label": "First Folio printed in London.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1624,
+   "label": "The Bodleian acquires and binds the copy.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1664,
+   "label": "Sold to Richard Davis for 24 pounds.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1906,
+   "label": "Bought back by public subscription for 3,000 pounds.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Eighteen plays saved",
+   "note": "Eighteen of the thirty-six plays had never been printed before.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "A chained library book",
+   "note": "The copy was chained in Duke Humfrey's library.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Wear as evidence",
+   "note": "Thumbing shows which plays readers used most.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "n": 0,
+   "note": "The upper board of the binding.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 12,
+   "note": "Recto of the poem by Leonard Digges.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 16,
+   "note": "Recto of the poem by Hugh Holland.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "n": 18,
+   "note": "The catalogue, the table of contents of the plays.",
+   "s": [
+    0
+   ]
+  }
+ ]
+}

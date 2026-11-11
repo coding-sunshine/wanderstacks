@@ -1,0 +1,183 @@
+{
+  "facts": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "place",
+      "value": "The first library room was established in the south-west cloister of the cathedral in the 15th century.",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "the first library room was established, in the south-west cloister of the cathedral, in the 15th century",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'the\\s+first\\s+library\\s+room\\s+was\\s+establi'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "place",
+      "value": "In 1590 the whole library was moved to the Lady Chapel.",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "In 1590 the whole library was moved to the Lady Chapel",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'In\\s+1590\\s+the\\s+whole\\s+library\\s+was\\s+move'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "built",
+      "value": "The Chained Library, with manuscripts chained to their places, was established in 1611 by Thomas Thornton.",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "in 1611 the Chained Library (with books in manuscript chained to their places) was established by Thomas Thornton",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'in\\s+1611\\s+the\\s+Chained\\s+Library\\s+.with'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "collection",
+      "value": "About 229 manuscripts, mainly theological, dated from the 8th to the 16th centuries.",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "some 229 manuscripts, mainly theological, dated from the 8th to the 16th centuries",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'some\\s+229\\s+manuscripts.\\s+mainly\\s+theol'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "collection",
+      "value": "The Hereford Gospels, in Anglo-Saxon characters, date to around 780 and were the only book to survive the 1055 fire.",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "Hereford Gospels in Anglo-Saxon characters, dates to around the year 780 and was the only book to survive the 1055 fire",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Hereford\\s+Gospels\\s+in\\s+Anglo.Saxon\\s+ch'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "remains_today",
+      "value": "The library is described as the only one of its type to survive with all chains, rods and locks intact.",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "the only library of this type to survive with all of the chains, rods and locks still intact",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'the\\s+only\\s+library\\s+of\\s+this\\s+type\\s+to\\s+s'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "collection",
+      "value": "A general survey of chained libraries says only five worldwide survive with their original furniture, chains and books.",
+      "source": "https://en.wikipedia.org/wiki/Chained_library",
+      "tier": "wikipedia",
+      "quote": "Worldwide, only five chained libraries have survived with their original furniture, chains, and books",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Chained_library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Worldwide.\\s+only\\s+five\\s+chained\\s+libra'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "collection",
+      "value": "Date of the books differs by source: the Library article says most date to about 1100; the Chained library article says mostly from the 12th century.",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "Most of the books in the collection date to about 1100",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Most\\s+of\\s+the\\s+books\\s+in\\s+the\\s+collectio'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "status_note",
+      "value": "A new library building designed by Sir William Whitfield was opened on 3 May 1996 by the Queen.",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "a new building designed by Sir William Whitfield was opened on 3 May 1996 by the Queen",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'a\\s+new\\s+building\\s+designed\\s+by\\s+Sir\\s+Wil'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "status_note",
+      "value": "In 1988 the Dean and Chapter proposed the sale of the Mappa Mundi; a donation from Sir Paul Getty followed.",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "In 1988 the Dean and Chapter proposed the sale of the Mappa Mundi",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'In\\s+1988\\s+the\\s+Dean\\s+and\\s+Chapter\\s+propo'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "field": "collection",
+      "value": "The Hereford Mappa Mundi is called the largest medieval map still known to exist. Dating differs by article: c. 1300 (Mappa Mundi article) or the later 13th century (cathedral article).",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Mappa_Mundi",
+      "tier": "wikipedia",
+      "quote": "the largest medieval map still known to exist",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Mappa_Mundi' | sed 's/<[^>]*>/ /g' | rg -o -m1 'the\\s+largest\\s+medieval\\s+map\\s+still\\s+kno'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "kind": "damaged",
+      "year": 1055,
+      "earliest": 1055,
+      "latest": 1055,
+      "label": "1055 fire: the Hereford Gospels the only book to survive",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "was the only book to survive the 1055 fire",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'was\\s+the\\s+only\\s+book\\s+to\\s+survive\\s+the\\s+1'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "kind": "founded",
+      "year": 1611,
+      "earliest": 1611,
+      "latest": 1611,
+      "label": "Chained Library established by Thomas Thornton",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "in 1611 the Chained Library",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'in\\s+1611\\s+the\\s+Chained\\s+Library'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "kind": "damaged",
+      "year": 1786,
+      "earliest": 1786,
+      "latest": 1786,
+      "label": "West tower of the cathedral falls on Easter Monday",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral",
+      "tier": "wikipedia",
+      "quote": "the greatest disaster in the history of the cathedral took place",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral' | sed 's/<[^>]*>/ /g' | rg -o -m1 'the\\s+greatest\\s+disaster\\s+in\\s+the\\s+histo'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "hereford",
+      "kind": "opened",
+      "year": 1996,
+      "earliest": 1996,
+      "latest": 1996,
+      "label": "New library building by Sir William Whitfield opened by the Queen",
+      "source": "https://en.wikipedia.org/wiki/Hereford_Cathedral_Library",
+      "tier": "wikipedia",
+      "quote": "opened on 3 May 1996 by the Queen",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Hereford_Cathedral_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'opened\\s+on\\s+3\\s+May\\s+1996\\s+by\\s+the\\s+Queen'"
+    }
+  ]
+}

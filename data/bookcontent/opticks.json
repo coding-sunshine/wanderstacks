@@ -1,0 +1,234 @@
+{
+  "id": "opticks",
+  "summary": "Newton reports a long series of experiments on light and colour. Using prisms, lenses and thin sheets of glass, he shows that sunlight is a mixture of rays that each bend by a different amount, and that colour belongs to how those rays are sensed and not to the rays themselves. The later books study thin films and the rings they make, and bending of light at edges. The work closes with a set of open questions about light, heat, gravity and method, which later readers treated as a guide for science.",
+  "context": "Opticks first appeared in English in 1704, without Newton's name on the title page, and a Latin version followed in 1706. He had reported the prism experiments to the Royal Society in 1672, but a bitter dispute with Robert Hooke led him to hold the book back until after Hooke died in 1703. Unlike the Principia, it is written in plain English and built from described experiments, not geometric proofs. The number of closing queries grew from sixteen in the first edition to 31 in the fourth edition of 1730.",
+  "sources": [
+    {
+      "title": "Opticks (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Opticks"
+    },
+    {
+      "title": "Opticks by Isaac Newton (Project Gutenberg)",
+      "url": "https://www.gutenberg.org/ebooks/33504"
+    },
+    {
+      "title": "Isaac Newton (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Isaac_Newton"
+    }
+  ],
+  "people": [
+    {
+      "name": "Isaac Newton",
+      "role": "Author",
+      "note": "English physicist and mathematician; his work on light was collected in Opticks, published in 1704.",
+      "s": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Robert Hooke",
+      "role": "Rival",
+      "note": "His dispute with Newton over the corpuscular theory led Newton to delay publication until after Hooke's death in 1703.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Christiaan Huygens",
+      "role": "Contemporary",
+      "note": "His Treatise on Light is counted with Opticks among the major optics works of the Scientific Revolution; his wave theory was later supported by Young and Fresnel.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Johannes Kepler",
+      "role": "Predecessor",
+      "note": "His Astronomiae Pars Optica is one of the three major optics works of the period.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Johann Wolfgang von Goethe",
+      "role": "Critic",
+      "note": "Defended the older view of white light in his 1810 Theory of Colours.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Voltaire",
+      "role": "Popularizer",
+      "note": "Spread Newtonian science, including Opticks, in his 1738 book on Newton's philosophy.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Thomas Young and Augustin-Jean Fresnel",
+      "role": "Later physicists",
+      "note": "Showed the wave theory could account for colour as a matter of wavelength.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "London",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "note": "Seat of the Royal Society, where Newton first reported his prism experiments in 1672; he spent his last decades here.",
+      "s": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Cambridge",
+      "lat": 52.2053,
+      "lon": 0.1218,
+      "note": "Newton was admitted to Trinity College in 1661 and later held the Lucasian chair.",
+      "s": [
+        2
+      ]
+    },
+    {
+      "name": "Woolsthorpe Manor",
+      "lat": 52.8087,
+      "lon": -0.6264,
+      "note": "Newton's birthplace in Lincolnshire,, where he later developed theories of calculus, optics and gravity.",
+      "s": [
+        2
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1661,
+      "label": "Newton is admitted to Trinity College, Cambridge",
+      "s": [
+        2
+      ]
+    },
+    {
+      "year": 1672,
+      "label": "Prism experiments reported to the Royal Society of London",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1703,
+      "label": "Hooke dies, clearing the way for publication",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1704,
+      "label": "Opticks published in English",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "year": 1706,
+      "label": "Latin edition appears with 23 queries",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1730,
+      "label": "Fourth edition has 31 queries",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "White light is a mixture",
+      "note": "Light is made of different spectral hues, and all colours including white come from mixing them; this overturned the old view that white light is pure.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Colour is a sensation",
+      "note": "Each hue bends at its own angle, but colour is a sensation in the mind and not a property of objects or light itself.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Experiment before hypothesis",
+      "note": "The book is a record of experiments and their deductions, and each proposition is shown by a described test.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Light as corpuscles",
+      "note": "In the queries Newton guesses that light behaves like small particles, beyond what his experiments prove.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Queries as open questions",
+      "note": "Late queries range over heat, gravity, chemistry and ethics, mostly posed as rhetorical questions.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "PART I.",
+      "quote": "My Design in this Book is not to explain the Properties of Light by Hypotheses, but to propose and prove them by Reason and Experiments:",
+      "why": "Newton's opening sentence sets the method: prove claims by experiment, not by hypothesis."
+    },
+    {
+      "part": 1,
+      "chapter": "DEFINITION.",
+      "quote": "For the Rays to speak properly are not coloured. In them there is nothing else than a certain Power and Disposition to[Pg 125] stir up a Sensation of this or that Colour.",
+      "why": "He states that colour is a sensation in the observer, a point the Wikipedia article stresses."
+    },
+    {
+      "part": 2,
+      "chapter": "PART I.: Observations concerning the Reflexions, Refractions, and Colours of thin transparent Bodies.",
+      "quote": "Obs. 3. When the Rings or some parts of them appeared only black and white, they were very distinct and well defined, and the blackness seemed as intense as that of the central Spot.",
+      "why": "A sample of the careful observations of thin-film rings that fill the second book."
+    },
+    {
+      "part": 2,
+      "chapter": "PROP. IX. Prob. IV.",
+      "quote": "This Explication of the Rain-bow is yet farther confirmed by the known Experiment (made by Antonius de Dominis and Des-Cartes ) of hanging up any where in the Sun-shine a Glass Globe filled with Water, and viewing it in such a posture, that the Rays which come from the Globe to the Eye may contain with the Sun's Rays an Angle of either 42 or 50 Degrees.",
+      "why": "He uses his findings about refraction to explain the rainbow, tested with a water-filled glass globe."
+    },
+    {
+      "part": 4,
+      "chapter": "OPTICKS: PART I.",
+      "quote": "Query 1. Do not Bodies act upon Light at a distance, and by their action bend its Rays; and is not this action ( cæteris paribus ) strongest at the least distance?",
+      "why": "The first of the queries that end the book: bodies bending light at a distance."
+    },
+    {
+      "part": 4,
+      "chapter": "OPTICKS: PART I.",
+      "quote": "Qu. 6. Do not black Bodies conceive heat more easily from Light than those of other Colours do, by[Pg 340] reason that the Light falling on them is not reflected outwards, but enters the Bodies, and is often reflected and refracted within them, until it be stifled and lost?",
+      "why": "The query that Wikipedia says introduces the idea of a black body."
+    },
+    {
+      "part": 4,
+      "chapter": "OPTICKS: PART I.",
+      "quote": "To tell us that every Species of Things is endow'd with an occult specifick Quality by which it acts and produces manifest Effects, is to tell us nothing:",
+      "why": "Newton rejects explanations by hidden qualities in favour of general principles drawn from phenomena."
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+ "summary": "The Poetic Edda is a collection of anonymous Old Norse poems in alliterative verse. Some tell of the gods, including the prophecy of the wise-woman that opens the Codex Regius and the sayings of the High One. Others tell hero tales, among them the lay of Völund, the Helgi lays and the cycle around Sigurth, Brynhild, Guthrun and Atli. The site carries a translation with an introduction and a note on each poem, which explains the sources and the stories behind each lay.",
+ "context": "The poems were composed over several centuries and passed from poet to poet by mouth before they were written down. Most of them survive in the Codex Regius, an Icelandic manuscript thought to date from the 1270s. It came to Bishop Brynjólfur Sveinsson in 1643, and he sent it to the Danish king in 1662. It was returned to Reykjavík in 1971. English versions began in 1797, and this site carries the 1923 translation by Henry Adams Bellows for the American-Scandinavian Foundation.",
+ "sources": [
+  {
+   "title": "Poetic Edda (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Poetic_Edda"
+  },
+  {
+   "title": "Codex Regius (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Codex_Regius"
+  },
+  {
+   "title": "The Poetic Edda, translated by Henry Adams Bellows (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/73533"
+  },
+  {
+   "title": "Erik the Red (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Eric_the_Red"
+  }
+ ],
+ "people": [
+  {
+   "name": "Henry Adams Bellows",
+   "role": "translator",
+   "note": "Made the 1923 English translation with introduction and notes that this site carries.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Brynjólfur Sveinsson",
+   "role": "patron",
+   "note": "The Bishop of Skálholt who obtained the Codex Regius in 1643 and sent it to Denmark in 1662.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Frederick III of Denmark",
+   "role": "patron",
+   "note": "The king who received the Codex Regius as a gift in 1662.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Snorri Sturluson",
+   "role": "author",
+   "note": "Compiler of the Prose Edda, a handbook for poets that quotes many Eddic poems; he died in 1241.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "A. S. Cottle",
+   "role": "translator",
+   "note": "Produced the earliest printed English translation of the Edda in 1797.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Olive Bray",
+   "role": "translator",
+   "note": "Translated the poems about the gods for the Viking Club of London in 1908.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Sigurth",
+   "role": "character",
+   "note": "Called Fafnir's slayer in the poems; the Sigurth story is by far the largest part of the Volsung tradition.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Reykjavík",
+   "lat": 64.1466,
+   "lon": -21.9426,
+   "note": "The Codex Regius is kept here at the Árni Magnússon Institute for Icelandic Studies.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Skálholt",
+   "lat": 64.1272,
+   "lon": -20.5222,
+   "note": "Seat of Bishop Brynjólfur Sveinsson, who held the manuscript in 1643.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Copenhagen",
+   "lat": 55.6761,
+   "lon": 12.5683,
+   "note": "The Codex Regius sat in the Royal Library here until 1971.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Greenland",
+   "lat": 64.1814,
+   "lon": -51.6941,
+   "note": "The poem Atlamál hin groenlenzku claims by its title to have been composed here, after about 985.",
+   "s": [
+    0,
+    2,
+    3
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 985,
+   "label": "Atlamál hin groenlenzku, if composed in Greenland, dates from after about this year.",
+   "s": [
+    0,
+    3
+   ]
+  },
+  {
+   "year": 1270,
+   "label": "The Codex Regius is thought to be written in the 1270s.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1643,
+   "label": "Brynjólfur Sveinsson gets the Codex Regius.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1662,
+   "label": "Brynjólfur sends the codex to King Frederick III of Denmark.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1797,
+   "label": "A. S. Cottle publishes the earliest printed English translation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1923,
+   "label": "The American-Scandinavian Foundation publishes the Bellows translation.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 1971,
+   "label": "The Codex Regius returns to Reykjavík by ship on 21 April.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Oral poems, late manuscript",
+   "note": "The poems were the work of many poets over several periods and lived in oral tradition for generations before being written down.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Gods and heroes",
+   "note": "The collection splits into lays of the gods and lays of the heroes, with the Sigurth story the longest.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Alliterative verse forms",
+   "note": "Most poems use fornyrðislag, with a quarter in ljóðaháttr, and they use fewer kennings than skaldic poetry.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "THE ORIGIN OF THE EDDIC POEMS",
+   "quote": "There is even less agreement about the birthplace, authorship and date of the Eddic poems themselves than about the nature of the existing collection",
+   "why": "The translator on who made the poems and when."
+  },
+  {
+   "part": 1,
+   "chapter": "Introductory Note",
+   "quote": "Hearing I ask | from the holy races, From Heimdall’s sons, | both high and low; Thou wilt, Valfather, | that well I relate Old tales I remember | of men long ago",
+   "why": "The wise-woman's prophecy opens."
+  },
+  {
+   "part": 1,
+   "chapter": "Introductory Note",
+   "quote": "Cattle die, | and kinsmen die, And so one dies one’s self; But a noble name | will never die, If good renown one gets",
+   "why": "A famous stanza from the sayings of the High One."
+  },
+  {
+   "part": 2,
+   "chapter": "NOTES",
+   "quote": "Thruthheim (“the Place of Might”): the place where Thor, the strongest of the gods, has his hall, Bilskirnir, described in stanza 24",
+   "why": "A note on the halls of the gods."
+  },
+  {
+   "part": 3,
+   "chapter": "Introductory Note",
+   "quote": "Between the Thrymskvitha and the Alvissmol in the Codex Regius stands the Völundarkvitha",
+   "why": "Introduces the Lay of Völund."
+  },
+  {
+   "part": 4,
+   "chapter": "Introductory Note",
+   "quote": "Of this tradition we may recognize three distinct parts: the Volsung-Sigmund-Sinfjotli story; the Helgi story, and the Sigurth story, the last of these three being by far the most extensive, and suggesting an almost limitless amount of further subdivision",
+   "why": "Explains how the Volsung stories divide."
+  },
+  {
+   "part": 5,
+   "chapter": "NOTES",
+   "quote": "Atli : Brynhild here blames her brother, following the frequent custom of transferring the responsibility for a murder (cf. Helgakvitha Hundingsbana II , 33), because he compelled her to marry Gunnar against her will, an idea which the poet seems to have gained from Sigurtharkvitha en skamma , 32–39",
+   "why": "A note on a Brynhild lay."
+  },
+  {
+   "part": 6,
+   "chapter": "NOTES",
+   "quote": "Men : Atli and his advisers, with whom he planned the death of the sons of Gjuki , Gunnar and Hogni. The poet’s reference to the story as well known explains the abruptness of his introduction, without the mention of Atli’s name, and his reference to Guthrun in stanza 3 simply as “the woman” (“husfreyja,” goddess of the house)",
+   "why": "A note on the Atli poem."
+  }
+ ],
+ "id": "edda"
+}

@@ -1,0 +1,304 @@
+{
+ "summary": "The Lusiads is a ten-canto epic in rhymed verse about Vasco da Gama's voyage from Lisbon round Africa to India. The gods argue over whether the Portuguese should succeed, with Bacchus against them and Venus for them. Gama tells the king of Melinda the history of Portugal, including the story of Inez, and then the voyage itself, with storms, the giant Adamastor at the Cape and the arrival at Calicut. The poem ends with an island of Venus where the sailors are rewarded. This edition prints William Julius Mickle's English version with his life of the poet, essays and notes.",
+ "context": "Luis Vaz de Camoes wrote the poem during years of exile and service in the East, and it was first printed in 1572. Many Portuguese regard it as their national epic, and it is often compared to Virgil's Aeneid. Mickle, a Scot who had worked at the Clarendon Press in Oxford, published his English translation in 1776, and it brought him fame and money. The edition on the site comes from Project Gutenberg, with an editor's preface that corrects some of Mickle's account of the poet's life and adds footnotes where another rendering is closer to the original.",
+ "sources": [
+  {
+   "title": "Os Lusíadas - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Os_Lusíadas"
+  },
+  {
+   "title": "William Julius Mickle - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/William_Julius_Mickle"
+  },
+  {
+   "title": "The Lusiad; Or, The Discovery of India, an Epic Poem - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/32528"
+  }
+ ],
+ "people": [
+  {
+   "name": "Luís Vaz de Camões",
+   "role": "author",
+   "note": "Portuguese poet who wrote the epic in exile in Macau and first printed it in 1572.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "William Julius Mickle",
+   "role": "translator",
+   "note": "Scottish poet whose 1776 English version of the Lusiad brought him fame, and who visited Portugal in 1777.",
+   "s": [
+    1,
+    0
+   ]
+  },
+  {
+   "name": "Vasco da Gama",
+   "role": "subject",
+   "note": "Explorer whose sea route to India is the poem's subject.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Sebastian of Portugal",
+   "role": "patron",
+   "note": "The king to whom Camões dedicated the poem.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Emmanuel I",
+   "role": "character",
+   "note": "King of Portugal who, after a vision of the Indus and Ganges, chooses Gama to command the expedition.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Inez de Castro",
+   "role": "character",
+   "note": "Her killing and her crowning as queen after death are told in Book III.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Adamastor",
+   "role": "character",
+   "note": "Giant of the Cape of Storms who appears to the fleet and prophesies.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Francisco Barreto",
+   "role": "subject",
+   "note": "Viceroy at Goa who, according to Mickle's life of the poet, banished Camões to China over satires.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Lord Strangford",
+   "role": "subject",
+   "note": "Wrote a memoir of Camões that the editor's preface summarises to correct Mickle.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Lisbon",
+   "lat": 38.7223,
+   "lon": -9.1393,
+   "note": "Port from which the fleet sails at the start of the poem.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Mozambique Island",
+   "lat": -15.0333,
+   "lon": 40.7333,
+   "note": "Gama lands here early in the voyage and meets Moorish opposition.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Malindi",
+   "lat": -3.2175,
+   "lon": 40.1191,
+   "note": "The poem's Melinda, whose king hears Gama's account of Portugal and the voyage.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Cape of Good Hope",
+   "lat": -34.3568,
+   "lon": 18.474,
+   "note": "Called the Cape of Storms in the poem, where Adamastor appears.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Calicut",
+   "lat": 11.2588,
+   "lon": 75.7804,
+   "note": "The fleet reaches India here, and Gama's factors are held for ransom.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Goa",
+   "lat": 15.4909,
+   "lon": 73.8278,
+   "note": "Camões lived here and wrote more of the poem before his banishment to China.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Macau",
+   "lat": 22.1987,
+   "lon": 113.5439,
+   "note": "Camões was exiled here and continued the Lusiad.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Ceuta",
+   "lat": 35.8894,
+   "lon": -5.3213,
+   "note": "Camões fought here and lost his right eye in a naval engagement.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Mekong delta",
+   "lat": 9.8,
+   "lon": 106.4,
+   "note": "Camões was shipwrecked near the river's mouth and saved his poems.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1497,
+   "label": "Vasco da Gama's expedition leaves Portugal, as the argument of Book V dates it.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 1553,
+   "label": "Camões sails for India with the resolve never to return.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 1572,
+   "label": "Os Lusíadas is first printed, three years after the poet returned from the Indies.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1580,
+   "label": "Camões dies, according to the dates given for his life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1776,
+   "label": "Mickle's English translation of the Lusiad appears.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1777,
+   "label": "Mickle goes to Portugal, where the king gives him a public reception.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "The epic of commerce",
+   "note": "Mickle calls the poem the epic of commerce, since da Gama's voyage opened the modern trading world.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Gods quarrel over Portugal",
+   "note": "Bacchus opposes the Portuguese and Venus and Mars help them, so the voyage is a contest among gods.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Homer-style national epic",
+   "note": "Written in Homeric fashion, it plays for Portugal the role the Aeneid played for Rome.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Reward on the island of Love",
+   "note": "Venus brings the sailors to an island where they are rewarded, an episode Mickle defends in a separate dissertation.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "THE LIFE OF CAMOËNS,",
+   "quote": "As the ship left the Tagus he exclaimed, in the words of the sepulchral monument of Scipio Africanus, \" Ingrata patria, non possidebis ossa mea",
+   "why": "Mickle's life of Camões: the poet leaves Lisbon for India in 1553."
+  },
+  {
+   "part": 1,
+   "chapter": "MICKLE'S INTRODUCTION TOTHE LUSIAD.",
+   "quote": "In contradistinction to the Iliad and the Æneid, the Paradise Lost has been called the Epic Poem of Religion. In the same manner may the Lusiad be named the Epic Poem of Commerce",
+   "why": "Mickle names the Lusiad the epic of commerce."
+  },
+  {
+   "part": 2,
+   "chapter": "BOOK I.",
+   "quote": "ARMS and the Heroes, who from Lisbon's shore, Thro' seas where sail was never spread before, Beyond where Ceylon lifts her spicy breast, And waves her woods above the wat'ry waste,{2} With prowess more than human forc'd their way To the fair kingdoms of the rising day: What wars they wag'd, what seas",
+   "why": "The opening lines of the poem in Mickle's verse."
+  },
+  {
+   "part": 2,
+   "chapter": "BOOK III.",
+   "quote": "Thus Inez, while her eyes to heaven appeal, Resigns her bosom to the murd'ring steel:{97} That snowy neck, whose matchless form sustain'd The loveliest face where all the graces reign'd, Whose charms so long the gallant prince enflam'd, That her pale corse was Lisbon's queen proclaim'd, That snowy ne",
+   "why": "The killing of Inez in Book III."
+  },
+  {
+   "part": 3,
+   "chapter": "BOOK V.",
+   "quote": "WHILE on the beach the hoary father stood, And spoke the murmurs of the multitude, We spread the canvas to the rising gales, The gentle winds distend the snowy sails",
+   "why": "The fleet departs while the crowd on the shore mourns."
+  },
+  {
+   "part": 3,
+   "chapter": "BOOK IV.",
+   "quote": "Alas! my son, my son,\" A hoary sire exclaims, \"oh! whither run, My heart's sole joy, my trembling age's stay, To yield thy limbs the dread sea-monster's prey",
+   "why": "A father's cry to a son leaving on the voyage."
+  },
+  {
+   "part": 4,
+   "chapter": "BOOK IX.",
+   "quote": "Points to the Cape, great Nature's southmost bound, The Cape of Tempests, now of Hope renown'd.{263} Their glorious tale on Lisboa's shore to tell Inspires each bosom with a rapt'rous swell; Now through their breasts the chilly tremors glide, To dare once more the dangers dearly tried",
+   "why": "The returning fleet sights the Cape of Tempests, now of Hope."
+  },
+  {
+   "part": 4,
+   "chapter": "FICTION OF THE ISLAND OF VENUS.",
+   "quote": "From the earliest ages, and in the most distant nations, palaces, forests and gardens, have been the favourite themes of poets. And though, as in Homer's island of Rhadamanthus, the description is sometimes only cursory; at other times they have lavished all their powers, and have vied with each othe",
+   "why": "Mickle's dissertation on the fiction of the Island of Venus."
+  }
+ ],
+ "id": "gabinete-lusiad-mickle"
+}

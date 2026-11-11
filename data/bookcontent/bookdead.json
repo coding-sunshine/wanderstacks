@@ -1,0 +1,266 @@
+{
+ "summary": "The Book of the Dead is a loose collection of spells, hymns, prayers and magical names that ancient Egyptians placed with the dead to help them through the afterlife. The version here is E. A. Wallis Budge's introduction, which explains what the collection is, why Thoth is credited as its author, and how Osiris rules the dead. Its centre is the judgment, where the heart is weighed in scales and Thoth records the verdict. Budge also describes the Kingdom of Osiris, a farmland of canals and fields, and the opening chapters of the great papyri.",
+ "context": "The spells grew over about a thousand years. Some come from the older Pyramid Texts and Coffin Texts, and the weighing of the heart is first known from about 1475 BC. Each papyrus was a custom copy, so no single book exists. The name came from tomb robbers and early Egyptologists, and in 1842 Karl Richard Lepsius gave it the German form Todtenbuch and numbered the spells. Samuel Birch published the first long English translation in 1867. E. A. Wallis Budge, his successor at the British Museum, made editions of the Papyrus of Ani, which is the source of the pictures here.",
+ "sources": [
+  {
+   "title": "Book of the Dead (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Book_of_the_Dead"
+  },
+  {
+   "title": "Papyrus of Ani (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Papyrus_of_Ani"
+  },
+  {
+   "title": "The Book of the Dead (Project Gutenberg ebook 7145)",
+   "url": "https://www.gutenberg.org/ebooks/7145"
+  }
+ ],
+ "people": [
+  {
+   "name": "Thoth",
+   "role": "subject",
+   "note": "The god of writing and justice, credited in the text as the author of the funerary spells and the dead person's advocate at the judgment.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Osiris",
+   "role": "subject",
+   "note": "King of the dead, who judges souls in his hall and rules a kingdom of fields in the underworld.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Ani",
+   "role": "scribe",
+   "note": "A Theban scribe for whom the finest surviving Book of the Dead scroll was made around 1250 BCE.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "E. A. Wallis Budge",
+   "role": "translator",
+   "note": "British Museum Egyptologist whose editions and English translations of the Papyrus of Ani are still widely read.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Karl Richard Lepsius",
+   "role": "subject",
+   "note": "Egyptologist who coined the name Todtenbuch in 1842 and introduced the numbering of spells still in use.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Édouard Naville",
+   "role": "subject",
+   "note": "Compiled a three-volume comparative edition of the spells between 1875 and 1886.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Samuel Birch",
+   "role": "translator",
+   "note": "British Museum scholar who published the first extensive English translation in 1867.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jean-François Champollion",
+   "role": "subject",
+   "note": "Announced his decipherment of hieroglyphs in 1822. Budge says he was among the French scholars who described the papyrus published in 1805 as a funerary ritual and later, with others, used the title Le Livre des Morts; Wikipedia credits Lepsius with coining the name in 1842.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Thebes",
+   "lat": 25.7188,
+   "lon": 32.6573,
+   "note": "The Papyrus of Ani was found in the tomb of the scribe Ani here in 1888.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Abydos",
+   "lat": 26.185,
+   "lon": 31.919,
+   "note": "After the twelfth dynasty theologians placed the Kingdom of Osiris near this city in Upper Egypt.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "British Museum, London",
+   "lat": 51.5194,
+   "lon": -0.127,
+   "note": "Holds the Papyrus of Ani, which Budge acquired and sent there in 1888.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Strasbourg",
+   "lat": 48.5734,
+   "lon": 7.7521,
+   "note": "An army paymaster brought a thirty foot papyrus here, which was published in Paris in 1805 and helped fix the name Book of the Dead.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -1475,
+   "label": "The Weighing of the Heart, spell 125, is first known from the reigns of Hatshepsut and Thutmose III.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -1250,
+   "label": "The Papyrus of Ani is made for a Theban scribe in the Nineteenth Dynasty.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1805,
+   "label": "A long illustrated papyrus is published in Paris and studied as the funerary ritual of the Egyptians.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "year": 1842,
+   "label": "Lepsius publishes a Ptolemaic papyrus, names it the Book of the Dead and numbers 165 spells.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1867,
+   "label": "Samuel Birch of the British Museum publishes the first extensive English translation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1875,
+   "label": "Naville begins his comparative edition of the spells, which he finishes in 1886.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1888,
+   "label": "The Papyrus of Ani is found at Thebes and bought by Budge for the British Museum.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Weighing the heart",
+   "note": "The dead person's heart is weighed in scales against the feather of truth, and Thoth records the result.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Thoth as author and advocate",
+   "note": "Thoth is the writer of the spells and also pleads for the dead before Osiris, as he once did for Osiris against Set.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "A kit, not a book",
+   "note": "No single canonical text exists. Each papyrus holds a different selection of spells and pictures, sometimes ordered by the buyer.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "A farm after death",
+   "note": "The blessed live in a flat land of canals and fields, where they plough and reap much as they did in Egypt.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "A name from tomb robbers",
+   "note": "The modern title translates what Egyptian tomb robbers called any papyrus found with a mummy, so it does not describe the contents.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "The Title.",
+   "quote": "is the title now commonly given to the great collection of funerary texts which the ancient Egyptian scribes composed for the benefit of the dead",
+   "why": "Budge opens by defining the collection as texts for the benefit of the dead."
+  },
+  {
+   "part": 1,
+   "chapter": "The Title.",
+   "quote": "These titles are merely translations of the name given by the Egyptian tomb-robbers to every roll of inscribed papyrus which they found with mummies, namely, \"Kitâb-al-Mayyit,\" \"Book of the dead man,\" or \"Kitâb al-Mayyitun,\" \"Book of the dead\" ( plur",
+   "why": "The odd origin of the title the book carries today."
+  },
+  {
+   "part": 1,
+   "chapter": "Thoth, the Author of the Book of the Dead.",
+   "quote": "He was the inventor of physical and moral Law and became the personification of JUSTICE; and as the Companies of the Gods of Heaven, and Earth, and the Other World appointed him to \"weigh the words and deeds\" of men, and his verdicts were unalterable, he became more powerful in the Other World than O",
+   "why": "Thoth's powers, the reason his verdicts matter in the afterlife."
+  },
+  {
+   "part": 1,
+   "chapter": "Thoth and Osiris.",
+   "quote": "The Egyptians were not satisfied with the mere possession of the texts of Thoth, when their souls were being weighed in the Great Scales in the Judgment Hall of Osiris, but they also wished Thoth to act as their Advocate on this dread occasion and to prove their innocence as he had proved that of Osi",
+   "why": "Shows Thoth as advocate in the Judgment Hall of Osiris."
+  },
+  {
+   "part": 1,
+   "chapter": "Osiris as Judge of the Dead and King of the Under World.",
+   "quote": "When Set was destroyed Osiris departed from this world to the kingdom which the gods had given him and began to reign over the dead",
+   "why": "How Osiris became king of the dead."
+  },
+  {
+   "part": 1,
+   "chapter": "The Judgment of Osiris.",
+   "quote": "The oldest religious texts suggest that the Egyptians always associated the Last Judgment with the weighing of the heart in a pair of scales, and in the illustrated papyri of the Book of the Dead great prominence is always given to the vignettes in which this weighing is being carried out",
+   "why": "The weighing of the heart, the best-known scene in the book."
+  },
+  {
+   "part": 1,
+   "chapter": "The Kingdom of Osiris.",
+   "quote": "In one part of it were several small islands, and on one of them Osiris was supposed to dwell with his saints",
+   "why": "The Island of Truth, where Osiris lives among the blessed."
+  },
+  {
+   "part": 1,
+   "chapter": "A Short Description of the \"Doors\" or Chapters of the Book of the Dead.",
+   "quote": "All the great papyri of the Book of the Dead begin with a HYMN TO RĀ, who from the period of the IVth dynasty was the \"King of the Gods\" of Egypt",
+   "why": "How the large papyri open, before the chapters begin."
+  }
+ ],
+ "id": "bookdead"
+}

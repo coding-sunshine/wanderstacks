@@ -1,0 +1,240 @@
+{
+ "id": "homer-the-odyssey-william-cullen-bryant",
+ "summary": "The Odyssey follows Ulysses, the Greek king of Ithaca, on his ten-year journey home after the fall of Troy. His crew is lost to monsters, enchantresses and his own recklessness, and the sea god Neptune keeps him at sea. At home, suitors crowd the palace of his wife Penelope while their son Telemachus searches for news of him. In William Cullen Bryant's blank verse, the poem moves between storytelling by firelight, shipwreck, disguise and a bloody reckoning in the great hall.",
+ "context": "The Odyssey is one of two major epics attributed to Homer, composed in Greek around the eighth or seventh century BC out of a long oral tradition. It has 24 books, a division probably added long after composition. Its main themes are homecoming, wandering and guest-friendship. The first complete English translation appeared in 1616. William Cullen Bryant, the American poet, rendered it in unrhymed blank verse, which reads more naturally in English than imitations of Greek hexameter. Bryant calls the hero Ulysses, the Latin form of his name.",
+ "sources": [
+  {
+   "title": "Odyssey (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Odyssey"
+  },
+  {
+   "title": "The Odyssey, translated by William Cullen Bryant (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/homer/the-odyssey/william-cullen-bryant"
+  }
+ ],
+ "people": [
+  {
+   "name": "Homer",
+   "role": "traditional author",
+   "note": "Poet to whom antiquity credited the Odyssey; modern scholarship generally treats the epics as products of a long oral tradition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ulysses (Odysseus)",
+   "role": "hero",
+   "note": "King of Ithaca who spends ten years returning from Troy, losing all his crewmates on the way.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Penelope",
+   "role": "wife of Ulysses",
+   "note": "Stays in Ithaca, pressed by suitors who assume her husband is dead.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Telemachus",
+   "role": "son of Ulysses",
+   "note": "Goes to look for news of his father and later fights beside him.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Neptune (Poseidon)",
+   "role": "angry god",
+   "note": "The sea god whom Ulysses angers, which makes the voyage slow and dangerous.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Circe",
+   "role": "enchantress",
+   "note": "Dwells at the edge of the world and instructs Ulysses on his way to the land of the dead.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Calypso",
+   "role": "goddess",
+   "note": "Holds Ulysses on the island of Ogygia until Mercury is sent to tell her to release him.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "William Cullen Bryant",
+   "role": "translator",
+   "note": "Rendered the poem in blank verse, which Standard Ebooks says sounds natural in English.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Ithaca",
+   "lat": 38.3667,
+   "lon": 20.7167,
+   "note": "Ulysses's island kingdom and the goal of his journey.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Troy",
+   "lat": 39.9575,
+   "lon": 26.2389,
+   "note": "City whose fall ends the ten-year war and starts Ulysses's voyage.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Pylos",
+   "lat": 37.0275,
+   "lon": 21.6956,
+   "note": "Place Pallas, as Mentor, urges Telemachus to visit in search of his father.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Sparta",
+   "lat": 37.0733,
+   "lon": 22.4297,
+   "note": "Second stop in Telemachus's search for news of Ulysses.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Athens",
+   "lat": 37.9838,
+   "lon": 23.7275,
+   "note": "City Pallas visits on leaving Scheria, in Book VII.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -750,
+   "label": "The Odyssey is composed in Homeric Greek around the 8th or 7th century BC; the date is not settled.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -550,
+   "label": "By the middle of the 6th century BC the poem is part of the Greek literary canon.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1616,
+   "label": "The first complete English translation of the Odyssey appears.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 2018,
+   "label": "A BBC Culture poll of experts ranks the Odyssey literature's most enduring narrative.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Nostos, the return",
+   "note": "The poem is built around a king's long journey home, and everything he meets tests that wish.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Guest-friendship",
+   "note": "Xenia, the duty to host strangers, separates good hosts from the suitors who devour Ulysses's house.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Cunning over force",
+   "note": "Ulysses calls himself Noman to blind the Cyclops and wins by planning, not strength.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Oral performance",
+   "note": "The poem depicts professional singers such as Phemius and Demodocus, hinting at how it was first told.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Loyalty tested",
+   "note": "Penelope, Telemachus and even the old dog Argus keep faith through twenty years of absence.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Book I",
+   "quote": "Tell me, O Muse, of that sagacious man Who, having overthrown the sacred town Of Ilium, wandered far and visited The capitals of many nations, learned The customs of their dwellers, and endured Great suffering on the deep: his life was oft In peril, as he labored to bring back His comrades to their homes. He saved them not, Though earnestly he strove; they perished all, Through their own folly;",
+   "why": "The opening invocation: a man who wandered, learned the ways of many nations and tried to bring his comrades home."
+  },
+  {
+   "part": 2,
+   "chapter": "Book IX",
+   "quote": "Noman is my name, My father and my mother gave it me, And Noman am I called by all my friends.’ “I ended, and he answered savagely:⁠— ‘Noman shall be the last of all his band Whom I will eat, the rest will I devour Before him. Let that respite be my gift.’",
+   "why": "Ulysses gives the Cyclops a false name, the trick behind his escape."
+  },
+  {
+   "part": 3,
+   "chapter": "Book XII",
+   "quote": "The Sirens sit In a green field, and charm with mellow notes The comer, while beside them lie in heaps The bones of men decaying underneath The shrivelled skins. Take heed and pass them by. First fill with wax well kneaded in the palm The ears of thy companions, that no sound May enter.",
+   "why": "Circe's warning about the Sirens and the wax for the crew's ears."
+  },
+  {
+   "part": 4,
+   "chapter": "Book XVII",
+   "quote": "’Twas Argus, which the much-enduring man Ulysses long before had reared, but left Untried, when for the hallowed town of Troy He sailed. The young men oft had led him forth In eager chase of wild goats, stags, and hares;",
+   "why": "The old dog the hero reared before Troy lies on a heap."
+  },
+  {
+   "part": 4,
+   "chapter": "Book XVII",
+   "quote": "There lay Argus, devoured with vermin. As he saw Ulysses drawing near, he wagged his tail And dropped his ears, but found that he could come No nearer to his master.",
+   "why": "The dog recognises his master and cannot rise."
+  },
+  {
+   "part": 5,
+   "chapter": "Book XXII",
+   "quote": "He spake; and, turning, at Antinoüs aimed The bitter shaft⁠—Antinoüs, who just then Had grasped a beautiful two-eared cup of gold, About to drink the wine. He little thought Of wounds and death;",
+   "why": "The first arrow of the slaughter in the hall, aimed at a suitor with a cup in hand."
+  }
+ ]
+}

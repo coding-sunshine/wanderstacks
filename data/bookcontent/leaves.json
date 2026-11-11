@@ -1,0 +1,213 @@
+{
+ "id": "leaves",
+ "summary": "Leaves of Grass is Walt Whitman's poetry collection, which he published, revised and enlarged for most of his working life. The 1855 first edition held twelve untitled poems; the last grew to more than four hundred. The poems mostly skip rhyme and regular meter. They celebrate the body, nature, ordinary people and American democracy, and they speak plainly about sensual pleasure, which many early readers found indecent. 'Song of Myself' first appeared in 1855, and later editions add Civil War poems and an elegy for Lincoln.",
+ "context": "Whitman paid for the first edition himself and set some of the type, issuing it in Brooklyn on 4 July 1855 with no author's name on the title page. He had been spurred by Emerson's essay 'The Poet', which called for a distinctly American poet. Emerson's warm letter of thanks went public and lifted the book's profile, though sales stayed small. Whitman kept reworking the volume through editions in 1856, 1860, 1867, 1881 and 1892. The 1892 'deathbed edition', published as he was dying, is the text this site carries.",
+ "sources": [
+  {
+   "title": "Leaves of Grass (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Leaves_of_Grass"
+  },
+  {
+   "title": "Leaves of Grass (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/walt-whitman/leaves-of-grass"
+  }
+ ],
+ "people": [
+  {
+   "name": "Walt Whitman",
+   "role": "author",
+   "note": "Self-published the first edition and kept revising the book until his death in 1892.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Ralph Waldo Emerson",
+   "role": "subject",
+   "note": "His essay \"The Poet\" called for a new American poet, and his letter praising the 1855 edition was printed without his permission.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "James and Andrew Rome",
+   "role": "printer",
+   "note": "Scottish immigrant brothers whose Brooklyn print shop produced the first edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Samuel Hollyer",
+   "role": "printer",
+   "note": "Engraver of the portrait of Whitman in work clothes that stood in place of an author's name in 1855.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Abraham Lincoln",
+   "role": "subject",
+   "note": "His assassination prompted Whitman's elegy \"When Lilacs Last in the Dooryard Bloom'd\".",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "James R. Osgood and Co.",
+   "role": "printer",
+   "note": "Boston publisher of the 1881 edition, which many modern reissues treat as the definitive collection.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Brooklyn, New York",
+   "lat": 40.6995,
+   "lon": -73.9915,
+   "note": "The Rome brothers' shop near Fulton and Cranberry Streets printed the first edition in 1855.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "James R. Osgood and Co. published the 1881 edition here.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Philadelphia",
+   "lat": 39.9526,
+   "lon": -75.1652,
+   "note": "The only American library known to have bought a copy of the first edition was in this city.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1844,
+   "label": "Emerson publishes \"The Poet\", calling for a new American poet.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1855,
+   "label": "Whitman self-publishes the first edition, twelve poems in 95 pages, in Brooklyn on 4 July.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1856,
+   "label": "A much larger second edition appears with a phrase from Emerson's letter printed in gold leaf.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1867,
+   "label": "The edition adds Drum-Taps, Whitman's Civil War poems.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1881,
+   "label": "The Boston edition from James R. Osgood and Co. is published.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1892,
+   "label": "The \"deathbed edition\" is published; Whitman wanted it to supersede all earlier ones.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "A book that is never finished",
+   "note": "Whitman revised and enlarged the collection across several editions, so the title names a lifetime project rather than a single work.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Democratic poetry of the common person",
+   "note": "The poems treat the ordinary individual as a representative of all humanity and catalogue American democracy.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "The body and the senses",
+   "note": "Rather than religious themes, Whitman focuses on the body and the material world, and speaks frankly about sensual pleasure.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Free verse",
+   "note": "Most poems ignore rhyme and conventional meter and line length.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Song of Myself: 1",
+   "quote": "I celebrate myself, and sing myself, And what I assume you shall assume, For every atom belonging to me as good belongs to you. I loafe and invite my soul, I lean and loafe at my ease observing a spear of summer grass.",
+   "why": "The book's best-known opening: a poet who sets himself as equal to the reader and then loafs on the grass."
+  },
+  {
+   "part": 1,
+   "chapter": "51",
+   "quote": "Do I contradict myself? Very well then I contradict myself, (I am large, I contain multitudes.) I concentrate toward them that are nigh, I wait on the door-slab. Who has done his day’s work? who will soonest be through with his supper? Who wishes to walk with me? Will you speak before I am gone?",
+   "why": "The famous admission that the self is large and inconsistent."
+  },
+  {
+   "part": 2,
+   "chapter": "Crossing Brooklyn Ferry: 1",
+   "quote": "Flood-tide below me! I see you face to face! Clouds of the west⁠—sun there half an hour high⁠—I see you also face to face. Crowds of men and women attired in the usual costumes, how curious you are to me!",
+   "why": "Opening of the Brooklyn ferry poem, where Whitman speaks across time to later riders."
+  },
+  {
+   "part": 3,
+   "chapter": "O Captain! My Captain!",
+   "quote": "O Captain! my Captain! our fearful trip is done, The ship has weather’d every rack, the prize we sought is won, The port is near, the bells I hear, the people all exulting, While follow eyes the steady keel, the vessel grim and daring; But O heart! heart! heart!",
+   "why": "The Lincoln elegy that is the most conventional in form and the most widely recited."
+  },
+  {
+   "part": 3,
+   "chapter": "Memories of President Lincoln: When Lilacs Last in the Dooryard Bloom’d",
+   "quote": "When lilacs last in the dooryard bloom’d, And the great star early droop’d in the western sky in the night, I mourn’d, and yet shall mourn with ever-returning spring.",
+   "why": "The opening of the longer Lincoln elegy, in free verse."
+  },
+  {
+   "part": 4,
+   "chapter": "So Long!",
+   "quote": "Camerado, this is no book, Who touches this touches a man, (Is it night? are we here together alone?) It is I you hold and who holds you, I spring from the pages into your arms⁠—decease calls me forth.",
+   "why": "The late poem that treats the book and the man as the same thing."
+  }
+ ]
+}

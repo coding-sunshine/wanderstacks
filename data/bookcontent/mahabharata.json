@@ -1,0 +1,247 @@
+{
+ "id": "mahabharata",
+ "summary": "The Mahabharata is a Sanskrit epic about a dynastic quarrel between two sets of cousins, the Kauravas and the Pandavas, over the throne of Hastinapura. A rigged dice game costs the Pandavas their kingdom and sends them into exile. On their return the dispute ends in the great war at Kurukshetra. Within the story sits the Bhagavad Gita, a dialogue between the warrior Arjuna and Krishna. The tale is told through nested recitations, and in the end the surviving Pandavas climb the Himalaya toward heaven.",
+ "context": "Tradition credits the poet Vyasa, but modern scholars see a text built up over centuries, with the bulk compiled between the 3rd century BCE and the 3rd century CE and a final form by about the 4th century CE. It runs to roughly 1.8 million words, about ten times the Iliad and Odyssey together. Kisari Mohan Ganguli made the first complete English translation, published in 18 books between 1883 and 1896 by Pratap Chandra Roy in Calcutta, who at first kept the translator's name out of it.",
+ "sources": [
+  {
+   "title": "Mahabharata (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Mahabharata"
+  },
+  {
+   "title": "Kisari Mohan Ganguli (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Kisari_Mohan_Ganguli"
+  }
+ ],
+ "people": [
+  {
+   "name": "Vyasa",
+   "role": "author",
+   "note": "Traditional author of the epic.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kisari Mohan Ganguli",
+   "role": "translator",
+   "note": "Made the first complete English translation, at Shibpur near Calcutta.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Pratap Chandra Roy",
+   "role": "publisher",
+   "note": "Calcutta publisher who commissioned and issued the translation.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Arjuna",
+   "role": "character",
+   "note": "Pandava archer who hears the Gita from Krishna on the battlefield.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Krishna",
+   "role": "character",
+   "note": "Serves as Arjuna's charioteer and speaks the Bhagavad Gita.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Yudhishthira",
+   "role": "character",
+   "note": "Eldest Pandava, who loses his kingdom at dice and is the only brother to reach heaven with the dog.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Draupadi",
+   "role": "character",
+   "note": "Wife shared by the five Pandavas, who is insulted in the court after the dice game.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Janamejaya",
+   "role": "audience",
+   "note": "King to whom Vaisampayana recites the epic at Taxila.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Kurukshetra",
+   "lat": 29.97,
+   "lon": 76.84,
+   "note": "Site of the war between the Kauravas and Pandavas.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Hastinapura",
+   "lat": 29.15,
+   "lon": 78.02,
+   "note": "The kingdom the cousins fight over.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Indraprastha",
+   "lat": 28.61,
+   "lon": 77.24,
+   "note": "The forest the Pandavas receive and build into their capital.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Taxila",
+   "lat": 33.75,
+   "lon": 72.83,
+   "note": "Where Vaisampayana first recites the epic to Janamejaya.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Calcutta",
+   "lat": 22.57,
+   "lon": 88.36,
+   "note": "City where Ganguli's translation was published from 1883 to 1896.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -400,
+   "label": "The oldest parts of the text are not much older than about this date.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -250,
+   "label": "Bulk of the epic is compiled, from about the 3rd century BCE to the 3rd century CE.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 350,
+   "label": "The text reaches its final form by the early Gupta period, about the 4th century.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1870,
+   "label": "Roy and Durga Charan Banerjee ask Ganguli to translate it, in the early 1870s.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1883,
+   "label": "The first of 18 books of Ganguli's translation appears.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1896,
+   "label": "The last book of the translation is published.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Dynastic war",
+   "note": "The plot follows a struggle over Hastinapura between Kauravas and Pandavas that ends in the Kurukshetra war.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Duty in the Gita",
+   "note": "Arjuna despairs at the sight of kin on the other side, and Krishna answers him in the Bhagavad Gita.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The gambled kingdom",
+   "note": "Yudhishthira loses wealth, kingdom, brothers and wife at dice, and the Pandavas go into exile.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Nested recitation",
+   "note": "Vaisampayana recites to Janamejaya, and Ugrashrava Sauti later recites to sages in Naimisha forest.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Pride and fall",
+   "note": "On the climb to heaven each brother falls for a fault, and only Yudhishthira and the dog remain.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "SECTION I",
+   "quote": "Om! Having bowed down to Narayana and Nara, the most exalted male being, and also to the goddess Saraswati, must the word Jaya be uttered.",
+   "why": "The opening invocation of Ganguli's translation."
+  },
+  {
+   "part": 1,
+   "chapter": "SECTION I",
+   "quote": "Ugrasrava, the son of Lomaharshana, surnamed Sauti, well-versed in the Puranas, bending with humility, one day approached the great sages of rigid vows, sitting at their ease, who had attended the twelve years’ sacrifice of Saunaka, surnamed Kulapati, in the forest of Naimisha.",
+   "why": "Sauti arrives to recite to the sages, the outer frame of the epic."
+  },
+  {
+   "part": 1,
+   "chapter": "SECTION I",
+   "quote": "Dharma, Artha, and Kama—also various books upon the subject of Dharma, Artha, and Kama; also rules for the conduct of mankind; also histories and discourses with various srutis; all of which having been seen by the Rishi Vyasa are here in due order mentioned as a specimen of the book.",
+   "why": "The preview of contents, naming the three aims the poem teaches."
+  },
+  {
+   "part": 5,
+   "chapter": "SECTION CXXIX: (Sambhava Parva continued)",
+   "quote": "Yudhishthira said, ‘Do thou observe silence on this. Do not speak of this to any one. From this day, protect ye all one another with care.’ Thus cautioned by the righteous Yudhishthira, they all, with Yudhishthira himself, became very vigilant from that day.",
+   "why": "The eldest Pandava urges caution after a narrow escape."
+  },
+  {
+   "part": 3,
+   "chapter": "SECTION LXXIV: (Sambhava Parva continued)",
+   "quote": "He that is really handsome never taunts anybody. And he that always talketh evil becometh a reviler. And as the swine always look for dirt and filth even when in the midst of a flower-garden, so the wicked always choose the evil out of both evil and good that others speak.",
+   "why": "A proverb on wickedness set among the quarrels of the royal house."
+  },
+  {
+   "part": 1,
+   "chapter": "SECTION II",
+   "quote": "the dog that accompanied him, refused to ascend it without his companion. Observing the illustrious Yudhishthira’s steady adherence to virtue, Dharma (the god of justice) abandoning his canine form showed himself to the king. Then Yudhishthira ascending to heaven felt much pain.",
+   "why": "Yudhishthira refuses heaven without the dog, who is Dharma in disguise."
+  }
+ ]
+}

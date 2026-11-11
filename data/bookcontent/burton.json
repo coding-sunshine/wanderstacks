@@ -1,0 +1,294 @@
+{
+ "summary": "This is the first volume of Richard Burton's ten-volume English version of the Arabian Nights. It opens with his foreword, then the frame story: a ruler, Shahryar, hears a tale from his wife Scheherazade each night. Volume one carries the merchant and the jinni with the three old men's stories, the fisherman and the jinni, the sage Duban, and tales of Sindibad's falcon and the husband and the parrot. Later parts continue with the porter and the three ladies of Baghdad, the Kalandars, the Three Apples, Nur al-Din, the Hunchback, and the Barber's tales, with Burton's footnotes at the end.",
+ "context": "Burton printed the work in 1888 as The Book of the Thousand Nights and a Night, a plain and literal translation, privately for subscribers because of Victorian obscenity law. He worked from the Calcutta II edition and wanted a complete text after the abridged English versions of Lane. Burton and John Payne both made unabridged translations in the 1880s, and later critics charged that Burton drew on Payne. He added long footnotes and essays on Eastern customs, and his archaic English has drawn praise and criticism since. The site carries the Project Gutenberg text of volume one.",
+ "sources": [
+  {
+   "title": "The Book of the Thousand Nights and a Night (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Book_of_the_Thousand_Nights_and_a_Night"
+  },
+  {
+   "title": "Richard Francis Burton (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Richard_Francis_Burton"
+  },
+  {
+   "title": "One Thousand and One Nights (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights"
+  },
+  {
+   "title": "The Book of the Thousand Nights and a Night, Volume 01, Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/3435"
+  }
+ ],
+ "people": [
+  {
+   "name": "Richard Francis Burton",
+   "role": "translator",
+   "note": "British explorer and Arabist who translated the Nights in ten volumes and added extensive notes.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "John Payne",
+   "role": "translator",
+   "note": "Published his own unabridged Nights in nine volumes in 1882 to 1884 and worked alongside Burton for years.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Forster Fitzgerald Arbuthnot",
+   "role": "patron",
+   "note": "Joined Burton in inventing the Kama Shastra Society, the cover for privately printed books.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Edward Lane",
+   "role": "translator",
+   "note": "His English version of 1840 and 1859 was abridged and bowdlerised, which irritated Burton.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Isabel Arundell",
+   "role": "subject",
+   "note": "Burton's wife, married in 1861.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Antoine Galland",
+   "role": "translator",
+   "note": "French translator who added Aladdin and Ali Baba, which were not in the original Arabic versions.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Thomas Wright",
+   "role": "subject",
+   "note": "Burton's biographer, who claimed in 1906 that Burton took most of his text from Payne.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Scheherazade",
+   "role": "character",
+   "note": "Tells the tales, one each night, to her husband in the frame story.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Shahryar",
+   "role": "character",
+   "note": "The ruler who hears the tales from his wife.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Torquay",
+   "lat": 50.4619,
+   "lon": -3.5253,
+   "note": "Burton was born here in Devon in 1821.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Stoke Newington",
+   "lat": 51.565,
+   "lon": -0.073,
+   "note": "The Scottish firm Miller & Richard printed the volumes here.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Varanasi",
+   "lat": 25.3176,
+   "lon": 82.9739,
+   "note": "Named as Benares on the title pages as a false place of printing, to confound litigation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mecca",
+   "lat": 21.4225,
+   "lon": 39.8262,
+   "note": "Burton travelled here in disguise in 1853.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Damascus",
+   "lat": 33.5138,
+   "lon": 36.2765,
+   "note": "Burton served as British consul here.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Trieste",
+   "lat": 45.6495,
+   "lon": 13.7768,
+   "note": "Burton was consul here and died here in 1890; he sent manuscripts here for checking.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1840,
+   "label": "Edward Lane's abridged English Nights first appears, with a new edition in 1859.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1853,
+   "label": "Burton travels in disguise to Mecca.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1882,
+   "label": "Payne's nine-volume Book of the Thousand Nights and One Night begins to appear.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1888,
+   "label": "Burton's Book of the Thousand Nights and a Night is printed for subscribers.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1890,
+   "label": "Burton dies at Trieste.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1906,
+   "label": "Thomas Wright claims Burton plagiarised Payne.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1982,
+   "label": "The IAU begins naming features on Enceladus after characters and places in Burton's translation.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Complete and unexpurgated",
+   "note": "Burton's version is the only complete English translation of the Calcutta II edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Invented archaic English",
+   "note": "He drew on Chaucerian and Elizabethan English to make an equivalent of medieval Arabic.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Notes as a second book",
+   "note": "Long footnotes and appendices on Oriental customs and sexuality run alongside the tales.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Frame story",
+   "note": "Each tale is told by Scheherazade to Shahryar, and some are nested inside other tales.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "title": "Plagiarism dispute",
+   "note": "Payne believed Burton copied his manuscripts; Burton's defenders say he had translated for decades before they met.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "The Translator’s Foreword.",
+   "quote": "This work, labourious as it may appear, has been to me a labour of love, an unfailing source of solace and satisfaction",
+   "why": "Burton's own account of why he undertook the translation."
+  },
+  {
+   "part": 1,
+   "chapter": "THE FISHERMAN AND THE JINNI.",
+   "quote": "It hath reached me, O auspicious King, that there was a Fisher man well stricken in years who had a wife and three children, and withal was of poor condition",
+   "why": "Opening of the fisherman and the jinni."
+  },
+  {
+   "part": 1,
+   "chapter": "The Tale of the Wazir and the Sage Duban.",
+   "quote": "Know, O thou Ifrit, that in days of yore and in ages long gone before, a King called Yunan reigned over the city of Fars of the land of the Roum",
+   "why": "Duban begins his tale of a king and a sage within the fisherman's tale."
+  },
+  {
+   "part": 2,
+   "chapter": "The Porter and the Three Ladies of Baghdad.",
+   "quote": "Once upon a time there was a Porter in Baghdad, who was a bachelor and who would remain unmarried",
+   "why": "Start of the porter and the three ladies of Baghdad."
+  },
+  {
+   "part": 3,
+   "chapter": "THE TALE OF THE THREE APPLES",
+   "quote": "They relate, O King of the age and lord of the time and of these days, that the Caliph Harun al-Rashid summoned his Wazir Ja'afar one night and said to him, 'I desire to go down into the city and question the common folk concerning the conduct of those charged with its governance; and those of whom they complain we will depose from office and those whom they commend we will promote",
+   "why": "The Three Apples begins with the caliph walking the city by night."
+  },
+  {
+   "part": 4,
+   "chapter": "TALE OF NUR AL-DIN AND HIS SON.",
+   "quote": "Know, O Commander of the Faithful, that in times of yore the land of Egypt was ruled by a Sultan endowed with justice and generosity, one who loved the pious poor and companied with the Olema and learned men; and he had a Wazir, a wise and an experienced, well versed in affairs and in the art of government",
+   "why": "Opening of the long tale of Nur al-Din and his son."
+  },
+  {
+   "part": 5,
+   "chapter": "Tale of the Jewish Doctor.",
+   "quote": "Right marvellous was a matter which came to pass to me in my youth.",
+   "why": "The Jewish doctor tells of his youth in Damascus."
+  },
+  {
+   "part": 6,
+   "chapter": "Footnotes",
+   "quote": "Allaho A'alam, a deprecatory formula, used because the writer is going to indulge in a series of what may possibly be untruths",
+   "why": "A sample of Burton's footnotes, which explain customs and phrases."
+  }
+ ],
+ "id": "burton"
+}

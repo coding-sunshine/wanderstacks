@@ -1,0 +1,197 @@
+{
+  "facts": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "architect",
+      "value": "Matteo Nuti, chosen by Malatesta Novello, was the architect.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "He certainly chose the architect, Matteo Nuti",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'He\\s+certainly\\s+chose\\s+the\\s+architect.'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "built",
+      "value": "Built from 1447 to 1452; opened in 1454 (15 August 1454 per infobox). Existing record gives 1452; sources say 1452 completed, 1454 opened.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "Purpose-built from 1447 to 1452 and opened in 1454",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Purpose.built\\s+from\\s+1447\\s+to\\s+1452\\s+an'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "built",
+      "value": "Design drew on Michelozzo for the library of San Marco in Florence.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "design for the library of San Marco in Florence",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'design\\s+for\\s+the\\s+library\\s+of\\s+San\\s+Marc'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "dims",
+      "value": "58 desks and 44 Venetian-style windows.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "58 desks",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 '58\\s+desks'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "collection",
+      "value": "The motto Elephas Indicus culices non timet appears in the library.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "Elephas Indicus culices non timet",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Elephas\\s+Indicus\\s+culices\\s+non\\s+timet'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "architect",
+      "value": "The main doorway was the work of sculptor Agostino di Duccio.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "The main doorway was the work of sculptor Agostino di Duccio",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+main\\s+doorway\\s+was\\s+the\\s+work\\s+of\\s+s'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "built",
+      "value": "The walnut door at the main entrance dates to 1454.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "The walnut door at the main entrance dates back to 1454",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+walnut\\s+door\\s+at\\s+the\\s+main\\s+entran'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "volumes",
+      "value": "Over 400,000 books including over 340 codices (English article).",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "over 400,000 books, including over 340 codices",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'over\\s+400.000\\s+books.\\s+including\\s+over'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "collection",
+      "value": "It has lost only six volumes (English article).",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "it has lost only six volumes",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'it\\s+has\\s+lost\\s+only\\s+six\\s+volumes'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "collection",
+      "value": "In 1474 it received the books of Giovanni di Marco of Rimini.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "in 1474 it received the books of Giovanni di Marco of Rimini",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'in\\s+1474\\s+it\\s+received\\s+the\\s+books\\s+of\\s+G'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "field": "collection",
+      "value": "A ninth-century copy of Isidore Etymologiae from the Verona scriptorium.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "written in the Verona scriptorium in the ninth century",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'written\\s+in\\s+the\\s+Verona\\s+scriptorium'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "kind": "founded",
+      "year": 1447,
+      "earliest": 1447,
+      "latest": 1447,
+      "label": "Building probably started",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "Building probably started in 1447",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Building\\s+probably\\s+started\\s+in\\s+1447'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "kind": "built",
+      "year": 1452,
+      "earliest": 1452,
+      "latest": 1452,
+      "label": "Building completed",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "was completed in 1452",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'was\\s+completed\\s+in\\s+1452'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "kind": "opened",
+      "year": 1454,
+      "earliest": 1454,
+      "latest": 1454,
+      "label": "Library opens (15 August 1454)",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "Opened 15 August 1454",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Opened\\s+15\\s+August\\s+1454'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "kind": "closed",
+      "year": 1797,
+      "earliest": 1797,
+      "latest": 1798,
+      "label": "Building requisitioned as a barracks",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "the building requisitioned as a barracks",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'the\\s+building\\s+requisitioned\\s+as\\s+a\\s+ba'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "malatestiana",
+      "kind": "reopened",
+      "year": 1807,
+      "earliest": 1807,
+      "latest": 1807,
+      "label": "Library restored to its original state",
+      "source": "https://it.wikipedia.org/wiki/Biblioteca_Malatestiana",
+      "tier": "wikipedia",
+      "quote": "nel 1807 la Biblioteca Malatestiana fu ristabilita nel suo stato originale",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://it.wikipedia.org/wiki/Biblioteca_Malatestiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'nel\\s+1807\\s+la\\s+Biblioteca\\s+Malatestian'"
+    }
+  ]
+}

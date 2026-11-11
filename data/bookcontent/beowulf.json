@@ -1,0 +1,228 @@
+{
+ "summary": "An Old English heroic poem of 3,182 alliterative lines. Beowulf, a hero of the Geats, sails to help Hrothgar, king of the Danes, whose mead hall Heorot has been attacked by the monster Grendel for twelve years. Beowulf kills Grendel, then Grendel's mother, and returns home to become king. Fifty years later he fights a dragon and is mortally wounded; his men cremate him and raise a barrow on a headland. This site carries J. Lesslie Hall's 1892 English verse translation with a prose summary and notes.",
+ "context": "The only certain date is for the manuscript, made between AD 975 and 1025 and now called the Nowell Codex (Cotton Vitellius A. xv). When it was composed is disputed: some suggest the 7th century at Rendlesham in East Anglia, others the courts of Alfred or Cnut. The poem is set in 5th and 6th century Scandinavia. A fire at Ashburnham House in London in 1731 charred the margins. Thorkelin printed it first in 1815. The codex is now in the British Library, and J. R. R. Tolkien's essay on translating it is much cited.",
+ "sources": [
+  {
+   "title": "Beowulf (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Beowulf"
+  },
+  {
+   "title": "Beowulf: An Anglo-Saxon Epic Poem by J. Lesslie Hall (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/16328"
+  }
+ ],
+ "people": [
+  {
+   "name": "Beowulf",
+   "role": "character",
+   "note": "Geatish hero who defeats Grendel, Grendel's mother and, at the cost of his life, a dragon.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Hrothgar",
+   "role": "character",
+   "note": "King of the Danes whose hall Heorot is attacked by Grendel.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Grendel",
+   "role": "character",
+   "note": "Monster who has attacked Heorot for twelve years.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Beowulf poet",
+   "role": "author",
+   "note": "Anonymous author of the poem.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "J. Lesslie Hall",
+   "role": "translator",
+   "note": "Translator of the English verse edition carried on the site.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Grímur Jónsson Thorkelin",
+   "role": "printer",
+   "note": "Scholar whose 1815 edition was the first printed text.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "J. R. R. Tolkien",
+   "role": "subject",
+   "note": "Wrote the essay On Translating Beowulf and made his own verse and prose translations.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Hygelac",
+   "role": "subject",
+   "note": "King whose raid into Frisia is mentioned by Gregory of Tours and dated to about 521.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Lejre, Denmark",
+   "lat": 55.6045,
+   "lon": 11.968,
+   "note": "Scandinavian tradition placed the seat of the Scyldings and Heorot here, and excavations found a hall built in the mid-6th century.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gamla Uppsala, Sweden",
+   "lat": 59.8978,
+   "lon": 17.6347,
+   "note": "Burial mounds here may confirm elements of the story, including the burial of Eadgils.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rendlesham, Suffolk",
+   "lat": 52.1361,
+   "lon": 1.4194,
+   "note": "A suggested place where the poem was first composed in the 7th century.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Frisia",
+   "lat": 53.2,
+   "lon": 5.8,
+   "note": "Hygelac's raid here is dated to about 521.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "British Library, London",
+   "lat": 51.5299,
+   "lon": -0.1277,
+   "note": "Holds the Nowell Codex, the only manuscript of the poem.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 521,
+   "label": "Hygelac's raid into Frisia, mentioned by Gregory of Tours, dated to about this year.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1000,
+   "label": "The only manuscript, the Nowell Codex, is produced between 975 and 1025.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1731,
+   "label": "Fire at Ashburnham House in London chars the margins of the manuscript.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1815,
+   "label": "Thorkelin prints the first edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1892,
+   "label": "J. Lesslie Hall's English verse translation appears.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Hero against monsters",
+   "note": "The poem pits Beowulf against Grendel, Grendel's mother and a dragon across his youth and old age.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Pagan and Christian layers",
+   "note": "Scholars debate whether paganism is central with Christian elements added later, or the reverse.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "History mixed with legend",
+   "note": "Many named figures and events also appear in Scandinavian sources.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "THE LIFE AND DEATH OF SCYLD.",
+   "quote": "Lo! the Spear-Danes’ glory through splendid achievements The folk-kings’ former fame we have heard of, How princes displayed then their prowess-in-battle",
+   "why": "Opening lines of the poem, praising the Danes and their kings."
+  },
+  {
+   "part": 1,
+   "chapter": "GRENDEL THE MURDERER.",
+   "quote": "When the sun was sunken, he set out to visit The lofty hall-building, how the Ring-Danes had used it For beds and benches when the banquet was over. Then he found there reposing many a noble 5 Asleep after supper; sorrow the heroes, Misery knew not",
+   "why": "Grendel enters Heorot and kills the sleeping Danes."
+  },
+  {
+   "part": 1,
+   "chapter": "BEOWULF’S FIGHT WITH GRENDEL’S MOTHER.",
+   "quote": "Beowulf spake, Ecgtheow’s son: “Recall now, oh, famous kinsman of Healfdene, Prince very prudent, now to part I am ready, Gold-friend of earlmen, what erst we agreed on, If I fail, act as a kind liegelord to my thanes, 5 Should I lay down my life in lending thee assistance, When my earth-joys were over, thou wouldst evermore serve me In stead of a f",
+   "why": "Beowulf's parting speech to Hrothgar before he fights Grendel's mother."
+  },
+  {
+   "part": 2,
+   "chapter": "THE FATAL STRUGGLE.—BEOWULF’S LAST MOMENTS.",
+   "quote": "Then I heard that at need of the king of the people The upstanding earlman exhibited prowess, Vigor and courage, as suited his nature; He his head did not guard, but the high-minded liegeman’s 5 Hand was consumed, when he succored his kinsman, So he struck the strife-bringing strange-comer lower, Earl-thane in armor, that in went the weapon Gleaming",
+   "why": "Wiglaf defends Beowulf against the dragon."
+  },
+  {
+   "part": 2,
+   "chapter": "THE BURNING OF BEOWULF.",
+   "quote": "The folk of the Geatmen got him then ready A pile on the earth strong for the burning, Behung with helmets, hero-knights’ targets, And bright-shining burnies, as he begged they should have them; 5 Then wailing war-heroes their world-famous chieftain, Their liegelord beloved, laid in the middle",
+   "why": "The Geats prepare Beowulf's funeral pyre."
+  },
+  {
+   "part": 1,
+   "chapter": "THE STORY.",
+   "quote": "A great funeral-pyre is built, and his body is burnt. Then a memorial-barrow is made, visible from a great distance, that sailors afar may be constantly reminded of the prowess of the national hero of Geatland",
+   "why": "Hall's prose summary of the poem's ending."
+  }
+ ],
+ "id": "beowulf"
+}

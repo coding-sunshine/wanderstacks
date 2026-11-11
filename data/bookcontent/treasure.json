@@ -1,0 +1,192 @@
+{
+ "id": "treasure",
+ "summary": "Treasure Island is Robert Louis Stevenson's pirate adventure told by Jim Hawkins, the boy at the Admiral Benbow Inn. A drunken sailor, Billy Bones, dies there and leaves a map. Squire Trelawney, Doctor Livesey and Captain Smollett outfit the Hispaniola at Bristol, and the cook, Long John Silver, plots a mutiny. The story follows the fight for the island, the marooned Ben Gunn, and a return with part of the treasure.",
+ "context": "Stevenson began the story in summer 1881 at Braemar, Scotland, to amuse his stepson Lloyd Osbourne. It ran in Young Folks in 1881 and 1882 under the pen name Captain George North and the title Treasure Island or the Mutiny of the Hispaniola. Cassell published the book on 14 November 1883. Stevenson drew on Kingsley's At Last and Captain Johnson's History of the Notorious Pirates. Silver is based in part on his friend W. E. Henley.",
+ "sources": [
+  {
+   "url": "https://standardebooks.org/ebooks/robert-louis-stevenson/treasure-island",
+   "title": "Treasure Island by Robert Louis Stevenson (Standard Ebooks)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Treasure_Island",
+   "title": "Treasure Island (Wikipedia)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Robert Louis Stevenson",
+   "role": "Author",
+   "note": "Wrote the story at Braemar for his stepson.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Lloyd Osbourne",
+   "role": "Stepson",
+   "note": "He was twelve when the story was begun to amuse him.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Jim Hawkins",
+   "role": "Narrator",
+   "note": "The innkeeper's son who tells the story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Long John Silver",
+   "role": "Pirate cook",
+   "note": "Plots the mutiny aboard the Hispaniola.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Ben Gunn",
+   "role": "Marooned sailor",
+   "note": "A former pirate left alone on the island.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "W. E. Henley",
+   "role": "Friend",
+   "note": "Stevenson's friend, partly the model for Silver.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Braemar",
+   "lat": 57.01,
+   "lon": -3.4,
+   "note": "Scottish village where Stevenson began the story in 1881.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Bristol",
+   "lat": 51.45,
+   "lon": -2.59,
+   "note": "Port from which the Hispaniola sails and to which the crew returns.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.51,
+   "lon": -0.13,
+   "note": "Near here Stevenson continued the first draft after leaving Scotland.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1881,
+   "label": "Stevenson begins the story at Braemar to amuse Lloyd Osbourne",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1881,
+   "label": "Young Folks begins serializing it under the name Captain George North",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1882,
+   "label": "The serial ends",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1883,
+   "label": "Cassell publishes the book on 14 November",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "A boy among pirates",
+   "note": "Jim's narration lets a child see adult greed from inside.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Silver's charm and menace",
+   "note": "Silver is likable and murderous at once.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Map and treasure",
+   "note": "The chart drives the plot from the inn to the island.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Order versus mutiny",
+   "note": "Smollett and the gentlemen hold the ship against the crew.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "I remember him as if it were yesterday, as he came plodding to the inn door, his sea-chest following behind him in a handbarrow; a tall, strong, heavy, nut-brown man; his tarry pigtail falling over the shoulders of his soiled blue coat; his hands ragged and scarred, with black, broken nails, and the saber cut across one cheek, a dirty, livid white.",
+   "why": "Opens the arrival of the captain at the inn."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Fifteen men on the dead man’s chest, Yo-ho-ho and a bottle of rum!” in the high, old tottering voice that seemed to have been tuned and broken at the capstan bars. Then he rapped on the door with a bit of stick like a handspike that he carried, and when my father appeared, called roughly for a glass of rum.",
+   "why": "The pirate song that sets the tone."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "Doctors is all swabs,” he said; “and that doctor there, why, what do he know about seafaring men? I been in places hot as pitch, and mates dropping round with yellow jack, and the blessed land a-heaving like the sea with earthquakes⁠—what do the doctor know of lands like that?⁠—and I lived on rum, I tell you.",
+   "why": "Shows Billy Bones's violent contempt."
+  },
+  {
+   "part": 1,
+   "chapter": "X",
+   "quote": "Pieces of eight! pieces of eight! pieces of eight!” till you wondered that it was not out of breath or till John threw his handkerchief over the cage. “Now, that bird,” he would say, “is, may be, two hundred years old, Hawkins⁠—they live forever mostly, and if anybody’s seen more wickedness it must be the devil himself.",
+   "why": "The parrot's cry, a famous image of the book."
+  },
+  {
+   "part": 2,
+   "chapter": "XXVI",
+   "quote": "One more step, Mr. Hands,” said I, “and I’ll blow your brains out! Dead men don’t bite, you know,” I added, with a chuckle. He stopped instantly. I could see by the workings of his face that he was trying to think, and the process was so slow and laborious that, in my newfound security, I laughed aloud.",
+   "why": "Jim holds off the wounded pirate."
+  },
+  {
+   "part": 3,
+   "chapter": "XXXIV",
+   "quote": "The bar silver and the arms still lie, for all that I know, where Flint buried them; and certainly they shall lie there for me.",
+   "why": "The closing note that some treasure remains."
+  }
+ ]
+}

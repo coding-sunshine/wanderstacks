@@ -1,0 +1,183 @@
+{
+  "facts": [
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "place",
+      "value": "Wikipedia says it was a major Abbasid-era public academy and intellectual center, also known as the Grand Library of Baghdad; dissolved 1258.",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "public academy and intellectual center",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'public\\s+academy\\s+and\\s+intellectual\\s+ce'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "place",
+      "value": "Origin is uncertain: founded either as a library for Harun al-Rashid (r. 786-809) or as a private collection of al-Mansur (r. 754-775); a Muslim Heritage article says Harun al-Rashid founded it.",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "founded either as a library for the collections of the fifth Abbasid caliph Harun al-Rashid",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'founded\\s+either\\s+as\\s+a\\s+library\\s+for\\s+th'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "place",
+      "value": "Muslim Heritage Foundation: Abbasid caliph Harun al-Rashid founded the House of Wisdom in Baghdad during his reign (786-809).",
+      "source": "https://muslimheritage.com/house-of-wisdom/",
+      "tier": "secondary",
+      "quote": "Abbasid caliph Harun al-Rashid founded the House of Wisdom in Baghdad during his reign (786-809)",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://muslimheritage.com/house-of-wisdom/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Abbasid\\s+caliph\\s+Harun\\s+al.Rashid\\s+fou'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "status_note",
+      "value": "Name Khizanat al-Hikma, Storehouse of Wisdom, appears in Ibn al-Nadim al-Fihrist (d. 995).",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "Khizanat al-Hikma (literally, \"Storehouse of Wisdom\")",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Khizanat\\s+al.Hikma\\s+.literally.\\s+.Sto'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "place",
+      "value": "Sahl ibn Harun, a Persian poet and astrologer, was chief librarian of the Bayt al-Hikma (per Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "Sahl ibn Harun, a Persian poet and astrologer, was the chief librarian of the Bayt al-Hikma",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Sahl\\s+ibn\\s+Harun.\\s+a\\s+Persian\\s+poet\\s+and'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "status_note",
+      "value": "Translation: Hunayn ibn Ishaq (809-873) was the most productive translator, producing 116 works for the Arabs (per Wikipedia).",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "was the most productive translator, producing 116 works for the Arabs",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'was\\s+the\\s+most\\s+productive\\s+translator'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "recon",
+      "value": "Dimitri Gutas of Yale disputes the existence of the House of Wisdom as well as its form and function.",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "Yale University Arabist Dimitri Gutas disputes the existence of the House of Wisdom as well as its form and function",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Yale\\s+University\\s+Arabist\\s+Dimitri\\s+Gu'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "recon",
+      "value": "Gutas notes that none of the Graeco-Arabic translations, including those of Hunayn ibn Ishaq, mention the House of Wisdom.",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "Gutas mentions that in all of the Graeco-Arabic translations none of them mention the House of Wisdom",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Gutas\\s+mentions\\s+that\\s+in\\s+all\\s+of\\s+the'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "status_note",
+      "value": "Wikipedia: considerably declined under al-Mutawakkil after flourishing under al-Mutasim and al-Wathiq.",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "but considerably declined under the reign of al-Mutawakkil",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'but\\s+considerably\\s+declined\\s+under\\s+th'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "status_note",
+      "value": "Mongol destruction: Wikipedia says the House of Wisdom was destroyed with all other Baghdad libraries by Hulagu army; books thrown into the Tigris so that the river was said to run black.",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "the river was said to have run black",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'the\\s+river\\s+was\\s+said\\s+to\\s+have\\s+run\\s+bla'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "field": "status_note",
+      "value": "Historian Michal Biran has shown that large libraries reopened for learning and teaching within two years of the siege (per the Siege of Baghdad article).",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)",
+      "tier": "wikipedia",
+      "quote": "the historian Michal Biran has shown that large libraries reopened for learning and teaching within two years of the siege",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)' | sed 's/<[^>]*>/ /g' | rg -o -m1 'the\\s+historian\\s+Michal\\s+Biran\\s+has\\s+sho'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "kind": "founded",
+      "year": 798,
+      "earliest": 786,
+      "latest": 809,
+      "label": "Founded in the reign of Harun al-Rashid (786-809) per Muslim Heritage; origin disputed",
+      "source": "https://muslimheritage.com/house-of-wisdom/",
+      "tier": "secondary",
+      "quote": "Abbasid caliph Harun al-Rashid founded the House of Wisdom in Baghdad during his reign (786-809)",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://muslimheritage.com/house-of-wisdom/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Abbasid\\s+caliph\\s+Harun\\s+al.Rashid\\s+fou'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "kind": "opened",
+      "year": 823,
+      "earliest": 813,
+      "latest": 833,
+      "label": "Turned into a public academy and library under al-Mamun (r. 813-833), per Wikipedia",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "it was turned into a public academy and a library",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'it\\s+was\\s+turned\\s+into\\s+a\\s+public\\s+academ'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "kind": "destroyed",
+      "year": 1258,
+      "earliest": 1258,
+      "latest": 1258,
+      "label": "Said to be destroyed in the Mongol siege of Baghdad (13 February 1258 sack)",
+      "source": "https://en.wikipedia.org/wiki/House_of_Wisdom",
+      "tier": "wikipedia",
+      "quote": "It was destroyed in 1258 during the Mongol siege of Baghdad",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/House_of_Wisdom' | sed 's/<[^>]*>/ /g' | rg -o -m1 'It\\s+was\\s+destroyed\\s+in\\s+1258\\s+during\\s+th'"
+    },
+    {
+      "cluster": "recon-ancient",
+      "lib": "baghdad",
+      "kind": "reopened",
+      "year": 1260,
+      "earliest": 1258,
+      "latest": 1260,
+      "label": "Large libraries in Baghdad reopened within two years of the siege (Biran)",
+      "source": "https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)",
+      "tier": "wikipedia",
+      "quote": "large libraries reopened for learning and teaching within two years of the siege",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Siege_of_Baghdad_(1258)' | sed 's/<[^>]*>/ /g' | rg -o -m1 'large\\s+libraries\\s+reopened\\s+for\\s+learn'"
+    }
+  ]
+}

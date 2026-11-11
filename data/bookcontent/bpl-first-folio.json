@@ -1,0 +1,47 @@
+{
+  "id": "bpl-first-folio",
+  "summary": "The First Folio is the first collected edition of William Shakespeare's plays, printed in London in 1623, about seven years after his death. It holds 36 plays, arranged as comedies, histories and tragedies, and 18 of them had never been printed before, including The Tempest, Macbeth and Julius Caesar. Two of Shakespeare's colleagues, John Heminges and Henry Condell, gathered the texts. The scan here is the Boston Public Library copy, shelfmark G.174.1, digitised by the Internet Archive.",
+  "context": "Heminges and Condell, who prepared the book, said it replaced earlier printings they called stolen and surreptitious. The syndicate was Edward Blount and William and Isaac Jaggard, with William Aspley and John Smethwick as rights holders. Printing probably ran from February 1622 to November 1623. About 750 copies were printed and 235 are known to survive. The Boston copy was bought by Thomas Pennant Barton from Thomas Rodd of London in 1845, and the Library's description notes leaves reattached or supplied from other copies.",
+  "sources": [
+    { "title": "Internet Archive record for the Boston Public Library First Folio (copy G.174.1)", "url": "https://archive.org/metadata/mrvvilliamshakes00shak" },
+    { "title": "Wikipedia: First Folio", "url": "https://en.wikipedia.org/wiki/First_Folio" }
+  ],
+  "people": [
+    { "name": "William Shakespeare", "role": "author", "note": "He died at Stratford-upon-Avon on 23 April 1616, seven years before the Folio appeared.", "s": [1] },
+    { "name": "John Heminges", "role": "subject", "note": "Compiled the Folio's contents with Henry Condell; both were colleagues of Shakespeare in the King's Men.", "s": [1] },
+    { "name": "Henry Condell", "role": "subject", "note": "Joint compiler of the Folio with John Heminges.", "s": [1] },
+    { "name": "Ben Jonson", "role": "author", "note": "Wrote the poem 'To the Reader' that faces the portrait, and is among the contributors of commendatory verses.", "s": [0, 1] },
+    { "name": "Martin Droeshout", "role": "printer", "note": "The engraver of the portrait on the title page.", "s": [1] },
+    { "name": "Isaac Jaggard", "role": "printer", "note": "Printed the book with Edward Blount; he did most of the work after his father William Jaggard, old and blind, died a month before it went on sale.", "s": [0, 1] },
+    { "name": "Edward Blount", "role": "printer", "note": "Bookseller and publisher who shared the venture with the Jaggards.", "s": [0, 1] },
+    { "name": "Thomas Pennant Barton", "role": "subject", "note": "Bought this copy from Thomas Rodd of London in 1845; the Library's Barton collection is named for him.", "s": [0] }
+  ],
+  "places": [
+    { "name": "London", "lat": 51.5074, "lon": -0.1278, "note": "Where the Folio was printed and published in 1623.", "s": [0, 1] },
+    { "name": "Stratford-upon-Avon", "lat": 52.1917, "lon": -1.7083, "note": "Where Shakespeare died in 1616 and was buried in Holy Trinity Church.", "s": [1] },
+    { "name": "Oxford, Bodleian Library", "lat": 51.7540, "lon": -1.2540, "note": "Received its copy in early 1624 and sold it later as a superseded edition.", "s": [1] },
+    { "name": "Boston Public Library", "lat": 42.3493, "lon": -71.0782, "note": "Holds this copy in its Rare Books department.", "s": [0] }
+  ],
+  "timeline": [
+    { "year": 1616, "label": "Shakespeare dies at Stratford-upon-Avon.", "s": [1] },
+    { "year": 1622, "label": "Printing of the Folio probably begins in February.", "s": [1] },
+    { "year": 1623, "label": "The Folio is entered in the Stationers' Register on 8 November and published.", "s": [1] },
+    { "year": 1845, "label": "Thomas Pennant Barton buys this copy from Thomas Rodd of London.", "s": [0] },
+    { "year": 1860, "label": "Barton privately prints a description of his copy as it stood about then or earlier.", "s": [0] }
+  ],
+  "ideas": [
+    { "title": "Plays saved from loss", "note": "Eighteen of the 36 plays, including The Tempest and Macbeth, are not known to have been printed before the Folio.", "s": [0, 1] },
+    { "title": "Folio as a prestige format", "note": "Plays usually came out as cheap quartos, while folio was reserved for books of lasting value, so printing plays this way made a claim for them.", "s": [1] },
+    { "title": "Replacing the earlier printings", "note": "The editors presented the Folio as the true text that supersedes stolen and maimed copies.", "s": [1] },
+    { "title": "No two copies alike", "note": "Corrections were made while printing was under way, so surviving copies differ, and this one has leaves supplied from other copies.", "s": [0, 1] }
+  ],
+  "pages": [
+    { "n": 1, "note": "The front pastedown over marbled paper, with the Barton Library armorial bookplate and Boston Public Library labels.", "s": [0] },
+    { "n": 7, "note": "Ben Jonson's poem 'To the Reader', signed B. I., the page that faces the portrait.", "s": [1] },
+    { "n": 8, "note": "The title page with the Droeshout engraving of Shakespeare and the imprint 'Printed by Isaac Iaggard, and Ed. Blount. 1623'.", "s": [0, 1] },
+    { "n": 10, "note": "The opening of the dedication to the Earl of Pembroke and the Earl of Montgomery, the 'incomparable pair of brethren'.", "s": [0, 1] },
+    { "n": 14, "note": "Verses 'To the memory of my beloved, the Author', signed Ben Ionson, among the commendatory poems in the front matter.", "s": [0] },
+    { "n": 22, "note": "'A Catalogue of the severall Comedies, Histories, and Tragedies', the Folio's table of contents, with page numbers.", "s": [0, 1] },
+    { "n": 24, "note": "The first page of the first play, The Tempest, Actus primus, Scena prima.", "s": [1] }
+  ]
+}

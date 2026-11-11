@@ -1,0 +1,158 @@
+{
+  "facts": [
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "field": "collection",
+      "value": "Collection dates from the founding of the Peabody Institute in 1857.",
+      "source": "https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/",
+      "tier": "primary",
+      "quote": "collection dates from the founding of the Peabody Institute in 1857",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'collection\\s+dates\\s+from\\s+the\\s+founding'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "field": "built",
+      "value": "Opened 1878; designed by Edmund G. Lind with the Institute first provost Nathaniel H. Morison.",
+      "source": "https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/",
+      "tier": "primary",
+      "quote": "designed by Baltimore architect Edmund G. Lind, in collaboration with the Peabody Institute",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'designed\\s+by\\s+Baltimore\\s+architect\\s+Ed'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "field": "dims",
+      "value": "Five tiers of ornamental cast-iron balconies rising to a skylight 61 feet above the floor.",
+      "source": "https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/",
+      "tier": "primary",
+      "quote": "five tiers of ornamental cast-iron balconies, which rise dramatically to the skylight 61 feet above the floor",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'five\\s+tiers\\s+of\\s+ornamental\\s+cast.iron'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "field": "built",
+      "value": "Peabody gave $300,000 in February 1857; construction delayed until 1866.",
+      "source": "https://en.wikipedia.org/wiki/George_Peabody_Library",
+      "tier": "wikipedia",
+      "quote": "delayed its establishment and construction until 1866",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/George_Peabody_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'delayed\\s+its\\s+establishment\\s+and\\s+cons'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "field": "status_note",
+      "value": "Transferred to the City of Baltimore in 1967 and became a department of the Enoch Pratt Free Library.",
+      "source": "https://en.wikipedia.org/wiki/George_Peabody_Library",
+      "tier": "wikipedia",
+      "quote": "until 1967, when it was transferred to the City of Baltimore",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/George_Peabody_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'until\\s+1967.\\s+when\\s+it\\s+was\\s+transferre'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "field": "status_note",
+      "value": "Transferred to Johns Hopkins University in 1982.",
+      "source": "https://en.wikipedia.org/wiki/George_Peabody_Library",
+      "tier": "wikipedia",
+      "quote": "It was transferred to Johns Hopkins University in 1982",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/George_Peabody_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'It\\s+was\\s+transferred\\s+to\\s+Johns\\s+Hopkin'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "field": "built",
+      "value": "$1 million renovation between July 2002 and May 2004.",
+      "source": "https://en.wikipedia.org/wiki/George_Peabody_Library",
+      "tier": "wikipedia",
+      "quote": "$1 million renovation and refurbishment between July 2002 and May 2004",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/George_Peabody_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 '.1\\s+million\\s+renovation\\s+and\\s+refurbis'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "field": "status_note",
+      "value": "Baltimore City Landmark, designated 1975.",
+      "source": "https://en.wikipedia.org/wiki/George_Peabody_Library",
+      "tier": "wikipedia",
+      "quote": "Baltimore City Landmark Designated 1975",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/George_Peabody_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Baltimore\\s+City\\s+Landmark\\s+Designated'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "field": "built",
+      "value": "Cast-iron work by the Bartlett-Hayward Company.",
+      "source": "https://en.wikipedia.org/wiki/George_Peabody_Library",
+      "tier": "wikipedia",
+      "quote": "Bartlett-Hayward Company",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/George_Peabody_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Bartlett.Hayward\\s+Company'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "field": "volumes",
+      "value": "300,000 volumes, mainly from the 19th century.",
+      "source": "https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/",
+      "tier": "primary",
+      "quote": "mainly from the 19th century",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'mainly\\s+from\\s+the\\s+19th\\s+century'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "kind": "founded",
+      "year": 1857,
+      "earliest": 1857,
+      "latest": 1857,
+      "label": "Peabody Institute founded with $300,000 gift",
+      "source": "https://en.wikipedia.org/wiki/George_Peabody_Library",
+      "tier": "wikipedia",
+      "quote": "for the Peabody Institute",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/George_Peabody_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 'for\\s+the\\s+Peabody\\s+Institute'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "kind": "opened",
+      "year": 1878,
+      "earliest": 1878,
+      "latest": 1878,
+      "label": "Library building opened",
+      "source": "https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/",
+      "tier": "primary",
+      "quote": "The library building opened in 1878",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://web.archive.org/web/2025/https://www.library.jhu.edu/library-hours/george-peabody-library/' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+library\\s+building\\s+opened\\s+in\\s+187'"
+    },
+    {
+      "cluster": "americas",
+      "lib": "peabody",
+      "kind": "rebuilt",
+      "year": 2004,
+      "earliest": 2002,
+      "latest": 2004,
+      "label": "Renovation and refurbishment, $1 million",
+      "source": "https://en.wikipedia.org/wiki/George_Peabody_Library",
+      "tier": "wikipedia",
+      "quote": "$1 million renovation and refurbishment between July 2002 and May 2004",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/George_Peabody_Library' | sed 's/<[^>]*>/ /g' | rg -o -m1 '.1\\s+million\\s+renovation\\s+and\\s+refurbis'"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+ "id": "shahnameh",
+ "summary": "The Shahnameh, or Book of Kings, is the Persian national epic. It runs from the first mythic kings through the age of heroes down to historical rulers. Here it appears as James Atkinson's English verse and prose abridgement, inside a Persian literature anthology. The tales include the tyrant Zohak and the smith Kavah who rises against him, the champion Rustem and his horse Rakush, and the tragedy of Rustem fighting his own son Sohrab. Kings and heroes win glory, then fall to fate, treachery or pride.",
+ "context": "Ferdowsi, a poet from Tus, began the poem around 977 and finished it in 1010. He worked from an earlier prose Book of Kings that traced back to a Sasanian chronicle, and wrote it in Early New Persian. Over 50,000 couplets long, it helped keep the Persian language stable for a thousand years. Turner Macan printed the first complete edition in 1829. James Atkinson published his English translation for the Oriental Translation Fund in 1832, and this anthology reprints that version with other Persian classics.",
+ "sources": [
+  {
+   "title": "Shahnameh - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Shahnameh"
+  },
+  {
+   "title": "Ferdowsi - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Ferdowsi"
+  },
+  {
+   "title": "The Persian Literature, Comprising The Shah Nameh, The Rubaiyat, The Divan, and The Gulistan - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/10315"
+  }
+ ],
+ "people": [
+  {
+   "name": "Ferdowsi",
+   "role": "author",
+   "note": "Poet from Tus, 940 to 1025, who spent decades composing the Shahnameh.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Mahmud of Ghazni",
+   "role": "patron",
+   "note": "Ghaznavid sultan for whom Ferdowsi revised parts of the poem; how he rewarded the poet is disputed.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Daqiqi",
+   "role": "author",
+   "note": "Fellow poet whose earlier work on the same subject Ferdowsi set out to continue after Daqiqi was killed by his slave.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Mansur",
+   "role": "patron",
+   "note": "Samanid prince who gave Ferdowsi generous patronage while he wrote the first version.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "James Atkinson",
+   "role": "translator",
+   "note": "East India Company physician whose 1832 English translation for the Oriental Translation Fund is the one in this anthology.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Turner Macan",
+   "role": "printer",
+   "note": "Published the first complete edition of the Persian poem in 1829, based on 17 manuscripts.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rostam",
+   "role": "character",
+   "note": "Greatest hero of the poem, from the Sistan line of Sam and Zal, whose seven labors and fight with Sohrab are major tales.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sohrab",
+   "role": "character",
+   "note": "Young warrior whose story with Rostam is one of the best known sections of the poem.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Tus",
+   "lat": 36.4786,
+   "lon": 59.5256,
+   "note": "Ferdowsi's home town, where the prose Shahnameh he drew on was compiled and where he is buried.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Ghazni",
+   "lat": 33.5536,
+   "lon": 68.4217,
+   "note": "Seat of Sultan Mahmud, the patron to whom Ferdowsi later addressed his poem.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Sistan",
+   "lat": 31,
+   "lon": 61.5,
+   "note": "Homeland of the heroes Sam, Zal and Rostam, who serve the Iranian kings.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cambridge",
+   "lat": 52.2,
+   "lon": 0.1186,
+   "note": "The Fitzwilliam Museum held an exhibition on the poem's art in 2010, a thousand years after its completion.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 977,
+   "label": "Ferdowsi begins work on the Shahnameh, meaning to continue Daqiqi's poem.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 994,
+   "label": "First version of the poem is completed under Samanid patronage.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1010,
+   "label": "Ferdowsi finishes the epic, having rewritten parts to praise Sultan Mahmud.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1025,
+   "label": "Ferdowsi dies, aged about 85.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1829,
+   "label": "Turner Macan publishes the first complete edition of the Persian text.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1832,
+   "label": "James Atkinson's English translation appears from the Oriental Translation Fund.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1905,
+   "label": "The Warner brothers begin their nine-volume English translation, finished in 1925.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 2010,
+   "label": "Cambridge's Fitzwilliam Museum marks the poem's millennium with an exhibition.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "History blended with myth",
+   "note": "The poem moves from legendary kings to the Sasanian dynasty and its fall to Muslim armies, treating both as one continuous national story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A poem that fixed a language",
+   "note": "Some scholars credit works like the Shahnameh with keeping Modern Persian close to the language of Ferdowsi's day.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Heroes serving flawed kings",
+   "note": "Rostam and his Sistan line keep the throne safe, yet the kings they serve are often rash or weak.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Poet and patron in tension",
+   "note": "Legends about Ferdowsi's reward from Mahmud shaped how the poem is remembered, including a satire against the sultan.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Persian classics in translation",
+   "note": "The anthology places Atkinson's Shahnameh beside the Rubaiyat, the Divan and other Persian works for English readers.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "SPECIAL INTRODUCTION",
+   "quote": "Even while that country was purely Iránian, it was always open to Semitic influences. The welding together of the two civilizations is the true signature of Persian history.",
+   "why": "The anthology's introduction explains why English readers took to Persian literature and what it owes to two traditions."
+  },
+  {
+   "part": 1,
+   "chapter": "KAVAH, THE BLACKSMITH",
+   "quote": "Thou art the king, but wherefore on my head Cast fire and ashes? If thou hast the form Of hissing dragon, why to me be cruel? Why give the brains of my beloved children As serpent-food, and talk of doing justice?",
+   "why": "Kavah the blacksmith confronts the tyrant Zohak, the spark of the revolt that brings Feridun to the throne."
+  },
+  {
+   "part": 2,
+   "chapter": "STORY OF SOHRÁB",
+   "quote": "I've traced his footsteps to your royal town, Here must he be, protected by your crown; But if retained, if not from fetters freed, My vengeance shall o'ertake the felon-deed.",
+   "why": "Rustem arrives angry at a king's court looking for his stolen horse, a scene that shows his temper and fame."
+  },
+  {
+   "part": 2,
+   "chapter": "STORY OF SOHRÁB",
+   "quote": "He cannot be my son, unknown to me; Reason forbids the thought—it cannot be!",
+   "why": "Rustem doubts that the young warrior facing him could be his own son, just before their fatal fight."
+  },
+  {
+   "part": 5,
+   "chapter": "THE DEATH OF RUSTEM",
+   "quote": "Everything being thus ready, Rustem, on the pretence of going to the sporting ground, must be conducted by that road, and he will certainly fall into one of the pits, which will become his grave.",
+   "why": "The plot against Rustem is laid out: pits lined with blades, covered over, on the road to the hunt."
+  },
+  {
+   "part": 5,
+   "chapter": "SIKANDER",
+   "quote": "What is thy name, from whom art thou descended? For that commanding front, that fearless eye, Bespeaks illustrious birth. Art thou indeed Sikander, whom my fancy would believe thee, So eloquent in speech, in mien so noble?",
+   "why": "Dara questions a disguised Sikander (Alexander), in a scene where the invader walks into the enemy court."
+  },
+  {
+   "part": 5,
+   "chapter": "FIRDUSI'S SATIRE ON MAHMUD",
+   "quote": "Afflict not even the Ant; though weak and small, It breathes and lives, and life is sweet to all.",
+   "why": "From Ferdowsi's satire on Mahmud, the poet warns the sultan to be merciful."
+  },
+  {
+   "part": 5,
+   "chapter": "FIRDUSI'S SATIRE ON MAHMUD",
+   "quote": "Fear thee! I fear not man, but God alone, I only bow to his Almighty throne.",
+   "why": "The poet answers Mahmud with defiance, trusting his verse and his faith above any ruler."
+  }
+ ]
+}

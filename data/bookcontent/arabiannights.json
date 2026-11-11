@@ -1,0 +1,207 @@
+{
+ "summary": "A collection of Middle Eastern tales told inside a frame story. The ruler Schahriar has taken to marrying a wife each day and having her put to death. Scheherazade, the vizier's daughter, volunteers to marry him and keeps him from killing her by telling a story each night and leaving it unfinished. Within her telling come the Merchant and the Genius, the Fisherman, the Three Calenders, the Seven Voyages of Sindbad, Aladdin and the Wonderful Lamp, and many more. This is Andrew Lang's selection for young readers, not the full set of nights.",
+ "context": "No single canonical text of the Nights exists. Scholars trace its core to Indian and Persian tales put into Arabic perhaps in the early eighth century, with Arab stories and Harun al-Rashid tales added in Iraq by the ninth or tenth century, and more layers from Syria and Egypt from the thirteenth. The first English edition dates from about 1706 to 1721. Aladdin and Ali Baba were added by the French translator Antoine Galland and are not in the original Arabic versions. Andrew Lang (1844 to 1912), a Scottish writer, made this edition, and the site carries it.",
+ "sources": [
+  {
+   "title": "One Thousand and One Nights (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights"
+  },
+  {
+   "title": "The Arabian Nights Entertainments by Andrew Lang (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/128"
+  },
+  {
+   "title": "Andrew Lang (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Andrew_Lang"
+  }
+ ],
+ "people": [
+  {
+   "name": "Scheherazade",
+   "role": "character",
+   "note": "Vizier's daughter who tells the stories to Schahriar, one each night.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Sultan Schahriar",
+   "role": "character",
+   "note": "Ruler of the frame story who is told the tales by his wife.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Andrew Lang",
+   "role": "translator",
+   "note": "Scottish writer (1844 to 1912) who compiled this English selection.",
+   "s": [
+    1,
+    2
+   ]
+  },
+  {
+   "name": "Antoine Galland",
+   "role": "translator",
+   "note": "French translator who added Aladdin and Ali Baba to the collection.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Harun al-Rashid",
+   "role": "subject",
+   "note": "Caliph of ninth-century Baghdad (died 809) who figures in a cycle of the tales.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sindbad the Sailor",
+   "role": "character",
+   "note": "Hero of seven voyages told in the collection.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Dinarzade",
+   "role": "character",
+   "note": "Scheherazade's younger sister.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Baghdad",
+   "lat": 33.3152,
+   "lon": 44.3661,
+   "note": "Ninth-century Baghdad is the setting of a cycle of tales around Harun al-Rashid.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cairo",
+   "lat": 30.0444,
+   "lon": 31.2357,
+   "note": "An Egyptian manuscript mentions persons and places of the thirteenth and fourteenth centuries.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Damascus",
+   "lat": 33.5138,
+   "lon": 36.2765,
+   "note": "Syria was a place where a later layer of stories was added from the thirteenth century.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 750,
+   "label": "Indian and Persian tales are probably put into Arabic around the early eighth century as Alf Layla.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 900,
+   "label": "In Iraq, Arab stories including Harun al-Rashid tales are added to the core.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1250,
+   "label": "A further layer of stories is added in Syria and Egypt from the thirteenth century.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1706,
+   "label": "The first English edition begins appearing, running to 1721.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1844,
+   "label": "Andrew Lang, compiler of this edition, is born.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Stories delay execution",
+   "note": "Scheherazade tells tales to stay alive, a device with roots in earlier Indian frame stories.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A book with no fixed text",
+   "note": "The Nights has no canonical order or number of tales, and editions differ.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Tales nested in tales",
+   "note": "Some stories are framed within other tales while others are self-contained.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "The Arabian Nights",
+   "quote": "daughters, of whom the elder was called Scheherazade, and the younger Dinarzade. Dinarzade had no particular gifts to distinguish her from other girls, but her sister was clever and courageous in the highest degree",
+   "why": "Introduces Scheherazade and her sister Dinarzade."
+  },
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "Sindbad had adventures which perhaps came out of the Odyssey of Homer; in fact, all the East had contributed its wonders, and sent them to Europe in one parcel",
+   "why": "Lang's preface on where the tales came from."
+  },
+  {
+   "part": 1,
+   "chapter": "The Story of the Merchant and the Genius",
+   "quote": "he saw an enormous genius, white with rage, coming towards him, with a scimitar in his hand. \"Arise,\" he cried in a terrible voice, \"and let me kill you as you have killed my son",
+   "why": "The genius appears in the Merchant's tale, the first story within the frame."
+  },
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "Haroun al Raschid, who lived in Bagdad in 786-808 A.D. The vizir who accompanies the Caliph was also a real person of the great family of the Barmecides",
+   "why": "Lang places the caliph who recurs in the tales."
+  },
+  {
+   "part": 2,
+   "chapter": "Sixth Voyage",
+   "quote": "returned next day to hear the story of the seventh voyage, Sindbad thus began.",
+   "why": "The listeners come back for Sindbad's last voyage."
+  },
+  {
+   "part": 3,
+   "chapter": "The Adventures of Prince Camaralzaman and the Princess Badoura",
+   "quote": "who was so beautiful that he was named Camaralzaman, or \"Moon of the Century.\" Prince Camaralzaman was brought up with extreme care by an excellent governor and all the cleverest teachers, and he did such credit to them that when he was grown up, a more charming and accomplished young man was not to",
+   "why": "Opening of the tale of Prince Camaralzaman, whose name means Moon of the Century."
+  }
+ ],
+ "id": "arabiannights"
+}

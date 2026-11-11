@@ -1,0 +1,202 @@
+{
+ "id": "upanishads",
+ "summary": "This edition of the Upanishads gathers the Katha, Kena and other principal texts in a translation by Swami Paramananda, with short introductions to each. The Katha tells of the boy Nachiketas and Yama, the Ruler of Death, who teaches him that the good is one thing and the pleasant another. The texts ask what the self is, how it relates to Brahman, and how a person comes to know it.",
+ "context": "The Upanishads are Sanskrit texts of the late Vedic period. About 108 are known and about a dozen count as principal. Olivelle places the Brihadaranyaka and Chandogya in the 7th and 6th centuries BCE. Sages such as Yajnavalkya, Uddalaka Aruni, Maitreyi and Gargi appear in them, and Adi Shankaracharya wrote commentaries. Dara Shukoh had fifty of them translated into Persian in 1656. Schopenhauer was deeply impressed by them.",
+ "sources": [
+  {
+   "url": "https://www.gutenberg.org/ebooks/3283",
+   "title": "The Upanishads, translated by Swami Paramananda (Project Gutenberg)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Upanishads",
+   "title": "Upanishads (Wikipedia)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Swami Paramananda",
+   "role": "Translator",
+   "note": "Made the English translation used here.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Yajnavalkya",
+   "role": "Sage",
+   "note": "Appears as a teacher in the older Upanishads.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Uddalaka Aruni",
+   "role": "Sage",
+   "note": "Appears as a teacher in the Upanishads.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Maitreyi",
+   "role": "Sage",
+   "note": "A woman philosopher named in the texts.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Gargi",
+   "role": "Sage",
+   "note": "A woman philosopher named in the texts.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Adi Shankaracharya",
+   "role": "Commentator",
+   "note": "Wrote commentaries on the principal Upanishads.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Dara Shukoh",
+   "role": "Prince",
+   "note": "Had fifty Upanishads rendered into Persian in 1656.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Arthur Schopenhauer",
+   "role": "Philosopher",
+   "note": "Was deeply impressed by the Upanishads.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Himalayan forest",
+   "lat": 30,
+   "lon": 79,
+   "note": "The introduction pictures seekers approaching a seer in such a forest.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Kashi (Varanasi)",
+   "lat": 25.32,
+   "lon": 82.97,
+   "note": "City named in the Kaushitaki Upanishad.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Southern India",
+   "lat": 13,
+   "lon": 78,
+   "note": "Region where the later Muktika Upanishads are thought to belong.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -650,
+   "label": "Brihadaranyaka and Chandogya, in the 7th and 6th centuries BCE (approximate)",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1556,
+   "label": "Akbar's reign begins; the first Persian translations follow",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1656,
+   "label": "Dara Shukoh completes Sirr-i-Akbar, fifty Upanishads in Persian",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1800,
+   "label": "Early 19th-century translations begin to draw Western readers (approximate)",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "The good and the pleasant",
+   "note": "Yama tells Nachiketas that these two bind a person differently and that the wise choose the good.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The charioteer",
+   "note": "A person with a trained mind drives the senses like horses to the end of the journey.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Truth alone remains",
+   "note": "Nachiketas wins his father over by saying that all things perish and truth stays.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Beyond the senses",
+   "note": "The deepest reality is described as soundless, touchless and formless.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "The good is one thing and the pleasant another. These two, having different ends, bind a man. It is well with him who chooses the good. He who chooses the pleasant misses the true end.",
+   "why": "Opens the Katha teaching on choice."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "The man who has a discriminative intellect for the driver, and a controlled mind for the reins, reaches the end of the journey, the highest place of Vishnu (the All-pervading and Unchangeable One). A driver must possess first a thorough knowledge of the road; next he must understand how to handle the reins and control his horses. Then will he drive safely to his destination.",
+   "why": "The charioteer image for self-control."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Knowing That which is soundless, touchless, formless, undecaying; also tasteless, odorless, and eternal; beginningless, endless and immutable; beyond the Unmanifested: (knowing That) man escapes from the mouth of death. The Ruler of Death defines here the innermost essence of our being.",
+   "why": "Describes the unchanging reality that frees a person from death."
+  },
+  {
+   "part": 1,
+   "chapter": "Part fourth: I",
+   "quote": "Thou art That (the invisible), and Thou art all that is beyond,\" he declares. The ordinary idea of knowledge is that which is based on sense preceptions; but the knowledge of an illumined Sage is not confined to his senses. He has all the knowledge that comes from the senses and all that comes from Spirit.",
+   "why": "The commentary's statement of the identity at the center of the book."
+  },
+  {
+   "part": 1,
+   "chapter": "Part First: I",
+   "quote": "All things perish, Truth alone remains. Why then fear to sacrifice me also; Thus Nachiketas convinced his father that he should remain true to his word and send him to Yama, the Ruler of Death. Then Nachiketas went to the abode of Death, but Yama was absent and the boy waited without food or drink for three days.",
+   "why": "Nachiketas's plea to his father at the start of the Katha story."
+  }
+ ]
+}

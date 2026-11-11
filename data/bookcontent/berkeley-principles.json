@@ -1,0 +1,233 @@
+{
+ "summary": "Berkeley's 1710 argument that the external world is made of ideas, not material substance. He begins by saying the mind cannot form abstract ideas, then claims that to exist is to be perceived by a mind. What we call things are collections of ideas, and the regularity of experience comes from God, not from matter. He sets out to refute John Locke and defends the position against scepticism and atheism. Only Part I was ever published, and Part II never appeared.",
+ "context": "George Berkeley, an Anglo-Irish philosopher and later Bishop of Cloyne, published the Treatise in 1710, a year after his Essay Towards a New Theory of Vision. After its poor reception he rewrote the argument in dialogue form as Three Dialogues between Hylas and Philonous in 1713. Berkeley is regarded as the founder of immaterialism, later called subjective idealism, and his work influenced Kant and Hume. The site carries the Project Gutenberg text with Berkeley's preface and introduction.",
+ "sources": [
+  {
+   "title": "A Treatise Concerning the Principles of Human Knowledge (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/A_Treatise_Concerning_the_Principles_of_Human_Knowledge"
+  },
+  {
+   "title": "George Berkeley (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/George_Berkeley"
+  },
+  {
+   "title": "A Treatise Concerning the Principles of Human Knowledge by George Berkeley (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/4723"
+  }
+ ],
+ "people": [
+  {
+   "name": "George Berkeley",
+   "role": "author",
+   "note": "Anglo-Irish philosopher and clergyman (1685 to 1753), Bishop of Cloyne.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "John Locke",
+   "role": "subject",
+   "note": "Contemporary whose account of perception Berkeley sets out to refute.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Isaac Newton",
+   "role": "subject",
+   "note": "Berkeley later argued against his absolute space, time and motion in De Motu.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Immanuel Kant",
+   "role": "subject",
+   "note": "One of the later thinkers deeply influenced by Berkeley's works.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "David Hume",
+   "role": "subject",
+   "note": "Another later thinker influenced by Berkeley.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Arthur Schopenhauer",
+   "role": "subject",
+   "note": "Called Berkeley the father of idealism.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Dysart Castle, County Kilkenny",
+   "lat": 52.5,
+   "lon": -7.1,
+   "note": "Berkeley's birthplace, near Thomastown.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Trinity College Dublin",
+   "lat": 53.3438,
+   "lon": -6.2546,
+   "note": "Where Berkeley took his B.A. in 1704 and M.A. in 1707.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Cloyne, County Cork",
+   "lat": 51.8667,
+   "lon": -8.1167,
+   "note": "His diocese as bishop from 1734 to 1753.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Middletown, Rhode Island",
+   "lat": 41.5,
+   "lon": -71.28,
+   "note": "Site of Whitehall, Berkeley's home in America.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Oxford",
+   "lat": 51.752,
+   "lon": -1.2577,
+   "note": "Where Berkeley died and is buried in Christ Church Cathedral.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1685,
+   "label": "George Berkeley is born on 12 March.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1709,
+   "label": "Berkeley publishes An Essay Towards a New Theory of Vision.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1710,
+   "label": "The Treatise Concerning the Principles of Human Knowledge appears; Part II is never published.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1713,
+   "label": "Berkeley rewrites his case as Three Dialogues Between Hylas and Philonous.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1734,
+   "label": "Berkeley becomes Bishop of Cloyne and publishes The Analyst.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1753,
+   "label": "Berkeley dies in Oxford on 14 January.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "To be is to be perceived",
+   "note": "Berkeley begins by asserting that existence is the state of being perceived by a perceiver.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "No abstract ideas",
+   "note": "The mind cannot conceive an abstract idea common to many particulars.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Ideas resemble only ideas",
+   "note": "The external world consists of ideas, given regularity by God.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "title": "Against Locke on matter",
+   "note": "Berkeley denies material substance in reply to Locke's account of perception.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "INTRODUCTION",
+   "quote": "we have first raised a dust and then complain we cannot see. 4. My purpose therefore is, to try if I can discover what those Principles are which have introduced all that doubtfulness and uncertainty, those absurdities and contradictions, into the several sects of philosophy; insomuch that the wisest",
+   "why": "Berkeley's diagnosis of why philosophy has fallen into doubt."
+  },
+  {
+   "part": 1,
+   "chapter": "INTRODUCTION",
+   "quote": "framing ABSTRACT IDEAS or notions of things. He who is not a perfect stranger to the writings and disputes of philosophers must needs acknowledge that no small part of them are spent about abstract ideas",
+   "why": "Target of the Introduction: the supposed power to frame abstract ideas."
+  },
+  {
+   "part": 2,
+   "chapter": "OF THE PRINCIPLES OF HUMAN KNOWLEDGE",
+   "quote": "Nothing seems of more importance towards erecting a firm system of sound and real knowledge, which may be proof against the assaults of Scepticism, than to lay the beginning in a distinct explication of what is meant by thing, reality, existence; for in vain shall we dispute concerning the real exist",
+   "why": "Opens the case with a call for a clear explanation of terms."
+  },
+  {
+   "part": 2,
+   "chapter": "OF THE PRINCIPLES OF HUMAN KNOWLEDGE",
+   "quote": "Their ESSE is PERCIPI, nor is it possible they should have any existence out of the minds or thinking things which perceive them",
+   "why": "The slogan of the book: for unthinking things, to be is to be perceived."
+  },
+  {
+   "part": 2,
+   "chapter": "OF THE PRINCIPLES OF HUMAN KNOWLEDGE",
+   "quote": "I do not argue against the existence of any one thing that we can apprehend either by sense or reflexion",
+   "why": "Berkeley answers the charge that he denies the reality of things."
+  },
+  {
+   "part": 2,
+   "chapter": "OF THE PRINCIPLES OF HUMAN KNOWLEDGE",
+   "quote": "MATTER INVOLVES A CONTRADICTION.--Some there are who make a DISTINCTION betwixt PRIMARY and SECONDARY qualities",
+   "why": "His attack on the primary and secondary qualities distinction."
+  }
+ ],
+ "id": "berkeley-principles"
+}

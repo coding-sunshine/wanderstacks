@@ -34,6 +34,7 @@ function sanitise(src: string, fallbackTitle: string): Chapter[] {
   let p: string | null = null
   let heading: { level: number; text: string } | null = null
   let quote = 0
+  let speaker = false
 
   const flushP = () => {
     if (p === null) return
@@ -82,7 +83,7 @@ function sanitise(src: string, fallbackTitle: string): Chapter[] {
       const cls = /class="([^"]*)"/.exec(attrs)?.[1] ?? ''
       const internal = tag === 'a' && /href="#/.test(attrs)
       if (
-        ['script', 'style', 'head', 'nav', 'figure', 'table', 'aside'].includes(tag) ||
+        ['script', 'style', 'head', 'nav', 'figure', 'aside'].includes(tag) ||
         internal ||
         (tag === 'section' && SKIP_SECTIONS.test(type)) ||
         SKIP_CLASS.test(cls) ||
@@ -102,7 +103,13 @@ function sanitise(src: string, fallbackTitle: string): Chapter[] {
     switch (tag) {
       case 'p': case 'li': case 'div': case 'pre': case 'section': case 'tr':
         flushP()
-        if (!close && (tag === 'p' || tag === 'li')) p = ''
+        if (!close && (tag === 'p' || tag === 'li' || tag === 'tr')) p = ''
+        break
+      // Standard Ebooks sets plays and dialogues as tables: speaker cell, then speech cell
+      case 'td': case 'th':
+        if (p === null) p = ''
+        if (!close) { speaker = /z3998:persona/.test(attrs); if (speaker) p += '<strong>' }
+        else { p += speaker ? '</strong> ' : ' '; speaker = false }
         break
       case 'blockquote':
         flushP()

@@ -16,7 +16,8 @@
   "book": "Book of Kells (in the Treasury; scan needs Trinity's permission)",
   "read": "Five Trinity-linked texts: Swift, Goldsmith, Stoker, Wilde, Synge",
   "phase": "A",
-  "wd": "Q1319605"
+  "wd": "Q1319605",
+  "vol": "About 200,000 of the oldest books"
  },
  {
   "id": "admont",
@@ -31,8 +32,6 @@
   "ev": "known",
   "dim": "70 × 14 × 11 m (12.7 m under the central dome); seven domes, 48 windows",
   "vol": "About 200,000 works, 1,400 manuscripts, 530 incunabula",
-  "book": "No single title confirmed yet",
-  "read": "Shares the hall bay kit with the Long Room",
   "phase": "B",
   "wd": "Q304668"
  },
@@ -49,9 +48,9 @@
   "ev": "known",
   "dim": "Philosophical Hall 32 × 10 × 14 m; Theological Hall size unpublished",
   "book": "Strahov Gospels (catalog only)",
-  "read": "Hall bay kit, stucco variant",
   "phase": "B",
-  "wd": "Q12056498"
+  "wd": "Q12056498",
+  "vol": "Over 21,000 in the Theological Hall, over 60,000 in the Philosophical Hall"
  },
  {
   "id": "loc",
@@ -127,7 +126,8 @@
   "dim": "Almost 80 m long, 20 m high",
   "book": "Daniel Gran ceiling frescoes",
   "phase": "C",
-  "wd": "Q12207289"
+  "wd": "Q12207289",
+  "vol": "About 200,000 historical books"
  },
  {
   "id": "bnf",
@@ -194,7 +194,8 @@
   "ev": "known",
   "dim": "297 × 78 ft (90.5 × 23.8 m); 52 ft height unproven",
   "phase": "C",
-  "wd": "Q7013887"
+  "wd": "Q7013887",
+  "vol": "Nearly 53 million items"
  },
  {
   "id": "bpl",
@@ -288,7 +289,8 @@
   "tier": "w2",
   "ev": "known",
   "phase": "C",
-  "wd": "Q1589808"
+  "wd": "Q1589808",
+  "vol": "About 100,000 books, 1,800 manuscripts, 750 incunabula"
  },
  {
   "id": "klementinum",
@@ -335,7 +337,8 @@
   "ev": "known",
   "dim": "23 × 11.5 m, two storeys",
   "phase": "C",
-  "wd": "Q28790041"
+  "wd": "Q28790041",
+  "vol": "About 15,000 volumes at peak"
  },
  {
   "id": "weimar",
@@ -386,7 +389,8 @@
   "st": "Closed since 20 June 2024, reopening early 2028",
   "stFrom": 2024,
   "phase": "later",
-  "wd": "Q1246991"
+  "wd": "Q1246991",
+  "vol": "About 2,000,000 items"
  },
  {
   "id": "nineveh",
@@ -602,7 +606,8 @@
   "phase": "later",
   "wd": "Q4058307",
   "vol": "100,000+ books; 3,000+ manuscripts",
-  "book": "15th-century Divine Comedy manuscript (Dante)"
+  "book": "15th-century Divine Comedy manuscript (Dante)",
+  "dim": "Town Hall 30 m high, 61 m span"
  },
  {
   "id": "connemara",
@@ -617,7 +622,8 @@
   "ev": "known",
   "phase": "later",
   "wd": "Q5161767",
-  "vol": "600,000+ books"
+  "vol": "600,000+ books",
+  "dim": "Heritage building of 20,000 sq ft"
  },
  {
   "id": "sassoon",
@@ -631,7 +637,8 @@
   "tier": "later",
   "ev": "known",
   "phase": "later",
-  "wd": "Q4120540"
+  "wd": "Q4120540",
+  "vol": "About 30,000 books"
  },
  {
   "id": "alexandrina",
@@ -759,7 +766,9 @@
   "phase": "later",
   "wd": "Q490798",
   "st": "UNESCO World Heritage Site (with the Janggyeong Panjeon depositories); active Seon temple",
-  "stFrom": 1995
+  "stFrom": 1995,
+  "dim": "Two halls each 60.44 m long, 8.73 m wide, 7.8 m high",
+  "vol": "About 80,000 woodblocks"
  },
  {
   "id": "ashikaga",
@@ -808,8 +817,6 @@
   "ev": "known",
   "dim": "three naves, eleven bays per aisle",
   "vol": "343 manuscripts and 400,000 later works",
-  "book": "No single title confirmed yet",
-  "read": "Reuses the hall bay kit with the shelf photograph",
   "phase": "E",
   "wd": "Q1113843"
  },
@@ -827,7 +834,6 @@
   "st": "Bats live in the library, protecting the books from insects",
   "dim": "three great rooms divided by decorated arches",
   "vol": "about 250,000 works",
-  "book": "No single title confirmed yet",
   "read": "Two-storied gilt shelves, like the long hall",
   "phase": "E",
   "wd": "Q1773229"
@@ -881,7 +887,6 @@
   "ev": "known",
   "dim": "Labrouste’s iron-framed reading room",
   "vol": "about 2 million items",
-  "book": "No single title confirmed yet",
   "read": "The exposed iron frame made architecture history",
   "phase": "E",
   "wd": "Q517249"

@@ -1,0 +1,172 @@
+{
+  "facts": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "field": "collection",
+      "value": "On 6 September 1646 Palafox y Mendoza donated 5,000 volumes (English article).",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "On 6 September 1646, Palafox y Mendoza donated 5,000",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'On\\s+6\\s+September\\s+1646.\\s+Palafox\\s+y\\s+Men'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "field": "built",
+      "value": "Francisco Fabian y Fuero ordered construction of the premises; library finished in 1773.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "Francisco Fabián y Fuero ordered the construction of the premises",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Francisco\\s+Fabi.n\\s+y\\s+Fuero\\s+ordered\\s+t'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "field": "collection",
+      "value": "Books confiscated from the Jesuits on their expulsion in 1767 were added.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "Books confiscated from Jesuits upon their expulsion in 1767 were also added",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Books\\s+confiscated\\s+from\\s+Jesuits\\s+upo'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "field": "dims",
+      "value": "A 43-meter-long vaulted hall on the second floor of the Colegio; two bookshelf levels, third added later.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "consisting of a 43-meter-long vaulted hall on the Colegio",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'consisting\\s+of\\s+a\\s+43.meter.long\\s+vaul'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "field": "collection",
+      "value": "Nine incunabula.",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "nine incunabula",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'nine\\s+incunabula'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "field": "collection",
+      "value": "Oldest text differs: Nuremberg Chronicle (1493) per English article; Herodotus printed 1473 per Spanish article.",
+      "source": "https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "el más antiguo es Los nueve libros de la Historia de Heródoto",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'el\\s+m.s\\s+antiguo\\s+es\\s+Los\\s+nueve\\s+libros'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "field": "volumes",
+      "value": "Counts differ: over 45,000 (English lead), over 41,000 (English collections section), 45,058 old books, 5,348 manuscripts, 9 incunabula (Spanish article).",
+      "source": "https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "45 058 libros antiguos, 5348 manuscritos, 9 incunables",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 '45\\s+058\\s+libros\\s+antiguos.\\s+5348\\s+manus'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "field": "status_note",
+      "value": "Royal decree approved in December 1647, reconfirmed by Pope Innocent X in 1648 (Spanish article).",
+      "source": "https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "aprobada por cédula real en diciembre de 1647 y reconfirmada por el papa Inocencio X en 1648",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'aprobada\\s+por\\s+c.dula\\s+real\\s+en\\s+diciem'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "field": "status_note",
+      "value": "Monumento Historico de Mexico since 1981 (Spanish article).",
+      "source": "https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "Monumento Histórico de México desde 1981",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Monumento\\s+Hist.rico\\s+de\\s+M.xico\\s+desd'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "field": "status_note",
+      "value": "Open Tuesday to Sunday 10:00-18:00, free entry on Tuesday (Spanish article); English article lists days inconsistently.",
+      "source": "https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "De martes a domingo, de 10:00 a 18:00, martes entrada libre",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'De\\s+martes\\s+a\\s+domingo.\\s+de\\s+10.00\\s+a\\s+18'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "kind": "founded",
+      "year": 1646,
+      "earliest": 1646,
+      "latest": 1646,
+      "label": "Palafox donates his library",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "On 6 September 1646, Palafox y Mendoza donated 5,000",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'On\\s+6\\s+September\\s+1646.\\s+Palafox\\s+y\\s+Men'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "kind": "built",
+      "year": 1773,
+      "earliest": 1773,
+      "latest": 1773,
+      "label": "Library premises finished",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "The library was finished in 1773",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+library\\s+was\\s+finished\\s+in\\s+1773'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "kind": "damaged",
+      "year": 1999,
+      "earliest": 1999,
+      "latest": 1999,
+      "label": "Two earthquakes damage building and shelves",
+      "source": "https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "Two earthquakes in 1999 caused damage to the building and shelves",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Two\\s+earthquakes\\s+in\\s+1999\\s+caused\\s+dam'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "palafoxiana",
+      "kind": "reopened",
+      "year": 2005,
+      "earliest": 2005,
+      "latest": 2005,
+      "label": "Doors reopened in April 2005 after restoration",
+      "source": "https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana",
+      "tier": "wikipedia",
+      "quote": "se reabrieran las puertas de la centenaria biblioteca en abril de 2005",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://es.wikipedia.org/wiki/Biblioteca_Palafoxiana' | sed 's/<[^>]*>/ /g' | rg -o -m1 'se\\s+reabrieran\\s+las\\s+puertas\\s+de\\s+la\\s+ce'"
+    }
+  ]
+}

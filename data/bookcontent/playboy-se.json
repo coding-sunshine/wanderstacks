@@ -1,0 +1,245 @@
+{
+ "id": "playboy-se",
+ "summary": "The Playboy of the Western World is a three-act comedy set in a rough public house on the Mayo coast. A frightened young man, Christy Mahon, arrives and says he has killed his father. The villagers are thrilled, and Pegeen Mike, the publican's daughter, falls for him while other women compete for his attention. His boasting turns him into a local champion until his father turns up alive. The community rejects him as a liar, he attacks his father again, and the villagers then turn on him once the deed looks real. The play mixes comedy, poetic speech and sharp doubts about heroism.",
+ "context": "John Millington Synge wrote the play for the Irish Literary Revival and it opened at the Abbey Theatre in Dublin on 26 January 1907. Nationalists took its subject and language as an insult to Ireland, and riots broke out in Dublin and had to be put down by police. The 1911 American tour met more trouble, including the arrest of the cast in Philadelphia on a charge of immorality, later dropped. Synge's own preface, dated January 1907, defends the speech as drawn from real people he had heard. The site carries a Standard Ebooks edition whose text, as shipped, holds the preface, the cast list and the opening stage direction of each act.",
+ "sources": [
+  {
+   "title": "The Playboy of the Western World - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Playboy_of_the_Western_World"
+  },
+  {
+   "title": "The Playboy of the Western World, by J. M. Synge - Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/j-m-synge/the-playboy-of-the-western-world"
+  }
+ ],
+ "people": [
+  {
+   "name": "John Millington Synge",
+   "role": "author",
+   "note": "Irish playwright who wrote the play and died in 1909.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Christy Mahon",
+   "role": "character",
+   "note": "A young man who claims to have killed his father and becomes a local hero.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Old Mahon",
+   "role": "character",
+   "note": "Christy's father, who was wounded rather than killed and tracks his son to the tavern.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Pegeen Mike",
+   "role": "character",
+   "note": "Margaret Flaherty, the barmaid, who falls in love with Christy and later leads the crowd against him.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Michael James Flaherty",
+   "role": "character",
+   "note": "The publican and Pegeen's father, owner of the public house where the story is set.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Shawn Keogh",
+   "role": "character",
+   "note": "Pegeen's timid suitor, who is pushed aside by Christy.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Widow Quin",
+   "role": "character",
+   "note": "A widow of about thirty who tries to win Christy for herself.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Arthur Griffith",
+   "role": "subject",
+   "note": "Nationalist figure who condemned the play after the 1907 premiere.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "W. B. Yeats",
+   "role": "subject",
+   "note": "Later rebuked rioters at another Abbey play by recalling the Playboy disturbances.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Abbey Theatre, Dublin",
+   "lat": 53.3486,
+   "lon": -6.261,
+   "note": "Site of the 26 January 1907 premiere and the riots that followed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "County Mayo",
+   "lat": 53.85,
+   "lon": -9.3,
+   "note": "West coast county where Flaherty's public house stands.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "New York",
+   "lat": 40.7128,
+   "lon": -74.006,
+   "note": "Where the 1911 tour was disrupted by hecklers who threw vegetables and stink bombs.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Philadelphia",
+   "lat": 39.9526,
+   "lon": -75.1652,
+   "note": "Where the cast was arrested in 1911 for staging an immoral play, a charge later dismissed.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1907,
+   "label": "The play opens at the Abbey Theatre on 26 January and sets off riots in Dublin.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1907,
+   "label": "Synge dates his preface to the play January 21st, 1907, days before the premiere.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1909,
+   "label": "Synge dies.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1911,
+   "label": "The US tour is disrupted in New York and the cast is arrested in Philadelphia.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1912,
+   "label": "The play is translated into German as Der Held der westlichen Welt and staged in Berlin and Vienna.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1962,
+   "label": "A film version is made in Ireland starring Siobhan McKenna.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Speech as poetry",
+   "note": "The play uses a lyrical Hiberno-English shaped by the Irish language, which Synge claimed to have heard from real country people.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The pull of a good story",
+   "note": "Christy is admired for the skill with which he tells his crime, so telling counts for more than doing.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Hero worship turns fast",
+   "note": "The villagers cheer a supposed murderer and shun him the moment the facts change.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Offence and national image",
+   "note": "Nationalists read the play as an insult to Irish morals and women, which shows how a stage image of a people could cause riots.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "All art is a collaboration; and there is little doubt that in the happy ages of literature, striking and beautiful phrases were as ready to the storyteller’s or the playwright’s hand, as the rich cloaks and dresses of his time.",
+   "why": "Synge states how he treats the speech of ordinary people as shared material."
+  },
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "When I was writing The Shadow of the Glen , some years ago, I got more aid than any learning could have given me from a chink in the floor of the old Wicklow house where I was staying, that let me hear what was being said by the servant girls in the kitchen.",
+   "why": "A vivid account of overhearing servant girls through a floor, which is how he gathered his words."
+  },
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "On the stage one must have reality, and one must have joy; and that is why the intellectual modern drama has failed, and people have grown sick of the false joy of the musical comedy, that has been given them in place of the rich joy found only in what is superb and wild in reality.",
+   "why": "His argument that drama needs both reality and joy."
+  },
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "In a good play every speech should be as fully flavoured as a nut or apple, and such speeches cannot be written by anyone who works among people who have shut their lips on poetry.",
+   "why": "A short line from the preface on how every speech should read."
+  },
+  {
+   "part": 1,
+   "chapter": "Act I",
+   "quote": "Scene: Country public-house or shebeen, very rough and untidy. There is a sort of counter on the right with shelves, holding many bottles and jugs, just seen above it.",
+   "why": "The opening stage picture that fixes the rough public house where everything happens."
+  },
+  {
+   "part": 1,
+   "chapter": "Act II",
+   "quote": "Scene as before. Brilliant morning light. Christy , looking bright and cheerful, is cleaning a girl’s boots.",
+   "why": "Act II opens with Christy cleaning a girl's boots, his new status in the village."
+  },
+  {
+   "part": 1,
+   "chapter": "Act III",
+   "quote": "Scene as before. Later in the day. Jimmy comes in, slightly drunk.",
+   "why": "Act III opens with Jimmy drunk, the start of the final turn."
+  }
+ ]
+}

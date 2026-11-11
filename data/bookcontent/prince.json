@@ -1,0 +1,252 @@
+{
+ "id": "prince",
+ "summary": "The Prince is a short handbook of political advice written by Niccolo Machiavelli for a ruler. It sorts states into types, explains how a new prince can win and keep power, and treats armies as the foundation of any state. It argues against mercenaries, weighs cruelty and mercy, and says a ruler must judge by how men actually behave rather than how they ought to. A later chapter sets out how far fortune governs events and how boldness can answer it. The book closes with an appeal to the Medici to free Italy from foreign rule.",
+ "context": "Machiavelli wrote it in 1513, soon after the Medici returned to power in Florence and had him arrested and banished. He first meant it for Giuliano de' Medici and then dedicated it to Lorenzo de' Medici, Duke of Urbino. It circulated in manuscript and was printed only in 1532, five years after his death, with permission from the Medici pope Clement VII. Church censors placed it on the Index in 1559, which did not stop it being read, attacked and copied across Europe. The site carries W. K. Marriott's English translation.",
+ "sources": [
+  {
+   "title": "The Prince - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/The_Prince"
+  },
+  {
+   "title": "The Prince, by Niccolo Machiavelli, translated by W. K. Marriott - Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/niccolo-machiavelli/the-prince/w-k-marriott"
+  }
+ ],
+ "people": [
+  {
+   "name": "Niccolo Machiavelli",
+   "role": "author",
+   "note": "Florentine diplomat who wrote the book in 1513 and died in 1527.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lorenzo di Piero de' Medici",
+   "role": "patron",
+   "note": "Duke of Urbino and the final dedicatee, grandson of Lorenzo the Magnificent.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Giuliano de' Medici",
+   "role": "patron",
+   "note": "Lorenzo's uncle, for whom the book was first intended; he died in 1516.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cesare Borgia",
+   "role": "subject",
+   "note": "Used repeatedly as an example of a prince who rose by fortune and cunning.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Oliverotto de Fermo",
+   "role": "subject",
+   "note": "A soldier who took power by killing his enemies, his uncle among them, at a banquet.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Pope Clement VII",
+   "role": "patron",
+   "note": "Medici pope whose permission allowed the first printing in 1532.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "W. K. Marriott",
+   "role": "translator",
+   "note": "Made the English translation that the site reads.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Innocent Gentillet",
+   "role": "subject",
+   "note": "Huguenot author of a 1576 attack on Machiavelli titled Anti Machiavel.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Florence",
+   "lat": 43.7696,
+   "lon": 11.2558,
+   "note": "Machiavelli's home city, ruled by the Medici after their return in 1512.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Urbino",
+   "lat": 43.7262,
+   "lon": 12.6364,
+   "note": "Seat of the duchy held by Lorenzo de' Medici, to whom the book is dedicated.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Fermo",
+   "lat": 43.1604,
+   "lon": 13.7184,
+   "note": "Town named in the title of Oliverotto de Fermo, who came to power by killing his enemies.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Geneva",
+   "lat": 46.2044,
+   "lon": 6.1432,
+   "note": "Place of publication of Gentillet's 1576 Discourse against Machiavelli.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1513,
+   "label": "Machiavelli writes the work, under the Latin title De Principatibus, after the Medici return to Florence.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1527,
+   "label": "Machiavelli dies, with the book still unprinted.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1532,
+   "label": "The Prince is first printed, with the permission of Pope Clement VII.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1559,
+   "label": "The work is placed on the Index of Paul IV.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1576,
+   "label": "Innocent Gentillet publishes his Discourse against Machiavelli in Geneva.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1740,
+   "label": "Frederick the Great, with Voltaire's guidance, publishes his Anti-Machiavel.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1908,
+   "label": "W. K. Marriott's English translation is issued.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Fortune and effort share events",
+   "note": "Fortune decides about half of what happens and prudence and daring govern the rest, so a ruler should prepare as against a flooding river.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Rely on your own arms",
+   "note": "Mercenaries and borrowed troops are undisciplined or dangerous, and a state needs sound laws and its own strong army.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Cruelty and mercy weighed",
+   "note": "A prince should not shrink from cruelty when it is needed to keep order, and should avoid mercy that harms his state.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Realism over ideal regimes",
+   "note": "The book breaks from classical political philosophy by dealing with real conduct and by citing examples such as Cesare Borgia.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Dedication",
+   "quote": "Dedication To the Magnificent Lorenzo Di Piero De’ Medici: Those who strive to obtain the good graces of a prince are accustomed to come before him with such things as they hold most precious, or in which they see him take most delight; whence one often sees horses, arms, cloth of gold, precious stones, and similar ornaments presented to princes, worthy of their greatness.",
+   "why": "Machiavelli presents the book to Lorenzo de' Medici as a gift of knowledge in place of treasure."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "well treated or crushed, because they can avenge themselves of lighter injuries, of more serious ones they cannot; therefore the injury that is to be done to a man ought to be of such a kind that one does not stand in fear of revenge.",
+   "why": "A blunt rule on handling conquered people, one of the passages that made readers uneasy."
+  },
+  {
+   "part": 1,
+   "chapter": "XIV",
+   "quote": "ought to have no other aim or thought, nor select anything else for his study, than war and its rules and discipline; for this is the sole art that belongs to him who rules, and it is of such force that it not only upholds those who are born princes, but it often enables men to rise from a private station to that rank.",
+   "why": "The case that war is the one study a ruler cannot neglect."
+  },
+  {
+   "part": 1,
+   "chapter": "XV",
+   "quote": "real truth of the matter than the imagination of it; for many have pictured republics and principalities which in fact have never been known or seen, because how one lives is so far distant from how one ought to live, that he who neglects what is done for what ought to be done, sooner effects his ruin than his preservation;",
+   "why": "His turn from imagined republics to the world as it is."
+  },
+  {
+   "part": 1,
+   "chapter": "XVII",
+   "quote": "it is much safer to be feared than loved, when, of the two, either must be dispensed with. Because this is to be asserted in general of men, that they are ungrateful, fickle, false, cowardly, covetous, and as long as you succeed they are yours entirely; they will offer you their blood, property, life, and children, as is said above, when the need is far distant;",
+   "why": "The best known answer to whether a prince should be loved or feared."
+  },
+  {
+   "part": 1,
+   "chapter": "XVIII",
+   "quote": "the fox and the lion; because the lion cannot defend himself against snares and the fox cannot defend himself against wolves. Therefore, it is necessary to be a fox to discover the snares and a lion to terrify the wolves.",
+   "why": "The two animals a ruler must imitate, the most quoted image in the book."
+  },
+  {
+   "part": 2,
+   "chapter": "XXV",
+   "quote": "Fortune is the arbiter of one-half of our actions, but that she still leaves us to direct the other half, or perhaps a little less. I compare her to one of those raging rivers, which when in flood overflows the plains, sweeping away trees and buildings, bearing away the soil from place to place; everything flies before it, all yield to its violence, without being able in any way to withstand it;",
+   "why": "The river image for fortune in chapter XXV."
+  },
+  {
+   "part": 2,
+   "chapter": "XXVI",
+   "quote": "This opportunity, therefore, ought not to be allowed to pass for letting Italy at last see her liberator appear. Nor can one express the love with which he would be received in all those provinces which have suffered so much from these foreign scourings, with what thirst for revenge, with what stubborn faith, with what devotion, with what tears.",
+   "why": "The closing appeal that Italy find a liberator."
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+{
+ "id": "robert-louis-stevenson-the-strange-case-of-dr-jekyll-and-mr-hyde",
+ "summary": "A short Gothic novella told mostly through the eyes of Mr Utterson, a London lawyer. He hears of a brutal man named Hyde who has a strange hold over his friend Dr Jekyll, and who later beats Sir Danvers Carew to death. Hyde vanishes, Jekyll shuts himself away, and their friend Dr Lanyon dies of shock. Two final letters explain it: Jekyll made a drug that turned him into Hyde so that he could indulge his vices unseen, and in time he could no longer stop the change.",
+ "context": "Stevenson wrote the book in Bournemouth after a dream gave him the central idea, and rewrote it quickly after, by family accounts, burning a first draft. Scribner's issued it in New York on 5 January 1886 and Longmans in London four days later, as a one-shilling paperback. A favourable Times review on 25 January set sales going, and close to 40,000 copies sold within six months. Stage versions followed, starting in Boston in 1887. 'Jekyll and Hyde' became a phrase for a split character.",
+ "sources": [
+  {
+   "title": "Strange Case of Dr Jekyll and Mr Hyde - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Strange_Case_of_Dr_Jekyll_and_Mr_Hyde"
+  },
+  {
+   "title": "The Strange Case of Dr. Jekyll and Mr. Hyde - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/43"
+  }
+ ],
+ "people": [
+  {
+   "name": "Robert Louis Stevenson",
+   "role": "author",
+   "note": "Scottish author who wrote the novella in Bournemouth after a dream gave him its central idea.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Gabriel John Utterson",
+   "role": "character",
+   "note": "Reserved London lawyer and friend of Jekyll and Lanyon who investigates the mystery.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dr Henry Jekyll",
+   "role": "character",
+   "note": "Respected doctor who takes a serum to separate out his darker self.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Edward Hyde",
+   "role": "character",
+   "note": "Jekyll's transformed self, who tramples a child and murders Sir Danvers Carew.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dr Hastie Lanyon",
+   "role": "character",
+   "note": "Mutual friend who sees Hyde turn into Jekyll and dies of the shock.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sir Danvers Carew",
+   "role": "character",
+   "note": "Elderly Member of Parliament beaten to death by Hyde in the street.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mr Enfield",
+   "role": "character",
+   "note": "Utterson's cousin, who tells him how he saw Hyde trample a girl.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Poole",
+   "role": "character",
+   "note": "Jekyll's butler, who brings his fears to Utterson and helps break into the laboratory.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Fanny Stevenson",
+   "role": "subject",
+   "note": "The author's wife, who read the first draft and told him it should be an allegory.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Richard Mansfield",
+   "role": "subject",
+   "note": "Actor who bought the stage rights and played the double role, opening in Boston in 1887.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Bournemouth",
+   "lat": 50.7192,
+   "lon": -1.8808,
+   "note": "Seaside town in Dorset where Stevenson lived at Skerryvore and wrote the novella.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Soho, London",
+   "lat": 51.5136,
+   "lon": -0.1365,
+   "note": "Where Jekyll lives and where Utterson finds Hyde's rooms.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Setting of the story, and where Longmans published the first UK edition in 1886.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "New York",
+   "lat": 40.7128,
+   "lon": -74.006,
+   "note": "Scribner's issued the first authorised edition here on 5 January 1886.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Edinburgh",
+   "lat": 55.9533,
+   "lon": -3.1883,
+   "note": "Home of Deacon Brodie and the murderer Chantrelle, both named as possible inspirations.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "Where the first stage adaptation opened in 1887.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1878,
+   "label": "Eugène Chantrelle, an Edinburgh teacher who seemed to lead a normal life, is executed for poisoning his wife; Stevenson followed the trial.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1882,
+   "label": "The play Deacon Brodie, about a respectable man with a secret life as a burglar, is produced for the first time.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1886,
+   "label": "Scribner's publishes the book in New York on 5 January; Longmans follows in London four days later.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1886,
+   "label": "A favourable Times review on 25 January turns it into a hit, with close to 40,000 copies sold in six months.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1887,
+   "label": "The first stage adaptation, with Richard Mansfield, opens in Boston.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 2008,
+   "label": "Project Gutenberg releases the text as ebook 43.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "A divided human nature",
+   "note": "Jekyll concludes that man is not one but two, and imagines humanity as a collection of different beings.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Public respectability, private vice",
+   "note": "The book is read as a picture of Victorian life, where people played a part in public and hid another life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Loss of control",
+   "note": "Jekyll starts by choosing his changes with the serum, then turns into Hyde in his sleep and finally while awake.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Addiction reading",
+   "note": "Some scholars see Hyde as modelled on nineteenth-century accounts of substance abuse.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Doubleness of Scotland",
+   "note": "Another reading sees the duality as standing for Scotland's national and linguistic divisions.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Story of the Door",
+   "quote": "the man trampled calmly over the child’s body and left her screaming on the ground. It sounds nothing to hear, but it was hellish to see.",
+   "why": "Enfield's account of Hyde's first appearance, and the story's earliest sign of his cruelty."
+  },
+  {
+   "part": 1,
+   "chapter": "Search for Mr. Hyde",
+   "quote": "Is Dr. Jekyll at home, Poole?” asked the lawyer. “I will see, Mr. Utterson,” said Poole,",
+   "why": "Utterson at Jekyll's door; shows the household and the lawyer's careful manner."
+  },
+  {
+   "part": 1,
+   "chapter": "The Carew Murder Case",
+   "quote": "Yes,” said he, “I recognise him. I am sorry to say that this is Sir Danvers Carew.”",
+   "why": "The murder is confirmed, and Utterson realises he has a client's killer to hunt."
+  },
+  {
+   "part": 1,
+   "chapter": "The Last Night",
+   "quote": "Mr. Utterson, sir, I’m afraid.” “Now, my good man,” said the lawyer, “be explicit. What are you afraid of?”",
+   "why": "Poole breaks cover and drives the final chapters toward the laboratory door."
+  },
+  {
+   "part": 1,
+   "chapter": "Dr. Lanyon’s Narrative",
+   "quote": "known by the name of Hyde and hunted for in every corner of the land as the murderer of Carew.",
+   "why": "The end of Lanyon's letter, naming Hyde as the hunted murderer of Carew."
+  },
+  {
+   "part": 1,
+   "chapter": "Henry Jekyll’s Full Statement of the Case",
+   "quote": "man is not truly one, but truly two. I say two, because the state of my own knowledge does not pass beyond that point.",
+   "why": "Jekyll's own statement of the idea that gives the book its meaning."
+  },
+  {
+   "part": 1,
+   "chapter": "Henry Jekyll’s Full Statement of the Case",
+   "quote": "That night I had come to the fatal crossroads.",
+   "why": "The turning point in Jekyll's confession, where he chooses again to drink."
+  }
+ ]
+}

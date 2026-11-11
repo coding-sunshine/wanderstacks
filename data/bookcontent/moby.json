@@ -1,0 +1,267 @@
+{
+ "id": "moby",
+ "summary": "Ishmael, a restless sailor, leaves Manhattan in December and signs aboard the whaling ship Pequod out of Nantucket, after sharing a bed in New Bedford with the harpooneer Queequeg. Captain Ahab, whose leg was taken by the white whale Moby Dick, nails a gold doubloon to the mast and binds the crew to his vengeance. Between the hunts, Ishmael lectures on whales and whaling. After three days of chase, the whale sinks the Pequod, and Ishmael alone survives, floating on Queequeg's coffin until the Rachel picks him up.",
+ "context": "Herman Melville began writing in February 1850, drawing on his years as a common sailor from 1841 to 1844 and on whaling literature. The white whale is modeled on the hard-to-catch albino Mocha Dick, and the ending on the sinking of the whaleship Essex in 1820. A meeting with Nathaniel Hawthorne in August 1850 may have led Melville to deepen the book. It appeared in London in October 1851 as The Whale and in New York in November. Reviews were mixed, it sold poorly, and its status as a Great American Novel came only after 1919.",
+ "sources": [
+  {
+   "title": "Moby-Dick (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Moby-Dick"
+  },
+  {
+   "title": "Herman Melville (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Herman_Melville"
+  }
+ ],
+ "people": [
+  {
+   "name": "Ishmael",
+   "role": "narrator",
+   "note": "Sailor who tells the story; the only survivor of the Pequod.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Captain Ahab",
+   "role": "captain",
+   "note": "Commander of the Pequod, bent on revenge against Moby Dick.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Queequeg",
+   "role": "harpooneer",
+   "note": "Tattooed Polynesian harpooneer and son of a king from the island of Rokovoko.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Starbuck",
+   "role": "chief mate",
+   "note": "Nantucket Quaker and realist who objects that the voyage should be for profit.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Stubb",
+   "role": "second mate",
+   "note": "Cheerful second mate from Cape Cod.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Fedallah",
+   "role": "harpooner",
+   "note": "Parsee leader of Ahab's special crew; he prophesies Ahab's death.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Pip",
+   "role": "cabin-boy",
+   "note": "Young cabin-boy who is abandoned at sea and goes insane.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Herman Melville",
+   "role": "author",
+   "note": "American writer, 1819 to 1891, and a common sailor from 1841 to 1844.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Nathaniel Hawthorne",
+   "role": "dedicatee",
+   "note": "The book is dedicated to him; Melville met him in August 1850.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Manhattan",
+   "lat": 40.7831,
+   "lon": -73.9712,
+   "note": "Ishmael sets out from here in December.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "New Bedford",
+   "lat": 41.6362,
+   "lon": -70.9342,
+   "note": "Ishmael shares an inn bed with Queequeg and they hear Father Mapple preach on Jonah.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nantucket",
+   "lat": 41.2835,
+   "lon": -70.0995,
+   "note": "Home port of the Pequod, whose Quaker owners are Bildad and Peleg.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The Azores",
+   "lat": 38.6,
+   "lon": -28,
+   "note": "The Pequod sails here first.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cape of Good Hope",
+   "lat": -34.3568,
+   "lon": 18.474,
+   "note": "The ship crosses to the Indian Ocean this way rather than round Cape Horn.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Marquesas Islands",
+   "lat": -9,
+   "lon": -139.5,
+   "note": "Melville jumped ship here from the whaler Acushnet.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1820,
+   "label": "The whaleship Essex sinks, the basis of the book's ending.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1841,
+   "label": "Melville sails on the whaler Acushnet.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1850,
+   "label": "Melville begins writing in February and meets Hawthorne in August.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1851,
+   "label": "Published as The Whale in London in October and as Moby-Dick in New York in November.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1891,
+   "label": "Melville dies; the book is out of print.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1919,
+   "label": "Centennial of Melville's birth, the start of the revival.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Obsessive vengeance",
+   "note": "Ahab's vow captivates the crew despite Starbuck's objection that the voyage is meant for profit.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Good and evil, and God",
+   "note": "The novel mixes whaling detail with questions of class, good and evil, and the existence of God.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A culturally diverse crew",
+   "note": "Life aboard ship among sailors of many origins is a recurring subject.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Mixed forms",
+   "note": "Melville uses songs, sermons, stage directions, soliloquies and catalogs beside narrative prose.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Reading the symbol",
+   "note": "Ahab reads the doubloon as a sign of his own energy, firmness and victory.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Call me Ishmael. Some years ago⁠—never mind how long precisely⁠—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
+   "why": "The famous opening, casual and confiding."
+  },
+  {
+   "part": 1,
+   "chapter": "III",
+   "quote": "Better sleep with a sober cannibal than a drunken Christian.",
+   "why": "Ishmael's tolerance for Queequeg, in a joke."
+  },
+  {
+   "part": 3,
+   "chapter": "XXXVI",
+   "quote": "All visible objects, man, are but as pasteboard masks. But in each event⁠—in the living act, the undoubted deed⁠—there, some unknown but still reasoning thing puts forth the mouldings of its features from behind the unreasoning mask. If man will strike, strike through the mask! How can the prisoner reach outside except by thrusting through the wall?",
+   "why": "Ahab's reason for pursuing the whale: strike through the mask."
+  },
+  {
+   "part": 3,
+   "chapter": "XXXVI",
+   "quote": "Talk not to me of blasphemy, man; I’d strike the sun if it insulted me. For could the sun do that, then could I do the other; since there is ever a sort of fair play herein, jealousy presiding over all creations. But not my master, man, is even that fair play. Who’s over me? Truth hath no confines.",
+   "why": "Ahab defies the sun and all authority over him."
+  },
+  {
+   "part": 8,
+   "chapter": "CXXXV",
+   "quote": "Towards thee I roll, thou all-destroying but unconquering whale; to the last I grapple with thee; from hell’s heart I stab at thee; for hate’s sake I spit my last breath at thee. Sink all coffins and all hearses to one common pool!",
+   "why": "Ahab's last words to the whale."
+  },
+  {
+   "part": 8,
+   "chapter": "Epilogue",
+   "quote": "The drama’s done. Why then here does anyone step forth?⁠—Because one did survive the wreck.",
+   "why": "Ishmael explains why anyone is left to tell the story."
+  }
+ ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "j-w-von-goethe-the-sorrows-of-young-werther-r-d-boylan",
+  "summary": "Werther, a sensitive young artist, writes letters to his friend Wilhelm from the village of Wahlheim. He falls in love with Charlotte, who looks after her younger siblings and is already engaged to Albert. Werther stays close to the couple even after they marry, and the friendship becomes unbearable. A humiliating spell in Weimar, among nobles who will not accept him, only deepens his gloom. Charlotte asks him to visit less. In the last letters he reads her a passage from Ossian, borrows Albert's pistols and shoots himself. An editor links the letters and tells the ending.",
+  "context": "Goethe wrote the novel at 24, in five and a half weeks between January and March 1774, and published it anonymously. It draws on his own summer in Wetzlar in 1772, when he loved Charlotte Buff, who was engaged to Christian Kestner, and on the suicide of an acquaintance, Karl Wilhelm Jerusalem, who used a pistol borrowed from Kestner. The book made Goethe famous across Europe and set off Werther Fever, with young men copying Werther's dress. Goethe revised it in 1787 and later regretted the fame it brought. The site carries R. D. Boylan's translation.",
+  "sources": [
+    {
+      "title": "The Sorrows of Young Werther (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Sorrows_of_Young_Werther"
+    },
+    {
+      "title": "Johann Wolfgang von Goethe (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe"
+    },
+    {
+      "title": "Sorrows of Young Werther, translated by R. D. Boylan (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/j-w-von-goethe/the-sorrows-of-young-werther/r-d-boylan"
+    }
+  ],
+  "people": [
+    {
+      "name": "Johann Wolfgang von Goethe",
+      "role": "author",
+      "note": "Wrote Werther at 24; he moved to Weimar in 1775 after its success.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Werther",
+      "role": "character",
+      "note": "A young artist of passionate temperament whose letters make up most of the book.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Charlotte (Lotte)",
+      "role": "character",
+      "note": "The young woman who cares for her siblings after her mother's death; Werther loves her although she is engaged to Albert.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Albert",
+      "role": "character",
+      "note": "Charlotte's fiance and then husband, eleven years her senior, who grows cold toward Werther.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Wilhelm",
+      "role": "character",
+      "note": "Werther's friend, the recipient of most of the letters.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Charlotte Buff",
+      "role": "subject",
+      "note": "The woman Goethe loved in Wetzlar in 1772, already engaged to Johann Christian Kestner.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Karl Wilhelm Jerusalem",
+      "role": "subject",
+      "note": "A 25-year-old lawyer whose suicide with a pistol borrowed from Kestner in October 1772 fed the plot.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "R. D. Boylan",
+      "role": "translator",
+      "note": "Translator of the English text used in the Standard Ebooks edition on this site.",
+      "s": [
+        2
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Wetzlar",
+      "lat": 50.5547,
+      "lon": 8.5043,
+      "note": "Where Goethe spent the summer of 1772 and fell in love with Charlotte Buff.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Wahlheim (based on Garbenheim)",
+      "lat": 50.5526,
+      "lon": 8.4686,
+      "note": "The fictional village, modeled on Garbenheim near Wetzlar, where Werther meets Charlotte.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Weimar",
+      "lat": 50.9795,
+      "lon": 11.3235,
+      "note": "Where Werther is publicly slighted by the nobility; Goethe himself settled there in 1775.",
+      "s": [
+        0,
+        1
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1749,
+      "label": "Goethe is born on 28 August.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "year": 1772,
+      "label": "Goethe spends the summer in Wetzlar; in late October Jerusalem shoots himself.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1774,
+      "label": "Goethe finishes the novel in five and a half weeks, January to March, and it appears anonymously.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1775,
+      "label": "Goethe moves to Weimar after the novel's success.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "year": 1787,
+      "label": "A revised edition appears.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1892,
+      "label": "Jules Massenet adapts the novel as the opera Werther.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Feeling over reason",
+      "note": "Told through one person's letters, the book gives pride of place to emotion, a mark of the Sturm und Drang movement.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Unrequited love",
+      "note": "Charlotte herself suggests that the impossibility of possessing her is what excites his desire.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Class and exclusion",
+      "note": "Werther is asked to leave a noble gathering because he is not himself a nobleman.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Fame and the Werther effect",
+      "note": "The book was an instant international bestseller and was linked to copycat suicides, though a biographer doubts how many.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "Preface",
+      "quote": "I have carefully collected whatever I have been able to learn of the story of poor Werther, and here present it to you, knowing that you will thank me for it. To his spirit and character you cannot refuse your admiration and love: to his fate you will not deny your tears.",
+      "why": "The editor's frame, set up so that the reader meets Werther sympathetically from the first page."
+    },
+    {
+      "part": 1,
+      "chapter": "Book I",
+      "quote": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.",
+      "why": "Werther's early happiness in the countryside, before love changes him."
+    },
+    {
+      "part": 1,
+      "chapter": "Book I",
+      "quote": "The human race is but a monotonous affair. Most of them labour the greater part of their time for mere subsistence; and the scanty portion of freedom which remains to them so troubles them that they use every exertion to get rid of it. Oh, the destiny of man! But they are a right good sort of people.",
+      "why": "His mixed view of ordinary people, from despair to affection in one paragraph."
+    },
+    {
+      "part": 1,
+      "chapter": "Book I",
+      "quote": "“Lend me those pistols,” said I, “for my journey.” “By all means,” he replied, “if you will take the trouble to load them; for they only hang there for form.”",
+      "why": "An early borrowed pistol, long before the one used at the end."
+    },
+    {
+      "part": 1,
+      "chapter": "Book II",
+      "quote": "Ossian has superseded Homer in my heart. To what a world does the illustrious bard carry me!",
+      "why": "The shift in Werther's taste from classical calm to Ossian's mist and storms."
+    },
+    {
+      "part": 2,
+      "chapter": "The Editor to the Reader",
+      "quote": "Farewell. We find it difficult to express the emotions with which Charlotte’s soul was agitated during the whole of this time, whether in relation to her husband or to her unfortunate friend; although we are enabled, by our knowledge of her character, to understand their nature.",
+      "why": "The editor takes over and shows Charlotte's side as the story reaches its end."
+    }
+  ]
+}

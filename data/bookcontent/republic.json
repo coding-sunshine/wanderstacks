@@ -1,0 +1,282 @@
+{
+ "id": "republic",
+ "summary": "A Socratic dialogue in ten books on what justice is and whether the just person is happier than the unjust one. Socrates answers by building a city in speech: a state with guardians and rulers chosen and educated for the job, ending in rule by philosopher-kings. He then matches the city's parts to the parts of the soul, ranks five kinds of regime from best to worst, and closes with the myth of Er and the fate of souls after death. Along the way come the ring of Gyges, the noble lie and the allegory of the cave.",
+ "context": "Plato wrote the Republic around 375 BC, in the middle period of his dialogues, and Book I may have begun as a separate piece. The dialogue is set in the time of the Peloponnesian War. Papyrus fragments from Oxyrhynchus show it was read in Egypt in the 200s and 300s CE, and Cicero's later De re publica gave the work its English name. The version on this site is Benjamin Jowett's English translation, from Project Gutenberg, printed with his introductions inside a larger Dialogues volume.",
+ "sources": [
+  {
+   "title": "Republic (Plato) - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Republic_(Plato)"
+  },
+  {
+   "title": "Benjamin Jowett - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Benjamin_Jowett"
+  },
+  {
+   "title": "The Republic - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/1497"
+  }
+ ],
+ "people": [
+  {
+   "name": "Plato",
+   "role": "author",
+   "note": "Athenian philosopher who wrote the dialogue around 375 BC.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Benjamin Jowett",
+   "role": "translator",
+   "note": "Oxford classicist and Balliol College figure whose complete Plato translation grew from his Greek professorship.",
+   "s": [
+    1,
+    2
+   ]
+  },
+  {
+   "name": "Socrates",
+   "role": "character",
+   "note": "Narrator and main speaker, who asks what justice is and builds the ideal city to find out.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Glaucon",
+   "role": "character",
+   "note": "Socrates' companion, who tells the story of Gyges and calls the first simple city a city of pigs.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Adeimantus",
+   "role": "character",
+   "note": "Glaucon's partner in pressing Socrates to defend justice for its own sake.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Thrasymachus",
+   "role": "character",
+   "note": "Argues that justice is whatever benefits the stronger and that injustice pays better.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cephalus",
+   "role": "character",
+   "note": "Aged host who defines justice as honesty and paying debts.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Polemarchus",
+   "role": "character",
+   "note": "Cephalus' son, who holds that justice means helping friends and harming enemies.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gyges",
+   "role": "subject",
+   "note": "Shepherd in Glaucon's tale who gains power from a ring of invisibility.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Er",
+   "role": "subject",
+   "note": "Soldier who dies, comes back after twelve days and reports on the afterlife in Book X.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Piraeus",
+   "lat": 37.943,
+   "lon": 23.647,
+   "note": "Athens' port, where Socrates and Glaucon are stopped by Polemarchus and taken to dinner and a festival.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Athens",
+   "lat": 37.9838,
+   "lon": 23.7275,
+   "note": "The dialogue's world: Socrates talks with Athenians and foreigners during the Peloponnesian War.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Oxyrhynchus",
+   "lat": 28.5333,
+   "lon": 30.65,
+   "note": "Papyrus fragments of the Republic found here date to about 200 to 300 CE.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Nag Hammadi",
+   "lat": 26.0467,
+   "lon": 32.2428,
+   "note": "Fragments of a different version of the Republic turned up in the library found here in 1945.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Balliol College, Oxford",
+   "lat": 51.7536,
+   "lon": -1.2566,
+   "note": "Jowett's college for the rest of his life, where his Plato translation was made.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -375,
+   "label": "Plato writes the Republic around this date, in the middle period of his dialogues.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 250,
+   "label": "Papyrus copies of parts of the Republic are written at Oxyrhynchus in Egypt, around 200 to 300 CE.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1855,
+   "label": "Jowett becomes Regius Professor of Greek at Oxford, the post from which his Plato translation grew.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1893,
+   "label": "Jowett dies, having spent his last years on a commentary on the Republic.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1945,
+   "label": "Fragments of a different version of the Republic are found in the Nag Hammadi library.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 2001,
+   "label": "A survey of over 1,000 academics and students names the Republic the greatest philosophical text.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Justice in city and soul",
+   "note": "Socrates compares the parts of the city to the parts of the soul and calls justice a balance between them.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The ring of Gyges",
+   "note": "Glaucon asks whether anyone would stay just if they could do wrong unseen, and Socrates must show justice is good in itself.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The noble lie",
+   "note": "The rulers spread a myth of gold, silver and bronze people so that citizens accept their roles.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Philosopher-kings",
+   "note": "Socrates argues that rulers must be lovers of wisdom who understand the Forms, since they are least open to corruption.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Allegory of the cave",
+   "note": "A parable of prisoners who mistake shadows for reality illustrates the gap between appearance and the Forms.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Decline of regimes",
+   "note": "Socrates ranks aristocracy, timocracy, oligarchy, democracy and tyranny, each growing out of the failure of the last.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 22,
+   "chapter": "The Republic",
+   "quote": "I went down yesterday to the Piraeus with Glaucon the son of Ariston, that I might offer up my prayers to the goddess;",
+   "why": "The opening line sets the whole conversation at the port, on a festival night."
+  },
+  {
+   "part": 22,
+   "chapter": "The Republic",
+   "quote": "if you were providing for a city of pigs, how else would you feed the beasts?",
+   "why": "Glaucon rejects Socrates' simple first city and forces the argument toward luxury and guardians."
+  },
+  {
+   "part": 22,
+   "chapter": "The Republic",
+   "quote": "Gyges was a shepherd in the service of the king of Lydia; there was a great storm, and an earthquake made an opening in the earth at the place where he was feeding his flock.",
+   "why": "The start of the ring of Gyges tale, which sets the challenge the rest of the book answers."
+  },
+  {
+   "part": 23,
+   "chapter": "The Republic (continued)",
+   "quote": "just one royal lie which may deceive the rulers, if that be possible, and at any rate the rest of the city?",
+   "why": "Socrates introduces the founding myth that keeps each class in its place."
+  },
+  {
+   "part": 23,
+   "chapter": "The Republic (continued)",
+   "quote": "Until philosophers are kings, or the kings and princes of this world have the spirit and power of philosophy, and political greatness and wisdom meet in one, and those commoner natures who pursue either to the exclusion of the other are compelled to stand aside,",
+   "why": "The famous claim that cities will have no rest from evil until power and wisdom meet."
+  },
+  {
+   "part": 24,
+   "chapter": "The Republic (continued)",
+   "quote": "Behold! human beings living in a underground den, which has a mouth open towards the light and reaching all along the den;",
+   "why": "The opening image of the allegory of the cave."
+  },
+  {
+   "part": 25,
+   "chapter": "The Republic (continued)",
+   "quote": "Let a man do what is just, whether he have the ring of Gyges or not, and even if in addition to the ring of Gyges he put on the helmet of Hades.",
+   "why": "Socrates returns to the Gyges ring at the end and says justice is worth having either way."
+  }
+ ]
+}

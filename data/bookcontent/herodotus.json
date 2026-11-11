@@ -1,0 +1,283 @@
+{
+ "id": "herodotus",
+ "summary": "The Histories, written in the fifth century BC by Herodotus of Halicarnassus, is the founding work of Western history. Its stated aim is to keep the deeds of Greeks and non-Greeks from being forgotten, and to explain why they went to war. Herodotus follows the rise of the Persian Empire through Lydia, Babylon and Egypt, then the Greek resistance at Marathon and Thermopylae. He mixes eyewitness report, hearsay, geography, customs and story, and often says when he doubts what he was told.",
+ "context": "Herodotus lived about 484 to 425 BC. He says he travelled widely, interviewing people and collecting stories, mostly in territories of the Persian Empire. He presents the conflict as one of Persian slavery against Greek freedom, though the account is not impartial. Later editors split the work into nine books named for the Muses. The oldest surviving manuscripts date from the 9th and 10th centuries AD. This edition is G. C. Macaulay's English translation, about 288,000 words, from Standard Ebooks.",
+ "sources": [
+  {
+   "title": "Histories (Herodotus) (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Histories_(Herodotus)"
+  },
+  {
+   "title": "The Histories, translated by G. C. Macaulay (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/herodotus/histories/g-c-macaulay"
+  }
+ ],
+ "people": [
+  {
+   "name": "Herodotus",
+   "role": "author",
+   "note": "Born about 484 BC at Halicarnassus; counted as the first Western historian and the source of almost everything the book reports.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Croesus",
+   "role": "king of Lydia",
+   "note": "Rules the nations west of the river Halys, tests the oracles, and is defeated by Cyrus before becoming his advisor.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Solon",
+   "role": "Athenian visitor",
+   "note": "Answers Croesus's question about the happiest man, and tells him to look to the end of every matter.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cyrus II of Persia",
+   "role": "king",
+   "note": "Conquers Lydia and Babylon and dies attacking the Massagetae.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cambyses II",
+   "role": "king of Persia",
+   "note": "Son of Cyrus; attacks Egypt and defeats Psammetichus III, then his madness is described.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Xerxes",
+   "role": "king of Persia",
+   "note": "Succeeds Darius, bridges the Hellespont, and marches against Greece.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Leonidas I",
+   "role": "king of Sparta",
+   "note": "Leads the small Greek force sent to hold Thermopylae against the Persian army.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Dienekes",
+   "role": "Spartan warrior",
+   "note": "His sayings are recorded at Thermopylae, including a joke about fighting in the shade.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Gyges",
+   "role": "bodyguard of Candaules",
+   "note": "Seizes the Lydian kingdom after the king makes him see his wife naked.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Themistocles",
+   "role": "Athenian commander",
+   "note": "Is paid thirty talents in the account of the fleet's stand in front of Euboea.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Halicarnassus",
+   "lat": 37.0379,
+   "lon": 27.4241,
+   "note": "Herodotus's home city, named in the first sentence of the book.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Babylon",
+   "lat": 32.5364,
+   "lon": 44.4208,
+   "note": "Assyrian city whose design and ways are described before Cyrus attacks it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Giza",
+   "lat": 29.9792,
+   "lon": 31.1342,
+   "note": "Site of the Great Pyramid, which Cheops builds with machines, in the account of Egypt.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Delphi",
+   "lat": 38.4824,
+   "lon": 22.501,
+   "note": "Oracle that tells Croesus that if he attacks, a great empire will fall.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Marathon",
+   "lat": 38.1547,
+   "lon": 23.9628,
+   "note": "Athenian victory under Miltiades that spurs Darius to raise a new army.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Thermopylae",
+   "lat": 38.7967,
+   "lon": 22.5367,
+   "note": "Pass where Leonidas's small force is sent to delay the Persians.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Hellespont",
+   "lat": 40.15,
+   "lon": 26.4,
+   "note": "Strait that Xerxes crosses with a pontoon bridge, and in anger has lashed.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Plataea",
+   "lat": 38.2167,
+   "lon": 23.2667,
+   "note": "Town whose alliance with Athens is explained; the summary of Book VI notes its help to Athens.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": -585,
+   "label": "Thales predicts the solar eclipse of 28 May, which falls during the Battle of Halys.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -484,
+   "label": "Herodotus is born, by the conventional dating c. 484 BC.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": -425,
+   "label": "Herodotus dies, by the conventional dating c. 425 BC.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 900,
+   "label": "The oldest surviving copies of the Histories are Byzantine manuscripts of the 9th and 10th centuries.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Inquiry as the aim",
+   "note": "The word historia means enquiry; the stated purpose is to stop deeds from fading and to explain the cause of the war.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Freedom against empire",
+   "note": "Persian despotism is set against the Greek city-states, though Herodotus does not make Greeks all heroes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Fortune turns",
+   "note": "Solon tells Croesus to look to the end of every matter and that the Deity is altogether envious.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "title": "Customs and difference",
+   "note": "Long sections on Egypt, Babylon and Scythia show peoples by their own laws, an early comparative ethnography.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Hubris of kings",
+   "note": "Xerxes has the sea whipped and fettered; Herodotus reports it with distance and says he heard it said.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Book I",
+   "quote": "Showing forth of the Inquiry of Herodotus of Halicarnassos, to the end that neither the deeds of men may be forgotten by lapse of time, nor the works great and marvellous, which have been produced some by Hellenes and some by Barbarians, may lose their renown;",
+   "why": "The opening statement of purpose: keep great deeds from fading and explain the war."
+  },
+  {
+   "part": 1,
+   "chapter": "Book I",
+   "quote": "the Deity is altogether envious and apt to disturb our lot. For in the course of long time a man may see many things which he would not desire to see, and suffer also many things which he would not desire to suffer. The limit of life for a man I lay down at seventy years:",
+   "why": "Solon's reply to Croesus, a plain statement of how fortune turns."
+  },
+  {
+   "part": 3,
+   "chapter": "Book II",
+   "quote": "since the time when Psammetichos having become king desired to know what men had come into being first, they suppose that the Phrygians came into being before themselves, but they themselves before all other men.",
+   "why": "The experiment to find the oldest people, an early test by observation."
+  },
+  {
+   "part": 9,
+   "chapter": "Book VII",
+   "quote": "bade them scourge the Hellespont with three hundred strokes of the lash and let down into the sea a pair of fetters. Nay, I have heard further that he sent branders also with them to brand the Hellespont. However this may be, he enjoined them, as they were beating, to say Barbarian and presumptuous words as follows:",
+   "why": "Xerxes's anger at the sea, reported with a historian's caveat."
+  },
+  {
+   "part": 9,
+   "chapter": "Book VII",
+   "quote": "Thou bitter water, thy master lays upon thee this penalty, because thou didst wrong him not having suffered any wrong from him: and Xerxes the king will pass over thee whether thou be willing or no; but with right, as it seems, no man doeth sacrifice to thee, seeing that thou art a treacherous and briny stream.”",
+   "why": "The words said to the Hellespont as it is scourged."
+  },
+  {
+   "part": 10,
+   "chapter": "Book VII (continued)",
+   "quote": "he said that their guest from Trachis brought them very good news, for if the Medes obscured the light of the sun, the battle against them would be in the shade and not in the sun. 227.",
+   "why": "Dienekes's grim joke at Thermopylae."
+  }
+ ]
+}

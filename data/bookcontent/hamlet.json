@@ -1,0 +1,202 @@
+{
+  "id": "hamlet",
+  "summary": "Prince Hamlet of Denmark comes home after his father's death to find his mother married to his uncle, Claudius, who is now king. The ghost of his father says Claudius murdered him and demands revenge. Unsure whether the ghost can be trusted, Hamlet puts on an antic madness, stages a play that mimics the murder to watch his uncle's face, and in a fit of rage kills Polonius, the father of Ophelia, who goes mad herself. Claudius plots with Laertes to end Hamlet in a fencing match with a poisoned blade, and the play closes with most of the court dead and Fortinbras taking the throne.",
+  "context": "Shakespeare wrote Hamlet sometime between 1599 and 1601, drawing on older Hamlet legends and perhaps a lost earlier play. Three early versions survive: a short First Quarto in 1603, a much fuller Second Quarto in 1604, and the First Folio text of 1623, each with lines the others lack. Richard Burbage probably created the title role. The play stayed popular on stage through the Restoration and after, and it is Shakespeare's longest. Freud drew on it for his ideas about the Oedipus complex, and it has been filmed and adapted many times. The site's text follows the 1887 Victoria edition used by Standard Ebooks.",
+  "sources": [
+    {
+      "title": "Hamlet (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hamlet"
+    },
+    {
+      "title": "Hamlet by William Shakespeare (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/william-shakespeare/hamlet"
+    },
+    {
+      "title": "21st Academy Awards, 1949 (Academy of Motion Picture Arts and Sciences)",
+      "url": "https://www.oscars.org/oscars/ceremonies/1949"
+    }
+  ],
+  "people": [
+    {
+      "name": "William Shakespeare",
+      "role": "author",
+      "note": "Wrote the tragedy between 1599 and 1601, and it is his longest play.",
+      "s": [0]
+    },
+    {
+      "name": "Prince Hamlet",
+      "role": "character",
+      "note": "Son of the dead King Hamlet, who vows to avenge his father but doubts the ghost that charges him to do it.",
+      "s": [0]
+    },
+    {
+      "name": "Claudius",
+      "role": "character",
+      "note": "Hamlet's uncle, who has murdered his brother to take the throne and marry the widowed queen.",
+      "s": [0, 1]
+    },
+    {
+      "name": "Gertrude",
+      "role": "character",
+      "note": "Hamlet's mother, who has married Claudius and later drinks the poisoned wine meant for her son.",
+      "s": [0]
+    },
+    {
+      "name": "Polonius",
+      "role": "character",
+      "note": "Father of Ophelia and Laertes, killed by Hamlet while spying behind an arras; scholars have guessed he was modelled on Lord Burghley.",
+      "s": [0]
+    },
+    {
+      "name": "Ophelia",
+      "role": "character",
+      "note": "Wooed by Hamlet, she is driven mad by her father's death.",
+      "s": [0]
+    },
+    {
+      "name": "Horatio",
+      "role": "character",
+      "note": "Hamlet's friend, who first sees the ghost with the sentries and is with Hamlet when he dies.",
+      "s": [0]
+    },
+    {
+      "name": "Richard Burbage",
+      "role": "subject",
+      "note": "Chief tragedian of the Lord Chamberlain's Men, for whom Shakespeare almost certainly wrote the part of Hamlet.",
+      "s": [0]
+    },
+    {
+      "name": "Valentine Simmes",
+      "role": "printer",
+      "note": "Printed the 1603 First Quarto, which holds just over half the text of the later Second Quarto.",
+      "s": [0]
+    }
+  ],
+  "places": [
+    {
+      "name": "Denmark",
+      "lat": 56,
+      "lon": 10,
+      "note": "The setting of the play, where Hamlet's uncle holds the throne and Norway's Fortinbras threatens invasion.",
+      "s": [0, 1]
+    },
+    {
+      "name": "Wittenberg, Germany",
+      "lat": 51.8667,
+      "lon": 12.65,
+      "note": "The university city where the dialogue places Hamlet, Horatio, Rosencrantz and Guildenstern as students.",
+      "s": [0]
+    },
+    {
+      "name": "The Globe, London",
+      "lat": 51.5081,
+      "lon": -0.0972,
+      "note": "Playhouse where the Lord Chamberlain's Men acted, with Hamlet played in contemporary dress on minimal sets.",
+      "s": [0]
+    },
+    {
+      "name": "Lincoln's Inn Fields Theatre, London",
+      "lat": 51.516,
+      "lon": -0.117,
+      "note": "Where Davenant's company first staged Hamlet with painted movable scenery after the Restoration.",
+      "s": [0]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1600,
+      "label": "Shakespeare writes Hamlet at some point between 1599 and 1601.",
+      "s": [0]
+    },
+    {
+      "year": 1603,
+      "label": "The First Quarto appears, printed by Valentine Simmes for the booksellers Nicholas Ling and John Trundell.",
+      "s": [0]
+    },
+    {
+      "year": 1604,
+      "label": "Nicholas Ling publishes the Second Quarto, the longest early edition.",
+      "s": [0]
+    },
+    {
+      "year": 1623,
+      "label": "The play is printed in the First Folio, the first collected works of Shakespeare.",
+      "s": [0]
+    },
+    {
+      "year": 1887,
+      "label": "Clark and Wright's Victoria edition, taken from the Globe edition, is published; Standard Ebooks bases its text on it.",
+      "s": [1]
+    },
+    {
+      "year": 1948,
+      "label": "Laurence Olivier's film wins the Academy Award for Best Picture and Best Actor.",
+      "s": [0, 2]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Doubting the ghost",
+      "note": "Hamlet cannot be sure the ghost speaks truth rather than the devil's trick, so he seeks proof before acting.",
+      "s": [0]
+    },
+    {
+      "title": "Feigned madness",
+      "note": "Hamlet decides to act as though he has gone mad, and Polonius and the court read the act as lovesickness.",
+      "s": [0]
+    },
+    {
+      "title": "The play within the play",
+      "note": "Hamlet has actors stage a murder in the style of his father's, to watch Claudius's reaction.",
+      "s": [0]
+    },
+    {
+      "title": "Revenge and its cost",
+      "note": "The pursuit of vengeance for one king's death ends with the deaths of Polonius, Gertrude, Laertes, Claudius and Hamlet.",
+      "s": [0]
+    },
+    {
+      "title": "Psychoanalytic readings",
+      "note": "Freud drew on the play for his ideas about the Oedipus complex, and Ernest Jones and Lacan later reworked those readings.",
+      "s": [0]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "Scene IV",
+      "quote": "Something is rotten in the state of Denmark.",
+      "why": "Marcellus's line on the battlements, after the ghost beckons Hamlet away."
+    },
+    {
+      "part": 1,
+      "chapter": "Scene III",
+      "quote": "Neither a borrower nor a lender be; For loan oft loses both itself and friend, And borrowing dulls the edge of husbandry. This above all: to thine ownself be true",
+      "why": "Polonius's advice to Laertes as he leaves for France, the source of several well-worn sayings."
+    },
+    {
+      "part": 1,
+      "chapter": "Scene II",
+      "quote": "I’ll have grounds More relative than this: the play’s the thing Wherein I’ll catch the conscience of the king.",
+      "why": "Hamlet settles on the plan of staging a play, because he does not yet trust the ghost."
+    },
+    {
+      "part": 1,
+      "chapter": "Act III: Scene I",
+      "quote": "To be, or not to be: that is the question: Whether ’tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take arms against a sea of troubles, And by opposing end them?",
+      "why": "The most famous soliloquy in English, where Hamlet weighs enduring against ending his life."
+    },
+    {
+      "part": 2,
+      "chapter": "Act V: Scene I",
+      "quote": "Alas, poor Yorick! I knew him, Horatio: a fellow of infinite jest, of most excellent fancy: he hath borne me on his back a thousand times",
+      "why": "Hamlet in the graveyard, holding the jester's skull and thinking about death."
+    },
+    {
+      "part": 2,
+      "chapter": "Scene II",
+      "quote": "there’s a special providence in the fall of a sparrow. If it be now, ’tis not to come; if it be not to come, it will be now; if it be not now, yet it will come: the readiness is all",
+      "why": "Hamlet's calm before the duel, a different man from the one who could not act in the first acts."
+    }
+  ]
+}

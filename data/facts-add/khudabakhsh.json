@@ -1,0 +1,192 @@
+{
+  "facts": [
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "status_note",
+      "value": "Opened to the public in October 1891 by Khan Bahadur Khuda Bakhsh with 4,000 manuscripts, 1,400 of them inherited from his father",
+      "source": "https://culture.gov.in/khuda-baksh-oriental-public-library-patna",
+      "tier": "primary",
+      "quote": "it was opened for public in October, 1891 by the illustrious son of Bihar Khan Bahadur Khuda Bakhsh with 4,000 manuscripts, of which he inherited 1,400 from his father.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://culture.gov.in/khuda-baksh-oriental-public-library-patna' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'opened for public in October, 1891'",
+      "earliest": 1891,
+      "latest": 1891
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "status_note",
+      "value": "Exact opening day differs inside Wikipedia: infobox text says opened to public 29 October 1891; another passage says inaugurated by Sir Charles Alfred Elliott, Governor of Bengal, on 5 October 1891. Ministry of Culture gives only October 1891",
+      "source": "https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library",
+      "tier": "wikipedia",
+      "quote": "It was opened to public on 29 October 1891 by Khan Bahadur Khuda Bakhsh with 4,000 manuscripts",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'opened to public on 29 October 1891'",
+      "earliest": 1891,
+      "latest": 1891
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "status_note",
+      "value": "Inaugurated by Sir Charles Alfred Elliott, Governor of Bengal, on 5 October 1891 (Wikipedia; conflicts with 29 October)",
+      "source": "https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library",
+      "tier": "wikipedia",
+      "quote": "Governor of Bengal on 5 October 1891",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Khuda_Bakhsh_Oriental_Library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Governor of Bengal on 5 October 1891'",
+      "earliest": 1891,
+      "latest": 1891
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "status_note",
+      "value": "Institution of National Importance by Act of Parliament, 1969; autonomous, fully funded by the Ministry of Culture",
+      "source": "https://culture.gov.in/khuda-baksh-oriental-public-library-patna",
+      "tier": "primary",
+      "quote": "Institution of National Importance by an act of Parliament in 1969.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://culture.gov.in/khuda-baksh-oriental-public-library-patna' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Institution of National Importance by an act of Parliament in 1969'",
+      "earliest": 1969,
+      "latest": 1969
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "collection",
+      "value": "21,136 manuscripts in Arabic, Persian, Urdu, Turkish and Pashtu",
+      "source": "https://culture.gov.in/khuda-baksh-oriental-public-library-patna",
+      "tier": "primary",
+      "quote": "Arabic, Persian, Urdu, Turkish and Pashtu Manuscripts 21,136",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://culture.gov.in/khuda-baksh-oriental-public-library-patna' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Manuscripts 21,136'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "volumes",
+      "value": "2,082,904 printed books per the Ministry of Culture page; The Hindu (11 Apr 2021) gives 2.5 lakh books. Sources disagree by a factor of about eight",
+      "source": "https://culture.gov.in/khuda-baksh-oriental-public-library-patna",
+      "tier": "primary",
+      "quote": "Printed Book Collections 2,082,904",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://culture.gov.in/khuda-baksh-oriental-public-library-patna' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Printed Book Collections 2,082,904'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "volumes",
+      "value": "About 21,000 manuscripts and 2.5 lakh books (press figure, conflicts with the Ministry 2,082,904 printed books)",
+      "source": "https://www.thehindu.com/news/cities/Delhi/intach-opposes-proposal-for-partial-demolition-of-khuda-bakhsh-library/article34292818.ece",
+      "tier": "secondary",
+      "quote": "The library currently has 21,000 manuscripts and 2.5 lakh books",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.thehindu.com/news/cities/Delhi/intach-opposes-proposal-for-partial-demolition-of-khuda-bakhsh-library/article34292818.ece' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 '21,000 manuscripts and 2.5 lakh books'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "status_note",
+      "value": "Two reading rooms, one for researchers and scholars and one for casual readers; the Curzon Reading Room is open to all",
+      "source": "https://culture.gov.in/khuda-baksh-oriental-public-library-patna",
+      "tier": "primary",
+      "quote": "The Library has two reading rooms, one for researchers and scholars, and the other for casual readers.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://culture.gov.in/khuda-baksh-oriental-public-library-patna' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'two reading rooms'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "built",
+      "value": "Curzon Reading Room built 1905, named after Lord Curzon, who visited in 1903 and gave funds to expand",
+      "source": "https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover",
+      "tier": "secondary",
+      "quote": "Curzon Reading Room – built in 1905 and named after the British viceroy to India, Lord Curzon, who visited the institution in 1903",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'built in 1905 and named after the British viceroy'",
+      "earliest": 1903,
+      "latest": 1905
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "collection",
+      "value": "Tarikh-e Khandan-e Timuriya is listed in the UNESCO Memory of the World Register",
+      "source": "https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover",
+      "tier": "secondary",
+      "quote": "Tarikh-e Khandan-e Timuriya, is mentioned in the UNESCO Memory of the World Register",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Tarikh-e Khandan-e Timuriya, is mentioned in the UNESCO Memory of the World Register'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "collection",
+      "value": "Rare holdings include a Shahnama by Firdausi and Mughal miniature paintings",
+      "source": "https://www.thehindu.com/news/cities/Delhi/intach-opposes-proposal-for-partial-demolition-of-khuda-bakhsh-library/article34292818.ece",
+      "tier": "secondary",
+      "quote": "with rare collections of Shahnama by Firdausi, Mughal miniature paintings",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.thehindu.com/news/cities/Delhi/intach-opposes-proposal-for-partial-demolition-of-khuda-bakhsh-library/article34292818.ece' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'rare collections of Shahnama by Firdausi'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "field": "status_note",
+      "value": "2021 flyover plan: INTACH opposed a proposal to demolish part of the Curzon Reading Room; per the district authorities only five metres would go and a new reading room of the same design would be built first",
+      "source": "https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover",
+      "tier": "secondary",
+      "quote": "Only five metres of Curzon Reading Room will be demolished",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Only five metres of Curzon Reading Room will be demolished'",
+      "earliest": 2021,
+      "latest": 2021
+    }
+  ],
+  "events": [
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "kind": "opened",
+      "year": 1891,
+      "earliest": 1891,
+      "latest": 1891,
+      "label": "Opened to the public (October 1891; Wikipedia gives 29 Oct and 5 Oct)",
+      "source": "https://culture.gov.in/khuda-baksh-oriental-public-library-patna",
+      "tier": "primary",
+      "quote": "it was opened for public in October, 1891",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://culture.gov.in/khuda-baksh-oriental-public-library-patna' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'opened for public in October, 1891'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "kind": "built",
+      "year": 1905,
+      "earliest": 1903,
+      "latest": 1905,
+      "label": "Curzon Reading Room built (Lord Curzon visited 1903)",
+      "source": "https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover",
+      "tier": "secondary",
+      "quote": "Curzon Reading Room – built in 1905",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'built in 1905'"
+    },
+    {
+      "cluster": "south-asia",
+      "lib": "khudabakhsh",
+      "kind": "founded",
+      "year": 1969,
+      "earliest": 1969,
+      "latest": 1969,
+      "label": "Made an Institution of National Importance by Act of Parliament",
+      "source": "https://culture.gov.in/khuda-baksh-oriental-public-library-patna",
+      "tier": "primary",
+      "quote": "Institution of National Importance by an act of Parliament in 1969.",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://culture.gov.in/khuda-baksh-oriental-public-library-patna' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -F -o -m1 'Institution of National Importance by an act of Parliament in 1969'"
+    }
+  ]
+}

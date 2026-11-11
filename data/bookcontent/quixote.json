@@ -1,0 +1,283 @@
+{
+ "id": "quixote",
+ "summary": "Don Quixote follows Alonso Quixano, a minor country gentleman near fifty who reads so many tales of knights that he sets out as a knight-errant himself. He takes the name Don Quixote, a farmer called Sancho Panza as his squire, and a village woman as the lady Dulcinea. Windmills become giants and inns become castles, and he is beaten again and again. In the second part he meets readers who know his earlier story and plays tricks on him. He finally gives up his dream, dies sane, and is called Alonso Quixano the Good.",
+ "context": "Cervantes sold the rights to the first part to the Madrid bookseller Francisco de Robles in 1604, and it came out on 16 January 1605. A false second part by a writer calling himself Avellaneda appeared in 1614, which pushed Cervantes to finish his own. His second part followed in 1615 and the two were printed together in Barcelona in 1617. Thomas Shelton's English version of the first part came out in 1612. The site reads John Ormsby's translation of 1885, with its long footnotes.",
+ "sources": [
+  {
+   "title": "Don Quixote - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Don_Quixote"
+  },
+  {
+   "title": "Don Quixote, by Miguel de Cervantes Saavedra, translated by John Ormsby - Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/miguel-de-cervantes-saavedra/don-quixote/john-ormsby"
+  }
+ ],
+ "people": [
+  {
+   "name": "Miguel de Cervantes",
+   "role": "author",
+   "note": "Spanish author who wrote both parts, published in 1605 and 1615.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Don Quixote (Alonso Quixano)",
+   "role": "character",
+   "note": "A hidalgo of about fifty from La Mancha who takes up knight-errantry.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sancho Panza",
+   "role": "character",
+   "note": "The farm labourer who becomes Quixote's squire and answers his lofty speech with plain wit.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dulcinea del Toboso",
+   "role": "character",
+   "note": "The lady Quixote invents out of Aldonza Lorenzo, a village woman.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cide Hamete Benengeli",
+   "role": "character",
+   "note": "The Moorish historian Cervantes names as the source of much of the story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Francisco de Robles",
+   "role": "printer",
+   "note": "Madrid bookseller who bought the rights to the first part in 1604.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alonso Fernandez de Avellaneda",
+   "role": "subject",
+   "note": "Pen name of the unidentified author of the false second part of 1614.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Thomas Shelton",
+   "role": "translator",
+   "note": "Made the first English translation of the first part, in 1612.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Ormsby",
+   "role": "translator",
+   "note": "Translator of the version read here, dated 1885 and carrying nearly a thousand footnotes.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "La Mancha",
+   "lat": 39,
+   "lon": -3,
+   "note": "The region of Spain that gives Quixote his title and where the story opens.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "El Toboso",
+   "lat": 39.5167,
+   "lon": -2.9,
+   "note": "Village of Dulcinea, which Quixote and Sancho travel toward.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Toledo",
+   "lat": 39.8628,
+   "lon": -4.0273,
+   "note": "City of the traders Quixote challenges to praise Dulcinea.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sierra Morena",
+   "lat": 38.35,
+   "lon": -3.9,
+   "note": "Mountains the pair wander into after the galley slaves, where Quixote plays the hermit.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Barcelona",
+   "lat": 41.3874,
+   "lon": 2.1686,
+   "note": "Setting of Quixote's defeat by the Knight of the White Moon, and of the 1617 joint edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Madrid",
+   "lat": 40.4168,
+   "lon": -3.7038,
+   "note": "Where the first part was printed and two editions appeared by August 1605.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Tarragona",
+   "lat": 41.1189,
+   "lon": 1.2445,
+   "note": "Place of publication of Avellaneda's false second part.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lisbon",
+   "lat": 38.7223,
+   "lon": -9.1393,
+   "note": "Two editions of the first part were published here by August 1605.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1604,
+   "label": "Cervantes sells the rights to the first part to Francisco de Robles.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1605,
+   "label": "The first part comes out on 16 January, and by August there are five editions in Madrid, Lisbon and Valencia.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1612,
+   "label": "Thomas Shelton's English translation of the first part appears.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1614,
+   "label": "A false second part under the name Avellaneda is published.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1615,
+   "label": "Cervantes's own second part is published.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1617,
+   "label": "Both parts are printed together as one edition in Barcelona.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1885,
+   "label": "John Ormsby's English translation is published.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Books remake a reader",
+   "note": "Quixote lives out chivalric romances as if they were fact, and the book keeps asking where reading ends and life begins.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Illusion against reality",
+   "note": "Quixote and Sancho move in opposite directions, he sees the world as a knightly tale and Sancho climbs from reality toward illusion.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A book that knows itself",
+   "note": "Cervantes names a Moorish historian as source, and in the second part Quixote meets people who have read the first, including a printing house reprinting Avellaneda.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Names carry the joke",
+   "note": "Rocinante reverses the meaning of a horse's name and Dulcinea alludes to illusion.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Preface",
+   "quote": "Idle reader: thou mayest believe me without any oath that I would this book, as it is the child of my brain, were the fairest, gayest, and cleverest that could be imagined. But I could not counteract Nature’s law that everything shall beget its like;",
+   "why": "Cervantes opens the book speaking straight to the reader about his own work."
+  },
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "In a village of La Mancha, the name of which I have no desire to call to mind, there lived not long since one of those gentlemen that keep a lance in the lance-rack, an old buckler, a lean hack, and a greyhound for coursing.",
+   "why": "The famous opening sentence that introduces the gentleman and his habits."
+  },
+  {
+   "part": 2,
+   "chapter": "VIII",
+   "quote": "Fortune is arranging matters for us better than we could have shaped our desires ourselves, for look there, friend Sancho Panza, where thirty or more monstrous giants present themselves, all of whom I mean to engage in battle and slay, and with whose spoils we shall begin to make our fortunes;",
+   "why": "The windmill adventure, source of the phrase tilting at windmills."
+  },
+  {
+   "part": 13,
+   "chapter": "LVIII",
+   "quote": "Freedom, Sancho, is one of the most precious gifts that heaven has bestowed upon men; no treasures that the earth holds buried or the sea conceals can compare with it; for freedom, as for honour, life may and should be ventured; and on the other hand, captivity is the greatest evil that can fall to the lot of man.",
+   "why": "Quixote speaks on freedom as one of the greatest gifts heaven gave."
+  },
+  {
+   "part": 14,
+   "chapter": "LXIV",
+   "quote": "Knight of the White Moon, whose unheard-of achievements will perhaps have recalled him to thy memory. I come to do battle with thee and prove the might of thy arm, to the end that I make thee acknowledge and confess that my lady, let her be who she may, is incomparably fairer than thy Dulcinea del Toboso.",
+   "why": "The challenge by the knight who beats Quixote at Barcelona."
+  },
+  {
+   "part": 14,
+   "chapter": "LXXIV",
+   "quote": "no longer Don Quixote of La Mancha, but Alonso Quixano, whose way of life won for him the name of Good. Now am I the enemy of Amadís of Gaul and of the whole countless troop of his descendants; odious to me now are all the profane stories of knight-errantry; now I perceive my folly, and the peril into which reading them brought me; now, by God’s mercy schooled into my right senses, I loathe them.”",
+   "why": "At death Quixote sets aside the knight and takes back his own name."
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "id": "walden",
+ "summary": "Walden is Henry David Thoreau's account of two years at a cabin by Walden Pond near Concord, Massachusetts. He built the house himself, grew beans, kept accounts and walked the woods. The chapters, from Economy through Solitude, The Ponds and Spring, make a case for simple living and close attention to the natural world. Thoreau writes as a neighbor who tests what is really necessary.",
+ "context": "Thoreau lived at the pond from 4 July 1845 to 6 September 1847, on land belonging to Emerson. The family home was about two miles away. He wrote his first book, A Week on the Concord and Merrimack Rivers, there in 1849. Ticknor and Fields of Boston published Walden on 9 August 1854. In The Village he describes a night in the Concord jail. William Ellery Channing and John Field appear as visitors.",
+ "sources": [
+  {
+   "url": "https://standardebooks.org/ebooks/henry-david-thoreau/walden",
+   "title": "Walden by Henry David Thoreau (Standard Ebooks)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Walden",
+   "title": "Walden (Wikipedia)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Henry David Thoreau",
+   "role": "Author",
+   "note": "Lived at the pond and wrote the book.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Ralph Waldo Emerson",
+   "role": "Landowner",
+   "note": "Owned the land on which the cabin stood.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "William Ellery Channing",
+   "role": "Friend",
+   "note": "Sometimes joined Thoreau on fishing trips.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "John Field",
+   "role": "Neighbor",
+   "note": "An Irish laborer visited at Baker Farm.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Ticknor and Fields",
+   "role": "Publisher",
+   "note": "Published the book in Boston in 1854.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Walden Pond",
+   "lat": 42.4396,
+   "lon": -71.3416,
+   "note": "Site of the cabin where Thoreau lived.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Concord",
+   "lat": 42.4604,
+   "lon": -71.3489,
+   "note": "Nearby town; his family home was about two miles from the cabin.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "City of the publisher, Ticknor and Fields.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1845,
+   "label": "Thoreau moves to Walden Pond on 4 July",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1847,
+   "label": "He leaves the pond on 6 September",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1849,
+   "label": "A Week on the Concord and Merrimack Rivers is published",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1854,
+   "label": "Walden is published on 9 August",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Simplify",
+   "note": "Thoreau asks how little is needed and counts the cost of a thing in life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Deliberate living",
+   "note": "He went to the woods to front only the essential facts of life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Solitude as company",
+   "note": "He finds solitude companionable.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Meet your life",
+   "note": "He urges readers to meet their life and live it, however mean it is.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Where I Lived, and What I Lived For",
+   "quote": "I went to the woods because I wished to live deliberately, to front only the essential facts of life, and see if I could not learn what it had to teach, and not, when I came to die, discover that I had not lived. I did not wish to live what was not life, living is so dear; nor did I wish to practise resignation, unless it was quite necessary.",
+   "why": "The book's statement of purpose."
+  },
+  {
+   "part": 1,
+   "chapter": "Economy",
+   "quote": "The mass of men lead lives of quiet desperation. What is called resignation is confirmed desperation. From the desperate city you go into the desperate country, and have to console yourself with the bravery of minks and muskrats. A stereotyped but unconscious despair is concealed even under what are called the games and amusements of mankind.",
+   "why": "Diagnoses the ordinary life he rejects."
+  },
+  {
+   "part": 1,
+   "chapter": "Where I Lived, and What I Lived For",
+   "quote": "Time is but the stream I go a-fishing in. I drink at it; but while I drink I see the sandy bottom and detect how shallow it is. Its thin current slides away, but eternity remains. I would drink deeper; fish in the sky, whose bottom is pebbly with stars. I cannot count one. I know not the first letter of the alphabet.",
+   "why": "Image of time as something to fish in."
+  },
+  {
+   "part": 2,
+   "chapter": "Solitude",
+   "quote": "I never found the companion that was so companionable as solitude. We are for the most part more lonely when we go abroad among men than when we stay in our chambers. A man thinking or working is always alone, let him be where he will. Solitude is not measured by the miles of space that intervene between a man and his fellows.",
+   "why": "A defense of solitude."
+  },
+  {
+   "part": 3,
+   "chapter": "The Ponds",
+   "quote": "Sometimes, having had a surfeit of human society and gossip, and worn out all my village friends, I rambled still farther westward than I habitually dwell, into yet more unfrequented parts of the town, “to fresh woods and pastures new,” or, while the sun was setting, made my supper of huckleberries and blueberries on Fair Haven Hill, and laid up a store for several days.",
+   "why": "Opens the chapter on the ponds."
+  },
+  {
+   "part": 4,
+   "chapter": "Conclusion",
+   "quote": "However mean your life is, meet it and live it; do not shun it and call it hard names. It is not so bad as you are. It looks poorest when you are richest. The faultfinder will find faults even in paradise. Love your life, poor as it is. You may perhaps have some pleasant, thrilling, glorious hours, even in a poorhouse.",
+   "why": "Concluding advice to the reader."
+  },
+  {
+   "part": 4,
+   "chapter": "Conclusion",
+   "quote": "Only that day dawns to which we are awake. There is more day to dawn. The sun is but a morning star.",
+   "why": "The book's final hopeful note."
+  }
+ ]
+}

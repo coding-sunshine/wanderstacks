@@ -1,0 +1,256 @@
+{
+ "id": "principia",
+ "summary": "Newton sets out the laws of motion and shows how a single force of gravity, falling off with the square of distance, governs the planets, the moon, comets and the tides. Book 1 treats bodies moving in empty space, Book 2 bodies moving through resisting media and fluids, and Book 3 applies the results to the solar system. A closing General Scholium says the cause of gravity is not explained, and that he will not frame hypotheses. The site carries the English translation of Andrew Motte, which follows Newton's final Latin edition.",
+ "context": "Newton wrote the Principia in Latin after Edmond Halley visited him in 1684 to ask about planetary orbits. Samuel Pepys, as president of the Royal Society, licensed the book on 5 July 1686, and Halley saw it through the press at his own expense. It appeared in 1687, with new editions in 1713 and 1726. Andrew Motte's English translation of the third edition came out in 1729, and N. W. Chittenden's American edition of 1846 is largely based on it. This site's text comes from Project Gutenberg.",
+ "sources": [
+  {
+   "title": "Philosophiae Naturalis Principia Mathematica - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica"
+  },
+  {
+   "title": "Newton's Principia: The mathematical principles of natural philosophy - Project Gutenberg",
+   "url": "https://www.gutenberg.org/ebooks/76404"
+  }
+ ],
+ "people": [
+  {
+   "name": "Isaac Newton",
+   "role": "author",
+   "note": "Wrote the Principia and published it in three editions, in 1687, 1713 and 1726.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Edmond Halley",
+   "role": "patron",
+   "note": "Prompted Newton to write the work in 1684 and published the first edition at his own financial risk.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Samuel Pepys",
+   "role": "patron",
+   "note": "As president of the Royal Society he authorised the book for printing on 5 July 1686.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Robert Hooke",
+   "role": "subject",
+   "note": "Claimed priority for the inverse-square law, which led to a dispute that delayed the third book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Andrew Motte",
+   "role": "translator",
+   "note": "Made the first English translation, in 1729, from the third Latin edition.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "N. W. Chittenden",
+   "role": "printer",
+   "note": "Edited the 1846 American edition, a partly modernised version largely based on Motte.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Roger Cotes",
+   "role": "subject",
+   "note": "One of those who sent Newton corrections for the second edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Emilie du Chatelet",
+   "role": "translator",
+   "note": "Made a complete French translation of the three books, with a commentary of her own.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Cambridge",
+   "lat": 52.2053,
+   "lon": 0.1218,
+   "note": "Trinity College Library holds Newton's own annotated copy of the first edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "The Royal Society, whose president licensed the book, saw the first edition through the press.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cologny, Switzerland",
+   "lat": 46.2208,
+   "lon": 6.1822,
+   "note": "The Bodmer Library keeps a first edition once owned by Leibniz, with his notes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Williamsburg, Virginia",
+   "lat": 37.2707,
+   "lon": -76.7075,
+   "note": "The Swem Library at the College of William and Mary holds a first edition with Latin annotations by Thomas S. Savage.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1684,
+   "label": "Halley visits Newton to ask about planetary orbits, and Newton sends him the tract De motu corporum in gyrum later in the year.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1686,
+   "label": "Samuel Pepys authorises the Principia for printing on 5 July.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1687,
+   "label": "The first edition is published, with Halley paying for it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1713,
+   "label": "A second edition corrects errors in the first.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1726,
+   "label": "A third, improved Latin edition appears.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1729,
+   "label": "Andrew Motte's English translation of the third edition appears.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1846,
+   "label": "N. W. Chittenden edits the American edition, largely based on Motte's translation.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "One law for earth and sky",
+   "note": "The same gravity that pulls objects to the ground keeps the moon and planets in orbit, and Newton derives Kepler's laws from it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Mathematics as natural philosophy",
+   "note": "Newton treats physics as geometry applied to motion and force, working from observed phenomena to forces and back.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "No hypotheses beyond the phenomena",
+   "note": "The General Scholium says he will not frame hypotheses about the cause of gravity, stressing that the work rests on observation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Rules of reasoning",
+   "note": "Newton lays down four rules of scientific reasoning that shaped later scientific method.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Against Descartes's vortices",
+   "note": "Book 2 concludes that the vortex theory of planetary motion conflicts with astronomical phenomena.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "DEFINITIONS.",
+   "quote": "Absolute, true, and mathematical time, of itself, and from its own nature flows equably without regard to anything external, and by another name is called duration: relative, apparent, and common time, is some sensible and external (whether accurate or unequable) measure of duration by the means of motion, which is commonly used instead of true time; such as an hour, a day, a month, a year.",
+   "why": "Newton's definition of absolute time, a starting point of later arguments about space and time."
+  },
+  {
+   "part": 2,
+   "chapter": "AXIOMS, OR LAWS OF MOTION.",
+   "quote": "Every body perseveres in its state of rest, or of uniform motion in a right line, unless it is compelled to change that state by forces impressed thereon.",
+   "why": "The first law of motion."
+  },
+  {
+   "part": 2,
+   "chapter": "AXIOMS, OR LAWS OF MOTION.",
+   "quote": "The alteration of motion is ever proportional to the motive force impressed; and is made in the direction of the right line in which that force is impressed.",
+   "why": "The second law, the link between force and change of motion."
+  },
+  {
+   "part": 2,
+   "chapter": "AXIOMS, OR LAWS OF MOTION.",
+   "quote": "To every action there is always opposed an equal reaction: or the mutual actions of two bodies upon each other are always equal, and directed to contrary parts.",
+   "why": "The third law, action and reaction."
+  },
+  {
+   "part": 6,
+   "chapter": "RULES OF REASONING IN PHILOSOPHY.",
+   "quote": "We are to admit no more causes of natural things than such as are both true and sufficient to explain their appearances.",
+   "why": "Rule I of reasoning in philosophy, a plain statement of explanatory economy."
+  },
+  {
+   "part": 7,
+   "chapter": "PROPOSITIONS.",
+   "quote": "That there is a power of gravity tending to all bodies, proportional to the several quantities of matter which they contain.",
+   "why": "The proposition in which gravity is asserted for all bodies."
+  },
+  {
+   "part": 8,
+   "chapter": "PROPOSITIONS. (continued)",
+   "quote": "I frame no hypotheses; for whatever is not deduced from the phænomena is to be called an hypothesis; and hypotheses, whether metaphysical or physical, whether of occult qualities or mechanical, have no place in experimental[Pg 507] philosophy.",
+   "why": "The General Scholium on method, the best known sentence of the book."
+  }
+ ]
+}

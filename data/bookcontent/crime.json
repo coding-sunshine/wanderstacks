@@ -1,0 +1,253 @@
+{
+ "summary": "Raskolnikov, a poor former law student in Saint Petersburg, kills an old pawnbroker. He believes that an extraordinary man may cross the moral line for a higher goal, and that the money would free him from poverty. After the deed he is overwhelmed by fever, paranoia and guilt. He circles the detective Porfiry, befriends Sonya, who is driven by poverty into prostitution, and faces the sinister Svidrigailov. Sonya reads him the raising of Lazarus. He confesses and is sent to Siberia, where the epilogue points to a slow renewal.",
+ "context": "Dostoevsky wrote the book in debt after his brother Mikhail died in 1864. He asked the editor Mikhail Katkov for an advance, and the work began as a story and grew into a novel by late 1865. The Russian Messenger ran it in twelve monthly parts in 1866, and it later appeared as one volume. It is the first great novel of his mature period, after his exile in Siberia. The site carries Constance Garnett's translation, set in the Standard Ebooks edition.",
+ "sources": [
+  {
+   "title": "Crime and Punishment (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Crime_and_Punishment"
+  },
+  {
+   "title": "Fyodor Dostoevsky (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky"
+  },
+  {
+   "title": "Constance Garnett (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Constance_Garnett"
+  },
+  {
+   "title": "Crime and Punishment, translated by Constance Garnett, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/fyodor-dostoevsky/crime-and-punishment/constance-garnett"
+  }
+ ],
+ "people": [
+  {
+   "name": "Fyodor Dostoevsky",
+   "role": "author",
+   "note": "Russian novelist born in Moscow in 1821 who spent four years in a Siberian labour camp.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Rodion Raskolnikov",
+   "role": "character",
+   "note": "A destitute former student who murders a pawnbroker and is tormented by his conscience.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sonya Marmeladova",
+   "role": "character",
+   "note": "Daughter of a drunkard, forced into prostitution, who reads Raskolnikov the story of Lazarus.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Porfiry Petrovich",
+   "role": "character",
+   "note": "The detective investigating the murders, who senses that Raskolnikov is guilty.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Svidrigailov",
+   "role": "character",
+   "note": "Dunya's ill-intentioned former employer, who takes his own life.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Razumikhin",
+   "role": "character",
+   "note": "Raskolnikov's old university friend, who sees that he is seriously ill.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Semyon Marmeladov",
+   "role": "character",
+   "note": "A hopeless drunk whose confession moves Raskolnikov while he is still weighing the murder.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mikhail Katkov",
+   "role": "patron",
+   "note": "Editor of The Russian Messenger, which published the novel in 1866.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Constance Garnett",
+   "role": "translator",
+   "note": "English translator of nearly all of Dostoevsky's fiction, who published this translation in 1914.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Saint Petersburg",
+   "lat": 59.9343,
+   "lon": 30.3351,
+   "note": "The setting, a city of poverty and rationalist ideas.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sennaya Square",
+   "lat": 59.9272,
+   "lon": 30.3203,
+   "note": "Critical scenes in the novel take place on this square.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Moscow",
+   "lat": 55.7558,
+   "lon": 37.6173,
+   "note": "Dostoevsky was born here in 1821.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Brighton",
+   "lat": 50.8225,
+   "lon": -0.1372,
+   "note": "Birthplace of the translator Constance Garnett.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1821,
+   "label": "Dostoevsky is born in Moscow.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1849,
+   "label": "Dostoevsky is arrested for belonging to the Petrashevsky Circle.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1864,
+   "label": "His brother Mikhail dies and Dostoevsky takes on his debts.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1865,
+   "label": "In September he writes to Katkov about a young man in the grip of strange ideas.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1866,
+   "label": "The Russian Messenger runs the novel in twelve monthly instalments.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1914,
+   "label": "Constance Garnett publishes her translation of the novel.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Extraordinary men and crime",
+   "note": "Raskolnikov persuades himself that exceptional people may break the law, a theory the plot refutes.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Conscience as true punishment",
+   "note": "The book is less about legal consequences than about the torment of Raskolnikov's own conscience.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Radicalism as a moral danger",
+   "note": "Dostoevsky planned to examine the dangers of radical ideology in a letter to Katkov.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Suffering and renewal",
+   "note": "Sonya and the story of Lazarus lead toward his confession and a slow regeneration.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Part I: I",
+   "quote": "On an exceptionally hot evening early in July a young man came out of the garret in which he lodged in S⁠⸺ Place and walked slowly, as though in hesitation, towards K⁠⸺ bridge",
+   "why": "The famous opening: Raskolnikov leaves his garret."
+  },
+  {
+   "part": 2,
+   "chapter": "VII",
+   "quote": "He unbuttoned his coat and freed the axe from the noose, but did not yet take it out altogether, simply holding it in his right hand under the coat",
+   "why": "The murder scene, told through his numb hands."
+  },
+  {
+   "part": 3,
+   "chapter": "VII",
+   "quote": "“Sonia! Daughter! Forgive!” he cried, and he tried to hold out his hand to her, but losing his balance, he fell off the sofa, face downwards on the floor",
+   "why": "Marmeladov's death in the street."
+  },
+  {
+   "part": 4,
+   "chapter": "V",
+   "quote": "I maintain in my article that all⁠ ⁠… well, legislators and leaders of men, such as Lycurgus, Solon, Muhammad, Napoleon, and so on, were all without exception criminals, from the very fact that, making a new law, they transgressed the ancient one, handed down from their ancestors and held sacred by the people, and they did not stop short at bloodshed either, if that bloodshed⁠—often of innocent pe",
+   "why": "Raskolnikov's theory of extraordinary men."
+  },
+  {
+   "part": 5,
+   "chapter": "IV",
+   "quote": "“I did not bow down to you, I bowed down to all the suffering of humanity,” he said wildly and walked away to the window",
+   "why": "His gesture to Sonya."
+  },
+  {
+   "part": 6,
+   "chapter": "IV",
+   "quote": "“Yes, that’s what it was! I wanted to become a Napoleon, that is why I killed her.⁠ ⁠… Do you understand now?” “N-no,” Sonia whispered naively and timidly",
+   "why": "His confession of why he killed."
+  },
+  {
+   "part": 7,
+   "chapter": "II",
+   "quote": "But that is the beginning of a new story⁠—the story of the gradual renewal of a man, the story of his gradual regeneration, of his passing from one world into another, of his initiation into a new unknown life",
+   "why": "The epilogue turns toward renewal."
+  }
+ ],
+ "id": "crime"
+}

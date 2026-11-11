@@ -1,0 +1,197 @@
+{
+  "facts": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "built",
+      "value": "Main building erected 1902-1906; Belle da Costa Greene first librarian for more than four decades.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "Morgan erected the main building between 1902 and 1906, with Belle da Costa Greene serving as its first librarian for more than four decades",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Morgan\\s+erected\\s+the\\s+main\\s+building\\s+b'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "architect",
+      "value": "Morgan first hired Warren and Wetmore for a Baroque-style library, then hired Charles McKim.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "Morgan first hired Warren and Wetmore to design a Baroque-style library",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Morgan\\s+first\\s+hired\\s+Warren\\s+and\\s+Wetm'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "built",
+      "value": "Builder C. T. Wills; pinkish-gray Tennessee marble.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "pinkish-gray Tennessee marble",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'pinkish.gray\\s+Tennessee\\s+marble'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "status_note",
+      "value": "Incorporated as a public institution in March 1924.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "was incorporated as a public institution in March 1924",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'was\\s+incorporated\\s+as\\s+a\\s+public\\s+insti'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "built",
+      "value": "Further expansions completed in 1928, 1962 and 1991.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "further expansions were completed in 1928, 1962, and 1991",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'further\\s+expansions\\s+were\\s+completed'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "built",
+      "value": "Five-story addition with storage vaults and offices built in 1975.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "constructed a five-story addition with storage vaults and offices in 1975",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'constructed\\s+a\\s+five.story\\s+addition'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "collection",
+      "value": "More than 350,000 objects.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "more than 350,000 objects",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'more\\s+than\\s+350.000\\s+objects'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "collection",
+      "value": "Holds one of three known copies of the Constance Missal and a rare copy of the Mainz Psalter.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "one of three known copies of the Constance Missal",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'one\\s+of\\s+three\\s+known\\s+copies\\s+of\\s+the\\s+C'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "collection",
+      "value": "Holds the Golden Gospels of Henry III.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "the Golden Gospels of Henry III",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'the\\s+Golden\\s+Gospels\\s+of\\s+Henry\\s+III'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "status_note",
+      "value": "Designated a National Historic Landmark on November 13, 1966.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "Designated NHL November 13, 1966",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'Designated\\s+NHL\\s+November\\s+13.\\s+1966'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "field": "status_note",
+      "value": "Reopened on April 29, 2006 after expansion.",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "The library reopened on April 29, 2006",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+library\\s+reopened\\s+on\\s+April\\s+29.'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "kind": "built",
+      "year": 1906,
+      "earliest": 1902,
+      "latest": 1906,
+      "label": "Main building erected",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "between 1902 and 1906",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'between\\s+1902\\s+and\\s+1906'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "kind": "opened",
+      "year": 1924,
+      "earliest": 1924,
+      "latest": 1924,
+      "label": "Incorporated as a public institution",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "was incorporated as a public institution in March 1924",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'was\\s+incorporated\\s+as\\s+a\\s+public\\s+insti'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "kind": "built",
+      "year": 1928,
+      "earliest": 1928,
+      "latest": 1928,
+      "label": "Annex completed",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "The annex was completed in 1928",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+annex\\s+was\\s+completed\\s+in\\s+1928'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "kind": "built",
+      "year": 1975,
+      "earliest": 1975,
+      "latest": 1975,
+      "label": "Five-story addition with storage vaults",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "constructed a five-story addition with storage vaults and offices in 1975",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'constructed\\s+a\\s+five.story\\s+addition'"
+    },
+    {
+      "cluster": "rooms-wave3",
+      "lib": "morgan",
+      "kind": "reopened",
+      "year": 2006,
+      "earliest": 2006,
+      "latest": 2006,
+      "label": "Library reopened after expansion (29 April)",
+      "source": "https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum",
+      "tier": "wikipedia",
+      "quote": "The library reopened on April 29, 2006",
+      "status": "passing",
+      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum' | sed 's/<[^>]*>/ /g' | rg -o -m1 'The\\s+library\\s+reopened\\s+on\\s+April\\s+29.'"
+    }
+  ]
+}

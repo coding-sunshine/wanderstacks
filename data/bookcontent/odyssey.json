@@ -1,0 +1,201 @@
+{
+  "id": "odyssey",
+  "summary": "Odysseus, king of Ithaca, spends ten years trying to get home after the fall of Troy. His crew die one by one through their own folly, and he is held by monsters, sorceresses and the sea. Meanwhile his wife Penelope and son Telemachus put up with a crowd of suitors who treat the house as their own and assume he is dead. The poem follows his wandering and his return in disguise, and tests loyalty, patience and the duties between host and guest. It ends when he reclaims his home and proves who he is.",
+  "context": "The Odyssey is an ancient Greek epic in 24 books, composed around the 8th or 7th century BC. Milman Parry and Albert Lord showed that its formulas and repeated phrases are the marks of oral poetry, which a singer could improvise at length. By the mid-6th century BC it was part of the Greek literary canon. This site offers Samuel Butler's plain English prose rendering, with Pope's verse translation alongside, both from Project Gutenberg. The first complete English translation of the poem was made in 1616.",
+  "sources": [
+    {
+      "title": "Odyssey (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Odyssey"
+    },
+    {
+      "title": "The Odyssey, translated by Samuel Butler (Project Gutenberg)",
+      "url": "https://www.gutenberg.org/ebooks/1727"
+    }
+  ],
+  "people": [
+    {
+      "name": "Homer",
+      "role": "Traditional author",
+      "note": "Gutenberg dates him to roughly 751 to 651 BCE; the poem was first composed around the 8th or 7th century BC.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Odysseus",
+      "role": "Protagonist",
+      "note": "King of Ithaca (also called Ulysses), on a homecoming journey that lasts ten years after the Trojan War.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Penelope",
+      "role": "Wife of Odysseus",
+      "note": "Stays in Ithaca while a group of suitors competes for her hand in marriage.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Telemachus",
+      "role": "Son of Odysseus",
+      "note": "Contends with the suitors alongside his mother in his father's long absence.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Samuel Butler",
+      "role": "Translator",
+      "note": "Rendered the poem into English prose for those who cannot read the original; lived 1835 to 1902.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Milman Parry and Albert Lord",
+      "role": "Scholars",
+      "note": "Showed in the early twentieth century that the poems have the traits of oral poetry.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Aristarchus of Samothrace",
+      "role": "Scholar",
+      "note": "Pseudo-Plutarch credits him with dividing the poem into books, though some evidence tells against it.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Ithaca",
+      "lat": 38.3647,
+      "lon": 20.72,
+      "note": "Odysseus's home island; scholars debate whether it is the island now called Ithakē.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Troy",
+      "lat": 39.9575,
+      "lon": 26.2386,
+      "note": "The city whose fall starts Odysseus's ten-year journey home.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Alexandria",
+      "lat": 31.2001,
+      "lon": 29.9187,
+      "note": "Home of the scholars (the Alexandrians) who some think added parts of the poem's ending.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": -700,
+      "label": "Composed around the 8th or 7th century BC in Homeric Greek",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": -550,
+      "label": "By the mid-6th century BC the poem is part of the Greek literary canon",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1616,
+      "label": "First complete English translation of the Odyssey",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1999,
+      "label": "Butler's translation released by Project Gutenberg",
+      "s": [
+        1
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Nostos, the homecoming",
+      "note": "Return and homecoming are a key theme of the epic, set alongside wandering.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Xenia, guest-friendship",
+      "note": "The duties between host and guest are a central test of character throughout the poem.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Testing and omens",
+      "note": "Characters are tested and signs from the gods are read, which shapes the plot.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Oral composition",
+      "note": "Formulaic repetition lets an illiterate poet improvise a very long poem, which accounts for the poem's style.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "BOOK I",
+      "quote": "Tell me, O Muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy.",
+      "why": "Butler's opening gives the poem's subject in a single line: the hero who travelled far and wide after sacking Troy."
+    },
+    {
+      "part": 2,
+      "chapter": "BOOK IX",
+      "quote": "my name is Noman; this is what my father and mother and my friends have always called me.",
+      "why": "Odysseus's false name is the trick that blinds the Cyclops and lets him escape, a clear example of his cunning."
+    },
+    {
+      "part": 2,
+      "chapter": "BOOK XII",
+      "quote": "First you will come to the Sirens who enchant all who come near them. If any one unwarily draws in too close and hears the singing of the Sirens, his wife and children will never welcome him home again, for they sit in a green field and warble him to death with the sweetness of their song.",
+      "why": "Circe's instructions for passing the Sirens show the poem's pattern of warning, preparation and testing."
+    },
+    {
+      "part": 2,
+      "chapter": "BOOK XI",
+      "quote": "I would rather be a paid servant in a poor man’s house and be above ground than king of kings among the dead.",
+      "why": "In the underworld Achilles tells Odysseus he would take any living life over rule among the dead."
+    },
+    {
+      "part": 3,
+      "chapter": "BOOK XIV",
+      "quote": "would not be right for me to insult him, for all strangers and beggars are from Jove.",
+      "why": "Eumaeus's welcome for a ragged stranger states the guest-friendship rule that the suitors break."
+    },
+    {
+      "part": 4,
+      "chapter": "BOOK XXIII",
+      "quote": "There was a young olive growing within the precincts of the house, in full vigour, and about as thick as a bearing-post.",
+      "why": "Odysseus describes the bed built around a living tree, the secret proof of identity that Penelope tests."
+    }
+  ]
+}

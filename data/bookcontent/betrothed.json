@@ -1,0 +1,276 @@
+{
+ "summary": "Two villagers near Lecco on Lake Como, Renzo and Lucia, plan to marry in November 1628. The local lord, Don Rodrigo, wants Lucia, and he sends armed men to frighten the parish priest, Don Abbondio, into refusing the ceremony. A botched attempt at a secret wedding forces the couple to flee and part. Lucia reaches a convent at Monza, Renzo reaches a Milan gripped by bread riots, and both are hunted. Famine, war and the plague of 1630 scatter every plan, and they are finally reunited and married. The novel shows how petty power, weak clergy and unjust law wear people down.",
+ "context": "Alessandro Manzoni wrote a first version, Fermo e Lucia, between April 1821 and September 1823. He then revised it heavily and published the result in three volumes between 1825 and 1827, with the main release dated June 1827. He rewrote it again toward Florentine Italian and issued the definitive text between 1840 and 1842. He drew on Giuseppe Ripamonti's chronicles of Milan and on a 1627 edict against threats that block marriage. It became the most widely read Italian novel. The English text on this site is an anonymous 1834 London edition from Richard Bentley.",
+ "sources": [
+  {
+   "title": "The Betrothed (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Betrothed_(novel)"
+  },
+  {
+   "title": "Alessandro Manzoni (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Alessandro_Manzoni"
+  },
+  {
+   "title": "The Betrothed (Project Gutenberg ebook 35155)",
+   "url": "https://www.gutenberg.org/ebooks/35155"
+  }
+ ],
+ "people": [
+  {
+   "name": "Alessandro Manzoni",
+   "role": "author",
+   "note": "Wrote three versions of the novel between 1821 and 1842 and argued that Florentine should be the Italian taught in schools.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Renzo",
+   "role": "character",
+   "note": "The young villager whose wedding is blocked and who struggles to be reunited with Lucia.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lucia",
+   "role": "character",
+   "note": "Renzo's betrothed, who is pursued by Don Rodrigo and hidden in a convent at Monza.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Don Abbondio",
+   "role": "character",
+   "note": "The parish priest who is too frightened to marry the couple, the book's picture of clerical cowardice.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Don Rodrigo",
+   "role": "character",
+   "note": "The local baron who forbids the marriage and who has a bet about Lucia with his cousin Count Attilio.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Fra Cristoforo",
+   "role": "character",
+   "note": "A Capuchin friar at Pescarenico who helps the couple and was once the merchant's son Lodovico.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Federico Borromeo",
+   "role": "character",
+   "note": "The cardinal and archbishop of Milan, held up as an example of heroic sanctity among the clergy.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Gertrude",
+   "role": "character",
+   "note": "The Nun of Monza, forced into the cloister by her family, who takes in Lucia.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The Unnamed",
+   "role": "character",
+   "note": "A feared baron whose castle is a refuge for the powerful and whose change of heart is a turning point.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Giuseppe Ripamonti",
+   "role": "subject",
+   "note": "Milanese chronicler whose account of the 1630 plague is the main basis for the plague chapters.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Lecco",
+   "lat": 45.8566,
+   "lon": 9.3977,
+   "note": "The village area on Lake Como where Renzo and Lucia live and where the lawyer Azzeccagarbugli is consulted.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Pescarenico",
+   "lat": 45.8396,
+   "lon": 9.4043,
+   "note": "Site of the Capuchin monastery where Fra Cristoforo gives the fugitives letters of introduction.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Monza",
+   "lat": 45.5845,
+   "lon": 9.2744,
+   "note": "Lucia is placed in a convent here in the care of the nun Gertrude.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Milan",
+   "lat": 45.4642,
+   "lon": 9.19,
+   "note": "Renzo arrives in a city starved by famine, and later the plague of 1630 devastates it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lazzaretto of Milan",
+   "lat": 45.4786,
+   "lon": 9.2056,
+   "note": "The plague hospital where the sick and the starving beggars are shut up.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1821,
+   "label": "Manzoni begins the first version, Fermo e Lucia, which he finishes in 1823.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1827,
+   "label": "The revised novel is published in Milan after a first printing in three volumes dated 1825 to 1827.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1834,
+   "label": "The first English translations appear, including the Richard Bentley edition used on this site.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "year": 1842,
+   "label": "The definitive text, rewritten toward Florentine Italian, is completed after appearing in parts from 1840.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1856,
+   "label": "Amilcare Ponchielli turns the novel into an opera, one of many later adaptations.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1916,
+   "label": "The original draft, Fermo e Lucia, is published for the first time.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Power and the law's failure",
+   "note": "Don Rodrigo's menace works because law and its officers serve the strong. The lawyer turns on Renzo once he hears the baron's name.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Clergy from coward to saint",
+   "note": "The book sets the timid Don Abbondio against the friar Cristoforo and Cardinal Borromeo to show the range of character among Christians.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Innocents who suffer",
+   "note": "The famine and plague chapters pose the question of why the innocent suffer and leave it open for the reader.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "One language for Italy",
+   "note": "Manzoni revised toward Florentine and later urged that it be taught in schools, so the novel became a milestone in modern Italian.",
+   "s": [
+    0,
+    1
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "CHAPTER I.",
+   "quote": "this marriage is not to take place, neither to-morrow, nor at any other time",
+   "why": "The bravi's threat to the priest that starts the plot and became a proverb in Italian."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER IV.",
+   "quote": "at thirty years of age, Ludovico bade farewell to the world; and having, according to custom, to change his name, he took one which would continually recall to him his crime,—thus he became Friar Christopher",
+   "why": "The turning point of Fra Cristoforo's past, told in a few lines."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER XI.",
+   "quote": "There must be a great plenty in Milan,” said he, “if they thus throw away the gifts of God",
+   "why": "Renzo walks into the Milan bread riot and misreads the flour on the street."
+  },
+  {
+   "part": 3,
+   "chapter": "CHAPTER XIX.",
+   "quote": "the name of this man was uttered, whom, thanks to the circumspection of our historians, we are obliged to call the Unknown",
+   "why": "The narrator introduces the Unknown and jokes about his own caution as a historian."
+  },
+  {
+   "part": 4,
+   "chapter": "CHAPTER XX.",
+   "quote": "The castle of the Unknown was situated above a narrow and shady valley, on the summit of a cliff, which, belonging to a rugged chain of mountains, was nevertheless separated from them by banks, caverns, and precipices",
+   "why": "A set-piece description of the castle of the most feared man in the district."
+  },
+  {
+   "part": 4,
+   "chapter": "CHAPTER XXII.",
+   "quote": "The bravo hastened back with the intelligence, that the Cardinal Frederick Borromeo, Archbishop of Milan, had arrived the evening before at ***, and was expected to pass the day there",
+   "why": "The arrival of Cardinal Borromeo, which draws the crowd and begins the book's religious climax."
+  },
+  {
+   "part": 5,
+   "chapter": "CHAPTER XXVIII.",
+   "quote": "that mortality increased in this species of prison to such a degree as to assume the appearance and deserve the name of pestilence",
+   "why": "Shutting beggars in the lazaretto makes it a plague house, a policy failure."
+  },
+  {
+   "part": 6,
+   "chapter": "CHAPTER XXXII.",
+   "quote": "One night, towards the end of the month of August, in the very height of the pestilence, Don Roderick returned to his house at Milan, accompanied by his faithful Griso, one of the small number of his servants who still survived",
+   "why": "Don Rodrigo's return to plague-ridden Milan, where the book settles its account with him."
+  }
+ ],
+ "id": "betrothed"
+}

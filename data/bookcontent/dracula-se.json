@@ -1,0 +1,227 @@
+{
+ "summary": "Told through journals, letters, telegrams and newspaper clippings, Dracula follows the solicitor Jonathan Harker to a Transylvanian castle, where he finds that his client Count Dracula is a vampire. The Count sails to England and settles near London, and in Whitby he preys on Lucy Westenra. Harker, his wife Mina, Dr. Seward, Lord Godalming, Quincey Morris and the Dutch scholar Van Helsing track him, destroy his earth-filled boxes of soil and chase him back across Europe to his own country.",
+ "context": "Stoker, an Irish theatre manager, began his notes in 1890 and drew on research done at Whitby and in the London Library. He found the name Dracula in a history of Wallachia and Moldavia. Archibald Constable published the novel in May 1897 in yellow cloth for six shillings. Reviews were good, but it earned Stoker little money. Stoker invented several vampire traits that later fiction kept, including the need for an invitation and the lack of a reflection. This site carries the Standard Ebooks text.",
+ "sources": [
+  {
+   "title": "Dracula (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Dracula"
+  },
+  {
+   "title": "Bram Stoker (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Bram_Stoker"
+  },
+  {
+   "title": "Dracula, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/bram-stoker/dracula"
+  }
+ ],
+ "people": [
+  {
+   "name": "Bram Stoker",
+   "role": "author",
+   "note": "Irish writer (1847 to 1912), barrister and manager of the Lyceum Theatre for Henry Irving.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Count Dracula",
+   "role": "character",
+   "note": "The Transylvanian nobleman who is revealed as a vampire and moves to England.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jonathan Harker",
+   "role": "character",
+   "note": "The English solicitor who visits the Count's castle on business.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Abraham Van Helsing",
+   "role": "character",
+   "note": "The scholar who leads the group that hunts the Count.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Henry Irving",
+   "role": "patron",
+   "note": "The actor Stoker worked for as personal assistant and Lyceum business manager.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Edith Craig",
+   "role": "subject",
+   "note": "She played Mina at Stoker's copyright reading of a stage version at the Lyceum.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Archibald Constable and Company",
+   "role": "printer",
+   "note": "The publisher that issued the first edition in May 1897.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Transylvania",
+   "lat": 46.7712,
+   "lon": 23.6236,
+   "note": "Harker's journey takes him to the Count's castle here.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Whitby",
+   "lat": 54.4858,
+   "lon": -0.6206,
+   "note": "The seaside town where Dracula lands in England; Stoker also researched here in 1890.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Where Dracula settles and where Stoker did most of his research at the London Library.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dublin",
+   "lat": 53.3498,
+   "lon": -6.2603,
+   "note": "Stoker studied at Trinity College Dublin and served in the civil service at Dublin Castle.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Galatz",
+   "lat": 45.4353,
+   "lon": 28.008,
+   "note": "The Black Sea port where the hunters learn that the Count's ship has arrived.",
+   "s": [
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1890,
+   "label": "Stoker makes his earliest dated notes for the novel and researches at Whitby.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1897,
+   "label": "Archibald Constable publishes Dracula in May.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1912,
+   "label": "Stoker dies on 20 April.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1922,
+   "label": "The unauthorised film Nosferatu adapts the story.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Story told in documents",
+   "note": "The narrative comes through letters, diaries and newspaper articles and has no single protagonist.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Invented vampire rules",
+   "note": "Stoker added traits such as needing an invitation, sleeping on native earth and having no reflection.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Folklore meets modern England",
+   "note": "An old-world nobleman moves into a London suburb and has to be fought with science and sacred objects.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "Left Munich at 8:35 p.m., on 1st May, arriving at Vienna early next morning; should have arrived at 6:46, but train was an hour late",
+   "why": "Harker's first journal entry begins the journey."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "“Welcome to my house! Enter freely and of your own will!” He made no motion of stepping to meet me, but stood like a statue, as though his gesture of welcome had fixed him into stone",
+   "why": "Harker meets the Count at the castle door."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "“Listen to them⁠—the children of the night. What music they make!” Seeing, I suppose, some expression in my face strange to him, he added:⁠— “Ah, sir, you dwellers in the city cannot enter into the feelings of the hunter",
+   "why": "The Count speaks of the wolves."
+  },
+  {
+   "part": 2,
+   "chapter": "VII",
+   "quote": "At times the mist cleared, and the sea for some distance could be seen in the glare of the lightning, which now came thick and fast, followed by such sudden peals of thunder that the whole sky overhead seemed trembling under the shock of the footsteps of the storm",
+   "why": "The storm at Whitby before the ship arrives."
+  },
+  {
+   "part": 3,
+   "chapter": "XII",
+   "quote": "“Then it was you, and just arrived. How is she? Are we too late? Did you not get my telegram",
+   "why": "Van Helsing arrives at Lucy's house in haste."
+  },
+  {
+   "part": 4,
+   "chapter": "XVIII",
+   "quote": "a sacred bullet fired into the coffin kill him so that he be true dead; and as for the stake through him, we know already of its peace; or the cut-off head that giveth rest",
+   "why": "Van Helsing lists how a vampire is destroyed."
+  },
+  {
+   "part": 5,
+   "chapter": "XXII",
+   "quote": "I had to give in, for Mina’s resolution was fixed; she said that it was the last hope for her that we should all work together",
+   "why": "Mina insists on joining the final chase."
+  },
+  {
+   "part": 6,
+   "chapter": "XXVII",
+   "quote": "I shall be glad as long as I live that even in that moment of final dissolution, there was in the face a look of peace, such as I never could have imagined might have rested there",
+   "why": "The Count's last moment at his castle."
+  }
+ ],
+ "id": "dracula-se"
+}

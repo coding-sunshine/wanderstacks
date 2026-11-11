@@ -1,0 +1,256 @@
+{
+ "summary": "Robinson Crusoe goes to sea against his parents' wishes and is wrecked, then captured by Sallee pirates, then rescued by a Portuguese captain who helps him set up a plantation in Brazil. On a later voyage he is the only survivor of a wreck near the mouth of the Orinoco. He spends 28 years on the island, salvaging the ship, farming, taming goats, and turning to prayer. He saves a man he names Friday from cannibals, helps a Spaniard, deals with mutineers, and finally gets home.",
+ "context": "Daniel Defoe published the book on 25 April 1719, and the first edition named Crusoe himself as the author, so many readers took it for a true travel account. It ran through four editions before the year ended. The story was probably inspired by the real castaway Alexander Selkirk, and Defoe wrote two follow-ups in 1719 and 1720. It is often called the first English novel and gave its name to the Robinsonade. The site carries the Standard Ebooks edition.",
+ "sources": [
+  {
+   "title": "Robinson Crusoe (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Robinson_Crusoe"
+  },
+  {
+   "title": "Daniel Defoe (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Daniel_Defoe"
+  },
+  {
+   "title": "The Life and Adventures of Robinson Crusoe, Standard Ebooks",
+   "url": "https://standardebooks.org/ebooks/daniel-defoe/the-life-and-adventures-of-robinson-crusoe"
+  }
+ ],
+ "people": [
+  {
+   "name": "Daniel Defoe",
+   "role": "author",
+   "note": "English writer, merchant and spy, born Daniel Foe around 1660 and dead in 1731.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Robinson Crusoe",
+   "role": "character",
+   "note": "The narrator, born Robinson Kreutznaer, who spends 28 years on a desert island.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Friday",
+   "role": "character",
+   "note": "A man Crusoe saves from cannibals, who becomes his servant and friend.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Xury",
+   "role": "character",
+   "note": "The boy who escapes slavery with Crusoe in a boat.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The Portuguese captain",
+   "role": "character",
+   "note": "Rescues Crusoe off the African coast and later helps with his money and plantation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "The Spaniard",
+   "role": "character",
+   "note": "A man rescued by Crusoe and Friday who helps them plan their escape.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Alexander Selkirk",
+   "role": "subject",
+   "note": "Scottish castaway who lived four years on a Pacific island and probably inspired the story.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Pedro Serrano",
+   "role": "subject",
+   "note": "Another real castaway whose story might have inspired the novel.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Kingston upon Hull",
+   "lat": 53.7457,
+   "lon": -0.3367,
+   "note": "Crusoe sails from here in August 1651.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Sale, Morocco",
+   "lat": 34.0531,
+   "lon": -6.7985,
+   "note": "Home port of the Sallee pirates who capture and enslave Crusoe.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Mouth of the Orinoco",
+   "lat": 8.6,
+   "lon": -61,
+   "note": "Crusoe is wrecked on an island off Venezuela near here on 30 September 1659.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Robinson Crusoe Island",
+   "lat": -33.6417,
+   "lon": -78.835,
+   "note": "Selkirk's island, renamed after the novel in 1966.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "note": "Defoe was born and died in London.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1660,
+   "label": "Daniel Foe, later Defoe, is born around this year.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1719,
+   "label": "Robinson Crusoe is published on 25 April and runs through four editions by year's end.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1720,
+   "label": "Serious Reflections, the third Crusoe book, appears.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1731,
+   "label": "Defoe dies on 24 April.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1945,
+   "label": "Warsaw survivors hiding in ruins are later called Robinson Crusoes of Warsaw.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1966,
+   "label": "Chile renames Selkirk's island Robinson Crusoe Island.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Self-reliance and survival",
+   "note": "Crusoe's practical work on the island has been read as an account of human capability.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Providence and repentance",
+   "note": "The book mixes confessional and didactic forms as Crusoe turns to God in isolation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Realistic fiction as fact",
+   "note": "The first edition credited Crusoe as author, so readers took it for non-fiction travel writing.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The Robinsonade genre",
+   "note": "Its success spawned imitations in many media, and its name now defines a genre.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "I",
+   "quote": "I was born in the year 1632, in the city of York, of a good family, though not of that country, my father being a foreigner of Bremen, who settled first at Hull",
+   "why": "The opening of Crusoe's own account."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "surprised in the grey of the morning by a Turkish rover of Sallee, who gave chase to us with all the sail she could make",
+   "why": "The capture that makes him a slave."
+  },
+  {
+   "part": 2,
+   "chapter": "VI",
+   "quote": "However, as I had learned not to despair of anything, I resolved to pull everything to pieces that I could of the ship, concluding that everything I could get from her would be of some use or other to me",
+   "why": "Crusoe sets to stripping the wreck."
+  },
+  {
+   "part": 2,
+   "chapter": "VI",
+   "quote": "The impression of my dream revived; and the words, “All these things have not brought thee to repentance,” ran seriously through my thoughts",
+   "why": "His turn to repentance on the island."
+  },
+  {
+   "part": 3,
+   "chapter": "XIV",
+   "quote": "and first, I let him know his name should be Friday, which was the day I saved his life; I called him so for the memory of the time",
+   "why": "How Friday gets his name."
+  },
+  {
+   "part": 3,
+   "chapter": "XII",
+   "quote": "All this labour I was at the expense of, purely from my apprehensions on account of the print of a man’s foot; for as yet I had never seen any human creature come near the island; and I had now lived two years under this uneasiness, which, indeed, made my life much less comfortable than it was before, as may be well imagined by any who know what it is to live in the constant snare of the fear of m",
+   "why": "The fear of the footprint shapes his years."
+  },
+  {
+   "part": 4,
+   "chapter": "XIX",
+   "quote": "I carried on board, for relics, the great goatskin cap I had made, my umbrella, and one of my parrots; also, I forgot not to take the money I formerly mentioned, which had lain by me so long useless that it was grown rusty or tarnished, and could hardly pass for silver till it had been a little rubbed and handled, as also the money I found in the wreck of the Spanish ship",
+   "why": "What he takes when he finally leaves."
+  },
+  {
+   "part": 4,
+   "chapter": "XX",
+   "quote": "All these things, with some very surprising incidents in some new adventures of my own, for ten years more, I shall give a farther account of in the Second Part of my Story",
+   "why": "The ending that points to the sequel."
+  }
+ ],
+ "id": "crusoe"
+}

@@ -1,0 +1,177 @@
+{
+ "id": "thomas-paine-the-american-crisis",
+ "summary": "The American Crisis is a run of pamphlets Thomas Paine wrote during the Revolutionary War. The first appeared in the Pennsylvania Journal on 19 December 1776, in the bleak winter after the American retreat, and opens with the line about times that try men's souls. Later numbers address the British commander Lord Howe, urge states and citizens to keep up the fight, and answer news from London. The tone is direct, angry and practical, meant to be read aloud to tired soldiers.",
+ "context": "Paine published thirteen numbers in 1776 and 1777 and three more through 1783. The last appeared on 19 April 1783, once the war was won. The first number speaks of Fort Lee and the retreat, and its opening line served as a watchword for the move on Trenton. Crisis No. 2 is addressed to Lord Howe. Paine's belief in a deity shows through the series, and Standard Ebooks adds an editor's introduction that sets each number in its moment.",
+ "sources": [
+  {
+   "url": "https://standardebooks.org/ebooks/thomas-paine/the-american-crisis",
+   "title": "The American Crisis by Thomas Paine (Standard Ebooks)"
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/The_American_Crisis",
+   "title": "The American Crisis (Wikipedia)"
+  }
+ ],
+ "people": [
+  {
+   "name": "Thomas Paine",
+   "role": "Author",
+   "note": "Wrote all of the pamphlets and published the first in the Pennsylvania Journal.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Lord Howe",
+   "role": "Addressee",
+   "note": "Crisis No. 2 is written to him as the British commander.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "William Eden",
+   "role": "Addressee",
+   "note": "Crisis VI is addressed to him and other British commissioners at New York.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Earl of Carlisle",
+   "role": "Addressee",
+   "note": "Crisis VI is addressed to him and other British commissioners at New York.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Fort Lee",
+   "lat": 40.85,
+   "lon": -73.97,
+   "note": "The retreat from this fort is described in the first number.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Trenton",
+   "lat": 40.22,
+   "lon": -74.76,
+   "note": "The opening line served as a watchword for the move on Trenton.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Philadelphia",
+   "lat": 39.95,
+   "lon": -75.16,
+   "note": "City of the Pennsylvania Journal, where Crisis No. 1 first appeared.",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1776,
+   "label": "Crisis No. 1 appears in the Pennsylvania Journal on 19 December",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1776,
+   "label": "Paine writes in the winter of the retreat from Fort Lee",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1777,
+   "label": "The run of thirteen pamphlets from 1776 to 1777 is complete",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1783,
+   "label": "The last number appears on 19 April",
+   "s": [
+    1
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Duty in hard times",
+   "note": "The opening number calls the summer soldier and sunshine patriot to stay through the hard winter.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Freedom has a price",
+   "note": "Paine argues that tyranny is not easily conquered and that what costs too little is valued too little.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "A call to everyone",
+   "note": "He asks all states and all people, not a few, to share the burden.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "America as refuge",
+   "note": "He describes the continent as a place that might be so happy if it gets clear of foreign dominion.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "The Crisis I",
+   "quote": "These are the times that try men’s souls. The summer soldier and the sunshine patriot will, in this crisis, shrink from the service of their country; but he that stands it now , deserves the love and thanks of man and woman. Tyranny, like hell, is not easily conquered; yet we have this consolation with us, that the harder the conflict, the more glorious the triumph.",
+   "why": "The best-known opening of the series, in the form it takes in the first number."
+  },
+  {
+   "part": 1,
+   "chapter": "The Crisis I",
+   "quote": "Tyranny, like hell, is not easily conquered; yet we have this consolation with us, that the harder the conflict, the more glorious the triumph. What we obtain too cheap, we esteem too lightly: it is dearness only that gives everything its value.",
+   "why": "Turns a heavy cost into a reason for hope."
+  },
+  {
+   "part": 1,
+   "chapter": "The Crisis I",
+   "quote": "I call not upon a few, but upon all: not on this state or that state, but on every state: up and help us; lay your shoulders to the wheel; better have too much force than too little, when so great an object is at stake.",
+   "why": "Spreads the duty of fighting across the whole population."
+  },
+  {
+   "part": 2,
+   "chapter": "The Crisis VI",
+   "quote": "There is a dignity in the warm passions of a Whig, which is never to be found in the cold malice of a Tory. In the one nature is only heated⁠—in the other she is poisoned. The instant the former has it in his power to punish, he feels a disposition to forgive; but the canine venom of the latter knows no relief but revenge.",
+   "why": "Opening of a number addressed to British commissioners, with Paine at his sharpest."
+  },
+  {
+   "part": 3,
+   "chapter": "The Crisis XI",
+   "quote": "Since the arrival of two, if not three packets in quick succession, at New York, from England, a variety of unconnected news has circulated through the country, and afforded as great a variety of speculation.",
+   "why": "Shows the later, calmer numbers answering news from London."
+  },
+  {
+   "part": 1,
+   "chapter": "The Crisis I",
+   "quote": "Not a place upon earth might be so happy as America. Her situation is remote from all the wrangling world, and she has nothing to do but to trade with them. A man can distinguish himself between temper and principle, and I am as confident, as I am that God governs the world, that America will never be happy till she gets clear of foreign dominion.",
+   "why": "Gives his picture of the country's promise."
+  }
+ ]
+}

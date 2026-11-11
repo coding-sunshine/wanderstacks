@@ -1,0 +1,238 @@
+{
+  "id": "onegin",
+  "summary": "Eugene Onegin is a bored young man from Saint Petersburg who inherits a country estate and meets two neighbours: Lenski, an idealistic poet, and Tattiana, a shy girl who writes him a love letter. Onegin turns her down kindly but coldly. A quarrel at a party leads him to kill Lenski in a duel, and he leaves the country in remorse. Years later he finds Tattiana married and admired in the capital, and now he is the one in love. She admits she still loves him but stays loyal to her husband.",
+  "context": "Pushkin wrote this novel in verse in the 1820s and early 1830s, and it appeared in installments, one chapter at a time, between 1825 and 1832. Nearly all of it is 389 stanzas of fourteen lines in iambic tetrameter, a form now called the Onegin stanza. The narrator chats with the reader about fashion, books and his own life as the story moves along. This site carries Henry Spalding's rhymed English version, which keeps the stanza form and uses the spellings Lenski and Tattiana.",
+  "sources": [
+    {
+      "title": "Eugene Onegin (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Eugene_Onegin"
+    },
+    {
+      "title": "Eugene Onegin, translated by Henry Spalding (Standard Ebooks)",
+      "url": "https://standardebooks.org/ebooks/alexander-pushkin/eugene-onegin/henry-spalding"
+    }
+  ],
+  "people": [
+    {
+      "name": "Alexander Pushkin",
+      "role": "Author",
+      "note": "Wrote the novel in verse; the narrator is a lightly fictionalized version of his public image.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Eugene Onegin",
+      "role": "Protagonist",
+      "note": "A dandy from Saint Petersburg, 18 at the start and 26 by the end; described as arrogant, selfish and world-weary.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Tatyana (Tattiana) Larina",
+      "role": "Landowner's daughter",
+      "note": "Shy, quiet and passionate; she falls for Onegin, and years later rejects him.",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Vladimir Lensky",
+      "role": "Poet and Onegin's friend",
+      "note": "A romantic, naive young poet of about 18, killed by Onegin in a duel.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Olga Larina",
+      "role": "Tatyana's younger sister",
+      "note": "Lensky's fiancee; Onegin flirts with her at the name-day party.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Henry Spalding",
+      "role": "Translator",
+      "note": "Produced the English version used by this edition, published through Standard Ebooks.",
+      "s": [
+        1
+      ]
+    },
+    {
+      "name": "Vladimir Nabokov",
+      "role": "Scholar and translator",
+      "note": "Studied Pushkin's drafts to date the work and produced a prose translation with a long commentary.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "places": [
+    {
+      "name": "Saint Petersburg",
+      "lat": 59.9343,
+      "lon": 30.3351,
+      "note": "Onegin's home, where his life is balls, concerts and parties, and where the story ends.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Moscow",
+      "lat": 55.7558,
+      "lon": 37.6173,
+      "note": "Tatyana is taken here to find a suitor.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Mikhaylovskoye",
+      "lat": 57.2,
+      "lon": 28.9,
+      "note": "Pushkin's family estate in the Pskov region, where he was restricted for two years after trouble in Odessa.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "name": "Odessa",
+      "lat": 46.4825,
+      "lon": 30.7233,
+      "note": "Where Nabokov guesses Tatyana's Letter was written in 1824.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1824,
+      "label": "Tatyana's Letter is thought to be written in Odessa; Pushkin leaves Odessa for his family estate",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1825,
+      "label": "Serial publication begins, chapter by chapter",
+      "s": [
+        0,
+        1
+      ]
+    },
+    {
+      "year": 1830,
+      "label": "Pushkin finishes copying chapter 8 at Boldino, kept there by a cholera epidemic",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1832,
+      "label": "Serial publication ends",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1833,
+      "label": "First complete edition published",
+      "s": [
+        0
+      ]
+    },
+    {
+      "year": 1837,
+      "label": "The text accepted today is based on this publication",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "The superfluous man",
+      "note": "Onegin became a model for later Russian literary heroes who are talented but drift with no purpose.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Boredom and ennui",
+      "note": "The book explores life, death, love, ennui, convention and passion.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Convention against feeling",
+      "note": "Onegin accepts the duel because he feels compelled by social convention, though he does not want it.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "Literary borrowed selves",
+      "note": "Tatyana reads Onegin's books and wonders whether he is only a collage of literary heroes, with no real Onegin.",
+      "s": [
+        0
+      ]
+    },
+    {
+      "title": "A verse novel with a chatty narrator",
+      "note": "The narrator digresses to the reader about the social and intellectual world of the time, which makes the plot feel intimate.",
+      "s": [
+        0
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "part": 1,
+      "chapter": "I",
+      "quote": "My uncle’s goodness is extreme, If seriously he hath disease; He hath acquired the world’s esteem And nothing more important sees; A paragon of virtue he!",
+      "why": "Onegin's first thoughts on his dying uncle, in a mock-pious tone that shows his cynicism."
+    },
+    {
+      "part": 1,
+      "chapter": "XXXIII",
+      "quote": "I write to you! Is more required? Can lower depths beyond remain? ’Tis in your power now, if desired, To crush me with a just disdain.",
+      "why": "Tattiana opens her letter with a plain, brave confession, and the poem's most famous scene begins."
+    },
+    {
+      "part": 1,
+      "chapter": "X",
+      "quote": "My soul I cannot renovate⁠— I love you with a brother’s love, Perchance one more affectionate.",
+      "why": "From Onegin's reply to Tattiana: kind, cold, and the choice he later regrets."
+    },
+    {
+      "part": 1,
+      "chapter": "XXVII",
+      "quote": "The shining pistols are uncased, The mallet loud the ramrod strikes, Bullets are down the barrels pressed, For the first time the hammer clicks. Lo! poured in a thin gray cascade, The powder in the pan is laid, The sharp flint, screwed securely on, Is cocked once more.",
+      "why": "The duel is staged with exact ritual, which makes its pointless outcome sharper."
+    },
+    {
+      "part": 1,
+      "chapter": "XXXIII",
+      "quote": "Eugene, his pistol yet in hand And with remorseful anguish filled, Gazing on Lenski’s corse did stand⁠— Zaretski shouted: “Why, he’s killed!”",
+      "why": "The instant Onegin understands what the code of honor has made him do."
+    },
+    {
+      "part": 2,
+      "chapter": "XLVI",
+      "quote": "Honour and pride inflexible. I love you⁠—to what end deceive?⁠— But I am now another’s bride⁠— For ever faithful will abide.”",
+      "why": "Tattiana's final answer, spoken years later, when it is Onegin who is rejected."
+    },
+    {
+      "part": 2,
+      "chapter": "L",
+      "quote": "Happy who quit life’s banquet seat Before the dregs they shall divine Of the cup brimming o’er with wine⁠— Who the romance do not complete, But who abandon it⁠—as I Have my Onegin⁠—suddenly.",
+      "why": "The poet closes by leaving his hero mid-story, as he says he will abandon the romance."
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+ "summary": "Benjamin Franklin's unfinished account of his own life, written as a record for his son. It follows him from a Boston boyhood and his early reading through his move to Philadelphia, his work as a printer, the Junto discussion club, his plan for moral perfection and his public projects, and breaks off in 1758 with his mission to London on behalf of the Pennsylvania assembly. The book has four parts, written in different periods, and is one of the most influential autobiographies ever written.",
+ "context": "Franklin began Part One in 1771, wrote Part Two in France in 1784 after Abel James urged him to continue, Part Three in 1788 and 1789 after returning home, and the brief Part Four as his health failed. He seems to have called it his Memoirs. It stayed unpublished in his lifetime. A French translation appeared in 1791 and the first English edition in 1793. John Bigelow published the most reliable text yet in 1868, with Part Four in English for the first time. The site carries a modern edition with a later introduction.",
+ "sources": [
+  {
+   "title": "The Autobiography of Benjamin Franklin (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/The_Autobiography_of_Benjamin_Franklin"
+  },
+  {
+   "title": "Benjamin Franklin (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Benjamin_Franklin"
+  },
+  {
+   "title": "The Autobiography of Benjamin Franklin (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/benjamin-franklin/the-autobiography-of-benjamin-franklin"
+  }
+ ],
+ "people": [
+  {
+   "name": "Benjamin Franklin",
+   "role": "author",
+   "note": "Printer, scientist and Founding Father, 1706 to 1790, who wrote the book between 1771 and 1790.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Abel James",
+   "role": "patron",
+   "note": "Philadelphia merchant whose 1782 letter prompted Franklin to continue.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Bigelow",
+   "role": "scribe",
+   "note": "Editor who published the most reliable text yet in 1868.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Thomas Jefferson",
+   "role": "subject",
+   "note": "Returned a copy to Le Veillard in 1786 and ordered the William Short copy.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Dr. Fothergill",
+   "role": "character",
+   "note": "Physician Franklin names as one of the best men he knew and a promoter of useful projects.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Keimer",
+   "role": "character",
+   "note": "Philadelphia printer who might employ the young Franklin.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "John Collins",
+   "role": "character",
+   "note": "Bookish boy of Franklin's youth with whom he argued.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Boston",
+   "lat": 42.3601,
+   "lon": -71.0589,
+   "note": "Franklin's birthplace, where he first learned literature.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Philadelphia",
+   "lat": 39.9526,
+   "lon": -75.1652,
+   "note": "City where he worked as printer and published The Pennsylvania Gazette, and where he died.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "London",
+   "lat": 51.5072,
+   "lon": -0.1276,
+   "note": "Where Franklin and his son arrive in Part Four to press the colonists' case.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "France",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "Franklin wrote Part Two in France in 1784.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1706,
+   "label": "Franklin is born in Boston on 17 January.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1771,
+   "label": "Franklin begins writing Part One.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1784,
+   "label": "Part Two is finished while he lives in France.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1790,
+   "label": "Franklin dies on 17 April, leaving the work unfinished.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "year": 1791,
+   "label": "The first edition appears, in French.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1868,
+   "label": "John Bigelow publishes the most reliable text yet.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Self-improvement by plan",
+   "note": "Franklin sets out a project of arriving at moral perfection, listing thirteen virtues and marking faults in a daily book.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The self-made man",
+   "note": "The work is a model of the self-made man in American writing.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Useful public projects",
+   "note": "With the help of the Junto he drafts proposals such as one for the Library Company of Philadelphia.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "The Story of the Autobiography",
+   "quote": "I was born in Boston, New England, and owe my first instructions in literature to the free grammar-schools established there",
+   "why": "Franklin's own account of his origins."
+  },
+  {
+   "part": 1,
+   "chapter": "II",
+   "quote": "being on some occasion made ashamed of my ignorance in figures, which I had twice failed in learning when at school, I took Cocker’s book of Arithmetic, and went through the whole by myself with great ease",
+   "why": "Self-teaching in arithmetic."
+  },
+  {
+   "part": 1,
+   "chapter": "VII",
+   "quote": "which was called the “Junto”; we met on Friday evenings. The rules that I drew up required that every member, in his turn, should produce one or more queries on any point of Morals, Politics, or Natural Philosophy, to be discussed by the company; and once in three months produce and read an essay of",
+   "why": "The club for mutual improvement."
+  },
+  {
+   "part": 2,
+   "chapter": "IX",
+   "quote": "It was about this time I conceived the bold and arduous project of arriving at moral perfection. I wished to live without committing any fault at any time; I would conquer all that either natural inclination, custom, or company might lead me into",
+   "why": "The project of moral perfection."
+  },
+  {
+   "part": 2,
+   "chapter": "XIII",
+   "quote": "Fothergill, who was among the best men I have known, and a great promoter of useful projects. I had observed that the streets, when dry, were never swept, and the light dust carried away; but it was suffered to accumulate till wet weather reduced it to mud, and then, after lying some days so deep on",
+   "why": "A public improvement proposed in London."
+  },
+  {
+   "part": 3,
+   "chapter": "XIX",
+   "quote": "that he might carry me to Lord Granville’s, who was then President of the Council and wished to see me as soon as possible",
+   "why": "Franklin is taken to Lord Granville, president of the Council, in London."
+  }
+ ],
+ "id": "benjamin-franklin-the-autobiography-of-benjamin-franklin"
+}

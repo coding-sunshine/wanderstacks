@@ -1,0 +1,256 @@
+{
+ "summary": "Charles Bovary, a dull country health officer in Normandy, marries Emma, a farmer's daughter who learned to crave romance and luxury from sentimental novels. Married life bores her. She has an affair with the landowner Rodolphe, who drops her by a letter hidden under apricots, and later one with the clerk Léon in Rouen. She buys on credit from the merchant Lheureux and sinks into debt, and when nobody will lend her money she takes arsenic and dies. Charles dies in grief, their daughter is sent to work in a cotton mill, and the pharmacist Homais gets a medal.",
+ "context": "Flaubert's first novel was serialised in the Revue de Paris from 1 October to 15 December 1856. Prosecutors charged it with obscenity, and the trial in January 1857 ended in his acquittal on 7 February. It then sold well as a two-volume book from Michel Lévy Frères in April 1857. Flaubert is counted a leading exponent of realism, and critics from Henry James to Nabokov praised the novel's style. Eleanor Marx made the English translation of 1886, and the Standard Ebooks edition on this site uses it. Juliet Herbert had earlier translated it with Flaubert but the project was dropped.",
+ "sources": [
+  {
+   "title": "Madame Bovary (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Madame_Bovary"
+  },
+  {
+   "title": "Gustave Flaubert (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Gustave_Flaubert"
+  },
+  {
+   "title": "Madame Bovary, translated by Eleanor Marx-Aveling (Standard Ebooks)",
+   "url": "https://standardebooks.org/ebooks/gustave-flaubert/madame-bovary/eleanor-marx-aveling"
+  }
+ ],
+ "people": [
+  {
+   "name": "Gustave Flaubert",
+   "role": "author",
+   "note": "French novelist whose debut novel Madame Bovary made him a leading name in literary realism.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Emma Bovary",
+   "role": "character",
+   "note": "The daughter of a farmer, whose reading of sentimental novels leaves her craving beauty, wealth and passion.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Charles Bovary",
+   "role": "character",
+   "note": "A humble health officer who marries Emma after his first wife dies and whose practice moves to Yonville.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Rodolphe Boulanger",
+   "role": "character",
+   "note": "A wealthy local landowner who seduces Emma and later ends the affair by letter.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Léon Dupuis",
+   "role": "character",
+   "note": "A law student and clerk who loves the arts, introduces Emma to poetry and later becomes her lover in Rouen.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Monsieur Lheureux",
+   "role": "character",
+   "note": "A sly merchant who sells to Emma on credit and leads the family into debt and ruin.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Monsieur Homais",
+   "role": "character",
+   "note": "The cynical town pharmacist who is rewarded with the Legion of Honour in the last line.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Eleanor Marx",
+   "role": "translator",
+   "note": "Made the English translation of 1886 used in the Standard Ebooks edition.",
+   "s": [
+    0,
+    2
+   ]
+  },
+  {
+   "name": "Juliet Herbert",
+   "role": "translator",
+   "note": "The first to attempt an English translation, working closely with Flaubert, but the project was dropped for lack of a contract.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Rouen",
+   "lat": 49.4432,
+   "lon": 1.0993,
+   "note": "Emma and Charles attend the opera here, and she meets Léon again and begins their affair.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Normandy (Seine-Inférieure)",
+   "lat": 49.5,
+   "lon": 1.1,
+   "note": "Charles builds his practice in a village in this department of Normandy and later moves to a market town.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Paris",
+   "lat": 48.8566,
+   "lon": 2.3522,
+   "note": "Léon leaves for Paris to study, and Flaubert signed his dedication to the book here on 12 April 1857.",
+   "s": [
+    0,
+    2
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1856,
+   "label": "The novel is serialised in the Revue de Paris from 1 October to 15 December.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1857,
+   "label": "Flaubert is tried for obscenity in January and acquitted on 7 February.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1857,
+   "label": "Michel Lévy Frères publish the novel in two volumes on 12 April and it becomes a bestseller.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1881,
+   "label": "Mary Neal Sherwood, writing as John Stirling, publishes an unabridged English translation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1886,
+   "label": "Eleanor Marx publishes her English translation.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1970,
+   "label": "David Lean's film Ryan's Daughter loosely adapts the story, moving it to Ireland.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Novels that spoil desire",
+   "note": "Emma's romantic view of life comes from sentimental novels, and real life cannot meet it.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Debt as destiny",
+   "note": "Her purchases on credit from Lheureux, and the power of attorney he arranges, bring about her ruin.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Realism of thought",
+   "note": "The book is seen as realism turning psychological, concerned with accurate thoughts and emotions rather than outward things.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Hypocrisy rewarded",
+   "note": "Homais, a corrupt social climber, gains prominence while the Bovary family is destroyed.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "Art on trial",
+   "note": "The 1857 obscenity trial made the book notorious and helped its sales.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "Part I: I",
+   "quote": "We were in class when the headmaster came in, followed by a “new fellow,” not wearing the school uniform, and a school servant carrying a large desk",
+   "why": "The famous opening, told by a classmate before Emma is introduced."
+  },
+  {
+   "part": 1,
+   "chapter": "VII",
+   "quote": "towards the end of September something extraordinary fell upon her life; she was invited by the Marquis d’Andervilliers to Vaubyessard",
+   "why": "The invitation to the Vaubyessard ball that makes Emma dissatisfied with her life."
+  },
+  {
+   "part": 2,
+   "chapter": "VII",
+   "quote": "Tell him that Monsieur Rodolphe Boulanger of La Huchette is here.” It was not from territorial vanity that the new arrival added “of La Huchette” to his name, but to make himself the better known",
+   "why": "Rodolphe arrives at the door, the start of the affair that undoes Emma."
+  },
+  {
+   "part": 3,
+   "chapter": "XIII",
+   "quote": "Rodolphe had a basket of apricots picked. He put his letter at the bottom under some vine leaves, and at once ordered Girard, his ploughman, to take it with care to Madame Bovary",
+   "why": "He ends the affair with a letter hidden under vine leaves."
+  },
+  {
+   "part": 3,
+   "chapter": "XI",
+   "quote": "Charles, urged by the druggist and by her, allowed himself to be persuaded.",
+   "why": "The clubfoot operation that Emma hopes will make her husband famous."
+  },
+  {
+   "part": 4,
+   "chapter": "XI",
+   "quote": "Homais hankered after the cross of the Legion of Honour. He had plenty of claims to it",
+   "why": "The pharmacist's ambition, the satirical thread that ends the book."
+  },
+  {
+   "part": 4,
+   "chapter": "V",
+   "quote": "But Hivert, noticing a weight behind, gave the blind man sharp cuts with his whip",
+   "why": "A cruel episode on the coach, one of the book's harshest images."
+  },
+  {
+   "part": 4,
+   "chapter": "XI",
+   "quote": "Since Bovary’s death three doctors have followed one another at Yonville without any success, so severely did Homais attack them",
+   "why": "The closing lines, where Homais is rewarded and Charles's daughter works in a factory."
+  }
+ ],
+ "id": "bovary"
+}

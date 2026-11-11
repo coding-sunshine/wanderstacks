@@ -1,0 +1,217 @@
+{
+ "summary": "The novel opens with a stone left over from the goddess Nüwa's repair of the heavens. It asks a Taoist priest and a Buddhist monk to carry it into the world of red dust, and it is reborn as Jia Baoyu, born with a piece of jade in his mouth. The story follows life in the Rongguo and Ningguo houses of the wealthy Jia clan, the young women of the family, the building of the Daguanyuan garden for a royal consort, and the slow decline of the family's fortunes. This site carries Book I of the Joly translation, chapters I to XXIV.",
+ "context": "Cao Xueqin began the book in the 1740s and worked on it until he died in 1763 or 1764. He left 80 finished chapters, which circulated in hand copies among friends and were then sold. Cheng Weiyuan and Gao E printed the first 120-chapter edition in 1791 and 1792, adding 40 chapters, and it became the most widely read version. The prose is written in vernacular Chinese, not classical. Its Beijing dialect later helped shape modern standard Chinese. The Gutenberg text here is the first of two books in H. Bencraft Joly's English translation.",
+ "sources": [
+  {
+   "title": "Dream of the Red Chamber (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Dream_of_the_Red_Chamber"
+  },
+  {
+   "title": "Cao Xueqin (Wikipedia)",
+   "url": "https://en.wikipedia.org/wiki/Cao_Xueqin"
+  },
+  {
+   "title": "Hung Lou Meng, Book I (Project Gutenberg)",
+   "url": "https://www.gutenberg.org/ebooks/9603"
+  }
+ ],
+ "people": [
+  {
+   "name": "Cao Xueqin",
+   "role": "author",
+   "note": "Qing dynasty novelist whose family served the Manchu emperors and then declined.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "name": "Gao E",
+   "role": "scribe",
+   "note": "Co-editor of the 1791 and 1792 printed editions that added 40 chapters.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Cheng Weiyuan",
+   "role": "printer",
+   "note": "Co-editor of the first printed editions with Gao E.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "H. Bencraft Joly",
+   "role": "translator",
+   "note": "Translated the novel into English; the front matter of this text names him.",
+   "s": [
+    2
+   ]
+  },
+  {
+   "name": "Jia Baoyu",
+   "role": "character",
+   "note": "The young heir born with a piece of jade in his mouth.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Jia Zheng",
+   "role": "character",
+   "note": "Baoyu's strict Confucian father.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "Lady Wang",
+   "role": "character",
+   "note": "Baoyu's mother, wife of Jia Zheng.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "name": "David Hawkes",
+   "role": "translator",
+   "note": "A later English translator who kept family names in pinyin and translated the servants' names.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "places": [
+  {
+   "name": "Nanjing",
+   "lat": 32.0603,
+   "lon": 118.7969,
+   "note": "Cao's family moved to Jiangning, now Nanjing, when his great-grandfather took the textile commissioner post.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "name": "Beijing",
+   "lat": 39.9042,
+   "lon": 116.4074,
+   "note": "The dialect of the dialogue is Beijing Mandarin, which became the base of modern spoken Chinese.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "timeline": [
+  {
+   "year": 1710,
+   "label": "Cao Xueqin is born, by the date the Wikipedia article gives.",
+   "s": [
+    1
+   ]
+  },
+  {
+   "year": 1740,
+   "label": "Cao begins writing the novel in the 1740s.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1763,
+   "label": "Cao dies in 1763 or 1764 with the first 80 chapters complete.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1791,
+   "label": "Cheng Weiyuan and Gao E print the first 120-chapter edition.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "year": 1792,
+   "label": "A second printed edition follows.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "ideas": [
+  {
+   "title": "Rise and fall of a family",
+   "note": "The plot follows a great clan from its peak of prestige to decline, much like Cao's own family.",
+   "s": [
+    0,
+    1
+   ]
+  },
+  {
+   "title": "Memorial to women",
+   "note": "Cao wrote it as a memorial to the women he knew in his youth: friends, relatives and servants.",
+   "s": [
+    0
+   ]
+  },
+  {
+   "title": "The stone and the red dust",
+   "note": "A frame story of a sentient stone that wants to experience the mortal world frames religious and philosophical questions.",
+   "s": [
+    0
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "part": 1,
+   "chapter": "PREFACE.",
+   "quote": "This translation was suggested not by any pretensions to range myself among the ranks of the body of sinologues, but by the perplexities and difficulties experienced by me as a student in Peking, when, at the completion of the Tzu Erh Chi, I had to plunge in the maze of the Hung Lou Meng",
+   "why": "The translator explains why he made this version."
+  },
+  {
+   "part": 1,
+   "chapter": "CHAPTER I.",
+   "quote": "The Empress Nue Wo, (the goddess of works,) in fashioning blocks of stones, for the repair of the heavens, prepared, at the Ta Huang Hills and Wu Ch'i cave, 36,501 blocks of rough stone, each twelve chang in height, and twenty-four chang square",
+   "why": "The opening myth of the stone."
+  },
+  {
+   "part": 2,
+   "chapter": "CHAPTER IV.",
+   "quote": "while Pao-ch'ai came together, day after day, with Tai yue, Ying-ch'un, her sisters and the other girls, either to read, to play chess, or to do needlework, and the pleasure which they derived was indeed perfect",
+   "why": "The girls spend their days together."
+  },
+  {
+   "part": 3,
+   "chapter": "CHAPTER VII.",
+   "quote": "Madame Wang nodded her head in token of approval. \"The birthday presents,\" continued lady Feng, \"for lady Ling Ngan, the mother of the Earl of Ling Ngan, have already been got together, and whom will you depute to take them over",
+   "why": "Household business among the Jia women."
+  },
+  {
+   "part": 4,
+   "chapter": "CHAPTER XI.",
+   "quote": "Lady Feng, at this juncture moved onward, and after turning round a chain of hillocks, she caught sight of two or three matrons coming along with all speed",
+   "why": "Lady Feng walks through the grounds."
+  },
+  {
+   "part": 5,
+   "chapter": "CHAPTER XVI.",
+   "quote": "have already decided that the whole extent of ground, starting from the East side, borrowing (for the occasion) the flower garden of the Eastern mansion, straight up to the North West, had been measured and found to amount in all to three and a half li; that it will be suitable for the erection of extra accommodation for the visiting party; that they have already commissioned an architect to draw ",
+   "why": "The plan for the garden for the royal consort."
+  },
+  {
+   "part": 6,
+   "chapter": "CHAPTER XIX.",
+   "quote": "but not a long interval elapsed before Pao-yue returned, and gave orders to go and fetch Hsi Jen; and perceiving Ching Ling reclining on the bed perfectly still: \"I presume she's ill,\" Pao-yue felt constrained to inquire, \"or if she isn't ill, she must have lost at cards",
+   "why": "Baoyu among the maids of his rooms."
+  },
+  {
+   "part": 7,
+   "chapter": "CHAPTER XXIII.",
+   "quote": "The company of twelve young bonzes and twelve young Taoist priests had now moved out of the Garden of Broad Vista, and Chia Cheng was meditating upon distributing them to various temples to live apart, when unexpectedly Chia Ch'in's mother, nee Chou,—who resided in the back street, and had been at the time contemplating to pay a visit to Chia Cheng on this side so as to obtain some charge, be it e",
+   "why": "Priests leave the Garden of Broad Vista."
+  }
+ ],
+ "id": "dream"
+}
