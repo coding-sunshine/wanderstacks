@@ -176,6 +176,182 @@
           "tier": "primary",
           "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
         }
+      ],
+      "n04": [
+        {
+          "id": "bust",
+          "yaw": 88,
+          "pitch": -11,
+          "kind": "object",
+          "title": "Bust of a Weimar figure",
+          "body": "After Goethe and Carl August died, the library became a pantheon of Weimar Classicism. Busts of the Weimar poets and thinkers were set up in the hall, and paintings of them were hung. The old princely portraits went to the second gallery.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        },
+        {
+          "id": "shelves",
+          "yaw": -49,
+          "pitch": 14,
+          "kind": "shelf",
+          "title": "Shelving of the main level",
+          "body": "The main level and the first gallery of the Rokokosaal hold 40,000 volumes in all. The arrangement roughly follows the state of the mid-19th century.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ],
+      "n06": [
+        {
+          "id": "gallery",
+          "yaw": 45,
+          "pitch": 38,
+          "kind": "object",
+          "title": "Balcony of the Rokokosaal",
+          "body": "August Friedrich Strassburger fitted out a library hall in late Rococo style inside the Green Palace, built between 1563 and 1565. The library moved in from the Residenzschloss in 1766. It held almost 30,000 volumes by then.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        },
+        {
+          "id": "bust",
+          "yaw": 49,
+          "pitch": -25,
+          "kind": "object",
+          "title": "Bust of a Weimar figure",
+          "body": "After Goethe and Carl August died, the library became a pantheon of Weimar Classicism. Busts of the Weimar poets and thinkers were set up in the hall, and paintings of them were hung. The old princely portraits went to the second gallery.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ],
+      "n07": [
+        {
+          "id": "oversight",
+          "yaw": -47,
+          "pitch": -18,
+          "kind": "shelf",
+          "title": "Books under Goethe and Voigt",
+          "body": "In 1797 Duke Carl August put Goethe and Christian Gottlob Voigt in charge of the library. Two months after they started, they issued a new library order fixing lending days and loan periods. By 1832, the year Goethe died, the collection had reached 80,000 volumes.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        },
+        {
+          "id": "bust",
+          "yaw": -11,
+          "pitch": -16,
+          "kind": "object",
+          "title": "Bust of a Weimar figure",
+          "body": "After Goethe and Carl August died, the library became a pantheon of Weimar Classicism. Busts of the Weimar poets and thinkers were set up in the hall, and paintings of them were hung. The old princely portraits went to the second gallery.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ],
+      "n08": [
+        {
+          "id": "gallery",
+          "yaw": -90,
+          "pitch": 48,
+          "kind": "object",
+          "title": "Balcony of the Rokokosaal",
+          "body": "August Friedrich Strassburger fitted out a library hall in late Rococo style inside the Green Palace, built between 1563 and 1565. The library moved in from the Residenzschloss in 1766. It held almost 30,000 volumes by then.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        },
+        {
+          "id": "shelves",
+          "yaw": -88,
+          "pitch": -4,
+          "kind": "shelf",
+          "title": "Shelving of the main level",
+          "body": "The main level and the first gallery of the Rokokosaal hold 40,000 volumes in all. The arrangement roughly follows the state of the mid-19th century.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ],
+      "n09": [
+        {
+          "id": "catalogue",
+          "yaw": -90,
+          "pitch": 4,
+          "kind": "shelf",
+          "title": "Shelves catalogued by Vulpius",
+          "body": "Christian August Vulpius, Goethe's brother-in-law, worked in the library from 1797 to 1826. Thanks to him, the new books were catalogued and shelved so they could be used.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        },
+        {
+          "id": "bust",
+          "yaw": 132,
+          "pitch": -7,
+          "kind": "object",
+          "title": "Bust of a Weimar figure",
+          "body": "After Goethe and Carl August died, the library became a pantheon of Weimar Classicism. Busts of the Weimar poets and thinkers were set up in the hall, and paintings of them were hung. The old princely portraits went to the second gallery.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ],
+      "n10": [
+        {
+          "id": "bust",
+          "yaw": -124,
+          "pitch": -16,
+          "kind": "object",
+          "title": "Bust of a Weimar figure",
+          "body": "After Goethe and Carl August died, the library became a pantheon of Weimar Classicism. Busts of the Weimar poets and thinkers were set up in the hall, and paintings of them were hung. The old princely portraits went to the second gallery.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        },
+        {
+          "id": "oversight",
+          "yaw": -65,
+          "pitch": 4,
+          "kind": "shelf",
+          "title": "Books under Goethe and Voigt",
+          "body": "In 1797 Duke Carl August put Goethe and Christian Gottlob Voigt in charge of the library. Two months after they started, they issued a new library order fixing lending days and loan periods. By 1832, the year Goethe died, the collection had reached 80,000 volumes.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ],
+      "n11": [
+        {
+          "id": "bust",
+          "yaw": -68,
+          "pitch": -18,
+          "kind": "object",
+          "title": "Bust of a Weimar figure",
+          "body": "After Goethe and Carl August died, the library became a pantheon of Weimar Classicism. Busts of the Weimar poets and thinkers were set up in the hall, and paintings of them were hung. The old princely portraits went to the second gallery.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        },
+        {
+          "id": "shelves",
+          "yaw": -34,
+          "pitch": 14,
+          "kind": "shelf",
+          "title": "Shelving of the main level",
+          "body": "The main level and the first gallery of the Rokokosaal hold 40,000 volumes in all. The arrangement roughly follows the state of the mid-19th century.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
+      ],
+      "n12": [
+        {
+          "id": "bust",
+          "yaw": 86,
+          "pitch": -16,
+          "kind": "object",
+          "title": "Bust of a Weimar figure",
+          "body": "After Goethe and Carl August died, the library became a pantheon of Weimar Classicism. Busts of the Weimar poets and thinkers were set up in the hall, and paintings of them were hung. The old princely portraits went to the second gallery.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        },
+        {
+          "id": "gallery",
+          "yaw": -117,
+          "pitch": 23,
+          "kind": "object",
+          "title": "Balcony of the Rokokosaal",
+          "body": "August Friedrich Strassburger fitted out a library hall in late Rococo style inside the Green Palace, built between 1563 and 1565. The library moved in from the Residenzschloss in 1766. It held almost 30,000 volumes by then.",
+          "tier": "primary",
+          "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/die-bibliothek/geschichte/"
+        }
       ]
     },
     "route": [
@@ -220,6 +396,94 @@
           "kind": "object",
           "title": "Mount Vernon Place United Methodist Church",
           "body": "Thomas Dixon and Charles L. Carson designed the church, completed 12 November 1872. Green serpentine from Falls Road and buff and red sandstone make six stone types. The original steeple design topped the monument, and city officials made the architect lower it.",
+          "tier": "primary",
+          "source": "https://mvp-umc.org/history-%26-architecture"
+        }
+      ],
+      "x02": [
+        {
+          "id": "monument-column",
+          "yaw": 19,
+          "pitch": 31,
+          "kind": "object",
+          "title": "Washington Monument",
+          "body": "The column rises 178 feet 8 inches and is built of white marble from three quarries in Baltimore County. A low square base holds a gallery, and a standing figure of Washington tops the plain column. Visitors can climb 227 steps for a view of the city.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Washington_Monument_(Baltimore)"
+        },
+        {
+          "id": "church-site",
+          "yaw": 28,
+          "pitch": 14,
+          "kind": "object",
+          "title": "Mount Vernon Place United Methodist Church",
+          "body": "The church stands on the site of Charles Howard's mansion. His father-in-law Francis Scott Key, author of The Star Spangled Banner, died there. A plaque on the south outer wall marks his death.",
+          "tier": "primary",
+          "source": "https://mvp-umc.org/history-%26-architecture"
+        }
+      ],
+      "x03": [
+        {
+          "id": "monument-first",
+          "yaw": 30,
+          "pitch": 31,
+          "kind": "object",
+          "title": "Washington Monument",
+          "body": "The Washington Monument was the first major monument to honor George Washington. Robert Mills designed it, and construction began in 1815 on land donated by Colonel John Eager Howard. The masonry was finished by 1829.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Washington_Monument_(Baltimore)"
+        },
+        {
+          "id": "church-stone",
+          "yaw": 37,
+          "pitch": 18,
+          "kind": "object",
+          "title": "Mount Vernon Place United Methodist Church",
+          "body": "Planned as a \"Cathedral of Methodism\", the church cost $400,000 in 1872, including land, building and furnishings. Its colour comes from rare green serpentine metabasalt from the Falls Road area. The stone wears poorly, so repairs came in 1932 and 1978.",
+          "tier": "primary",
+          "source": "https://mvp-umc.org/history-%26-architecture"
+        }
+      ],
+      "x04": [
+        {
+          "id": "monument-column",
+          "yaw": -90,
+          "pitch": 45,
+          "kind": "object",
+          "title": "Washington Monument",
+          "body": "The column rises 178 feet 8 inches and is built of white marble from three quarries in Baltimore County. A low square base holds a gallery, and a standing figure of Washington tops the plain column. Visitors can climb 227 steps for a view of the city.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Washington_Monument_(Baltimore)"
+        },
+        {
+          "id": "church-stone",
+          "yaw": -34,
+          "pitch": 27,
+          "kind": "object",
+          "title": "Mount Vernon Place United Methodist Church",
+          "body": "Planned as a \"Cathedral of Methodism\", the church cost $400,000 in 1872, including land, building and furnishings. Its colour comes from rare green serpentine metabasalt from the Falls Road area. The stone wears poorly, so repairs came in 1932 and 1978.",
+          "tier": "primary",
+          "source": "https://mvp-umc.org/history-%26-architecture"
+        }
+      ],
+      "x05": [
+        {
+          "id": "monument-first",
+          "yaw": 17,
+          "pitch": 31,
+          "kind": "object",
+          "title": "Washington Monument",
+          "body": "The Washington Monument was the first major monument to honor George Washington. Robert Mills designed it, and construction began in 1815 on land donated by Colonel John Eager Howard. The masonry was finished by 1829.",
+          "tier": "wikipedia",
+          "source": "https://en.wikipedia.org/wiki/Washington_Monument_(Baltimore)"
+        },
+        {
+          "id": "church-site",
+          "yaw": 26,
+          "pitch": 18,
+          "kind": "object",
+          "title": "Mount Vernon Place United Methodist Church",
+          "body": "The church stands on the site of Charles Howard's mansion. His father-in-law Francis Scott Key, author of The Star Spangled Banner, died there. A plaque on the south outer wall marks his death.",
           "tier": "primary",
           "source": "https://mvp-umc.org/history-%26-architecture"
         }

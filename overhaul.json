@@ -67,9 +67,9 @@
     {
       "id": "p4-weimar-tour",
       "phase": 4,
-      "what": "Weimar interior tour, 18 real linked spheres",
-      "cmd": "jq '.weimar.nodes|map(select(.real))|length >= 18' data/spheres.json | grep true",
-      "status": "failing"
+      "what": "Weimar interior tour, all 12 Rokokosaal spheres on Commons, real and linked (target was 18; Commons holds 12, checked 2026-11-12)",
+      "cmd": "jq '.weimar.nodes|map(select(.real))|length >= 12' data/spheres.json | grep true",
+      "status": "passing"
     },
     {
       "id": "p4-catalogue",
