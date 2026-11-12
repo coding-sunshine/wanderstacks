@@ -1,0 +1,86 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "vikramashila",
+      "field": "notable",
+      "value": "The Bihar tourism corporation says Dharmapala founded Vikramashila in response to a supposed decline in scholarship at Nalanda.",
+      "source": "https://bstdc.bihar.gov.in/vikramshila.htm",
+      "tier": "primary",
+      "quote": "in response to a supposed decline in the quality of scholarship at Nalanda",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://bstdc.bihar.gov.in/vikramshila.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'in response to a supposed decline in the quality of scholarship at Nalanda'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vikramashila",
+      "field": "notable",
+      "value": "Atisha is sometimes listed as a notable abbot of Vikramashila.",
+      "source": "https://bstdc.bihar.gov.in/vikramshila.htm",
+      "tier": "primary",
+      "quote": "is sometimes listed as a notable abbot",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://bstdc.bihar.gov.in/vikramshila.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'is sometimes listed as a notable abbot'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vikramashila",
+      "field": "notable",
+      "value": "The Archaeological Survey of India says the library building was cooled by water from the adjoining reservoir, run through vents in its back wall. It suggests this was meant to protect fragile manuscripts.",
+      "source": "https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp",
+      "tier": "primary",
+      "quote": "It was air-conditioned by cooled water of the adjoining reservoir through a range of vents in the back wall.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'air-conditioned by cooled water of the adjoining reservoir'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vikramashila",
+      "field": "notable",
+      "value": "Vikramashila is known mainly from Tibetan sources, above all the writings of the monk historian Taranatha, not from Indian chronicles.",
+      "source": "https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp",
+      "tier": "primary",
+      "quote": "It is known to us mainly through Tibetan sources specially the writings of Taranath",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'known to us mainly through Tibetan sources specially the writings of Taranath'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vikramashila",
+      "field": "notable",
+      "value": "The Survey puts the university at more than a hundred teachers and about a thousand students.",
+      "source": "https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp",
+      "tier": "primary",
+      "quote": "more than hundred teachers and about one thousand students",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'more than hundred teachers and about one thousand students'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vikramashila",
+      "field": "notable",
+      "value": "Excavators found brick-arched underground chambers beneath some monk cells. The Survey thinks they were probably for confined meditation.",
+      "source": "https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp",
+      "tier": "primary",
+      "quote": "probably meant for confined meditation by the monks",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'probably meant for confined meditation by the monks'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "vikramashila",
+      "kind": "excavated",
+      "year": 1972,
+      "earliest": 1960,
+      "latest": 1982,
+      "label": "Patna University dug the site in 1960-69 and the Archaeological Survey of India in 1972-82.",
+      "source": "https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp",
+      "tier": "primary",
+      "quote": "conducted initially by Patna University (1960-69) and subsequently by Archaeological Survey of India (1972-82)",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2016/http://asi.nic.in/asi_monu_tktd_bihar_vikramshila.asp' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'conducted initially by Patna University (1960-69) and subsequently by Archaeological Survey of India (1972-82)'"
+    }
+  ]
+}

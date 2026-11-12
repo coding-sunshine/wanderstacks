@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "dunhuang",
+      "field": "notable",
+      "value": "After the cave was found, Wang Yuanlu fitted a locked door to the entrance of Cave 17 and kept the key, so nobody could get in without him.",
+      "source": "https://idpuk.blogspot.com/2023/06/shaping-stein-collections-dunhuang.html",
+      "tier": "secondary",
+      "quote": "put a locked door on the entrance of Cave 17 and kept the key",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://idpuk.blogspot.com/2023/06/shaping-stein-collections-dunhuang.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'put a locked door on the entrance of Cave 17 and kept the key'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "dunhuang",
+      "field": "notable",
+      "value": "The British Library's International Dunhuang Project says Wang emptied Cave 17 and put the bundles back, so he alone ever saw the whole of its contents.",
+      "source": "https://idpuk.blogspot.com/2023/06/shaping-stein-collections-dunhuang.html",
+      "tier": "secondary",
+      "quote": "he is the only person to ever have an overview of the Cave 17",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://idpuk.blogspot.com/2023/06/shaping-stein-collections-dunhuang.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'he is the only person to ever have an overview of the Cave 17'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "dunhuang",
+      "field": "notable",
+      "value": "The Diamond Sutra of 868 is seven sheets of paper glued into a scroll about 16 feet long.",
+      "source": "https://www.lindahall.org/about/news/scientist-of-the-day/the-diamond-sutra/",
+      "tier": "secondary",
+      "quote": "printed on 7 sheets of paper that were glued up into a scroll about 16 feet long",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.lindahall.org/about/news/scientist-of-the-day/the-diamond-sutra/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'printed on 7 sheets of paper that were glued up into a scroll about 16 feet long'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "dunhuang",
+      "field": "notable",
+      "value": "The Diamond Sutra's colophon says it was made for universal distribution on behalf of the donor's two parents.",
+      "source": "https://www.lindahall.org/about/news/scientist-of-the-day/the-diamond-sutra/",
+      "tier": "secondary",
+      "quote": "for universal distribution on behalf of his two parents",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.lindahall.org/about/news/scientist-of-the-day/the-diamond-sutra/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'for universal distribution on behalf of his two parents'"
+    }
+  ],
+  "events": []
+}

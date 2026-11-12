@@ -1,0 +1,64 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "khudabakhsh",
+      "field": "notable",
+      "value": "Some of the library's manuscripts are written on deer-skin and cloth as well as paper and palm leaf.",
+      "source": "https://culture.gov.in/khuda-baksh-oriental-public-library-patna",
+      "tier": "primary",
+      "quote": "written on paper, palm-leaf, deer-skin, cloth and sundry materials",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://culture.gov.in/khuda-baksh-oriental-public-library-patna' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'written on paper, palm-leaf, deer-skin, cloth and sundry materials'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "khudabakhsh",
+      "field": "notable",
+      "value": "Khuda Bakhsh gave his whole personal collection to the people of Patna by a deed of trust.",
+      "source": "https://culture.gov.in/khuda-baksh-oriental-public-library-patna",
+      "tier": "primary",
+      "quote": "donated his entire personal collection to the people of Patna by a deed of trust",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://culture.gov.in/khuda-baksh-oriental-public-library-patna' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'donated his entire personal collection to the people of Patna by a deed of trust'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "khudabakhsh",
+      "field": "notable",
+      "value": "Gandhi visited in 1925 and wrote that the Quran and Shahnama manuscripts were an eternal feast for the eye.",
+      "source": "https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover",
+      "tier": "secondary",
+      "quote": "The magnificent finish and the colouring about the decoration of Quran and Shahnama are an eternal feast for the eye",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The magnificent finish and the colouring about the decoration of Quran and Shahnama are an eternal feast for the eye'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "khudabakhsh",
+      "field": "notable",
+      "value": "The library building was Khuda Bakhsh's own residence, which he donated with his manuscript collection.",
+      "source": "https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover",
+      "tier": "secondary",
+      "quote": "the library’s building used to be Khuda Bakhsh’s residence",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'building used to be Khuda Bakhsh'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "khudabakhsh",
+      "kind": "built",
+      "year": 1905,
+      "earliest": 1905,
+      "latest": 1905,
+      "label": "The Curzon Reading Room was built in 1905, after Lord Curzon visited in 1903 and gave funds to expand the library.",
+      "source": "https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover",
+      "tier": "secondary",
+      "quote": "built in 1905 and named after the British viceroy to India, Lord Curzon, who visited the institution in 1903 and gave it funds to expand",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.aljazeera.com/news/2021/4/12/anger-over-plan-to-raze-part-of-iconic-indian-library-for-flyover' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'built in 1905 and named after the British viceroy to India, Lord Curzon, who visited the institution in 1903 and gave it funds to expand'"
+    }
+  ]
+}

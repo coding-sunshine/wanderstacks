@@ -1,0 +1,86 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "baghdad",
+      "field": "notable",
+      "value": "According to Ibn Khaldun, most of the books were thrown into the Tigris in 1258. Legend adds that the river ran black with ink for days.",
+      "source": "https://muslimheritage.com/fate-of-manuscripts-iraq-elsewhere/",
+      "tier": "secondary",
+      "quote": "according to Ibn Khaldūn, most of their contents were thrown into the river Tigris [7] . Legend has it that the river flowed black with ink for days afterwards",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://muslimheritage.com/fate-of-manuscripts-iraq-elsewhere/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Legend has it that the river flowed black with ink for days afterwards'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "baghdad",
+      "field": "notable",
+      "value": "Not every Baghdad library fell in 1258. The Nizamiya and Mustansiriya libraries were not destroyed and stayed in use much later.",
+      "source": "https://muslimheritage.com/fate-of-manuscripts-iraq-elsewhere/",
+      "tier": "secondary",
+      "quote": "were not destroyed and continued to be used until much later",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://muslimheritage.com/fate-of-manuscripts-iraq-elsewhere/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'were not destroyed and continued to be used until much later'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "baghdad",
+      "field": "notable",
+      "value": "It is reported that the caliph paid the translator Hunayn the weight of his translated books in gold. This is a report, not a proven fact.",
+      "source": "https://muslimheritage.com/abbasids-house-wisdom-baghdad/",
+      "tier": "secondary",
+      "quote": "It is reported that the Caliph used to give him the equivalent weight in gold to that of the books he had translated into Arabic",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://muslimheritage.com/abbasids-house-wisdom-baghdad/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'used to give him the equivalent weight in gold'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "baghdad",
+      "field": "notable",
+      "value": "Baghdad lost a great library long before the Mongols. In 1059 the Seljuks burnt and pillaged the House of Knowledge founded by Sabur ibn Ardashir.",
+      "source": "https://muslimheritage.com/fate-of-manuscripts-iraq-elsewhere/",
+      "tier": "secondary",
+      "quote": "the conquering Seljuks burnt and pillaged the illustrious",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://muslimheritage.com/fate-of-manuscripts-iraq-elsewhere/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the conquering Seljuks burnt and pillaged the illustrious'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "baghdad",
+      "field": "notable",
+      "value": "Hunayn ibn Ishaq is said to have chosen the thickest paper for his translations and told his scribes to use big letters and wide margins.",
+      "source": "https://muslimheritage.com/abbasids-house-wisdom-baghdad/",
+      "tier": "secondary",
+      "quote": "Hunayn used to choose for his translated books the thickest of the paper",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://muslimheritage.com/abbasids-house-wisdom-baghdad/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Hunayn used to choose for his translated books the thickest of the paper'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "baghdad",
+      "field": "notable",
+      "value": "Al-Ma'mun is said to have asked the Byzantine emperor for permission to send scholars to translate books held in the empire. The emperor agreed.",
+      "source": "https://muslimheritage.com/abbasids-house-wisdom-baghdad/",
+      "tier": "secondary",
+      "quote": "requested the Byzantine Emperor at the time for permission to send some of his scientists",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://muslimheritage.com/abbasids-house-wisdom-baghdad/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'requested the Byzantine Emperor at the time for permission to send some of his scientists'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "baghdad",
+      "kind": "destroyed",
+      "year": 1059,
+      "earliest": 1059,
+      "latest": 1059,
+      "label": "The Seljuks burnt the House of Knowledge in Baghdad, with holdings put at 10,000 volumes.",
+      "source": "https://muslimheritage.com/fate-of-manuscripts-iraq-elsewhere/",
+      "tier": "secondary",
+      "quote": "destroying or dispersing its entire holdings estimated at 10,000 volumes",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://muslimheritage.com/fate-of-manuscripts-iraq-elsewhere/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'destroying or dispersing its entire holdings estimated at 10,000 volumes'"
+    }
+  ]
+}

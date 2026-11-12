@@ -1,0 +1,71 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "connemara",
+      "field": "notable",
+      "value": "The library once had a 200-foot tower, the tallest structure in Madras at the time. It was pulled down in March 1897 because it was unsafe.",
+      "source": "https://www.chennaimuseum.org/draft/history/history.htm",
+      "tier": "primary",
+      "quote": "The library had an imposing tower 200 feet high, the highest in Madras at that time. But in March 1897 AD, the tower was demolished",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.chennaimuseum.org/draft/history/history.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The library had an imposing tower 200 feet high, the highest in Madras at that time'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "connemara",
+      "field": "notable",
+      "value": "The site was once the Pantheon, also known as the Public Rooms or Assembly Rooms, where the elite of the city met. In 1821 it was sold to E.S. Moorat, an Armenian merchant, who sold it back to the Government in 1830 for Rs 28,000.",
+      "source": "https://www.chennaimuseum.org/draft/history/history.htm",
+      "tier": "primary",
+      "quote": "sold the main house and central garden space to E.S. Moorat, a wealthy Armenian merchant, who in turn, sold it back to the Government in 1830 AD, for Rs.28,000",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.chennaimuseum.org/draft/history/history.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'sold it back to the Government in 1830 AD, for Rs.28,000'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "connemara",
+      "field": "notable",
+      "value": "Connemara became a UNESCO Information Centre in 1955 and a depository for Asian Development Bank publications in 1992.",
+      "source": "https://culture.gov.in/offering/grantee-bodies/connemara-public-library-cpl-chennai",
+      "tier": "primary",
+      "quote": "It also became a UNESCO Information Centre in 1955 and a depository for Asian Development Bank publications in 1992.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://culture.gov.in/offering/grantee-bodies/connemara-public-library-cpl-chennai' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'It also became a UNESCO Information Centre in 1955 and a depository for Asian Development Bank publications in 1992.'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "connemara",
+      "field": "notable",
+      "value": "A former employee told The Hindu the old building has 140 wooden chairs of the period with animals carved on the armrests.",
+      "source": "https://www.thehindu.com/society/this-world-book-day-walk-the-alleys-of-centuries-old-connemara-public-library/article23645555.ece",
+      "tier": "secondary",
+      "quote": "the library has 140 wooden chairs from that era that have animals carved on the armrest",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.thehindu.com/society/this-world-book-day-walk-the-alleys-of-centuries-old-connemara-public-library/article23645555.ece' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the library has 140 wooden chairs from that era that have animals carved on the armrest'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "connemara",
+      "field": "notable",
+      "value": "Every leaf of the rare books in the old building is chiffon-laminated to protect it from age.",
+      "source": "https://www.thehindu.com/society/this-world-book-day-walk-the-alleys-of-centuries-old-connemara-public-library/article23645555.ece",
+      "tier": "secondary",
+      "quote": "Every leaf of these rare books is chiffon-laminated to protect them from the ravages of time",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.thehindu.com/society/this-world-book-day-walk-the-alleys-of-centuries-old-connemara-public-library/article23645555.ece' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Every leaf of these rare books is chiffon-laminated'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "connemara",
+      "field": "notable",
+      "value": "The museum next door started the first zoo in Madras in 1855, and a year later it held over 300 animals, birds and reptiles.",
+      "source": "http://www.madrasmusings.com/Vol%2020%20No%203/museum-library-and-theatre.html",
+      "tier": "secondary",
+      "quote": "Balfour also established the first zoo in Madras in 1855 in the Museum grounds and a year later it had over 300 animals, birds and reptiles",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'http://www.madrasmusings.com/Vol%2020%20No%203/museum-library-and-theatre.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Balfour also established the first zoo in Madras in 1855 in the Museum grounds'"
+    }
+  ],
+  "events": []
+}

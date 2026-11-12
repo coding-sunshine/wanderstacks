@@ -1,0 +1,71 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "longroom",
+      "field": "notable",
+      "value": "In 1689 James II's troops used Trinity College as a barracks and prison, but the library came through largely unharmed.",
+      "source": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php",
+      "tier": "primary",
+      "quote": "the troops of James II had occupied the College as a barracks and prison. A substantial amount of vandalism was inflicted on many of the buildings, but the Library escaped relatively unscathed",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the Library escaped relatively unscathed'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "longroom",
+      "field": "notable",
+      "value": "The sandstone on the upper floors of the new library crumbled within decades and was later replaced with granite.",
+      "source": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php",
+      "tier": "primary",
+      "quote": "The original pale sandstone masonry on the upper floors of the new Library crumbled within decades, and was eventually replaced with granite",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'crumbled within decades'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "longroom",
+      "field": "notable",
+      "value": "The alcoves once held benches and sloping desks for readers. In 1817 the seats and tables were removed to make room for more shelves.",
+      "source": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php",
+      "tier": "primary",
+      "quote": "Extra space was gained by removing the seats and reading tables in 1817. Shelves were built in their place",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'removing the seats and reading tables in 1817'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "longroom",
+      "field": "notable",
+      "value": "Henry George Quin left 110 books with a bookcase for them and orders that their bindings were never to be altered.",
+      "source": "https://www.tcd.ie/library/exhibitions/choicebooks/collections.php",
+      "tier": "primary",
+      "quote": "bequeathed to Trinity College Library 110 books, a book‐case in which to keep them, and instructions that the bindings were never to be altered",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.tcd.ie/library/exhibitions/choicebooks/collections.php' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'instructions that the bindings were never to be altered'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "longroom",
+      "field": "notable",
+      "value": "The Book of Kells and the Book of Durrow reached the library as a gift from Henry Jones, a pupil of Archbishop Ussher.",
+      "source": "https://www.tcd.ie/library/exhibitions/choicebooks/collections.php",
+      "tier": "primary",
+      "quote": "the Book of Kells and the Book of Durrow, were presented by Ussher’s pupil, Henry Jones",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.tcd.ie/library/exhibitions/choicebooks/collections.php' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Book of Kells and the Book of Durrow, were presented by'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "longroom",
+      "field": "notable",
+      "value": "In 1802 around 20,000 books and manuscripts of Hendrik Fagel, chief minister of the Netherlands, were bought for the college.",
+      "source": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php",
+      "tier": "primary",
+      "quote": "In 1802 around 20,000 books and manuscripts formerly belonging to bibliophile Hendrik Fagel, chief minister of the Netherlands, were purchased for the College",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'belonging to bibliophile Hendrik Fagel'"
+    }
+  ],
+  "events": []
+}

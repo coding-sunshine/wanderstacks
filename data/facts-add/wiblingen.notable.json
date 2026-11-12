@@ -1,0 +1,38 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "wiblingen",
+      "field": "notable",
+      "value": "The monastery's own account says the ghost of Father Johannes, a forgetful 18th-century priest, comes to the library hall every night to look for a book holding his confession notes. It presents this as a legend.",
+      "source": "https://www.kloster-wiblingen.de/wissenswert-amuesant/anekdoten/das-buch-mit-dem-zettel",
+      "tier": "primary",
+      "quote": "Seitdem, so erzählt man sich, muss Pater Johannes jede Nacht in den Bibliothekssaal kommen, um nach dem Buch mit dem Notizzettel zu suchen",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.kloster-wiblingen.de/wissenswert-amuesant/anekdoten/das-buch-mit-dem-zettel' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'muss Pater Johannes jede Nacht in den Bibliothekssaal kommen'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "wiblingen",
+      "field": "notable",
+      "value": "After secularisation the monastery briefly became a ducal residence, then served as an infantry barracks known as the Schlosskaserne.",
+      "source": "https://www.kloster-wiblingen.de/wissenswert-amuesant/meilensteine",
+      "tier": "primary",
+      "quote": "Dann machte Herzog Heinrich von Württemberg Wiblingen für kurze Zeit zum Schloss. Später wurde Wiblingen dauerhaft als Infanteriekaserne genutzt",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.kloster-wiblingen.de/wissenswert-amuesant/meilensteine' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'dauerhaft als Infanteriekaserne genutzt'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "wiblingen",
+      "field": "notable",
+      "value": "At the centre of the 1744 ceiling fresco is a woman ringed by angels, who stands for divine wisdom ruling over all.",
+      "source": "https://www.kloster-wiblingen.de/erlebnis-kloster-garten/kloster-garten/gebaeude/bibliothekssaal",
+      "tier": "primary",
+      "quote": "Im Mittelpunkt des Gemäldes steht eine von Engeln umgebene Frauengestalt: die göttliche Weisheit, die über allem herrscht.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.kloster-wiblingen.de/erlebnis-kloster-garten/kloster-garten/gebaeude/bibliothekssaal' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Im Mittelpunkt des Gemäldes steht eine von Engeln umgebene Frauengestalt'"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,38 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "stegen",
+      "field": "notable",
+      "value": "The library keeps scientific instruments, ethnographic objects and works of art from the old Sainte-Geneviève abbey, including pieces from its cabinet of curiosities.",
+      "source": "https://www.bsg.univ-paris3.fr/?surl=presentation",
+      "tier": "primary",
+      "quote": "une collection d’instruments scientifiques, d’objets ethnographiques et d’œuvres d’art provenant de l’abbaye Sainte-Geneviève, notamment de son cabinet de curiosités",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bsg.univ-paris3.fr/?surl=presentation' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'notamment de son cabinet de curiosit'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "stegen",
+      "field": "notable",
+      "value": "The reserve holds a Henri Labrouste collection of the drawings and texts behind the building of the library, dated 1843 to 1850.",
+      "source": "https://www.bsg.univ-paris3.fr/?surl=fonds_remarquables",
+      "tier": "primary",
+      "quote": "Fonds Henri Labrouste Sources graphiques et textuelles de la construction de la bibliothèque Sainte-Geneviève (1843-1850)",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bsg.univ-paris3.fr/?surl=fonds_remarquables' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Sources graphiques et textuelles de la construction de la biblioth'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "stegen",
+      "field": "notable",
+      "value": "The Guénebault collection holds about 28,000 prints from the 17th to the 19th century.",
+      "source": "https://www.bsg.univ-paris3.fr/?surl=fonds_remarquables",
+      "tier": "primary",
+      "quote": "Collection Guénebault Collection d’environ 28 000 estampes du 17 e au 19 e s.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bsg.univ-paris3.fr/?surl=fonds_remarquables' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '28 000 estampes du 17 e au 19 e s'"
+    }
+  ],
+  "events": []
+}

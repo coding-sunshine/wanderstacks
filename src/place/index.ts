@@ -10,7 +10,7 @@ type About = {
 
 const FIELD: Record<string, string> = {
   dims: 'Size', status_note: 'Now', remains_today: 'Remains today', recon: 'Reconstruction',
-  collection: 'Treasures', volumes: 'Volumes', built: 'Built', architect: 'Architect',
+  collection: 'Treasures', volumes: 'Volumes', built: 'Built', architect: 'Architect', notable: 'Worth knowing',
 }
 const label = (f: string) => FIELD[f] ?? f.replace(/_/g, ' ')
 const host = (u: string) => { try { return new URL(u).hostname.replace(/^www\./, '') } catch { return u } }

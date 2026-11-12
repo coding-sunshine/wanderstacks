@@ -1,0 +1,75 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "klementinum",
+      "field": "notable",
+      "value": "The Meridian Hall in the Astronomical Tower was once a giant camera obscura, where a taut string was used to fix high noon.",
+      "source": "https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/",
+      "tier": "secondary",
+      "quote": "This unique room was formerly used as a giant camera obscura, where with the help of a taut string high noon was determined.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'giant camera obscura, where with the help of a taut string high noon was determined'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "klementinum",
+      "field": "notable",
+      "value": "From 1842 to 1928 the announcement of noon for the people of Prague was made from the Clementinum tower.",
+      "source": "https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/",
+      "tier": "secondary",
+      "quote": "For more than eighty years (1842-1928), it was also from here that the announcement of noon",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'For more than eighty years (1842-1928)'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "klementinum",
+      "field": "notable",
+      "value": "The library has Kepler's writings carrying his handwritten dedication to friends, among them the dean and other Prague university professors.",
+      "source": "https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/",
+      "tier": "secondary",
+      "quote": "Among the 27,000 old printed works are Kepler's writings with his handwritten dedication to his friends, the dean and other Prague university professors.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'writings with his handwritten dedication to his friends'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "klementinum",
+      "field": "notable",
+      "value": "The Jesuit college was built on a plot that had held 32 houses, seven courtyards, three churches, a monastery and several gardens.",
+      "source": "https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/",
+      "tier": "secondary",
+      "quote": "built on a large plot of land where 32 houses, seven courtyards, three churches, a monastery and several gardens had previously stood",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '32 houses, seven courtyards, three churches, a monastery and several gardens'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "klementinum",
+      "field": "notable",
+      "value": "Regular weather measurements began at the Clementinum in 1775. The page calls it among the oldest continuous meteorological observations in Europe.",
+      "source": "https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/",
+      "tier": "secondary",
+      "quote": "In 1775, meteorological data began to be collected here regularly making Prague a place of the oldest continuous meteorological observations in Europe.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'meteorological data began to be collected here regularly'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "klementinum",
+      "kind": "founded",
+      "year": 1556,
+      "earliest": 1556,
+      "latest": 1556,
+      "label": "The Jesuits founded the Clementinum.",
+      "source": "https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/",
+      "tier": "secondary",
+      "quote": "The Jesuits founded Clementinum in 1556",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://prague.eu/en/objevujte/the-clementinum-astronomical-tower-and-baroque-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The Jesuits founded Clementinum in 1556'"
+    }
+  ]
+}

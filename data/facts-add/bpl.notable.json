@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "bpl",
+      "field": "notable",
+      "value": "Frederick MacMonnies's Bacchante, placed by Charles McKim in the library's courtyard fountain, was attacked by a small powerful group as vice-ridden and treason to virtue. Most Bostonians supported it, according to the Cleveland Museum of Art.",
+      "source": "https://www.clevelandart.org/print/art/1919.589",
+      "tier": "secondary",
+      "quote": "treason to purity and sobriety and virtue",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.clevelandart.org/print/art/1919.589' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'treason to purity and sobriety and virtue'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bpl",
+      "field": "notable",
+      "value": "The Central Library houses the personal library of President John Adams, according to Boston University.",
+      "source": "https://www.bu.edu/articles/2017/boston-public-library-art-architecture-tours/",
+      "tier": "secondary",
+      "quote": "personal library of President John Adams",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bu.edu/articles/2017/boston-public-library-art-architecture-tours/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'personal library of President John Adams'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bpl",
+      "field": "notable",
+      "value": "Edwin Austin Abbey's Holy Grail cycle in the McKim Building's Abbey Room has 15 panels showing 150 life-sized figures.",
+      "source": "https://www.bu.edu/articles/2017/boston-public-library-art-architecture-tours/",
+      "tier": "secondary",
+      "quote": "15 panels depicting 150 life-sized figures",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bu.edu/articles/2017/boston-public-library-art-architecture-tours/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '15 panels depicting 150 life-sized figures'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bpl",
+      "field": "notable",
+      "value": "John Singer Sargent's religion murals were installed in stages between 1895 and 1919.",
+      "source": "https://www.bu.edu/articles/2017/boston-public-library-art-architecture-tours/",
+      "tier": "secondary",
+      "quote": "Installed between 1895 and 1919",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bu.edu/articles/2017/boston-public-library-art-architecture-tours/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Installed between 1895 and 1919'"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "prunksaal",
+      "field": "notable",
+      "value": "Prince Eugene of Savoy's library of 15,000 volumes stands in the middle oval, bound in red, blue and yellow Morocco leather.",
+      "source": "https://www.onb.ac.at/en/museums/state-hall/about-the-state-hall",
+      "tier": "primary",
+      "quote": "the library of Prince Eugene in the middle oval, containing 15,000 volumes bound in red, blue and yellow Morocco leather",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.onb.ac.at/en/museums/state-hall/about-the-state-hall' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '15,000 volumes bound in red, blue and yellow Morocco leather'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "prunksaal",
+      "field": "notable",
+      "value": "The marble statue of Emperor Charles VI at the centre shows him as Hercules Musarum. It dates from 1735 and was allegedly made by court sculptor Antonio Corradini.",
+      "source": "https://www.onb.ac.at/en/museums/state-hall/about-the-state-hall/the-state-halls-statues",
+      "tier": "primary",
+      "quote": "It dates back to 1735 and was allegedly crafted by Imperial Court sculptor Antonio Corradini",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.onb.ac.at/en/museums/state-hall/about-the-state-hall/the-state-halls-statues' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'It dates back to 1735 and was allegedly crafted by Imperial Court sculptor Antonio Corradini'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "prunksaal",
+      "field": "notable",
+      "value": "During the restoration that ran to the end of 2022 the books were covered, then taken from the shelves one by one and cleaned once the work was finished.",
+      "source": "https://www.onb.ac.at/en/museums/state-hall/about-the-state-hall/restoration-of-the-state-hall",
+      "tier": "primary",
+      "quote": "were professionally covered during the restoration and were removed from the shelves one by one and cleaned after the work was completed",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.onb.ac.at/en/museums/state-hall/about-the-state-hall/restoration-of-the-state-hall' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'removed from the shelves one by one and cleaned after the work was completed'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "prunksaal",
+      "field": "notable",
+      "value": "The hall holds 128 bookcases and shelves, 48 windows, 20 doors, 17 statues and 12 busts.",
+      "source": "https://www.onb.ac.at/en/museums/state-hall/about-the-state-hall/restoration-of-the-state-hall",
+      "tier": "primary",
+      "quote": "128 bookcases and shelves 48 windows 20 doors and 28 tables/display cabinets 17 statues and 12 busts",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.onb.ac.at/en/museums/state-hall/about-the-state-hall/restoration-of-the-state-hall' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '128 bookcases and shelves 48 windows 20 doors'"
+    }
+  ],
+  "events": []
+}

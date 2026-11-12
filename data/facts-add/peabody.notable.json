@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "peabody",
+      "field": "notable",
+      "value": "The Baltimore Sun reported in 2016 that the library's books were getting their first proper cleaning in 50 to 60 years.",
+      "source": "https://www.baltimoresun.com/entertainment/arts/bs-ae-peabody-library-cleaning-20160115-story.html",
+      "tier": "secondary",
+      "quote": "proper cleaning in 50 to 60 years",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.baltimoresun.com/entertainment/arts/bs-ae-peabody-library-cleaning-20160115-story.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'proper cleaning in 50 to 60 years'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "peabody",
+      "field": "notable",
+      "value": "The original glass skylight was at some point replaced with plastic panels, which later failed.",
+      "source": "https://traditionalbuilding.com/projects/george-peabody-library-skylight",
+      "tier": "secondary",
+      "quote": "original glass skylight had been replaced at some point with plastic",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://traditionalbuilding.com/projects/george-peabody-library-skylight' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'original glass skylight had been replaced at some point with plastic'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "peabody",
+      "field": "notable",
+      "value": "The skylight measures 25 by 75 feet, a total of 1,875 square feet.",
+      "source": "https://traditionalbuilding.com/projects/george-peabody-library-skylight",
+      "tier": "secondary",
+      "quote": "25 x 75 feet for a total of 1,875 square feet",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://traditionalbuilding.com/projects/george-peabody-library-skylight' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '25 x 75 feet for a total of 1,875 square feet'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "peabody",
+      "field": "notable",
+      "value": "The original iron trusses above the atrium were made at the Phoenix Iron Works, while Bartlett-Robbins and Company fabricated the neo-classical cast-iron designs.",
+      "source": "https://traditionalbuilding.com/projects/george-peabody-library-skylight",
+      "tier": "secondary",
+      "quote": "original iron trusses were made at the Phoenix Iron Works",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://traditionalbuilding.com/projects/george-peabody-library-skylight' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'original iron trusses were made at the Phoenix Iron Works'"
+    }
+  ],
+  "events": []
+}

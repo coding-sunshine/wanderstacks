@@ -1,6 +1,6 @@
 # WorldLibs open data
 
-Generated 2026-11-09T07:10:23.052Z. Page: https://worldlibs.pages.dev/data/
+Generated 2026-11-11T17:59:22Z. Page: https://worldlibs.pages.dev/data/
 
 - libraries.json: one row per library. id, n (name), p (place), lat, lon, k (kind), y/yl (year, label), tier (mvp or lost), wd (Wikidata id).
 - facts.json: one row per sourced claim. id (anchors the claim on its library page), lib, field, value, source (URL), tier, quote (the source's words, when held).

@@ -1,0 +1,70 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "admont",
+      "field": "notable",
+      "value": "Josef Stammel carved the lime-wood sculptures of the hall. The best known group is The Four Last Things: Death, Judgement, Heaven and Hell.",
+      "source": "https://stiftadmont.at/en/about-the-abbey-library/",
+      "tier": "primary",
+      "quote": "Unique sculptures made from lime wood Josef Stammel, the sculptor of Admont Abbey, created the imposing sculptures in the Ceremonial Hall.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/en/about-the-abbey-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'sculptures made from lime wood Josef Stammel'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "admont",
+      "field": "notable",
+      "value": "The hall was designed for the Enlightenment, with the stated aim of filling the room with light as well as the mind.",
+      "source": "https://stiftadmont.at/en/about-the-abbey-library/",
+      "tier": "primary",
+      "quote": "the hall reflects the spirit of the Enlightenment - a room that was deliberately designed with light and space",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/en/about-the-abbey-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'deliberately designed with light and space'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "admont",
+      "kind": "damaged",
+      "year": 1865,
+      "earliest": 1865,
+      "latest": 1865,
+      "label": "A fire destroys large parts of the abbey but spares the library.",
+      "source": "https://stiftadmont.at/en/timeline-2/",
+      "tier": "primary",
+      "quote": "In 1865, a major fire destroyed large parts of the monastery, with the exception of the library.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/en/timeline-2/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'with the exception of the library'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "admont",
+      "kind": "closed",
+      "year": 1939,
+      "earliest": 1939,
+      "latest": 1939,
+      "label": "The Nazi regime confiscates the abbey's assets and the monks are forced to leave.",
+      "source": "https://stiftadmont.at/en/timeline-2/",
+      "tier": "primary",
+      "quote": "The Nazi regime confiscates all the assets of Admont Abbey; the monks are forced to leave the monastery.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/en/timeline-2/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The Nazi regime confiscates all the assets of Admont Abbey'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "admont",
+      "kind": "reopened",
+      "year": 1945,
+      "earliest": 1945,
+      "latest": 1945,
+      "label": "The monks are allowed to return to the abbey on 17 October.",
+      "source": "https://stiftadmont.at/en/timeline-2/",
+      "tier": "primary",
+      "quote": "the monks are allowed to return back to the monastery on 17 October",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftadmont.at/en/timeline-2/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the monks are allowed to return back to the monastery on 17 October'"
+    }
+  ]
+}

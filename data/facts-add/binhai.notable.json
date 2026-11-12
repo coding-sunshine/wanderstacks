@@ -1,0 +1,38 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "binhai",
+      "field": "notable",
+      "value": "The upper shelves of the atrium are empty. Perforated aluminium plates printed to look like books fill them.",
+      "source": "https://mvrdv.com/projects/246/tianjin-binhai-library",
+      "tier": "secondary",
+      "quote": "perforated aluminum plates printed to represent books",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://mvrdv.com/projects/246/tianjin-binhai-library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'perforated aluminum plates printed to represent books'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "binhai",
+      "field": "notable",
+      "value": "The tight schedule forced the architects to drop access to the upper shelves. MVRDV says the change was made locally and against its advice.",
+      "source": "https://mvrdv.com/projects/246/tianjin-binhai-library",
+      "tier": "secondary",
+      "quote": "This change was made locally and against",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://mvrdv.com/projects/246/tianjin-binhai-library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'This change was made locally and against'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "binhai",
+      "field": "notable",
+      "value": "MVRDV calls the library its fastest realised project, three years from first sketch to opening.",
+      "source": "https://mvrdv.com/projects/246/tianjin-binhai-library",
+      "tier": "secondary",
+      "quote": "fastest realized project to date, taking just three years from the first sketch to the opening",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://mvrdv.com/projects/246/tianjin-binhai-library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'fastest realized project to date, taking just three years from the first sketch to the opening'"
+    }
+  ],
+  "events": []
+}

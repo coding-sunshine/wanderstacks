@@ -1,0 +1,137 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "notable",
+      "value": "Two colonies of bats have lived in the library for about two and a half centuries. They hunt the insects that feed on paper.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "two colonies of bats have lived in the library to help with pest control",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'two colonies of bats have lived in the library to help with pest control'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "notable",
+      "value": "At the end of each day the staff cover the tables with leather cloths, so the bats' droppings do not damage them overnight.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "at the end of each day, the tables are covered with leather",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'at the end of each day, the tables are covered with leather'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "notable",
+      "value": "The shelves are oak. The university says the wood's smell helps keep paper-eating insects away.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "the shelves are made from oak, known for their density, durability, and odour that keeps insects away",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the shelves are made from oak, known for their density, durability, and odour that keeps insects away'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "notable",
+      "value": "Under the library is the university's academic prison. It is of medieval origin and is the oldest prison preserved in Portugal.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "What we see is a prison of medieval origin, the oldest one that has been preserved in Portugal",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'What we see is a prison of medieval origin, the oldest one that has been preserved in Portugal'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "notable",
+      "value": "Until 1834 the university had its own law and its own jail, so that professors, staff and students were not locked up with common criminals.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "protected the academic community (professors, personnel and students) from living with common criminals",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'protected the academic community (professors, personnel and students) from living with common criminals'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "notable",
+      "value": "The middle floor housed the guards who watched the prison below. Its stones still carry the marks each stonemason cut to claim payment for his work.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "Each stonemason had his own",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Each stonemason had his own'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "notable",
+      "value": "The old books are still read. Readers request about 750 works from the library in an average year.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "An average of 750 works are requested each year",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'An average of 750 works are requested each year'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "notable",
+      "value": "The three halls of the Noble Floor are told apart by the ground colour of their gilded shelves: black in the first, red in the second, green in the third.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "gold paintings against a black background in the first hall, a red background in the second hall and a green background in the third hall",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'gold paintings against a black background in the first hall, a red background in the second hall and a green background in the third hall'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "volumes",
+      "value": "Nearly 60,000 volumes across the three floors, printed across Europe between the 15th and 18th centuries. This is the university's own figure.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "three floors that make up the building house nearly 60",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'three floors that make up the building house nearly 60'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "dims",
+      "value": "The exterior walls are 2.11 m thick. The university describes the building as a vault designed to preserve books.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "the exterior walls are 2 metres 11 centimetres",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the exterior walls are 2 metres 11 centimetres'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "built",
+      "value": "Construction was completed in 1728. The building served as the University Library from 1777 until the first half of the 20th century.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "It functioned as the University Library from 1777 until the first half of the 20th century",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'It functioned as the University Library from 1777 until the first half of the 20th century'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "joanina",
+      "field": "collection",
+      "value": "Six embossed tables of tropical woods stand in the halls. A portrait of King John V by Domenico Duprà hangs on the Noble Floor.",
+      "source": "https://visit.uc.pt/en/space-list/joanina",
+      "tier": "primary",
+      "quote": "Six embossed tables made from precious tropical woods can be found throughout the halls",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.uc.pt/en/space-list/joanina' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Six embossed tables made from precious tropical woods can be found throughout the halls'"
+    }
+  ],
+  "events": []
+}

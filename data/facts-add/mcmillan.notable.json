@@ -1,0 +1,60 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "mcmillan",
+      "field": "notable",
+      "value": "Tradition holds that Teddy Roosevelt and his son stole the two stone lions at the door from outside a Nairobi mosque after a night out. A Nation columnist doubts it, noting the plinths say Sir John Harrington gave them.",
+      "source": "https://mwananchi.co.tz/kenya/life-and-style/lifestyle/the-life-and-times-of-mcmillan-library-4025098",
+      "tier": "secondary",
+      "quote": "stolen from outside a mosque on Government Road (now Moi Avenue) by Teddy Roosevelt and his son",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://mwananchi.co.tz/kenya/life-and-style/lifestyle/the-life-and-times-of-mcmillan-library-4025098' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'stolen from outside a mosque on Government Road (now Moi Avenue) by Teddy Roosevelt and his son'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "mcmillan",
+      "field": "notable",
+      "value": "The story goes that Sir Northrup McMillan's coffin kept sticking in the mud on the way up Ol Donyo Sabuk, so Lady McMillan had him buried about halfway up.",
+      "source": "https://mwananchi.co.tz/kenya/life-and-style/lifestyle/the-life-and-times-of-mcmillan-library-4025098",
+      "tier": "secondary",
+      "quote": "The vehicle carrying the coffin up the mountain kept getting stuck in the mud. Eventually, only about half way up, Lady McMillan said",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://mwananchi.co.tz/kenya/life-and-style/lifestyle/the-life-and-times-of-mcmillan-library-4025098' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Eventually, only about half way up, Lady McMillan said'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "mcmillan",
+      "field": "notable",
+      "value": "McMillan kept a pet lion on his Juja farm and hunted many others.",
+      "source": "https://bookbunk.org/findalibrary/library/mcmillan-memorial-library",
+      "tier": "secondary",
+      "quote": "He kept a pet lion on his Juja farm and hunted many during his lifetime",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://bookbunk.org/findalibrary/library/mcmillan-memorial-library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'He kept a pet lion on his Juja farm and hunted many during his lifetime'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "mcmillan",
+      "field": "notable",
+      "value": "A Nation columnist says McMillan entertained Winston Churchill and President Theodore Roosevelt at his Chiromo house.",
+      "source": "https://mwananchi.co.tz/kenya/life-and-style/lifestyle/the-life-and-times-of-mcmillan-library-4025098",
+      "tier": "secondary",
+      "quote": "among the many famous guests he entertained were Winston Churchill and the American President, Teddy Roosevelt",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://mwananchi.co.tz/kenya/life-and-style/lifestyle/the-life-and-times-of-mcmillan-library-4025098' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'among the many famous guests he entertained were Winston Churchill and the American President, Teddy Roosevelt'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "mcmillan",
+      "field": "notable",
+      "value": "Library development in colonial Kenya followed racial lines. McMillan served Europeans only. Mombasa's Seif Bin Salim library and Nairobi's Desai Memorial Library, founded in 1942, were for Arabs and Asians respectively.",
+      "source": "https://beta.nation.co.ke/kenya/life-and-style/lifestyle/bleak-times-for-mcmillan-library-880280",
+      "tier": "secondary",
+      "quote": "library development followed the racial lines; McMillan Memorial Library served the European community only",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://beta.nation.co.ke/kenya/life-and-style/lifestyle/bleak-times-for-mcmillan-library-880280' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'library development followed the racial lines; McMillan Memorial Library served the European community only'"
+    }
+  ],
+  "events": []
+}

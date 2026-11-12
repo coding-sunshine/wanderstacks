@@ -1,0 +1,38 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "sassoon",
+      "field": "notable",
+      "value": "The idea for the library came from twelve mechanics working at the Bombay Mint.",
+      "source": "http://theory.tifr.res.in/bombay/architecture/building/sassoon-library.html",
+      "tier": "secondary",
+      "quote": "The idea of the library was mooted by twelve mechanics employed in the Bombay Mint.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'http://theory.tifr.res.in/bombay/architecture/building/sassoon-library.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The idea of the library was mooted by twelve mechanics employed in the Bombay Mint.'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "sassoon",
+      "field": "notable",
+      "value": "A white stone head of David Sassoon sits above the entrance portico.",
+      "source": "http://theory.tifr.res.in/bombay/architecture/building/sassoon-library.html",
+      "tier": "secondary",
+      "quote": "Above the entrance portico is a white stone head of David Sassoon.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'http://theory.tifr.res.in/bombay/architecture/building/sassoon-library.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Above the entrance portico is a white stone head of David Sassoon.'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "sassoon",
+      "field": "notable",
+      "value": "The story goes that David Sassoon nailed a mezuzah to his doorpost at 9 Tamarind Lane when he settled in Bombay.",
+      "source": "http://archive.diarna.org/site/detail/public/1935/",
+      "tier": "secondary",
+      "quote": "nailed his mezuza, the sign of a Jewish home, to his doorpost at 9 Tamarind Lane",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'http://archive.diarna.org/site/detail/public/1935/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'nailed his mezuza, the sign of a Jewish home, to his doorpost at 9 Tamarind Lane'"
+    }
+  ],
+  "events": []
+}

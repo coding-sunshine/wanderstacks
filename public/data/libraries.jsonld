@@ -139,7 +139,7 @@
    "sameAs": [
     "https://www.wikidata.org/entity/Q689896"
    ],
-   "foundingDate": "1767"
+   "foundingDate": "1553"
   },
   {
    "@type": "Library",
@@ -277,7 +277,8 @@
    },
    "sameAs": [
     "https://www.wikidata.org/entity/Q139474114"
-   ]
+   ],
+   "foundingDate": "1556"
   },
   {
    "@type": "Library",
@@ -356,7 +357,8 @@
    },
    "sameAs": [
     "https://www.wikidata.org/entity/Q1246991"
-   ]
+   ],
+   "foundingDate": "1911"
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",

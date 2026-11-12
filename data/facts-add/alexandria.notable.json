@@ -1,0 +1,60 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "alexandria",
+      "field": "notable",
+      "value": "Fellows of the Museum at Alexandria received free board and paid no tax, according to Bevan's history of the Ptolemies.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Africa/Egypt/_Texts/BEVHOP/4F*.html",
+      "tier": "secondary",
+      "quote": "received their board free and were exempt from taxation",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Africa/Egypt/_Texts/BEVHOP/4F*.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'received their board free and were exempt from taxation'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "alexandria",
+      "field": "notable",
+      "value": "One story says Ptolemy III borrowed Athens' official copies of the tragedians, on the pretext of having copies made.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Africa/Egypt/_Texts/BEVHOP/4F*.html",
+      "tier": "secondary",
+      "quote": "borrowed from Athens the rolls kept by the state containing the authorized text of Aeschylus",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/Africa/Egypt/_Texts/BEVHOP/4F*.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'borrowed from Athens the rolls kept by the state containing the authorized text of Aeschylus'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "alexandria",
+      "field": "notable",
+      "value": "Vitruvius tells how Aristophanes, a reader in the library, exposed contest poets as plagiarists by pulling matching books from the shelves from memory. The king made him librarian.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Vitruvius/7*.html",
+      "tier": "secondary",
+      "quote": "made the writers confess that they had stolen from them",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Vitruvius/7*.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'made the writers confess that they had stolen from them'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "alexandria",
+      "field": "notable",
+      "value": "In the Letter of Aristeas the librarian Demetrius tells the king the library holds more than 200,000 books and that he hopes to reach 500,000. The account is the letter's own, not independent evidence.",
+      "source": "https://www.ccel.org/c/charles/otpseudepig/aristeas.htm",
+      "tier": "secondary",
+      "quote": "More than two hundred thousand, O king",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.ccel.org/c/charles/otpseudepig/aristeas.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'More than two hundred thousand, O king'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "alexandria",
+      "field": "notable",
+      "value": "Tradition holds, following the Letter of Aristeas, that the High Priest at Jerusalem sent six elders from each tribe, seventy-two in all, to translate the Jewish law for the royal library.",
+      "source": "https://www.ccel.org/c/charles/otpseudepig/aristeas.htm",
+      "tier": "secondary",
+      "quote": "Of the twelfth tribe, Isaelus, John, Theodosius, Arsamos, Abietes, Ezekiel. They were seventy-two in all.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.ccel.org/c/charles/otpseudepig/aristeas.htm' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'They were seventy-two in all'"
+    }
+  ],
+  "events": []
+}

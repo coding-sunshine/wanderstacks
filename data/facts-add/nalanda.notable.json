@@ -1,0 +1,60 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "nalanda",
+      "field": "notable",
+      "value": "Xuanzang records a tradition that five hundred merchants bought the site for ten koti of gold pieces and gave it to the Buddha.",
+      "source": "https://archive.org/download/buddhist-records-of-the-western-world-vol-2/Buddhist%20Records%20of%20the%20Western%20World-Vol%202_djvu.txt",
+      "tier": "secondary",
+      "quote": "Five hundred merchants bought it for ten",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://archive.org/download/buddhist-records-of-the-western-world-vol-2/Buddhist%20Records%20of%20the%20Western%20World-Vol%202_djvu.txt' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Five hundred merchants bought it for ten'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nalanda",
+      "field": "notable",
+      "value": "Xuanzang says monks who could not discuss questions from the Tripitaka were little esteemed and hid for shame.",
+      "source": "https://archive.org/download/buddhist-records-of-the-western-world-vol-2/Buddhist%20Records%20of%20the%20Western%20World-Vol%202_djvu.txt",
+      "tier": "secondary",
+      "quote": "are obliged to hide themselves for shame",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://archive.org/download/buddhist-records-of-the-western-world-vol-2/Buddhist%20Records%20of%20the%20Western%20World-Vol%202_djvu.txt' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'are obliged to hide themselves for shame'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nalanda",
+      "field": "notable",
+      "value": "Xuanzang says the discussions at Nalanda ran from morning till night and the day was not long enough for the questions and answers.",
+      "source": "https://archive.org/download/buddhist-records-of-the-western-world-vol-2/Buddhist%20Records%20of%20the%20Western%20World-Vol%202_djvu.txt",
+      "tier": "secondary",
+      "quote": "The day is not sufficient for asking and answering profound questions",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://archive.org/download/buddhist-records-of-the-western-world-vol-2/Buddhist%20Records%20of%20the%20Western%20World-Vol%202_djvu.txt' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The day is not sufficient for asking and answering profound questions'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nalanda",
+      "field": "notable",
+      "value": "Xuanzang says a stranger who wanted to join the debates first met the keeper of the gate, who set hard questions. Many could not answer and left.",
+      "source": "https://archive.org/download/buddhist-records-of-the-western-world-vol-2/Buddhist%20Records%20of%20the%20Western%20World-Vol%202_djvu.txt",
+      "tier": "secondary",
+      "quote": "the keeper of the gate proposes some hard questions; many. are unable to answer, and retire",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://archive.org/download/buddhist-records-of-the-western-world-vol-2/Buddhist%20Records%20of%20the%20Western%20World-Vol%202_djvu.txt' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the keeper of the gate proposes some hard questions'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nalanda",
+      "field": "notable",
+      "value": "Xuanzang gives the priests at Nalanda as several thousand. It is a traveller's round figure, not a count.",
+      "source": "https://archive.org/download/buddhist-records-of-the-western-world-vol-2/Buddhist%20Records%20of%20the%20Western%20World-Vol%202_djvu.txt",
+      "tier": "secondary",
+      "quote": "The priests, to the number of several thousands, are men of the highest ability and talent.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://archive.org/download/buddhist-records-of-the-western-world-vol-2/Buddhist%20Records%20of%20the%20Western%20World-Vol%202_djvu.txt' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The priests, to the number of several thousands'"
+    }
+  ],
+  "events": []
+}

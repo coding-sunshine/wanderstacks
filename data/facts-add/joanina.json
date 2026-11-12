@@ -26,17 +26,6 @@
       "cluster": "rooms-wave3",
       "lib": "joanina",
       "field": "dims",
-      "value": "Exterior walls are around 2.11 m (83 in) thick.",
-      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
-      "tier": "wikipedia",
-      "quote": "exterior walls around 2.11 metres (83 in) thick",
-      "status": "passing",
-      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'exterior\\s+walls\\s+around\\s+2.11\\s+metres'"
-    },
-    {
-      "cluster": "rooms-wave3",
-      "lib": "joanina",
-      "field": "dims",
       "value": "About 1250 square metres of usable area today, gained by arranging two levels of cellars.",
       "source": "https://pt.wikipedia.org/wiki/Biblioteca_Joanina",
       "tier": "wikipedia",
@@ -54,28 +43,6 @@
       "quote": "constant temperature of 18–20 °C",
       "status": "passing",
       "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'constant\\s+temperature\\s+of\\s+18.20\\s+.C'"
-    },
-    {
-      "cluster": "rooms-wave3",
-      "lib": "joanina",
-      "field": "volumes",
-      "value": "Counts differ in one source set: about 70,000 volumes (infobox, lead, Portuguese article) versus about 200,000 (architecture section of the English article).",
-      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
-      "tier": "wikipedia",
-      "quote": "It is home to more than 70,000 volumes",
-      "status": "passing",
-      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'It\\s+is\\s+home\\s+to\\s+more\\s+than\\s+70.000\\s+vol'"
-    },
-    {
-      "cluster": "rooms-wave3",
-      "lib": "joanina",
-      "field": "collection",
-      "value": "Books are protected from insects by a colony of bats living in the library.",
-      "source": "https://en.wikipedia.org/wiki/Biblioteca_Joanina",
-      "tier": "wikipedia",
-      "quote": "whose books are protected from insects by the presence of a colony of bats within the library",
-      "status": "passing",
-      "check": "curl -sL -A Mozilla/5.0 'https://en.wikipedia.org/wiki/Biblioteca_Joanina' | sed 's/<[^>]*>/ /g' | rg -o -m1 'whose\\s+books\\s+are\\s+protected\\s+from\\s+ins'"
     },
     {
       "cluster": "rooms-wave3",

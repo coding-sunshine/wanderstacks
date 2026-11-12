@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "gabinete",
+      "field": "notable",
+      "value": "The library says it is the only institution outside Portuguese territory (Macau apart) that receives legal deposit of Portuguese publications.",
+      "source": "https://www.realgabinete.com.br/Biblioteca/Apresentacao",
+      "tier": "primary",
+      "quote": "única instituição, fora do território português",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.realgabinete.com.br/Biblioteca/Apresentacao' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'única instituição, fora do território português'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "gabinete",
+      "field": "notable",
+      "value": "The visitor guide says the architect of the building never came to Brazil.",
+      "source": "https://www.realgabinete.com.br/Visite-o-RGPL/Roteiro-de-Visita",
+      "tier": "primary",
+      "quote": "Esse arquiteto nunca veio ao Brasil",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.realgabinete.com.br/Visite-o-RGPL/Roteiro-de-Visita' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Esse arquiteto nunca veio ao Brasil'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "gabinete",
+      "field": "notable",
+      "value": "King Carlos I granted the title Real in 1906. He was killed in an attack in 1908, and the name stayed.",
+      "source": "https://www.realgabinete.com.br/Visite-o-RGPL/Roteiro-de-Visita",
+      "tier": "primary",
+      "quote": "o rei faleceu, vítima de um atentado",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.realgabinete.com.br/Visite-o-RGPL/Roteiro-de-Visita' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'o rei faleceu, vítima de um atentado'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "gabinete",
+      "field": "notable",
+      "value": "The visitor guide says the building was the first in Rio de Janeiro with a metal structure.",
+      "source": "https://www.realgabinete.com.br/Visite-o-RGPL/Roteiro-de-Visita",
+      "tier": "primary",
+      "quote": "primeiro edifício do Rio de Janeiro a ter estrutura metálica",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.realgabinete.com.br/Visite-o-RGPL/Roteiro-de-Visita' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'primeiro edifício do Rio de Janeiro a ter estrutura metálica'"
+    }
+  ],
+  "events": []
+}

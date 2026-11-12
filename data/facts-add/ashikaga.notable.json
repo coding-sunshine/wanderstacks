@@ -1,0 +1,56 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "ashikaga",
+      "field": "notable",
+      "value": "The city says no surviving record supports any theory of the school's origin earlier than 1410, although Ono no Takamura and Ashikaga Yoshikane are both named as founders.",
+      "source": "https://www.city.ashikaga.tochigi.jp/industory/000061/000329/p002576.html",
+      "tier": "primary",
+      "quote": "existing records cannot support any theories prior to the year 1410",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.city.ashikaga.tochigi.jp/industory/000061/000329/p002576.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'existing records cannot support any theories prior to the year 1410'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "ashikaga",
+      "field": "notable",
+      "value": "The school drew about 3,000 students from across Japan around 1550, and Francis Xavier wrote of it in 1549 as the largest university in eastern Japan.",
+      "source": "https://www.city.ashikaga.tochigi.jp/industory/000061/000329/p002576.html",
+      "tier": "primary",
+      "quote": "attracting some 3,000 students from all parts of the country in about 1550",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.city.ashikaga.tochigi.jp/industory/000061/000329/p002576.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'attracting some 3,000 students from all parts of the country in about 1550'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "ashikaga",
+      "kind": "closed",
+      "year": 1872,
+      "earliest": 1872,
+      "latest": 1872,
+      "label": "The Ashikaga School was abolished in 1872.",
+      "source": "https://www.city.ashikaga.tochigi.jp/industory/000061/000329/p002576.html",
+      "tier": "primary",
+      "quote": "In 1872, the traditional Ashikaga School was, unfortunately, abolished",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.city.ashikaga.tochigi.jp/industory/000061/000329/p002576.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'In 1872, the traditional Ashikaga School was, unfortunately, abolished'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "ashikaga",
+      "kind": "reopened",
+      "year": 1990,
+      "earliest": 1990,
+      "latest": 1990,
+      "label": "The Ashikaga School was restored in December 1990.",
+      "source": "https://www.city.ashikaga.tochigi.jp/industory/000061/000329/p002576.html",
+      "tier": "primary",
+      "quote": "December 1990, the Ashikaga School , at last , was restored",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.city.ashikaga.tochigi.jp/industory/000061/000329/p002576.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'December 1990, the Ashikaga School , at last , was restored'"
+    }
+  ]
+}

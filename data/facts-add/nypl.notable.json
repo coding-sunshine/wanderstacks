@@ -1,0 +1,60 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "nypl",
+      "field": "notable",
+      "value": "The library stands on the site of the Croton Reservoir. It was torn down in 1900 after several delays.",
+      "source": "https://bryantpark.org/the-park/history",
+      "tier": "secondary",
+      "quote": "The reservoir itself was eventually torn down, following numerous delays, in 1900",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://bryantpark.org/the-park/history' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The reservoir itself was eventually torn down, following numerous delays, in 1900'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nypl",
+      "field": "notable",
+      "value": "The reservoir on the library's site covered four acres and held 20 million gallons of water from the Croton River. Its walls were a popular promenade, with Edgar Allan Poe among the walkers.",
+      "source": "https://bryantpark.org/blog/history-of-bryant-park-before-it-was-a-park",
+      "tier": "secondary",
+      "quote": "held 20 million gallons of water",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://bryantpark.org/blog/history-of-bryant-park-before-it-was-a-park' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'held 20 million gallons of water'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nypl",
+      "field": "notable",
+      "value": "Mayor Fiorello La Guardia named the lions Patience and Fortitude in the 1930s, for the qualities he felt New Yorkers needed in the Depression.",
+      "source": "https://www.theartnewspaper.com/news/new-york-public-library-shores-up-its-marble-lions",
+      "tier": "secondary",
+      "quote": "Mayor Fiorello LaGuardia bestowed those names",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.theartnewspaper.com/news/new-york-public-library-shores-up-its-marble-lions' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Mayor Fiorello LaGuardia bestowed those names'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nypl",
+      "field": "notable",
+      "value": "During the Rose Reading Room restoration, materials too big for the freight elevator were lifted from 40th Street by boom onto a scaffold tower on the roof, then carried in through a window.",
+      "source": "https://aecom.com/projects/new-york-public-library-rose-reading-room-restoration/",
+      "tier": "secondary",
+      "quote": "boomed onto a scaffold tower erected on the roof",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://aecom.com/projects/new-york-public-library-rose-reading-room-restoration/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'boomed onto a scaffold tower erected on the roof'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nypl",
+      "field": "notable",
+      "value": "In May 2014 a plaster rosette fell from the 52-foot ceiling of the Rose Main Reading Room. The room closed for six months for inspection and repair.",
+      "source": "https://www.ksl.com/article/30344761/ny-public-library-reading-room-closed-by-repairs",
+      "tier": "secondary",
+      "quote": "plaster rosette fell from the reading room",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.ksl.com/article/30344761/ny-public-library-reading-room-closed-by-repairs' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'plaster rosette fell from the reading room'"
+    }
+  ],
+  "events": []
+}

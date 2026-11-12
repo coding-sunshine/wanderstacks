@@ -1,0 +1,53 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "stgallen",
+      "field": "notable",
+      "value": "The library holds an Egyptian mummy, Shepenese, dated to the 7th century BC. It reached the library only after the abbey was dissolved.",
+      "source": "https://stiftsbezirk.ch/en/stiftsbibliothek/special-collections",
+      "tier": "primary",
+      "quote": "One item that was not originally in the cabinet of curiosities is the Egyptian mummy Shepenese (7th c. BC).",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftsbezirk.ch/en/stiftsbibliothek/special-collections' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the Egyptian mummy Shepenese'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "stgallen",
+      "field": "notable",
+      "value": "From the 10th to the 16th century the books were kept in the Hartmut Tower, which came through several fires that raged through the abbey and the town.",
+      "source": "https://stiftsbezirk.ch/en/stiftsbibliothek/history",
+      "tier": "primary",
+      "quote": "tucked safely away in the Hartmut Tower, it defied many threats and several fires that raged through the abbey and the town",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftsbezirk.ch/en/stiftsbibliothek/history' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'it defied many threats and several fires that raged through the abbey and the town'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "stgallen",
+      "field": "notable",
+      "value": "The abbey's oldest library catalogue, Cod. Sang. 728, dates from about 860 to 870 and is still kept in the library.",
+      "source": "https://stiftsbezirk.ch/en/stiftsbibliothek/manuscripts",
+      "tier": "primary",
+      "quote": "The oldest library catalogue in St.Gallen, c. 860/870 (St.Gallen, Abbey Library, Cod. Sang. 728, p. 12)",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftsbezirk.ch/en/stiftsbibliothek/manuscripts' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The oldest library catalogue in St.Gallen, c. 860/870'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "stgallen",
+      "kind": "built",
+      "year": 1553,
+      "earliest": 1553,
+      "latest": 1553,
+      "label": "A building is put up in the west wing of the abbey specially for the library.",
+      "source": "https://stiftsbezirk.ch/en/stiftsbibliothek/history",
+      "tier": "primary",
+      "quote": "In 1553 a building was constructed especially for the library in the west wing of the abbey",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://stiftsbezirk.ch/en/stiftsbibliothek/history' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'In 1553 a building was constructed especially for the library in the west wing of the abbey'"
+    }
+  ]
+}

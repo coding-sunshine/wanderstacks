@@ -1,0 +1,75 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "bnf",
+      "field": "notable",
+      "value": "The Labrouste reading room banned gas lighting for fear of fire, so its opening hours followed the daylight through the year.",
+      "source": "https://www.bnf.fr/en/story-renaissance",
+      "tier": "primary",
+      "quote": "artificial gas lighting was prohibited, to avoid any risk of fire. Opening hours therefore varied throughout the year, since they depended on daylight",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bnf.fr/en/story-renaissance' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'artificial gas lighting was prohibited'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bnf",
+      "field": "notable",
+      "value": "When it opened in 1868 the reading room had pipes under each table to warm readers' feet.",
+      "source": "https://www.bnf.fr/en/story-renaissance",
+      "tier": "primary",
+      "quote": "For the first time, they had access to a heated room, with pipes passing below each table, heating their feet",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bnf.fr/en/story-renaissance' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'pipes passing below each table'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bnf",
+      "field": "notable",
+      "value": "Thirty-six medallions around the reading room honour writers, and only one is a woman.",
+      "source": "https://www.bnf.fr/en/story-renaissance",
+      "tier": "primary",
+      "quote": "36 medallions awarded to men and “one woman” of letters from all over the world",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bnf.fr/en/story-renaissance' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '36 medallions awarded to men'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bnf",
+      "field": "notable",
+      "value": "Property seized in the French Revolution doubled the collections within twenty years, with no new space to hold them.",
+      "source": "https://www.bnf.fr/en/story-renaissance",
+      "tier": "primary",
+      "quote": "The seizure of property during the French Revolution caused its collections to increase dramatically: they doubled within twenty years, but the Bibliothèque did not gain any space",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bnf.fr/en/story-renaissance' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'they doubled within twenty years'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bnf",
+      "field": "notable",
+      "value": "The Royal Library shared its site with the Stock Exchange from 1724 and the Exchequer from 1793.",
+      "source": "https://www.bnf.fr/en/story-renaissance",
+      "tier": "primary",
+      "quote": "it gradually became a public building with the establishment of the King’s Library in 1721, the Stock Exchange in 1724 and the Exchequer in 1793",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bnf.fr/en/story-renaissance' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the Stock Exchange in 1724 and the Exchequer in 1793'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "bnf",
+      "kind": "opened",
+      "year": 1868,
+      "earliest": 1868,
+      "latest": 1868,
+      "label": "The Labrouste reading room opens to readers in June.",
+      "source": "https://www.bnf.fr/en/story-renaissance",
+      "tier": "primary",
+      "quote": "When it opened in June 1868, the room offered readers all modern comforts. For the first time, they had access to a heated room, with pipes passing below each table, heating their feet",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bnf.fr/en/story-renaissance' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'pipes passing below each table'"
+    }
+  ]
+}

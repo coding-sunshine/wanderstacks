@@ -1,0 +1,64 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "weimar",
+      "field": "notable",
+      "value": "After the 2004 fire, single leaves carried by the wind into the streets and gardens of Weimar were still being handed to the library months later.",
+      "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/projekte/identifikation-von-aschebuechern/",
+      "tier": "primary",
+      "quote": "Einzelne Blätter, die der Wind in die Straßen und Gärten Weimars getragen hatte, wurden der Bibliothek noch Monate nach dem Brand übergeben",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/projekte/identifikation-von-aschebuechern/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'die der Wind in die Straßen und Gärten Weimars getragen hatte'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "weimar",
+      "field": "notable",
+      "value": "About 25,000 badly burnt book blocks, plus many fragments, called ash books, were recovered from the rubble. Since 2008 some have been restored by a mass process the library calls unique worldwide.",
+      "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/projekte/identifikation-von-aschebuechern/",
+      "tier": "primary",
+      "quote": "die sogenannten Aschebücher. Ein Teil von ihnen wird seit 2008 in einem weltweit einzigartigen Mengenverfahren restauriert",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/projekte/identifikation-von-aschebuechern/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'die sogenannten Aschebücher. Ein Teil von ihnen wird seit 2008'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "weimar",
+      "field": "notable",
+      "value": "The spiral staircase in the Book Tower has a spindle made from a single oak trunk twelve metres high, which came from the Osterburg in Weida.",
+      "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/besuch/buecherturm/",
+      "tier": "primary",
+      "quote": "Die Spindel der Treppe ist aus einem einzigen, zwölf Meter hohen Eichenstamm gefertigt und stammt ursprünglich aus der Osterburg in Weida.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/besuch/buecherturm/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Die Spindel der Treppe ist aus einem einzigen'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "weimar",
+      "field": "notable",
+      "value": "The Book Tower's top gallery holds the Weimar military library, described as the most completely preserved German military library of around 1800.",
+      "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/besuch/buecherturm/",
+      "tier": "primary",
+      "quote": "Sie ist heute die am vollständigsten erhaltene Militärbibliothek Deutschlands der Zeit um 1800",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/besuch/buecherturm/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'die am vollständigsten erhaltene Militärbibliothek Deutschlands'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "weimar",
+      "kind": "built",
+      "year": 1825,
+      "earliest": 1821,
+      "latest": 1825,
+      "label": "Duke Carl August has a medieval gun tower of the town wall converted into the Book Tower.",
+      "source": "https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/besuch/buecherturm/",
+      "tier": "primary",
+      "quote": "Zwischen 1821 und 1825 ließ Herzog Carl August den mittelalterlichen Geschützturm der ehemaligen Stadtbefestigung zum Bücherturm ausbauen",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.klassik-stiftung.de/herzogin-anna-amalia-bibliothek/besuch/buecherturm/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Geschützturm der ehemaligen Stadtbefestigung zum Bücherturm ausbauen'"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "bodleian",
+      "field": "notable",
+      "value": "The rule that no book may be lent was held so firmly that King Charles I was refused a loan in 1645.",
+      "source": "https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian",
+      "tier": "primary",
+      "quote": "even King Charles I was refused permission to borrow a book in 1645",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'even King Charles I was refused permission to borrow a book in 1645'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bodleian",
+      "field": "notable",
+      "value": "The library had no heating until 1845 and no artificial lighting until 1929.",
+      "source": "https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian",
+      "tier": "primary",
+      "quote": "with no heating until 1845 and no artificial lighting until 1929, the number of users should not be overestimated",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'no heating until 1845 and no artificial lighting until 1929'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bodleian",
+      "field": "notable",
+      "value": "In 1550 the Dean of Christ Church stripped the university library of all its books to purge Catholic traces, and some were burnt.",
+      "source": "https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian",
+      "tier": "primary",
+      "quote": "the Dean of Christ Church, hoping to purge the English church of all traces of Catholicism including ‘superstitious books and images’, removed all the library’s books – some to be burnt",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'removed all the library'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bodleian",
+      "field": "notable",
+      "value": "The Bodleian also held pictures, sculptures, coins and medals, and curiosities including a stuffed crocodile from Jamaica.",
+      "source": "https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian",
+      "tier": "primary",
+      "quote": "The Bodleian also housed pictures, sculptures, coins and medals, and ‘curiosities’ (including a stuffed crocodile from Jamaica)",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'stuffed crocodile from Jamaica'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bodleian",
+      "field": "notable",
+      "value": "An underground book store dug beneath Radcliffe Square in 1909-12 was the largest of its kind in the world at the time.",
+      "source": "https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian",
+      "tier": "primary",
+      "quote": "an underground book store was excavated beneath Radcliffe Square in 1909–12; it was the largest such store in the world at the time",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'underground book store was excavated beneath Radcliffe Square'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "bodleian",
+      "field": "notable",
+      "value": "In 2025 the library unveiled a 13th-century Old French New Testament. Ultraviolet light showed erased inscriptions of three members of the English royal family who owned it in the 1400s.",
+      "source": "https://www.bodleian.ox.ac.uk/about/media/duke-humfreys-manuscript",
+      "tier": "primary",
+      "quote": "ultraviolet light has revealed a series of erased inscriptions showing the manuscript was subsequently owned by three members of the English royal family in the 1400s",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bodleian.ox.ac.uk/about/media/duke-humfreys-manuscript' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'erased inscriptions'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "bodleian",
+      "kind": "lost",
+      "year": 1550,
+      "earliest": 1550,
+      "latest": 1550,
+      "label": "Duke Humfrey's Library is emptied of its books on the order of the Dean of Christ Church, and some are burnt.",
+      "source": "https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian",
+      "tier": "primary",
+      "quote": "in 1550, the Dean of Christ Church, hoping to purge the English church of all traces of Catholicism",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'in 1550, the Dean of Christ Church'"
+    }
+  ]
+}

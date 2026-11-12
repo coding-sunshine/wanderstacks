@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "malatestiana",
+      "field": "notable",
+      "value": "Fourteen Greek codices, most probably bought by Malatesta Novello in Constantinople, and seven Hebrew ones sit among the 343 manuscripts.",
+      "source": "https://sititematici.comune.cesena.fc.it/malatestiana/storia",
+      "tier": "primary",
+      "quote": "Quattordici codici greci, acquistati molto probabilmente da Malatesta Novello a Costantinopoli, sette ebraici e altri donati al Novello",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://sititematici.comune.cesena.fc.it/malatestiana/storia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'codici greci, acquistati molto probabilmente da Malatesta Novello a Costantinopoli'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "malatestiana",
+      "field": "notable",
+      "value": "Malatesta Novello set up a scriptorium that, in an organised and planned way, produced over 120 codices in about twenty years.",
+      "source": "https://sititematici.comune.cesena.fc.it/malatestiana/storia",
+      "tier": "primary",
+      "quote": "il signore di Cesena promosse uno scrittorio che, con attività organizzata e pianificata, produsse nell'arco di circa un ventennio oltre centoventi codici",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://sititematici.comune.cesena.fc.it/malatestiana/storia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'circa un ventennio oltre centoventi codici'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "malatestiana",
+      "field": "notable",
+      "value": "An inscription beside the entrance door hails the architect Matteo Nuti, born in Fano, as a second Daedalus and dates the finished work to 1452.",
+      "source": "https://sititematici.comune.cesena.fc.it/malatestiana/storia",
+      "tier": "primary",
+      "quote": "Matheus Nutius Fanensi ex urbe creatus Dedalus alter opus tantum deduxit ad unguem",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://sititematici.comune.cesena.fc.it/malatestiana/storia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Dedalus alter opus tantum'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "malatestiana",
+      "field": "notable",
+      "value": "The library page says the room survived intact in every part because friars and the city council kept it in joint custody.",
+      "source": "https://sititematici.comune.cesena.fc.it/malatestiana-antica",
+      "tier": "primary",
+      "quote": "rimasta intatta in ogni sua parte per la custodia congiunta dei frati e del Comune",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://sititematici.comune.cesena.fc.it/malatestiana-antica' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'custodia congiunta dei frati e del Comune'"
+    }
+  ],
+  "events": []
+}

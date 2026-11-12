@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "strahov",
+      "field": "notable",
+      "value": "The oldest manuscript in the library is a gospel book, probably written around 860 in Tours. Four full-page illuminations of the evangelists were added at Trier in the tenth century.",
+      "source": "https://strahovskyklaster.cz/en/for-visitors/what-you-can-visit/strahov-library",
+      "tier": "primary",
+      "quote": "The oldest manuscript kept in the Strahov Library contains, as its name suggests, all four gospels. The text was probably written around 860 in Tours (France)",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://strahovskyklaster.cz/en/for-visitors/what-you-can-visit/strahov-library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The text was probably written around 860 in Tours'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "strahov",
+      "field": "notable",
+      "value": "The Theological Hall holds a so-called compilation wheel, a device made for more comfortable study.",
+      "source": "https://strahovskyklaster.cz/en/for-visitors/what-you-can-visit/strahov-library",
+      "tier": "primary",
+      "quote": "In the Theological Hall, you can see a device for more comfortable study, the so-called compilation wheel.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://strahovskyklaster.cz/en/for-visitors/what-you-can-visit/strahov-library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'a device for more comfortable study, the so-called compilation wheel'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "strahov",
+      "field": "notable",
+      "value": "After 1950, when Czechoslovakia abolished religious orders, the Strahov Library was incorporated into the newly established National Literature Memorial.",
+      "source": "https://strahovskyklaster.cz/en/for-researchers/from-the-history-of-library-collections",
+      "tier": "primary",
+      "quote": "the Strahov Library was incorporated into the newly established National Literature Memorial",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://strahovskyklaster.cz/en/for-researchers/from-the-history-of-library-collections' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the Strahov Library was incorporated into the newly established National Literature Memorial'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "strahov",
+      "field": "notable",
+      "value": "A star atlas made in Venice in the mid-14th century is among the library's illuminated manuscripts. It was probably in the library of Charles IV.",
+      "source": "https://strahovskyklaster.cz/en/for-visitors/what-you-can-visit/strahov-library",
+      "tier": "primary",
+      "quote": "star atlas from Venice, written and decorated in the mid-14th century (exhibited in the globe collection exhibition). It was likely in the library of Charles IV.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://strahovskyklaster.cz/en/for-visitors/what-you-can-visit/strahov-library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'It was likely in the library of Charles IV'"
+    }
+  ],
+  "events": []
+}

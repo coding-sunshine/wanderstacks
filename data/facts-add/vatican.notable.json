@@ -1,0 +1,89 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "vatican",
+      "field": "notable",
+      "value": "In 1927 Pius XI turned the old stables in the Belvedere courtyard, made redundant by the motor car, into stacks for printed books.",
+      "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html",
+      "tier": "primary",
+      "quote": "rendered the old stables in the Cortile del Belvedere (to one’s right when facing the entrance to the Library), Pope Pius XI (1922-1939) decided to transform them into stacks",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'decided to transform them into stacks'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vatican",
+      "field": "notable",
+      "value": "The French occupations of Rome in 1798-99 and 1809 cost the library nearly all of its coin and medal collection.",
+      "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html",
+      "tier": "primary",
+      "quote": "led to considerable losses, including that of nearly all the numismatic collection which had been gathered up until then",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'led to considerable losses, including that of nearly all the numismatic'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vatican",
+      "field": "notable",
+      "value": "Part of the medieval papal library, left at Avignon, passed to the Borghese family in the 1600s and was bought by Leo XIII in 1891.",
+      "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html",
+      "tier": "primary",
+      "quote": "what remained in Avignon at the beginning of the seventeenth century came into the collection of the Borghese family, purchased in 1891 by Leo XIII",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'purchased in 1891 by Leo XIII'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vatican",
+      "field": "notable",
+      "value": "Readers could borrow books from the early library, and the loan registers for 1475 to 1547 survive.",
+      "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html",
+      "tier": "primary",
+      "quote": "the records of the books loaned during the years 1475-1547 are still in existence",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'are still in existence'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vatican",
+      "field": "notable",
+      "value": "In 1902 the library bought its old seventeenth-century rival, the Barberini Library, together with the baroque shelving that held it.",
+      "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html",
+      "tier": "primary",
+      "quote": "purchased the Barberini Library, which had rivalled it in importance in the seventeenth century, along with the Barberini Archives and the baroque wooden shelving",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'baroque wooden shelving'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "vatican",
+      "kind": "lost",
+      "year": 1798,
+      "earliest": 1798,
+      "latest": 1809,
+      "label": "French occupation of Rome strips the library of nearly all its numismatic collection.",
+      "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html",
+      "tier": "primary",
+      "quote": "led to considerable losses, including that of nearly all the numismatic collection which had been gathered up until then",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'led to considerable losses, including that of nearly all the numismatic'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vatican",
+      "kind": "closed",
+      "year": 1943,
+      "earliest": 1943,
+      "latest": 1944,
+      "label": "The library closes for about a year during the Second World War.",
+      "source": "https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html",
+      "tier": "primary",
+      "quote": "remained closed for about one academic year (13th July 1943-2nd October 1944)",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '13th July 1943-2nd October 1944'"
+    }
+  ]
+}

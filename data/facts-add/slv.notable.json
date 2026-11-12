@@ -1,0 +1,60 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "slv",
+      "field": "notable",
+      "value": "Ned Kelly's armour is made from farm machinery. The Library says historians have guessed the parts were stolen or gifted and forged by sympathetic blacksmiths, but none of that is confirmed.",
+      "source": "https://www.slv.vic.gov.au/search-discover/explore-collections-theme/australian-history/ned-kelly/ned-kellys-armour",
+      "tier": "primary",
+      "quote": "The armour is constructed from farm machinery. Historians have speculated that the parts may have been stolen or gifted",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.slv.vic.gov.au/search-discover/explore-collections-theme/australian-history/ned-kelly/ned-kellys-armour' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Historians have speculated that the parts may have been stolen or gifted'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "slv",
+      "field": "notable",
+      "value": "In 1965 the armour was taken off public view and moved to the care of the State Library.",
+      "source": "https://www.slv.vic.gov.au/search-discover/explore-collections-theme/australian-history/ned-kelly/ned-kellys-armour",
+      "tier": "primary",
+      "quote": "in 1965 the armour was taken off view and transferred to the care of the Library",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.slv.vic.gov.au/search-discover/explore-collections-theme/australian-history/ned-kelly/ned-kellys-armour' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'in 1965 the armour was taken off view and transferred to the care of the Library'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "slv",
+      "field": "notable",
+      "value": "The Jerilderie Letter was written out by Joe Byrne at Ned Kelly's dictation over a few months. Kelly meant it to be printed in the press.",
+      "source": "https://www.slv.vic.gov.au/search-discover/explore-collections-theme/australian-history/ned-kelly/jerilderie-letter",
+      "tier": "primary",
+      "quote": "dictated by Ned Kelly to fellow Kelly gang member Joe Byrne. It was written over a period of a few months",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.slv.vic.gov.au/search-discover/explore-collections-theme/australian-history/ned-kelly/jerilderie-letter' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'dictated by Ned Kelly to fellow Kelly gang member Joe Byrne'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "slv",
+      "field": "notable",
+      "value": "An hour after Ned Kelly's death in 1880, his hair and beard were shaved and plaster was applied to his face and head to make a death mask.",
+      "source": "https://www.slv.vic.gov.au/ned-kelly",
+      "tier": "primary",
+      "quote": "An hour after his death, his hair and beard were shaved, and plaster was applied to his face and head to make a death mask.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.slv.vic.gov.au/ned-kelly' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'An hour after his death, his hair and beard were shaved'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "slv",
+      "field": "notable",
+      "value": "The Burke and Wills expedition papers were deposited in the Melbourne Public Library in March 1875.",
+      "source": "https://latrobejournal.slv.vic.gov.au/latrobejournal/issue/latrobe-86/t1-g-t2.html",
+      "tier": "primary",
+      "quote": "deposited in the Melbourne Public Library in March 1875",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://latrobejournal.slv.vic.gov.au/latrobejournal/issue/latrobe-86/t1-g-t2.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'deposited in the Melbourne Public Library in March 1875'"
+    }
+  ],
+  "events": []
+}

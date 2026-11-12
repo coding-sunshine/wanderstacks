@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "thanjavur",
+      "field": "notable",
+      "value": "On his pilgrimage to Banares, Serfoji II employed many pandits to collect, buy and copy a vast number of works. The library carries his name.",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html",
+      "tier": "primary",
+      "quote": "employed many Pandits to collect, buy and copy a vast number of works",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'employed many Pandits to collect, buy and copy a vast number of works'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "thanjavur",
+      "field": "notable",
+      "value": "After the last Maratha queen died, the palace property and library were tied up in the civil courts. Royal family members removed the library from the suit and endowed it to the public with one lakh rupees.",
+      "source": "https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html",
+      "tier": "primary",
+      "quote": "dedicated this Library to the public with one lakh",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/20110226233412fw_/http://www.sarasvatimahallibrary.tn.nic.in/library/Library_History/body_library_history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'dedicated this Library to the public with one lakh'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "thanjavur",
+      "field": "notable",
+      "value": "Ink for the manuscripts was made from sesame-oil lamp soot, acacia gum and rainwater. Paper was dipped in turmeric water to keep insects off.",
+      "source": "https://web.archive.org/web/2011/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html",
+      "tier": "primary",
+      "quote": "The papers were dipped in turmeric water for protection from insects",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2011/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The papers were dipped in turmeric water for protection from insects'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "thanjavur",
+      "field": "notable",
+      "value": "The Sarasvati Mahal holds a grammar of the rare dialect Bhandira-bhasha among works the library says are unique to it.",
+      "source": "https://web.archive.org/web/2011/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html",
+      "tier": "primary",
+      "quote": "the grammar of the rare dialect called Bhandira-bhasha",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2011/http://www.sarasvatimahallibrary.tn.nic.in/library/Departments/Manuscripts/body_manuscripts.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the grammar of the rare dialect called Bhandira-bhasha'"
+    }
+  ],
+  "events": []
+}

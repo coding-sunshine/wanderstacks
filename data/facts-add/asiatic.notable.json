@@ -1,0 +1,53 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "asiatic",
+      "field": "notable",
+      "value": "The Sopara relics came from a Buddhist stupa that Bhagvanlal Indraji excavated in 1882. A stone coffer held eight bronzes, relic caskets and fragments of a bowl believed to have been the Buddha's begging bowl.",
+      "source": "https://asiaticsociety.org.in/index.php/holdings/sopara-relics",
+      "tier": "primary",
+      "quote": "fragments of a begging bowl believed to have been originally used by Gautama Buddha",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://asiaticsociety.org.in/index.php/holdings/sopara-relics' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'fragments of a begging bowl believed to have been originally used by Gautama Buddha'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "asiatic",
+      "field": "notable",
+      "value": "The coin collection numbers more than 12,000 and includes a 5th century gold coin of Kumaragupta, a very rare gold mohur of Akbar and coins issued by Shivaji.",
+      "source": "https://asiaticsociety.org.in/index.php/holdings/coins",
+      "tier": "primary",
+      "quote": "a 5th century gold coin of Kumaragupta, a very rare gold mohur of Akbar",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://asiaticsociety.org.in/index.php/holdings/coins' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'a 5th century gold coin of Kumaragupta, a very rare gold mohur of Akbar'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "asiatic",
+      "field": "notable",
+      "value": "Sir John Malcolm called the Town Hall that houses the Society the most magnificent structure taste and munificence had yet erected in India.",
+      "source": "http://asiaticsociety.org.in/index.php/about-us/history-asiatic",
+      "tier": "primary",
+      "quote": "The most magnificent structure that taste and munificence combined have as yet erected in India",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'http://asiaticsociety.org.in/index.php/about-us/history-asiatic' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The most magnificent structure that taste and munificence combined have as yet erected in India'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "asiatic",
+      "kind": "excavated",
+      "year": 1882,
+      "earliest": 1882,
+      "latest": 1882,
+      "label": "Bhagvanlal Indraji excavated the Buddhist stupa at Nala Sopara in 1882.",
+      "source": "https://asiaticsociety.org.in/index.php/holdings/sopara-relics",
+      "tier": "primary",
+      "quote": "In 1882, Pt. Bhagvanlal Indraji, renowned archaeologist, numismatist, epigraphist and Honorary Fellow of the Society, excavated a Buddhist stupa at Nala Sopara",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://asiaticsociety.org.in/index.php/holdings/sopara-relics' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'In 1882, Pt. Bhagvanlal Indraji, renowned archaeologist, numismatist, epigraphist and Honorary Fellow of the Society, excavated a Buddhist stupa at Nala Sopara'"
+    }
+  ]
+}

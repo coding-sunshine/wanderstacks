@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "celsus",
+      "field": "notable",
+      "value": "Celsus never saw his library. It was put up by his son Gaius Julius Aquila after Celsus died in 110.",
+      "source": "https://www.livius.org/articles/place/ephesus/ephesus-photos/ephesus-library-of-celsus/",
+      "tier": "secondary",
+      "quote": "never saw the building, which was erected by his son Gaius Julius Aquila after his death in 110",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.livius.org/articles/place/ephesus/ephesus-photos/ephesus-library-of-celsus/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'never saw the building, which was erected by his son Gaius Julius Aquila after his death in 110'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "celsus",
+      "field": "notable",
+      "value": "Burial inside a library, close to the market, is called remarkable by Livius. It was an honour suited to the founder of a city.",
+      "source": "https://www.livius.org/articles/place/ephesus/ephesus-photos/ephesus-library-of-celsus/",
+      "tier": "secondary",
+      "quote": "is remarkable: this was an honor befitting the founder of a city",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.livius.org/articles/place/ephesus/ephesus-photos/ephesus-library-of-celsus/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'is remarkable: this was an honor befitting the founder of a city'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "celsus",
+      "field": "notable",
+      "value": "The four facade statues are named Sophia, Arete, Ennoia and Episteme. Livius reads them as the virtues of Celsus, and says the originals are in the Ephesos Museum in Vienna.",
+      "source": "https://www.livius.org/articles/place/ephesus/ephesus-photos/ephesus-library-of-celsus/",
+      "tier": "secondary",
+      "quote": "Sophia (wisdom), Arete (character), Ennoia (judgment), and Episteme (expertise)",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.livius.org/articles/place/ephesus/ephesus-photos/ephesus-library-of-celsus/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Sophia (wisdom), Arete (character), Ennoia (judgment), and Episteme (expertise)'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "celsus",
+      "field": "notable",
+      "value": "Before the library, Celsus was a tribune in the Fourth Legion Scythica, consul in 92 and governor of Asia in 106-107.",
+      "source": "https://www.livius.org/articles/place/ephesus/ephesus-photos/ephesus-library-of-celsus/",
+      "tier": "secondary",
+      "quote": "was consul in 92, and governor of Asia in 106-107",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.livius.org/articles/place/ephesus/ephesus-photos/ephesus-library-of-celsus/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'was consul in 92, and governor of Asia in 106-107'"
+    }
+  ],
+  "events": []
+}

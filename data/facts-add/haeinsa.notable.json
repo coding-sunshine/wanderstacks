@@ -1,0 +1,64 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "haeinsa",
+      "field": "notable",
+      "value": "The Tripitaka archives at Haeinsa remained completely unscathed, according to the Korea Heritage Service.",
+      "source": "https://english.khs.go.kr/cop/bbs/selectBoardArticle.do?ctgryLrcls=CTGRY209&nttId=57967&bbsId=BBSMSTR_1205&uniq=0&mn=EN_03_01",
+      "tier": "primary",
+      "quote": "but the Tripitaka archives remained completely unscathed",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://english.khs.go.kr/cop/bbs/selectBoardArticle.do?ctgryLrcls=CTGRY209&nttId=57967&bbsId=BBSMSTR_1205&uniq=0&mn=EN_03_01' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'but the Tripitaka archives remained completely unscathed'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "haeinsa",
+      "field": "notable",
+      "value": "The wood for the blocks was soaked in seawater for over three years, then cut into blocks and boiled in salt water.",
+      "source": "https://english.khs.go.kr/cop/bbs/selectBoardArticle.do?ctgryLrcls=CTGRY209&nttId=57967&bbsId=BBSMSTR_1205&uniq=0&mn=EN_03_01",
+      "tier": "primary",
+      "quote": "It was soaked in seawater for over three years, then cut into blocks and boiled in salt water",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://english.khs.go.kr/cop/bbs/selectBoardArticle.do?ctgryLrcls=CTGRY209&nttId=57967&bbsId=BBSMSTR_1205&uniq=0&mn=EN_03_01' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'It was soaked in seawater for over three years, then cut into blocks and boiled in salt water'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "haeinsa",
+      "field": "notable",
+      "value": "After carving, each block was coated with a few layers of poisonous lacquer to repel harmful insects.",
+      "source": "https://english.khs.go.kr/cop/bbs/selectBoardArticle.do?ctgryLrcls=CTGRY209&nttId=57967&bbsId=BBSMSTR_1205&uniq=0&mn=EN_03_01",
+      "tier": "primary",
+      "quote": "each block was coated with a few layers of poisonous lacquer to repel harmful insects",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://english.khs.go.kr/cop/bbs/selectBoardArticle.do?ctgryLrcls=CTGRY209&nttId=57967&bbsId=BBSMSTR_1205&uniq=0&mn=EN_03_01' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'each block was coated with a few layers of poisonous lacquer to repel harmful insects'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "haeinsa",
+      "field": "notable",
+      "value": "The two storage halls stand on clay floors with thick layers of salt, charcoal and lime underneath.",
+      "source": "https://english.khs.go.kr/cop/bbs/selectBoardArticle.do?ctgryLrcls=CTGRY209&nttId=57967&bbsId=BBSMSTR_1205&uniq=0&mn=EN_03_01",
+      "tier": "primary",
+      "quote": "clay floors with thick layers of salt, charcoal and lime underneath",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://english.khs.go.kr/cop/bbs/selectBoardArticle.do?ctgryLrcls=CTGRY209&nttId=57967&bbsId=BBSMSTR_1205&uniq=0&mn=EN_03_01' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'clay floors with thick layers of salt, charcoal and lime underneath'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "haeinsa",
+      "kind": "destroyed",
+      "year": 1232,
+      "earliest": 1232,
+      "latest": 1232,
+      "label": "Mongol invaders burned the first set of Tripitaka printing blocks in 1232.",
+      "source": "https://english.khs.go.kr/cop/bbs/selectBoardArticle.do?ctgryLrcls=CTGRY209&nttId=57967&bbsId=BBSMSTR_1205&uniq=0&mn=EN_03_01",
+      "tier": "primary",
+      "quote": "the Mongol invaders burned the printing blocks in 1232",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://english.khs.go.kr/cop/bbs/selectBoardArticle.do?ctgryLrcls=CTGRY209&nttId=57967&bbsId=BBSMSTR_1205&uniq=0&mn=EN_03_01' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the Mongol invaders burned the printing blocks in 1232'"
+    }
+  ]
+}

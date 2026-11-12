@@ -1,0 +1,67 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "melk",
+      "field": "notable",
+      "value": "The abbey's own account says its patron saint Coloman, an Irish king's son, was hanged on an elder tree at Stockerau. Legend has it that the tree then grew new leaves and blossom.",
+      "source": "https://www.stiftmelk.at/en/monastery-order/saint-coloman-melk-abbeys-patron-saint/",
+      "tier": "primary",
+      "quote": "tortured him, and finally hanged him on an elder tree. The legend goes that said tree then grew new leaves and new blossoms",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.stiftmelk.at/en/monastery-order/saint-coloman-melk-abbeys-patron-saint/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The legend goes that said tree then grew new leaves and new blossoms'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "melk",
+      "field": "notable",
+      "value": "The library still holds the rule book the first monks brought from their original monastery, a manuscript now over 1,000 years old.",
+      "source": "https://www.stiftmelk.at/en/monastery-order/history/",
+      "tier": "primary",
+      "quote": "In Melk abbey’s library there is still the rule book which the first monks brought from their original monastery, a manuscript which is now over 1000 years old.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.stiftmelk.at/en/monastery-order/history/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'library there is still the rule book which the first monks brought'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "melk",
+      "field": "notable",
+      "value": "The library's Latin motto, Ex litteris immortalitas, means immortality through books. It is the inscription on the west entrance.",
+      "source": "https://www.stiftmelk.at/en/library-collections/melk-abbey-library/",
+      "tier": "primary",
+      "quote": "*inscription on the Western entrance to the library",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.stiftmelk.at/en/library-collections/melk-abbey-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'inscription on the Western entrance to the library'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "melk",
+      "kind": "damaged",
+      "year": 1297,
+      "earliest": 1297,
+      "latest": 1297,
+      "label": "A terrible fire hits the abbey; the annals and the Melk Song of the Virgin Mary survive.",
+      "source": "https://www.stiftmelk.at/en/monastery-order/history/",
+      "tier": "primary",
+      "quote": "The annals of the monastery and the Melk Song of the Virgin Mary survived the terrible fire of 1297",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.stiftmelk.at/en/monastery-order/history/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'survived the terrible fire of 1297'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "melk",
+      "kind": "damaged",
+      "year": 1738,
+      "earliest": 1738,
+      "latest": 1738,
+      "label": "A fire destroys parts of the monastery and the church towers during the Baroque rebuilding.",
+      "source": "https://www.stiftmelk.at/en/monastery-order/history/",
+      "tier": "primary",
+      "quote": "In 1738 a fire broke out which destroyed parts of the monastery and the church towers.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.stiftmelk.at/en/monastery-order/history/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'In 1738 a fire broke out which destroyed parts of the monastery and the church towers.'"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "nli",
+      "field": "notable",
+      "value": "A Grammar of the Bengal Language (1778) by Nathaniel Brassey Halhed, the earliest printed book in Bengali, is in the Bengali collection.",
+      "source": "https://nationallibrary.gov.in/home/collection",
+      "tier": "primary",
+      "quote": "A Grammar of the Bengal Language (1778) by Nathaniel Brassey Halhed, which is the earliest printed book in Bengali",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://nationallibrary.gov.in/home/collection' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'A Grammar of the Bengal Language (1778) by Nathaniel Brassey Halhed, which is the earliest printed book in Bengali'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nli",
+      "field": "notable",
+      "value": "The Bengali collection holds 154 letters from Subhas Chandra Bose to his nephew Asok Nath Bose.",
+      "source": "https://nationallibrary.gov.in/home/collection",
+      "tier": "primary",
+      "quote": "154 letters of Netaji Subhas Chandra Bose written to his nephew Sri Asok Nath Bose",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://nationallibrary.gov.in/home/collection' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '154 letters of Netaji Subhas Chandra Bose written to his nephew Sri Asok Nath Bose'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nli",
+      "field": "notable",
+      "value": "The library holds 190 first editions of Rabindranath Tagore's works.",
+      "source": "https://nationallibrary.gov.in/home/collection",
+      "tier": "primary",
+      "quote": "This includes 190 first editions of Tagore",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://nationallibrary.gov.in/home/collection' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'This includes 190 first editions of Tagore'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nli",
+      "field": "notable",
+      "value": "The rare collection keeps xylographs presented by the Dalai Lama.",
+      "source": "https://nationallibrary.gov.in/home/rare_other_collections",
+      "tier": "primary",
+      "quote": "The xylographs presented by H. E. the Dalai Lama are also preserved in this collection",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://nationallibrary.gov.in/home/rare_other_collections' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The xylographs presented by H. E. the Dalai Lama are also preserved in this collection'"
+    }
+  ],
+  "events": []
+}

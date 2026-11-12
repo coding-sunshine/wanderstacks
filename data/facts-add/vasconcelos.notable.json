@@ -1,0 +1,60 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "vasconcelos",
+      "field": "notable",
+      "value": "In 2006 Gabriel Orozco installed an 11.7 metre grey whale skeleton in the library. It was found beached on Isla Arena in Baja California.",
+      "source": "https://www.tate.org.uk/tate-etc/issue-21-spring-2011/where-can-i-get-whale-skeleton",
+      "tier": "secondary",
+      "quote": "installed an 11.7 metre grey whale skeleton in Mexico City",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.tate.org.uk/tate-etc/issue-21-spring-2011/where-can-i-get-whale-skeleton' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'installed an 11.7 metre grey whale skeleton in Mexico City'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vasconcelos",
+      "field": "notable",
+      "value": "The reassembled whale skeleton consists of 169 bones, with only one of the tympanums missing.",
+      "source": "https://www.tate.org.uk/tate-etc/issue-21-spring-2011/where-can-i-get-whale-skeleton",
+      "tier": "secondary",
+      "quote": "consisted of 169 bones",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.tate.org.uk/tate-etc/issue-21-spring-2011/where-can-i-get-whale-skeleton' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'consisted of 169 bones'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vasconcelos",
+      "field": "notable",
+      "value": "The botanical garden covers 70 per cent of the site and holds almost 60,000 plants of 168 species, according to El Universal.",
+      "source": "https://www.eluniversal.com.mx/destinos/conoce-la-biblioteca-vasconcelos-la-mas-grande-de-mexico/",
+      "tier": "secondary",
+      "quote": "168 especies de árboles, arbustos y hierbas",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.eluniversal.com.mx/destinos/conoce-la-biblioteca-vasconcelos-la-mas-grande-de-mexico/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F '168 especies de árboles, arbustos y hierbas'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vasconcelos",
+      "field": "notable",
+      "value": "The library closed in March 2007 with more than 3,000 unfinished tasks. Critics said the Fox government had rushed construction to open before a hotly contested election.",
+      "source": "https://www.architecturalrecord.com/articles/3689-kalach-s-mexico-city-library-shuttered",
+      "tier": "secondary",
+      "quote": "list of more than 3,000 unfinished tasks",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.architecturalrecord.com/articles/3689-kalach-s-mexico-city-library-shuttered' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'list of more than 3,000 unfinished tasks'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "vasconcelos",
+      "field": "notable",
+      "value": "The book stacks are painted military green and hang from steel girders above the main hall.",
+      "source": "https://www.architecturalrecord.com/articles/3689-kalach-s-mexico-city-library-shuttered",
+      "tier": "secondary",
+      "quote": "The book stacks, painted military green, are suspended above the hall by steel girders",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.architecturalrecord.com/articles/3689-kalach-s-mexico-city-library-shuttered' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The book stacks, painted military green, are suspended above the hall by steel girders'"
+    }
+  ],
+  "events": []
+}

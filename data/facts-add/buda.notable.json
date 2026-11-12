@@ -1,0 +1,60 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "buda",
+      "field": "notable",
+      "value": "The Corvina site calls the library the first royal library outside Italy and north of the Alps.",
+      "source": "https://corvina.hu/en/about-corvinas/history/history-of-the-library/",
+      "tier": "primary",
+      "quote": "the first royal library outside Italy and north of the Alps",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://corvina.hu/en/about-corvinas/history/history-of-the-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the first royal library outside Italy and north of the Alps'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "buda",
+      "field": "notable",
+      "value": "The Corvina site says the collection was destroyed most probably after Mohacs in 1526. Surviving volumes went to Istanbul as loot.",
+      "source": "https://corvina.hu/en/about-corvinas/history/history-of-the-library/",
+      "tier": "primary",
+      "quote": "The collection was destroyed during the Ottoman invasion, most probably, after the Battle of Mohács (1526). Surviving volumes were taken to Istanbul as part of the loot",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://corvina.hu/en/about-corvinas/history/history-of-the-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Surviving volumes were taken to Istanbul as part of the loot'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "buda",
+      "field": "notable",
+      "value": "Hungarian kings showed guests round the library hall and gave some volumes away as presents.",
+      "source": "https://corvina.hu/en/about-corvinas/history/history-of-the-library/",
+      "tier": "primary",
+      "quote": "gave away some volumes as presents",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://corvina.hu/en/about-corvinas/history/history-of-the-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'gave away some volumes as presents'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "buda",
+      "field": "notable",
+      "value": "The royal librarian Taddeo Ugoleto went to Florence in 1488 to organise a deliberate extension of the Hungarian royal library with volumes from Italy.",
+      "source": "https://corvina.hu/en/about-corvinas/history/history-of-the-library/",
+      "tier": "primary",
+      "quote": "Taddeo Ugoleto from Parma travelled to Florence in 1488 to organize the conscious extension of the Hungarian royal library",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://corvina.hu/en/about-corvinas/history/history-of-the-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'travelled to Florence in 1488 to organize'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "buda",
+      "field": "notable",
+      "value": "A detail from a Trapezuntius corvina appears on the Hungarian 1,000 forint banknote.",
+      "source": "https://corvina.hu/en/about-corvinas/curiosities/corvina-detail-on-the-one-thousand-forint-banknote/",
+      "tier": "primary",
+      "quote": "Trapezuntius corvina (OSZK Cod. Lat. 281 f2r) on the Hungarian money",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://corvina.hu/en/about-corvinas/curiosities/corvina-detail-on-the-one-thousand-forint-banknote/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Trapezuntius corvina (OSZK Cod. Lat. 281 f2r) on the Hungarian money'"
+    }
+  ],
+  "events": []
+}

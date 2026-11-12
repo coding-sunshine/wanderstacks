@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "herculaneum",
+      "field": "notable",
+      "value": "Early excavators took the carbonised scrolls for logs or fishing nets. Many were thrown away before one was dropped and broke open.",
+      "source": "https://www.getty.edu/art/exhibitions/villa_papiri/inner.html",
+      "tier": "secondary",
+      "quote": "early excavators assumed they were logs or carbonized fishing nets",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.getty.edu/art/exhibitions/villa_papiri/inner.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'early excavators assumed they were logs or carbonized fishing nets'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "herculaneum",
+      "field": "notable",
+      "value": "The villa was excavated by tunnelling. Convicts and conscripts dug the shafts and tunnels under Karl Weber.",
+      "source": "https://www.getty.edu/art/exhibitions/villa_papiri/inner.html",
+      "tier": "secondary",
+      "quote": "a corps of convicts and conscripts dug a series of shafts and tunnels",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.getty.edu/art/exhibitions/villa_papiri/inner.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'a corps of convicts and conscripts dug a series of shafts and tunnels'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "herculaneum",
+      "field": "notable",
+      "value": "The Getty calls the scrolls from the Villa of the Papyri the only surviving library from the classical world.",
+      "source": "https://www.getty.edu/art/exhibitions/villa_papiri/inner.html",
+      "tier": "secondary",
+      "quote": "the only surviving library from the classical world",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.getty.edu/art/exhibitions/villa_papiri/inner.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the only surviving library from the classical world'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "herculaneum",
+      "field": "notable",
+      "value": "The same villa also gave up the largest collection of statuary ever recovered from one classical building.",
+      "source": "https://www.getty.edu/art/exhibitions/villa_papiri/inner.html",
+      "tier": "secondary",
+      "quote": "the largest collection of statuary ever recovered from a single classical building",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.getty.edu/art/exhibitions/villa_papiri/inner.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'the largest collection of statuary ever recovered from a single classical building'"
+    }
+  ],
+  "events": []
+}

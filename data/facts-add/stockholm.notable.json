@@ -1,0 +1,86 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "stockholm",
+      "field": "notable",
+      "value": "The children's library ceiling shows the night sky at 8 pm on 22 September, Asplund's birthday.",
+      "source": "https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund",
+      "tier": "primary",
+      "quote": "The ceiling painting in the first room shows the starry sky at 8 pm at the autumnal equinox on 22 September (Gunnar Asplund’s birthday)",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'starry sky at 8 pm at the autumnal equinox'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "stockholm",
+      "field": "notable",
+      "value": "Some of the windows in room 2 are blind, made of painted iron and polished plate glass, and reflect light to make the room look wider.",
+      "source": "https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund",
+      "tier": "primary",
+      "quote": "blind windows of painted iron and polished plate glass that on first glance give the impression of real windows",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'blind windows of painted iron and polished plate glass'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "stockholm",
+      "field": "notable",
+      "value": "A stucco border around the exterior carries 294 hieroglyph-like images of the subjects found inside.",
+      "source": "https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund",
+      "tier": "primary",
+      "quote": "hieroglyphic-like motifs of all the subjects to be found within (294 images)",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'hieroglyphic-like motifs of all the subjects to be found within (294 images)'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "stockholm",
+      "field": "notable",
+      "value": "The first gallery of the rotunda opened to visitors only in 1974. Until then only librarians went up.",
+      "source": "https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund",
+      "tier": "primary",
+      "quote": "Gallery 1 was first opened to visitors in 1974 and the stairs up to it were built at the same time and designed by Gunnar Asplund’s son, Hans Asplund. Until then, only librarians",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Gallery 1 was first opened to visitors in 1974'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "stockholm",
+      "field": "notable",
+      "value": "In Nils Dardel's fresco The Sandman, the old man with the rifle is supposed to be the painter's father-in-law, Axel Klinckowström.",
+      "source": "https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund",
+      "tier": "primary",
+      "quote": "The old man on the left with a rifle in his hand is supposed to be Dardel’s father-in-law, a man by the name of Axel Klinckowström",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'supposed to be Dardel'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "stockholm",
+      "field": "notable",
+      "value": "Asplund took the pattern of the rotunda floor from the marble floor of the Pantheon in Rome.",
+      "source": "https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund",
+      "tier": "primary",
+      "quote": "Asplund based the pattern on the marble floor on that in the Pantheon in Rome",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://biblioteket.stockholm.se/about-the-stockholm-public-library-by-gunnar-asplund' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'marble floor on that in the Pantheon'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "stockholm",
+      "kind": "opened",
+      "year": 1911,
+      "earliest": 1911,
+      "latest": 1911,
+      "label": "The first children's library in the Nordic countries opens on Drottninggatan 65.",
+      "source": "https://biblioteket.stockholm.se/historik-ar-for-ar",
+      "tier": "primary",
+      "quote": "Nordens första barn- och ungdomsbibliotek öppnar på Drottninggatan 65",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://biblioteket.stockholm.se/historik-ar-for-ar' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Drottninggatan 65'"
+    }
+  ]
+}

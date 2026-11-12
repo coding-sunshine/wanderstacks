@@ -1,0 +1,86 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "escorial",
+      "field": "notable",
+      "value": "A fire on 7 June 1671 ravaged much of the building. The main hall survived, but more than 5,000 codices were lost.",
+      "source": "https://rbme.patrimonionacional.es/s/rbme/page/historia",
+      "tier": "primary",
+      "quote": "aunque se salvó el Salón Principal, por diversas circunstancias perecieron un número superior a los 5.000 códices",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://rbme.patrimonionacional.es/s/rbme/page/historia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'diversas circunstancias perecieron'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "escorial",
+      "field": "notable",
+      "value": "The 1671 losses included about 2,500 Arabic codices, 2,000 Latin, 650 Greek, 90 French and 40 Hebrew.",
+      "source": "https://rbme.patrimonionacional.es/s/rbme/page/historia",
+      "tier": "primary",
+      "quote": "por diversas circunstancias perecieron un número superior a los 5.000 códices, entre ellos unos 2.500 árabes",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://rbme.patrimonionacional.es/s/rbme/page/historia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'unos 2.500 '"
+    },
+    {
+      "cluster": "notable",
+      "lib": "escorial",
+      "field": "notable",
+      "value": "Ships under Luis Fajardo captured the library of the Sultan of Morocco, Muley Zaydan, off Agadir in 1612. About 4,000 Arabic volumes went to El Escorial in 1614.",
+      "source": "https://rbme.patrimonionacional.es/s/rbme/page/historia",
+      "tier": "primary",
+      "quote": "del Sultán de Marruecos Muley Zaydan, apresada por los navíos de Luis Fajardo cerca de Agadir en 1612 y depositada en El Escorial en 1614: el número de volúmenes se aproximaba a los 4.000",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://rbme.patrimonionacional.es/s/rbme/page/historia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Muley Zaydan, apresada por los nav'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "escorial",
+      "field": "notable",
+      "value": "The library's own account says the arabist José Antonio Conde, charged with moving its books to Madrid, saved them by hiding the crates in a convent under piles of printed books.",
+      "source": "https://rbme.patrimonionacional.es/s/rbme/page/historia",
+      "tier": "primary",
+      "quote": "el arabista afrancesado José Antonio Conde, logró salvarlos ocultándolos en el convento de la Trinidad, en Madrid, y cubriendo los cajones con montones de libros impresos",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://rbme.patrimonionacional.es/s/rbme/page/historia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'convento de la Trinidad, en Madrid'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "escorial",
+      "field": "notable",
+      "value": "The Cancionero de Baena is among the important codices that went missing in the early 1800s moves of the library. It is now in the national library in Paris.",
+      "source": "https://rbme.patrimonionacional.es/s/rbme/page/historia",
+      "tier": "primary",
+      "quote": "Entre los más importantes códices desaparecidos en esta ocasión está el \" Cancionero de Baena \", que actualmente se encuentra en la Biblioteca Nacional de París",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://rbme.patrimonionacional.es/s/rbme/page/historia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Cancionero de Baena'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "escorial",
+      "field": "notable",
+      "value": "A decree of 12 January 1619 gave El Escorial a copy of every work printed in Spain and its realms.",
+      "source": "https://rbme.patrimonionacional.es/s/rbme/page/historia",
+      "tier": "primary",
+      "quote": "se donara a la misma un ejemplar de cuantas obras se imprimieran en España y en sus Estados. El rey accedió y dio el correspondiente decreto de 12 de enero de 1619",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://rbme.patrimonionacional.es/s/rbme/page/historia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'decreto de 12 de enero de 1619'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "escorial",
+      "kind": "damaged",
+      "year": 1671,
+      "earliest": 1671,
+      "latest": 1671,
+      "label": "Fire on 7 June ravages much of the building and destroys over 5,000 codices.",
+      "source": "https://rbme.patrimonionacional.es/s/rbme/page/historia",
+      "tier": "primary",
+      "quote": "aunque se salvó el Salón Principal, por diversas circunstancias perecieron un número superior a los 5.000 códices",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://rbme.patrimonionacional.es/s/rbme/page/historia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'diversas circunstancias perecieron'"
+    }
+  ]
+}

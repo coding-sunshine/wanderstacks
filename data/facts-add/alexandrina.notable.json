@@ -1,0 +1,38 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "alexandrina",
+      "field": "notable",
+      "value": "The library's own FAQ says only one papyrus from the ancient Library of Alexandria is known to remain. It is a scholar's copy of the first lines of satirical wisdom poems.",
+      "source": "https://www.bibalex.org/en/page/FAQ",
+      "tier": "primary",
+      "quote": "only one remaining papyrus from the ancient Library that is a copy in which an ancient scholar copied the first lines of satirical wisdom poems",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bibalex.org/en/page/FAQ' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'only one remaining papyrus from the ancient Library'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "alexandrina",
+      "field": "notable",
+      "value": "In 2002 the Internet Archive signed an agreement making the Bibliotheca Alexandrina a backup of its web archive, with two mirror sites.",
+      "source": "https://www.bibalex.org/en/project/details?documentid=283",
+      "tier": "primary",
+      "quote": "signed an agreement with the BA in 2002 to render the latter a backup of the original",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bibalex.org/en/project/details?documentid=283' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'signed an agreement with the BA in 2002 to render the latter a backup of the original'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "alexandrina",
+      "field": "notable",
+      "value": "The Antiquities Museum shows objects dug up on the library's own building site. The library says few museums display finds from the very place they stand on.",
+      "source": "https://www.bibalex.org/en/center/details/antiquitiesmuseum",
+      "tier": "primary",
+      "quote": "displays artifacts discovered at the selfsame location of the museum",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bibalex.org/en/center/details/antiquitiesmuseum' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'displays artifacts discovered at the selfsame location of the museum'"
+    }
+  ],
+  "events": []
+}

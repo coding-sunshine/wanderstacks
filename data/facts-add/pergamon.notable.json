@@ -1,0 +1,60 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "pergamon",
+      "field": "notable",
+      "value": "An ancient report says Ptolemy imprisoned the Alexandrian scholar Aristophanes of Byzantium on suspicion of leaving for Pergamon.",
+      "source": "https://penelope.uchicago.edu/encyclopaedia_romana/greece/paganism/pergamumlibrary.html",
+      "tier": "secondary",
+      "quote": "is said to have imprisoned Aristophanes of Byzantium",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://penelope.uchicago.edu/encyclopaedia_romana/greece/paganism/pergamumlibrary.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'is said to have imprisoned Aristophanes of Byzantium'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "pergamon",
+      "field": "notable",
+      "value": "Crates of Mallus, a scholar from Pergamon, fell into a Roman sewer opening around 169 BC while on an embassy. He broke his leg.",
+      "source": "https://penelope.uchicago.edu/encyclopaedia_romana/greece/paganism/pergamumlibrary.html",
+      "tier": "secondary",
+      "quote": "as an envoy to the Senate in about 169 BC, he fell into a sewer opening and broke his leg",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://penelope.uchicago.edu/encyclopaedia_romana/greece/paganism/pergamumlibrary.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'he fell into a sewer opening and broke his leg'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "pergamon",
+      "field": "notable",
+      "value": "Strabo writes that the heirs of Neleus, who held the books of Aristotle and Theophrastus, hid them in a trench to keep them from the Attalid book-hunters. Moisture and moths damaged them.",
+      "source": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/13A3*.html",
+      "tier": "secondary",
+      "quote": "in a kind of trench. But much later, when the books had been damaged by moisture and moths",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/13A3*.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'in a kind of trench. But much later, when the books had been damaged by moisture and moths'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "pergamon",
+      "field": "notable",
+      "value": "Pliny reports a story that Ptolemy banned papyrus exports and that parchment (charta pergamena) was invented at Pergamon as a substitute. The same page notes Herodotus says animal skins were used for writing long before.",
+      "source": "https://penelope.uchicago.edu/encyclopaedia_romana/greece/paganism/pergamumlibrary.html",
+      "tier": "secondary",
+      "quote": "parchment ( charta pergamena ) was said to have been invented in Pergamon as a substitute",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://penelope.uchicago.edu/encyclopaedia_romana/greece/paganism/pergamumlibrary.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'parchment ( charta pergamena ) was said to have been invented in Pergamon as a substitute'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "pergamon",
+      "field": "notable",
+      "value": "The rooms on the Athena terrace long taken for the royal library may not have been one. Later scholars have suggested a reception hall, a store for offerings or a display room.",
+      "source": "https://penelope.uchicago.edu/encyclopaedia_romana/greece/paganism/pergamumlibrary.html",
+      "tier": "secondary",
+      "quote": "It therefore is not certain that the rooms originally thought to have been the location of the Pergamon Library actually served that purpose",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://penelope.uchicago.edu/encyclopaedia_romana/greece/paganism/pergamumlibrary.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'It therefore is not certain that the rooms originally thought to have been the location of the Pergamon Library actually served that purpose'"
+    }
+  ],
+  "events": []
+}

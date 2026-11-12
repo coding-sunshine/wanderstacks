@@ -1,0 +1,53 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "ottawa",
+      "field": "notable",
+      "value": "Architects in the 1859 competition for the Parliament buildings had just ten weeks to meet detailed requirements, according to Hill Notes.",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "primary",
+      "quote": "given just ten weeks to meet detailed requirements",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'given just ten weeks to meet detailed requirements'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "ottawa",
+      "field": "notable",
+      "value": "After the 1849 Montreal fire destroyed the Parliament buildings and their library, the Ottawa library was insisted upon as a separate structure with fire-proof iron doors.",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "primary",
+      "quote": "insisting that the new library be housed in a separate structure with fire-proof iron doors",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'insisting that the new library be housed in a separate structure with fire-proof iron doors'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "ottawa",
+      "field": "notable",
+      "value": "In the 1952 fire, firefighters used nearly 910,000 litres of water and about 150,000 volumes had to be taken off the shelves.",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "primary",
+      "quote": "nearly 910,000 litres of water",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'nearly 910,000 litres of water'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "ottawa",
+      "kind": "damaged",
+      "year": 1916,
+      "earliest": 1916,
+      "latest": 1916,
+      "label": "A fire started in the House of Commons reading room in 1916.",
+      "source": "https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/",
+      "tier": "primary",
+      "quote": "a fire started in the House of Commons reading room",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://hillnotes.ca/2026/02/26/the-library-of-parliament-150-years-of-history/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'a fire started in the House of Commons reading room'"
+    }
+  ]
+}

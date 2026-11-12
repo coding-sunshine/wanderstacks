@@ -1,0 +1,27 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "tianyige",
+      "field": "notable",
+      "value": "Fan Qin's rules for the library included a ban on entering it after drinking alcohol.",
+      "source": "https://govt.chinadaily.com.cn/s/202212/08/WS63913c6d498ea274927aaab7/oldest-surviving-private-library-celebrates-400-years-of-history.html",
+      "tier": "secondary",
+      "quote": "Fan set up strict rules to manage his library, including one that forbade people from going there after drinking alcohol",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://govt.chinadaily.com.cn/s/202212/08/WS63913c6d498ea274927aaab7/oldest-surviving-private-library-celebrates-400-years-of-history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Fan set up strict rules to manage his library, including one that forbade people from going there after drinking alcohol'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "tianyige",
+      "field": "notable",
+      "value": "In 1585, aged 80, Fan Qin split his property into savings and the library of 70,000 books and let his descendants choose. The one who took the library became its keeper.",
+      "source": "https://govt.chinadaily.com.cn/s/202212/08/WS63913c6d498ea274927aaab7/oldest-surviving-private-library-celebrates-400-years-of-history.html",
+      "tier": "secondary",
+      "quote": "He asked his descendants to choose",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://govt.chinadaily.com.cn/s/202212/08/WS63913c6d498ea274927aaab7/oldest-surviving-private-library-celebrates-400-years-of-history.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'He asked his descendants to choose'"
+    }
+  ],
+  "events": []
+}

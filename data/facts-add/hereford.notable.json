@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "hereford",
+      "field": "notable",
+      "value": "The books face outwards by their fore-edges, not their spines, so a book can be lifted down and opened without tangling its chain.",
+      "source": "https://www.herefordcathedral.org/chained-library",
+      "tier": "primary",
+      "quote": "The books are shelved with their foredges, rather than their spines, facing the reader (the wrong way round to us)",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.herefordcathedral.org/chained-library' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'foredges, rather than their spines, facing the reader'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "hereford",
+      "field": "notable",
+      "value": "The Mappa Mundi carries about 500 drawings, among them around 420 cities and towns and 33 plants, animals, birds and strange creatures.",
+      "source": "https://www.herefordcathedral.org/mappa-mundi",
+      "tier": "primary",
+      "quote": "These 500 or so drawings include of around 420 cities and towns, 15 Biblical events, 33 plants, animals, birds and strange creatures",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.herefordcathedral.org/mappa-mundi' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'around 420 cities and towns'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "hereford",
+      "field": "notable",
+      "value": "In the Civil War siege of Hereford the dean preached against Parliamentary soldiers' desecration of the cathedral. They threatened to shoot him until their colonel stopped them.",
+      "source": "https://www.herefordcathedral.org/our-history",
+      "tier": "primary",
+      "quote": "Dean Herbert Croft preaches against the desecration of the cathedral by the Parliamentary soldiers, who threaten to shoot him, but are prevented by their commander, Colonel Birch",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.herefordcathedral.org/our-history' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'who threaten to shoot him, but are prevented by their commander, Colonel Birch'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "hereford",
+      "field": "notable",
+      "value": "In 2007 the Mappa Mundi became the UK's second entry on the UNESCO Memory of the World register.",
+      "source": "https://www.herefordcathedral.org/our-history",
+      "tier": "primary",
+      "quote": "In 2007 it became the United Kingdom’s second entry on the UNESCO’s Memory of the World register",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.herefordcathedral.org/our-history' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'it became the United Kingdom'"
+    }
+  ],
+  "events": []
+}

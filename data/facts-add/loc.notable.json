@@ -1,0 +1,64 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "loc",
+      "field": "notable",
+      "value": "The British burned Washington in 1814 and destroyed the small congressional library. Congress then bought Thomas Jefferson's personal library of 6,487 books to start again.",
+      "source": "https://www.loc.gov/about/history-of-the-library/",
+      "tier": "primary",
+      "quote": "comprehensive personal library of 6,487 books",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.loc.gov/about/history-of-the-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'comprehensive personal library of 6,487 books'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "loc",
+      "field": "notable",
+      "value": "During the Second World War the Library helped plan the shipment of the Declaration of Independence and the Constitution to Fort Knox, Kentucky, for safekeeping.",
+      "source": "https://www.loc.gov/about/history-of-the-library/",
+      "tier": "primary",
+      "quote": "along with other treasures, to Fort Knox, Kentucky",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.loc.gov/about/history-of-the-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'along with other treasures, to Fort Knox, Kentucky'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "loc",
+      "field": "notable",
+      "value": "The Library's Gutenberg Bible, bought in 1930, is one of three perfect copies on vellum in the world, the Library says.",
+      "source": "https://www.loc.gov/about/fascinating-facts/",
+      "tier": "primary",
+      "quote": "one of three perfect copies on vellum in the world",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.loc.gov/about/fascinating-facts/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'one of three perfect copies on vellum in the world'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "loc",
+      "field": "notable",
+      "value": "The oldest written material in the Library is a cuneiform tablet dated to 2040 B.C.",
+      "source": "https://www.loc.gov/about/fascinating-facts/",
+      "tier": "primary",
+      "quote": "The oldest written material in the Library is a cuneiform tablet dating from 2040 B.C.",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.loc.gov/about/fascinating-facts/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'The oldest written material in the Library is a cuneiform tablet dating from 2040 B.C.'"
+    }
+  ],
+  "events": [
+    {
+      "cluster": "notable",
+      "lib": "loc",
+      "kind": "destroyed",
+      "year": 1814,
+      "earliest": 1814,
+      "latest": 1814,
+      "label": "The British burned Washington and destroyed the small congressional library in the Capitol.",
+      "source": "https://www.loc.gov/about/history-of-the-library/",
+      "tier": "primary",
+      "quote": "In 1814, the British burned Washington",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.loc.gov/about/history-of-the-library/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'In 1814, the British burned Washington'"
+    }
+  ]
+}

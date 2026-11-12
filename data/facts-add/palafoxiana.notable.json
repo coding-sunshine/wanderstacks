@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "palafoxiana",
+      "field": "notable",
+      "value": "The Palafoxiana holds 45,000 items on more than 15,000 subjects, dated from the 17th to the 20th century, according to the Mexican culture ministry in 2019.",
+      "source": "https://www.gob.mx/cultura/prensa/exposicion-memoria-de-la-biblioteca-palafoxiana-recorre-cuatro-decadas-de-historia",
+      "tier": "secondary",
+      "quote": "alberga 45 mil ejemplares",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.gob.mx/cultura/prensa/exposicion-memoria-de-la-biblioteca-palafoxiana-recorre-cuatro-decadas-de-historia' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'alberga 45 mil ejemplares'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "palafoxiana",
+      "field": "notable",
+      "value": "The books sit on cedar shelves in three levels, arranged by a scholastic view that places God as the base of all knowledge. The first level holds more than 11,000 Bibles and religious works, according to the Associated Press.",
+      "source": "https://www.publimetro.com.mx/noticias/2022/10/08/biblioteca-palafoxiana-preserva-legado-de-obispo-espanol",
+      "tier": "secondary",
+      "quote": "estantes de cedro que se distribuyen en tres niveles",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.publimetro.com.mx/noticias/2022/10/08/biblioteca-palafoxiana-preserva-legado-de-obispo-espanol' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'estantes de cedro que se distribuyen en tres niveles'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "palafoxiana",
+      "field": "notable",
+      "value": "Bishop Palafox never saw the project finished. The Associated Press says the library he founded in 1646 is the first public library in the Americas.",
+      "source": "https://www.publimetro.com.mx/noticias/2022/10/08/biblioteca-palafoxiana-preserva-legado-de-obispo-espanol",
+      "tier": "secondary",
+      "quote": "no vio su proyecto terminado",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.publimetro.com.mx/noticias/2022/10/08/biblioteca-palafoxiana-preserva-legado-de-obispo-espanol' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'no vio su proyecto terminado'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "palafoxiana",
+      "field": "notable",
+      "value": "A painting of the Virgen de Trapani hangs at the far end of the hall, framed by gilded neoclassical columns.",
+      "source": "https://www.publimetro.com.mx/noticias/2022/10/08/biblioteca-palafoxiana-preserva-legado-de-obispo-espanol",
+      "tier": "secondary",
+      "quote": "una pintura de la Virgen de Trapani espera al fondo",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.publimetro.com.mx/noticias/2022/10/08/biblioteca-palafoxiana-preserva-legado-de-obispo-espanol' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'una pintura de la Virgen de Trapani espera al fondo'"
+    }
+  ],
+  "events": []
+}

@@ -23,7 +23,7 @@ function report(lib: Library, field: string, value: string, source: string | nul
 
 const host = (u: string) => new URL(u).hostname.replace(/^www\./, '')
 
-const FIELD: Record<string, string> = { dims: 'Size', status_note: 'Now', remains_today: 'Remains today', recon: 'Reconstruction', collection: 'Treasures' }
+const FIELD: Record<string, string> = { dims: 'Size', status_note: 'Now', remains_today: 'Remains today', recon: 'Reconstruction', collection: 'Treasures', notable: 'Worth knowing' }
 const label = (field: string) => FIELD[field] ?? field.replace(/_/g, ' ')
 
 function show(v: unknown, unit: string) {

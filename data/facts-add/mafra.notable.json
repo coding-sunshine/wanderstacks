@@ -1,0 +1,38 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "mafra",
+      "field": "notable",
+      "value": "The heritage portal calls the library, with about 30,000 books, the largest bookstore in a single room in Europe.",
+      "source": "https://www.museusemonumentos.pt/en/museus-e-monumentos/national-palace-of-mafra",
+      "tier": "primary",
+      "quote": "an important library with about 30,000 books, the largest bookstore in a single room in Europe",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.museusemonumentos.pt/en/museus-e-monumentos/national-palace-of-mafra' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'largest bookstore in a single room in Europe'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "mafra",
+      "field": "notable",
+      "value": "Manuel II, the last Portuguese king, was staying at Mafra when he had to leave for exile on 5 October 1910.",
+      "source": "https://www.museusemonumentos.pt/en/museus-e-monumentos/national-palace-of-mafra",
+      "tier": "primary",
+      "quote": "D. Manuel II, the last Portuguese monarch was staying in this palace when he was forced to move into exile on October 5, 1910",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.museusemonumentos.pt/en/museus-e-monumentos/national-palace-of-mafra' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'was staying in this palace when he was forced'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "mafra",
+      "field": "notable",
+      "value": "Since the Napoleonic invasions the palace has also housed military barracks.",
+      "source": "https://www.museusemonumentos.pt/en/museus-e-monumentos/national-palace-of-mafra",
+      "tier": "primary",
+      "quote": "since the Napoleon invasions accommodated military barracks and was also a seasonal residence for the royal family",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.museusemonumentos.pt/en/museus-e-monumentos/national-palace-of-mafra' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'accommodated military barracks'"
+    }
+  ],
+  "events": []
+}

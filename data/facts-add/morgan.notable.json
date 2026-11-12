@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "morgan",
+      "field": "notable",
+      "value": "On the night of 24 October 1907 nearly every important New York banker met in Morgan's private library during the financial panic, according to American Heritage.",
+      "source": "https://americanheritage.com/node/56522",
+      "tier": "secondary",
+      "quote": "nearly every important banker in New York was meeting in J. P. Morgan",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://americanheritage.com/node/56522' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'nearly every important banker in New York was meeting in J. P. Morgan'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "morgan",
+      "field": "notable",
+      "value": "While the bankers worked in the East Room, Morgan sat alone in the West Room playing solitaire. His librarian, Belle da Costa Greene, asked why he did not simply tell them what to do.",
+      "source": "https://americanheritage.com/node/56522",
+      "tier": "secondary",
+      "quote": "tell them what to do, Mr. Morgan?",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://americanheritage.com/node/56522' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'tell them what to do, Mr. Morgan?'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "morgan",
+      "field": "notable",
+      "value": "Belle da Costa Greene attributed her dark complexion to Portuguese ancestry. A Fordham University exhibit says this hid that her father was Richard T. Greener, the first Black graduate of Harvard.",
+      "source": "https://medievalartus.ace.fordham.edu/exhibits/show/greene-exhibit",
+      "tier": "secondary",
+      "quote": "attributed her dusky skin tone to Portuguese ancestry",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://medievalartus.ace.fordham.edu/exhibits/show/greene-exhibit' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'attributed her dusky skin tone to Portuguese ancestry'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "morgan",
+      "field": "notable",
+      "value": "After Morgan's death in 1913 Greene wrote that he was almost a father to her, and that very often she felt like a son. The Boston Globe quotes the tribute.",
+      "source": "https://www.bostonglobe.com/2025/01/07/arts/morgan-library-belle-da-costa-greene/",
+      "tier": "secondary",
+      "quote": "very often I felt like a son",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://www.bostonglobe.com/2025/01/07/arts/morgan-library-belle-da-costa-greene/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'very often I felt like a son'"
+    }
+  ],
+  "events": []
+}

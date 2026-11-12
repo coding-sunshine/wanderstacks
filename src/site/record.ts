@@ -33,7 +33,7 @@ export const factsFor = (id: string) => facts.filter((x) => x.lib === id)
 export const eventsFor = (id: string) => events.filter((x) => x.lib === id).sort((a, b) => (a.year ?? 0) - (b.year ?? 0))
 
 export const fieldLabel: Record<string, string> = {
-  place: 'location', built: 'built', architect: 'architect', dims: 'size', volumes: 'volumes', collection: 'collection',
+  notable: 'worth knowing', place: 'location', built: 'built', architect: 'architect', dims: 'size', volumes: 'volumes', collection: 'collection',
   remains_today: 'what remains', status_note: 'status today', recon: 'reconstruction',
 }
 export const yr = (y: number) => (y < 0 ? `${-y} BC` : String(y))

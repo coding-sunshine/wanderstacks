@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "timbuktu",
+      "field": "notable",
+      "value": "HMML counts more than 200,000 manuscripts from some 36 libraries in Timbuktu. Other figures on this site run higher, so treat the number as approximate.",
+      "source": "https://hmml.org/stories/where-were-working-mali/",
+      "tier": "secondary",
+      "quote": "more than 200,000 from some 36 libraries",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://hmml.org/stories/where-were-working-mali/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'more than 200,000 from some 36 libraries'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "timbuktu",
+      "field": "notable",
+      "value": "A rescue worker told HMML she showed photos of the 1,400 metal boxes used to carry Timbuktu manuscripts out.",
+      "source": "https://hmml.org/stories/a-decade-in-mali/",
+      "tier": "secondary",
+      "quote": "She showed me photos of the 1,400 metal boxes",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://hmml.org/stories/a-decade-in-mali/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'She showed me photos of the 1,400 metal boxes'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "timbuktu",
+      "field": "notable",
+      "value": "Libraries that stayed in Timbuktu were hidden by their owners, as families had done when the Moroccans invaded in the late sixteenth century and the French in the nineteenth.",
+      "source": "https://hmml.org/stories/where-were-working-mali/",
+      "tier": "secondary",
+      "quote": "hidden by their owners in the same manner as when the Moroccans invaded in the late sixteenth century",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://hmml.org/stories/where-were-working-mali/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'hidden by their owners in the same manner as when the Moroccans invaded in the late sixteenth century'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "timbuktu",
+      "field": "notable",
+      "value": "The Mamma Haidara Family Library is one of the largest private manuscript collections in Timbuktu. Some of its documents date to the 13th century.",
+      "source": "https://hmml.org/stories/hmml-digitizes-timbuktus-historic-manuscript-collections/",
+      "tier": "secondary",
+      "quote": "has one of the largest private manuscript collections in Timbuktu, and some of its documents date back to the 13th century",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://hmml.org/stories/hmml-digitizes-timbuktus-historic-manuscript-collections/' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'has one of the largest private manuscript collections in Timbuktu'"
+    }
+  ],
+  "events": []
+}

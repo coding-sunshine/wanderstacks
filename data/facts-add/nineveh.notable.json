@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "cluster": "notable",
+      "lib": "nineveh",
+      "field": "notable",
+      "value": "The British Museum's Ashurbanipal Library Project admits that nobody fully understands what counted as the library, or how many there were.",
+      "source": "https://oracc.museum.upenn.edu/asbp/WhatistheLibrary/index.html",
+      "tier": "secondary",
+      "quote": "We do not understand what constituted a library, how many there may have been",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2025/https://oracc.museum.upenn.edu/asbp/WhatistheLibrary/index.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'We do not understand what constituted a library, how many there may have been'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nineveh",
+      "field": "notable",
+      "value": "The project describes Ashurbanipal's collection as the most significant library of antiquity until Alexandria.",
+      "source": "https://oracc.museum.upenn.edu/asbp/WhatistheLibrary/index.html",
+      "tier": "secondary",
+      "quote": "Until the Library of Alexandria, it was the most significant library of antiquity",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2025/https://oracc.museum.upenn.edu/asbp/WhatistheLibrary/index.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'Until the Library of Alexandria, it was the most significant library of antiquity'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nineveh",
+      "field": "notable",
+      "value": "Library tablets carry a colophon stating that they belonged to the palace of Ashurbanipal, usually with detail and a prayer.",
+      "source": "https://oracc.museum.upenn.edu/asbp/Colophons/index.html",
+      "tier": "secondary",
+      "quote": "These library colophons all contain a statement recording that they belonged to the palace of Ashurbanipal, usually followed by detailed information and a prayer",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2025/https://oracc.museum.upenn.edu/asbp/Colophons/index.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'all contain a statement recording that they belonged to the palace of Ashurbanipal'"
+    },
+    {
+      "cluster": "notable",
+      "lib": "nineveh",
+      "field": "notable",
+      "value": "Layard's first dig at Nineveh was a private venture financed by Stratford Canning, the British ambassador in Constantinople.",
+      "source": "https://oracc.museum.upenn.edu/asbp/RecordingtheLibrary/index.html",
+      "tier": "secondary",
+      "quote": "Layard's excavations had begun as a private initiative financed by Stratford Canning, British Ambassador to the Ottoman Empire",
+      "status": "passing",
+      "check": "curl -sL -A 'Mozilla/5.0' 'https://web.archive.org/web/2025/https://oracc.museum.upenn.edu/asbp/RecordingtheLibrary/index.html' | perl -0pe 's/<[^>]*>/ /g;s/\\s+/ /g' | rg -o -m1 -F 'had begun as a private initiative financed by Stratford Canning'"
+    }
+  ],
+  "events": []
+}
