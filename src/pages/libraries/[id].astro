@@ -136,6 +136,8 @@ const i = libs.indexOf(l), prev = libs[(i + libs.length - 1) % libs.length], nex
   .grp { display: grid; grid-template-columns: 9rem 1fr; border-top: 1px solid var(--rule); }
   .grp:last-child { border-bottom: 1px solid var(--rule); }
   .grp h3 { font: inherit; color: var(--dim); padding: 0.7rem 0; }
+  /* The page already names the library and the heading names the field, so the lead-in stays for search and screen readers only. */
+  .grp :global(.lead), .time :global(.lead) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .wall { columns: 3 20rem; column-gap: 1rem; }
   .wall figure { margin: 0 0 1.2rem; break-inside: avoid; }
   .wall :global(img) { width: 100%; border-radius: 2px; }
