@@ -25,7 +25,7 @@ export function attach(api: RoomApi): () => void {
   api.root.dataset.acoustics = JSON.stringify({ volume: Number(volume.toFixed(2)), absorption: Number(absorption.toFixed(3)) })
   const row = addParamRow(api.panel, 'rt60', 'Reverberation (RT60)', `${rt60.toFixed(1)} s`, 'estimated')
   const label = row.previousElementSibling
-  const measured = pickIr(irTable as Record<string, never>, api.lib.id)
+  const measured = pickIr(irTable as never, api.lib.id)
   const irRow = measured && addParamRow(api.panel, 'ir', 'Impulse response', 'measured', `${measured.by}, ${measured.lic}, ${measured.src}`)
   const irLabel = irRow?.previousElementSibling
 

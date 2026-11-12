@@ -1,1 +1,9 @@
-{}
+{
+  "mafra": {
+    "f": "mafra-library-s1-pos4.wav",
+    "by": "REVERBDATA (D. Alarcão, A. Couto Pinto; ESML, Instituto Politécnico de Lisboa), source S1 to position 4, stereo AB channels of Stereo_Binaural_IR_S1_Pos4.wav resampled from 96 kHz to 48 kHz",
+    "lic": "CC BY-NC-SA 4.0",
+    "src": "https://reverbdata.ipl.pt/reverbdata-old/library-of-the-national-palace-of-mafra/",
+    "measured": true
+  }
+}

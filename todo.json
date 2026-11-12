@@ -25,14 +25,14 @@
     {
       "id": "f07-measured-ir",
       "what": "Measured impulse response for at least one listed library, in data/ir.json",
-      "blocker": "Only find is the Mafra Library set (REVERBDATA, CC BY-NC-SA 4.0): Mafra is not a listed library. OpenAIR had an expired TLS certificate, not bypassed; retry it.",
+      "blocker": "None. Mafra is listed (id mafra). Uses the REVERBDATA Mafra Library response, source S1 to position 4 (D. Alarcão, A. Couto Pinto, ESML), from https://reverbdata.ipl.pt/; the site footer states CC BY-NC-SA 4.0, so NonCommercial and ShareAlike apply. Shipped file is the stereo AB pair resampled from 96 kHz to 48 kHz. OpenAIR not retried.",
       "cmd": "bun scripts/checks/f07-measured-ir.ts",
-      "status": "failing"
+      "status": "passing"
     },
     {
       "id": "f08-splat-rooms",
       "what": "Gaussian-splat capture for at least one listed library, in data/splats.json",
-      "blocker": "No splat file found for any listed library. State Library Victoria has GLB meshes on Zenodo (CC BY-NC-SA), not splats. A Sketchfab Morgan Library model needs a login.",
+      "blocker": "No splat capture with an open licence, a named author and an anonymous download found for any listed library. Searched 2026-11-12: Hugging Face datasets and models, Sketchfab API (about 33 name variants), SuperSplat by web search, GitHub, Wikimedia Commons, CULTURE3D, web search by library name. Not searchable without a login or past a bot check, so not proven empty: Zenodo API (403), SuperSplat API (401), Polycam, Luma, Kiri, OpenHeritage3D, Europeana. Nearest misses: State Library Victoria GLB meshes on Zenodo (CC BY-NC-SA) and a Sketchfab Library of Celsus photogrammetry mesh are meshes, not splats; a Sketchfab Morgan Library model needs a login. Way through: capture one, or train a splat from a licensed photo set.",
       "cmd": "bun scripts/checks/f08-splat-rooms.ts",
       "status": "failing"
     },
