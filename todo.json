@@ -134,6 +134,13 @@
       "blocker": "None.",
       "cmd": "rg -q 'data-view=\"table\"' dist/libraries/index.html && rg -q 'aria-sort=\"ascending\"' dist/libraries/index.html && [ \"$(rg -o '<tr data-q' dist/libraries/index.html | wc -l)\" -eq \"$(jq length data/libs.json)\" ]",
       "status": "passing"
+    },
+    {
+      "id": "shelf-collections",
+      "what": "Named shelves of libraries and books kept in this browser: 'Add to a shelf' on every library and book page, a Your shelves section on /shelf/ with remove, delete, a #s= share link, and JSON export and import; shared and imported data is cleaned to same-site paths",
+      "blocker": "None.",
+      "cmd": "bun test src/site/shelves.test.ts && rg -q 'Add to a shelf' dist/libraries/admont/index.html && rg -q 'Add to a shelf' dist/books/abrogans/index.html",
+      "status": "passing"
     }
   ]
 }

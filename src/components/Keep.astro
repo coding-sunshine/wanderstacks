@@ -1,0 +1,75 @@
+---
+// "Add to a shelf": tick this page onto any of your shelves (src/site/shelves.ts), or start a new one. Shelves live in this browser.
+interface Props { href: string; title: string; sub: string }
+const { href, title, sub } = Astro.props
+---
+<details class="keep" data-href={href} data-title={title} data-sub={sub} data-pagefind-ignore>
+  <summary class="pick">Add to a shelf</summary>
+  <div class="kp">
+    <fieldset>
+      <legend class="dim">Your shelves</legend>
+      <div class="kp-list"></div>
+    </fieldset>
+    <form class="kp-new">
+      <input class="field" maxlength="80" placeholder="New shelf" aria-label="Name a new shelf" required />
+      <button class="pick">Add</button>
+    </form>
+    <a href="/shelf/">See your shelves</a>
+  </div>
+</details>
+
+<script>
+  import { load, save } from '../site/shelves'
+  for (const d of document.querySelectorAll<HTMLElement>('.keep')) {
+    const entry = { href: d.dataset.href!, title: d.dataset.title!, sub: d.dataset.sub! }
+    const list = d.querySelector('.kp-list')!, sum = d.querySelector('summary')!
+    const put = (name: string, on: boolean) => {
+      const all = load()
+      let s = all.find((x) => x.name === name)
+      if (!s) all.push((s = { name, items: [] }))
+      s.items = s.items.filter((i) => i.href !== entry.href)
+      if (on) s.items.push(entry)
+      save(all)
+      draw()
+    }
+    const draw = () => {
+      const all = load()
+      // Before any shelf exists, offer one called My shelf.
+      const names = all.length ? all.map((s) => s.name) : ['My shelf']
+      list.replaceChildren(...names.map((name) => {
+        const label = document.createElement('label')
+        const box = document.createElement('input')
+        box.type = 'checkbox'
+        box.checked = !!all.find((s) => s.name === name)?.items.some((i) => i.href === entry.href)
+        box.onchange = () => put(name, box.checked)
+        label.append(box, ` ${name}`)
+        return label
+      }))
+      const n = all.filter((s) => s.items.some((i) => i.href === entry.href)).length
+      sum.textContent = n ? `On ${n === 1 ? 'one shelf' : `${n} shelves`}` : 'Add to a shelf'
+    }
+    d.querySelector('form')!.addEventListener('submit', (e) => {
+      e.preventDefault()
+      const input = d.querySelector<HTMLInputElement>('.kp-new input')!
+      const name = input.value.trim()
+      if (name) put(name, true)
+      input.value = ''
+    })
+    draw()
+  }
+</script>
+
+<style>
+  .keep { margin: 1rem 0; }
+  .keep summary { display: inline-block; list-style: none; }
+  .keep summary::-webkit-details-marker { display: none; }
+  .keep[open] summary { border-color: var(--brass); color: var(--brass); }
+  .kp { display: grid; gap: 0.8rem; justify-items: start; margin-top: 0.7rem; padding: 1rem 1.1rem; max-width: 26rem; border: 1px solid var(--rule); border-radius: 3px; background: var(--leaf); }
+  fieldset { border: 0; margin: 0; padding: 0; }
+  legend { padding: 0; margin-bottom: 0.4rem; font: 0.75rem var(--mono); }
+  .kp-list { display: grid; gap: 0.2rem; }
+  .kp-list :global(label) { display: flex; gap: 0.6rem; align-items: center; min-height: 2.75rem; cursor: pointer; }
+  .kp-list :global(input) { width: 1.15rem; height: 1.15rem; accent-color: var(--brass); }
+  .kp-new { display: flex; gap: 0.5rem; width: 100%; }
+  .kp-new .field { padding: 0.45rem 0.8rem; }
+</style>

@@ -28,7 +28,7 @@ const pages: Record<string, () => [string, string]> = {
   desk: () => [`${n}: reading desk`, `Where the books of ${n} went, side by side on one desk.`],
   read: () => { const m = textMeta(id); return [m ? `Read ${m.title}` : 'Read', m ? `Read ${m.title}${m.author ? ` by ${m.author}` : ''} free, page by page.` : 'Read a public-domain book page by page.'] },
   scan: () => { const m = scanMeta(id); return [m?.title ?? 'Scan', m ? `Turn the pages of ${m.title}, digitised by ${m.holder}.` : 'Turn the pages of a digitised manuscript.'] },
-  shelf: () => ['Reading list', 'The books you have saved to read.'],
+  shelf: () => ['Your shelves', 'Your shelves of libraries and books, and every book you can read here.'],
   book: () => ['Keepsakes', 'The pages you have kept.'],
   babel: () => ['The Library of Babel', "Borges's infinite library, one hexagon at a time."],
   byrne: () => ["Byrne's Euclid", "Euclid's first proposition, drawn in Oliver Byrne's colours."],

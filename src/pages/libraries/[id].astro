@@ -9,6 +9,7 @@ import ExternalTours from '../../components/ExternalTours.astro'
 import Conservation from '../../components/Conservation.astro'
 import ResearchTrail from '../../components/ResearchTrail.astro'
 import Save from '../../components/Save.astro'
+import Keep from '../../components/Keep.astro'
 import Fact from '../../components/Fact.astro'
 import { libs, type Lib, photos, lead, lost, year, booksOf, seeing, spheres } from '../../site/data'
 import { hasDispersal } from '../../site/dispersal'
@@ -49,6 +50,7 @@ const i = libs.indexOf(l), prev = libs[(i + libs.length - 1) % libs.length], nex
           <a class="pick" href="#record">Read the record</a>
           {held.length > 0 && <a class="pick" href="#books">{held.length} books from here</a>}
         </p>
+        <Keep href={`/libraries/${l.id}/`} title={l.n} sub={l.p} />
       </div>
     </header>
     {spheres[l.id]?.nodes.length > 0 && <Walk nodes={spheres[l.id].nodes} name={l.n} lib={l.id} />}

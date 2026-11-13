@@ -1,3 +1,4 @@
+import { clean, decode, encode, load, merge, save, type Shelf } from '../site/shelves'
 import type { Mount } from '../types'
 
 type Item = { kind: string; title: string; sub: string; href: string }
@@ -7,6 +8,135 @@ const SECTIONS: [string, string][] = [
   ['scan', 'Manuscript scans'],
   ['card', 'Catalogue cards'],
 ]
+
+const el = <K extends keyof HTMLElementTagNameMap>(tag: K, cls = '', text = '') => {
+  const e = document.createElement(tag)
+  if (cls) e.className = cls
+  if (text) e.textContent = text
+  return e
+}
+const link = (it: { href: string; title: string; sub: string }) => {
+  const a = el('a')
+  a.href = it.href
+  if (!it.href.startsWith('/')) a.target = '_blank'
+  a.rel = 'noopener'
+  a.append(el('span', 'shelf-t', it.title), el('span', 'shelf-s', it.sub))
+  return a
+}
+const btn = (text: string, on: () => void, label = '') => {
+  const b = el('button', 'btn', text)
+  b.type = 'button'
+  if (label) b.setAttribute('aria-label', label)
+  b.onclick = on
+  return b
+}
+
+// Your shelves (src/site/shelves.ts): filled from "Add to a shelf" on library and book pages, or kept from a shared #s= link.
+function yours(): HTMLElement {
+  const box = el('section', 'shelf-mine')
+  const head = el('h2', 'eyebrow shelf-h')
+  head.tabIndex = -1
+  const body = el('div')
+  const say = el('p', 'shelf-say')
+  say.setAttribute('role', 'status')
+  const file = el('input')
+  file.type = 'file'
+  file.accept = '.json,application/json'
+  file.hidden = true
+  box.append(head, body, say, file)
+
+  const share = async (s: Shelf) => {
+    const url = `${location.origin}/shelf/#s=${encode(s)}`
+    try {
+      await navigator.clipboard.writeText(url)
+      say.textContent = `Link to “${s.name}” copied.`
+    } catch {
+      say.textContent = `Copy this link: ${url}`
+    }
+  }
+  const exportAll = () => {
+    const a = el('a')
+    a.href = URL.createObjectURL(new Blob([JSON.stringify({ shelves: load() }, null, 2)], { type: 'application/json' }))
+    a.download = 'worldlibs-shelves.json'
+    a.click()
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000)
+  }
+  file.onchange = async () => {
+    const f = file.files?.[0]
+    file.value = ''
+    if (!f) return
+    let add: Shelf[] = []
+    try {
+      if (f.size < 2e6) {
+        const x = JSON.parse(await f.text())
+        add = clean(x?.shelves ?? x)
+      }
+    } catch {}
+    if (add.length) save(merge(load(), add))
+    say.textContent = add.length ? `Imported ${add.length === 1 ? 'one shelf' : `${add.length} shelves`}.` : 'That file holds no WorldLibs shelves.'
+    draw('')
+  }
+
+  // focus: after a change, put focus on that shelf's heading ('' = the section heading) so it is not lost with the removed button.
+  const draw = (focus?: string) => {
+    const all = load()
+    head.textContent = `Your shelves · ${all.length}`
+    const out: Node[] = []
+    if (location.hash.startsWith('#s=')) {
+      const shared = decode(location.hash.slice(3))
+      const card = el('div', 'shelf-card shelf-shared')
+      if (!shared) card.append(el('p', 'shelf-lede', 'This shared shelf link is incomplete. Ask for it again.'))
+      else {
+        const ul = el('ul', 'shelf-ul')
+        for (const it of shared.items) ul.appendChild(el('li')).append(link(it))
+        const keep = btn('Keep this shelf', () => {
+          save(merge(load(), [shared]))
+          history.replaceState(null, '', location.pathname + location.search)
+          say.textContent = `Kept “${shared.name}” on your shelves.`
+          draw(shared.name)
+        })
+        card.append(el('h3', 'shelf-name', `Shared with you: ${shared.name} · ${shared.items.length}`), ul, keep)
+      }
+      out.push(card)
+    }
+    for (const s of all) {
+      const h = el('h3', 'shelf-name', `${s.name} · ${s.items.length}`)
+      h.dataset.name = s.name
+      h.tabIndex = -1
+      const ul = el('ul', 'shelf-ul')
+      for (const it of s.items) {
+        const rm = btn('Remove', () => {
+          s.items = s.items.filter((i) => i !== it)
+          save(all)
+          draw(s.name)
+        }, `Remove ${it.title} from ${s.name}`)
+        ul.appendChild(el('li')).append(link(it), rm)
+      }
+      const row = el('p', 'shelf-row')
+      row.append(
+        btn('Copy share link', () => share(s), `Copy a share link for ${s.name}`),
+        btn('Delete shelf', () => {
+          if (!confirm(`Delete the shelf “${s.name}”? This cannot be undone.`)) return
+          save(all.filter((x) => x !== s))
+          say.textContent = `Deleted “${s.name}”.`
+          draw('')
+        }, `Delete the shelf ${s.name}`),
+      )
+      const card = el('div', 'shelf-card')
+      card.append(h, s.items.length ? ul : el('p', 'shelf-lede', 'Empty for now.'), row)
+      out.push(card)
+    }
+    if (!out.length) out.push(el('p', 'shelf-lede', 'Nothing here yet. Use “Add to a shelf” on any library or book page.'))
+    const tools = el('p', 'shelf-row')
+    if (all.length) tools.append(btn('Export shelves', exportAll))
+    tools.append(btn('Import shelves', () => file.click()))
+    out.push(tools)
+    body.replaceChildren(...out)
+    if (focus !== undefined) ([...body.querySelectorAll<HTMLElement>('h3')].find((x) => x.dataset.name === focus) ?? head).focus()
+  }
+  draw()
+  return box
+}
 
 export const mount: Mount = (app) => {
   const root = document.createElement('section')
@@ -29,7 +159,7 @@ export const mount: Mount = (app) => {
   filter.setAttribute('aria-label', 'Filter the reading list')
   const list = document.createElement('div')
   list.className = 'shelf-list'
-  root.append(head, lede, keep, filter, list)
+  root.append(head, lede, keep, yours(), filter, list)
   app.append(root)
 
   let items: Item[] = []
@@ -45,20 +175,7 @@ export const mount: Mount = (app) => {
       const ul = document.createElement('ul')
       ul.className = 'shelf-ul'
       for (const it of rows) {
-        const li = document.createElement('li')
-        const a = document.createElement('a')
-        a.href = it.href
-        if (!it.href.startsWith('/')) a.target = '_blank'
-        a.rel = 'noopener'
-        const t = document.createElement('span')
-        t.className = 'shelf-t'
-        t.textContent = it.title
-        const s = document.createElement('span')
-        s.className = 'shelf-s'
-        s.textContent = it.sub
-        a.append(t, s)
-        li.append(a)
-        ul.append(li)
+        ul.appendChild(el('li')).append(link(it))
       }
       list.append(h, ul)
     }

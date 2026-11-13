@@ -176,6 +176,14 @@ button { font: inherit; color: inherit; }
 .shelf-ul a:hover { color: var(--brass); background: var(--leaf); }
 .shelf-t { font-size: 1.2rem; }
 .shelf-s { color: var(--dim); font-size: 0.95rem; text-align: right; }
+.shelf-mine { margin-bottom: 2.4rem; }
+.shelf-name { margin: 1.2rem 0 0.4rem; font-family: var(--display); font-weight: 400; font-size: 1.5rem; }
+.shelf-mine .shelf-ul li { display: flex; gap: 0.6rem; align-items: center; }
+.shelf-mine .shelf-ul a { flex: 1; min-width: 0; }
+.shelf-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.8rem 0 0; }
+.shelf-shared { padding: 0.2rem 1rem 1rem; border: 1px solid var(--brass); border-radius: 3px; }
+.shelf-say { margin: 0.8rem 0 0; color: var(--brass); overflow-wrap: anywhere; }
+.shelf-say:empty { display: none; }
 .passport { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.6rem; }
 .passport-cell a {
   display: grid; gap: 0.35rem; padding: 0.7rem 0.8rem; border: 1px solid var(--rule); border-radius: 3px;
