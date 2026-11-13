@@ -3,7 +3,7 @@ import { mkdir } from 'node:fs/promises'
 
 // Every readable-scan book becomes /scan/<id>: one pages.json per book, read from the holder's IIIF manifest (v2 or v3).
 const root = new URL('../../../', import.meta.url).pathname
-const UA = 'WorldLibs-build/1.0 (static reading-room site; open source, MIT)'
+const UA = 'Wanderstacks-build/1.0 (static reading-room site; open source, MIT)'
 const books: any[] = await Bun.file(root + 'data/books.json').json().then((j: any) => j.books)
 // iiif.archive.org timed out on half of its image requests (Nov 2026), so its books link to the holder's own reader.
 const SLOW = /^https:\/\/iiif\.archive\.org\//

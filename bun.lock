@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "worldlibs",
+      "name": "wanderstacks",
       "dependencies": {
         "@fontsource/eb-garamond": "^5.3.0",
         "@fontsource/ibm-plex-mono": "^5.3.0",

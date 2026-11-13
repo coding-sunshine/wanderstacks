@@ -14,7 +14,7 @@
     "by": "owner autonomy grant (Hardik Shah)",
     "on": "2026-11-08"
   },
-  "scope": "Real-time visits. Each room is lit by the real sun at its coordinates right now and by live Open-Meteo weather, with lamps at night and rain or snow outdoors. Arriving from the globe starts outside the building, in a forecourt under the real sky with a massing model sized from OSM or labelled estimates, and the visitor walks in through the door or presses Go inside. Curated books on the shelves can be found from the index, pulled, read about and put back. Tap-to-walk glides with eased start and stop and no bob. Direct room links still start inside. Spec: reports/WorldLibs realtime walkable library visits.md",
+  "scope": "Real-time visits. Each room is lit by the real sun at its coordinates right now and by live Open-Meteo weather, with lamps at night and rain or snow outdoors. Arriving from the globe starts outside the building, in a forecourt under the real sky with a massing model sized from OSM or labelled estimates, and the visitor walks in through the door or presses Go inside. Curated books on the shelves can be found from the index, pulled, read about and put back. Tap-to-walk glides with eased start and stop and no bob. Direct room links still start inside. Spec: reports/Wanderstacks realtime walkable library visits.md",
   "deferred": [
     "photoreal captures of the five buildings (no openly licensed interior or exterior capture exists; see research_notes capture_inventory.md)",
     "Gaussian splats and photogrammetry",
@@ -279,11 +279,11 @@
       "id": "live-sources-c",
       "what": "Open-Meteo answers for all 5 rooms and every Poly Haven texture URL answers with an image type and a CORS header for the site origin",
       "status": "failing",
-      "check": "bun run data >/dev/null && for i in longroom admont strahov loc celsus; do curl -sf \"https://api.open-meteo.com/v1/forecast?latitude=$(jq .lat public/lib/$i.json)&longitude=$(jq .lon public/lib/$i.json)&current=temperature_2m,weather_code,cloud_cover,precipitation,snowfall,visibility,wind_speed_10m&timezone=auto\" | jq -e '.current.weather_code|type==\"number\"' >/dev/null || exit 1; done && [ \"$(jq length data/textures.json)\" -ge 2 ] && jq -r '.[].url' data/textures.json | while read -r u; do h=$(curl -sf -r 0-0 -D - -o /dev/null -H 'Origin: https://worldlibs.pages.dev' \"$u\") || exit 1; echo \"$h\" | rg -qi '^content-type: *image/' || exit 1; echo \"$h\" | rg -qi '^access-control-allow-origin:' || exit 1; done"
+      "check": "bun run data >/dev/null && for i in longroom admont strahov loc celsus; do curl -sf \"https://api.open-meteo.com/v1/forecast?latitude=$(jq .lat public/lib/$i.json)&longitude=$(jq .lon public/lib/$i.json)&current=temperature_2m,weather_code,cloud_cover,precipitation,snowfall,visibility,wind_speed_10m&timezone=auto\" | jq -e '.current.weather_code|type==\"number\"' >/dev/null || exit 1; done && [ \"$(jq length data/textures.json)\" -ge 2 ] && jq -r '.[].url' data/textures.json | while read -r u; do h=$(curl -sf -r 0-0 -D - -o /dev/null -H 'Origin: https://wanderstacks.com' \"$u\") || exit 1; echo \"$h\" | rg -qi '^content-type: *image/' || exit 1; echo \"$h\" | rg -qi '^access-control-allow-origin:' || exit 1; done"
     },
     {
       "id": "deployed-c",
-      "what": "On https://worldlibs.pages.dev a direct Long Room load is ready inside with sky day, twilight or night and a local line matching HH:MM( solar)?( · word · N°C)?, and a globe pin arrives outside",
+      "what": "On https://wanderstacks.com a direct Long Room load is ready inside with sky day, twilight or night and a local line matching HH:MM( solar)?( · word · N°C)?, and a globe pin arrives outside",
       "status": "failing",
       "check": "bunx playwright test e2e/deployed-c.spec.ts"
     }

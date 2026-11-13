@@ -40,9 +40,9 @@ export function exportTrail(trail: Trail, format: 'markdown' | 'csl') {
   const date = new Date().toISOString().slice(0, 10)
   if (format === 'csl') {
     save([{
-      id: `worldlibs-${slug(trail.library)}`,
+      id: `wanderstacks-${slug(trail.library)}`,
       type: 'webpage',
-      title: `${trail.title}: WorldLibs research trail`,
+      title: `${trail.title}: Wanderstacks research trail`,
       URL: trail.url,
       accessed: { 'date-parts': [[...date.split('-').map(Number)]] },
       note: JSON.stringify({ camera: trail.camera, capture: trail.capture, stops: trail.stops, facts: trail.facts }),
@@ -50,7 +50,7 @@ export function exportTrail(trail: Trail, format: 'markdown' | 'csl') {
     return
   }
   const lines = [
-    `# ${trail.title}: WorldLibs research trail`,
+    `# ${trail.title}: Wanderstacks research trail`,
     '',
     `Library: ${trail.library}`,
     `URL: ${trail.url}`,

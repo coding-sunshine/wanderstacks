@@ -1,13 +1,13 @@
 ---
 type: spec
 status: active
-tags: [worldlibs, verification, data]
-relatedTo: ["../libs.json", "../../reports/WorldLibs libraries and books.md"]
+tags: [wanderstacks, verification, data]
+relatedTo: ["../libs.json", "../../reports/Wanderstacks libraries and books.md"]
 ---
 
-# WorldLibs fact verification brief
+# Wanderstacks fact verification brief
 
-WorldLibs is a three.js experience of the world's great libraries, past and present. Every
+Wanderstacks is a three.js experience of the world's great libraries, past and present. Every
 fact it shows (dates, dimensions, floor plans, books on the shelves, readable texts) must
 trace to a source fetched and quoted. You are one of several verifiers, each covering a
 slice. Accuracy beats coverage: a short list of proven facts is better than a long list
@@ -19,7 +19,7 @@ Inputs:
   `id`, `n` name, `p` place, `y` built year (negative = BCE), `yl` year label (`*` = from
   background knowledge, unproven), `lost`, `found`, `dim`, `vol`, `st` status note,
   `book` signature book, `ev` evidence level.
-- `reports/WorldLibs libraries and books.md`: the
+- `reports/Wanderstacks libraries and books.md`: the
   earlier research report. Its claims are leads, not proof.
 
 ## Rules

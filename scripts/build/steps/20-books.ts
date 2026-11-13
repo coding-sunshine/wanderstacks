@@ -2,7 +2,7 @@ import { mkdir, rm } from 'node:fs/promises'
 import type { BookMeta, BookPart } from '../../../src/types'
 
 const root = new URL('../../../', import.meta.url).pathname
-const UA = 'WorldLibs-build/1.0 (static reading-room site; open source, MIT)'
+const UA = 'Wanderstacks-build/1.0 (static reading-room site; open source, MIT)'
 const PART_BYTES = 180_000
 const books: any[] = (await Bun.file(root + 'data/books.json').json()).books
 

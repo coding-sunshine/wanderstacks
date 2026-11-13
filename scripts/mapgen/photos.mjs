@@ -1,5 +1,5 @@
 // Write data/verify/photos.json: one Wikimedia Commons photo-set row per room, passing when >= 5 freely licensed files.
-const UA = { "User-Agent": "WorldLibs-planning/0.1 (https://github.com/; research script)" };
+const UA = { "User-Agent": "Wanderstacks-planning/0.1 (https://github.com/; research script)" };
 const API = "https://commons.wikimedia.org/w/api.php";
 const CAT = { prunksaal: "State Hall of the Austrian National Library", bnf: "Salle Labrouste", stgallen: "Stiftsbibliothek St. Gallen",
   mafra: "Library of the Mafra National Palace", nypl: "Rose Main Reading Room", bpl: "BPL McKim Building Bates Hall",
@@ -22,7 +22,7 @@ for (const [lib, cat] of Object.entries(CAT)) {
   plans.push({ lib, kind: "photo-set", title: `Wikimedia Commons: ${title}`, url,
     licence: `Per file. ${free.length} of ${lic.length} sampled files free (${tally || "none"}); ${files} files in category. Credit each file used.`,
     status: free.length >= 5 ? "passing" : "failing",
-    check: `curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' '${API}' --data-urlencode 'titles=${title.replaceAll("'", "'\\''")}' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'` });
+    check: `curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' '${API}' --data-urlencode 'titles=${title.replaceAll("'", "'\\''")}' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'` });
   console.log(lib, files, `${free.length}/${lic.length}`, plans.at(-1).status);
 }
 await Bun.write(`${import.meta.dir}/../../data/verify/photos.json`, JSON.stringify({ cluster: "photos", plans }, null, 1) + "\n");

@@ -52,7 +52,7 @@ test('Long Room ceiling phases change without moving the camera', async ({ page 
   await expect(room).toHaveAttribute('data-phase', 'flat-ceiling-1733')
   await expect(room).toHaveAttribute('data-camera', camera!)
   await expect(page.locator('[data-phase-note]')).toContainText('flat plaster ceiling')
-  await page.screenshot({ path: '/tmp/worldlibs-longroom-flat.png' })
+  await page.screenshot({ path: '/tmp/wanderstacks-longroom-flat.png' })
   await slider.fill('1')
   await expect(room).toHaveAttribute('data-phase', 'barrel-vault-1861')
   await expect(room).toHaveAttribute('data-camera', camera!)

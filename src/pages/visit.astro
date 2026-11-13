@@ -57,8 +57,8 @@ const noBooks = rows.filter((r) => r.books === 0).length
             <p><span class="stamp" data-s={coverage.reconstruction && !coverage.interior ? 'recon' : 'photo'}>{coverage.label}</span> <span class="dim">{photographs} credited photographs · {books} catalogue records</span></p>
           </div>
           <div class="assets">
-            {coverage.interior > 0 && <p>{coverage.interior} real interior {coverage.interior === 1 ? 'panorama' : 'panoramas'} on WorldLibs.</p>}
-            {coverage.exterior > 0 && <p>{coverage.exterior} real exterior {coverage.exterior === 1 ? 'panorama' : 'panoramas'} on WorldLibs.</p>}
+            {coverage.interior > 0 && <p>{coverage.interior} real interior {coverage.interior === 1 ? 'panorama' : 'panoramas'} on Wanderstacks.</p>}
+            {coverage.exterior > 0 && <p>{coverage.exterior} real exterior {coverage.exterior === 1 ? 'panorama' : 'panoramas'} on Wanderstacks.</p>}
             {coverage.linked.map((tour) => <p><a href={tour.url} target="_blank" rel="noopener noreferrer">{tour.title} ↗</a><br /><span class="dim">{tour.provider} · external, view only</span></p>)}
             {candidates.map((capture) => <p><a href={capture.src} target="_blank" rel="noopener noreferrer">{capture.title} ↗</a><br /><span class="dim">Candidate: {capture.status} · {capture.lic}</span></p>)}
             {coverage.reconstruction > 0 && <p><span class="stamp" data-s="recon">Reconstruction, imagined</span></p>}
@@ -99,7 +99,7 @@ const noBooks = rows.filter((r) => r.books === 0).length
       <li>Check that photography and the intended sharing are permitted, and that identifiable people have consented.</li>
       <li>Record the creator, date, room, viewpoints, licence, and any measured plan or scale reference.</li>
       <li>For free movement, capture overlapping views from many positions. One photograph supports a photograph with generated depth, not an accurate room.</li>
-      <li>WorldLibs checks identity and rights before choosing 360, textured mesh, or Gaussian splat delivery. Unverified and unlicensed assets stay out.</li>
+      <li>Wanderstacks checks identity and rights before choosing 360, textured mesh, or Gaussian splat delivery. Unverified and unlicensed assets stay out.</li>
     </ol>
   </section>
 </Base>

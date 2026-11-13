@@ -83,7 +83,7 @@ const open = async () => {
     box = document.createElement('div')
     box.className = 'palette'
     box.setAttribute('role', 'dialog')
-    box.setAttribute('aria-label', 'Search WorldLibs')
+    box.setAttribute('aria-label', 'Search Wanderstacks')
     const card = document.createElement('div')
     card.className = 'palette-card'
     input = document.createElement('input')

@@ -282,7 +282,7 @@ export const mount: Mount = (el, params) => {
       book = b
       root.querySelector('[data-title]')!.textContent = b.title
       root.querySelector('[data-meta]')!.textContent = [b.date, b.holder].filter(Boolean).join(' · ')
-      document.title = `${b.title} · WorldLibs`
+      document.title = `${b.title} · Wanderstacks`
       const lic = b.deed ? `<a href="${esc(b.deed)}">${esc(b.licence)}</a>` : esc(b.licence)
       credit.hidden = false
       credit.innerHTML = `Images: ${esc(b.credit)}, from the holder's <a href="${esc(b.manifest)}">IIIF manifest</a>. Licence: ${lic}.`

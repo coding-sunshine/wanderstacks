@@ -1,5 +1,5 @@
 // Print each uncovered library's Wikidata Commons category (P373) for review.
-const UA = { "User-Agent": "WorldLibs-planning/0.1 (https://github.com/; research script)" };
+const UA = { "User-Agent": "Wanderstacks-planning/0.1 (https://github.com/; research script)" };
 const libs = await Bun.file(`${import.meta.dir}/../../data/libs.json`).json();
 const want = process.argv.slice(2);
 const ids = libs.filter(l => want.includes(l.id)).map(l => l.wd).join("|");

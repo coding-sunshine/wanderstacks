@@ -57,7 +57,7 @@ function yours(): HTMLElement {
   const exportAll = () => {
     const a = el('a')
     a.href = URL.createObjectURL(new Blob([JSON.stringify({ shelves: load() }, null, 2)], { type: 'application/json' }))
-    a.download = 'worldlibs-shelves.json'
+    a.download = 'wanderstacks-shelves.json'
     a.click()
     setTimeout(() => URL.revokeObjectURL(a.href), 1000)
   }
@@ -73,7 +73,7 @@ function yours(): HTMLElement {
       }
     } catch {}
     if (add.length) save(merge(load(), add))
-    say.textContent = add.length ? `Imported ${add.length === 1 ? 'one shelf' : `${add.length} shelves`}.` : 'That file holds no WorldLibs shelves.'
+    say.textContent = add.length ? `Imported ${add.length === 1 ? 'one shelf' : `${add.length} shelves`}.` : 'That file holds no Wanderstacks shelves.'
     draw('')
   }
 
@@ -147,7 +147,7 @@ export const mount: Mount = (app) => {
   head.textContent = 'The reading list'
   const lede = document.createElement('p')
   lede.className = 'shelf-lede'
-  lede.textContent = 'Every readable book and honest catalogue card in WorldLibs. ' + 'Scans and texts keep their holders’ licences.'
+  lede.textContent = 'Every readable book and honest catalogue card in Wanderstacks. ' + 'Scans and texts keep their holders’ licences.'
   const keep = document.createElement('a')
   keep.href = '/book'
   keep.className = 'shelf-keep'

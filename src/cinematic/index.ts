@@ -43,7 +43,7 @@ const HTML = `
       <p class="kicker">Credits</p>
       <h2 class="big">Measured where we can. Marked where we guess.</h2>
       <div class="credits">
-        <div><h4>Data</h4><p>Dates, places and sizes come from the WorldLibs records, checked against Wikidata, Wikipedia and each library's own pages. Every figure carries the source tier shown beside it.</p></div>
+        <div><h4>Data</h4><p>Dates, places and sizes come from the Wanderstacks records, checked against Wikidata, Wikipedia and each library's own pages. Every figure carries the source tier shown beside it.</p></div>
         <div><h4>Photographs</h4><p>Photographs of each library come from Wikimedia Commons under each photographer's own licence, credited on every image.</p></div>
         <div><h4>Earth</h4><p>NASA Black Marble night lights, public domain.</p></div>
         <div><h4>Type</h4><p>Libre Caslon by Impallari Type, a revival of Caslon's 1720s and 1730s faces. IBM Plex Mono.</p></div>

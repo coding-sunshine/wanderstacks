@@ -1,7 +1,7 @@
 import { basisLabel, type Library, type Param } from '../types'
 import type { KitModule } from './kit'
 
-const ISSUES = 'https://github.com/coding-sunshine/worldlibs/issues/new'
+const ISSUES = 'https://github.com/coding-sunshine/wanderstacks/issues/new'
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, props: Record<string, string> = {}, ...kids: (Node | string)[]) {
   const e = document.createElement(tag)

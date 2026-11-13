@@ -13,7 +13,7 @@ test('SLV loads its real captured interior with local Draco decoding and working
   await expect(room.locator('[data-badge="capture"] a')).toHaveAttribute('href', /zenodo|sketchfab/)
   const rules = page.getByRole('button', { name: 'Respectfully noted' })
   if (await rules.isVisible()) await rules.click()
-  await page.screenshot({ path: '/tmp/worldlibs-slv-capture-start.png' })
+  await page.screenshot({ path: '/tmp/wanderstacks-slv-capture-start.png' })
 
   const before = await room.getAttribute('data-camera')
   await room.locator('canvas').focus()
@@ -21,7 +21,7 @@ test('SLV loads its real captured interior with local Draco decoding and working
   await page.waitForTimeout(500)
   await page.keyboard.up('w')
   await expect.poll(() => room.getAttribute('data-camera')).not.toBe(before)
-  await page.screenshot({ path: '/tmp/worldlibs-slv-capture.png' })
+  await page.screenshot({ path: '/tmp/wanderstacks-slv-capture.png' })
   expect(errors).toEqual([])
 })
 

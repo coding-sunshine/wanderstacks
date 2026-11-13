@@ -1,10 +1,10 @@
-<title>WorldLibs experience plan</title>
+<title>Wanderstacks experience plan</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: companion to the WorldLibs report. Same tokens and type. The atlas mock leads at full content width, then the plan sections in one column. */
+/* Layout: companion to the Wanderstacks report. Same tokens and type. The atlas mock leads at full content width, then the plan sections in one column. */
 :root {
   --bg: #f4f6f2;
   --surface: #eaeee7;
@@ -360,8 +360,8 @@ td:first-child { font-weight: 600; }
 <div class="page"><div class="wrap">
 
 <header class="hero">
-  <p class="eyebrow">Companion to the <a href="https://claude.ai/artifact/PdHAVY6XPQDiX3nSTug2pM">WorldLibs research report</a> and the <a href="https://claude.ai/artifact/QNgyGftKgYJXebUQKcMbzS">realistic dynamic worlds report</a></p>
-  <h1>WorldLibs experience plan</h1>
+  <p class="eyebrow">Companion to the <a href="https://claude.ai/artifact/PdHAVY6XPQDiX3nSTug2pM">Wanderstacks research report</a> and the <a href="https://claude.ai/artifact/QNgyGftKgYJXebUQKcMbzS">realistic dynamic worlds report</a></p>
+  <h1>Wanderstacks experience plan</h1>
   <p class="lede">You arrive at a real-looking Earth, built from NASA satellite imagery, with day and night drawn where the sun was in the year on the slider. Give it a nudge and it unrolls into a flat atlas where every library sits as a tiny floor plan of its own room. Pick one and the camera flies there, the plan rises into walls, and your device builds the room while you watch.</p>
   <dl class="answers">
     <div><dt>Entry screen</dt><dd>A photoreal globe (NASA Blue Marble by day, Black Marble city lights by night) with a time scrubber from 700 BCE to today. It unrolls into an Equal Earth atlas for picking, so the European cluster never hides behind the curve.</dd></div>
@@ -502,7 +502,7 @@ td:first-child { font-weight: 600; }
 <section aria-labelledby="h-culture">
   <div class="sec-head">
     <h2 id="h-culture">Why each room matters</h2>
-    <p>A faithful room is only half of it. People remember a place for what it held, who worked there and what happened to it. The Digital Library Cave for Dunhuang put 21 zoomable documents and real historical figures inside a 3D hall and logged 14 million visits in a week. Each WorldLibs room gets the same layers, told from sources.</p>
+    <p>A faithful room is only half of it. People remember a place for what it held, who worked there and what happened to it. The Digital Library Cave for Dunhuang put 21 zoomable documents and real historical figures inside a 3D hall and logged 14 million visits in a week. Each Wanderstacks room gets the same layers, told from sources.</p>
   </div>
   <div class="table-wrap">
     <table>
@@ -796,9 +796,9 @@ td:first-child { font-weight: 600; }
       <p class="ph">Needed from the owner to start</p>
       <p class="big">5 / 5</p>
       <ul>
-        <li><b>GitHub repo.</b> Done: public at github.com/coding-sunshine/worldlibs</li>
+        <li><b>GitHub repo.</b> Done: public at github.com/coding-sunshine/wanderstacks</li>
         <li><b>Criteria sign-off.</b> Done: the 19 Phase A checks froze on 8 Nov 2026</li>
-        <li><b>Cloudflare.</b> Done: live at worldlibs.pages.dev, deploys on every push to main</li>
+        <li><b>Cloudflare.</b> Done: live at wanderstacks.com, deploys on every push to main</li>
         <li>Trinity email for Long Room drawings: drafted, waiting for the owner to send. Loc.gov and Trinity CAPTCHA pages still need a person</li>
       </ul>
     </article>
@@ -1231,7 +1231,7 @@ $("#tiers").innerHTML = BOOKTIERS.map(([k, t, c, p, load, art]) => {
   return `<article><div class="sw"><svg viewBox="0 0 160 90" aria-hidden="true">${art}</svg></div><div class="body"><h3>${t}${n != null ? ` <span class="tag ${c}">${n} ${n === 1 ? "book" : "books"}</span>` : ""}</h3><p>${p}</p><p class="small"><b>Loads:</b> ${load}</p>${s ? `<p class="small"><b>For example:</b> ${esc(s)}</p>` : ""}</div></article>`;
 }).join("");
 $("#tier-note").textContent = VER
-  ? `Counts come from the verification pass: ${VER.counts.books} books recorded across ${VER.counts.libs} libraries. A book counts as readable only when its text or scan was fetched in this pass and its licence allows reuse. Every scan so far is CC BY-NC 4.0, which is fine while WorldLibs stays free.`
+  ? `Counts come from the verification pass: ${VER.counts.books} books recorded across ${VER.counts.libs} libraries. A book counts as readable only when its text or scan was fetched in this pass and its licence allows reuse. Every scan so far is CC BY-NC 4.0, which is fine while Wanderstacks stays free.`
   : "Counts appear once the verification pass finishes.";
 
 /* ---------- accuracy ---------- */

@@ -8,7 +8,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3AState_Hall_of_the_Austrian_National_Library",
    "licence": "Per file. 50 of 50 sampled files free (1x Public domain, 17x CC BY-SA 3.0, 1x CC0, 3x CC BY-SA 3.0 at, 25x CC BY-SA 4.0, 2x CC BY 3.0, 1x CC BY-SA 2.0); 219 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:State Hall of the Austrian National Library' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:State Hall of the Austrian National Library' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "bnf",
@@ -17,7 +17,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3ASalle_Labrouste",
    "licence": "Per file. 50 of 50 sampled files free (2x CC BY 2.0, 3x Public domain, 14x CC BY-SA 4.0, 5x CC BY-SA 3.0, 22x CC BY-SA 2.0, 4x CC BY 4.0); 90 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Salle Labrouste' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Salle Labrouste' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "stgallen",
@@ -26,7 +26,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3AStiftsbibliothek_St._Gallen",
    "licence": "Per file. 35 of 35 sampled files free (17x Public domain, 4x CC BY-SA 3.0, 13x CC BY-SA 4.0, 1x CC BY 2.0); 35 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Stiftsbibliothek St. Gallen' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Stiftsbibliothek St. Gallen' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "mafra",
@@ -35,7 +35,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Mafra_National_Palace",
    "licence": "Per file. 50 of 50 sampled files free (7x CC BY-SA 3.0, 27x CC BY 2.0, 1x CC0, 5x CC BY-SA 2.0, 2x CC BY 4.0, 8x CC BY-SA 4.0); 110 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Library of the Mafra National Palace' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Library of the Mafra National Palace' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "nypl",
@@ -44,7 +44,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3ARose_Main_Reading_Room",
    "licence": "Per file. 45 of 50 sampled files free (2x CC BY 2.5, 13x CC BY-SA 3.0, 8x CC BY 2.0, 5x CC BY 3.0, 1x CC0, 10x CC BY-SA 4.0, 4x CC BY-SA 2.0, 2x Public domain); 52 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Rose Main Reading Room' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Rose Main Reading Room' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "bpl",
@@ -53,7 +53,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3ABPL_McKim_Building_Bates_Hall",
    "licence": "Per file. 14 of 14 sampled files free (1x CC BY-SA 2.0, 2x CC BY 2.0, 6x CC BY-SA 4.0, 3x Public domain, 1x CC BY 4.0, 1x CC BY 3.0); 14 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:BPL McKim Building Bates Hall' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:BPL McKim Building Bates Hall' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "peabody",
@@ -62,7 +62,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3AGeorge_Peabody_Library",
    "licence": "Per file. 40 of 40 sampled files free (18x Public domain, 1x CC BY-SA 3.0, 7x CC BY 2.0, 8x CC BY-SA 4.0, 4x CC0, 2x CC BY 4.0); 40 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:George Peabody Library' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:George Peabody Library' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "bodleian",
@@ -71,7 +71,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3ADuke_Humfrey's_Library",
    "licence": "Per file. 14 of 14 sampled files free (3x CC BY-SA 3.0, 1x CC BY-SA 2.0, 5x Public domain, 2x CC BY 2.0, 1x CC BY 4.0, 2x CC BY-SA 4.0); 14 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Duke Humfrey'\\''s Library' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Duke Humfrey'\\''s Library' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "escorial",
@@ -80,7 +80,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_the_Monastery_of_El_Escorial",
    "licence": "Per file. 35 of 35 sampled files free (3x CC BY-SA 2.0, 6x CC BY-SA 3.0, 12x Public domain, 2x CC BY 3.0, 2x CC BY-SA 3.0 es, 2x CC BY 2.0, 6x CC BY-SA 4.0, 2x CC0); 35 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Library of the Monastery of El Escorial' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Library of the Monastery of El Escorial' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "gabinete",
@@ -89,7 +89,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3AReal_Gabinete_Portugu%C3%AAs_de_Leitura",
    "licence": "Per file. 26 of 26 sampled files free (1x CC0, 24x CC BY-SA 4.0, 1x Public domain); 26 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Real Gabinete Português de Leitura' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Real Gabinete Português de Leitura' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "melk",
@@ -98,7 +98,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_Melk_Abbey",
    "licence": "Per file. 50 of 50 sampled files free (2x CC BY-SA 2.0, 7x CC BY 2.5, 24x CC BY-SA 3.0, 5x Public domain, 1x CC BY-SA 2.0 de, 9x CC BY-SA 4.0, 2x CC0); 58 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Library of Melk Abbey' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Library of Melk Abbey' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "vatican",
@@ -107,7 +107,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3ASalone_Sistino",
    "licence": "Per file. 22 of 22 sampled files free (7x CC BY-SA 2.0, 6x CC BY-SA 3.0, 1x Public domain, 1x CC BY 2.5, 5x CC BY 2.0, 1x CC BY 3.0, 1x CC BY 4.0); 22 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Salone Sistino' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Salone Sistino' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "wiblingen",
@@ -116,7 +116,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3AKlosterbibliothek_Wiblingen",
    "licence": "Per file. 50 of 50 sampled files free (2x CC BY-SA 3.0 de, 33x CC BY-SA 4.0, 1x CC BY-SA 2.0, 14x CC BY-SA 3.0); 86 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Klosterbibliothek Wiblingen' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Klosterbibliothek Wiblingen' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "weimar",
@@ -125,7 +125,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3ADuchess_Anna_Amalia_Library",
    "licence": "Per file. 36 of 36 sampled files free (31x Public domain, 5x CC BY-SA 4.0); 36 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Duchess Anna Amalia Library' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Duchess Anna Amalia Library' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "ottawa",
@@ -134,7 +134,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3ALibrary_of_Parliament_(Canada)",
    "licence": "Per file. 50 of 50 sampled files free (14x CC BY-SA 3.0, 12x CC BY 2.0, 2x Public domain, 13x CC BY-SA 4.0, 5x CC BY 3.0, 4x CC BY-SA 2.0); 85 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Library of Parliament (Canada)' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Library of Parliament (Canada)' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   },
   {
    "lib": "stockholm",
@@ -143,7 +143,7 @@
    "url": "https://commons.wikimedia.org/wiki/Category%3AStockholm_Public_Library",
    "licence": "Per file. 50 of 50 sampled files free (10x CC BY-SA 3.0, 6x Public domain, 1x CC BY 2.0, 1x CC BY 2.5 dk, 27x CC BY-SA 4.0, 1x CC BY-SA 2.0, 2x CC0, 2x CC BY 4.0); 98 files in category. Credit each file used.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Stockholm Public Library' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' 'https://commons.wikimedia.org/w/api.php' --data-urlencode 'titles=Category:Stockholm Public Library' -d 'action=query&prop=categoryinfo&format=json' | jq -e '.query.pages[].categoryinfo.files >= 5'"
   }
  ]
 }

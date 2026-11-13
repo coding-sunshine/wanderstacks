@@ -9,7 +9,7 @@ interface Props { title: string; desc?: string; index?: boolean; image?: string 
 const { title, desc = "Walk the world's great libraries, standing and lost, and read their books.", index = false, image } = Astro.props
 const at = Astro.url.pathname
 const url = new URL(at, Astro.site).href
-const full = title === 'WorldLibs' ? title : `${title} | WorldLibs`
+const full = title === 'Wanderstacks' ? title : `${title} | Wanderstacks`
 const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/visit/', 'Visit'], ['/atlas/', 'Globe'], ['/shelf/', 'Shelf'], ['/search/', 'Search']]
 ---
 <!doctype html>
@@ -22,7 +22,7 @@ const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/visit/', 'Vi
     <title>{full}</title>
     <meta name="description" content={desc} />
     <link rel="canonical" href={url} />
-    <meta property="og:site_name" content="WorldLibs" />
+    <meta property="og:site_name" content="Wanderstacks" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={full} />
     <meta property="og:description" content={desc} />
@@ -36,7 +36,7 @@ const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/visit/', 'Vi
   <body>
     <a class="skip" href="#main">Skip to content</a>
     <header class="top">
-      <a class="brand" href="/"><Mark />WorldLibs</a>
+      <a class="brand" href="/"><Mark />Wanderstacks</a>
       {nav.map(([href, label]) => <a href={href} aria-current={at.startsWith(href) ? 'page' : undefined}>{label}</a>)}
     </header>
     <main id="main" {...(index ? { 'data-pagefind-body': '' } : {})}><slot /></main>

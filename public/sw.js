@@ -51,7 +51,7 @@ async function remember(url, res) {
 }
 
 const offline = () => new Response(
-  '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Offline | WorldLibs</title><body style="margin:0;background:#111813;color:#eee9dc;font:18px/1.6 Georgia,serif"><main style="max-width:38rem;margin:20vh auto;padding:2rem"><h1>You are offline</h1><p>This page has not been saved for offline reading.</p><p>Reconnect and try again.</p></main></body></html>',
+  '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Offline | Wanderstacks</title><body style="margin:0;background:#111813;color:#eee9dc;font:18px/1.6 Georgia,serif"><main style="max-width:38rem;margin:20vh auto;padding:2rem"><h1>You are offline</h1><p>This page has not been saved for offline reading.</p><p>Reconnect and try again.</p></main></body></html>',
   { status: 503, headers: { 'content-type': 'text/html; charset=utf-8' } },
 )
 

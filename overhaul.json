@@ -1,5 +1,5 @@
 {
-  "note": "WorldLibs overhaul task state. Status is passing or failing only. Unproven is failing. Each item carries the command that decides it.",
+  "note": "Wanderstacks overhaul task state. Status is passing or failing only. Unproven is failing. Each item carries the command that decides it.",
   "contracts": {
     "spheres": "data/spheres.json: { [libId]: { nodes: [{ id, f, w, h, kind: 'interior'|'exterior', real: boolean, basis?: string, cap, by, lic, src, yaw0?: number, links?: [{ to, yaw }] }] } }. Files: public<f>.webp (equirect, max 8192 wide) and public<f>-lo.webp (2048 wide). real:false means reconstruction and must carry basis.",
     "catalogue": "data/catalogue.ndjson: one JSON per line { id, title, author?, date?, lang?, lib: libId|null, holder, shelfmark?, kind, rights: 'open'|'nc'|'link-only', read?: { type: 'iiif'|'text'|'link', url }, thumb?, src, wd? }",

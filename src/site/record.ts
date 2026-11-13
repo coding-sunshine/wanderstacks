@@ -4,8 +4,8 @@ import { existsSync, readFileSync } from 'node:fs'
 import type { Lib } from './data'
 
 export const LICENCE = 'https://creativecommons.org/licenses/by/4.0/'
-export const SITE = 'https://worldlibs.pages.dev'
-export const REPO = 'https://github.com/coding-sunshine/worldlibs'
+export const SITE = 'https://wanderstacks.com'
+export const REPO = 'https://github.com/coding-sunshine/wanderstacks'
 
 export interface Fact { id: string; lib: string; field: string; value: string; source: string; tier: string; quote?: string; earliest?: number; latest?: number }
 export interface Ev { id: string; lib: string; kind: string; year: number | null; label: string; source: string; tier: string; quote?: string; earliest?: number; latest?: number }
@@ -49,7 +49,7 @@ export function cite(c: { name: string; lead: string; text: string; source: stri
     `Source: ${c.source || 'none given'}`,
     `Evidence tier: ${c.tier}`,
     `Last checked: ${checked}`,
-    `WorldLibs: ${c.url}`,
+    `Wanderstacks: ${c.url}`,
   ].join('\n')
 }
 
@@ -85,7 +85,7 @@ export function libLd(l: Lib, evs: Ev[]) {
 
 export const crumbs = (l: Lib) => ({
   '@type': 'BreadcrumbList',
-  itemListElement: [['WorldLibs', `${SITE}/`], ['Libraries', `${SITE}/libraries/`], [l.n, libUrl(l.id)]].map(([name, item], i) => ({ '@type': 'ListItem', position: i + 1, name, item })),
+  itemListElement: [['Wanderstacks', `${SITE}/`], ['Libraries', `${SITE}/libraries/`], [l.n, libUrl(l.id)]].map(([name, item], i) => ({ '@type': 'ListItem', position: i + 1, name, item })),
 })
 
 /** Calendar groups: the kinds of event worth putting on one timeline. */

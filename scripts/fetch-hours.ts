@@ -23,7 +23,7 @@ if (!json) {
   for (const l of libs) {
     try {
       const u = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(l.wd)}&format=jsonv2&extratags=1&limit=1`
-      const r = await fetch(u, { headers: { 'User-Agent': 'worldlibs-research/1.0 (https://worldlibs.pages.dev)' } })
+      const r = await fetch(u, { headers: { 'User-Agent': 'wanderstacks-research/1.0 (https://wanderstacks.com)' } })
       const rows: any[] = await r.json()
       const h = rows[0]?.extratags?.opening_hours
       if (h) found.set(l.wd, h)

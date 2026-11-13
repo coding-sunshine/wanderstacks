@@ -1049,7 +1049,7 @@
    "tier": "catalog",
    "quote": "Another complete copy of the prints, bound in 17 volumes, belongs to the Library of Parliament in Ottawa, Canada.",
    "status": "passing",
-   "check": "curl -sG --max-time 20 -A 'WorldLibs-planning/0.1' https://en.wikipedia.org/w/api.php --data-urlencode 'titles=The Birds of America' -d 'action=query&prop=extracts&explaintext=1&format=json' | rg -q 'bound in 17 volumes, belongs to the Library of Parliament'"
+   "check": "curl -sG --max-time 20 -A 'Wanderstacks-planning/0.1' https://en.wikipedia.org/w/api.php --data-urlencode 'titles=The Birds of America' -d 'action=query&prop=extracts&explaintext=1&format=json' | rg -q 'bound in 17 volumes, belongs to the Library of Parliament'"
   },
   {
    "cluster": "texts",

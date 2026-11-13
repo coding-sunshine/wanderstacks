@@ -4,7 +4,7 @@
  "recheck": "jq -r '.gaps[]|\"\\(.id)\\t\\(.check)\"' data/planning-gaps.json | while IFS=$'\\t' read -r id c; do sh -c \"$c\" >/dev/null 2>&1 && echo \"passing $id\" || echo \"failing $id\"; done",
  "decisions": {
   "licence": {
-   "question": "Most open manuscript scans (Bodleian, e-codices, Trinity) are CC BY-NC. Keep WorldLibs free and non-commercial?",
+   "question": "Most open manuscript scans (Bodleian, e-codices, Trinity) are CC BY-NC. Keep Wanderstacks free and non-commercial?",
    "answer": "MIT, open source (user, 2026-11-08). The site stays free; scans and texts keep their holders' licences and load as pointers, never committed."
   },
   "gallica": {
@@ -218,7 +218,7 @@
    "phase": "start",
    "what": "Cloudflare Pages project linked to the GitHub repo and answering on pages.dev",
    "status": "passing",
-   "check": "curl -sL -o /dev/null -w '%{http_code}' --max-time 15 https://worldlibs.pages.dev/ | rg -q '^(200|304)$'",
+   "check": "curl -sL -o /dev/null -w '%{http_code}' --max-time 15 https://wanderstacks.com/ | rg -q '^(200|304)$'",
    "note": "Owner makes a free Cloudflare account and connects the repo with Git integration (no wrangler, no token). Does not block code; needed before the first public deploy."
   },
   {

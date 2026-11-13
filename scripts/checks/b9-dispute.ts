@@ -6,7 +6,7 @@ let n = 0
 for (const id of ['longroom', 'alexandria', 'loc']) {
   const h = readFileSync(`${dist}/libraries/${id}/index.html`, 'utf8')
   for (const [, fid, body] of h.matchAll(/<li class="fact" id="([^"]+)"[^>]*>([\s\S]*?)<\/li>/g)) {
-    const m = body.match(/<a href="(https:\/\/github\.com\/coding-sunshine\/worldlibs\/issues\/new\?[^"]+)" rel="noopener"/)
+    const m = body.match(/<a href="(https:\/\/github\.com\/coding-sunshine\/wanderstacks\/issues\/new\?[^"]+)" rel="noopener"/)
     if (!m) fail(`${id}#${fid}: no dispute link`)
     const u = new URL(m![1].replace(/&#38;|&amp;/g, '&'))
     const b = u.searchParams.get('body') ?? ''

@@ -1,6 +1,6 @@
-# WorldLibs open data
+# Wanderstacks open data
 
-Generated 2026-11-11T17:59:22Z. Page: https://worldlibs.pages.dev/data/
+Generated 2026-11-11T17:59:22Z. Page: https://wanderstacks.com/data/
 
 - libraries.json: one row per library. id, n (name), p (place), lat, lon, k (kind), y/yl (year, label), tier (mvp or lost), wd (Wikidata id).
 - facts.json: one row per sourced claim. id (anchors the claim on its library page), lib, field, value, source (URL), tier, quote (the source's words, when held).
@@ -13,6 +13,6 @@ Generated 2026-11-11T17:59:22Z. Page: https://worldlibs.pages.dev/data/
 - conservation.json: restoration schedules and the real repeat captures still needed.
 - phases.json: sourced architectural phases used by the same-camera comparison.
 
-Tiers: primary (the institution or an original document), secondary (scholarship or press), wikipedia (Wikipedia, cited as such), unproven (stated but not yet sourced). Claims whose check failed are left out. A claim's page is https://worldlibs.pages.dev/libraries/<lib>/#<id>.
+Tiers: primary (the institution or an original document), secondary (scholarship or press), wikipedia (Wikipedia, cited as such), unproven (stated but not yet sourced). Claims whose check failed are left out. A claim's page is https://wanderstacks.com/libraries/<lib>/#<id>.
 
-Licence: the compilation is released under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Quoted source text stays under its own licence; Wikipedia-tier wording follows CC BY-SA. Corrections: open an issue at https://github.com/coding-sunshine/worldlibs/issues.
+Licence: the compilation is released under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Quoted source text stays under its own licence; Wikipedia-tier wording follows CC BY-SA. Corrections: open an issue at https://github.com/coding-sunshine/wanderstacks/issues.

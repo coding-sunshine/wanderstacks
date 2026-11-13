@@ -22,7 +22,7 @@ SOFTWARE.
 
 ---
 
-This licence covers the WorldLibs code and the data we wrote. Book texts,
+This licence covers the Wanderstacks code and the data we wrote. Book texts,
 manuscript scans, photos and quoted excerpts are not ours: each keeps its
 holder's licence, recorded in its `licence` field and shown in the credits
 panel. Scans are loaded from the holder at view time and never committed here.

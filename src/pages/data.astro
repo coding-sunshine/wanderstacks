@@ -22,14 +22,14 @@ const files = [
 ]
 const ld = {
   '@context': 'https://schema.org', '@type': 'Dataset',
-  name: 'WorldLibs open data', url: `${SITE}/data/`,
+  name: 'Wanderstacks open data', url: `${SITE}/data/`,
   description: `Sourced facts and dated events for ${libs.length} famous and lost libraries, each with a source URL and an evidence tier.`,
   license: LICENCE, isAccessibleForFree: true, dateModified: generated.slice(0, 10),
-  creator: { '@type': 'Organization', name: 'WorldLibs', url: SITE },
+  creator: { '@type': 'Organization', name: 'Wanderstacks', url: SITE },
   distribution: files.filter(([f]) => !f.endsWith('.md')).map(([f]) => ({ '@type': 'DataDownload', contentUrl: `${SITE}/data/${f}`, encodingFormat: f.endsWith('ld') ? 'application/ld+json' : 'application/json' })),
 }
 ---
-<Base title="Open data" desc={`Download the WorldLibs record: ${facts.length} sourced facts and ${events.length} events across ${libs.length} libraries.`} index>
+<Base title="Open data" desc={`Download the Wanderstacks record: ${facts.length} sourced facts and ${events.length} events across ${libs.length} libraries.`} index>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(ld)} is:inline />
   <article class="wrap sec">
     <h1>Open data</h1>

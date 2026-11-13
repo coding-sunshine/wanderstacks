@@ -15,7 +15,7 @@ const download = async (url: string) => {
   let failure: unknown
   for (let attempt = 0; attempt < 3; attempt++) {
     try {
-      const response = await fetch(url, { headers: { 'user-agent': 'WorldLibs/1.0 (IIIF collection reader)' }, signal: AbortSignal.timeout(30_000) })
+      const response = await fetch(url, { headers: { 'user-agent': 'Wanderstacks/1.0 (IIIF collection reader)' }, signal: AbortSignal.timeout(30_000) })
       if (!response.ok) throw new Error(`HTTP ${response.status}`)
       return await response.json()
     } catch (error) {

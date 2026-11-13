@@ -24,7 +24,7 @@ const ents: Record<string, any> = {}
 for (let i = 0; i < withWd.length; i += 40) {
   const ids = withWd.slice(i, i + 40).map((l) => l.wd).join('|')
   const url = `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${ids}&props=claims|labels&languages=en&format=json`
-  const res = await fetch(url, { headers: { 'User-Agent': 'worldlibs-coords-check/1.0' } })
+  const res = await fetch(url, { headers: { 'User-Agent': 'wanderstacks-coords-check/1.0' } })
   if (!res.ok) throw new Error(`wikidata ${res.status}`)
   Object.assign(ents, (await res.json()).entities)
 }

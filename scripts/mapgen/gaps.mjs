@@ -53,7 +53,7 @@ const G = [
   ["github-remote", "start", "Public GitHub repo set as origin",
     `git remote get-url origin >/dev/null 2>&1`, "Needs the owner's go-ahead: repo name and account."],
   ["cloudflare-pages", "start", "Cloudflare Pages project linked to the GitHub repo and answering on pages.dev",
-    `curl -sL -o /dev/null -w '%{http_code}' --max-time 15 https://worldlibs.pages.dev/ | rg -q '^(200|304)$'`,
+    `curl -sL -o /dev/null -w '%{http_code}' --max-time 15 https://wanderstacks.com/ | rg -q '^(200|304)$'`,
     "Owner makes a free Cloudflare account and connects the repo with Git integration (no wrangler, no token). Does not block code; needed before the first public deploy."],
   ["criteria-frozen", "start", "Owner signed off the Phase A criteria",
     `jq -e '.frozen.by!=null and .frozen.on!=null' data/phase-a.json`, "Adds frozen: {by, on} to data/phase-a.json once the owner says the criteria are right."],
@@ -61,7 +61,7 @@ const G = [
 const sh = c => Bun.spawnSync(["sh", "-c", c], { cwd: ROOT, timeout: 90_000 }).exitCode === 0 ? "passing" : "failing";
 const gaps = G.map(([id, phase, what, check, note]) => ({ id, phase, what, status: sh(check), check, note }));
 const decisions = { ...{
-  licence: { question: "Most open manuscript scans (Bodleian, e-codices, Trinity) are CC BY-NC. Keep WorldLibs free and non-commercial?", answer: "MIT, open source (user, 2026-11-08). The site stays free; scans and texts keep their holders' licences and load as pointers, never committed." },
+  licence: { question: "Most open manuscript scans (Bodleian, e-codices, Trinity) are CC BY-NC. Keep Wanderstacks free and non-commercial?", answer: "MIT, open source (user, 2026-11-08). The site stays free; scans and texts keep their holders' licences and load as pointers, never committed." },
   gallica: { question: "Gallica blocks scripts. Embed BnF scans or link out?", answer: "Link out (real-browser test 2026-11-08): images fail to load inside another site; BnF books stay catalogue cards with a Gallica link." },
   "ai-reconstruction": { question: "Where no plan survives, build an AI-assisted reconstruction from cited sources?", answer: "yes (user, 2026-11-07): AI fills geometry and decoration only; every element tagged excavated, attested, comparandum or invented; room labelled Reconstruction" },
   hosting: { question: "Where do static files live?", answer: "Cloudflare Pages free plan (verified 2026-11-07)" },

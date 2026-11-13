@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test'
 import { root } from './util-c'
 import { ready } from './util'
 
-const LIVE = 'https://worldlibs.pages.dev'
+const LIVE = 'https://wanderstacks.com'
 test.use({ baseURL: LIVE })
 
 test('deployed-c: direct Long Room load is inside with a sky and a local line', async ({ page }) => {

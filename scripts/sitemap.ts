@@ -1,5 +1,5 @@
 // Lists every built page except the 404 and anything marked noindex, so the sitemap never drifts from dist.
-const site = 'https://worldlibs.pages.dev'
+const site = 'https://wanderstacks.com'
 const urls: string[] = []
 for await (const f of new Bun.Glob('**/index.html').scan('dist')) {
   if (/<meta name="robots" content="[^"]*noindex/.test(await Bun.file(`dist/${f}`).text())) continue

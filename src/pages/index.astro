@@ -32,7 +32,7 @@ const heads = [
 const more = libs.filter((l) => lead(l.id) && !lost(l))
 const say = `${libs.length} libraries across twenty-seven centuries. ${goneCount} of them are gone, and appear here only as reconstructions that say so. The rest are shown in real photographs, each with its author and licence beside it. ${open.length} of their books lie open on the desk.`
 ---
-<Base title="WorldLibs">
+<Base title="Wanderstacks">
   <script is:inline>
     if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
       const d = document.documentElement
@@ -57,7 +57,7 @@ const say = `${libs.length} libraries across twenty-seven centuries. ${goneCount
       <div class="rise">
         <p class="lede">{libs.length} libraries, standing and lost. {open.length} of their books open here, page by page.</p>
         <form action="/search/" role="search">
-          <input class="field" name="q" type="search" placeholder="A library, book or author" aria-label="Search WorldLibs" />
+          <input class="field" name="q" type="search" placeholder="A library, book or author" aria-label="Search Wanderstacks" />
           <button class="pick">Search</button>
         </form>
         <p class="picks">

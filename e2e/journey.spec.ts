@@ -29,7 +29,7 @@ test('Dunhuang desk compares real IIIF v3 pages and turns them together', async 
   await desk.getByRole('button', { name: 'Next', exact: true }).click()
   await expect(desk.locator('[data-count]')).toHaveText('Image 2 of 6')
   await expect(desk.locator('[data-copy="left"] img')).toHaveJSProperty('naturalWidth', 1000)
-  await page.screenshot({ path: '/tmp/worldlibs-desk-dunhuang.png' })
+  await page.screenshot({ path: '/tmp/wanderstacks-desk-dunhuang.png' })
   expect(errors).toEqual([])
 })
 

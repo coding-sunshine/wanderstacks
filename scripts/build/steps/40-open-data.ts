@@ -17,7 +17,7 @@ await write('libraries.jsonld', { '@context': 'https://schema.org', '@graph': ra
 for (const name of ['dispersal', 'tours', 'captures', 'concordance', 'conservation', 'phases']) {
   await write(`${name}.json`, await Bun.file(root + `data/${name}.json`).json())
 }
-await Bun.write(out + 'README.md', `# WorldLibs open data
+await Bun.write(out + 'README.md', `# Wanderstacks open data
 
 Generated ${generated}. Page: ${SITE}/data/
 
@@ -34,6 +34,6 @@ Generated ${generated}. Page: ${SITE}/data/
 
 Tiers: primary (the institution or an original document), secondary (scholarship or press), wikipedia (Wikipedia, cited as such), unproven (stated but not yet sourced). Claims whose check failed are left out. A claim's page is ${SITE}/libraries/<lib>/#<id>.
 
-Licence: the compilation is released under CC BY 4.0 (${LICENCE}). Quoted source text stays under its own licence; Wikipedia-tier wording follows CC BY-SA. Corrections: open an issue at https://github.com/coding-sunshine/worldlibs/issues.
+Licence: the compilation is released under CC BY 4.0 (${LICENCE}). Quoted source text stays under its own licence; Wikipedia-tier wording follows CC BY-SA. Corrections: open an issue at https://github.com/coding-sunshine/wanderstacks/issues.
 `)
 console.log(`open data: ${libs.length} libraries, ${facts.length} facts, ${events.length} events`)

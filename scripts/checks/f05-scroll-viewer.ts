@@ -14,7 +14,7 @@ if ('scroll' in (await read('gigas'))) fail('codex book gigas must carry no scro
 
 const p = b.pages[0]
 const url = `${p.s}/0,0,${Math.min(512, p.w)},${Math.min(512, p.h)}/256,/0/default.jpg`
-const r = await fetch(url, { headers: { origin: 'https://worldlibs.example' } })
+const r = await fetch(url, { headers: { origin: 'https://wanderstacks.example' } })
 if (r.status !== 200) fail(`tile ${url} answered ${r.status}`)
 if (!r.headers.get('access-control-allow-origin')) fail('tile has no CORS header')
 console.log(`ok f05-scroll-viewer: ${b.pages.length} sections, ${b.dir}, tile 200 ${r.headers.get('content-type')}`)

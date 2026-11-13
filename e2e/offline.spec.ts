@@ -9,7 +9,7 @@ test('an unvisited page never falls back to the homepage offline', async ({ page
   await context.setOffline(true)
   const response = await page.goto('/journey/buda/')
   expect(response?.status()).toBe(503)
-  await expect(page).toHaveTitle('Offline | WorldLibs')
+  await expect(page).toHaveTitle('Offline | Wanderstacks')
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('You are offline')
   await expect(page.getByText('This page has not been saved for offline reading.')).toBeVisible()
 })

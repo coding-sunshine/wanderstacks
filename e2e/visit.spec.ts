@@ -26,7 +26,7 @@ test('capture filters and rights-aware contribution links work', async ({ page }
   await page.getByRole('button', { name: 'Needs interior capture', exact: true }).click()
   await expect(page.locator('.coverage > li:visible')).toHaveCount(49)
   const mission = page.locator('#visit-peabody .mission a')
-  await expect(mission).toHaveAttribute('href', /github\.com\/coding-sunshine\/worldlibs\/issues\/new/)
+  await expect(mission).toHaveAttribute('href', /github\.com\/coding-sunshine\/wanderstacks\/issues\/new/)
   await expect(mission).toHaveAttribute('href', /Capture%20contribution/)
   await expect(mission).toHaveAttribute('target', '_blank')
 

@@ -35,8 +35,8 @@ const pages: Record<string, () => [string, string]> = {
   stgall: () => ['The Plan of St Gall', 'The ninth-century monastery plan, with its library, read room by room.'],
   darwin: () => ["Darwin's tree", 'The only diagram in On the Origin of Species, explained.'],
 }
-const [title, desc] = pages[view]?.() ?? ['WorldLibs', "Walk the world's great libraries, past and present, and read their books."]
-const full = `${title} | WorldLibs`
+const [title, desc] = pages[view]?.() ?? ['Wanderstacks', "Walk the world's great libraries, past and present, and read their books."]
+const full = `${title} | Wanderstacks`
 const url = new URL(Astro.url.pathname, Astro.site).href
 const pic = id && lead(id)
 const image = new URL(pic ? `${pic.f}-1920.webp` : '/og.jpg', Astro.site).href
@@ -52,7 +52,7 @@ const image = new URL(pic ? `${pic.f}-1920.webp` : '/og.jpg', Astro.site).href
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="description" content={desc} />
     <link rel="canonical" href={url} />
-    <meta property="og:site_name" content="WorldLibs" />
+    <meta property="og:site_name" content="Wanderstacks" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={full} />
     <meta property="og:description" content={desc} />
@@ -63,7 +63,7 @@ const image = new URL(pic ? `${pic.f}-1920.webp` : '/og.jpg', Astro.site).href
   <body>
     <a class="skip" href="#app">Skip to content</a>
     <header class="bar">
-      <a href="/" class="brand"><Mark />WorldLibs</a>
+      <a href="/" class="brand"><Mark />Wanderstacks</a>
       <nav aria-label="Main">
         <a href="/libraries/">Libraries</a>
         <a href="/books/">Books</a>

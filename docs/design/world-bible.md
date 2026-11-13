@@ -1,14 +1,14 @@
 ---
 ontology: true
 type: spec
-domain: worldlibs
+domain: wanderstacks
 summary: World bible for the Illuminated Atlas design overhaul - visual grammar, tokens, components, motion, and per-surface art direction
 status: active
-tags: [worldlibs, design, spec]
+tags: [wanderstacks, design, spec]
 relatedTo: [build-spec]
 ---
 
-# WorldLibs world bible — The Illuminated Atlas
+# Wanderstacks world bible — The Illuminated Atlas
 
 Design contract for the overhaul. Behaviour, data and budgets stay in
 `docs/specs/build-spec.md`; this file says how the product *looks and moves*.

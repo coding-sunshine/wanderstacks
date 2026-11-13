@@ -1,14 +1,14 @@
 ---
 ontology: true
 type: spec
-domain: worldlibs
-summary: Build spec for WorldLibs - data files, hall kit, delivery and cache, link check, error reports, reconstruction and shelf policy
+domain: wanderstacks
+summary: Build spec for Wanderstacks - data files, hall kit, delivery and cache, link check, error reports, reconstruction and shelf policy
 status: active
-tags: [worldlibs, threejs, iiif, spec, static-site]
+tags: [wanderstacks, threejs, iiif, spec, static-site]
 relatedTo: [planning-gaps, phase-a, prior-art, verify/BRIEF]
 ---
 
-# WorldLibs build spec
+# Wanderstacks build spec
 
 Static site on Cloudflare Pages. No server, no database. The repo holds the
 verified data; the build turns it into small static files; manuscript scans
@@ -131,7 +131,7 @@ Nineveh, Herculaneum, Nalanda and the Corvina library at Buda.
 ## Shelf policy
 
 A book goes on a room's shelves only when a passing row ties it to that library.
-General public-domain texts, and books held by institutions WorldLibs does not
+General public-domain texts, and books held by institutions Wanderstacks does not
 model (the Voynich manuscript at the Beinecke, Codex Sinaiticus at the British
 Library), go to a global reading list instead. They keep their `holder` field.
 `merge.mjs` enforces this by setting `lib` to null for any library id missing
@@ -151,7 +151,7 @@ every image it uses. The decision is recorded in `data/planning-gaps.json` under
 
 ## Globe
 
-Source: `reports/WorldLibs realistic dynamic worlds.md`.
+Source: `reports/Wanderstacks realistic dynamic worlds.md`.
 
 - Custom three.js globe, WebGLRenderer. Layers, bottom to top:
   - NASA Blue Marble day texture, 4k KTX2. Month follows the time slider's season.

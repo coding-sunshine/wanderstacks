@@ -3,8 +3,8 @@
  "@graph": [
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/longroom/",
-   "url": "https://worldlibs.pages.dev/libraries/longroom/",
+   "@id": "https://wanderstacks.com/libraries/longroom/",
+   "url": "https://wanderstacks.com/libraries/longroom/",
    "name": "Long Room, Trinity College",
    "address": "Dublin, Ireland",
    "geo": {
@@ -19,8 +19,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/admont/",
-   "url": "https://worldlibs.pages.dev/libraries/admont/",
+   "@id": "https://wanderstacks.com/libraries/admont/",
+   "url": "https://wanderstacks.com/libraries/admont/",
    "name": "Admont Abbey library",
    "address": "Styria, Austria",
    "geo": {
@@ -35,8 +35,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/strahov/",
-   "url": "https://worldlibs.pages.dev/libraries/strahov/",
+   "@id": "https://wanderstacks.com/libraries/strahov/",
+   "url": "https://wanderstacks.com/libraries/strahov/",
    "name": "Strahov Library, Philosophical Hall",
    "address": "Prague, Czechia",
    "geo": {
@@ -50,8 +50,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/loc/",
-   "url": "https://worldlibs.pages.dev/libraries/loc/",
+   "@id": "https://wanderstacks.com/libraries/loc/",
+   "url": "https://wanderstacks.com/libraries/loc/",
    "name": "Library of Congress Main Reading Room",
    "address": "Washington DC, USA",
    "geo": {
@@ -65,8 +65,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/celsus/",
-   "url": "https://worldlibs.pages.dev/libraries/celsus/",
+   "@id": "https://wanderstacks.com/libraries/celsus/",
+   "url": "https://wanderstacks.com/libraries/celsus/",
    "name": "Library of Celsus",
    "address": "Ephesus, Türkiye",
    "geo": {
@@ -81,8 +81,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/alexandria/",
-   "url": "https://worldlibs.pages.dev/libraries/alexandria/",
+   "@id": "https://wanderstacks.com/libraries/alexandria/",
+   "url": "https://wanderstacks.com/libraries/alexandria/",
    "name": "Library of Alexandria",
    "address": "Alexandria, Egypt",
    "geo": {
@@ -96,8 +96,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/prunksaal/",
-   "url": "https://worldlibs.pages.dev/libraries/prunksaal/",
+   "@id": "https://wanderstacks.com/libraries/prunksaal/",
+   "url": "https://wanderstacks.com/libraries/prunksaal/",
    "name": "Prunksaal, Austrian National Library",
    "address": "Vienna, Austria",
    "geo": {
@@ -111,8 +111,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/bnf/",
-   "url": "https://worldlibs.pages.dev/libraries/bnf/",
+   "@id": "https://wanderstacks.com/libraries/bnf/",
+   "url": "https://wanderstacks.com/libraries/bnf/",
    "name": "Labrouste Reading Room, BnF",
    "address": "Paris, France",
    "geo": {
@@ -127,8 +127,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/stgallen/",
-   "url": "https://worldlibs.pages.dev/libraries/stgallen/",
+   "@id": "https://wanderstacks.com/libraries/stgallen/",
+   "url": "https://wanderstacks.com/libraries/stgallen/",
    "name": "Abbey Library of St Gall",
    "address": "St. Gallen, Switzerland",
    "geo": {
@@ -143,8 +143,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/mafra/",
-   "url": "https://worldlibs.pages.dev/libraries/mafra/",
+   "@id": "https://wanderstacks.com/libraries/mafra/",
+   "url": "https://wanderstacks.com/libraries/mafra/",
    "name": "Mafra Palace library",
    "address": "Mafra, Portugal",
    "geo": {
@@ -158,8 +158,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/nypl/",
-   "url": "https://worldlibs.pages.dev/libraries/nypl/",
+   "@id": "https://wanderstacks.com/libraries/nypl/",
+   "url": "https://wanderstacks.com/libraries/nypl/",
    "name": "Rose Main Reading Room, NYPL",
    "address": "New York, USA",
    "geo": {
@@ -173,8 +173,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/bpl/",
-   "url": "https://worldlibs.pages.dev/libraries/bpl/",
+   "@id": "https://wanderstacks.com/libraries/bpl/",
+   "url": "https://wanderstacks.com/libraries/bpl/",
    "name": "Bates Hall, Boston Public Library",
    "address": "Boston, USA",
    "geo": {
@@ -188,8 +188,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/peabody/",
-   "url": "https://worldlibs.pages.dev/libraries/peabody/",
+   "@id": "https://wanderstacks.com/libraries/peabody/",
+   "url": "https://wanderstacks.com/libraries/peabody/",
    "name": "George Peabody Library",
    "address": "Baltimore, USA",
    "geo": {
@@ -204,8 +204,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/bodleian/",
-   "url": "https://worldlibs.pages.dev/libraries/bodleian/",
+   "@id": "https://wanderstacks.com/libraries/bodleian/",
+   "url": "https://wanderstacks.com/libraries/bodleian/",
    "name": "Duke Humfrey's Library, Bodleian",
    "address": "Oxford, England",
    "geo": {
@@ -220,8 +220,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/escorial/",
-   "url": "https://worldlibs.pages.dev/libraries/escorial/",
+   "@id": "https://wanderstacks.com/libraries/escorial/",
+   "url": "https://wanderstacks.com/libraries/escorial/",
    "name": "El Escorial library",
    "address": "San Lorenzo de El Escorial, Spain",
    "geo": {
@@ -235,8 +235,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/gabinete/",
-   "url": "https://worldlibs.pages.dev/libraries/gabinete/",
+   "@id": "https://wanderstacks.com/libraries/gabinete/",
+   "url": "https://wanderstacks.com/libraries/gabinete/",
    "name": "Real Gabinete Português de Leitura",
    "address": "Rio de Janeiro, Brazil",
    "geo": {
@@ -251,8 +251,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/melk/",
-   "url": "https://worldlibs.pages.dev/libraries/melk/",
+   "@id": "https://wanderstacks.com/libraries/melk/",
+   "url": "https://wanderstacks.com/libraries/melk/",
    "name": "Melk Abbey library",
    "address": "Melk, Austria",
    "geo": {
@@ -266,8 +266,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/klementinum/",
-   "url": "https://worldlibs.pages.dev/libraries/klementinum/",
+   "@id": "https://wanderstacks.com/libraries/klementinum/",
+   "url": "https://wanderstacks.com/libraries/klementinum/",
    "name": "Klementinum Baroque Library",
    "address": "Prague, Czechia",
    "geo": {
@@ -282,8 +282,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/vatican/",
-   "url": "https://worldlibs.pages.dev/libraries/vatican/",
+   "@id": "https://wanderstacks.com/libraries/vatican/",
+   "url": "https://wanderstacks.com/libraries/vatican/",
    "name": "Sistine Hall, Vatican Library",
    "address": "Vatican City",
    "geo": {
@@ -298,8 +298,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/wiblingen/",
-   "url": "https://worldlibs.pages.dev/libraries/wiblingen/",
+   "@id": "https://wanderstacks.com/libraries/wiblingen/",
+   "url": "https://wanderstacks.com/libraries/wiblingen/",
    "name": "Wiblingen Abbey library",
    "address": "Ulm, Germany",
    "geo": {
@@ -314,8 +314,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/weimar/",
-   "url": "https://worldlibs.pages.dev/libraries/weimar/",
+   "@id": "https://wanderstacks.com/libraries/weimar/",
+   "url": "https://wanderstacks.com/libraries/weimar/",
    "name": "Rococo Hall, Anna Amalia Library",
    "address": "Weimar, Germany",
    "geo": {
@@ -330,8 +330,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/ottawa/",
-   "url": "https://worldlibs.pages.dev/libraries/ottawa/",
+   "@id": "https://wanderstacks.com/libraries/ottawa/",
+   "url": "https://wanderstacks.com/libraries/ottawa/",
    "name": "Library of Parliament",
    "address": "Ottawa, Canada",
    "geo": {
@@ -346,8 +346,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/stockholm/",
-   "url": "https://worldlibs.pages.dev/libraries/stockholm/",
+   "@id": "https://wanderstacks.com/libraries/stockholm/",
+   "url": "https://wanderstacks.com/libraries/stockholm/",
    "name": "Stockholm Public Library",
    "address": "Stockholm, Sweden",
    "geo": {
@@ -362,8 +362,8 @@
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",
-   "@id": "https://worldlibs.pages.dev/libraries/nineveh/",
-   "url": "https://worldlibs.pages.dev/libraries/nineveh/",
+   "@id": "https://wanderstacks.com/libraries/nineveh/",
+   "url": "https://wanderstacks.com/libraries/nineveh/",
    "name": "Library of Ashurbanipal",
    "address": "Nineveh, near Mosul, Iraq",
    "geo": {
@@ -377,8 +377,8 @@
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",
-   "@id": "https://worldlibs.pages.dev/libraries/pergamon/",
-   "url": "https://worldlibs.pages.dev/libraries/pergamon/",
+   "@id": "https://wanderstacks.com/libraries/pergamon/",
+   "url": "https://wanderstacks.com/libraries/pergamon/",
    "name": "Library of Pergamon",
    "address": "Bergama, Türkiye",
    "geo": {
@@ -392,8 +392,8 @@
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",
-   "@id": "https://worldlibs.pages.dev/libraries/herculaneum/",
-   "url": "https://worldlibs.pages.dev/libraries/herculaneum/",
+   "@id": "https://wanderstacks.com/libraries/herculaneum/",
+   "url": "https://wanderstacks.com/libraries/herculaneum/",
    "name": "Villa of the Papyri",
    "address": "Herculaneum, Italy",
    "geo": {
@@ -407,8 +407,8 @@
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",
-   "@id": "https://worldlibs.pages.dev/libraries/nalanda/",
-   "url": "https://worldlibs.pages.dev/libraries/nalanda/",
+   "@id": "https://wanderstacks.com/libraries/nalanda/",
+   "url": "https://wanderstacks.com/libraries/nalanda/",
    "name": "Nalanda",
    "address": "Bihar, India",
    "geo": {
@@ -422,8 +422,8 @@
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",
-   "@id": "https://worldlibs.pages.dev/libraries/dunhuang/",
-   "url": "https://worldlibs.pages.dev/libraries/dunhuang/",
+   "@id": "https://wanderstacks.com/libraries/dunhuang/",
+   "url": "https://wanderstacks.com/libraries/dunhuang/",
    "name": "Library Cave (Cave 17)",
    "address": "Dunhuang, China",
    "geo": {
@@ -437,8 +437,8 @@
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",
-   "@id": "https://worldlibs.pages.dev/libraries/buda/",
-   "url": "https://worldlibs.pages.dev/libraries/buda/",
+   "@id": "https://wanderstacks.com/libraries/buda/",
+   "url": "https://wanderstacks.com/libraries/buda/",
    "name": "Bibliotheca Corviniana",
    "address": "Buda, Hungary",
    "geo": {
@@ -452,8 +452,8 @@
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",
-   "@id": "https://worldlibs.pages.dev/libraries/timbuktu/",
-   "url": "https://worldlibs.pages.dev/libraries/timbuktu/",
+   "@id": "https://wanderstacks.com/libraries/timbuktu/",
+   "url": "https://wanderstacks.com/libraries/timbuktu/",
    "name": "Timbuktu manuscripts",
    "address": "Timbuktu, Mali",
    "geo": {
@@ -467,8 +467,8 @@
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",
-   "@id": "https://worldlibs.pages.dev/libraries/vikramashila/",
-   "url": "https://worldlibs.pages.dev/libraries/vikramashila/",
+   "@id": "https://wanderstacks.com/libraries/vikramashila/",
+   "url": "https://wanderstacks.com/libraries/vikramashila/",
    "name": "Vikramaśīla University",
    "address": "Bhagalpur district, India",
    "geo": {
@@ -482,8 +482,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/thanjavur/",
-   "url": "https://worldlibs.pages.dev/libraries/thanjavur/",
+   "@id": "https://wanderstacks.com/libraries/thanjavur/",
+   "url": "https://wanderstacks.com/libraries/thanjavur/",
    "name": "Saraswathi Mahal Library",
    "address": "Thanjavur, India",
    "geo": {
@@ -498,8 +498,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/khudabakhsh/",
-   "url": "https://worldlibs.pages.dev/libraries/khudabakhsh/",
+   "@id": "https://wanderstacks.com/libraries/khudabakhsh/",
+   "url": "https://wanderstacks.com/libraries/khudabakhsh/",
    "name": "Khuda Bakhsh Oriental Library",
    "address": "Patna, India",
    "geo": {
@@ -514,8 +514,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/nli/",
-   "url": "https://worldlibs.pages.dev/libraries/nli/",
+   "@id": "https://wanderstacks.com/libraries/nli/",
+   "url": "https://wanderstacks.com/libraries/nli/",
    "name": "National Library of India",
    "address": "Kolkata, India",
    "geo": {
@@ -530,8 +530,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/asiatic/",
-   "url": "https://worldlibs.pages.dev/libraries/asiatic/",
+   "@id": "https://wanderstacks.com/libraries/asiatic/",
+   "url": "https://wanderstacks.com/libraries/asiatic/",
    "name": "Asiatic Society of Mumbai",
    "address": "Mumbai, India",
    "geo": {
@@ -546,8 +546,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/connemara/",
-   "url": "https://worldlibs.pages.dev/libraries/connemara/",
+   "@id": "https://wanderstacks.com/libraries/connemara/",
+   "url": "https://wanderstacks.com/libraries/connemara/",
    "name": "Connemara Public Library",
    "address": "Egmore, Chennai, India",
    "geo": {
@@ -562,8 +562,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/sassoon/",
-   "url": "https://worldlibs.pages.dev/libraries/sassoon/",
+   "@id": "https://wanderstacks.com/libraries/sassoon/",
+   "url": "https://wanderstacks.com/libraries/sassoon/",
    "name": "David Sassoon Library",
    "address": "Mumbai, India",
    "geo": {
@@ -578,8 +578,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/alexandrina/",
-   "url": "https://worldlibs.pages.dev/libraries/alexandrina/",
+   "@id": "https://wanderstacks.com/libraries/alexandrina/",
+   "url": "https://wanderstacks.com/libraries/alexandrina/",
    "name": "Bibliotheca Alexandrina",
    "address": "Alexandria, Egypt",
    "geo": {
@@ -594,8 +594,8 @@
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",
-   "@id": "https://worldlibs.pages.dev/libraries/baghdad/",
-   "url": "https://worldlibs.pages.dev/libraries/baghdad/",
+   "@id": "https://wanderstacks.com/libraries/baghdad/",
+   "url": "https://wanderstacks.com/libraries/baghdad/",
    "name": "House of Wisdom",
    "address": "Round city of Baghdad, Abbasid Caliphate",
    "geo": {
@@ -609,8 +609,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/palafoxiana/",
-   "url": "https://worldlibs.pages.dev/libraries/palafoxiana/",
+   "@id": "https://wanderstacks.com/libraries/palafoxiana/",
+   "url": "https://wanderstacks.com/libraries/palafoxiana/",
    "name": "Biblioteca Palafoxiana",
    "address": "Heroica Puebla de Zaragoza, Mexico",
    "geo": {
@@ -625,8 +625,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/vasconcelos/",
-   "url": "https://worldlibs.pages.dev/libraries/vasconcelos/",
+   "@id": "https://wanderstacks.com/libraries/vasconcelos/",
+   "url": "https://wanderstacks.com/libraries/vasconcelos/",
    "name": "Vasconcelos Library",
    "address": "Mexico City, Mexico",
    "geo": {
@@ -641,8 +641,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/slv/",
-   "url": "https://worldlibs.pages.dev/libraries/slv/",
+   "@id": "https://wanderstacks.com/libraries/slv/",
+   "url": "https://wanderstacks.com/libraries/slv/",
    "name": "State Library Victoria",
    "address": "City of Melbourne, Australia",
    "geo": {
@@ -657,8 +657,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/tianyige/",
-   "url": "https://worldlibs.pages.dev/libraries/tianyige/",
+   "@id": "https://wanderstacks.com/libraries/tianyige/",
+   "url": "https://wanderstacks.com/libraries/tianyige/",
    "name": "Tian Yi Ge",
    "address": "Ningbo, People's Republic of China",
    "geo": {
@@ -673,8 +673,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/binhai/",
-   "url": "https://worldlibs.pages.dev/libraries/binhai/",
+   "@id": "https://wanderstacks.com/libraries/binhai/",
+   "url": "https://wanderstacks.com/libraries/binhai/",
    "name": "Tianjin Binhai Library",
    "address": "Tianjin, People's Republic of China",
    "geo": {
@@ -689,8 +689,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/haeinsa/",
-   "url": "https://worldlibs.pages.dev/libraries/haeinsa/",
+   "@id": "https://wanderstacks.com/libraries/haeinsa/",
+   "url": "https://wanderstacks.com/libraries/haeinsa/",
    "name": "Haeinsa",
    "address": "Gaya-myeon, South Korea",
    "geo": {
@@ -705,8 +705,8 @@
   },
   {
    "@type": "LandmarksOrHistoricalBuildings",
-   "@id": "https://worldlibs.pages.dev/libraries/ashikaga/",
-   "url": "https://worldlibs.pages.dev/libraries/ashikaga/",
+   "@id": "https://wanderstacks.com/libraries/ashikaga/",
+   "url": "https://wanderstacks.com/libraries/ashikaga/",
    "name": "Ashikaga Gakkō",
    "address": "Ashikaga, Japan",
    "geo": {
@@ -720,8 +720,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/mcmillan/",
-   "url": "https://worldlibs.pages.dev/libraries/mcmillan/",
+   "@id": "https://wanderstacks.com/libraries/mcmillan/",
+   "url": "https://wanderstacks.com/libraries/mcmillan/",
    "name": "McMillan Memorial Library, Nairobi",
    "address": "Nairobi, Kenya",
    "geo": {
@@ -736,8 +736,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/malatestiana/",
-   "url": "https://worldlibs.pages.dev/libraries/malatestiana/",
+   "@id": "https://wanderstacks.com/libraries/malatestiana/",
+   "url": "https://wanderstacks.com/libraries/malatestiana/",
    "name": "Biblioteca Malatestiana",
    "address": "Cesena, Italy",
    "geo": {
@@ -752,8 +752,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/joanina/",
-   "url": "https://worldlibs.pages.dev/libraries/joanina/",
+   "@id": "https://wanderstacks.com/libraries/joanina/",
+   "url": "https://wanderstacks.com/libraries/joanina/",
    "name": "Biblioteca Joanina",
    "address": "Coimbra, Portugal",
    "geo": {
@@ -768,8 +768,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/hereford/",
-   "url": "https://worldlibs.pages.dev/libraries/hereford/",
+   "@id": "https://wanderstacks.com/libraries/hereford/",
+   "url": "https://wanderstacks.com/libraries/hereford/",
    "name": "Hereford Cathedral Chained Library",
    "address": "Hereford, England",
    "geo": {
@@ -784,8 +784,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/morgan/",
-   "url": "https://worldlibs.pages.dev/libraries/morgan/",
+   "@id": "https://wanderstacks.com/libraries/morgan/",
+   "url": "https://wanderstacks.com/libraries/morgan/",
    "name": "The Morgan Library, McKim Building",
    "address": "New York, USA",
    "geo": {
@@ -800,8 +800,8 @@
   },
   {
    "@type": "Library",
-   "@id": "https://worldlibs.pages.dev/libraries/stegen/",
-   "url": "https://worldlibs.pages.dev/libraries/stegen/",
+   "@id": "https://wanderstacks.com/libraries/stegen/",
+   "url": "https://wanderstacks.com/libraries/stegen/",
    "name": "Sainte-Geneviève Library",
    "address": "Paris, France",
    "geo": {

@@ -57,7 +57,7 @@ export function showWorkbench(api: RoomApi, key: string, host: HTMLElement) {
   const proposal = () => ({
     '@context': 'https://schema.org/',
     '@type': 'CreativeWork',
-    about: `WorldLibs ${api.lib.id} reconstruction`,
+    about: `Wanderstacks ${api.lib.id} reconstruction`,
     library: api.lib.id,
     element: key,
     current: { value: param.v, basis: param.basis, source: param.src },
@@ -113,6 +113,6 @@ export function showWorkbench(api: RoomApi, key: string, host: HTMLElement) {
       title: `Reconstruction correction: ${api.lib.id} / ${key}`,
       body: `\`\`\`json\n${JSON.stringify(proposal(), null, 2)}\n\`\`\``,
     })
-    window.open(`https://github.com/coding-sunshine/worldlibs/issues/new?${q}`, '_blank', 'noopener,noreferrer')
+    window.open(`https://github.com/coding-sunshine/wanderstacks/issues/new?${q}`, '_blank', 'noopener,noreferrer')
   }
 }
