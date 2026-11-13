@@ -1,6 +1,7 @@
 ---
 import '../site/site.css'
 import Mark from '../components/Mark.astro'
+import Seal from '../components/Seal.astro'
 import Display from '../components/Display.astro'
 // Same files the stylesheet loads; preloading them stops the headings and body from repainting in a fallback face.
 import caslon from '@fontsource/libre-caslon-display/files/libre-caslon-display-latin-400-normal.woff2?url'
@@ -47,6 +48,7 @@ const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/visit/', 'Vi
       <p><a href="/calendar/">Calendar</a></p>
       <p><a href="/data/">Open data</a></p>
       <p><a href="/display/">Display settings</a></p>
+      <Seal />
     </footer>
   </body>
 </html>

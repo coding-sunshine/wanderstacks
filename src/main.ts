@@ -29,6 +29,9 @@ let token = 0
 
 const notFound: Mount = (el) => {
   el.innerHTML = '<section class="page"><h1>Not on any shelf</h1><p><a href="/">Back to the atlas</a></p></section>'
+  // Only the 404 shell carries the stamp; the legacy shell has none.
+  const seal = document.querySelector<HTMLTemplateElement>('template#seal')
+  if (seal) el.firstElementChild!.prepend(seal.content.cloneNode(true))
 }
 
 const broken: Mount = (el) => {

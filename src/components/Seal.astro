@@ -1,0 +1,9 @@
+---
+// The library stamp from src/brand/marks.ts, inked in currentColor. Decorative: the name it carries is already on the page.
+import { seal } from '../brand/marks'
+---
+<span class="seal" aria-hidden="true" set:html={seal('seal', 'currentColor')} />
+<style>
+  .seal { display: block; width: 6.5rem; color: var(--brass); opacity: 0.85; }
+  .seal :global(svg) { display: block; width: 100%; height: auto; }
+</style>
