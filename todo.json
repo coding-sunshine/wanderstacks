@@ -169,6 +169,13 @@
       "blocker": "None.",
       "cmd": "rg -q \"\\\"openseadragon\\\"\" package.json && rg -lq \"open-failed\" dist/_astro && rg -q \"deep-zoom tiles\" e2e/scan.spec.ts",
       "status": "passing"
+    },
+    {
+      "id": "topic-pages",
+      "what": "Books are shelved by century, language and author at /books/topics/ and /books/<facet>/<key>/ (topics with two or more books only), each book page links to its topics, and the Books index links the hub",
+      "blocker": "None. The catalogue has no place or printer fields, so those facets wait for data.",
+      "cmd": "bun test src/site/topics.test.ts && rg -q \"href=\\\"/books/language/la/\\\"\" dist/books/topics/index.html && rg -q \"href=\\\"/books/author/charles-dickens/\\\"\" dist/books/carol/index.html && [ -f dist/books/century/3rd-bc/index.html ] && rg -q \"/books/topics/\" dist/books/index.html",
+      "status": "passing"
     }
   ]
 }

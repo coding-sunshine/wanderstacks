@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro'
+import { topics, facetName, type Facet } from '../../site/topics'
+const facets: Facet[] = ['century', 'language', 'author']
+---
+<Base title="Book topics" desc={`Browse the books by century, language and author: ${topics.length} shelves, each with two or more books.`}>
+  <section class="wrap sec">
+    <p class="dim"><a href="/books/">Books</a></p>
+    <h1>Topics</h1>
+    <p class="dim lede">The same books, shelved by when they were made, the language they are in, and who wrote them.</p>
+    {facets.map((f) => (
+      <section class="facet">
+        <h2>{facetName[f]}</h2>
+        <nav class="picks" aria-label={facetName[f]}>
+          {topics.filter((t) => t.facet === f).map((t) => <a class="pick" href={`/books/${t.facet}/${t.key}/`}>{t.name} <span class="dim">{t.books.length}</span></a>)}
+        </nav>
+      </section>
+    ))}
+  </section>
+</Base>
+<style>
+  .lede { font-size: 1.2rem; margin-top: 0.8rem; }
+  .facet { margin-top: 2.2rem; }
+  .facet .picks { margin-top: 0.9rem; }
+</style>

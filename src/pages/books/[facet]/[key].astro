@@ -1,0 +1,22 @@
+---
+import Base from '../../../layouts/Base.astro'
+import BookRows from '../../../components/BookRows.astro'
+import { sortKey } from '../../../site/data'
+import { topics, type Topic } from '../../../site/topics'
+export function getStaticPaths() {
+  return topics.map((t) => ({ params: { facet: t.facet, key: t.key }, props: { t } }))
+}
+const { t } = Astro.props as { t: Topic }
+const list = [...t.books].sort((a, b) => sortKey(a.title).localeCompare(sortKey(b.title)))
+const head = { author: t.name, century: `Books of the ${t.name}`, language: `Books in ${t.name}` }[t.facet]
+const desc = { author: `${list.length} books by ${t.name}`, century: `${list.length} books made in the ${t.name}`, language: `${list.length} books written in ${t.name}` }[t.facet]
+---
+<Base title={head} desc={`${desc}, and the libraries that hold them.`}>
+  <section class="wrap sec">
+    <p class="dim"><a href="/books/">Books</a> / <a href="/books/topics/">Topics</a></p>
+    <h1>{head}</h1>
+    <p class="dim lede">{desc}, and where each one is kept.</p>
+    <BookRows books={list} />
+  </section>
+</Base>
+<style> .lede { font-size: 1.2rem; margin: 0.8rem 0 1.6rem; } </style>

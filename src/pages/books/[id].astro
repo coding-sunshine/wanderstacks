@@ -5,6 +5,7 @@ import Save from '../../components/Save.astro'
 import Keep from '../../components/Keep.astro'
 import { books, type Book, libById, readHere, booksOf, bookContent, textMeta, scanMeta, shape, year, lost } from '../../site/data'
 import { hasDispersal } from '../../site/dispersal'
+import { topicsOf } from '../../site/topics'
 import concordance from '../../../data/concordance.json'
 export const getStaticPaths = () => books.map((b) => ({ params: { id: b.id }, props: { b } }))
 const { b } = Astro.props as { b: Book }
@@ -63,6 +64,7 @@ const gap = (i: number) => (i === 0 ? 0 : Math.min(4, Math.log10(1 + tl[i].year 
     <header class="wrap sec head">
       <h1 data-pagefind-filter="kind:Book">{b.title}</h1>
       <p class="by">{[b.author, b.date].filter(Boolean).join(', ')}</p>
+      {topicsOf(b).length > 0 && <nav class="picks tags" aria-label="Topics" data-pagefind-ignore>{topicsOf(b).map((t) => <a class="pick" href={t.href}>{t.name}</a>)}</nav>}
       <p class="held">
         {gone
           ? <>From <a href={`/libraries/${lib!.id}/`}>{lib!.n}</a>. {unknown ? 'Present holder unknown' : <>Now at {b.holder}</>}</>
@@ -209,6 +211,7 @@ const gap = (i: number) => (i === 0 ? 0 : Math.min(4, Math.log10(1 + tl[i].year 
 <style>
   .head h1 { max-width: 18ch; }
   .by { font-size: 1.5rem; color: var(--dim); margin: 0.6rem 0 1rem; }
+  .tags { margin-bottom: 1rem; }
   .held .stamp { margin-left: 0.6rem; }
   .go { display: inline-block; margin: 1rem 1rem 0 0; padding: 0.8rem 1.6rem; background: var(--brass); color: var(--stacks); font: 400 1.4rem/1 var(--display); text-decoration: none; border-radius: 2px; }
   .go:hover { background: var(--paper); }

@@ -15,6 +15,7 @@ const shelves = libs.map((l) => ({ l, n: booksOf(l.id).length })).filter((x) => 
     <h1>Books</h1>
     <p class="dim lede">{books.length} books and manuscripts tied to these libraries. {open.length} open here, page by page.</p>
     <nav class="picks az" aria-label="By first letter">{letters.map((c) => <a class="pick" href={`/books/by/${c === '#' ? '0' : c.toLowerCase()}/`}>{c}</a>)}</nav>
+    <p class="dim">Or browse by <a href="/books/topics/">century, language and author</a>.</p>
     <div class="tools">
       <input class="field" id="q" type="search" placeholder="Filter by title, author or library" aria-label="Filter books" />
       <div class="picks" hidden={shown === open}><button class="pick" id="here" aria-pressed="false">Only books I can read here</button></div>
