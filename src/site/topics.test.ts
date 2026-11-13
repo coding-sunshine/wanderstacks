@@ -27,6 +27,19 @@ test('authors are split on semicolons, flipped to First Last, and anonymous name
   expect(authorsOf(b('Anonymous'))).toEqual([])
 })
 
+test('one author spelled two ways gets one shelf', () => {
+  const b = (author: string) => ({ author }) as Book
+  expect(authorsOf(b('Dostoyevsky, Fyodor'))).toEqual(['Fyodor Dostoevsky'])
+  expect(authorsOf(b('Fyodor Dostoevsky'))).toEqual(['Fyodor Dostoevsky'])
+  expect(authorsOf(b('Sunzi, active 6th century B.C.'))).toEqual(['Sun Tzu'])
+  expect(authorsOf(b('Jacob and Wilhelm Grimm'))).toEqual(['Jacob Grimm', 'Wilhelm Grimm'])
+  const shelf = (k: string) => topics.find((t) => t.facet === 'author' && t.key === k)
+  expect(shelf('fyodor-dostoyevsky')).toBeUndefined()
+  expect(shelf('fyodor-dostoevsky')?.books.length).toBe(8)
+  expect(shelf('charlotte-bronte')?.name).toBe('Charlotte Brontë')
+  for (const t of topics) expect([t.key, new Set(t.books).size]).toEqual([t.key, t.books.length])
+})
+
 test('every topic has two or more books and every book link points at a topic', () => {
   expect(topics.every((t) => t.books.length >= 2)).toBe(true)
   const hrefs = new Set(topics.map((t) => `/books/${t.facet}/${t.key}/`))

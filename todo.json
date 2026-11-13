@@ -176,6 +176,13 @@
       "blocker": "None. The catalogue has no place or printer fields, so those facets wait for data.",
       "cmd": "bun test src/site/topics.test.ts && rg -q \"href=\\\"/books/language/la/\\\"\" dist/books/topics/index.html && rg -q \"href=\\\"/books/author/charles-dickens/\\\"\" dist/books/carol/index.html && [ -f dist/books/century/3rd-bc/index.html ] && rg -q \"/books/topics/\" dist/books/index.html",
       "status": "passing"
+    },
+    {
+      "id": "author-variants",
+      "what": "An author spelled more than one way in the catalogue (Dostoevsky and Dostoyevsky, Nietzsche with and without Wilhelm, Cervantes with and without Saavedra, and others) gets one topic shelf under one name, the combined Grimm entry counts for both brothers, and the four shelf URLs the merge removed redirect to the merged shelf",
+      "blocker": "None. A new spelling in the catalogue needs a line in the alias map in src/site/topics.ts.",
+      "cmd": "bun test src/site/topics.test.ts && [ ! -e dist/books/author/fyodor-dostoyevsky ] && rg -q \"More by Fyodor Dostoevsky\" dist/books/crime/index.html && rg -q \"^/books/author/fyodor-dostoyevsky/ /books/author/fyodor-dostoevsky/ 301$\" dist/_redirects",
+      "status": "passing"
     }
   ]
 }

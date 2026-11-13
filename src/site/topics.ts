@@ -31,9 +31,25 @@ const person = (a: string) => {
   if (/^[a-z]/.test(first)) return `${last} ${first}`
   return first.endsWith(` ${last}`) ? first : `${first} ${last}`
 }
+/** Catalogue spellings of one author, read as the name their shelf goes by. */
+const alias: Record<string, string | string[]> = {
+  'Fyodor Dostoyevsky': 'Fyodor Dostoevsky',
+  'Friedrich Wilhelm Nietzsche': 'Friedrich Nietzsche',
+  'Miguel de Cervantes Saavedra': 'Miguel de Cervantes',
+  'Marcus Tullius Cicero': 'Cicero',
+  'Pedanius Dioscorides': 'Dioscorides',
+  'J. Sheridan Le Fanu': 'Joseph Sheridan Le Fanu',
+  'H. C. Andersen': 'Hans Christian Andersen',
+  'Nikolai Vasilevich Gogol': 'Nikolai Gogol',
+  'Mary Wollstonecraft Shelley': 'Mary Shelley',
+  'Sunzi': 'Sun Tzu',
+  'Charlotte Bronte': 'Charlotte Brontë',
+  'Niccolo Machiavelli': 'Niccolò Machiavelli',
+  'Jacob and Wilhelm Grimm': ['Jacob Grimm', 'Wilhelm Grimm'],
+}
 /** Each named author of a book; anonymous and collective names are left out. */
 export const authorsOf = (b: Book) =>
-  (b.author ?? '').split(';').map((a) => a.trim()).filter((a) => a && !/^(various|anon|unknown)/i.test(a)).map(person)
+  (b.author ?? '').split(';').map((a) => a.trim()).filter((a) => a && !/^(various|anon|unknown)/i.test(a)).map(person).flatMap((a) => alias[a] ?? a)
 const slug = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 
 const keysOf = (b: Book): [Facet, string, string, number | string][] => {
