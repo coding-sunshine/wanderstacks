@@ -148,6 +148,13 @@
       "blocker": "None.",
       "cmd": "rg -q \"id=\\\"free\\\"\" dist/books/carol/index.html && rg -q \"standardebooks.org/ebooks/charles-dickens/a-christmas-carol\" dist/books/carol/index.html && rg -q \"gutenberg.org/ebooks/8581\\\"\" dist/books/pg-8581/index.html && ! rg -q \"id=\\\"free\\\"\" dist/books/gutenberg-loc/index.html",
       "status": "passing"
+    },
+    {
+      "id": "where-now",
+      "what": "Book pages say where the book is now: a lost library's books read From <library>, Now at <present holder> (or Present holder unknown) and link where the rest of the library went; every book links its holder record, its Wikidata item and its IIIF manifest when it has them",
+      "blocker": "None.",
+      "cmd": "rg -q \"From <a href=\\\"/libraries/herculaneum/\\\"\" dist/books/herc-naples/index.html && rg -q \"Now at Biblioteca Nazionale\" dist/books/herc-naples/index.html && rg -q \"/libraries/herculaneum/#dispersal\" dist/books/herc-naples/index.html && rg -q \"wikidata.org/wiki/Q1105484\\\" rel\" dist/books/wd-q1105484/index.html && rg -q \">IIIF manifest<\" dist/books/wd-q1105484/index.html",
+      "status": "passing"
     }
   ]
 }

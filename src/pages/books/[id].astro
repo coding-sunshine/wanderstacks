@@ -3,7 +3,8 @@ import Base from '../../layouts/Base.astro'
 import BookRows from '../../components/BookRows.astro'
 import Save from '../../components/Save.astro'
 import Keep from '../../components/Keep.astro'
-import { books, type Book, libById, readHere, booksOf, bookContent, textMeta, scanMeta, shape, year } from '../../site/data'
+import { books, type Book, libById, readHere, booksOf, bookContent, textMeta, scanMeta, shape, year, lost } from '../../site/data'
+import { hasDispersal } from '../../site/dispersal'
 import concordance from '../../../data/concordance.json'
 export const getStaticPaths = () => books.map((b) => ({ params: { id: b.id }, props: { b } }))
 const { b } = Astro.props as { b: Book }
@@ -16,6 +17,13 @@ const bars = text ? shape(b.id) : []
 const most = Math.max(1, ...bars.map((x) => x.words)), total = bars.reduce((n, x) => n + x.words, 0)
 const mins = (w: number) => Math.max(1, Math.round(w / 230))
 const span = (m: number) => (m < 90 ? `${m} min` : `${Math.round(m / 60)} h`)
+// Where it is now: a lost library's books name their present holder, and every book links its records.
+const gone = !!lib && lost(lib), unknown = /^(unknown|none)/i.test(b.holder)
+const records = [
+  !b.src.includes('wikidata.org') && { href: b.src, name: "Holder's record" },
+  b.wd && { href: `https://www.wikidata.org/wiki/${b.wd}`, name: `Wikidata ${b.wd}` },
+  b.read?.type === 'iiif' && { href: b.read.url, name: 'IIIF manifest' },
+].filter((x): x is { href: string; name: string } => !!x)
 const label = { open: 'free to read', nc: 'non-commercial', 'link-only': 'catalogue record' } as const
 
 // Free editions elsewhere, for printed works: the edition we cite, then full-text searches by title and author surname.
@@ -56,7 +64,9 @@ const gap = (i: number) => (i === 0 ? 0 : Math.min(4, Math.log10(1 + tl[i].year 
       <h1 data-pagefind-filter="kind:Book">{b.title}</h1>
       <p class="by">{[b.author, b.date].filter(Boolean).join(', ')}</p>
       <p class="held">
-        Held by {lib ? <a href={`/libraries/${lib.id}/`}>{lib.n}</a> : b.holder}{b.shelfmark && <span class="dim">, {b.shelfmark}</span>}
+        {gone
+          ? <>From <a href={`/libraries/${lib!.id}/`}>{lib!.n}</a>. {unknown ? 'Present holder unknown' : <>Now at {b.holder}</>}</>
+          : <>Held by {lib ? <a href={`/libraries/${lib.id}/`}>{lib.n}</a> : b.holder}</>}{b.shelfmark && <span class="dim">, {b.shelfmark}</span>}
         <span class="stamp" data-pagefind-ignore data-s={here ? 'open' : b.rights}>{here ? 'read here' : label[b.rights]}</span>
       </p>
       {here
@@ -181,7 +191,10 @@ const gap = (i: number) => (i === 0 ? 0 : Math.min(4, Math.log10(1 + tl[i].year 
       <p class="dim fine">
         {text && <>Text: {text.edition}. {text.licence}. </>}
         {scan && <>Images: {scan.credit}. {scan.licence}. </>}
-        {c && <a href={b.src}>Holder's record</a>}
+      </p>
+      <p class="fine records" data-pagefind-ignore>
+        {records.map((r, i) => <>{i > 0 && ' · '}<a href={r.href} rel="noopener">{r.name}</a></>)}
+        {gone && hasDispersal(lib!.id) && <> · <a href={`/libraries/${lib!.id}/#dispersal`}>Where the rest of the library went</a></>}
       </p>
     </section>
 
@@ -233,6 +246,7 @@ const gap = (i: number) => (i === 0 ? 0 : Math.min(4, Math.log10(1 + tl[i].year 
   .src { padding-left: 1.4rem; overflow-wrap: anywhere; }
   .src li:target { color: var(--paper); }
   .fine { font-size: 0.95rem; }
+  .records { margin-top: 0.4rem; }
   .free { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); max-width: 40rem; }
   .free li { padding: 0.7rem 0; border-bottom: 1px solid var(--rule); }
   .free a { font: 400 1.25rem var(--display); }
