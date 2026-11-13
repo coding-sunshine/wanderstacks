@@ -1,5 +1,6 @@
 ---
 import '../site/site.css'
+import Mark from '../components/Mark.astro'
 interface Props { title: string; desc?: string; index?: boolean; image?: string }
 const { title, desc = "Walk the world's great libraries, standing and lost, and read their books.", index = false, image } = Astro.props
 const at = Astro.url.pathname
@@ -28,7 +29,7 @@ const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/visit/', 'Vi
   </head>
   <body>
     <header class="top">
-      <a class="brand" href="/">WorldLibs</a>
+      <a class="brand" href="/"><Mark />WorldLibs</a>
       {nav.map(([href, label]) => <a href={href} aria-current={at.startsWith(href) ? 'page' : undefined}>{label}</a>)}
     </header>
     <main {...(index ? { 'data-pagefind-body': '' } : {})}><slot /></main>

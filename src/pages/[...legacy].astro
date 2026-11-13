@@ -4,6 +4,7 @@
 import { readdirSync, existsSync } from 'node:fs'
 import { libs } from '../site/data'
 import { hasDispersal } from '../site/dispersal'
+import Mark from '../components/Mark.astro'
 export function getStaticPaths() {
   const ls = (p: string) => (existsSync(p) ? readdirSync(p).filter((x) => !x.includes('.')) : [])
   const ids = libs.map((l) => l.id)
@@ -28,7 +29,7 @@ export function getStaticPaths() {
   </head>
   <body>
     <header class="bar">
-      <a href="/" class="brand">WorldLibs</a>
+      <a href="/" class="brand"><Mark />WorldLibs</a>
       <nav aria-label="Main">
         <a href="/libraries/">Libraries</a>
         <a href="/books/">Books</a>
