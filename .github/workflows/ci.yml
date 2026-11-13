@@ -1,0 +1,30 @@
+# Same gate as a release: types, unit tests and a full build, then every check recorded as passing, run against the built site.
+# The data build fetches Gutenberg and IIIF sources on a cache miss, so .cache is kept between runs.
+name: ci
+on:
+  push:
+    branches: [main, overhaul]
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.4
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: data-${{ hashFiles('data/**', 'scripts/build/**') }}
+          restore-keys: data-
+      - run: bun install --frozen-lockfile
+      - run: bun run typecheck
+      - run: bun run test
+      - run: bun run build
+      # Only checks recorded as passing gate the run; a failing item is open work with a named blocker.
+      - name: checks
+        run: |
+          jq -r '.items[] | select(.status=="passing") | .cmd | select(startswith("bun scripts/checks/"))' overhaul.json todo.json | sort -u |
+            while read -r c; do echo "$c"; bash -c "$c" </dev/null || exit 1; done

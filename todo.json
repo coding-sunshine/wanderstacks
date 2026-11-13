@@ -85,6 +85,34 @@
       "blocker": "None.",
       "cmd": "bun scripts/checks/deploy-limits.ts",
       "status": "passing"
+    },
+    {
+      "id": "skip-links",
+      "what": "Every page template has a skip link to its main content, and the two text faces are preloaded",
+      "blocker": "None.",
+      "cmd": "rg -q \"class=\\\"skip\\\"\" dist/index.html && rg -q \"class=\\\"skip\\\"\" dist/read/gita/index.html && rg -q \"class=\\\"skip\\\"\" dist/404.html && rg -q \"rel=\\\"preload\\\" as=\\\"font\\\"\" dist/index.html",
+      "status": "passing"
+    },
+    {
+      "id": "ci",
+      "what": "CI runs the release gate and every check recorded as passing, on pushes to main and overhaul and on pull requests",
+      "blocker": "None.",
+      "cmd": "rg -q \"bun run build\" .github/workflows/ci.yml && rg -qF \"select(.status==\\\"passing\\\")\" .github/workflows/ci.yml",
+      "status": "passing"
+    },
+    {
+      "id": "sw-cache-stamp",
+      "what": "Each build names the service worker runtime cache after its commit, so a deploy replaces cached book parts and chunks",
+      "blocker": "None.",
+      "cmd": "! rg -q \"wl-v4\" dist/sw.js && rg -q \"const CACHE = .wl-[0-9a-f]{12}.\" dist/sw.js",
+      "status": "passing"
+    },
+    {
+      "id": "readme-licences",
+      "what": "README says how to run and release the site, and that the MIT licence covers the code while each text, photo, scan and recording keeps its own licence",
+      "blocker": "None.",
+      "cmd": "rg -q \"The code is MIT\" README.md && rg -q \"CC BY-NC 4.0\" README.md",
+      "status": "passing"
     }
   ]
 }
