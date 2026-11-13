@@ -14,6 +14,9 @@ await write('libraries.json', libs)
 await write('facts.json', facts)
 await write('events.json', events)
 await write('libraries.jsonld', { '@context': 'https://schema.org', '@graph': raw.map((l) => libLd(l, eventsFor(l.id))) })
+for (const name of ['dispersal', 'tours', 'captures', 'concordance', 'conservation', 'phases']) {
+  await write(`${name}.json`, await Bun.file(root + `data/${name}.json`).json())
+}
 await Bun.write(out + 'README.md', `# WorldLibs open data
 
 Generated ${generated}. Page: ${SITE}/data/
@@ -22,6 +25,12 @@ Generated ${generated}. Page: ${SITE}/data/
 - facts.json: one row per sourced claim. id (anchors the claim on its library page), lib, field, value, source (URL), tier, quote (the source's words, when held).
 - events.json: dated events. id, lib, kind, year, label, source, tier, quote.
 - libraries.jsonld: schema.org Library (LandmarksOrHistoricalBuildings for lost ones) with Wikidata sameAs.
+- dispersal.json: current holders of surviving collections, with coordinates, source tier and any verified IIIF manifest.
+- tours.json: external official and third-party tours, provider, scope, checked date and view-only notes.
+- captures.json: real 3D candidates and ready captures, with author, licence, source, alignment and any version discrepancy.
+- concordance.json: links between spatial hotspots and related manuscripts, including the limits of identification.
+- conservation.json: restoration schedules and the real repeat captures still needed.
+- phases.json: sourced architectural phases used by the same-camera comparison.
 
 Tiers: primary (the institution or an original document), secondary (scholarship or press), wikipedia (Wikipedia, cited as such), unproven (stated but not yet sourced). Claims whose check failed are left out. A claim's page is ${SITE}/libraries/<lib>/#<id>.
 

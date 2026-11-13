@@ -1,0 +1,62 @@
+[
+ {
+  "id": "peabody-360",
+  "lib": "peabody",
+  "title": "Peabody 360: high-resolution interior tour",
+  "url": "https://www.library.jhu.edu/library-hours/george-peabody-library/",
+  "provider": "Johns Hopkins Sheridan Libraries",
+  "official": true,
+  "kind": "360",
+  "scope": "interior",
+  "checked": "2026-11-13",
+  "note": "The official library page links Peabody 360. View only; no reuse licence for the panorama media was verified."
+ },
+ {
+  "id": "onb-state-hall-360",
+  "lib": "prunksaal",
+  "title": "State Hall 360-degree online tour",
+  "url": "https://www.onb.ac.at/en/museums/state-hall/visit/virtual-state-hall",
+  "provider": "Austrian National Library",
+  "official": true,
+  "kind": "360",
+  "scope": "interior",
+  "checked": "2026-11-13",
+  "note": "Official online tour and separate paid guided online visits. View only; WorldLibs already hosts a Commons panorama under CC BY 2.0."
+ },
+ {
+  "id": "trinity-long-room-3d",
+  "lib": "longroom",
+  "title": "Trinity College campus tour, including the Long Room",
+  "url": "https://my.threesixty.tours/app/v/60c26u/1683nr/uz5bif",
+  "provider": "threesixty.tours",
+  "official": false,
+  "kind": "3d",
+  "scope": "mixed",
+  "checked": "2026-11-13",
+  "note": "Third-party hosted tour. The Long Room is included; Trinity's own 360 tours cover other library buildings. No reuse licence was verified."
+ },
+ {
+  "id": "digital-library-cave",
+  "lib": "dunhuang",
+  "title": "Digital Library Cave",
+  "url": "http://english.scio.gov.cn/chinavoices/2023-04/19/content_85238891.htm",
+  "provider": "Dunhuang Academy and Tencent",
+  "official": true,
+  "kind": "digital-twin",
+  "scope": "interior",
+  "checked": "2026-11-13",
+  "note": "Official announcement and access route for the proprietary interactive reconstruction, with historical figures and time travel. Not a reusable capture."
+ },
+ {
+  "id": "nypl-video-walk",
+  "lib": "nypl",
+  "title": "Hidden Secrets of the New York Public Library",
+  "url": "https://www.architecturaldigest.com/video/watch/new-york-public-library-virtual-walking-tour",
+  "provider": "Architectural Digest",
+  "official": false,
+  "kind": "video",
+  "scope": "mixed",
+  "checked": "2026-11-13",
+  "note": "A video walking tour, not an interactive 360 or 3D capture. View only."
+ }
+]

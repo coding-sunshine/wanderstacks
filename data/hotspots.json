@@ -1350,6 +1350,30 @@
           "tier": "primary",
           "source": "https://www.bnf.fr/en/vivienne-garden"
         }
+      ],
+      "x03": [
+        {
+          "id": "vivienne-petits-champs",
+          "yaw": 306,
+          "pitch": 8,
+          "kind": "object",
+          "title": "Richelieu's southern corner",
+          "body": "The Richelieu block from near rue Vivienne and rue des Petits-Champs. The BnF's own history bounds the site by these two streets, along with rue de Richelieu and rue Colbert. It also places Galerie Colbert on the other side of rue Vivienne.",
+          "tier": "primary",
+          "source": "https://www.bnf.fr/en/story-renaissance"
+        }
+      ],
+      "x05": [
+        {
+          "id": "vivienne-colbert",
+          "yaw": 288,
+          "pitch": 8,
+          "kind": "object",
+          "title": "Richelieu's north-east corner",
+          "body": "The Richelieu block near rue Vivienne and rue Colbert. The BnF says the last north-east plots at this corner were acquired in 1882, allowing Jean-Desire Pascal to complete the quadrilateral with new buildings, including the Salle Ovale.",
+          "tier": "primary",
+          "source": "https://www.bnf.fr/en/story-renaissance"
+        }
       ]
     }
   }

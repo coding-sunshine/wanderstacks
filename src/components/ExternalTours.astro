@@ -1,0 +1,28 @@
+---
+import { toursOf } from '../site/capture'
+interface Props { lib: string }
+const { lib } = Astro.props
+const tours = toursOf(lib)
+---
+{tours.length > 0 && (
+  <section class="wrap sec external-tours" id="official-tours">
+    <h2>More ways to visit</h2>
+    <p class="dim">These experiences open on their provider's site. Linking does not imply endorsement or a licence to copy their media.</p>
+    <ul>
+      {tours.map((tour) => (
+        <li>
+          <a href={tour.url} target="_blank" rel="noopener noreferrer">{tour.title} ↗</a>
+          <p>{tour.provider} · {tour.official ? 'Official source' : 'Third party'} · {tour.kind === '360' ? '360-degree tour' : tour.kind === '3d' ? '3D tour' : tour.kind === 'digital-twin' ? 'Interactive digital twin' : 'Video'}</p>
+          <p class="note">{tour.note} <span class="mark">Checked {tour.checked}</span></p>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+<style>
+  .external-tours ul { list-style: none; padding: 0; display: grid; gap: 1px; background: var(--rule); border-block: 1px solid var(--rule); }
+  .external-tours li { background: var(--stacks); padding: 1rem 0; }
+  .external-tours li > a { font-family: var(--display); font-size: 1.35rem; }
+  .external-tours p { margin: 0.35rem 0 0; }
+  .external-tours .note { color: var(--dim); max-width: 75ch; font-size: 0.9rem; }
+</style>

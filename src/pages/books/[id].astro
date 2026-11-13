@@ -3,8 +3,10 @@ import Base from '../../layouts/Base.astro'
 import BookRows from '../../components/BookRows.astro'
 import Save from '../../components/Save.astro'
 import { books, type Book, libById, readHere, booksOf, bookContent, textMeta, scanMeta, shape, year } from '../../site/data'
+import concordance from '../../../data/concordance.json'
 export const getStaticPaths = () => books.map((b) => ({ params: { id: b.id }, props: { b } }))
 const { b } = Astro.props as { b: Book }
+const spatial = (concordance as { lib: string; node: string; spot: string; book: string; relationship: string; href: string }[]).find((c) => c.book === b.id)
 const lib = b.lib ? libById.get(b.lib) : undefined
 const here = readHere(b.id)
 const c = bookContent(b.id)
@@ -46,6 +48,7 @@ const gap = (i: number) => (i === 0 ? 0 : Math.min(4, Math.log10(1 + tl[i].year 
         ? <p><a class="go" href={here}>{scan ? `Turn the pages, ${scan.pages.length} of them` : 'Read it here'}</a>{total > 0 && <span class="dim"> about {span(mins(total))} of reading</span>}</p>
         : <p class="dim">Not open on this site yet. <a href={b.src}>See the holder's record</a>.</p>}
       {text && <Save kind="book" id={b.id} />}
+      {spatial && <p><a href={`/libraries/${spatial.lib}/#spot-${spatial.lib}-${spatial.node}-${spatial.spot}`}>See the related place in 3D</a><span class="dim"> · {spatial.relationship}</span></p>}
       {c ? <p class="lede">{c.summary}</p> : b.why && <p class="lede">{b.why}</p>}
     </header>
 

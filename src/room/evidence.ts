@@ -1,6 +1,7 @@
 import * as THREE from 'three'
 import { basisLabel, type Basis, type Param } from '../types'
 import type { RoomApi } from './kit'
+import { resetWorkbench, showWorkbench } from './workbench'
 
 const TINT: Record<Basis, number> = {
   measured: 0x3f9d6a, excavated: 0x2f8f9d, 'photo-estimate': 0xd9a431, attested: 0x4a78c8, comparandum: 0x8a5cc8, invented: 0xc84a4a,
@@ -31,22 +32,30 @@ export function attach(api: RoomApi): () => void {
   button.setAttribute('aria-pressed', 'false')
   button.textContent = 'Evidence'
   api.controls.append(button)
+  const strictButton = document.createElement('button')
+  strictButton.type = 'button'
+  strictButton.dataset.action = 'evidence-only'
+  strictButton.setAttribute('aria-pressed', 'false')
+  strictButton.textContent = 'Evidence only'
+  api.controls.append(strictButton)
+  let strict = false
 
   let box: HTMLElement | null = null
   let info: HTMLElement | null = null
   const saved = new Map<THREE.Material, number>()
+  const visibility = new Map<THREE.Object3D, boolean>()
   const tintColor = new THREE.Color()
   const baseColor = new THREE.Color()
 
   const choose = (key: string) => {
     const p = hall[key]
     if (!box || !p) return
+    resetWorkbench(api)
     info?.remove()
     const name = api.params.find(([k]) => k === key)
     info = document.createElement('div')
     info.dataset.elementInfo = ''
     info.dataset.basis = p.basis
-    info.setAttribute('role', 'status')
     css(info, 'margin-top:0.5rem;padding-top:0.4rem;border-top:1px solid var(--oak-light)')
     const text = document.createElement('p')
     text.style.margin = '0'
@@ -61,14 +70,19 @@ export function attach(api: RoomApi): () => void {
       text.append(a)
     } else text.append(p.src)
     box.append(info)
+    showWorkbench(api, key, info)
     box.querySelectorAll('[data-element]').forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute('data-element') === key)))
   }
 
-  // Wash materials toward the basis hue in place, keeping their textures and shading.
+  // Tint by evidence basis and, in strict mode, hide estimated or invented geometry.
   const paint = () => {
+    let hidden = 0
     for (const [mesh, key] of keyOf) {
       const p = hall[key]
       if (!(mesh instanceof THREE.Mesh) || !p) continue
+      if (!visibility.has(mesh)) visibility.set(mesh, mesh.visible)
+      mesh.visible = !strict || p.basis === 'measured' || p.basis === 'excavated' || p.basis === 'attested'
+      if (!mesh.visible) hidden++
       const mats = Array.isArray(mesh.material) ? mesh.material : [mesh.material]
       for (const m of mats) {
         const c = (m as THREE.MeshLambertMaterial).color
@@ -78,11 +92,14 @@ export function attach(api: RoomApi): () => void {
         c.copy(tintColor)
       }
     }
+    api.root.dataset.evidenceHidden = String(hidden)
   }
 
   const unpaint = () => {
     saved.forEach((hex, m) => ((m as THREE.MeshLambertMaterial).color as THREE.Color).setHex(hex))
     saved.clear()
+    visibility.forEach((visible, mesh) => (mesh.visible = visible))
+    visibility.clear()
   }
 
   const open = () => {
@@ -126,10 +143,26 @@ export function attach(api: RoomApi): () => void {
   }
 
   const close = () => {
+    resetWorkbench(api)
     unpaint()
     box?.remove()
     box = info = null
+    strict = false
+    button.setAttribute('aria-pressed', 'false')
+    strictButton.setAttribute('aria-pressed', 'false')
     api.root.dataset.evidence = 'off'
+    delete api.root.dataset.evidenceHidden
+    api.render()
+  }
+
+  strictButton.onclick = () => {
+    strict = !strict
+    strictButton.setAttribute('aria-pressed', String(strict))
+    if (!box) {
+      open()
+      button.setAttribute('aria-pressed', 'true')
+    } else paint()
+    api.root.dataset.evidence = strict ? 'strict' : 'on'
     api.render()
   }
 
@@ -157,9 +190,12 @@ export function attach(api: RoomApi): () => void {
   return () => {
     api.canvas.removeEventListener('pointerdown', onDown)
     api.canvas.removeEventListener('pointerup', onUp)
+    resetWorkbench(api)
     unpaint()
     box?.remove()
     button.remove()
+    strictButton.remove()
     api.root.dataset.evidence = 'off'
+    delete api.root.dataset.evidenceHidden
   }
 }

@@ -111,7 +111,7 @@ for (const { id, p } of places) {
     if (p === 'outside') await gotoOutside(page, id)
     else await gotoRoom(page, id)
     await expect(root(page)).toHaveAttribute('data-place', p)
-    await expect(page.locator('.room-controls button')).toHaveCount(3)
+    await expect(page.locator('.room-controls button')).toHaveCount(id === 'longroom' ? 6 : 5)
     await expect(page.locator('.room-controls button[data-action="enter"], .room-controls button[data-action="exit"]')).toHaveCount(0)
     if (p === 'outside') await expect(page.locator('button[data-action="enter"]')).toHaveCount(1)
     if (p === 'inside') await expect(page.locator('button[data-action="exit"]')).toHaveCount(1)

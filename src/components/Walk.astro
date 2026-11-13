@@ -1,6 +1,9 @@
 ---
 import type { SphereNode } from '../site/data'
 import { hotspotsOf, type Hotspot } from '../site/hotspots'
+import concordance from '../../data/concordance.json'
+type Concordance = { lib: string; node: string; spot: string; title: string; relationship: string; href: string; manifest: string | null; page: number | null }
+const relatedTo = (lib: string | undefined, node: string, spot: string) => (concordance as Concordance[]).find((c) => c.lib === lib && c.node === node && c.spot === spot)
 interface Props { nodes: SphereNode[]; name: string; lib?: string }
 const { nodes, name, lib } = Astro.props
 const real = nodes.filter((n) => n.real).length
@@ -46,8 +49,10 @@ const basisNote = {
         <p class="stop" aria-live="polite"></p>
         <button type="button" data-step="1">Next</button>
         <button type="button" class="say" hidden>Read aloud</button>
+        <button type="button" class="directions" hidden>Spatial directions</button>
       </div>
     )}
+    <p class="spatial" aria-live="polite"></p>
     <ol class="stops">
       {nodes.map((n, i) => (
         <li data-node={n.id}>
@@ -73,6 +78,13 @@ const basisNote = {
                       </div>
                     )}
                     <p class="cite">{h.basis && <span class="stamp" data-s={h.basis === 'invented' ? 'unproven' : h.basis === 'comparandum' ? 'secondary' : undefined}>{h.basis}</span>} <span class="stamp" data-s={h.tier}>{h.tier}</span> <a href={h.source}>Source</a></p>
+                    {relatedTo(lib, n.id, h.id) && (
+                      <p class="related" data-concordance>
+                        <a href={relatedTo(lib, n.id, h.id)!.href}>{relatedTo(lib, n.id, h.id)!.title}</a>
+                        {relatedTo(lib, n.id, h.id)!.manifest && <a class="manifest" href={relatedTo(lib, n.id, h.id)!.manifest!}>IIIF manifest</a>}
+                        <br /><span class="note">{relatedTo(lib, n.id, h.id)!.relationship}</span>
+                      </p>
+                    )}
                   </div>
                   <button type="button" data-spot-go={h.id} hidden>Show in the view</button>
                 </li>
@@ -164,6 +176,28 @@ const basisNote = {
       const tour = viewer.getPlugin(VirtualTourPlugin) as InstanceType<typeof VirtualTourPlugin>
       const marks = viewer.getPlugin(MarkersPlugin) as InstanceType<typeof MarkersPlugin>
       let cur = nodes[0].id, open: { id: string; from?: HTMLElement } | null = null
+      let currentYaw = nodes[0].yaw0 ?? 0
+      const spatial = root.querySelector<HTMLElement>('.spatial')!, directions = root.querySelector<HTMLButtonElement>('.directions')
+      const relative = (target: number) => ((target - currentYaw + 540) % 360) - 180
+      const bearing = (target: number) => {
+        const turn = relative(target), amount = Math.round(Math.abs(turn))
+        return amount < 10 ? 'straight ahead' : `${amount} degrees to your ${turn > 0 ? 'right' : 'left'}`
+      }
+      const spatialText = () => {
+        const node = nodes.find((n) => n.id === cur)!, index = order.indexOf(cur)
+        const parts = [`Stop ${index + 1} of ${order.length}: ${node.cap}. ${node.real ? 'Real photograph' : 'Imagined reconstruction'}.`]
+        for (const li of spotsOf(cur)) {
+          const title = li.querySelector('h4')!.textContent!, yaw = +li.dataset.yaw!, pitch = +li.dataset.pitch!
+          parts.push(`${title}: ${bearing(yaw)}, ${pitch > 5 ? 'above eye level' : pitch < -5 ? 'below eye level' : 'near eye level'}.`)
+        }
+        const nextId = order[index + 1]
+        if (nextId) {
+          const link = node.links?.find((l) => l.to === nextId)
+          parts.push(`Next stop: ${nodes.find((n) => n.id === nextId)!.cap}${link ? `, ${bearing(link.yaw)}` : '. Use the Next button'}.`)
+        } else parts.push('This is the last stop on the guided route.')
+        return parts.join(' ')
+      }
+      const updateSpatial = () => { spatial.textContent = spatialText() }
       const shut = (back = true) => {
         if (!open) return
         const from = open.from
@@ -200,14 +234,20 @@ const basisNote = {
           route.querySelector<HTMLButtonElement>('[data-step="-1"]')!.disabled = i <= 0
           route.querySelector<HTMLButtonElement>('[data-step="1"]')!.disabled = i >= order.length - 1
         }
+        updateSpatial()
       }
       tour.addEventListener('node-changed', ({ node }) => show(node.id))
+      viewer.addEventListener('position-changed', ({ position }) => {
+        currentYaw = (position.yaw * 180) / Math.PI
+        updateSpatial()
+      })
       marks.addEventListener('select-marker', ({ marker }) => openCard(marker.id))
       viewer.addEventListener('ready', () => {
         root.querySelector('.wait')?.remove()
         show(nodes[0].id)
         if (route) route.hidden = false
         if (say && canSpeak()) say.hidden = false
+        if (directions && canSpeak()) directions.hidden = false
         spots.forEach((li) => li.querySelector<HTMLElement>('[data-spot-go]')!.hidden = false)
         if (!load(hkey)) hint.hidden = false
       }, { once: true })
@@ -238,6 +278,10 @@ const basisNote = {
         if (t.closest('.say')) {
           if (speechSynthesis.speaking) hush()
           else speak([nodes.find((n) => n.id === cur)!.cap, ...spotsOf(cur).map((li) => `${li.querySelector('h4')!.textContent}. ${li.querySelector('.detail p')!.textContent}`)].join('. '))
+        }
+        if (t.closest('.directions')) {
+          if (speechSynthesis.speaking) hush()
+          else speak(spatialText())
         }
       })
       root.addEventListener('keydown', (ev) => { if (ev.key === 'Escape') shut() })
@@ -279,6 +323,9 @@ const basisNote = {
   .route { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin-bottom: 1.25rem; }
   .route[hidden] { display: none; }
   .route .stop { flex: 1 1 14rem; margin: 0; color: var(--dim); font-size: .95rem; line-height: 1.35; order: -1; width: 100%; }
+  .spatial { max-width: 72ch; color: var(--dim); font-size: .95rem; line-height: 1.5; }
+  .related .manifest { margin-left: .7rem; }
+  .related .note { color: var(--dim); font-size: .88rem; }
   .stops { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: .25rem 2rem; }
   .stops > li { padding-block: .6rem; border-top: 1px solid var(--rule); display: grid; gap: .2rem; align-content: start; }
   .stops button[data-go] { all: unset; cursor: pointer; display: flex; gap: .75rem; align-items: baseline; color: var(--paper); }

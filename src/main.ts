@@ -20,6 +20,7 @@ const routes: Route[] = [
   [/^\/stgall$/, () => import('./stgall')],
   [/^\/darwin$/, () => import('./darwin')],
   [/^\/scan\/(?<book>[\w-]+)$/, () => import('./scan')],
+  [/^\/desk\/(?<lib>[\w-]+)$/, () => import('./desk')],
 ]
 
 const app = document.getElementById('app')!

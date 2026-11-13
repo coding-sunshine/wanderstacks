@@ -46,7 +46,11 @@ p { margin: 0 0 1em; max-width: 68ch; }
 .top a { text-decoration: none; }
 .top .brand { font-family: var(--display); font-size: 1.35rem; margin-right: auto; }
 .top a[aria-current='page'] { color: var(--brass); }
-@media (max-width: 560px) { .top { gap: 1rem; font-size: 1rem; } }
+@media (max-width: 560px) {
+  .top { flex-wrap: wrap; gap: 0 0.9rem; font-size: 1rem; }
+  .top .brand { flex-basis: 100%; }
+  .top a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+}
 
 .wrap { padding: 0 var(--gutter); max-width: 92rem; margin: 0 auto; }
 .sec { padding-block: clamp(2.5rem, 7vw, 5.5rem); }

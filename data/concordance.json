@@ -1,0 +1,46 @@
+[
+ {
+  "lib": "dunhuang",
+  "node": "r01",
+  "spot": "heap",
+  "book": "diamond-sutra",
+  "title": "Diamond Sutra, a related surviving scroll",
+  "relationship": "A surviving item from the Library Cave, not an identification of any manuscript drawn in this reconstruction.",
+  "href": "/scan/diamond-sutra/",
+  "manifest": "https://data.idp.bl.uk/iiif/3/manifest/51FDAEAFB4A24E2E9981692A98130BC8",
+  "page": 0
+ },
+ {
+  "lib": "buda",
+  "node": "r01",
+  "spot": "bindings",
+  "book": "vat-lat-3186",
+  "title": "Andreas Pannonius, a surviving Corvina",
+  "relationship": "A real Corvina held by the Vatican, not a book identified in this imagined view.",
+  "href": "/desk/buda/?left=1&right=0&page=0",
+  "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.3186/manifest.json",
+  "page": 0
+ },
+ {
+  "lib": "weimar",
+  "node": "n02",
+  "spot": "shelf-run",
+  "book": "weimar-luther-bible-1534",
+  "title": "Luther Bible 1534, from this collection",
+  "relationship": "A collection example, not an individual book identified in the panorama.",
+  "href": "/books/weimar-luther-bible-1534/",
+  "manifest": "https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/935008438/manifest/",
+  "page": 0
+ },
+ {
+  "lib": "peabody",
+  "node": "x01",
+  "spot": "monument-dedication",
+  "book": "washington-monument-dedication",
+  "title": "Washington Monument dedication, documentary record",
+  "relationship": "The official record for the inscription transcribed at this viewpoint.",
+  "href": "https://docsteach.org/document/washington-monument-baltimore-md/",
+  "manifest": null,
+  "page": null
+ }
+]

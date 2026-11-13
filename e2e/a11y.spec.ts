@@ -5,24 +5,26 @@ const open = async (page: import('@playwright/test').Page) => {
   await page.goto('/read/modest-proposal')
   const reader = page.locator('[data-view="reader"][data-ready="true"]')
   await expect(reader).toBeVisible()
-  return reader.locator('.rd-status')
+  const status = reader.locator('.rd-status')
+  const match = /Page (\d+) of/.exec(await status.textContent() ?? '')
+  if (!match) throw new Error('Reader did not report its current page')
+  return { status, start: Number(match[1]) }
 }
 
 test('arrow keys turn pages', async ({ page }) => {
   const errors = watchErrors(page)
-  const status = await open(page)
-  await expect(status).toHaveText(/^Page 1 of/)
+  const { status, start } = await open(page)
   await page.keyboard.press('ArrowRight')
-  await expect(status).toHaveText(/^Page [2-9]/)
+  await expect.poll(async () => Number(/Page (\d+) of/.exec(await status.textContent() ?? '')?.[1] ?? 0)).toBeGreaterThan(start)
   await page.keyboard.press('ArrowLeft')
-  await expect(status).toHaveText(/^Page 1 of/)
+  await expect(status).toHaveText(new RegExp(`^Page ${start} of`))
   expect(errors).toEqual([])
 })
 
 test.describe('reduced motion', () => {
   test.use({ reducedMotion: 'reduce' })
   test('page turn is an opacity fade of 200 ms or less', async ({ page }) => {
-    const status = await open(page)
+    const { status, start } = await open(page)
     await page.evaluate(() => {
       const seen: { d: number; props: string[] }[] = []
       ;(window as any).__anims = seen
@@ -40,7 +42,7 @@ test.describe('reduced motion', () => {
       ;(window as any).__stop = () => clearInterval(t)
     })
     await page.keyboard.press('ArrowRight')
-    await expect(status).toHaveText(/^Page 2/)
+    await expect(status).toHaveText(new RegExp(`^Page ${start + 1} of`))
     await page.waitForTimeout(400)
     const seen = await page.evaluate(() => (window as any).__anims as { d: number; props: string[] }[])
     expect(seen.length).toBeGreaterThan(0)

@@ -13,9 +13,9 @@ async function explore(page: Page, year: number) {
   await page.locator('#xrange').fill(String(year))
 }
 
-test('home opens neutral: globe, every library listed, none selected', async ({ page }) => {
+test('atlas opens neutral: globe, every library listed, none selected', async ({ page }) => {
   const errors = watchErrors(page)
-  await page.goto('/')
+  await page.goto('/atlas')
   await ready(page, 'home')
   await expect(page.locator('#gl')).toBeVisible()
   await expect(page.locator('#achips > *')).toHaveCount(3)
@@ -23,13 +23,13 @@ test('home opens neutral: globe, every library listed, none selected', async ({ 
   await expect(page.locator('#xlist button[aria-pressed="true"]')).toHaveCount(0)
   await expect(page.locator('#xcard')).toBeEmpty()
   await expect(page.locator('#xcount')).toHaveText('41 standing · 10 lost (7 rediscovered) · 1 fate unknown')
-  expect(new URL(page.url()).pathname).toBe('/')
+  expect(new URL(page.url()).pathname).toBe('/atlas')
   expect(errors).toEqual([])
 })
 
 test('site nav names no single library or book', async ({ page }) => {
   await page.goto('/shelf')
-  expect(await page.locator('header.bar nav a').evaluateAll((as) => as.map((a) => a.getAttribute('href')))).toEqual(['/atlas', '/shelf', '/babel'])
+  expect(await page.locator('header.bar nav a').evaluateAll((as) => as.map((a) => a.getAttribute('href')))).toEqual(['/libraries/', '/books/', '/visit/', '/atlas/', '/shelf/'])
 })
 
 test('selecting deep-links to /atlas/<id> and Escape returns to the list', async ({ page }) => {
@@ -140,7 +140,7 @@ test.describe('reduced motion', () => {
   test.use({ reducedMotion: 'reduce' })
 
   test('idle canvas is pixel-stable', async ({ page }) => {
-    await page.goto('/')
+    await page.goto('/atlas')
     await ready(page, 'home')
     await page.waitForTimeout(800)
     const a = await page.locator('#gl').screenshot()

@@ -1,12 +1,23 @@
 ---
 import Base from '../layouts/Base.astro'
+import { readFileSync } from 'node:fs'
 import { libs } from '../site/data'
+import { tours, captures } from '../site/capture'
+import concordance from '../../data/concordance.json'
+import conservation from '../../data/conservation.json'
+import phases from '../../data/phases.json'
 import { facts, events, generated, LICENCE, SITE, REPO } from '../site/record'
 const files = [
   ['libraries.json', 'One row per library: name, place, coordinates, years, Wikidata id.', libs.length],
   ['facts.json', 'Every sourced claim, with source URL, evidence tier and the source quote where held.', facts.length],
   ['events.json', 'Dated events: founding, closure, damage, destruction, rebuilding.', events.length],
   ['libraries.jsonld', 'The libraries as schema.org Library entries with Wikidata sameAs.', libs.length],
+  ['dispersal.json', 'Current holders of surviving collections and verified IIIF manifests.', (JSON.parse(readFileSync('data/dispersal.json', 'utf8')) as unknown[]).length],
+  ['tours.json', 'External tours, providers, scopes, rights notes and check dates.', tours.length],
+  ['captures.json', 'Real 3D candidates and ready captures, with source and licence details.', captures.length],
+  ['concordance.json', 'Spatial hotspots linked to related manuscripts without false identification.', concordance.length],
+  ['conservation.json', 'Restoration schedules and repeat-capture requirements.', conservation.length],
+  ['phases.json', 'Sourced architectural phases for same-camera comparison.', Object.values(phases).flat().length],
   ['README.md', 'Shape of each file, the tiers and the licence.', null],
 ]
 const ld = {

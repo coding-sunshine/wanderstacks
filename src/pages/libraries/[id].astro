@@ -4,9 +4,13 @@ import Shot from '../../components/Shot.astro'
 import BookRows from '../../components/BookRows.astro'
 import Walk from '../../components/Walk.astro'
 import Dispersal from '../../components/Dispersal.astro'
+import ExternalTours from '../../components/ExternalTours.astro'
+import Conservation from '../../components/Conservation.astro'
+import ResearchTrail from '../../components/ResearchTrail.astro'
 import Save from '../../components/Save.astro'
 import Fact from '../../components/Fact.astro'
 import { libs, type Lib, photos, lead, lost, year, booksOf, seeing, spheres } from '../../site/data'
+import { hasDispersal } from '../../site/dispersal'
 import { factsFor, eventsFor, fieldLabel, libLd, crumbs, libUrl, yr } from '../../site/record'
 export const getStaticPaths = () => libs.map((l) => ({ params: { id: l.id }, props: { l } }))
 const { l } = Astro.props as { l: Lib }
@@ -33,11 +37,14 @@ const i = libs.indexOf(l), prev = libs[(i + libs.length - 1) % libs.length], nex
         <p class="see">
           {lost(l) && <span class="stamp" data-s="lost">lost</span>}
           {s.walk > 0 && <a class="stamp" href="#walk">walk-through, {s.walk} real {s.walk === 1 ? 'panorama' : 'panoramas'}</a>}
+          {s.capture > 0 && <a class="stamp" href={`/room/${l.id}/`}>captured 3D</a>}
           {s.recon > 0 && <span class="stamp" data-s="recon">reconstruction, imagined</span>}
         </p>
         {l.st && <p class="lede">{l.st}</p>}
         <p class="picks">
           <a class="pick" href={`/atlas/${l.id}/`}>See it on the globe</a>
+          {s.capture > 0 && <a class="pick" href={`/room/${l.id}/`}>Walk in captured 3D</a>}
+          {hasDispersal(l.id) && <a class="pick" href={`/journey/${l.id}/`}>Follow the collection</a>}
           <a class="pick" href="#record">Read the record</a>
           {held.length > 0 && <a class="pick" href="#books">{held.length} books from here</a>}
         </p>
@@ -45,7 +52,10 @@ const i = libs.indexOf(l), prev = libs[(i + libs.length - 1) % libs.length], nex
     </header>
     {spheres[l.id]?.nodes.length > 0 && <Walk nodes={spheres[l.id].nodes} name={l.n} lib={l.id} />}
     {spheres[l.id]?.nodes.length > 0 && <div class="wrap"><Save kind="room" id={l.id} /></div>}
+    <ExternalTours lib={l.id} />
+    <Conservation lib={l.id} />
     <Dispersal lib={l.id} />
+    <ResearchTrail lib={l.id} />
     <section class="wrap sec cols" id="record">
       <div>
         <h2>The record</h2>

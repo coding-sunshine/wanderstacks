@@ -10,7 +10,7 @@ export default defineConfig({
   reporter: 'list',
   use: { baseURL: origin, ...devices['Desktop Chrome'], channel: 'chrome' },
   webServer: {
-    command: `bunx vite preview --port ${new URL(origin).port} --strictPort`,
+    command: `bun run preview -- --host 127.0.0.1 --port ${new URL(origin).port} --ignore-lock`,
     url: origin,
     reuseExistingServer: true,
     timeout: 30_000,

@@ -5,7 +5,7 @@ import { ready, roomIds, watchErrors } from './util'
 test.use({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true })
 
 const stops: [string, string][] = [
-  ['/', 'home'],
+  ['/atlas', 'home'],
   ['/ledger/alexandria', 'ledger'],
   ['/stgall', 'stgall'],
   ['/darwin', 'darwin'],
@@ -67,3 +67,13 @@ test('mobile scan: one page is shown and arrows step by one', async ({ page }) =
   await expect(page.locator('[data-view="scan"]')).toHaveAttribute('data-page', '1')
   expect(errors).toEqual([])
 })
+
+for (const path of ['/journey/buda/', '/journey/dunhuang/', '/visit/', '/data/', '/libraries/']) {
+  test(`mobile static ${path}: navigation and content fit at 390 px`, async ({ page }) => {
+    await page.goto(path)
+    expect((await fits(page)).html).toBe(true)
+    expect((await fits(page)).body).toBe(true)
+    const heights = await page.locator('.top a').evaluateAll((links) => links.map((a) => a.getBoundingClientRect().height))
+    expect(heights.every((height) => height >= 44)).toBe(true)
+  })
+}

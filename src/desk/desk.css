@@ -1,0 +1,24 @@
+.desk { min-height: 100svh; padding: clamp(1rem, 3vw, 3rem); }
+.desk-head { max-width: 75rem; margin: 0 auto 1.5rem; }
+.desk-head h1 { margin-bottom: 0.5rem; }
+.desk-head p { max-width: 65ch; }
+.desk-controls { display: grid; grid-template-columns: minmax(12rem, 1fr) auto minmax(12rem, 1fr); align-items: end; gap: 1rem; max-width: 95rem; margin: 0 auto 1.5rem; }
+.desk-controls label { display: grid; gap: 0.4rem; font: 0.75rem var(--mono); color: var(--dim); }
+.desk-controls select { min-width: 0; padding: 0.7rem; background: var(--stacks); color: var(--paper); border: 1px solid var(--rule); }
+.desk-controls > span { display: flex; align-items: center; gap: 0.7rem; }
+.desk-controls button { padding: 0.55rem 0.9rem; }
+.desk-copies { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; max-width: 110rem; margin: 0 auto; background: var(--rule); border: 1px solid var(--rule); }
+.desk-copies article { min-width: 0; padding: clamp(0.8rem, 2vw, 1.5rem); background: var(--stacks); }
+.desk-copies h2 { font: 1.5rem var(--display); margin: 0 0 0.6rem; }
+.desk-copies img { display: block; width: 100%; height: min(70svh, 60vw); object-fit: contain; background: #090b09; }
+.desk-copies article > p:last-child { color: var(--dim); }
+.desk-holder-meta { display: flex; gap: 0.5rem; font: 0.75rem var(--mono); }
+.desk-error { padding: 2rem 0; max-width: 45ch; color: var(--stamp); }
+.desk-note { max-width: 80ch; margin: 1.5rem auto 0; color: var(--dim); font-size: 0.9rem; }
+@media (max-width: 850px) {
+  .desk-controls { grid-template-columns: 1fr; }
+  .desk-controls > span { justify-content: space-between; order: 2; }
+  .desk-copies { grid-template-columns: 1fr; }
+  .desk-copies img { height: min(65svh, 120vw); }
+}
+@media (prefers-reduced-motion: reduce) { .desk-copies img { transition: none; } }

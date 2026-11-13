@@ -1,0 +1,24 @@
+{
+ "longroom": [
+  {
+   "id": "flat-ceiling-1733",
+   "year": 1733,
+   "label": "1733 · flat plaster ceiling",
+   "action": "flat-ceiling",
+   "height": 15,
+   "basis": "measured",
+   "source": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php",
+   "note": "The original library had a flat plaster ceiling. Trinity gives an original height of about 15 m; the present barrel-vaulted hall is 14.2 m high."
+  },
+  {
+   "id": "barrel-vault-1861",
+   "year": 1861,
+   "label": "1861–today · barrel vault",
+   "action": "barrel-vault",
+   "height": 14.2,
+   "basis": "measured",
+   "source": "https://www.tcd.ie/library/exhibitions/choicebooks/newlibrary.php",
+   "note": "The barrel vault was added in 1859–61. The comparison changes only the ceiling and end-wall height; furnishings and camera position stay fixed."
+  }
+ ]
+}

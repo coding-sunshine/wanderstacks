@@ -5,7 +5,7 @@ const { title, desc = "Walk the world's great libraries, standing and lost, and 
 const at = Astro.url.pathname
 const url = new URL(at, Astro.site).href
 const full = title === 'WorldLibs' ? title : `${title} | WorldLibs`
-const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/atlas/', 'Globe'], ['/shelf/', 'Shelf'], ['/search/', 'Search']]
+const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/visit/', 'Visit'], ['/atlas/', 'Globe'], ['/shelf/', 'Shelf'], ['/search/', 'Search']]
 ---
 <!doctype html>
 <html lang="en">

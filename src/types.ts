@@ -52,7 +52,7 @@ export interface Site {
   roof: Param<string>
 }
 
-export type KitId = 'hall' | 'rotunda' | 'site'
+export type KitId = 'hall' | 'rotunda' | 'site' | 'capture'
 
 export function basisLabel(p: Param<unknown>): string | null {
   switch (p.basis) {
@@ -113,11 +113,12 @@ interface LibraryBase {
   shelves: Shelf[]
   credits: Credit[]
   reconstruction?: boolean
+  impostor?: boolean
   tour?: { stops: TourStop[] }
 }
 
 export type Library = LibraryBase &
-  ({ kit: 'hall'; hall: Hall } | { kit: 'rotunda'; hall: Rotunda } | { kit: 'site'; hall: Site })
+  ({ kit: 'hall'; hall: Hall } | { kit: 'rotunda'; hall: Rotunda } | { kit: 'site'; hall: Site } | { kit: 'capture'; hall: Record<string, Param<unknown>> })
 
 export interface BookMeta {
   id: string

@@ -1,6 +1,6 @@
 // Runtime cache (wl-v*) is replaced on deploy. Saved books and rooms live in SAVED, which activate never touches:
 // only an explicit 'remove' message deletes from it.
-const CACHE = 'wl-v3'
+const CACHE = 'wl-v4'
 const SAVED = 'wl-saved'
 const MANIFEST = '/__saved.json'
 const PAGES = 50
@@ -43,11 +43,17 @@ const find = async (url) => {
 }
 
 async function remember(url, res) {
+  const body = res.clone()
   const c = await caches.open(CACHE)
-  await c.put(pageKey(url), res.clone())
+  await c.put(pageKey(url), body)
   const pages = (await c.keys()).filter((k) => !new URL(k.url).pathname.startsWith('/_astro/'))
   for (const k of pages.slice(0, Math.max(0, pages.length - PAGES))) await c.delete(k)
 }
+
+const offline = () => new Response(
+  '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Offline | WorldLibs</title><body style="margin:0;background:#111813;color:#eee9dc;font:18px/1.6 Georgia,serif"><main style="max-width:38rem;margin:20vh auto;padding:2rem"><h1>You are offline</h1><p>This page has not been saved for offline reading.</p><p>Reconnect and try again.</p></main></body></html>',
+  { status: 503, headers: { 'content-type': 'text/html; charset=utf-8' } },
+)
 
 self.addEventListener('fetch', (e) => {
   const req = e.request
@@ -62,7 +68,7 @@ self.addEventListener('fetch', (e) => {
           if (res.ok && res.headers.get('content-type')?.includes('text/html')) e.waitUntil(remember(url, res))
           return res
         })
-        .catch(async () => (await find(url)) ?? (await caches.match('/')) ?? Response.error()),
+        .catch(async () => (await find(url)) ?? offline()),
     )
   } else if (p.startsWith('/_astro/') || /^\/book\/[^/]+\/(?:orig\/)?\d+\.json$/.test(p)) {
     e.respondWith(caches.match(req).then((hit) => hit || fetch(req).then((res) => put(CACHE, req, res))))

@@ -33,6 +33,7 @@ const rows = [...libs].sort((a, b) => a.n.localeCompare(b.n))
               <span class="see">
                 {lost(l) && <span class="stamp" data-s="lost">lost</span>}
                 {s.walk > 0 && <span class="stamp">walk-through</span>}
+                {s.capture > 0 && <span class="stamp">captured 3D</span>}
                 {s.recon > 0 && <span class="stamp" data-s="recon">reconstruction</span>}
                 {s.photos > 0 && <span class="stamp" data-s="photo">{s.photos} photographs</span>}
                 {nb > 0 && <span class="stamp" data-s="photo">{nb} books</span>}

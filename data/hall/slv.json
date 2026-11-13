@@ -1,0 +1,13 @@
+{
+ "kit": "capture",
+ "shelfClusters": [],
+ "hall": {},
+ "credits": [
+  {
+   "file": "La Trobe Reading Room photogrammetry mesh, optimized to Draco GLB and WebP textures",
+   "author": "University of Melbourne Digitisation",
+   "licence": "CC BY-NC-SA 4.0; optimized derivative remains under the same licence",
+   "url": "https://doi.org/10.5281/zenodo.10333566"
+  }
+ ]
+}

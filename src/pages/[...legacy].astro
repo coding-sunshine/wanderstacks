@@ -3,12 +3,14 @@
 // Each of their URLs gets this same shell so a direct visit or a reload works on any static host.
 import { readdirSync, existsSync } from 'node:fs'
 import { libs } from '../site/data'
+import { hasDispersal } from '../site/dispersal'
 export function getStaticPaths() {
   const ls = (p: string) => (existsSync(p) ? readdirSync(p).filter((x) => !x.includes('.')) : [])
   const ids = libs.map((l) => l.id)
   return [
     'atlas', 'shelf', 'babel', 'byrne', 'stgall', 'darwin', 'book',
     ...ids.flatMap((id) => [`atlas/${id}`, `ledger/${id}`, `place/${id}`, `room/${id}`]),
+    ...ids.filter(hasDispersal).map((id) => `desk/${id}`),
     ...ls('public/book').map((id) => `read/${id}`),
     ...ls('public/scan').map((id) => `scan/${id}`),
   ].map((legacy) => ({ params: { legacy } }))
@@ -30,6 +32,7 @@ export function getStaticPaths() {
       <nav aria-label="Main">
         <a href="/libraries/">Libraries</a>
         <a href="/books/">Books</a>
+        <a href="/visit/">Visit</a>
         <a href="/atlas/">Globe</a>
         <a href="/shelf/">Shelf</a>
         <button id="navsearch" type="button">Search</button>

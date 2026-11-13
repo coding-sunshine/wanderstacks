@@ -1,0 +1,143 @@
+---
+import Base from '../layouts/Base.astro'
+import { captures, coverageRows } from '../site/capture'
+import { REPO } from '../site/record'
+
+const rows = [...coverageRows()].sort((a, b) => b.coverage.interior - a.coverage.interior || b.coverage.exterior - a.coverage.exterior || a.lib.n.localeCompare(b.lib.n))
+const missionUrl = (id: string, name: string) => `${REPO}/issues/new?` + new URLSearchParams({
+  title: `Capture contribution: ${name}`,
+  body: [
+    `Library: ${name} (${id})`,
+    '',
+    'I want to contribute a real photograph, 360 panorama, video, photogrammetry mesh, or Gaussian splat of this library.',
+    '',
+    'Asset URL and creator:',
+    'Capture date and exact room/viewpoint:',
+    'Licence (CC0, CC BY, CC BY-SA, CC BY-NC-SA, or written permission):',
+    'Confirmation that people in view consented and photography was permitted:',
+    'Known dimensional or floor-plan sources:',
+    '',
+    'Please do not attach media that you do not own or have permission to share.',
+  ].join('\n'),
+}).toString().replace(/\+/g, '%20')
+const realInterior = rows.filter((r) => r.coverage.interior > 0).length
+const realExterior = rows.filter((r) => r.coverage.exterior > 0).length
+const noBooks = rows.filter((r) => r.books === 0).length
+---
+<Base title="Visit and capture coverage" desc="Real library captures, official tours, reconstruction labels, rights, and the gaps still needing photographs or 3D capture." index>
+  <section class="wrap sec visit" id="coverage">
+    <p class="kicker">The capture register</p>
+    <h1>Visit the real place first</h1>
+    <p class="lede">A photographic panorama, a measured 3D capture, an official tour, or a labelled reconstruction: each library says exactly what it offers. Candidate scans are not presented as finished walkthroughs.</p>
+    <dl class="summary">
+      <div><dt>Libraries</dt><dd>{rows.length}</dd></div>
+      <div><dt>Real interior 360</dt><dd>{realInterior}</dd></div>
+      <div><dt>Real exterior 360</dt><dd>{realExterior}</dd></div>
+      <div><dt>Candidate 3D assets</dt><dd>{captures.length}</dd></div>
+      <div><dt>Needs catalogue links</dt><dd>{noBooks}</dd></div>
+    </dl>
+    <div class="filters" role="group" aria-label="Filter capture coverage">
+      <button class="pick" data-f="all" aria-pressed="true">All</button>
+      <button class="pick" data-f="interior" aria-pressed="false">Interior 360</button>
+      <button class="pick" data-f="exterior" aria-pressed="false">Exterior 360</button>
+      <button class="pick" data-f="linked" aria-pressed="false">External tours</button>
+      <button class="pick" data-f="reconstruction" aria-pressed="false">Reconstructions</button>
+      <button class="pick" data-f="missing" aria-pressed="false">Needs interior capture</button>
+      <button class="pick" data-f="needs-books" aria-pressed="false">Needs catalogue links</button>
+    </div>
+    <ol class="coverage">
+      {rows.map(({ lib, coverage, captures: candidates, photographs, books }) => (
+        <li data-tags={[
+          coverage.interior && 'interior', coverage.exterior && 'exterior', coverage.linked.length && 'linked',
+          coverage.reconstruction && 'reconstruction', !coverage.interior && 'missing', books === 0 && 'needs-books',
+        ].filter(Boolean).join(' ')} id={`visit-${lib.id}`}>
+          <div class="library">
+            <h2><a href={`/libraries/${lib.id}/`}>{lib.n}</a></h2>
+            <p>{lib.p}</p>
+            <p><span class="stamp" data-s={coverage.reconstruction && !coverage.interior ? 'recon' : 'photo'}>{coverage.label}</span> <span class="dim">{photographs} credited photographs · {books} catalogue records</span></p>
+          </div>
+          <div class="assets">
+            {coverage.interior > 0 && <p>{coverage.interior} real interior {coverage.interior === 1 ? 'panorama' : 'panoramas'} on WorldLibs.</p>}
+            {coverage.exterior > 0 && <p>{coverage.exterior} real exterior {coverage.exterior === 1 ? 'panorama' : 'panoramas'} on WorldLibs.</p>}
+            {coverage.linked.map((tour) => <p><a href={tour.url} target="_blank" rel="noopener noreferrer">{tour.title} ↗</a><br /><span class="dim">{tour.provider} · external, view only</span></p>)}
+            {candidates.map((capture) => <p><a href={capture.src} target="_blank" rel="noopener noreferrer">{capture.title} ↗</a><br /><span class="dim">Candidate: {capture.status} · {capture.lic}</span></p>)}
+            {coverage.reconstruction > 0 && <p><span class="stamp" data-s="recon">Reconstruction, imagined</span></p>}
+          </div>
+          <div class="mission">
+            {!coverage.interior && <a href={missionUrl(lib.id, lib.n)} target="_blank" rel="noopener noreferrer">Offer an interior capture ↗</a>}
+            {coverage.interior > 0 && <a href={missionUrl(lib.id, lib.n)} target="_blank" rel="noopener noreferrer">Add a viewpoint or 3D capture ↗</a>}
+            {books === 0 && <a href={`/libraries/${lib.id}/#record`}>Review the record and collection gap</a>}
+          </div>
+        </li>
+      ))}
+    </ol>
+    <p id="coverage-none" hidden>No library matches this filter.</p>
+  </section>
+  <section class="wrap sec candidates" id="candidate-assets">
+    <h2>Candidate 3D assets and their rights</h2>
+    <p class="dim">These are research leads, not shipped rooms. A mesh is not a Gaussian splat, a point cloud is not necessarily a complete interior, and a model page is not permission to reuse its files.</p>
+    <div class="table" role="region" aria-label="Candidate 3D assets" tabindex="0">
+      <table>
+        <thead><tr><th>Library and asset</th><th>Form and scope</th><th>Status</th><th>Licence</th><th>What remains</th></tr></thead>
+        <tbody>
+          {captures.map((capture) => (
+            <tr>
+              <td><a href={capture.src} target="_blank" rel="noopener noreferrer">{capture.title} ↗</a><br /><span class="dim">{capture.by}</span></td>
+              <td>{capture.kind} · {capture.scope}{capture.photos && <><br />{capture.photos} source photographs</>}</td>
+              <td>{capture.status}</td>
+              <td>{capture.lic}</td>
+              <td>{capture.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="wrap sec contribution" id="contribute">
+    <h2>How a capture becomes a visit</h2>
+    <ol>
+      <li>Check that photography and the intended sharing are permitted, and that identifiable people have consented.</li>
+      <li>Record the creator, date, room, viewpoints, licence, and any measured plan or scale reference.</li>
+      <li>For free movement, capture overlapping views from many positions. One photograph supports a photograph with generated depth, not an accurate room.</li>
+      <li>WorldLibs checks identity and rights before choosing 360, textured mesh, or Gaussian splat delivery. Unverified and unlicensed assets stay out.</li>
+    </ol>
+  </section>
+</Base>
+<script>
+  const rows = [...document.querySelectorAll<HTMLElement>('.coverage > li')]
+  const none = document.getElementById('coverage-none')!
+  document.querySelectorAll<HTMLButtonElement>('[data-f]').forEach((button) => button.addEventListener('click', () => {
+    const filter = button.dataset.f!
+    let visible = 0
+    for (const row of rows) {
+      row.hidden = filter !== 'all' && !row.dataset.tags!.split(' ').includes(filter)
+      if (!row.hidden) visible++
+    }
+    none.hidden = visible > 0
+    document.querySelectorAll<HTMLButtonElement>('[data-f]').forEach((b) => b.setAttribute('aria-pressed', String(b === button)))
+  }))
+</script>
+<style>
+  .visit h1, .candidates h1 { max-width: 12ch; }
+  .summary { display: flex; flex-wrap: wrap; gap: 1px; padding: 0; margin-block: 2rem; background: var(--rule); border: 1px solid var(--rule); }
+  .summary div { flex: 1 1 9rem; padding: 1rem; background: var(--stacks); }
+  .summary dt { color: var(--dim); font: 0.72rem var(--mono); text-transform: uppercase; letter-spacing: 0.08em; }
+  .summary dd { margin: 0.35rem 0 0; font: 2.4rem var(--display); }
+  .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-block: 1.5rem; position: sticky; top: 3rem; z-index: 3; background: var(--stacks); padding-block: 0.7rem; }
+  .coverage { list-style: none; padding: 0; margin: 0; }
+  .coverage > li { display: grid; grid-template-columns: minmax(15rem, 1.1fr) minmax(18rem, 1.5fr) minmax(10rem, 0.7fr); gap: 1.5rem; padding-block: 1.3rem; border-top: 1px solid var(--rule); }
+  .coverage > li[hidden] { display: none; }
+  .coverage h2 { font: 1.35rem var(--display); margin: 0; }
+  .coverage p { margin: 0.3rem 0; }
+  .assets { color: var(--paper); }
+  .mission { font: 0.8rem var(--mono); }
+  .mission a { text-decoration: underline; text-underline-offset: 0.25em; }
+  .table { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; min-width: 70rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.8rem; border-top: 1px solid var(--rule); }
+  th { color: var(--dim); font: 0.72rem var(--mono); text-transform: uppercase; letter-spacing: 0.06em; }
+  td { max-width: 30rem; }
+  .contribution ol { max-width: 70ch; }
+  .contribution li { margin-block: 0.8rem; }
+  @media (max-width: 900px) { .coverage > li { grid-template-columns: 1fr; gap: 0.7rem; } }
+</style>

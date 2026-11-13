@@ -28,6 +28,11 @@ export function attach(api: RoomApi): () => void {
   const measured = pickIr(irTable as never, api.lib.id)
   const irRow = measured && addParamRow(api.panel, 'ir', 'Impulse response', 'measured', `${measured.by}, ${measured.lic}, ${measured.src}`)
   const irLabel = irRow?.previousElementSibling
+  api.root.dataset.irMode = measured ? 'measured' : 'estimated'
+  let convolver: ConvolverNode | null = null
+  let measuredBuffer: AudioBuffer | null = null
+  let estimatedBuffer: AudioBuffer | null = null
+  let irButton: HTMLButtonElement | null = null
 
   const button = document.createElement('button')
   button.type = 'button'
@@ -52,17 +57,26 @@ export function attach(api: RoomApi): () => void {
     return buf
   }
 
+  const loadMeasured = async (c: AudioContext) => {
+    if (!measured) return null
+    if (measuredBuffer) return measuredBuffer
+    const response = await fetch(`/ir/${measured.f}`)
+    if (!response.ok) throw new Error(String(response.status))
+    measuredBuffer = await c.decodeAudioData(await response.arrayBuffer())
+    api.root.dataset.irLoaded = measured.f
+    return measuredBuffer
+  }
+
   const build = (c: AudioContext) => {
     const conv = c.createConvolver()
-    conv.buffer = impulse(c)
-    // The real recording replaces the estimate once decoded; until then (or if it fails) the estimate stands.
+    convolver = conv
+    estimatedBuffer = impulse(c)
+    conv.buffer = estimatedBuffer
+    // The real recording replaces the estimate once decoded, unless the visitor chose the estimate.
     if (measured)
-      fetch(`/ir/${measured.f}`)
-        .then((r) => (r.ok ? r.arrayBuffer() : Promise.reject(new Error(String(r.status)))))
-        .then((b) => c.decodeAudioData(b))
-        .then((b) => {
-          conv.buffer = b
-          api.root.dataset.irLoaded = measured.f
+      void loadMeasured(c)
+        .then((buffer) => {
+          if (buffer && api.root.dataset.irMode !== 'estimated') conv.buffer = buffer
         })
         .catch(() => {})
     const out = c.createGain()
@@ -114,6 +128,23 @@ export function attach(api: RoomApi): () => void {
     ctx?.suspend().catch(() => {})
   }
 
+  if (measured) {
+    irButton = document.createElement('button')
+    irButton.type = 'button'
+    irButton.dataset.action = 'listening-point'
+    irButton.setAttribute('aria-pressed', 'true')
+    irButton.textContent = 'Position 4, measured'
+    api.controls.append(irButton)
+    irButton.onclick = async () => {
+      const estimate = api.root.dataset.irMode !== 'estimated'
+      api.root.dataset.irMode = estimate ? 'estimated' : 'measured'
+      irButton!.setAttribute('aria-pressed', String(!estimate))
+      irButton!.textContent = estimate ? 'Sabine estimate' : 'Position 4, measured'
+      if (ctx && !estimate) await loadMeasured(ctx).catch(() => null)
+      if (convolver) convolver.buffer = estimate ? estimatedBuffer : measuredBuffer ?? estimatedBuffer
+    }
+  }
+
   button.onclick = () => {
     const on = button.getAttribute('aria-pressed') !== 'true'
     button.setAttribute('aria-pressed', String(on))
@@ -125,12 +156,14 @@ export function attach(api: RoomApi): () => void {
     ctx?.close().catch(() => {})
     ctx = null
     button.remove()
+    irButton?.remove()
     row.remove()
     label?.remove()
     irRow?.remove()
     irLabel?.remove()
     delete api.root.dataset.rt60
     delete api.root.dataset.irLoaded
+    delete api.root.dataset.irMode
     delete api.root.dataset.acoustics
   }
 }

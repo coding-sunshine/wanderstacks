@@ -1,26 +1,26 @@
 {
-  "note": "Open items carried from the overhaul, checked 2026-11-12. Status is passing or failing; cmd decides it (run from repo root, exit 0 = passing). Each was researched and has no known path yet; see blocker before retrying.",
+  "note": "Open items carried from the overhaul, checked 2026-11-13. Status is passing or failing; cmd decides it (run from repo root, exit 0 = passing). Passing items remain in the file as verification history; each open item has its current external blocker.",
   "items": [
     {
       "id": "bnf-x03-x05-stops",
       "what": "Sourced walkthrough stops for BnF street panoramas x03 and x05",
-      "blocker": "No fetched source ties the buildings on those corners to the BnF. A stop would be a guess. Needs a map or bnf.fr page that names the corner; Overpass and Nominatim were rate-limited.",
+      "blocker": "None. Panoramax coordinates place x03 near rue Vivienne and rue des Petits-Champs, and x05 near rue Vivienne and rue Colbert. Both stops cite the BnF's own Richelieu history.",
       "cmd": "jq -e '.bnf.nodes | (.x03|length) > 0 and (.x05|length) > 0' data/hotspots.json",
-      "status": "failing"
+      "status": "passing"
     },
     {
       "id": "dunhuang-manifests",
       "what": "IIIF manifest for the four Dunhuang holders other than the British Library (BnF, National Library of China, Institute of Oriental Manuscripts, Tokyo National Museum)",
-      "blocker": "Gallica, nlc.cn and orientalstudies.ru returned 403 or a bot challenge to curl. Not bypassed. Try from a browser, or ask each holder for a manifest URL.",
+      "blocker": "BnF and National Library of China now have verified IDP manifests. Two Institute of Oriental Manuscripts candidates returned HTTP 404 from data.idp.bl.uk, and no Tokyo National Museum manifest has been verified. Those two holders still need valid manifest URLs from IDP or the holder.",
       "cmd": "jq -e '[.[] | select(.lib==\"dunhuang\" and .manifest==null)] | length == 0' data/dispersal.json",
       "status": "failing"
     },
     {
       "id": "buda-vatican-manifest",
       "what": "IIIF manifest for the Vatican Library's Corvina",
-      "blocker": "The Vat.lat.8541 manifest loads, but nothing in it says the book is a Corvina; that came from a search summary only. Needs a primary source naming the shelfmark as a Corvina before linking.",
+      "blocker": "None. The official Corvina programme identifies Vat.lat.3186; its Vatican IIIF v2 manifest is valid and contains 239 canvases. Vat.lat.8541 was rejected because it is the earlier Hungarian Angevin Legendary, not a Corvina.",
       "cmd": "jq -e '[.[] | select(.lib==\"buda\" and .holder==\"Vatican Library\" and .manifest!=null)] | length == 1' data/dispersal.json",
-      "status": "failing"
+      "status": "passing"
     },
     {
       "id": "f07-measured-ir",
@@ -32,14 +32,14 @@
     {
       "id": "f08-splat-rooms",
       "what": "Gaussian-splat capture for at least one listed library, in data/splats.json",
-      "blocker": "No splat capture with an open licence, a named author and an anonymous download found for any listed library. Searched 2026-11-12: Hugging Face datasets and models, Sketchfab API (about 33 name variants), SuperSplat by web search, GitHub, Wikimedia Commons, CULTURE3D, web search by library name. Not searchable without a login or past a bot check, so not proven empty: Zenodo API (403), SuperSplat API (401), Polycam, Luma, Kiri, OpenHeritage3D, Europeana. Nearest misses: State Library Victoria GLB meshes on Zenodo (CC BY-NC-SA) and a Sketchfab Library of Celsus photogrammetry mesh are meshes, not splats; a Sketchfab Morgan Library model needs a login. Way through: capture one, or train a splat from a licensed photo set.",
+      "blocker": "Still no verified Gaussian-splat capture with a named author, reusable licence and anonymous download for a listed library. The State Library Victoria source is now downloadable and shipped as an aligned 5.92 MB photogrammetry mesh under CC BY-NC-SA, but a mesh is not a splat and does not satisfy this item. Close this only with a real licensed splat or a new multi-view capture trained with Brush; do not synthesize splats from a mesh merely to pass the check.",
       "cmd": "bun scripts/checks/f08-splat-rooms.ts",
       "status": "failing"
     },
     {
       "id": "peabody-interior-360",
       "what": "Real interior 360 panorama for the Peabody library",
-      "blocker": "None exists on Commons (40 files, none wider than 1.9:1) or Panoramax (street shots only). Needs a new capture or a licensed one from the library.",
+      "blocker": "Johns Hopkins now offers an official high-resolution Peabody 360 interior tour, linked from the library page and data/tours.json. The official tour does not grant a self-hosting licence, and no licensed equirectangular file has been supplied. Request the media from JHU or make a new capture under its handheld, personal, non-commercial photography policy; do not copy the hosted tour files.",
       "cmd": "jq -e '[.peabody.nodes[] | select(.real and .kind==\"interior\")] | length > 0' data/spheres.json",
       "status": "failing"
     },
@@ -49,6 +49,20 @@
       "blocker": "Only wide interior is Commons File:Vestibulo Biblioteca Vasconcelos.jpg (ProtoplasmaKid, CC BY-SA 3.0, 12780x2344): a cylindrical vestibule shot, not a 360. Owner call: use it as a flat image or wait for a true 360.",
       "cmd": "jq -e '[.vasconcelos.nodes[] | select(.real and .kind==\"interior\")] | length > 0' data/spheres.json",
       "status": "failing"
+    },
+    {
+      "id": "captured-mesh-slv",
+      "what": "Real captured interior mesh for at least one listed library",
+      "blocker": "None. State Library Victoria's 65.37 MB source was optimized to a 5.92 MB Draco GLB, aligned to floor level, and exercised in the browser with movement and local decoding. Draft capture by University of Melbourne Digitisation. Sketchfab and the GLB name CC BY-NC-SA 4.0; Zenodo DataCite metadata names 2.0, and that version discrepancy is recorded in data/captures.json rather than hidden.",
+      "cmd": "bun scripts/checks/captured-mesh.ts",
+      "status": "passing"
+    },
+    {
+      "id": "connected-feature-data",
+      "what": "External tours, spatial concordance, architectural phases, and conservation watch have valid source data",
+      "blocker": "None. IIIF v2/v3 parsing is unit-tested, including object-form services and native-width limits. End-to-end tests cover the reading desk, evidence tools, capture registry, and listening points.",
+      "cmd": "bun scripts/checks/connected-features.ts",
+      "status": "passing"
     },
     {
       "id": "audio-listening-test",

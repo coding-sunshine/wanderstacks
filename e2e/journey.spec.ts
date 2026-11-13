@@ -1,0 +1,45 @@
+import { expect, test } from '@playwright/test'
+import { watchErrors } from './util'
+
+test('Dunhuang journey connects origin, dispersal, holders, and desk', async ({ page }) => {
+  await page.goto('/journey/dunhuang/')
+  await expect(page.locator('h1')).toContainText('Library Cave')
+  await expect(page.locator('#origin')).toBeVisible()
+  await expect(page.locator('#dispersal')).toBeVisible()
+  await expect(page.locator('#holders > ol > li')).toHaveCount(5)
+  await expect(page.locator('#holders a', { hasText: 'IIIF manifest' })).toHaveCount(3)
+  const desk = page.getByRole('link', { name: /Open the reading desk with 3 holders/ })
+  await expect(desk).toHaveAttribute('href', '/desk/dunhuang/')
+  await page.goto('/libraries/dunhuang/')
+  await expect(page.getByRole('link', { name: 'Follow the collection', exact: true })).toHaveAttribute('href', '/journey/dunhuang/')
+})
+
+test('Dunhuang desk compares real IIIF v3 pages and turns them together', async ({ page }) => {
+  const errors = watchErrors(page)
+  await page.goto('/desk/dunhuang')
+  const desk = page.locator('[data-view="desk"][data-ready="true"]')
+  await expect(desk).toBeVisible({ timeout: 30_000 })
+  await expect(desk.locator('select[data-side="left"] option')).toHaveCount(3)
+  await expect(desk.locator('select[data-side="right"] option')).toHaveCount(3)
+  await desk.locator('select[data-side="left"]').selectOption('1')
+  await desk.locator('select[data-side="right"]').selectOption('2')
+  await expect(desk.locator('[data-count]')).toHaveText('Image 1 of 6')
+  await expect(desk.locator('[data-copy="left"] img')).toHaveJSProperty('naturalWidth', 1000)
+  await expect.poll(() => desk.locator('[data-copy="right"] img').evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0)
+  await desk.getByRole('button', { name: 'Next', exact: true }).click()
+  await expect(desk.locator('[data-count]')).toHaveText('Image 2 of 6')
+  await expect(desk.locator('[data-copy="left"] img')).toHaveJSProperty('naturalWidth', 1000)
+  await page.screenshot({ path: '/tmp/worldlibs-desk-dunhuang.png' })
+  expect(errors).toEqual([])
+})
+
+test('Buda desk reads both IIIF v3 and v2 manifests', async ({ page }) => {
+  await page.goto('/desk/buda')
+  const desk = page.locator('[data-view="desk"][data-ready="true"]')
+  await expect(desk).toBeVisible({ timeout: 30_000 })
+  await expect(desk.locator('[data-count]')).toHaveText('Image 1 of 360')
+  await expect(desk.locator('[data-copy="left"] h2')).toHaveText('Österreichische Nationalbibliothek')
+  await expect(desk.locator('[data-copy="right"] h2')).toHaveText('Vatican Library')
+  await expect.poll(() => desk.locator('[data-copy="left"] img').evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0)
+  await expect.poll(() => desk.locator('[data-copy="right"] img').evaluate((img: HTMLImageElement) => img.naturalWidth)).toBeGreaterThan(0)
+})

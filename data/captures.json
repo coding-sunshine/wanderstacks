@@ -1,0 +1,69 @@
+[
+ {
+  "id": "slv-la-trobe-mesh",
+  "lib": "slv",
+  "title": "La Trobe Reading Room photogrammetry mesh",
+  "kind": "mesh",
+  "scope": "interior",
+  "status": "ready",
+  "f": "captured.glb",
+  "bytes": 5917772,
+  "align": {
+   "position": [2.4862422943, 19.0636292922, -16.5409593512],
+   "rotation": [0, 0, 0],
+   "scale": 1
+  },
+  "by": "University of Melbourne Digitisation",
+  "lic": "CC BY-NC-SA 4.0",
+  "src": "https://sketchfab.com/3d-models/draft-la-trobe-reading-room-slv-081ac34de8dd42bd80ac452607578538",
+  "download": "https://doi.org/10.5281/zenodo.10333566",
+  "photos": 670,
+  "triangles": 1000000,
+  "note": "Ready: the 65.37 MB source was optimized to a 5.92 MB Draco GLB with WebP textures, aligned to floor level, and checked in the browser. It remains a draft capture with some holes and green camera markers. NonCommercial and ShareAlike apply. Sketchfab and the GLB name CC BY-NC-SA 4.0; Zenodo's DataCite metadata names 2.0, so the version discrepancy is retained here rather than hidden."
+ },
+ {
+  "id": "celsus-exterior-mesh",
+  "lib": "celsus",
+  "title": "Library of Celsus crowdsourced photogrammetry",
+  "kind": "mesh",
+  "scope": "exterior",
+  "status": "candidate",
+  "by": "Miguel Bandera",
+  "lic": "CC BY 4.0",
+  "src": "https://sketchfab.com/3d-models/library-of-celsus-crowdsourced-photogrammetry-1cc6ad6af508422398f60f902cb70e88",
+  "download": null,
+  "photos": 200,
+  "triangles": 1100000,
+  "note": "Real exterior ruin only. The model is marked NoAI: do not use it as generative training input. Candidate until a downloadable file and alignment are verified."
+ },
+ {
+  "id": "mafra-palace-point-cloud",
+  "lib": "mafra",
+  "title": "National Palace of Mafra point cloud",
+  "kind": "point-cloud",
+  "scope": "unknown",
+  "status": "review",
+  "by": "Museus e Monumentos de Portugal",
+  "lic": "CC BY 4.0",
+  "src": "https://sketchfab.com/3d-models/national-palace-of-mafra-9f0e51bf79ca478b95f60209b5d8fd04",
+  "download": null,
+  "photos": null,
+  "triangles": null,
+  "note": "The official account provides 11.1M vertices but no description. Do not call this a library-interior capture until the room coverage is inspected."
+ },
+ {
+  "id": "malatestiana-plutei-mesh",
+  "lib": "malatestiana",
+  "title": "Biblioteca Malatestiana reading desks",
+  "kind": "mesh",
+  "scope": "interior-detail",
+  "status": "permission-required",
+  "by": "ZeuxisVR",
+  "lic": "No reuse licence verified",
+  "src": "https://sketchfab.com/3d-models/plutei-biblioteca-malatestiana-cesena-italy-9c5f91d3c7194d7690ef5175cc5cac7e",
+  "download": null,
+  "photos": null,
+  "triangles": 2000000,
+  "note": "Potentially useful captured detail, not a complete room tour. Permission is required before reuse."
+ }
+]

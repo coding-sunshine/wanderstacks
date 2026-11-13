@@ -24,7 +24,7 @@ test('deployed-c: a library opens on a real photograph of its outside', async ({
 })
 
 test('deployed-c: home is neutral and a deep link opens page-turn reads', async ({ page }) => {
-  await page.goto(`${LIVE}/`)
+  await page.goto(`${LIVE}/atlas`)
   await ready(page, 'home')
   await expect(page.locator('#xlist button')).toHaveCount(52)
   await expect(page.locator('#xlist button[aria-pressed="true"]')).toHaveCount(0)

@@ -1,0 +1,159 @@
+{
+  "id": "diamond-sutra",
+  "summary": "The Diamond Sutra records the Buddha teaching his disciple Subhuti in the grove of Jeta, near Shravasti. The dialogue questions fixed ideas of self, Buddha, Law and attainment, comparing conditioned things to a dream, bubble, shadow, dew and lightning. Giving, merit and enlightenment are all treated without attachment. The scroll shown here is the 868 printed copy held by the British Library, found at Dunhuang and often described as the oldest dated printed book.",
+  "context": "The Sanskrit text was composed between the second and fifth centuries, and Kumarajiva's Chinese translation dates to 401. The 868 copy was made by Wang Jie for his parents and for universal free distribution. It was found among the Dunhuang manuscripts in 1900 and bought by Aurel Stein in 1907. The site also carries William Gemmell's English translation from the Chinese, published in London in 1912, with an introduction and notes drawn from other scriptures and scholars.",
+  "sources": [
+    {
+      "title": "Diamond Sutra, history and text",
+      "url": "https://en.wikipedia.org/wiki/Diamond_Sutra"
+    },
+    {
+      "title": "British Library and International Dunhuang Programme, IIIF manifest of the 868 scroll",
+      "url": "https://data.idp.bl.uk/iiif/3/manifest/51FDAEAFB4A24E2E9981692A98130BC8"
+    },
+    {
+      "title": "The Diamond Sutra translated by William Gemmell, Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/64623"
+    }
+  ],
+  "people": [
+    {
+      "name": "The Buddha",
+      "role": "character",
+      "note": "Teacher in the dialogue, addressed in the text as the Lord Buddha.",
+      "s": [2]
+    },
+    {
+      "name": "Subhuti",
+      "role": "character",
+      "note": "A leading disciple who asks the questions and answers the Buddha.",
+      "s": [2]
+    },
+    {
+      "name": "Kumarajiva",
+      "role": "translator",
+      "note": "Monk and translator who made the first Chinese translation, thought to date to 401.",
+      "s": [0]
+    },
+    {
+      "name": "Wang Jie",
+      "role": "printer",
+      "note": "Named in the 868 colophon as the maker of the copy, for his parents and for universal free distribution.",
+      "s": [0]
+    },
+    {
+      "name": "Wang Yuanlu",
+      "role": "subject",
+      "note": "Daoist monk who found the Dunhuang manuscripts, including this copy, in 1900.",
+      "s": [0]
+    },
+    {
+      "name": "Aurel Stein",
+      "role": "subject",
+      "note": "Archaeologist who bought the 868 scroll in 1907.",
+      "s": [0]
+    },
+    {
+      "name": "William Gemmell",
+      "role": "translator",
+      "note": "Made the English translation published in London in 1912.",
+      "s": [2]
+    }
+  ],
+  "places": [
+    {
+      "name": "Shravasti",
+      "lat": 27.5063,
+      "lon": 82.0501,
+      "note": "The city where the Buddha begs for food before the dialogue in the grove of Jeta.",
+      "s": [2]
+    },
+    {
+      "name": "Mogao Caves, Dunhuang",
+      "lat": 40.042,
+      "lon": 94.809,
+      "note": "Where the 868 printed scroll was found in a walled-up cave.",
+      "s": [0]
+    },
+    {
+      "name": "Kucha",
+      "lat": 41.7167,
+      "lon": 82.9667,
+      "note": "The kingdom Kumarajiva came from, in present-day Xinjiang.",
+      "s": [0]
+    },
+    {
+      "name": "British Library, London",
+      "lat": 51.5294,
+      "lon": -0.1269,
+      "note": "The institution that holds the 868 scroll and publishes it through the International Dunhuang Programme.",
+      "s": [1]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 401,
+      "label": "Kumarajiva makes the first Chinese translation, thought to date to this year.",
+      "s": [0]
+    },
+    {
+      "year": 868,
+      "label": "Wang Jie makes the dated printed copy for his parents and for universal free distribution.",
+      "s": [0]
+    },
+    {
+      "year": 1900,
+      "label": "Wang Yuanlu finds the manuscripts sealed in the Library Cave at Mogao.",
+      "s": [0]
+    },
+    {
+      "year": 1907,
+      "label": "Aurel Stein buys the scroll and takes it to the British Library.",
+      "s": [0]
+    },
+    {
+      "year": 1912,
+      "label": "William Gemmell's English translation is published in London.",
+      "s": [2]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "Non-attachment in practice",
+      "note": "The dialogue applies detachment not only to self and ordinary things, but also to Buddha, Law and enlightenment itself.",
+      "s": [2]
+    },
+    {
+      "title": "Print as a durable object",
+      "note": "The 868 copy joins an early Buddhist text to a particular printed object, its maker, its cave and its later holders.",
+      "s": [0, 1]
+    },
+    {
+      "title": "A scroll, not a codex",
+      "note": "The British Library object is read from right to left as a continuous scroll rather than as pages in a bound book.",
+      "s": [1]
+    },
+    {
+      "title": "Dispersal and return",
+      "note": "The cave's contents passed from Dunhuang to London, Paris, Beijing and other holders, while digitisation lets the fragments be compared together.",
+      "s": [0, 1]
+    }
+  ],
+  "pages": [
+    {
+      "n": 0,
+      "note": "The opening section of the scroll, where the dialogue begins.",
+      "s": [1]
+    },
+    {
+      "n": 10,
+      "note": "A middle section for following the argument about forms, merit and awakening.",
+      "s": [1]
+    },
+    {
+      "n": 19,
+      "note": "The closing section, with the colophon that gives the scroll its 868 date and names Wang Jie.",
+      "s": [0, 1]
+    }
+  ]
+}

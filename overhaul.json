@@ -174,7 +174,14 @@
       "phase": 5,
       "what": "Room acoustics from measured impulse responses where one exists, labelled estimate otherwise",
       "cmd": "bun scripts/checks/f07-measured-ir.ts",
-      "status": "failing"
+      "status": "passing"
+    },
+    {
+      "id": "f07b-captured-mesh",
+      "phase": 5,
+      "what": "Real captured interior mesh for State Library Victoria, aligned and optimized with licence and local Draco decoding",
+      "cmd": "bun scripts/checks/captured-mesh.ts",
+      "status": "passing"
     },
     {
       "id": "f08-splat-rooms",

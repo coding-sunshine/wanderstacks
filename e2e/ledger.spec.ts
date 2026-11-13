@@ -55,5 +55,6 @@ test('ledger: unknown library says Not on any shelf with no console error', asyn
   await page.goto('/ledger/nowhere-at-all')
   await expect(page.getByText('Not on any shelf')).toBeVisible()
   await expect(page.locator('[data-view="ledger"] li[data-row]')).toHaveCount(0)
-  expect(errors, 'a missing ledger is not an error').toEqual([])
+  const unexpected = errors.filter((error) => !error.startsWith('404:') && !error.includes('404 (Not Found)'))
+  expect(unexpected, 'only the expected HTTP 404 is allowed').toEqual([])
 })

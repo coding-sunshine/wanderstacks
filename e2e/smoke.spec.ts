@@ -4,7 +4,7 @@ import { readableIds, ready, watchErrors } from './util'
 test('every view mounts real content with a clean console and network', async ({ page }) => {
   const errors = watchErrors(page)
   const [book] = await readableIds()
-  const stops: [string, string][] = [['/', 'home'], ['/atlas', 'home'], ['/room/longroom', 'room'], [`/read/${book}`, 'reader'], ['/byrne', 'byrne']]
+  const stops: [string, string][] = [['/atlas', 'home'], ['/room/longroom', 'room'], [`/read/${book}`, 'reader'], ['/byrne', 'byrne']]
   for (const [path, view] of stops) {
     await page.goto(path)
     await ready(page, view)

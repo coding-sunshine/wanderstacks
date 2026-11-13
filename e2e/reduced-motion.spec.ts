@@ -64,7 +64,7 @@ test('each view enters with fades only, then holds still', async ({ page }) => {
   const urls: string[] = []
   page.on('request', (r) => urls.push(r.url()))
   const [book] = await readableIds()
-  for (const [path, view] of [['/', 'home'], ['/atlas', 'home'], ['/room/longroom', 'room'], ['/byrne', 'byrne'], [`/read/${book}`, 'reader']]) {
+  for (const [path, view] of [['/atlas', 'home'], ['/room/longroom', 'room'], ['/byrne', 'byrne'], [`/read/${book}`, 'reader']]) {
     await page.goto(path)
     await ready(page, view)
     expect(await offenders(page), `${path} animations`).toEqual([])

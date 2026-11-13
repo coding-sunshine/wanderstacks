@@ -3,7 +3,7 @@ import { mockIiif, roomRoot } from './iiif'
 import { ready, roomIds, watchErrors } from './util'
 
 const stops: [string, string][] = [
-  ['/', 'home'],
+  ['/atlas', 'home'],
   ['/ledger/alexandria', 'ledger'],
   ['/stgall', 'stgall'],
   ['/darwin', 'darwin'],
@@ -40,14 +40,14 @@ test('client navigation walks atlas to ledger, back, then to a room control', as
   await ready(page, 'home')
   await page.goto('/room/admont')
   await ready(page, 'room')
-  await expect(roomRoot(page).locator('.room-controls button')).toHaveCount(3)
+  await expect(roomRoot(page).locator('.room-controls button')).toHaveCount(5)
   expect(errors).toEqual([])
 })
 
 test('no IIIF in cache', async ({ page }) => {
   const errors = watchErrors(page)
   await mockIiif(page)
-  await page.goto('/')
+  await page.goto('/atlas')
   await ready(page, 'home')
   await page.evaluate(() => navigator.serviceWorker.ready.then(() => 0))
   await page.reload()

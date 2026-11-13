@@ -1,0 +1,201 @@
+[
+ {
+  "lib": "dunhuang",
+  "holder": "British Library",
+  "place": "London, United Kingdom",
+  "lat": 51.529444,
+  "lon": -0.126944,
+  "what": "Stein collection of Dunhuang manuscripts",
+  "tier": "wikipedia",
+  "source": "https://en.wikipedia.org/wiki/Dunhuang_manuscripts",
+  "manifest": "https://data.idp.bl.uk/iiif/3/manifest/6A237A6AAD034D59A7D162148DDF53AD"
+ },
+ {
+  "lib": "dunhuang",
+  "holder": "Bibliothèque nationale de France",
+  "place": "Paris, France",
+  "lat": 48.833611,
+  "lon": 2.375833,
+  "what": "Pelliot collection, mostly Chinese and Tibetan texts",
+  "count": 7000,
+  "tier": "secondary",
+  "source": "https://www.chinadaily.com.cn/a/201803/11/WS5aa49d94a3106e7dcc140e00.html",
+  "manifest": "https://data.idp.bl.uk/iiif/3/manifest/D5C4C4C3BDF5164C8A08CE3FDC014BC6"
+ },
+ {
+  "lib": "dunhuang",
+  "holder": "National Library of China",
+  "place": "Beijing, China",
+  "lat": 39.94283,
+  "lon": 116.31742,
+  "what": "Manuscripts brought to Beijing in 1910",
+  "count": 16000,
+  "tier": "secondary",
+  "source": "https://www.chinadaily.com.cn/a/201803/11/WS5aa49d94a3106e7dcc140e00.html",
+  "manifest": "https://data.idp.bl.uk/iiif/3/manifest/6D3BA0B0AABA4898BCC41F5D046AB324"
+ },
+ {
+  "lib": "dunhuang",
+  "holder": "Institute of Oriental Manuscripts, Russian Academy of Sciences",
+  "place": "Saint Petersburg, Russia",
+  "lat": 59.944,
+  "lon": 30.322,
+  "what": "Oldenburg collection of fragments, plus 365 scrolls",
+  "count": 19000,
+  "tier": "wikipedia",
+  "source": "https://en.wikipedia.org/wiki/Institute_of_Oriental_Manuscripts"
+ },
+ {
+  "lib": "dunhuang",
+  "holder": "Tokyo National Museum",
+  "place": "Tokyo, Japan",
+  "lat": 35.718889,
+  "lon": 139.776389,
+  "what": "Dunhuang manuscripts in the museum collection",
+  "tier": "wikipedia",
+  "source": "https://en.wikipedia.org/wiki/Dunhuang_manuscripts"
+ },
+ {
+  "lib": "buda",
+  "holder": "Österreichische Nationalbibliothek",
+  "place": "Vienna, Austria",
+  "lat": 48.20614167,
+  "lon": 16.36626667,
+  "what": "Corvinas, counted from the programme data sheets",
+  "count": 40,
+  "tier": "primary",
+  "source": "https://corvina.hu/en/category/virtual-corvinas/all/",
+  "manifest": "https://api.onb.ac.at/iiif/presentation/v3/manifest/10011269"
+ },
+ {
+  "lib": "buda",
+  "holder": "National Széchényi Library",
+  "place": "Budapest, Hungary",
+  "lat": 47.4952114,
+  "lon": 19.0393491,
+  "what": "Corvinas, counted from the programme data sheets",
+  "count": 37,
+  "tier": "primary",
+  "source": "https://corvina.hu/en/category/virtual-corvinas/all/"
+ },
+ {
+  "lib": "buda",
+  "holder": "Biblioteca Medicea Laurenziana",
+  "place": "Florence, Italy",
+  "lat": 43.774656,
+  "lon": 11.254536,
+  "what": "Corvinas, counted from the programme data sheets",
+  "count": 33,
+  "tier": "primary",
+  "source": "https://corvina.hu/en/category/virtual-corvinas/all/"
+ },
+ {
+  "lib": "buda",
+  "holder": "Biblioteca Estense Universitaria",
+  "place": "Modena, Italy",
+  "lat": 44.64834778,
+  "lon": 10.92103763,
+  "what": "Corvinas, counted from the programme data sheets",
+  "count": 14,
+  "tier": "primary",
+  "source": "https://corvina.hu/en/category/virtual-corvinas/all/"
+ },
+ {
+  "lib": "buda",
+  "holder": "Vatican Library",
+  "place": "Vatican City",
+  "lat": 41.904722,
+  "lon": 12.454444,
+  "what": "Corvinas, counted from the programme data sheets",
+  "count": 12,
+  "tier": "primary",
+  "source": "https://corvina.hu/en/corvina/virtual-corvinas/cod_vatlat3186-en/",
+  "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.3186/manifest.json"
+ },
+ {
+  "lib": "buda",
+  "holder": "Herzog August Library",
+  "place": "Wolfenbüttel, Germany",
+  "lat": 52.167,
+  "lon": 10.533,
+  "what": "Corvinas, counted from the programme data sheets",
+  "count": 9,
+  "tier": "primary",
+  "source": "https://corvina.hu/en/category/virtual-corvinas/all/"
+ },
+ {
+  "lib": "buda",
+  "holder": "Bavarian State Library",
+  "place": "Munich, Germany",
+  "lat": 48.14738624,
+  "lon": 11.58060606,
+  "what": "Corvinas, counted from the programme data sheets",
+  "count": 8,
+  "tier": "primary",
+  "source": "https://corvina.hu/en/category/virtual-corvinas/all/"
+ },
+ {
+  "lib": "buda",
+  "holder": "Bibliothèque nationale de France",
+  "place": "Paris, France",
+  "lat": 48.833611,
+  "lon": 2.375833,
+  "what": "Corvinas, counted from the programme data sheets",
+  "count": 7,
+  "tier": "primary",
+  "source": "https://corvina.hu/en/category/virtual-corvinas/all/"
+ },
+ {
+  "lib": "herculaneum",
+  "holder": "Biblioteca nazionale Vittorio Emanuele III",
+  "place": "Naples, Italy",
+  "lat": 40.83619,
+  "lon": 14.24956,
+  "what": "Bulk of the surviving papyri, in the Office of Herculaneum papyri",
+  "tier": "wikipedia",
+  "source": "https://en.wikipedia.org/wiki/Herculaneum_papyri"
+ },
+ {
+  "lib": "herculaneum",
+  "holder": "Institut de France",
+  "place": "Paris, France",
+  "lat": 48.8568375,
+  "lon": 2.3372581,
+  "what": "Six rolls given to Napoleon in 1802-03",
+  "count": 6,
+  "tier": "wikipedia",
+  "source": "https://en.wikipedia.org/wiki/Herculaneum_papyri"
+ },
+ {
+  "lib": "herculaneum",
+  "holder": "Bodleian Library",
+  "place": "Oxford, United Kingdom",
+  "lat": 51.753972,
+  "lon": -1.255139,
+  "what": "Four unrolled papyri presented by George IV in 1810",
+  "count": 4,
+  "tier": "wikipedia",
+  "source": "https://en.wikipedia.org/wiki/Herculaneum_papyri"
+ },
+ {
+  "lib": "herculaneum",
+  "holder": "British Library",
+  "place": "London, United Kingdom",
+  "lat": 51.529444,
+  "lon": -0.126944,
+  "what": "Most of the other unrolled papyri given to George IV in 1810",
+  "tier": "wikipedia",
+  "source": "https://en.wikipedia.org/wiki/Herculaneum_papyri"
+ },
+ {
+  "lib": "nineveh",
+  "holder": "British Museum",
+  "place": "London, United Kingdom",
+  "lat": 51.519444,
+  "lon": -0.126944,
+  "what": "Most tablets and fragments of the Library of Ashurbanipal",
+  "count": 30000,
+  "tier": "wikipedia",
+  "source": "https://en.wikipedia.org/wiki/Library_of_Ashurbanipal"
+ }
+]

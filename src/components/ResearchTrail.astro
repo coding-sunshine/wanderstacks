@@ -1,0 +1,23 @@
+---
+interface Props { lib: string }
+const { lib } = Astro.props
+---
+<section class="research-trail" data-trail={lib} data-pagefind-ignore>
+  <h2>Take the evidence with you</h2>
+  <p>Export this page's facts, sources, viewpoints, and any captured-camera position as a citable notebook or CSL JSON.</p>
+  <button type="button" class="pick" data-format="markdown">Download research notebook</button>
+  <button type="button" class="pick" data-format="csl">Download CSL JSON</button>
+</section>
+<script>
+  import { exportTrail, trailFromPage } from '../trail/export'
+  document.querySelectorAll<HTMLElement>('[data-trail]').forEach((root) => root.addEventListener('click', (event) => {
+    const button = (event.target as HTMLElement).closest<HTMLButtonElement>('[data-format]')
+    if (button) exportTrail(trailFromPage(root.dataset.trail!), button.dataset.format as 'markdown' | 'csl')
+  }))
+</script>
+<style>
+  .research-trail { margin: 2rem var(--gutter); padding-block: 1.2rem; border-block: 1px solid var(--rule); }
+  .research-trail h2 { font: 1.5rem var(--display); }
+  .research-trail p { max-width: 65ch; }
+  .research-trail button { margin-right: 0.5rem; }
+</style>

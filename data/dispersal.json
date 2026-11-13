@@ -19,7 +19,8 @@
   "what": "Pelliot collection, mostly Chinese and Tibetan texts",
   "count": 7000,
   "tier": "secondary",
-  "source": "https://www.chinadaily.com.cn/a/201803/11/WS5aa49d94a3106e7dcc140e00.html"
+  "source": "https://www.chinadaily.com.cn/a/201803/11/WS5aa49d94a3106e7dcc140e00.html",
+  "manifest": "https://data.idp.bl.uk/iiif/3/manifest/D5C4C4C3BDF5164C8A08CE3FDC014BC6"
  },
  {
   "lib": "dunhuang",
@@ -30,7 +31,8 @@
   "what": "Manuscripts brought to Beijing in 1910",
   "count": 16000,
   "tier": "secondary",
-  "source": "https://www.chinadaily.com.cn/a/201803/11/WS5aa49d94a3106e7dcc140e00.html"
+  "source": "https://www.chinadaily.com.cn/a/201803/11/WS5aa49d94a3106e7dcc140e00.html",
+  "manifest": "https://data.idp.bl.uk/iiif/3/manifest/6D3BA0B0AABA4898BCC41F5D046AB324"
  },
  {
   "lib": "dunhuang",
@@ -107,7 +109,8 @@
   "what": "Corvinas, counted from the programme data sheets",
   "count": 12,
   "tier": "primary",
-  "source": "https://corvina.hu/en/category/virtual-corvinas/all/"
+  "source": "https://corvina.hu/en/corvina/virtual-corvinas/cod_vatlat3186-en/",
+  "manifest": "https://digi.vatlib.it/iiif/MSS_Vat.lat.3186/manifest.json"
  },
  {
   "lib": "buda",

@@ -66,11 +66,13 @@ export const year = (y: number) => (y < 0 ? `${-y} BC` : String(y))
 export const country = (l: Lib) => l.p.split(',').pop()!.trim()
 /** The best single photograph for a library: inside first, then outside. */
 export const lead = (id: string): Photo | undefined => photos[id]?.in[0] ?? photos[id]?.out[0]
+const captured = read<{ lib: string; status: string }[]>('data/captures.json', [])
 /** What a visitor can actually see for this library, most real first. */
 export function seeing(id: string) {
   const n = spheres[id]?.nodes ?? []
   return {
     walk: n.filter((x) => x.real).length,
+    capture: captured.some((c) => c.lib === id && c.status === 'ready') ? 1 : 0,
     recon: n.filter((x) => !x.real).length,
     photos: (photos[id]?.in.length ?? 0) + (photos[id]?.out.length ?? 0),
   }

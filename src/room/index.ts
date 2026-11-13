@@ -10,6 +10,9 @@ import { buildPanel } from './panel'
 import { addCredits, estimatedLabel, exteriorOf, firstPlace, placeButton, remember, type Place } from './place'
 import * as sound from './sound'
 import * as splat from './splat'
+import * as mesh from './mesh'
+import * as phases from './phases'
+import * as trail from './trail'
 import * as sunlight from './sunlight'
 import * as spines from './spines'
 import { dustTexture } from './textures'
@@ -27,6 +30,7 @@ const kits: Record<Library['kit'], () => Promise<KitModule>> = {
   hall: () => import('./kits/hall').then((m) => m.default),
   rotunda: () => import('./kits/rotunda').then((m) => m.default),
   site: () => import('./kits/site').then((m) => m.default),
+  capture: () => import('./kits/capture').then((m) => m.default),
 }
 
 export const mount: Mount = (el, { lib }) => {
@@ -83,7 +87,7 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
   controls.setAttribute('aria-label', 'Room tools')
   const canvas = document.createElement('canvas')
   canvas.tabIndex = 0
-  canvas.setAttribute('aria-label', `${lib.name}, a walkable reconstruction`)
+  canvas.setAttribute('aria-label', `${lib.name}, ${lib.kit === 'capture' ? 'a captured 3D reading room' : 'a walkable reconstruction'}`)
   const ex = lib.kit === 'site' ? null : exteriorOf(lib)
   const enterBtn = placeButton('enter'), exitBtn = placeButton('exit')
   const estimated = ex ? estimatedLabel(ex) : null
@@ -375,7 +379,8 @@ function start(root: HTMLElement, lib: Library, kit: KitModule) {
       render: () => (dirty = true),
       shadows: () => (renderer.shadowMap.needsUpdate = true),
     }
-    detach = [evidence, tour, sound, sunlight, spines, story, splat].map((m) => m.attach(api))
+    const modules = lib.kit === 'capture' ? [story, sunlight, mesh, trail] : [evidence, tour, sound, sunlight, spines, story, phases, splat, mesh, trail]
+    detach = modules.map((m) => m.attach(api))
 
     b.ready
       .then(() => {

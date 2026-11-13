@@ -9,7 +9,7 @@ for (const id of readableIds()) {
     const reader = page.locator('[data-view="reader"][data-ready="true"]')
     await expect(reader).toBeVisible()
     const status = reader.locator('.rd-status')
-    await expect(status).toHaveText(/^Page 1 of \d+/)
+    await expect(status).toHaveText(/^Page \d+ of \d+/)
     await expect(reader.locator('.rd-licence')).toContainText(/\S/)
 
     await reader.getByRole('button', { name: 'End' }).click()

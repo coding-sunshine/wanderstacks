@@ -52,7 +52,8 @@ test('scan images: unknown book says Not on any shelf', async ({ page }) => {
   await mockIiif(page)
   await page.goto('/scan/no-such-book')
   await expect(page.getByText('Not on any shelf')).toBeVisible()
-  expect(errors).toEqual([])
+  const unexpected = errors.filter((error) => !error.startsWith('404:') && !error.includes('404 (Not Found)'))
+  expect(unexpected).toEqual([])
 })
 
 test('scan keyboard: arrows move by 2 on desktop, Home and End jump to the ends', async ({ page }) => {

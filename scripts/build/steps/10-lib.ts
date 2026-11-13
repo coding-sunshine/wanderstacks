@@ -1,4 +1,5 @@
 import { mkdir, readdir } from 'node:fs/promises'
+import { existsSync } from 'node:fs'
 import type { Fact, Hall, KitId, Library, Shelf, Credit, TourStop } from '../../../src/types'
 import { checkHall } from '../../recon/check'
 
@@ -9,7 +10,7 @@ const libs: any[] = await read('data/libs.json')
 const facts: any[] = (await read('data/facts.json')).facts
 const eventsAll: any[] = (await read('data/facts.json')).events ?? []
 const books: any[] = (await read('data/books.json')).books
-const KITS: KitId[] = ['hall', 'rotunda', 'site']
+const KITS: KitId[] = ['hall', 'rotunda', 'site', 'capture']
 
 await mkdir(root + 'public/lib', { recursive: true })
 
@@ -61,6 +62,7 @@ for (const file of await readdir(root + 'data/hall')) {
     facts: passing,
     events: eventsAll.filter((e) => e.lib === id && e.status === 'passing'),
     kit: src.kit,
+    impostor: existsSync(root + `public/rooms/${id}/impostor.svg`),
     ...(src.reconstruction && { reconstruction: true }),
     ...(tour && { tour }),
     hall: src.hall,

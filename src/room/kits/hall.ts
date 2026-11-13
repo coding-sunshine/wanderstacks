@@ -167,7 +167,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   const STRIPS = 4
   const stripMats: THREE.MeshLambertMaterial[] = []
   const photo = new THREE.TextureLoader().load(
-    '/rooms/tex/spines_tile.jpg',
+    '/rooms/tex/spines_tile.webp',
     (t) => {
       t.colorSpace = THREE.SRGBColorSpace
       t.anisotropy = 8
@@ -211,7 +211,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   const endTex = own(endWall(Math.round(h.windows), N, springing / H, h.domes ?? 0))
   const endMat = mat({ map: endTex })
   // Far-end wall: a baked impostor image when the build ships one, otherwise the painted wall.
-  impostor.load(
+  if (lib.impostor) impostor.load(
     `/rooms/${lib.id}/impostor.svg`,
     (t) => {
       t.colorSpace = THREE.SRGBColorSpace
@@ -326,6 +326,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
   }
   glowI.frustumCulled = beamI.frustumCulled = false
   scene.add(glowI, beamI)
+  parts.windows = [glowI, beamI]
 
   // Bays.
   const box = own(new THREE.BoxGeometry(1, 1, 1))
@@ -356,6 +357,7 @@ function build({ lib, scene, own, dirty }: KitCtx): Built {
       im.castShadow = true
       im.receiveShadow = true
       bays.add(im)
+      ;(parts['shelfUnit'] ??= []).push(im)
     }
     done++
     dirty()

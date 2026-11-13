@@ -1,0 +1,27 @@
+---
+import { readFileSync } from 'node:fs'
+interface Entry { lib: string; title: string; start: number; end: number; status: string; source: string; captureStatus: string; captureNeeded: string }
+interface Props { lib: string }
+const { lib } = Astro.props
+const entries = JSON.parse(readFileSync('data/conservation.json', 'utf8')) as Entry[]
+const entry = entries.find((e) => e.lib === lib)
+---
+{entry && (
+  <section class="wrap sec conservation" id="conservation-watch">
+    <p class="kicker">Conservation watch · {entry.start}–{entry.end}</p>
+    <h2>{entry.title}</h2>
+    <p>{entry.status} <a href={entry.source}>Source and current schedule</a></p>
+    <div class="capture-note">
+      <h3>Real captures only</h3>
+      <p>{entry.captureStatus}</p>
+      <p>{entry.captureNeeded}</p>
+      <p><a href={`/visit/#visit-${lib}`}>See capture coverage and offer a documented viewpoint</a></p>
+    </div>
+  </section>
+)}
+<style>
+  .conservation { border-top: 1px solid var(--rule); }
+  .capture-note { padding: 1rem 1.2rem; border-left: 2px solid var(--brass); background: color-mix(in srgb, var(--brass) 6%, transparent); }
+  .capture-note h3 { font: 1.2rem var(--display); margin: 0; }
+  .capture-note p { max-width: 70ch; }
+</style>
