@@ -2,7 +2,7 @@
 // The immersive views (globe, page-turn reader, scan viewer, shelf, Babel) are client-rendered by src/main.ts.
 // Each of their URLs gets this same shell so a direct visit or a reload works on any static host.
 import { readdirSync, existsSync } from 'node:fs'
-import { libs } from '../site/data'
+import { libs, libById, textMeta, scanMeta, lead } from '../site/data'
 import { hasDispersal } from '../site/dispersal'
 import Mark from '../components/Mark.astro'
 export function getStaticPaths() {
@@ -16,6 +16,29 @@ export function getStaticPaths() {
     ...ls('public/scan').map((id) => `scan/${id}`),
   ].map((legacy) => ({ params: { legacy } }))
 }
+const [view, id = ''] = Astro.params.legacy!.split('/')
+const n = libById.get(id)?.n ?? ''
+// Each shell names its own view so a shared link or a search result says what it opens.
+const pages: Record<string, () => [string, string]> = {
+  atlas: () => id ? [`${n} on the globe`, `Find ${n} on a globe of the world's great libraries.`] : ['Globe', "Spin a globe of the world's great libraries, standing and lost."],
+  room: () => [`Walk ${n}`, `Stand inside ${n} in 360 degrees, with every photograph credited.`],
+  ledger: () => [`${n}: ledger`, `Every recorded fact about ${n}, each with its source.`],
+  place: () => [n, `${n}: where it stands, what it held and what happened to it.`],
+  desk: () => [`${n}: reading desk`, `Where the books of ${n} went, side by side on one desk.`],
+  read: () => { const m = textMeta(id); return [m ? `Read ${m.title}` : 'Read', m ? `Read ${m.title}${m.author ? ` by ${m.author}` : ''} free, page by page.` : 'Read a public-domain book page by page.'] },
+  scan: () => { const m = scanMeta(id); return [m?.title ?? 'Scan', m ? `Turn the pages of ${m.title}, digitised by ${m.holder}.` : 'Turn the pages of a digitised manuscript.'] },
+  shelf: () => ['Reading list', 'The books you have saved to read.'],
+  book: () => ['Keepsakes', 'The pages you have kept.'],
+  babel: () => ['The Library of Babel', "Borges's infinite library, one hexagon at a time."],
+  byrne: () => ["Byrne's Euclid", "Euclid's first proposition, drawn in Oliver Byrne's colours."],
+  stgall: () => ['The Plan of St Gall', 'The ninth-century monastery plan, with its library, read room by room.'],
+  darwin: () => ["Darwin's tree", 'The only diagram in On the Origin of Species, explained.'],
+}
+const [title, desc] = pages[view]?.() ?? ['WorldLibs', "Walk the world's great libraries, past and present, and read their books."]
+const full = `${title} | WorldLibs`
+const url = new URL(Astro.url.pathname, Astro.site).href
+const pic = id && lead(id)
+const image = new URL(pic ? `${pic.f}-1920.webp` : '/og.jpg', Astro.site).href
 ---
 <!doctype html>
 <html lang="en">
@@ -23,9 +46,17 @@ export function getStaticPaths() {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
-    <title>WorldLibs</title>
+    <title>{full}</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="description" content="Walk the world's great libraries, past and present, and read their books." />
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={url} />
+    <meta property="og:site_name" content="WorldLibs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={full} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={image} />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <header class="bar">

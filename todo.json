@@ -71,6 +71,20 @@
       "listened": null,
       "cmd": "jq -e '.items[] | select(.id==\"audio-listening-test\") | .listened != null' todo.json",
       "status": "failing"
+    },
+    {
+      "id": "seo-meta",
+      "what": "Sitemap, robots, and a specific title, canonical and share image on every static and client-rendered page",
+      "blocker": "None.",
+      "cmd": "bun scripts/checks/seo.ts",
+      "status": "passing"
+    },
+    {
+      "id": "deploy-limits",
+      "what": "Built site stays under the Cloudflare Pages caps (20,000 files, 25 MiB per file) with headroom",
+      "blocker": "None.",
+      "cmd": "bun scripts/checks/deploy-limits.ts",
+      "status": "passing"
     }
   ]
 }

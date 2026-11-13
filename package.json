@@ -6,7 +6,7 @@
   "scripts": {
     "data": "bun scripts/build/index.ts",
     "dev": "bun run data && astro dev",
-    "build": "bun run data && astro build && pagefind --site dist && bun scripts/concordance/build.ts",
+    "build": "bun run data && astro build && pagefind --site dist && bun scripts/concordance/build.ts && bun scripts/sitemap.ts",
     "preview": "astro preview",
     "typecheck": "tsc --noEmit",
     "test": "bun test src"

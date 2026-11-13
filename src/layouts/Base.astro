@@ -22,8 +22,8 @@ const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/visit/', 'Vi
     <meta property="og:title" content={full} />
     <meta property="og:description" content={desc} />
     <meta property="og:url" content={url} />
-    {image && <meta property="og:image" content={new URL(image, Astro.site).href} />}
-    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    <meta property="og:image" content={new URL(image ?? '/og.jpg', Astro.site).href} />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <slot name="head" />
   </head>
