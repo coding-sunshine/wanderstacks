@@ -1,3 +1,4 @@
+import { reducedMotion } from '../app'
 export const clamp = (x: number, a = 0, b = 1) => Math.min(b, Math.max(a, x))
 export const smooth = (a: number, b: number, x: number) => { x = clamp((x - a) / (b - a)); return x * x * (3 - 2 * x) }
 export const lerp = (a: number, b: number, t: number) => a + (b - a) * t
@@ -11,6 +12,6 @@ export const rng = (s: number) => () => {
   return ((t ^ (t >>> 14)) >>> 0) / 4294967296
 }
 export const MOBILE = matchMedia('(max-width: 760px), (pointer: coarse)').matches
-export const RM = matchMedia('(prefers-reduced-motion: reduce)')
+export const RM = { get matches() { return reducedMotion() } }
 // shader tail shared by custom materials: renderer applies tone map + sRGB only when drawing straight to screen
 export const TAIL = '#include <tonemapping_fragment>\n#include <colorspace_fragment>\n'

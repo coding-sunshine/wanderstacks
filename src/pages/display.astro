@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro'
+// Each choice is a data attribute on <html>; src/site/display.css styles it and Display.astro restores it on every page.
+const groups = [
+  ['text', 'Text size', [['', 'Standard'], ['l', 'Large'], ['xl', 'Larger']]],
+  ['space', 'Spacing', [['', 'Standard'], ['wide', 'Wide: more room between lines, letters and words']]],
+  ['contrast', 'Contrast', [['', 'Standard'], ['more', 'More: brighter text and rules']]],
+  ['motion', 'Motion', [['', 'Follow this device'], ['reduce', 'Reduce: no fades, glides or scroll effects']]],
+] as const
+---
+<Base title="Display settings" desc="Text size, spacing, contrast and motion for every WorldLibs page, kept in this browser.">
+  <section class="wrap sec">
+    <h1>Display</h1>
+    <p class="dim">These apply to every page on this device straight away and stay until you change them. They are kept in this browser only.</p>
+    <form id="display" class="disp">
+      {groups.map(([name, label, opts]) => (
+        <fieldset>
+          <legend>{label}</legend>
+          {opts.map(([value, text]) => <label><input type="radio" name={name} value={value} checked={value === ''} /> {text}</label>)}
+        </fieldset>
+      ))}
+    </form>
+    <p>The quick brown fox reads every book in the Library of Alexandria. This line shows your choices as you make them.</p>
+  </section>
+</Base>
+<script>
+  const form = document.getElementById('display') as HTMLFormElement
+  const root = document.documentElement
+  form.querySelectorAll('input').forEach((i) => (i.checked = (root.dataset[i.name] ?? '') === i.value))
+  form.addEventListener('change', () => {
+    const on = Object.fromEntries([...new FormData(form)].filter(([, v]) => v)) as Record<string, string>
+    for (const i of form.querySelectorAll('input')) delete root.dataset[i.name]
+    Object.assign(root.dataset, on)
+    try { localStorage.setItem('wl.display', JSON.stringify(on)) } catch {}
+  })
+</script>
+<style>
+  .disp { display: grid; gap: 1.6rem; margin: 2rem 0; max-width: 44rem; }
+  .disp fieldset { border: 1px solid var(--rule); border-radius: 3px; padding: 0.9rem 1.2rem 1rem; margin: 0; display: grid; gap: 0.2rem; }
+  .disp legend { font-family: var(--display); font-size: 1.3rem; padding: 0 0.4rem; }
+  .disp label { display: flex; align-items: center; gap: 0.6rem; min-height: 2.75rem; cursor: pointer; }
+  .disp input { accent-color: var(--brass); width: 1.15rem; height: 1.15rem; }
+</style>

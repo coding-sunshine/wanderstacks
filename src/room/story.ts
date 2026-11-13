@@ -1,4 +1,5 @@
 import type { RoomApi } from './kit'
+import { reducedMotion } from '../app'
 
 // "The library's years": a scroll-driven story inside the About panel.
 // Scrolling the panel walks the camera through the tour stops while dated
@@ -67,7 +68,7 @@ export function attach(api: RoomApi): () => void {
   let current = -1
   let timer = 0
   const onScroll = () => {
-    if (!stops.length || matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    if (!stops.length || reducedMotion()) return
     window.clearTimeout(timer)
     timer = window.setTimeout(() => {
       const r = panel.getBoundingClientRect()

@@ -1,0 +1,11 @@
+/* Display choices from /display/, set as data attributes on <html> by Display.astro. */
+html[data-text='l'] { font-size: 112.5%; }
+html[data-text='xl'] { font-size: 125%; }
+html[data-space='wide'] body { line-height: 1.85; letter-spacing: 0.03em; word-spacing: 0.1em; }
+html[data-space='wide'] p { margin-bottom: 1.4em; }
+html[data-contrast='more'] { --paper: #fbf7ec; --dim: #d9d3bf; --paper-dim: #d9d3bf; --rule: #5f7368; }
+html[data-motion='reduce'] { scroll-behavior: auto; }
+html[data-motion='reduce'] *, html[data-motion='reduce'] *::before, html[data-motion='reduce'] *::after {
+  animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; animation-timeline: auto !important; transition-duration: 0.01ms !important;
+}
+html[data-motion='reduce']::view-transition-group(*), html[data-motion='reduce']::view-transition-old(*), html[data-motion='reduce']::view-transition-new(*) { animation: none !important; }

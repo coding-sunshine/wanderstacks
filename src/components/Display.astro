@@ -1,0 +1,4 @@
+---
+// Applies the /display/ choices before first paint, so a page never flashes at the wrong size or contrast.
+---
+<script is:inline>try{Object.assign(document.documentElement.dataset,JSON.parse(localStorage.getItem('wl.display')||'{}'))}catch(e){}</script>

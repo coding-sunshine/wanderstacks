@@ -120,6 +120,13 @@
       "blocker": "None.",
       "cmd": "rg -q 'Use this photo' dist/libraries/admont/index.html && rg -q 'rel=\"license\"' dist/journey/nineveh/index.html && bun test src/site/credit.test.ts",
       "status": "passing"
+    },
+    {
+      "id": "display-settings",
+      "what": "A /display/ page sets text size, spacing, contrast and motion; every page, Astro and client-rendered, applies the choice before first paint",
+      "blocker": "None.",
+      "cmd": "rg -q 'name=\"contrast\"' dist/display/index.html && rg -q 'wl.display' dist/index.html && rg -q 'wl.display' dist/room/admont/index.html && rg -q 'wl.display' dist/404.html",
+      "status": "passing"
     }
   ]
 }

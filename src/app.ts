@@ -3,7 +3,8 @@ export function go(path: string, state: unknown = null) {
   dispatchEvent(new PopStateEvent('popstate'))
 }
 
-export const reducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches
+// The device setting, or the choice made on /display/.
+export const reducedMotion = () => document.documentElement.dataset.motion === 'reduce' || matchMedia('(prefers-reduced-motion: reduce)').matches
 
 export const FADE_MS = 180
 

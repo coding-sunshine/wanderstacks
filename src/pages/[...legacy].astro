@@ -5,6 +5,7 @@ import { readdirSync, existsSync } from 'node:fs'
 import { libs, libById, textMeta, scanMeta, lead } from '../site/data'
 import { hasDispersal } from '../site/dispersal'
 import Mark from '../components/Mark.astro'
+import Display from '../components/Display.astro'
 export function getStaticPaths() {
   const ls = (p: string) => (existsSync(p) ? readdirSync(p).filter((x) => !x.includes('.')) : [])
   const ids = libs.map((l) => l.id)
@@ -46,6 +47,7 @@ const image = new URL(pic ? `${pic.f}-1920.webp` : '/og.jpg', Astro.site).href
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
+    <Display />
     <title>{full}</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="description" content={desc} />
