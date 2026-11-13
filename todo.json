@@ -127,6 +127,13 @@
       "blocker": "None.",
       "cmd": "rg -q 'name=\"contrast\"' dist/display/index.html && rg -q 'wl.display' dist/index.html && rg -q 'wl.display' dist/room/admont/index.html && rg -q 'wl.display' dist/404.html",
       "status": "passing"
+    },
+    {
+      "id": "library-table",
+      "what": "/libraries/ offers a Table view: a real table of all libraries with city, country, founding year, status and counts, sortable by any column heading (aria-sort), honouring the same filters, and linkable as /libraries/#table",
+      "blocker": "None.",
+      "cmd": "rg -q 'data-view=\"table\"' dist/libraries/index.html && rg -q 'aria-sort=\"ascending\"' dist/libraries/index.html && [ \"$(rg -o '<tr data-q' dist/libraries/index.html | wc -l)\" -eq \"$(jq length data/libs.json)\" ]",
+      "status": "passing"
     }
   ]
 }

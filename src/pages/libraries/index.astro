@@ -1,8 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro'
 import Shot from '../../components/Shot.astro'
-import { libs, lead, lost, year, seeing, booksOf } from '../../site/data'
+import { libs, lead, lost, year, seeing, booksOf, country } from '../../site/data'
 const rows = [...libs].sort((a, b) => a.n.localeCompare(b.n))
+// Table columns: heading, then 'num' for years or 'count' for tallies (counts sort most first).
+const cols = [['Library'], ['City'], ['Country'], ['Founded', 'num'], ['Status'], ['360° views', 'count'], ['Photos', 'count'], ['Books', 'count']]
 ---
 <Base title="Libraries" desc={`${libs.length} great libraries, standing and lost: where they are, when they were founded, and what you can see of each.`}>
   <section class="wrap sec">
@@ -17,6 +19,10 @@ const rows = [...libs].sort((a, b) => a.n.localeCompare(b.n))
         <button class="pick" data-f="walk" aria-pressed="false">Walk-through</button>
         <button class="pick" data-f="books" aria-pressed="false">Has books to read</button>
         <button class="pick" id="sort" aria-pressed="false">Oldest first</button>
+      </div>
+      <div class="picks" role="group" aria-label="View as">
+        <button class="pick" data-view="rows" aria-pressed="true">Rows</button>
+        <button class="pick" data-view="table" aria-pressed="false">Table</button>
       </div>
     </div>
     <ul class="rows" id="list">
@@ -43,6 +49,31 @@ const rows = [...libs].sort((a, b) => a.n.localeCompare(b.n))
         )
       })}
     </ul>
+    <div class="tbl" id="tbl" hidden>
+      <table>
+        <caption class="dim">All {libs.length} libraries. Choose a column heading to sort by it.</caption>
+        <thead>
+          <tr>{cols.map(([label, kind], i) => <th scope="col" class={kind && 'num'} aria-sort={i === 0 ? 'ascending' : undefined}><button type="button" data-kind={kind}>{label}</button></th>)}</tr>
+        </thead>
+        <tbody>
+          {rows.map((l) => {
+            const s = seeing(l.id), nb = booksOf(l.id).length, city = l.p.split(',').slice(0, -1).join(',').trim()
+            return (
+              <tr data-q={`${l.n} ${l.p} ${l.k}`.toLowerCase()} data-tags={[lost(l) ? 'lost' : 'standing', s.walk && 'walk', nb && 'books'].filter(Boolean).join(' ')}>
+                <th scope="row" data-v={l.n}><a href={`/libraries/${l.id}/`}>{l.n}</a></th>
+                <td data-v={city}>{city || '–'}</td>
+                <td data-v={country(l)}>{country(l)}</td>
+                <td class="num" data-v={l.y}>{year(l.y)}</td>
+                <td data-v={lost(l) ? 'lost' : 'standing'}>{lost(l) ? <span class="stamp" data-s="lost">lost</span> : 'Standing'}</td>
+                <td class="num" data-v={s.walk}>{s.walk || '–'}</td>
+                <td class="num" data-v={s.photos}>{s.photos || '–'}</td>
+                <td class="num" data-v={nb}>{nb || '–'}</td>
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
+    </div>
     <p id="none" class="dim" hidden>No library matches. Clear the filter to see all {libs.length}.</p>
   </section>
 </Base>
@@ -50,10 +81,26 @@ const rows = [...libs].sort((a, b) => a.n.localeCompare(b.n))
   .lede { font-size: 1.3rem; margin-top: 1rem; }
   .tools { display: grid; gap: 0.9rem; margin: 2rem 0 1.4rem; position: sticky; top: 3.1rem; z-index: 5; background: var(--stacks); padding-block: 0.8rem; }
   #q { max-width: 34rem; }
+  .tbl { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 1rem; font-variant-numeric: tabular-nums; }
+  caption { text-align: left; padding-bottom: 0.7rem; }
+  th, td { text-align: left; padding: 0.55rem 1.1rem 0.55rem 0; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+  .num { text-align: right; }
+  thead th { font-weight: 400; }
+  thead button { font: inherit; color: var(--dim); background: none; border: 0; padding: 0.4rem 0; min-height: 2.75rem; cursor: pointer; }
+  thead button:hover, th[aria-sort] button { color: var(--brass); }
+  th[aria-sort='ascending'] button::after { content: ' ↑'; }
+  th[aria-sort='descending'] button::after { content: ' ↓'; }
+  tbody th { font: 400 1.15rem/1.2 var(--display); white-space: normal; min-width: 11rem; }
+  tbody th a { text-decoration: none; }
+  th:first-child { position: sticky; left: 0; background: var(--stacks); }
+  tbody tr:hover > * { background: var(--leaf); }
+  tr[hidden] { display: none; }
 </style>
 <script>
   const list = document.getElementById('list')!
-  const items = [...list.children] as HTMLElement[]
+  const tbody = document.querySelector('#tbl tbody')!
+  const items = [...list.children, ...tbody.children] as HTMLElement[]
   const q = document.getElementById('q') as HTMLInputElement
   const none = document.getElementById('none')!
   let f = 'all'
@@ -79,9 +126,36 @@ const rows = [...libs].sort((a, b) => a.n.localeCompare(b.n))
   sort.addEventListener('click', () => {
     const old = sort.getAttribute('aria-pressed') !== 'true'
     sort.setAttribute('aria-pressed', String(old))
-    const order = [...items].sort((a, b) => (old ? +a.dataset.y! - +b.dataset.y! : a.dataset.n!.localeCompare(b.dataset.n!)))
+    const order = [...list.children as HTMLCollectionOf<HTMLElement>].sort((a, b) => (old ? +a.dataset.y! - +b.dataset.y! : a.dataset.n!.localeCompare(b.dataset.n!)))
     const move = () => list.append(...order)
     if (document.startViewTransition) document.startViewTransition(move)
     else move()
   })
+  // Table view: a column heading sorts by that column; a second press reverses it. Counts sort most first.
+  const heads = [...document.querySelectorAll<HTMLElement>('#tbl thead th')]
+  heads.forEach((th, col) =>
+    th.querySelector('button')!.addEventListener('click', (e) => {
+      const kind = (e.currentTarget as HTMLElement).dataset.kind
+      const was = th.getAttribute('aria-sort')
+      const dir = was ? (was === 'ascending' ? -1 : 1) : kind === 'count' ? -1 : 1
+      heads.forEach((h) => h.removeAttribute('aria-sort'))
+      th.setAttribute('aria-sort', dir > 0 ? 'ascending' : 'descending')
+      const v = (tr: Element) => (tr.children[col] as HTMLElement).dataset.v!
+      const byName = (a: Element, b: Element) => (a.children[0] as HTMLElement).dataset.v!.localeCompare((b.children[0] as HTMLElement).dataset.v!)
+      tbody.append(...[...tbody.children].sort((a, b) => dir * (kind ? +v(a) - +v(b) : v(a).localeCompare(v(b))) || byName(a, b)))
+    }),
+  )
+  const tbl = document.getElementById('tbl')!
+  const show = (table: boolean) => {
+    tbl.hidden = !table
+    list.hidden = sort.hidden = table
+    document.querySelectorAll('[data-view]').forEach((x) => x.setAttribute('aria-pressed', String((x as HTMLElement).dataset.view === (table ? 'table' : 'rows'))))
+  }
+  document.querySelectorAll<HTMLButtonElement>('[data-view]').forEach((b) =>
+    b.addEventListener('click', () => {
+      show(b.dataset.view === 'table')
+      history.replaceState(null, '', b.dataset.view === 'table' ? '#table' : location.pathname)
+    }),
+  )
+  if (location.hash === '#table') show(true)
 </script>
