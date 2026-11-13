@@ -71,7 +71,7 @@ p { margin: 0 0 1em; max-width: 68ch; }
 .fcite[open] { flex-basis: 100%; order: 9; }
 .fcite summary { cursor: pointer; list-style: none; text-decoration: underline; text-decoration-color: var(--brass); text-underline-offset: 0.18em; }
 .fcite summary::-webkit-details-marker { display: none; }
-.fcite pre { margin: 0.2rem 0 0; padding: 0.7rem 0.9rem; background: var(--leaf); border: 1px solid var(--rule); border-radius: 3px; font: inherit; font-size: 0.78rem; color: var(--paper); white-space: pre-wrap; overflow-wrap: anywhere; user-select: all; }
+.fcite pre { text-align: left; margin: 0.2rem 0 0; padding: 0.7rem 0.9rem; background: var(--leaf); border: 1px solid var(--rule); border-radius: 3px; font: inherit; font-size: 0.78rem; color: var(--paper); white-space: pre-wrap; overflow-wrap: anywhere; user-select: all; }
 .fcite button { font: inherit; color: var(--brass); background: none; border: 1px solid var(--rule); border-radius: 999px; padding: 0.15rem 0.7rem; cursor: pointer; margin-top: 0.4rem; }
 .time { border-left: 1px solid var(--brass); }
 .time .fact { padding-left: 1.2rem; position: relative; border-top: 0; }

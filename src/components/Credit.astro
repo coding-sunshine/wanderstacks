@@ -1,0 +1,13 @@
+---
+// Caption, credit and a ready attribution for one photograph, so it can be reused correctly.
+import type { Photo } from '../site/data'
+import { credit, licUrl } from '../site/credit'
+interface Props { p: Photo }
+const { p } = Astro.props
+const u = licUrl(p.lic)
+---
+<figcaption class="mark">
+  {p.cap}. <a href={p.src}>{p.by}</a>, {u ? <a href={u} rel="license">{p.lic}</a> : p.lic}
+  <details class="fcite" data-pagefind-ignore><summary>Use this photo</summary><pre>{credit(p)}</pre><button type="button" hidden data-copy>Copy</button> <a href={`${p.f}-1920.webp`} download>Download 1920px</a></details>
+</figcaption>
+<script>import '../site/copy'</script>

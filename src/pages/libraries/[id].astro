@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro'
 import Shot from '../../components/Shot.astro'
+import Credit from '../../components/Credit.astro'
 import BookRows from '../../components/BookRows.astro'
 import Walk from '../../components/Walk.astro'
 import Dispersal from '../../components/Dispersal.astro'
@@ -30,7 +31,7 @@ const i = libs.indexOf(l), prev = libs[(i + libs.length - 1) % libs.length], nex
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(ld)} is:inline />
   <article>
     <header class="head">
-      {p && <figure><a class="zoom" href={`${p.f}-1920.webp`}><Shot p={p} sizes="100vw" eager name={`lib-${l.id}`} /></a><figcaption class="mark">{p.cap}. <a href={p.src}>{p.by}</a>, {p.lic}</figcaption></figure>}
+      {p && <figure><a class="zoom" href={`${p.f}-1920.webp`}><Shot p={p} sizes="100vw" eager name={`lib-${l.id}`} /></a><Credit p={p} /></figure>}
       <div class="wrap">
         <h1 data-pagefind-filter="kind:Library">{l.n}</h1>
         <p class="where"><span data-pagefind-meta="place">{l.p}</span>, {l.yl || year(l.y)}</p>
@@ -79,7 +80,7 @@ const i = libs.indexOf(l), prev = libs[(i + libs.length - 1) % libs.length], nex
       <section class="wrap sec">
         <h2>Photographs</h2>
         <div class="wall">
-          {shots.map((x) => <figure><a class="zoom" href={`${x.f}-1920.webp`}><Shot p={x} sizes="(max-width: 760px) 100vw, 33vw" /></a><figcaption class="mark">{x.cap}. <a href={x.src}>{x.by}</a>, {x.lic}</figcaption></figure>)}
+          {shots.map((x) => <figure><a class="zoom" href={`${x.f}-1920.webp`}><Shot p={x} sizes="(max-width: 760px) 100vw, 33vw" /></a><Credit p={x} /></figure>)}
         </div>
       </section>
     )}
@@ -136,7 +137,7 @@ const i = libs.indexOf(l), prev = libs[(i + libs.length - 1) % libs.length], nex
   .head figure { margin: 0; position: relative; }
   .zoom { display: block; cursor: zoom-in; }
   .head figure :global(img) { width: 100%; height: min(72svh, 48rem); object-fit: cover; }
-  .head figcaption { padding: 0.5rem var(--gutter); }
+  .head figure :global(figcaption) { padding: 0.5rem var(--gutter); }
   .head h1 { margin-top: clamp(1.5rem, 4vw, 3rem); }
   .where { font-size: 1.4rem; color: var(--dim); margin: 0.6rem 0; }
   .see { display: flex; gap: 0.4rem; flex-wrap: wrap; }
@@ -157,7 +158,7 @@ const i = libs.indexOf(l), prev = libs[(i + libs.length - 1) % libs.length], nex
   .lb::backdrop { background: rgb(8 12 10 / 0.95); }
   .lb figure { margin: 0; display: grid; gap: 0.7rem; justify-items: center; text-align: center; }
   .lb img { max-width: 100%; max-height: calc(100dvh - 10rem); width: auto; height: auto; object-fit: contain; border-radius: 2px; }
-  .lb button { position: absolute; min-width: 44px; min-height: 44px; background: var(--leaf); }
+  .lb > button { position: absolute; min-width: 44px; min-height: 44px; background: var(--leaf); }
   .lb .x { top: 0.8rem; right: var(--gutter); }
   .lb .prev, .lb .next { top: 50%; translate: 0 -50%; font-size: 1.6rem; line-height: 1; }
   .lb .prev { left: 0.6rem; }

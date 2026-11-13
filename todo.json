@@ -113,6 +113,13 @@
       "blocker": "None.",
       "cmd": "rg -q \"The code is MIT\" README.md && rg -q \"CC BY-NC 4.0\" README.md",
       "status": "passing"
+    },
+    {
+      "id": "photo-credit",
+      "what": "Every photo caption offers a ready attribution (title, author, licence deed, Commons source), a copy button and a 1920px download",
+      "blocker": "None.",
+      "cmd": "rg -q 'Use this photo' dist/libraries/admont/index.html && rg -q 'rel=\"license\"' dist/journey/nineveh/index.html && bun test src/site/credit.test.ts",
+      "status": "passing"
     }
   ]
 }

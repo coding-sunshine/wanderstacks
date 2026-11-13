@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro'
 import Dispersal from '../../components/Dispersal.astro'
 import BookRows from '../../components/BookRows.astro'
 import Shot from '../../components/Shot.astro'
+import Credit from '../../components/Credit.astro'
 import { booksOf, lead, libById, lost, year } from '../../site/data'
 import { hasDispersal, holdersOf } from '../../site/dispersal'
 import { eventsFor } from '../../site/record'
@@ -36,7 +37,7 @@ const readable = holders.filter((h) => h.manifest)
         <p>{l.st ?? `${l.n}, ${l.p}. ${l.yl || year(l.y)}.`}</p>
         <p><a class="pick" href={`/libraries/${l.id}/#walk`}>Enter the library record and any real or reconstructed views</a></p>
       </div>
-      {p && <figure><Shot p={p} sizes="(max-width: 800px) 100vw, 42vw" name={`journey-${l.id}`} /><figcaption class="mark">{p.cap}. <a href={p.src}>{p.by}</a>, {p.lic}</figcaption></figure>}
+      {p && <figure><Shot p={p} sizes="(max-width: 800px) 100vw, 42vw" name={`journey-${l.id}`} /><Credit p={p} /></figure>}
     </section>
 
     {events.length > 0 && (
