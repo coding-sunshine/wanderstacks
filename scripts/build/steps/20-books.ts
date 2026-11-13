@@ -166,12 +166,23 @@ function splitParts(id: string, chapters: Chapter[]) {
 const cache = root + '.cache/books/'
 await mkdir(cache, { recursive: true })
 let lastFetch = 0
+// Gutenberg now and then drops a connection or answers 5xx on a cold build; try three times before failing.
+async function get(url: string, tries = 3): Promise<Response> {
+  try {
+    const r = await fetch(url, { headers: { 'User-Agent': UA }, redirect: 'follow' })
+    if ((r.status < 500 && r.status !== 429) || tries === 1) return r
+  } catch (e) {
+    if (tries === 1) throw e
+  }
+  await Bun.sleep(5000)
+  return get(url, tries - 1)
+}
 async function download(url: string, file: string) {
   const f = Bun.file(cache + file)
   if (await f.exists()) return f.text()
   const wait = lastFetch + 1000 - Date.now()
   if (wait > 0) await Bun.sleep(wait)
-  const r = await fetch(url, { headers: { 'User-Agent': UA }, redirect: 'follow' })
+  const r = await get(url)
   lastFetch = Date.now()
   if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`)
   const text = await r.text()
