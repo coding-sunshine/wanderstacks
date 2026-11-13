@@ -211,10 +211,12 @@ for (const b of rows) {
         await Promise.all(
           pgIds.map(async (id) => {
             const one = await download(`https://www.gutenberg.org/cache/epub/${id}/pg${id}-images.html`, `${b.id}.${id}.pg.html`)
-            const a = one.search(/\*\*\* START OF/)
-            const z = one.search(/\*\*\* END OF/)
-            if (a < 0 || z < 0) throw new Error('Gutenberg start/end markers not found')
-            return one.slice(a, z)
+            // Cut after the START marker's closing *** so the licence line never reaches the reader.
+            const a = one.search(/\*\*\* ?START OF/)
+            const z = one.search(/\*\*\* ?END OF/)
+            const body = one.indexOf('***', a + 3)
+            if (a < 0 || z < 0 || body < 0) throw new Error('Gutenberg start/end markers not found')
+            return one.slice(body + 3, z)
           }),
         )
       ).join('\n')
@@ -232,6 +234,9 @@ for (const b of rows) {
     }
 
     const chapters = sanitise(html, b.title)
+    // Transcriber colophons (Availability, Metadata, Revision History...) close some PG texts; they are not the book.
+    const colophon = chapters.findIndex((c) => /^colophon\b/i.test(c.title))
+    if (colophon > 0) chapters.length = colophon
     if (!chapters.length) throw new Error('no text extracted')
     const parts = splitParts(b.id, chapters)
 

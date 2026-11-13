@@ -58,6 +58,8 @@
   padding: 30px 34px 46px; font: 19px/1.5 var(--serif); text-align: justify; hyphens: auto;
   font-variant-numeric: oldstyle-nums; font-kerning: normal; hanging-punctuation: first;
 }
+/* Justified 40-character lines open rivers on phones; ragged right reads better there. */
+@media (max-width: 480px) { .rd-page { text-align: left; } }
 .rd-page h2 { margin: 0 0 0.9em; font: 400 1.5em/1.15 var(--display); text-align: center; text-wrap: balance; hyphens: none; }
 .rd-page h4 { margin: 0.8em 0 0.4em; font-size: 1em; font-style: italic; font-weight: 400; }
 .rd-page p { margin: 0; text-indent: 1.2em; }

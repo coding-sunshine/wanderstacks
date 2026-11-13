@@ -319,8 +319,11 @@ export const mount: Mount = (el, { book }) => {
   function onChange(i: number) {
     idx = i
     const n = total()
-    const last = complete() && i >= n - (size.single ? 1 : 2)
-    status.textContent = `Page ${last ? n : i + 1} of ${n}${complete() ? '' : '+'}`
+    // i counts the front matter (half-title, plus the paste-down in a spread); folios start after it.
+    const front = size.single ? 1 : 2
+    const last = complete() && i >= n
+    const page = i - front + 1
+    status.textContent = page < 1 ? 'Title page' : `Page ${last ? n : page} of ${n}${complete() ? '' : '+'}`
     prev.disabled = i <= 0
     next.disabled = last
     rustle()
