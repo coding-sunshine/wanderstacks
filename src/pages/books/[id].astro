@@ -17,6 +17,20 @@ const most = Math.max(1, ...bars.map((x) => x.words)), total = bars.reduce((n, x
 const mins = (w: number) => Math.max(1, Math.round(w / 230))
 const span = (m: number) => (m < 90 ? `${m} min` : `${Math.round(m / 60)} h`)
 const label = { open: 'free to read', nc: 'non-commercial', 'link-only': 'catalogue record' } as const
+
+// Free editions elsewhere, for printed works: the edition we cite, then full-text searches by title and author surname.
+const pg = b.read?.url.match(/gutenberg\.org\/ebooks\/(\d+)/)?.[1], se = b.read?.url.includes('standardebooks.org')
+const who = b.author?.split(/[;(]/)[0].trim() ?? ''
+const surname = /^(unknown|anon)/i.test(who) ? '' : who.includes(',') ? who.split(',')[0] : who.split(' ').pop()
+const q = encodeURIComponent(`${b.title.split(/\s*[:;(/$]/)[0]} ${surname ?? ''}`.trim())
+const free = ['text', 'printed-book'].includes(b.kind) ? [
+  pg && { href: `https://www.gutenberg.org/ebooks/${pg}`, name: 'Project Gutenberg', note: `ebook #${pg}` },
+  se && { href: b.read!.url, name: 'Standard Ebooks', note: 'this edition' },
+  { href: `https://openlibrary.org/search?q=${q}&has_fulltext=true`, name: 'Open Library', note: 'search editions you can borrow or read' },
+  { href: `https://catalog.hathitrust.org/Search/Home?lookfor=${q}&type=all&ft=ft`, name: 'HathiTrust', note: 'search full-view scans' },
+  !se && { href: `https://standardebooks.org/ebooks?query=${q}`, name: 'Standard Ebooks', note: 'search' },
+  !pg && { href: `https://www.gutenberg.org/ebooks/search/?query=${q}`, name: 'Project Gutenberg', note: 'search' },
+].filter((x): x is { href: string; name: string; note: string } => !!x) : []
 const others = lib ? booksOf(lib.id).filter((x) => x.id !== b.id).slice(0, 8) : []
 
 // Map window: the places' bounding box, padded, never narrower than 40 degrees, always 2:1.
@@ -149,6 +163,15 @@ const gap = (i: number) => (i === 0 ? 0 : Math.min(4, Math.log10(1 + tl[i].year 
       </section>
     )}
 
+    {free.length > 0 && (
+      <section class="wrap sec" id="free" data-pagefind-ignore>
+        <h2>Free to read elsewhere</h2>
+        <ul class="free">
+          {free.map((x) => <li><a href={x.href} rel="noopener">{x.name}</a> <span class="dim">{x.note}</span></li>)}
+        </ul>
+      </section>
+    )}
+
     <section class="wrap sec">
       <h2>Sources</h2>
       <ol class="src">
@@ -210,6 +233,9 @@ const gap = (i: number) => (i === 0 ? 0 : Math.min(4, Math.log10(1 + tl[i].year 
   .src { padding-left: 1.4rem; overflow-wrap: anywhere; }
   .src li:target { color: var(--paper); }
   .fine { font-size: 0.95rem; }
+  .free { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); max-width: 40rem; }
+  .free li { padding: 0.7rem 0; border-bottom: 1px solid var(--rule); }
+  .free a { font: 400 1.25rem var(--display); }
   sup { margin-left: 0.15em; font-size: 0.7em; }
   sup a { text-decoration: none; color: var(--brass); }
   @media (max-width: 760px) { .geo { grid-template-columns: 1fr; } .map { position: relative; } }

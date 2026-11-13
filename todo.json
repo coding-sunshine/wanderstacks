@@ -141,6 +141,13 @@
       "blocker": "None.",
       "cmd": "bun test src/site/shelves.test.ts && rg -q 'Add to a shelf' dist/libraries/admont/index.html && rg -q 'Add to a shelf' dist/books/abrogans/index.html",
       "status": "passing"
+    },
+    {
+      "id": "free-to-read",
+      "what": "Printed books and texts list free editions elsewhere: the Gutenberg or Standard Ebooks edition we cite, plus Open Library, HathiTrust, Standard Ebooks and Gutenberg full-text searches by title and author",
+      "blocker": "None.",
+      "cmd": "rg -q \"id=\\\"free\\\"\" dist/books/carol/index.html && rg -q \"standardebooks.org/ebooks/charles-dickens/a-christmas-carol\" dist/books/carol/index.html && rg -q \"gutenberg.org/ebooks/8581\\\"\" dist/books/pg-8581/index.html && ! rg -q \"id=\\\"free\\\"\" dist/books/gutenberg-loc/index.html",
+      "status": "passing"
     }
   ]
 }
