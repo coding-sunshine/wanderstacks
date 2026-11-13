@@ -213,3 +213,7 @@ button { font: inherit; color: inherit; }
 }
 .babel-page strong { color: #a8402c; }
 .babel-note { margin: 0.6rem 0 0; color: var(--dim); }
+
+/* Hidden until a keyboard user tabs to it. */
+.skip { position: absolute; left: 1rem; top: -4rem; z-index: 99; padding: 0.6rem 1rem; background: var(--paper); color: #0e0b08; }
+.skip:focus { top: 0.6rem; }

@@ -57,7 +57,7 @@ const say = `${libs.length} libraries across twenty-seven centuries. ${goneCount
       <div class="rise">
         <p class="lede">{libs.length} libraries, standing and lost. {open.length} of their books open here, page by page.</p>
         <form action="/search/" role="search">
-          <input class="field" name="q" type="search" placeholder="Search a library, a book, an author" aria-label="Search WorldLibs" />
+          <input class="field" name="q" type="search" placeholder="A library, book or author" aria-label="Search WorldLibs" />
           <button class="pick">Search</button>
         </form>
         <p class="picks">
@@ -201,7 +201,7 @@ const say = `${libs.length} libraries across twenty-seven centuries. ${goneCount
   .over h1 { font-size: clamp(2.9rem, 9.4vw, 9rem); line-height: 0.98; }
   .over h1 span { display: block; overflow: hidden; padding-bottom: 0.08em; }
   .over h1 i { display: block; font-style: normal; }
-  .over h1 span:nth-child(2) i { padding-left: 1.2em; }
+  @media (min-width: 700px) { .over h1 span:nth-child(2) i { padding-left: 1.2em; } }
   .lede { font-size: 1.35rem; margin: 1.4rem 0 1.4rem; }
   .hero form { display: flex; gap: 0.5rem; max-width: 38rem; margin-bottom: 1rem; }
   .hero form .field { flex: 1; }
@@ -213,7 +213,7 @@ const say = `${libs.length} libraries across twenty-seven centuries. ${goneCount
   .tape { overflow: hidden; padding-block: clamp(1.5rem, 4vw, 3rem); border-block: 1px solid var(--rule); }
   .tape p { display: flex; width: max-content; max-width: none; margin: 0; gap: 0; white-space: nowrap; will-change: transform; font-family: var(--display); font-size: clamp(1.8rem, 5vw, 4.2rem); line-height: 1.25; }
   .tape a { text-decoration: none; padding-inline: 0.45em; color: var(--dim); }
-  .tape a::after { content: '✦'; font-size: 0.35em; vertical-align: middle; margin-left: 2.6em; color: var(--brass); }
+  .tape a::after { content: '✦' / ''; font-size: 0.35em; vertical-align: middle; margin-left: 2.6em; color: var(--brass); }
   .tape a:hover { color: var(--paper); }
   .tape:not(.live) { overflow-x: auto; }
 

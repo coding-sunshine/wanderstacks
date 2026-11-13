@@ -24,9 +24,9 @@ const realInterior = rows.filter((r) => r.coverage.interior > 0).length
 const realExterior = rows.filter((r) => r.coverage.exterior > 0).length
 const noBooks = rows.filter((r) => r.books === 0).length
 ---
-<Base title="Visit and capture coverage" desc="Real library captures, official tours, reconstruction labels, rights, and the gaps still needing photographs or 3D capture." index>
+<Base title="Visit the libraries" desc="Real library captures, official tours, reconstruction labels, rights, and the gaps still needing photographs or 3D capture." index>
   <section class="wrap sec visit" id="coverage">
-    <p class="kicker">The capture register</p>
+    <p class="kicker">What each library offers</p>
     <h1>Visit the real place first</h1>
     <p class="lede">A photographic panorama, a measured 3D capture, an official tour, or a labelled reconstruction: each library says exactly what it offers. Candidate scans are not presented as finished walkthroughs.</p>
     <dl class="summary">
@@ -36,7 +36,7 @@ const noBooks = rows.filter((r) => r.books === 0).length
       <div><dt>Candidate 3D assets</dt><dd>{captures.length}</dd></div>
       <div><dt>Needs catalogue links</dt><dd>{noBooks}</dd></div>
     </dl>
-    <div class="filters" role="group" aria-label="Filter capture coverage">
+    <div class="filters" role="group" aria-label="Filter by what you can see">
       <button class="pick" data-f="all" aria-pressed="true">All</button>
       <button class="pick" data-f="interior" aria-pressed="false">Interior 360</button>
       <button class="pick" data-f="exterior" aria-pressed="false">Exterior 360</button>

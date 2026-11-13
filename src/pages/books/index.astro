@@ -17,8 +17,9 @@ const shelves = libs.map((l) => ({ l, n: booksOf(l.id).length })).filter((x) => 
     <nav class="picks az" aria-label="By first letter">{letters.map((c) => <a class="pick" href={`/books/by/${c === '#' ? '0' : c.toLowerCase()}/`}>{c}</a>)}</nav>
     <div class="tools">
       <input class="field" id="q" type="search" placeholder="Filter by title, author or library" aria-label="Filter books" />
-      <div class="picks"><button class="pick" id="here" aria-pressed="false">Only books I can read here</button></div>
+      <div class="picks" hidden={shown === open}><button class="pick" id="here" aria-pressed="false">Only books I can read here</button></div>
     </div>
+    {shown === open && <p class="dim">Listed here: the {open.length} you can read on this site. Every other book sits under its first letter above, or <a href="/search/">search</a> for it.</p>}
     <div id="list"><BookRows books={shown} /></div>
     <p id="none" class="dim" hidden>No book matches. <a href="/search/">Search everything</a> instead.</p>
   </section>

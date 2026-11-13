@@ -1,6 +1,9 @@
 ---
 import '../site/site.css'
 import Mark from '../components/Mark.astro'
+// Same files the stylesheet loads; preloading them stops the headings and body from repainting in a fallback face.
+import caslon from '@fontsource/libre-caslon-display/files/libre-caslon-display-latin-400-normal.woff2?url'
+import garamond from '@fontsource/eb-garamond/files/eb-garamond-latin-400-normal.woff2?url'
 interface Props { title: string; desc?: string; index?: boolean; image?: string }
 const { title, desc = "Walk the world's great libraries, standing and lost, and read their books.", index = false, image } = Astro.props
 const at = Astro.url.pathname
@@ -25,14 +28,16 @@ const nav = [['/libraries/', 'Libraries'], ['/books/', 'Books'], ['/visit/', 'Vi
     <meta property="og:image" content={new URL(image ?? '/og.jpg', Astro.site).href} />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {[caslon, garamond].map((href) => <link rel="preload" as="font" type="font/woff2" href={href} crossorigin />)}
     <slot name="head" />
   </head>
   <body>
+    <a class="skip" href="#main">Skip to content</a>
     <header class="top">
       <a class="brand" href="/"><Mark />WorldLibs</a>
       {nav.map(([href, label]) => <a href={href} aria-current={at.startsWith(href) ? 'page' : undefined}>{label}</a>)}
     </header>
-    <main {...(index ? { 'data-pagefind-body': '' } : {})}><slot /></main>
+    <main id="main" {...(index ? { 'data-pagefind-body': '' } : {})}><slot /></main>
     <footer class="foot">
       <p>Every photograph, panorama and scan carries its author and licence beside it.</p>
       <p><a href="/libraries/">All libraries</a></p>

@@ -128,3 +128,7 @@ p { margin: 0 0 1em; max-width: 68ch; }
   *, *::before, *::after { transition-duration: 0ms !important; animation: none !important; }
   @view-transition { navigation: none; }
 }
+
+/* Hidden until a keyboard user tabs to it. */
+.skip { position: absolute; left: 1rem; top: -4rem; z-index: 99; padding: 0.6rem 1rem; background: var(--paper); color: #0e0b08; }
+.skip:focus { top: 0.6rem; }
