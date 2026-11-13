@@ -23,6 +23,8 @@ jobs:
       - run: bun run typecheck
       - run: bun run test
       - run: bun run build
+      # The offline-shelf check drives a real browser.
+      - run: bunx playwright install --with-deps --only-shell chromium
       # Only checks recorded as passing gate the run; a failing item is open work with a named blocker.
       - name: checks
         run: |

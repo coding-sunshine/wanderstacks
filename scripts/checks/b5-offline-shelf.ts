@@ -1,9 +1,10 @@
 // Offline shelf: SW keeps saved items, and a real browser reads a saved book and opens a saved room with the network off.
 import { readFileSync, existsSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
+import { tmpdir } from 'node:os'
 import { chromium } from 'playwright'
 const dist = process.env.DIST ?? 'dist'
-const shot = process.env.SHOT ?? '/private/tmp/claude-501/wl-books/offline-shelf.png'
+const shot = process.env.SHOT ?? join(tmpdir(), 'offline-shelf.png')
 const fail = (m: string): never => { console.error('FAIL b5-offline-shelf: ' + m); process.exit(1) }
 const sw = readFileSync(`${dist}/sw.js`, 'utf8')
 if (/\/assets\//.test(sw)) fail('sw.js still caches the dead /assets/ path')
@@ -26,10 +27,10 @@ const server = Bun.serve({
 })
 function readdirSyncSafe(p: string) { try { readdirSync(p); return true } catch { return false } }
 const base = `http://localhost:${server.port}`
-// Any installed playwright chromium will do; set CHROME to pick one.
+// Any installed playwright chromium will do; set CHROME to pick one. Off macOS, playwright finds its own install.
 const cache = `${process.env.HOME}/Library/Caches/ms-playwright`
-const shell = readdirSync(cache).filter((d) => d.startsWith('chromium_headless_shell-')).sort().reverse().map((d) => `${cache}/${d}/chrome-headless-shell-mac-arm64/chrome-headless-shell`).find(existsSync)
-const browser = await chromium.launch({ executablePath: process.env.CHROME ?? shell })
+const shell = existsSync(cache) && readdirSync(cache).filter((d) => d.startsWith('chromium_headless_shell-')).sort().reverse().map((d) => `${cache}/${d}/chrome-headless-shell-mac-arm64/chrome-headless-shell`).find(existsSync)
+const browser = await chromium.launch({ executablePath: process.env.CHROME ?? (shell || undefined) })
 const ctx = await browser.newContext({ viewport: { width: 1280, height: 800 }, serviceWorkers: 'allow' })
 const page = await ctx.newPage()
 const done = async (what: string, f: () => Promise<unknown>) => { try { await f() } catch (e) { await page.screenshot({ path: shot }); fail(`${what}: ${(e as Error).message.split('\n')[0]}`) } }
