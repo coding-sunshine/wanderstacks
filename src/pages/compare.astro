@@ -1,0 +1,91 @@
+---
+// Compare two libraries: their halls in one frame with a swipe divider, and their facts side by side. Linkable as /compare/?a=<id>&b=<id>.
+import Base from '../layouts/Base.astro'
+import { libs, photos } from '../site/data'
+const rows = libs
+  .map((l) => ({ l, ph: photos[l.id]?.in[0] ?? photos[l.id]?.out[0] }))
+  .filter((r) => r.ph)
+  .sort((x, y) => x.l.n.localeCompare(y.l.n))
+const data = Object.fromEntries(rows.map(({ l, ph }) => [l.id, { n: l.n, p: l.p, y: l.yl ?? String(l.y ?? ''), vol: l.vol || '—', dim: l.dim || '—', st: l.st || '—', img: `${ph!.f}-1920.webp`, cap: ph!.cap, by: ph!.by, lic: ph!.lic, src: ph!.src }]))
+const facts = [['p', 'Place'], ['y', 'Built'], ['vol', 'Holdings'], ['dim', 'Size'], ['st', 'Status']]
+const [a, b] = ['longroom', 'admont'].map((id) => data[id] ? id : rows[0].l.id)
+const pick = (name: string, on: string) => (
+  `<select class="field" name="${name}" aria-label="${name === 'a' ? 'Left' : 'Right'} library">` +
+  rows.map(({ l }) => `<option value="${l.id}"${l.id === on ? ' selected' : ''}>${l.n.replace(/&/g, '&amp;').replace(/</g, '&lt;')}</option>`).join('') + '</select>'
+)
+---
+<Base title="Compare two libraries" desc="Two library halls in one frame with a swipe divider, and their dates, holdings, size and status side by side." index>
+  <section class="wrap sec cmp" data-pagefind-ignore>
+    <h1>Compare two libraries</h1>
+    <form class="pair">
+      <Fragment set:html={pick('a', a)} />
+      <span class="dim">and</span>
+      <Fragment set:html={pick('b', b)} />
+    </form>
+    <figure class="swipe" style="--x: 50%">
+      <img class="sb" alt="" src={data[b].img} />
+      <img class="sa" alt="" src={data[a].img} />
+      <span class="bar" aria-hidden="true"></span>
+      <span class="tag ta" aria-hidden="true" data-k="n" data-s="a">{data[a].n}</span>
+      <span class="tag tb" aria-hidden="true" data-k="n" data-s="b">{data[b].n}</span>
+      <input type="range" min="0" max="100" value="50" aria-label="Divider: drag left or right to show more of either hall" />
+    </figure>
+    <table class="facts">
+      <thead><tr><th></th><th scope="col" data-k="n" data-s="a">{data[a].n}</th><th scope="col" data-k="n" data-s="b">{data[b].n}</th></tr></thead>
+      <tbody>
+        {facts.map(([k, name]) => <tr><th scope="row">{name}</th><td data-k={k} data-s="a">{data[a][k as 'p']}</td><td data-k={k} data-s="b">{data[b][k as 'p']}</td></tr>)}
+        <tr><th scope="row">Photo</th><td data-k="credit" data-s="a"></td><td data-k="credit" data-s="b"></td></tr>
+      </tbody>
+    </table>
+    <p class="go"><a data-s="a" href={`/libraries/${a}/`}>Open {data[a].n}</a> <a data-s="b" href={`/libraries/${b}/`}>Open {data[b].n}</a></p>
+  </section>
+  <script type="application/json" id="cmp-data" set:html={JSON.stringify(data)} />
+</Base>
+
+<script>
+  type Row = Record<'n' | 'p' | 'y' | 'vol' | 'dim' | 'st' | 'img' | 'cap' | 'by' | 'lic' | 'src', string>
+  const data: Record<string, Row> = JSON.parse(document.getElementById('cmp-data')!.textContent!)
+  const form = document.querySelector<HTMLFormElement>('.pair')!, fig = document.querySelector<HTMLElement>('.swipe')!
+  const range = fig.querySelector('input')!
+  range.oninput = () => fig.style.setProperty('--x', `${range.value}%`)
+  const show = () => {
+    const ids = { a: form.a.value as string, b: form.b.value as string }
+    for (const s of ['a', 'b'] as const) {
+      const r = data[ids[s]]
+      fig.querySelector<HTMLImageElement>(`.s${s}`)!.src = r.img
+      for (const el of document.querySelectorAll<HTMLElement>(`[data-s="${s}"]`)) {
+        if (el instanceof HTMLAnchorElement) { el.href = `/libraries/${ids[s]}/`; el.textContent = `Open ${r.n}` }
+        else if (el.dataset.k === 'credit') {
+          const link = Object.assign(document.createElement('a'), { href: r.src, textContent: `${r.by}, ${r.lic}` })
+          el.replaceChildren(`${r.cap}. `, link)
+        } else el.textContent = r[el.dataset.k as keyof Row]
+      }
+    }
+    history.replaceState(null, '', `?a=${ids.a}&b=${ids.b}`)
+  }
+  const q = new URLSearchParams(location.search)
+  for (const s of ['a', 'b']) if (data[q.get(s) ?? '']) form[s].value = q.get(s)
+  // /compare/?a=<id> from a library page: never pair a library with itself.
+  if (form.a.value === form.b.value) form.b.value = form.a.value === 'longroom' ? 'admont' : 'longroom'
+  form.onchange = show
+  show()
+</script>
+
+<style>
+  .pair { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; margin: 1.2rem 0; }
+  .pair .field { width: auto; flex: 1 1 14rem; }
+  .swipe { position: relative; margin: 0; aspect-ratio: 3 / 2; overflow: hidden; border-radius: 3px; background: var(--leaf); }
+  .swipe img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .sa { clip-path: inset(0 calc(100% - var(--x)) 0 0); }
+  .bar { position: absolute; top: 0; bottom: 0; left: var(--x); width: 2px; margin-left: -1px; background: var(--brass); pointer-events: none; }
+  .tag { position: absolute; bottom: 0.6rem; max-width: 45%; padding: 0.2rem 0.5rem; border-radius: 2px; background: rgb(0 0 0 / 0.6); color: #fff; font: 0.75rem var(--mono); pointer-events: none; }
+  .ta { left: 0.6rem; }
+  .tb { right: 0.6rem; text-align: right; }
+  .swipe input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+  .swipe:has(input:focus-visible) { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .facts { width: 100%; margin-top: 1.5rem; border-collapse: collapse; table-layout: fixed; }
+  .facts th, .facts td { padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+  .facts tbody th { width: 6.5rem; font: 0.75rem var(--mono); color: var(--dim); }
+  .facts thead th { font: 400 1.2rem var(--display); }
+  .go { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.2rem; }
+</style>

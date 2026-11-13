@@ -155,6 +155,13 @@
       "blocker": "None.",
       "cmd": "rg -q \"From <a href=\\\"/libraries/herculaneum/\\\"\" dist/books/herc-naples/index.html && rg -q \"Now at Biblioteca Nazionale\" dist/books/herc-naples/index.html && rg -q \"/libraries/herculaneum/#dispersal\" dist/books/herc-naples/index.html && rg -q \"wikidata.org/wiki/Q1105484\\\" rel\" dist/books/wd-q1105484/index.html && rg -q \">IIIF manifest<\" dist/books/wd-q1105484/index.html",
       "status": "passing"
+    },
+    {
+      "id": "compare-view",
+      "what": "/compare/ shows two library halls in one frame with a keyboard and touch swipe divider (a range input), their place, date, holdings, size and status side by side with photo credits, linkable as ?a=&b=; every library page links Compare with another",
+      "blocker": "None.",
+      "cmd": "rg -q \"type=\\\"range\\\"\" dist/compare/index.html && [ \"$(rg -o \"<option\" dist/compare/index.html | wc -l)\" -eq \"$(( $(jq length data/libs.json) * 2 ))\" ] && rg -q \"/compare/\\\\?a=admont\" dist/libraries/admont/index.html",
+      "status": "passing"
     }
   ]
 }

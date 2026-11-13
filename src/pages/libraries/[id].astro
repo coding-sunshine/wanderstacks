@@ -47,6 +47,7 @@ const i = libs.indexOf(l), prev = libs[(i + libs.length - 1) % libs.length], nex
           <a class="pick" href={`/atlas/${l.id}/`}>See it on the globe</a>
           {s.capture > 0 && <a class="pick" href={`/room/${l.id}/`}>Walk in captured 3D</a>}
           {hasDispersal(l.id) && <a class="pick" href={`/journey/${l.id}/`}>Follow the collection</a>}
+          <a class="pick" href={`/compare/?a=${l.id}`}>Compare with another</a>
           <a class="pick" href="#record">Read the record</a>
           {held.length > 0 && <a class="pick" href="#books">{held.length} books from here</a>}
         </p>
