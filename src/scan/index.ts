@@ -6,12 +6,10 @@ import { unroll } from './scroll'
 interface Page { s: string; w: number; h: number; l: string }
 interface Book { title: string; date?: string; holder: string; manifest: string; licence: string; deed: string | null; credit: string; pages: Page[]; scroll?: boolean; dir?: string }
 
-const TILE = 2048
 const AHEAD = 4
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;')
 const small = (p: Page, w = 600) => `${p.s}/full/${w},/0/default.jpg`
-const tile = (p: Page, x: number, y: number, w: number, h: number) => `${p.s}/${x},${y},${w},${h}/${w},/0/default.jpg`
 
 const notFound = (el: HTMLElement) => {
   el.innerHTML = '<section class="page" data-view="scan" data-ready="true"><h1>Not on any shelf</h1><p><a href="/">Back to the atlas</a></p></section>'
@@ -154,7 +152,9 @@ export const mount: Mount = (el, params) => {
     }
   }
 
-  const openZoom = (idx: number) => {
+  // Deep zoom with OpenSeadragon, loaded on first use. The tile source is built from pages.json, not fetched
+  // from info.json, so it needs no CORS: level0 makes OpenSeadragon ask for x,y,w,h/w, regions, which every holder serves.
+  const openZoom = async (idx: number) => {
     if (!book || dialog) return
     const p = book.pages[idx]
     const opener = root.contains(document.activeElement) && document.activeElement !== root
@@ -164,22 +164,14 @@ export const mount: Mount = (el, params) => {
     d.dataset.zoom = ''
     d.className = 'scan-zoom'
     d.setAttribute('aria-label', `Zoomed ${p.l}`)
-    let tiles = ''
-    for (let y = 0; y < p.h; y += TILE) {
-      for (let x = 0; x < p.w; x += TILE) {
-        const w = Math.min(TILE, p.w - x)
-        const h = Math.min(TILE, p.h - y)
-        const pc = (a: number, b: number) => `${(a / b) * 100}%`
-        const pos = `left:${pc(x, p.w)};top:${pc(y, p.h)};width:${pc(w, p.w)};height:${pc(h, p.h)}`
-        tiles += `<img alt="${esc(p.l)}, tile ${x},${y}" src="${tile(p, x, y, w, h)}" style="${pos}" data-tile>`
-      }
-    }
-    d.innerHTML = `<button type="button" class="scan-close" aria-label="Close zoom">&#215;</button>
-      <div class="scan-pan" tabindex="0" role="group" aria-label="Zoomed page, scroll to pan">
-        <div class="scan-stage" style="width:${p.w / 2}px;aspect-ratio:${p.w}/${p.h}">${tiles}</div>
+    d.innerHTML = `<div class="scan-osd"></div>
+      <button type="button" class="scan-close" aria-label="Close zoom">&#215;</button>
+      <div class="scan-tools">
+        <button type="button" data-z="out" aria-label="Zoom out">&#8722;</button>
+        <button type="button" data-z="in" aria-label="Zoom in">+</button>
+        <button type="button" data-z="fit">Fit</button>
       </div>`
     d.querySelector('.scan-close')!.addEventListener('click', () => d.close())
-    d.addEventListener('error', fail, true)
     d.addEventListener('keydown', (e) => {
       if (e.key !== 'Tab') return
       const f = [...d.querySelectorAll<HTMLElement>('button, [tabindex="0"]')]
@@ -187,7 +179,9 @@ export const mount: Mount = (el, params) => {
       e.preventDefault()
       f[(i + (e.shiftKey ? f.length - 1 : 1)) % f.length]?.focus()
     })
+    let viewer: { destroy(): void } | null = null
     d.addEventListener('close', () => {
+      viewer?.destroy()
       d.remove()
       dialog = null
       opener?.focus()
@@ -195,6 +189,34 @@ export const mount: Mount = (el, params) => {
     root.append(d)
     dialog = d
     d.showModal()
+    const { default: OSD } = await import('openseadragon')
+    if (dialog !== d) return
+    const info = {
+      '@context': 'http://iiif.io/api/image/2/context.json',
+      protocol: 'http://iiif.io/api/image',
+      '@id': p.s,
+      width: p.w,
+      height: p.h,
+      profile: ['http://iiif.io/api/image/2/level0.json'],
+      tiles: [{ width: 1024, scaleFactors: [1, 2, 4, 8, 16, 32, 64] }],
+    }
+    const v = (viewer = OSD({
+      element: d.querySelector<HTMLElement>('.scan-osd')!,
+      tileSources: info,
+      drawer: 'canvas',
+      showNavigationControl: false,
+      animationTime: reducedMotion() ? 0 : 0.6,
+      blendTime: 0,
+      maxZoomPixelRatio: 2,
+      visibilityRatio: 0.5,
+    }))
+    v.canvas.setAttribute('role', 'group')
+    v.canvas.setAttribute('aria-label', `${p.l}: drag or use the arrow keys to move, + and - to zoom`)
+    v.addHandler('open-failed', fail)
+    const z = { in: () => v.viewport.zoomBy(1.5), out: () => v.viewport.zoomBy(1 / 1.5), fit: () => v.viewport.goHome() }
+    for (const b of d.querySelectorAll<HTMLElement>('[data-z]')) {
+      b.addEventListener('click', () => (z[b.dataset.z as keyof typeof z](), v.viewport.applyConstraints()))
+    }
   }
 
   const zoomTarget = () => {
@@ -273,6 +295,7 @@ export const mount: Mount = (el, params) => {
   return () => {
     dead = true
     settle()
+    dialog?.close()
     sc?.dispose()
     document.removeEventListener('keydown', onKey)
     mobile.removeEventListener('change', onMedia)

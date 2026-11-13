@@ -162,6 +162,13 @@
       "blocker": "None.",
       "cmd": "rg -q \"type=\\\"range\\\"\" dist/compare/index.html && [ \"$(rg -o \"<option\" dist/compare/index.html | wc -l)\" -eq \"$(( $(jq length data/libs.json) * 2 ))\" ] && rg -q \"/compare/\\\\?a=admont\" dist/libraries/admont/index.html",
       "status": "passing"
+    },
+    {
+      "id": "deep-zoom",
+      "what": "The scan zoom dialog streams IIIF tiles from the holder with OpenSeadragon (drag, wheel, pinch, arrow keys, zoom buttons and Fit), so a page can be read at full resolution; reduced motion turns off the zoom animation",
+      "blocker": "None.",
+      "cmd": "rg -q \"\\\"openseadragon\\\"\" package.json && rg -lq \"open-failed\" dist/_astro && rg -q \"deep-zoom tiles\" e2e/scan.spec.ts",
+      "status": "passing"
     }
   ]
 }

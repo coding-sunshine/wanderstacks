@@ -12,13 +12,13 @@
 }
 @keyframes scan-fade { from { opacity: 0; } }
 .scan-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: center; margin: 1rem 0; }
-.scan-bar button, .scan-close {
+.scan-bar button, .scan-close, .scan-tools button {
   min-width: 2.75rem; min-height: 2.75rem; padding: 0.3rem 0.9rem; cursor: pointer;
   border: 1px solid var(--hairline); border-radius: 999px; background: none; color: var(--paper);
   font: inherit; font-size: 1rem;
   transition: color 200ms var(--ease), border-color 200ms var(--ease);
 }
-.scan-bar button:hover:not(:disabled), .scan-close:hover { color: var(--lamp); border-color: var(--lamp); }
+.scan-bar button:hover:not(:disabled), .scan-close:hover, .scan-tools button:hover { color: var(--lamp); border-color: var(--lamp); }
 .scan-bar button:disabled { opacity: 0.4; cursor: default; }
 .scan-count {
   flex: 1 1 12rem; text-align: center; overflow-wrap: anywhere;
@@ -30,9 +30,9 @@
 .scan-zoom { width: 100vw; max-width: 100vw; height: 100vh; height: 100dvh; max-height: 100dvh; margin: 0; padding: 0; border: 0; background: var(--night); color: var(--paper); }
 .scan-zoom::backdrop { background: rgb(5 3 2 / 0.8); }
 .scan-close { position: fixed; top: 1.4rem; right: 1.4rem; z-index: 1; background: var(--glass); backdrop-filter: blur(10px); }
-.scan-pan { width: 100%; height: 100%; overflow: auto; }
-.scan-stage { position: relative; margin: 0 auto; }
-.scan-stage img { position: absolute; display: block; background: var(--oak); }
+.scan-osd { width: 100%; height: 100%; }
+.scan-tools { position: fixed; bottom: 1.4rem; left: 50%; translate: -50% 0; z-index: 1; display: flex; gap: 0.5rem; }
+.scan-tools button { background: var(--glass); backdrop-filter: blur(10px); }
 @media (max-width: 699px) { .scan-leaf { flex-basis: 100%; } }
 
 .scan-unrolled { display: block; perspective: none; touch-action: auto; min-height: 0; overflow: hidden; border-radius: 4px; }

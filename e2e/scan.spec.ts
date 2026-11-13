@@ -107,44 +107,37 @@ test('scan keyboard: + opens a modal zoom and Escape returns focus to the opener
   expect(errors).toEqual([])
 })
 
-test('scan zoom: tiles are 2048 px regions of the page image on the Bodleian host', async ({ page }) => {
+test('scan zoom: deep-zoom tiles are IIIF regions of one page on the Bodleian host', async ({ page }) => {
   const errors = watchErrors(page)
   const hits = await mockIiif(page)
   const { pages } = await data(page)
   await page.setViewportSize({ width: 1280, height: 800 })
   await open(page)
-  await page.keyboard.press('+')
-  const zoom = page.locator('dialog[data-zoom]')
-  await expect(zoom).toBeVisible()
-  const tiles = zoom.locator('img')
-  await expect.poll(() => tiles.count()).toBeGreaterThan(0)
-  const srcs = await tiles.evaluateAll((els) => els.map((e) => e.getAttribute('src')!))
   const at = await index(page)
+  await page.keyboard.press('+')
+  await expect(page.locator('dialog[data-zoom]')).toBeVisible()
+  // 600 px page images are the spread and its prefetch; everything else is a deep-zoom tile.
+  const tiles = () => hits.urls.filter((u) => !u.includes('/full/600,/'))
+  await expect.poll(() => tiles().length, { timeout: 10_000 }).toBeGreaterThan(0)
 
-  let area = 0
   let pageIdx = -1
-  for (const src of srcs) {
+  for (const src of tiles()) {
     expect(src.startsWith(BODLEIAN), src).toBe(true)
-    const m = /^(.*)\/(\d+),(\d+),(\d+),(\d+)\/(\d+),\/0\/default\.jpg$/.exec(src)
-    expect(m, `region url ${src}`).not.toBeNull()
-    const [, base, x, y, w, h, outW] = m!
+    const m = /^(.*)\/(full|(\d+),(\d+),(\d+),(\d+))\/(full|(\d+),)\/0\/default\.jpg$/.exec(src)
+    expect(m, `IIIF url ${src}`).not.toBeNull()
+    const [, base, , x, y, w, h, , outW] = m!
     const i = pages.findIndex((p) => p.s === base)
     expect(i, `page for ${base}`).toBeGreaterThanOrEqual(0)
     if (pageIdx < 0) pageIdx = i
     expect(i, 'all tiles belong to one page').toBe(pageIdx)
     const p = pages[i]!
-    expect(Number(x) + Number(w), `${src} inside width`).toBeLessThanOrEqual(p.w)
-    expect(Number(y) + Number(h), `${src} inside height`).toBeLessThanOrEqual(p.h)
-    if (Number(x) + Number(w) !== p.w) expect(Number(w), `${src} tile width`).toBeGreaterThanOrEqual(1536)
-    expect(Number(outW)).toBe(Number(w))
-    expect(Number(w)).toBeLessThanOrEqual(2048)
-    expect(Number(h)).toBeLessThanOrEqual(2048)
-    area += Number(w) * Number(h)
+    if (x != null) {
+      expect(Number(x) + Number(w), `${src} inside width`).toBeLessThanOrEqual(p.w)
+      expect(Number(y) + Number(h), `${src} inside height`).toBeLessThanOrEqual(p.h)
+    }
+    if (outW != null) expect(Number(outW), `${src} tile size`).toBeLessThanOrEqual(1024)
   }
   expect([at, at + 1], 'zoomed page is one of the visible pair').toContain(pageIdx)
-  const p = pages[pageIdx]!
-  expect(area, 'tiles cover the whole page').toBe(p.w * p.h)
-  await expect.poll(() => srcs.filter((u) => !hits.urls.includes(u)).length, { timeout: 10_000 }).toBe(0)
   expect(errors).toEqual([])
 })
 
